@@ -1,0 +1,4 @@
+# Local reporter archives; selected screenshots/traces copied one directory up.
+*-artifacts/
+*-html/
+*.log

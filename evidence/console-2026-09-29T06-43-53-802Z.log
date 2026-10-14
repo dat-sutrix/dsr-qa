@@ -1,0 +1,4 @@
+[    2404ms] [ERROR] Loading the stylesheet 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@400;500;700&display=swap' violates the following Content Security Policy directive: "style-src 'self' 'unsafe-inline'". Note that 'style-src-elem' was not explicitly set, so 'style-src' is used as a fallback. The action has been blocked. @ https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail:0
+[    2460ms] Event
+[    3706ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ https://main--dsr-eds-dev--sutrix-projects.aem.live/scripts/dom.js:68
+[    6145ms] [WARNING] No available adapters. @ https://www.youtube.com/embed/irFRtAVphCY?rel=0&start=38:0

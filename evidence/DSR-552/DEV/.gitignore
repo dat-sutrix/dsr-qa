@@ -1,0 +1,2 @@
+# Diagnostic stdout stays local; structured run data and evidence are committed.
+*.log

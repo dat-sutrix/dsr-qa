@@ -1,0 +1,664 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/home/qa/work/automation-test/projects/dsr/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "DSR-BREAD-00(2|8)",
+      "--project=chromium"
+    ],
+    "configFile": "/home/qa/work/automation-test/projects/dsr/playwright.config.ts",
+    "rootDir": "/home/qa/work/automation-test/projects/dsr/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/qa/work/automation-test/projects/dsr/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/qa/work/automation-test/projects/dsr/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/qa/work/automation-test/projects/dsr/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/qa/work/automation-test/projects/dsr/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/DSR-552.breadcrumb.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/qa/work/automation-test/projects/dsr/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/qa/work/automation-test/projects/dsr/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/DSR-552.breadcrumb.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/DSR-552/DEV/runs/links-rerun.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+      "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "ja",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 41,
+          "column": 7,
+          "specs": [
+            {
+              "title": "DSR-BREAD-002 ancestor links",
+              "ok": false,
+              "tags": [
+                "groupA",
+                "auto"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10220,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:93:85",
+                        "location": {
+                          "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                          "column": 85,
+                          "line": 93
+                        },
+                        "snippet": "  91 |        expect(['_self',null,'']).toContain(await link.getAttribute('target'));\n  92 |        const status = (await request.get(paths[i])).status();\n> 93 |        observations.push({language:lang,link:paths[i],status}); expect.soft(status).toBe(200);\n     |                                                                                     ^\n  94 |        const pages=page.context().pages().length; await link.click(); await expect(page).toHaveURL(new RegExp(paths[i]+'/?$')); expect(page.context().pages().length).toBe(pages); await open(page,lang,2);\n  95 |       }\n  96 |     }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                            "column": 85,
+                            "line": 93
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n  91 |        expect(['_self',null,'']).toContain(await link.getAttribute('target'));\n  92 |        const status = (await request.get(paths[i])).status();\n> 93 |        observations.push({language:lang,link:paths[i],status}); expect.soft(status).toBe(200);\n     |                                                                                     ^\n  94 |        const pages=page.context().pages().length; await link.click(); await expect(page).toHaveURL(new RegExp(paths[i]+'/?$')); expect(page.context().pages().length).toBe(pages); await open(page,lang,2);\n  95 |       }\n  96 |     }\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:93:85"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-12T05:29:05.799Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "ja-evidence",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium/attachments/ja-evidence-e808350c5482dac50613725ce371cff98c22bd12.png"
+                        },
+                        {
+                          "name": "observed",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJsYW5ndWFnZSI6ICJqYSIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQvZ3JhbmRjaGlsZCIsCiAgICAic3RhdHVzIjogMjAwLAogICAgInRleHRzIjogWwogICAgICAiSE9NRSIsCiAgICAgICJ0ZXN0IHNwYWNlIiwKICAgICAgIlFBIFBhcmVudCIsCiAgICAgICJRQSBDaGlsZCIsCiAgICAgICJRQSBHcmFuZGNoaWxkIgogICAgXSwKICAgICJqc29ubGQiOiBbCiAgICAgIHsKICAgICAgICAiQGNvbnRleHQiOiAiaHR0cHM6Ly9zY2hlbWEub3JnIiwKICAgICAgICAiQHR5cGUiOiAiQnJlYWRjcnVtYkxpc3QiLAogICAgICAgICJpdGVtTGlzdEVsZW1lbnQiOiBbCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDEsCiAgICAgICAgICAgICJuYW1lIjogIkhPTUUiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMiwKICAgICAgICAgICAgIm5hbWUiOiAidGVzdCBzcGFjZSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZSIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDMsCiAgICAgICAgICAgICJuYW1lIjogIlFBIFBhcmVudCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA0LAogICAgICAgICAgICAibmFtZSI6ICJRQSBDaGlsZCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA1LAogICAgICAgICAgICAibmFtZSI6ICJRQSBHcmFuZGNoaWxkIgogICAgICAgICAgfQogICAgICAgIF0KICAgICAgfQogICAgXQogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJsaW5rIjogIi9tYXN0ZXIvamEiLAogICAgInN0YXR1cyI6IDQwNAogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZC9ncmFuZGNoaWxkIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAidGV4dHMiOiBbCiAgICAgICJIT01FIiwKICAgICAgInRlc3Qgc3BhY2UiLAogICAgICAiUUEgUGFyZW50IiwKICAgICAgIlFBIENoaWxkIiwKICAgICAgIlFBIEdyYW5kY2hpbGQiCiAgICBdLAogICAgImpzb25sZCI6IFsKICAgICAgewogICAgICAgICJAY29udGV4dCI6ICJodHRwczovL3NjaGVtYS5vcmciLAogICAgICAgICJAdHlwZSI6ICJCcmVhZGNydW1iTGlzdCIsCiAgICAgICAgIml0ZW1MaXN0RWxlbWVudCI6IFsKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMSwKICAgICAgICAgICAgIm5hbWUiOiAiSE9NRSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAyLAogICAgICAgICAgICAibmFtZSI6ICJ0ZXN0IHNwYWNlIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMywKICAgICAgICAgICAgIm5hbWUiOiAiUUEgUGFyZW50IiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYyIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDQsCiAgICAgICAgICAgICJuYW1lIjogIlFBIENoaWxkIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZCIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDUsCiAgICAgICAgICAgICJuYW1lIjogIlFBIEdyYW5kY2hpbGQiCiAgICAgICAgICB9CiAgICAgICAgXQogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAibGFuZ3VhZ2UiOiAiamEiLAogICAgImxpbmsiOiAiL21hc3Rlci9qYS90ZXN0LXNwYWNlIiwKICAgICJzdGF0dXMiOiAyMDAKICB9LAogIHsKICAgICJsYW5ndWFnZSI6ICJqYSIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQvZ3JhbmRjaGlsZCIsCiAgICAic3RhdHVzIjogMjAwLAogICAgInRleHRzIjogWwogICAgICAiSE9NRSIsCiAgICAgICJ0ZXN0IHNwYWNlIiwKICAgICAgIlFBIFBhcmVudCIsCiAgICAgICJRQSBDaGlsZCIsCiAgICAgICJRQSBHcmFuZGNoaWxkIgogICAgXSwKICAgICJqc29ubGQiOiBbCiAgICAgIHsKICAgICAgICAiQGNvbnRleHQiOiAiaHR0cHM6Ly9zY2hlbWEub3JnIiwKICAgICAgICAiQHR5cGUiOiAiQnJlYWRjcnVtYkxpc3QiLAogICAgICAgICJpdGVtTGlzdEVsZW1lbnQiOiBbCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDEsCiAgICAgICAgICAgICJuYW1lIjogIkhPTUUiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMiwKICAgICAgICAgICAgIm5hbWUiOiAidGVzdCBzcGFjZSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZSIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDMsCiAgICAgICAgICAgICJuYW1lIjogIlFBIFBhcmVudCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA0LAogICAgICAgICAgICAibmFtZSI6ICJRQSBDaGlsZCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA1LAogICAgICAgICAgICAibmFtZSI6ICJRQSBHcmFuZGNoaWxkIgogICAgICAgICAgfQogICAgICAgIF0KICAgICAgfQogICAgXQogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJsaW5rIjogIi9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMiLAogICAgInN0YXR1cyI6IDIwMAogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZC9ncmFuZGNoaWxkIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAidGV4dHMiOiBbCiAgICAgICJIT01FIiwKICAgICAgInRlc3Qgc3BhY2UiLAogICAgICAiUUEgUGFyZW50IiwKICAgICAgIlFBIENoaWxkIiwKICAgICAgIlFBIEdyYW5kY2hpbGQiCiAgICBdLAogICAgImpzb25sZCI6IFsKICAgICAgewogICAgICAgICJAY29udGV4dCI6ICJodHRwczovL3NjaGVtYS5vcmciLAogICAgICAgICJAdHlwZSI6ICJCcmVhZGNydW1iTGlzdCIsCiAgICAgICAgIml0ZW1MaXN0RWxlbWVudCI6IFsKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMSwKICAgICAgICAgICAgIm5hbWUiOiAiSE9NRSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAyLAogICAgICAgICAgICAibmFtZSI6ICJ0ZXN0IHNwYWNlIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMywKICAgICAgICAgICAgIm5hbWUiOiAiUUEgUGFyZW50IiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYyIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDQsCiAgICAgICAgICAgICJuYW1lIjogIlFBIENoaWxkIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZCIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDUsCiAgICAgICAgICAgICJuYW1lIjogIlFBIEdyYW5kY2hpbGQiCiAgICAgICAgICB9CiAgICAgICAgXQogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAibGFuZ3VhZ2UiOiAiamEiLAogICAgImxpbmsiOiAiL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZCIsCiAgICAic3RhdHVzIjogMjAwCiAgfSwKICB7CiAgICAibGFuZ3VhZ2UiOiAiamEiLAogICAgInVybCI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UvZHNyNTUyLWJjL2NoaWxkL2dyYW5kY2hpbGQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJ0ZXh0cyI6IFsKICAgICAgIkhPTUUiLAogICAgICAidGVzdCBzcGFjZSIsCiAgICAgICJRQSBQYXJlbnQiLAogICAgICAiUUEgQ2hpbGQiLAogICAgICAiUUEgR3JhbmRjaGlsZCIKICAgIF0sCiAgICAianNvbmxkIjogWwogICAgICB7CiAgICAgICAgIkBjb250ZXh0IjogImh0dHBzOi8vc2NoZW1hLm9yZyIsCiAgICAgICAgIkB0eXBlIjogIkJyZWFkY3J1bWJMaXN0IiwKICAgICAgICAiaXRlbUxpc3RFbGVtZW50IjogWwogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAxLAogICAgICAgICAgICAibmFtZSI6ICJIT01FIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYSIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDIsCiAgICAgICAgICAgICJuYW1lIjogInRlc3Qgc3BhY2UiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAzLAogICAgICAgICAgICAibmFtZSI6ICJRQSBQYXJlbnQiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UvZHNyNTUyLWJjIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogNCwKICAgICAgICAgICAgIm5hbWUiOiAiUUEgQ2hpbGQiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UvZHNyNTUyLWJjL2NoaWxkIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogNSwKICAgICAgICAgICAgIm5hbWUiOiAiUUEgR3JhbmRjaGlsZCIKICAgICAgICAgIH0KICAgICAgICBdCiAgICAgIH0KICAgIF0KICB9Cl0="
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "column": 85,
+                        "line": 93
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10580,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:93:85",
+                        "location": {
+                          "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                          "column": 85,
+                          "line": 93
+                        },
+                        "snippet": "  91 |        expect(['_self',null,'']).toContain(await link.getAttribute('target'));\n  92 |        const status = (await request.get(paths[i])).status();\n> 93 |        observations.push({language:lang,link:paths[i],status}); expect.soft(status).toBe(200);\n     |                                                                                     ^\n  94 |        const pages=page.context().pages().length; await link.click(); await expect(page).toHaveURL(new RegExp(paths[i]+'/?$')); expect(page.context().pages().length).toBe(pages); await open(page,lang,2);\n  95 |       }\n  96 |     }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                            "column": 85,
+                            "line": 93
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n  91 |        expect(['_self',null,'']).toContain(await link.getAttribute('target'));\n  92 |        const status = (await request.get(paths[i])).status();\n> 93 |        observations.push({language:lang,link:paths[i],status}); expect.soft(status).toBe(200);\n     |                                                                                     ^\n  94 |        const pages=page.context().pages().length; await link.click(); await expect(page).toHaveURL(new RegExp(paths[i]+'/?$')); expect(page.context().pages().length).toBe(pages); await open(page,lang,2);\n  95 |       }\n  96 |     }\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:93:85"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-12T05:29:18.535Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "ja-evidence",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium-retry1/attachments/ja-evidence-e808350c5482dac50613725ce371cff98c22bd12.png"
+                        },
+                        {
+                          "name": "observed",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJsYW5ndWFnZSI6ICJqYSIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQvZ3JhbmRjaGlsZCIsCiAgICAic3RhdHVzIjogMjAwLAogICAgInRleHRzIjogWwogICAgICAiSE9NRSIsCiAgICAgICJRQSBHcmFuZGNoaWxkIgogICAgXSwKICAgICJqc29ubGQiOiBbCiAgICAgIHsKICAgICAgICAiQGNvbnRleHQiOiAiaHR0cHM6Ly9zY2hlbWEub3JnIiwKICAgICAgICAiQHR5cGUiOiAiQnJlYWRjcnVtYkxpc3QiLAogICAgICAgICJpdGVtTGlzdEVsZW1lbnQiOiBbCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDEsCiAgICAgICAgICAgICJuYW1lIjogIkhPTUUiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMiwKICAgICAgICAgICAgIm5hbWUiOiAidGVzdCBzcGFjZSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZSIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDMsCiAgICAgICAgICAgICJuYW1lIjogIlFBIFBhcmVudCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA0LAogICAgICAgICAgICAibmFtZSI6ICJRQSBDaGlsZCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA1LAogICAgICAgICAgICAibmFtZSI6ICJRQSBHcmFuZGNoaWxkIgogICAgICAgICAgfQogICAgICAgIF0KICAgICAgfQogICAgXQogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJsaW5rIjogIi9tYXN0ZXIvamEiLAogICAgInN0YXR1cyI6IDQwNAogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZC9ncmFuZGNoaWxkIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAidGV4dHMiOiBbCiAgICAgICJIT01FIiwKICAgICAgInRlc3Qgc3BhY2UiLAogICAgICAiUUEgUGFyZW50IiwKICAgICAgIlFBIENoaWxkIiwKICAgICAgIlFBIEdyYW5kY2hpbGQiCiAgICBdLAogICAgImpzb25sZCI6IFsKICAgICAgewogICAgICAgICJAY29udGV4dCI6ICJodHRwczovL3NjaGVtYS5vcmciLAogICAgICAgICJAdHlwZSI6ICJCcmVhZGNydW1iTGlzdCIsCiAgICAgICAgIml0ZW1MaXN0RWxlbWVudCI6IFsKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMSwKICAgICAgICAgICAgIm5hbWUiOiAiSE9NRSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAyLAogICAgICAgICAgICAibmFtZSI6ICJ0ZXN0IHNwYWNlIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMywKICAgICAgICAgICAgIm5hbWUiOiAiUUEgUGFyZW50IiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYyIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDQsCiAgICAgICAgICAgICJuYW1lIjogIlFBIENoaWxkIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZCIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDUsCiAgICAgICAgICAgICJuYW1lIjogIlFBIEdyYW5kY2hpbGQiCiAgICAgICAgICB9CiAgICAgICAgXQogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAibGFuZ3VhZ2UiOiAiamEiLAogICAgImxpbmsiOiAiL21hc3Rlci9qYS90ZXN0LXNwYWNlIiwKICAgICJzdGF0dXMiOiAyMDAKICB9LAogIHsKICAgICJsYW5ndWFnZSI6ICJqYSIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQvZ3JhbmRjaGlsZCIsCiAgICAic3RhdHVzIjogMjAwLAogICAgInRleHRzIjogWwogICAgICAiSE9NRSIsCiAgICAgICJ0ZXN0IHNwYWNlIiwKICAgICAgIlFBIFBhcmVudCIsCiAgICAgICJRQSBDaGlsZCIsCiAgICAgICJRQSBHcmFuZGNoaWxkIgogICAgXSwKICAgICJqc29ubGQiOiBbCiAgICAgIHsKICAgICAgICAiQGNvbnRleHQiOiAiaHR0cHM6Ly9zY2hlbWEub3JnIiwKICAgICAgICAiQHR5cGUiOiAiQnJlYWRjcnVtYkxpc3QiLAogICAgICAgICJpdGVtTGlzdEVsZW1lbnQiOiBbCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDEsCiAgICAgICAgICAgICJuYW1lIjogIkhPTUUiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMiwKICAgICAgICAgICAgIm5hbWUiOiAidGVzdCBzcGFjZSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZSIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDMsCiAgICAgICAgICAgICJuYW1lIjogIlFBIFBhcmVudCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA0LAogICAgICAgICAgICAibmFtZSI6ICJRQSBDaGlsZCIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMvY2hpbGQiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiA1LAogICAgICAgICAgICAibmFtZSI6ICJRQSBHcmFuZGNoaWxkIgogICAgICAgICAgfQogICAgICAgIF0KICAgICAgfQogICAgXQogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJsaW5rIjogIi9tYXN0ZXIvamEvdGVzdC1zcGFjZS9kc3I1NTItYmMiLAogICAgInN0YXR1cyI6IDIwMAogIH0sCiAgewogICAgImxhbmd1YWdlIjogImphIiwKICAgICJ1cmwiOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZC9ncmFuZGNoaWxkIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAidGV4dHMiOiBbCiAgICAgICJIT01FIiwKICAgICAgInRlc3Qgc3BhY2UiLAogICAgICAiUUEgUGFyZW50IiwKICAgICAgIlFBIENoaWxkIiwKICAgICAgIlFBIEdyYW5kY2hpbGQiCiAgICBdLAogICAgImpzb25sZCI6IFsKICAgICAgewogICAgICAgICJAY29udGV4dCI6ICJodHRwczovL3NjaGVtYS5vcmciLAogICAgICAgICJAdHlwZSI6ICJCcmVhZGNydW1iTGlzdCIsCiAgICAgICAgIml0ZW1MaXN0RWxlbWVudCI6IFsKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMSwKICAgICAgICAgICAgIm5hbWUiOiAiSE9NRSIsCiAgICAgICAgICAgICJpdGVtIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAyLAogICAgICAgICAgICAibmFtZSI6ICJ0ZXN0IHNwYWNlIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogMywKICAgICAgICAgICAgIm5hbWUiOiAiUUEgUGFyZW50IiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYyIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDQsCiAgICAgICAgICAgICJuYW1lIjogIlFBIENoaWxkIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZCIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDUsCiAgICAgICAgICAgICJuYW1lIjogIlFBIEdyYW5kY2hpbGQiCiAgICAgICAgICB9CiAgICAgICAgXQogICAgICB9CiAgICBdCiAgfSwKICB7CiAgICAibGFuZ3VhZ2UiOiAiamEiLAogICAgImxpbmsiOiAiL21hc3Rlci9qYS90ZXN0LXNwYWNlL2RzcjU1Mi1iYy9jaGlsZCIsCiAgICAic3RhdHVzIjogMjAwCiAgfSwKICB7CiAgICAibGFuZ3VhZ2UiOiAiamEiLAogICAgInVybCI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UvZHNyNTUyLWJjL2NoaWxkL2dyYW5kY2hpbGQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJ0ZXh0cyI6IFsKICAgICAgIkhPTUUiLAogICAgICAidGVzdCBzcGFjZSIsCiAgICAgICJRQSBQYXJlbnQiLAogICAgICAiUUEgQ2hpbGQiLAogICAgICAiUUEgR3JhbmRjaGlsZCIKICAgIF0sCiAgICAianNvbmxkIjogWwogICAgICB7CiAgICAgICAgIkBjb250ZXh0IjogImh0dHBzOi8vc2NoZW1hLm9yZyIsCiAgICAgICAgIkB0eXBlIjogIkJyZWFkY3J1bWJMaXN0IiwKICAgICAgICAiaXRlbUxpc3RFbGVtZW50IjogWwogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAxLAogICAgICAgICAgICAibmFtZSI6ICJIT01FIiwKICAgICAgICAgICAgIml0ZW0iOiAiaHR0cHM6Ly9tYWluLS1kc3ItZWRzLWRldi0tc3V0cml4LXByb2plY3RzLmFlbS5saXZlL21hc3Rlci9qYSIKICAgICAgICAgIH0sCiAgICAgICAgICB7CiAgICAgICAgICAgICJAdHlwZSI6ICJMaXN0SXRlbSIsCiAgICAgICAgICAgICJwb3NpdGlvbiI6IDIsCiAgICAgICAgICAgICJuYW1lIjogInRlc3Qgc3BhY2UiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UiCiAgICAgICAgICB9LAogICAgICAgICAgewogICAgICAgICAgICAiQHR5cGUiOiAiTGlzdEl0ZW0iLAogICAgICAgICAgICAicG9zaXRpb24iOiAzLAogICAgICAgICAgICAibmFtZSI6ICJRQSBQYXJlbnQiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UvZHNyNTUyLWJjIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogNCwKICAgICAgICAgICAgIm5hbWUiOiAiUUEgQ2hpbGQiLAogICAgICAgICAgICAiaXRlbSI6ICJodHRwczovL21haW4tLWRzci1lZHMtZGV2LS1zdXRyaXgtcHJvamVjdHMuYWVtLmxpdmUvbWFzdGVyL2phL3Rlc3Qtc3BhY2UvZHNyNTUyLWJjL2NoaWxkIgogICAgICAgICAgfSwKICAgICAgICAgIHsKICAgICAgICAgICAgIkB0eXBlIjogIkxpc3RJdGVtIiwKICAgICAgICAgICAgInBvc2l0aW9uIjogNSwKICAgICAgICAgICAgIm5hbWUiOiAiUUEgR3JhbmRjaGlsZCIKICAgICAgICAgIH0KICAgICAgICBdCiAgICAgIH0KICAgIF0KICB9Cl0="
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-2dea9-SR-BREAD-002-ancestor-links-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "column": 85,
+                        "line": 93
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8ce8d177b284e5a13077-59150f748ab364970c7d",
+              "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+              "line": 49,
+              "column": 8
+            },
+            {
+              "title": "DSR-BREAD-008 HOME excludes breadcrumb",
+              "ok": false,
+              "tags": [
+                "groupA",
+                "auto"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6412,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39",
+                        "location": {
+                          "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                          "column": 39,
+                          "line": 53
+                        },
+                        "snippet": "  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                            "column": 39,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-12T05:29:31.728Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "ja-evidence",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium/attachments/ja-evidence-5a6173e2030800ad3c449d3f5c3f743e3bd62c68.png"
+                        },
+                        {
+                          "name": "observed",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJsYW5ndWFnZSI6ICJqYSIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEiLAogICAgInN0YXR1cyI6IDQwNCwKICAgICJicmVhZGNydW1iQ291bnQiOiAwLAogICAgImpzb25sZCI6IFtdCiAgfQpd"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "column": 39,
+                        "line": 53
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8652,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39",
+                        "location": {
+                          "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                          "column": 39,
+                          "line": 53
+                        },
+                        "snippet": "  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                            "column": 39,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-12T05:29:40.901Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "ja-evidence",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium-retry1/attachments/ja-evidence-5a6173e2030800ad3c449d3f5c3f743e3bd62c68.png"
+                        },
+                        {
+                          "name": "observed",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJsYW5ndWFnZSI6ICJqYSIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvamEiLAogICAgInN0YXR1cyI6IDQwNCwKICAgICJicmVhZGNydW1iQ291bnQiOiAwLAogICAgImpzb25sZCI6IFtdCiAgfQpd"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-b01ca-08-HOME-excludes-breadcrumb-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "column": 39,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8ce8d177b284e5a13077-691a44ce1167fbbd48f8",
+              "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+              "line": 49,
+              "column": 8
+            }
+          ]
+        },
+        {
+          "title": "en",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 41,
+          "column": 7,
+          "specs": [
+            {
+              "title": "DSR-BREAD-008 HOME excludes breadcrumb",
+              "ok": false,
+              "tags": [
+                "groupA",
+                "auto"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5456,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39",
+                        "location": {
+                          "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                          "column": 39,
+                          "line": 53
+                        },
+                        "snippet": "  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                            "column": 39,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-12T05:29:51.673Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "en-evidence",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium/attachments/en-evidence-91c6a3cae5a99bb21f183e696b8403772e361898.png"
+                        },
+                        {
+                          "name": "observed",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJsYW5ndWFnZSI6ICJlbiIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvZW4iLAogICAgInN0YXR1cyI6IDQwNCwKICAgICJicmVhZGNydW1iQ291bnQiOiAwLAogICAgImpzb25sZCI6IFtdCiAgfQpd"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "column": 39,
+                        "line": 53
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11042,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39",
+                        "location": {
+                          "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                          "column": 39,
+                          "line": 53
+                        },
+                        "snippet": "  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                            "column": 39,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n  51 |     if (number === 8 || number === 9) {\n  52 |       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));\n> 53 |       expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);\n     |                                       ^\n  54 |       await page.waitForLoadState('networkidle');\n  55 |       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);\n  56 |       observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;\n    at /home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts:53:39"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-12T05:29:59.452Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "en-evidence",
+                          "contentType": "image/png",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium-retry1/attachments/en-evidence-91c6a3cae5a99bb21f183e696b8403772e361898.png"
+                        },
+                        {
+                          "name": "observed",
+                          "contentType": "application/json",
+                          "body": "WwogIHsKICAgICJsYW5ndWFnZSI6ICJlbiIsCiAgICAidXJsIjogImh0dHBzOi8vbWFpbi0tZHNyLWVkcy1kZXYtLXN1dHJpeC1wcm9qZWN0cy5hZW0ubGl2ZS9tYXN0ZXIvZW4iLAogICAgInN0YXR1cyI6IDQwNCwKICAgICJicmVhZGNydW1iQ291bnQiOiAwLAogICAgImpzb25sZCI6IFtdCiAgfQpd"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/qa/work/automation-test/projects/dsr/test-results/breadcrumb-DSR-552.breadcr-f99d5-08-HOME-excludes-breadcrumb-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "column": 39,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8ce8d177b284e5a13077-02ba4d488efc0c54e782",
+              "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+              "line": 49,
+              "column": 8
+            }
+          ]
+        },
+        {
+          "title": "cn",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 41,
+          "column": 7,
+          "specs": [
+            {
+              "title": "DSR-BREAD-008 HOME excludes breadcrumb",
+              "ok": true,
+              "tags": [
+                "groupA",
+                "auto"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "cn: no /master/cn (Issue #18)",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 44,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 1336,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-12T05:30:14.359Z",
+                      "annotations": [
+                        {
+                          "type": "fixme",
+                          "description": "cn: no /master/cn (Issue #18)",
+                          "location": {
+                            "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                            "line": 44,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "observed",
+                          "contentType": "application/json",
+                          "body": "W10="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8ce8d177b284e5a13077-085fb1fcfe4cb0871c63",
+              "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+              "line": 49,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T05:29:03.216Z",
+    "duration": 73430.31300000001,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,11 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]
+  - main [ref=f3e3]:
+    - navigation "パンくずリスト" [ref=f3e7]:
+      - list [ref=f3e8]:
+        - listitem [ref=f3e9]:
+          - link "HOME" [ref=f3e10] [cursor=pointer]:
+            - /url: /master/en
+        - listitem [ref=f3e11]:
+          - generic [ref=f3e12]: DSR-173-Video-Detail
+  - contentinfo [ref=f3e13]

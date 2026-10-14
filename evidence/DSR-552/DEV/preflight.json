@@ -1,0 +1,142 @@
+{
+  "time": "2026-10-12T05:22:30.182Z",
+  "baseURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "entries": [
+    {
+      "path": "/master/ja/test-space/dsr552-bc",
+      "title": "QA Parent",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc",
+      "observedTitle": "QA Parent",
+      "blocked": false
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child",
+      "title": "QA Child",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child",
+      "observedTitle": "QA Child",
+      "blocked": false
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child/grandchild",
+      "title": "QA Grandchild",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "observedTitle": "QA Grandchild",
+      "blocked": false
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc",
+      "title": "QA Parent",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc",
+      "observedTitle": "QA Parent",
+      "blocked": false
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child",
+      "title": "QA Child",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child",
+      "observedTitle": "QA Child",
+      "blocked": false
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child/grandchild",
+      "title": "QA Grandchild",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "observedTitle": "QA Grandchild",
+      "blocked": false
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge",
+      "title": "QA Edge",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge",
+      "observedTitle": "QA Edge",
+      "blocked": false
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/sp-a",
+      "title": "階層Aのとても長いタイトルを持つテスト用ページ名称です確認用",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/sp-a",
+      "observedTitle": "階層 A のとても ⻑いタイト ルを持つテスト⽤ページ名 称です確認⽤",
+      "blocked": true
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/sp-b",
+      "title": "階層Bのとても長いタイトルを持つテスト用ページ名称です確認用",
+      "status": 404,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/sp-b",
+      "observedTitle": "Page not found",
+      "blocked": true
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/sp-c",
+      "title": "階層Cのとても長いタイトルを持つテスト用ページ名称です確認用",
+      "status": 404,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/sp-c",
+      "observedTitle": "Page not found",
+      "blocked": true
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-gap",
+      "title": "QA Gap",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-gap",
+      "observedTitle": "QA Gap",
+      "blocked": false
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-gap/x",
+      "title": null,
+      "status": 404,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-gap/x",
+      "observedTitle": "Page not found",
+      "blocked": false
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-gap/x/leaf",
+      "title": "QA Leaf",
+      "status": 404,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-gap/x/leaf",
+      "observedTitle": "Page not found",
+      "blocked": true
+    },
+    {
+      "path": "/master/ja/test-space",
+      "title": "test space",
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space",
+      "observedTitle": "test space",
+      "blocked": false
+    },
+    {
+      "path": "/master/en/test-space",
+      "title": "test-space",
+      "status": 404,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space",
+      "observedTitle": "Page not found",
+      "blocked": true
+    }
+  ],
+  "dom": {
+    "scripts": [
+      {
+        "location": "head",
+        "text": "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"HOME\",\"item\":\"https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"test space\",\"item\":\"https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"QA Parent\",\"item\":\"https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"QA Child\"}]}"
+      }
+    ],
+    "breadcrumb": "<nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja\" data-testid=\"breadcrumb-link\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/test-space\" data-testid=\"breadcrumb-link\">test space</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/test-space/dsr552-bc\" data-testid=\"breadcrumb-link\">QA Parent</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\">QA Child</span></li></ol></nav>",
+    "header": "<header class=\"header-wrapper\"><div class=\"header block\" data-block-name=\"header\" data-block-status=\"loading\"></div></header>",
+    "fonts": [
+      {
+        "family": "Noto Sans JP",
+        "status": "loaded"
+      }
+    ]
+  }
+}

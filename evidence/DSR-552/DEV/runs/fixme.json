@@ -1,0 +1,882 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/home/qa/work/automation-test/projects/dsr/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "DSR-BREAD-0(10|14|15|18|19|21|22|23|29|30|33|34)",
+      "--project=chromium"
+    ],
+    "configFile": "/home/qa/work/automation-test/projects/dsr/playwright.config.ts",
+    "rootDir": "/home/qa/work/automation-test/projects/dsr/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/qa/work/automation-test/projects/dsr/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/qa/work/automation-test/projects/dsr/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/qa/work/automation-test/projects/dsr/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/qa/work/automation-test/projects/dsr/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/DSR-552.breadcrumb.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/qa/work/automation-test/projects/dsr/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/qa/work/automation-test/projects/dsr/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/DSR-552.breadcrumb.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/DSR-552/DEV/runs/fixme.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+      "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "DSR-BREAD-010 display labels override titles",
+          "ok": true,
+          "tags": [
+            "groupA",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "Bug-FIELD",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 433,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:45.176Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "Bug-FIELD",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-e56cef84a4c4865b354c",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-014 long label wraps",
+          "ok": true,
+          "tags": [
+            "groupA",
+            "visual"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "Bug-FIELD (100-char label)",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:46.082Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "Bug-FIELD (100-char label)",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-aa3fde232ffc31765724",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-015 special label is literal text",
+          "ok": true,
+          "tags": [
+            "groupA",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "Bug-FIELD",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 731,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:46.454Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "Bug-FIELD",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-ac66573b028ece06383b",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-018 localized display labels",
+          "ok": true,
+          "tags": [
+            "groupA",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "Bug-FIELD",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 250,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:47.247Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "Bug-FIELD",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-eb75867994dc983125f7",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-019 Japanese and Chinese fonts",
+          "ok": true,
+          "tags": [
+            "groupC",
+            "visual"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "DSR-555 + cn",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 233,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:47.569Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "DSR-555 + cn",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-08c9a8b8f49f8976a5de",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-021 SP breadcrumb and back control",
+          "ok": true,
+          "tags": [
+            "groupB",
+            "visual"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "DSR-575 Q5 (SP display)",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 281,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:47.831Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "DSR-575 Q5 (SP display)",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-2f695467e5ced0a627b0",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-022 SP parent navigation",
+          "ok": true,
+          "tags": [
+            "groupB",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "DSR-575 Q5 (SP display)",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 257,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:48.139Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "DSR-575 Q5 (SP display)",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-21175a7bb4cbdfb217b4",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-023 narrow SP overflow",
+          "ok": true,
+          "tags": [
+            "groupB",
+            "visual"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "DSR-575 Q5 (SP display)",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 260,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:48.418Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "DSR-575 Q5 (SP display)",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-b7a052792ae9d92a8837",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-029 STG Lighthouse performance",
+          "ok": true,
+          "tags": [
+            "groupC",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "Run on STG (Lighthouse)",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 324,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:48.702Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "Run on STG (Lighthouse)",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-79fa988c00ca104390b3",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-030 movie breadcrumb regression",
+          "ok": true,
+          "tags": [
+            "groupC",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "DSR-536 / movie-detail placement",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 311,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:49.076Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "DSR-536 / movie-detail placement",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-0f7f2cce448d788326d1",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-033 all page types",
+          "ok": true,
+          "tags": [
+            "groupC",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "Layout tickets",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:49.425Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "Layout tickets",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-9d4b13a6c14215fe9e82",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        },
+        {
+          "title": "DSR-BREAD-034 responsive movie back control",
+          "ok": true,
+          "tags": [
+            "groupC",
+            "auto"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "description": "DSR-536 / movie-detail placement",
+                  "location": {
+                    "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                    "line": 139,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 212,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T05:28:49.763Z",
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "description": "DSR-536 / movie-detail placement",
+                      "location": {
+                        "file": "/home/qa/work/automation-test/projects/dsr/tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+                        "line": 139,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "observed",
+                      "contentType": "application/json",
+                      "body": "W10="
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8ce8d177b284e5a13077-eb18dec9d0d73cacfa31",
+          "file": "breadcrumb/DSR-552.breadcrumb.spec.ts",
+          "line": 137,
+          "column": 17
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T05:28:43.324Z",
+    "duration": 6808.063,
+    "expected": 0,
+    "skipped": 12,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
