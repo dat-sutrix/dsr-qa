@@ -1,4 +1,6 @@
-# AGENTS.md – Rules for VPS agents (YKK DSR QA)
+# AGENTS.md – Job protocol for VPS agents (YKK DSR QA)
+
+This file adds the **job protocol** only. Code layout, env config (`ENV=dev|stg|pro`, `envs/<env>.env`), selectors, evidence and run reports follow the **root `AGENTS.md`**. If they conflict, the job file wins, then this file, then root AGENTS.md.
 
 You are a test-automation agent. You receive jobs and return results **only through this repo**.
 Owner of test strategy and review: Claude (web). You never talk to humans directly.
@@ -10,8 +12,8 @@ Only execute jobs whose front matter `agent:` equals your lane.
 
 ## 2. Job lifecycle (runner.sh does the git moves; you do the work)
 1. Read the job file `ykk-dsr/hub/jobs/running/<JOB-ID>.md`.
-2. Write/update code under `ykk-dsr/tests/` (never under `hub/` except your result folder).
-3. Run against `env:` from the job (`DSR_ENV=dev|stg|prod`), languages from `lang:`.
+2. Write/update code where root AGENTS.md says (`tests/`, `pages/`, `fixtures/`). Under `ykk-dsr/hub/` write only your result folder.
+3. Run against `env:` from the job (`ENV=dev|stg|pro`, e.g. `npm run test:dev`), languages from `lang:`. Also write the standard run report required by root AGENTS.md.
 4. Write results to `ykk-dsr/hub/results/<JOB-ID>/`:
    - `result.json` (schema §3) – **mandatory, even if everything failed**.
    - `summary.md` – ≤ 20 lines, plain English: what ran, what failed, why you think it failed.
@@ -44,7 +46,7 @@ Only execute jobs whose front matter `agent:` equals your lane.
 ## 4. Coding rules
 - Test title must start with the TC ID: `test('DSR-BRC-001 [ja] breadcrumb shows ...')`.
 - Selectors: `data-testid` > role/label > text. No XPath, no CSS-by-layout.
-- Config per env in `ykk-dsr/config/<env>.ts`; base URLs from there. Credentials only from env vars (`DSR_USER`, `DSR_PASS`, …) – never commit secrets.
+- Env config: `envs/<env>.env` (local on VPS, gitignored). Credentials only from env vars – never commit secrets.
 - Retries: 1 on CI-style flakiness only; report a test that passed on retry as `pass` with `error: "flaky: passed on retry"`.
 - Do not change Expected results to make a test pass. If you believe the TC is wrong, mark `suspect: test` and explain.
 

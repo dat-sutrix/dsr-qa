@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # YKK DSR job runner – one process per agent lane.
-# Usage (on VPS, from repo root):
-#   nohup bash ykk-dsr/hub/runner.sh claude-code > ~/runner-claude-code.log 2>&1 &
-#   nohup bash ykk-dsr/hub/runner.sh codex       > ~/runner-codex.log 2>&1 &
-# Secrets: put DSR_USER, DSR_PASS, ... in ~/.dsr.env (never in the repo).
+# Usage (on VPS, as user qa, from repo root ~/dsr-qa), one tmux window per lane:
+#   tmux new-window -t dsr -n claude-code 'bash ykk-dsr/hub/runner.sh claude-code 2>&1 | tee -a ~/runner-claude-code.log'
+#   tmux new-window -t dsr -n codex       'bash ykk-dsr/hub/runner.sh codex       2>&1 | tee -a ~/runner-codex.log'
+# Secrets / overrides: ~/.dsr.env (never in the repo). Optional: CLAUDE_BIN, CODEX_BIN = full path of the CLI.
 set -u
 LANE="${1:?lane required: claude-code | codex}"
 POLL=300            # seconds between checks for new jobs
@@ -12,14 +12,30 @@ ROOT="$(git rev-parse --show-toplevel)"; cd "$ROOT"
 HUB="ykk-dsr/hub"
 [ -f ~/.dsr.env ] && set -a && . ~/.dsr.env && set +a
 
+# Non-interactive shells (tmux, cron) often miss user install dirs.
+export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.bun/bin:$HOME/.claude/local:/usr/local/bin:$PATH"
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh" >/dev/null 2>&1
+
 log()  { echo "$(date -u +%FT%TZ) [$LANE] $*"; }
 sync() { for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && return 0; sleep 15; done; log "PUSH FAILED"; return 1; }
 
+case "$LANE" in
+  claude-code) BIN="${CLAUDE_BIN:-$(command -v claude)}" ;;
+  codex)       BIN="${CODEX_BIN:-$(command -v codex)}" ;;
+  *) log "unknown lane"; exit 1 ;;
+esac
+# Preflight: never take a job if the agent CLI is missing.
+if [ -z "$BIN" ] || [ ! -x "$BIN" ]; then
+  log "FATAL: CLI for $LANE not found. Run 'which claude' / 'which codex' as this user, then set CLAUDE_BIN / CODEX_BIN in ~/.dsr.env"
+  exit 2
+fi
+log "using $BIN"
+
 run_agent() {  # $1 = job id
-  local prompt="Read ykk-dsr/hub/AGENTS.md, then execute job ykk-dsr/hub/jobs/running/$1.md exactly as written. Write result files as specified and commit them."
+  local prompt="Read AGENTS.md (repo root) and ykk-dsr/hub/AGENTS.md, then execute job ykk-dsr/hub/jobs/running/$1.md exactly as written. Write result files as specified and commit them."
   case "$LANE" in
-    claude-code) timeout "$JOB_TIMEOUT" claude -p "$prompt" --dangerously-skip-permissions ;;
-    codex)       timeout "$JOB_TIMEOUT" codex exec --full-auto "$prompt" ;;
+    claude-code) timeout "$JOB_TIMEOUT" "$BIN" -p "$prompt" --dangerously-skip-permissions ;;
+    codex)       timeout "$JOB_TIMEOUT" "$BIN" exec --full-auto "$prompt" ;;
   esac
 }
 
@@ -38,10 +54,10 @@ while true; do
   RES="$HUB/results/$ID/result.json"
   if [ ! -f "$RES" ]; then   # agent crashed or timed out without writing a result
     mkdir -p "$HUB/results/$ID"
-    printf '{"job":"%s","agent":"%s","status":"failed","tests":[],"questions":["Runner: agent exited rc=%s without result.json (124 = timeout)"]}\n' "$ID" "$LANE" "$RC" > "$RES"
+    printf '{"job":"%s","agent":"%s","status":"failed","tests":[],"questions":["Runner: agent exited rc=%s without result.json (124 = timeout, 127 = CLI not found)"]}\n' "$ID" "$LANE" "$RC" > "$RES"
   fi
-  git add -A "$HUB/results/$ID" ykk-dsr/tests ykk-dsr/config 2>/dev/null
-  git mv "$HUB/jobs/running/$ID.md" "$HUB/jobs/done/" 2>/dev/null
+  [ -f "$HUB/jobs/running/$ID.md" ] && git mv "$HUB/jobs/running/$ID.md" "$HUB/jobs/done/"
+  git add -A   # .gitignore keeps node_modules, reports and envs out
   git commit -qm "[$LANE] finish $ID rc=$RC" ; sync
   log "finish $ID rc=$RC"
 done

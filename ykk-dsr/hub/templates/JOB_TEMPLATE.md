@@ -3,7 +3,7 @@ id: JOB-YYYYMMDD-NN
 agent: claude-code          # claude-code (functional) | codex (visual + lighthouse)
 us: DSR-NNN
 type: write-and-run         # write-and-run | run-only | visual | lighthouse | retest
-env: dev                    # dev | stg | prod
+env: dev                    # dev | stg | pro
 lang: [ja, en, zh]
 tcs: [DSR-XXX-001, DSR-XXX-002]
 priority: P1                # P1 runs first
