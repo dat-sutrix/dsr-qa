@@ -11,7 +11,7 @@
 | 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | 1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB | 15/10 | upload-pending | 32 TC; TestData trên Drive ✅; TC .xlsx 33 KB > 12 KB → Dat upload `tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）.xlsx` vào folder DSR-356. DSR-619 Done. JOB-20261015-12 hold (chưa có trang test) · Q4–Q9 |
 | 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | upload-pending | adopt 9 TC; TestData trên Drive ✅; TC adopt 128 KB → Dat upload `tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx` vào folder DSR-196; bản dev đổi tên _v20261015_dev. DSR-633 Done. JOB-13/14 queue · Q10–Q11 |
 | 3 | DSR-568 お問い合わせフォーム | DSR-199 | DSR-622 | 3 | adopt | 1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB | 15/10 | upload-pending | adopt 18 TC + QA 19.0; TestData trên Drive ✅; TC adopt 3.2 MB → Dat upload `tc-out/[Sutrix] DSR -199- [レイアウト] お問い合わせフォーム（form）.xlsx` vào folder DSR-199; bản dev đổi tên _v20261015_dev. DSR-622 Done. Không job ([STG] Ready for deploy) · Q12–Q13 |
-| 4 | DSR-560 検索データ生成 | DSR-182 | DSR-621 | 3 | adopt | 1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm | 15/10 | todo | |
+| 4 | DSR-560 検索データ生成 | DSR-182 | DSR-621 | 3 | adopt | 1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm | 15/10 | doing 2026-10-15 19:29 | |
 | 6 | DSR-608 ブース | DSR-172 | DSR-631 | 3 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | todo | cùng file với #7 |
 | 7 | DSR-610 DIGITAL SHOWROOM | DSR-172 | DSR-632 | 2 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | todo | làm chung lần với #6 |
 | 8 | DSR-503 Product URL by product-id | DSR-503 | DSR-620 | 4 | new | — | 16/10 | todo | |
