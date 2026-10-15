@@ -12,6 +12,7 @@
 **[Night Work Pack 2026-10-15](https://docs.google.com/document/d/1ajs0lRCGwk-Pm-oate9X64IcBAxzGwDNkBoDrVVRzfU)** (~3h20, tạo 15:50) · P1 DSR-557 tạo 2 trang · P2 seed 14 CF `qa190-*` · P3 DSR-552 display name T2/T3 · P4 DSR-552 manual 016/013/012/026/024 · P5 DSR-457 #1, #10 · Report: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU) · Evidence: `DSR_NightPack/Evidence_20261015`
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
+Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 ticket, đích sáng T2 19/10) · câu hỏi chờ duyệt: [tc-questions.md](tc-questions.md)
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
