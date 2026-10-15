@@ -1,0 +1,133 @@
+{
+  "attempts": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+      "status": 404
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/top-page",
+      "status": 200
+    }
+  ],
+  "evidence": "evidence/DSR-TOP-001_DEV_02.png",
+  "layoutVerdict": "captured",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/top-page",
+  "title": "TOP-PAGE",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scrollWidth": 390,
+  "bodyScrollWidth": 390,
+  "sectionsInDomOrder": [
+    {
+      "tag": "H1",
+      "role": null,
+      "text": "",
+      "imageAlt": "YKK DIGITAL SHOWROOM",
+      "top": 148
+    },
+    {
+      "tag": "FORM",
+      "role": "search",
+      "text": "製品クイック検索",
+      "imageAlt": "",
+      "top": 306.96875
+    },
+    {
+      "tag": "H2",
+      "role": null,
+      "text": "RECOMMEND CONTENTS",
+      "top": 990.96875
+    },
+    {
+      "tag": "H2",
+      "role": null,
+      "text": "NEWS",
+      "top": 1448.359375
+    }
+  ],
+  "overflowElements": [
+    {
+      "tag": "UL",
+      "id": "",
+      "class": "top-recommend-list",
+      "text": "ファスナー3Dシミュレータサイズや色、スライダーの組み合わせなどを3Dでシミュレーションファスナー3Dシミュレータサイズや色、スライダーの組み合わせなどを3Dでシミュレーションファスナー3Dシミュレータサイズや色、スライダーの組み合わせなどを3Dでシミュレーションファスナー3Dシミュレータサイズや色、スライダーの組み合わせなどを3Dでシミュレーション",
+      "scrollWidth": 1323,
+      "clientWidth": 390,
+      "overflowX": "auto"
+    }
+  ],
+  "textOverflowElements": [],
+  "images": [
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "",
+      "loaded": false
+    },
+    {
+      "src": "",
+      "loaded": false
+    },
+    {
+      "src": "",
+      "loaded": false
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_1906f1f586e665cd64c259f7316c909cafc98e3af.png?width=900&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/top-page/icons/logo-top.svg",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/top-page/icons/search.svg",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_192e51cbe925f5c3fb1076dd38f4778fbcc449f0c.png?width=800&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_1c9306d7674c0b8ee54457c9ac52f817a0d3410ae.png?width=800&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_117fe35dbf013f56649517555c10a4e809c585d79.png?width=750&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_117fe35dbf013f56649517555c10a4e809c585d79.png?width=750&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_117fe35dbf013f56649517555c10a4e809c585d79.png?width=750&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_117fe35dbf013f56649517555c10a4e809c585d79.png?width=750&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/news/year/media_1906f1f586e665cd64c259f7316c909cafc98e3af.png?width=480&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+      "loaded": true
+    },
+    {
+      "src": "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/footer/icons/in.png",
+      "loaded": true
+    }
+  ],
+  "exactText": "製品クイック検索\n製品条件検索\n簡単な条件から製品を絞り込めます。\nDIGITAL SHOWROOMで学ぶ・発見する\n簡単な条件から製品を絞り込めます。\nRECOMMEND CONTENTS\nファスナー3Dシミュレータ\n\nサイズや色、スライダーの組み合わせなどを3Dでシミュレーション\n\nファスナー3Dシミュレータ\n\nサイズや色、スライダーの組み合わせなどを3Dでシミュレーション\n\nファスナー3Dシミュレータ\n\nサイズや色、スライダーの組み合わせなどを3Dでシミュレーション\n\nファスナー3Dシミュレータ\n\nサイズや色、スライダーの組み合わせなどを3Dでシミュレーション\n\nNEWS\nVIEW ALL NEWS\nnews 7 - Update - 1/06/2027 - live - no description\n\nnews 7 - Update - 1/06/2027 - live - no description news 7 - Update - 1/06/2027 - live - no description news 7 - Update - 1/06/2027 - live - no description news 7 - Update - 1/06/2027 - live - no description news 7 - Update - 1/06/2027 - live - no description news 7 - Update - 1/06/2027 - live - no description news 7 - Update - 1/06/2027 - live - no description news 7 - Update - 1/06/2027 - live - no description\n\nnews 9 - No category - No description - No date\nnews 8 - Others - 1/06/2027 - live - no date\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved."
+}
