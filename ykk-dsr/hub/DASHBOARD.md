@@ -1,11 +1,10 @@
 # YKK DSR – QA Dashboard
 
-> Cập nhật: 2026-10-15 15:55 (UTC+7) · Lần kiểm tra kế tiếp: 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
+> Cập nhật: 2026-10-15 14:30 (UTC+7) · Lần kiểm tra kế tiếp: 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
 
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
-| 1 | Restart 2 runner trên VPS (nhận `runner.sh` mới) – **sau khi JOB-20261015-06 và -07 xong** (`jobs/running/` trống) | — | 15/10 trước 17:00 | — | Lane codex, JOB-20261015-05 | Lệnh trong session Điều phối 15/10 13:40 |
 | 2 | Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) (4 câu, mặc định QA áp dụng 20/10) | Quentin (PM) | 17/10 | 557 | 5 TC | "Quentin-san, QA needs 4 answers in DSR-611 to unblock DSR-190 test cases; if no answer by 10/20 QA applies the defaults written in the ticket." |
 | 3 | Đuổi trả lời DSR-457: Ngọc (comment 61011) + Quentin (comment 61015) | Ngoc, Quentin (PM) | 20/10 | 360 | DSR-457 | xem BUGS.md #2, #3 |
 
@@ -14,6 +13,9 @@
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
+
+## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
+Thứ tự: 591 ✅ DEV → 501 → 552 → 557 → 566 → 529 · DEV xanh 17/10 (591, 501, 552) · 20/10 (557, 566) · 22/10 (529) · PRO xong 26/10.
 
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
@@ -30,8 +32,8 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 ## 🤖 Agents
 | Lane | Đang chạy | Hàng đợi | Xong 24h | Job lỗi |
 |---|---|---|---|---|
-| claude-code (functional) | — | 2 (JOB-20261015-06 P1, -07 P2) | 4 | 0 |
-| codex (visual + Lighthouse) | — | 0 · hold: JOB-20261015-05 (chờ restart runner) | 0 | 1 (JOB-20261015-01 rc=2: cờ `--full-auto` không còn ở codex-cli mới → đã sửa runner.sh) |
+| claude-code (functional) | — | 0 | 7 (…-04, -06, -07, -08) | 0 |
+| codex (visual + Lighthouse) | — | 1 (JOB-20261015-05, runner đã restart 14:10) | 0 | 1 (JOB-20261015-01 rc=2: cờ `--full-auto` không còn ở codex-cli mới → đã sửa runner.sh) |
 
 ## ✅ Close gần đây
 - (chưa có)
