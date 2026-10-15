@@ -1,6 +1,6 @@
 # YKK DSR – QA Dashboard
 
-> Cập nhật: 2026-10-15 16:35 (UTC+7) · Lần kiểm tra kế tiếp: 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
+> Cập nhật: 2026-10-15 17:10 (UTC+7) · Lần kiểm tra kế tiếp: sáng 16/10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
 
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
@@ -23,7 +23,7 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 |---|---|---|---|---|---|---|---|---|---|
 | [DSR-552](us/DSR-552.md) | Breadcrumb block | 🟡 | 2/9 | 9/35 ✅ · 7 ❌ · 19 ⛔ (ja 001/005/011/025 ✅ 15/10) | — | — | B3 HOME (top page chưa publish) · seed T2/T3 → QA-PT | 1 | Chốt DSR-591 (Agent · JOB-20261015-08 · 15/10) |
 | [DSR-557](us/DSR-557.md) | 動画・カタログ表示 | 🟡 | 2/9 | 5/25 ✅ · 1 ❌ · 12 ⛔ | — | — | DSR-611 → Quentin · data qa190 → QA-PT | 0 | Rerun 006 (Agent · JOB-20261015-07) · seed data (QA-PT · đêm 15/10) |
-| [DSR-566](us/DSR-566.md) | ニュース詳細 | 🟡 | 2/9 | 0/18 · 3 ⛔ | — | — | list /news/ chưa có (006/008) · cn | 0 | JOB-09/10 (Agent · 15/10 tối) · TD qa566 (QA-PT · 16/10) |
+| [DSR-566](us/DSR-566.md) | ニュース詳細 | 🟡 | 2/9 | 0/18 · 3 ⛔ (JOB-10 xong: 014/015 chờ so Figma + rerun 390px) | — | — | list /news/ chưa có (006/008) · cn | 0 | JOB-09 đang chạy (Agent · 15/10) · TD qa566 (QA-PT · 16/10) |
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🔴 | 0/9 | — | — | — | Chưa có TC | 0 | TC (night job · 15/10, ưu tiên 1) |
 | DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT chạy nốt (15/10) |
 
@@ -33,8 +33,8 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 ## 🤖 Agents
 | Lane | Đang chạy | Hàng đợi | Xong 24h | Job lỗi |
 |---|---|---|---|---|
-| claude-code (functional) | — | 1 (JOB-09 566) + hold JOB-11 (501, chờ QA-PT seed đêm 15/10) | 7 (…-04, -06, -07, -08) | 0 |
-| codex (visual + Lighthouse) | — | 1 (JOB-10 566 visual) | 1 (JOB-05) | 0 |
+| claude-code (functional) | JOB-09 (566, từ 16:12) | 0 + hold JOB-11 (501, chờ QA-PT seed đêm 15/10) | 7 (…-04, -06, -07, -08) | 0 |
+| codex (visual + Lighthouse) | — | 0 | 2 (JOB-05, JOB-10) | 0 |
 
 ## ✅ Close gần đây
 - (chưa có)
