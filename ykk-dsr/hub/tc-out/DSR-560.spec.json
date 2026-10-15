@@ -1,0 +1,72 @@
+{
+  "mode": "adopt",
+  "us": "DSR-560",
+  "folder_id": "182",
+  "us_name": "[AEM] 検索データ生成／検索連携用データ管理",
+  "source_file": "Drive 1cyNJjJtoIjivBVIV4bfV0JBdUOa-wWbG (dev TC, 8 TC, author Hideki Ishitani 2026-10-06, not executed)",
+  "label_fixes": {
+    "A11": "検索データ生成 / Search data generation"
+  },
+  "qa_cols": {
+    "1.0":  ["CF", "Manual", "ja, en, cn", "PC Chrome (Author + JSON in browser)", "TD-560-01", "DSR-560 in dev (70%, waits product CF – Satoshi Tsukiji) · JSON endpoint path unknown (Q14) – Quentin · listing UI DSR-279/354 · cn: no /master/cn (Issue #18)"],
+    "2.0":  ["CF", "Manual", "ja, en, cn", "PC Chrome (Author + JSON in browser)", "TD-560-01", "DSR-560 in dev – Satoshi Tsukiji · Q14 – Quentin · depends on TC 1.0"],
+    "3.0":  ["CF", "Manual", "ja", "PC Chrome (Author + JSON in browser)", "TD-560-02, TD-560-03", "DSR-560 in dev – Satoshi Tsukiji · Q14 – Quentin"],
+    "4.0":  ["Page", "Automation", "ja, en, cn", "PC Chromium (JSON + filter page)", "TD-560-01, TD-560-04", "DSR-560 in dev – Satoshi Tsukiji · Q14 · condition-search page on DEV – Quentin · cn: Issue #18"],
+    "5.0":  ["Page", "Automation", "ja, en", "PC Chromium", "TD-560-01..03", "DSR-560 in dev – Satoshi Tsukiji · listing/condition search on real JSON (DSR-279/354) – Quentin"],
+    "6.0":  ["Page", "Automation", "ja, en", "PC Chromium (network log)", "—", "DSR-560 in dev – Satoshi Tsukiji · listing pages DSR-279/354 on DEV – Quentin"],
+    "7.0":  ["Page", "Automation", "ja, en, cn", "API (Playwright request)", "TD-560-01", "DSR-560 in dev – Satoshi Tsukiji · Q14 – Quentin"],
+    "8.0":  ["Page", "Manual", "ja, en, cn", "PC Chrome + Drive", "—", "DSR-560 in dev – Satoshi Tsukiji · index design doc + locale mapping table not on Drive yet – Quentin"],
+    "9.0":  ["Page", "Automation", "ja, en, cn", "API (Playwright request)", "TD-560-01", "DSR-560 in dev – Satoshi Tsukiji · keyword JSON path unknown (Q14) – Quentin"],
+    "10.0": ["Page", "Automation", "ja, en, cn", "API (Playwright request)", "TD-560-01", "DSR-560 in dev – Satoshi Tsukiji · Q14 – Quentin"]
+  },
+  "added_tcs": [
+    {
+      "id": "9.0",
+      "feature": "Keyword Search JSON (QA added)\nキーワード検索用JSON（別ファイル）",
+      "summary": "EN: Verify a separate keyword-search JSON per language exists and holds the search text of the 17 free-word fields carried over from the current site (incl. description, item-variation notes, Notice, image captions, catalog names).\n\nJP: 言語別のキーワード検索用JSON（一覧用とは別ファイル）が生成され、現行サイトのフリーワード検索対象17項目（商品説明・アイテムバリエーション注記・ご注意・画像キャプション・カタログ名等）の検索テキストを持つことを確認する。",
+      "pre": "EN: TD-560-01 is published in ja/en/zh_cn with a unique word 'qa560kw' in description. Keyword JSON path known (Q14).\n\nJP: TD-560-01 が ja/en/zh_cn で公開済みで、description に一意の語 'qa560kw' が入っていること。キーワード検索用JSONのパスが判明していること（Q14）。",
+      "steps": "EN:\n1. GET the keyword-search JSON for ja, en, zh_cn.\n2. Find the entry of TD-560-01 (by productId).\n3. Search the entry text for 'qa560kw'.\n4. Compare its URL / file name with the list-index JSON of TC 7.0.\n\nJP:\n1. ja / en / zh_cn のキーワード検索用JSONを取得する。\n2. TD-560-01 のエントリ（productId）を探す。\n3. エントリのテキストに 'qa560kw' が含まれるか確認する。\n4. TC 7.0 の一覧用JSONとファイルが別であることを確認する。",
+      "expected": "EN: HTTP 200 for each language. File differs from the list-index JSON. The TD-560-01 entry contains 'qa560kw' (description text). The list-index JSON (TC 7.0) still does not contain 'qa560kw'.\n\nJP: 各言語で HTTP 200。一覧用JSONとは別ファイル。TD-560-01 のエントリに 'qa560kw' が含まれる。一覧用JSON（TC 7.0）には 'qa560kw' が含まれない。",
+      "design": "DSR-182 comment 60435 (#1 keyword search, 17 fields, separate JSON in this ticket)"
+    },
+    {
+      "id": "10.0",
+      "feature": "Index Entry Path & productId Key (QA added)\n索引エントリの path と productId キー",
+      "summary": "EN: Verify every list-index entry has a productId and a path to the product detail page, and productIds are unique within each language file.\n\nJP: 一覧用索引の各エントリが productId と詳細ページの path を持ち、各言語ファイル内で productId が重複しないことを確認する。",
+      "pre": "EN: List-index JSON is generated (TC 7.0).\n\nJP: 一覧用索引JSONが生成されていること（TC 7.0）。",
+      "steps": "EN:\n1. GET the list-index JSON for ja, en, zh_cn (all pages if paginated).\n2. For each entry read productId and path.\n3. Count duplicate productIds and empty paths.\n\nJP:\n1. ja / en / zh_cn の一覧用索引JSONを取得する（ページングがあれば全ページ）。\n2. 各エントリの productId と path を読む。\n3. productId の重複数と path 空欄の数を数える。",
+      "expected": "EN: 100% of entries have non-empty productId and path. 0 duplicate productIds per language. path starts with the language prefix of the file (e.g. /ja/ or /master/ja/).\n\nJP: 全エントリで productId と path が空でない。各言語で productId 重複 0 件。path がファイルの言語プレフィックスで始まる。",
+      "design": "DSR-182 comment 60435 (#5 key = productId, index holds path)"
+    }
+  ],
+  "assumptions": [
+    ["A1", "Adopted dev TC (8 TC, author Hideki Ishitani, 2026-10-06, not executed). Dev content (cols A–O) kept unchanged; QA columns P–U + this sheet added by QA 2026-10-15.", "Drive file _v20261015_dev", "Re-adopt if dev updates the file"],
+    ["A2", "Label fix: section header A11 said 環境配慮型製品一覧 (copied from another TC file) → 検索データ生成 / Search data generation.", "DSR-182", "—"],
+    ["A3", "Baseline BL-v1 = DSR-182 description (scope, 業務 AC 1–4, 技術完了条件 1–6) + PM answers in DSR-182 comments 60435 (2026-10-07) and 60599 (2026-10-09). Where the dev TC conflicts with these answers, the answers win (A4–A8). Two TCs added from the answers: 9.0 keyword JSON, 10.0 path/productId.", "Jira DSR-182", "TC 1.0–10.0"],
+    ["A4", "[Giả định] Index update trigger = publish/unpublish of the product-related CF (DM_product_related) of that language, not only dm_product (comment 60435 #3). TC 1.0/2.0 publish both CFs; if only the related CF triggers, record it.", "DSR-182 c.60435", "TC 1.0, 2.0"],
+    ["A5", "Listing rule for TC 3.0: listed only if the language's product-related CF is published AND isActive ≠ false; isDiscontinued = true → NOT in search (YKK decision 2026-10-09); internalCertifications rule dropped (YKK 9/30 '構築断念') → that step is N/A, not Fail.", "DSR-182 c.60435, c.60599", "TC 3.0"],
+    ["A6", "Tag IDs: namespace site: (e.g. site:product/product-category/zipper/metal), hyphenated node names. dsr: or no-namespace IDs in the JSON = Fail of TC 4.0.", "DSR-182 c.60435 #4", "TC 4.0"],
+    ["A7", "Language CF structure = language copies under /content/dam/common/{lang}/products (no Variations). JSON languages ja / en / zh_cn; page language for cn depends on /master/cn (not on DEV, Issue #18) → cn page checks Blocked, cn JSON checks still run.", "DSR-182 c.60435 #2", "TC 1.0, 2.0, 4.0, 7.0, 9.0"],
+    ["A8", "Product detail URL is not fixed; the index carries path and productId (productCode may be duplicated/empty). TC 10.0 checks presence only, not the URL pattern.", "DSR-182 c.60435 #5", "TC 10.0"],
+    ["A9", "[Giả định] JSON endpoint paths are unknown (dev TC mentions products_ja.json as example). Agent tries /{lang}/products/query-index.json, /{lang}/query-index.json?sheet=products and products_{lang}.json and records which answers 200 until confirmed (Q14).", "Dev TC 6.0", "TC 1.0–10.0"],
+    ["A10", "DSR-560 is In Progress (dev 70%, 2026-10-13; waits for product CF fix 2026-10-14, see DSR-585) → all TCs Blocked-by DSR-560, not Fail. No agent job is queued until DSR-560 reaches [Dev] In Testing.", "DSR-560 comments", "All"],
+    ["A11", "TC 1.0/2.0/3.0 need Author publish/unpublish of QA-seeded CFs (qa560-*) – Manual by QA-PT on DEV only; never publish/unpublish real product CFs. Unpublish qa560-* after the run so they do not stay in DEV listings.", "Read-only rule, Night pack", "TC 1.0–3.0"],
+    ["A12", "TC 1.0 'S2S OAuth, no 24h dev token' cannot be seen from outside; QA accepts dev evidence (config screenshot or log) + index still updates > 24 h after the last deploy.", "DSR-182 技術 1", "TC 1.0"]
+  ],
+  "testdata": [
+    ["TD-560-01", "1.0, 2.0, 4.0, 5.0, 7.0, 9.0, 10.0", "CF dm_product + DM_product_related", "/content/dam/common/{ja|en|zh_cn}/products/qa560-a (+ related CF of same name)", "productName / productCode / description / tags (productCategories, applications) / searchKeywords / sortOrder / related: isActive", "QA560 製品A / QA560-A / 'QA560 説明 qa560kw' / 1 existing site:product/product-category tag + 1 site:product/application tag / qa560kw-a / 9999 / isActive = true", "QA560 Product A / QA560-A / 'QA560 description qa560kw' / same tags / qa560kw-a / 9999 / true", "QA560 产品A / QA560-A / 'QA560 说明 qa560kw' / same tags / qa560kw-a / 9999 / true", "Yes (both CFs, each language)"],
+    ["TD-560-02", "3.0, 5.0", "CF dm_product + DM_product_related", "/content/dam/common/ja/products/qa560-b", "productName / productCode / related: isActive", "QA560 製品B 非掲載 / QA560-B / isActive = false", "—", "—", "Yes"],
+    ["TD-560-03", "3.0, 5.0", "CF dm_product + DM_product_related", "/content/dam/common/ja/products/qa560-c", "productName / productCode / isDiscontinued / related: isActive", "QA560 製品C 販売終了 / QA560-C / isDiscontinued = true / isActive = true", "—", "—", "Yes"],
+    ["TD-560-04", "4.0", "Existing AEM tag (do not create)", "Tools → Tagging → site:product/...", "A tag that has a ja title but NO en title", "Write its tag ID in the Night Report Note", "(missing on purpose)", "—", "No"]
+  ],
+  "howto": [
+    ["0", "Do this only after DSR-560 is in [Dev] In Testing (check DASHBOARD). Before that: skip TD-560 entirely.", "DSR-560 not in testing → write 'skipped: DSR-560 not ready' in Note."],
+    ["1", "AEM Author DEV → Assets → Files → /content/dam/common/ja/products. Create → Content Fragment → model dm_product → name qa560-a. Fill fields per Data sheet. Save.", "Folder missing → Note 'products folder missing', stop TD-560. Model dm_product not offered → Note, stop TD-560."],
+    ["2", "Same folder: Create → Content Fragment → model DM_product_related → name qa560-a-related, link it to qa560-a, set isActive = true. Save.", "Model DM_product_related missing → Note 'related CF model missing' (TC 1.0–3.0 Blocked), continue with step 4."],
+    ["3", "Repeat steps 1–2 in /content/dam/common/en/products and /content/dam/common/zh_cn/products (language copies) with the en / zh values.", "Language folder missing → Note which one, continue."],
+    ["4", "Create qa560-b (isActive = false) and qa560-c (isDiscontinued = true) in ja only, each with its related CF.", "—"],
+    ["5", "Publish all qa560-* CFs (select → Quick Publish). Write the publish time (HH:MM) in Note – the agent checks the JSON afterwards.", "Publish button disabled → screenshot, Note 'no publish permission', stop."],
+    ["6", "Tools → General → Tagging → site:product: find one tag with a ja title and no en title. Write its tag ID in Note (TD-560-04). Do not create or edit tags.", "None found → Note 'all tags translated' (TC 4.0 fallback part becomes N/A)."],
+    ["7", "After TC 2.0 is done: unpublish all qa560-* CFs (Manage Publication → Unpublish).", "—"]
+  ]
+}
