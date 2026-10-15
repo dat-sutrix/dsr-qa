@@ -8,7 +8,7 @@
 | # | US (Jira) | Epic / Folder ID | Sub-task | SP | Mode | Drive folder (sẵn có) | Đêm dự kiến | Status | Note |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | DSR-566 ニュース詳細 | DSR-357 | DSR-618 | 8 | new | — | 15/10 | done | Test page: /master/en/test-space/dsr-357-news-detail · related DSR-567 |
-| 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | — | 15/10 | todo | test steps: Martin comment 2026-09-25 · related DSR-531 |
+| 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | — | 15/10 | doing 2026-10-15 18:17 | test steps: Martin comment 2026-09-25 · related DSR-531 |
 | 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | todo | |
 | 3 | DSR-568 お問い合わせフォーム | DSR-199 | DSR-622 | 3 | adopt | 1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB | 15/10 | todo | file 2.8MB – chỉ thêm cột, có thể upload-pending |
 | 4 | DSR-560 検索データ生成 | DSR-182 | DSR-621 | 3 | adopt | 1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm | 15/10 | todo | |
