@@ -18,7 +18,7 @@
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
 Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 ticket, đích sáng T2 19/10) · câu hỏi chờ duyệt: [tc-questions.md](tc-questions.md)
-**Night TC job (15/10 21:25):** done 1/17 · upload-pending 7 (529, 609, 568, 560, 608, 610, 503) · câu hỏi chờ duyệt 21 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14) · 🔔 Dat upload 7 TC xlsx từ tc-out/ (503 vào folder mới 1VDMF3FnDBxgafEqJQPkuuEzZUHb6skVg)
+**Night TC job (15/10 21:30):** done 1/17 · upload-pending 8 (529, 609, 568, 560, 608, 610, 503, 583) · câu hỏi chờ duyệt 22 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14) · 🔔 Dat upload 8 TC xlsx từ tc-out/ (503, 583 vào folder mới tạo) · còn 8 ticket / 48 SP
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
