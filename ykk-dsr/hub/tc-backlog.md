@@ -9,7 +9,7 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | DSR-566 ニュース詳細 | DSR-357 | DSR-618 | 8 | new | — | 15/10 | done | Test page: /master/en/test-space/dsr-357-news-detail · related DSR-567 |
 | 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | 1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB | 15/10 | upload-pending | 32 TC; TestData trên Drive ✅; TC .xlsx 33 KB > 12 KB → Dat upload `tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）.xlsx` vào folder DSR-356. DSR-619 Done. JOB-20261015-12 hold (chưa có trang test) · Q4–Q9 |
-| 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | todo | |
+| 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | doing 2026-10-15 18:25 | |
 | 3 | DSR-568 お問い合わせフォーム | DSR-199 | DSR-622 | 3 | adopt | 1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB | 15/10 | todo | file 2.8MB – chỉ thêm cột, có thể upload-pending |
 | 4 | DSR-560 検索データ生成 | DSR-182 | DSR-621 | 3 | adopt | 1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm | 15/10 | todo | |
 | 6 | DSR-608 ブース | DSR-172 | DSR-631 | 3 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | todo | cùng file với #7 |
