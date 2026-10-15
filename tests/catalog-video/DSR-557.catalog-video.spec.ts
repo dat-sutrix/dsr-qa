@@ -1,7 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
 import { VideoPlayerPage } from '../../pages/VideoPlayerPage';
-import { viewports, languages, type Language, catalogPath, videoPath, youtubeVideos, embedDomains, expectedLabel, today, type CatalogItem } from '../../fixtures/dsr-557';
+import { viewports, languages, type Language, catalogPath, videoPath, youtubeVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, type CatalogItem } from '../../fixtures/dsr-557';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -140,16 +140,20 @@ for (const lang of languages) {
     }
 
     test('DSR-CATV-006 no YouTube/Youku request before interaction', { tag: ['@auto'] }, async ({ page }) => {
+      // DSR-109 facade: thumbnail allowed (QA decision 2026-10-15)
       const requests: string[] = [];
       page.on('request', r => { if (embedDomains.test(r.url())) requests.push(r.url()); });
       const video = await openVideo(page, lang, youtubeVideos[0].id);
       await page.waitForLoadState('networkidle');
       const before = [...requests]; const iframes = await video.iframeSrcs();
+      const playerBefore = before.filter(u => playerRequests.test(u));
       await video.facade.click();
       await expect(video.embed).toBeAttached();
-      observations.push({ url: page.url(), requestsBeforeInteraction: before, iframesBefore: iframes, iframeAfterClick: await video.embed.getAttribute('src'), requestsAfterClick: requests.length - before.length });
-      expect.soft(iframes.filter(s => embedDomains.test(s))).toEqual([]);
-      expect(before).toEqual([]);
+      const src = await video.embed.getAttribute('src');
+      observations.push({ url: page.url(), requestsBeforeInteraction: before, playerRequestsBefore: playerBefore, thumbnailsBefore: before.filter(u => facadeThumbnails.test(u)), iframesBefore: iframes, iframeAfterClick: src, requestsAfterClick: requests.slice(before.length) });
+      expect.soft(iframes, 'iframes before interaction').toEqual([]);
+      expect.soft(playerBefore, 'embed/player requests before interaction').toEqual([]);
+      expect(src ?? '', 'iframe src after click').toMatch(embedSrc);
     });
   });
 }

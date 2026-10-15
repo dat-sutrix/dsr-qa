@@ -1,0 +1,19 @@
+{
+  "job": "JOB-20261015-07",
+  "agent": "claude-code",
+  "us": "DSR-557",
+  "env": "dev",
+  "started": "2026-10-15T06:21:36Z",
+  "finished": "2026-10-15T06:24:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-CATV-006", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-557.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "results/DSR-557/DEV/automation-run-20261015-job07.md"
+  ],
+  "questions": []
+}

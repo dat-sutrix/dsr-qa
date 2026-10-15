@@ -11,6 +11,10 @@ export const youtubeVideos = [
   { id: 'long', movieSourceId: 'https://youtu.be/LQe4d3ulijQ?si=MNlaiWwf__LURE6w', youtubeId: 'LQe4d3ulijQ' },
 ];
 export const embedDomains = /^https?:\/\/([^/]+\.)?(youtube\.com|youtube-nocookie\.com|youtu\.be|ytimg\.com|youku\.com|ykimg\.com)(\/|$)/;
+// DSR-109 facade: thumbnail allowed (QA decision 2026-10-15). Only embed/player requests are forbidden before interaction.
+export const playerRequests = /^https?:\/\/(([^/]+\.)?youtube\.com\/embed(\/|\?|$)|([^/]+\.)?youtube-nocookie\.com(\/|$)|www\.youtube\.com\/(s\/|iframe_api|player)|player\.youku\.com(\/|$)|[^/]+\.ytimg\.com\/yts\/)/;
+export const facadeThumbnails = /^https?:\/\/(img\.youtube\.com|i\.ytimg\.com)\//;
+export const embedSrc = /^https:\/\/(www\.)?youtube(-nocookie)?\.com\/embed\//;
 export const labelDays = 10;
 
 export interface CatalogItem {
