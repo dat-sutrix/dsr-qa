@@ -1,0 +1,46 @@
+{
+  "job": "JOB-20261015-02",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-15T05:53:15Z",
+  "finished": "2026-10-15T05:55:56Z",
+  "status": "done",
+  "pre": {
+    "checked": "2026-10-15T05:53:15Z",
+    "a": { "url": "/master/en/test-space", "http_status": 404, "title": "Page not found", "og_title": "Page not found",
+           "note": "x-error: failed to load /master/en/test-space.md from content-bus: 404" },
+    "b": { "url": "/query-index.json", "rows": 118, "/master/en/test-space": { "present": false } },
+    "verdict_rule": "a != 200 -> en blocked, suspect data",
+    "home": { "/master/ja": 404, "/master/en": 404 }
+  },
+  "tests": [
+    { "tc": "DSR-BREAD-001", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-005", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-011", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-002", "lang": "ja", "result": "pass",
+      "error": "QA Child, QA Parent, test space: href ok, HTTP 200, same tab. HOME reported separately.", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-002-HOME", "lang": "ja", "result": "blocked",
+      "error": "HOME href /master/ja correct, same tab, but HTTP 404 (known data gap).", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-001", "lang": "en", "result": "blocked",
+      "error": "Trail HOME > QA Parent > QA Child; test-space missing. PRE a: /master/en/test-space HTTP 404 (not published).",
+      "evidence": "evidence/DSR-BREAD-001_en.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-005", "lang": "en", "result": "blocked",
+      "error": "Trail HOME > QA Parent > QA Child > QA Grandchild (4 items); test-space missing. PRE a: /master/en/test-space HTTP 404.",
+      "evidence": "evidence/DSR-BREAD-005_en.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-011", "lang": "en", "result": "blocked",
+      "error": "4 shown items equal page titles, none empty or slug; test-space item absent (page 404, no title).",
+      "evidence": "evidence/DSR-BREAD-011_en.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-002", "lang": "en", "result": "blocked",
+      "error": "QA Child, QA Parent: href ok, HTTP 200, same tab. test-space link missing (page 404).",
+      "evidence": "evidence/DSR-BREAD-002_en.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-002-HOME", "lang": "en", "result": "blocked",
+      "error": "HOME href /master/en correct, same tab, but HTTP 404 (known data gap).", "evidence": "", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/breadcrumb/DSR-552.breadcrumb-retest-DSR-591.spec.ts",
+    "results/DSR-552/DEV/automation-run-20261015-job02.md"
+  ],
+  "questions": []
+}
