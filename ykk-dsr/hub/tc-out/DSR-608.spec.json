@@ -1,0 +1,123 @@
+{
+  "mode": "adopt",
+  "us": "DSR-608 + DSR-610",
+  "folder_id": "172",
+  "us_name": "[レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）",
+  "source_file": "Drive 169xvTop40TohrNbnF1ojr1O9iA0-FjaM (dev TC, 2 sheets: DIGITAL SHOWROOM 8 TC = DSR-610, ブース 12 TC = DSR-608; author Hideki Ishitani 2026-10-09, not executed)",
+  "sheets": [
+    {
+      "sheet": 0,
+      "label_fixes": {
+        "A11": "DIGITAL SHOWROOM（展示・体験） / DSR-610",
+        "D12": ["/digital_showroom/", "/{lang}/digital-showroom"],
+        "E19": ["/ja/digital_showroom/", "/ja/digital-showroom"]
+      },
+      "qa_cols": {
+        "1.0":  ["Page", "Automation", "ja, en, cn", "PC Chromium 1440 + SP 390 (emulated)", "TD-610-01", "Bird's-eye CG pending from YKK (DS-04) – judged on placeholder · cn: no /master/cn (Issue #18) · page path Q16 – Quentin"],
+        "2.0":  ["Page", "Automation", "ja, en, cn", "PC Chromium", "TD-610-01", "cn: Issue #18 · mapping table for exact target = TC 10.0"],
+        "3.0":  ["CF", "Manual", "ja", "PC Chrome (Universal Editor + publish)", "TD-610-03", "QA copy page qa610-showroom must be created by QA-PT (never edit the real page)"],
+        "4.0":  ["Page", "Automation", "ja, en", "PC Chromium (network log)", "TD-610-01", "DM URL pattern Q19 – Quentin · final CG (DS-04) – YKK via Quentin; replace step covered by TC 7.0"],
+        "5.0":  ["Page", "Automation", "ja, en", "PC Chromium (keyboard only)", "TD-610-01", "—"],
+        "6.0":  ["Page", "Automation", "ja, en", "PC Chromium (DOM + axe-core)", "TD-610-01", "a11y scope DS-04 to be fixed in detailed design – Quentin"],
+        "7.0":  ["CF", "Manual", "ja", "PC Chrome (Universal Editor + publish)", "TD-610-03", "QA copy page qa610-showroom (TD-610-03)"],
+        "8.0":  ["Page", "Automation", "ja, en, cn", "PC Chromium + SP 390 (emulated)", "TD-610-01", "STG deploy – Sprint 12 tests DEV only (run same spec on DEV now, STG later) · cn: Issue #18"],
+        "9.0":  ["Page", "Visual (Playwright VPS)", "ja, en", "PC Chromium 1440 + SP 390", "TD-610-01", "Title redesign (9/30 meeting) – re-check latest frame – Quentin · bird's-eye placeholder (DS-04)"],
+        "10.0": ["Page", "Automation", "ja, en, cn", "PC Chromium", "TD-610-01, TD-610-02", "Area → booth URL table not on Drive (TCC#5, Q17) – Quentin · cn: Issue #18"]
+      },
+      "added_tcs": [
+        {
+          "id": "9.0",
+          "feature": "[SHOWROOM] Layout vs Figma B02 (QA added)\nPC/SP レイアウト（Figma B02）",
+          "summary": "EN: Verify the DIGITAL SHOWROOM page layout on PC and SP matches Figma B02 (Showroom_TOP PC 5897-81386 / Showroom_SP 5897-81730), judged with the placeholder bird's-eye image.\n\nJP: DIGITAL SHOWROOM ページの PC / SP レイアウトが Figma B02（Showroom_TOP PC 5897-81386 / SP 5897-81730）どおりであることを、鳥瞰図の仮画像で確認する。",
+          "pre": "EN: TD-610-01 published. Latest Figma frame after the title redesign confirmed.\n\nJP: TD-610-01 が公開済み。タイトル再デザイン後の最新 Figma フレームを確認済みであること。",
+          "steps": "EN:\n1. Open /{lang}/digital-showroom at 1440 px and 390 px width.\n2. Take full-page screenshots.\n3. Compare with Figma PC / SP frames (title, lead, map, floor headings, card grid, spacing).\n\nJP:\n1. /{lang}/digital-showroom を幅 1440px / 390px で開く。\n2. フルページのスクリーンショットを取得する。\n3. Figma PC / SP フレームと比較する（タイトル・リード・全体図・フロア見出し・カード配置・余白）。",
+          "expected": "EN: No horizontal scroll at 390 px. Element order and grid (cards per row) match Figma PC / SP. Differences only in the placeholder image or texts are recorded, not failed.\n\nJP: 390px で横スクロールが発生しない。要素の順序とカード配置（1行あたりのカード数）が Figma PC / SP と一致する。仮画像・文言のみの差異は記録のみで Fail としない。",
+          "design": "DSR-172 TCC#1, BAC#6 · Figma 5897-81386 / 5897-81730"
+        },
+        {
+          "id": "10.0",
+          "feature": "[SHOWROOM] Area → Booth Mapping Table (QA added)\nエリア→ブースURL対応表との一致",
+          "summary": "EN: Verify every area card links to the booth URL defined in the area → booth URL table shared on Drive.\n\nJP: 全エリアカードのリンク先が、Drive 共有のエリア→ブースURL対応表と一致することを確認する。",
+          "pre": "EN: TD-610-01 published. Area → booth URL table (TD-610-02) is on Drive.\n\nJP: TD-610-01 が公開済み。エリア→ブースURL対応表（TD-610-02）が Drive にあること。",
+          "steps": "EN:\n1. Collect href of every area card (per language).\n2. Compare with the mapping table row by row.\n3. GET each href.\n\nJP:\n1. 各言語で全エリアカードの href を取得する。\n2. 対応表と1行ずつ照合する。\n3. 各 href に GET する。",
+          "expected": "EN: Number of cards = number of table rows. Each href equals the table URL for that area (language prefix applied). Each target returns HTTP 200.\n\nJP: カード数＝対応表の行数。各 href が対応表の URL（言語プレフィックス付き）と一致し、遷移先が HTTP 200 を返す。",
+          "design": "DSR-172 TCC#5, BAC#3"
+        }
+      ]
+    },
+    {
+      "sheet": 1,
+      "label_fixes": {
+        "A11": "ブース / Booth / DSR-608"
+      },
+      "qa_cols": {
+        "1.0":  ["Page", "Automation", "ja, en, cn", "PC Chromium", "TD-608-01", "Product list filter depends on listing DSR-170 (out of scope) – record URL + query only · cn: Issue #18"],
+        "2.0":  ["Page", "Automation", "ja, en", "PC Chromium", "TD-608-01", "Needs ≥ 2 sibling booths published under the same parent (TD-608-01)"],
+        "3.0":  ["Page", "Automation", "ja, en", "PC Chromium + SP 390 (emulated)", "TD-608-01, TD-608-02", "1-image case needs QA copy page qa608-booth-1img (TD-608-02)"],
+        "4.0":  ["Page", "Automation", "ja, en", "PC Chromium", "TD-608-01", "Video component itself is DSR-190 (out of scope) – check embed + 1 video only"],
+        "5.0":  ["Page", "Automation", "ja, en", "PC Chromium", "TD-608-04", "Needs ≥ 2 ITEM for pages in the booth"],
+        "6.0":  ["Page", "Automation", "ja, en", "PC Chromium", "TD-608-03", "1-product case needs QA copy page qa608-item-1prod (TD-608-03)"],
+        "7.0":  ["Page", "Automation", "ja, en", "PC Chromium + SP 390 (emulated)", "TD-608-04", "—"],
+        "8.0":  ["Page", "Automation", "ja, en", "PC Chromium (network log)", "TD-608-04", "Index source for related contents (DSR-182/560 search data) – Satoshi Tsukiji"],
+        "9.0":  ["Page", "Automation", "ja, en", "PC Chromium", "TD-608-01", "CTA modal content under YKK review (dep #3, Q18) – Quentin · verdict on open/close only"],
+        "10.0": ["CF", "Manual", "ja", "PC Chrome (Universal Editor + publish)", "TD-608-02, TD-608-03", "QA copy pages only (never edit real booth pages)"],
+        "11.0": ["Page", "Automation", "ja, en, cn", "PC Chromium + SP 390 (emulated)", "TD-608-01, TD-608-04", "STG deploy – Sprint 12 tests DEV only (run same spec on DEV now) · cn: Issue #18"],
+        "12.0": ["Page", "Automation", "ja, en", "PC Chromium (keyboard only + axe-core)", "TD-608-01, TD-608-04", "a11y scope DS-04 – Quentin"],
+        "13.0": ["Page", "Visual (Playwright VPS)", "ja, en", "PC Chromium 1440 + SP 390", "TD-608-01, TD-608-04", "Button fix pending in Figma C02 (9/30) – Quentin"],
+        "14.0": ["Page", "Automation", "ja, en, cn", "PC Chromium + SP 390 (emulated)", "TD-608-01", "cn: Issue #18"]
+      },
+      "added_tcs": [
+        {
+          "id": "13.0",
+          "feature": "[Booth] Layout vs Figma C02 (QA added)\nPC/SP レイアウト（Figma C02）",
+          "summary": "EN: Verify Booth TOP and ITEM for layouts on PC and SP match Figma C02 (TOP PC 3324-64205 / SP 3324-64850; ITEM PC 4545-87679, PC switching 4545-87815, SP 4545-88315).\n\nJP: ブースTOP・ITEM for の PC / SP レイアウトが Figma C02（TOP PC 3324-64205 / SP 3324-64850、ITEM PC 4545-87679・切替 4545-87815・SP 4545-88315）どおりであることを確認する。",
+          "pre": "EN: TD-608-01 and TD-608-04 published.\n\nJP: TD-608-01・TD-608-04 が公開済みであること。",
+          "steps": "EN:\n1. Open Booth TOP and ITEM for at 1440 px and 390 px.\n2. Take full-page screenshots.\n3. Compare with the Figma frames (MV, category name, pills, buttons, video area, product block, related contents).\n\nJP:\n1. ブースTOP・ITEM for を幅 1440px / 390px で開く。\n2. フルページのスクリーンショットを取得する。\n3. Figma フレームと比較する（MV・カテゴリ名・Pills・ボタン・動画エリア・製品ブロック・関連コンテンツ）。",
+          "expected": "EN: No horizontal scroll at 390 px. Section order and alignment match Figma PC / SP. Text/image differences from authored content are recorded, not failed.\n\nJP: 390px で横スクロールが発生しない。セクションの順序・配置が Figma PC / SP と一致する。オーサリング内容による文言・画像差異は記録のみ。",
+          "design": "DSR-172 TCC#1, BAC#6 · Figma C02"
+        },
+        {
+          "id": "14.0",
+          "feature": "[Booth TOP] Background Image & Category Name (QA added)\nブースTOP 背景画像・カテゴリ名表示",
+          "summary": "EN: Verify Booth TOP shows the authored background image and category name.\n\nJP: ブースTOP にオーサリングした背景画像とカテゴリ名が表示されることを確認する。",
+          "pre": "EN: TD-608-01 published (background image + category name authored).\n\nJP: TD-608-01 が公開済み（背景画像・カテゴリ名が設定済み）。",
+          "steps": "EN:\n1. Open Booth TOP (PC 1440 px, SP 390 px).\n2. Read the category name heading text.\n3. Check the background image request and rendered size.\n\nJP:\n1. ブースTOP を開く（PC 1440px / SP 390px）。\n2. カテゴリ名見出しのテキストを取得する。\n3. 背景画像のリクエストと描画サイズを確認する。",
+          "expected": "EN: Category name heading is visible and equals the authored text for the language. Background image returns HTTP 200 and renders with width > 0 on PC and SP. No console error.\n\nJP: カテゴリ名見出しが表示され、言語ごとのオーサリング文言と一致する。背景画像が HTTP 200 で、PC / SP とも幅 > 0 で描画される。コンソールエラーなし。",
+          "design": "DSR-172 BAC#1"
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    ["A1", "Adopted dev TC (2 sheets, author Hideki Ishitani, 2026-10-09, not executed). Sheet 'DIGITAL SHOWROOM' = DSR-610 (8 TC), sheet 'ブース' = DSR-608 (12 TC). Dev content (cols A–O) kept; QA columns P–U + this sheet added by QA 2026-10-15. TC IDs are per sheet (1.0… restart on each sheet); refer as 610-n.0 / 608-n.0.", "Drive file _v20261015_dev", "Re-adopt if dev updates the file"],
+    ["A2", "Label fix: section header A11 on both sheets said 環境配慮型製品一覧 (copied from another TC file) → DIGITAL SHOWROOM / ブース.", "DSR-172", "—"],
+    ["A3", "[Giả định] DEV page path = /{lang}/digital-showroom (hyphen, as in DSR-608/610 description links), not /digital_showroom/ (dev TC). Dev TC D12 / E19 corrected. Booth pages: /{lang}/product/application/fashion/fashion (TOP) and …/item01 (ITEM for). Whether /master/{lang}/ prefix applies is asked in Q16.", "DSR-608/610 description", "Agent preflight 404 → blocked-data, not Fail"],
+    ["A4", "Bird's-eye CG is a placeholder until YKK delivers it (DS-04, October). TCs 610-1.0/4.0/9.0 are judged on the placeholder; the final asset swap is a separate check (DSR-172 TCC#1).", "DSR-172 dep #1", "Re-run 610-4.0 + 9.0 after asset swap"],
+    ["A5", "[Giả định] Dynamic Media delivery = image URL host/path contains '/is/image/' or 'adobeaemcloud.com/adobe/dynamicmedia/deliver' (Q19). Anything else (e.g. ./media_ hash from EDS) is recorded and flagged, verdict Pending.", "DSR-172 TCC#3", "610-4.0 verdict"],
+    ["A6", "[Giả định] Until the area → booth URL table is on Drive (TCC#5, Q17), 610-2.0 passes when the click lands on the card href with HTTP 200; exact mapping is only judged in 610-10.0.", "DSR-172 TCC#5", "610-10.0 Blocked"],
+    ["A7", "[Giả định] Booth CTA modal content is under YKK review (dep #3, Q18): 608-9.0 judges open / close (button, ×, backdrop, Esc) only; modal texts are recorded.", "DSR-172 dep #3", "608-9.0 partial"],
+    ["A8", "'Products' button target list filter belongs to listing DSR-170 (out of scope): 608-1.0 records URL + query params; Pass if target returns 200 and the query carries the booth tag.", "DSR-172 out of scope", "—"],
+    ["A9", "Related video component itself is DSR-190 (out of scope): 608-4.0 checks exactly 1 YouTube embed (iframe src youtube.com / youtube-nocookie.com) and that it loads; playback quality not judged.", "DSR-172 out of scope", "—"],
+    ["A10", "Sprint 12 = DEV only. 610-8.0 / 608-11.0 are written for STG URLs (TCC#6); the same automation runs on DEV now, STG result stays To do.", "Night TC job rule", "—"],
+    ["A11", "cn: no /master/cn on DEV (Issue #18) → cn rows Blocked, not Fail.", "Issue #18", "—"],
+    ["A12", "Authoring TCs (610-3.0, 610-7.0, 608-10.0) run only on QA copy pages created per TestData (qa610-*, qa608-*). Real booth / showroom pages are never edited. Jira status DSR-608/610 = To Do on 2026-10-15 → no agent job yet; DEV pages not preflighted by QA (cloud sandbox has no network to DEV).", "AGENTS.md read-only rule", "—"]
+  ],
+  "testdata": [
+    ["TD-610-01", "610-1.0, 2.0, 4.0, 5.0, 6.0, 8.0, 9.0, 10.0", "page DIGITAL SHOWROOM (existing, read-only)", "/{lang}/digital-showroom (DEV .aem.live; Author: Sites → dsr → {lang} → digital-showroom)", "title / lead / bird's-eye image / floors B1–B6 / area cards (image, title, text, link)", "existing ja content", "existing en content", "— (Issue #18)", "Already published – do not edit"],
+    ["TD-610-02", "610-10.0", "Drive sheet: area → booth URL table", "Drive folder DSR-172 (expected from dev, TCC#5)", "area name / floor / booth URL per language", "from dev", "from dev", "from dev", "—"],
+    ["TD-610-03", "610-3.0, 7.0", "page copy of DIGITAL SHOWROOM", "/{lang}/test-space/qa610-showroom (copy of digital-showroom)", "floor 'B9 QA' with 0 cards · 1 card without image · 1 card without link · title 'QA610 タイトル' · lead 'QA610 リード' · map image = any other DAM image", "QA610 values above", "—", "—", "Yes (ja only)"],
+    ["TD-608-01", "608-1.0, 2.0, 3.0, 4.0, 9.0, 11.0, 12.0, 13.0, 14.0", "page Booth TOP (existing, read-only)", "/{lang}/product/application/fashion/fashion + sibling booths under /{lang}/product/application/fashion/", "background image / category name / MV images (≥ 2) / Products button / ITEM for buttons / pills / YouTube URL / CTA", "existing", "existing", "— (Issue #18)", "Already published – do not edit"],
+    ["TD-608-02", "608-3.0, 10.0", "page copy of Booth TOP", "/{lang}/test-space/qa608-booth-1img", "MV: exactly 1 image · category name 'QA608 ブース' · body text 'QA608 本文'", "QA608 values above", "—", "—", "Yes (ja only)"],
+    ["TD-608-03", "608-6.0, 10.0", "page copy of ITEM for", "/{lang}/test-space/qa608-item-1prod", "products: exactly 1 (name 'QA608 製品', Item Code 'QA608-01', text 'QA608 説明', CTA = any existing product URL)", "QA608 values above", "—", "—", "Yes (ja only)"],
+    ["TD-608-04", "608-5.0, 7.0, 8.0, 11.0, 12.0, 13.0", "page ITEM for (existing, read-only)", "/{lang}/product/application/fashion/fashion/item01 (+ ≥ 1 other ITEM for in the same booth)", "≥ 2 products with thumbnails / back link / pills / tags application + performance / related contents", "existing", "existing", "— (Issue #18)", "Already published – do not edit"]
+  ],
+  "howto": [
+    ["0", "Only for TD-610-03 / TD-608-02 / TD-608-03. Never edit digital-showroom or booth pages under /product/. Check DASHBOARD: if DSR-608/610 are still To Do and the real pages are not published on DEV, skip and write 'skipped: page not ready'.", "Real page missing on .aem.live → Note, stop."],
+    ["1", "AEM Author DEV → Sites → dsr → ja → digital-showroom → Copy → paste into ja/test-space → rename to qa610-showroom.", "Copy not allowed → Note 'no copy permission', go to step 4."],
+    ["2", "Open qa610-showroom in Universal Editor. Add floor heading 'B9 QA' with no cards. On one existing card remove the image; on another remove the link. Change title to 'QA610 タイトル', lead to 'QA610 リード'.", "UE shows '(フロア見出し未入力)' for an empty heading → screenshot it (needed for 610-3.0)."],
+    ["3", "Publish qa610-showroom. Open DEV .aem.live /ja/test-space/qa610-showroom.", "Page 404 after 5 min → Note 'publish failed', continue."],
+    ["4", "Sites → ja → product/application/fashion/fashion → Copy into ja/test-space → rename qa608-booth-1img. In UE, delete MV images until exactly 1 remains. Category name 'QA608 ブース'. Publish.", "MV image cannot be removed below 2 → Note 'min 2 images', 608-3.0 single-image case Blocked."],
+    ["5", "Copy …/fashion/item01 into ja/test-space → rename qa608-item-1prod. In UE remove products until exactly 1 remains; set values per Data sheet. Publish.", "Related products disappear on copy (tag not copied) → expected, ignore for 608-6.0."],
+    ["6", "Write paths + publish time of all created pages into the report Note.", "—"]
+  ]
+}

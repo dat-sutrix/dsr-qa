@@ -12,8 +12,8 @@
 | 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | upload-pending | adopt 9 TC; TestData trên Drive ✅; TC adopt 128 KB → Dat upload `tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx` vào folder DSR-196; bản dev đổi tên _v20261015_dev. DSR-633 Done. JOB-13/14 queue · Q10–Q11 |
 | 3 | DSR-568 お問い合わせフォーム | DSR-199 | DSR-622 | 3 | adopt | 1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB | 15/10 | upload-pending | adopt 18 TC + QA 19.0; TestData trên Drive ✅; TC adopt 3.2 MB → Dat upload `tc-out/[Sutrix] DSR -199- [レイアウト] お問い合わせフォーム（form）.xlsx` vào folder DSR-199; bản dev đổi tên _v20261015_dev. DSR-622 Done. Không job ([STG] Ready for deploy) · Q12–Q13 |
 | 4 | DSR-560 検索データ生成 | DSR-182 | DSR-621 | 3 | adopt | 1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm | 15/10 | upload-pending | adopt 8 TC + QA 9.0/10.0; TestData trên Drive ✅; TC adopt 131 KB → Dat upload `tc-out/[Sutrix] DSR -182- [AEM] 検索データ生成／検索連携用データ管理.xlsx` vào folder DSR-182; bản dev đổi tên _v20261015_dev. DSR-621 Done. Không job (DSR-560 In Progress, all ⛔) · Q14–Q15 |
-| 6 | DSR-608 ブース | DSR-172 | DSR-631 | 3 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | doing 2026-10-15 20:20 | cùng file với #7 |
-| 7 | DSR-610 DIGITAL SHOWROOM | DSR-172 | DSR-632 | 2 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | doing 2026-10-15 20:20 | làm chung lần với #6 |
+| 6 | DSR-608 ブース | DSR-172 | DSR-631 | 3 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | upload-pending | adopt chung file DSR-172: sheet ブース 12 TC + QA 13.0/14.0; TestData trên Drive ✅; TC adopt 256 KB → Dat upload `tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx` vào folder DSR-172; bản dev đổi tên _v20261015_dev. DSR-631 Done. Không job (DSR-608 To Do) · Q16–Q19 |
+| 7 | DSR-610 DIGITAL SHOWROOM | DSR-172 | DSR-632 | 2 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | upload-pending | cùng file với #6: sheet DIGITAL SHOWROOM 8 TC + QA 9.0/10.0. DSR-632 Done. Không job (DSR-610 To Do) · Q16–Q17, Q19 |
 | 8 | DSR-503 Product URL by product-id | DSR-503 | DSR-620 | 4 | new | — | 16/10 | todo | |
 | 9 | DSR-583 製品一覧 SP 2列 | (parent) | DSR-624 | 2 | new | — | 16/10 | todo | |
 | 10 | DSR-607/570 資料ダウンロード | DSR-192 | DSR-623 | 8 | new | — | 17/10 | todo | related DSR-571; nhận catalog ID từ DSR-190 |
@@ -32,3 +32,4 @@
 | 2026-10-15 18:25 | DSR-609 | upload-pending (adopt 9 TC, TD trên Drive) · DSR-633 Done · JOB-13 + JOB-14 queue · Q10–Q11 | ~12' |
 | 2026-10-15 19:35 | DSR-568 | upload-pending (adopt 18+1 TC, TD trên Drive) · DSR-622 Done · no job · Q12–Q13 | ~13' |
 | 2026-10-15 19:40 | DSR-560 | upload-pending (adopt 8+2 TC, TD trên Drive) · DSR-621 Done · no job · Q14–Q15 | ~11' |
+| 2026-10-15 20:20 | DSR-608 + DSR-610 | upload-pending (adopt 12+2 / 8+2 TC, 1 file 2 sheet, TD trên Drive) · DSR-631/632 Done · no job (To Do) · Q16–Q19 | ~17' |

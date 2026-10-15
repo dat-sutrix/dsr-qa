@@ -5,6 +5,7 @@
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
+| 8 | Upload TC DSR-608+610 adopt (256 KB, 1 file 2 sheet) từ repo `hub/tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx` → [Drive DSR-172](https://drive.google.com/drive/folders/1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E) | — | 16/10 | 608, 610 | DoD TC file | — |
 | 7 | Upload TC DSR-560 adopt (131 KB) từ repo `hub/tc-out/[Sutrix] DSR -182- [AEM] 検索データ生成／検索連携用データ管理.xlsx` → [Drive DSR-182](https://drive.google.com/drive/folders/1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm) | — | 16/10 | 560 | DoD TC file | — |
 | 6 | Upload TC DSR-568 adopt (3.2 MB) từ repo `hub/tc-out/[Sutrix] DSR -199- [レイアウト] お問い合わせフォーム（form）.xlsx` → [Drive DSR-199](https://drive.google.com/drive/folders/1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB) | — | 16/10 | 568 | DoD TC file | — |
 | 5 | Upload TC DSR-609 adopt (128 KB) từ repo `hub/tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx` → [Drive DSR-196](https://drive.google.com/drive/folders/1NC_m_XPhuxewPyTyhj411uKW71lmq-vy) | — | 16/10 | 609 | DoD TC file | — |
@@ -17,7 +18,7 @@
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
 Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 ticket, đích sáng T2 19/10) · câu hỏi chờ duyệt: [tc-questions.md](tc-questions.md)
-**Night TC job (15/10 19:40):** done 1/17 · upload-pending 4 (529, 609, 568, 560) · câu hỏi chờ duyệt 15 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14)
+**Night TC job (15/10 20:40):** done 1/17 · upload-pending 6 (529, 609, 568, 560, 608, 610) · câu hỏi chờ duyệt 19 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14)
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
