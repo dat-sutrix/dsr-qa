@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # YKK DSR job runner – one process per agent lane.
-# Usage (on VPS, as user qa, from repo root ~/dsr-qa), one tmux window per lane:
-#   tmux new-window -t dsr -n claude-code 'bash ykk-dsr/hub/runner.sh claude-code 2>&1 | tee -a ~/runner-claude-code.log'
-#   tmux new-window -t dsr -n codex       'bash ykk-dsr/hub/runner.sh codex       2>&1 | tee -a ~/runner-codex.log'
+# ONE CLONE PER LANE (two runners in one clone corrupt each other's git state):
+#   ~/dsr-qa        -> claude-code
+#   ~/dsr-qa-codex  -> codex
+# Usage (on VPS, as user qa), one tmux window per lane:
+#   tmux new-window -t dsr -n claude-code -c ~/dsr-qa       'bash ykk-dsr/hub/runner.sh claude-code 2>&1 | tee -a ~/runner-claude-code.log'
+#   tmux new-window -t dsr -n codex       -c ~/dsr-qa-codex 'bash ykk-dsr/hub/runner.sh codex       2>&1 | tee -a ~/runner-codex.log'
 # Secrets / overrides: ~/.dsr.env (never in the repo). Optional: CLAUDE_BIN, CODEX_BIN = full path of the CLI.
 set -u
 LANE="${1:?lane required: claude-code | codex}"
@@ -17,7 +20,15 @@ export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.bun/bin:$HOME/.claude
 [ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh" >/dev/null 2>&1
 
 log()  { echo "$(date -u +%FT%TZ) [$LANE] $*"; }
-sync() { for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && return 0; sleep 15; done; log "PUSH FAILED"; return 1; }
+pull() { git pull --rebase -q origin main; }
+sync() { for i in 1 2 3 4 5; do pull && git push -q origin HEAD:main && return 0; sleep 15; done; log "PUSH FAILED"; return 1; }
+
+# One runner per clone.
+exec 9>"$(git rev-parse --git-dir)/dsr-runner.lock"
+if ! flock -n 9; then
+  log "FATAL: another runner already uses this clone ($ROOT). Use a separate clone per lane, e.g. ~/dsr-qa-codex for codex."
+  exit 3
+fi
 
 case "$LANE" in
   claude-code) BIN="${CLAUDE_BIN:-$(command -v claude)}" ;;
@@ -41,7 +52,7 @@ run_agent() {  # $1 = job id
 
 log "runner started"
 while true; do
-  git pull --rebase -q || { log "pull failed"; sleep 60; continue; }
+  pull || { log "pull failed"; sleep 60; continue; }
   JOB="$(grep -l "^agent: $LANE\$" "$HUB"/jobs/queue/*.md 2>/dev/null | sort | head -1)"
   if [ -z "$JOB" ]; then sleep "$POLL"; continue; fi
 
