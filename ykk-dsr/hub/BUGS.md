@@ -1,26 +1,20 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-15 15:05 (UTC+7) · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
+> Cập nhật: 2026-10-15 13:30 (UTC+7) · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
 |---|---|---|---|---|---|
-| 1 | DSR-591 | `/master/en/test-space` **vẫn 404 trên DEV publish** (agent check 12:53, header `content-bus: 404`). Mở thẳng URL https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space – nếu 404: publish lại từ Universal Editor (nút Publish góc phải trên), chờ 2–3 phút, mở lại → 200 thì báo Claude requeue | Dat | — | 16/10 |
+| 1 | DSR-591 | JOB-20261015-08 (chặn query-index.json → trail còn đủ 5 item?) → pass thì Claude comment "QA confirm DEV" + close | Agent claude-code → Claude | — | 15/10 |
 | 2 | DSR-457 | Nhắc Ngọc trả lời comment 61011 (fix 3, 7, 13 · check 6 · R1) | Dat | Ngoc | 16/10 |
 | 3 | DSR-457 | Đuổi Quentin trả lời comment 61015 (webp, form gate catalog) – mặc định áp dụng nếu không trả lời trước 20/10 | Dat | Quentin (PM) | 20/10 |
-| 4 | DSR-613 | Đuổi Quentin trả lời: HOME breadcrumb mở trang nào (`/master/{lang}` 404 vs TOP `/ja/top-page`) | Dat | Quentin (PM) | 20/10 |
-| 5 | DSR-457 | Regression item 1, 10 – Night Pack 15/10 | QA part-time | — | 16/10 sáng |
+| 4 | DSR-457 | Regression item 1, 10 – Night Pack 15/10 | QA part-time | — | 16/10 sáng |
 
 ## Bug đang mở
 | Jira | US | Tiêu đề | Sev | Trạng thái Jira | Assignee | Retest ở | Kết quả retest gần nhất | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|
 | [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) | Major | [Dev] In Testing | Hoang Minh Ngoc (giao lại 15/10) | DEV | 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 1, 10 | Ngoc trả lời 61011 · Quentin trả lời 61015 |
-| [DSR-591](https://sutrix.atlassian.net/browse/DSR-591) | DSR-552 | Breadcrumb skips published ancestors missing from query-index.json | Major | [Dev] In Testing | Dat Tran | DEV | 15/10 JOB-20261015-02: ja PASS (001, 002, 005, 011); en ⛔ vì `/master/en/test-space` vẫn 404 → chưa kết luận | Dat publish lại page → Claude requeue |
-
-### Question liên quan
-| Jira | US | Câu hỏi | Gán | Mặc định nếu không trả lời (20/10) | Chặn |
-|---|---|---|---|---|---|
-| [DSR-613](https://sutrix.atlassian.net/browse/DSR-613) | DSR-552 | HOME link `/master/{lang}` trả 404 – HOME nên mở trang nào? (TOP page DSR-609 đang ở `/ja/top-page`) | Milavec Quentin | Giữ `/master/{lang}`, yêu cầu publish top page | Bước HOME của BREAD-002, 004, 008, 017 |
+| [DSR-591](https://sutrix.atlassian.net/browse/DSR-591) | DSR-552 | Breadcrumb skips published ancestors missing from query-index.json | Major | [Dev] In Testing | Dat Tran | DEV | 15/10 JOB-20261015-06: ja + en PASS 8/8 (005, 011, 001, 025). Nhưng `/master/en/test-space` giờ đã có trong index → chưa chứng minh được fix; không tạo lại được trang published mà chưa index | JOB-20261015-08 kiểm tra ở mức code/network · 15/10 |
 
 Sev: Critical / Major / Minor / Trivial. Retest ở: DEV / STG / PRO.
 
@@ -31,4 +25,5 @@ Sev: Critical / Major / Minor / Trivial. Retest ở: DEV / STG / PRO.
 ## Đã đóng (30 ngày gần nhất)
 | Jira | US | Tiêu đề | Đóng ngày | Verified ở |
 |---|---|---|---|---|
+| [DSR-613](https://sutrix.atlassian.net/browse/DSR-613) | DSR-552 | Question: HOME link /master/{lang} 404 | 2026-10-15 (Done – rút lại, không cần PM; HOME 404 = thiếu data top page) | — |
 | [DSR-592](https://sutrix.atlassian.net/browse/DSR-592) | DSR-552 | Breadcrumb display name field missing | 2026-10-15 (Dismissed – not bug: field ở Universal Editor → Properties → ページ基本) | DEV Author (Dat) |
