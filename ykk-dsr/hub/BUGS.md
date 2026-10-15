@@ -5,7 +5,6 @@
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
 |---|---|---|---|---|---|
-| [DSR-592](https://sutrix.atlassian.net/browse/DSR-592) | DSR-552 | Breadcrumb display name field missing | 2026-10-15 (Dismissed – not bug: field ở Universal Editor → Properties → ページ基本) | DEV Author (Dat) |
 | 1 | DSR-591 | `/master/en/test-space` **vẫn 404 trên DEV publish** (agent check 12:53, header `content-bus: 404`). Mở thẳng URL https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space – nếu 404: publish lại từ Universal Editor (nút Publish góc phải trên), chờ 2–3 phút, mở lại → 200 thì báo Claude requeue | Dat | — | 16/10 |
 | 2 | DSR-457 | Nhắc Ngọc trả lời comment 61011 (fix 3, 7, 13 · check 6 · R1) | Dat | Ngoc | 16/10 |
 | 3 | DSR-457 | Đuổi Quentin trả lời comment 61015 (webp, form gate catalog) – mặc định áp dụng nếu không trả lời trước 20/10 | Dat | Quentin (PM) | 20/10 |
@@ -32,3 +31,4 @@ Sev: Critical / Major / Minor / Trivial. Retest ở: DEV / STG / PRO.
 ## Đã đóng (30 ngày gần nhất)
 | Jira | US | Tiêu đề | Đóng ngày | Verified ở |
 |---|---|---|---|---|
+| [DSR-592](https://sutrix.atlassian.net/browse/DSR-592) | DSR-552 | Breadcrumb display name field missing | 2026-10-15 (Dismissed – not bug: field ở Universal Editor → Properties → ページ基本) | DEV Author (Dat) |
