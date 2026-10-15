@@ -1,6 +1,6 @@
 # YKK DSR – QA Dashboard
 
-> Cập nhật: 2026-10-15 13:40 (UTC+7) · Lần kiểm tra kế tiếp: 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
+> Cập nhật: 2026-10-15 15:55 (UTC+7) · Lần kiểm tra kế tiếp: 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
 
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
@@ -10,7 +10,10 @@
 | 3 | Đuổi trả lời DSR-457: Ngọc (comment 61011) + Quentin (comment 61015) | Ngoc, Quentin (PM) | 20/10 | 360 | DSR-457 | xem BUGS.md #2, #3 |
 
 ## 🌙 QA part-time đêm nay
-Folder [`DSR_NightPack/`](https://drive.google.com/drive/folders/1QECbSzn_zdCUxyuqZrgRtxWkMuq2qnON) · Report: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU). Pack đêm nay tự tạo lúc 17:10 (ưu tiên: 1) DSR-557: tạo page en catalog + ja video (copy) và seed CF `qa190-*` theo sheet How-to-create; 2) seed display name T2/T3 cho DSR-552; 3) DSR-457 phần còn thiếu). PDF mẫu: `qa190-catalog-sample.pdf` trong folder.
+**[Night Work Pack 2026-10-15](https://docs.google.com/document/d/1ajs0lRCGwk-Pm-oate9X64IcBAxzGwDNkBoDrVVRzfU)** (~3h20, tạo 15:50) · P1 DSR-557 tạo 2 trang · P2 seed 14 CF `qa190-*` · P3 DSR-552 display name T2/T3 · P4 DSR-552 manual 016/013/012/026/024 · P5 DSR-457 #1, #10 · Report: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU) · Evidence: `DSR_NightPack/Evidence_20261015`
+
+## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
+19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
