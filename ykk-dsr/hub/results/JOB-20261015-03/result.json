@@ -1,0 +1,34 @@
+{
+  "job": "JOB-20261015-03",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-15T05:57:48Z",
+  "finished": "2026-10-15T05:58:30Z",
+  "status": "done",
+  "pre_index": {
+    "checked": "2026-10-15T05:57:48Z",
+    "class": "C",
+    "url": "/master/en/test-space",
+    "http_status": 404,
+    "note": "x-error: failed to load /master/en/test-space.md from content-bus: 404; trailing-slash, /index, .plain.html variants also 404",
+    "query_index": { "rows": 118, "path": "/master/en/test-space", "present": false },
+    "home": { "/master/ja": 404, "/master/en": 404 }
+  },
+  "dsr_591_fixed": "not provable (class C)",
+  "tests": [
+    { "tc": "DSR-BREAD-005", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-011", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-001", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-025", "lang": "ja", "result": "pass",
+      "error": "flaky: passed on retry. Attempt 1: JSON-LD BreadcrumbList not yet present (spec:103); main spec has no settle wait.",
+      "evidence": "", "suspect": "test" },
+    { "tc": "DSR-BREAD-005", "lang": "en", "result": "blocked", "error": "Not run: PRE-INDEX class C, /master/en/test-space HTTP 404 (not published).", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-011", "lang": "en", "result": "blocked", "error": "Not run: PRE-INDEX class C, /master/en/test-space HTTP 404 (not published).", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-001", "lang": "en", "result": "blocked", "error": "Not run: PRE-INDEX class C, /master/en/test-space HTTP 404 (not published).", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-025", "lang": "en", "result": "blocked", "error": "Not run: PRE-INDEX class C, /master/en/test-space HTTP 404 (not published).", "evidence": "", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["results/DSR-552/DEV/automation-run-20261015-job03.md"],
+  "questions": []
+}
