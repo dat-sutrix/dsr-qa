@@ -17,5 +17,19 @@
 
 Kết luận: đủ quyền cho Night TC job. Không cần Dat can thiệp.
 
-## Dry-run 2026-10-15T08:09Z (15:09 Asia/Saigon)
-- (a) git push: pending
+## Dry-run 2026-10-15T08:09Z (15:09 Asia/Saigon) – manual fire
+
+| Bước | Kết quả | Ghi chú |
+|---|---|---|
+| a git commit + push | OK | 53d7558 |
+| b1 Drive search_files | OK | |
+| b2 Drive create_file `permcheck-2026-10-15T08:09Z.txt` | OK | ID 1i1oenejN8rewDBZyGsxwORf9R8hutGzn |
+| c1 Jira read DSR-618 | OK | To Do, duedate 2026-10-16 |
+| c2 Jira transitions | OK | 11 Start, 91 Dismissed |
+| c3 Jira edit duedate | OK | giữ 2026-10-16 |
+| d Figma whoami | OK | dev3.figma |
+| e list_triggers | OK | trig_013uTjYksLNpDdHY3C9jedun enabled, next 18:05 |
+| f build_tc.py | OK | exit 0, 2 file .xlsx |
+| g PushNotification | OK | |
+
+Kết luận: 10/10 OK.
