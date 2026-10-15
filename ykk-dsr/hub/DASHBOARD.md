@@ -33,7 +33,7 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 ## 🤖 Agents
 | Lane | Đang chạy | Hàng đợi | Xong 24h | Job lỗi |
 |---|---|---|---|---|
-| claude-code (functional) | — | 1 (JOB-09 566) + hold JOB-11 (501, chờ Dat seed) | 7 (…-04, -06, -07, -08) | 0 |
+| claude-code (functional) | — | 1 (JOB-09 566) + hold JOB-11 (501, chờ QA-PT seed đêm 15/10) | 7 (…-04, -06, -07, -08) | 0 |
 | codex (visual + Lighthouse) | — | 1 (JOB-10 566 visual) | 1 (JOB-05) | 0 |
 
 ## ✅ Close gần đây
