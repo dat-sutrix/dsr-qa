@@ -46,7 +46,8 @@ run_agent() {  # $1 = job id
   local prompt="Read AGENTS.md (repo root) and ykk-dsr/hub/AGENTS.md, then execute job ykk-dsr/hub/jobs/running/$1.md exactly as written. Write result files as specified and commit them."
   case "$LANE" in
     claude-code) timeout "$JOB_TIMEOUT" "$BIN" -p "$prompt" --dangerously-skip-permissions ;;
-    codex)       timeout "$JOB_TIMEOUT" "$BIN" exec --full-auto "$prompt" ;;
+    # codex-cli >= 0.16x removed --full-auto (rc=2 "unexpected argument"). VPS is dedicated to QA, so bypass is OK.
+    codex)       timeout "$JOB_TIMEOUT" "$BIN" exec --dangerously-bypass-approvals-and-sandbox --skip-git-repo-check "$prompt" </dev/null ;;
   esac
 }
 
@@ -60,12 +61,14 @@ while true; do
   git mv "$JOB" "$HUB/jobs/running/" && git commit -qm "[$LANE] start $ID" && sync
   log "start $ID"
 
-  run_agent "$ID"; RC=$?
+  AGLOG="$HOME/agent-$LANE-$ID.log"
+  run_agent "$ID" >"$AGLOG" 2>&1; RC=$?
 
   RES="$HUB/results/$ID/result.json"
   if [ ! -f "$RES" ]; then   # agent crashed or timed out without writing a result
     mkdir -p "$HUB/results/$ID"
-    printf '{"job":"%s","agent":"%s","status":"failed","tests":[],"questions":["Runner: agent exited rc=%s without result.json (124 = timeout, 127 = CLI not found)"]}\n' "$ID" "$LANE" "$RC" > "$RES"
+    TAIL="$(tail -n 15 "$AGLOG" 2>/dev/null | tr -d '\000-\010\013\014\016-\037' | sed 's/\\/\\\\/g; s/"/\\"/g' | tr '\n' '|' | cut -c1-1500)"
+    printf '{"job":"%s","agent":"%s","status":"failed","tests":[],"questions":["Runner: agent exited rc=%s without result.json (124 = timeout, 127 = CLI not found, 2 = CLI usage error)"],"agent_log_tail":"%s"}\n' "$ID" "$LANE" "$RC" "$TAIL" > "$RES"
   fi
   [ -f "$HUB/jobs/running/$ID.md" ] && git mv "$HUB/jobs/running/$ID.md" "$HUB/jobs/done/"
   git add -A   # .gitignore keeps node_modules, reports and envs out
