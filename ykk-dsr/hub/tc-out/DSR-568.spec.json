@@ -1,0 +1,70 @@
+{
+  "mode": "adopt",
+  "us": "DSR-568",
+  "folder_id": "199",
+  "us_name": "[レイアウト] お問い合わせフォーム（form）",
+  "source_file": "Drive 1OMKfECtVwE4z0H1L4-HvdP1frGqqEoBb (dev TC, 18 TC, executed DEV 2026-10-13 by Mayuka Chiba)",
+  "label_fixes": {
+    "A11": "お問い合わせフォーム / Contact form",
+    "C25": ["ja.hafarms.net", "ja.hsforms.net"]
+  },
+  "qa_cols": {
+    "1.0":  ["Page", "Manual", "ja", "PC Chrome ≥1280 + SP 375", "TD-568-01, TD-568-04", "— (real submission to YKK prod HubSpot: QA-PT only, Sutrix data rules, max 1 PC + 1 SP)"],
+    "2.0":  ["Page", "Manual", "ja", "—", "TD-568-01", "Sutrix has no HubSpot UI access – LOWP/YKK (out of scope per DSR-568; record submissionGuid only)"],
+    "3.0":  ["Page", "Manual", "ja", "Mail client", "TD-568-01", "—"],
+    "4.0":  ["Page", "Manual", "ja", "PC Chrome + SP 375", "TD-568-04", "—"],
+    "5.0":  ["Page", "Automation", "ja", "PC Chromium", "TD-568-03, TD-568-04", "—"],
+    "6.0":  ["Page", "Visual (Playwright VPS)", "ja", "PC 1440 Chromium", "TD-568-04", "—"],
+    "7.0":  ["Page", "Visual (Playwright VPS)", "ja", "SP 375 Chromium", "TD-568-04", "—"],
+    "8.0":  ["Page", "Automation", "ja", "PC Chromium", "TD-568-04", "—"],
+    "9.0":  ["Page", "Automation", "ja", "PC Chromium", "TD-568-04", "Colour codes not yet delivered to LOWP/HubSpot – Quentin (out of scope per DSR-568)"],
+    "10.0": ["Page", "Visual (Playwright VPS)", "ja", "PC 1440 + SP 375 Chromium", "TD-568-04", "—"],
+    "11.0": ["Page", "Automation", "ja", "PC Chromium (fresh context)", "TD-568-02, TD-568-04", "—"],
+    "12.0": ["Page", "Manual", "ja", "PC Chrome (same browser as TC 1.0)", "TD-568-01, TD-568-02", "Depends on TC 1.0 (known-visitor cookie)"],
+    "13.0": ["Page", "Automation", "ja", "PC Chromium", "TD-568-04", "—"],
+    "14.0": ["Page", "Automation", "ja", "PC Chromium", "TD-568-04", "—"],
+    "15.0": ["Page", "Manual", "ja", "—", "—", "No HubSpot access + EX-08 owned by LOWP/YKK – Quentin (out of scope per DSR-568)"],
+    "16.0": ["Page", "Manual", "en", "PC Chrome", "TD-568-01", "EN form not delivered by LOWP – Quentin (out of scope per DSR-568)"],
+    "17.0": ["Page", "Manual", "cn", "PC Chrome", "TD-568-01", "CN form not delivered by LOWP – Quentin; no /master/cn on DEV (Issue #18)"],
+    "18.0": ["Page", "Automation", "ja", "PC Chromium", "TD-568-04", "—"],
+    "19.0": ["CF", "Manual", "ja", "PC Chrome (Author UE)", "TD-568-04", "—"]
+  },
+  "added_tcs": [
+    {
+      "id": "19.0",
+      "feature": "[Author] HubSpot Form block properties (QA added)\nHubSpot Formブロックのプロパティ",
+      "summary": "EN: Verify the HubSpot Form block in Universal Editor has the properties Form ID / Portal ID / Region and Form ID holds the Japanese form GUID.\n\nJP: Universal EditorでHubSpot Formブロックのプロパティに Form ID / Portal ID / Region の3項目があり、Form IDに日本語フォームのGUIDが入っていることを確認する。",
+      "pre": "EN: QA account can open the test page dsr-199-contact-test in AEM DEV Author (Universal Editor). Do not save or publish any change.\n\nJP: AEM DEV AuthorでテストページをUniversal Editorで開けること。変更の保存・公開はしないこと。",
+      "steps": "EN:\n1. Open https://author-p192812-e2014374.adobeaemcloud.com/content/sites/digital-showroom/ja/dsr-199-contact-test.html in Universal Editor.\n2. Select the HubSpot Form block.\n3. Open the Properties panel and read every field.\n4. Close without saving.\n\nJP:\n1. 編集画面（Universal Editor）でテストページを開く。\n2. HubSpot Formブロックを選択する。\n3. プロパティパネルの各項目を確認する。\n4. 保存せずに閉じる。",
+      "expected": "EN: Exactly 3 properties: Form ID, Portal ID, Region. Form ID = f6353a32-9754-4f38-86b2-1ff2ddf8c111. Portal ID = 19496050 (or empty = default). Region shown (default value).\n\nJP: プロパティは Form ID / Portal ID / Region の3項目。Form ID = f6353a32-9754-4f38-86b2-1ff2ddf8c111。Portal ID = 19496050（空欄の場合は既定値）。Regionが表示される。",
+      "design": "DSR-568 check 8 · DSR-199 技術完了条件 1"
+    }
+  ],
+  "assumptions": [
+    ["A1", "Adopted dev TC (18 TC, created 2026-10-05, executed DEV 2026-10-13 by Mayuka Chiba: 13 Pass, 5 N/A). Dev content (cols A–O, status, evidence images) kept unchanged; QA columns P–U + this sheet added by QA 2026-10-15.", "Drive file _v20261015_dev, DSR-568 comment 60704", "Re-adopt if dev updates the file"],
+    ["A2", "Label fixes: section header A11 said 環境配慮型製品一覧 (copied from another TC file) → お問い合わせフォーム / Contact form. TC 14.0 summary typo ja.hafarms.net → ja.hsforms.net.", "DSR-199; TC 13.0 already writes hsforms.net", "—"],
+    ["A3", "Baseline BL-v1 = DSR-568 test procedure (checks 1–8, known behaviour, out-of-scope list) + parent DSR-199 AC (業務 1–4, 技術 1–2). Ticket check 8 (authoring properties) was missing in the dev file → added as TC 19.0 (QA added).", "Jira DSR-568, DSR-199", "TC 19.0"],
+    ["A4", "Sprint 12 = DEV only. Test page = https://dev-eds.ykkdigitalshowroom.com/ja/dsr-199-contact-test (custom domain of DEV publish). Agent runs use the .aem.live base URL https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/dsr-199-contact-test only if the same page answers 200 there; otherwise use the dev-eds URL.", "DSR-568 description, AGENTS.md envs", "Automation TCs"],
+    ["A5", "Read-only rule: automation never presses 「お問い合わせに進む」 (a valid submission goes to YKK production HubSpot). TC 5.0 is automated by typing an invalid email and blurring the field (HubSpot validates on blur), not by submitting. TC 1.0, 3.0, 4.0, 12.0 are Manual (QA-PT), following the Sutrix test-data rules (name + company contain 'Sutrix', own sutrixsolutions.com address, max 1 PC + 1 SP submission).", "DSR-568 test data rules, AGENTS.md read-only", "If blur does not trigger the error, TC 5.0 becomes Manual"],
+    ["A6", "Submit button label on DEV is 「お問い合わせに進む」 (dev steps say 送信). Expected redirect after submit = https://ykkdigitalshowroom.com/jp/?submissionGuid=… (temporary thank-you page).", "DSR-568 check 5, known behaviour", "TC 1.0"],
+    ["A7", "Known behaviour, not a bug: red asterisk instead of 必須/任意 badge; HubSpot default error text; button width not configurable; reCAPTCHA may appear; free-mail accepted; ?company= does not pre-fill; known-visitor cookie pre-fills previous values (use a private window for TC 4.0/5.0/11.0).", "DSR-568 known behaviour", "TC 4.0, 8.0, 10.0, 11.0"],
+    ["A8", "TC 11.0 parameters used: lastname, firstname, email (company excluded – HubSpot internal name differs).", "DSR-568 check 7", "TC 11.0"],
+    ["A9", "SP Figma node: dev TC 7.0 says 3586-29360, DSR-568 says 3386-29360. [Giả định] QA compares with 3386-29360 (ticket) until confirmed – Q12.", "DSR-568 vs dev TC", "TC 7.0"],
+    ["A10", "Watch point from dev run: on SP the form heading 問い合わせフォーム wraps one character (問い合わせフォー／ム). Visual TC 7.0 records it; verdict per Figma C11 SP.", "DSR-568 comment 60704", "TC 7.0"],
+    ["A11", "TC 2.0, 9.0, 15.0, 16.0, 17.0 are out of scope for DSR-568 (dev marked N/A) → Blocked-by with owner, not Fail. TC 2.0/15.0: QA only records submission time + submissionGuid for LOWP/YKK.", "DSR-568 'Not checked this time'", "—"],
+    ["A12", "DSR-568 Jira status is [STG] Ready for deploy (not [Dev] In Testing) → no agent job queued by the night TC job; DEV automation is scheduled by the coordinator session.", "Night TC job rule 2b", "—"]
+  ],
+  "testdata": [
+    ["TD-568-01", "1.0, 2.0, 3.0, 12.0, 16.0, 17.0", "HubSpot form input (submission)", "Test page (TD-568-04)", "姓 / 名 / 会社名 / Eメール / other required fields", "姓 = Sutrix, 名 = テスト, 会社名 = Sutrix テスト, Eメール = own @sutrixsolutions.com address, other required = any non-personal value (e.g. 'QA test')", "(EN form not delivered)", "(CN form not delivered)", "No (nothing to publish)"],
+    ["TD-568-02", "11.0, 12.0", "URL query string", "Test page (TD-568-04)", "?lastname=&firstname=&email=", "?lastname=Sutrix&firstname=テスト&email=qa568@sutrixsolutions.com (12.0: firstname=NameB)", "—", "—", "No"],
+    ["TD-568-03", "5.0", "Invalid e-mail values", "Test page (TD-568-04)", "Eメール", "test@example | abc | testuser@ | @example.com", "—", "—", "No"],
+    ["TD-568-04", "all", "Existing page (dev seeded)", "/content/sites/digital-showroom/ja/dsr-199-contact-test", "HubSpot Form block: Portal 19496050, Form ID f6353a32-9754-4f38-86b2-1ff2ddf8c111", "Already exists – do not edit", "—", "—", "Already published"]
+  ],
+  "howto": [
+    ["0", "No content to create in AEM. TD-568-04 already exists (dev). Never edit, save or publish it.", "Page returns 404 on https://dev-eds.ykkdigitalshowroom.com/ja/dsr-199-contact-test → write 'test page missing' in Note, mark all TCs Blocked, stop."],
+    ["1", "Open a private (incognito) window for every TC except 12.0, so HubSpot cookies do not pre-fill old values.", "Fields already filled when page opens → close window, open a new private window."],
+    ["2", "Submission TCs (1.0, then 3.0): enter TD-568-01 values. Name and company MUST contain 'Sutrix'. Use your own sutrixsolutions.com address. Submit at most once on PC and once on SP. Record submit time, redirect URL (with submissionGuid) and mail arrival time.", "reCAPTCHA appears → solve it. Redirect not to ykkdigitalshowroom.com/jp/ → screenshot + URL, Fail TC 1.0, do not resubmit."],
+    ["3", "TC 12.0: in the SAME (non-private) browser used for TC 1.0, open the page with ?firstname=NameB (TD-568-02).", "TC 1.0 was done in a private window → submission cookie lost: mark 12.0 Not run, Note 'no known-visitor cookie' (do not submit again)."],
+    ["4", "Evidence name: DSR-568_<TC>_<PC|SP>_<NN>.png in DSR_NightPack/Evidence_<YYYYMMDD>.", "—"]
+  ]
+}

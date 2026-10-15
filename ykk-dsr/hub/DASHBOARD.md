@@ -5,6 +5,7 @@
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
+| 6 | Upload TC DSR-568 adopt (3.2 MB) từ repo `hub/tc-out/[Sutrix] DSR -199- [レイアウト] お問い合わせフォーム（form）.xlsx` → [Drive DSR-199](https://drive.google.com/drive/folders/1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB) | — | 16/10 | 568 | DoD TC file | — |
 | 5 | Upload TC DSR-609 adopt (128 KB) từ repo `hub/tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx` → [Drive DSR-196](https://drive.google.com/drive/folders/1NC_m_XPhuxewPyTyhj411uKW71lmq-vy) | — | 16/10 | 609 | DoD TC file | — |
 | 4 | Upload TC DSR-529 (33 KB) từ repo `hub/tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）.xlsx` → [Drive DSR-356](https://drive.google.com/drive/folders/1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB) | — | 16/10 | 529 | DoD TC file | — |
 | 2 | Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) (4 câu, mặc định QA áp dụng 20/10) | Quentin (PM) | 17/10 | 557 | 5 TC | "Quentin-san, QA needs 4 answers in DSR-611 to unblock DSR-190 test cases; if no answer by 10/20 QA applies the defaults written in the ticket." |
