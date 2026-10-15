@@ -20,6 +20,11 @@ async function open(page: Page, lang: Language, level = 2) {
   const response = await page.goto(url);
   expect(response?.status()).toBe(200);
   const bc = new BreadcrumbPage(page); await expect(bc.breadcrumb).toBeVisible();
+  // JOB-20261015-06: ancestors (and JSON-LD) are inserted asynchronously; wait until the trail is settled, as in the DSR-591 retest spec.
+  await page.waitForLoadState('networkidle');
+  let previous = -1;
+  await expect.poll(async () => { const count = await bc.items.count(); const settled = count === previous; previous = count; return settled; },
+    { intervals: [500], timeout: 10_000, message: 'breadcrumb item count settled' }).toBe(true);
   await page.evaluate(() => document.fonts.ready);
   observations.push({ language: lang, url: page.url(), status: response?.status(), texts: await bc.items.allTextContents(), jsonld: await bc.breadcrumbJsonLd() });
   return bc;

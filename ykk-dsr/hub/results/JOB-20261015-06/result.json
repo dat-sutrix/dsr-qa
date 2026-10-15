@@ -1,0 +1,40 @@
+{
+  "job": "JOB-20261015-06",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-15T06:19:30Z",
+  "finished": "2026-10-15T06:20:28Z",
+  "status": "done",
+  "pre_index": {
+    "checked": "2026-10-15T06:19:30Z",
+    "class": "B",
+    "url": "/master/en/test-space",
+    "http_status": 200,
+    "note": "<title> test-space; last-modified Thu, 15 Oct 2026 06:09:39 GMT (publish reached .aem.live). Publishing also added the page to query-index.",
+    "query_index": { "rows": 119, "path": "/master/en/test-space", "present": true, "lastModified": 1792044579, "robots": "" },
+    "home": { "/master/ja": 404, "/master/en": 404 }
+  },
+  "dsr_591_fixed": "not provable (class B: /master/en/test-space is now in query-index.json)",
+  "tests": [
+    { "tc": "DSR-BREAD-005", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-011", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-001", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-025", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-005", "lang": "en", "result": "pass",
+      "error": "Class B: test-space is indexed, so this pass does not prove the DSR-591 fix. Trail: HOME > test-space > QA Parent > QA Child > QA Grandchild",
+      "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-011", "lang": "en", "result": "pass",
+      "error": "Class B: test-space is indexed, so the DSR-591 fix is not proven. All items equal page titles (each 200)",
+      "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-001", "lang": "en", "result": "pass",
+      "error": "Class B: test-space is indexed, so the DSR-591 fix is not proven. The trail and JSON-LD include test-space (pos 2, /master/en/test-space)",
+      "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-025", "lang": "en", "result": "pass",
+      "error": "Class B: test-space is indexed, so the DSR-591 fix is not proven. JSON-LD has 5 entries and names equal the trail",
+      "evidence": "", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/breadcrumb/DSR-552.breadcrumb.spec.ts", "results/DSR-552/DEV/automation-run-20261015-job06.md"],
+  "questions": []
+}
