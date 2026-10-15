@@ -1,11 +1,11 @@
 # YKK DSR – QA Dashboard
 
-> Cập nhật: 2026-10-15 12:40 (UTC+7) · Lần kiểm tra kế tiếp: 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
+> Cập nhật: 2026-10-15 12:20 (UTC+7) · Lần kiểm tra kế tiếp: 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
 
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
-| 1 | Tạo folder Drive `DSR_NightPack/`, share cho QA-PT + account Google mà Claude dùng (setup #6) | QA-PT | 15/10 trước 17:00 | tất cả | Night Pack 17:10, B6 DSR-552 | — |
+| 1 | Share folder [`DSR_NightPack/`](https://drive.google.com/drive/folders/1QECbSzn_zdCUxyuqZrgRtxWkMuq2qnON) cho QA-PT (quyền Editor, để điền Night Report) | QA-PT | 15/10 trước 17:00 | tất cả | Night Pack 17:10 | Gửi QA-PT link folder + sheet [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU) |
 | 2 | Duyệt phân tích 3 US mới (557, 566, 529) – "OK" hoặc "làm bản nhẹ" | Claude | 15/10 | 557, 566, 529 | B1 cả 3 | Trả lời trong session Điều phối |
 | 3 | Forward kết quả Night Pack 14/10 của QA-PT (DSR-457 item 1/10/12/R1–R4, DSR-591, DSR-592) + ảnh item 3/7/13 | QA-PT → Claude | 15/10 | 360, 552 | DSR-457, B1 | Gửi nguyên file vào session `DSR – Bugs` |
 | 4 | Publish `/master/en/test-space` (title `test-space`) trên DEV Author | — | 16/10 | 552 | B2 · 4 TC | — |
@@ -13,7 +13,7 @@
 | 6 | Hỏi PM 2 quyết định DSR-457 (webp media11; form gate catalog) | Toan | 16/10 | 360 | DSR-457 | xem BUGS.md #2 |
 
 ## 🌙 QA part-time đêm nay
-Chưa có Night Work Pack: thiếu folder `DSR_NightPack/` (việc #1). Có folder trước 17:10 → pack tự tạo lúc 17:10 (ưu tiên: verify DSR-592/BREAD-013 + seed T2/T3, DSR-457 phần còn thiếu).
+Folder [`DSR_NightPack/`](https://drive.google.com/drive/folders/1QECbSzn_zdCUxyuqZrgRtxWkMuq2qnON) · Report: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU). Pack đêm nay tự tạo lúc 17:10 (ưu tiên: verify DSR-592/BREAD-013 + seed T2/T3, DSR-457 phần còn thiếu).
 
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
