@@ -1,0 +1,39 @@
+{
+  "job": "JOB-20261014-01",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-15T05:05:40Z",
+  "finished": "2026-10-15T05:12:26Z",
+  "status": "done",
+  "pre_index": {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/query-index.json",
+    "checked": "2026-10-15T05:05:40Z",
+    "rows": 118,
+    "/master/en/test-space": { "present": false, "http_status": 404 },
+    "/master/en/test-space/dsr552-label": { "present": true }
+  },
+  "tests": [
+    { "tc": "DSR-BREAD-005", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-005", "lang": "en", "result": "fail",
+      "error": "Trail is HOME > QA Parent > QA Child > QA Grandchild (4 items); expected test-space level (5 items). /master/en/test-space returns HTTP 404 on publish.",
+      "evidence": "evidence/DSR-BREAD-005_en.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-002", "lang": "ja", "result": "fail",
+      "error": "QA Child, QA Parent, test space: href ok, HTTP 200, same tab. HOME href /master/ja ok but HTTP 404 (expected 200).",
+      "evidence": "evidence/DSR-BREAD-002_ja.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-002", "lang": "en", "result": "fail",
+      "error": "QA Child, QA Parent: href ok, HTTP 200, same tab. test-space link missing. HOME href /master/en ok but HTTP 404.",
+      "evidence": "evidence/DSR-BREAD-002_en.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-011", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-011", "lang": "en", "result": "fail",
+      "error": "All 4 shown items equal page titles, no empty item, no node name; trail lacks the test-space item (expected 5 items).",
+      "evidence": "evidence/DSR-BREAD-011_en.png", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/breadcrumb/DSR-552.breadcrumb-retest-DSR-591.spec.ts",
+    "results/DSR-552/DEV/automation-run-20261015-dsr591.md",
+    "results/DSR-552/DEV/automation-run-20261015-dsr591-rerun.md"
+  ],
+  "questions": []
+}
