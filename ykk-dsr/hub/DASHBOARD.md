@@ -5,13 +5,11 @@
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
-| 0 | DSR-501: seed 7 CF `qa501-*` + 2 trang `qa501-a/b` trên DEV Author, **Publish** (~30 phút) → báo "501 done" | — | 15/10 tối | 501 | JOB-20261015-11 (hold) | hướng dẫn trong chat 15/10 |
-| 1 | Upload TC DSR-566 lên Drive folder [DSR-357](https://drive.google.com/drive/folders/1Dx3XRb1jhEu5EGMi6MpDQcqj8khhQ8Si) (file gửi trong chat / `hub/tc-out/`) | — | 16/10 sáng | 566 | DoD | — |
 | 2 | Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) (4 câu, mặc định QA áp dụng 20/10) | Quentin (PM) | 17/10 | 557 | 5 TC | "Quentin-san, QA needs 4 answers in DSR-611 to unblock DSR-190 test cases; if no answer by 10/20 QA applies the defaults written in the ticket." |
 | 3 | Đuổi trả lời DSR-457: Ngọc (comment 61011) + Quentin (comment 61015) | Ngoc, Quentin (PM) | 20/10 | 360 | DSR-457 | xem BUGS.md #2, #3 |
 
 ## 🌙 QA part-time đêm nay
-**[Night Work Pack 2026-10-15](https://docs.google.com/document/d/1ajs0lRCGwk-Pm-oate9X64IcBAxzGwDNkBoDrVVRzfU)** (~3h20, tạo 15:50) · P1 DSR-557 tạo 2 trang · P2 seed 14 CF `qa190-*` · P3 DSR-552 display name T2/T3 · P4 DSR-552 manual 016/013/012/026/024 · P5 DSR-457 #1, #10 · Report: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU) · Evidence: `DSR_NightPack/Evidence_20261015`
+**[Night Work Pack 2026-10-15 (v2)](https://docs.google.com/document/d/1TBlioRYuLYWxroJGw5hgnZxFSJ0mWzjY-0AWixr73lg)** (~3h55, v2 16:20 – bản cũ đã đổi tên [CŨ]) · P1 DSR-557 tạo 2 trang · **P1b DSR-501 seed 9 CF qa501-* + trang qa501-a/b** · P2 seed 14 CF `qa190-*` · P3 DSR-552 display name T2/T3 · P4 DSR-552 manual 016/013/012/026/024 · P5 DSR-457 #1, #10 · Report: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU) · Evidence: `DSR_NightPack/Evidence_20261015`
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
 Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 ticket, đích sáng T2 19/10) · câu hỏi chờ duyệt: [tc-questions.md](tc-questions.md)
