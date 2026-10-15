@@ -1,0 +1,198 @@
+{
+  "job": "JOB-20261015-09",
+  "agent": "claude-code",
+  "us": "DSR-566",
+  "env": "dev",
+  "started": "2026-10-15T09:13:12Z",
+  "finished": "2026-10-15T09:20:43Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "en",
+      "result": "fail",
+      "error": "Back to list not rendered; date→category→title→body→CTA present, order check not reached",
+      "evidence": "evidence/DSR-NEWS-002_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "en",
+      "result": "fail",
+      "error": "shown 2026.03.30 vs meta published-time 2026-09-29T04:17:55Z; no publish-date property meta; format recorded only (A4)",
+      "evidence": "evidence/DSR-NEWS-003_en.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "Back to list link count 0 in main (role link /back to list|一覧へ戻る/)",
+      "evidence": "evidence/DSR-NEWS-006_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "en",
+      "result": "fail",
+      "error": "/master/en/query-index.json and /master/en/news/query-index.json both 404; page row only in /query-index.json with empty publicationdate/category/tags/template",
+      "evidence": "evidence/DSR-NEWS-007_en.png",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "en",
+      "result": "fail",
+      "error": "article-meta has no-mylist no-share; My List button 0, share icons 0 (nothing clicked)",
+      "evidence": "evidence/DSR-NEWS-012_en.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "en",
+      "result": "fail",
+      "error": "meta description and og:description absent; title/og:title/og:url/og:image present",
+      "evidence": "evidence/DSR-NEWS-018_en.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-566.ts",
+    "pages/NewsDetailPage.ts",
+    "tests/news-detail/DSR-566.news-detail.spec.ts",
+    "docs/DSR-566/baseline-BL-v1.md",
+    "docs/DSR-566/test-data.md",
+    "docs/DSR-566/data-testid.md",
+    "results/DSR-566/DEV/automation-run-20261015.md"
+  ],
+  "questions": []
+}
