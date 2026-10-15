@@ -1,0 +1,183 @@
+{
+  "job": "JOB-20261015-04",
+  "agent": "claude-code",
+  "us": "DSR-557",
+  "env": "dev",
+  "started": "2026-10-15T06:04:59Z",
+  "finished": "2026-10-15T06:13:50Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no DEV data for en catalog page (/master/en/test-space/list-catalog HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no DEV data for en catalog page (/master/en/test-space/list-catalog HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no DEV data for en catalog page (/master/en/test-space/list-catalog HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no DEV data for ebook with requiresForm=true",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no DEV data for en catalog page (/master/en/test-space/list-catalog HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no DEV data for NEW case: both items publishDate 2026-09-03 (42d); no label shown = rule OK",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no DEV data for en catalog page (/master/en/test-space/list-catalog HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no DEV data for UPDATE case: both items updateDate 2026-09-03 (42d); no label shown = rule OK",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no DEV data for en catalog page (/master/en/test-space/list-catalog HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no DEV data for publish+update both within 10 days; no label shown = rule OK",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no DEV data for en catalog page (/master/en/test-space/list-catalog HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no DEV data for ja video page (/master/ja/test-space/dsr-173-video-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no DEV data for ja video page (/master/ja/test-space/dsr-173-video-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no DEV data for ja video page (/master/ja/test-space/dsr-173-video-detail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "Before click: no iframe, but eager poster request https://img.youtube.com/vi/irFRtAVphCY/maxresdefault.jpg (facade). Failed on retry too. May be OK under DSR-109 facade policy.",
+      "evidence": "evidence/DSR-CATV-006_en.png",
+      "suspect": "product"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-557.ts",
+    "pages/CatalogDisplayPage.ts",
+    "pages/VideoPlayerPage.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "docs/DSR-557/discovery-DEV.md",
+    "docs/DSR-557/data-testid.md",
+    "docs/DSR-557/test-data.md",
+    "results/DSR-557/DEV/automation-run-20261015.md"
+  ],
+  "questions": []
+}
