@@ -11,7 +11,7 @@
 | 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | todo | |
 | 3 | DSR-568 お問い合わせフォーム | DSR-199 | DSR-622 | 3 | adopt | 1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB | 15/10 | todo | file 2.8MB – chỉ thêm cột, có thể upload-pending |
 | 4 | DSR-560 検索データ生成 | DSR-182 | DSR-621 | 3 | adopt | 1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm | 15/10 | todo | |
-| 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | — | 16/10 | todo | test steps: Martin comment 2025-09-25 · related DSR-531 |
+| 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | — | 16/10 | todo | test steps: Martin comment 2026-09-25 · related DSR-531 |
 | 6 | DSR-608 ブース | DSR-172 | DSR-631 | 3 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | todo | cùng file với #7 |
 | 7 | DSR-610 DIGITAL SHOWROOM | DSR-172 | DSR-632 | 2 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | todo | làm chung lần với #6 |
 | 8 | DSR-503 Product URL by product-id | DSR-503 | DSR-620 | 4 | new | — | 16/10 | todo | |

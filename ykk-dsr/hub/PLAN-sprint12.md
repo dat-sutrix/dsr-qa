@@ -18,9 +18,9 @@ Buffer 27/10 cho fix/retest. Quá 22/10 mà 529 chưa DEV xanh → báo PM tách
 ## 2. Lịch theo ngày
 | Ngày | Claude (ban ngày) | Agent (VPS) | QA-PT (đêm) | Dat |
 |---|---|---|---|---|
-| T5 15/10 | Plan · Night Pack · sub-task Jira ✅ | JOB-05 smoke codex | Pack 15/10: 557 data, 552 T2/T3 + manual, 457 #1 #10 | Restart runner ✅ · đuổi DSR-611 |
-| T6 16/10 | Triage Night Report · **566: baseline + TC** (adopt DSR-567 nếu có) · Night Pack 16/10 | 552 full DEV rerun (T2/T3) · 557 auto 12–20 trên `qa190-*` · 566 smoke | 501 (4 điểm) · 566 manual + data · 552 phần dở | Gửi dev link test 566 nếu thiếu |
-| T2 19/10 | **529: baseline + TC** · QA confirm DEV 552 + 591 (Jira comment) | 566 auto DEV · 501 check FE | 529 tạo trang test theo hướng dẫn Martin (template article) · 557 manual | Báo dev deploy STG 552/591/501 |
+| T5 15/10 | Plan · Night Pack · sub-task Jira ✅ · **Night TC job 18–22h: 566, 609, 568, 560** | JOB-05 smoke codex | Pack 15/10: 557 data, 552 T2/T3 + manual, 457 #1 #10 | Restart runner ✅ · đuổi DSR-611 |
+| T6 16/10 | Triage Night Report · review TC 566 (job đêm) · Night Pack 16/10 · đêm: 529, 608/610, 503, 583 | 552 full DEV rerun (T2/T3) · 557 auto 12–20 trên `qa190-*` · 566 smoke | 501 (4 điểm) · 566 manual + data · 552 phần dở | Gửi dev link test 566 nếu thiếu |
+| T2 19/10 | Review TC đêm 16–18 (toàn bộ TC xong) · QA confirm DEV 552 + 591 (Jira comment) | 566 auto DEV · 501 check FE | 529 tạo trang test theo hướng dẫn Martin (template article) · 557 manual | Báo dev deploy STG 552/591/501 |
 | T3 20/10 | Áp mặc định DSR-611 nếu chưa trả lời · QA confirm DEV 557, 566 | 552 + 501 STG · 529 auto DEV vòng 1 | 529 manual (OGP, page properties) · STG manual 552 (024 thiết bị thật) | Báo dev deploy STG 557/566 |
 | T4 21/10 | Triage 529 · bug mới → Jira | 557 + 566 STG · 529 retest | 529 manual vòng 2 · STG manual 557 | — |
 | T5 22/10 | QA confirm DEV 529 · STG verdict 552/501/591 | PRO 552/501/591 · 529 STG | STG manual 566 | Báo deploy PRO đợt 1 |
@@ -41,3 +41,6 @@ Buffer 27/10 cho fix/retest. Quá 22/10 mà 529 chưa DEV xanh → báo PM tách
 - DSR-591 fixed → session Bugs comment "QA confirm DEV" + gom deploy STG cùng DSR-552.
 - 557 TC 9, 22 (trang sử dụng) tách khỏi DoD 557, đưa vào TC regression của 529/586/170.
 - 501: điểm 4 = N/A (đã theo dõi ở DSR-447); điểm 1 kiểm trên Author (tên field `relatedMovies`), điểm 2–3 kiểm FE với 2 CF mới (isUnavailable=TRUE; 6 related → hiển thị 5).
+
+## 5. Night TC job (18:00–22:00 hằng ngày, kể cả T7/CN)
+Scheduled task "DSR TC – Đêm 18–22h" (chỉ Claude) viết/adopt TC theo `tc-backlog.md`, upload Drive, Jira sub-task Done; câu hỏi chỉ ghi `tc-questions.md` (Dat duyệt sáng). Đích: 17/17 trước sáng T2 19/10, rồi tự tắt.
