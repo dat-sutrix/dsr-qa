@@ -16,7 +16,7 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
-Thứ tự: 591 ✅ DEV → 501 → 552 → 557 → 566 → 529 · DEV xanh 17/10 (591, 501, 552) · 20/10 (557, 566) · 22/10 (529) · PRO xong 26/10.
+Thứ tự: 591 ✅ DEV → 501 → 552 → 557 → 566 → 529 · DEV xanh 17/10 (591, 501, 552) · 20/10 (557, 566) · 22/10 (529). Giai đoạn DEV only (03 §0) – không có mốc STG/PRO.
 
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
@@ -27,7 +27,7 @@ Thứ tự: 591 ✅ DEV → 501 → 552 → 557 → 566 → 529 · DEV xanh 17/1
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🔴 | 0/9 | — | — | — | Chưa phân tích | 0 | Phân tích (Claude · 17/10) |
 | DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT chạy nốt (15/10) |
 
-Ký hiệu: DEV/STG/PRO = `pass/tổng` + số fail; `—` = chưa tới env đó.
+Ký hiệu: DEV = `pass/tổng` + số fail. STG/PRO = N/A (giai đoạn DEV only, 03 §0) – Jira status [STG]/PRO là workflow chung.
 Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォーム ([STG] Ready for deploy), DSR-609 Top Test ([Dev] In Testing), DSR-608/610/607 Test (To Do), DSR-538 bug movie-detail (To Do).
 
 ## 🤖 Agents

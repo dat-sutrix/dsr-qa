@@ -37,12 +37,12 @@ CF layer <x/y pass> · Page layer <x/y pass> · Exec: Auto <n> · Visual <n> · 
 - [ ] Baseline requirement đã lưu (BL-vN)
 - [ ] TC file trên Drive
 - [ ] DEV: 100% TC đã chạy, 0 Fail
-- [ ] QA confirm DEV → deploy STG
-- [ ] STG: 100% TC pass
-- [ ] PRO: 100% TC pass
+- [ ] QA confirm DEV
+- [x] STG: N/A (giai đoạn DEV)
+- [x] PRO: N/A (giai đoạn DEV)
 - [ ] Bug Critical/Major mở = 0
 - [ ] Lighthouse ≥ 95 mobile & desktop (N/A nếu US không có page)
-- [ ] Evidence DEV/STG/PRO đã upload Drive
+- [ ] Evidence DEV đã upload Drive
 
 ## 7. Nhật ký (5 dòng gần nhất)
 - <YYYY-MM-DD> <sự kiện>

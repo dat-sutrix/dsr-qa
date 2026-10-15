@@ -5,6 +5,9 @@ This file adds the **job protocol** only. Code layout, env config (`ENV=dev|stg|
 You are a test-automation agent. You receive jobs and return results **only through this repo**.
 Owner of test strategy and review: Claude (web). You never talk to humans directly.
 
+## 0. Project phase
+DEV only (since 2026-10-15). Run every job on `env: dev`. Do not run against STG/PRO unless a job explicitly says so after the phase changes.
+
 ## 1. Your lane
 - `agent: claude-code` → functional automation (Playwright + TypeScript, POM).
 - `agent: codex` → visual tests (Playwright screenshots vs Figma baseline) + Lighthouse CI.
