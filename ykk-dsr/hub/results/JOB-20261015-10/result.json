@@ -1,0 +1,30 @@
+{
+  "job": "JOB-20261015-10",
+  "agent": "codex",
+  "us": "DSR-566",
+  "env": "dev",
+  "started": "2026-10-15T09:12:17.411887+00:00",
+  "finished": "2026-10-15T09:12:31.832497+00:00",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-NEWS-014",
+      "lang": "en",
+      "result": "skip",
+      "error": "captured; visual verdict deferred to Claude web. Schema has no captured value; capture executed successfully.",
+      "evidence": "evidence/DSR-NEWS-014_DEV_01.png"
+    },
+    {
+      "tc": "DSR-NEWS-015",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-NEWS-015_DEV_01.png"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/news-detail/DSR-566.news-detail.spec.ts"
+  ],
+  "questions": []
+}

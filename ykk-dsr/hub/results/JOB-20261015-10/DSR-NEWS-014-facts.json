@@ -1,0 +1,102 @@
+{
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-357-news-detail",
+  "httpStatus": 200,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scrollWidth": 1440,
+  "main": {
+    "width": 1440,
+    "left": 0,
+    "right": 1440,
+    "leftMargin": 0,
+    "rightMargin": 0
+  },
+  "articleSection": {
+    "width": 1440,
+    "left": 0,
+    "right": 1440,
+    "leftMargin": 0,
+    "rightMargin": 0
+  },
+  "articleContent": {
+    "width": 1240,
+    "left": 100,
+    "right": 1340,
+    "leftMargin": 100,
+    "rightMargin": 100
+  },
+  "title": {
+    "text": "「YKK EXPERIENCE」ページを公開しました。",
+    "width": 557.84375,
+    "left": 100,
+    "right": 657.84375,
+    "leftMargin": 100,
+    "rightMargin": 782.15625,
+    "lineCount": 1,
+    "whiteSpace": "normal",
+    "textOverflow": "clip",
+    "overflow": "visible",
+    "webkitLineClamp": "none"
+  },
+  "overflowElements": [],
+  "meta": [
+    {
+      "name": "og:title",
+      "content": "DSR-357 News-Detail"
+    },
+    {
+      "name": "og:url",
+      "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/dsr-357-news-detail"
+    },
+    {
+      "name": "og:image",
+      "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/media_1906f1f586e665cd64c259f7316c909cafc98e3af.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "name": "og:image:secure_url",
+      "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/media_1906f1f586e665cd64c259f7316c909cafc98e3af.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "name": "twitter:title",
+      "content": "DSR-357 News-Detail"
+    },
+    {
+      "name": "twitter:image",
+      "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/media_1906f1f586e665cd64c259f7316c909cafc98e3af.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "name": "published-time",
+      "content": "2026-09-29T04:17:55.512Z"
+    },
+    {
+      "name": "showbreadcrumb",
+      "content": "true"
+    },
+    {
+      "name": "showfooter",
+      "content": "true"
+    },
+    {
+      "name": "showheader",
+      "content": "true"
+    },
+    {
+      "name": "modified-time",
+      "content": "2026-09-29T04:17:49.325Z"
+    },
+    {
+      "name": "content-page-ref",
+      "content": "1QTqQVuV7-Z6n0WgIw19UM1oNhLXJYe2BnsCpLvYanN2_zEuslfoewK01X5j8dq5SqIsnq58fawkUmr_jktvi79n8bB9iHFwAydGawK_D_DTCqUlB0gtvaVNMNIKe8uj"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1"
+    }
+  ]
+}

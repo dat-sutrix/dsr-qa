@@ -1,0 +1,15 @@
+# JOB-20261015-10 — done
+- DEV Chromium, English URL, PC 1440×900 and SP 375×812; both HTTP 200.
+- DSR-NEWS-014: captured; visual verdict awaits Claude web comparison with Figma.
+- PC article content: 1240 px wide, left/right margins 100/100 px; main itself is 1440 px wide.
+- PC scrollWidth: 1440 px; no visible nonzero-sized element bounds overflow the viewport.
+- DSR-NEWS-015: proposed PASS; scrollWidth 375 <= 375.
+- SP article content: 327 px wide, margins 24/24 px; title wraps to two lines, text-overflow clip, no line clamp.
+- No automated failures; TypeScript check passed with no errors.
+- Both full-page screenshots committed as explicitly requested by the job.
+- Per-TC facts JSON includes final URL, status, title, metadata and measured bounds.
+- The English fixture contains Japanese article text; build identity was not independently verified.
+- No pixel baseline exists; Figma comparison was not performed.
+- result.json uses skip for PC only because the required schema lacks captured; capture ran successfully, visual adjudication is deferred.
+- Playwright reports two successful capture/check tests; neither was skipped at runtime.
+- All outcomes are proposals; human QA confirms.
