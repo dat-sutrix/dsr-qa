@@ -16,7 +16,7 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
-Thứ tự: 591 ✅ DEV → 501 → 552 → 557 → 566 → 529 · DEV xanh 17/10 (591, 501, 552) · 20/10 (557, 566) · 22/10 (529). Giai đoạn DEV only (03 §0) – không có mốc STG/PRO.
+**Sprint 12 chỉ test DEV – xanh DEV = Done (STG/PRO ở sprint sau).** Thứ tự: 591 ✅ → 501 (17/10) → 552 (19/10) → 557, 566 (20/10) → 529 (22/10).
 
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
