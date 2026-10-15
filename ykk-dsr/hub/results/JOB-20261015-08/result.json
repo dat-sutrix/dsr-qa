@@ -1,0 +1,25 @@
+{
+  "job": "JOB-20261015-08",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-15T06:29:01Z",
+  "finished": "2026-10-15T06:29:55Z",
+  "status": "done",
+  "dsr_591_fixed": "fixed (N2: full 5-item trail with /query-index.json aborted)",
+  "build_under_test": "blocks/breadcrumb/breadcrumb.js etag 6459d4565aec7a4b062667f15e9af06d, last-modified Tue, 13 Oct 2026 05:30:31 GMT",
+  "tests": [
+    { "tc": "N1", "lang": "en", "result": "pass",
+      "error": "Index normal: page 200; /query-index.json 200 fetched by breadcrumb.js:194 (#fetchTitles). No ancestor page fetches (all 3 indexed). Other: nav/footer.plain.html 200 (fragment.js:25)",
+      "evidence": "", "suspect": "" },
+    { "tc": "N2", "lang": "en", "result": "pass",
+      "error": "Index aborted (net::ERR_FAILED). breadcrumb.js:214 fetched /master/en/test-space, /dsr552-bc, /dsr552-bc/child (all 200). Trail + JSON-LD: HOME > test-space > QA Parent > QA Child > QA Grandchild",
+      "evidence": "", "suspect": "" },
+    { "tc": "C1", "lang": "en", "result": "pass",
+      "error": "Reads query-index.json: Yes, but only as a shortcut. Ancestors missing from index get title by fetching each ancestor URL (navtitle > og:title > <title>); 404 = left out",
+      "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}
