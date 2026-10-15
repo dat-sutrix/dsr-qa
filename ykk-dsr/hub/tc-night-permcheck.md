@@ -16,3 +16,6 @@
 | g | PushNotification | OK | đã gửi |
 
 Kết luận: đủ quyền cho Night TC job. Không cần Dat can thiệp.
+
+## Dry-run 2026-10-15T08:09Z (15:09 Asia/Saigon)
+- (a) git push: pending
