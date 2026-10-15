@@ -16,7 +16,7 @@
 | 6 | DSR-529 記事詳細 | TC viết đêm 16/10; scope lớn | 22/10 | **Cao** |
 
 Buffer 23–27/10 cho fix/retest DEV. Quá 22/10 mà 529 chưa xanh → báo PM tách phần còn lại sang Sprint 13.
-TC chỉ chặn do môi trường DEV (site cn, Top page) → ghi Known trong comment "QA confirm DEV", không giữ ticket; chạy ở sprint test STG.
+TC chỉ chặn do môi trường DEV (site cn, Top page) → ⛔ Blocked có owner (03 §0), liệt kê trong comment "QA confirm DEV"; phần còn lại xanh thì ticket Done.
 
 ## 2. Lịch theo ngày
 | Ngày | Claude (ban ngày) | Agent (VPS) | QA-PT (đêm) | Night TC job |
@@ -34,9 +34,9 @@ TC chỉ chặn do môi trường DEV (site cn, Top page) → ghi Known trong co
 | Blocker | Chặn | Ai | Hạn | Mặc định nếu không trả lời |
 |---|---|---|---|---|
 | DSR-611 (4 câu) | 557: TC 3, 7, 10, 11, 21 | Quentin | 20/10 | Áp mặc định ghi trong ticket |
-| HOME `/master/{lang}` 404 (Top page) | 552: bước HOME 002/004/008/017 | Dev Top page (DSR-609) / Quentin | 19/10 | Ghi Known trong QA confirm DEV |
+| HOME `/master/{lang}` 404 (Top page) | 552: bước HOME 002/004/008/017 | Dev Top page (DSR-609) / Quentin | 19/10 | ⛔ Blocked có owner, liệt kê trong QA confirm DEV |
 | DSR-536 / DSR-575 Q5 (SP display, placement) | 552: 021–023, 030, 034 | Kohei | 19/10 | Test theo Figma SP hiện tại |
-| Site cn chưa có trên DEV | phần cn của 552, 557 | Quentin | — | Ghi Known, test ở sprint STG |
+| Site cn chưa có trên DEV | phần cn của 552, 557 | Quentin | — | ⛔ Blocked có owner (Quentin) |
 | Trang dùng block (529, 608, 170, 586) | 557: TC 9, 22 | dev từng ticket | — | Chuyển TC 9/22 sang regression của các US đó |
 
 ## 4. Việc đã quyết (không hỏi lại)
