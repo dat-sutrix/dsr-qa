@@ -15,7 +15,7 @@
 | 6 | DSR-608 ブース | DSR-172 | DSR-631 | 3 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | upload-pending | adopt chung file DSR-172: sheet ブース 12 TC + QA 13.0/14.0; TestData trên Drive ✅; TC adopt 256 KB → Dat upload `tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx` vào folder DSR-172; bản dev đổi tên _v20261015_dev. DSR-631 Done. Không job (DSR-608 To Do) · Q16–Q19 |
 | 7 | DSR-610 DIGITAL SHOWROOM | DSR-172 | DSR-632 | 2 | adopt | 1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E | 16/10 | upload-pending | cùng file với #6: sheet DIGITAL SHOWROOM 8 TC + QA 9.0/10.0. DSR-632 Done. Không job (DSR-610 To Do) · Q16–Q17, Q19 |
 | 8 | DSR-503 Product URL by product-id | DSR-503 | DSR-620 | 4 | new | 1VDMF3FnDBxgafEqJQPkuuEzZUHb6skVg | 16/10 | upload-pending | new 9 TC (7 Auto + 2 Manual), all Blocked-by DSR-586 (DSR-503 tạm dừng 09/16 → overlay); TestData trên Drive ✅; TC xlsx 26 KB > 12 KB → Dat upload `tc-out/[Sutrix] DSR -503- [AEM] Product Detail - Auto-generate URL by product-id.xlsx` vào folder DSR-503 (mới tạo). DSR-620 Done. Không job (DSR-503 In Progress/tạm dừng) · Q20–Q21 |
-| 9 | DSR-583 製品一覧 SP 2列 | (parent) | DSR-624 | 2 | new | — | 16/10 | todo | |
+| 9 | DSR-583 製品一覧 SP 2列 | (parent) | DSR-624 | 2 | new | — | 16/10 | doing 2026-10-15 21:23 | |
 | 10 | DSR-607/570 資料ダウンロード | DSR-192 | DSR-623 | 8 | new | — | 17/10 | todo | related DSR-571; nhận catalog ID từ DSR-190 |
 | 11 | DSR-585 製品CF 改修 | (parent) | DSR-625 | 6 | new | — | 17/10 | todo | CF layer |
 | 12 | DSR-586 製品詳細 Overlay化 | (parent) | DSR-626 | 5 | new | — | 17/10 | todo | regression DSR-360 + DSR-457 |
