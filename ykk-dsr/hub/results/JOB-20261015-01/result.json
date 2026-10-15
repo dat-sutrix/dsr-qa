@@ -1,0 +1,1 @@
+{"job":"JOB-20261015-01","agent":"codex","status":"failed","tests":[],"questions":["Runner: agent exited rc=2 without result.json (124 = timeout, 127 = CLI not found)"]}
