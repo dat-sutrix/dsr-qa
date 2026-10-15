@@ -10,7 +10,7 @@
 | 3 | Forward kết quả Night Pack 14/10 của QA-PT (DSR-457 item 1/10/12/R1–R4, DSR-591, DSR-592) + ảnh item 3/7/13 | QA-PT → Claude | 15/10 | 360, 552 | DSR-457, B1 | Gửi nguyên file vào session `DSR – Bugs` |
 | 4 | Publish `/master/en/test-space` (title `test-space`) trên DEV Author | — | 16/10 | 552 | B2 · 4 TC | — |
 | 5 | Kiểm tra runner lane codex đang chạy trong tmux `dsr` (`tmux ls`; cửa sổ `codex`) + `@reboot` crontab | — | 16/10 | — | JOB-20261015-01 | `crontab -l \| grep reboot` |
-| 6 | Hỏi PM 2 quyết định DSR-457 (webp media11; form gate catalog) | Toan | 16/10 | 360 | DSR-457 | xem BUGS.md #2 |
+| 6 | Hỏi PM 2 quyết định DSR-457 (webp media11; form gate catalog) | Quentin (PM) | 20/10 | 360 | DSR-457 | Đã comment Jira 61015 – chỉ cần đuổi trả lời |
 
 ## 🌙 QA part-time đêm nay
 Folder [`DSR_NightPack/`](https://drive.google.com/drive/folders/1QECbSzn_zdCUxyuqZrgRtxWkMuq2qnON) · Report: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU). Pack đêm nay tự tạo lúc 17:10 (ưu tiên: verify DSR-592/BREAD-013 + seed T2/T3, DSR-457 phần còn thiếu).
@@ -22,7 +22,7 @@ Folder [`DSR_NightPack/`](https://drive.google.com/drive/folders/1QECbSzn_zdCUxy
 | [DSR-557](us/DSR-557.md) | 動画・カタログ表示 | 🔴 | 0/9 | — | — | — | Chưa có TC → Dat duyệt | 0 | Duyệt phân tích (Dat · 15/10) |
 | [DSR-566](us/DSR-566.md) | ニュース詳細 | 🔴 | 0/9 | — | — | — | Chưa có TC → Dat duyệt | 0 | Duyệt phân tích (Dat · 15/10) |
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🔴 | 0/9 | — | — | — | Chưa có TC → Dat duyệt | 0 | Duyệt phân tích (Dat · 15/10) |
-| DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Toan | 1 | QA-PT chạy nốt (15/10) |
+| DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT chạy nốt (15/10) |
 
 Ký hiệu: DEV/STG/PRO = `pass/tổng` + số fail; `—` = chưa tới env đó.
 Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォーム ([STG] Ready for deploy), DSR-609 Top Test ([Dev] In Testing), DSR-608/610/607 Test (To Do), DSR-538 bug movie-detail (To Do).
