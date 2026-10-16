@@ -38,7 +38,7 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 | [DSR-566](us/DSR-566.md) | ニュース詳細 | 🟡 | 2/9 | 0/18 · 3 ⛔ | — | — | **JOB-09 treo >15h → Dat kiểm VPS** · list /news/ chưa có · cn | 0 | Gỡ JOB-09 (Dat · 16/10) · TD qa566 (QA-PT · đêm 16/10) |
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🟡 | 3/9 | 0/32 · 9 ⛔ | — | — | Chưa có trang test → QA-PT seed TD-529 · stories index → dev | 0 | Seed TD-529 (QA-PT · 16/10) → JOB-12 (Agent · 17/10) |
 | [DSR-609](us/DSR-609.md) | トップ | 🟡 | 3/9 | 0/9 (JOB-14: 001 đã chụp chờ so Figma · PSI desktop 94 / mobile 87 trên .aem.page) | — | — | Q10/Q11 → Quentin · top page 404 trên .aem.live → dev | 0 | JOB-13 chờ lane (Agent) · so Figma 001 (Claude · 17/10) |
-| DSR-501 | DM_movie question | 🟡 | — | P1 ✅ (relatedMovies / isUnavailable, Dat 16/10) · P2/P3 ⛔ data (JOB-11: 動画ID ≠ tên CF / chưa publish; trang B trỏ main-a) | — | — | Sửa 9 CF qa501 + trang B → Dat | 0 | JOB-11 đã chuyển queue (Agent · 16/10) |
+| DSR-501 | DM_movie question | 🟡 | — | P1 ✅ · P2 ❌ · P3 ❌ (JOB-20261016-03: related movies không render) | — | — | Bug DSR-647 → Chiba | 1 | Chờ fix DSR-647 → rerun (Agent) | JOB-11 đã chuyển queue (Agent · 16/10) |
 | DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT item 1, 10 chưa chạy → Night Pack 16/10 |
 
 Ký hiệu: DEV = `pass/tổng` + số fail. STG/PRO = N/A (giai đoạn DEV only, 03 §0) – Jira status [STG]/PRO là workflow chung.

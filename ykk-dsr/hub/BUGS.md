@@ -14,6 +14,7 @@
 | Jira | US | Tiêu đề | Sev | Trạng thái Jira | Assignee | Retest ở | Kết quả retest gần nhất | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|
 | [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) | Major | [Dev] In Testing (Jira 16/10) | Milavec Quentin (Jira 16/10; trước đó Ngoc) | DEV | 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 1, 10 | Ngoc trả lời 61011 · Quentin trả lời 61015 |
+| [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) | DSR-501 | video-detail: relatedMovies không bao giờ hiển thị (query thiếu relatedMovies, FE đọc relatedVideos) | High | To Do (tạo 16/10 14:15 JST) | Mayuka Chiba | DEV | 16/10 JOB-20261016-03: ❌ P2, P3 | Chiba fix → QA rerun JOB DSR-501 (data qa501 giữ trên DEV) |
 
 ### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
 | Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
