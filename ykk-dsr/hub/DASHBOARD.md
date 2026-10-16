@@ -5,7 +5,6 @@
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
-| 13 | Nhờ dev Top page publish `/ja/top-page`, `/en/top-page` lên .aem.live (đang 404, chỉ có .aem.page) | 石谷英樹 (dev DSR-609) | 17/10 | 609, 552 | HOME + test live | "Ishitani-san, the DEV top page is only on .aem.page (/ja/top-page, /en/top-page return 404 on .aem.live). Could you publish it (Publish, not Preview) so QA can test DSR-609 and the breadcrumb HOME link?" |
 | 2 | Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) (4 câu, Jira vẫn To Do, mặc định QA áp dụng 20/10) | Quentin (PM) | 17/10 | 557 | 5 TC | "Quentin-san, QA needs 4 answers in DSR-611 to unblock DSR-190 test cases; if no answer by 10/20 QA applies the defaults written in the ticket." |
 | 3 | Đuổi trả lời DSR-457: Ngọc (comment 61011) + Quentin (comment 61015). Jira 16/10: assignee DSR-457 = Quentin | Ngoc, Quentin (PM) | 20/10 | 360 | DSR-457 | xem BUGS.md #1, #2 |
 
