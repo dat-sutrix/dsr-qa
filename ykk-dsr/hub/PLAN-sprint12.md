@@ -58,3 +58,9 @@ Scheduled task "DSR TC – Đêm 18–22h" (chỉ Claude) viết/adopt TC theo `
 | 529 | 19/10 | TC night job 15/10 · QA-PT trang test 16/10 · agent cuối tuần |
 Nguyên tắc: không chờ – TC bị env/ticket khác chặn ghi ⛔ Blocked + owner, không giữ ticket ở In Testing.
 
+
+## Quy tắc Night Pack (rút từ đêm 15/10 – task 17:10 phải áp dụng)
+- Tổng ≤ **3h** (đêm 15/10 pack 3h55 → QA-PT mất 5h, P5 không làm).
+- Tạo CF: liệt kê **mọi field bắt buộc (\*)** với giá trị chính xác, đặc biệt **動画ID = tên CF** (DM_movie) và **Release date** (catalog/movie). Đêm 15/10 thiếu → qa501 sai ID, TD-190-03/04 không publish được.
+- Bước gắn CF vào trang / sửa trang phải có 1 dòng báo cáo riêng + link .aem.live kiểm tra (đêm 15/10 bỏ sót P1b dòng 6).
+- Mỗi dòng report phải có Date + Env; việc chưa làm phải ghi `Not run` (không bỏ trống).
