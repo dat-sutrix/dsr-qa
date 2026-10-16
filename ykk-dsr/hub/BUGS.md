@@ -1,18 +1,38 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-15 15:55 (UTC+7) · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
+> Cập nhật: 2026-10-16 07:50 (UTC+7, [schedule] morning) · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
 |---|---|---|---|---|---|
 | 1 | DSR-457 | Nhắc Ngọc trả lời comment 61011 (fix 3, 7, 13 · check 6 · R1) | Dat | Ngoc | 16/10 |
 | 2 | DSR-457 | Đuổi Quentin trả lời comment 61015 (webp, form gate catalog) – mặc định áp dụng nếu không trả lời trước 20/10 | Dat | Quentin (PM) | 20/10 |
-| 3 | DSR-457 | Regression item 1, 10 – Night Pack 15/10 | QA part-time | — | 16/10 sáng |
+| 3 | DSR-457 | Regression item 1, 10 – Night Pack 15/10: **không có dòng trong Night Report (Not run)** → đưa lại Night Pack 16/10 | QA part-time | — | 17/10 sáng |
+| 4 | (mới) DSR-BREAD-016 | **Tạo Jira Bug** – scheduled task bị chặn quyền tạo issue. Nội dung soạn sẵn ở mục "Bug chờ tạo ticket" bên dưới | Dat (hoặc session Bugs) | — | 16/10 |
 
 ## Bug đang mở
 | Jira | US | Tiêu đề | Sev | Trạng thái Jira | Assignee | Retest ở | Kết quả retest gần nhất | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|
-| [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) | Major | [Dev] In Testing | Hoang Minh Ngoc (giao lại 15/10) | DEV | 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 1, 10 | Ngoc trả lời 61011 · Quentin trả lời 61015 |
+| [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) | Major | [Dev] In Testing (Jira 16/10) | Milavec Quentin (Jira 16/10; trước đó Ngoc) | DEV | 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 1, 10 | Ngoc trả lời 61011 · Quentin trả lời 61015 |
+
+### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
+| Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
+|---|---|---|---|---|---|
+| PEND-552-016 | DSR-552 | [DSR-552] Breadcrumb in Universal Editor preview shows only HOME > current page (ancestors missing); Publish is correct | Minor | Night Report 15/10, DSR-BREAD-016 | Đã kiểm trùng (JQL bug mở breadcrumb: 0). Tạo bị chặn quyền 16/10 07:45 |
+
+**Nội dung ticket PEND-552-016 (copy nguyên văn, label `qa-ai`, link "is a bug of" DSR-552, priority Low):**
+```
+Env: DEV – AEM Author Universal Editor vs DEV Publish (main--dsr-eds-dev--sutrix-projects.aem.live)
+TC: DSR-BREAD-016 (breadcrumb shown automatically without adding a block, in Preview and Publish)
+Steps:
+1. Page /master/ja/test-space/dsr552-author/child (title "QA Author Child"); parent dsr552-author ("QA Author Parent") published.
+2. Open /child in Universal Editor (no block added); look at the breadcrumb in the canvas.
+3. Publish; open https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-author/child
+Expected: same breadcrumb in UE preview and Publish: HOME > test space > QA Author Parent > QA Author Child (one breadcrumb).
+Actual: UE preview: HOME > QA Author Child (ancestors missing). Publish: HOME > test space > QA Author Parent > QA Author Child (correct).
+Impact: authors see a wrong trail while editing; Publish output correct.
+Evidence: DSR_NightPack/Evidence_20261015/DSR-BREAD-016_Fail.png – https://drive.google.com/file/d/1w8-oqVpDDMYmMpZ_nGrC4Mvt5v5nUEEO/view
+```
 
 Sev: Critical / Major / Minor / Trivial. **Giai đoạn DEV only (03 §0):** retest và đóng bug chỉ trên DEV; pass DEV → Done.
 
