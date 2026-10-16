@@ -1,0 +1,128 @@
+{
+  "job": "JOB-20261016-02",
+  "agent": "claude-code",
+  "us": "DSR-557",
+  "env": "dev",
+  "started": "2026-10-16T05:04:02Z",
+  "finished": "2026-10-16T05:09:42Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "result": "fail",
+      "error": "Playwright test passed on 11 rendered cards; 3/12 qa190 items not rendered (qa190-cat-ebook, -ebook-form, -pdf-form) so criterion each qa190 item not met",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "result": "pass",
+      "error": "passed on non-QA item catalog 02 (first pdf requiresForm=false); qa190-cat-pdf (CF qa-190-cat-pdf) not exercised",
+      "evidence": "",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "result": "pass",
+      "error": "passed on non-QA item catalog 01 (translate.google.com); qa190-cat-ebook not rendered, its ebookUrl is \"qa190-cat-ebook\" not a URL",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "result": "fail",
+      "error": "card QA190 e-book form not rendered (0, expected 1); CF ebookUrl is \"qa190-cat-ebook\", job input says https://www.ykkfastening.com/",
+      "evidence": "evidence/DSR-CATV-017_en.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "result": "fail",
+      "error": "test defect: label() scans card text, title \"QA190 NEW 11\" contains NEW; DOM badge matches expected for all 9 rendered qa190 items",
+      "evidence": "evidence/DSR-CATV-018_en.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "result": "fail",
+      "error": "test defect: label() scans card text, title \"QA190 NEW 11\" contains NEW; DOM badge matches expected for all 9 rendered qa190 items",
+      "evidence": "evidence/DSR-CATV-019_en.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "result": "fail",
+      "error": "test defect: label() scans card text, title \"QA190 NEW 11\" contains NEW; DOM badge matches expected for all 9 rendered qa190 items",
+      "evidence": "evidence/DSR-CATV-020_en.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Playwright test passed on 11 rendered cards; 3/12 qa190 items not rendered (qa190-cat-ebook, -ebook-form, -pdf-form) so criterion each qa190 item not met",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "result": "pass",
+      "error": "passed on non-QA item catalog 02 (first pdf requiresForm=false); qa190-cat-pdf (CF qa-190-cat-pdf) not exercised",
+      "evidence": "",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "result": "pass",
+      "error": "passed on non-QA item catalog 01 (translate.google.com); qa190-cat-ebook not rendered, its ebookUrl is \"qa190-cat-ebook\" not a URL",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "result": "fail",
+      "error": "card QA190 e-book form not rendered (0, expected 1); CF ebookUrl is \"qa190-cat-ebook\", job input says https://www.ykkfastening.com/",
+      "evidence": "evidence/DSR-CATV-017_ja.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "fail",
+      "error": "test defect: label() scans card text, title \"QA190 NEW 11\" contains NEW; DOM badge matches expected for all 9 rendered qa190 items",
+      "evidence": "evidence/DSR-CATV-018_ja.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "fail",
+      "error": "test defect: label() scans card text, title \"QA190 NEW 11\" contains NEW; DOM badge matches expected for all 9 rendered qa190 items",
+      "evidence": "evidence/DSR-CATV-019_ja.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "fail",
+      "error": "test defect: label() scans card text, title \"QA190 NEW 11\" contains NEW; DOM badge matches expected for all 9 rendered qa190 items",
+      "evidence": "evidence/DSR-CATV-020_ja.png",
+      "suspect": "test"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "results/DSR-557/DEV/automation-run-20261016.md"
+  ],
+  "questions": []
+}
