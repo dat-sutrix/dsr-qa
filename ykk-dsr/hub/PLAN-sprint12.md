@@ -73,3 +73,14 @@ Nguyên tắc: không chờ – TC bị env/ticket khác chặn ghi ⛔ Blocked 
 | 3 | DSR-566 | TD-566-01/02 + manual 017 (như us/DSR-566.md). | 60 |
 | 4 | DSR-529 | Tạo trang test TD-529 theo TestData DSR-356. | 45 |
 | 5 | DSR-457 | P5 cũ: item #1, #10 (chưa làm đêm 15/10). | 15 |
+| 6 | DSR-552 | TC 026 làm lại: DevTools → Elements → chuột phải `<html>` → Copy outerHTML → dán vào Rich Results Test tab Code (không dùng view-source). | 10 |
+
+## Lịch cuối tuần 16–18/10 (session Điều phối 17:15) – 07:45 và 17:10 chạy cả T7/CN
+| Thời điểm | QA-PT | Agent claude-code | Agent codex | Claude (tự động) |
+|---|---|---|---|---|
+| T6 16/10 tối | Night Pack 16/10 (6 việc ở trên, ≤3h) | JOB-20261016-07 (552 close-out) | — | 17:10 tạo pack · 18–22h Night TC job (backlog 10→17, đọc BL-OVL-1 cho 585/586/587) |
+| T7 17/10 07:45 | — | Hold → queue nếu Night Report Pass: JOB-20261016-08 (566 rerun), JOB-20261015-12 (529), JOB-20261016-02/06 rerun e-book (557) | 566 visual 014/015 rerun trên TD-566-01 (390px) | Phân loại kết quả, tạo bug (draft, chờ Dat duyệt), chốt Done 552/557/566 nếu đạt |
+| T7 17/10 tối | Night Pack 17/10: retest fail của 566/529/557 + data overlay DSR-587 (chỉ khi Martin trả lời câu 1) | Job do 07:45/17:10 xếp | — | 18–22h Night TC job |
+| CN 18/10 | Night Pack 18/10: dự phòng – việc chưa xong + manual 529 | Rerun còn lại | Visual 529 | 18–22h Night TC job (backlog phải xong) |
+| T2 19/10 07:45 | — | — | — | Tổng kết: TC 17/17, 552/557/566/529 Done DEV, báo Dat |
+Nguyên tắc: job dựa trên data QA-PT để sẵn ở `jobs/hold/` với điều kiện; lượt 07:45 chuyển sang queue khi Night Report có Pass.
