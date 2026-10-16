@@ -7,7 +7,6 @@
 |---|---|---|---|---|---|---|
 | 9 | **Agent treo:** JOB-20261015-09 nằm trong `jobs/running/` từ 15/10 16:13 (>15h, không result) → chặn cả lane claude-code (JOB-13, JOB-11, JOB-20261016-01/02 đang chờ). Vào VPS tmux `dsr` xem cửa sổ claude-code: process còn chạy thì kill, rồi `git mv jobs/running/JOB-20261015-09.md jobs/queue/` + push, restart runner | — (VPS) | 16/10 sáng | 566, 609, 552, 557, 501 | 5 job | — |
 | 10 | **Tạo Jira Bug PEND-552-016** (UE preview breadcrumb thiếu ancestor; Publish đúng). Scheduled task bị chặn quyền tạo issue sáng nay. Nội dung copy nguyên văn trong [BUGS.md](BUGS.md) mục "Bug chờ tạo ticket" | — (Jira) | 16/10 | 552 | 016 | BUGS.md |
-| 11 | **DSR-501 điểm 1:** QA-PT báo không thấy `relatedMovies` và `isUnavailable` trên CF (ảnh chỉ là tab 基本情報, chưa đủ kết luận). Dat mở Tools → Assets → Content Fragment Models → **DM movie** → xem Property Name có `relatedMovies`, `isUnavailable` không (5 phút), ghi kết quả vào session Điều phối | — (Author) | 16/10 | 501 | P1, P2 | — |
 | 12 | Duyệt [tc-questions.md](tc-questions.md) (**22 câu**, 19 mới từ đêm 15/10: Q4–Q22) – cột "Dat quyết định" | — | 16/10 | 529, 609, 568, 560, 608, 610, 503, 583 | TC verdict | — |
 | 13 | Nhờ dev Top page publish `/ja/top-page`, `/en/top-page` lên .aem.live (đang 404, chỉ có .aem.page) | 石谷英樹 (dev DSR-609) | 17/10 | 609, 552 | HOME + test live | "Ishitani-san, the DEV top page is only on .aem.page (/ja/top-page, /en/top-page return 404 on .aem.live). Could you publish it (Publish, not Preview) so QA can test DSR-609 and the breadcrumb HOME link?" |
 | 8 | Upload TC DSR-608+610 adopt (256 KB, 1 file 2 sheet) từ repo `hub/tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx` → [Drive DSR-172](https://drive.google.com/drive/folders/1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E) | — | 16/10 | 608, 610 | DoD TC file | — |
@@ -39,7 +38,7 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 | [DSR-566](us/DSR-566.md) | ニュース詳細 | 🟡 | 2/9 | 0/18 · 3 ⛔ | — | — | **JOB-09 treo >15h → Dat kiểm VPS** · list /news/ chưa có · cn | 0 | Gỡ JOB-09 (Dat · 16/10) · TD qa566 (QA-PT · đêm 16/10) |
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🟡 | 3/9 | 0/32 · 9 ⛔ | — | — | Chưa có trang test → QA-PT seed TD-529 · stories index → dev | 0 | Seed TD-529 (QA-PT · 16/10) → JOB-12 (Agent · 17/10) |
 | [DSR-609](us/DSR-609.md) | トップ | 🟡 | 3/9 | 0/9 (JOB-14: 001 đã chụp chờ so Figma · PSI desktop 94 / mobile 87 trên .aem.page) | — | — | Q10/Q11 → Quentin · top page 404 trên .aem.live → dev | 0 | JOB-13 chờ lane (Agent) · so Figma 001 (Claude · 17/10) |
-| DSR-501 | DM_movie question | 🟡 | — | P2/P3 chờ JOB-11 · P1 chưa rõ (QA-PT không thấy field) | — | — | Dat kiểm model DM movie (#11) | 0 | JOB-11 đã chuyển queue (Agent · 16/10) |
+| DSR-501 | DM_movie question | 🟡 | — | P1 ✅ (relatedMovies / isUnavailable, Dat 16/10) · P2/P3 JOB-11 đang chạy | — | — | — | 0 | JOB-11 đã chuyển queue (Agent · 16/10) |
 | DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT item 1, 10 chưa chạy → Night Pack 16/10 |
 
 Ký hiệu: DEV = `pass/tổng` + số fail. STG/PRO = N/A (giai đoạn DEV only, 03 §0) – Jira status [STG]/PRO là workflow chung.
