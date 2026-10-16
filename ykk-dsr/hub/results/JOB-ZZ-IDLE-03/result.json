@@ -1,0 +1,94 @@
+{
+ "job": "JOB-ZZ-IDLE-03",
+ "agent": "claude-code",
+ "us": "DSR-583",
+ "env": "dev",
+ "started": "2026-10-16T11:09:00Z",
+ "finished": "2026-10-16T11:15:23Z",
+ "status": "done",
+ "tests": [
+  {
+   "tc": "DSR-PRODLIST-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "375px: 1 column (grid 327px, card w 327px), expected 2 – page is cards variant product-index (1-col list by design, Figma 3324:63239), not 1333-6510 grid",
+   "evidence": "evidence/DSR-PRODLIST-001_ja.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-PRODLIST-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "1 column at 320/360/390/414/430/767 (card w 272–719px), expected 2 – page is cards variant product-index (1-col list by design, Figma 3324:63239), not 1333-6510 grid",
+   "evidence": "evidence/DSR-PRODLIST-002_ja.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "en",
+   "result": "blocked",
+   "error": "blocked-data: TD-583-01 page missing (/master/en/test-space/product-list and /master/en/product-list HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "ja",
+   "result": "fail",
+   "error": "1 column at open/scroll/reload x3 (stable, never 2); filter step not run (no filter) – page is cards variant product-index (1-col list by design, Figma 3324:63239), not 1333-6510 grid",
+   "evidence": "evidence/DSR-PRODLIST-003_ja.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-PRODLIST-004",
+   "lang": "ja",
+   "result": "fail",
+   "error": "1 column at 1440/1200/980/768 (card w 1240/1136/916/720px), expected 4/4/3/3 – page is cards variant product-index (1-col list by design, Figma 3324:63239), not 1333-6510 grid",
+   "evidence": "evidence/DSR-PRODLIST-004_ja.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-PRODLIST-005",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "en",
+   "result": "skip",
+   "error": "Visual TC – codex lane (fixme)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Visual TC – codex lane (fixme)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-PRODLIST-007",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (real iOS Safari / Android Chrome) – documented only (fixme)",
+   "evidence": "",
+   "suspect": ""
+  }
+ ],
+ "lighthouse": [],
+ "code_changes": [
+  "tests/product-list/DSR-583.product-list.spec.ts",
+  "pages/ProductListPage.ts",
+  "fixtures/dsr-583.ts",
+  "docs/DSR-583/baseline-BL-v1.md",
+  "docs/DSR-583/test-data.md",
+  "docs/DSR-583/data-testid.md",
+  "results/DSR-583/DEV/automation-run-20261016.md"
+ ],
+ "questions": []
+}
