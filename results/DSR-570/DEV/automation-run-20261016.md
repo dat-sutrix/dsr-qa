@@ -2,87 +2,94 @@
 
 ## 1. Header
 
-- Run start (UTC): 2026-10-16T13:14:42Z
-- Run end (UTC), including Lighthouse: 2026-10-16T13:17:08Z
-- Playwright start (UTC): 2026-10-16T13:14:50.255Z; duration: 8.625s.
+- Run start (UTC): 2026-10-16T13:20:19Z
+- Run end (UTC): 2026-10-16T13:22:19Z
 - Environment + base URL: DEV — https://main--dsr-eds-dev--sutrix-projects.aem.live
-- Target page: /master/ja/test-space/dsr-570-catalog-detail
-- Build under test: not independently verified.
-- Baseline ID: JOB-20261016-13 and hub/tc-out/DSR-570.spec.json; no pixel baseline. Figma C10 3326-80556 comparison deferred to Claude web.
-- Automation HEAD commit SHA: 24d0311911fc8965ef7ddbb012634d61d6175294 (new capture spec uncommitted during run, committed with this report).
-- Exact test command:
+- Target page(s): `/master/ja/test-space/dsr-570-catalog-detail`, `/master/en/test-space/dsr-570-catalog-detail`, `/master/{ja,en}/test-space/list-catalog`
+- Build under test: not independently verified (EDS `main` branch as served on DEV at run time)
+- Baseline ID: BL-v1 (DSR-192 BAC 1–5 / TCC 1–4 + DSR-570 comments 60987/61054 + Figma C10 3326-80556; `ykk-dsr/hub/tc-out/DSR-570.spec.json`)
+- Automation HEAD commit SHA: `acc434f4dd9a303c350d8173573b7e825140f475` plus the uncommitted new DSR-570 files of JOB-20261016-12 (committed together with this report)
+- Exact command used:
 
 ```sh
-npm run test:dev -- tests/catalog-detail/DSR-570.visual.spec.ts --project=chromium --workers=1 --retries=0
-```
-
-Lighthouse command, run sequentially for mobile and desktop, each with run=1,2,3 (desktop only adds `--preset=desktop`):
-
-```sh
-export CHROME_PATH=/home/qa/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome
-node /home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/cli/index.js https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail --chrome-flags='--headless --no-sandbox' --only-categories=performance,accessibility,best-practices,seo --output=json --output-path="/tmp/job1613/lighthouse-$device-$run.json" "${args[@]}"
+PLAYWRIGHT_JSON_OUTPUT_NAME=test-results/dsr-570-job12.json npm run test:dev -- tests/catalog-download/DSR-570.catalog-download.spec.ts --project=chromium
 ```
 
 ## 2. TypeScript check
 
 - Command: `npx tsc --noEmit`
 - Exit code: 0
-- Result: no errors (empty output).
+- Result: no errors (run before this test run)
 
 ## 3. Suite summary
 
 | Total | Passed | Failed | Skipped | Exit code | Workers | Retries | Wall time |
 |---:|---:|---:|---:|---:|---:|---|---|
-| 2 | 2 | 0 | 0 | 0 | 1 | 0 configured / actual | 8.625s |
+| 16 | 5 | 3 | 8 | 1 | 2 | configured 1; 3 tests retried, all failed again | 120 s (Playwright 117.2 s) |
 
-Playwright capture/scroll checks only; no flaky outcomes. Chromium 153.0.8010.12. These are proposed outcomes, not final QA verdicts.
-Lighthouse: six successful CLI runs (exit 0 each), one additional TC with scores recorded; no threshold assertion.
+Counts are unique tests, not attempts. Proposed automated outcomes only; human QA confirms.
+Scope/browser: DSR-570 spec only; chromium project. Flaky outcomes: 0.
 
 ## 4. Executed tests
 
-Durations are per attempt, without retries.
+Durations are per attempt (initial + retry).
 
 | TC ID | Title | Result | Duration | One-line failure reason |
 |---|---|---|---|---|
-| DSR-CATDL-014 | DSR-CATDL-014 [ja] capture catalog download form at 1440px | captured; visual verdict pending | 3.877s | — |
-| DSR-CATDL-015 | DSR-CATDL-015 [ja] capture catalog download form at 375px | proposed pass — scrollWidth only | 3.172s | — |
-| DSR-CATDL-019 | Lighthouse — form page, mobile and desktop | scores recorded | six sequential runs; timestamps in lighthouse-summary.json | No threshold assertion |
-
-Lighthouse category medians (target ≥95, record only):
-
-| Device | Performance | Accessibility | Best Practices | SEO |
-|---|---:|---:|---:|---:|
-| mobile | 79.0 | 96.0 | 100 | 61.0 |
-| desktop | 100 | 90.0 | 100 | 61.0 |
-
-### Measured layout observations
-
-- Both final URLs equal the target; HTTP 200; h1 exact text: 製品カタログ.
-- PC: h1 y=230; catalog y=324.39 (image x=340, text x=740); fields y=664.39; consent y=1511.39; button y=1887.91. Button center x=720 equals viewport center, radius=50px.
-- PC labels are ABOVE controls in two columns, not label-left/input-right as requested. Text inputs and selects are 320px wide. Example label y=664.39–704.39; input y=712.39–760.39.
-- SP: scrollWidth=375 (passes ≤375); content width=343px (form inner content width, excluding padding); nine text inputs/selects each 217px = 63.3% of content, below ≥90% (308.7px). Checkbox widths are excluded from the full-width input calculation.
-- SP button x=42.5, width=290px; fully in viewport after scroll. Full-page screenshots captured after returning to top.
-- Raw bounding boxes, labels, HTTP status and final URL: `ykk-dsr/hub/results/JOB-20261016-13/DSR-CATDL-014-measurements.json` and `DSR-CATDL-015-measurements.json`.
+| DSR-CATDL-001 | DSR-CATDL-001 [ja] catalog detail header renders | passed | 4.8s | — |
+| DSR-CATDL-002 | DSR-CATDL-002 [ja] download form fields, labels, consent and button present | passed | 3.8s | — |
+| DSR-CATDL-005 | DSR-CATDL-005 [ja] requiresForm=false card downloads PDF directly | passed | 5.2s | — |
+| DSR-CATDL-005 | DSR-CATDL-005 [en] requiresForm=false card downloads PDF directly | passed | 3.7s | — |
+| DSR-CATDL-003 | DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click) | passed | 3.9s | — |
+| DSR-CATDL-018 | DSR-CATDL-018 [ja] e-book form card opens ebookUrl without form | failed | 6.7s + 14.5s | popup navigation null — test defect (see §6) |
+| DSR-CATDL-018 | DSR-CATDL-018 [en] e-book form card opens ebookUrl without form | failed | 6.1s + 5.3s | popup navigation null — test defect (see §6) |
+| DSR-CATDL-007 | DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit | failed | 9.2s + 8.0s | gated PDF URL in dm-catalog-list response |
 
 ## 5. Skipped tests
 
-None.
+| TC ID | Verbatim skip reason |
+|---|---|
+| DSR-CATDL-006 [ja] | blocked-data: card "QA190 PDF form required" (qa190-cat-pdf-form) not rendered on /master/ja/test-space/list-catalog (in dm-catalog-list: yes) – DSR-570 CF integration (Ngoc 10/15: demo page is layout only, not bound to catalog CF) |
+| DSR-CATDL-006 [en] | blocked-data: card "QA190 PDF form required" (qa190-cat-pdf-form) not rendered on /master/en/test-space/list-catalog (in dm-catalog-list: yes) – DSR-570 CF integration (Ngoc 10/15: demo page is layout only, not bound to catalog CF) |
+| DSR-CATDL-001 [en] | blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404 |
+| DSR-CATDL-002 [en] | blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404 |
+| DSR-CATDL-010 [ja] | blocked-data: card "QA190 PDF form required" (qa190-cat-pdf-form) not rendered on /master/ja/test-space/list-catalog (in dm-catalog-list: yes) – DSR-570 CF integration (Ngoc 10/15) + HubSpot EX-06/EX-07 |
+| DSR-CATDL-017 [ja] | no catalog-ID mechanism on DEV yet: "QA190 PDF form required" card not rendered; demo form page is not bound to a CF (Ngoc 10/15) |
+| DSR-CATDL-016 [en] | blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404 |
+| DSR-CATDL-016 [cn] | cn: no /master/cn (Issue #18) (fixme) |
 
 ## 6. Failed tests
 
-None. The explicit job pass criterion for 015 is horizontal scroll only. Input-width and desktop-label discrepancies above remain open for QA; capture success does not imply design acceptance.
+### DSR-CATDL-018 [ja] / [en] — e-book form card opens ebookUrl without form
 
-Committed screenshots:
-- `ykk-dsr/hub/results/JOB-20261016-13/evidence/DSR-CATDL-014_DEV_01.png`
-- `ykk-dsr/hub/results/JOB-20261016-13/evidence/DSR-CATDL-015_DEV_01.png`
+- Failing assertion: `expect(first, 'popup navigation').not.toBeNull()` — `tests/catalog-download/DSR-570.catalog-download.spec.ts:121` (pre-fix line)
+- Expected: first navigation request of the popup is captured and equals ebookUrl.
+- Actual: `null`. The predicate called `request.frame()`, which throws for a popup's first navigation request; the wait rejected and resolved to null. The popup did open (`popupUrl` = `https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3`). Card hrefs = `https://www.ykkfastening.com/`, target `_blank` (soft checks passed).
+- Attempt(s): failed initial and retry.
+- Evidence paths: `test-results/catalog-download-DSR-570.c-937ce-opens-ebookUrl-without-form-chromium/test-failed-1.png`, `…-c-b8a9e-…/test-failed-1.png` (overwritten by later runs).
+- Proposed suspect: test. Fixed and re-run (automation-run-20261016-rerun.md, -rerun2.md).
 
-`test-results/` and `playwright-report/` are gitignored and not committed. Raw Lighthouse JSON/logs stay in `/tmp/job1613/`; committed `lighthouse-summary.json` retains per-run scores, settings, warnings and deficient audit titles.
+### DSR-CATDL-007 [ja] — form-gated PDF URL not exposed before submit
+
+- Failing assertion: `expect(gatedHits, 'gated PDF URL delivered to the browser before submit').toEqual([])` — `tests/catalog-download/DSR-570.catalog-download.spec.ts:179`
+- Expected: the PDF path of `qa190-cat-pdf-form` (requiresForm=true) appears in no response body or DOM attribute before submit.
+- Actual: the `ykk/dm-catalog-list` GraphQL response loaded by `/master/ja/test-space/list-catalog` contains item `qa190-cat-pdf-form` (requiresForm=true) with `pdfAsset._publishUrl = https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf`. The form page (`dsr-570-catalog-detail`) responses and DOM contain no hit (soft check passed). The card itself is not rendered.
+- Attempt(s): failed on initial attempt and on retry with the same values.
+- Evidence paths: `test-results/catalog-download-DSR-570.c-0375f-L-not-exposed-before-submit-chromium/test-failed-1.png` (overwritten by later runs)
+- Proposed suspect: product (TCC#3 gating; method undecided, A4). Caveat: the same PDF file is shared by 9 requiresForm=false CFs on DEV, so the string also appears legitimately on the list page.
+
+Evidence under `test-results/` and `playwright-report/` is gitignored and **not committed**.
 
 ## 7. Open points for QA
 
-- Claude web owns visual comparison; Figma was not accessed and no pixel baseline exists. No thank-you navigation or submission performed (read-only form scope).
-- PC labels above controls and SP widths below 90% may be product layout discrepancies; human review required.
-- result.json uses schema `pass` for capture completion (014), scroll criterion (015), and score recording (019), not final visual or Lighthouse-target acceptance.
-- Build identity and CF/HubSpot integration not independently verified. Only DEV ja tested.
-- Lighthouse scores are lab measurements; see per-device medians and all six run scores/settings in the committed summary JSON. Targets ≥95 are informational per job.
-- Job-specific commit/no-push protocol supersedes root reporting commit/push convention; runner handles pushing.
+- All outcomes are proposals; human QA confirms.
+- Build identity on DEV was not independently verified.
+- 007: the exposure is the GraphQL response for the list page (client-side query to the AEM publish host). Whether this counts as a TCC#3 violation, or whether gating is planned server-side/HubSpot later (A4), is for QA/dev to decide. A distinct PDF asset for `qa190-cat-pdf-form` would remove the shared-file ambiguity.
+- 002 passed on structure only (A2). Observed ja fields: lastname, firstname, email, phone, company (required text/email/tel), department (optional), jobtitle, location, field (required selects), jobfunction (9 checkboxes; group legend 必須 but no `required` on the inputs), plus 2 consent checkboxes (`consent_contact`, `consent_store`), both `required`. Only `consent_store` mentions 個人情報. "必須"/"任意" badge text is part of each label. Field `field` (あなたの担当分野は？) offers prefecture options, the same as 勤務地 — likely placeholder content.
+- 003 passed via `required` on the consent checkbox; the button is not disabled. Button was never clicked.
+- 001 ja: image is a placeholder SVG (`/blocks/listing/fixtures/placeholder1.svg`, naturalWidth 400); the demo content (AQUASEAL®, 2022.01.20) is not bound to a CF.
+- 010/017: demo page has no catalog ID in URL or hidden inputs (`hiddenInputs: []`); `?id=999999` returns 200 with the same demo catalog. Recorded only; the TCs are skipped because the requiresForm=true card is not rendered.
+- 018 follows ebookUrl to an external site (`https://www.ykkfastening.com/`, which redirects to ykkdigitalshowroom.com). Read-only navigation only.
+- CF paths/catalogIds on DEV differ from the TD sheet (see docs/DSR-570/test-data.md); `qa190-cat-ebook-form` catalogId has 2 trailing spaces.
+- Evidence under `test-results/` and `playwright-report/` is gitignored and **not committed**; it is overwritten by later runs.
+- Per-test JSON of this run was overwritten by the rerun (Playwright clears `test-results/`); this report is built from the console/JSON output captured during the run.

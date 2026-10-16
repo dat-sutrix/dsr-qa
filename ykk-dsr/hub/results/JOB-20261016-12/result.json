@@ -1,0 +1,40 @@
+{
+  "job": "JOB-20261016-12",
+  "agent": "claude-code",
+  "us": "DSR-570",
+  "env": "dev",
+  "started": "2026-10-16T13:20:19Z",
+  "finished": "2026-10-16T13:27:23Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-CATDL-001", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-CATDL-001", "lang": "en", "result": "blocked", "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-CATDL-002", "lang": "ja", "result": "pass", "error": "structure only (A2): 19 inputs all labelled; 2 required consent boxes, 1 mentions 個人情報; 1 button", "evidence": "", "suspect": "" },
+    { "tc": "DSR-CATDL-002", "lang": "en", "result": "blocked", "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-CATDL-003", "lang": "ja", "result": "pass", "error": "consent checkbox required=true; button not disabled; button never clicked", "evidence": "", "suspect": "" },
+    { "tc": "DSR-CATDL-005", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-CATDL-005", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-CATDL-006", "lang": "ja", "result": "blocked", "error": "blocked-data: card \"QA190 PDF form required\" not rendered (in dm-catalog-list: yes) – DSR-570 CF integration. Verdict Pending", "evidence": "", "suspect": "product" },
+    { "tc": "DSR-CATDL-006", "lang": "en", "result": "blocked", "error": "blocked-data: card \"QA190 PDF form required\" not rendered (in dm-catalog-list: yes) – DSR-570 CF integration. Verdict Pending", "evidence": "", "suspect": "product" },
+    { "tc": "DSR-CATDL-007", "lang": "ja", "result": "fail", "error": "dm-catalog-list GraphQL response has qa190-cat-pdf-form (requiresForm=true) pdfAsset._publishUrl …/qa190-catalog-sample.pdf; form page clean. PDF shared by 9 non-gated CFs", "evidence": "evidence/DSR-CATDL-007_ja.png", "suspect": "product" },
+    { "tc": "DSR-CATDL-010", "lang": "ja", "result": "blocked", "error": "blocked-data: pdf-form card not rendered. Demo form page: no id in URL, 0 hidden inputs (expected until HubSpot)", "evidence": "", "suspect": "product" },
+    { "tc": "DSR-CATDL-016", "lang": "en", "result": "blocked", "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-CATDL-016", "lang": "cn", "result": "skip", "error": "fixme: cn: no /master/cn (Issue #18)", "evidence": "", "suspect": "env" },
+    { "tc": "DSR-CATDL-017", "lang": "ja", "result": "skip", "error": "no catalog-ID mechanism on DEV yet (pdf-form card not rendered). Demo page ?id=999999 → 200, same demo catalog", "evidence": "", "suspect": "product" },
+    { "tc": "DSR-CATDL-018", "lang": "ja", "result": "pass", "error": "href=ebookUrl https://www.ykkfastening.com/, _blank, first popup nav = ebookUrl", "evidence": "", "suspect": "" },
+    { "tc": "DSR-CATDL-018", "lang": "en", "result": "pass", "error": "href=ebookUrl https://www.ykkfastening.com/, _blank, first popup nav = ebookUrl", "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+    "pages/CatalogDownloadPage.ts",
+    "fixtures/dsr-570.ts",
+    "docs/DSR-570/automation-spec.md",
+    "docs/DSR-570/test-data.md",
+    "docs/DSR-570/data-testid.md",
+    "results/DSR-570/DEV/automation-run-20261016.md",
+    "results/DSR-570/DEV/automation-run-20261016-rerun.md",
+    "results/DSR-570/DEV/automation-run-20261016-rerun2.md"
+  ],
+  "questions": []
+}
