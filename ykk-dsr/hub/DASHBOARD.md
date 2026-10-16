@@ -6,7 +6,6 @@
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
 | 9 | **Agent treo:** JOB-20261015-09 nằm trong `jobs/running/` từ 15/10 16:13 (>15h, không result) → chặn cả lane claude-code (JOB-13, JOB-11, JOB-20261016-01/02 đang chờ). Vào VPS tmux `dsr` xem cửa sổ claude-code: process còn chạy thì kill, rồi `git mv jobs/running/JOB-20261015-09.md jobs/queue/` + push, restart runner | — (VPS) | 16/10 sáng | 566, 609, 552, 557, 501 | 5 job | — |
-| 10 | **Tạo Jira Bug PEND-552-016** (UE preview breadcrumb thiếu ancestor; Publish đúng). Scheduled task bị chặn quyền tạo issue sáng nay. Nội dung copy nguyên văn trong [BUGS.md](BUGS.md) mục "Bug chờ tạo ticket" | — (Jira) | 16/10 | 552 | 016 | BUGS.md |
 | 12 | Duyệt [tc-questions.md](tc-questions.md) (**22 câu**, 19 mới từ đêm 15/10: Q4–Q22) – cột "Dat quyết định" | — | 16/10 | 529, 609, 568, 560, 608, 610, 503, 583 | TC verdict | — |
 | 13 | Nhờ dev Top page publish `/ja/top-page`, `/en/top-page` lên .aem.live (đang 404, chỉ có .aem.page) | 石谷英樹 (dev DSR-609) | 17/10 | 609, 552 | HOME + test live | "Ishitani-san, the DEV top page is only on .aem.page (/ja/top-page, /en/top-page return 404 on .aem.live). Could you publish it (Publish, not Preview) so QA can test DSR-609 and the breadcrumb HOME link?" |
 | 8 | Upload TC DSR-608+610 adopt (256 KB, 1 file 2 sheet) từ repo `hub/tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx` → [Drive DSR-172](https://drive.google.com/drive/folders/1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E) | — | 16/10 | 608, 610 | DoD TC file | — |
@@ -33,12 +32,12 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|---|
-| [DSR-552](us/DSR-552.md) | Breadcrumb block | 🟡 | 2/9 | 12/35 ✅ · 8 ❌ · 15 ⛔ (night 15/10: 012/013/024 ✅, 016 ❌ bug UE preview, 026 làm lại) | — | — | B3 HOME (top page chưa lên .aem.live) · bug PEND-552-016 chưa có Jira → Dat | 1 (chờ ticket) | JOB-20261016-01 010/014/015/018 (Agent · 16/10) · tạo bug (Dat · 16/10) |
+| [DSR-552](us/DSR-552.md) | Breadcrumb block | 🟡 | 2/9 | 12/35 ✅ · 8 ❌ · 15 ⛔ (night 15/10: 012/013/024 ✅, 016 ❌ bug UE preview, 026 làm lại) | — | — | B3 HOME (top page chưa lên .aem.live) · bug DSR-648 (UE preview) → dev | 1 (DSR-648) | JOB-20261016-01 010/014/015/018 (Agent · 16/10) · tạo bug (Dat · 16/10) |
 | [DSR-557](us/DSR-557.md) | 動画・カタログ表示 | 🟡 | 2/9 | 5/25 ✅ · 1 ❌ · 12 ⛔ | — | — | DSR-611 → Quentin · TD-190-03/04 thiếu Release date → QA-PT | 0 | JOB-20261016-02 qa190 rerun (Agent · 16/10) · movie data ja (QA-PT · đêm 16/10) |
 | [DSR-566](us/DSR-566.md) | ニュース詳細 | 🟡 | 2/9 | 0/18 · 3 ⛔ | — | — | **JOB-09 treo >15h → Dat kiểm VPS** · list /news/ chưa có · cn | 0 | Gỡ JOB-09 (Dat · 16/10) · TD qa566 (QA-PT · đêm 16/10) |
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🟡 | 3/9 | 0/32 · 9 ⛔ | — | — | Chưa có trang test → QA-PT seed TD-529 · stories index → dev | 0 | Seed TD-529 (QA-PT · 16/10) → JOB-12 (Agent · 17/10) |
 | [DSR-609](us/DSR-609.md) | トップ | 🟡 | 3/9 | 0/9 (JOB-14: 001 đã chụp chờ so Figma · PSI desktop 94 / mobile 87 trên .aem.page) | — | — | Q10/Q11 → Quentin · top page 404 trên .aem.live → dev | 0 | JOB-13 chờ lane (Agent) · so Figma 001 (Claude · 17/10) |
-| DSR-501 | DM_movie question | 🟡 | — | P1 ✅ · P2 ❌ · P3 ❌ (JOB-20261016-03: related movies không render) | — | — | Bug DSR-647 → Chiba | 1 | Chờ fix DSR-647 → rerun (Agent) | JOB-11 đã chuyển queue (Agent · 16/10) |
+| DSR-501 | DM_movie question | 🟡 | — | P1 ✅ · P2 ❌ · P3 ❌ (JOB-20261016-03: related movies không render) | — | — | Bug DSR-647 → Martin | 1 | Chờ fix DSR-647 → rerun (Agent) | JOB-11 đã chuyển queue (Agent · 16/10) |
 | DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT item 1, 10 chưa chạy → Night Pack 16/10 |
 
 Ký hiệu: DEV = `pass/tổng` + số fail. STG/PRO = N/A (giai đoạn DEV only, 03 §0) – Jira status [STG]/PRO là workflow chung.
