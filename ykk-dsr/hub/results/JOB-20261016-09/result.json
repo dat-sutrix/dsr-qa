@@ -1,0 +1,25 @@
+{
+  "job": "JOB-20261016-09",
+  "agent": "claude-code",
+  "us": "DSR-587",
+  "env": "dev",
+  "started": "2026-10-16T10:27:07Z",
+  "finished": "2026-10-16T10:31:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-501-P3", "lang": "en", "result": "blocked",
+      "error": "blocked-data: branch page not regenerated after CF related republish. HTML last-modified 06:43:41Z, 5 relatedMovies rows (rel1-5); GraphQL has 6. Spec passed but cap not proven",
+      "evidence": "", "suspect": "data" },
+    { "tc": "DSR-BREAD-002", "lang": "ja", "result": "pass", "error": "HOME step ran: /master/ja 200, same tab (main + DSR-591 spec)", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-002", "lang": "en", "result": "pass", "error": "HOME step ran: /master/en 200, same tab (DSR-591 spec; main spec 002 is ja only)", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-004", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-004", "lang": "en", "result": "skip", "error": "not run: no en case for 004 in main spec (ja only); en HOME covered by 017/002 en", "evidence": "", "suspect": "test" },
+    { "tc": "DSR-BREAD-008", "lang": "ja", "result": "pass", "error": "/master/ja 200, breadcrumb 0, JSON-LD []", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-008", "lang": "en", "result": "pass", "error": "/master/en 200, breadcrumb 0, JSON-LD []", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-017", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-017", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["results/DSR-587/DEV/automation-run-20261016-job09.md", "results/DSR-552/DEV/automation-run-20261016-job09.md"],
+  "questions": []
+}
