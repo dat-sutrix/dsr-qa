@@ -49,7 +49,12 @@ Query call: `https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.
 ## Rendering
 json2html Mustache template (`cf-templates/video.html`; product/catalog to do) writes `<head>` (title, description, og:image) and one block row per field; inactive or missing CF commune → single `unavailable` row + `noindex`. Page is static HTML (content readable without JS). Block (`scripts/overlay-rows.js`, `blocks/video-detail`) rebuilds the object from rows – **no GraphQL call in the browser**.
 
+## Update 2026-10-16 (Martin, DSR-647 comment 61175)
+- `relatedMovies` added to `dsr-video-page`; related movies with `isUnavailable = true` not shown; max 5 related movies.
+- Order (video detail spec): 関連コンテンツ mixes movies, articles and LPs, sorted by update date, newest first (not authored order).
+- Branch for test: `DSR-PRODUCTDETAIL-moustache` → https://dsr-productdetail-moustache--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/{id}. QA CF related qa501-main-a/b created by Martin under /content/dam/dsr/en/movies/standard/.
+
 ## QA observations (not in the source)
-- DEV excerpt of the video CF commune shows `relatedProducts` but **no `relatedMovies`** → DSR-647 gap remains in the new flow unless the query/template add it.
+- ~~No `relatedMovies` in the DEV excerpt~~ → resolved by the update above.
 - Two flags: `isActive` (CF related, hides detail page) vs `isUnavailable` (CF commune DM_movie, DSR-501 point 2) – relation not defined.
 - "Today's test CFs live elsewhere": QA data `qa501-*`, `qa190-*` under `/content/dam/ykk/common/product-cf/test/` will **not** generate overlay pages.
