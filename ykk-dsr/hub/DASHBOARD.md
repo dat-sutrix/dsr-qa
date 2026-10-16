@@ -14,7 +14,7 @@
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
 Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 ticket, đích sáng T2 19/10) · câu hỏi chờ duyệt: [tc-questions.md](tc-questions.md)
-**Sáng 16/10:** done 1/17 · upload-pending 8 · todo 8 (đêm 17–18/10) · câu hỏi chưa quyết định **22**. **Night TC job (15/10 21:30):** done 1/17 · upload-pending 8 (529, 609, 568, 560, 608, 610, 503, 583) · câu hỏi chờ duyệt 22 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14) · 🔔 Dat upload 8 TC xlsx từ tc-out/ (503, 583 vào folder mới tạo) · còn 8 ticket / 48 SP
+**Night TC job (16/10 20:25):** done 10/17 (+DSR-570) · upload queue pending 2 / fail 0 · auto-added 0 · job agent đã xếp 2 (JOB-20261016-12 claude-code, -13 codex) · Q23–Q26 mặc định · còn 7 ticket / 40 SP. **Sáng 16/10:** done 1/17 · upload-pending 8 · todo 8 (đêm 17–18/10) · câu hỏi chưa quyết định **22**. **Night TC job (15/10 21:30):** done 1/17 · upload-pending 8 (529, 609, 568, 560, 608, 610, 503, 583) · câu hỏi chờ duyệt 22 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14) · 🔔 Dat upload 8 TC xlsx từ tc-out/ (503, 583 vào folder mới tạo) · còn 8 ticket / 48 SP
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
@@ -37,8 +37,8 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 ## 🤖 Agents
 | Lane | Đang chạy | Hàng đợi | Hold (07:45 chuyển khi Night Report Pass) | Xong 24h | Job lỗi |
 |---|---|---|---|---|---|
-| claude-code (functional) | — | 0 | JOB-20261016-09 (DSR-647 retest · cần `DSR-501-P3-order`) · JOB-20261016-10 (557 e-book · cần TD-190-12/13) · JOB-20261016-08 (566 rerun · cần TD-566-01/02) · JOB-20261015-12 (529 · cần TD-529-01/03) | 7 (JOB-20261016-01..07, 0 fail sản phẩm mới) | 0 |
-| codex (visual + Lighthouse) | — | 0 | JOB-20261016-11 (566 visual 014/015 SP 390 · cần TD-566-01) | 0 | 0 |
+| claude-code (functional) | — | 1 (JOB-20261016-12 DSR-570) | JOB-20261016-09 (DSR-647 retest · cần `DSR-501-P3-order`) · JOB-20261016-10 (557 e-book · cần TD-190-12/13) · JOB-20261016-08 (566 rerun · cần TD-566-01/02) · JOB-20261015-12 (529 · cần TD-529-01/03) | 7 (JOB-20261016-01..07, 0 fail sản phẩm mới) | 0 |
+| codex (visual + Lighthouse) | — | 1 (JOB-20261016-13 DSR-570) | JOB-20261016-11 (566 visual 014/015 SP 390 · cần TD-566-01) | 0 | 0 |
 Kết quả chiều 16/10: JOB-05 (501 P3) blocked-data (updateDate null, preview cũ) · JOB-06 (557) 10 pass / 4 skip data e-book · JOB-07 (552 close-out) 3 pass / 7 skip (HOME B3, cn). Không có bug thật mới.
 
 ## ✅ Close gần đây
