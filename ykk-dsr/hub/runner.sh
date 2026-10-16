@@ -54,6 +54,14 @@ run_agent() {  # $1 = job id
 log "runner started"
 while true; do
   pull || { log "pull failed"; sleep 60; continue; }
+  # Drive upload queue (claude-code lane only; needs rclone remote, see tools/RCLONE-SETUP.md)
+  if [ "$LANE" = claude-code ] && grep -q $'^pending\t' "$HUB/tc-out/upload-queue.tsv" 2>/dev/null \
+     && command -v rclone >/dev/null && rclone listremotes 2>/dev/null | grep -qx 'gdrive:'; then
+    log "drive upload start"
+    bash "$HUB/tools/drive_upload.sh" >>"$HOME/drive-upload.log" 2>&1; URC=$?
+    git add "$HUB/tc-out/upload-queue.tsv" && git commit -qm "[upload] drive upload rc=$URC" && sync
+    log "drive upload rc=$URC"
+  fi
   JOB="$(grep -l "^agent: $LANE\$" "$HUB"/jobs/queue/*.md 2>/dev/null | sort | head -1)"
   if [ -z "$JOB" ]; then sleep "$POLL"; continue; fi
 
