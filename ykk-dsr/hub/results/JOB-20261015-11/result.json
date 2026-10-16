@@ -1,0 +1,20 @@
+{
+  "job": "JOB-20261015-11",
+  "agent": "claude-code",
+  "us": "DSR-501",
+  "env": "dev",
+  "started": "2026-10-16T04:40:35Z",
+  "finished": "2026-10-16T04:47:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-501-P3", "lang": "en", "result": "blocked",
+      "error": "blocked-data: page not wired to qa501 CF. qa501-a shows 'Unable to load video information.'; GraphQL videoId=qa501-main-a returns no items",
+      "evidence": "", "suspect": "data" },
+    { "tc": "DSR-501-P2", "lang": "en", "result": "blocked",
+      "error": "blocked-data: page not wired to qa501 CF. qa501-b references videoId qa501-main-a (not -b); GraphQL returns no items for qa501-*",
+      "evidence": "", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/movie-detail/DSR-173.movie-detail.spec.ts", "fixtures/dsr-501.ts", "results/DSR-501/DEV/automation-run-20261016.md"],
+  "questions": []
+}

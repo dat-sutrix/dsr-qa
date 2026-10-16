@@ -1,4 +1,5 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type TestInfo } from '@playwright/test';
+import { blockedNotWired, dsr173MovieTitle, pageA, pageB } from '../../fixtures/dsr-501';
 import {
   descriptionLineBreakSeparator, detailPath, movieData, requireData,
 } from '../../fixtures/dsr-173';
@@ -237,3 +238,43 @@ const deferred = [
 for (const [id, reason] of deferred) {
   test(`DSR-MOVIE-${id} ${reason}`, () => { test.skip(true, reason); });
 }
+
+test.describe('DSR-501', () => {
+  // Preflight per JOB-20261015-11: 404, the block error, or the DSR-173 movie → blocked-data (skip), never fail.
+  async function openQa501(movie: MovieDetailPage, path: string, testInfo: TestInfo): Promise<void> {
+    const response = await movie.goto(path);
+    const status = response?.status() ?? null;
+    test.skip(status === 404, `blocked-data: ${path} returned 404`);
+    // TODO: data-testid for the video-detail error state (observed: p.vd-error)
+    const error = movie.page.getByText('Unable to load video information.');
+    await expect(movie.title.or(error).first()).toBeVisible();
+    const mainTitle = await movie.title.count() ? await movie.title.innerText() : null;
+    await testInfo.attach('preflight', {
+      body: JSON.stringify({ path, finalUrl: movie.page.url(), status, mainTitle, blockError: await error.count() > 0 }, null, 2),
+      contentType: 'application/json',
+    });
+    await testInfo.attach('page', { body: await movie.page.screenshot({ fullPage: true }), contentType: 'image/png' });
+    test.skip(mainTitle === null || mainTitle === dsr173MovieTitle, `${blockedNotWired} (main title: ${mainTitle ?? 'none, block shows "Unable to load video information."'})`);
+  }
+
+  function relatedMovieTitles(movie: MovieDetailPage): Promise<string[]> {
+    return movie.relatedContentSection.locator('[data-testid="related-content-card"][data-content-type="movie"]')
+      .getByTestId('related-content-card-title').allInnerTexts();
+  }
+
+  test('DSR-501-P3 [en] related movies are limited to 5 in authored order', async ({ page }, testInfo) => {
+    const movie = new MovieDetailPage(page);
+    await openQa501(movie, pageA.path, testInfo);
+    await expect(movie.relatedContentSection).toBeVisible();
+    expect(await relatedMovieTitles(movie)).toEqual([...pageA.expectedRelated]);
+  });
+
+  test('DSR-501-P2 [en] unavailable related movie is not displayed', async ({ page }, testInfo) => {
+    const movie = new MovieDetailPage(page);
+    await openQa501(movie, pageB.path, testInfo);
+    await expect(movie.relatedContentSection).toBeVisible();
+    expect(await relatedMovieTitles(movie)).toEqual([...pageB.expectedRelated]);
+    expect(await page.content()).not.toContain(pageB.excludedTitle);
+    await expect(page.locator('a', { hasText: pageB.excludedTitle })).toHaveCount(0);
+  });
+});
