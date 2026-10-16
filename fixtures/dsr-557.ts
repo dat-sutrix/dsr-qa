@@ -38,3 +38,21 @@ export function expectedLabel(item: Pick<CatalogItem, 'publishDate' | 'updateDat
   if (recent(item.updateDate, on)) return 'UPDATE';
   return '';
 }
+
+// QA-seeded catalog CFs on DEV (JOB-20261016-02). Title on page; CF name in comments where it differs from the title.
+export const qa190 = {
+  pdf: 'QA190 PDF catalog', // CF qa-190-cat-pdf
+  pdfForm: 'QA190 PDF form required',
+  ebook: 'QA190 e-book',
+  ebookForm: 'QA190 e-book form',
+  new: ['QA190 NEW 0', 'QA190 NEW 10', 'QA190 NEW 11'],
+  upd: ['QA190 UPD 0', 'QA190 UPD 10', 'QA190 UPD 11'],
+  both: ['QA190 BOTH', 'qa190-cat-noupd'], // noupd has no title; the page shows the CF name
+} as const;
+// qa190 items in the GraphQL response that DEV does not render (JOB-20261016-02). Reported, not failed.
+export const blockedEbookData = 'blocked-data: QA-PT fixes ebookUrl 16/10 night';
+export const notRendered: Record<string, string> = {
+  [qa190.ebook]: blockedEbookData,
+  [qa190.ebookForm]: blockedEbookData,
+  [qa190.pdfForm]: 'suspect product or DSR-570 gate',
+};

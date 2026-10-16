@@ -25,10 +25,19 @@ export class CatalogDisplayPage {
   links(item: Locator): Locator { return item.locator('a[href]'); }
   cta(item: Locator): Locator { return item.locator('.cards-card-cta a'); }
   meta(item: Locator): Locator { return item.locator('.cards-card-meta'); }
-  item(title: string): Locator { return this.items.filter({ has: this.page.locator('.cards-card-title a', { hasText: title }) }); }
+  // Exact title match: "QA190 e-book" must not match "QA190 e-book form".
+  item(title: string): Locator {
+    const exact = new RegExp(`^\\s*${title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`);
+    return this.items.filter({ has: this.page.locator('.cards-card-title a', { hasText: exact }) });
+  }
+
+  // Badge element only (span.cards-badge-new, plus .cards-badge-update for UPDATE); the title may contain "NEW".
+  badge(item: Locator): Locator { return item.locator('.cards-card-image [class*="cards-badge"]'); }
 
   async label(item: Locator): Promise<string> {
-    const text = (await item.innerText()).toUpperCase();
-    return /\bNEW\b/.test(text) ? 'NEW' : /\bUPDATE\b/.test(text) ? 'UPDATE' : '';
+    const badge = this.badge(item);
+    if (!(await badge.count())) return '';
+    const text = (await badge.allInnerTexts()).join(' ').trim().toUpperCase();
+    return text === 'NEW' ? 'NEW' : text === 'UPDATE' ? 'UPDATE' : text;
   }
 }

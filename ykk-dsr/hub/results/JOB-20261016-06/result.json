@@ -1,0 +1,131 @@
+{
+  "job": "JOB-20261016-06",
+  "agent": "claude-code",
+  "us": "DSR-557",
+  "env": "dev",
+  "started": "2026-10-16T09:29:50Z",
+  "finished": "2026-10-16T09:33:48Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "result": "pass",
+      "error": "9/12 qa190 cards OK; not rendered (annotated, not failed): QA190 e-book, e-book form (blocked-data ebookUrl), PDF form required (suspect product or DSR-570 gate)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "result": "skip",
+      "error": "fixme: QA190 e-book not rendered – blocked-data: QA-PT fixes ebookUrl 16/10 night",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "result": "skip",
+      "error": "fixme: QA190 e-book form not rendered – blocked-data: QA-PT fixes ebookUrl 16/10 night",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "result": "pass",
+      "error": "9/12 qa190 cards OK; not rendered (annotated, not failed): QA190 e-book, e-book form (blocked-data ebookUrl), PDF form required (suspect product or DSR-570 gate)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: QA190 e-book not rendered – blocked-data: QA-PT fixes ebookUrl 16/10 night",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: QA190 e-book form not rendered – blocked-data: QA-PT fixes ebookUrl 16/10 night",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "pages/CatalogDisplayPage.ts",
+    "fixtures/dsr-557.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "results/DSR-557/DEV/automation-run-20261016-job06.md"
+  ],
+  "questions": []
+}

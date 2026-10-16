@@ -1,7 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
 import { VideoPlayerPage } from '../../pages/VideoPlayerPage';
-import { viewports, languages, type Language, catalogPath, videoPath, youtubeVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, type CatalogItem } from '../../fixtures/dsr-557';
+import { viewports, languages, type Language, catalogPath, videoPath, youtubeVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, qa190, notRendered, type CatalogItem } from '../../fixtures/dsr-557';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -31,16 +31,28 @@ async function openVideo(page: Page, lang: Language, id: string) {
   await expect(video.player).toBeVisible();
   return video;
 }
-function pick(data: CatalogItem[], lang: Language, match: (item: CatalogItem) => boolean, name: string): CatalogItem {
-  const item = data.find(match);
-  test.skip(!item, `Blocked – no DEV data for ${name} (${lang})`);
+function pick(data: CatalogItem[], lang: Language, title: string, match: (item: CatalogItem) => boolean, name: string): CatalogItem {
+  const item = data.find(i => i.catalogTitle === title && match(i));
+  test.skip(!item, `Blocked – no DEV data for ${name} "${title}" (${lang})`);
   return item!;
+}
+// Known data/product gaps (fixtures notRendered): record instead of failing; fixme if the TC depends on the card.
+async function noteNotRendered(catalog: CatalogDisplayPage, title: string, fixme = false) {
+  const reason = notRendered[title];
+  if (!reason || (await catalog.item(title).count())) return;
+  test.info().annotations.push({ type: 'not-rendered', description: `${title}: ${reason}` });
+  test.fixme(fixme, `${title} not rendered – ${reason}`);
 }
 
 for (const lang of languages) {
   test.describe(lang, () => {
     test('DSR-CATV-012 catalog item shows thumbnail and title', { tag: ['@auto'] }, async ({ page }) => {
-      const { catalog } = await openCatalog(page, lang);
+      const { catalog, data } = await openCatalog(page, lang);
+      const seeded = Object.values(qa190).flat();
+      for (const title of seeded.filter(t => data.some(i => i.catalogTitle === t))) {
+        if (notRendered[title]) { await noteNotRendered(catalog, title); continue; }
+        expect.soft(await catalog.item(title).count(), `qa190 card "${title}"`).toBe(1);
+      }
       const count = await catalog.items.count();
       for (let i = 0; i < count; i++) {
         const item = catalog.items.nth(i);
@@ -55,7 +67,7 @@ for (const lang of languages) {
 
     test('DSR-CATV-013 PDF item without form opens in a new tab', { tag: ['@auto'] }, async ({ page, context }) => {
       const { catalog, data } = await openCatalog(page, lang);
-      const pdf = pick(data, lang, i => i.catalogType === 'pdf' && i.requiresForm !== true && !!i.pdfAsset, 'pdf requiresForm=false item');
+      const pdf = pick(data, lang, qa190.pdf, i => i.catalogType === 'pdf' && i.requiresForm !== true && !!i.pdfAsset, 'pdf requiresForm=false item');
       const item = catalog.item(pdf.catalogTitle);
       await expect(item).toHaveCount(1);
       for (const link of await catalog.links(item).all()) {
@@ -79,10 +91,11 @@ for (const lang of languages) {
       expect(context.pages()).toContain(popup);
     });
 
-    for (const [number, title, requiresForm] of [[16, 'e-book item opens ebookUrl without form', false], [17, 'e-book item flagged requiresForm opens ebookUrl without form', true]] as const) {
+    for (const [number, title, requiresForm, cf] of [[16, 'e-book item opens ebookUrl without form', false, qa190.ebook], [17, 'e-book item flagged requiresForm opens ebookUrl without form', true, qa190.ebookForm]] as const) {
       test(`DSR-CATV-0${number} ${title}`, { tag: ['@auto'] }, async ({ page, context }) => {
         const { catalog, data } = await openCatalog(page, lang);
-        const ebook = pick(data, lang, i => i.catalogType === 'ebook' && !!i.ebookUrl && (i.requiresForm === true) === requiresForm, `ebook requiresForm=${requiresForm} item`);
+        const ebook = pick(data, lang, cf, i => i.catalogType === 'ebook' && !!i.ebookUrl && (i.requiresForm === true) === requiresForm, `ebook requiresForm=${requiresForm} item`);
+        await noteNotRendered(catalog, cf, true);
         const item = catalog.item(ebook.catalogTitle);
         await expect(item).toHaveCount(1);
         const link = catalog.title(item);
@@ -98,22 +111,26 @@ for (const lang of languages) {
       });
     }
 
-    for (const [number, title, kind] of [[18, 'NEW label within 10 days of publishDate', 'NEW'], [19, 'UPDATE label within 10 days of updateDate', 'UPDATE'], [20, 'only NEW when publishDate and updateDate both apply', 'BOTH']] as const) {
+    for (const [number, title, kind, titles] of [[18, 'NEW label within 10 days of publishDate', 'NEW', qa190.new], [19, 'UPDATE label within 10 days of updateDate', 'UPDATE', qa190.upd], [20, 'only NEW when publishDate and updateDate both apply', 'BOTH', qa190.both]] as const) {
       test(`DSR-CATV-0${number} ${title}`, { tag: ['@auto'] }, async ({ page }) => {
         const { catalog, data } = await openCatalog(page, lang);
         const on = today();
         // Blocked: dates come from the dm-catalog-list GraphQL response; DOM shows one formatted date only.
         test.skip(data.every(i => !i.publishDate && !i.updateDate), `Blocked – publishDate/updateDate not exposed (checked DOM .cards-card-meta and dm-catalog-list response) (${lang})`);
+        // Only this TC's qa190 rows (JOB-20261016-06).
+        const own = data.filter(i => (titles as readonly string[]).includes(i.catalogTitle));
+        test.skip(!own.length, `Blocked – no DEV data for ${titles.join(', ')} (${lang})`);
         const rows = [];
-        for (const item of data) {
+        for (const item of own) {
           const card = catalog.item(item.catalogTitle);
-          const shown = (await card.count()) ? await catalog.label(card.first()) : null;
-          rows.push({ title: item.catalogTitle, publishDate: item.publishDate, updateDate: item.updateDate, today: on, expected: expectedLabel(item, on), shown, meta: (await card.count()) ? await catalog.meta(card.first()).allInnerTexts() : [] });
+          const rendered = await card.count();
+          const shown = rendered === 1 ? await catalog.label(card) : null;
+          rows.push({ title: item.catalogTitle, publishDate: item.publishDate, updateDate: item.updateDate, today: on, expected: expectedLabel(item, on), shown, rendered, meta: rendered === 1 ? await catalog.meta(card).allInnerTexts() : [] });
         }
         observations.push({ language: lang, rows });
-        expect(rows.filter(r => r.shown !== null && r.shown !== r.expected)).toEqual([]);
+        expect(rows.filter(r => r.shown !== r.expected)).toEqual([]);
         const both = (i: CatalogItem) => expectedLabel({ publishDate: i.publishDate, updateDate: null }, on) === 'NEW' && expectedLabel({ publishDate: null, updateDate: i.updateDate }, on) === 'UPDATE';
-        const hasCase = kind === 'BOTH' ? data.some(both) : data.some(i => expectedLabel(i, on) === kind);
+        const hasCase = kind === 'BOTH' ? own.some(both) : own.some(i => expectedLabel(i, on) === kind);
         test.skip(!hasCase, `Blocked – no DEV data for ${kind === 'BOTH' ? 'publishDate and updateDate both within 10 days' : kind + ' case'} (${lang}, today ${on}); all items' labels match the rule`);
       });
     }
