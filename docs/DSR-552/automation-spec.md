@@ -4,7 +4,7 @@ Source: TC Excel `[Sutrix] DSR -552- [汎用ブロック] パンくずリスト�
 
 ## Scope
 
-QA task dated 2026-10-12 supplies the executable expectations below and supersedes the October scaffold. 35 TC purposes: 24 auto, 6 visual, 5 manual. Implemented: 16 auto + 2 visual; 12 remaining purposes fixme. Outcomes are proposals; human QA confirms. Read-only Publish; never access Author or T5. Excel/Jira/Figma were not independently accessed.
+QA task dated 2026-10-12 supplies the executable expectations below and supersedes the October scaffold. 35 TC purposes: 24 auto, 6 visual, 5 manual. Implemented: 19 auto + 3 visual (010/014/015/018 added by JOB-20261016-01); 8 remaining purposes fixme. Outcomes are proposals; human QA confirms. Read-only Publish; never access Author or T5. Excel/Jira/Figma were not independently accessed.
 
 ## 1. Environment
 
@@ -43,6 +43,10 @@ Same User Story layout, TC-prefixed titles and POM as DSR-173. Existing breadcru
 | DSR-BREAD-028 | Tab from last visible header link through HOME/test space/QA Parent; focus indicator; Enter navigates; current tabIndex=-1 | ja |
 | DSR-BREAD-031 | Zero site-origin console errors/pageerrors; breadcrumb JS and CSS captured HTTP 200 | ja |
 | DSR-BREAD-035 | Every arrow URL same host (relative resolves there), HTTP 200 | ja |
+| DSR-BREAD-010 | T2 grandchild: HOME > test space/test-space > 親ラベル/EN Parent Label > 子ラベル/EN Child Label > QAラベル孫/QA Label Grandchild; titles of parent/child absent; ancestor hrefs unchanged; child page last item = child display name | ja, en |
+| DSR-BREAD-014 | T3 long leaf at 1440, 1024 and 375 px: document scrollWidth ≤ viewport (asserted); width, line count, ellipsis/clipping and section screenshot recorded for QA (Figma verdict manual) | ja |
+| DSR-BREAD-015 | T3 special leaf: 4th item text and JSON-LD name equal the authored string literally; no b/strong/script inside breadcrumb; no dialog; no breadcrumb console error | ja |
+| DSR-BREAD-018 | T2 grandchild per language uses its own labels/titles; no text from the other language | ja, en (cn fixme Issue #18) |
 | DSR-BREAD-020 | Unmasked breadcrumb section screenshot, Chromium 1440×900 | ja |
 | DSR-BREAD-032 | Chromium/Firefox/WebKit against shared Chromium screenshot | ja |
 
@@ -52,8 +56,6 @@ Visual threshold maxDiffPixelRatio=0.01. Initial snapshots capture current DEV a
 
 | TC ID | Group / method | Verbatim fixme reason |
 |---|---|---|
-| 010, 015, 018 | A auto | Bug-FIELD |
-| 014 | A visual | Bug-FIELD (100-char label) |
 | 019 | C visual | DSR-555 + cn |
 | 021, 023 | B visual | DSR-575 Q5 (SP display) |
 | 022 | B auto | DSR-575 Q5 (SP display) |
@@ -65,7 +67,7 @@ Visual threshold maxDiffPixelRatio=0.01. Initial snapshots capture current DEV a
 ## 5. Open issues affecting automation
 
 - Bug-INDEX: English test-space omitted from index/trail; correct assertions remain active, bug annotation on 001/005/025.
-- Bug-FIELD: パンくず表示名 property absent; related tests fixme.
+- Bug-FIELD (DSR-592) dismissed 2026-10-15; 010/014/015/018 implemented. TC purposes follow the TC Excel (015 = special characters, 018 = per-language labels).
 - DSR-575 Q5, DSR-555, DSR-536 and layout tickets remain dependencies.
 - Fixture publication/title mismatches listed in test-data.md and preflight.json.
 - No system packages installed: repo safety prohibits installation. Local Noto CJK absent; Noto Sans JP web font loaded in preflight. Firefox/WebKit availability reported per run.

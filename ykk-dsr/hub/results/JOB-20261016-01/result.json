@@ -1,0 +1,21 @@
+{
+  "job": "JOB-20261016-01",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-16T04:56:06Z",
+  "finished": "2026-10-16T05:03:22Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-BREAD-010", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-010", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-014", "lang": "ja", "result": "fail", "error": "100-char label is nowrap (1400px); doc scrollWidth 1456 > 1440 and > 1024. 375px: no overflow, ellipsis applied (record only, SP rule DSR-575 Q5)", "evidence": "evidence/DSR-BREAD-014_ja_1440.png", "suspect": "product" },
+    { "tc": "DSR-BREAD-015", "lang": "ja", "result": "fail", "error": "Label and JSON-LD name = 'QA & \"Test\" ®'; <b>/<script> parts missing. Published navtitle meta already stripped. No tags/dialog/console error", "evidence": "evidence/DSR-BREAD-015_ja.png", "suspect": "data" },
+    { "tc": "DSR-BREAD-018", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-018", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-018", "lang": "cn", "result": "skip", "error": "cn: no /master/cn (Issue #18)", "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/breadcrumb/DSR-552.breadcrumb.spec.ts", "fixtures/dsr-552.ts", "docs/DSR-552/test-data.md", "docs/DSR-552/automation-spec.md"],
+  "questions": []
+}

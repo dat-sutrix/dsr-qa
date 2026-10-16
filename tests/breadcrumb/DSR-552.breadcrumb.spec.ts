@@ -1,16 +1,15 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page, type APIRequestContext } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'fs';
 import path from 'path';
 import { BreadcrumbPage } from '../../pages/BreadcrumbPage';
-import { viewports, languages, type Language, homePath, testSpacePath, t1, expectedTrail, expectedPaths, normalizeUrl, screenshotOptions } from '../../fixtures/dsr-552';
+import { viewports, languages, type Language, homePath, testSpacePath, t1, expectedTrail, expectedPaths, normalizeUrl, screenshotOptions, testSpaceLabel, t2, t2Titles, t2Labels, t2Trail, t3Long, t3Special, t3Trail } from '../../fixtures/dsr-552';
 
 test.use({ viewport: viewports.PC });
 const evidence = path.resolve('evidence/DSR-552', (process.env.ENV || 'dev').toUpperCase());
 const observations: Record<string, unknown>[] = [];
-async function open(page: Page, lang: Language, level = 2) {
-  const url = testSpacePath(lang, t1[level]);
-  if (process.env.DSR_PREFLIGHT) {
+async function open(page: Page, lang: Language, level = 2, url = testSpacePath(lang, t1[level])) {
+  if (process.env.DSR_PREFLIGHT && url === testSpacePath(lang, t1[level])) {
     const data = JSON.parse(fs.readFileSync(process.env.DSR_PREFLIGHT, 'utf8'));
     const dependencies = expectedPaths(lang, level).slice(2);
     const bad = data.entries.filter((e: {path:string;blocked:boolean}) => dependencies.includes(e.path) && e.blocked);
@@ -138,8 +137,96 @@ for (const lang of languages) {
   }
  });
 }
+// JOB-20261016-01: display-name TCs on T2/T3 (Bug-FIELD DSR-592 dismissed 2026-10-15; data seeded by QA-PT night 15/10).
+// Purposes follow the TC Excel: 010 display name over title, 014 100-char label, 015 special characters, 018 per-language labels.
+const jobEvidence = path.resolve(process.env.DSR_JOB_EVIDENCE || evidence);
+async function requireData(request: APIRequestContext, paths: string[]) {
+  const missing: string[] = [];
+  for (const p of paths) if ((await request.get(p)).status() === 404) missing.push(p);
+  // Blocked: JOB-20261016-01 preflight — an unpublished fixture is blocked-data, not a failure.
+  test.fixme(missing.length > 0, `Blocked – test data: ${missing.join(', ')} 404`);
+}
+for (const lang of ['ja', 'en'] as const) test(`DSR-BREAD-010 [${lang}] display name overrides page title`, { tag: ['@groupA', '@auto'] }, async ({ page, request, baseURL }) => {
+  await requireData(request, t2.map(s => testSpacePath(lang, s)));
+  const bc = await open(page, lang, 2, testSpacePath(lang, t2[2]));
+  await expect.soft(bc.items).toHaveText(t2Trail(lang));
+  const text = (await bc.breadcrumb.textContent()) ?? '';
+  for (const title of t2Titles[lang].slice(0, 2)) expect.soft(text).not.toContain(title);
+  // hrefs still point to the ancestor pages; only the label changes.
+  const hrefs = (await bc.links.evaluateAll(els => els.map(el => el.getAttribute('href')!))).map(h => normalizeUrl(h, baseURL!));
+  expect.soft(hrefs.slice(2)).toEqual(t2.slice(0, 2).map(s => normalizeUrl(testSpacePath(lang, s), baseURL!)));
+  observations.push({ language: lang, hrefs });
+  // TC step 3: on the child page the current (last) item is the child's display name.
+  const child = await open(page, lang, 1, testSpacePath(lang, t2[1]));
+  await expect.soft(child.items.last()).toHaveText(t2Labels[lang][1]);
+  await expect.soft(child.current).toHaveText(t2Labels[lang][1]);
+});
+test('DSR-BREAD-014 [ja] 100-character display name keeps layout', { tag: ['@groupA', '@visual'] }, async ({ page, request }) => {
+  await requireData(request, [t3Long.parent, t3Long.leaf].map(s => testSpacePath('ja', s)));
+  // 1440 and 375 per job; 1024 is TC Excel step 1. Record only: Figma verdict by QA. SP display itself is open (DSR-575 Q5).
+  for (const [name, viewport] of [['1440', viewports.PC], ['1024', { width: 1024, height: 768 }], ['375', viewports.SP]] as const) {
+    await page.setViewportSize(viewport);
+    const bc = await open(page, 'ja', 2, testSpacePath('ja', t3Long.leaf));
+    await expect.soft(bc.items).toHaveText(t3Trail(t3Long));
+    const metrics = await bc.breadcrumb.evaluate((nav, label) => {
+      const item = Array.from(nav.querySelectorAll('[data-testid="breadcrumb-item"]')).find(li => li.textContent?.trim() === label) as HTMLElement | undefined;
+      const text = (item?.querySelector('a, span') as HTMLElement | null) ?? item;
+      const header = document.querySelector('header')?.getBoundingClientRect();
+      const rect = nav.getBoundingClientRect(); const s = text ? getComputedStyle(text) : null;
+      const lineHeight = s ? (parseFloat(s.lineHeight) || parseFloat(s.fontSize) * 1.2) : 0;
+      return {
+        viewportWidth: window.innerWidth, documentScrollWidth: document.documentElement.scrollWidth,
+        navWidth: Math.round(rect.width), navHeight: Math.round(rect.height), navRight: Math.round(rect.right),
+        labelWidth: text ? Math.round(text.getBoundingClientRect().width) : null,
+        labelLines: text && lineHeight ? Math.round(text.getBoundingClientRect().height / lineHeight) : null,
+        textOverflow: s?.textOverflow ?? null, whiteSpace: s?.whiteSpace ?? null, overflow: s?.overflow ?? null,
+        clipped: text ? text.scrollWidth > text.clientWidth + 1 || text.scrollHeight > text.clientHeight + 1 : null,
+        headerBottom: header ? Math.round(header.bottom) : null, navTop: Math.round(rect.top),
+      };
+    }, t3Long.label);
+    const ellipsis = metrics.textOverflow === 'ellipsis' && !!metrics.clipped;
+    observations.push({ viewport: name, ...metrics, ellipsis });
+    fs.mkdirSync(jobEvidence, { recursive: true });
+    const file = path.join(jobEvidence, `DSR-BREAD-014_ja_${name}.png`);
+    await page.locator('main > [data-auto-block="breadcrumb"]').filter({ has: bc.breadcrumb }).screenshot({ path: file });
+    await test.info().attach(`014-${name}`, { path: file, contentType: 'image/png' });
+    expect.soft(metrics.documentScrollWidth, `${name}px: no horizontal page overflow`).toBeLessThanOrEqual(metrics.viewportWidth);
+  }
+});
+test('DSR-BREAD-015 [ja] special characters in display name are plain text', { tag: ['@groupA', '@auto'] }, async ({ page, request }) => {
+  await requireData(request, [t3Special.parent, t3Special.leaf].map(s => testSpacePath('ja', s)));
+  const dialogs: string[] = []; const errors: { message: string; url: string }[] = [];
+  page.on('dialog', d => { dialogs.push(`${d.type()}: ${d.message()}`); d.dismiss().catch(() => {}); });
+  page.on('console', m => { if (m.type() === 'error') errors.push({ message: m.text(), url: m.location().url }); });
+  page.on('pageerror', e => errors.push({ message: e.message, url: e.stack?.match(/https?:\/\/[^\s)]+/)?.[0] || '' }));
+  const bc = await open(page, 'ja', 2, testSpacePath('ja', t3Special.leaf));
+  await page.waitForTimeout(1000);
+  const fourth = bc.items.nth(3);
+  // Literal text (entities decoded as text are equivalent in textContent).
+  expect.soft((await fourth.textContent())?.trim()).toBe(t3Special.label);
+  await expect.soft(bc.items).toHaveText(t3Trail(t3Special));
+  expect.soft(await bc.breadcrumb.locator('b, strong, script').count(), 'no <b>/<script> inside breadcrumb').toBe(0);
+  const lists = await bc.breadcrumbJsonLd();
+  const names = ((lists[0]?.itemListElement ?? []) as { name: string }[]).map(e => e.name);
+  expect.soft(names[3], 'JSON-LD name equals the authored string').toBe(t3Special.label);
+  const breadcrumbErrors = errors.filter(e => /breadcrumb/i.test(e.url + e.message));
+  observations.push({ fourthInnerHTML: await fourth.innerHTML(), jsonldNames: names, dialogs, errors });
+  expect.soft(dialogs, 'no dialog/alert fired').toEqual([]);
+  expect.soft(breadcrumbErrors, 'no console error from breadcrumb').toEqual([]);
+});
+for (const lang of languages) test(`DSR-BREAD-018 [${lang}] each language uses its own display names`, { tag: ['@groupA', '@auto'] }, async ({ page, request }) => {
+  // Blocked: Issue #18
+  test.fixme(lang === 'cn', 'cn: no /master/cn (Issue #18)');
+  const own = lang as 'ja' | 'en'; const other = own === 'ja' ? 'en' : 'ja';
+  await requireData(request, t2.map(s => testSpacePath(own, s)));
+  const bc = await open(page, own, 2, testSpacePath(own, t2[2]));
+  await expect.soft(bc.items).toHaveText(t2Trail(own));
+  const text = (await bc.breadcrumb.textContent()) ?? '';
+  const foreign = [...t2Labels[other], ...t2Titles[other], testSpaceLabel(other)].filter(s => s && !t2Trail(own).includes(s));
+  expect.soft(foreign.filter(s => text.includes(s)), 'no text from another language').toEqual([]);
+});
 for(const [number,title,reason,group,method] of [
- [10,'display labels override titles','Bug-FIELD','A','auto'],[14,'long label wraps','Bug-FIELD (100-char label)','A','visual'],[15,'special label is literal text','Bug-FIELD','A','auto'],[18,'localized display labels','Bug-FIELD','A','auto'],[19,'Japanese and Chinese fonts','DSR-555 + cn','C','visual'],[21,'SP breadcrumb and back control','DSR-575 Q5 (SP display)','B','visual'],[22,'SP parent navigation','DSR-575 Q5 (SP display)','B','auto'],[23,'narrow SP overflow','DSR-575 Q5 (SP display)','B','visual'],[29,'STG Lighthouse performance','Run on STG (Lighthouse)','C','auto'],[30,'movie breadcrumb regression','DSR-536 / movie-detail placement','C','auto'],[33,'all page types','Layout tickets','C','auto'],[34,'responsive movie back control','DSR-536 / movie-detail placement','C','auto']
+ [19,'Japanese and Chinese fonts','DSR-555 + cn','C','visual'],[21,'SP breadcrumb and back control','DSR-575 Q5 (SP display)','B','visual'],[22,'SP parent navigation','DSR-575 Q5 (SP display)','B','auto'],[23,'narrow SP overflow','DSR-575 Q5 (SP display)','B','visual'],[29,'STG Lighthouse performance','Run on STG (Lighthouse)','C','auto'],[30,'movie breadcrumb regression','DSR-536 / movie-detail placement','C','auto'],[33,'all page types','Layout tickets','C','auto'],[34,'responsive movie back control','DSR-536 / movie-detail placement','C','auto']
 ] as const) test(`DSR-BREAD-${String(number).padStart(3,'0')} ${title}`,{tag:[`@group${group}`,`@${method}`]},async()=>{
  // Blocked: Issue #DSR-552 — dependency recorded verbatim below.
  test.fixme(true,reason);
