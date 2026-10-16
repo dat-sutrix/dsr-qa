@@ -1,0 +1,398 @@
+{
+ "job": "JOB-ZZ-IDLE-02",
+ "agent": "claude-code",
+ "us": "DSR-529",
+ "env": "dev",
+ "started": "2026-10-16T11:02:00Z",
+ "finished": "2026-10-16T11:08:18Z",
+ "status": "done",
+ "tests": [
+  {
+   "tc": "DSR-ARTICLE-001",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-004",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-005",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-009",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-015",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-02 and /master/ja/test-space/qa529-02 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-017",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 (helix-query.yaml) / Q7",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-018",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; NEW period Q6",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-019",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; TD-529-04 not seeded",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-020",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-02 and /master/ja/test-space/qa529-02 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-021",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-022",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: 製品index relatedArticles/sortOrder not defined – 製品詳細 ticket (Martin prereq #3)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-023",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-02 and /master/ja/test-space/qa529-02 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-025",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-02 and /master/ja/test-space/qa529-02 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-027",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Article list DSR-170 (out of scope) + stories index",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-028",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Martin open decision #4 (breadcrumb in scope?) + DSR-552 – Q9",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "cn",
+   "result": "skip",
+   "error": "Blocked: no /master/cn on DEV (Issue #18) – all cn rows",
+   "evidence": "",
+   "suspect": "env"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/en/library/article/stories/qa529-01 and /master/en/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-529 page missing (/master/ja/library/article/stories/qa529-01 and /master/ja/test-space/qa529-01 HTTP 404)",
+   "evidence": "",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)",
+   "evidence": "",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-ARTICLE-032",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)",
+   "evidence": "",
+   "suspect": ""
+  }
+ ],
+ "lighthouse": [],
+ "code_changes": [
+  "tests/article-detail/DSR-529.article-detail.spec.ts",
+  "pages/ArticleDetailPage.ts",
+  "fixtures/dsr-529.ts",
+  "docs/DSR-529/baseline-BL-v1.md",
+  "docs/DSR-529/test-data.md",
+  "docs/DSR-529/data-testid.md",
+  "results/DSR-529/DEV/automation-run-20261016.md"
+ ],
+ "questions": []
+}
