@@ -1,8 +1,8 @@
 # status	file	drive_folder_id	note   (tools/drive_upload.sh)
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）.xlsx	1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB	DSR-529
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx	1NC_m_XPhuxewPyTyhj411uKW71lmq-vy	DSR-609
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -199- [レイアウト] お問い合わせフォーム（form）.xlsx	1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB	DSR-568
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -182- [AEM] 検索データ生成／検索連携用データ管理.xlsx	1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm	DSR-560
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx	1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E	DSR-608+610
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -503- [AEM] Product Detail - Auto-generate URL by product-id.xlsx	1VDMF3FnDBxgafEqJQPkuuEzZUHb6skVg	DSR-503
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -583- [製品一覧] スマホ表示時の製品カードを2列に固定する.xlsx	1W80lQF61y5Wf1jdvPdqmy3bfl2UdjKLM	DSR-583
+done 2026-10-16T09:56:16Z 33762	ykk-dsr/hub/tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）.xlsx	1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB	DSR-529
+done 2026-10-16T09:56:38Z 128517	ykk-dsr/hub/tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx	1NC_m_XPhuxewPyTyhj411uKW71lmq-vy	DSR-609
+done 2026-10-16T09:56:43Z 3212814	ykk-dsr/hub/tc-out/[Sutrix] DSR -199- [レイアウト] お問い合わせフォーム（form）.xlsx	1WBZuy01oskHK-Cz1oEA9_8l0vzYaNxIB	DSR-568
+done 2026-10-16T09:56:48Z 130915	ykk-dsr/hub/tc-out/[Sutrix] DSR -182- [AEM] 検索データ生成／検索連携用データ管理.xlsx	1KS_4dMiUINNRT8buwjITThqTl-UA1_Vm	DSR-560
+done 2026-10-16T09:56:53Z 256102	ykk-dsr/hub/tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx	1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E	DSR-608+610
+done 2026-10-16T09:57:02Z 26558	ykk-dsr/hub/tc-out/[Sutrix] DSR -503- [AEM] Product Detail - Auto-generate URL by product-id.xlsx	1VDMF3FnDBxgafEqJQPkuuEzZUHb6skVg	DSR-503
+done 2026-10-16T09:57:27Z 25224	ykk-dsr/hub/tc-out/[Sutrix] DSR -583- [製品一覧] スマホ表示時の製品カードを2列に固定する.xlsx	1W80lQF61y5Wf1jdvPdqmy3bfl2UdjKLM	DSR-583
