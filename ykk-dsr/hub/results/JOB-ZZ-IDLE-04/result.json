@@ -1,0 +1,24 @@
+{
+  "job": "JOB-ZZ-IDLE-04",
+  "agent": "codex",
+  "us": "visual-baseline",
+  "env": "dev",
+  "started": "2026-10-16T10:48:45.806Z",
+  "finished": "2026-10-16T10:52:32.093Z",
+  "status": "done",
+  "tests": [],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": [],
+  "capture_summary": {
+    "attempted": 22,
+    "captured": 19,
+    "skipped404": 2,
+    "errors": 1,
+    "overflowFlags": 1,
+    "evidenceBytes": 3374308
+  },
+  "observations": "captures.json",
+  "notes": "Baseline capture only; no test verdicts. One mobile capture unavailable after network-idle timeouts; see summary.md.",
+  "automation_head": "9a6e0a1b8cc45d6f00479520329f52c6b83a80e4"
+}
