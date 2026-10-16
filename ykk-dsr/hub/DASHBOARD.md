@@ -5,7 +5,6 @@
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
-| 9 | **Agent treo:** JOB-20261015-09 nằm trong `jobs/running/` từ 15/10 16:13 (>15h, không result) → chặn cả lane claude-code (JOB-13, JOB-11, JOB-20261016-01/02 đang chờ). Vào VPS tmux `dsr` xem cửa sổ claude-code: process còn chạy thì kill, rồi `git mv jobs/running/JOB-20261015-09.md jobs/queue/` + push, restart runner | — (VPS) | 16/10 sáng | 566, 609, 552, 557, 501 | 5 job | — |
 | 12 | Duyệt [tc-questions.md](tc-questions.md) (**22 câu**, 19 mới từ đêm 15/10: Q4–Q22) – cột "Dat quyết định" | — | 16/10 | 529, 609, 568, 560, 608, 610, 503, 583 | TC verdict | — |
 | 13 | Nhờ dev Top page publish `/ja/top-page`, `/en/top-page` lên .aem.live (đang 404, chỉ có .aem.page) | 石谷英樹 (dev DSR-609) | 17/10 | 609, 552 | HOME + test live | "Ishitani-san, the DEV top page is only on .aem.page (/ja/top-page, /en/top-page return 404 on .aem.live). Could you publish it (Publish, not Preview) so QA can test DSR-609 and the breadcrumb HOME link?" |
 | 8 | Upload TC DSR-608+610 adopt (256 KB, 1 file 2 sheet) từ repo `hub/tc-out/[Sutrix] DSR -172- [レイアウト] ブース・DIGITAL SHOWROOM（展示・体験）.xlsx` → [Drive DSR-172](https://drive.google.com/drive/folders/1nkLIDrScfMJjCvSDniokMrAqOkHmBW5E) | — | 16/10 | 608, 610 | DoD TC file | — |
@@ -45,7 +44,7 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 ## 🤖 Agents
 | Lane | Đang chạy | Hàng đợi | Xong 24h | Job lỗi |
 |---|---|---|---|---|
-| claude-code (functional) | ⚠️ JOB-09 (566) **treo từ 15/10 16:13** | 4: JOB-13 (609), JOB-11 (501), JOB-20261016-01 (552), JOB-20261016-02 (557) | 0 | 1 treo |
+| claude-code (functional) | — (JOB-09 gỡ treo 16/10 11:40, rebase conflict) | 4: JOB-13 (609), JOB-11 (501), JOB-20261016-01 (552), JOB-20261016-02 (557) | 0 | 1 treo |
 | codex (visual + Lighthouse) | — | 0 | 1 (JOB-14, 609) | 0 |
 
 ## ✅ Close gần đây
