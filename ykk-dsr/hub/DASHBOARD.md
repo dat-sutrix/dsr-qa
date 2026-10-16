@@ -27,7 +27,7 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
-**Sprint 12 chỉ test DEV – xanh DEV = Done (STG/PRO ở sprint sau).** **Kế hoạch ASAP (15/10 16:30):** 591 ✅ · 501, 552, 557 → **16/10** · 566 → **17/10** · 529 → **19/10**. TC bị env chặn = ⛔ Blocked có owner, không chờ.
+**Sprint 12 chỉ test DEV – xanh DEV = Done (STG/PRO ở sprint sau).** **Kế hoạch ASAP (15/10 16:30):** 591 ✅ · 501 ✅ 16/10 · 552, 557 → **17/10** · 566 → **17/10** · 529 → **19/10**. TC bị env chặn = ⛔ Blocked có owner, không chờ.
 
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
@@ -37,7 +37,6 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 | [DSR-566](us/DSR-566.md) | ニュース詳細 | 🟡 | 2/9 | 0/18 · 3 ⛔ | — | — | **JOB-09 treo >15h → Dat kiểm VPS** · list /news/ chưa có · cn | 0 | Gỡ JOB-09 (Dat · 16/10) · TD qa566 (QA-PT · đêm 16/10) |
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🟡 | 3/9 | 0/32 · 9 ⛔ | — | — | Chưa có trang test → QA-PT seed TD-529 · stories index → dev | 0 | Seed TD-529 (QA-PT · 16/10) → JOB-12 (Agent · 17/10) |
 | [DSR-609](us/DSR-609.md) | トップ | 🟡 | 3/9 | 0/9 (JOB-14: 001 đã chụp chờ so Figma · PSI desktop 94 / mobile 87 trên .aem.page) | — | — | Q10/Q11 → Quentin · top page 404 trên .aem.live → dev | 0 | JOB-13 chờ lane (Agent) · so Figma 001 (Claude · 17/10) |
-| DSR-501 | DM_movie question | 🟡 | — | P1 ✅ · P2 ❌ · P3 ❌ (JOB-20261016-03: related movies không render) | — | — | Bug DSR-647 → Martin | 1 | Chờ fix DSR-647 → rerun (Agent) | JOB-11 đã chuyển queue (Agent · 16/10) |
 | DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT item 1, 10 chưa chạy → Night Pack 16/10 |
 
 Ký hiệu: DEV = `pass/tổng` + số fail. STG/PRO = N/A (giai đoạn DEV only, 03 §0) – Jira status [STG]/PRO là workflow chung.
@@ -50,4 +49,4 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 | codex (visual + Lighthouse) | — | 0 | 1 (JOB-14, 609) | 0 |
 
 ## ✅ Close gần đây
-- (chưa có)
+- 2026-10-16 **DSR-501** Done (DEV): P1 ✅, P4 N/A, P2/P3 → bug DSR-647 (fix trong DSR-587, Martin)
