@@ -1,0 +1,17 @@
+{
+  "job": "JOB-20261016-05",
+  "agent": "claude-code",
+  "us": "DSR-587",
+  "env": "dev",
+  "started": "2026-10-16T09:28:23Z",
+  "finished": "2026-10-16T09:29:21Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-501-P3", "lang": "en", "result": "blocked",
+      "error": "Spec passed, but not proven: query=6 (rel1-6), 5 cards (rel1-5); page HTML last-modified 06:43:41Z predates rel6, no rel6 in source. Order not verifiable: updateDate null for all",
+      "evidence": "evidence/DSR-501-P3_en_fullpage.png", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["results/DSR-587/DEV/automation-run-20261016-job05.md"],
+  "questions": []
+}
