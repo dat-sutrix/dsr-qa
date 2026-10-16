@@ -75,7 +75,9 @@ Nguyên tắc: không chờ – TC bị env/ticket khác chặn ghi ⛔ Blocked 
 | 5 | DSR-457 | P5 cũ: item #1, #10 (chưa làm đêm 15/10). | 15 |
 | 6 | DSR-552 | TC 026 làm lại: DevTools → Elements → chuột phải `<html>` → Copy outerHTML → dán vào Rich Results Test tab Code (không dùng view-source). | 10 |
 
-## Lịch cuối tuần 16–18/10 (session Điều phối 17:15) – 07:45 và 17:10 chạy cả T7/CN
+## ⚠ QA-PT KHÔNG làm T7 17/10 và CN 18/10 (Dat xác nhận 16/10) → 17:10 T7/CN KHÔNG tạo Night Pack; việc manual dồn sang tối T2 19/10
+
+## Lịch cuối tuần 16–18/10 (bản cũ, phần QA-PT T7/CN bị hủy – xem dòng trên) – 07:45 và 17:10 chạy cả T7/CN
 | Thời điểm | QA-PT | Agent claude-code | Agent codex | Claude (tự động) |
 |---|---|---|---|---|
 | T6 16/10 tối | Night Pack 16/10 (6 việc ở trên, ≤3h) | JOB-20261016-07 (552 close-out) | — | 17:10 tạo pack · 18–22h Night TC job (backlog 10→17, đọc BL-OVL-1 cho 585/586/587) |
@@ -84,3 +86,11 @@ Nguyên tắc: không chờ – TC bị env/ticket khác chặn ghi ⛔ Blocked 
 | CN 18/10 | Night Pack 18/10: dự phòng – việc chưa xong + manual 529 | Rerun còn lại | Visual 529 | 18–22h Night TC job (backlog phải xong) |
 | T2 19/10 07:45 | — | — | — | Tổng kết: TC 17/17, 552/557/566/529 Done DEV, báo Dat |
 Nguyên tắc: job dựa trên data QA-PT để sẵn ở `jobs/hold/` với điều kiện; lượt 07:45 chuyển sang queue khi Night Report có Pass.
+
+## Lịch cuối tuần – bản chốt (16/10 17:20)
+| Thời điểm | QA-PT | Agent claude-code | Agent codex | Claude (tự động) |
+|---|---|---|---|---|
+| T6 16/10 tối | Night Pack 16/10 (đêm duy nhất tới T2) | JOB-20261016-07 (552 close-out) | — | 18–22h viết TC |
+| T7 17/10 | **nghỉ** | 07:45 chuyển hold→queue: JOB-20261016-08 (566 trên TD-566), JOB-20261015-12 (529), rerun 557 e-book, 501 order (nếu Martin đã re-preview) | 566 visual 014/015 (390px) trên TD-566-01 | 07:45 phân loại · 17:10 không tạo pack, chỉ xếp job agent · 18–22h viết TC |
+| CN 18/10 | **nghỉ** | rerun còn lại / retest bug đã fix | visual 529 | như T7 – backlog TC phải xong |
+| T2 19/10 | Night Pack 19/10: retest fail + manual 529/566 + data overlay DSR-587 | — | — | 07:45 tổng kết + đề xuất Done · 08:30 nhắc 611/457 |
