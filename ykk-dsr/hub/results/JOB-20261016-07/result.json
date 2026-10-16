@@ -1,0 +1,21 @@
+{
+  "job": "JOB-20261016-07",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-16T10:04:59Z",
+  "finished": "2026-10-16T10:05:29Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-BREAD-002", "lang": "ja", "result": "skip", "error": "fixme at HOME step: blocked-env: top page 404 on DEV (B3). Other 3 links passed (href, target, 200, same tab) in main + DSR-591 spec", "evidence": "", "suspect": "env" },
+    { "tc": "DSR-BREAD-002", "lang": "en", "result": "skip", "error": "fixme at HOME step: blocked-env: top page 404 on DEV (B3). Other 3 links passed (DSR-591 spec; main spec 002 is ja only)", "evidence": "", "suspect": "env" },
+    { "tc": "DSR-BREAD-008", "lang": "ja", "result": "skip", "error": "fixme at HOME status: blocked-env: top page 404 on DEV (B3). breadcrumb 0 / BreadcrumbList 0 asserted and passed", "evidence": "", "suspect": "env" },
+    { "tc": "DSR-BREAD-008", "lang": "en", "result": "skip", "error": "fixme at HOME status: blocked-env: top page 404 on DEV (B3). breadcrumb 0 / BreadcrumbList 0 asserted and passed", "evidence": "", "suspect": "env" },
+    { "tc": "DSR-BREAD-015", "lang": "ja", "result": "pass", "error": "QA decision 2026-10-16: label = published navtitle 'QA & \"Test\" ®' (meta = query-index); no b/script, no dialog, no console error", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-025", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-BREAD-025", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/breadcrumb/DSR-552.breadcrumb.spec.ts", "tests/breadcrumb/DSR-552.breadcrumb-retest-DSR-591.spec.ts", "results/DSR-552/DEV/automation-run-20261016-job07.md"],
+  "questions": []
+}

@@ -54,10 +54,12 @@ for (const lang of languages) {
     if (lang === 'en' && [1,5,25].includes(number)) test.info().annotations.push({type:'bug',description:'Bug-INDEX'});
     if (number === 8 || number === 9) {
       const response = await page.goto(number === 8 ? homePath(lang) : testSpacePath(lang, 'dsr552-bc/not-exist'));
-      expect.soft(response?.status()).toBe(number === 8 ? 200 : 404);
       await page.waitForLoadState('networkidle');
       const bc = new BreadcrumbPage(page); expect(await bc.breadcrumb.count()).toBe(0); expect(await bc.breadcrumbJsonLd()).toEqual([]);
-      observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()}); return;
+      observations.push({language:lang,url:page.url(),status:response?.status(),breadcrumbCount:await bc.breadcrumb.count(),jsonld:await bc.breadcrumbJsonLd()});
+      // JOB-20261016-07: HOME step blocked while /master/{lang} is 404 on DEV (blocker B3, not a breadcrumb bug); runs again once the top page is published.
+      if (number === 8) test.fixme(response?.status() === 404, 'blocked-env: top page 404 on DEV (B3)');
+      expect.soft(response?.status()).toBe(number === 8 ? 200 : 404); return;
     }
     if (number === 7) {
       if (process.env.DSR_PREFLIGHT) {
@@ -90,11 +92,14 @@ for (const lang of languages) {
     }
     if(number===2) {
       await expect(bc.links).toHaveCount(4);
-      for(let i=0;i<4;i++) {
+      // JOB-20261016-07: HOME (i=0) is clicked last; its step is fixme while /master/{lang} is 404 on DEV (B3). Other links run first.
+      for(const i of [1,2,3,0]) {
        const link=bc.links.nth(i); expect(normalizeUrl((await link.getAttribute('href'))!,baseURL!)).toBe(normalizeUrl(paths[i],baseURL!));
        expect(['_self',null,'']).toContain(await link.getAttribute('target'));
        const status = (await request.get(paths[i])).status();
-       observations.push({language:lang,link:paths[i],status}); expect.soft(status).toBe(200);
+       observations.push({language:lang,link:paths[i],status});
+       if(i===0) test.fixme(status===404,'blocked-env: top page 404 on DEV (B3)');
+       expect.soft(status).toBe(200);
        const pages=page.context().pages().length; await link.click(); await expect(page).toHaveURL(new RegExp(paths[i]+'/?$')); expect(page.context().pages().length).toBe(pages); await open(page,lang,2);
       }
     }
@@ -104,6 +109,8 @@ for (const lang of languages) {
     }
     if(number===4||number===17) {await expect(bc.links.first()).toHaveText('HOME');expect(normalizeUrl((await bc.links.first().getAttribute('href'))!,baseURL!)).toBe(normalizeUrl(homePath(lang),baseURL!));}
     if(number===25) {
+      // JOB-20261016-07: JSON-LD was read before render (flaky); wait for the breadcrumb block to finish loading.
+      await expect(page.locator('main [data-block-name="breadcrumb"]')).toHaveAttribute('data-block-status','loaded');
       const lists=await bc.breadcrumbJsonLd(); expect(lists).toHaveLength(1);
       const entries=lists[0].itemListElement as {position:number;name:string;item?:string}[];
       expect.soft(entries).toHaveLength(5);
@@ -199,20 +206,29 @@ test('DSR-BREAD-015 [ja] special characters in display name are plain text', { t
   page.on('dialog', d => { dialogs.push(`${d.type()}: ${d.message()}`); d.dismiss().catch(() => {}); });
   page.on('console', m => { if (m.type() === 'error') errors.push({ message: m.text(), url: m.location().url }); });
   page.on('pageerror', e => errors.push({ message: e.message, url: e.stack?.match(/https?:\/\/[^\s)]+/)?.[0] || '' }));
+  // QA decision 2026-10-16: tag stripping upstream accepted
+  // AEM strips <b>/<script> before the block, so the expected label is the published navtitle of the parent (meta + query-index), not the authored string.
+  const parentPath = testSpacePath('ja', t3Special.parent);
+  const metaNavtitle = await page.evaluate(html => new DOMParser().parseFromString(html, 'text/html').querySelector('meta[name="navtitle"]')?.getAttribute('content') ?? null,
+    await (await request.get(parentPath)).text());
+  const indexRows = (await (await request.get('/query-index.json')).json()).data as { path: string; navtitle: string }[];
+  const indexNavtitle = indexRows.find(r => r.path === parentPath)?.navtitle ?? null;
+  expect(metaNavtitle, 'published navtitle meta present').toBeTruthy();
+  expect.soft(indexNavtitle, 'query-index navtitle equals meta navtitle').toBe(metaNavtitle);
+  const navtitle = metaNavtitle!;
   const bc = await open(page, 'ja', 2, testSpacePath('ja', t3Special.leaf));
   await page.waitForTimeout(1000);
   const fourth = bc.items.nth(3);
   // Literal text (entities decoded as text are equivalent in textContent).
-  expect.soft((await fourth.textContent())?.trim()).toBe(t3Special.label);
-  await expect.soft(bc.items).toHaveText(t3Trail(t3Special));
+  expect.soft((await fourth.textContent())?.trim(), 'label equals published navtitle').toBe(navtitle);
+  await expect.soft(bc.items).toHaveText(t3Trail({ ...t3Special, label: navtitle }));
   expect.soft(await bc.breadcrumb.locator('b, strong, script').count(), 'no <b>/<script> inside breadcrumb').toBe(0);
   const lists = await bc.breadcrumbJsonLd();
   const names = ((lists[0]?.itemListElement ?? []) as { name: string }[]).map(e => e.name);
-  expect.soft(names[3], 'JSON-LD name equals the authored string').toBe(t3Special.label);
-  const breadcrumbErrors = errors.filter(e => /breadcrumb/i.test(e.url + e.message));
-  observations.push({ fourthInnerHTML: await fourth.innerHTML(), jsonldNames: names, dialogs, errors });
+  expect.soft(names[3], 'JSON-LD name equals published navtitle').toBe(navtitle);
+  observations.push({ metaNavtitle, indexNavtitle, fourthInnerHTML: await fourth.innerHTML(), jsonldNames: names, dialogs, errors });
   expect.soft(dialogs, 'no dialog/alert fired').toEqual([]);
-  expect.soft(breadcrumbErrors, 'no console error from breadcrumb').toEqual([]);
+  expect.soft(errors, 'no console error').toEqual([]);
 });
 for (const lang of languages) test(`DSR-BREAD-018 [${lang}] each language uses its own display names`, { tag: ['@groupA', '@auto'] }, async ({ page, request }) => {
   // Blocked: Issue #18

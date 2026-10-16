@@ -69,6 +69,15 @@ for (const lang of ['ja', 'en'] as const) {
       if (await link.count() === 0) { observed.push({ item: trail[i], missing: true }); expect.soft(await link.count(), `breadcrumb link "${trail[i]}" present`).toBe(1); continue; }
       const href = (await link.getAttribute('href'))!;
       const target = await link.getAttribute('target');
+      if (i === 0) {
+        // JOB-20261016-07: HOME click step is blocked while /master/{lang} is 404 on DEV (B3); href/target still asserted. HOME is the last click.
+        expect.soft(normalizeUrl(href, baseURL!), `href of "${trail[i]}"`).toBe(normalizeUrl(paths[i], baseURL!));
+        expect.soft(['_self', null, ''], `target of "${trail[i]}"`).toContain(target);
+        const homeStatus = (await page.request.get(href)).status();
+        observed.push({ item: trail[i], href, target, status: homeStatus });
+        await test.info().attach('observed', { body: JSON.stringify(observed, null, 2), contentType: 'application/json' });
+        test.fixme(homeStatus === 404, 'blocked-env: top page 404 on DEV (B3)');
+      }
       const pagesBefore = page.context().pages().length;
       const [response] = await Promise.all([page.waitForNavigation(), link.click()]);
       const row = { item: trail[i], href, target, url: page.url(), status: response?.status(), pages: page.context().pages().length };
@@ -76,9 +85,7 @@ for (const lang of ['ja', 'en'] as const) {
       expect.soft(normalizeUrl(href, baseURL!), `href of "${trail[i]}"`).toBe(normalizeUrl(paths[i], baseURL!));
       expect.soft(['_self', null, ''], `target of "${trail[i]}"`).toContain(target);
       expect.soft(normalizeUrl(page.url(), baseURL!), `URL after clicking "${trail[i]}"`).toBe(normalizeUrl(paths[i], baseURL!));
-      // JOB-20261015-02: HOME /master/{lang} 404 is a known data gap, reported separately as blocked, not a TC failure.
-      if (i === 0) test.info().annotations.push({ type: 'home-status', description: String(response?.status()) });
-      else expect.soft(response?.status(), `HTTP status of ${paths[i]}`).toBe(200);
+      expect.soft(response?.status(), `HTTP status of ${paths[i]}`).toBe(200);
       expect.soft(row.pages, 'same tab').toBe(pagesBefore);
       await page.goBack(); await expect(page).toHaveURL(new RegExp(grandchild(lang) + '/?$'));
     }
