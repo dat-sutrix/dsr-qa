@@ -9,7 +9,7 @@
 | 3 | Đuổi trả lời DSR-457: Ngọc (comment 61011) + Quentin (comment 61015). Jira 16/10: assignee DSR-457 = Quentin | Ngoc, Quentin (PM) | 20/10 | 360 | DSR-457 | xem BUGS.md #1, #2 |
 
 ## 🌙 QA part-time đêm nay
-**[Night Work Pack 2026-10-16](https://docs.google.com/document/d/15Syl4qRQjKV1sR6LRV2WD6cRHyncONIewbL1Inz0_EA)** (~2h55, 6 việc, chỉ DEV, task 17:10 tạo) · 1 DSR-501/587 更新日 rel-1..6 + republish main-a (20') · 2 DSR-557 ebookUrl + Release date TD-190-03/04 (20') · 3 DSR-566 TD-566-01/02 + manual 017 (60') · 4 DSR-529 TD-529-03/01/02 chỉ ja (45') · 5 DSR-457 #1, #10 (15') · 6 DSR-552 TC 026 bằng outerHTML (10') · Report 15 dòng: [DSR Night Report](https://docs.google.com/spreadsheets/d/1gkH5lblKS1T3zxSTItNhX31TU-b-mY71GIFRqjMpZoU) · Evidence: [Evidence_20261016](https://drive.google.com/drive/folders/1T7Ps92Zu-cyLV7jerbA1kE4jsth0aIwE)
+**[Night Work Pack 2026-10-16 (v2)](https://docs.google.com/document/d/1PnPq3ejwpM3PJ6VR5ioQ4m1V0q9oWPdeOphoS3RSXT0)** (~2h55, 6 việc, 15 dòng report) · Evidence: `DSR_NightPack/Evidence_20261016` · QA-PT nghỉ T7/CN, pack kế tiếp T2 19/10
 Đêm 15/10 (đã triage sáng 16/10): [Night Work Pack 2026-10-15 (v2)](https://docs.google.com/document/d/1TBlioRYuLYWxroJGw5hgnZxFSJ0mWzjY-0AWixr73lg).
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
