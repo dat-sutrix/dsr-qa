@@ -1,0 +1,20 @@
+{
+  "job": "JOB-20261016-04",
+  "agent": "claude-code",
+  "us": "DSR-587",
+  "env": "dev",
+  "started": "2026-10-16T06:59:38Z",
+  "finished": "2026-10-16T07:02:30Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-501-P3", "lang": "en", "result": "blocked",
+      "error": "blocked-data: 6th related movie not on publish. Query returns 5 (rel1-5); 5 cards shown (rel1-5). <=5 OK, static title OK, 0 GraphQL calls. Order untestable: updateDate null",
+      "evidence": "evidence/DSR-501-P3_en_fullpage.png", "suspect": "data" },
+    { "tc": "DSR-501-P2", "lang": "en", "result": "pass",
+      "error": "rel1 only shown; 'video title off' absent from rendered DOM but present in raw HTML block row (isUnavailable: true). 0 GraphQL calls",
+      "evidence": "evidence/DSR-501-P2_en_fullpage.png", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/movie-detail/DSR-587.overlay-retest-DSR-647.spec.ts", "fixtures/dsr-501.ts", "results/DSR-587/DEV/automation-run-20261016.md"],
+  "questions": []
+}
