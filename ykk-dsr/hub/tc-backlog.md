@@ -19,7 +19,7 @@
 | 10 | DSR-607/570 資料ダウンロード | DSR-192 | DSR-623 | 8 | new | — | 17/10 | todo | related DSR-571; nhận catalog ID từ DSR-190 |
 | 11 | DSR-585 製品CF 改修 | (parent) | DSR-625 | 6 | new | — | 17/10 | todo | CF layer |
 | 12 | DSR-586 製品詳細 Overlay化 | (parent) | DSR-626 | 5 | new | — | 17/10 | todo | regression DSR-360 + DSR-457 |
-| 13 | DSR-587 動画詳細 Overlay化 | (parent) | DSR-627 | 3 | new | — | 17/10 | todo | reuse DSR-173 TC · **bắt buộc thêm TC từ DSR-501 P2/P3 (DSR-647): relatedMovies theo thứ tự author, tối đa 5, ẩn isUnavailable=true – data qa501-* trên DEV** |
+| 13 | DSR-587 動画詳細 Overlay化 | (parent) | DSR-627 | 3 | new | — | 17/10 | todo | reuse DSR-173 TC · **NGUỒN BẮT BUỘC: tài liệu test của Martin (claude.ai artifact RJZeN9qkbwEa8uDyTC8rQr, 16/10 – chưa đọc được, chờ Dat gửi nội dung; 'đường dẫn CF trong DAM rất quan trọng') → lưu vào docs/DSR-587/ trước khi viết TC; data qa501 hiện ở product-cf/test có thể sai path** · **bắt buộc thêm TC từ DSR-501 P2/P3 (DSR-647): relatedMovies theo thứ tự author, tối đa 5, ẩn isUnavailable=true – data qa501-* trên DEV** |
 | 14 | DSR-589 アイコン差替 | (parent) | DSR-628 | 2 | new | — | 17/10 | todo | |
 | 15 | DSR-590 環境配慮型製品 | (parent) | DSR-629 | 8 | new | — | 18/10 | todo | |
 | 16 | DSR-227 Asset移行 | (parent) | DSR-630 | 6 | new | — | 18/10 | todo | |
