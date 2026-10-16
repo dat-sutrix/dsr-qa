@@ -94,3 +94,7 @@ Nguyên tắc: job dựa trên data QA-PT để sẵn ở `jobs/hold/` với đi
 | T7 17/10 | **nghỉ** | 07:45 chuyển hold→queue: JOB-20261016-08 (566 trên TD-566), JOB-20261015-12 (529), rerun 557 e-book, 501 order (nếu Martin đã re-preview) | 566 visual 014/015 (390px) trên TD-566-01 | 07:45 phân loại · 17:10 không tạo pack, chỉ xếp job agent · 18–22h viết TC |
 | CN 18/10 | **nghỉ** | rerun còn lại / retest bug đã fix | visual 529 | như T7 – backlog TC phải xong |
 | T2 19/10 | Night Pack 19/10: retest fail + manual 529/566 + data overlay DSR-587 | — | — | 07:45 tổng kết + đề xuất Done · 08:30 nhắc 611/457 |
+
+## Ghi chú 16/10 17:45
+- DSR-647/501-P3: trang overlay trên nhánh Martin KHÔNG tự tạo lại sau khi publish CF related (JOB-20261016-09: last-modified 06:43Z). Kết quả Việc 1 của QA-PT tối 16/10 nếu "Fail" = **blocked-env**, không phải bug. Cần Martin re-preview sau khi QA-PT set 更新日 → Dat nhắn Martin sáng T2 19/10.
+- DSR-552: B3 đã gỡ (JOB-09 8/8 pass HOME). Còn 026 (QA-PT tối 16/10). Bug mở chỉ Low (DSR-648, DSR-651). → đề xuất Done DEV khi 026 Pass.
