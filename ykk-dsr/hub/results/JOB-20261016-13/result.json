@@ -1,0 +1,57 @@
+{
+  "job": "JOB-20261016-13",
+  "agent": "codex",
+  "us": "DSR-570",
+  "env": "dev",
+  "started": "2026-10-16T13:14:42Z",
+  "finished": "2026-10-16T13:17:08Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATDL-014",
+      "lang": "ja",
+      "result": "pass",
+      "error": "captured only; visual verdict pending Claude web. PC labels above inputs, not left; inputs 320px.",
+      "evidence": "evidence/DSR-CATDL-014_DEV_01.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-CATDL-015",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Scroll criterion passes: 375px. Inputs 217/343px (63.3%) below 90%; button fully visible after scroll.",
+      "evidence": "evidence/DSR-CATDL-015_DEV_01.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-CATDL-019",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Scores recorded only; target comparison is not a QA verdict.",
+      "evidence": "",
+      "suspect": "product"
+    }
+  ],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "device": "mobile",
+      "performance": 79.0,
+      "accessibility": 96.0,
+      "best-practices": 100,
+      "seo": 61.0
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "device": "desktop",
+      "performance": 100,
+      "accessibility": 90.0,
+      "best-practices": 100,
+      "seo": 61.0
+    }
+  ],
+  "code_changes": [
+    "tests/catalog-detail/DSR-570.visual.spec.ts"
+  ],
+  "questions": []
+}

@@ -1,0 +1,245 @@
+{
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+  "httpStatus": 200,
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "browser": "153.0.8010.12",
+  "buttonFullyVisibleAfterScroll": true,
+  "scrollWidth": 375,
+  "contentWidth": 343,
+  "title": "製品カタログ",
+  "regions": {
+    "h1": {
+      "x": 16,
+      "y": 130,
+      "width": 343,
+      "height": 40.796875,
+      "right": 359,
+      "bottom": 170.796875
+    },
+    ".catalog-detail-summary": {
+      "x": 16,
+      "y": 210.796875,
+      "width": 343,
+      "height": 487.390625,
+      "right": 359,
+      "bottom": 698.1875
+    },
+    ".catalog-detail-cover": {
+      "x": 16,
+      "y": 210.796875,
+      "width": 343,
+      "height": 255,
+      "right": 359,
+      "bottom": 465.796875
+    },
+    ".catalog-detail-info": {
+      "x": 16,
+      "y": 491.796875,
+      "width": 343,
+      "height": 206.390625,
+      "right": 359,
+      "bottom": 698.1875
+    },
+    ".catalog-detail-fields": {
+      "x": 16,
+      "y": 738.1875,
+      "width": 343,
+      "height": 909.671875,
+      "right": 359,
+      "bottom": 1647.859375
+    },
+    ".catalog-detail-consent": {
+      "x": 16,
+      "y": 1655.859375,
+      "width": 343,
+      "height": 561.53125,
+      "right": 359,
+      "bottom": 2217.390625
+    },
+    ".catalog-detail-submit": {
+      "x": 42.5,
+      "y": 2225.390625,
+      "width": 290,
+      "height": 54,
+      "right": 332.5,
+      "bottom": 2279.390625
+    }
+  },
+  "fields": [
+    {
+      "name": "lastname",
+      "x": 132,
+      "y": 746.1875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 794.1875,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須氏名（姓）",
+      "labelRect": {
+        "x": 16,
+        "y": 745.734375,
+        "width": 92,
+        "height": 44.890625,
+        "right": 108,
+        "bottom": 790.625
+      }
+    },
+    {
+      "name": "firstname",
+      "x": 132,
+      "y": 814.1875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 862.1875,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須氏名（名）",
+      "labelRect": {
+        "x": 16,
+        "y": 813.734375,
+        "width": 92,
+        "height": 44.890625,
+        "right": 108,
+        "bottom": 858.625
+      }
+    },
+    {
+      "name": "email",
+      "x": 132,
+      "y": 882.1875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 930.1875,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須メールアドレス",
+      "labelRect": {
+        "x": 16,
+        "y": 881.734375,
+        "width": 92,
+        "height": 44.890625,
+        "right": 108,
+        "bottom": 926.625
+      }
+    },
+    {
+      "name": "phone",
+      "x": 132,
+      "y": 950.1875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 998.1875,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須電話番号",
+      "labelRect": {
+        "x": 16,
+        "y": 949.734375,
+        "width": 92,
+        "height": 44.890625,
+        "right": 108,
+        "bottom": 994.625
+      }
+    },
+    {
+      "name": "company",
+      "x": 132,
+      "y": 1018.1875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 1066.1875,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須会社名",
+      "labelRect": {
+        "x": 16,
+        "y": 1017.734375,
+        "width": 92,
+        "height": 44.890625,
+        "right": 108,
+        "bottom": 1062.625
+      }
+    },
+    {
+      "name": "department",
+      "x": 132,
+      "y": 1086.1875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 1134.1875,
+      "contentRatio": 0.6326530612244898,
+      "label": "任意部署名",
+      "labelRect": {
+        "x": 16,
+        "y": 1085.734375,
+        "width": 92,
+        "height": 44.890625,
+        "right": 108,
+        "bottom": 1130.625
+      }
+    },
+    {
+      "name": "jobtitle",
+      "x": 132,
+      "y": 1152.1875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 1200.1875,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須役職",
+      "labelRect": {
+        "x": 16,
+        "y": 1146.1875,
+        "width": 92,
+        "height": 60,
+        "right": 108,
+        "bottom": 1206.1875
+      }
+    },
+    {
+      "name": "location",
+      "x": 132,
+      "y": 1524.078125,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 1572.078125,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須勤務地",
+      "labelRect": {
+        "x": 16,
+        "y": 1518.078125,
+        "width": 92,
+        "height": 60,
+        "right": 108,
+        "bottom": 1578.078125
+      }
+    },
+    {
+      "name": "field",
+      "x": 132,
+      "y": 1592.96875,
+      "width": 217,
+      "height": 48,
+      "right": 349,
+      "bottom": 1640.96875,
+      "contentRatio": 0.6326530612244898,
+      "label": "必須あなたの担当分野は？",
+      "labelRect": {
+        "x": 16,
+        "y": 1586.078125,
+        "width": 92,
+        "height": 61.78125,
+        "right": 108,
+        "bottom": 1647.859375
+      }
+    }
+  ],
+  "buttonRadius": "50px"
+}
