@@ -1,0 +1,20 @@
+{
+  "job": "JOB-20261016-03",
+  "agent": "claude-code",
+  "us": "DSR-501",
+  "env": "dev",
+  "started": "2026-10-16T05:09:00Z",
+  "finished": "2026-10-16T05:13:36Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-501-P3", "lang": "en", "result": "fail",
+      "error": "Related area (movie-detail-related-content) not rendered on qa501-a. Persisted query returns no relatedMovies/relatedVideos key; FE reads cf.relatedVideos",
+      "evidence": "evidence/DSR-501-P3_en.png", "suspect": "product" },
+    { "tc": "DSR-501-P2", "lang": "en", "result": "fail",
+      "error": "Related area not rendered on qa501-b (videoId qa501-main-b confirmed). Query has no related-movie field. 'video title off' absent from page",
+      "evidence": "evidence/DSR-501-P2_en.png", "suspect": "product" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["fixtures/dsr-501.ts", "results/DSR-501/DEV/automation-run-20261016-rerun2.md"],
+  "questions": []
+}
