@@ -23,7 +23,7 @@
 | 14 | DSR-589 アイコン差替 | (parent) | DSR-628 | 2 | new | 1KpCgawqzUJzkTKYxwjgKer0tnL6w9vGU | 17/10 | done | new 12 TC (Page 12; Auto 9 + Visual 2 + Manual 1), không Figma node / icon YKK chưa giao → all Blocked-by icon+A03+DSR-589 (Martin); folder Drive mới; TC + TD → upload-queue. DSR-628 Done. Idle JOB-ZZ-IDLE-10 (chụp inventory icon tạm TD-589-06) · Q34–Q35 |
 | 15 | DSR-590 環境配慮型製品 | (parent) | DSR-629 | 8 | new | 1Gnm1FW1-Vs49M69pMG0pdA8X5bDQYjeQ | 18/10 | done | new 16 TC (CF 1 / Page 15; Auto 11 + Visual 3 + Manual 2), Figma C14 3066-24396 + URL design P076–P087 (01_サイトマップ・URL設計書); C15/SP node thiếu (Q36); folder Drive mới; TC + TD → upload-queue. DSR-629 Done. Idle JOB-ZZ-IDLE-11 (DSR-590 To Do, Ngoc) · Q36–Q38 |
 | 16 | DSR-227 Asset移行 | (parent) | DSR-630 | 6 | new | 11a8loL31FLDqQ0v55gTB7pIeGST2m2zu | 18/10 | done | new 19 TC (CF/DAM 9 / Page 10; Auto 9 + Visual 1 + Manual 9) theo DSR-227 BAC/TCC + asset list 9/9 (1,513 product assets in scope, /3d hold) + pptx p2 (tạm, DSR-606); design doc + sample migration chưa giao → all Blocked (Quentin); folder Drive mới; TC + TD → upload-queue. DSR-630 Done. Idle JOB-ZZ-IDLE-12 (baseline asset URL DEV) · Q39–Q41 |
-| 17 | DSR-433 メール送信連携 | DSR-433 | DSR-528 | 10 | new | — | 18/10 | doing 2026-10-17 19:14 | sub-task 543–548 làm nguồn |
+| 17 | DSR-433 メール送信連携 | DSR-433 | DSR-528 | 10 | new | 1zdXupq6-Yvyl7ITx9GSBnbW99LBNoUcF | 18/10 | done | new 22 TC (CF 7 / delivery 15; Auto 2 + Manual 20 – gửi mail do dev chạy, QA quan sát) theo DSR-433 BAC/TCC + comments + sub-task 543–548; ⚠️ allowlist DEV chưa đăng ký (9/25), SendGrid trial; folder Drive mới; TC + TD → upload-queue. DSR-528 Done. Idle JOB-ZZ-IDLE-13 (GET webhook/test-send) · Q42–Q44 |
 
 ## Nhật ký chạy
 | Thời điểm | Ticket | Kết quả | Thời gian |
@@ -42,3 +42,4 @@
 | 2026-10-17 18:10 | DSR-589 | done (new 12 TC, folder Drive mới, TC+TD → upload-queue) · DSR-628 Done · idle JOB-ZZ-IDLE-10 · Q34–Q35 · backlog check: auto-added 0 (DSR-567/531 = task TC của 566/529, đã phủ bởi DSR-618/619) | ~12' |
 | 2026-10-17 18:22 | DSR-590 | done (new 16 TC, folder Drive mới, TC+TD → upload-queue) · DSR-629 Done · idle JOB-ZZ-IDLE-11 · Q36–Q38 | ~10' |
 | 2026-10-17 19:13 | DSR-227 | done (new 19 TC, folder Drive mới, TC+TD → upload-queue) · DSR-630 Done · idle JOB-ZZ-IDLE-12 · Q39–Q41 · backlog check: auto-added 0 | ~15' |
+| 2026-10-17 19:20 | DSR-433 | done (new 22 TC, folder Drive mới, TC+TD → upload-queue) · DSR-528 Done · idle JOB-ZZ-IDLE-13 · Q42–Q44 · backlog hết todo | ~8' |
