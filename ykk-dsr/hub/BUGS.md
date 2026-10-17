@@ -1,20 +1,20 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-16 17:15 (UTC+7, [schedule] evening) · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
+> Cập nhật: 2026-10-17 07:45 (UTC+7, [schedule] morning) · Jira 17/10: trạng thái 457/647/648/651 không đổi · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
 |---|---|---|---|---|---|
 | 1 | DSR-457 | Nhắc Ngọc trả lời comment 61011 (fix 3, 7, 13 · check 6 · R1) | Dat | Ngoc | 16/10 |
 | 2 | DSR-457 | Đuổi Quentin trả lời comment 61015 (webp, form gate catalog) – mặc định áp dụng nếu không trả lời trước 20/10 | Dat | Quentin (PM) | 20/10 |
-| 3 | DSR-457 | Regression item 1, 10 – đã đưa vào [Night Pack 16/10](https://docs.google.com/document/d/15Syl4qRQjKV1sR6LRV2WD6cRHyncONIewbL1Inz0_EA) việc 5 | QA part-time | — | 17/10 sáng |
-| 4 | DSR-647 | Retest: QA-PT đặt 更新日 rel-1..6 + republish main-a (Night Pack 16/10 việc 1) → JOB-20261016-09 (hold) → pass thì Done theo 03 §0 | QA-PT → Agent → Claude | — | 17/10 |
+| 3 | DSR-457 | Night 16/10: #1 ✅ Pass (evidence Drive 18GECm86…, 1lv09Z…) · #10 chưa chạy → Night Pack T2 19/10. Comment kết quả #1 vào DSR-457 (lượt tự động bị chặn quyền ghi Jira – xem DASHBOARD 🔔) | Dat (comment) · QA-PT (#10) | — | 19/10 |
+| 4 | DSR-647 | Night 16/10 DSR-501-P3-order ❌ (thứ tự sai, evidence Drive 1y0kdjL7…) – nghi trang branch chưa tái tạo → JOB-20261017-01 (queue) kiểm freshness. Stale → Dat nhờ Martin re-preview qa501-main-a (T2 19/10) | Agent → Claude → Dat | Martin | 19/10 |
 
 ## Bug đang mở
 | Jira | US | Tiêu đề | Sev | Trạng thái Jira | Assignee | Retest ở | Kết quả retest gần nhất | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|
-| [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) | Major | [Dev] In Testing (Jira 16/10) | Milavec Quentin (Jira 16/10; trước đó Ngoc) | DEV | 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 1, 10 | Ngoc trả lời 61011 · Quentin trả lời 61015 |
-| [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) | DSR-501 | video-detail: relatedMovies không bao giờ hiển thị (query thiếu relatedMovies, FE đọc relatedVideos) | High | **[Dev] In Testing** (16/10 17:54 JST) | Portal Martin | DEV (branch DSR-PRODUCTDETAIL-moustache) | 16/10 JOB-05: P3 = blocked-data (updateDate null, preview cũ 5 dòng); 5 thẻ hiện, cap 5 chưa chứng minh. Order rule = update date mới nhất trước (61177) | Night Pack 16/10 việc 1 → JOB-20261016-09 (P2 + P3) · 17/10 |
+| [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) | Major | [Dev] In Testing (Jira 17/10) | Milavec Quentin (Jira 16/10; trước đó Ngoc) | DEV | 16/10 QA-PT: ✅ 1 · 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 10 | Ngoc trả lời 61011 · Quentin trả lời 61015 |
+| [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) | DSR-501 | video-detail: relatedMovies không bao giờ hiển thị (query thiếu relatedMovies, FE đọc relatedVideos) | High | **[Dev] In Testing** (16/10 17:54 JST) | Portal Martin | DEV (branch DSR-PRODUCTDETAIL-moustache) | 16/10 QA-PT: P3-order ❌ (sau khi set 更新日 rel-1..6) – chưa kết luận (nghi preview cũ). 16/10 JOB-05: blocked-data. Order rule = update date mới nhất trước (61177) | JOB-20261017-01 (P2 + P3, freshness) · 17/10 |
 | [DSR-648](https://sutrix.atlassian.net/browse/DSR-648) | DSR-552 | Breadcrumb UE preview thiếu trang cha (Publish đúng) | Minor (Low) | To Do (tạo 16/10) | Portal Martin (dev DSR-552) | DEV | 15/10 QA-PT: ❌ 016 | Dev xác nhận fix / known limitation → QA retest 016 |
 | [DSR-651](https://sutrix.atlassian.net/browse/DSR-651) | DSR-552 | Breadcrumb display name dài → scroll ngang PC 1440/1024 | Minor (Low) | To Do (tạo 16/10) | Portal Martin | DEV | 16/10 JOB-20261016-01: ❌ 014 | Martin fix → rerun 014 |
 

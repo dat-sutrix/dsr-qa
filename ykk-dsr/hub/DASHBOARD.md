@@ -1,12 +1,19 @@
 # YKK DSR – QA Dashboard
 
-> Cập nhật: 2026-10-16 17:15 (UTC+7, [schedule] evening) · Lần kiểm tra kế tiếp: sáng 17/10 07:45 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
+> Cập nhật: 2026-10-17 07:45 (UTC+7, [schedule] morning) · Lần kiểm tra kế tiếp: 17/10 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
 
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
-| 2 | Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) (4 câu, Jira vẫn To Do, mặc định QA áp dụng 20/10) | Quentin (PM) | 17/10 | 557 | 5 TC | "Quentin-san, QA needs 4 answers in DSR-611 to unblock DSR-190 test cases; if no answer by 10/20 QA applies the defaults written in the ticket." |
-| 3 | Đuổi trả lời DSR-457: Ngọc (comment 61011) + Quentin (comment 61015). Jira 16/10: assignee DSR-457 = Quentin | Ngoc, Quentin (PM) | 20/10 | 360 | DSR-457 | xem BUGS.md #1, #2 |
+| 1 | ⚠️ **Agent treo**: JOB-20261016-12 (DSR-570) nằm `jobs/running/` từ 16/10 20:16 (>11h) → cả lane claude-code đứng, 7 job đang chờ. Vào VPS kiểm runner claude-code; process chết thì `git mv ykk-dsr/hub/jobs/running/JOB-20261016-12.md ykk-dsr/hub/jobs/queue/` + push, rồi khởi động lại runner | VPS (Dat) | 17/10 | 570 + toàn lane | 7 job | — |
+| 2 | **Chuyển Done DEV: DSR-552** (026 ✅ 16/10; fail còn lại chỉ DSR-648/DSR-651 Low có ticket; Blocked có owner). Chuyển Jira + dán comment | Jira DSR-552 | 17/10 | 552 | — | "QA confirm DEV (2026-10-17): all 35 TCs executed on DEV. Open: DSR-648, DSR-651 (Low). Blocked with owner: zh/cn (no /master/cn – Quentin), 021–023/030/034 (DSR-575/536 – Kohei), 029 Lighthouse (STG, next sprint), 033 (layout tickets). Evidence: results/DSR-552/DEV/ + DSR_NightPack/Evidence_20261015, _20261016." |
+| 3 | Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) (4 câu, Jira vẫn To Do, mặc định QA áp dụng 20/10) | Quentin (PM) | 17/10 | 557 | 5 TC | "Quentin-san, QA needs 4 answers in DSR-611 to unblock DSR-190 test cases; if no answer by 10/20 QA applies the defaults written in the ticket." |
+| 4 | DSR-566 chặn: DEV Author **không có template `news-article`** → không seed được TD-566, 12 TC + 2 visual đứng | Dev DSR-357 (news-detail) | 19/10 | 566 | JOB-08, JOB-11 | "Hi, QA cannot create a news page on DEV Author: template `news-article` is not available (screenshot: https://drive.google.com/file/d/11UjvHFVP4mU3JqXWytcSUWPtk0vdqIzH/view). Please enable/deploy the template on DEV or tell us which template to use for DSR-566." |
+| 5 | DSR-529: xác nhận template + path (không có folder library/article/stories, chỉ có template `article detail`). Mặc định: QA-PT dùng `article detail` dưới test-space đêm T2 | Martin | 19/10 | 529 | JOB-20261015-12 | "Martin-san, for DSR-529 QA test pages: DEV has no folder /library/article/stories and no template `article`, only `article detail`. QA will use `article detail` under /master/{lang}/test-space/ on 10/19 unless you say otherwise. Is that correct?" |
+| 6 | Dán comment kết quả DSR-457 #1 (lượt tự động bị chặn quyền ghi Jira) | Jira DSR-457 | 19/10 | 360 | — | "QA retest DEV 2026-10-16: item #1 PASS – layout not broken (evidence https://drive.google.com/file/d/18GECm86P0goOJG1yVY8W3JE_E9P5mL-p/view). Item #10 not run yet (10/19). Items 3, 7, 13, 6, R1 and PM decisions (61015) still open." |
+| 7 | Đuổi trả lời DSR-457: Ngọc (comment 61011) + Quentin (comment 61015). Jira 16/10: assignee DSR-457 = Quentin | Ngoc, Quentin (PM) | 20/10 | 360 | DSR-457 | xem BUGS.md #1, #2 |
+| 8 | Rủi ro làm lại lớn Q27: DSR-585 項目fix版 (85 field, hạn 14/10) chưa giao → 15 TC đang dựa bản tạm v0.1 | Quentin (PM) | 20/10 | 585 | 15 TC | "Quentin-san, when will the fixed Product CF field list (項目fix版) be delivered? QA test cases for DSR-585 are written on v0.1 (20260930) and must be redone if fields change." |
+| 9 | (Tùy chọn) Lượt tự động 07:45 bị chặn ghi Jira (comment/tạo bug) → nếu muốn tự động, cho phép ghi Jira trong cài đặt scheduled task | — | — | — | — | — |
 
 ## 🌙 QA part-time đêm nay
 **[Night Work Pack 2026-10-16 (v2)](https://docs.google.com/document/d/1PnPq3ejwpM3PJ6VR5ioQ4m1V0q9oWPdeOphoS3RSXT0)** (~2h55, 6 việc, 15 dòng report) · Evidence: `DSR_NightPack/Evidence_20261016` · QA-PT nghỉ T7/CN, pack kế tiếp T2 19/10
@@ -14,7 +21,7 @@
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
 Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 ticket, đích sáng T2 19/10) · câu hỏi chờ duyệt: [tc-questions.md](tc-questions.md)
-**Night TC job (16/10 21:25):** done 13/17 (+DSR-586, DSR-587) · upload queue pending 6 (585, 586, 587) / fail 0 · auto-added 0 · job agent đã xếp 2 idle (JOB-ZZ-IDLE-05 DSR-586, -06 DSR-587; 586/587 giao Martin → không write-and-run) · Q29–Q33 mặc định · còn 4 ticket / 26 SP (589, 590, 227, 433) · ⚠️ QA-PT cần seed TD-586/TD-587 ở path BL-OVL-1 (Night Pack T2 19/10). **Night TC job (16/10 20:40):** done 11/17 (+DSR-570, DSR-585) · upload queue pending 2 (585) / fail 0 · 570 đã lên Drive · auto-added 0 · job agent đã xếp 2 (JOB-20261016-12 claude-code, -13 codex) · Q23–Q28 mặc định · còn 6 ticket / 34 SP · ⚠️ DSR-585 blocked: 項目fix版 chưa giao (Q27). **Sáng 16/10:** done 1/17 · upload-pending 8 · todo 8 (đêm 17–18/10) · câu hỏi chưa quyết định **22**. **Night TC job (15/10 21:30):** done 1/17 · upload-pending 8 (529, 609, 568, 560, 608, 610, 503, 583) · câu hỏi chờ duyệt 22 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14) · 🔔 Dat upload 8 TC xlsx từ tc-out/ (503, 583 vào folder mới tạo) · còn 8 ticket / 48 SP
+**Sáng 17/10:** done 13/17 (không đổi từ 21:25) · còn 4 ticket / 26 SP (589, 590, 227, 433 – T7/CN 09–22h) · upload queue pending 6 (585, 586, 587) / fail 0 · auto-added 0 · câu mới có rủi ro làm lại: Q27 (🔔 #8). **Night TC job (16/10 21:25):** done 13/17 (+DSR-586, DSR-587) · upload queue pending 6 (585, 586, 587) / fail 0 · auto-added 0 · job agent đã xếp 2 idle (JOB-ZZ-IDLE-05 DSR-586, -06 DSR-587; 586/587 giao Martin → không write-and-run) · Q29–Q33 mặc định · còn 4 ticket / 26 SP (589, 590, 227, 433) · ⚠️ QA-PT cần seed TD-586/TD-587 ở path BL-OVL-1 (Night Pack T2 19/10). **Night TC job (16/10 20:40):** done 11/17 (+DSR-570, DSR-585) · upload queue pending 2 (585) / fail 0 · 570 đã lên Drive · auto-added 0 · job agent đã xếp 2 (JOB-20261016-12 claude-code, -13 codex) · Q23–Q28 mặc định · còn 6 ticket / 34 SP · ⚠️ DSR-585 blocked: 項目fix版 chưa giao (Q27). **Sáng 16/10:** done 1/17 · upload-pending 8 · todo 8 (đêm 17–18/10) · câu hỏi chưa quyết định **22**. **Night TC job (15/10 21:30):** done 1/17 · upload-pending 8 (529, 609, 568, 560, 608, 610, 503, 583) · câu hỏi chờ duyệt 22 · job agent đã xếp 3 (JOB-12 hold, JOB-13, JOB-14) · 🔔 Dat upload 8 TC xlsx từ tc-out/ (503, 583 vào folder mới tạo) · còn 8 ticket / 48 SP
 19 sub-task · **94 SP** (1 SP = 1h) · Done 2 (DSR-612, DSR-617 = 10 SP) · To Do 17 (84 SP). Lọc: `project = DSR AND labels = qa-tc`. Mới tạo 15/10: DSR-617..633; dùng lại DSR-528 (メール送信連携).
 
 ## 🎯 Ưu tiên Sprint 12: 6 ticket In Testing → [PLAN-sprint12.md](PLAN-sprint12.md)
@@ -23,13 +30,13 @@ Night TC job 18:00–22:00 hằng ngày → [tc-backlog.md](tc-backlog.md) (17 t
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|---|
-| [DSR-552](us/DSR-552.md) | Breadcrumb block | 🟡 | 2/9 | 12/35 ✅ · 8 ❌ · 15 ⛔ (night 15/10: 012/013/024 ✅, 016 ❌ bug UE preview, 026 làm lại) | — | — | B3 HOME (top page chưa lên .aem.live) · bug DSR-648 (UE preview) → dev | 1 (DSR-648) | 026 làm lại (QA-PT · đêm 16/10) · B3 top page (dev · 17/10) · close-out JOB-07 ✅ 0 fail |
-| [DSR-557](us/DSR-557.md) | 動画・カタログ表示 | 🟡 | 2/9 | 8/25 ✅ · 0 ❌ · 10 ⛔ (JOB-06/07 15/10) | — | — | DSR-611 → Quentin · e-book ebookUrl sai + TD-190-03/04 thiếu Release date → QA-PT | 0 | DEV 8/25 ✅ 0 ❌ · e-book + TD-190-03/04 (QA-PT · đêm 16/10) → JOB-10 hold |
-| [DSR-566](us/DSR-566.md) | ニュース詳細 | 🟡 | 2/9 | 5/18 ✅ · 6 ❌ nghi data · 3 ⛔ | — | — | JOB-09 xong (6 fail nghi data → rerun TD-566) · list /news/ chưa có · cn | 0 | TD qa566 + 017 (QA-PT · đêm 16/10) → JOB-08/11 hold (17/10) |
-| [DSR-529](us/DSR-529.md) | 記事詳細 | 🟡 | 3/9 | 0/32 · 9 ⛔ | — | — | Chưa có trang test → QA-PT seed TD-529 · stories index → dev | 0 | Seed TD-529 ja (QA-PT · đêm 16/10) → JOB-12 hold (17/10) |
+| [DSR-552](us/DSR-552.md) | Breadcrumb block | 🟢 | 2/9 | 35/35 đã chạy · ≈22 ✅ · 2 ❌ Low (014, 016) · ≈11 ⛔ có owner | — | — | — | 2 Low (DSR-648, DSR-651) | **Đề xuất Done DEV** (Dat · 17/10) |
+| [DSR-557](us/DSR-557.md) | 動画・カタログ表示 | 🟡 | 2/9 | 8/25 ✅ · 0 ❌ · 10 ⛔ | — | — | DSR-611 → Quentin (mặc định 20/10) | 0 | Data đêm 16/10 ✅ → JOB-20261016-10 queue (016/017 e-book) · chờ lane claude-code |
+| [DSR-566](us/DSR-566.md) | ニュース詳細 | 🔴 | 2/9 | 5/18 ✅ · 6 ❌ nghi data · 3 ⛔ | — | — | **Không có template news-article trên DEV** → dev DSR-357 (🔔 #4) | 0 | JOB-08/11 hold tới khi có template + TD-566 (QA-PT T2) |
+| [DSR-529](us/DSR-529.md) | 記事詳細 | 🟡 | 3/9 | 0/32 · 9 ⛔ (spec scaffold xong, 47 skip blocked-data) | — | — | Không có folder stories / template `article` → Martin xác nhận (🔔 #5) | 0 | QA-PT seed TD-529 (`article detail`, test-space) T2 19/10 → JOB-12 |
 | [DSR-609](us/DSR-609.md) | トップ | 🟡 | 3/9 | 0/9 (JOB-14: 001 đã chụp chờ so Figma · PSI desktop 94 / mobile 87 trên .aem.page) | — | — | Q10/Q11 → Quentin · top page 404 trên .aem.live → dev | 0 | JOB-13 chờ lane (Agent) · so Figma 001 (Claude · 17/10) |
 | DSR-360 (bug DSR-457) | Product Detail | 🟡 | — | xem BUGS | — | — | 2 quyết định PM → Quentin | 1 | QA-PT item 1, 10 (Night Pack 16/10 việc 5) |
-| DSR-587 (bug DSR-647, từ 501) | Video detail overlay | 🟡 | — | DSR-647 [Dev] In Testing 16/10 | — | — | — | 1 | 更新日 rel (QA-PT · đêm 16/10) → JOB-09 hold (17/10) |
+| DSR-587 (bug DSR-647, từ 501) | Video detail overlay | 🟡 | — | QA-PT 16/10: P3-order ❌ (nghi preview cũ) | — | — | Martin re-preview nếu stale | 1 | JOB-20261017-01 (queue) kiểm freshness |
 
 Ký hiệu: DEV = `pass/tổng` + số fail. STG/PRO = N/A (giai đoạn DEV only, 03 §0) – Jira status [STG]/PRO là workflow chung.
 Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォーム ([STG] Ready for deploy), DSR-608/610/607 Test (To Do), DSR-538 bug movie-detail (To Do).
@@ -37,9 +44,9 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 ## 🤖 Agents
 | Lane | Đang chạy | Hàng đợi | Hold (07:45 chuyển khi Night Report Pass) | Xong 24h | Job lỗi |
 |---|---|---|---|---|---|
-| claude-code (functional) | — | 1 (JOB-20261016-12 DSR-570) | JOB-20261016-09 (DSR-647 retest · cần `DSR-501-P3-order`) · JOB-20261016-10 (557 e-book · cần TD-190-12/13) · JOB-20261016-08 (566 rerun · cần TD-566-01/02) · JOB-20261015-12 (529 · cần TD-529-01/03) | 7 (JOB-20261016-01..07, 0 fail sản phẩm mới) | 0 |
-| codex (visual + Lighthouse) | — | 1 (JOB-20261016-13 DSR-570) | JOB-20261016-11 (566 visual 014/015 SP 390 · cần TD-566-01) | 0 | 0 |
-Kết quả chiều 16/10: JOB-05 (501 P3) blocked-data (updateDate null, preview cũ) · JOB-06 (557) 10 pass / 4 skip data e-book · JOB-07 (552 close-out) 3 pass / 7 skip (HOME B3, cn). Không có bug thật mới.
+| claude-code (functional) | ⚠️ JOB-20261016-12 (DSR-570) **treo >11h** | 7: JOB-20261016-10 (557 e-book) · JOB-20261017-01 (DSR-647 retest) · -02 (DSR-173 MOVIE-014/033 pass→fail) · -03 (TOP-001 fix test) · IDLE-05 (586) · IDLE-06 (587) · IDLE-07 (regression 17/10) | JOB-20261016-08 (566 · chờ template) · JOB-20261015-12 (529 · chờ TD-529 T2) | 3 (IDLE-01/02/03) | 0 (1 treo) |
+| codex (visual + Lighthouse) | — | 1: IDLE-08 (Lighthouse baseline DEV + retry SP dsr-278) | JOB-20261016-11 (566 visual · chờ template) | 2 (JOB-20261016-13, IDLE-04) | 0 |
+Kết quả 16/10 tối: IDLE-01 regression 72 ✅ / 22 ❌ (mới: **MOVIE-014/033 pass→fail** – player không render trên trang dsr-173, nghi product → JOB-20261017-02 xác minh trước khi tạo bug; TOP-001 PC timeout = test) · IDLE-02 529 scaffold (all skip data) · IDLE-03 583: 4 ❌ = data (sai trang) · IDLE-04 baseline 19 ảnh · JOB-13 570: 015 ✅ đề xuất, SP input 63% (ghi cho dev, 570 In Progress), Lighthouse m79/d100. Bug thật mới: 0.
 
 ## ✅ Close gần đây
 - 2026-10-16 **DSR-501** Done (DEV): P1 ✅, P4 N/A, P2/P3 → bug DSR-647 (fix trong DSR-587, Martin)
