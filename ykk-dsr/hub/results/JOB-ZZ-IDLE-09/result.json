@@ -1,0 +1,629 @@
+{
+  "job": "JOB-ZZ-IDLE-09",
+  "agent": "codex",
+  "us": "DSR-360",
+  "env": "dev",
+  "started": "2026-10-17T10:14:47.052Z",
+  "finished": "2026-10-17T10:16:17.992Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-278 SP render timing",
+      "lang": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "result": "pass",
+      "error": "Observation completed; no product verdict.",
+      "evidence": "evidence/en_390x844_3s.png",
+      "durationMs": 22010,
+      "samples": [
+        {
+          "lang": "en",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "secondsAfterLoad": 3,
+          "actualObservationMs": 3034,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest-space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 0,
+          "contentVisible": false,
+          "documentHeight": 844,
+          "mainText": "HOME\ntest-space\nDSR-278 Product Detail",
+          "consoleErrors": [],
+          "consoleErrorCount": 0,
+          "failedRequests": [],
+          "failedRequestCount": 0,
+          "evidence": "evidence/en_390x844_3s.png"
+        },
+        {
+          "lang": "en",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "secondsAfterLoad": 10,
+          "actualObservationMs": 10043,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest-space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 209,
+          "contentVisible": true,
+          "documentHeight": 4660,
+          "mainText": "HOME\ntest-space\nDSR-278 Product Detail\nADVANCEN® for ISOFIX\n\nProduct code：\nproductCode2223323\n\nContact us about this product\nAdd to My List\nView this product's catalog\n\nThe AiryString® tapeless zipper is designed for elements to be sewn directly onto fabric by a special machine. By eliminating the zipper tapes, the AiryString® zipper offers more flexibility and weight reduction of the final product, in turn allowing for more design possibilities.\nCompared to standard zippers, the AiryString® tapeless zipper produces less greenhouse gas emissions during production.\nYKK will work together with customers to incorporate this unique and revolutionary zipper into their products as all parts for the zipper are supplied by YKK and require a special sewing machine.\n\nItem Variations\n\nAvailable in sizes: #5 in closed-end and open-end chain type.\n\n \tClassification\n  Close      \t       Open      \t     Two-way   \tChain\nSize/ Chain Type\t8CFT14\tOK\t-\t-\tOK\n8CFT15\tOK\t-\t-\tOK\n10CFT14\t-\t-\t-\tOK\n10CFT15\t-\t-\t-\tOK\nColor Variations\n\nAiryString® #5 with closed-end and open-end:\n\n\n\n\n- Elements color options: Based on YKK Global Color Card, metallic (MP, MG, MB, MR, MJ, SIL4)and DTM.\n- Core cord color options: Black and White\n\n\n\n\nThe color combination is elements color x core cord color.\n\n\n\n\nPlease contact your local YKK sales representative for more details.\n\nColor variations (PDF)\nRecycled tape compatibility\n○\n\nrecycledTapeNote\n\nNotice\n\nNotice\nThis is Notice\n\nSpec Variations\n\nMetallic Coil Zipper\nスライダーリペア対応止上\n\nItem Code: CM, CNM\n\nHose Sleeve\n\nItem Code: ABC-123\n\nQUICKFIT®\n\nItem Code: Z15-1\n\nLow-profiled Lightweight Snap\n\nItem Code: SKL30\n\nRelated Content\n\nDM_movie_テスト名\n\nMOVIE\n\nmovieTitle\n\nMOVIE\n\nPage Article\n\nSTORY\n\nPage Article\n\nSTORY",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()"
+          ],
+          "consoleErrorCount": 1,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            }
+          ],
+          "failedRequestCount": 4,
+          "evidence": ""
+        },
+        {
+          "lang": "en",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "secondsAfterLoad": 20,
+          "actualObservationMs": 20062,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest-space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 209,
+          "contentVisible": true,
+          "documentHeight": 4660,
+          "mainText": "HOME\ntest-space\nDSR-278 Product Detail\nADVANCEN® for ISOFIX\n\nProduct code：\nproductCode2223323\n\nContact us about this product\nAdd to My List\nView this product's catalog\n\nThe AiryString® tapeless zipper is designed for elements to be sewn directly onto fabric by a special machine. By eliminating the zipper tapes, the AiryString® zipper offers more flexibility and weight reduction of the final product, in turn allowing for more design possibilities.\nCompared to standard zippers, the AiryString® tapeless zipper produces less greenhouse gas emissions during production.\nYKK will work together with customers to incorporate this unique and revolutionary zipper into their products as all parts for the zipper are supplied by YKK and require a special sewing machine.\n\nItem Variations\n\nAvailable in sizes: #5 in closed-end and open-end chain type.\n\n \tClassification\n  Close      \t       Open      \t     Two-way   \tChain\nSize/ Chain Type\t8CFT14\tOK\t-\t-\tOK\n8CFT15\tOK\t-\t-\tOK\n10CFT14\t-\t-\t-\tOK\n10CFT15\t-\t-\t-\tOK\nColor Variations\n\nAiryString® #5 with closed-end and open-end:\n\n\n\n\n- Elements color options: Based on YKK Global Color Card, metallic (MP, MG, MB, MR, MJ, SIL4)and DTM.\n- Core cord color options: Black and White\n\n\n\n\nThe color combination is elements color x core cord color.\n\n\n\n\nPlease contact your local YKK sales representative for more details.\n\nColor variations (PDF)\nRecycled tape compatibility\n○\n\nrecycledTapeNote\n\nNotice\n\nNotice\nThis is Notice\n\nSpec Variations\n\nMetallic Coil Zipper\nスライダーリペア対応止上\n\nItem Code: CM, CNM\n\nHose Sleeve\n\nItem Code: ABC-123\n\nQUICKFIT®\n\nItem Code: Z15-1\n\nLow-profiled Lightweight Snap\n\nItem Code: SKL30\n\nRelated Content\n\nDM_movie_テスト名\n\nMOVIE\n\nmovieTitle\n\nMOVIE\n\nPage Article\n\nSTORY\n\nPage Article\n\nSTORY",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()"
+          ],
+          "consoleErrorCount": 1,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            }
+          ],
+          "failedRequestCount": 4,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "tc": "DSR-278 SP render timing",
+      "lang": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "result": "pass",
+      "error": "Observation completed; no product verdict.",
+      "evidence": "",
+      "durationMs": 22164,
+      "samples": [
+        {
+          "lang": "en",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "secondsAfterLoad": 3,
+          "actualObservationMs": 3045,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest-space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 203,
+          "contentVisible": true,
+          "documentHeight": 2995,
+          "mainText": "HOME\ntest-space\nDSR-278 Product Detail\nView this product's catalog\nADVANCEN® for ISOFIX\n\nProduct code：\nproductCode2223323\n\nContact us about this product\nAdd to My List\n\nThe AiryString® tapeless zipper is designed for elements to be sewn directly onto fabric by a special machine. By eliminating the zipper tapes, the AiryString® zipper offers more flexibility and weight reduction of the final product, in turn allowing for more design possibilities.\nCompared to standard zippers, the AiryString® tapeless zipper produces less greenhouse gas emissions during production.\nYKK will work together with customers to incorporate this unique and revolutionary zipper into their products as all parts for the zipper are supplied by YKK and require a special sewing machine.\n\nItem Variations\n\nAvailable in sizes: #5 in closed-end and open-end chain type.\n\n \tClassification\n  Close      \t       Open      \t     Two-way   \tChain\nSize/ Chain Type\t8CFT14\tOK\t-\t-\tOK\n8CFT15\tOK\t-\t-\tOK\n10CFT14\t-\t-\t-\tOK\n10CFT15\t-\t-\t-\tOK\nColor Variations\n\nAiryString® #5 with closed-end and open-end:\n\n\n\n\n- Elements color options: Based on YKK Global Color Card, metallic (MP, MG, MB, MR, MJ, SIL4)and DTM.\n- Core cord color options: Black and White\n\n\n\n\nThe color combination is elements color x core cord color.\n\n\n\n\nPlease contact your local YKK sales representative for more details.\n\nColor variations (PDF)\nRecycled tape compatibility\n○\n\nrecycledTapeNote\n\nNotice\n\nNotice\nThis is Notice\n\nSpec Variations\n\nMetallic Coil Zipper\nスライダーリペア対応止上\n\nItem Code: CM, CNM\n\nHose Sleeve\n\nItem Code: ABC-123\n\nQUICKFIT®\n\nItem Code: Z15-1\n\nLow-profiled Lightweight Snap\n\nItem Code: SKL30\n\nRelated Content\n\nDM_movie_テスト名\n\nMOVIE\n\nmovieTitle\n\nMOVIE\n\nPage Article\n\nSTORY\n\nPage Article\n\nSTORY",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 3,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/gradient-transparent-1920x1080?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/indexed-color-800x600?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/webp/gradient-transparent-1920x1080.webp",
+              "status": null,
+              "error": "net::ERR_BLOCKED_BY_ORB"
+            }
+          ],
+          "failedRequestCount": 6,
+          "evidence": ""
+        },
+        {
+          "lang": "en",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "secondsAfterLoad": 10,
+          "actualObservationMs": 10025,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest-space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 205,
+          "contentVisible": true,
+          "documentHeight": 4109,
+          "mainText": "HOME\ntest-space\nDSR-278 Product Detail\nView this product's catalog\nADVANCEN® for ISOFIX\n\nProduct code：\nproductCode2223323\n\nContact us about this product\nAdd to My List\n\nThe AiryString® tapeless zipper is designed for elements to be sewn directly onto fabric by a special machine. By eliminating the zipper tapes, the AiryString® zipper offers more flexibility and weight reduction of the final product, in turn allowing for more design possibilities.\nCompared to standard zippers, the AiryString® tapeless zipper produces less greenhouse gas emissions during production.\nYKK will work together with customers to incorporate this unique and revolutionary zipper into their products as all parts for the zipper are supplied by YKK and require a special sewing machine.\n\nItem Variations\n\nAvailable in sizes: #5 in closed-end and open-end chain type.\n\n \tClassification\n  Close      \t       Open      \t     Two-way   \tChain\nSize/ Chain Type\t8CFT14\tOK\t-\t-\tOK\n8CFT15\tOK\t-\t-\tOK\n10CFT14\t-\t-\t-\tOK\n10CFT15\t-\t-\t-\tOK\nColor Variations\n\nAiryString® #5 with closed-end and open-end:\n\n\n\n\n- Elements color options: Based on YKK Global Color Card, metallic (MP, MG, MB, MR, MJ, SIL4)and DTM.\n- Core cord color options: Black and White\n\n\n\n\nThe color combination is elements color x core cord color.\n\n\n\n\nPlease contact your local YKK sales representative for more details.\n\nColor variations (PDF)\nRecycled tape compatibility\n○\n\nrecycledTapeNote\n\nNotice\n\nNotice\nThis is Notice\n\nSpec Variations\n\nMetallic Coil Zipper\nスライダーリペア対応止上\n\nItem Code: CM, CNM\n\nHose Sleeve\n\nItem Code: ABC-123\n\nQUICKFIT®\n\nItem Code: Z15-1\n\nLow-profiled Lightweight Snap\n\nItem Code: SKL30\n\nRelated Content\n\nDM_movie_テスト名\n\nMOVIE\n\nmovieTitle\n\nMOVIE\n\nPage Article\n\nSTORY\n\nPage Article\n\nSTORY",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 3,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/gradient-transparent-1920x1080?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/indexed-color-800x600?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/webp/gradient-transparent-1920x1080.webp",
+              "status": null,
+              "error": "net::ERR_BLOCKED_BY_ORB"
+            }
+          ],
+          "failedRequestCount": 6,
+          "evidence": ""
+        },
+        {
+          "lang": "en",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "secondsAfterLoad": 20,
+          "actualObservationMs": 20035,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest-space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 205,
+          "contentVisible": true,
+          "documentHeight": 4109,
+          "mainText": "HOME\ntest-space\nDSR-278 Product Detail\nView this product's catalog\nADVANCEN® for ISOFIX\n\nProduct code：\nproductCode2223323\n\nContact us about this product\nAdd to My List\n\nThe AiryString® tapeless zipper is designed for elements to be sewn directly onto fabric by a special machine. By eliminating the zipper tapes, the AiryString® zipper offers more flexibility and weight reduction of the final product, in turn allowing for more design possibilities.\nCompared to standard zippers, the AiryString® tapeless zipper produces less greenhouse gas emissions during production.\nYKK will work together with customers to incorporate this unique and revolutionary zipper into their products as all parts for the zipper are supplied by YKK and require a special sewing machine.\n\nItem Variations\n\nAvailable in sizes: #5 in closed-end and open-end chain type.\n\n \tClassification\n  Close      \t       Open      \t     Two-way   \tChain\nSize/ Chain Type\t8CFT14\tOK\t-\t-\tOK\n8CFT15\tOK\t-\t-\tOK\n10CFT14\t-\t-\t-\tOK\n10CFT15\t-\t-\t-\tOK\nColor Variations\n\nAiryString® #5 with closed-end and open-end:\n\n\n\n\n- Elements color options: Based on YKK Global Color Card, metallic (MP, MG, MB, MR, MJ, SIL4)and DTM.\n- Core cord color options: Black and White\n\n\n\n\nThe color combination is elements color x core cord color.\n\n\n\n\nPlease contact your local YKK sales representative for more details.\n\nColor variations (PDF)\nRecycled tape compatibility\n○\n\nrecycledTapeNote\n\nNotice\n\nNotice\nThis is Notice\n\nSpec Variations\n\nMetallic Coil Zipper\nスライダーリペア対応止上\n\nItem Code: CM, CNM\n\nHose Sleeve\n\nItem Code: ABC-123\n\nQUICKFIT®\n\nItem Code: Z15-1\n\nLow-profiled Lightweight Snap\n\nItem Code: SKL30\n\nRelated Content\n\nDM_movie_テスト名\n\nMOVIE\n\nmovieTitle\n\nMOVIE\n\nPage Article\n\nSTORY\n\nPage Article\n\nSTORY",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 3,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/gradient-transparent-1920x1080?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/indexed-color-800x600?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/webp/gradient-transparent-1920x1080.webp",
+              "status": null,
+              "error": "net::ERR_BLOCKED_BY_ORB"
+            }
+          ],
+          "failedRequestCount": 6,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "tc": "DSR-278 SP render timing",
+      "lang": "ja",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "result": "pass",
+      "error": "Observation completed; no product verdict.",
+      "evidence": "",
+      "durationMs": 21934,
+      "samples": [
+        {
+          "lang": "ja",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "secondsAfterLoad": 3,
+          "actualObservationMs": 3019,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 44,
+          "contentVisible": true,
+          "documentHeight": 1627,
+          "mainText": "HOME\ntest space\nDSR-278 Product Detail\nDSR-361 往復テスト製品\n\n製品コード：\n5VS-RT\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\n1行目の説明。\n\n2行目の説明。\n\n仕様バリエーション\n\nproductName\n\nItem Code：Lorem Ipsum",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 2,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/hero?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            }
+          ],
+          "failedRequestCount": 4,
+          "evidence": ""
+        },
+        {
+          "lang": "ja",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "secondsAfterLoad": 10,
+          "actualObservationMs": 10010,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 44,
+          "contentVisible": true,
+          "documentHeight": 2165,
+          "mainText": "HOME\ntest space\nDSR-278 Product Detail\nDSR-361 往復テスト製品\n\n製品コード：\n5VS-RT\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\n1行目の説明。\n\n2行目の説明。\n\n仕様バリエーション\n\nproductName\n\nItem Code：Lorem Ipsum",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 2,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/hero?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            }
+          ],
+          "failedRequestCount": 4,
+          "evidence": ""
+        },
+        {
+          "lang": "ja",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "secondsAfterLoad": 20,
+          "actualObservationMs": 20015,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 44,
+          "contentVisible": true,
+          "documentHeight": 2165,
+          "mainText": "HOME\ntest space\nDSR-278 Product Detail\nDSR-361 往復テスト製品\n\n製品コード：\n5VS-RT\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\n1行目の説明。\n\n2行目の説明。\n\n仕様バリエーション\n\nproductName\n\nItem Code：Lorem Ipsum",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 2,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/hero?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            }
+          ],
+          "failedRequestCount": 4,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "tc": "DSR-278 SP render timing",
+      "lang": "ja",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "result": "pass",
+      "error": "Observation completed; no product verdict.",
+      "evidence": "",
+      "durationMs": 22091,
+      "samples": [
+        {
+          "lang": "ja",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "secondsAfterLoad": 3,
+          "actualObservationMs": 3254,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 44,
+          "contentVisible": true,
+          "documentHeight": 1665,
+          "mainText": "HOME\ntest space\nDSR-278 Product Detail\nDSR-361 往復テスト製品\n\n製品コード：\n5VS-RT\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\n1行目の説明。\n\n2行目の説明。\n\n仕様バリエーション\n\nproductName\n\nItem Code：Lorem Ipsum",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 2,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/hero?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            }
+          ],
+          "failedRequestCount": 5,
+          "evidence": ""
+        },
+        {
+          "lang": "ja",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "secondsAfterLoad": 10,
+          "actualObservationMs": 10014,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 44,
+          "contentVisible": true,
+          "documentHeight": 2083,
+          "mainText": "HOME\ntest space\nDSR-278 Product Detail\nDSR-361 往復テスト製品\n\n製品コード：\n5VS-RT\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\n1行目の説明。\n\n2行目の説明。\n\n仕様バリエーション\n\nproductName\n\nItem Code：Lorem Ipsum",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 2,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/hero?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            }
+          ],
+          "failedRequestCount": 5,
+          "evidence": ""
+        },
+        {
+          "lang": "ja",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "secondsAfterLoad": 20,
+          "actualObservationMs": 20015,
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-278-product-detail",
+          "httpStatus": 200,
+          "breadcrumbFound": true,
+          "breadcrumbText": "HOME\ntest space\nDSR-278 Product Detail",
+          "visibleElementsBelowBreadcrumb": 44,
+          "contentVisible": true,
+          "documentHeight": 2083,
+          "mainText": "HOME\ntest space\nDSR-278 Product Detail\nDSR-361 往復テスト製品\n\n製品コード：\n5VS-RT\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\n1行目の説明。\n\n2行目の説明。\n\n仕様バリエーション\n\nproductName\n\nItem Code：Lorem Ipsum",
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 403 ()"
+          ],
+          "consoleErrorCount": 2,
+          "failedRequests": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": 404
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/image/YKKCORPORATIONDEV/hero?wid=200&hei=200&fit=constrain%2C0&fmt=webp",
+              "status": 403
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            },
+            {
+              "url": "https://s7ap1.scene7.com/is/content/YKKCORPORATIONDEV/sample-4",
+              "status": null,
+              "error": "net::ERR_ABORTED"
+            }
+          ],
+          "failedRequestCount": 5,
+          "evidence": ""
+        }
+      ]
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": [],
+  "methodology": {
+    "browser": "Playwright Chromium, headless; fresh context per language/viewport; deviceScaleFactor=1; no throttling or mobile user-agent emulation",
+    "timing": "Absolute offsets from completion of page.goto(waitUntil=load); actualObservationMs recorded before screenshot. Full-page PNG at each point; only blank captures retained in git.",
+    "count": "All main descendants with nonzero box and checkVisibility(opacity/CSS), top at or below breadcrumb bottom, excluding breadcrumb descendants/ancestors and script/style/link. Includes containers and offscreen document content; no scrolling performed.",
+    "contentVisible": "At least one counted element with direct nonempty text or IMG/VIDEO/CANVAS/SVG.",
+    "errors": "Cumulative since navigation at each sample; first 5 console/page errors and first 10 HTTP >=400 or requestfailed events. Null status means no HTTP failure status available; transport error included.",
+    "interpretation": "Pass means recording completed only. English SP content appeared between sampled +3 and +10 seconds; exact onset and cause not measured. No product verdict."
+  }
+}
