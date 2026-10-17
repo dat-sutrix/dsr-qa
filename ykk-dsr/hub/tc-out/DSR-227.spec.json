@@ -1,0 +1,462 @@
+{
+ "us": "DSR-227",
+ "folder_id": "227",
+ "us_name": "[移行] Asset移行（技術部分：DAM構造・Dynamic Media）",
+ "jira_url": "https://sutrix.atlassian.net/browse/DSR-227",
+ "module": "Asset移行 / Asset migration – DAM structure, naming, Dynamic Media presets, product assets first (deadline 10/23). Source: 202609_DSRアセット一覧.xlsx (8,124 used)",
+ "tcs": [
+  {
+   "id": "1.0",
+   "feature": "Asset design document (TCC#1)",
+   "summary": "EN: Verify the asset design document is shared on Drive and defines folder tree, naming rule and DM presets. JP: アセット設計書がDriveに共有され、フォルダ構成・命名規則・DMプリセットが定義されていることを確認する。",
+   "pre": "EN: TD-227-01 link known. JP: TD-227-01。",
+   "steps": "EN: 1. Open TD-227-01. 2. Check it has: (a) DAM folder tree for products (image / 3d / catalog or equivalent), YFA, event; (b) naming rule; (c) list of Dynamic Media image presets with width/format; (d) language policy (DSR-606 Q2). JP: 1. 設計書を開く。2. (a)〜(d)の有無を確認。",
+   "expected": "EN: Document exists on Drive and contains all of (a)–(d); naming rule states lowercase letters, digits and hyphens only. Any missing item = Fail (record which). JP: Driveに存在し(a)〜(d)を全て含む。命名規則=小文字・数字・ハイフンのみ。",
+   "design": "DSR-227 TCC#1",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "—",
+   "td": "TD-227-01",
+   "blocked": "Asset design doc not on Drive (17/10) – owner Quentin"
+  },
+  {
+   "id": "2.0",
+   "feature": "DAM folder structure matches design (BAC#1)",
+   "summary": "EN: Verify migrated product assets are stored in the folder structure defined in the design document. JP: 製品アセットが設計書どおりのフォルダ構成で保管されていることを確認する。",
+   "pre": "EN: TD-227-01, TD-227-02. Author access. JP: Author権限。",
+   "steps": "EN: 1. Author > Assets > Files, open the product asset root from TD-227-01. 2. Open the folders of the 3 sample products (TD-227-02). 3. Compare top level, per-product folder and sub-folders with the design. JP: 1. Assetsでルートを開く。2. サンプル3製品のフォルダを開く。3. 設計書と比較。",
+   "expected": "EN: Folder path of every sample product equals the design pattern (e.g. /content/dam/<root>/products/<product>/{image,3d,catalog}); no asset sits outside its product folder. Screenshot each folder. JP: 3製品とも設計書のパターンと一致、製品フォルダ外のアセットなし。",
+   "design": "DSR-227 BAC#1, DSR-606 Q2/Q3",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-01, TD-227-02",
+   "blocked": "Asset design doc + DSR-606 Q2/Q3 – owner Quentin"
+  },
+  {
+   "id": "3.0",
+   "feature": "Naming rule – positive (TCC#1)",
+   "summary": "EN: Verify every migrated asset referenced by the sample product pages has a path with lowercase letters, digits and hyphens only. JP: サンプル製品ページが参照する移行済みアセットのパスが小文字・数字・ハイフンのみであることを確認する。",
+   "pre": "EN: Sample product pages published (TD-227-02). JP: サンプル製品ページ公開済み。",
+   "steps": "EN: 1. Open each sample product page (ja, en). 2. Collect src/srcset/href of img, source, a[href$=.pdf], video. 3. Keep URLs containing /content/dam/ or the DM delivery host. 4. Test the file and folder names after the DAM root with ^[a-z0-9-]+(\\.[a-z0-9]+)?$. JP: 1. 製品ページを開く。2. アセットURL収集。3. DAM/DM URLに絞る。4. 正規表現で検査。",
+   "expected": "EN: 100% of collected asset path segments match the regex (no uppercase, space, %20, '_'). Output list of violations = empty. JP: 違反0件。",
+   "design": "DSR-227 TCC#1",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "4.0",
+   "feature": "Naming rule – negative: source names normalised",
+   "summary": "EN: Verify a source asset whose name has uppercase, space or underscore is renamed to the rule during migration. JP: 大文字・スペース・アンダースコアを含む元ファイル名が移行時に規則どおり変換されることを確認する。",
+   "pre": "EN: Migration mapping (source → DAM path) from sample migration (TD-227-04). JP: 移行マッピング表。",
+   "steps": "EN: 1. In the mapping, find the 3 sources of TD-227-04 (e.g. '/assets/2601_Coil Zipper-with-Insertion-Assisted-Slider_lef_cn_txt.pdf'). 2. Read the target DAM name. 3. Open the target in Author. JP: 1. マッピングで3件を探す。2. 移行先名を確認。3. Authorで開く。",
+   "expected": "EN: Each target name is lowercase, spaces/underscores replaced by '-', extension kept, and the asset exists at that path. Existing DEV names like 'Description Image.png' (/content/dam/ykk/common/products/airystring/image/) are not used as the migration pattern. JP: 3件とも規則どおり変換され移行先に存在。",
+   "design": "DSR-227 TCC#1, DSR-553 (404 on '_'/uppercase)",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-04",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "5.0",
+   "feature": "Count reconciliation – product scope",
+   "summary": "EN: Verify the number of migrated product assets equals the in-scope source count (no asset lost). JP: 移行済み製品アセット数がスコープ内の元件数と一致する（欠損なし）ことを確認する。",
+   "pre": "EN: Product migration run finished; TD-227-03. JP: 製品移行完了。",
+   "steps": "EN: 1. Take the in-scope source count from TD-227-03 (product pages, excluding /3d and /_nuxt). 2. In Author (Assets > folder > Properties or the migration log), read the number of assets under the product root. 3. Compare; list missing paths from the migration log. JP: 1. 元件数を取得。2. DAMの件数を取得。3. 比較。",
+   "expected": "EN: Migrated count = source in-scope count (A4 baseline 1,513 unique files used on /item/ pages, minus documented exclusions). Difference 0, or each difference listed in the log with a reason. JP: 件数一致、差分は全て理由付き。",
+   "design": "DSR-227 Purpose, TCC#3",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-03",
+   "blocked": "Full product migration (deadline 10/23) – owner Quentin"
+  },
+  {
+   "id": "6.0",
+   "feature": "Scope exclusion – unused assets",
+   "summary": "EN: Verify assets from the unused list are not migrated. JP: 未使用アセットリストのファイルが移行されていないことを確認する。",
+   "pre": "EN: TD-227-05. JP: TD-227-05。",
+   "steps": "EN: 1. For each of the 5 sample unused paths (TD-227-05), search its file name in Author Assets (Omnisearch) and in the migration mapping. JP: 1. 5件をOmnisearchとマッピングで検索。",
+   "expected": "EN: 0 of 5 found in DAM or in the mapping. JP: 5件とも存在しない。",
+   "design": "DSR-227 Scope (未使用/FC外: 対象外)",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-05",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "7.0",
+   "feature": "Scope inclusion – YFA and events",
+   "summary": "EN: Verify YFA and event assets are planned and, once migrated, present in their design folder. JP: YFA・イベントのアセットが対象として設計に含まれ、移行後に所定フォルダに存在することを確認する。",
+   "pre": "EN: TD-227-01, TD-227-06. JP: TD-227-06。",
+   "steps": "EN: 1. Check the design doc has folders for YFA and event. 2. After their migration, search the 3 sample files of TD-227-06 in Author. JP: 1. 設計書のYFA/イベントフォルダ確認。2. サンプル3件を検索。",
+   "expected": "EN: Design has YFA and event folders; the 3 sample files exist at the designed path (or the doc states a later migration date = Blocked, not Fail). JP: 設計に含まれ、サンプル3件が存在。",
+   "design": "DSR-227 Scope (YFA・イベント: 対象)",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-01, TD-227-06",
+   "blocked": "YFA/event migration date not defined (A5) – owner Quentin"
+  },
+  {
+   "id": "8.0",
+   "feature": "Scope on hold – 3D",
+   "summary": "EN: Verify 3D assets (/3d/) are not migrated in this ticket. JP: 3Dアセット（/3d/）が本チケットで移行されていないことを確認する。",
+   "pre": "EN: Product migration done. JP: 製品移行完了。",
+   "steps": "EN: 1. Search the migration mapping and DAM for source paths starting with /3d/ (1,270 files on product pages). JP: 1. /3d/の移行有無を確認。",
+   "expected": "EN: 0 /3d/ source files in the mapping and DAM, unless the design doc records a decision to include them. JP: /3d/ 0件。",
+   "design": "DSR-227 Scope (3d: 保留)",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-03",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "9.0",
+   "feature": "Product page shows migrated images (BAC#1)",
+   "summary": "EN: Verify the sample product pages show their images from the new DAM with no broken image. JP: サンプル製品ページで新DAMの画像が欠けなく表示されることを確認する。",
+   "pre": "EN: TD-227-02 published on DEV. JP: TD-227-02公開済み。",
+   "steps": "EN: 1. Open each sample page (ja, en), scroll to bottom. 2. For every img: complete && naturalWidth > 0. 3. Record src host/path. 4. Record network responses for image requests. JP: 1. ページを開きスクロール。2. 全imgを検査。3. srcを記録。4. 通信を記録。",
+   "expected": "EN: All images loaded (naturalWidth > 0), every image request 200, src points to the new DAM/DM path (not ykkdigitalshowroom.com, not /content/dam/ykk/common/products/product-sample). No console error. JP: 全画像表示・200・新DAMパス。",
+   "design": "DSR-227 BAC#1, TCC#3",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "10.0",
+   "feature": "Product documents (PDF) migrated",
+   "summary": "EN: Verify PDF documents linked from the sample product pages open from the new DAM. JP: 製品ページの資料PDFが新DAMから開けることを確認する。",
+   "pre": "EN: Sample product with a PDF (TD-227-02 #3). JP: PDF付き製品。",
+   "steps": "EN: 1. Open the sample page. 2. Collect a[href*='.pdf']. 3. Request each (GET, no login). JP: 1. ページを開く。2. PDFリンク収集。3. GET。",
+   "expected": "EN: ≥ 1 PDF link; each returns 200, content-type application/pdf, size > 0, URL under the new DAM path with the naming rule. JP: PDFが200・application/pdf・規則どおり。",
+   "design": "DSR-227 BAC#1 (画像・資料)",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "11.0",
+   "feature": "Dynamic Media image presets configured (TCC#2)",
+   "summary": "EN: Verify the image presets listed in the design document exist in Dynamic Media with the defined settings. JP: 設計書のDM画像プリセットが定義どおり設定されていることを確認する。",
+   "pre": "EN: TD-227-01 preset table → TD-227-07. Author admin access. JP: 管理者権限。",
+   "steps": "EN: 1. Author > Tools > Assets > Image Presets. 2. For each preset of TD-227-07 open it and read width, height, format, quality. JP: 1. Image Presetsを開く。2. 各プリセットの値を確認。",
+   "expected": "EN: Every preset of TD-227-07 exists with identical width/height/format/quality; screenshot list + each preset. JP: 全プリセット存在・値一致。",
+   "design": "DSR-227 TCC#2",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-07",
+   "blocked": "Preset list in asset design doc – owner Quentin"
+  },
+  {
+   "id": "12.0",
+   "feature": "Responsive size PC vs SP (BAC#2)",
+   "summary": "EN: Verify product images are delivered in a smaller rendition on smartphone than on PC and are not upscaled. JP: 製品画像がSPではPCより小さいサイズで配信され、拡大表示されないことを確認する。",
+   "pre": "EN: TD-227-02. JP: TD-227-02。",
+   "steps": "EN: 1. Open the sample page at 1440×900 (DPR 1) and record, for the main image, request URL, response bytes, naturalWidth, rendered width. 2. Repeat at 375×812 (DPR 2). JP: 1. PC幅で記録。2. SP幅で記録。",
+   "expected": "EN: SP request differs from PC (width/preset/srcset candidate) and SP bytes < PC bytes; at both sizes naturalWidth ≥ rendered width × DPR × 0.9 (not blurred by upscaling). JP: SP<PC、拡大による劣化なし。",
+   "design": "DSR-227 BAC#2, TCC#2",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC 1440 + SP 375 Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "13.0",
+   "feature": "WebP source assets display (DSR-457)",
+   "summary": "EN: Verify a migrated asset whose source was .webp displays in Chromium and WebKit. JP: 元がwebpのアセットがChromium・WebKitで表示されることを確認する。",
+   "pre": "EN: Sample product with a .webp source (TD-227-02 #2). JP: webp元画像付き製品。",
+   "steps": "EN: 1. Open the page in Chromium and WebKit. 2. Check the image of the webp source (mapping TD-227-04/02). 3. Record response content-type. JP: 1. 両ブラウザで開く。2. 画像を確認。3. content-type記録。",
+   "expected": "EN: Image loaded in both browsers (naturalWidth > 0), response 200 with an image content-type; not the broken state reported in DSR-457 (webp media11). JP: 両ブラウザで表示。",
+   "design": "DSR-630 desc, DSR-457 (webp)",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium + WebKit",
+   "td": "TD-227-02",
+   "blocked": "Webp support decision (DSR-457) – owner Quentin"
+  },
+  {
+   "id": "14.0",
+   "feature": "Migrated assets published",
+   "summary": "EN: Verify assets used by published product pages are reachable without login on the publish/delivery tier. JP: 公開ページの移行アセットがログインなしで取得できることを確認する。",
+   "pre": "EN: TD-227-02. JP: TD-227-02。",
+   "steps": "EN: 1. From the URLs collected in 9.0/10.0, request each in a fresh context with no cookies. JP: 1. 収集URLをcookie無しでGET。",
+   "expected": "EN: 100% return 200 (no 401/403/404, no redirect to login). JP: 全件200。",
+   "design": "DSR-227 BAC#1, DSR-630 desc (publish status)",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "15.0",
+   "feature": "Image alternative text after migration",
+   "summary": "EN: Verify migrated product images keep a non-empty alt text. JP: 移行後の製品画像に空でないaltがあることを確認する。",
+   "pre": "EN: TD-227-02. JP: TD-227-02。",
+   "steps": "EN: 1. On each sample page collect content images (exclude decorative icons with role=presentation / aria-hidden). 2. Read alt. JP: 1. 内容画像を収集。2. altを確認。",
+   "expected": "EN: Every content image has a non-empty alt (A6: source = asset title/metadata or CF field). JP: 内容画像のaltが全て非空。",
+   "design": "DSR-630 desc (metadata) – A6",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "16.0",
+   "feature": "No broken asset references across product pages",
+   "summary": "EN: Verify no product page on DEV requests an asset that returns 404 after migration. JP: 移行後、DEVの製品ページで404となるアセット参照がないことを確認する。",
+   "pre": "EN: Product pages listed in query-index (TD-227-08). JP: query-indexの製品ページ。",
+   "steps": "EN: 1. Read query-index, keep /{lang}/products/<digits>. 2. Open each (max 50, ja+en), collect image/media/pdf responses. JP: 1. 製品ページ一覧取得。2. 各ページの通信を収集。",
+   "expected": "EN: 0 asset responses with status ≥ 400; report list page → URL → status otherwise. JP: 4xx/5xx 0件。",
+   "design": "DSR-630 desc (broken references), BL-OVL-1 product URL",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-227-08",
+   "blocked": "Product overlay pages on DEV main (DSR-586) – owner Martin"
+  },
+  {
+   "id": "17.0",
+   "feature": "Same asset across languages",
+   "summary": "EN: Verify a product's image is the same DAM asset on ja and en pages (no duplicate per language unless the design says so). JP: 同一製品の画像がja/enで同じDAMアセットを参照することを確認する。",
+   "pre": "EN: TD-227-02 exists in ja and en. JP: ja/en両方。",
+   "steps": "EN: 1. Collect image paths of the same product id on ja and en. 2. Compare (ignore language-specific images listed in the design, e.g. *_cn.jpg). JP: 1. ja/enのパス収集。2. 比較。",
+   "expected": "EN: Shared images have identical DAM paths in ja and en; language-specific files only where the design doc (DSR-606 Q2) allows. JP: 共通画像はパス一致。",
+   "design": "DSR-606 Q2, DSR-227 BAC#1",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-606 Q2 (language folders) – owner Quentin"
+  },
+  {
+   "id": "18.0",
+   "feature": "Migration procedure repeatable (TCC#3)",
+   "summary": "EN: Verify the product migration procedure is documented and re-running it creates no duplicates. JP: 製品移行手順が文書化され、再実行で重複が作られないことを確認する。",
+   "pre": "EN: Procedure on Drive; sample migration done. JP: 手順書あり。",
+   "steps": "EN: 1. Read the procedure: input file, tool, steps, log, rollback. 2. Ask dev for the log of a second run on the same sample (or check DAM after it). 3. Search the sample folder for names ending -1 / copy. JP: 1. 手順書確認。2. 再実行ログ確認。3. 重複名検索。",
+   "expected": "EN: Procedure has input, steps, log, rollback; after a re-run the sample folder asset count is unchanged and no '-1'/'copy' duplicates exist. JP: 手順完備、再実行で件数不変・重複なし。",
+   "design": "DSR-227 TCC#3",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "—",
+   "device": "Author UI (DEV)",
+   "td": "TD-227-01, TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  },
+  {
+   "id": "19.0",
+   "feature": "Image quality PC/SP vs current site",
+   "summary": "EN: Capture the sample product images on DEV and on the current site at PC and SP width for side-by-side review (no crop, no blur, same image). JP: DEVと現行サイトの製品画像をPC/SPで撮影し比較する（切れ・ぼけ・差替なし）。",
+   "pre": "EN: TD-227-02 + current site URL (ykkdigitalshowroom.com/{jp|en}/item/<no>/). JP: 現行サイトURL。",
+   "steps": "EN: 1. Screenshot main image area DEV vs current at 1440 and 375. 2. Save side by side. JP: 1. 両サイトをPC/SPで撮影。2. 並べて保存。",
+   "expected": "EN: Same picture, not cropped or visibly blurred vs current site; human QA confirms. JP: 同一画像、切れ・ぼけなし（目視）。",
+   "design": "DSR-227 BAC#1, BAC#2",
+   "layer": "Page",
+   "exec": "Visual (Playwright VPS)",
+   "lang": "ja, en",
+   "device": "PC 1440 + SP 375 Chromium",
+   "td": "TD-227-02",
+   "blocked": "DSR-227 In Progress (asset design doc + sample migration not delivered) – owner Quentin"
+  }
+ ],
+ "assumptions": [
+  [
+   "A1",
+   "[Giả định] Layer 'CF' in this file = DAM/Author data layer (asset storage, presets, migration mapping); 'Page' = rendering on DEV product pages.",
+   "QA strategy (2-layer)",
+   "All"
+  ],
+  [
+   "A2",
+   "[Giả định] Asset design document (TCC#1) is not on Drive yet (searched 17/10); TCs reference it as TD-227-01 and stay Blocked until it is shared.",
+   "Drive search 17/10",
+   "1.0, 2.0, 7.0, 11.0"
+  ],
+  [
+   "A3",
+   "[Giả định] Until DSR-606 is answered, the expected structure is the Sutrix proposal 'AEM site assets structure.pptx' p2: Common/Products/<product>/{Image,3d,catalog} + site folder Digital-showroom; names lowercased per TCC#1.",
+   "AEM site assets structure.pptx; DSR-606 Q2/Q3",
+   "2.0, 17.0"
+  ],
+  [
+   "A4",
+   "Source baseline 202609_DSRアセット一覧.xlsx (extracted 9/9): 8,124 unique used assets; 2,786 used on /item/ pages of which 1,270 /3d (on hold) and 3 /_nuxt (build files) → 1,513 product assets in scope. Note: list may differ after the 9/14 CMS update (補足 sheet).",
+   "Drive Asset List 1c-DY1hO0hfbgDmoiLRRuHkYKZIgO5BBt",
+   "5.0, 8.0"
+  ],
+  [
+   "A5",
+   "[Giả định] Product assets migrate first (deadline 10/23); YFA/event later – 7.0 Blocked (not Fail) until a date is set.",
+   "DSR-227 Purpose",
+   "7.0"
+  ],
+  [
+   "A6",
+   "[Giả định] Alt text source is the asset title/metadata or a CF field; the ticket does not define metadata fields, so only non-empty alt is checked.",
+   "DSR-630 description",
+   "15.0"
+  ],
+  [
+   "A7",
+   "[Giả định] Sample products = 3 DEV product pages chosen by dev for the sample migration; until known the agent uses the overlay test page /en/products/46 (branch DSR-PRODUCTDETAIL-moustache) per BL-OVL-1.",
+   "BL-OVL-1",
+   "3.0, 9.0–17.0, 19.0"
+  ],
+  [
+   "A8",
+   "Language codes: DEV uses ja/en (cn: no /master/cn, Issue #18); source site uses jp/en/ch.",
+   "DSR-606 Q4",
+   "3.0, 9.0–17.0"
+  ],
+  [
+   "A9",
+   "Read-only: QA never uploads, renames or deletes assets; migration and re-run (18.0) are done by dev.",
+   "AGENTS.md",
+   "All"
+  ]
+ ],
+ "testdata": [
+  [
+   "TD-227-01",
+   "1.0, 2.0, 7.0, 11.0, 18.0",
+   "Asset design document (Drive)",
+   "Drive 20_Requirement (to be shared by dev)",
+   "folder tree / naming / presets",
+   "—",
+   "—",
+   "—",
+   "No (dev deliverable)"
+  ],
+  [
+   "TD-227-02",
+   "3.0, 9.0–17.0, 19.0",
+   "Sample migrated product pages (3)",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/{lang}/products/<id> ; fallback https://dsr-productdetail-moustache--dsr-eds-dev--sutrix-projects.aem.page/en/products/46",
+   "#1 any product · #2 product with a .webp source · #3 product with a PDF",
+   "/ja/products/<id>",
+   "/en/products/<id>",
+   "n/a (no cn)",
+   "Yes (dev, sample migration)"
+  ],
+  [
+   "TD-227-03",
+   "5.0, 8.0",
+   "Source asset list",
+   "Drive Asset List/202609_DSRアセット一覧.xlsx (sheet 使用アセットリスト)",
+   "in-scope count",
+   "1,513 product assets (A4)",
+   "—",
+   "—",
+   "No (YKK file)"
+  ],
+  [
+   "TD-227-04",
+   "4.0, 13.0",
+   "Source names violating the rule (3)",
+   "'/assets/2601_Coil Zipper-with-Insertion-Assisted-Slider_lef_cn_txt.pdf' · '/assets/2512_NATULON_Fiber_Sourced_en.pdf' · '/assets/20.png' (control, already valid)",
+   "expected target name",
+   "2601-coil-zipper-with-insertion-assisted-slider-lef-cn-txt.pdf",
+   "2512-natulon-fiber-sourced-en.pdf",
+   "20.png",
+   "No (from mapping)"
+  ],
+  [
+   "TD-227-05",
+   "6.0",
+   "Unused assets sample (5, must NOT migrate)",
+   "/fc2022/assets_c/2021/08/128_list-thumb-autox120-777.png · /assets_c/2023/08/F_IB_KTK-thumb-120xauto-2406.png · /fc2023/assets_c/2021/08/121_list-thumb-60x60-658.png · /fc2025/common/images/industry/map/sports_icon.webp · /assets_c/2021/05/148_1a-thumb-60x60-394.png",
+   "file name",
+   "—",
+   "—",
+   "—",
+   "No"
+  ],
+  [
+   "TD-227-06",
+   "7.0",
+   "YFA / event sample (3, must migrate)",
+   "/yfa/public/image/page/history/timeline/text_2015.svg · /yfa/public/image/page/work/40/work05.webp · /event/loop_camp/assets/img/home/about-anime/il-sp1-2.png",
+   "file name",
+   "—",
+   "—",
+   "—",
+   "No"
+  ],
+  [
+   "TD-227-07",
+   "11.0",
+   "DM image preset list",
+   "copy from TD-227-01 (name, width, height, format, quality)",
+   "presets",
+   "—",
+   "—",
+   "—",
+   "No (dev config)"
+  ],
+  [
+   "TD-227-08",
+   "16.0",
+   "Product pages in query-index",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/query-index.json (keep /{lang}/products/<digits>)",
+   "path",
+   "ja",
+   "en",
+   "—",
+   "Yes (published products)"
+  ]
+ ],
+ "howto": [
+  [
+   "1",
+   "QA-PT creates nothing in DAM for this US (A9). Ask Dat for TD-227-01 (design doc link) and TD-227-02 (3 sample product ids + migration mapping file) before running.",
+   "Not available → mark 1.0, 2.0, 4.0, 7.0, 11.0, 18.0 Blocked and continue with 6.0, 8.0"
+  ],
+  [
+   "2",
+   "Open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam (DEV Author) and use Omnisearch (top bar) with the file name for 6.0 / 7.0 lookups; screenshot the result list.",
+   "No result = 'not found' (expected for 6.0)"
+  ],
+  [
+   "3",
+   "Open the source list on Drive (Asset List / 202609_DSRアセット一覧.xlsx); sheet 使用アセットリスト col A = source path, col B = page URL.",
+   "—"
+  ],
+  [
+   "4",
+   "For each sample product open https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/<id> and /en/products/<id>; 404 → try the moustache branch URL in TD-227-02.",
+   "Both 404 → Page TCs Blocked-data"
+  ]
+ ]
+}
