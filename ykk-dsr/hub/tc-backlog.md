@@ -44,3 +44,4 @@
 | 2026-10-17 19:13 | DSR-227 | done (new 19 TC, folder Drive mới, TC+TD → upload-queue) · DSR-630 Done · idle JOB-ZZ-IDLE-12 · Q39–Q41 · backlog check: auto-added 0 | ~15' |
 | 2026-10-17 19:20 | DSR-433 | done (new 22 TC, folder Drive mới, TC+TD → upload-queue) · DSR-528 Done · idle JOB-ZZ-IDLE-13 · Q42–Q44 · backlog hết todo | ~8' |
 | 2026-10-17 20:06 | — | backlog trống · Jira check: auto-added 0 · upload runner im từ 16/10 (14 pending) → 🔔 #1c | ~3' |
+| 2026-10-17 21:07 | — | backlog trống · Jira check: auto-added 0 · upload pending 14 / fail 0 (runner vẫn im) · báo cáo cuối ngày | ~3' |
