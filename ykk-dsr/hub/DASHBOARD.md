@@ -1,11 +1,12 @@
 # YKK DSR – QA Dashboard
 
-> Cập nhật: 2026-10-17 07:45 (UTC+7, [schedule] morning) · Lần kiểm tra kế tiếp: 17/10 17:10 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
+> Cập nhật: 2026-10-17 17:10 (UTC+7, [schedule] evening) · Lần kiểm tra kế tiếp: 18/10 07:45 · Sprint 12 (15/10–27/10) · Chi tiết từng US: [hub/us/](us/) · Bug: [BUGS.md](BUGS.md)
 
 ## 🔔 Dat cần làm (sắp theo hạn)
 | # | Việc | Với ai | Hạn | US | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|---|
-| 1 | ⚠️ **Agent treo**: JOB-20261016-12 (DSR-570) nằm `jobs/running/` từ 16/10 20:16 (>11h) → cả lane claude-code đứng, 7 job đang chờ. Vào VPS kiểm runner claude-code; process chết thì `git mv ykk-dsr/hub/jobs/running/JOB-20261016-12.md ykk-dsr/hub/jobs/queue/` + push, rồi khởi động lại runner | VPS (Dat) | 17/10 | 570 + toàn lane | 7 job | — |
+| 1 | ⚠️ **Agent treo (vẫn chưa xử lý lúc 17:10)**: JOB-20261016-12 (DSR-570) nằm `jobs/running/` từ 16/10 20:16 (**~21h**, timeout runner chỉ 2h → process runner claude-code đã chết, không phải job chạy lâu) → cả lane claude-code đứng, 6 job đang chờ, cuối tuần mất trắng nếu không gỡ. Vào VPS kiểm runner claude-code; process chết thì `git mv ykk-dsr/hub/jobs/running/JOB-20261016-12.md ykk-dsr/hub/jobs/queue/` + push, rồi khởi động lại runner | VPS (Dat) | 17/10 | 570 + toàn lane | 7 job | — |
+| 1b | ⚠️ **Night TC job không tiến**: scheduled task "DSR TC" chạy 09:05/11:05/13:05/15:05 hôm nay, mỗi lần ~36s, **0 commit** → 4 ticket / 26 SP (589, 590, 227, 433) vẫn `todo`, đích sáng T2 19/10 có rủi ro. Mở session gần nhất của task (15:05) xem lý do dừng; nếu do lỗi repo/quyền thì sửa trước lượt 18:05 | Dat (claude.ai scheduled tasks) | 17/10 18:05 | 589/590/227/433 | 4 TC sub-task | — |
 | 2 | **Chuyển Done DEV: DSR-552** (026 ✅ 16/10; fail còn lại chỉ DSR-648/DSR-651 Low có ticket; Blocked có owner). Chuyển Jira + dán comment | Jira DSR-552 | 17/10 | 552 | — | "QA confirm DEV (2026-10-17): all 35 TCs executed on DEV. Open: DSR-648, DSR-651 (Low). Blocked with owner: zh/cn (no /master/cn – Quentin), 021–023/030/034 (DSR-575/536 – Kohei), 029 Lighthouse (STG, next sprint), 033 (layout tickets). Evidence: results/DSR-552/DEV/ + DSR_NightPack/Evidence_20261015, _20261016." |
 | 3 | Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) (4 câu, Jira vẫn To Do, mặc định QA áp dụng 20/10) | Quentin (PM) | 17/10 | 557 | 5 TC | "Quentin-san, QA needs 4 answers in DSR-611 to unblock DSR-190 test cases; if no answer by 10/20 QA applies the defaults written in the ticket." |
 | 4 | DSR-566 chặn: DEV Author **không có template `news-article`** → không seed được TD-566, 12 TC + 2 visual đứng | Dev DSR-357 (news-detail) | 19/10 | 566 | JOB-08, JOB-11 | "Hi, QA cannot create a news page on DEV Author: template `news-article` is not available (screenshot: https://drive.google.com/file/d/11UjvHFVP4mU3JqXWytcSUWPtk0vdqIzH/view). Please enable/deploy the template on DEV or tell us which template to use for DSR-566." |
@@ -16,7 +17,7 @@
 | 9 | (Tùy chọn) Lượt tự động 07:45 bị chặn ghi Jira (comment/tạo bug) → nếu muốn tự động, cho phép ghi Jira trong cài đặt scheduled task | — | — | — | — | — |
 
 ## 🌙 QA part-time đêm nay
-**[Night Work Pack 2026-10-16 (v2)](https://docs.google.com/document/d/1PnPq3ejwpM3PJ6VR5ioQ4m1V0q9oWPdeOphoS3RSXT0)** (~2h55, 6 việc, 15 dòng report) · Evidence: `DSR_NightPack/Evidence_20261016` · QA-PT nghỉ T7/CN, pack kế tiếp T2 19/10
+**T7 17/10: không có pack (QA-PT nghỉ T7/CN).** Pack kế tiếp: T2 19/10 (17:10 T2 tạo). Gần nhất: **[Night Work Pack 2026-10-16 (v2)](https://docs.google.com/document/d/1PnPq3ejwpM3PJ6VR5ioQ4m1V0q9oWPdeOphoS3RSXT0)** (~2h55, 6 việc, 15 dòng report) · Evidence: `DSR_NightPack/Evidence_20261016` · QA-PT nghỉ T7/CN, pack kế tiếp T2 19/10
 Đêm 15/10 (đã triage sáng 16/10): [Night Work Pack 2026-10-15 (v2)](https://docs.google.com/document/d/1TBlioRYuLYWxroJGw5hgnZxFSJ0mWzjY-0AWixr73lg).
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
@@ -45,7 +46,8 @@ Chưa theo dõi (ngoài phạm vi QA hôm nay): DSR-568 お問い合わせフォ
 | Lane | Đang chạy | Hàng đợi | Hold (07:45 chuyển khi Night Report Pass) | Xong 24h | Job lỗi |
 |---|---|---|---|---|---|
 | claude-code (functional) | ⚠️ JOB-20261016-12 (DSR-570) **treo >11h** | 7: JOB-20261016-10 (557 e-book) · JOB-20261017-01 (DSR-647 retest) · -02 (DSR-173 MOVIE-014/033 pass→fail) · -03 (TOP-001 fix test) · IDLE-05 (586) · IDLE-06 (587) · IDLE-07 (regression 17/10) | JOB-20261016-08 (566 · chờ template) · JOB-20261015-12 (529 · chờ TD-529 T2) | 3 (IDLE-01/02/03) | 0 (1 treo) |
-| codex (visual + Lighthouse) | — | 1: IDLE-08 (Lighthouse baseline DEV + retry SP dsr-278) | JOB-20261016-11 (566 visual · chờ template) | 2 (JOB-20261016-13, IDLE-04) | 0 |
+| codex (visual + Lighthouse) | — | 1: IDLE-09 (DSR-278 SP render timing, xếp 17:10) | JOB-20261016-11 (566 visual · chờ template) | 2 (IDLE-08 01:07Z, JOB-20261016-13) | 0 |
+**17:10 17/10:** IDLE-08 xong (record only, không verdict): Lighthouse 9 trang DEV mobile 71–100 / desktop 86–99; SEO 61 mọi trang do `is-crawlable` (DEV noindex – môi trường, không bug) + thiếu meta-description; A11y desktop 79–94 (`aria-allowed-attr`, `button-name`, `color-contrast`) – ghi nhận, chờ baseline DoD sprint sau. DSR-278 SP 390: breadcrumb hiện, nội dung sản phẩm trống ở load+3s → IDLE-09 kiểm timing. Bug thật mới: 0. Jira: không ticket qa-ai/bug nào đổi từ sáng. Không xếp job mới cho claude-code (lane treo, 6 job chờ, không TC mới mở khóa).
 Kết quả 16/10 tối: IDLE-01 regression 72 ✅ / 22 ❌ (mới: **MOVIE-014/033 pass→fail** – player không render trên trang dsr-173, nghi product → JOB-20261017-02 xác minh trước khi tạo bug; TOP-001 PC timeout = test) · IDLE-02 529 scaffold (all skip data) · IDLE-03 583: 4 ❌ = data (sai trang) · IDLE-04 baseline 19 ảnh · JOB-13 570: 015 ✅ đề xuất, SP input 63% (ghi cho dev, 570 In Progress), Lighthouse m79/d100. Bug thật mới: 0.
 
 ## ✅ Close gần đây
