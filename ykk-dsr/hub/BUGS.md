@@ -1,6 +1,6 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-17 07:45 (UTC+7, [schedule] morning) · Jira 17/10: trạng thái 457/647/648/651 không đổi · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
+> Cập nhật: 2026-10-18 07:45 (UTC+7, [schedule] morning) · Jira 18/10: trạng thái 457/647/648/651 không đổi (647 retest JOB-20261017-01 vẫn chờ lane claude-code treo) · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
