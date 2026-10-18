@@ -1,6 +1,6 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-18 07:45 (UTC+7, [schedule] morning) · Jira 18/10: trạng thái 457/647/648/651 không đổi (647 retest JOB-20261017-01 vẫn chờ lane claude-code treo) · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
+> Cập nhật: 2026-10-18 17:10 (UTC+7, [schedule] evening) · Jira 18/10 17:10: 457/647/648/651/611 không đổi · DSR-647 P3-order: IDLE-14 xác nhận trang branch stale (last-modified 16/10 06:43Z) → môi trường, không bug · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
@@ -8,7 +8,7 @@
 | 1 | DSR-457 | Nhắc Ngọc trả lời comment 61011 (fix 3, 7, 13 · check 6 · R1) | Dat | Ngoc | 16/10 |
 | 2 | DSR-457 | Đuổi Quentin trả lời comment 61015 (webp, form gate catalog) – mặc định áp dụng nếu không trả lời trước 20/10 | Dat | Quentin (PM) | 20/10 |
 | 3 | DSR-457 | Night 16/10: #1 ✅ Pass (evidence Drive 18GECm86…, 1lv09Z…) · #10 chưa chạy → Night Pack T2 19/10. Comment kết quả #1 vào DSR-457 (lượt tự động bị chặn quyền ghi Jira – xem DASHBOARD 🔔) | Dat (comment) · QA-PT (#10) | — | 19/10 |
-| 4 | DSR-647 | Night 16/10 DSR-501-P3-order ❌ (thứ tự sai, evidence Drive 1y0kdjL7…) – nghi trang branch chưa tái tạo → JOB-20261017-01 (queue) kiểm freshness. Stale → Dat nhờ Martin re-preview qa501-main-a (T2 19/10) | Agent → Claude → Dat | Martin | 19/10 |
+| 4 | DSR-647 | Night 16/10 DSR-501-P3-order ❌ (thứ tự sai, evidence Drive 1y0kdjL7…) – **18/10 IDLE-14 xác nhận stale** (last-modified 16/10 06:43Z, DOM rel1→rel5) = môi trường. Dat nhờ Martin re-preview qa501-main-a (T2 19/10) → rồi JOB-20261017-01 (P2 + P3) | Agent → Claude → Dat | Martin | 19/10 |
 
 ## Bug đang mở
 | Jira | US | Tiêu đề | Sev | Trạng thái Jira | Assignee | Retest ở | Kết quả retest gần nhất | Việc kế tiếp (ai · hạn) |
