@@ -1,0 +1,24 @@
+{
+  "job": "JOB-20261017-03",
+  "agent": "claude-code",
+  "us": "DSR-609",
+  "env": "dev",
+  "started": "2026-10-19T04:33:40Z",
+  "finished": "2026-10-19T04:36:57Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-TOP-001", "lang": "ja", "result": "pass",
+      "error": "PC 9.5 s / 9.3 s, SP 7.9 s / 8.8 s (2 runs, no retry). Undecoded (5 s timeout, 0x0): ja/media_133c2237...jpg, ja/media_14f6ec45...png x2",
+      "evidence": "", "suspect": "test" },
+    { "tc": "DSR-TOP-001", "lang": "en", "result": "pass",
+      "error": "PC 10.1 s / 10.0 s, SP 9.3 s / 8.2 s (2 runs, no retry). Undecoded (5 s timeout, 0x0): en/media_14f6ec45...png x2",
+      "evidence": "", "suspect": "test" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/top-page/DSR-609.visual-capture.spec.ts",
+    "results/DSR-609/DEV/automation-run-20261019-tc001.md",
+    "results/DSR-609/DEV/automation-run-20261019-tc001-run2.md"
+  ],
+  "questions": []
+}

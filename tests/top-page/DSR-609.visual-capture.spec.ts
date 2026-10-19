@@ -19,15 +19,25 @@ for (const [li, lang] of ['ja', 'en'].entries()) {
       expect(response?.status(), 'target page HTTP status').toBe(200);
       // TODO: data-testid top-page-recommend-heading
       await expect(page.getByRole('heading', { name: 'RECOMMEND CONTENTS', exact: true })).toBeVisible();
-      await page.evaluate(async () => {
-        await document.fonts.ready;
-        for (let y = 0; y < document.documentElement.scrollHeight; y += 600) {
+      // Bounded lazy-load: total <= 30 s, each image decode <= 5 s; undecoded images are logged instead of hanging.
+      const undecodedImages = await page.evaluate(async ({ perImageMs, totalMs }) => {
+        const deadline = Date.now() + totalMs;
+        const remaining = () => Math.max(0, deadline - Date.now());
+        const timeout = (ms: number) => new Promise<'timeout'>(resolve => setTimeout(() => resolve('timeout'), ms));
+        await Promise.race([document.fonts.ready, timeout(Math.min(perImageMs, remaining()))]);
+        for (let y = 0; y < document.documentElement.scrollHeight && remaining() > perImageMs; y += 600) {
           window.scrollTo(0, y);
           await new Promise(resolve => setTimeout(resolve, 150));
         }
-        await Promise.all(Array.from(document.images).map(img => img.decode().catch(() => {})));
+        const outcomes = await Promise.all(Array.from(document.images).map(async img => {
+          const outcome = await Promise.race([img.decode().then(() => 'decoded' as const, () => 'error' as const), timeout(Math.min(perImageMs, remaining()))]);
+          return { src: img.currentSrc || img.src, naturalWidth: img.naturalWidth, naturalHeight: img.naturalHeight, outcome };
+        }));
         window.scrollTo(0, 0);
-      });
+        return outcomes.filter(o => o.outcome !== 'decoded');
+      }, { perImageMs: 5_000, totalMs: 30_000 });
+      console.log(`DSR-TOP-001 [${lang}] ${vi === 0 ? 'PC' : 'SP'} undecoded images: ${JSON.stringify(undecodedImages)}`);
+      test.info().annotations.push({ type: 'undecoded-images', description: JSON.stringify(undecodedImages) });
       await page.waitForTimeout(1000);
       const facts = await page.evaluate(() => {
         const visible = (e: Element) => e.getClientRects().length > 0 && getComputedStyle(e).visibility !== 'hidden';
@@ -39,7 +49,7 @@ for (const [li, lang] of ['ja', 'en'].entries()) {
       fs.mkdirSync(path.join(output, 'evidence'), { recursive: true });
       const evidence = `evidence/DSR-TOP-001_DEV_0${li * 2 + vi + 1}.png`;
       await page.screenshot({ path: path.join(output, evidence), fullPage: true });
-      fs.writeFileSync(path.join(output, `layout-${lang}-${vi === 0 ? 'pc' : 'sp'}.json`), JSON.stringify({ attempts, evidence, layoutVerdict: 'captured', ...facts }, null, 2) + '\n');
+      fs.writeFileSync(path.join(output, `layout-${lang}-${vi === 0 ? 'pc' : 'sp'}.json`), JSON.stringify({ attempts, evidence, layoutVerdict: 'captured', undecodedImages, ...facts }, null, 2) + '\n');
       expect(facts.scrollWidth, 'document scrollWidth <= viewport width').toBeLessThanOrEqual(viewport.width);
     });
   }
