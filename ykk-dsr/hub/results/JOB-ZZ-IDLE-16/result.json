@@ -1,0 +1,657 @@
+{
+  "job": "JOB-ZZ-IDLE-16",
+  "agent": "codex",
+  "us": "visual-regression",
+  "env": "dev",
+  "started": "2026-10-19T04:53:02.682Z",
+  "finished": "2026-10-19T04:56:55.542Z",
+  "status": "done",
+  "tests": [],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": [],
+  "automation_head": "1789a67b9be5ba324aa78b0e9a07317a15e6c900",
+  "baseUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "baseline": "JOB-ZZ-IDLE-04",
+  "method": "Chromium; fresh context per target; full-page PNG; network idle + 1000 ms; network-idle timeout 60000 ms, retry 120000 ms. Diff: exact RGBA pixel inequality, no tolerance or masks; denominator max(widths) * max(heights); pixels outside either image count as changed. No verdicts.",
+  "records": [
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child/grandchild",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "changedPixels": 0,
+      "comparedPixels": 560820
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child/grandchild",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0.1024329634766528,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "changedPixels": 2127,
+      "comparedPixels": 2076480
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child/grandchild",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "changedPixels": 0,
+      "comparedPixels": 560820
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child/grandchild",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0.00024079210972414858,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "changedPixels": 5,
+      "comparedPixels": 2076480
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/long/leaf",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-dsr552-edge-long-leaf_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "changedPixels": 0,
+      "comparedPixels": 560820
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/long/leaf",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 1.2905134047644449,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-dsr552-edge-long-leaf_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1456,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "changedPixels": 27095,
+      "comparedPixels": 2099552
+    },
+    {
+      "path": "/master/ja/test-space/list-catalog",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 21.685638364361434,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-list-catalog_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 5591
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 6359
+      },
+      "changedPixels": 537806,
+      "comparedPixels": 2480010,
+      "evidence": "evidence/master-ja-test-space-list-catalog_390x844.png"
+    },
+    {
+      "path": "/master/ja/test-space/list-catalog",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 23.40588049462948,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-list-catalog_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 3277
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "changedPixels": 1244706,
+      "comparedPixels": 5317920,
+      "evidence": "evidence/master-ja-test-space-list-catalog_1440x900.png"
+    },
+    {
+      "path": "/master/en/test-space/list-catalog",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 21.68289643993371,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en-test-space-list-catalog_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 5591
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 6359
+      },
+      "changedPixels": 537738,
+      "comparedPixels": 2480010,
+      "evidence": "evidence/master-en-test-space-list-catalog_390x844.png"
+    },
+    {
+      "path": "/master/en/test-space/list-catalog",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 23.404846255678912,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en-test-space-list-catalog_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 3277
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "changedPixels": 1244651,
+      "comparedPixels": 5317920,
+      "evidence": "evidence/master-en-test-space-list-catalog_1440x900.png"
+    },
+    {
+      "path": "/master/en/test-space/dsr-173-video-detail",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0.00009631684388965944,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en-test-space-dsr-173-video-detail_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "changedPixels": 2,
+      "comparedPixels": 2076480
+    },
+    {
+      "path": "/master/en/test-space/dsr-173-video-detail",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en-test-space-dsr-173-video-detail_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "changedPixels": 0,
+      "comparedPixels": 560820
+    },
+    {
+      "path": "/master/en/test-space/dsr-278-product-detail",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "scrollWidth": null,
+      "viewportWidth": 390,
+      "overflow": null,
+      "capture": "error",
+      "diffPercent": null,
+      "baselineCapture": "error",
+      "baselineEvidence": null,
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "error": "page.waitForLoadState: Timeout 60000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        },
+        {
+          "networkIdleTimeoutMs": 120000,
+          "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        }
+      ],
+      "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+    },
+    {
+      "path": "/master/en/test-space/dsr-278-product-detail",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "scrollWidth": null,
+      "viewportWidth": 1440,
+      "overflow": null,
+      "capture": "error",
+      "diffPercent": null,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en-test-space-dsr-278-product-detail_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "error": "page.waitForLoadState: Timeout 60000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        },
+        {
+          "networkIdleTimeoutMs": 120000,
+          "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        }
+      ],
+      "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+    },
+    {
+      "path": "/master/ja/test-space/product-list",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0.00016807852628748153,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-product-list_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 2479
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 2479
+      },
+      "changedPixels": 6,
+      "comparedPixels": 3569760
+    },
+    {
+      "path": "/master/ja/test-space/product-list",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja-test-space-product-list_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 2542
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 2542
+      },
+      "changedPixels": 0,
+      "comparedPixels": 991380
+    },
+    {
+      "path": "/master/en/test-space/product-list",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "scrollWidth": null,
+      "viewportWidth": 1440,
+      "overflow": null,
+      "capture": "skipped",
+      "diffPercent": null,
+      "baselineCapture": "skipped",
+      "baselineEvidence": null,
+      "attempts": [],
+      "reason": "HTTP 404"
+    },
+    {
+      "path": "/master/en/test-space/product-list",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "scrollWidth": null,
+      "viewportWidth": 390,
+      "overflow": null,
+      "capture": "skipped",
+      "diffPercent": null,
+      "baselineCapture": "skipped",
+      "baselineEvidence": null,
+      "attempts": [],
+      "reason": "HTTP 404"
+    },
+    {
+      "path": "/master/ja",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0.08186931730621051,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "changedPixels": 1700,
+      "comparedPixels": 2076480
+    },
+    {
+      "path": "/master/ja",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-ja_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1414
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1414
+      },
+      "changedPixels": 0,
+      "comparedPixels": 551460
+    },
+    {
+      "path": "/master/en",
+      "viewport": "1440x900",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "scrollWidth": 1440,
+      "viewportWidth": 1440,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en_1440x900.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "changedPixels": 0,
+      "comparedPixels": 2076480
+    },
+    {
+      "path": "/master/en",
+      "viewport": "390x844",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "scrollWidth": 390,
+      "viewportWidth": 390,
+      "overflow": false,
+      "capture": "captured",
+      "diffPercent": 0,
+      "baselineCapture": "captured",
+      "baselineEvidence": "evidence/master-en_390x844.png",
+      "attempts": [
+        {
+          "networkIdleTimeoutMs": 60000,
+          "capture": "captured"
+        }
+      ],
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "changedPixels": 0,
+      "comparedPixels": 560820
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "capture_summary": {
+    "attempted": 22,
+    "captured": 18,
+    "skipped404": 2,
+    "errors": 2,
+    "compared": 18,
+    "aboveTwoPercent": 4,
+    "overflowFlags": 0,
+    "evidenceBytes": 1618513
+  },
+  "notes": "Capture-only job; no verdicts. No npm test suite, TypeScript check, Figma comparison or Lighthouse run. Capture errors and missing baselines have null diffPercent. PNGs with diff > 2% only are committed. Exact-pixel differences can include rendering and dynamic-content variation; deployment cause not independently verified."
+}
