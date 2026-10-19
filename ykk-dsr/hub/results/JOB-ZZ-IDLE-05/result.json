@@ -1,0 +1,179 @@
+{
+  "job": "JOB-ZZ-IDLE-05",
+  "agent": "claude-code",
+  "us": "DSR-586",
+  "env": "dev",
+  "started": "2026-10-19T04:40:57.615Z",
+  "finished": "2026-10-19T04:41:26.413Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-PDO-001",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-001",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-002",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-004",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-005",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-006",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-06 not seeded (negative TC: confirm via DSR586_SEEDED)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-007",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-07 not seeded (negative TC: confirm via DSR586_SEEDED)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-008",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-08 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586008 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-009",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-09 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586009 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-011",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-11 not seeded (negative TC: confirm via DSR586_SEEDED)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-012",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-013",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-013",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-014",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-014",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-014",
+      "lang": "cn",
+      "result": "skip",
+      "error": "test.fixme: no /cn path on DEV (Issue #18)",
+      "evidence": "",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-PDO-017",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-585 項目fix版 field list not in repo (Q27 review open)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PDO-019",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-586.ts",
+    "pages/ProductDetailPage.ts",
+    "tests/product-detail/DSR-586.product-detail.spec.ts",
+    "results/DSR-586/DEV/automation-run-20261019.md"
+  ],
+  "questions": []
+}
