@@ -1,0 +1,19 @@
+{
+  "job": "JOB-ZZ-IDLE-13",
+  "agent": "claude-code",
+  "us": "DSR-433",
+  "env": "dev",
+  "started": "2026-10-19T05:30:27Z",
+  "finished": "2026-10-19T05:30:33Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-MAIL-016", "lang": "—", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-MAIL-017", "lang": "—", "result": "pass", "error": "", "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/mail/DSR-433.mail-endpoints.spec.ts",
+    "results/DSR-433/DEV/automation-run-20261019.md"
+  ],
+  "questions": []
+}
