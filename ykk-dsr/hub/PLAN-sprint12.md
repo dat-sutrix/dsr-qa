@@ -30,7 +30,10 @@ Quyết định QA 19/10: 557-016/017 đếm form chỉ trên DSR (trang ngoài 
 - Sau merge, trang/danh sách sản phẩm & video trên DEV chỉ còn item trong folder mới (`/content/dam/common|dsr/{lang}/products|movies/…`); dữ liệu mẫu bị xóa. Data QA cũ (`/content/dam/ykk/common/product-cf/test/` – qa190-mv-*, qa501-*) sẽ mất khỏi trang → **không phải bug**.
 - Ảnh hưởng: DSR-557 (phần video) · DSR-647/587 retest · 586 · regression DSR-173/278. Không ảnh hưởng: 552, 529, 566/653, 570 (catalog – chờ xác nhận Martin).
 - Agent: JOB-20261019-05 (regression sau merge) + -06 (visual diff vs IDLE-16 trước merge) – hold, tự chạy khi trang main có overlay.
-- QA-PT tối T3 20/10 (thay thứ tự cũ): (1) seed lại movie của 557 theo cách mới (content CF + DSR CF, ja+en) · (2) TD-586/587 theo cách mới · (3) 570 manual. → agent rerun 557 sáng 21/10; **557 Done đích dời 21/10 → 22/10**.
+- Martin 16:20: **catalog overlay merge riêng, dự kiến chiều 20/10** → phần catalog của 557 + 570 cũng phải seed lại. Video chỉ test trên `/{lang}/library/video/{id}`; trang test-space dsr-173-video-detail bỏ. Tạo CF **đúng folder** (directory-strict).
+- QA-PT tối T3 20/10 (≤3h): (1) 557 video: 2 movie (youtube + dam) × ja/en = content CF `/content/dam/common/{lang}/movies/qa190-mv-yt|qa190-mv-dam` + DSR CF `/content/dam/dsr/{lang}/movies/standard/` cùng tên (tick isActive) – 45' · (2) 587/647: qa501-rel-1..6 + qa501-off làm content CF trong `/content/dam/common/en/movies/` (updateDate 10-01…10-06), sửa DSR CF qa501-main-a/b trỏ sang – 50' · (3) 570 manual 6 TC – 30' · (4) 557/570 catalog: **chỉ khi** Martin đã merge catalog và gửi đường dẫn – còn không thì tối 21/10.
+- Agent: 21/10 sáng rerun 557 video + 647 trên overlay main; 22/10 sáng rerun catalog (557, 570).
+- **557 và 570 Done đích 22/10, rủi ro cao** (phụ thuộc catalog merge 20/10 chiều). Trượt → 22/10 17:10 báo PM, phần catalog sang Sprint 13.
 
 **Lịch theo ngày**
 | Ngày | Dat (giờ hành chính) | Agent | QA-PT (tối) | Claude tự động |
