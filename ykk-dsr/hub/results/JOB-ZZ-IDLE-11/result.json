@@ -1,0 +1,172 @@
+{
+  "job": "JOB-ZZ-IDLE-11",
+  "agent": "claude-code",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-19T05:15:02Z",
+  "finished": "2026-10-19T05:23:23Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ECO-001",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-001",
+      "lang": "en",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-002",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-002",
+      "lang": "en",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-003",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-004",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-004",
+      "lang": "en",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-005",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-005",
+      "lang": "en",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-006",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-007",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-007",
+      "lang": "en",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-009",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-010",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-010",
+      "lang": "en",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-012",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-013",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-013",
+      "lang": "en",
+      "result": "skip",
+      "error": "DSR-590 page not on DEV (TOP/detail 404 on /{lang}/… and /master/{lang}/…)",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ECO-013",
+      "lang": "cn",
+      "result": "skip",
+      "error": "fixme: cn: no /master/cn on DEV (Issue #18)",
+      "evidence": "",
+      "suspect": "env"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-590.ts",
+    "fixtures/dsr-590-url-status.cjs",
+    "pages/EcoProductsPage.ts",
+    "tests/eco-products/DSR-590.eco-products.spec.ts",
+    "results/DSR-590/DEV/automation-run-20261019.md"
+  ],
+  "questions": []
+}
