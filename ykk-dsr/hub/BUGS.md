@@ -1,6 +1,6 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-18 17:10 (UTC+7, [schedule] evening) · Jira 18/10 17:10: 457/647/648/651/611 không đổi · DSR-647 P3-order: IDLE-14 xác nhận trang branch stale (last-modified 16/10 06:43Z) → môi trường, không bug · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
+> Cập nhật: 2026-10-19 07:45 (UTC+7, [schedule] morning) · Jira 19/10 07:45: 457/647/648/651/611 không đổi · DSR-647 P3-order: IDLE-14 xác nhận trang branch stale (last-modified 16/10 06:43Z) → môi trường, không bug · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
