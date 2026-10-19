@@ -1,0 +1,20 @@
+{
+  "job": "JOB-20261017-02",
+  "agent": "claude-code",
+  "us": "DSR-173",
+  "env": "dev",
+  "started": "2026-10-19T04:29:07Z",
+  "finished": "2026-10-19T04:33:17Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-MOVIE-014", "lang": "en", "result": "fail",
+      "error": "movie-detail-player-embed not found (2/2 runs, retry too). GraphQL movieid-01: movieSource=youtube, movieSourceId=null, movieAsset=null -> block renders <!--no video source-->",
+      "evidence": "evidence/DSR-MOVIE-014_en.png", "suspect": "data" },
+    { "tc": "DSR-MOVIE-033", "lang": "en", "result": "fail",
+      "error": "movie-detail-player not found (2/2 runs, retry too); same empty CF source. relatedProducts=[] too, so related-products check would fail next",
+      "evidence": "evidence/DSR-MOVIE-033_en.png", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}
