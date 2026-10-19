@@ -20,7 +20,25 @@ export PATH="$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/.bun/bin:$HOME/.claude
 [ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh" >/dev/null 2>&1
 
 log()  { echo "$(date -u +%FT%TZ) [$LANE] $*"; }
-pull() { git pull --rebase -q origin main; }
+# Rebase conflicts (agent commit vs. hub edits pushed meanwhile) used to block the lane for days (16/10, 19/10).
+# Policy: agent output (results/tests/docs/...) keeps the agent's version; everything else keeps upstream.
+in_rebase() { [ -d "$(git rev-parse --git-path rebase-merge)" ] || [ -d "$(git rev-parse --git-path rebase-apply)" ]; }
+resolve_conflicts() {
+  local n=0 f side
+  while in_rebase; do
+    n=$((n+1)); [ "$n" -gt 30 ] && { log "rebase still stuck after 30 steps"; return 1; }
+    while IFS= read -r -d '' f; do
+      case "$f" in
+        ykk-dsr/hub/results/*|results/*|tests/*|pages/*|fixtures/*|docs/*|evidence/*) side=--theirs ;;  # theirs = agent commit being replayed
+        *) side=--ours ;;                                                                              # ours = upstream main
+      esac
+      if git checkout "$side" -- "$f" 2>/dev/null; then git add -- "$f"; else git rm -q -- "$f" 2>/dev/null; fi
+    done < <(git diff --name-only --diff-filter=U -z)
+    GIT_EDITOR=true git rebase --continue >/dev/null 2>&1 || { [ -z "$(git diff --name-only --diff-filter=U)" ] && git rebase --skip >/dev/null 2>&1; } || true
+  done
+  log "rebase conflicts auto-resolved"
+}
+pull() { git pull --rebase -q origin main && return 0; in_rebase && resolve_conflicts; }
 sync() { for i in 1 2 3 4 5; do pull && git push -q origin HEAD:main && return 0; sleep 15; done; log "PUSH FAILED"; return 1; }
 
 # One runner per clone.
