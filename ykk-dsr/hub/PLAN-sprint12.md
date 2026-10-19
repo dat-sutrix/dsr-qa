@@ -14,6 +14,17 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 | DSR-647 (bug, video overlay) | trang branch vẫn bản 16/10 | Martin re-preview → JOB-20261017-01 | 20/10 | giữ bug mở, không chặn ticket Dat |
 | DSR-457 (bug, product detail) | #1 ✅, #10 chưa chạy | QA-PT #10 tối 19/10 · Quentin/Ngọc trả lời | — | mặc định 20/10 |
 
+**Night Pack T2 19/10 – bắt buộc (17:10 tạo Google Doc theo đúng thứ tự, ~2h, có bước click + URL cho từng việc):**
+| # | US | Việc | ~phút | Dòng report |
+|---|---|---|---|---|
+| 1 | DSR-529 | Sites → master → ja → tạo cấp còn thiếu `library` → `article` → `stories` (template đơn giản nhất có sẵn, Title = Library / Article / Stories), lặp cho en. Trong `stories` tạo qa529-01 (ja+en), qa529-02 (ja), qa529-r1..r3 (ja+en) bằng template `article detail`, giá trị theo TestData DSR-356 (TD-529-01/02/03) → Publish | 70 | TD-529-01, TD-529-02, TD-529-03 |
+| 2 | DSR-433 | TC 1.0, 2.0, 3.0 (chỉ xem, link trong TC file) · TC 4.0 bước 1–2: CF `/content/dam/ykk/mail-templates/e2e-test/en` → 件名 thêm " v2" → Save → Publish (để nguyên tới tối 21/10) | 30 | 433-1.0, 433-2.0, 433-3.0, 433-4.0-edit |
+| 3 | DSR-457 | Item #10 (như pack 16/10) | 15 | DSR-457-#10 |
+| 4 | DSR-570 | CF `qa190-cat-ebook-form`: catalogId bỏ 2 dấu cách cuối → Save → Publish | 5 | TD-190-13-fix |
+
+**Agent – chạy ngay không chờ (19/10):** JOB-20261019-01 (557 016/017 + 647 P2: sửa phạm vi assertion theo quyết định QA) · IDLE-07/10/11/12/13 · codex IDLE-16. Hold có điều kiện: -02/-04 (529, sau Night Report), -03 (552-014 khi DSR-651 fix; 647-P3 khi re-preview).
+Quyết định QA 19/10: 557-016/017 đếm form chỉ trên DSR (trang ngoài có form search = không phải gate) · 647-P2 bỏ assertion "static HTML" (BL-OVL-1: block lọc phía client) · 173 MOVIE-014/033 fail = CF movieid-01 bị xóa movieSourceId/relatedProducts (data, ngoài sprint – ghi nhận, chưa sửa).
+
 **Lịch theo ngày**
 | Ngày | Dat (giờ hành chính) | Agent | QA-PT (tối) | Claude tự động |
 |---|---|---|---|---|
