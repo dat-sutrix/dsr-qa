@@ -3,7 +3,8 @@ import { EcoProductsPage } from '../../pages/EcoProductsPage';
 import {
   type Language, languages, topPaths, detailPaths, finderPaths, categorySlugs, td03, td06, productIndexPaths,
   tagColumnPattern, productHref, legacyDomain, codePaths, damPattern, emptyFrameMaxPx, htmlLang,
-  pageMissing, finderMissing, indexMissing, tagMissing, td06Missing, cnMissing,
+  pageMissing, indexMissing, tagMissing, td06Missing, cnMissing,
+  langPrefix, topMissing, detailMissing, finderNotBuilt, countNote, dotsNote,
 } from '../../fixtures/dsr-590';
 
 const observations: Record<string, unknown>[] = [];
@@ -13,16 +14,17 @@ test.afterEach(async ({}, info) => {
 });
 
 // Preflight: first candidate path with HTTP 200 wins (A1); none → skip (pages not on DEV yet).
-async function open(eco: EcoProductsPage, candidates: string[]) {
+async function open(eco: EcoProductsPage, candidates: string[], missing = pageMissing) {
   for (const p of candidates) {
     const response = await eco.goto(p);
     observations.push({ tried: p, status: response?.status() });
     if (response?.status() === 200) return p;
   }
-  test.skip(true, pageMissing);
+  test.skip(true, missing);
   return '';
 }
-const openTop = (eco: EcoProductsPage, lang: Language) => open(eco, topPaths(lang));
+// TOP: C14 demo page first, then URL-design paths (A1, JOB-20261019-08).
+const openTop = (eco: EcoProductsPage, lang: Language) => open(eco, topPaths(lang), topMissing(lang));
 // TD-590-03 = recycled; spec: "if missing use any published detail".
 const openDetail = (eco: EcoProductsPage, lang: Language) =>
   open(eco, [...detailPaths(lang, td03.slug), ...categorySlugs.filter(s => s !== td03.slug).flatMap(s => detailPaths(lang, s))]);
@@ -35,6 +37,13 @@ function watchConsole(page: Page) {
 }
 
 const status = async (page: Page, url: string) => (await page.request.get(url, { maxRedirects: 0 })).status();
+// Read-only GET following redirects: first hop + final status.
+const linkStatus = async (page: Page, href: string) => {
+  const first = await status(page, href).catch(() => 0);
+  const final = await page.request.get(href).then(r => r.status()).catch(() => 0);
+  return { href, first, final };
+};
+const noteOnce = (type: string, description: string) => test.info().annotations.push({ type, description });
 const slugOf = (url: string) => new URL(url).pathname.replace(/\/$/, '').split('/').pop() || '';
 
 // A6: product query-index (Q14 default) → product ids whose tag column contains `tag`.
@@ -68,12 +77,14 @@ for (const lang of languages) {
     const rows = [];
     for (const card of cards) {
       const img = card.locator('img').first();
-      rows.push({ name: await eco.cardName(card), imageLoaded: await eco.loaded(img) });
+      rows.push({ index: await card.getAttribute('data-index'), name: await eco.cardName(card), imageLoaded: await eco.loaded(img) });
     }
-    observations.push({ cards: rows, consoleErrors: errors });
-    expect.soft(cards.length, 'card count = TD-590-02 (A3)').toBe(categorySlugs.length);
+    observations.push({ cardCount: cards.length, expectedCount: categorySlugs.length, cards: rows, consoleErrors: errors });
+    // A3: count mismatch = note "Q37 count", not fail (JOB-20261019-08).
+    if (cards.length !== categorySlugs.length) noteOnce('note', `${countNote}: ${cards.length} cards vs ${categorySlugs.length} (TD-590-02)`);
+    expect(cards.length, 'cards found').toBeGreaterThan(0);
     expect.soft(rows.filter(r => !r.imageLoaded || !r.name), 'cards missing image or name').toEqual([]);
-    await expect.soft(eco.activeCard.locator('p').first(), 'active card summary').not.toBeEmpty();
+    await expect.soft(eco.cardSummary(eco.activeCard), 'active card summary').not.toBeEmpty();
     await expect.soft(eco.viewMore(eco.activeCard), 'active card VIEW MORE').toBeVisible();
     expect.soft(errors, 'console errors').toEqual([]);
   });
@@ -81,41 +92,36 @@ for (const lang of languages) {
   test(`DSR-ECO-002 [${lang}] each category card VIEW MORE links to its TD-590-02 detail page (200, same language)`, { tag: ['@auto'] }, async ({ page }) => {
     const eco = new EcoProductsPage(page);
     const top = await openTop(eco, lang);
-    const prefix = top.slice(0, top.indexOf('/product/'));
-    const hrefs = await eco.carousel.getByRole('link').evaluateAll(as => as.map(a => (a as HTMLAnchorElement).href));
+    const prefix = langPrefix(top);
+    const hrefs = await eco.carousel.locator('a[href]').evaluateAll(as => as.map(a => (a as HTMLAnchorElement).href));
+    // GET only, no click-through (JOB-20261019-08).
+    const results = await Promise.all((await eco.viewMoreHrefs()).map(h => (h ? linkStatus(page, h) : { href: '', first: 0, final: 0 })));
+    observations.push({ prefix, results });
+    expect(results.length, 'cards found').toBeGreaterThan(0);
+    // C15 not built: target 404 = skip, not fail.
+    test.skip(results.every(r => r.final === 404), detailMissing);
+    expect.soft(results.filter(r => !r.href), 'cards without VIEW MORE href').toEqual([]);
     expect.soft(hrefs.filter(h => h.includes(legacyDomain)), 'links to legacy domain').toEqual([]);
-    const results = [];
-    const n = await eco.cards.count();
-    for (let i = 0; i < n; i++) {
-      await eco.goto(top);
-      const card = eco.cards.nth(i);
-      // Make the card active (click it), then follow VIEW MORE (or the card link).
-      await card.click().catch(() => undefined);
-      const link = (await eco.viewMore(card).isVisible()) ? eco.viewMore(card) : card.getByRole('link').first();
-      await Promise.all([page.waitForURL(u => u.pathname !== top, { timeout: 10_000 }).catch(() => undefined), link.click()]);
-      const url = page.url();
-      results.push({ i, url, status: await status(page, url) });
-    }
-    observations.push({ results });
-    const slugs = results.map(r => slugOf(r.url));
-    expect.soft(results.filter(r => r.status !== 200), 'detail pages not 200').toEqual([]);
-    expect.soft(results.filter(r => !new URL(r.url).pathname.startsWith(`${prefix}/`)), 'language prefix not kept').toEqual([]);
-    expect.soft([...slugs].sort(), 'detail slugs = TD-590-02').toEqual([...categorySlugs].sort());
+    expect.soft(results.filter(r => new URL(r.href || 'about:blank').origin !== new URL(top, page.url()).origin
+      || !new URL(r.href).pathname.startsWith(`${prefix}/`)).map(r => r.href), 'VIEW MORE not on site with same language prefix').toEqual([]);
+    expect.soft(results.filter(r => r.final !== 200 && r.final !== 404), 'detail pages not 200').toEqual([]);
+    expect.soft([...results.map(r => slugOf(r.href || 'about:blank'))].sort(), 'detail slugs = TD-590-02').toEqual([...categorySlugs].sort());
+    if (results.some(r => r.final === 404)) noteOnce('note', `${detailMissing}: ${results.filter(r => r.final === 404).length} target(s) 404`);
   });
 
   test(`DSR-ECO-004 [${lang}] 環境配慮型製品診断 button links to the product finder (P087, 200)`, { tag: ['@auto'] }, async ({ page }) => {
     const eco = new EcoProductsPage(page);
     const top = await openTop(eco, lang);
-    const prefix = top.slice(0, top.indexOf('/product/'));
+    const prefix = langPrefix(top);
     await expect(eco.finderButton, 'finder button').toBeVisible();
-    await Promise.all([page.waitForURL(u => u.pathname !== top, { timeout: 10_000 }).catch(() => undefined), eco.finderButton.click()]);
-    const url = page.url();
-    const code = await status(page, url);
-    observations.push({ url, status: code });
-    // P087 in the same language/prefix as the TOP that answered 200.
-    expect.soft(new URL(url).pathname.replace(/\/$/, ''), 'finder URL (P087), same language').toBe(finderPaths(lang).find(p => p.startsWith(`${prefix}/`)));
-    test.skip(code === 404, finderMissing);
-    expect(code, 'finder HTTP status').toBe(200);
+    const href = (await eco.finderButton.getAttribute('href')) ?? '';
+    const r = await linkStatus(page, new URL(href, page.url()).href);
+    observations.push({ ...r, expectedPath: finderPaths(lang).filter(p => p.startsWith(`${prefix}/`)) });
+    test.skip(r.final === 404, finderNotBuilt);
+    // P087 in the same language/prefix as the TOP that answered 200; demo page under /master/{lang} → both prefixes accepted.
+    expect.soft(finderPaths(lang), 'finder URL (P087), same language').toContain(new URL(r.href).pathname.replace(/\/$/, ''));
+    expect.soft(new URL(r.href).origin, 'finder link on the same site').toBe(new URL(page.url()).origin);
+    expect(r.final, 'finder HTTP status').toBe(200);
   });
 }
 
@@ -124,37 +130,39 @@ test('DSR-ECO-003 [ja] carousel arrows and dots move the active category by one 
   await openTop(eco, 'ja');
   const n = await eco.cards.count();
   expect(n, 'card count').toBeGreaterThan(1);
-  const names = await Promise.all((await eco.cards.all()).map(c => eco.cardName(c)));
-  const first = await eco.activeName();
+  // Cards tracked by data-index: the DEV demo authors the same name on every card.
+  const settle = () => page.waitForTimeout(500); // carousel transition
+  const first = await eco.activeIndex();
   const sequence = [first];
   for (let i = 0; i < n; i++) {
     await eco.next.click();
-    await page.waitForTimeout(500); // carousel transition
-    sequence.push(await eco.activeName());
+    await settle();
+    sequence.push(await eco.activeIndex());
   }
-  observations.push({ names, sequence });
+  observations.push({ n, sequence });
   for (let i = 1; i < sequence.length; i++)
-    expect.soft((names.indexOf(sequence[i]) - names.indexOf(sequence[i - 1]) + n) % n, `next #${i} moves by one`).toBe(1);
+    expect.soft((sequence[i] - sequence[i - 1] + n) % n, `next #${i} moves by one`).toBe(1);
   expect.soft(sequence[n], `after ${n} next clicks the first card is active again (A4)`).toBe(first);
   await eco.prev.click();
-  await page.waitForTimeout(500);
-  const afterPrev = await eco.activeName();
+  await settle();
+  const afterPrev = await eco.activeIndex();
   observations.push({ afterPrevAtFirst: afterPrev });
-  expect.soft(afterPrev, 'prev at first wraps to last (A4)').toBe(names[(names.indexOf(first) - 1 + n) % n]);
+  expect.soft(afterPrev, 'prev at first wraps to last (A4)').toBe((first - 1 + n) % n);
   const dots = await eco.dots.count();
-  expect.soft(dots, 'dot count = card count').toBe(n);
+  if (dots !== n) noteOnce('note', `${dotsNote}: ${dots} dots / ${n} cards`);
   const dotResults = [];
   for (let i = 0; i < dots; i++) {
-    await eco.dots.nth(i).click();
-    await page.waitForTimeout(500);
     const dot = eco.dots.nth(i);
+    await dot.click();
+    await settle();
+    const current = await dot.getAttribute('aria-current');
     dotResults.push({
-      i, active: await eco.activeName(),
-      highlighted: (await dot.getAttribute('aria-selected')) === 'true' || (await dot.getAttribute('aria-current')) === 'true' || /active/.test((await dot.getAttribute('class')) || ''),
+      i, active: await eco.activeIndex(),
+      highlighted: (await dot.getAttribute('aria-selected')) === 'true' || (current !== null && current !== 'false') || /active/.test((await dot.getAttribute('class')) || ''),
     });
   }
-  observations.push({ dotResults });
-  expect.soft(dotResults.filter(d => d.active !== names[d.i] || !d.highlighted), 'dot → matching card active + dot highlighted').toEqual([]);
+  observations.push({ dots, dotResults });
+  expect.soft(dotResults.filter(d => d.active !== d.i || !d.highlighted), 'dot → matching card active + dot highlighted').toEqual([]);
 });
 
 // ---- C15 detail ----
@@ -235,42 +243,38 @@ test('DSR-ECO-009 [ja] detail with 0 matching products shows no broken list and 
   expect.soft(errors, 'console errors').toEqual([]);
 });
 
-test('DSR-ECO-012 [ja] TOP card and detail hero backgrounds are DAM references, not code-bundled files', { tag: ['@auto'] }, async ({ page }) => {
+// JOB-20261019-08: TOP only (C15 detail hero not on DEV).
+test('DSR-ECO-012 [ja] TOP background and card images are DAM references, not code-bundled files', { tag: ['@auto'] }, async ({ page }) => {
   const eco = new EcoProductsPage(page);
   await openTop(eco, 'ja');
-  const top = await eco.backgroundUrls(eco.cards);
-  await openDetail(eco, 'ja');
-  const hero = await eco.backgroundUrls(eco.hero);
-  const all = [...top, ...hero];
+  const all = [...new Set([...await eco.backgroundUrls(eco.topBackground), ...await eco.backgroundUrls(eco.cards)])];
   const classify = (u: string) => (codePaths.test(new URL(u).pathname) ? 'code' : damPattern.test(u) ? 'dam' : 'other');
   const rows = all.map(u => ({ u, kind: classify(u) }));
-  observations.push({ rows });
+  // Carousel controls (arrows) are UI icons, not backgrounds: recorded only.
+  const controls = await eco.backgroundUrls(eco.carousel.locator('[class*="controls"]'));
+  observations.push({ rows, controlsRecordedOnly: controls });
   expect(all.length, 'background URLs found').toBeGreaterThan(0);
   expect.soft(rows.filter(r => r.kind === 'code'), 'URLs under /blocks/, /styles/, /icons/, /scripts/').toEqual([]);
   expect.soft(rows.filter(r => r.kind === 'other'), 'URLs neither media_ nor DAM/Dynamic Media (Q19)').toEqual([]);
 });
 
 // ---- Languages (BAC#4) ----
+// JOB-20261019-08: TOP only (C15 detail not on DEV); en runs only if its demo/TOP page answers 200.
 for (const lang of languages) {
-  test(`DSR-ECO-013 [${lang}] TOP and detail exist with html lang and language-kept internal links`, { tag: ['@auto'] }, async ({ page }) => {
+  test(`DSR-ECO-013 [${lang}] TOP exists with html lang, names in its language, and language-kept internal links`, { tag: ['@auto'] }, async ({ page }) => {
     const eco = new EcoProductsPage(page);
-    const report = [];
-    for (const [i, candidates] of [topPaths(lang), detailPaths(lang, td03.slug)].entries()) {
-      const path = await open(eco, candidates);
-      const prefix = path.slice(0, path.indexOf('/product/'));
-      const links = await eco.internalLinks();
-      const otherLang = links.filter(h => !new URL(h).pathname.startsWith(`${prefix}/`) && /^\/(master\/)?(ja|en|zh|cn)\//.test(new URL(h).pathname));
-      const names = i === 0 ? await Promise.all((await eco.cards.all()).map(c => eco.cardName(c))) : [];
-      report.push({ path, htmlLang: await page.locator('html').getAttribute('lang'), otherLang, names });
-    }
-    observations.push({ report });
-    for (const r of report) {
-      expect.soft(r.htmlLang, `${r.path}: html lang`).toBe(htmlLang[lang]);
-      expect.soft(r.otherLang, `${r.path}: internal links with another language prefix`).toEqual([]);
-      // Card names not in another language: ja names contain Japanese script; en names contain none.
-      const wrongScript = r.names.filter(n => (lang === 'ja') !== /[぀-ヿ一-鿿]/.test(n));
-      expect.soft(wrongScript, `${r.path}: card names in another language`).toEqual([]);
-    }
+    const path = await openTop(eco, lang);
+    const prefix = langPrefix(path);
+    const links = await eco.internalLinks();
+    const otherLang = links.filter(h => !new URL(h).pathname.startsWith(`${prefix}/`) && /^\/(master\/)?(ja|en|zh|cn)\//.test(new URL(h).pathname));
+    const names = await Promise.all((await eco.cards.all()).map(c => eco.cardName(c)));
+    const htmlLangValue = await page.locator('html').getAttribute('lang');
+    observations.push({ path, htmlLang: htmlLangValue, internalLinks: links, otherLang, names });
+    expect.soft(htmlLangValue, `${path}: html lang`).toBe(htmlLang[lang]);
+    expect.soft(otherLang, `${path}: internal links with another language prefix`).toEqual([]);
+    // Card names not in another language: ja names contain Japanese script; en names contain none.
+    const wrongScript = names.filter(n => (lang === 'ja') !== /[぀-ヿ一-鿿]/.test(n));
+    expect.soft(wrongScript, `${path}: card names in another language`).toEqual([]);
   });
 }
 test('DSR-ECO-013 [cn] TOP and detail exist with html lang and language-kept internal links', { tag: ['@auto'] }, async () => {

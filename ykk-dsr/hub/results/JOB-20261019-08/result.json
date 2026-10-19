@@ -1,0 +1,31 @@
+{
+  "job": "JOB-20261019-08",
+  "agent": "claude-code",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-19T12:18:04Z",
+  "finished": "2026-10-19T12:21:16Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-ECO-001", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-001", "lang": "en", "result": "skip", "error": "en demo page not on DEV", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-ECO-002", "lang": "ja", "result": "fail", "error": "All 9 VIEW MORE hrefs = http://google.com/ (301→200): not same site, no /master/ja prefix, slugs != TD-590-02. No legacy-domain link.", "evidence": "evidence/DSR-ECO-002_ja.png", "suspect": "data" },
+    { "tc": "DSR-ECO-002", "lang": "en", "result": "skip", "error": "en demo page not on DEV", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-ECO-003", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-004", "lang": "ja", "result": "fail", "error": "Finder button present but href = https://google.com/ (301→200), not P087 sustainable-solution-finder on the same site.", "evidence": "evidence/DSR-ECO-004_ja.png", "suspect": "data" },
+    { "tc": "DSR-ECO-004", "lang": "en", "result": "skip", "error": "en demo page not on DEV", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-ECO-012", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-013", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-013", "lang": "en", "result": "skip", "error": "en demo page not on DEV", "evidence": "", "suspect": "data" },
+    { "tc": "DSR-ECO-013", "lang": "cn", "result": "skip", "error": "cn: no /master/cn on DEV (Issue #18)", "evidence": "", "suspect": "env" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/eco-products/DSR-590.eco-products.spec.ts",
+    "pages/EcoProductsPage.ts",
+    "fixtures/dsr-590.ts",
+    "fixtures/dsr-590-url-status.cjs",
+    "results/DSR-590/DEV/automation-run-20261019-c14.md"
+  ],
+  "questions": []
+}

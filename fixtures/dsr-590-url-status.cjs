@@ -12,6 +12,10 @@ const slugs = ['', 'recycled', 'water-saving', 'renewal', 'bio-based', 'bluesign
   console.log(`Checked (UTC): ${new Date().toISOString()} · ${base}\n`);
   console.log('| # | Page | ja | en | /master/ja | /master/en |');
   console.log('|---:|---|---|---|---|---|');
+  // JOB-20261019-08: C14 demo page (test-space, /master only).
+  const demo = [];
+  for (const lang of ['ja', 'en']) demo.push(String((await fetch(`${base}/master/${lang}/test-space/dsr-590-eco-top-page`, { redirect: 'manual' })).status));
+  console.log(`| 0 | /master/{lang}/test-space/dsr-590-eco-top-page (C14 demo) | – | – | ${demo.join(' | ')} |`);
   for (const [i, slug] of slugs.entries()) {
     const cells = [];
     for (const prefix of ['/ja', '/en', '/master/ja', '/master/en']) {

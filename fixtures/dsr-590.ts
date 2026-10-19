@@ -5,7 +5,11 @@ export type Language = typeof languages[number];
 // DEV 2026-10-19 (JOB-ZZ-IDLE-11): every TOP / detail / finder URL 404 in ja and en, both prefixes.
 const root = '/product/performance/sustainable';
 const prefixes = (lang: string) => [`/${lang}`, `/master/${lang}`];
-export const topPaths = (lang: string) => prefixes(lang).map(p => `${p}${root}`);
+// JOB-20261019-08: C14 demo page (Ngoc, Jira 61343/61370, 19/10) first, then URL-design paths (A1). ja 200, en 404 on 2026-10-19.
+export const topDemoPath = (lang: string) => `/master/${lang}/test-space/dsr-590-eco-top-page`;
+export const topPaths = (lang: string) => [topDemoPath(lang), ...prefixes(lang).map(p => `${p}${root}`)];
+// Language prefix of a resolved path: /ja or /master/ja (demo and URL-design paths differ).
+export const langPrefix = (path: string) => path.match(/^(\/master)?\/(ja|en|zh|cn)(?=\/)/)?.[0] ?? '';
 export const detailPaths = (lang: string, slug: string) => prefixes(lang).map(p => `${p}${root}/${slug}`);
 // 4.0: finder page P087 (S10).
 export const finderSlug = 'sustainable-solution-finder';
@@ -37,6 +41,12 @@ export const emptyFrameMaxPx = 40; // 9.0
 export const htmlLang: Record<Language, string> = { ja: 'ja', en: 'en' };
 
 export const pageMissing = 'DSR-590 page not on DEV';
+export const topMissing = (lang: string) => `${lang} demo page not on DEV`;
+export const detailMissing = 'detail page not on DEV';
+export const finderNotBuilt = 'finder page (S10) not built';
+// A3 / Q37: count mismatch is a note, not a fail (JOB-20261019-08).
+export const countNote = 'Q37 count';
+export const dotsNote = 'Q37 8 dots/9 cards';
 export const finderMissing = 'Blocked: finder page (S10) not built – owner Ngoc';
 export const indexMissing = 'blocked-data: product query-index (Q14) not found';
 export const tagMissing = 'blocked-data: no eco tag column in product query-index (DSR-585 fix版)';
