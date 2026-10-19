@@ -1,6 +1,6 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-19 07:45 (UTC+7, [schedule] morning) · Jira 19/10 07:45: 457/647/648/651/611 không đổi · DSR-647 P3-order: IDLE-14 xác nhận trang branch stale (last-modified 16/10 06:43Z) → môi trường, không bug · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
+> Cập nhật: 2026-10-19 17:10 (UTC+7, [schedule] evening) · Jira 19/10 17:10: **DSR-651 → [Dev] In Testing** (13:55 JST) · DSR-648 [Dev] In Testing · 457/647/611 không đổi · 0 bug mới (agent fail hôm nay = test/env/data hoặc trùng bug/câu hỏi đã có) · DSR-647 P3-order: IDLE-14 xác nhận trang branch stale (last-modified 16/10 06:43Z) → môi trường, không bug · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR) · Claude cập nhật từ session `DSR – Bugs`
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
@@ -14,9 +14,9 @@
 | Jira | US | Tiêu đề | Sev | Trạng thái Jira | Assignee | Retest ở | Kết quả retest gần nhất | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|
 | [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) | Major | [Dev] In Testing (Jira 17/10) | Milavec Quentin (Jira 16/10; trước đó Ngoc) | DEV | 16/10 QA-PT: ✅ 1 · 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 10 | R1 (Ngọc) · 61015 (Quentin → hỏi Kohei 19/10 10:42; mặc định 20/10) · #10 tối 19/10 · #13 sau DSR-587 |
-| [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) | DSR-501 | video-detail: relatedMovies không bao giờ hiển thị (query thiếu relatedMovies, FE đọc relatedVideos) | High | **[Dev] In Testing** (16/10 17:54 JST) | Portal Martin | DEV (branch DSR-PRODUCTDETAIL-moustache) | 16/10 QA-PT: P3-order ❌ (sau khi set 更新日 rel-1..6) – chưa kết luận (nghi preview cũ). 16/10 JOB-05: blocked-data. Order rule = update date mới nhất trước (61177) | JOB-20261017-01 (P2 + P3, freshness) · 17/10 |
+| [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) | DSR-501 | video-detail: relatedMovies không bao giờ hiển thị (query thiếu relatedMovies, FE đọc relatedVideos) | High | **[Dev] In Testing** (16/10 17:54 JST) | Portal Martin | DEV (branch DSR-PRODUCTDETAIL-moustache) | 16/10 QA-PT: P3-order ❌ (sau khi set 更新日 rel-1..6) – chưa kết luận (nghi preview cũ). 16/10 JOB-05: blocked-data. Order rule = update date mới nhất trước (61177) | 19/10 JOB-20261019-01: ✅ P2 (sau khi bỏ assertion static HTML) · P3 hold JOB-20261019-03 (re-preview hoặc overlay merge 20/10 + QA-PT seed lại tối 20/10) |
 | [DSR-648](https://sutrix.atlassian.net/browse/DSR-648) | DSR-552 | Breadcrumb UE preview thiếu trang cha (Publish đúng) | Minor (Low) | [Dev] In Testing (Martin "modification done" 19/10 13:55) | Portal Martin (dev DSR-552) | DEV | 15/10 QA-PT: ❌ 016 | QA-PT retest 016 tối 19/10 → Pass thì Claude comment + đóng bug |
-| [DSR-651](https://sutrix.atlassian.net/browse/DSR-651) | DSR-552 | Breadcrumb display name dài → scroll ngang PC 1440/1024 | Minor (Low) | To Do (tạo 16/10) | Portal Martin | DEV | 16/10 JOB-20261016-01: ❌ 014 | Martin fix → rerun 014 |
+| [DSR-651](https://sutrix.atlassian.net/browse/DSR-651) | DSR-552 | Breadcrumb display name dài → scroll ngang PC 1440/1024 | Minor (Low) | **[Dev] In Testing** (19/10 13:55 JST) | Portal Martin | DEV | 16/10 JOB-20261016-01: ❌ 014 · 19/10 IDLE-07: ✅ 014 [ja] (chưa xác nhận chính thức) | JOB-20261019-07 (queue) → Pass thì Claude comment + đóng · 20/10 |
 
 ### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
 | Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
