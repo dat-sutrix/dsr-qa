@@ -17,7 +17,7 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 **Night Pack 19/10 – bắt buộc đưa vào (17:10 tạo Google Doc theo đúng thứ tự, ~2h, có bước click + URL cho từng việc):**
 | # | US | Việc | ~phút | Dòng report |
 |---|---|---|---|---|
-| 1 | DSR-529 | Sites → master → ja → tạo cấp còn thiếu `library` → `article` → `stories` (template đơn giản nhất có sẵn, Title = Library / Article / Stories), lặp cho en. Trong `stories` tạo qa529-01 (ja+en), qa529-02 (ja), qa529-r1..r3 (ja+en) bằng template `article detail`, giá trị theo TestData DSR-356 (TD-529-01/02/03) → Publish | 70 | TD-529-01, TD-529-02, TD-529-03 |
+| 1 | DSR-529 | Sites → master → ja → tạo cấp còn thiếu `library` → `article` → `stories` (template đơn giản nhất có sẵn, Title = Library / Article / Stories), lặp cho en. Trong `stories` tạo qa529-01 (ja+en), qa529-02 (ja), qa529-r1..r3 (ja+en) bằng template `article detail`, rồi theo đúng hướng dẫn Martin (DSR-529 comment 59484): mở trang → Page configuration (Properties) → chọn template **article** → nhập giá trị theo TestData DSR-356 (TD-529-01/02/03) → Publish | 70 | TD-529-01, TD-529-02, TD-529-03 |
 | 2 | DSR-433 | TC 1.0, 2.0, 3.0 (chỉ xem, link trong TC file) · TC 4.0 bước 1–2: CF `/content/dam/ykk/mail-templates/e2e-test/en` → 件名 thêm " v2" → Save → Publish (để nguyên tới tối 21/10) | 30 | 433-1.0, 433-2.0, 433-3.0, 433-4.0-edit |
 | 3 | DSR-457 | Item #10 (như pack 16/10) | 15 | DSR-457-#10 |
 | 4 | DSR-570 | CF `qa190-cat-ebook-form`: catalogId bỏ 2 dấu cách cuối → Save → Publish | 5 | TD-190-13-fix |
