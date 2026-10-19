@@ -14,19 +14,19 @@
 | [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | 0/32, chưa có trang test | QA-PT tạo folder stories + trang tối 19/10 → agent 20/10 (JOB-20261019-02/04) → triage 21/10 | Không (Martin OK 11:29) | 22/10 |
 | [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) ニュース詳細 | 5/18 ✅ · 12 ⛔ | Có template → QA-PT seed tối hôm đó → agent hôm sau | **Quentin** – giao dev tạo template `news-article` (chưa có ticket). Không có tới 21/10 → 22/10 báo PM tách sang Sprint 13 | 22/10 hoặc Sprint 13 |
 
-Bug Dat theo dõi (không giao Dat): DSR-647 video liên quan (đợi **Martin** re-preview) · DSR-457 product detail (đợi **Ngọc** R1, **Kohei** 2 quyết định PM – mặc định 20/10; #10 QA-PT tối nay) · DSR-433 mail (đợi **Nakamoto** gửi mail thử 21/10).
+Bug Dat theo dõi (không giao Dat): DSR-647 video liên quan (đợi **Martin** re-preview) · DSR-457 product detail (đợi **Ngọc** R1, **Kohei** 2 quyết định PM – mặc định 20/10; #10 QA-PT tối nay) · DSR-433 mail: **SendGrid trial hết hạn 19/10** → TC gửi mail (4–14, 18–20) ⛔ chờ tài khoản chính thức (ticket riêng, Nakamoto/Quentin); làm được ngay: TC 1–3 (QA-PT), 16–17 (agent IDLE-13), 21–22 (review).
 
 ## 2. 🔔 Dat cần làm
 | Ưu tiên | Việc | Hạn | Mở khóa |
 |---|---|---|---|
-| P1 | Gửi Nakamoto 3 địa chỉ nhận mail test (Gmail công ty, Outlook, docomo nếu có) | 20/10 | DSR-433 TC 5–14 (gửi 21/10) |
+| P3 | Gửi Nakamoto 3 địa chỉ nhận mail test – **hoãn** tới khi có tài khoản SendGrid chính thức | — | DSR-433 TC 4–14 |
 | P2 | Chuyển tiếp cho Claude câu trả lời đến qua chat (Quentin, Martin, Nakamoto, Ngọc); trả lời trên Jira thì 17:10 tự đọc | khi có | 566, 570, 647, 433 |
 | P2 | 21/10 17:00: nếu chưa có template `news-article` → gửi báo cáo tách 566 (Claude soạn sẵn) | 21/10 | 566 |
 | P3 | 22/10: duyệt Done DEV các ticket đạt (Claude đề xuất + soạn comment) | 22/10 | 552, 557, 570, 529, 566 |
 
 ## 3. 🌙 QA part-time đêm nay (T2 19/10, ~2h) – Night Pack do 17:10 tạo
 1. DSR-529 (70'): tạo `/master/{ja,en}/library/article/stories` + trang qa529-01/02/r1–r3 (template `article detail`, giá trị theo TestData DSR-356)
-2. DSR-433 (30'): TC 1.0–3.0 (xem trên Author) + TC 4.0 bước 1–2 (sửa tiêu đề `e2e-test/en` thêm " v2", Publish)
+2. DSR-433 (20'): TC 1.0–3.0 (xem trên Author); TC 4.0 hoãn – SendGrid hết hạn
 3. DSR-457 #10 (15')
 4. DSR-570 (5'): bỏ 2 dấu cách cuối catalogId của `qa190-cat-ebook-form`, Publish
 5. DSR-552 (10'): retest DSR-648 – TC 016 trên Universal Editor (Martin fixed 19/10)
