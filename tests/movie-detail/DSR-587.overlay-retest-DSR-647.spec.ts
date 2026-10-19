@@ -83,6 +83,6 @@ test('DSR-501-P2 [en] unavailable related movie is not displayed', { tag: ['@DSR
   expect(shown).toEqual([...pageB.expectedRelated]);
   expect(renderedDom).not.toContain(pageB.excludedTitle);
   await expect(page.getByText(pageB.excludedTitle)).toHaveCount(0);
-  // JOB-20261017-01 Expected: excluded movie also absent from the static (pre-JS) HTML.
-  expect(o.html).not.toContain(pageB.excludedTitle);
+  // QA decision 2026-10-19 (JOB-20261019-01, BL-OVL-1): json2html writes every row and the block filters isUnavailable on the client,
+  // so static HTML is recorded (excludedInStaticHtml) but not asserted.
 });

@@ -100,14 +100,19 @@ for (const lang of languages) {
         await expect(item).toHaveCount(1);
         const link = catalog.title(item);
         expect(normalize(new URL((await link.getAttribute('href'))!, page.url()).href)).toBe(normalize(ebook.ebookUrl!));
+        // QA decision 2026-10-19 (JOB-20261019-01): count forms on the DSR origin only, between the click and the popup navigation; forms on the external e-book site are ignored.
+        const dsrOrigin = new URL(page.url()).origin;
+        const formsBefore = await page.locator('form').count();
         const navigation = context.waitForEvent('request', { predicate: r => r.isNavigationRequest() && normalize(r.url()) === normalize(ebook.ebookUrl!), timeout: 15_000 }).catch(() => null);
         const [popup] = await Promise.all([page.waitForEvent('popup'), link.click()]);
         const request = await navigation;
+        const formsOnPage = await page.locator('form').count();
         await popup.waitForLoadState('domcontentloaded');
-        const forms = await popup.locator('form').count();
-        observations.push({ ebookUrl: ebook.ebookUrl, requiresForm: ebook.requiresForm, navigatedTo: request?.url(), popupUrl: popup.url(), forms, originalUrl: page.url() });
+        const popupOnDsr = new URL(popup.url()).origin === dsrOrigin;
+        const formsOnPopup = popupOnDsr ? await popup.locator('form').count() : 0;
+        observations.push({ ebookUrl: ebook.ebookUrl, requiresForm: ebook.requiresForm, navigatedTo: request?.url(), popupUrl: popup.url(), dsrOrigin, formsBefore, formsOnPage, popupOnDsr, formsOnPopup, externalPopupFormsIgnored: popupOnDsr ? null : await popup.locator('form').count(), originalUrl: page.url() });
         expect(request, 'navigation to ebookUrl').not.toBeNull();
-        expect(forms).toBe(0);
+        expect(formsOnPage + formsOnPopup, 'forms on DSR origin').toBe(0);
       });
     }
 
