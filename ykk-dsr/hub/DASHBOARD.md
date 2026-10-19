@@ -22,7 +22,7 @@ Bug Dat theo dõi (không giao Dat): DSR-647 video liên quan (đợi **Martin**
 | P2 | 21/10 17:00: nếu chưa có template `news-article` → gửi báo cáo tách 566 (Claude soạn sẵn) | 21/10 | 566 |
 | P3 | 22/10: duyệt Done DEV các ticket đạt (Claude đề xuất + soạn comment) | 22/10 | 552, 557, 570, 529, 566 |
 
-## 3. 🌙 QA part-time tối nay (T2 19/10, ~2h) – Night Pack do 17:10 tạo
+## 3. 🌙 QA part-time đêm nay (T2 19/10, ~2h) – Night Pack do 17:10 tạo
 1. DSR-529 (70'): tạo `/master/{ja,en}/library/article/stories` + trang qa529-01/02/r1–r3 (template `article detail`, giá trị theo TestData DSR-356)
 2. DSR-433 (30'): TC 1.0–3.0 (xem trên Author) + TC 4.0 bước 1–2 (sửa tiêu đề `e2e-test/en` thêm " v2", Publish)
 3. DSR-457 #10 (15')

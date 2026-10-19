@@ -14,7 +14,7 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 | DSR-647 (bug, video overlay) | trang branch vẫn bản 16/10 | Martin re-preview → JOB-20261017-01 | 20/10 | giữ bug mở, không chặn ticket Dat |
 | DSR-457 (bug, product detail) | #1 ✅, #10 chưa chạy | QA-PT #10 tối 19/10 · Quentin/Ngọc trả lời | — | mặc định 20/10 |
 
-**Night Pack T2 19/10 – bắt buộc (17:10 tạo Google Doc theo đúng thứ tự, ~2h, có bước click + URL cho từng việc):**
+**Night Pack 19/10 – bắt buộc đưa vào (17:10 tạo Google Doc theo đúng thứ tự, ~2h, có bước click + URL cho từng việc):**
 | # | US | Việc | ~phút | Dòng report |
 |---|---|---|---|---|
 | 1 | DSR-529 | Sites → master → ja → tạo cấp còn thiếu `library` → `article` → `stories` (template đơn giản nhất có sẵn, Title = Library / Article / Stories), lặp cho en. Trong `stories` tạo qa529-01 (ja+en), qa529-02 (ja), qa529-r1..r3 (ja+en) bằng template `article detail`, giá trị theo TestData DSR-356 (TD-529-01/02/03) → Publish | 70 | TD-529-01, TD-529-02, TD-529-03 |
