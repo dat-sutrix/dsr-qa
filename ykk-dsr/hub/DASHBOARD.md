@@ -5,7 +5,7 @@
 > Cập nhật: 2026-10-19 17:10 (UTC+7, [schedule] evening) · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
 > Lượt tự động 07:45 / 17:10 cập nhật file này. Giữ gọn: chỉ trạng thái hiện tại, lịch sử nằm trong git log và us/*.md.
 
-## 1. Ticket đang giao Dat: 6 (Jira 19/10) – 566 + 653 tính là 1 việc
+## 1. Ticket đang giao Dat: 7 (Jira 19/10 19:08) – 566 + 653 tính là 1 việc
 | Ticket | Trạng thái | Kế hoạch (khi nào) | Blocked / đang đợi ai | Done DEV đích |
 |---|---|---|---|---|
 | [DSR-552](https://sutrix.atlassian.net/browse/DSR-552) Breadcrumb | 35/35 TC đã chạy; 2 bug Low **đều đã fix (In Testing)** | agent rerun 014 (**JOB-20261019-07, queue**) + QA-PT retest 016 tối nay → đề xuất Done 20/10 | Không (DSR-648, DSR-651 [Dev] In Testing 19/10) | 21/10 (22/10 chưa fix → Done kèm 2 bug Low) |
@@ -13,6 +13,7 @@
 | [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 16 test: 7 ✅ · 1 ❌ (lộ link PDF) · 6 ⛔ · 2 skip; khách đang test | QA-PT sửa data tối 19/10 · manual 6 TC tối 20/10 · catalog merge chiều 20/10 → seed lại tối 21/10 → rerun 22/10 | **Quentin** – có ẩn PDF sau form không (TC 007) · form HubSpot chưa có (⛔ Ngọc) | 22/10 |
 | [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | 0/32, chưa có trang test | QA-PT tạo folder stories + trang tối 19/10 → agent 20/10 (JOB-20261019-02/04) → triage 21/10 | Không (Martin OK 11:29) | 22/10 |
 | [DSR-653](https://sutrix.atlassian.net/browse/DSR-653) ニュース詳細 Test (mới 19/10) + [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) Dev | 5/18 ✅ · 12 ⛔ | Có template → QA-PT seed tối hôm đó → agent hôm sau | Quentin 19/10: 566 = Dev, 653 = Test (link 566 blocks 653). Template `news-article` là việc của **DSR-566 → Quentin trả 566 về dev** (Ngọc/Martin). Không có tới 21/10 → 653 sang Sprint 13 | 22/10 hoặc Sprint 13 |
+| [DSR-590](https://sutrix.atlassian.net/browse/DSR-590) 環境配慮型製品 (mới giao 19/10) | [Dev] In Testing; demo C14 TOP `/master/ja/test-space/dsr-590-eco-top-page`, Ngọc nhờ check styling | agent JOB-20261019-08 (C14 auto 6 TC) + -09 (styling PC/SP) → Claude so Figma C14 20/10 | C15 chưa có trang (**Ngọc**) · Figma C15/SP (**Quentin**, Q36) | C14: 22/10 · C15: theo dev |
 
 Bug Dat theo dõi (không giao Dat): DSR-647 video liên quan (đợi **Martin** re-preview) · DSR-457 product detail (đợi **Ngọc** R1, **Kohei** 2 quyết định PM – mặc định 20/10; #10 QA-PT tối nay) · DSR-433 mail: **SendGrid trial hết hạn 19/10** → TC gửi mail (4–14, 18–20) ⛔ chờ tài khoản chính thức (ticket riêng, Nakamoto/Quentin); làm được ngay: TC 1–3 (QA-PT), 16–17 (agent IDLE-13), 21–22 (review).
 
@@ -37,10 +38,10 @@ Bug Dat theo dõi (không giao Dat): DSR-647 video liên quan (đợi **Martin**
 ## 4. 🤖 Agents
 | Lane | Hàng đợi (tự chạy, không cần ai) | Hold (07:45 tự chuyển khi đủ điều kiện) |
 |---|---|---|
-| claude-code | **JOB-20261019-07** (552-014 retest, DSR-651 fixed) | 529 run (-02, -15-12; cần Night Report TD-529 Pass) · 647-P3 (-03) · 566 (-16-08) · regression sau merge overlay (-05) |
-| codex | — | 529 visual (-04) · 566 visual (-16-11) · visual diff sau merge (-06) |
+| claude-code | **JOB-20261019-08** (590 C14 demo, 6 TC) | 529 run (-02, -15-12; cần Night Report TD-529 Pass) · 647-P3 (-03) · 566 (-16-08) · regression sau merge overlay (-05) |
+| codex | **JOB-20261019-09** (590 styling C14 PC/SP) | 529 visual (-04) · 566 visual (-16-11) · visual diff sau merge (-06) |
 Kết quả 19/10: JOB-20261019-01 ✅ 5/5 (557 CATV-016/017, 647-P2) · IDLE-07 regression 82 pass / 32 fail – không fail mới là bug (fail = data/env/test hoặc trùng bug/câu hỏi đã mở) · IDLE-13 ✅ 433 016/017 · IDLE-10/11/12 scaffold 589/590/227 (trang chưa có → skip) · IDLE-16 visual: list-catalog diff 23% (data), product-detail capture timeout.
 
 ## 5. TC (Jira sub-task `qa-tc`)
 Backlog 17/17 xong · DSR-531/567 Done 19/10 · việc kế: re-baseline 15 TC DSR-585 khi 項目fix版 review xong (Quentin 19/10).
-Night TC job 19/10 18:09: done 0/0 · upload queue pending 0 / fail 0 · auto-added 0 (DSR-653 = Test task của 566, phủ bởi DSR-618; DSR-571 phủ bởi DSR-623) · job agent đã xếp 0 · **TC backlog trống 2026-10-19 18:09**
+Night TC job 19/10 19:08: done 0/0 · upload queue pending 0 / fail 0 · auto-added 0 (DSR-590 mới giao Dat – đã có TC DSR-629) · job agent đã xếp 2 (JOB-20261019-08/-09, DSR-590 C14) · **TC backlog trống 2026-10-19 19:08**
