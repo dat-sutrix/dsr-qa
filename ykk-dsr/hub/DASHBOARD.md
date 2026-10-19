@@ -44,4 +44,4 @@ Kết quả 19/10: JOB-20261019-01 ✅ 5/5 (557 CATV-016/017, 647-P2) · IDLE-07
 
 ## 5. TC (Jira sub-task `qa-tc`)
 Backlog 17/17 xong · DSR-531/567 Done 19/10 · việc kế: re-baseline 15 TC DSR-585 khi 項目fix版 review xong (Quentin 19/10).
-Night TC job 19/10 20:13: done 0/0 · upload queue pending 0 / fail 0 · auto-added 0 (Jira 10 ticket giao Dat, đều đã có TC hoặc là bug của 552) · job agent đã xếp 0 · DSR-585 項目fix版 vẫn đang review (Tsukiji 11:19) → chưa re-baseline · **TC backlog trống 2026-10-19 20:13**
+Night TC job 19/10 21:11: done 0/0 · upload queue pending 0 / fail 0 · auto-added 0 (Jira 10 ticket giao Dat, không đổi so với 20:13) · job agent đã xếp 0 · DSR-585 項目fix版 chưa có cập nhật → chưa re-baseline · **TC backlog trống 2026-10-19 21:11**

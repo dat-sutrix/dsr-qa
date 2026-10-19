@@ -55,5 +55,6 @@
 | 2026-10-19 18:09 | — | backlog trống · Jira check: auto-added 0 (653→618, 571→623) · upload pending 0 / fail 0 (runner chạy 19/10 04:14 UTC, 23/23 done) | ~3' |
 | 2026-10-19 19:08 | DSR-590 (job) | backlog trống · Jira check: auto-added 0 (DSR-590 mới giao Dat, đã có TC DSR-629) · 590 [Dev] In Testing + demo C14 → JOB-20261019-08/-09 queue (2b) · upload pending 0 / fail 0 | ~7' |
 | 2026-10-19 20:13 | — | backlog trống · Jira check: auto-added 0 · DSR-585 fix版 vẫn in review → chưa re-baseline · upload pending 0 / fail 0 | ~3' |
+| 2026-10-19 21:11 | — | backlog trống · Jira check: auto-added 0 · DSR-585 fix版 chưa cập nhật · upload pending 0 / fail 0 · báo cáo cuối ngày | ~3' |
 
 - 2026-10-19 11:40 DSR-585: 項目fix版 xuất hiện (Quentin comment 61280, đang review, sheet 1Rxiw3S-3AkmAP2Jbzkx3FI1-3S3jYbOo). Khi review xong (Jira comment) → re-baseline 15 TC từ v0.1 sang bản fix, ưu tiên sau ticket mới giao Dat.
