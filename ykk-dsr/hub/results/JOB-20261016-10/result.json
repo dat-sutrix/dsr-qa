@@ -1,0 +1,64 @@
+{
+  "job": "JOB-20261016-10",
+  "agent": "claude-code",
+  "us": "DSR-557",
+  "env": "dev",
+  "started": "2026-10-19T04:15:37Z",
+  "finished": "2026-10-19T04:18:35Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "result": "pass",
+      "error": "11/12 qa190 cards have title+thumbnail+date; QA190 PDF form required not rendered (annotation: suspect product or DSR-570 gate); e-book cards now render",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "result": "fail",
+      "error": "href=ebookUrl, target=_blank, rel=noopener, navigated to ebookUrl OK; popup redirected to ykkdigitalshowroom.com/en/ which has 2 forms (site search + webfont loader), so expect(forms).toBe(0) fails",
+      "evidence": "evidence/DSR-CATV-016_ja.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "result": "fail",
+      "error": "href=ebookUrl, target=_blank, rel=noopener, navigated to ebookUrl OK; popup redirected to ykkdigitalshowroom.com/en/ which has 2 forms (site search + webfont loader), so expect(forms).toBe(0) fails",
+      "evidence": "evidence/DSR-CATV-017_ja.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "result": "pass",
+      "error": "11/12 qa190 cards have title+thumbnail+date; QA190 PDF form required not rendered (annotation: suspect product or DSR-570 gate); e-book cards now render",
+      "evidence": "",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "result": "fail",
+      "error": "href=ebookUrl, target=_blank, rel=noopener, navigated to ebookUrl OK; popup redirected to ykkdigitalshowroom.com/en/ which has 1 forms (site search + webfont loader), so expect(forms).toBe(0) fails",
+      "evidence": "evidence/DSR-CATV-016_en.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "result": "fail",
+      "error": "href=ebookUrl, target=_blank, rel=noopener, navigated to ebookUrl OK; popup redirected to ykkdigitalshowroom.com/en/ which has 1 forms (site search + webfont loader), so expect(forms).toBe(0) fails",
+      "evidence": "evidence/DSR-CATV-017_en.png",
+      "suspect": "test"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "results/DSR-557/DEV/automation-run-20261019-job10.md"
+  ],
+  "questions": []
+}
