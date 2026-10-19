@@ -1,0 +1,19 @@
+{
+  "job": "JOB-20261019-07",
+  "agent": "claude-code",
+  "us": "DSR-552",
+  "env": "dev",
+  "started": "2026-10-19T10:23:08Z",
+  "finished": "2026-10-19T10:23:36Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-BREAD-014", "lang": "ja", "result": "pass",
+      "error": "", "evidence": "" },
+    { "tc": "DSR-BREAD-014", "lang": "en", "result": "blocked",
+      "error": "No en test (ja-only spec). /master/en/test-space/dsr552-edge/long and /long/leaf return 404 on DEV, so en long-name fixture missing",
+      "evidence": "", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}
