@@ -1,0 +1,32 @@
+{
+  "job": "JOB-20261019-09",
+  "agent": "codex",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-19T12:16:04Z",
+  "finished": "2026-10-19T12:16:24Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ECO-014",
+      "lang": "ja",
+      "result": "pass",
+      "error": "captured; pass denotes capture completion only, visual verdict reserved for Claude web",
+      "evidence": "evidence/DSR-ECO-014_DEV_01.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-ECO-016",
+      "lang": "ja",
+      "result": "pass",
+      "error": "scrollWidth=375 PASS; arrow and swipe work; horizontal card fit yes; full vertical fit only after scrolling",
+      "evidence": "evidence/DSR-ECO-016_DEV_01.png",
+      "suspect": "product"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/eco-products/DSR-590.visual-capture.spec.ts"
+  ],
+  "questions": []
+}

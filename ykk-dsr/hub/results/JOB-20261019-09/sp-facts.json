@@ -1,0 +1,539 @@
+{
+  "navigation": {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+    "httpStatus": 200,
+    "browser": "153.0.8010.12"
+  },
+  "emulation": "iPhone 13 / Chromium; viewport overridden to 375×812; screenshots CSS pixels",
+  "initial": {
+    "scrollX": 0,
+    "scrollY": 0,
+    "scrollWidth": 375,
+    "innerWidth": 375,
+    "viewportHeight": 812,
+    "block": {
+      "x": 0,
+      "y": 146,
+      "width": 375,
+      "height": 973.390625,
+      "right": 375,
+      "bottom": 1119.390625
+    },
+    "activeIndex": "0",
+    "active": {
+      "x": 16,
+      "y": 340.390625,
+      "width": 343,
+      "height": 609,
+      "right": 359,
+      "bottom": 949.390625
+    },
+    "inactive": {
+      "x": 375,
+      "y": 340.390625,
+      "width": 343,
+      "height": 609,
+      "right": 718,
+      "bottom": 949.390625
+    },
+    "gap": 16,
+    "heading": {
+      "text": "環境配慮型商品",
+      "x": 16,
+      "y": 227.796875,
+      "width": 343,
+      "height": 40.796875,
+      "right": 359,
+      "bottom": 268.59375,
+      "fontSize": "24px",
+      "lineHeight": "40.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "cardHeading": {
+      "text": "bluesign認証商品",
+      "x": 48,
+      "y": 546.390625,
+      "width": 279,
+      "height": 59,
+      "right": 327,
+      "bottom": 605.390625,
+      "fontSize": "24px",
+      "lineHeight": "normal",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "summary": {
+      "text": "bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。",
+      "x": 48,
+      "y": 625.390625,
+      "width": 279,
+      "height": 224,
+      "right": 327,
+      "bottom": 849.390625,
+      "fontSize": "16px",
+      "lineHeight": "32px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "lead": {
+      "text": "ここに説明文が入りますここに説明文が入ります",
+      "x": 16,
+      "y": 292.59375,
+      "width": 343,
+      "height": 23.796875,
+      "right": 359,
+      "bottom": 316.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "viewMore": {
+      "text": "VIEW MORE",
+      "x": 69,
+      "y": 873.390625,
+      "width": 237,
+      "height": 44,
+      "right": 306,
+      "bottom": 917.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "inactiveLabel": {
+      "text": "bluesign認証商品",
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "nextArrow": {
+      "x": 319,
+      "y": 973.390625,
+      "width": 40,
+      "height": 40,
+      "right": 359,
+      "bottom": 1013.390625
+    },
+    "finderButton": {
+      "x": 69.5,
+      "y": 1029.390625,
+      "width": 236,
+      "height": 44,
+      "right": 305.5,
+      "bottom": 1073.390625
+    },
+    "images": [
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1988f633afb48d98785dcf29ef2be9001286ba99b.png?width=3200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1befd03ef83ec8dd25c26675a1f2bcfce153dca24.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-sp.svg",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-sp.svg",
+        "loaded": true
+      }
+    ]
+  },
+  "afterArrow": {
+    "scrollX": 0,
+    "scrollY": 587,
+    "scrollWidth": 375,
+    "innerWidth": 375,
+    "viewportHeight": 812,
+    "block": {
+      "x": 0,
+      "y": -441,
+      "width": 375,
+      "height": 973.390625,
+      "right": 375,
+      "bottom": 532.390625
+    },
+    "activeIndex": "1",
+    "active": {
+      "x": 16,
+      "y": -246.609375,
+      "width": 343,
+      "height": 609,
+      "right": 359,
+      "bottom": 362.390625
+    },
+    "inactive": {
+      "x": 375,
+      "y": -246.609375,
+      "width": 343,
+      "height": 609,
+      "right": 718,
+      "bottom": 362.390625
+    },
+    "gap": 16,
+    "heading": {
+      "text": "環境配慮型商品",
+      "x": 16,
+      "y": -359.203125,
+      "width": 343,
+      "height": 40.796875,
+      "right": 359,
+      "bottom": -318.40625,
+      "fontSize": "24px",
+      "lineHeight": "40.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "cardHeading": {
+      "text": "bluesign認証商品",
+      "x": 48,
+      "y": -40.609375,
+      "width": 279,
+      "height": 59,
+      "right": 327,
+      "bottom": 18.390625,
+      "fontSize": "24px",
+      "lineHeight": "normal",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "summary": {
+      "text": "bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。",
+      "x": 48,
+      "y": 38.390625,
+      "width": 279,
+      "height": 224,
+      "right": 327,
+      "bottom": 262.390625,
+      "fontSize": "16px",
+      "lineHeight": "32px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "lead": {
+      "text": "ここに説明文が入りますここに説明文が入ります",
+      "x": 16,
+      "y": -294.40625,
+      "width": 343,
+      "height": 23.796875,
+      "right": 359,
+      "bottom": -270.609375,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "viewMore": {
+      "text": "VIEW MORE",
+      "x": 69,
+      "y": 286.390625,
+      "width": 237,
+      "height": 44,
+      "right": 306,
+      "bottom": 330.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "inactiveLabel": {
+      "text": "bluesign認証商品",
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "nextArrow": {
+      "x": 319,
+      "y": 386.390625,
+      "width": 40,
+      "height": 40,
+      "right": 359,
+      "bottom": 426.390625
+    },
+    "finderButton": {
+      "x": 69.5,
+      "y": 442.390625,
+      "width": 236,
+      "height": 44,
+      "right": 305.5,
+      "bottom": 486.390625
+    },
+    "images": [
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1988f633afb48d98785dcf29ef2be9001286ba99b.png?width=3200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1befd03ef83ec8dd25c26675a1f2bcfce153dca24.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-sp.svg",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-sp.svg",
+        "loaded": true
+      }
+    ]
+  },
+  "afterSwipe": {
+    "scrollX": 0,
+    "scrollY": 340,
+    "scrollWidth": 375,
+    "innerWidth": 375,
+    "viewportHeight": 812,
+    "block": {
+      "x": 0,
+      "y": -194,
+      "width": 375,
+      "height": 973.390625,
+      "right": 375,
+      "bottom": 779.390625
+    },
+    "activeIndex": "2",
+    "active": {
+      "x": 16,
+      "y": 0.390625,
+      "width": 343,
+      "height": 609,
+      "right": 359,
+      "bottom": 609.390625
+    },
+    "inactive": {
+      "x": 375,
+      "y": 0.390625,
+      "width": 343,
+      "height": 609,
+      "right": 718,
+      "bottom": 609.390625
+    },
+    "gap": 16,
+    "heading": {
+      "text": "環境配慮型商品",
+      "x": 16,
+      "y": -112.203125,
+      "width": 343,
+      "height": 40.796875,
+      "right": 359,
+      "bottom": -71.40625,
+      "fontSize": "24px",
+      "lineHeight": "40.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "cardHeading": {
+      "text": "bluesign認証商品",
+      "x": 48,
+      "y": 206.390625,
+      "width": 279,
+      "height": 59,
+      "right": 327,
+      "bottom": 265.390625,
+      "fontSize": "24px",
+      "lineHeight": "normal",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "summary": {
+      "text": "bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。",
+      "x": 48,
+      "y": 285.390625,
+      "width": 279,
+      "height": 224,
+      "right": 327,
+      "bottom": 509.390625,
+      "fontSize": "16px",
+      "lineHeight": "32px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "lead": {
+      "text": "ここに説明文が入りますここに説明文が入ります",
+      "x": 16,
+      "y": -47.40625,
+      "width": 343,
+      "height": 23.796875,
+      "right": 359,
+      "bottom": -23.609375,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "viewMore": {
+      "text": "VIEW MORE",
+      "x": 69,
+      "y": 533.390625,
+      "width": 237,
+      "height": 44,
+      "right": 306,
+      "bottom": 577.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "inactiveLabel": {
+      "text": "bluesign認証商品",
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "right": 0,
+      "bottom": 0,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "none",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "nextArrow": {
+      "x": 319,
+      "y": 633.390625,
+      "width": 40,
+      "height": 40,
+      "right": 359,
+      "bottom": 673.390625
+    },
+    "finderButton": {
+      "x": 69.5,
+      "y": 689.390625,
+      "width": 236,
+      "height": 44,
+      "right": 305.5,
+      "bottom": 733.390625
+    },
+    "images": [
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1988f633afb48d98785dcf29ef2be9001286ba99b.png?width=3200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1a158381821675934a2939c5201f1d4c9151bc0ab.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1d0bc570a665334992078117d4155d3da00a722a3.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-sp.svg",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-sp.svg",
+        "loaded": true
+      }
+    ]
+  },
+  "swipe": {
+    "fromX": 300,
+    "toX": 70,
+    "y": 304.890625,
+    "method": "CDP touchStart/touchMove/touchEnd"
+  },
+  "checks": {
+    "scrollWidthPass": true,
+    "arrowWorks": true,
+    "swipeWorks": true,
+    "activeHorizontallyInside": true
+  }
+}

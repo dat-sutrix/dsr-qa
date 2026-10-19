@@ -1,0 +1,470 @@
+{
+  "navigation": {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+    "httpStatus": 200,
+    "browser": "153.0.8010.12"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "initial": {
+    "scrollX": 0,
+    "scrollY": 0,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "viewportHeight": 900,
+    "block": {
+      "x": 0,
+      "y": 230,
+      "width": 1440,
+      "height": 947.390625,
+      "right": 1440,
+      "bottom": 1177.390625
+    },
+    "activeIndex": "0",
+    "active": {
+      "x": 498.5,
+      "y": 448.390625,
+      "width": 443,
+      "height": 556,
+      "right": 941.5,
+      "bottom": 1004.390625
+    },
+    "inactive": {
+      "x": 949.5,
+      "y": 473.390625,
+      "width": 150,
+      "height": 506,
+      "right": 1099.5,
+      "bottom": 979.390625
+    },
+    "gap": 8,
+    "heading": {
+      "text": "環境配慮型商品",
+      "x": 40,
+      "y": 335.796875,
+      "width": 1360,
+      "height": 40.796875,
+      "right": 1400,
+      "bottom": 376.59375,
+      "fontSize": "24px",
+      "lineHeight": "40.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "cardHeading": {
+      "text": "bluesign認証商品",
+      "x": 530.5,
+      "y": 654.390625,
+      "width": 379,
+      "height": 59,
+      "right": 909.5,
+      "bottom": 713.390625,
+      "fontSize": "24px",
+      "lineHeight": "normal",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "summary": {
+      "text": "bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。",
+      "x": 530.5,
+      "y": 733.390625,
+      "width": 379,
+      "height": 160,
+      "right": 909.5,
+      "bottom": 893.390625,
+      "fontSize": "16px",
+      "lineHeight": "32px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "flow-root",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "lead": {
+      "text": "ここに説明文が入りますここに説明文が入ります",
+      "x": 40,
+      "y": 400.59375,
+      "width": 1360,
+      "height": 23.796875,
+      "right": 1400,
+      "bottom": 424.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "viewMore": {
+      "text": "VIEW MORE",
+      "x": 601.5,
+      "y": 917.390625,
+      "width": 237,
+      "height": 44,
+      "right": 838.5,
+      "bottom": 961.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "inactiveLabel": {
+      "text": "bluesign認証商品",
+      "x": 1010.90625,
+      "y": 629.390625,
+      "width": 27.1875,
+      "height": 314,
+      "right": 1038.09375,
+      "bottom": 943.390625,
+      "fontSize": "16px",
+      "lineHeight": "27.2px",
+      "writingMode": "vertical-rl",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "nextArrow": {
+      "x": 1340,
+      "y": 1028.390625,
+      "width": 60,
+      "height": 60,
+      "right": 1400,
+      "bottom": 1088.390625
+    },
+    "finderButton": {
+      "x": 602,
+      "y": 1093.390625,
+      "width": 236,
+      "height": 44,
+      "right": 838,
+      "bottom": 1137.390625
+    },
+    "images": [
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1988f633afb48d98785dcf29ef2be9001286ba99b.png?width=3200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_18cf2a171761b46ef4972485dd83e89c94b52a7ec.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_193c3f40a65e9809867afd14c30d8481c3efa7a41.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_14a24d25c69cd3642f69441297709ce07b208290c.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_19210de693430f5c28e7e189d369bfa02530f10de.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_14a24d25c69cd3642f69441297709ce07b208290c.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1a5b7dccae84b0f6f6a8a6f57d06d6eeefb64eefc.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_127021094501aa60769d1fee790040f888affeb15.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1befd03ef83ec8dd25c26675a1f2bcfce153dca24.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1befd03ef83ec8dd25c26675a1f2bcfce153dca24.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1a158381821675934a2939c5201f1d4c9151bc0ab.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1d0bc570a665334992078117d4155d3da00a722a3.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_19210de693430f5c28e7e189d369bfa02530f10de.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_14a24d25c69cd3642f69441297709ce07b208290c.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-pc.svg",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-pc.svg",
+        "loaded": true
+      }
+    ]
+  },
+  "afterNext": {
+    "scrollX": 0,
+    "scrollY": 0,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "viewportHeight": 900,
+    "block": {
+      "x": 0,
+      "y": 230,
+      "width": 1440,
+      "height": 947.390625,
+      "right": 1440,
+      "bottom": 1177.390625
+    },
+    "activeIndex": "1",
+    "active": {
+      "x": 498.5,
+      "y": 448.390625,
+      "width": 443,
+      "height": 556,
+      "right": 941.5,
+      "bottom": 1004.390625
+    },
+    "inactive": {
+      "x": 949.5,
+      "y": 473.390625,
+      "width": 150,
+      "height": 506,
+      "right": 1099.5,
+      "bottom": 979.390625
+    },
+    "gap": 8,
+    "heading": {
+      "text": "環境配慮型商品",
+      "x": 40,
+      "y": 335.796875,
+      "width": 1360,
+      "height": 40.796875,
+      "right": 1400,
+      "bottom": 376.59375,
+      "fontSize": "24px",
+      "lineHeight": "40.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "cardHeading": {
+      "text": "bluesign認証商品",
+      "x": 530.5,
+      "y": 654.390625,
+      "width": 379,
+      "height": 59,
+      "right": 909.5,
+      "bottom": 713.390625,
+      "fontSize": "24px",
+      "lineHeight": "normal",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "summary": {
+      "text": "bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。",
+      "x": 530.5,
+      "y": 733.390625,
+      "width": 379,
+      "height": 160,
+      "right": 909.5,
+      "bottom": 893.390625,
+      "fontSize": "16px",
+      "lineHeight": "32px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "flow-root",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "lead": {
+      "text": "ここに説明文が入りますここに説明文が入ります",
+      "x": 40,
+      "y": 400.59375,
+      "width": 1360,
+      "height": 23.796875,
+      "right": 1400,
+      "bottom": 424.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "viewMore": {
+      "text": "VIEW MORE",
+      "x": 601.5,
+      "y": 917.390625,
+      "width": 237,
+      "height": 44,
+      "right": 838.5,
+      "bottom": 961.390625,
+      "fontSize": "14px",
+      "lineHeight": "23.8px",
+      "writingMode": "horizontal-tb",
+      "transform": "none",
+      "rotate": "none",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "inactiveLabel": {
+      "text": "bluesign認証商品",
+      "x": 1010.90625,
+      "y": 629.390625,
+      "width": 27.1875,
+      "height": 314,
+      "right": 1038.09375,
+      "bottom": 943.390625,
+      "fontSize": "16px",
+      "lineHeight": "27.2px",
+      "writingMode": "vertical-rl",
+      "transform": "none",
+      "rotate": "none",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "nextArrow": {
+      "x": 1340,
+      "y": 1028.390625,
+      "width": 60,
+      "height": 60,
+      "right": 1400,
+      "bottom": 1088.390625
+    },
+    "finderButton": {
+      "x": 602,
+      "y": 1093.390625,
+      "width": 236,
+      "height": 44,
+      "right": 838,
+      "bottom": 1137.390625
+    },
+    "images": [
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1988f633afb48d98785dcf29ef2be9001286ba99b.png?width=3200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_193c3f40a65e9809867afd14c30d8481c3efa7a41.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_19210de693430f5c28e7e189d369bfa02530f10de.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_14a24d25c69cd3642f69441297709ce07b208290c.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1a5b7dccae84b0f6f6a8a6f57d06d6eeefb64eefc.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_127021094501aa60769d1fee790040f888affeb15.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1befd03ef83ec8dd25c26675a1f2bcfce153dca24.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1befd03ef83ec8dd25c26675a1f2bcfce153dca24.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1a158381821675934a2939c5201f1d4c9151bc0ab.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1d0bc570a665334992078117d4155d3da00a722a3.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_19210de693430f5c28e7e189d369bfa02530f10de.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_14a24d25c69cd3642f69441297709ce07b208290c.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_100d0220774d84f141b5f3b9388435bee44745257.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_1befd03ef83ec8dd25c26675a1f2bcfce153dca24.png?width=280&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/media_18cf2a171761b46ef4972485dd83e89c94b52a7ec.png?width=1200&format=webply&optimize=medium",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-pc.svg",
+        "loaded": true
+      },
+      {
+        "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/eco-carousel/assets/arrow-pc.svg",
+        "loaded": true
+      }
+    ]
+  },
+  "verdict": "captured"
+}
