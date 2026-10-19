@@ -58,3 +58,13 @@ json2html Mustache template (`cf-templates/video.html`; product/catalog to do) w
 - ~~No `relatedMovies` in the DEV excerpt~~ → resolved by the update above.
 - Two flags: `isActive` (CF related, hides detail page) vs `isUnavailable` (CF commune DM_movie, DSR-501 point 2) – relation not defined.
 - "Today's test CFs live elsewhere": QA data `qa501-*`, `qa190-*` under `/content/dam/ykk/common/product-cf/test/` will **not** generate overlay pages.
+
+## Update 2026-10-19 (Martin, chat DSR || Dev - QC) – merge to main 2026-10-20 morning
+- After merge, DEV main: product and video detail pages exist **only** for items set up in the new folders; any other product/video → "page not found". Product list and video list show only those items. Sample (fake) data removed. Staging/production unchanged.
+- dev-eds.ykkdigitalshowroom.com: lists show an error for a few days (server setting); usual review links (.aem.page/.aem.live) not affected → QA uses .aem.page/.aem.live only.
+- Authoring (per item, per language ja/en/cn):
+  1. Content CF: product `/content/dam/common/{lang}/products/{id}`, video `/content/dam/common/{lang}/movies/{id}` → fill, publish.
+  2. DSR CF: product `/content/dam/dsr/{lang}/products/{id}`, video `/content/dam/dsr/{lang}/movies/standard/{id}` (**tech talk: `/movies/tech/`**) – same name; pick the content CF (same language); tick **表示フラグ / isActive**; related articles / LPs = **site pages** (not CFs); publish → creates the page.
+  3. Check `/{lang}/products/{id}` or `/{lang}/library/video/{id}`.
+- Names: lowercase, digits, "-" only; no prefix, no subfolder. Never rename a published CF. Content change = publish content CF, then republish DSR CF.
+- QA impact: QA CFs under `/content/dam/ykk/common/product-cf/test/` (qa190-*, qa501-*) are outside the new folders → their pages/list entries are expected to disappear after merge (not a bug). Re-seed in the new folders.

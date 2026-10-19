@@ -26,6 +26,12 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 **Agent – chạy ngay không chờ (19/10):** JOB-20261019-01 (557 016/017 + 647 P2: sửa phạm vi assertion theo quyết định QA) · IDLE-07/10/11/12/13 · codex IDLE-16. Hold có điều kiện: -02/-04 (529, sau Night Report), -03 (552-014 khi DSR-651 fix; 647-P3 khi re-preview).
 Quyết định QA 19/10: 557-016/017 đếm form chỉ trên DSR (trang ngoài có form search = không phải gate) · 647-P2 bỏ assertion "static HTML" (BL-OVL-1: block lọc phía client) · 173 MOVIE-014/033 fail = CF movieid-01 bị xóa movieSourceId/relatedProducts (data, ngoài sprint – ghi nhận, chưa sửa).
 
+**⚠ Merge overlay (Martin) sáng T3 20/10 – ảnh hưởng (chốt 19/10 14:45):**
+- Sau merge, trang/danh sách sản phẩm & video trên DEV chỉ còn item trong folder mới (`/content/dam/common|dsr/{lang}/products|movies/…`); dữ liệu mẫu bị xóa. Data QA cũ (`/content/dam/ykk/common/product-cf/test/` – qa190-mv-*, qa501-*) sẽ mất khỏi trang → **không phải bug**.
+- Ảnh hưởng: DSR-557 (phần video) · DSR-647/587 retest · 586 · regression DSR-173/278. Không ảnh hưởng: 552, 529, 566/653, 570 (catalog – chờ xác nhận Martin).
+- Agent: JOB-20261019-05 (regression sau merge) + -06 (visual diff vs IDLE-16 trước merge) – hold, tự chạy khi trang main có overlay.
+- QA-PT tối T3 20/10 (thay thứ tự cũ): (1) seed lại movie của 557 theo cách mới (content CF + DSR CF, ja+en) · (2) TD-586/587 theo cách mới · (3) 570 manual. → agent rerun 557 sáng 21/10; **557 Done đích dời 21/10 → 22/10**.
+
 **Lịch theo ngày**
 | Ngày | Dat (giờ hành chính) | Agent | QA-PT (tối) | Claude tự động |
 |---|---|---|---|---|
