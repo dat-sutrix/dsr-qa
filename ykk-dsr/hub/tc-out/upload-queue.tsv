@@ -8,17 +8,17 @@ done 2026-10-16T09:57:02Z 26558	ykk-dsr/hub/tc-out/[Sutrix] DSR -503- [AEM] Prod
 done 2026-10-16T09:57:27Z 25224	ykk-dsr/hub/tc-out/[Sutrix] DSR -583- [製品一覧] スマホ表示時の製品カードを2列に固定する.xlsx	1W80lQF61y5Wf1jdvPdqmy3bfl2UdjKLM	DSR-583
 done 2026-10-16T13:16:05Z 29773	ykk-dsr/hub/tc-out/[Sutrix] DSR -192- [ページ固有ブロック] 資料ダウンロード（カタログDL・ダウンロードフォーム）.xlsx	1J1sfUzNiabjU505T_XtcyXn78VcsvDXL	DSR-570
 done 2026-10-16T13:16:28Z 7514	ykk-dsr/hub/tc-out/[Sutrix] DSR -192- [ページ固有ブロック] 資料ダウンロード（カタログDL・ダウンロードフォーム）_TestData.xlsx	1J1sfUzNiabjU505T_XtcyXn78VcsvDXL	DSR-570
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -585- [AEM] 製品CF 改修（項目fix版対応）.xlsx	14hkhTNRHi5uD5pE7hKkpfsVwvsbTHiI-	DSR-585
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -585- [AEM] 製品CF 改修（項目fix版対応）_TestData.xlsx	14hkhTNRHi5uD5pE7hKkpfsVwvsbTHiI-	DSR-585
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -586- [レイアウト] 製品詳細 Overlay化（json2html）・項目fix版連携.xlsx	1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU	DSR-586
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -586- [レイアウト] 製品詳細 Overlay化（json2html）・項目fix版連携_TestData.xlsx	1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU	DSR-586
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -587- [レイアウト] 動画詳細 Overlay化（json2html）.xlsx	1OG7EfUNxiJFDhsQZGO-kXLfi_-1XmJuM	DSR-587
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -587- [レイアウト] 動画詳細 Overlay化（json2html）_TestData.xlsx	1OG7EfUNxiJFDhsQZGO-kXLfi_-1XmJuM	DSR-587
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -589- [共通] アイコン差替（A03確定後）.xlsx	1KpCgawqzUJzkTKYxwjgKer0tnL6w9vGU	DSR-589
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -589- [共通] アイコン差替（A03確定後）_TestData.xlsx	1KpCgawqzUJzkTKYxwjgKer0tnL6w9vGU	DSR-589
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -590- [レイアウト] 環境配慮型製品（TOP／詳細テンプレート）.xlsx	1Gnm1FW1-Vs49M69pMG0pdA8X5bDQYjeQ	DSR-590
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -590- [レイアウト] 環境配慮型製品（TOP／詳細テンプレート）_TestData.xlsx	1Gnm1FW1-Vs49M69pMG0pdA8X5bDQYjeQ	DSR-590
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -227- [移行] Asset移行（技術部分：DAM構造・Dynamic Media）.xlsx	11a8loL31FLDqQ0v55gTB7pIeGST2m2zu	DSR-227
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -227- [移行] Asset移行（技術部分：DAM構造・Dynamic Media）_TestData.xlsx	11a8loL31FLDqQ0v55gTB7pIeGST2m2zu	DSR-227
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -433- [連携] メール送信連携（SendGrid 送信基盤）.xlsx	1zdXupq6-Yvyl7ITx9GSBnbW99LBNoUcF	DSR-433
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -433- [連携] メール送信連携（SendGrid 送信基盤）_TestData.xlsx	1zdXupq6-Yvyl7ITx9GSBnbW99LBNoUcF	DSR-433
+done 2026-10-19T04:12:03Z 28119	ykk-dsr/hub/tc-out/[Sutrix] DSR -585- [AEM] 製品CF 改修（項目fix版対応）.xlsx	14hkhTNRHi5uD5pE7hKkpfsVwvsbTHiI-	DSR-585
+done 2026-10-19T04:12:43Z 7439	ykk-dsr/hub/tc-out/[Sutrix] DSR -585- [AEM] 製品CF 改修（項目fix版対応）_TestData.xlsx	14hkhTNRHi5uD5pE7hKkpfsVwvsbTHiI-	DSR-585
+done 2026-10-19T04:12:48Z 29091	ykk-dsr/hub/tc-out/[Sutrix] DSR -586- [レイアウト] 製品詳細 Overlay化（json2html）・項目fix版連携.xlsx	1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU	DSR-586
+done 2026-10-19T04:12:52Z 7577	ykk-dsr/hub/tc-out/[Sutrix] DSR -586- [レイアウト] 製品詳細 Overlay化（json2html）・項目fix版連携_TestData.xlsx	1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU	DSR-586
+done 2026-10-19T04:13:15Z 28336	ykk-dsr/hub/tc-out/[Sutrix] DSR -587- [レイアウト] 動画詳細 Overlay化（json2html）.xlsx	1OG7EfUNxiJFDhsQZGO-kXLfi_-1XmJuM	DSR-587
+done 2026-10-19T04:13:36Z 7830	ykk-dsr/hub/tc-out/[Sutrix] DSR -587- [レイアウト] 動画詳細 Overlay化（json2html）_TestData.xlsx	1OG7EfUNxiJFDhsQZGO-kXLfi_-1XmJuM	DSR-587
+done 2026-10-19T04:13:41Z 27854	ykk-dsr/hub/tc-out/[Sutrix] DSR -589- [共通] アイコン差替（A03確定後）.xlsx	1KpCgawqzUJzkTKYxwjgKer0tnL6w9vGU	DSR-589
+done 2026-10-19T04:13:46Z 7474	ykk-dsr/hub/tc-out/[Sutrix] DSR -589- [共通] アイコン差替（A03確定後）_TestData.xlsx	1KpCgawqzUJzkTKYxwjgKer0tnL6w9vGU	DSR-589
+done 2026-10-19T04:13:50Z 29192	ykk-dsr/hub/tc-out/[Sutrix] DSR -590- [レイアウト] 環境配慮型製品（TOP／詳細テンプレート）.xlsx	1Gnm1FW1-Vs49M69pMG0pdA8X5bDQYjeQ	DSR-590
+done 2026-10-19T04:13:55Z 7673	ykk-dsr/hub/tc-out/[Sutrix] DSR -590- [レイアウト] 環境配慮型製品（TOP／詳細テンプレート）_TestData.xlsx	1Gnm1FW1-Vs49M69pMG0pdA8X5bDQYjeQ	DSR-590
+done 2026-10-19T04:14:00Z 30639	ykk-dsr/hub/tc-out/[Sutrix] DSR -227- [移行] Asset移行（技術部分：DAM構造・Dynamic Media）.xlsx	11a8loL31FLDqQ0v55gTB7pIeGST2m2zu	DSR-227
+done 2026-10-19T04:14:39Z 8153	ykk-dsr/hub/tc-out/[Sutrix] DSR -227- [移行] Asset移行（技術部分：DAM構造・Dynamic Media）_TestData.xlsx	11a8loL31FLDqQ0v55gTB7pIeGST2m2zu	DSR-227
+done 2026-10-19T04:14:44Z 30846	ykk-dsr/hub/tc-out/[Sutrix] DSR -433- [連携] メール送信連携（SendGrid 送信基盤）.xlsx	1zdXupq6-Yvyl7ITx9GSBnbW99LBNoUcF	DSR-433
+done 2026-10-19T04:14:49Z 7678	ykk-dsr/hub/tc-out/[Sutrix] DSR -433- [連携] メール送信連携（SendGrid 送信基盤）_TestData.xlsx	1zdXupq6-Yvyl7ITx9GSBnbW99LBNoUcF	DSR-433
