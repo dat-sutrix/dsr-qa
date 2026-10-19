@@ -1,0 +1,142 @@
+{
+  "job": "JOB-ZZ-IDLE-10",
+  "agent": "claude-code",
+  "us": "DSR-589",
+  "env": "dev",
+  "started": "2026-10-19T05:06:44Z",
+  "finished": "2026-10-19T05:14:45Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ICON-004",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-004",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "console error: /placeholders.json HTTP 404 (non-icon fetch). Icon checks OK: 19 visible icons, 0 non-200, 0 broken, 0 missing text alternative.",
+      "evidence": "evidence/DSR-ICON-006_ja.png",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-ICON-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "console error: /placeholders.json HTTP 404 (non-icon fetch). Icon checks OK: 19 visible icons, 0 non-200, 0 broken, 0 missing text alternative.",
+      "evidence": "evidence/DSR-ICON-006_en.png",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-ICON-001",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked: TD-589-04 official icon list",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-001",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked: TD-589-04 official icon list",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-002",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked: TD-589-04 official icon list",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-002",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked: TD-589-04 official icon list",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-003",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked: TD-589-04 official icon list",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-003",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked: TD-589-04 official icon list",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-005",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked: TD-589-04 official icon list",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-007",
+      "lang": "ja",
+      "result": "skip",
+      "error": "blocked-data: TD-589-02 not identified (product detail pages 404 on DEV)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-008",
+      "lang": "ja",
+      "result": "skip",
+      "error": "blocked-data: TD-589-03 not identified (product detail pages 404 on DEV)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-009",
+      "lang": "ja",
+      "result": "skip",
+      "error": "blocked-data: TD-589-01 not identified (product detail pages 404 on DEV)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ICON-009",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-589-01 not identified (product detail pages 404 on DEV)",
+      "evidence": "",
+      "suspect": "data"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/icons/DSR-589.icons.spec.ts",
+    "pages/IconPage.ts",
+    "fixtures/dsr-589.ts",
+    "fixtures/dsr-589-inventory.cjs",
+    "results/DSR-589/DEV/temp-icon-inventory.json",
+    "results/DSR-589/DEV/temp-icon-inventory.md",
+    "results/DSR-589/DEV/automation-run-20261019.md"
+  ],
+  "questions": []
+}

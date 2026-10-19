@@ -1,0 +1,571 @@
+{
+  "td": "TD-589-06",
+  "us": "DSR-589",
+  "job": "JOB-ZZ-IDLE-10",
+  "env": "DEV",
+  "base": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "capturedStart": "2026-10-19T05:10:08.278Z",
+  "capturedEnd": "2026-10-19T05:10:25.363Z",
+  "viewport": "1440x900 Chromium",
+  "scopes": [
+    "main .product-list.block",
+    "main .product-detail.block"
+  ],
+  "note": "Temporary icon inventory captured before replacement (A2). Unique by sha1 of the fetched file. Product photos (Dynamic Media renditions) excluded.",
+  "pages": [
+    {
+      "lang": "ja",
+      "type": "product-list",
+      "path": "/master/ja/product-list",
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/product-list"
+    },
+    {
+      "lang": "ja",
+      "type": "product-list",
+      "path": "/ja/product-list",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/product-list",
+      "cards": 17,
+      "productLinks": 0,
+      "cardIds": [
+        "applicableSliderSpecial-2",
+        "productId-01x",
+        "parentProduct-2",
+        "01-0001",
+        "01-0002",
+        "01-0003",
+        "01-0004",
+        "01-0005",
+        "135",
+        "46",
+        "1107",
+        "1120",
+        "1131",
+        "productId-02",
+        "DSR361-RT-001"
+      ]
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/applicableSliderSpecial-2",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/productId-01x",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/parentProduct-2",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/01-0001",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/01-0002",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/01-0003",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/01-0004",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/01-0005",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/135",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/46",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/1107",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/1120",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/1131",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/productId-02",
+      "status": 404
+    },
+    {
+      "lang": "ja",
+      "type": "product-detail",
+      "path": "/ja/products/DSR361-RT-001",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-list",
+      "path": "/master/en/product-list",
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/product-list"
+    },
+    {
+      "lang": "en",
+      "type": "product-list",
+      "path": "/en/product-list",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/product-list",
+      "cards": 17,
+      "productLinks": 0,
+      "cardIds": [
+        "applicableSliderSpecial-2",
+        "productId-01x",
+        "parentProduct-2",
+        "01-0001",
+        "01-0002",
+        "01-0003",
+        "01-0004",
+        "01-0005",
+        "135",
+        "46",
+        "1107",
+        "1120",
+        "1131",
+        "productId-02",
+        "DSR361-RT-001"
+      ]
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/applicableSliderSpecial-2",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/productId-01x",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/parentProduct-2",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/01-0001",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/01-0002",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/01-0003",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/01-0004",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/01-0005",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/135",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/46",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/1107",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/1120",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/1131",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/productId-02",
+      "status": 404
+    },
+    {
+      "lang": "en",
+      "type": "product-detail",
+      "path": "/en/products/DSR361-RT-001",
+      "status": 404
+    }
+  ],
+  "iconCount": 5,
+  "occurrenceCount": 88,
+  "icons": [
+    {
+      "sha1": "54ed8e1bd201f5e0268c34d545df3af4b81f3882",
+      "fileName": "chevron-right.svg",
+      "urls": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/styles/icons/chevron-right.svg"
+      ],
+      "httpStatus": 200,
+      "bytes": 207,
+      "contentType": "image/svg+xml",
+      "pages": [
+        "/ja/product-list",
+        "/en/product-list"
+      ],
+      "usages": [
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "css-background",
+          "selector": "div.pl-body > aside.pl-sidebar > button.pl-filter-close::after",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": "閉じる",
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 1
+        },
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "css-background",
+          "selector": "aside.pl-sidebar > section.pl-filter-group.is-collapsed > button.pl-filter-heading::after",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": null,
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 5
+        },
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "css-background",
+          "selector": "aside.pl-sidebar > div.pl-filter-footer > button.pl-clear::after",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": null,
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 1
+        },
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "css-background",
+          "selector": "ul.pl-grid > li.pl-card > button.pl-fav-btn::after",
+          "inCard": true,
+          "alt": null,
+          "ariaLabel": "マイリストに登録する",
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 17
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "css-background",
+          "selector": "div.pl-body > aside.pl-sidebar > button.pl-filter-close::after",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": "Close",
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 1
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "css-background",
+          "selector": "aside.pl-sidebar > section.pl-filter-group.is-collapsed > button.pl-filter-heading::after",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": null,
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 5
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "css-background",
+          "selector": "aside.pl-sidebar > div.pl-filter-footer > button.pl-clear::after",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": null,
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 1
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "css-background",
+          "selector": "ul.pl-grid > li.pl-card > button.pl-fav-btn::after",
+          "inCard": true,
+          "alt": null,
+          "ariaLabel": "Add to My List",
+          "ariaHidden": false,
+          "rendered": "24x24",
+          "visible": false,
+          "broken": false,
+          "count": 17
+        }
+      ]
+    },
+    {
+      "sha1": "d1be7d41ab9d4f6855e78ac905ddf6d5bb21ce51",
+      "fileName": null,
+      "urls": [
+        "inline-svg"
+      ],
+      "httpStatus": null,
+      "bytes": 173,
+      "contentType": null,
+      "pages": [
+        "/ja/product-list",
+        "/en/product-list"
+      ],
+      "usages": [
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "inline-svg",
+          "selector": "aside.pl-sidebar > button.pl-filter-close > svg",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": "閉じる",
+          "ariaHidden": true,
+          "rendered": "0x0",
+          "visible": false,
+          "broken": false,
+          "count": 1
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "inline-svg",
+          "selector": "aside.pl-sidebar > button.pl-filter-close > svg",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": "Close",
+          "ariaHidden": true,
+          "rendered": "0x0",
+          "visible": false,
+          "broken": false,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "sha1": "6f60b943d5cc517aed408dd215c056e3ee6d981d",
+      "fileName": "search.svg",
+      "urls": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/product-list/assets/search.svg"
+      ],
+      "httpStatus": 200,
+      "bytes": 1149,
+      "contentType": "image/svg+xml",
+      "pages": [
+        "/ja/product-list",
+        "/en/product-list"
+      ],
+      "usages": [
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "css-background",
+          "selector": "section.pl-filter-group.pl-filter-keyword > div.pl-search-field > span.pl-search-icon",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": null,
+          "ariaHidden": true,
+          "rendered": "18x19",
+          "visible": true,
+          "broken": false,
+          "count": 1
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "css-background",
+          "selector": "section.pl-filter-group.pl-filter-keyword > div.pl-search-field > span.pl-search-icon",
+          "inCard": false,
+          "alt": null,
+          "ariaLabel": null,
+          "ariaHidden": true,
+          "rendered": "18x19",
+          "visible": true,
+          "broken": false,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "sha1": "e981c176ebe3ff89cadee80e93b7ff42bc0546e4",
+      "fileName": "bookmark.svg",
+      "urls": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/product-list/assets/bookmark.svg"
+      ],
+      "httpStatus": 200,
+      "bytes": 662,
+      "contentType": "image/svg+xml",
+      "pages": [
+        "/ja/product-list",
+        "/en/product-list"
+      ],
+      "usages": [
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "css-mask",
+          "selector": "ul.pl-grid > li.pl-card > button.pl-fav-btn",
+          "inCard": true,
+          "alt": null,
+          "ariaLabel": "マイリストに登録する",
+          "ariaHidden": false,
+          "rendered": "22x54",
+          "visible": true,
+          "broken": false,
+          "count": 17
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "css-mask",
+          "selector": "ul.pl-grid > li.pl-card > button.pl-fav-btn",
+          "inCard": true,
+          "alt": null,
+          "ariaLabel": "Add to My List",
+          "ariaHidden": false,
+          "rendered": "22x54",
+          "visible": true,
+          "broken": false,
+          "count": 17
+        }
+      ]
+    },
+    {
+      "sha1": "266aa36ac97dd92ae4aabacfdb6a2ed4c8fc1021",
+      "fileName": "color-card-standard.png",
+      "urls": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/product-list/assets/color-card-standard.png"
+      ],
+      "httpStatus": 200,
+      "bytes": 2582,
+      "contentType": "image/png",
+      "pages": [
+        "/ja/product-list",
+        "/en/product-list"
+      ],
+      "usages": [
+        {
+          "page": "/ja/product-list",
+          "lang": "ja",
+          "kind": "img",
+          "selector": "div.pl-card-media > div.pl-color-cards > img.pl-color-card",
+          "inCard": true,
+          "alt": "Standard Color Card",
+          "ariaLabel": null,
+          "ariaHidden": false,
+          "rendered": "40x40",
+          "visible": true,
+          "broken": false,
+          "count": 1
+        },
+        {
+          "page": "/en/product-list",
+          "lang": "en",
+          "kind": "img",
+          "selector": "div.pl-card-media > div.pl-color-cards > img.pl-color-card",
+          "inCard": true,
+          "alt": "Standard Color Card",
+          "ariaLabel": null,
+          "ariaHidden": false,
+          "rendered": "40x40",
+          "visible": true,
+          "broken": false,
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
