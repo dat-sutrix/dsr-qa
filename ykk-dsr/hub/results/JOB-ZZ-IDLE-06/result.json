@@ -1,0 +1,211 @@
+{
+  "job": "JOB-ZZ-IDLE-06",
+  "agent": "claude-code",
+  "us": "DSR-587",
+  "env": "dev",
+  "started": "2026-10-19T04:45:35Z",
+  "finished": "2026-10-19T04:46:08Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-VOV-001",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-587-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-001",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-002",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-preview HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-587-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-004",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-04 not seeded (negative TC: confirm via DSR587_SEEDED)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-005",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-05 not seeded (negative TC: confirm via DSR587_SEEDED)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-006",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-06 not seeded (negative TC: confirm via DSR587_SEEDED)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-587-07 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-inactive HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-07 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-inactive HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-008",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-08 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-unavail HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-010",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-10 not seeded (negative TC: confirm via DSR587_SEEDED)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-011",
+      "lang": "ja",
+      "result": "fail",
+      "error": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search HTTP 404, expected 200 (200 on .aem.page: previewed, not published live)",
+      "evidence": "evidence/DSR-VOV-011_ja.png",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-VOV-011",
+      "lang": "ja",
+      "result": "skip",
+      "error": "(tech-talk) tech-talk list page not published on DEV (HTTP 404); 11.0 runs on video/search only (job JOB-ZZ-IDLE-06) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk)",
+      "evidence": "",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-VOV-011",
+      "lang": "en",
+      "result": "fail",
+      "error": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search HTTP 404, expected 200 (200 on .aem.page: previewed, not published live)",
+      "evidence": "evidence/DSR-VOV-011_en.png",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-VOV-011",
+      "lang": "en",
+      "result": "skip",
+      "error": "(tech-talk) tech-talk list page not published on DEV (HTTP 404); 11.0 runs on video/search only (job JOB-ZZ-IDLE-06) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/tech-talk)",
+      "evidence": "",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-VOV-011",
+      "lang": "cn",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV",
+      "evidence": "",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-VOV-014",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-14 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-015",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-15 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-b HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-016",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-14 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-017",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "ja",
+      "result": "skip",
+      "error": "TD-587-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "en",
+      "result": "skip",
+      "error": "TD-587-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main HTTP 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "cn",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV",
+      "evidence": "",
+      "suspect": "env"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-587.ts",
+    "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+    "fixtures/dsr-173.ts",
+    "results/DSR-587/DEV/automation-run-20261019.md"
+  ],
+  "questions": []
+}

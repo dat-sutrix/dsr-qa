@@ -93,7 +93,8 @@ export const movieData = {
   VALID_YOUTUBE: {
     ...pendingMovie(),
     movieId: 'movieid-01',
-    paths: { ja: null, en: '/master/en/test-space/dsr-173-video-detail', zh: null },
+    // DSR-587 17.0: DSR173_MOVIE_PATH switches Group A to an overlay page (e.g. /en/library/video/qa587-main).
+    paths: { ja: null, en: process.env.DSR173_MOVIE_PATH || '/master/en/test-space/dsr-173-video-detail', zh: null },
     movieTitle: { ja: null, en: 'movieTitle', zh: null },
     description: { ja: null, en: 'movie description\nmovie description', zh: null },
     movieSourceId: 'irFRtAVphCY&t=38s',
@@ -111,7 +112,8 @@ export const movieData = {
   RELATED_NO_UPDATEDATE: pendingMovie(),
   RELATED_FILTERED: pendingMovie(),
   NO_RELATED: pendingMovie(),
-  RELATED_6: pendingMovie(),
+  // DSR-587 17.0: DSR173_RELATED_PATH (e.g. /en/library/video/qa587-rel-a) for the related checks.
+  RELATED_6: { ...pendingMovie(), paths: { ja: null, en: process.env.DSR173_RELATED_PATH || null, zh: null } },
   RELATED_MIXED: pendingMovie(),
   I18N: pendingMovie(),
 } satisfies Record<string, MovieFixture>;

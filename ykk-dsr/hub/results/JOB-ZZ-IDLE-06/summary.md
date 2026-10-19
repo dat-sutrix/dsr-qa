@@ -1,0 +1,11 @@
+# JOB-ZZ-IDLE-06 — DSR-587 movie detail overlay scaffold (DEV)
+- Wrote fixtures/dsr-587.ts and tests/movie-detail/DSR-587.movie-overlay.spec.ts for 15 Automation TCs (1–8, 10, 11, 14–18) as DSR-VOV-NNN, ja + en (cn = fixme, Issue #18). Read-only.
+- fixtures/dsr-173.ts: page URL is now overridable through DSR173_MOVIE_PATH / DSR173_RELATED_PATH for 17.0. Defaults and DSR-173 assertions are unchanged.
+- `npx tsc --noEmit`: exit 0, no errors.
+- `npm run test:dev -- --grep "DSR-VOV"` (2026-10-19 04:45:35–04:46:08Z, main .aem.live): 24 tests, 0 passed, 2 failed, 22 skipped, exit 1.
+- Failed: DSR-VOV-011 [ja]/[en]. /{lang}/library/video/search returns 404 on .aem.live but 200 on .aem.page. The list page looks previewed but not published live (suspect env, not the overlay regex).
+- Skipped: every qa587-* TD page returns 404 on live, main preview and the moustache branch (not seeded). Negative TCs 4/5/6/10 need QA-PT to confirm seeding through DSR587_SEEDED. tech-talk list page is 404 everywhere.
+- 17.0 is a gate. The Group A rerun with the switched URL will still fail on title/thumbnail/link-prefix values until a TD-587-01 value set exists for DSR-173.
+- 5.0 step 2 (qa501-main-a → 404) looks outdated: Martin moved qa501-main-a under movies/standard and it returns 200 on .aem.page.
+- No assertion ran against a real overlay page, so the test logic is not yet validated. The list-card locator is unverified (TODO data-testid).
+- Report: results/DSR-587/DEV/automation-run-20261019.md. Evidence: evidence/DSR-VOV-011_{ja,en}.png.
