@@ -1,0 +1,155 @@
+{
+  "job": "JOB-ZZ-IDLE-12",
+  "agent": "claude-code",
+  "us": "DSR-227",
+  "env": "dev",
+  "started": "2026-10-19T05:26:34Z",
+  "finished": "2026-10-19T05:27:55Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ASSET-003",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-009",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-010",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-012",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-013",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-014",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-015",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-016",
+      "lang": "ja",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-003",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-009",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-010",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-012",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-013",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-014",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-015",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-016",
+      "lang": "en",
+      "result": "skip",
+      "error": "blocked-data: no /{lang}/products/<digits> row in DEV query-index (TD-227-08, DSR-586 – Martin); fallback page baseline recorded, no verdict",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ASSET-017",
+      "lang": "ja+en",
+      "result": "skip",
+      "error": "DSR-227 no product page on DEV",
+      "evidence": "",
+      "suspect": "data"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-227.ts",
+    "pages/AssetAudit.ts",
+    "tests/asset-migration/DSR-227.asset-migration.spec.ts",
+    "results/DSR-227/DEV/automation-run-20261019.md"
+  ],
+  "questions": []
+}
