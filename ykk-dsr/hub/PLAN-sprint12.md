@@ -21,6 +21,7 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 | 2 | DSR-433 | TC 1.0, 2.0, 3.0 (chỉ xem, link trong TC file) · TC 4.0 bước 1–2: CF `/content/dam/ykk/mail-templates/e2e-test/en` → 件名 thêm " v2" → Save → Publish (để nguyên tới tối 21/10) | 30 | 433-1.0, 433-2.0, 433-3.0, 433-4.0-edit |
 | 3 | DSR-457 | Item #10 (như pack 16/10) | 15 | DSR-457-#10 |
 | 4 | DSR-570 | CF `qa190-cat-ebook-form`: catalogId bỏ 2 dấu cách cuối → Save → Publish | 5 | TD-190-13-fix |
+| 5 | DSR-552 | Retest bug DSR-648 (Martin fixed 19/10 13:55): mở `/master/ja/test-space/dsr552-author/child` trong Universal Editor (không thêm block) → breadcrumb trong canvas phải là **HOME > test space > QA Author Parent > QA Author Child**, giống trang Publish https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-author/child. Chụp cả 2 màn hình. Thiếu cấp cha → Fail | 10 | DSR-BREAD-016 |
 
 **Agent – chạy ngay không chờ (19/10):** JOB-20261019-01 (557 016/017 + 647 P2: sửa phạm vi assertion theo quyết định QA) · IDLE-07/10/11/12/13 · codex IDLE-16. Hold có điều kiện: -02/-04 (529, sau Night Report), -03 (552-014 khi DSR-651 fix; 647-P3 khi re-preview).
 Quyết định QA 19/10: 557-016/017 đếm form chỉ trên DSR (trang ngoài có form search = không phải gate) · 647-P2 bỏ assertion "static HTML" (BL-OVL-1: block lọc phía client) · 173 MOVIE-014/033 fail = CF movieid-01 bị xóa movieSourceId/relatedProducts (data, ngoài sprint – ghi nhận, chưa sửa).

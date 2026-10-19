@@ -8,7 +8,7 @@
 ## 1. Ticket đang giao Dat: 5 (Jira 19/10)
 | Ticket | Trạng thái | Kế hoạch (khi nào) | Blocked / đang đợi ai | Done DEV đích |
 |---|---|---|---|---|
-| [DSR-552](https://sutrix.atlassian.net/browse/DSR-552) Breadcrumb | 35/35 TC đã chạy; còn 2 bug Low | Martin fix → agent rerun 014 (JOB-20261019-03) + QA-PT retest 016 → Done | **Martin** đang fix DSR-648/651 (In Progress 19/10) | 21/10 (22/10 chưa fix → Done kèm 2 bug Low) |
+| [DSR-552](https://sutrix.atlassian.net/browse/DSR-552) Breadcrumb | 35/35 TC đã chạy; còn 2 bug Low | Martin fix → agent rerun 014 (JOB-20261019-03) + QA-PT retest 016 → Done | DSR-648 ✅ fixed 19/10 → QA-PT retest 016 tối nay · DSR-651 **Martin** đang fix | 21/10 (22/10 chưa fix → Done kèm 2 bug Low) |
 | [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | e-book ✅ phía DSR; 016/017 lỗi do test → sửa (JOB-20261019-01, đang chạy hôm nay) | 20/10 áp mặc định DSR-611 → QA confirm DEV | **Quentin** – DSR-611 (mặc định có hiệu lực 20/10, không chặn) | 21/10 |
 | [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 16 test: 7 ✅ · 1 ❌ (lộ link PDF) · 6 ⛔ · 2 skip; khách đang test | QA-PT sửa data tối 19/10 · rerun + manual 6 TC 20/10 | **Quentin** – có ẩn PDF sau form không (TC 007) · form HubSpot chưa có (⛔ Ngọc) | 22/10 |
 | [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | 0/32, chưa có trang test | QA-PT tạo folder stories + trang tối 19/10 → agent 20/10 (JOB-20261019-02/04) → triage 21/10 | Không (Martin OK 11:29) | 22/10 |
@@ -29,6 +29,7 @@ Bug Dat theo dõi (không giao Dat): DSR-647 video liên quan (đợi **Martin**
 2. DSR-433 (30'): TC 1.0–3.0 (xem trên Author) + TC 4.0 bước 1–2 (sửa tiêu đề `e2e-test/en` thêm " v2", Publish)
 3. DSR-457 #10 (15')
 4. DSR-570 (5'): bỏ 2 dấu cách cuối catalogId của `qa190-cat-ebook-form`, Publish
+5. DSR-552 (10'): retest DSR-648 – TC 016 trên Universal Editor (Martin fixed 19/10)
 
 ## 4. 🤖 Agents
 | Lane | Đang chạy / hàng đợi (tự chạy, không cần ai) | Hold (07:45 tự chuyển khi đủ điều kiện) |
