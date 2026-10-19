@@ -9,7 +9,7 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 | DSR-552 Breadcrumb | 35/35 đã chạy, 2 bug Low Martin đang fix (In Progress 19/10) | fix lên DEV → rerun 014 (agent) + 016 (QA-PT) → Done | **21/10** | 22/10 chưa fix → Done kèm 2 bug Low |
 | DSR-557 動画・カタログ | 8/25 ✅, data e-book đã sửa 16/10 | lane claude-code sống lại → JOB-20261016-10 · 20/10 áp mặc định DSR-611 | **21/10** | TC 611 = ⛔ có owner (Quentin) |
 | DSR-570 資料DL | 19 TC, JOB-20261016-12 treo, khách đang test (Tsukiji "テスト中" 19/10) | rerun JOB-12 sau khi sửa VPS · manual 6 TC QA-PT 20/10 | **22/10** | form HubSpot chưa có = ⛔ (Ngoc) |
-| DSR-529 記事詳細 | 0/32, chưa có trang test | QA-PT tạo TD-529 (`article detail`, test-space) **tối 19/10** → JOB-20261015-12 sáng 20/10 → triage 21/10 | **22/10** | phần chưa xanh báo PM tách sang Sprint 13 |
+| DSR-529 記事詳細 | 0/32, chưa có trang test | QA-PT tạo folder stories + TD-529 path gốc (`article detail`) **tối 19/10** → JOB-20261015-12 sáng 20/10 → triage 21/10 | **22/10** | phần chưa xanh báo PM tách sang Sprint 13 |
 | DSR-566 ニュース詳細 | 5/18 ✅, **không có template news-article** | dev deploy template ≤ 20/10 → QA-PT seed 20/10 tối → JOB-08/11 21/10 | **22/10** | không có template tới 20/10 → 22/10 báo PM: ⛔ dev, chuyển Sprint 13 |
 | DSR-647 (bug, video overlay) | trang branch vẫn bản 16/10 | Martin re-preview → JOB-20261017-01 | 20/10 | giữ bug mở, không chặn ticket Dat |
 | DSR-457 (bug, product detail) | #1 ✅, #10 chưa chạy | QA-PT #10 tối 19/10 · Quentin/Ngọc trả lời | — | mặc định 20/10 |
@@ -17,7 +17,7 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 **Lịch theo ngày**
 | Ngày | Dat (giờ hành chính) | Agent | QA-PT (tối) | Claude tự động |
 |---|---|---|---|---|
-| T2 19/10 | 🔴 sửa lane claude-code + upload · duyệt Done 552 · nhắn Martin (re-preview + template 529) · dev 566 (template) | xả hàng đợi 11 job (557, 647, 173, TOP, 570 rerun, idle) | TD-529 (60') · 457 #10 (15') · TD-586/587 path BL-OVL-1 (45') · tối đa 2h | 17:10 Night Pack theo thứ tự này |
+| T2 19/10 | ✅ sửa lane · nhắn Martin (re-preview) · Ngọc (template 566) · Quentin · Nakamoto | xả hàng đợi 11 job (557, 647, 173, TOP, 570 rerun, idle) | TD-529 + folder stories (70') · 457 #10 (15') · TD-586/587 path BL-OVL-1 (45') · tối đa 2h | 17:10 Night Pack theo thứ tự này |
 | T3 20/10 | trả lời/nhắc DSR-611, 457 (mặc định có hiệu lực) | 529 vòng 1 · 570 rerun | 570 manual 6 TC · TD-566 (nếu có template) · retest fail 529 | 07:45 triage, đề xuất Done 557 |
 | T4 21/10 | tạo bug đã duyệt | 529 retest · 566 (nếu có data) | retest bug / manual 529 còn lại | QA confirm DEV 557 |
 | T5 22/10 | **chốt sprint:** Done DEV 529/566/570 hoặc báo PM phần tách | regression toàn bộ US đã Done | retest cuối | 17:10 soạn tóm tắt sprint + nội dung báo PM |

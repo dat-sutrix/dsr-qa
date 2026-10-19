@@ -7,7 +7,7 @@
 |---|---|---|---|---|---|
 | 1 | ✅ (11:12) ~~Sửa VPS lane claude-code~~: nguyên nhân = rebase conflict (không phải agent treo); JOB-12 đã xong từ 16/10, kết quả đã lên repo. runner.sh giờ tự gỡ conflict. Runner chạy lại 04:12Z, đang upload Drive rồi xả 11 job | — | — | — | — |
 | 2 | ~~Duyệt Done 552~~ → **hoãn**: Martin đang fix DSR-648/651 (In Progress 19/10 09:42). Fix lên DEV → agent rerun 014, QA-PT retest 016 → Done. Chưa fix tới 22/10 → Done kèm 2 bug Low (03 §5) | Martin | 22/10 | 552 | — |
-| 3 | Nhắn Martin: re-preview `qa501-main-a` trên branch + hỏi cách QA tự refresh (tin soạn sẵn trong chat 19/10 11:22). 529: **không hỏi** – QA tự tạo trang test bằng `article detail` dưới test-space (Dat 19/10) | Martin | 19/10 | 647 | xem chat 19/10 |
+| 3 | Nhắn Martin: re-preview `qa501-main-a` trên branch + hỏi cách QA tự refresh (tin soạn sẵn trong chat 19/10 11:22). 529: ✅ Martin trả lời 11:29 – QA tự tạo folder `/library/article/stories` trên DEV | Martin | 19/10 | 647 | xem chat 19/10 |
 | 4 | DSR-566: DEV Author **không có template `news-article`** → không seed được, 12 TC + 2 visual đứng. Không có tới 20/10 → 22/10 báo PM tách sang Sprint 13 | Ngọc (dev DSR-566) | **20/10** | 566 | "Hi, QA cannot create a news page on DEV Author: template `news-article` is not available (screenshot: https://drive.google.com/file/d/11UjvHFVP4mU3JqXWytcSUWPtk0vdqIzH/view). Please enable/deploy the template on DEV by 10/20 or tell us which template to use for DSR-566." |
 | 5 | 🔴 Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) + [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) (61011 Ngọc, 61015 Quentin) – mặc định có hiệu lực 20/10 | Quentin, Ngọc | 19/10 | 557, 360 | "Quentin-san, QA still needs answers in DSR-611 (4 questions, DSR-190) and DSR-457 comments 61011/61015. From 10/20 QA applies the defaults in the tickets." |
 | 6 | ✅ Comment DSR-457 #1 đã đăng (Claude, 19/10 11:17, comment 61340) | — | — | — | — |
@@ -17,7 +17,7 @@
 **Jira 19/10:** không có ticket mới giao Dat từ 16/10. Hoạt động mới: Tsukiji (khách) comment "テスト中" trên DSR-552 và DSR-570 lúc 09:13. DSR-531 / DSR-567 (task "Create Test Case" của 529/566, To Do) → Claude đã gắn link folder TC và chuyển **Done** 19/10.
 
 ## 🌙 QA part-time đêm nay
-**T2 19/10:** Night Pack do lượt 17:10 tạo, ≤ 2h, thứ tự: (1) TD-529 trang test `article detail` dưới test-space (60') · (2) DSR-457 #10 (15') · (3) TD-586/587 ở path BL-OVL-1 (45'). 566 bỏ (chưa có template).
+**T2 19/10:** Night Pack do lượt 17:10 tạo, ≤ 2h, thứ tự: (1) TD-529: tạo cấp thiếu `/master/{ja,en}/library/article/stories` rồi trang qa529-* đúng path TestData, template `article detail` (70') · (2) DSR-457 #10 (15') · (3) TD-586/587 ở path BL-OVL-1 (45'). 566 bỏ (chưa có template).
 Report 16/10 (2h40, đã triage): việc 1, 2, 5, 6 ✅ (501-P3 ❌ = trang branch cũ, 557 e-book + TD-190-03/04 ✅, 457 #1 ✅, 552-026 ✅) · việc 3 (566) và 4 (529) ⛔ do thiếu template/folder trên DEV – không phải lỗi QA-PT.
 
 ## 🗂 Sub-task TC trong Jira (Sprint 12, label `qa-tc`, assignee Dat)
