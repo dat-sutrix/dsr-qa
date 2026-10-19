@@ -1,11 +1,11 @@
-// Retest of bug DSR-647 (fixed in DSR-587, Jira comment 61175) on the overlay branch URLs, hub job JOB-20261016-04.
+// Retest of bug DSR-647 (fixed in DSR-587, Jira comment 61175) on the overlay branch URLs, hub job JOB-20261016-04 (P3 order: JOB-20261017-01).
 // Baseline BL-OVL-1 (docs/DSR-587/overlay-data-flow-BL.md): max 5 related movies, isUnavailable = true hidden,
 // order by update date newest first, static HTML, no GraphQL call in the browser.
 import { test, expect, type Page, type TestInfo } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 import { MovieDetailPage } from '../../pages/MovieDetailPage';
-import { pageA, pageB, overlayBase, overlayPath, dsrVideoPageQuery, maxRelatedMovies, blockedNo6th } from '../../fixtures/dsr-501';
+import { pageA, pageB, overlayBase, overlayPath, dsrVideoPageQuery, maxRelatedMovies, blockedNo6th, blockedStalePreview, blockedNoDistinctUpdateDate } from '../../fixtures/dsr-501';
 
 // Job output asks for a full-page screenshot of A and B on every run.
 const evidence = path.resolve(process.env.DSR_JOB_EVIDENCE || 'test-results/DSR-647-retest');
@@ -24,7 +24,9 @@ async function openOverlay(page: Page, movieId: string, testInfo: TestInfo) {
   const url = overlayBase + overlayPath(movieId);
   const graphqlCalls: string[] = [];
   page.on('request', (request) => { if (/graphql|execute\.json/i.test(request.url())) graphqlCalls.push(request.url()); });
-  const html = await (await page.request.get(url)).text();
+  const htmlResponse = await page.request.get(url);
+  const html = await htmlResponse.text();
+  const lastModified = htmlResponse.headers()['last-modified'] ?? null;
   // Static block rows: one "relatedMovies" row per related movie (cf-templates/video.html).
   const staticRelatedRows = html.match(/<div>relatedMovies<\/div>[\s\S]*?<\/ul>/g)?.map((row) => row.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()) ?? [];
   const movie = new MovieDetailPage(page);
@@ -36,7 +38,7 @@ async function openOverlay(page: Page, movieId: string, testInfo: TestInfo) {
   const shot = path.join(evidence, `${testInfo.title.split(' ')[0]}_en_fullpage.png`);
   await page.screenshot({ path: shot, fullPage: true });
   await testInfo.attach('page', { path: shot, contentType: 'image/png' });
-  return { movie, url, html, title, staticRelatedRows, graphqlCalls };
+  return { movie, url, html, lastModified, title, staticRelatedRows, graphqlCalls };
 }
 
 function relatedMovieTitles(movie: MovieDetailPage): Promise<string[]> {
@@ -49,15 +51,22 @@ test('DSR-501-P3 [en] related movies are max 5, newest updated first', { tag: ['
   const o = await openOverlay(page, pageA.movieId, testInfo);
   await expect(o.movie.relatedContentSection).toBeVisible();
   const shown = await relatedMovieTitles(o.movie);
-  await testInfo.attach('observed', { body: JSON.stringify({ url: o.url, title: o.title, query, staticRelatedRows: o.staticRelatedRows, shown, graphqlCalls: o.graphqlCalls }, null, 2), contentType: 'application/json' });
+  await testInfo.attach('observed', { body: JSON.stringify({ url: o.url, title: o.title, lastModified: o.lastModified, query, staticRelatedRows: o.staticRelatedRows, shown, graphqlCalls: o.graphqlCalls }, null, 2), contentType: 'application/json' });
   expect(o.html).toContain(o.title);
   expect(o.graphqlCalls).toEqual([]);
   expect(shown.length).toBeLessThanOrEqual(maxRelatedMovies);
   test.skip(query.relatedMovies.length <= maxRelatedMovies, `${blockedNo6th} (query returns ${query.relatedMovies.length}; shown ${shown.length})`);
-  // Reached only with 6+ related movies on publish: exactly 5 shown, the most recently updated.
+  // Freshness check (JOB-20261017-01): branch HTML built from fewer inputs than publish = stale preview, not a product result.
+  test.skip(o.staticRelatedRows.length < query.relatedMovies.length,
+    `${blockedStalePreview} (static HTML ${o.staticRelatedRows.length} relatedMovies rows, query ${query.relatedMovies.length}; last-modified ${o.lastModified})`);
+  const updateDates = query.relatedMovies.map((m) => m.updateDate);
+  test.skip(updateDates.some((d) => !d) || new Set(updateDates).size !== updateDates.length,
+    `${blockedNoDistinctUpdateDate} (${JSON.stringify(updateDates)})`);
+  // DSR-647 comment 61177: newest updateDate first, max 5, isUnavailable = true hidden.
   const newest = [...query.relatedMovies].filter((m) => m.isUnavailable !== true)
-    .sort((a, b) => (b.updateDate ?? b.publishDate ?? '').localeCompare(a.updateDate ?? a.publishDate ?? ''))
+    .sort((a, b) => (b.updateDate as string).localeCompare(a.updateDate as string))
     .slice(0, maxRelatedMovies).map((m) => m.movieTitle);
+  expect(newest).toEqual([...pageA.expectedRelatedByUpdateDesc]);
   expect(shown).toHaveLength(maxRelatedMovies);
   expect(shown).toEqual(newest);
 });
@@ -74,4 +83,6 @@ test('DSR-501-P2 [en] unavailable related movie is not displayed', { tag: ['@DSR
   expect(shown).toEqual([...pageB.expectedRelated]);
   expect(renderedDom).not.toContain(pageB.excludedTitle);
   await expect(page.getByText(pageB.excludedTitle)).toHaveCount(0);
+  // JOB-20261017-01 Expected: excluded movie also absent from the static (pre-JS) HTML.
+  expect(o.html).not.toContain(pageB.excludedTitle);
 });

@@ -5,6 +5,8 @@ export const pageA = {
   movieId: 'qa501-main-a',
   // P3: relatedMovies = rel1..rel6 authored; FE limits display to 5.
   expectedRelated: ['video title rel1', 'video title rel2', 'video title rel3', 'video title rel4', 'video title rel5'],
+  // JOB-20261017-01: 更新日 rel1 = 2026-10-01 … rel6 = 2026-10-06; order rule updateDate desc (DSR-647 comment 61177).
+  expectedRelatedByUpdateDesc: ['video title rel6', 'video title rel5', 'video title rel4', 'video title rel3', 'video title rel2'],
 } as const;
 export const pageB = {
   path: '/master/en/test-space/qa501-b',
@@ -26,3 +28,5 @@ export const dsrVideoPageQuery = (movieId: string) =>
   `https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-page;path=${cfRelatedPath(movieId)}`;
 export const maxRelatedMovies = 5;
 export const blockedNo6th = 'blocked-data: 6th related movie not on publish';
+export const blockedStalePreview = 'blocked-data: stale preview, static HTML has fewer relatedMovies rows than query';
+export const blockedNoDistinctUpdateDate = 'blocked-data: relatedMovies updateDate missing or not distinct';

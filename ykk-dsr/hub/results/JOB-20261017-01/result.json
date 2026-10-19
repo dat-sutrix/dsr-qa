@@ -1,0 +1,25 @@
+{
+  "job": "JOB-20261017-01",
+  "agent": "claude-code",
+  "us": "DSR-587",
+  "env": "dev",
+  "started": "2026-10-19T04:25:07Z",
+  "finished": "2026-10-19T04:28:07Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-501-P2", "lang": "en", "result": "fail",
+      "error": "DOM OK (1 card rel1, 'video title off' absent, 0 GraphQL). Static HTML still has movieoff row (isUnavailable: true) -> job Expected 'absent from static HTML' fails",
+      "evidence": "evidence/DSR-501-P2_en_fullpage.png", "suspect": "test" },
+    { "tc": "DSR-501-P3", "lang": "en", "result": "blocked",
+      "error": "Stale preview: query 6 rel (updateDate rel1=10-01..rel6=10-06), static HTML 5 rows rel1-5, last-modified 16 Oct 06:43:41Z; shown rel1..rel5. Not a Fail",
+      "evidence": "evidence/DSR-501-P3_en_fullpage.png", "suspect": "data" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/movie-detail/DSR-587.overlay-retest-DSR-647.spec.ts",
+    "fixtures/dsr-501.ts",
+    "results/DSR-587/DEV/automation-run-20261019-job17-01.md",
+    "results/DSR-587/DEV/automation-run-20261019-job17-01-rerun2.md"
+  ],
+  "questions": []
+}
