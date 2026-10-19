@@ -6,7 +6,7 @@
 | # | Việc | Với ai | Hạn | Mở khóa | Nội dung gửi sẵn |
 |---|---|---|---|---|---|
 | 1 | ✅ (11:12) ~~Sửa VPS lane claude-code~~: nguyên nhân = rebase conflict (không phải agent treo); JOB-12 đã xong từ 16/10, kết quả đã lên repo. runner.sh giờ tự gỡ conflict. Runner chạy lại 04:12Z, đang upload Drive rồi xả 11 job | — | — | — | — |
-| 2 | Duyệt **Done DEV DSR-552** (trả lời "ok" → Claude chuyển Jira + comment) | Claude | 19/10 | 552 | comment soạn sẵn ở us/DSR-552.md |
+| 2 | ~~Duyệt Done 552~~ → **hoãn**: Martin đang fix DSR-648/651 (In Progress 19/10 09:42). Fix lên DEV → agent rerun 014, QA-PT retest 016 → Done. Chưa fix tới 22/10 → Done kèm 2 bug Low (03 §5) | Martin | 22/10 | 552 | — |
 | 3 | Nhắn Martin: (a) re-preview `qa501-main-a` – IDLE-15 sáng nay vẫn last-modified 16/10 06:43Z; (b) xác nhận template 529 | Martin | 19/10 | 647, 529 | "Martin-san, (1) /en/library/video/qa501-main-a on branch DSR-PRODUCTDETAIL-moustache is still the 10/16 06:43 UTC version – could you re-preview it so QA can retest DSR-647 order? (2) For DSR-529 QA test pages, DEV has no folder /library/article/stories and no template `article`, only `article detail`. QA will use `article detail` under /master/{lang}/test-space/ tonight unless you say otherwise." |
 | 4 | DSR-566: DEV Author **không có template `news-article`** → không seed được, 12 TC + 2 visual đứng. Không có tới 20/10 → 22/10 báo PM tách sang Sprint 13 | Dev DSR-357 | **20/10** | 566 | "Hi, QA cannot create a news page on DEV Author: template `news-article` is not available (screenshot: https://drive.google.com/file/d/11UjvHFVP4mU3JqXWytcSUWPtk0vdqIzH/view). Please enable/deploy the template on DEV by 10/20 or tell us which template to use for DSR-566." |
 | 5 | 🔴 Đuổi trả lời [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) + [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) (61011 Ngọc, 61015 Quentin) – mặc định có hiệu lực 20/10 | Quentin, Ngọc | 19/10 | 557, 360 | "Quentin-san, QA still needs answers in DSR-611 (4 questions, DSR-190) and DSR-457 comments 61011/61015. From 10/20 QA applies the defaults in the tickets." |
@@ -31,7 +31,7 @@ TC job (T2–T6 18–22h, T7/CN 9–22h) → [tc-backlog.md](tc-backlog.md) · c
 ## 📋 Tổng quan US
 | US | Tên | Trạng thái | DoD | DEV | STG | PRO | Blocker mở → ai mở khóa | Bug mở | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|---|
-| [DSR-552](us/DSR-552.md) | Breadcrumb block | 🟢 | 2/9 | 35/35 đã chạy · ≈22 ✅ · 2 ❌ Low (014, 016) · ≈11 ⛔ có owner | — | — | — | 2 Low (DSR-648, DSR-651) | **Done DEV chờ Dat duyệt** (🔔 #2 · 19/10) |
+| [DSR-552](us/DSR-552.md) | Breadcrumb block | 🟢 | 2/9 | 35/35 đã chạy · ≈22 ✅ · 2 ❌ Low (014, 016) · ≈11 ⛔ có owner | — | — | — | 2 Low (DSR-648, DSR-651) | Chờ Martin fix 648/651 → retest 014/016 → Done (đích **21/10**, muộn nhất 22/10) |
 | [DSR-557](us/DSR-557.md) | 動画・カタログ表示 | 🟡 | 2/9 | 8/25 ✅ · 0 ❌ · 10 ⛔ | — | — | DSR-611 → Quentin (mặc định 20/10) | 0 | JOB-20261016-10 (e-book) chờ lane · Done đích **21/10** |
 | [DSR-566](us/DSR-566.md) | ニュース詳細 | 🔴 | 2/9 | 5/18 ✅ · 6 ❌ nghi data · 3 ⛔ | — | — | **Không có template news-article trên DEV** → dev DSR-357 (🔔 #4) | 0 | template ≤ 20/10 → seed → JOB-08/11 · đích **22/10**, không có → báo PM |
 | [DSR-529](us/DSR-529.md) | 記事詳細 | 🟡 | 3/9 | 0/32 · 9 ⛔ (spec scaffold xong, 47 skip blocked-data) | — | — | Không có folder stories / template `article` → Martin xác nhận (🔔 #5) | 0 | QA-PT TD-529 tối 19/10 → JOB-20261015-12 20/10 · đích **22/10** |
