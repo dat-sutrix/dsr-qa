@@ -31,7 +31,7 @@ Martin 20/10 06:44: PR đã merge, **một số CF test bị xóa khi dọn fold
 | # | US | Việc | ~phút | Dòng report |
 |---|---|---|---|---|
 | 1 | 587 + 557 | TD-587-01 `qa587-main` (YouTube): content CF `/content/dam/common/{en,ja}/movies/qa587-main` (DM_movie, giá trị theo TestData) → Publish; DSR CF `/content/dam/dsr/{en,ja}/movies/standard/qa587-main` (isActive ON, movie = content CF cùng ngôn ngữ) → Publish. Kiểm https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main (và /ja/) | 25 | TD-587-01 |
-| 2 | 557 | Video nguồn DAM `qa557-dam` (en + ja): content CF giống #1 nhưng movieSource = DAM, movieAsset = 1 file mp4 có sẵn trong DAM test, Release date 2026-09-15 → DSR CF cùng tên → Publish. Kiểm /en/library/video/qa557-dam | 20 | TD-557-DAM |
+| 2 | 557 | Video nguồn DAM `qa557-dam` (**chỉ en**, ja để 21/10): content CF giống #1 nhưng movieSource = DAM, movieAsset = 1 file mp4 có sẵn trong DAM test, Release date 2026-09-15 → DSR CF cùng tên → Publish. Kiểm /en/library/video/qa557-dam | 12 | TD-557-DAM |
 | 3 | 587 / bug DSR-647 | TD-587-14: content CF `qa587-r1`…`qa587-r6` trong `/content/dam/common/en/movies/` (updateDate/更新日 r1 = 2026-10-01 … r6 = 2026-10-06), Publish từng cái · content CF `qa587-rel-a` (relatedMovies = r1…r6) + DSR CF `/content/dam/dsr/en/movies/standard/qa587-rel-a` → Publish. Kiểm /en/library/video/qa587-rel-a: 5 thẻ rel6→rel2 | 35 | TD-587-14 |
 | 4 | 587 / bug DSR-647 | TD-587-15: content CF `qa587-off` (isUnavailable = TRUE) · content CF `qa587-rel-b` (relatedMovies = qa587-r1, qa587-off) + DSR CF `qa587-rel-b` → Publish. Kiểm /en/library/video/qa587-rel-b: đúng 1 thẻ (r1) | 15 | TD-587-15 |
 | 5 | 570 | Manual 6 TC trên trang demo /master/ja/test-space/dsr-570-catalog-detail (không đụng CF catalog – catalog merge chiều 20/10) | 30 | DSR-CATDL-… (6 dòng) |
@@ -116,6 +116,7 @@ Nguyên tắc: không chờ – TC bị env/ticket khác chặn ghi ⛔ Blocked 
 
 
 ## Quy tắc Night Pack (rút từ đêm 15/10 – task 17:10 phải áp dụng)
+- **Ước lượng ×1.5 cho việc tạo trang/CF trên Author** (đêm 19/10: dự kiến 2h05, thực tế 3h30). Tổng sau nhân ≤ 3h.
 - Tổng ≤ **3h** (đêm 15/10 pack 3h55 → QA-PT mất 5h, P5 không làm).
 - Tạo CF: liệt kê **mọi field bắt buộc (\*)** với giá trị chính xác, đặc biệt **動画ID = tên CF** (DM_movie) và **Release date** (catalog/movie). Đêm 15/10 thiếu → qa501 sai ID, TD-190-03/04 không publish được.
 - Bước gắn CF vào trang / sửa trang phải có 1 dòng báo cáo riêng + link .aem.live kiểm tra (đêm 15/10 bỏ sót P1b dòng 6).

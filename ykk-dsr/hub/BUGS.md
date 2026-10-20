@@ -21,7 +21,7 @@
 ### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
 | Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
 |---|---|---|---|---|---|
-| PEND-529-01 | DSR-529 | Article image: changing the image in UE duplicates it; after deleting one image and publishing, no image is shown | Major? (chưa chốt) | Night 19/10 TD-529-01 ❌ (evidence https://drive.google.com/file/d/1PDx8cV4oVuLjrjBEBlSIVeprRafxvl46/view) | Chưa đủ để kết luận bug: ảnh chụp ở `/master/en/qa529-01` (ngoài stories). Chờ JOB-20261019-02 (status 2 path + danh sách ảnh) → 17:10 20/10 tạo bug (assignee Martin) hoặc trả về data |
+| PEND-529-01 | DSR-529 | Article image: changing the image in UE duplicates it; after deleting one image and publishing, no image is shown | Major? (chưa chốt) | Night 19/10 TD-529-01 ❌ (evidence https://drive.google.com/file/d/1PDx8cV4oVuLjrjBEBlSIVeprRafxvl46/view) | Chưa đủ để kết luận bug: ảnh chụp ở `/master/en/qa529-01` (ngoài stories). ✅ JOB-20261019-02 xác nhận: ja có 2 block ảnh (1 trống = nhân đôi), en block ảnh trống (không hiện ảnh); ảnh QA-PT ở /master/en/qa529-01 chỉ là URL Author cũ, trang đúng ở …/stories/qa529-01. → **bug thật, nháp chờ Dat duyệt 20/10** (Medium, Martin) |
 
 **(Đã tạo DSR-648 16/10 12:53) Nội dung ticket PEND-552-016 (copy nguyên văn, label `qa-ai`, link "is a bug of" DSR-552, priority Low):**
 ```
