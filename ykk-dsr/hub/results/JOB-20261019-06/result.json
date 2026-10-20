@@ -1,0 +1,681 @@
+{
+  "job": "JOB-20261019-06",
+  "agent": "codex",
+  "us": "visual-regression (post-merge)",
+  "env": "dev",
+  "started": "2026-10-20T00:57:43.482Z",
+  "status": "needs-input",
+  "tests": [],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": [
+    "Where are the unretained JOB-ZZ-IDLE-16 PNGs? All 22 original targets were revisited; only four baseline PNGs exist in the repository, so remaining exact comparisons cannot be completed.",
+    "What deployed build verifies the requested 20/10 overlay merge? Capture host UTC is 2026-10-20T00:57:43.482Z; the job queue note says 2026-10-20 07:45 with no timezone. Merge identity was not independently verified."
+  ],
+  "baseUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "automation_head": "95fc62a2de17883d262f14d841d9e1c20a929afd",
+  "baseline": "JOB-ZZ-IDLE-16",
+  "records": [
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child/grandchild",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child/grandchild",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child/grandchild",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child/grandchild",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/long/leaf",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-dsr552-edge-long-leaf_390x844.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/long/leaf",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-dsr552-edge-long-leaf_1440x900.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/ja/test-space/list-catalog",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 41.46183393239237,
+      "scrollWidth": 390,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-list-catalog_390x844.png",
+      "baselineEvidence": "ykk-dsr/hub/results/JOB-ZZ-IDLE-16/evidence/master-ja-test-space-list-catalog_390x844.png",
+      "changedPixels": 1276954,
+      "comparedPixels": 3079830,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 6359
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 7897
+      },
+      "evidence": "evidence/master-ja-test-space-list-catalog_390x844.png"
+    },
+    {
+      "path": "/master/ja/test-space/list-catalog",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 8.150611517284954,
+      "scrollWidth": 1440,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-list-catalog_1440x900.png",
+      "baselineEvidence": "ykk-dsr/hub/results/JOB-ZZ-IDLE-16/evidence/master-ja-test-space-list-catalog_1440x900.png",
+      "changedPixels": 433443,
+      "comparedPixels": 5317920,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "evidence": "evidence/master-ja-test-space-list-catalog_1440x900.png"
+    },
+    {
+      "path": "/master/en/test-space/list-catalog",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 41.448456570654876,
+      "scrollWidth": 390,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en-test-space-list-catalog_390x844.png",
+      "baselineEvidence": "ykk-dsr/hub/results/JOB-ZZ-IDLE-16/evidence/master-en-test-space-list-catalog_390x844.png",
+      "changedPixels": 1276542,
+      "comparedPixels": 3079830,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 6359
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 7897
+      },
+      "evidence": "evidence/master-en-test-space-list-catalog_390x844.png"
+    },
+    {
+      "path": "/master/en/test-space/list-catalog",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 8.147395974365917,
+      "scrollWidth": 1440,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en-test-space-list-catalog_1440x900.png",
+      "baselineEvidence": "ykk-dsr/hub/results/JOB-ZZ-IDLE-16/evidence/master-en-test-space-list-catalog_1440x900.png",
+      "changedPixels": 433272,
+      "comparedPixels": 5317920,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "evidence": "evidence/master-en-test-space-list-catalog_1440x900.png"
+    },
+    {
+      "path": "/master/en/test-space/dsr-173-video-detail",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en-test-space-dsr-173-video-detail_1440x900.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/en/test-space/dsr-173-video-detail",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en-test-space-dsr-173-video-detail_390x844.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/en/test-space/dsr-278-product-detail",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "capture": "error",
+      "diffPercent": null,
+      "scrollWidth": null,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "error": "page.waitForLoadState: Timeout 60000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        },
+        {
+          "timeout": 120000,
+          "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        }
+      ],
+      "statusChanged": false,
+      "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+    },
+    {
+      "path": "/master/en/test-space/dsr-278-product-detail",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en-test-space-dsr-278-product-detail_1440x900.png",
+      "diffUnavailableReason": "Baseline capture unavailable: error"
+    },
+    {
+      "path": "/master/ja/test-space/product-list",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [
+        {
+          "classes": "listing block listing-product-index",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 1,
+          "visibleCards": 1
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-product-list_1440x900.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/ja/test-space/product-list",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [
+        {
+          "classes": "listing block listing-product-index",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 1,
+          "visibleCards": 1
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-product-list_390x844.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/en/test-space/product-list",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 404,
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "capture": "skipped",
+      "diffPercent": null,
+      "scrollWidth": null,
+      "cardLists": [],
+      "attempts": [],
+      "statusChanged": false,
+      "reason": "HTTP 404"
+    },
+    {
+      "path": "/master/en/test-space/product-list",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 404,
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "capture": "skipped",
+      "diffPercent": null,
+      "scrollWidth": null,
+      "cardLists": [],
+      "attempts": [],
+      "statusChanged": false,
+      "reason": "HTTP 404"
+    },
+    {
+      "path": "/master/ja",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja_1440x900.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/ja",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja_390x844.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/en",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en_1440x900.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/en",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-en_390x844.png",
+      "diffUnavailableReason": "JOB-ZZ-IDLE-16 PNG not retained (only >2% were committed)"
+    },
+    {
+      "path": "/master/ja/test-space/video-list",
+      "viewport": "1440x900",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/video-list",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [
+        {
+          "classes": "listing block listing-video",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 3,
+          "visibleCards": 3
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-video-list_1440x900.png",
+      "diffUnavailableReason": "Supplemental list count target; absent from baseline page list"
+    },
+    {
+      "path": "/master/ja/test-space/video-list",
+      "viewport": "390x844",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/video-list",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [
+        {
+          "classes": "listing block listing-video",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 3,
+          "visibleCards": 3
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/tmp/job06/master-ja-test-space-video-list_390x844.png",
+      "diffUnavailableReason": "Supplemental list count target; absent from baseline page list"
+    },
+    {
+      "path": "/master/en/test-space/video-list",
+      "viewport": "1440x900",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/video-list",
+      "capture": "skipped",
+      "diffPercent": null,
+      "scrollWidth": null,
+      "cardLists": [],
+      "attempts": [],
+      "statusChanged": null,
+      "reason": "HTTP 404"
+    },
+    {
+      "path": "/master/en/test-space/video-list",
+      "viewport": "390x844",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/video-list",
+      "capture": "skipped",
+      "diffPercent": null,
+      "scrollWidth": null,
+      "cardLists": [],
+      "attempts": [],
+      "statusChanged": null,
+      "reason": "HTTP 404"
+    }
+  ],
+  "method": "Fresh Chromium context per target, full-page PNG, network idle + 1s; timeout 60s, retry 120s. Exact RGBA inequality / maximum image rectangle; unmatched pixels changed. No masks, tolerance or verdicts. Counts are initial rendered card counts, no load-more/pagination interactions.",
+  "browser": "153.0.8010.12",
+  "finished": "2026-10-20T01:01:05.432Z",
+  "notes": "No verdicts. Deployed build/merge identity not independently verified. Missing baseline PNGs cannot be reconstructed from percentage metadata. Supplemental video URLs based on docs/DSR-557/discovery-DEV.md (en counterpart probed). Historical list counts unavailable. Local screenshots are not committed unless diff >2%.",
+  "capture_summary": {
+    "targets": 26,
+    "originalTargets": 22,
+    "supplementalVideoTargets": 4,
+    "captured": 21,
+    "skipped404": 4,
+    "errors": 1,
+    "compared": 4,
+    "aboveTwoPercent": 4,
+    "statusChanges": 0
+  }
+}
