@@ -1,0 +1,397 @@
+{
+ "job": "JOB-20261020-07",
+ "agent": "claude-code",
+ "us": "DSR-586, DSR-585, regression (product)",
+ "env": "dev",
+ "started": "2026-10-20T06:45:19Z",
+ "finished": "2026-10-20T07:00:07Z",
+ "status": "done",
+ "tests": [
+  {
+   "tc": "JOB07-CHK1-queries",
+   "lang": "ja,en",
+   "result": "pass",
+   "error": "all queries 200, no errors with the params the pages send; bare dsr-product-list = ValidationError (folder ID! required, by design). Removed fields absent.",
+   "evidence": "raw.md#1",
+   "suspect": ""
+  },
+  {
+   "tc": "JOB07-CHK2-pages",
+   "lang": "ja,en",
+   "result": "pass",
+   "error": "pages render data; only pre-existing 404/403 (placeholders.json, scene7). /master/en/test-space/product-list 404 + products/46 404 on .live = pre-CR state.",
+   "evidence": "raw.md#2",
+   "suspect": "env"
+  },
+  {
+   "tc": "JOB07-CHK3-removed-ui",
+   "lang": "ja,en",
+   "result": "pass",
+   "error": "tag groups, plastic filter, std color badge, 生産国 row, stop variation not rendered; no new-field text. Plastic: no plastic data, so unproven.",
+   "evidence": "raw.md#3",
+   "suspect": ""
+  },
+  {
+   "tc": "JOB07-CHK5-deploy",
+   "lang": "-",
+   "result": "pass",
+   "error": "product-list.js 04:50:11Z (=#189 13:50 JST); product-detail.js 05:42:57Z, product.html 05:43:36Z (later than #189: 2nd deploy?)",
+   "evidence": "raw.md#5",
+   "suspect": ""
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-005",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-06 not seeded (negative TC: confirm via DSR586_SEEDED)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-007",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-07 not seeded (negative TC: confirm via DSR586_SEEDED)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-008",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-08 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586008 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-009",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-09 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586009 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-11 not seeded (negative TC: confirm via DSR586_SEEDED)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "cn",
+   "result": "skip",
+   "error": "test.fixme (no description)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "result": "skip",
+   "error": "DSR-585 項目fix版 field list not in repo (Q27 review open)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001 HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column | unchanged vs pre-CR run 01:57Z (767→3 cols; 320 overflow); not cr-expected",
+   "evidence": "evidence/DSR-PLSP-002_ja.png",
+   "suspect": "product",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded. | unchanged vs pre-CR: timeout in filter step, locator never matches; not cr-expected",
+   "evidence": "evidence/DSR-PLSP-003_ja.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 3 results: left aligned | unchanged vs pre-CR: left 2 vs grid 0; not cr-expected",
+   "evidence": "evidence/DSR-PLSP-005_ja.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column | unchanged vs pre-CR run 01:57Z (767→3 cols; 320 overflow); not cr-expected",
+   "evidence": "evidence/DSR-PLSP-002_en.png",
+   "suspect": "product",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "en",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded. | unchanged vs pre-CR: timeout in filter step, locator never matches; not cr-expected",
+   "evidence": "evidence/DSR-PLSP-003_en.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: 3 results: left aligned | unchanged vs pre-CR: left 2 vs grid 0; not cr-expected",
+   "evidence": "evidence/DSR-PLSP-005_en.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: TD-583-01 ≥ 6 products | same fail as pre-CR; products 1→3 (data change, env); not cr-expected",
+   "evidence": "evidence/DSR-PRODLIST-001_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 320: distinct column offsets | unchanged vs pre-CR (test-space listing 1 column); not cr-expected",
+   "evidence": "evidence/DSR-PRODLIST-002_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: open: distinct column offsets | unchanged vs pre-CR (1 column); not cr-expected",
+   "evidence": "evidence/DSR-PRODLIST-003_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-583-01 page missing (/master/en/test-space/product-list and /master/en/product-list HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-005",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "en",
+   "result": "skip",
+   "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-007",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (real iOS Safari / Android Chrome) – documented only, not automated",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-004",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 1440: distinct column offsets | unchanged vs pre-CR (1 column at 1440); not cr-expected",
+   "evidence": "evidence/DSR-PRODLIST-004_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  }
+ ],
+ "lighthouse": [],
+ "code_changes": [],
+ "notes": "Read-only verification. Spec rerun: tests/product-list + tests/product-detail, chromium, .aem.live, once (4 pass / 10 fail / 25 skip). All 10 failures and 25 skips identical to pre-CR runs (JOB-20261019-05 01:21Z, JOB-ZZ-IDLE-17 01:57Z): 0 cr-expected, 0 new product, 0 new test. DSR-586 positives on id 46 not runnable without code change (fixture TD-586-01 = 990586001 with its own expected values); id 46 checked manually in checks 2/3. No DSR-278/457 spec in repo (DSR-PDO-019 skipped). Report: results/regression/DEV/automation-run-20261020-job07.md. Raw: raw.md."
+}
