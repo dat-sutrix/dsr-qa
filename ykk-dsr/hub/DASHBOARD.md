@@ -43,7 +43,7 @@ Thứ tự (theo PLAN "Night Pack 20/10"): **0.** 529 BUGCHK (Title/Tags/Related
 Kết quả hôm nay: JOB-20261020-09 regression toàn bộ DEV: 345 test · 112 ✅ · 69 ❌ · 165 skip; 6 fail liên quan merge catalog (<80%, xem 📣), 63 fail trùng lần chạy trước (cause none); 0 job treo.
 
 ## 5. TC (Jira sub-task `qa-tc`)
-Backlog 18/18 xong · Night TC job 20/10 18:35: done 1/1 (re-baseline DSR-585 19 TC + DSR-586 21 TC theo **DM_product_ver0.4**, Quentin chốt) · upload queue pending 4 / fail 0 · auto-added 0 · job agent đã xếp 0 (cập nhật hold -03/-08) · câu hỏi mới Q45 (openingType → text?), Q46 (product-detail còn tên field cũ). · 20/10 19:08: TC backlog trống (row 0 CL-v0.1 hold) · Jira check auto-added 0 · upload queue pending 0 / fail 0 (4 file ver0.4 lên Drive 11:19 UTC) · job agent đã xếp 0. · 20/10 20:12: backlog trống · Jira check auto-added 0 · upload queue pending 0 / fail 0 · job agent đã xếp 0.
+Backlog 18/18 xong · Night TC job 20/10 18:35: done 1/1 (re-baseline DSR-585 19 TC + DSR-586 21 TC theo **DM_product_ver0.4**, Quentin chốt) · upload queue pending 4 / fail 0 · auto-added 0 · job agent đã xếp 0 (cập nhật hold -03/-08) · câu hỏi mới Q45 (openingType → text?), Q46 (product-detail còn tên field cũ). · 20/10 19:08: TC backlog trống (row 0 CL-v0.1 hold) · Jira check auto-added 0 · upload queue pending 0 / fail 0 (4 file ver0.4 lên Drive 11:19 UTC) · job agent đã xếp 0. · 20/10 20:12: backlog trống · Jira check auto-added 0 · upload queue pending 0 / fail 0 · job agent đã xếp 0. · 20/10 21:06: TC backlog trống 2026-10-20 21:06 · done 1/1 hôm nay · Jira check auto-added 0 · upload queue pending 0 / fail 0 · job agent đã xếp 0.
 
 ## 🐞 Bug < 80% – Dat chốt (morning 07:45 điền theo BUG-RULES.md)
 | Draft | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
