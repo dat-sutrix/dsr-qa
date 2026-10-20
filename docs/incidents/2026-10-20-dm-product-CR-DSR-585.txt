@@ -1,0 +1,148 @@
+Incident report — product persisted queries broken by the dm_product CR (DSR-585)
+
+
+
+
+  Incident report — product persisted queries
+  broken by the dm_product CR (DSR-585)
+    Oct 20, 2026          · ​@Martin
+
+
+  Summary
+  On 10/20 at 12:12 JST, dsr-fullstack#103 (DSR-585) removed 9 fields from the dm_product
+  CF model that 4 persisted queries and dsr-eds still read. AEM rejects a whole GraphQL
+  query when it asks for a field missing from the schema, so the product lists, the product
+  detail page and the search count stopped receiving data. The queries were fixed in
+  commit 5e827682 on develop (13:25 JST). The front end was aligned by dsr-eds#189,
+  merged at 13:50 JST.
+
+  Status: resolved.
+
+
+
+  Impact
+  Four of the eleven persisted queries asked for removed fields. The video, catalog and
+  product-search-count queries were not affected.
+
+
+     Persisted                Removed fields still requested                        dsr-eds consumer
+     query
+
+      dsr-                    8: isStandardItem ,                                   製品一覧 (product-list), 製品条件
+     product-                  sustainabilityText , materials ,                     検索 count
+     list                      appearances , sewingSuitabilities ,
+                               plasticHardwareFunctionCategories ,
+                               productionCountries ,
+                               internalCertifications
+
+      dsr-                    1: topBottomStopVariation (in                         Product overlay pages
+     product-                  relatedProducts )                                    (json2html, cf-
+     page                                                                           templates/product.html )
+
+      dm-                     the same 8 as dsr-product-list                        No longer called by the lists
+     product-                                                                       (replaced by dsr-product-
+     list                                                                           list )
+
+
+
+
+                                                                                                                    Page 1 of 3
+Incident report — product persisted queries broken by the dm_product CR (DSR-585)
+
+
+
+
+     Persisted                Removed fields still requested                        dsr-eds consumer
+     query
+
+      product-                7: isStandardItem ,                                   Legacy detail query
+     detail                    topBottomStopVariation and 5 tag fields
+                              ( materials , appearances ,
+                               sewingSuitabilities ,
+                               plasticHardwareFunctionCategories ,
+                               productionCountries )
+
+
+  AEM validates a persisted query against the schema before running it. A single unknown
+  field fails the whole response, not just that field.
+
+  Open question: the outage was not observed directly (no log or screenshot). We need to
+  confirm when the PR #103 model was deployed to DEV, and whether STG was affected.
+
+
+  Timeline
+  1 h 13 min passed between the model merge and the query fix on develop. Times are JST
+  on 2026-10-20 and come from GitHub; Cloud Manager deployment times are unknown.
+
+
+     Time (JST)             Event
+
+     13:50                  dsr-eds#189 merged: dsr-eds no longer reads the
+                            removed fields
+
+     13:25                  Commit 5e827682 pushed to develop: the 4
+                            queries match the new model
+
+     ~13:00                 Analysis: queries compared with the develop
+                            model, 4 failing queries identified
+
+     12:12                  dsr-fullstack#103 "dsr-585 cr product cf" merged
+                            into develop (no description, no review by another
+                            developer)
+
+     11:48 – 11:52          Commits 2625f706 and d68c8223 : dm_product
+                            model changed (−30 fields, +9)
+
+
+
+
+                                                                                                          Page 2 of 3
+Incident report — product persisted queries broken by the dm_product CR (DSR-585)
+
+
+
+
+  Root cause
+  The CF model was changed on its own, without updating the queries that read it. Yet the
+  model and the persisted queries live in the same repository and the same ui.content
+  package.
+
+        No automated check. The Maven build does not validate persisted queries against the
+        CF models. The error only shows up at runtime on AEM.
+        No review. PR #103 was merged by its author 20 minutes after it was opened, with no
+        reviewer and no description of the removed fields.
+        Hidden front-end dependency. dsr-eds reads these fields from another repository.
+        Nothing links a model change to the blocks that depend on it.
+
+
+  Resolution
+  The removed fields were dropped from the 4 queries, the new fields added to the 2 detail
+  queries, then dsr-eds was cleaned up.
+
+  dsr-fullstack, commit 5e827682
+
+         dsr-product-list , dm-product-list : 8 fields removed.
+
+         dsr-product-page : topBottomStopVariation removed. Added
+         itemVariationsImage , colorVariationsImage , Howtouse , HowtouseImage ,
+         recycledMaterial , recycledMaterialNote , parentProduct ,
+         applicableSliderStandard and applicableSliderSpecial . The 4 product
+        references share a ProductLink fragment.
+         product-detail : 7 fields removed, same additions.
+
+  dsr-eds, #189
+
+        product-list: removed the tag groups, the plastic parts filter, the standard color card
+        badge and the             生産国
+                             tooltip row.
+        product-detail and cf-templates/product.html : removed the stop variation. The new
+        fields are parsed but not rendered yet, as there is no design for them.
+
+  Verification: braces balanced and fields checked one by one against the develop model.
+  The queries were not run in GraphiQL, and the pages were not checked in a browser.
+
+
+
+
+                                                                                             Page 3 of 3
+
