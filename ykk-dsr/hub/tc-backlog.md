@@ -7,6 +7,7 @@
 
 | # | US (Jira) | Epic / Folder ID | Sub-task | SP | Mode | Drive folder (sẵn có) | Đêm dự kiến | Status | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 0 | CL-v0.1 (Numata 20/10) | — | — | — | adopt-later | — | sau 22/10 | hold | 4 layout sheets v0.1 (product/video/tech video/catalog) – reference only, NOT baseline. Do NOT change Sprint 12 TCs. When Quentin answers Q-CL-1 or sheet reaches 1.0: add TCs from docs/client-layout/CL-v0.1-numata-20261020.md §2 into 586/587/570 files |
 | 1 | DSR-566 ニュース詳細 | DSR-357 | DSR-618 | 8 | new | — | 15/10 | done | Test page: /master/en/test-space/dsr-357-news-detail · related DSR-567 |
 | 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | 1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB | 15/10 | done | 32 TC; TestData trên Drive ✅; TC .xlsx 33 KB > 12 KB → Dat upload `tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）.xlsx` vào folder DSR-356. DSR-619 Done. JOB-20261015-12 hold (chưa có trang test) · Q4–Q9 |
 | 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | done | adopt 9 TC; TestData trên Drive ✅; TC adopt 128 KB → Dat upload `tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx` vào folder DSR-196; bản dev đổi tên _v20261015_dev. DSR-633 Done. JOB-13/14 queue · Q10–Q11 |
