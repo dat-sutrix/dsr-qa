@@ -1,0 +1,454 @@
+{
+  "capture": "evidence/DSR-ECO-016_DEV_01.png",
+  "fullPage": false,
+  "animations": "allow",
+  "before": {
+    "timestamp": "2026-10-20T01:02:55.250Z",
+    "frameTime": 4454.39999999851,
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+    "scrollX": 0,
+    "scrollY": 280,
+    "scrollWidth": 375,
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "activeIndex": "0",
+    "active": {
+      "x": 16,
+      "y": 60.390625,
+      "width": 343,
+      "height": 609,
+      "right": 359,
+      "bottom": 669.390625,
+      "text": "bluesign認証商品bluesign認証商品bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。VIEW MORE",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "neighbours": [
+      {
+        "x": -343,
+        "y": 60.390625,
+        "width": 343,
+        "height": 609,
+        "right": 0,
+        "bottom": 669.390625,
+        "text": "bluesign認証商品bluesign認証商品bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。VIEW MORE",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 375,
+        "y": 60.390625,
+        "width": 343,
+        "height": 609,
+        "right": 718,
+        "bottom": 669.390625,
+        "text": "bluesign認証商品bluesign認証商品bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。VIEW MORE",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    ],
+    "summary": {
+      "x": 48,
+      "y": 345.390625,
+      "width": 279,
+      "height": 224,
+      "right": 327,
+      "bottom": 569.390625,
+      "text": "bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "viewMore": {
+      "x": 69,
+      "y": 593.390625,
+      "width": 237,
+      "height": 44,
+      "right": 306,
+      "bottom": 637.390625,
+      "text": "VIEW MORE",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "dots": [
+      {
+        "x": 96,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 106,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 120,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 130,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 144,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 154,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 168,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 178,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 192,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 202,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 216,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 226,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 240,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 250,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 264,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 274,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 288,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 298,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    ],
+    "arrows": [
+      {
+        "x": 16,
+        "y": 693.390625,
+        "width": 40,
+        "height": 40,
+        "right": 56,
+        "bottom": 733.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 319,
+        "y": 693.390625,
+        "width": 40,
+        "height": 40,
+        "right": 359,
+        "bottom": 733.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    ],
+    "finderButton": {
+      "x": 69.5,
+      "y": 749.390625,
+      "width": 236,
+      "height": 44,
+      "right": 305.5,
+      "bottom": 793.390625,
+      "text": "環境配慮型製品診断",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    }
+  },
+  "after": {
+    "timestamp": "2026-10-20T01:02:55.358Z",
+    "frameTime": 4563,
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+    "scrollX": 0,
+    "scrollY": 280,
+    "scrollWidth": 375,
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "activeIndex": "0",
+    "active": {
+      "x": 16,
+      "y": 60.390625,
+      "width": 343,
+      "height": 609,
+      "right": 359,
+      "bottom": 669.390625,
+      "text": "bluesign認証商品bluesign認証商品bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。VIEW MORE",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "neighbours": [
+      {
+        "x": -343,
+        "y": 60.390625,
+        "width": 343,
+        "height": 609,
+        "right": 0,
+        "bottom": 669.390625,
+        "text": "bluesign認証商品bluesign認証商品bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。VIEW MORE",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 375,
+        "y": 60.390625,
+        "width": 343,
+        "height": 609,
+        "right": 718,
+        "bottom": 669.390625,
+        "text": "bluesign認証商品bluesign認証商品bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。VIEW MORE",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    ],
+    "summary": {
+      "x": 48,
+      "y": 345.390625,
+      "width": 279,
+      "height": 224,
+      "right": 327,
+      "bottom": 569.390625,
+      "text": "bluesign認証を受けた商品は、その製造工程において、有害性の低い物質または処理工程が採用されていることを保証します。すべての化学物質と処理工程がbluesignによって審査、評価されます。",
+      "display": "block",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "viewMore": {
+      "x": 69,
+      "y": 593.390625,
+      "width": 237,
+      "height": 44,
+      "right": 306,
+      "bottom": 637.390625,
+      "text": "VIEW MORE",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    },
+    "dots": [
+      {
+        "x": 96,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 106,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 120,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 130,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 144,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 154,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 168,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 178,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 192,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 202,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 216,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 226,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 240,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 250,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 264,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 274,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 288,
+        "y": 708.390625,
+        "width": 10,
+        "height": 10,
+        "right": 298,
+        "bottom": 718.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    ],
+    "arrows": [
+      {
+        "x": 16,
+        "y": 693.390625,
+        "width": 40,
+        "height": 40,
+        "right": 56,
+        "bottom": 733.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      {
+        "x": 319,
+        "y": 693.390625,
+        "width": 40,
+        "height": 40,
+        "right": 359,
+        "bottom": 733.390625,
+        "text": "",
+        "display": "flex",
+        "visibility": "visible",
+        "opacity": "1"
+      }
+    ],
+    "finderButton": {
+      "x": 69.5,
+      "y": 749.390625,
+      "width": 236,
+      "height": 44,
+      "right": 305.5,
+      "bottom": 793.390625,
+      "text": "環境配慮型製品診断",
+      "display": "flex",
+      "visibility": "visible",
+      "opacity": "1"
+    }
+  },
+  "geometryUnchanged": true,
+  "expandedActiveCardVisibleInPng": true,
+  "visualInspection": "Expanded active panel, summary and VIEW MORE visible; observation only, no visual verdict."
+}

@@ -1,0 +1,32 @@
+{
+  "job": "JOB-20261020-01",
+  "agent": "codex",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-20T01:02:37Z",
+  "finished": "2026-10-20T01:02:57.787382Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ECO-014",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture integrity only; no visual verdict.",
+      "evidence": "evidence/DSR-ECO-014_DEV_01.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-ECO-016",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture integrity only; no visual verdict.",
+      "evidence": "evidence/DSR-ECO-016_DEV_01.png",
+      "suspect": "test"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/eco-products/DSR-590.stable-capture.spec.ts"
+  ],
+  "questions": []
+}
