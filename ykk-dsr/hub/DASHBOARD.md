@@ -5,16 +5,15 @@
 > Cập nhật: 2026-10-20 07:45 (UTC+7, [schedule] morning) · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
 > Lượt tự động 07:45 / 17:10 cập nhật file này. Giữ gọn: chỉ trạng thái hiện tại, lịch sử nằm trong git log và us/*.md.
 
-## 1. Ticket đang giao Dat: 9 mở (Jira 20/10 11:00) – 566 + 653 tính là 1 việc · DSR-648, DSR-651 Done 20/10
+## 1. Ticket đang giao Dat: 8 mở (Jira 20/10 09:15) – 566 + 653 tính là 1 việc · ✅ Done 20/10: DSR-552, DSR-648, DSR-651
 | Ticket | Trạng thái | Kế hoạch (khi nào) | Blocked / đang đợi ai | Done DEV đích |
 |---|---|---|---|---|
-| [DSR-552](https://sutrix.atlassian.net/browse/DSR-552) Breadcrumb | ✅ 35/35, Fail 0 · bug 648/651 **Done 20/10** | **Chờ Dat "ok" → chuyển Done** | Không | 20/10 |
 | [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | e-book ✅; 016/017 ✅ | video: seed qa587-main + qa557-dam tối 20/10 → JOB-20261020-02 21/10 · catalog: sau merge catalog → seed 21/10 → rerun 22/10 | Quentin DSR-611 (mặc định 20/10) · Martin catalog merge | 22/10 (rủi ro cao) |
 | [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 7 ✅ · 1 ❌ TC 007 · 6 ⛔ · 2 skip | manual 6 TC tối 20/10 · catalog seed 21/10 → rerun 22/10 | Quentin (TC 007) · HubSpot (⛔ Ngọc) · Martin catalog | 22/10 (rủi ro cao) |
 | [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | JOB-02: 6 ✅ · 25 ❌ (phần lớn nghi product) · bug ảnh article (nháp, chờ Dat duyệt) | 17:10 20/10 triage + nháp bug · 21/10 retest | Martin (fix) | 22/10 |
 | [DSR-653](https://sutrix.atlassian.net/browse/DSR-653) + [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) ニュース詳細 | 5/18 ✅ · 12 ⛔ (không có template) | Có template → seed tối đó → agent hôm sau | Quentin trả 566 về dev. Không có tới 21/10 → Sprint 13 | 22/10 hoặc Sprint 13 |
-| 🆕 [DSR-587](https://sutrix.atlassian.net/browse/DSR-587) 動画詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, automation scaffold (IDLE-06) | positive: seed TD-587 tối 20/10 → JOB-20261020-02 21/10 · negative (02, 04–08, 10, 12): buffer 22–23/10 | Không | 23/10 (buffer – ticket mới) |
-| 🆕 [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) 製品詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, scaffold (IDLE-05); URL /products/ hay /product/ (JOB-05 kiểm) | TD-586-01/02 (ja) tối 21/10 → agent 22/10 · negative: buffer 23/10 | 項目fix版 đang review (Quentin) | 23/10 (buffer – ticket mới) |
+| 🆕 [DSR-587](https://sutrix.atlassian.net/browse/DSR-587) 動画詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, automation scaffold (IDLE-06) | positive: seed TD-587 tối 20/10 → JOB-20261020-02 21/10 · negative: tối 20–21/10 → agent 22/10 | Không | **22/10** |
+| 🆕 [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) 製品詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, scaffold (IDLE-05); URL /products/ hay /product/ (JOB-05 kiểm) | TD-586-01/02 (ja) **tối 20/10** → agent 21/10 · negative tối 21/10 → agent 22/10 | 項目fix版 đang review (Quentin) | **22/10** |
 | 🆕 [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) bug video liên quan (giao Dat retest) | Martin fix + merge 20/10 | seed qa587-r1…r6/off/rel-a/rel-b tối 20/10 → JOB-20261019-03 21/10 → đóng bug | Không | 21/10 |
 
 Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ data; C15 chờ Ngọc) · DSR-457 (R1 Ngọc, 61015 Kohei – mặc định 20/10) · DSR-433 (TC gửi mail ⛔ SendGrid).
@@ -31,10 +30,10 @@ Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ da
 | P3 | Gửi Nakamoto 3 địa chỉ nhận mail test – **hoãn** tới khi có SendGrid chính thức | Nakamoto | — | — |
 | P3 | 22/10: duyệt Done DEV các ticket đạt (Claude đề xuất + soạn comment) | — | 22/10 | 557, 570, 529, 566 |
 
-## 3. 🌙 QA part-time tối nay (T3 20/10, ~2h05) – 17:10 tạo Night Pack theo PLAN "Night Pack 20/10 – bắt buộc đưa vào"
-Martin 20/10 06:44: merge xong, **một số CF test bị xóa khi dọn folder** → tạo lại bằng bộ **TD-587** (đúng folder mới), bỏ qa501-* / qa190-mv-*:
-1. qa587-main en+ja (YouTube) – 557 + 587 (25') · 2. qa557-dam en+ja (video DAM) – 557 (20') · 3. qa587-r1…r6 + qa587-rel-a – bug DSR-647 thứ tự (35') · 4. qa587-off + qa587-rel-b – DSR-647 ẩn video (15') · 5. 570 manual 6 TC (30')
-Catalog: chờ Martin merge chiều nay → tạo lại tối 21/10.
+## 3. 🌙 QA part-time tối nay (T3 20/10, ~3h50, tối đa 4h – tăng tải theo yêu cầu Dat) – 17:10 tạo Night Pack theo PLAN "Night Pack 20/10"
+Tạo lại data sau khi Martin dọn folder (bộ TD-587/TD-586, đúng folder mới), theo hạn ticket:
+1. qa587-main en+ja – 587/557 · 2. qa587-r1…r6 + rel-a – bug DSR-647 · 3. qa587-off + rel-b – DSR-647 · 4. qa557-dam en+ja – 557 · 5. **TD-586-01/02 (ja) – 586 (kéo sớm 1 ngày)** · 6. 570 manual 6 TC · 7. (còn giờ) 3 TC phụ 587
+Catalog: chờ Martin merge chiều nay → tối 21/10.
 
 ## 4. 🤖 Agents
 | Lane | Hàng đợi (tự chạy, không cần ai) | Hold (07:45/17:10 tự chuyển) |
