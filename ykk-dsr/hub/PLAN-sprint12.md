@@ -26,6 +26,11 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 **Agent – chạy ngay không chờ (19/10):** JOB-20261019-01 (557 016/017 + 647 P2: sửa phạm vi assertion theo quyết định QA) · IDLE-07/10/11/12/13 · codex IDLE-16. Hold có điều kiện: -02/-04 (529, sau Night Report), -03 (552-014 khi DSR-651 fix; 647-P3 khi re-preview).
 Quyết định QA 19/10: 557-016/017 đếm form chỉ trên DSR (trang ngoài có form search = không phải gate) · 647-P2 bỏ assertion "static HTML" (BL-OVL-1: block lọc phía client) · 173 MOVIE-014/033 fail = CF movieid-01 bị xóa movieSourceId/relatedProducts (data, ngoài sprint – ghi nhận, chưa sửa).
 
+**Ticket mới giao Dat 20/10 sáng (Jira):** DSR-586, DSR-587 (overlay, trước là Martin theo dõi) + bug DSR-647 retest. Áp quy tắc buffer: ticket mới → được dùng 22–23/10.
+- Night Pack 21/10 (≤3h sau ×1.5): (1) catalog 557/570 theo folder Martin gửi · (2) **TD-586-01 + TD-586-02** (ja, `/content/dam/common/ja/products/990586001|990586002` + `/content/dam/dsr/ja/products/…`) · (3) qa557-dam ja.
+- Night Pack 22/10: TD-586 negative (05–09, 11) + TD-587 negative (02, 04–08, 10, 12). Agent chạy sáng 23/10 → Done 586/587 đích 23/10.
+- Agent: job hold 586 positive sau Night 21/10 (17:10 21/10 tạo).
+
 **Night Pack 20/10 – bắt buộc đưa vào (chốt 20/10 09:00, thay dòng "QA-PT tối T3 20/10" cũ):**
 Martin 20/10 06:44: PR đã merge, **một số CF test bị xóa khi dọn folder** → QA tạo lại. Dùng bộ TestData **TD-587** (đã đúng folder mới, file `[Sutrix] DSR -587- …_TestData.xlsx`), **không dùng lại qa501-*** / qa190-mv-*. Trước khi tạo: mở folder, CF nào đã có đúng tên thì bỏ qua (ghi "exists"). Tạo CF đúng folder (directory-strict), tên chữ thường/số/"-".
 | # | US | Việc | ~phút | Dòng report |
