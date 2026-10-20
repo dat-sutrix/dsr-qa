@@ -5,19 +5,21 @@
 > Cập nhật: 2026-10-20 07:45 (UTC+7, [schedule] morning) · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
 > Lượt tự động 07:45 / 17:10 cập nhật file này. Giữ gọn: chỉ trạng thái hiện tại, lịch sử nằm trong git log và us/*.md.
 
-## 1. Ticket đang giao Dat: 7 (Jira 20/10 07:45) – 566 + 653 tính là 1 việc
+## 1. Ticket đang giao Dat: 9 mở (Jira 20/10 11:00) – 566 + 653 tính là 1 việc · DSR-648, DSR-651 Done 20/10
 | Ticket | Trạng thái | Kế hoạch (khi nào) | Blocked / đang đợi ai | Done DEV đích |
 |---|---|---|---|---|
-| [DSR-552](https://sutrix.atlassian.net/browse/DSR-552) Breadcrumb | ✅ **35/35 đã chạy, Fail 0** – 014 ✅ (DSR-651) + 016 ✅ (DSR-648) 19/10 | **Đề xuất Done DEV hôm nay** (🔔 #1) | Không | 20/10 |
-| [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | e-book ✅; 016/017 ✅ ja+en | 20/10 áp mặc định DSR-611 · merge overlay 20/10 xóa data video → QA-PT seed lại tối 20/10 → agent 21/10 | **Quentin** – DSR-611 (mặc định có hiệu lực 20/10) | 22/10 (rủi ro cao) |
-| [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 16 test: 7 ✅ · 1 ❌ (lộ link PDF, chờ Quentin TC 007) · 6 ⛔ · 2 skip; catalogId đã sửa ✅ 19/10 | manual 6 TC tối 20/10 · catalog merge chiều 20/10 → seed lại tối 21/10 → rerun 22/10 | **Quentin** (TC 007) · form HubSpot (⛔ Ngọc) | 22/10 (rủi ro cao) |
-| [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | Trang test ✅ (stories ja+en, 02, r1–r3) · TD-529-01 ❌ ảnh article (nghi vấn, chưa bug) | **JOB-20261019-02 + -04 đang queue** → triage 17:10 20/10 · 21/10 retest | Không | 22/10 |
-| [DSR-653](https://sutrix.atlassian.net/browse/DSR-653) + [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) ニュース詳細 | 5/18 ✅ · 12 ⛔ (không có template `news-article`) | Có template → QA-PT seed tối đó → agent hôm sau | 566 trả về dev (Ngọc/Martin). Không có tới 21/10 → 653 sang Sprint 13 | 22/10 hoặc Sprint 13 |
-| [DSR-590](https://sutrix.atlassian.net/browse/DSR-590) 環境配慮型製品 | C14 demo: 4 ✅ · 2 ❌ data (VIEW MORE/finder = link google.com tạm) · en/cn skip | **JOB-20261020-01** chụp lại styling (ảnh 19/10 không khớp số đo) → Claude trả lời Ngọc 17:10 | C15 chưa có trang (**Ngọc**) · Figma C15/SP (**Quentin**, Q36) | C14: 22/10 · C15: theo dev |
+| [DSR-552](https://sutrix.atlassian.net/browse/DSR-552) Breadcrumb | ✅ 35/35, Fail 0 · bug 648/651 **Done 20/10** | **Chờ Dat "ok" → chuyển Done** | Không | 20/10 |
+| [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | e-book ✅; 016/017 ✅ | video: seed qa587-main + qa557-dam tối 20/10 → JOB-20261020-02 21/10 · catalog: sau merge catalog → seed 21/10 → rerun 22/10 | Quentin DSR-611 (mặc định 20/10) · Martin catalog merge | 22/10 (rủi ro cao) |
+| [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 7 ✅ · 1 ❌ TC 007 · 6 ⛔ · 2 skip | manual 6 TC tối 20/10 · catalog seed 21/10 → rerun 22/10 | Quentin (TC 007) · HubSpot (⛔ Ngọc) · Martin catalog | 22/10 (rủi ro cao) |
+| [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | JOB-02: 6 ✅ · 25 ❌ (phần lớn nghi product) · bug ảnh article (nháp, chờ Dat duyệt) | 17:10 20/10 triage + nháp bug · 21/10 retest | Martin (fix) | 22/10 |
+| [DSR-653](https://sutrix.atlassian.net/browse/DSR-653) + [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) ニュース詳細 | 5/18 ✅ · 12 ⛔ (không có template) | Có template → seed tối đó → agent hôm sau | Quentin trả 566 về dev. Không có tới 21/10 → Sprint 13 | 22/10 hoặc Sprint 13 |
+| 🆕 [DSR-587](https://sutrix.atlassian.net/browse/DSR-587) 動画詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, automation scaffold (IDLE-06) | positive: seed TD-587 tối 20/10 → JOB-20261020-02 21/10 · negative (02, 04–08, 10, 12): buffer 22–23/10 | Không | 23/10 (buffer – ticket mới) |
+| 🆕 [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) 製品詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, scaffold (IDLE-05); URL /products/ hay /product/ (JOB-05 kiểm) | TD-586-01/02 (ja) tối 21/10 → agent 22/10 · negative: buffer 23/10 | 項目fix版 đang review (Quentin) | 23/10 (buffer – ticket mới) |
+| 🆕 [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) bug video liên quan (giao Dat retest) | Martin fix + merge 20/10 | seed qa587-r1…r6/off/rel-a/rel-b tối 20/10 → JOB-20261019-03 21/10 → đóng bug | Không | 21/10 |
 
-Bug Dat theo dõi: DSR-647 – **Martin 20/10: đã merge, retest được** → QA-PT seed lại qa501-* tối nay → JOB-20261019-03 sáng 21/10 · DSR-457 ✅ #1, #10 (đã comment); còn R1 (Ngọc), 61015 (Kohei, mặc định 20/10), #13 sau 587 · DSR-433: ✅ 1.0–3.0 (1.0 QA-PT ghi Fail = đọc nhầm expected → đề xuất Pass), ✅ 016/017; TC gửi mail ⛔ SendGrid.
+Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ data; C15 chờ Ngọc) · DSR-457 (R1 Ngọc, 61015 Kohei – mặc định 20/10) · DSR-433 (TC gửi mail ⛔ SendGrid).
 
-> ⚠ **Hôm nay T3 20/10:** overlay đã merge (Martin) → data QA video/sản phẩm cũ biến mất (không phải bug). Catalog merge chiều nay. Agent chạy regression + visual diff sau merge (JOB-20261019-05/-06). QA-PT tối nay: seed lại video 557 + qa501-* (587/647) + manual 570 – xem PLAN "Merge overlay".
+> ⚠ **T3 20/10:** overlay đã merge, Martin dọn folder → một số CF test bị xóa → tạo lại bằng TD-587 (PLAN "Night Pack 20/10"). Catalog merge chiều nay.
 
 ## 2. 🔔 Dat cần làm
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
