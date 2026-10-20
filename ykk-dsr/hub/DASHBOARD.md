@@ -52,6 +52,13 @@ Backlog 18/18 xong · Night TC job 20/10 18:35: done 1/1 (re-baseline DSR-585 19
 | CAT-2 | [DSR-557/570] e-book requiresForm card không mở ebookUrl, đi tới trang catalog (CATV-017, CATDL-018 ja+en) | 30% | Hành vi khớp DSR-655 Y3 → nhiều khả năng TC cũ | Không tạo; re-baseline TC (🔔 P2) |
 | 529 BUG-1…6, PEND-529-01 | xem bugs/529-decision-20261021.md | 50–90% | Night 20/10 BUGCHK-529-* | 07:45 21/10 áp bảng quyết định |
 
+## ⚠ Night 20/10 – overlay pages 404 (claude-web 23:20, morning 21/10 cập nhật)
+QA-PT tạo đủ CF (qa587-main, r1–r6, rel-a, off, rel-b, qa557-dam, catalog lõi) nhưng mọi trang `/en/library/video/<id>` và `/en/library/catalog/<id>` = 404 (.page và .live). Note QA-PT: "DSR CF thiếu isActive". Ảnh DSR CF qa587-main (model DM_movie_related): field là **表示フラグ** (không có nhãn isActive) chưa bật, trạng thái **Draft** (Last published trống).
+Suy luận (70%): **data** – 表示フラグ = isActive chưa ON + DSR CF chưa publish. Chưa xác minh.
+Việc sáng 21/10 (Dat, 10 phút, mở khóa sớm 1 ngày): mở DSR CF `/content/dam/dsr/en/movies/standard/qa587-main` → bật 表示フラグ → Save → Publish → mở https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main. 200 → báo claude-web, QA-PT tối 21/10 bật cho các CF còn lại (hoặc Dat làm luôn). Vẫn 404 → hỏi Martin (tin dưới).
+> Hi Martin, on DEV the DSR CF (DM_movie_related) has no field labelled isActive – only 表示フラグ. Is 表示フラグ the isActive flag? With it ON and the DSR CF published, /en/library/video/qa587-main is still 404 (.page and .live). Same for /en/library/catalog/qa190-cat-pdf-form. Could you check?
+Ảnh hưởng: 587, 647, 557 (video + catalog), 570 → job hold -20-02, -19-03, -20-04 chờ. Done 22/10 của 587/557/570 rủi ro cao.
+
 ## 📣 Báo Martin – merge/incident 20/10 (morning 07:45 bổ sung kết quả đêm)
 Nguồn: JOB-20261020-09 (full regression 16:31–16:49 VN, 345 test: 111 pass / 69 fail / 165 skip; 63 fail là lỗi cũ, cause none).
 
