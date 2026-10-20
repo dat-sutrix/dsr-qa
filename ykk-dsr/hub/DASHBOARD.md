@@ -8,17 +8,17 @@
 ## 1. Ticket đang giao Dat: 8 mở (Jira 20/10 09:15) – 566 + 653 tính là 1 việc · ✅ Done 20/10: DSR-552, DSR-648, DSR-651
 | Ticket | Trạng thái | Kế hoạch (khi nào) | Blocked / đang đợi ai | Done DEV đích |
 |---|---|---|---|---|
-| [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | e-book ✅; 016/017 ✅ | video: seed qa587-main + qa557-dam tối 20/10 → JOB-20261020-02 21/10 · catalog: **giữ kết quả cũ** (catalog ngoài scope merge – Martin 20/10) | Quentin DSR-611 (mặc định 20/10) | **21/10** |
-| [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 7 ✅ · 1 ❌ TC 007 · 6 ⛔ · 2 skip | manual 6 TC tối 20/10 → QA confirm 21/10 (TC 007 = ⛔ chờ Quentin) | Quentin (TC 007) · HubSpot (⛔ Ngọc) | **21/10** |
+| [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | e-book ✅; 016/017 ✅ | video: seed tối 20/10 → agent 21/10 · catalog: **Martin merge catalog chiều 20/10** → seed lại tối 20–21/10 → agent 22/10 | Martin (catalog merge) · Quentin DSR-611 (mặc định) | 22/10 |
+| [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 7 ✅ · 1 ❌ TC 007 · 6 ⛔ · 2 skip | manual 6 TC tối 20/10 · catalog seed lại sau merge → rerun list 22/10 (TC 007 = ⛔ Quentin) | Martin (catalog merge) · Quentin (TC 007) | 22/10 |
 | [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | JOB-02: 6 ✅ · 25 ❌ (phần lớn nghi product) · bug ảnh article (nháp, chờ Dat duyệt) | 17:10 20/10 triage + nháp bug · 21/10 retest | Martin (fix) | 22/10 |
 | [DSR-653](https://sutrix.atlassian.net/browse/DSR-653) + [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) ニュース詳細 | 5/18 ✅ · 12 ⛔ (không có template) | Có template → seed tối đó → agent hôm sau | Quentin trả 566 về dev. Không có tới 21/10 → Sprint 13 | 22/10 hoặc Sprint 13 |
 | 🆕 [DSR-587](https://sutrix.atlassian.net/browse/DSR-587) 動画詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, automation scaffold (IDLE-06) | positive: seed TD-587 tối 20/10 → JOB-20261020-02 21/10 · negative: tối 20–21/10 → agent 22/10 | Không | **22/10** |
-| 🆕 [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) 製品詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, scaffold (IDLE-05); URL /products/ hay /product/ (JOB-05 kiểm) | TD-586-01/02 (ja) **tối 20/10** → agent 21/10 · negative tối 21/10 → agent 22/10 | 項目fix版 đang review (Quentin) | **22/10** |
+| 🆕 [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) 製品詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, scaffold (IDLE-05); URL /products/ hay /product/ (JOB-05 kiểm) | ⚠ product data DEV đang hỏng (model đổi) → Martin sửa chiều 20/10 · TD-586 tối 21/10 → agent 22/10 | **Martin** (fix query/FE) · 項目fix版 (Quentin) | 22/10 (fallback 23/10) |
 | 🆕 [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) bug video liên quan (giao Dat retest) | Martin fix + merge 20/10 | seed qa587-r1…r6/off/rel-a/rel-b tối 20/10 → JOB-20261019-03 21/10 → đóng bug | Không | 21/10 |
 
 Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ data; C15 chờ Ngọc) · DSR-457 (R1 Ngọc, 61015 Kohei – mặc định 20/10) · DSR-433 (TC gửi mail ⛔ SendGrid).
 
-> ⚠ **T3 20/10:** overlay đã merge, Martin dọn folder → một số CF test bị xóa → tạo lại bằng TD-587 (PLAN "Night Pack 20/10"). Catalog **không** đổi (ngoài scope – Martin 09:25).
+> ⚠ **T3 20/10:** overlay đã merge, Martin dọn folder → một số CF test bị xóa → tạo lại bằng TD-587 (PLAN "Night Pack 20/10"). **12:40:** product data DEV hỏng (CF model product đổi) – Martin sửa chiều nay; catalog overlay đang được merge (Dat OK).
 
 ## 2. 🔔 Dat cần làm
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
@@ -30,10 +30,10 @@ Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ da
 | P3 | Gửi Nakamoto 3 địa chỉ nhận mail test – **hoãn** tới khi có SendGrid chính thức | Nakamoto | — | — |
 | P3 | 22/10: duyệt Done DEV các ticket đạt (Claude đề xuất + soạn comment) | — | 22/10 | 557, 570, 529, 566 |
 
-## 3. 🌙 QA part-time tối nay (T3 20/10, ~3h50, tối đa 4h – tăng tải theo yêu cầu Dat) – 17:10 tạo Night Pack theo PLAN "Night Pack 20/10"
-Tạo lại data sau khi Martin dọn folder (bộ TD-587/TD-586, đúng folder mới; **mỗi content CF kèm 1 DSR CF cùng tên** – Martin 20/10), theo hạn ticket:
-1. qa587-main en+ja – 587/557 · 2. qa587-r1…r6 + rel-a – bug DSR-647 · 3. qa587-off + rel-b – DSR-647 · 4. qa557-dam en+ja – 557 · 5. **TD-586-01/02 (ja) – 586 (kéo sớm 1 ngày)** · 6. 570 manual 6 TC · 7. (còn giờ) 3 TC phụ 587
-Catalog: không cần làm lại (Martin 20/10: catalog ngoài scope merge).
+## 3. 🌙 QA part-time tối nay (T3 20/10, ~4h) – 17:10 tạo Night Pack theo PLAN "Night Pack 20/10"
+Mỗi content CF kèm 1 DSR CF cùng tên. Thứ tự: 1. qa587-main en+ja · 2. qa587-r1…r6 + rel-a (DSR-647) · 3. qa587-off + rel-b · 4. qa557-dam en+ja · 5. **catalog lõi 4 × ja/en – chỉ khi catalog đã merge** · 5b. sửa data 529 · 6. 570 manual · 7. (tùy chọn) TC phụ 587
+**TD-586 dời sang tối 21/10** (product đang hỏng do đổi model).
+Catalog merge: ☐ chưa xác nhận (17:10 cập nhật ô này: merged + folder / chưa)
 
 ## 4. 🤖 Agents
 | Lane | Hàng đợi (tự chạy, không cần ai) | Hold (07:45/17:10 tự chuyển) |
