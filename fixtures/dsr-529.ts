@@ -1,10 +1,9 @@
 export const languages = ['ja', 'en'] as const;
 export type Language = typeof languages[number];
 export const viewports = { PC: { width: 1440, height: 900 } };
-// Pages under test are fixture values (JOB-20261015-12 Input). QA-PT seeds them 2026-10-16 night (ja first; en later).
-// Primary root per A3; fallback root if the QA-PT Note says "stories folder missing". Override: DSR529_ROOT=test-space
-export const primaryRoot = process.env.DSR529_ROOT || 'library/article/stories';
-export const fallbackRoot = 'test-space';
+// Pages under test are fixture values (JOB-20261019-02: Martin 19/10, QA created /master/{lang}/library/article/stories on DEV).
+// No test-space fallback.
+export const primaryRoot = 'library/article/stories';
 export const slugs = { full: 'qa529-01', minimal: 'qa529-02', related: ['qa529-r1', 'qa529-r2', 'qa529-r3'] } as const;
 export const articlePath = (lang: Language, slug: string, root: string = primaryRoot) => `/master/${lang}/${root}/${slug}`;
 // TD-529-02 is ja only (TestData en column "—").

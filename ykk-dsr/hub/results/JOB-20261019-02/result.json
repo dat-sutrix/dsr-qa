@@ -1,0 +1,428 @@
+{
+  "job": "JOB-20261019-02",
+  "agent": "claude-code",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-20T00:55:35Z",
+  "finished": "2026-10-20T01:09:32Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "subtitle/articleImage/description/relatedStories not found (selector guesses); infoBar not before body; empty image block",
+      "evidence": "evidence/DSR-ARTICLE-002_ja.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "en",
+      "result": "fail",
+      "error": "subtitle/articleImage/description/relatedStories not found (selector guesses); infoBar not before body; empty image block",
+      "evidence": "evidence/DSR-ARTICLE-002_en.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-ARTICLE-003",
+      "lang": "ja",
+      "result": "fail",
+      "error": "h1 and <title> = navTitle (\"QA529 ナビ\"/\"QA529 Nav\") instead of TD title",
+      "evidence": "evidence/DSR-ARTICLE-003_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-003",
+      "lang": "en",
+      "result": "fail",
+      "error": "h1 and <title> = navTitle (\"QA529 ナビ\"/\"QA529 Nav\") instead of TD title",
+      "evidence": "evidence/DSR-ARTICLE-003_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "0 tag labels in info bar (article:tag meta = do-not-translate, site:product/bio-based)",
+      "evidence": "evidence/DSR-ARTICLE-006_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "0 tag labels in info bar (article:tag meta = do-not-translate, site:product/bio-based)",
+      "evidence": "evidence/DSR-ARTICLE-006_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "shown 2026/10/01 OK but no published-date meta (served publicationdate)",
+      "evidence": "evidence/DSR-ARTICLE-007_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-007",
+      "lang": "en",
+      "result": "fail",
+      "error": "shown 2026/10/01 OK but no published-date meta (served publicationdate)",
+      "evidence": "evidence/DSR-ARTICLE-007_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-008",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-008",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-009",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-010",
+      "lang": "ja",
+      "result": "fail",
+      "error": "no published-date/updated-date meta; served publicationdate/updatedate with correct values",
+      "evidence": "evidence/DSR-ARTICLE-010_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-010",
+      "lang": "en",
+      "result": "fail",
+      "error": "no published-date/updated-date meta; served publicationdate/updatedate with correct values",
+      "evidence": "evidence/DSR-ARTICLE-010_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "result": "fail",
+      "error": "thumbnail meta is relative DAM path /content/dam/ykk/..., not absolute",
+      "evidence": "evidence/DSR-ARTICLE-011_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "result": "fail",
+      "error": "thumbnail meta is relative DAM path /content/dam/ykk/..., not absolute",
+      "evidence": "evidence/DSR-ARTICLE-011_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "no category meta; keywords served as searchkeywords=\"qa529kw1, qa529kw2\"",
+      "evidence": "evidence/DSR-ARTICLE-012_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "en",
+      "result": "fail",
+      "error": "no category meta; keywords served as searchkeywords=\"qa529kw1, qa529kw2\"",
+      "evidence": "evidence/DSR-ARTICLE-012_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-013",
+      "lang": "ja",
+      "result": "fail",
+      "error": "related-stories = bare names \"qa529-r1, ...\" not paths",
+      "evidence": "evidence/DSR-ARTICLE-013_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-013",
+      "lang": "en",
+      "result": "fail",
+      "error": "related-stories = bare names \"qa529-r1, ...\" not paths; en order r1,r3,r2",
+      "evidence": "evidence/DSR-ARTICLE-013_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "ja",
+      "result": "fail",
+      "error": "published-date and category meta missing (other 6 keys once, non-empty)",
+      "evidence": "evidence/DSR-ARTICLE-014_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "en",
+      "result": "fail",
+      "error": "published-date and category meta missing (other 6 keys once, non-empty)",
+      "evidence": "evidence/DSR-ARTICLE-014_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-015",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "ja",
+      "result": "fail",
+      "error": "qa529-01 robots=\"noindex, nofollow\"; qa529-02 has no robots meta (looks swapped)",
+      "evidence": "evidence/DSR-ARTICLE-016_ja.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "en",
+      "result": "fail",
+      "error": "qa529-01 robots=\"noindex, nofollow\" (qa529-02 not in TD for en)",
+      "evidence": "evidence/DSR-ARTICLE-016_en.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ARTICLE-020",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-023",
+      "lang": "ja",
+      "result": "fail",
+      "error": "qa529-02 shows 関連アイテム heading + related-product block with 4 items",
+      "evidence": "evidence/DSR-ARTICLE-023_ja.png",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ARTICLE-024",
+      "lang": "ja",
+      "result": "fail",
+      "error": "VIEW ALL STORIES and Contact visible, both href=\"#\" (TC says record only)",
+      "evidence": "evidence/DSR-ARTICLE-024_ja.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-ARTICLE-024",
+      "lang": "en",
+      "result": "fail",
+      "error": "VIEW ALL STORIES and Contact visible, both href=\"#\" (TC says record only)",
+      "evidence": "evidence/DSR-ARTICLE-024_en.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-ARTICLE-025",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-026",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no stories query-index returns 200 (all 3 candidates 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ARTICLE-026",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no stories query-index returns 200 (all 3 candidates 404)",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "ja",
+      "result": "fail",
+      "error": "h1 = navTitle, not TD title; <html lang> and info bar OK",
+      "evidence": "evidence/DSR-ARTICLE-029_ja.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "en",
+      "result": "fail",
+      "error": "h1 = navTitle, not TD title; <html lang> and info bar OK",
+      "evidence": "evidence/DSR-ARTICLE-029_en.png",
+      "suspect": "product"
+    },
+    {
+      "tc": "DSR-ARTICLE-001",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Manual",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-004",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Manual",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-005",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Manual",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-021",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Manual",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-032",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Manual",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Visual: no Figma frames",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Visual: no Figma frames",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-017",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "fixme: stories index not on DEV",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-018",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "fixme: stories index not on DEV",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-019",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "fixme: stories index not on DEV; TD-529-04 not seeded",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-022",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "fixme: product index relatedArticles undefined",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-027",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "fixme: DSR-170 article list",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-028",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "fixme: breadcrumb scope Q9",
+      "evidence": "",
+      "suspect": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "cn",
+      "result": "blocked",
+      "error": "fixme: no /master/cn on DEV (Issue #18)",
+      "evidence": "",
+      "suspect": ""
+    }
+  ],
+  "lighthouse": [],
+  "extras": {
+    "http_status": {
+      "/master/ja/library/article/stories/qa529-01": 200,
+      "/master/en/library/article/stories/qa529-01": 200,
+      "/master/ja/qa529-01": 404,
+      "/master/en/qa529-01": 404
+    },
+    "qa529_01_images": {
+      "inventory": "results/DSR-529/DEV/qa529-01-inventory-20261020.json",
+      "ja": {
+        "img_in_main": 5,
+        "picture_in_main": 1,
+        "content_images": [
+          "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=png&optimize=medium (image block #1, 1200x800)"
+        ],
+        "other": "4x breadcrumb arrow.svg; image block #2 empty"
+      },
+      "en": {
+        "img_in_main": 4,
+        "picture_in_main": 0,
+        "content_images": [],
+        "other": "4x breadcrumb arrow.svg; only image block is empty"
+      },
+      "og_image": "media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png (ja+en; differs from shown image)"
+    },
+    "tc026_index": {
+      "/{lang}/stories/query-index.json": 404,
+      "/master/{lang}/stories/query-index.json": 404,
+      "/master/{lang}/library/article/stories/query-index.json": 404
+    }
+  },
+  "code_changes": [
+    "fixtures/dsr-529.ts",
+    "tests/article-detail/DSR-529.article-detail.spec.ts",
+    "fixtures/dsr-529-inventory.cjs",
+    "results/DSR-529/DEV/automation-run-20261020.md",
+    "results/DSR-529/DEV/automation-run-20261020-rerun2.md",
+    "results/DSR-529/DEV/qa529-01-inventory-20261020.json"
+  ],
+  "questions": []
+}

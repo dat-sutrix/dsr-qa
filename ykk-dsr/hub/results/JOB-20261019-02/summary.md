@@ -1,0 +1,14 @@
+# JOB-20261019-02: DSR-529 article-detail run, DEV, 2026-10-20
+- Fixture now uses /master/{lang}/library/article/stories only; the test-space fallback is removed. `npx tsc --noEmit`: exit 0. All TD-529 stories pages return 200 (qa529-02 is ja only, as in the TD).
+- Run 1, full spec (47 tests): 6 pass, 25 fail, 16 skipped (14 fixme, plus 026 ja/en blocked-data). Run 2 reran the 25 failures: same 25 failed on the same values, so nothing is flaky.
+- Pass: 008 ja/en, 009, 015, 020, 025 (ja). 020 may be vacuous because qa529-01 renders no related-stories block, so the selector matches nothing.
+- Fail, suspect product (meta names differ from BL-v1): served names are `publicationdate`, `updatedate`, `searchkeywords`. There is no `category` meta, `related-stories` holds bare names, and the thumbnail is a relative DAM path. Affects 007, 010, 011, 012, 013, 014.
+- Fail, suspect product: h1/<title> = navTitle "QA529 ナビ"/"QA529 Nav" (003, 029); 0 tag labels in the info bar (006).
+- Fail, suspect data: robots swapped, with qa529-01 = noindex,nofollow and qa529-02 = none (016). qa529-02 shows 関連アイテム with 4 products (023). en related order is r1,r3,r2 (013 en).
+- Fail, suspect test: 002 block selectors are guesses (subtitle/description/image are generic text/image blocks; related items = `related-product`). 024 asserts href≠"#", but the TC says record only; both hrefs are "#".
+- 026: all 3 stories query-index candidates return 404 (ja, en), so the test is blocked.
+- Extra (1): /master/{ja,en}/library/article/stories/qa529-01 = 200; /master/{ja,en}/qa529-01 = 404.
+- Extra (2), no verdict: on ja, `main` has 5 <img>: 4 breadcrumb arrows plus 1 article image (media_1b1b7…png, 1200x800, image block #1). Image block #2 is empty.
+- Extra (2), continued: on en, `main` has 4 <img>, all breadcrumb arrows. The only image block is empty, so no article image shows (matches QA-PT TD-529-01). og:image (media_12513…) differs from the shown image. Raw data: results/DSR-529/DEV/qa529-01-inventory-20261020.json.
+- Reports: results/DSR-529/DEV/automation-run-20261020.md (run 1) and -rerun2.md (run 2). The run 1 JSON was wiped by run 2 (Playwright clears test-results), so run 1 durations are not retained.
+- Evidence: 25 failure screenshots from run 2 in evidence/ (2.6 MB).

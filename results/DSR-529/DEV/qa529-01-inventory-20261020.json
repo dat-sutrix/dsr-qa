@@ -1,0 +1,172 @@
+{
+  "env": "dev",
+  "base": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "startedAt": "2026-10-20T01:06:55.435Z",
+  "finishedAt": "2026-10-20T01:07:01.724Z",
+  "statuses": [
+    {
+      "path": "/master/ja/library/article/stories/qa529-01",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/master/ja/qa529-01",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/master/en/library/article/stories/qa529-01",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/master/en/qa529-01",
+      "status": 404,
+      "location": null
+    }
+  ],
+  "inventory": [
+    {
+      "lang": "ja",
+      "path": "/master/ja/library/article/stories/qa529-01",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "status": 200,
+      "imgCount": 5,
+      "pictureCount": 1,
+      "imgs": [
+        {
+          "index": 0,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        },
+        {
+          "index": 1,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        },
+        {
+          "index": 2,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        },
+        {
+          "index": 3,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        },
+        {
+          "index": 4,
+          "block": "image",
+          "inPicture": true,
+          "src": "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=png&optimize=medium",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+          "alt": "",
+          "natural": "1200x800",
+          "rendered": "960x640",
+          "complete": true
+        }
+      ],
+      "pictures": [
+        {
+          "index": 0,
+          "block": "image",
+          "sources": [
+            "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium"
+          ],
+          "img": "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=png&optimize=medium"
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "path": "/master/en/library/article/stories/qa529-01",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "status": 200,
+      "imgCount": 4,
+      "pictureCount": 0,
+      "imgs": [
+        {
+          "index": 0,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        },
+        {
+          "index": 1,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        },
+        {
+          "index": 2,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        },
+        {
+          "index": 3,
+          "block": "breadcrumb",
+          "inPicture": false,
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "natural": "10x10",
+          "rendered": "10x10",
+          "complete": true
+        }
+      ],
+      "pictures": []
+    }
+  ],
+  "qa52902RelatedProduct": [
+    {
+      "className": "related-product auto block",
+      "height": 282,
+      "headings": [
+        "関連アイテム"
+      ],
+      "links": 4,
+      "imgs": 0,
+      "text": "関連アイテム\nQuickFree® click-TRAK® Magnetic\nNATULON® Fiber Sourced®\nEXCELLA®\nAiryString®"
+    }
+  ]
+}

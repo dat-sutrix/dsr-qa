@@ -1,7 +1,7 @@
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import { ArticleDetailPage, type MetaEntry } from '../../pages/ArticleDetailPage';
 import {
-  languages, type Language, viewports, primaryRoot, fallbackRoot, slugs, articlePath, minimalLanguages, blockedData,
+  languages, type Language, viewports, slugs, articlePath, minimalLanguages, blockedData,
   td01, td01Common, td02, blockOrder, optionalBlocks, uniqueMeta, transformParams, storiesIndexPaths, indexProperties, isoDate,
 } from '../../fixtures/dsr-529';
 
@@ -12,20 +12,15 @@ test.afterEach(async ({}, info) => {
   await info.attach('observed', { body: JSON.stringify(observations, null, 2), contentType: 'application/json' });
 });
 
-// Preflight: open the TD page under the primary root, then the fallback root (test-space). Both 404 → blocked-data skip.
+// Preflight: open the TD page under library/article/stories (no fallback). 404 → blocked-data skip.
 async function openArticle(page: Page, lang: Language, slug: string = slugs.full) {
   const article = new ArticleDetailPage(page);
   const errors: string[] = [];
   page.on('pageerror', e => errors.push(e.message));
   page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
-  let path = articlePath(lang, slug);
-  let response = await article.goto(path);
-  if (response?.status() === 404 && primaryRoot !== fallbackRoot) {
-    observations.push({ tried: path, status: 404 });
-    path = articlePath(lang, slug, fallbackRoot);
-    response = await article.goto(path);
-  }
-  test.skip(response?.status() === 404, `${blockedData} (${articlePath(lang, slug)} and ${articlePath(lang, slug, fallbackRoot)} HTTP 404)`);
+  const path = articlePath(lang, slug);
+  const response = await article.goto(path);
+  test.skip(response?.status() === 404, `${blockedData} (${path} HTTP 404)`);
   expect(response?.status()).toBe(200);
   observations.push({ language: lang, path, url: page.url(), status: response?.status() });
   return { article, path, errors };
