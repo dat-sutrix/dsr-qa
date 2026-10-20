@@ -58,3 +58,6 @@ Only execute jobs whose front matter `agent:` equals your lane.
 - Touch another lane's running job or result folder.
 - Write to AEM Author / publish content / submit real forms on PRO.
 - Store PII, passwords or tokens in any file.
+
+## Fail cause tag (from 2026-10-20)
+In every summary.md / result.json, each fail gets `cause`: `overlay-merge` | `dm_product-CR` | `dm_product-ver0.4` | `none` (see BUG-RULES.md §4) and a `confidence` % that it is a real product bug (BUG-RULES.md §3). Put fails with cause ≠ none in a separate table "Merge/incident-related" at the top of summary.md.

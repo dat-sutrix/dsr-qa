@@ -44,3 +44,9 @@ Kết quả 19/10 tối: JOB-20261019-07 ✅ 014 ja ×2 · -08 590 C14: 4 ✅ / 
 
 ## 5. TC (Jira sub-task `qa-tc`)
 Backlog 17/17 xong · TC backlog trống (Night TC job 19/10 21:11: auto-added 0, upload pending 0 / fail 0) · 0 câu hỏi mới · việc kế: re-baseline 15 TC DSR-585 khi 項目fix版 review xong.
+
+## 🐞 Bug < 80% – Dat chốt (morning 07:45 điền theo BUG-RULES.md)
+_(chưa có – điền sáng 21/10)_
+
+## 📣 Báo Martin – merge/incident 20/10 (agent đêm 20/10 → morning 21/10 điền)
+_(chưa có – điền sáng 21/10; mỗi dòng: URL · triệu chứng · cause overlay-merge / dm_product-CR / dm_product-ver0.4 · job · evidence; cuối mục có tin nhắn gửi Martin soạn sẵn)_
