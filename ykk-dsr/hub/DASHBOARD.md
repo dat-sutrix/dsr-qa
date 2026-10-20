@@ -31,7 +31,7 @@ Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ da
 | P3 | 22/10: duyệt Done DEV các ticket đạt (Claude đề xuất + soạn comment) | — | 22/10 | 557, 570, 529, 566 |
 
 ## 3. 🌙 QA part-time tối nay (T3 20/10, ~3h50, tối đa 4h – tăng tải theo yêu cầu Dat) – 17:10 tạo Night Pack theo PLAN "Night Pack 20/10"
-Tạo lại data sau khi Martin dọn folder (bộ TD-587/TD-586, đúng folder mới), theo hạn ticket:
+Tạo lại data sau khi Martin dọn folder (bộ TD-587/TD-586, đúng folder mới; **mỗi content CF kèm 1 DSR CF cùng tên** – Martin 20/10), theo hạn ticket:
 1. qa587-main en+ja – 587/557 · 2. qa587-r1…r6 + rel-a – bug DSR-647 · 3. qa587-off + rel-b – DSR-647 · 4. qa557-dam en+ja – 557 · 5. **TD-586-01/02 (ja) – 586 (kéo sớm 1 ngày)** · 6. 570 manual 6 TC · 7. (còn giờ) 3 TC phụ 587
 Catalog: không cần làm lại (Martin 20/10: catalog ngoài scope merge).
 
