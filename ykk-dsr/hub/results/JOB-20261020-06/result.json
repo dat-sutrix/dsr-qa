@@ -1,0 +1,110 @@
+{
+ "job": "JOB-20261020-06",
+ "agent": "claude-code",
+ "us": "DSR-529",
+ "env": "dev",
+ "started": "2026-10-20T06:10:25Z",
+ "finished": "2026-10-20T06:16:00Z",
+ "status": "done",
+ "tests": [
+  {
+   "tc": "DSR-529-BUG-1",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "EDS source title = navTitle value; block 3 renders document.title per §A. Need Author ページ基本 (D3) to split data vs AEM→EDS mapping.",
+   "evidence": "evidence/qa529-01_ja_live.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-529-BUG-2",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Served publicationdate/updatedate/searchkeywords; published-date, updated-date, search-keywords, category absent (§A names). Index columns same; category empty.",
+   "evidence": "evidence/qa529-01_ja_live.png",
+   "suspect": "product"
+  },
+  {
+   "tc": "DSR-529-BUG-3",
+   "lang": "ja",
+   "result": "fail",
+   "error": "article-meta.js reads meta[name=tags], never emitted (only article:tag); 0 chips, also on /ja/article-1001.",
+   "evidence": "evidence/qa529-01_ja_live.png",
+   "suspect": "product"
+  },
+  {
+   "tc": "DSR-529-BUG-4",
+   "lang": "ja",
+   "result": "fail",
+   "error": "thumbnail = relative /content/dam path: 404 on .live/.page, 200 image/png on publish-p192812. Not a delivery URL per §A.",
+   "evidence": "evidence/qa529-01_ja_live.png",
+   "suspect": "product"
+  },
+  {
+   "tc": "DSR-529-BUG-5",
+   "lang": "ja",
+   "result": "fail",
+   "error": "related-stories = bare names; related-articles reads /query-index.json (has r1-r3) but names≠paths → block removed. article-1001 emits paths → likely authored values.",
+   "evidence": "evidence/qa529-01_ja_live.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-529-BUG-6",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Info bar '2026/10/01' from meta publicationdate; code comment claims Figma block 7 = YYYY/MM/DD. BL-v1/Q4 = YYYY.MM.DD. Needs Figma check (by-design?).",
+   "evidence": "evidence/qa529-01_ja_live.png",
+   "suspect": "test"
+  },
+  {
+   "tc": "DSR-529-BUG-1",
+   "lang": "en",
+   "result": "blocked",
+   "error": "EDS source title = navTitle value; block 3 renders document.title per §A. Need Author ページ基本 (D3) to split data vs AEM→EDS mapping.",
+   "evidence": "evidence/qa529-01_en_live.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-529-BUG-2",
+   "lang": "en",
+   "result": "fail",
+   "error": "Served publicationdate/updatedate/searchkeywords; published-date, updated-date, search-keywords, category absent (§A names). Index columns same; category empty.",
+   "evidence": "evidence/qa529-01_en_live.png",
+   "suspect": "product"
+  },
+  {
+   "tc": "DSR-529-BUG-3",
+   "lang": "en",
+   "result": "fail",
+   "error": "article-meta.js reads meta[name=tags], never emitted (only article:tag); 0 chips, also on /ja/article-1001. en: no tags authored.",
+   "evidence": "evidence/qa529-01_en_live.png",
+   "suspect": "product"
+  },
+  {
+   "tc": "DSR-529-BUG-4",
+   "lang": "en",
+   "result": "fail",
+   "error": "thumbnail = relative /content/dam path: 404 on .live/.page, 200 image/png on publish-p192812. Not a delivery URL per §A.",
+   "evidence": "evidence/qa529-01_en_live.png",
+   "suspect": "product"
+  },
+  {
+   "tc": "DSR-529-BUG-5",
+   "lang": "en",
+   "result": "fail",
+   "error": "related-stories = bare names; related-articles reads /query-index.json (has r1-r3) but names≠paths → block removed. article-1001 emits paths → likely authored values.",
+   "evidence": "evidence/qa529-01_en_live.png",
+   "suspect": "data"
+  },
+  {
+   "tc": "DSR-529-BUG-6",
+   "lang": "en",
+   "result": "fail",
+   "error": "Info bar '2026/10/01' from meta publicationdate; code comment claims Figma block 7 = YYYY/MM/DD. BL-v1/Q4 = YYYY.MM.DD. Needs Figma check (by-design?).",
+   "evidence": "evidence/qa529-01_en_live.png",
+   "suspect": "test"
+  }
+ ],
+ "lighthouse": [],
+ "code_changes": [],
+ "notes": "Verification only, no npm test run (so no automation-run report). tc = draft bug id from triage-20261020.md. Suggested class per bug in summary.md; suspect 'test' on BUG-6 = baseline/TC expectation may be wrong (by-design?). Raw values: raw.md."
+}
