@@ -24,7 +24,7 @@ Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ da
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
 |---|---|---|---|---|
 | P1 | **Chuyển Done DEV: DSR-552** – đóng DSR-648, DSR-651 (Done; comment retest Pass đã có: 61473, 61474) rồi chuyển DSR-552 + dán comment | Jira (tự làm) | 20/10 | "QA confirm DEV (2026-10-20): 35/35 TC executed on DEV. Fail 0. Bugs DSR-648, DSR-651 retested PASS and closed; DSR-591 Done. Blocked with owner: zh/cn – no /master/cn on DEV (Quentin); 021–023/030/034 – DSR-575 Q5 / DSR-536 (Kohei); 029 Lighthouse – STG next sprint; 033 – layout tickets. Evidence: Drive DSR_NightPack + repo results/DSR-552/DEV/." |
-| P2 | Xác nhận với Martin catalog merge chiều nay + gửi đường dẫn folder catalog mới | Martin | 20/10 17:00 | "Martin, after the catalog overlay merge today, which DAM folder should QA use for catalog CFs (ja/en), and is the catalog list/detail URL unchanged? We re-seed test data tonight/tomorrow." |
+| ✅ | ~~Xác nhận catalog merge với Martin~~ – Martin 09:25: catalog ngoài scope, không đổi | — | — | — | — |
 | P2 | 21/10 17:00: nếu chưa có template `news-article` → gửi báo cáo tách 566 (Claude soạn sẵn) | Quentin | 21/10 | — |
 | P3 | DSR-433 TC 017: hỏi Nakamoto | Nakamoto | 22/10 | "GET /bin/ykk/mail/test-send on DEV publish returns 403 JSON from the servlet itself. Should the dispatcher block this path on publish (STG/PRO) too?" |
 | P3 | Gửi Nakamoto 3 địa chỉ nhận mail test – **hoãn** tới khi có SendGrid chính thức | Nakamoto | — | — |
