@@ -1,0 +1,196 @@
+{
+  "job": "JOB-20261019-04",
+  "agent": "codex",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-20T00:55:07.702Z",
+  "finished": "2026-10-20T00:56:02.343363Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "en",
+      "result": "skip",
+      "error": "Visual comparison not performed: capture-only job; no Figma access on VPS.",
+      "evidence": "evidence/DSR-ARTICLE-030_en_qa529-01_1440x900.png",
+      "suspect": "env",
+      "observation": {
+        "tc": "DSR-ARTICLE-030",
+        "lang": "en",
+        "slug": "qa529-01",
+        "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+        "title": "QA529 Nav",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 1892,
+        "headings": [
+          "QA529 Nav"
+        ],
+        "httpStatus": 200,
+        "captured": "2026-10-20T00:55:23.162Z",
+        "evidence": "evidence/DSR-ARTICLE-030_en_qa529-01_1440x900.png",
+        "verdict": null,
+        "note": "Capture only; Figma comparison deferred to Claude."
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "en",
+      "result": "skip",
+      "error": "Visual comparison not performed: capture-only job; no Figma access on VPS.",
+      "evidence": "evidence/DSR-ARTICLE-031_en_qa529-01_390x844.png",
+      "suspect": "env",
+      "observation": {
+        "tc": "DSR-ARTICLE-031",
+        "lang": "en",
+        "slug": "qa529-01",
+        "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+        "title": "QA529 Nav",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 2861,
+        "headings": [
+          "QA529 Nav"
+        ],
+        "httpStatus": 200,
+        "captured": "2026-10-20T00:55:25.841Z",
+        "evidence": "evidence/DSR-ARTICLE-031_en_qa529-01_390x844.png",
+        "verdict": null,
+        "note": "Capture only; Figma comparison deferred to Claude."
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Visual comparison not performed: capture-only job; no Figma access on VPS.",
+      "evidence": "evidence/DSR-ARTICLE-030_ja_qa529-01_1440x900.png",
+      "suspect": "env",
+      "observation": {
+        "tc": "DSR-ARTICLE-030",
+        "lang": "ja",
+        "slug": "qa529-01",
+        "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+        "title": "QA529 ナビ",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 2532,
+        "headings": [
+          "QA529 ナビ"
+        ],
+        "httpStatus": 200,
+        "captured": "2026-10-20T00:55:17.050Z",
+        "evidence": "evidence/DSR-ARTICLE-030_ja_qa529-01_1440x900.png",
+        "verdict": null,
+        "note": "Capture only; Figma comparison deferred to Claude."
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Visual comparison not performed: capture-only job; no Figma access on VPS.",
+      "evidence": "evidence/DSR-ARTICLE-031_ja_qa529-01_390x844.png",
+      "suspect": "env",
+      "observation": {
+        "tc": "DSR-ARTICLE-031",
+        "lang": "ja",
+        "slug": "qa529-01",
+        "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+        "title": "QA529 ナビ",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 3066,
+        "headings": [
+          "QA529 ナビ"
+        ],
+        "httpStatus": 200,
+        "captured": "2026-10-20T00:55:20.417Z",
+        "evidence": "evidence/DSR-ARTICLE-031_ja_qa529-01_390x844.png",
+        "verdict": null,
+        "note": "Capture only; Figma comparison deferred to Claude."
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Visual comparison not performed: capture-only job; no Figma access on VPS.",
+      "evidence": "evidence/DSR-ARTICLE-030_ja_qa529-02_1440x900.png",
+      "suspect": "env",
+      "observation": {
+        "tc": "DSR-ARTICLE-030",
+        "lang": "ja",
+        "slug": "qa529-02",
+        "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+        "title": "QA529 最小記事",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440,
+        "scrollHeight": 2301,
+        "headings": [
+          "QA529 最小記事"
+        ],
+        "httpStatus": 200,
+        "captured": "2026-10-20T00:55:28.757Z",
+        "evidence": "evidence/DSR-ARTICLE-030_ja_qa529-02_1440x900.png",
+        "verdict": null,
+        "note": "Capture only; Figma comparison deferred to Claude."
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Visual comparison not performed: capture-only job; no Figma access on VPS.",
+      "evidence": "evidence/DSR-ARTICLE-031_ja_qa529-02_390x844.png",
+      "suspect": "env",
+      "observation": {
+        "tc": "DSR-ARTICLE-031",
+        "lang": "ja",
+        "slug": "qa529-02",
+        "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+        "title": "QA529 最小記事",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "scrollWidth": 390,
+        "bodyScrollWidth": 390,
+        "scrollHeight": 2800,
+        "headings": [
+          "QA529 最小記事"
+        ],
+        "httpStatus": 200,
+        "captured": "2026-10-20T00:55:32.159Z",
+        "evidence": "evidence/DSR-ARTICLE-031_ja_qa529-02_390x844.png",
+        "verdict": null,
+        "note": "Capture only; Figma comparison deferred to Claude."
+      }
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/article-detail/DSR-529.visual-capture.spec.ts"
+  ],
+  "questions": []
+}
