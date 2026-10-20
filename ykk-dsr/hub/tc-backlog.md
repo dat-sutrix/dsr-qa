@@ -8,7 +8,7 @@
 | # | US (Jira) | Epic / Folder ID | Sub-task | SP | Mode | Drive folder (sẵn có) | Đêm dự kiến | Status | Note |
 |---|---|---|---|---|---|---|---|---|---|
 | 0 | CL-v0.1 (Numata 20/10) | — | — | — | adopt-later | — | sau 22/10 | hold | 4 layout sheets v0.1 (product/video/tech video/catalog) – reference only, NOT baseline. Do NOT change Sprint 12 TCs. When Quentin answers Q-CL-1 or sheet reaches 1.0: add TCs from docs/client-layout/CL-v0.1-numata-20261020.md §2 into 586/587/570 files |
-| 18 | DSR-585 + DSR-586 re-baseline (dm_product ver0.4) | (parent) | DSR-625 / DSR-626 | 3 | rebaseline | 14hkhTNRHi5uD5pE7hKkpfsVwvsbTHiI- / 1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU | 20/10 | doing 2026-10-20 18:20 | ƯU TIÊN 1 (note 20/10 14:00 + 15:20): oracle DM_product_ver0.4 (Drive 1uUgIMKKSL93jjVCQpfTTYtkrFJlAAiSD); TD-586 cần trước 17:10 21/10 |
+| 18 | DSR-585 + DSR-586 re-baseline (dm_product ver0.4) | (parent) | DSR-625 / DSR-626 | 3 | rebaseline | 14hkhTNRHi5uD5pE7hKkpfsVwvsbTHiI- / 1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU | 20/10 | done | ƯU TIÊN 1 xong: oracle DM_product_ver0.4 (Quentin chốt 20/10 comment 61605; 83 field / 10 tab / 7 bắt buộc; 27 field xóa 0.3→0.4). 585: 15→19 TC (+16.0 media slot, +17.0 field mới, +18.0 tên CF = productId, +19.0 4 query dùng tên ver0.4). 586: 19→21 TC (17.0 viết lại, +20.0 field mới – Blocked no design, +21.0 media slot); TD-586-01 + How-to theo ver0.4 (sẵn cho Night 21/10). 4 file → upload-queue. JOB-20261020-03/-08 (hold) cập nhật · Q45–Q46 |
 | 1 | DSR-566 ニュース詳細 | DSR-357 | DSR-618 | 8 | new | — | 15/10 | done | Test page: /master/en/test-space/dsr-357-news-detail · related DSR-567 |
 | 5 | DSR-529 記事詳細 | DSR-356 | DSR-619 | 8 | new | 1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB | 15/10 | done | 32 TC; TestData trên Drive ✅; TC .xlsx 33 KB > 12 KB → Dat upload `tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）.xlsx` vào folder DSR-356. DSR-619 Done. JOB-20261015-12 hold (chưa có trang test) · Q4–Q9 |
 | 2 | DSR-609 トップ | DSR-196 | DSR-633 | 3 | adopt | 1NC_m_XPhuxewPyTyhj411uKW71lmq-vy | 15/10 | done | adopt 9 TC; TestData trên Drive ✅; TC adopt 128 KB → Dat upload `tc-out/[Sutrix] DSR -196- [レイアウト] トップ.xlsx` vào folder DSR-196; bản dev đổi tên _v20261015_dev. DSR-633 Done. JOB-13/14 queue · Q10–Q11 |
@@ -58,6 +58,8 @@
 | 2026-10-19 19:08 | DSR-590 (job) | backlog trống · Jira check: auto-added 0 (DSR-590 mới giao Dat, đã có TC DSR-629) · 590 [Dev] In Testing + demo C14 → JOB-20261019-08/-09 queue (2b) · upload pending 0 / fail 0 | ~7' |
 | 2026-10-19 20:13 | — | backlog trống · Jira check: auto-added 0 · DSR-585 fix版 vẫn in review → chưa re-baseline · upload pending 0 / fail 0 | ~3' |
 | 2026-10-19 21:11 | — | backlog trống · Jira check: auto-added 0 · DSR-585 fix版 chưa cập nhật · upload pending 0 / fail 0 · báo cáo cuối ngày | ~3' |
+| 2026-10-20 18:12 | — | backlog check: Jira auto-added 0 (653/566/570/557/529/587/586 đã có TC; 647/538 là bug) · upload pending 0 / fail 0 trước lượt |  ~2' |
+| 2026-10-20 18:35 | DSR-585 + DSR-586 (re-baseline ver0.4) | done · 19 + 21 TC → upload-queue (4 file) · Jira sub-task 625/626 đã Done (giữ) · JOB-20261020-03/-08 hold cập nhật · Q45–Q46 | ~23' |
 
 - 2026-10-19 11:40 DSR-585: 項目fix版 xuất hiện (Quentin comment 61280, đang review, sheet 1Rxiw3S-3AkmAP2Jbzkx3FI1-3S3jYbOo). Khi review xong (Jira comment) → re-baseline 15 TC từ v0.1 sang bản fix, ưu tiên sau ticket mới giao Dat.
 

@@ -3,67 +3,67 @@
  "folder_id": "585",
  "us_name": "[AEM] 製品CF 改修（項目fix版対応）",
  "jira_url": "https://sutrix.atlassian.net/browse/DSR-585",
- "module": "製品CF 改修 / Product CF model (DM_product) – fixed field set (110→85), tags, import template; DSR-585 (related DSR-584/586/182/588), BL-OVL-1",
+ "module": "製品CF 改修 / Product CF model (DM_product) – oracle DM_product_ver0.4 (83 fields, Quentin 20/10 comment 61605); DSR-585 (related DSR-584/586/182/588), BL-OVL-1",
  "tcs": [
   {
    "id": "1.0",
    "feature": "DM_product – field set matches fix list",
-   "summary": "EN: Verify the product CF editor shows exactly the fields of the fixed list (85). JP: 製品CF編集画面に項目fix版の85項目が過不足なく表示されることを確認する。",
+   "summary": "EN: Verify the product CF editor shows exactly the 83 fields of DM_product_ver0.4 (sheet 製品CF（0.4）). JP: 製品CF編集画面にDM_product_ver0.4の83項目が過不足なく表示されることを確認する。",
    "pre": "EN: Updated DM_product model deployed on DEV Author; product CF TD-585-01 exists. JP: 改修済みモデル、TD-585-01。",
-   "steps": "EN: 1. Open TD-585-01 in the CF editor. 2. Expand all tabs. 3. List every field label + name. 4. Compare with the fixed field list (oracle: 項目fix版; provisional 20260930_製品CFフィールド再整理_v0.1.xlsx – A1). JP: 1. 開く 2. 全タブ展開 3. 項目一覧 4. fix版と比較。",
-   "expected": "EN: Field count = 85 (or the count in the fix list); every fix-list name present; no extra field. Differences listed. JP: 85項目、過不足なし。",
+   "steps": "EN: 1. Open TD-585-01 in the CF editor. 2. Expand all 10 tabs (基本情報, 検索・分類, 表示情報, Media01, Media02, Media03, 詳細, 製品情報, 関連情報, 管理情報). 3. List every field label + name. 4. Compare with sheet 製品CF（0.4） rows 1-1 … 10-4 (oracle A1). JP: 1. 開く 2. 10タブ展開 3. 項目一覧 4. ver0.4と比較。",
+   "expected": "EN: 10 tabs in this order; 83 fields (basic 3, search 5, display 5, Media01 14, Media02 15, Media03 15, detail 11, product info 6, related 5, management 4); every ver0.4 name present, 0 extra; no 生産情報 tab. Differences listed. JP: 10タブ・83項目、過不足なし、生産情報タブなし。",
    "design": "BAC#1; TCC#1",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "2.0",
    "feature": "Removed fields are not shown",
-   "summary": "EN: Verify fields removed in the fix list are not shown in the editor. JP: 削除項目が編集画面に表示されないことを確認する。",
+   "summary": "EN: Verify the 27 fields removed in ver0.3→0.4 (差分管理 2026-10-06) are not in the editor. JP: ver0.3→0.4で削除された27項目が編集画面にないことを確認する。",
    "pre": "EN: As 1.0. JP: 1.0と同じ。",
-   "steps": "EN: 1. In TD-585-01 search the editor for each removed field (v0.1 構築断念 examples: itemManager, materials, appearances, sewingSuitabilities, salesOffices, moq, orderLot, careDry, careWash, productionCountries, leadTime). JP: 削除項目を検索。",
-   "expected": "EN: None of the removed fields is visible in any tab. JP: いずれも表示されない。",
-   "design": "BAC#1; TCC#1",
+   "steps": "EN: 1. In TD-585-01 search the editor (all tabs) for each removed name: itemManager, materials, appearances, sewingSuitabilities, plasticHardwareFunctionCategories, salesOffices, isStandardItem, certifications, internalCertifications, reverseUse, reversible, topBottomStopVariation, moq, orderLot, qualityStandards, qualityStandardDescription, careDry, careWash, careIron, sustainabilityText, productionCountries, productionCompany, dailyProductionCapacity, leadTime, developmentCompany, applicableSliderStandard, applicableSliderSpecial. 2. Also check the old spellings Notice, NoticeImage, Howtouse, HowtouseImage. JP: 削除27項目と旧表記を検索。",
+   "expected": "EN: 0 of the 27 removed fields and 0 old spellings visible in any tab (renamed fields appear as notice / noticeImage / howToUse / howToUseImage). JP: いずれも表示されない。",
+   "design": "差分管理 0.3→0.4 (削除); TCC#1",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "3.0",
    "feature": "Field types match fix list",
    "summary": "EN: Verify each field uses the type in the fix list. JP: 各項目の型がfix版どおりであることを確認する。",
    "pre": "EN: As 1.0. JP: 1.0と同じ。",
-   "steps": "EN: 1. For each field, record editor widget: text / multiline / tag picker / boolean / date / number / enumeration / asset ref. 2. Compare with fix-list type column. JP: 型を記録し比較。",
-   "expected": "EN: Text(255) = single-line; 長文 = multiline; タグ = tag picker (multi); ○ = boolean; YYYY-MM-DD = date; 数値 = number; 選択 = enumeration; DAM path = content/asset reference. 0 mismatch. JP: 型不一致0件。",
+   "steps": "EN: 1. For each field record the editor widget. 2. Compare with the type column of 製品CF（0.4）. JP: 型を記録しver0.4と比較。",
+   "expected": "EN: single line text → single-line; multi line text (Plain) → plain multiline (description, colorVariations, howToUse, notice); multi line text (Rich Text) → RTE (itemVariations); Tag / Tag（複数） → tag picker (productCategories single; applications, performances, zipperChainTypeCategories multi); boolean → checkbox/switch with default False (isDtmSupported, is3dSimulatorSupported, printableTape, recycledTape, recycledMaterial, isDiscontinued); asset reference → asset picker; URL → URL field (mediaNNUrl); fragment reference（複数）→ multi CF picker (parentProduct, relatedProducts, relatedCatalogs, relatedVideos); number → sortOrder default 0; Date and Time (Date Only) → publishDate, updateDate. openingType: see 7.0. 0 mismatch. JP: 型不一致0件。",
    "design": "TCC#1",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "4.0",
    "feature": "Required fields enforced (negative)",
    "summary": "EN: Verify a product CF cannot be saved/published with a required field empty. JP: 必須項目が空では保存・公開できないことを確認する。",
    "pre": "EN: Draft CF TD-585-02 with all required fields filled. JP: TD-585-02。",
-   "steps": "EN: 1. Clear one required field (productId, productCode, productName, productCategories, applications, media01Asset, publishDate – fix list ※). 2. Save. 3. Restore and repeat for the next field. JP: 必須を1つずつ空にして保存。",
-   "expected": "EN: Each time a required-field error is shown and save/publish is blocked; optional fields left empty do not block. JP: 毎回エラー、任意項目は保存可。",
-   "design": "TCC#1 (required flags)",
+   "steps": "EN: 1. Clear one required field of ver0.4 (必須 ○): productId, productCode, productName, productCategories, applications, media01Asset, publishDate. 2. Save. 3. Restore and repeat for the next field. 4. Leave one optional field empty (e.g. performances) and save. JP: 必須7項目を1つずつ空にして保存、任意項目は空で保存。",
+   "expected": "EN: For each of the 7 required fields a required-field error is shown and save/publish is blocked; the optional field left empty saves OK. JP: 必須7項目は毎回エラー、任意項目は保存可。",
+   "design": "ver0.4 必須 column; TCC#1",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-02",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "5.0",
@@ -71,44 +71,44 @@
    "summary": "EN: Verify single-line text fields accept 255 characters and reject or limit 256. JP: テキスト項目が255字まで入力でき256字は不可であることを確認する。",
    "pre": "EN: TD-585-02. JP: TD-585-02。",
    "steps": "EN: 1. Paste 255-char string into productName → Save. 2. Paste 256-char string → Save. JP: 255字/256字を入力して保存。",
-   "expected": "EN: 255 saved unchanged; 256 → error or input stops at 255 (record which). JP: 255字保存、256字はエラーまたは入力制限。",
-   "design": "Fix list type テキスト（最大255字）",
+   "expected": "EN: 255 chars saved unchanged. 256 chars: record behaviour (error / truncation / saved) – ver0.4 defines no max length (A6), so Fail only if 255 chars are rejected or changed. JP: 255字は保存。256字は挙動を記録（ver0.4に上限定義なし）。",
+   "design": "ver0.4 single line text; A6 boundary",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-02",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "6.0",
    "feature": "Tag field – zipper chain type",
    "summary": "EN: Verify zipperChainTypeCategories offers the chain-type tags and stores several values. JP: チェーンタイプ分類でタグ選択・複数保存できることを確認する。",
    "pre": "EN: Chain-type tag namespace created on DEV. JP: タグ整備済み。",
-   "steps": "EN: 1. In TD-585-01 open the zipperChainTypeCategories picker. 2. Select 2 tags (e.g. CN, and one more). 3. Save, reopen. JP: 2つ選択し保存、再表示。",
-   "expected": "EN: Picker lists only chain-type tags; both tags kept after reopen. JP: チェーンタイプのタグのみ、2つ保持。",
-   "design": "DSR-585 scope (タグ項目); TCC#1",
+   "steps": "EN: 1. In TD-585-01 open the zipperChainTypeCategories picker. 2. Record the tag names shown. 3. Select 2 tags. 4. Save, reopen. JP: タグ名を記録、2つ選択し保存、再表示。",
+   "expected": "EN: Picker lists only chain-type tags; tag names follow the 10/6 rule = size digits + 2-letter chain type (e.g. 5CN) – names that do not follow it are listed; both selected tags kept after reopen. JP: チェーンタイプのタグのみ（数字＋英字2文字）、2つ保持。",
+   "design": "ver0.4 2-4 + 差分管理 10/6 (タグは2文字の系統)",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin + tag namespace"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "7.0",
-   "feature": "Enumeration – openingType values",
-   "summary": "EN: Verify openingType offers only the defined values. JP: ファスナー製品仕様の選択肢が定義どおりであることを確認する。",
+   "feature": "openingType – values (Enumeration multiple)",
+   "summary": "EN: Verify openingType offers the 4 defined values and stores several. JP: ファスナー製品仕様が4値の複数選択であることを確認する。",
    "pre": "EN: TD-585-01. JP: TD-585-01。",
-   "steps": "EN: 1. Open the openingType dropdown. 2. Record options. JP: 選択肢を記録。",
-   "expected": "EN: Options = fix list values (v0.1: stop / open / reverseOpen / chain), no others. JP: fix版の値のみ。",
-   "design": "Fix list (選択)",
+   "steps": "EN: 1. Open openingType in TD-585-01. 2. Record widget type and options. 3. Select 止 and 開, save, reopen. JP: 型・選択肢を記録、2つ選択し保存。",
+   "expected": "EN: Multi-select enumeration with exactly 止 / 開 / 逆開 / チェーン (or their stored values stop/open/reverseOpen/chain); both selections kept. If the field is single line text (open customer request, A7/Q45) → record as Pending, not Fail. JP: 4値・複数選択。single line textならPending。",
+   "design": "ver0.4 3-4; 差分管理 0.3→0.4",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "8.0",
@@ -116,14 +116,14 @@
    "summary": "EN: Verify the revised DM_product data entry template has one column per model field with the same names. JP: 改版した入力テンプレートの列がモデル項目と一致することを確認する。",
    "pre": "EN: Revised template shared on Drive (TCC#2). JP: 改版テンプレートがDriveにある。",
    "steps": "EN: 1. Open the revised template. 2. List column names (name row). 3. Compare with the field names from 1.0. JP: 列名を比較。",
-   "expected": "EN: Same set of names (0 missing, 0 extra); required columns marked ※; version/date in file name newer than v1.1_20260914. JP: 列一致、必須表示、版更新。",
+   "expected": "EN: Same set of names as ver0.4 (83, 0 missing, 0 extra); required columns marked ※/○ (7); version/date in file name newer than v1.1_20260914. JP: 列一致、必須7列表示、版更新。",
    "design": "BAC#2; TCC#2",
    "layer": "CF",
    "exec": "Manual",
    "lang": "ja",
    "device": "Excel",
    "td": "TD-585-03",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin + template revision (Chiba)"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat · template revision + import procedure (Q28, Chiba)"
   },
   {
    "id": "9.0",
@@ -138,7 +138,7 @@
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-03",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin · import procedure (Q28)"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat · template revision + import procedure (Q28, Chiba)"
   },
   {
    "id": "10.0",
@@ -153,7 +153,7 @@
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-03",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin · import procedure (Q28)"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat · template revision + import procedure (Q28, Chiba)"
   },
   {
    "id": "11.0",
@@ -168,7 +168,7 @@
    "lang": "ja",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-04",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "12.0",
@@ -183,7 +183,7 @@
    "lang": "en, cn",
    "device": "AEM Author (Chrome)",
    "td": "TD-585-01",
-   "blocked": "cn folder may not exist (Issue #18) · 項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin"
+   "blocked": "cn folder may not exist (Issue #18) · DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "13.0",
@@ -191,14 +191,14 @@
    "summary": "EN: Verify the published product exposes retained/new fields and not removed fields through dsr-product-page. JP: 公開後のGraphQLに新項目が含まれ削除項目が含まれないことを確認する。",
    "pre": "EN: TD-585-01 commune + related CF published (live). JP: 公開済み。",
    "steps": "EN: 1. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-product-page;path=/content/dam/dsr/ja/products/990585001 . 2. Read related.items[0].product. JP: GraphQL取得。",
-   "expected": "EN: HTTP 200; productName, zipperChainTypeCategories, publishDate present with TD values; none of the removed field names present. JP: 新項目あり、削除項目なし。",
+   "expected": "EN: HTTP 200, no 'errors'; product contains productId, productCode, productName, publishDate with TD values and the ver0.4 detail fields (itemVariationsImage, colorVariationsImage, howToUse, howToUseImage, recycledMaterial, recycledMaterialNote, applicableSliderSameAsParent, parentProduct, notice, noticeImage); none of the 27 removed names and none of Howtouse / HowtouseImage / Notice / NoticeImage. JP: ver0.4項目あり、削除項目・旧表記なし。",
    "design": "TCC#1, TCC#3; BL-OVL-1",
    "layer": "CF",
    "exec": "Automation",
    "lang": "ja",
    "device": "API (Playwright request)",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin · query update DSR-586 (Martin)"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat"
   },
   {
    "id": "14.0",
@@ -206,14 +206,14 @@
    "summary": "EN: Verify the product search JSON contains no removed fields and still has the fields search needs. JP: 検索用JSONに削除項目がなく必要項目があることを確認する。",
    "pre": "EN: Search JSON URL known (Q14 default); TD-585-01 published. JP: Q14既定のURL。",
    "steps": "EN: 1. GET the product search JSON (/{lang}/products/query-index.json, else Q14 fallbacks). 2. Read keys of the entry for 990585001. JP: エントリのキーを取得。",
-   "expected": "EN: Entry found; keys include productId/productName/productCategories/applications; no removed field keys. JP: 必要キーあり、削除項目なし。",
+   "expected": "EN: Entry found; keys include productId/productName/productCategories/applications; none of the 27 removed field names (A1). JP: 必要キーあり、削除項目なし。",
    "design": "TCC#3",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja",
    "device": "API (Playwright request)",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin · DSR-560/182 (Nakamoto)"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat · DSR-560/182 (Nakamoto)"
   },
   {
    "id": "15.0",
@@ -228,14 +228,74 @@
    "lang": "ja",
    "device": "PC Chromium 1440×900",
    "td": "TD-585-01",
-   "blocked": "項目fix版 from YKK (due 10/14, not delivered 10/16) + DM_product model update (Chiba) – owner Quentin · DSR-586 [Dev] In Testing (Martin)"
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat · DSR-586 overlay (Martin)"
+  },
+  {
+   "pre": "EN: DM_product ver0.4 on DEV Author; TD-585-01 exists. JP: ver0.4反映済み、TD-585-01。",
+   "lang": "ja",
+   "device": "AEM Author (Chrome)",
+   "layer": "CF",
+   "exec": "Manual",
+   "td": "TD-585-01",
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat",
+   "id": "16.0",
+   "feature": "Media slots – media01 image fixed, media02–15 Type/Asset/Url",
+   "summary": "EN: Verify media01 is an image-only asset field and media02–15 each have Type (Image/Video/360/3D/External), Asset and Url. JP: media01は画像固定、media02〜15は種別・アセット・URLを持つことを確認する。",
+   "steps": "EN: 1. Media01 tab: check photoForList and media01Asset (no Type field). 2. In media01Asset try to pick a video asset. 3. For media02…media15 record the 3 fields and the Type options. 4. Set media02Type=External + media02Url=https://www.ykkfastening.com/ , save, reopen. JP: 各スロットの項目と選択肢を記録、External+URLを保存。",
+   "expected": "EN: media01 has no Type field; media01Asset accepts images (video rejected or not listed – record); each of media02–15 has Type with exactly Image/Video/360/3D/External, Asset and Url; External + URL saved and kept. JP: media01は画像のみ、02〜15は3項目・5種別、保存保持。",
+   "design": "ver0.4 4-1…6-15; BL note 20/10 15:20"
+  },
+  {
+   "pre": "EN: DM_product ver0.4 on DEV Author; TD-585-01 exists. JP: ver0.4反映済み、TD-585-01。",
+   "lang": "ja",
+   "device": "AEM Author (Chrome)",
+   "layer": "CF",
+   "exec": "Manual",
+   "td": "TD-585-02",
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat",
+   "id": "17.0",
+   "feature": "New ver0.4 fields – types and defaults",
+   "summary": "EN: Verify the 7 fields added in ver0.3→0.4 exist with the defined type and default. JP: ver0.4追加7項目が定義どおりの型・初期値であることを確認する。",
+   "steps": "EN: 1. In a NEW CF TD-585-02 (before filling) record type and default of: itemVariationsImage, colorVariationsImage, howToUse, howToUseImage, recycledMaterial, recycledMaterialNote, applicableSliderSameAsParent. 2. Fill each (images: any QA image; recycledMaterial ON; texts 'QA585 …'). 3. Save, reopen. JP: 型・初期値を記録、入力して保存・再表示。",
+   "expected": "EN: itemVariationsImage, colorVariationsImage, howToUseImage = asset reference; howToUse = plain multiline; recycledMaterial = boolean default False; recycledMaterialNote = single-line; applicableSliderSameAsParent = single enumeration with option 'any' and empty allowed; all values kept after reopen. JP: 型・初期値一致、値保持。",
+   "design": "差分管理 0.3→0.4 (追加); ver0.4 7-4, 7-6, 7-8, 7-9, 8-5, 8-6, 9-2"
+  },
+  {
+   "pre": "EN: DM_product ver0.4 on DEV Author; TD-585-01 exists. JP: ver0.4反映済み、TD-585-01。",
+   "lang": "ja",
+   "device": "AEM Author (Chrome)",
+   "layer": "CF",
+   "exec": "Manual",
+   "td": "TD-585-01",
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) + TD-585 seed (QA-PT) – owner Martin/Dat",
+   "id": "18.0",
+   "feature": "CF name = productId digits, content CF folder",
+   "summary": "EN: Verify product content CFs are stored in /content/dam/common/{lang}/products/ with name = productId (digits, no prefix). JP: 製品CFが/content/dam/common/{lang}/products/にproductIdと同じ番号名で保存されることを確認する。",
+   "steps": "EN: 1. Open TD-585-01: record CF path, name and productId value. 2. List the folder /content/dam/common/ja/products and record up to 10 names. JP: パス・名前・productIdを記録、フォルダ内の名前を記録。",
+   "expected": "EN: TD-585-01 path = /content/dam/common/ja/products/990585001 and productId = 990585001; names in the folder are digits only (others, e.g. productId-01x, listed as data to clean, not Fail of the model). JP: 名前=productId、数字のみ（例外は一覧化）。",
+   "design": "ver0.4 a2, 1-1; 差分管理 10/6"
+  },
+  {
+   "pre": "EN: DM_product ver0.4 on DEV Author; TD-585-01 exists. JP: ver0.4反映済み、TD-585-01。",
+   "lang": "ja",
+   "device": "API (Playwright request)",
+   "layer": "CF",
+   "exec": "Automation",
+   "td": "— (existing DEV data, read-only)",
+   "blocked": "DM_product ver0.4 finished on DEV (Martin done ping – 🔔 P1 Dat) – owner Martin",
+   "id": "19.0",
+   "feature": "All product persisted queries use ver0.4 names",
+   "summary": "EN: Verify every product persisted query returns ver0.4 field names only. JP: 製品系persisted queryがver0.4の項目名のみ返すことを確認する。",
+   "steps": "EN: 1. GET (publish, unencoded ;) dsr-product-page;path=/content/dam/dsr/ja/products/46, product-detail;productId=productId-01x, dsr-product-list;folder=/content/dam/dsr/ja/products/, dm-product-list. 2. Collect all field names of product items. JP: 4クエリを取得し項目名を収集。",
+   "expected": "EN: All 200 without 'errors'; 0 removed names (27); 0 old spellings (Howtouse, HowtouseImage, Notice, NoticeImage, applicableSliderStandard, applicableSliderSpecial). JOB-20261020-09 saw old names in product-detail → Fail if still present after Martin's done ping (Q46). JP: 削除項目・旧表記0件。",
+   "design": "Incident 20/10; ver0.4; BL-OVL-1"
   }
  ],
  "assumptions": [
   [
    "A1",
-   "項目fix版 (85 fields) not delivered as of 2026-10-16 (DSR-585 comments 60822, 61098). Provisional oracle = 20260930_製品CFフィールド再整理_v0.1.xlsx: 構築断念 = removed, MT改修待ち = changed, ※ = required. Replace with fix list when delivered; TC text stays.",
-   "DSR-585; Drive v0.1",
+   "Oracle = DM_product_ver0.4.xlsx sheet 製品CF（0.4） + 差分管理 (Drive 1uUgIMKKSL93jjVCQpfTTYtkrFJlAAiSD), confirmed by Quentin 2026-10-20 (DSR-585 comment 61605: earlier attached file was old). Replaces v0.1 and 項目fix版 1Rxiw3S… . 83 fields in 10 tabs; 7 required.",
+   "DSR-585 61605; ver0.4",
    "All"
   ],
   [
@@ -261,27 +321,45 @@
    "CF-layer TCs are Manual (Author UI); agents are read-only and have no Author access. Automation only for publish-side checks (13.0–15.0).",
    "AGENTS.md; strategy",
    "1.0–12.0"
+  ],
+  [
+   "A6",
+   "[Giả định] ver0.4 defines no max length for single line text; 5.0 only fails if 255 chars are rejected.",
+   "ver0.4",
+   "5.0"
+  ],
+  [
+   "A7",
+   "[Giả định] openingType stays Enumeration（複数） (ver0.4); customer asked to change it to single line text (comment in ver0.4 3-4, Q45). If changed on DEV → 7.0 Pending and TC updated.",
+   "ver0.4 3-4",
+   "7.0, 3.0"
+  ],
+  [
+   "A8",
+   "Model on DEV changed twice on 2026-10-20 (DSR-585 CR 11:48–13:50 JST; ver0.4 by Martin from 17:14 JST). Results before Martin's done ping are not verdicts. New fields are parsed but not rendered (no design) → Page checks of new fields Blocked (see DSR-586 20.0).",
+   "Incident 20/10; BL-OVL-1 update 20/10",
+   "All"
   ]
  ],
  "testdata": [
   [
    "TD-585-01",
-   "1.0–3.0, 6.0, 7.0, 12.0–15.0",
-   "Product CF full (all fields filled) + CF related",
+   "1.0–3.0, 6.0, 7.0, 12.0–16.0, 18.0",
+   "Product CF full (ver0.4, all fields filled) + CF related",
    "/content/dam/common/ja/products/990585001 + /content/dam/dsr/ja/products/990585001",
-   "productId / productName / productCategories / applications / zipperChainTypeCategories / media01Asset / publishDate",
-   "990585001 / QA585 full product / any / any / CN / any QA image / 2026-10-01",
+   "productId / productCode / productName / productCategories / applications / zipperChainTypeCategories / openingType / media01Asset / media02Type+Url / description / itemVariations / colorVariations / howToUse / notice / printableTape / recycledMaterial / publishDate",
+   "990585001 / QA585-FULL / QA585 full product / any / any / 2 tags / 止+開 / any QA image / External + https://www.ykkfastening.com/ / 'QA585 description' / table 2×2 / 'QA585 colors' / 'QA585 how to use' / 'QA585 notice' / ON / ON / 2026-10-01",
    "en, cn copies (12.0)",
    "cn",
    "Yes"
   ],
   [
    "TD-585-02",
-   "4.0, 5.0",
+   "4.0, 5.0, 17.0",
    "Product CF required-only (draft, not published)",
    "/content/dam/common/ja/products/990585002",
-   "required fields only",
-   "990585002 / QA585 required only / … / 2026-10-01",
+   "7 required: productId, productCode, productName, productCategories, applications, media01Asset, publishDate",
+   "990585002 / QA585-REQ / QA585 required only / any / any / any QA image / 2026-10-01",
    "—",
    "—",
    "Yes"
@@ -312,13 +390,13 @@
  "howto": [
   [
    "1",
-   "Wait until Dat/Claude confirms the fixed model is on DEV (Q27). Before that, run only 11.0 step 'record values' on TD-585-04 (read-only).",
-   "Model not updated → all others Not run (Blocked)"
+   "Wait until Dat/Claude confirms ver0.4 is finished on DEV (Martin ping). Before that, run only 11.0 step 'record values' on TD-585-04 (read-only).",
+   "Not confirmed → all others Not run (Blocked)"
   ],
   [
    "2",
-   "TD-585-01: Assets → /content/dam/common/ja/products → Create → Content Fragment → model DM_product → name 990585001 → fill all fields (tags: pick any; media01Asset: any image under /content/dam/dsr/test) → Save → Publish. Then /content/dam/dsr/ja/products → Create CF model DM_product_dsr name 990585001, isActive ON, product = the CF above → Publish.",
-   "Name must be digits only; no uppercase/_ (BL-OVL-1)"
+   "TD-585-01: https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/common/ja/products → Create → Content Fragment → model DM_product → Name = 990585001 (same as productId, digits only, no prefix) → fill every field in the TestData row (7 required: productId, productCode, productName, productCategories, applications, media01Asset, publishDate) → Save → Publish. Then …/assets.html/content/dam/dsr/ja/products → Create CF model DM_product_dsr, Name 990585001, isActive ON, product = the CF above → Publish.",
+   "Name ≠ productId or not digits → page not generated (BL-OVL-1)"
   ],
   [
    "3",
