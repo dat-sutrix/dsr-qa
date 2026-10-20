@@ -52,8 +52,18 @@ Backlog 18/18 xong · Night TC job 20/10 18:35: done 1/1 (re-baseline DSR-585 19
 | CAT-2 | [DSR-557/570] e-book requiresForm card không mở ebookUrl, đi tới trang catalog (CATV-017, CATDL-018 ja+en) | 30% | Hành vi khớp DSR-655 Y3 → nhiều khả năng TC cũ | Không tạo; re-baseline TC (🔔 P2) |
 | 529 BUG-1…6, PEND-529-01 | xem bugs/529-decision-20261021.md | 50–90% | Night 20/10 BUGCHK-529-* | 07:45 21/10 áp bảng quyết định |
 
-## 📣 Báo Martin – merge/incident 20/10 (nguồn JOB-20261020-09, 09:31–09:49Z; agent đêm 20/10 → morning 21/10 bổ sung)
-| URL | Triệu chứng | cause | Job đầu tiên | Evidence |
+## 📣 Báo Martin – merge/incident 20/10 (morning 07:45 bổ sung kết quả đêm)
+Nguồn: JOB-20261020-09 (full regression 16:31–16:49 VN, 345 test: 111 pass / 69 fail / 165 skip; 63 fail là lỗi cũ, cause none).
+
+| URL | Triệu chứng | cause | % bug | Evidence |
+|---|---|---|---|---|
+| /{lang}/library/catalog/qa190-cat-pdf-form (từ list-catalog, CATDL-006) | trang đích 404 trên .live (chỉ có trên .page) | overlay-merge catalog | 50% (chưa publish .live – QA-PT publish tối nay) | evidence/DSR-CATDL-006_{ja,en}.png |
+| thẻ e-book requiresForm (CATDL-018, CATV-017) | nay dẫn tới /library/catalog/qa190-cat-ebook-form (404 .live) thay vì mở ebookUrl | overlay-merge catalog + DSR-655 Y3 | 30% (có thể đúng thiết kế Y3 → TC cần sửa) | evidence/DSR-CATDL-018_*, DSR-CATV-017_* |
+| GraphQL dsr-product-page | tên field đổi (howToUse/notice camelCase, applicableSliderSameAsParent; bỏ applicableSliderStandard/Special); product-detail.js + product.html deploy lại 15:33 VN | dm_product-ver0.4 | – (thông tin) | results/JOB-20261020-09/raw.md#1 |
+| /{lang}/library/video/search | 404 trên .live, 200 trên .page (sáng nay 08:36 còn pass) | không rõ | – | results/JOB-20261020-09 |
+
+Tin nhắn soạn sẵn (gửi sáng 21/10, morning có thể bổ sung):
+> Hi Martin, QA regression on DEV after yesterday's merges: (1) catalog detail pages `/{lang}/library/catalog/<id>` are 404 on .aem.live (200 on .page) – e-book/PDF-form cards now link there (DSR-655 Y3), so users hit 404; is live publish of catalog pages expected? (2) `/{lang}/library/video/search` is 404 on .live, 200 on .page since ~yesterday afternoon. (3) FYI dsr-product-page field names changed with ver0.4 (howToUse/notice/applicableSliderSameAsParent) – no page break seen. No regression found from the dm_product CR.
 |---|---|---|---|---|
 | .aem.live /{ja,en}/library/catalog/qa190-cat-pdf-form (từ list-catalog card) | 404 on .live (200 .page) – card requiresForm PDF dẫn tới đây | overlay-merge (catalog) | JOB-20261020-05 | results/JOB-20261020-09/evidence/DSR-CATDL-006_{ja,en}.png |
 | list-catalog / catalog-video: card "QA190 e-book form" | href = /{lang}/library/catalog/qa190-cat-ebook-form (404 .live), không còn mở ebookUrl | overlay-merge (DSR-655 Y3) | JOB-20261020-05 | …/DSR-CATDL-018_{ja,en}.png, …/DSR-CATV-017_{ja,en}.png |
