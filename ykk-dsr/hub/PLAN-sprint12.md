@@ -26,6 +26,17 @@ Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 18:00**
 **Agent – chạy ngay không chờ (19/10):** JOB-20261019-01 (557 016/017 + 647 P2: sửa phạm vi assertion theo quyết định QA) · IDLE-07/10/11/12/13 · codex IDLE-16. Hold có điều kiện: -02/-04 (529, sau Night Report), -03 (552-014 khi DSR-651 fix; 647-P3 khi re-preview).
 Quyết định QA 19/10: 557-016/017 đếm form chỉ trên DSR (trang ngoài có form search = không phải gate) · 647-P2 bỏ assertion "static HTML" (BL-OVL-1: block lọc phía client) · 173 MOVIE-014/033 fail = CF movieid-01 bị xóa movieSourceId/relatedProducts (data, ngoài sprint – ghi nhận, chưa sửa).
 
+**Night Pack 20/10 – bắt buộc đưa vào (chốt 20/10 09:00, thay dòng "QA-PT tối T3 20/10" cũ):**
+Martin 20/10 06:44: PR đã merge, **một số CF test bị xóa khi dọn folder** → QA tạo lại. Dùng bộ TestData **TD-587** (đã đúng folder mới, file `[Sutrix] DSR -587- …_TestData.xlsx`), **không dùng lại qa501-*** / qa190-mv-*. Trước khi tạo: mở folder, CF nào đã có đúng tên thì bỏ qua (ghi "exists"). Tạo CF đúng folder (directory-strict), tên chữ thường/số/"-".
+| # | US | Việc | ~phút | Dòng report |
+|---|---|---|---|---|
+| 1 | 587 + 557 | TD-587-01 `qa587-main` (YouTube): content CF `/content/dam/common/{en,ja}/movies/qa587-main` (DM_movie, giá trị theo TestData) → Publish; DSR CF `/content/dam/dsr/{en,ja}/movies/standard/qa587-main` (isActive ON, movie = content CF cùng ngôn ngữ) → Publish. Kiểm https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main (và /ja/) | 25 | TD-587-01 |
+| 2 | 557 | Video nguồn DAM `qa557-dam` (en + ja): content CF giống #1 nhưng movieSource = DAM, movieAsset = 1 file mp4 có sẵn trong DAM test, Release date 2026-09-15 → DSR CF cùng tên → Publish. Kiểm /en/library/video/qa557-dam | 20 | TD-557-DAM |
+| 3 | 587 / bug DSR-647 | TD-587-14: content CF `qa587-r1`…`qa587-r6` trong `/content/dam/common/en/movies/` (updateDate/更新日 r1 = 2026-10-01 … r6 = 2026-10-06), Publish từng cái · content CF `qa587-rel-a` (relatedMovies = r1…r6) + DSR CF `/content/dam/dsr/en/movies/standard/qa587-rel-a` → Publish. Kiểm /en/library/video/qa587-rel-a: 5 thẻ rel6→rel2 | 35 | TD-587-14 |
+| 4 | 587 / bug DSR-647 | TD-587-15: content CF `qa587-off` (isUnavailable = TRUE) · content CF `qa587-rel-b` (relatedMovies = qa587-r1, qa587-off) + DSR CF `qa587-rel-b` → Publish. Kiểm /en/library/video/qa587-rel-b: đúng 1 thẻ (r1) | 15 | TD-587-15 |
+| 5 | 570 | Manual 6 TC trên trang demo /master/ja/test-space/dsr-570-catalog-detail (không đụng CF catalog – catalog merge chiều 20/10) | 30 | DSR-CATDL-… (6 dòng) |
+Tổng ~2h05. Không làm: catalog (chờ Martin merge + folder), TD-587 negative (02, 04–08, 10, 12) → tối 21/10 sau catalog.
+
 **⚠ Merge overlay (Martin) sáng T3 20/10 – ảnh hưởng (chốt 19/10 14:45):**
 - Sau merge, trang/danh sách sản phẩm & video trên DEV chỉ còn item trong folder mới (`/content/dam/common|dsr/{lang}/products|movies/…`); dữ liệu mẫu bị xóa. Data QA cũ (`/content/dam/ykk/common/product-cf/test/` – qa190-mv-*, qa501-*) sẽ mất khỏi trang → **không phải bug**.
 - Ảnh hưởng: DSR-557 (phần video) · DSR-647/587 retest · 586 · regression DSR-173/278. Không ảnh hưởng: 552, 529, 566/653, 570 (catalog – chờ xác nhận Martin).
