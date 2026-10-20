@@ -1,0 +1,15 @@
+# JOB-20261020-09 – full DEV regression, merge/incident sweep (run 09:31–09:49Z, .aem.live)
+## Merge/incident-related
+| URL | Symptom | cause | conf. | Previous result | Evidence |
+|---|---|---|---|---|---|
+| /master/{ja,en}/test-space/list-catalog → /{lang}/library/catalog/qa190-cat-pdf-form (DSR-CATDL-006 ja+en) | requiresForm PDF card leads to a catalog page with 0 forms; target is 404 on .live | overlay-merge (catalog) | 50% | 19/10 skip (card not rendered) · 20/10 05:53Z same fail | evidence/DSR-CATDL-006_{ja,en}.png |
+| same list, "QA190 e-book form" card (DSR-CATDL-018 ja+en) | no popup to ebookUrl (30 s timeout); card now goes to /library/catalog/qa190-cat-ebook-form (404 on .live) | overlay-merge (catalog, DSR-655 Y3) | 30% | 19/10 pass · 20/10 05:53Z pass (pre Y3) | evidence/DSR-CATDL-018_{ja,en}.png |
+| catalog-video list, e-book requiresForm item (DSR-CATV-017 ja+en) | href = /{lang}/library/catalog/qa190-cat-ebook-form, expected ebookUrl https://www.ykkfastening.com/ | overlay-merge (catalog, DSR-655 Y3) | 30% | 20/10 01:36Z pass · 05:54Z ja pass / en fail | evidence/DSR-CATV-017_{ja,en}.png |
+| dm_product queries (no spec fail) | dsr-product-page field names changed after JOB-07: howToUse/notice camelCase, applicableSliderSameAsParent, no applicableSliderStandard/Special. product-detail unchanged. product-detail.js + product.html redeployed 08:33:41Z | dm_product-ver0.4 | – | JOB-07 06:45Z | raw.md#1 |
+
+- **What ran:** `npm run test:dev`, all 23 spec files, all projects. 345 tests: 111 pass, 69 fail, 165 skip, 0 flaky. tsc had no errors. Report: results/regression/DEV/automation-run-20261020-job09.md.
+- **Merge-related:** 6 fails (3 TCs × ja/en), all in the catalog overlay/DSR-655 Y3 flow. I think the main cause is that the e-book/PDF-form cards now route to `/library/catalog/<id>` pages that are not live-published (404 on .live). The CATDL-018/CATV-017 Expected result ("opens ebookUrl") also conflicts with Y3, so it needs a TC decision (suspect test). None reaches 80%.
+- **dm_product-CR:** no spec fail. **dm_product-ver0.4:** only the field-name change above. DSR-583 fails are identical to JOB-07, and DSR-586 is still all skipped (TD-586 not seeded), so the specs cannot show a ver0.4 effect on pages.
+- **The other 63 fails are cause none:** each is the same fail as the latest earlier run. That covers DSR-529 article ×24 (529-decision drafts), news ×6, top ×8, movie ×5, product-list ×8, eco ×2, icons ×2 (placeholders.json 404), CATDL-007, BREAD-032 firefox (2 % pixel diff) and webkit (missing host libs), and VOV-011 ×2.
+- **VOV-011 note:** /{lang}/library/video/search is 404 on .live and 200 on .page. It also failed on 19/10 but passed at 01:36Z today, so it is tagged none. Martin may still want to know about it.
+- **Caveats:** the run started at 09:31Z, not ≥ 14:00Z, so ver0.4 may have been mid-update. The catalog merge time is given as JST in the job but UTC+7 in the DSR-570 report. I did not edit DASHBOARD/BUGS or Jira (run-only job; hub rule §5). Claude-web should copy the table above into "📣 Báo Martin".
