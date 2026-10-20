@@ -1,0 +1,906 @@
+{
+  "job": "JOB-ZZ-IDLE-18",
+  "agent": "codex",
+  "us": "visual-regression (post-merge)",
+  "env": "dev",
+  "started": "2026-10-20T01:04:46.222Z",
+  "status": "done",
+  "tests": [],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": [],
+  "baseUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "automation_head": "bb5cf9ab211ff7633b63cb39693eae40778f8c01",
+  "baseline": "JOB-20261019-06",
+  "statusBaseline": "JOB-ZZ-IDLE-16",
+  "baselineRole": "Sprint 12 post-merge baseline (merge identity unverified)",
+  "records": [
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child/grandchild",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 560820,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "sha256": "6161622d4410688e0569a2eadd2d6627ab4440b62f6191a6f2a205e767ce8cd8"
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-bc/child/grandchild",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": 0.10214401294498382,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "changedPixels": 2121,
+      "comparedPixels": 2076480,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "sha256": "e8a69cb659458fac2e08dc89d490662ee5603848afb56395db24f1d8529e9e02"
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child/grandchild",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-en-test-space-dsr552-bc-child-grandchild_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 560820,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "sha256": "3d1581aa1ba36dc7730a3bab611a29491693761816af62d58d43d61e9a295a3f"
+    },
+    {
+      "path": "/master/en/test-space/dsr552-bc/child/grandchild",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr552-bc/child/grandchild",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-en-test-space-dsr552-bc-child-grandchild_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 2076480,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "sha256": "7f8e91e366164560df7e668fc9e5f5cd2d63fe85bcac4d32133a17329325b309"
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/long/leaf",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-dsr552-edge-long-leaf_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-dsr552-edge-long-leaf_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 560820,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "sha256": "559efda0871e79002c5da60c5a6e2a6bc6f22fec3b319a11f12a27b4b95da367"
+    },
+    {
+      "path": "/master/ja/test-space/dsr552-edge/long/leaf",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr552-edge/long/leaf",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-dsr552-edge-long-leaf_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-dsr552-edge-long-leaf_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 2076480,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "sha256": "8fbb1cf53a58b3ee84255cd7c40e5dff7b06520eee07626dcf8aad24d5ed547b"
+    },
+    {
+      "path": "/master/ja/test-space/list-catalog",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-list-catalog_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-list-catalog_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 3079830,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 7897
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 7897
+      },
+      "sha256": "aa218a7cc47b274af199df2d97ee73b1d71ba7656f931da2d51802c71bac5830"
+    },
+    {
+      "path": "/master/ja/test-space/list-catalog",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-list-catalog_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-list-catalog_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 5317920,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "sha256": "c265bb066dd040a98226e91018966833fb397b1db4fb8e8abf34c6384633a92f"
+    },
+    {
+      "path": "/master/en/test-space/list-catalog",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-list-catalog_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-en-test-space-list-catalog_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 3079830,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 7897
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 7897
+      },
+      "sha256": "7a770f180e71216a4523ccb04af941d60e675637ec75f0ff4bb32dc51a150a47"
+    },
+    {
+      "path": "/master/en/test-space/list-catalog",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [
+        {
+          "classes": "listing block listing-catalog",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 17,
+          "visibleCards": 17
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-list-catalog_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-en-test-space-list-catalog_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 5317920,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 3693
+      },
+      "sha256": "6ff1d2fa03e5eada64b42df51f13b5e8065a80c2b483a825c34c818847964acd"
+    },
+    {
+      "path": "/master/en/test-space/dsr-173-video-detail",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-dsr-173-video-detail_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-en-test-space-dsr-173-video-detail_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 2076480,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "sha256": "cdcb815d3406bc95920c4edb5eaa30ff809ce0922f9e2bdbe7b5266d3dbc58d5"
+    },
+    {
+      "path": "/master/en/test-space/dsr-173-video-detail",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-173-video-detail",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-dsr-173-video-detail_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-en-test-space-dsr-173-video-detail_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 560820,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "sha256": "aa6b4247983cc90b10a99c0bd33a5fef8424cfa04b67c1f9da5b36b78ac5ba40"
+    },
+    {
+      "path": "/master/en/test-space/dsr-278-product-detail",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "capture": "error",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "error": "page.waitForLoadState: Timeout 60000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        },
+        {
+          "timeout": 120000,
+          "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        }
+      ],
+      "statusChanged": false,
+      "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================",
+      "diffUnavailableReason": "Current capture unavailable: network-idle timeout after both attempts"
+    },
+    {
+      "path": "/master/en/test-space/dsr-278-product-detail",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/dsr-278-product-detail",
+      "capture": "error",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "error": "page.waitForLoadState: Timeout 60000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        },
+        {
+          "timeout": 120000,
+          "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================"
+        }
+      ],
+      "statusChanged": false,
+      "error": "page.waitForLoadState: Timeout 120000ms exceeded.\n=========================== logs ===========================\n  \"load\" event fired\n============================================================",
+      "diffUnavailableReason": "Current capture unavailable: network-idle timeout after both attempts"
+    },
+    {
+      "path": "/master/ja/test-space/product-list",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [
+        {
+          "classes": "listing block listing-product-index",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 1,
+          "visibleCards": 1
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-product-list_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-product-list_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 2076480,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "sha256": "3156b62904ac71d1862a18c5680277967d5a0f36c2d06850290e508368ce4e50"
+    },
+    {
+      "path": "/master/ja/test-space/product-list",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [
+        {
+          "classes": "listing block listing-product-index",
+          "selector": "main .listing.block .cards ul > li",
+          "cardCount": 1,
+          "visibleCards": 1
+        }
+      ],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-product-list_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-ja-test-space-product-list_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 560820,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "sha256": "b7fb63e808468233d2e7651e8ba74f092865f887d08a44eab66177b745b9183c"
+    },
+    {
+      "path": "/master/en/test-space/product-list",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 404,
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-product-list_1440x900.png",
+      "diffUnavailableReason": "JOB-20261019-06 capture unavailable",
+      "sha256": "b305c3753b37b1f80890a94f5c9650746e0ace68abcf67ae363655b603b61117"
+    },
+    {
+      "path": "/master/en/test-space/product-list",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 404,
+      "httpStatus": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/product-list",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-test-space-product-list_390x844.png",
+      "diffUnavailableReason": "JOB-20261019-06 capture unavailable",
+      "sha256": "3bed111cb7c9985dd53f26603a91c1d6cb0e661f41097c3d4dabdb14693a6e48"
+    },
+    {
+      "path": "/master/ja",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-ja_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 2076480,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "sha256": "1ae56c3996c8e31577e14a2c40a9bdf9efe1a920f0a3748b080d4a61cbb89bd0"
+    },
+    {
+      "path": "/master/ja",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-ja_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 551460,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1414
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1414
+      },
+      "sha256": "b98fc505f9b37f84b0b3ba466f346e10d8fe4fb618ae8b4b33fe014d9b7a205e"
+    },
+    {
+      "path": "/master/en",
+      "viewport": "1440x900",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en_1440x900.png",
+      "baselineEvidence": "/tmp/job06/master-en_1440x900.png",
+      "changedPixels": 0,
+      "comparedPixels": 2076480,
+      "baselineDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "currentDimensions": {
+        "width": 1440,
+        "height": 1442
+      },
+      "sha256": "2637f4d40e0d21e7aaa3dfb7be62cb3760603692dca3aac333a7728abb10a0fc"
+    },
+    {
+      "path": "/master/en",
+      "viewport": "390x844",
+      "supplemental": false,
+      "baselineHttpStatus": 200,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en",
+      "capture": "captured",
+      "diffPercent": 0,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": false,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en_390x844.png",
+      "baselineEvidence": "/tmp/job06/master-en_390x844.png",
+      "changedPixels": 0,
+      "comparedPixels": 560820,
+      "baselineDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "currentDimensions": {
+        "width": 390,
+        "height": 1438
+      },
+      "sha256": "92000056fde046699e052d25a336af132b390daeb27c20bda2aaca3918392321"
+    },
+    {
+      "path": "/master/ja/test-space/dsr-590-eco-top-page",
+      "viewport": "1440x900",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-dsr-590-eco-top-page_1440x900.png",
+      "diffUnavailableReason": "New target absent from JOB-20261019-06",
+      "sha256": "a4bbdfd69ae11e2eb33036ea3ed50596d22925c1017a13c8f3c650edbf6b6473"
+    },
+    {
+      "path": "/master/ja/test-space/dsr-590-eco-top-page",
+      "viewport": "390x844",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-test-space-dsr-590-eco-top-page_390x844.png",
+      "diffUnavailableReason": "New target absent from JOB-20261019-06",
+      "sha256": "84898ffb3cff9517d1de13e22a96560307cb5a42479db3c9d93499d82446d45e"
+    },
+    {
+      "path": "/master/ja/library/article/stories/qa529-01",
+      "viewport": "1440x900",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-library-article-stories-qa529-01_1440x900.png",
+      "diffUnavailableReason": "New target absent from JOB-20261019-06",
+      "sha256": "f7bb4412b50f5171295795e89d7899fb25bf26f08ab1db28ba2083a0494125db"
+    },
+    {
+      "path": "/master/ja/library/article/stories/qa529-01",
+      "viewport": "390x844",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-ja-library-article-stories-qa529-01_390x844.png",
+      "diffUnavailableReason": "New target absent from JOB-20261019-06",
+      "sha256": "570d9d465a609e74d4ac81d01c7f495f1a00d338a0f18c573c1c9a5601eaf3bc"
+    },
+    {
+      "path": "/master/en/library/article/stories/qa529-01",
+      "viewport": "1440x900",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 1440,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-library-article-stories-qa529-01_1440x900.png",
+      "diffUnavailableReason": "New target absent from JOB-20261019-06",
+      "sha256": "dd488df94c6f5e847d68effc8c957c4931980deee349e59caf322682ba7b5961"
+    },
+    {
+      "path": "/master/en/library/article/stories/qa529-01",
+      "viewport": "390x844",
+      "supplemental": true,
+      "baselineHttpStatus": null,
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "capture": "captured",
+      "diffPercent": null,
+      "scrollWidth": 390,
+      "cardLists": [],
+      "attempts": [
+        {
+          "timeout": 60000,
+          "capture": "captured"
+        }
+      ],
+      "statusChanged": null,
+      "overflow": false,
+      "localEvidence": "/home/qa/dsr-baselines/JOB-ZZ-IDLE-18/master-en-library-article-stories-qa529-01_390x844.png",
+      "diffUnavailableReason": "New target absent from JOB-20261019-06",
+      "sha256": "5f9a0d8ca64f7a7981e95f0cbe7364669798d1cd8fc3f62c1c20fbef79b63f83"
+    }
+  ],
+  "method": "Fresh Chromium context per target, full-page PNG, network idle + 1s; timeout 60s, retry 120s. Exact RGBA inequality / maximum image rectangle; unmatched pixels changed. No masks, tolerance or verdicts. Counts are initial rendered card counts, no load-more/pagination interactions.",
+  "browser": "153.0.8010.12",
+  "finished": "2026-10-20T01:08:56.083Z",
+  "notes": "No verdicts. Deployed build/merge identity not independently verified. Missing baseline PNGs cannot be reconstructed from percentage metadata. Added eco top page and ja/en qa529-01 at both viewports. Local screenshots are committed only if HTTP status changed vs IDLE-16 or diff >2% vs JOB-20261019-06. New targets have no historical comparison. HTTP error pages are captured to retain baseline observations. Two product-detail targets lack PNG baselines due to network-idle timeouts; scrollWidth was sampled after timeout. Status-change comparison refers to HTTP status only.",
+  "capture_summary": {
+    "targets": 28,
+    "captured": 26,
+    "errors": 2,
+    "httpStatusChanges": 0,
+    "compared": 18,
+    "committedPNGs": 0
+  },
+  "typescript": {
+    "command": "npx tsc --noEmit",
+    "exitCode": 0,
+    "result": "no errors"
+  }
+}
