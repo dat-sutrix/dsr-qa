@@ -6,11 +6,20 @@ export type GridMetrics = {
   gridTemplateColumns: string | null;
   tracks: number;
   columns: number;
+  firstRowColumns: number;
   cardWidths: number[];
   cardLefts: number[];
   rows: number[];
   overflow: string[];
   scrollWidth: number;
+};
+
+export type ProductListSelectors = {
+  listing: string;
+  grid: string;
+  cards: string;
+  titles: string;
+  chips: string;
 };
 
 // Product list = listing block, variant listing-product-index (DEV 2026-10-16). No data-testid on the listing yet:
@@ -23,17 +32,30 @@ export class ProductListPage {
   readonly chips: Locator;
   readonly loadMore: Locator;
 
-  constructor(readonly page: Page) {
-    // TODO: data-testid product-list
-    this.listing = page.locator('main .listing.block');
-    // TODO: data-testid product-list-grid
-    this.grid = this.listing.locator('.cards ul').first();
-    // TODO: data-testid product-card
-    this.cards = this.grid.locator(':scope > li');
-    // TODO: data-testid product-card-title
-    this.titles = this.cards.locator('.cards-card-title');
-    // TODO: data-testid product-list-filter
-    this.chips = this.listing.locator('.listing-chip:not([data-key="__all__"])');
+  // TODO: data-testid product-list, product-list-grid, product-card, product-card-title, product-list-filter
+  static readonly listingSelectors: ProductListSelectors = {
+    listing: 'main .listing.block',
+    grid: '.cards ul',
+    cards: ':scope > li',
+    titles: '.cards-card-title',
+    chips: '.listing-chip:not([data-key="__all__"])',
+  };
+
+  // product-list block (/{lang}/product-list on DEV 2026-10-20): checkbox filters in a sidebar that is a drawer on SP.
+  static readonly blockSelectors: ProductListSelectors = {
+    listing: 'main .product-list.block',
+    grid: '.pl-grid',
+    cards: ':scope > li.pl-card',
+    titles: '.pl-card-name',
+    chips: '.pl-filter-option',
+  };
+
+  constructor(readonly page: Page, selectors: ProductListSelectors = ProductListPage.listingSelectors) {
+    this.listing = page.locator(selectors.listing);
+    this.grid = this.listing.locator(selectors.grid).first();
+    this.cards = this.grid.locator(selectors.cards);
+    this.titles = this.cards.locator(selectors.titles);
+    this.chips = this.listing.locator(selectors.chips);
     // TODO: data-testid product-list-load-more
     this.loadMore = this.listing.getByRole('button', { name: /more|もっと見る|さらに表示/i });
   }
@@ -68,11 +90,28 @@ export class ProductListPage {
       gridTemplateColumns: grid.cols,
       tracks: grid.cols ? grid.cols.trim().split(/\s+/).length : 0,
       columns: lefts.length,
+      firstRowColumns: new Set(grid.boxes.filter(b => b.top === rows[0]).map(b => b.left)).size,
       cardWidths: grid.boxes.map(b => b.width),
       cardLefts: lefts,
       rows: rows.map(top => grid.boxes.filter(b => b.top === top).length),
       overflow: grid.boxes.filter(b => b.overflow).map(b => b.id),
       scrollWidth: await this.page.evaluate(() => document.documentElement.scrollWidth),
     };
+  }
+
+  // product-list block: check filter option i like a user (open SP drawer, expand its group, tick, close drawer).
+  async toggleBlockFilter(i: number) {
+    const option = this.chips.nth(i);
+    // TODO: data-testid product-list-filter-toggle / product-list-filter-close
+    const open = this.listing.locator('.pl-filter-toggle');
+    const close = this.listing.locator('.pl-filter-close');
+    // The SP drawer sits off-screen (still "visible" to Playwright), so open/close only when the toggle is shown.
+    const drawer = await open.isVisible();
+    if (drawer) await open.click();
+    const group = this.listing.locator('.pl-filter-group').filter({ has: option });
+    if (await group.evaluate(g => g.classList.contains('is-collapsed'))) await group.locator('.pl-filter-heading').click();
+    await option.click();
+    await this.page.waitForLoadState('networkidle').catch(() => undefined);
+    if (drawer) await close.click();
   }
 }

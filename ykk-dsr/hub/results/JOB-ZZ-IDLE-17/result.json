@@ -1,0 +1,33 @@
+{
+  "job": "JOB-ZZ-IDLE-17",
+  "agent": "claude-code",
+  "us": "DSR-583",
+  "env": "dev",
+  "started": "2026-10-20T01:54:48Z",
+  "finished": "2026-10-20T02:10:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-PLSP-001", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-PLSP-001", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-PLSP-002", "lang": "ja", "result": "fail", "error": "767px: 3 columns (expected 2, SP<768 assumed, Q22); 320px: all 3 cards overflow their column. 320-430: 2 cols OK. Ticket To Do", "evidence": "evidence/DSR-PLSP-002_ja.png", "suspect": "product" },
+    { "tc": "DSR-PLSP-002", "lang": "en", "result": "fail", "error": "767px: 3 columns (expected 2, SP<768 assumed, Q22); 320px: all 3 cards overflow their column. 320-430: 2 cols OK. Ticket To Do", "evidence": "evidence/DSR-PLSP-002_en.png", "suspect": "product" },
+    { "tc": "DSR-PLSP-003", "lang": "ja", "result": "fail", "error": "Timeout in filter step: group locator filter({has}) rooted at block never matches (test defect). open=2, scroll-bottom=2; filter/reload not reached", "evidence": "evidence/DSR-PLSP-003_ja.png", "suspect": "test" },
+    { "tc": "DSR-PLSP-003", "lang": "en", "result": "fail", "error": "Timeout in filter step: group locator filter({has}) rooted at block never matches (test defect). open=2, scroll-bottom=2; filter/reload not reached", "evidence": "evidence/DSR-PLSP-003_en.png", "suspect": "test" },
+    { "tc": "DSR-PLSP-004", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-PLSP-004", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "" },
+    { "tc": "DSR-PLSP-005", "lang": "ja", "result": "fail", "error": "Unfiltered 3 cards (odd): last width 186.5 = first 186.5 OK; left-aligned check compares card left 2 vs grid border-box 0 (test defect)", "evidence": "evidence/DSR-PLSP-005_ja.png", "suspect": "test" },
+    { "tc": "DSR-PLSP-005", "lang": "en", "result": "fail", "error": "Unfiltered 3 cards (odd): last width 186.5 = first 186.5 OK; left-aligned check compares card left 2 vs grid border-box 0 (test defect)", "evidence": "evidence/DSR-PLSP-005_en.png", "suspect": "test" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/product-list/DSR-583.product-list-sp.spec.ts",
+    "fixtures/dsr-583.ts",
+    "pages/ProductListPage.ts",
+    "results/DSR-583/DEV/automation-run-20261020.md"
+  ],
+  "questions": [],
+  "page": "/{ja,en}/product-list (fallback; /master/{lang}/product-list = 404)",
+  "card_counts": { "ja": 3, "en": 3 },
+  "columns_by_width": { "320": 2, "360": 2, "375": 2, "390": 2, "414": 2, "430": 2, "767": 3, "768": 3, "1024": 3, "1440": "4 tracks (3 cards in first row)" },
+  "automation_head": "842361e327213d4a4ae6aab78eeaf1e45e41a021"
+}

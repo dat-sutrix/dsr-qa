@@ -24,3 +24,19 @@ export const widthTolerance = 2; // DSR-PRODLIST-005 (±2px)
 // DSR-PRODLIST-005 (TD-583-02): result counts to find via filters.
 export const filterTargets = [3, 1] as const;
 export const filterBlocked = 'blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)';
+
+// JOB-ZZ-IDLE-17 (DSR-PLSP-001…005, spec tests/product-list/DSR-583.product-list-sp.spec.ts).
+// Page: /master/{lang}/product-list, fallback /{lang}/product-list (Q22 default). Renders the product-list block.
+export const plspPath = (lang: Language) => `/master/${lang}/product-list`;
+export const plspFallbackPath = (lang: Language) => `/${lang}/product-list`;
+export const plspMinCards = 2; // preflight: < 2 cards → skip
+export const plspDataMissing = 'DSR-583 product list data missing';
+// SP widths incl. 767 (Q22 breakpoint unknown; A2 default SP < 768). Columns = distinct card left values in the first row.
+export const plspSpWidths = [320, 360, 375, 390, 414, 430, spBreakpointMax] as const;
+// PC/TB widths per job. Figma 1333-6510 has frames only for 768 (3) and 1440 (4); 1024 is recorded only.
+export const plspPcWidths = [
+  { width: 768, columns: 3 },
+  { width: 1024, columns: null },
+  { width: 1440, columns: 4 },
+] as const;
+export const plspToDo = 'ticket To Do (DSR-583, owner Martin)';
