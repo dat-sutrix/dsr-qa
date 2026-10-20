@@ -29,9 +29,10 @@ Bug Dat theo dõi: DSR-647 – **Martin 20/10: đã merge, retest được** →
 | P3 | Gửi Nakamoto 3 địa chỉ nhận mail test – **hoãn** tới khi có SendGrid chính thức | Nakamoto | — | — |
 | P3 | 22/10: duyệt Done DEV các ticket đạt (Claude đề xuất + soạn comment) | — | 22/10 | 557, 570, 529, 566 |
 
-## 3. 🌙 QA part-time tối nay (T3 20/10) – 17:10 tạo Night Pack theo PLAN "Merge overlay"
-Kết quả tối 19/10 (10 dòng): ✅ folder stories, TD-529-02, TD-529-03, 433-2.0, 433-3.0, 457 #10, 570 catalogId, **552-016** · ❌ TD-529-01 (ảnh article – đang phân loại) · 433-1.0 ghi Fail nhưng đúng expected → đề xuất Pass.
-Dự kiến tối nay: (1) 557 video seed lại folder mới 45' · (2) 587/647 qa501-* 50' · (3) 570 manual 6 TC 30' · (4) 529-01: lặp lại thao tác đổi/xóa ảnh trên `…/stories/qa529-01` ghi từng bước (nếu agent chưa làm rõ) · (5) catalog chỉ khi Martin gửi đường dẫn.
+## 3. 🌙 QA part-time tối nay (T3 20/10, ~2h05) – 17:10 tạo Night Pack theo PLAN "Night Pack 20/10 – bắt buộc đưa vào"
+Martin 20/10 06:44: merge xong, **một số CF test bị xóa khi dọn folder** → tạo lại bằng bộ **TD-587** (đúng folder mới), bỏ qa501-* / qa190-mv-*:
+1. qa587-main en+ja (YouTube) – 557 + 587 (25') · 2. qa557-dam en+ja (video DAM) – 557 (20') · 3. qa587-r1…r6 + qa587-rel-a – bug DSR-647 thứ tự (35') · 4. qa587-off + qa587-rel-b – DSR-647 ẩn video (15') · 5. 570 manual 6 TC (30')
+Catalog: chờ Martin merge chiều nay → tạo lại tối 21/10.
 
 ## 4. 🤖 Agents
 | Lane | Hàng đợi (tự chạy, không cần ai) | Hold (07:45/17:10 tự chuyển) |
