@@ -33,7 +33,7 @@ Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ da
 ## 3. 🌙 QA part-time tối nay (T3 20/10, ~4h) – 17:10 tạo Night Pack theo PLAN "Night Pack 20/10"
 Mỗi content CF kèm 1 DSR CF cùng tên. Thứ tự: 1. qa587-main en+ja · 2. qa587-r1…r6 + rel-a (DSR-647) · 3. qa587-off + rel-b · 4. qa557-dam en+ja · 5. **catalog lõi 4 × ja/en – chỉ khi catalog đã merge** · 5b. sửa data 529 · 6. 570 manual · 7. (tùy chọn) TC phụ 587
 **TD-586 dời sang tối 21/10** (product đang hỏng do đổi model).
-Catalog merge: ☐ chưa xác nhận (17:10 cập nhật ô này: merged + folder / chưa)
+Catalog merge: ✅ **đã merge ~12:45** (Martin: /en/library/catalog/qa190-cat-pdf-form chạy). URL catalog = `/{lang}/library/catalog/{id}`. JOB-20261020-05 (đang chạy) liệt kê catalog nào còn/thiếu → việc 5 chỉ tạo catalog **thiếu**
 
 ## 4. 🤖 Agents
 | Lane | Hàng đợi (tự chạy, không cần ai) | Hold (07:45/17:10 tự chuyển) |
