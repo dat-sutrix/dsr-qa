@@ -43,10 +43,10 @@ Martin 20/10 06:44: merge xong, **một số CF test bị xóa khi dọn folder*
 | 5b | 529 | Sửa data theo triage 20/10: qa529-01 (ja + en) robots/noindex = **OFF** · qa529-02 (ja) robots = **ON** · en qa529-01 relatedStories sắp lại **r1, r2, r3** · chụp ô Title của qa529-01 (ja) trong Page configuration → Publish lại cả 3 trang | 10 | TD-529-fix |
 | 6 | 570 | Manual 6 TC trên trang demo /master/ja/test-space/dsr-570-catalog-detail (không đụng CF catalog) | 30 | DSR-CATDL-… (6 dòng) |
 | 7 | 587 (nếu còn giờ) | TD-587-06 (chỉ content CF `qa587-commune-only`), TD-587-07 (`qa587-inactive`: isActive OFF → republish), TD-587-02 (`qa587-preview`: DSR CF chỉ Preview) | 18 | TD-587-06, -07, -02 |
-Không làm: catalog (chờ Martin merge + folder) → tối 21/10.
+Catalog: **không cần làm lại** – Martin 20/10 09:25: catalog overlay ngoài scope hiện tại, trang catalog giữ nguyên, data qa190-cat-* vẫn dùng được.
 
-**Night Pack 21/10 (dự kiến):** catalog 557/570 · TD-586 negative (05–09, 11) · TD-587 negative còn lại (04, 05, 08, 10, 12) · việc #7 nếu chưa làm. **Night 22/10:** chỉ retest bug fix.
-**Đích Done mới:** DSR-647 21/10 · DSR-586, DSR-587 **22/10** (sớm hơn 1 ngày) · 557/570 22/10 (phụ thuộc catalog merge) · 529 22/10.
+**Night Pack 21/10 (dự kiến):** TD-586 negative (05–09, 11) · TD-587 negative còn lại (04, 05, 08, 10, 12) · việc #7 nếu chưa làm. **Night 22/10:** chỉ retest bug fix.
+**Đích Done mới:** DSR-647 21/10 · DSR-586, DSR-587 **22/10** (sớm hơn 1 ngày) · **557, 570 21/10** (catalog không đổi → không phải seed lại) · 529 22/10.
 
 **⚠ Merge overlay (Martin) sáng T3 20/10 – ảnh hưởng (chốt 19/10 14:45):**
 - Sau merge, trang/danh sách sản phẩm & video trên DEV chỉ còn item trong folder mới (`/content/dam/common|dsr/{lang}/products|movies/…`); dữ liệu mẫu bị xóa. Data QA cũ (`/content/dam/ykk/common/product-cf/test/` – qa190-mv-*, qa501-*) sẽ mất khỏi trang → **không phải bug**.
