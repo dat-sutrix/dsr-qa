@@ -20,7 +20,7 @@
 | VPS agents `claude-code` (functional) / `codex` (visual) | Playwright/Lighthouse qua `runner.sh` (poll 5', job trong `jobs/queue`) | **Read-only AEM**: không sửa content, không submit form, không login. Không có Jira/Figma/Drive |
 | Dat | Cầu nối: chuyển tin dev/PM, duyệt Done, việc trong "🔔 Dat cần làm" | Không review code; không có kinh nghiệm Author → hướng dẫn từng click |
 | QA part-time (QA-PT) | Tạo test data trên Author, manual TC – **tối T2–T6, ~4h**, không T7/CN | Không có Jira; làm theo Night Work Pack; lỗi ghi `QA-PT-ERRORS.md` |
-| Dev | **Portal Martin** (dev chính 529/552/586/587/647/654/657–660), Ngọc (590), Mayuka (DSR-638), Okumura (CF design 614) | — |
+| Dev | **Portal Martin** (dev chính; FE: **Hoàng Minh Ngọc** – bug FE gợi ý gán Ngọc) 529/552/586/587/647/654/657–660), Ngọc (590), Mayuka (DSR-638), Okumura (CF design 614) | — |
 | PM | **Milavec Quentin** (Question ticket, scope) · khách: Numata-san (layout sheets) | — |
 
 ## 3. Quy tắc đứng (Dat) – tóm tắt, chi tiết ở file nguồn
@@ -35,7 +35,7 @@
 - **Night Pack:** ~4h (không ít hơn), ước lượng ×1.5 cho việc Author, mọi field bắt buộc + giá trị chính xác, **giá trị tô vàng/đậm, cấm tô đỏ, ON tô xanh, khung "quy tắc bắt buộc" + checklist trước Publish**, mỗi dòng report có Date + Env, chưa làm = Not run. Mẫu: Night Work Pack 2026-10-21 (v3).
 - **Agents luôn có việc:** ≥ 1 idle job/lane; cuối tuần việc không phụ thuộc người.
 - Cảnh báo trước tác vụ nặng (ngoại lệ: TC job, scale theo velocity). Không đổi priority ticket dev. Không xóa file Drive nếu không được yêu cầu. Không ghi password, không PII. Chỉ dùng Jira/Drive Sutrix.
-- **Daily report cho group chat (EN, copy-paste) nằm ở đầu `STANDUP.md` mục A**, tạo 08:19 T2–T6, Dat dán trước 9:00 VN; mục B = ý present nhanh + câu dễ bị hỏi.
+- **Daily report cho group chat (EN, copy-paste) nằm ở đầu `STANDUP.md` mục A, theo đúng mẫu `templates/DAILY-REPORT.md`** (mention @martin portal / @Quentin Milavec / @Minh Ngọc Hoàng), tạo 08:19 T2–T6, Dat dán trước 9:00 VN; mục B = ý present nhanh + câu dễ bị hỏi.
 - Chat với Dat tiếng Việt; TC, bug, tin cho dev/PM tiếng Anh.
 
 - **Mục tiêu chiến lược (Dat 21/10): QA-PT → 0% sau 2–3 sprint (S13–S15); Dat giữ nguyên vai trò; look & feel = Dat review L&F card 2–5 phút/item trước UAT khách (agent chuẩn bị sẵn, Dat chỉ OK/NG)**, giữ QA-PT làm lưới an toàn, chuyển việc theo 4 bậc (Human → Shadow → Agent+audit → Agent only), được tạo thêm agent. Kế hoạch: `ZERO-HUMAN-ROADMAP.md`; đo: `WORKLOAD.md`; tổng kết mỗi cuối sprint (Sprint Review QA).
