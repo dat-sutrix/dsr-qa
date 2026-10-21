@@ -31,6 +31,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 | P3 | Chốt nháp 🐞 BUG-OVL-INACTIVE (50%) sau khi Martin trả lời | — | 22/10 | — |
 | ✅ | Martin đã merge fix 657/658/659/660 (16:45) + deploy cấu hình 404 → QA-PT publish lại 6 trang tối nay là đủ (sau merge) → JOB-20261021-05 sáng 22/10 · JOB-20261021-06 smoke overlay/404 sau deploy | — | — | — |
 | P2 | **Author agent P0′:** sáng 22/10 trên VPS (terminal `bash`, user `qa`) chạy lại `tools/author/probe.sh` → báo claude-web dòng "Cookie age" + check 1 có 200 không (đo tuổi thọ cookie) | — | 22/10 sáng | lệnh: xem AUTHOR-AGENT.md §2b |
+| P3 | TC job: Atlassian connector timeout 2 lượt liền (20:07, 21:06) → không tự thêm được ticket mới giao Dat. Nếu có ticket mới giao trong ngày 21/10: kiểm tra connector Atlassian trên claude.ai (Settings > Connectors) | — | 22/10 | — |
 | ✅ | 21/10 đã xong: tin Martin (404, ver0.4, 529 Q), daily report group, Quentin (566 → Sprint 13), Sprint 12 gán cho 657–660 + 611 | — | — | — |
 
 ## 3. 🌙 QA part-time tối nay (T4 21/10) – [Night Work Pack 2026-10-21 (v3)](https://docs.google.com/document/d/1xY_ghkX8I3LqTSyziO-Ef8AU_tN3JF4aru0R29aMddo) · evidence [Evidence_20261021](https://drive.google.com/drive/folders/1JZFIibeWPO3y2gR05MFlirQb0u0dCjCq)
@@ -44,7 +45,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 Kết quả 21/10 chiều (17:10 đã đọc): JOB-20261020-08 product ver0.4 không regression (10 fail = DSR-583 cũ) · JOB-20261021-04 529: 010 ✅, 002/006/011 ❌ = bug 657/658/659 (chạy trước merge), 012/014/028 = data (chờ publish lại), 007 chưa assert định dạng ngày → sửa trong -07 · JOB-20261021-06: en qa587-main ✅ 200 .page+.live; trang 404 = template site; deploy cấu hình 404 **không thấy công khai** · IDLE-25 catalog en .page ✅, .live 404 = chưa publish lại (Night việc 5) · IDLE-24 visual URL mới DSR-638: 8/8 khớp layout.
 
 ## 5. TC (Jira sub-task `qa-tc`)
-Night TC job (21/10 20:07): done 2/2 hôm nay (✅ 529 re-baseline · ✅ DSR-654 21 TC) · upload queue pending 0 / fail 0 · TC backlog trống 21/10 20:07 · Jira check KHÔNG chạy được (Atlassian connector timeout) → lượt 21:05 thử lại · auto-added 0 · job agent đã xếp 0 lượt này (2 trong ngày: JOB-20261021-11 queue, -12 hold) · hold: CL-v0.1. **Night 22/10 cần thêm TD-654-02..08** (How-to trong TestData 654).
+Night TC job (21/10 21:06): done 2/2 hôm nay (✅ 529 re-baseline · ✅ DSR-654 21 TC) · upload queue pending 0 / fail 0 · TC backlog trống 21/10 21:06 · Jira check KHÔNG chạy được lần 2 (Atlassian connector CONNECT_TIMEOUT 20:07 + 21:06) → lượt 18:05 22/10 thử lại · auto-added 0 · job agent đã xếp 0 lượt này (2 trong ngày: JOB-20261021-11 queue, -12 hold) · hold: CL-v0.1. **Night 22/10 cần thêm TD-654-02..08** (How-to trong TestData 654).
 
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |

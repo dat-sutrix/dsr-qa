@@ -69,6 +69,7 @@
 | 2026-10-21 18:30 | DSR-654 | done (new 21 TC, TD-654-01..08, TC+TD → upload-queue folder 586) · Jira comment DSR-654 · JOB-20261021-11 queue (claude-code) + JOB-20261021-12 hold (codex) · Q47 | ~15' |
 | 2026-10-21 19:07 | — | backlog trống (row 0 hold) · Jira check: auto-added 0 (653/647/590/587/586/570/566/557/538/529 đã phủ) · upload pending 0 / fail 0 (654 done 11:35Z) | ~3' |
 | 2026-10-21 20:07 | — | backlog trống (row 0 hold) · Jira check lỗi: Atlassian connector timeout (không thêm được) → retry 21:05 · upload pending 0 / fail 0 | ~3' |
+| 2026-10-21 21:06 | — | backlog trống (row 0 hold) · Jira check lỗi lần 2: Atlassian CONNECT_TIMEOUT → 🔔 Dat, retry 22/10 18:05 · upload pending 0 / fail 0 · báo cáo cuối ngày | ~3' |
 
 - 2026-10-19 11:40 DSR-585: 項目fix版 xuất hiện (Quentin comment 61280, đang review, sheet 1Rxiw3S-3AkmAP2Jbzkx3FI1-3S3jYbOo). Khi review xong (Jira comment) → re-baseline 15 TC từ v0.1 sang bản fix, ưu tiên sau ticket mới giao Dat.
 
