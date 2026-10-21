@@ -1,0 +1,6 @@
+en|135|200|404|True|2026-10-16T03:29:20.974Z|2026-10-16T03:26:25.925Z|/content/dam/common/en/products/1350|False
+en|46|200|404|True|2026-10-16T04:20:39.629Z|2026-10-16T04:24:59.958Z|/content/dam/common/en/products/461|False
+en|productid-01x|200|404|True|2026-10-19T05:37:06.031Z|2026-10-19T01:31:00.861Z|/content/dam/common/en/products/cf-products1|False
+ja|135|200|404|True|2026-10-19T05:37:07.692Z|2026-10-19T04:07:10.811Z|/content/dam/common/ja/products/1350|False
+ja|46|200|404|True|2026-10-19T05:37:08.041Z|2026-10-19T04:07:11.807Z|/content/dam/common/ja/products/461|False
+ja|productid-01x|200|404|True|2026-10-19T05:37:08.393Z|2026-10-19T04:07:12.897Z|/content/dam/common/ja/products/cf-products1|False

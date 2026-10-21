@@ -1,0 +1,40 @@
+en/library/video/qa587-main page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+ja/library/video/qa587-main page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+en/library/video/qa557-dam page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+en/library/video/qa587-rel-a page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+en/library/catalog/qa190-cat-pdf-form page=200 live=404 page.html=404 live.html=404 page/=404 live/=404
+ja/library/catalog/qa190-cat-pdf-form page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+ja/library/catalog/qa190-cat-pdf page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+en/products/46 page=200 live=404 page.html=404 live.html=404 page/=404 live/=404
+en/library/video/qa-587-main page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+ja/library/video/qa-587-main page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+ja/library/video/qa557-dam page=404 live=404 page.html=404 live.html=404 page/=404 live/=404
+--- all list ids (step 3)
+en/badid page=200 live=404
+en/fil-unav page=200 live=404
+en/filtered page=200 live=404
+en/long page=200 live=404
+en/movieid-01 page=200 live=404
+en/noid page=200 live=404
+en/norelated page=200 live=404
+en/qa-587-main page=404 live=404
+en/qa501-main-a page=200 live=404
+en/qa501-main-b page=200 live=404
+en/qa557-dam page=404 live=404
+en/qa587-r1 page=404 live=404
+en/qa587-r2 page=404 live=404
+en/qa587-r3 page=404 live=404
+en/qa587-r4 page=404 live=404
+en/qa587-r5 page=404 live=404
+en/qa587-r6 page=404 live=404
+en/qa587-rel-a page=404 live=404
+en/rel6 page=200 live=404
+en/sort-a page=200 live=404
+en/sort-b page=200 live=404
+en/sort-c page=200 live=404
+en/sort-main page=200 live=404
+ja/filtered page=200 live=404
+ja/long page=200 live=404
+ja/qa-587-main page=404 live=404
+ja/qa557-dam page=404 live=404
+ja/sort-main page=200 live=404

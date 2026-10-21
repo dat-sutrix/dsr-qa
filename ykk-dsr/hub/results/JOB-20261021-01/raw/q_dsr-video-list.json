@@ -1,0 +1,1 @@
+{"errors":[{"message":"Variable 'folder' has an invalid value: Variable 'folder' has coerced Null value for NonNull type 'ID!'","locations":[{"line":10,"column":20}],"extensions":{"classification":"ValidationError"}}]}

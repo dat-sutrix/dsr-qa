@@ -1,0 +1,9 @@
+ja/library/video/qa-587-main page=200 live=200
+en/library/video/qa-587-main page=404 live=404
+en/library/video/qa587-main page=404 live=404
+ja/library/video/qa587-main page=404 live=404
+en/library/video/qa557-dam page=404 live=404
+en/library/video/qa587-rel-a page=404 live=404
+ja/library/video/qa557-dam page=404 live=404
+en/products/46 page=200 live=404
+en/library/catalog/qa190-cat-pdf-form page=200 live=404
