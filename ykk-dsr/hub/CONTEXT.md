@@ -76,7 +76,7 @@ Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – m�
 | P0 | Credential U1: cookie `login-token` của account dùng chung (không Cloud Manager) ở VPS `~/.dsr-secrets/aem-dev.env` | ✅ 21/10 ~17:15 | Dat |
 | P0 | Probe read-only `tools/author/probe.sh` | ✅ `results/AUTHOR-PROBE-20261021-1023` (§9) | – |
 | P1a | JOB-20261021-08 (claude-code): viết `tools/author` (models, lint, verify, apply **bị khóa**) + chạy read-only TD-587-01 | 🔄 running từ 17:27 | Agent |
-| P1a′ | Review kết quả JOB-08: code guard (host/path allowlist, không có delete, apply khóa 3 lớp), `author/models.md`, lint/verify bắt đúng lỗi qa587 đã biết | ☐ | Claude |
+| P1a′ | Review kết quả JOB-08: code guard (host/path allowlist, không có delete, apply khóa 3 lớp), `author/models.md`, lint/verify bắt đúng lỗi qa587 đã biết | ✅ 21/10 18:05 duyệt (lint bắt đủ 4 lỗi đã biết); quyết định D8–D11 → JOB-20261021-10 sửa | Claude |
 | P0′ | Đo tuổi thọ cookie: Dat chạy lại `probe.sh` sáng 22/10 → xem "Cookie age" + check 1 = 200 | ☐ | Dat → Claude |
 | V | **Dùng ngay (không ghi):** sáng 07:45 chạy `verify` cho manifest data của Night Pack đêm trước → fail = lỗi data QA-PT, báo trước khi agent test chạy | 🔄 manifest Night 21/10 viết xong (`author/manifests/` 5 file) · JOB-20261021-09 hold (chờ JOB-08 + review) | Claude |
 | P1b | Ghi thử 1 CF `qaagent-probe` (common/en/movies) giờ 08–18 với `AUTHOR_WRITE_ENABLED=1` → verify L0–L3 | ☐ sau P1a′ | Claude + Dat bật cờ |
