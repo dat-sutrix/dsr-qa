@@ -1,0 +1,670 @@
+{
+ "job": "JOB-20261020-08",
+ "agent": "claude-code",
+ "us": "DSR-586, DSR-585, regression (product)",
+ "env": "dev",
+ "started": "2026-10-21T08:59:15Z",
+ "finished": "2026-10-21T09:10:38Z",
+ "status": "done",
+ "tests": [
+  {
+   "tc": "JOB08-CHK1-queries",
+   "lang": "ja,en",
+   "result": "pass",
+   "error": "all queries 200, no errors with page params (bare dsr-product-list = ValidationError by design); item counts = JOB-07; 0 removed, 0 old names; product-detail now ver0.4",
+   "evidence": "raw.md#1",
+   "suspect": "",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "JOB08-CHK2-pages",
+   "lang": "ja,en",
+   "result": "pass",
+   "error": "statuses/cards/console errors identical to JOB-07 (placeholders.json 404, scene7 403, ORB; en test-space product-list 404; products/46 404 on .live)",
+   "evidence": "raw.md#2",
+   "suspect": "env",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "JOB08-CHK3-removed-ui",
+   "lang": "ja,en",
+   "result": "pass",
+   "error": "tag groups, std color badge, 生産国 row, stop variation not rendered; no new-field text. Plastic filter: no plastic data, unproven",
+   "evidence": "raw.md#3",
+   "suspect": "",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "JOB08-CHK5-deploy",
+   "lang": "-",
+   "result": "pass",
+   "error": "product-list.js + product-detail.js 20/10 08:33:41Z; product.html 11:36:16Z; listing.js + cf.js 21/10 08:54:13Z (eco tag filter, 9 min before run)",
+   "evidence": "raw.md#5",
+   "suspect": "",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-585-TC19.0",
+   "lang": "ja,en",
+   "result": "pass",
+   "error": "proposed Pass per query: dsr-product-page 46, product-detail productId-01x (Q46: matches ver0.4), dsr-product-list, dm-product-list: 0/27 removed, 0/6 old names",
+   "evidence": "raw.md#1",
+   "suspect": "",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-PCF-001",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-002",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-003",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-004",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-005",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 + chain-type tag namespace; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-008",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + template revision (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-009",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-010",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-04; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-012",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 en/cn copies; cn folder may not exist (Issue #18); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-014",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-560/182 search JSON (Nakamoto); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-015",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-586 overlay; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 is ja only; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "result": "skip",
+   "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-005",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-007",
+   "lang": "ja",
+   "result": "skip",
+   "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-008",
+   "lang": "ja",
+   "result": "skip",
+   "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-009",
+   "lang": "ja",
+   "result": "skip",
+   "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "result": "skip",
+   "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "cn",
+   "result": "skip",
+   "error": "test.fixme (no description)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column | unchanged vs JOB-07 (320: 3 cards overflow; 767→3 cols); not ver0.4",
+   "evidence": "evidence/DSR-PLSP-002_ja.png",
+   "suspect": "product",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded. | unchanged vs JOB-07: timeout in filter step (ProductListPage.ts:112); not ver0.4",
+   "evidence": "evidence/DSR-PLSP-003_ja.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 3 results: left aligned | unchanged vs JOB-07: left 2 vs grid 0; not ver0.4",
+   "evidence": "evidence/DSR-PLSP-005_ja.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "ja",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column | unchanged vs JOB-07 (320: 3 cards overflow; 767→3 cols); not ver0.4",
+   "evidence": "evidence/DSR-PLSP-002_en.png",
+   "suspect": "product",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "en",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded. | unchanged vs JOB-07: timeout in filter step (ProductListPage.ts:112); not ver0.4",
+   "evidence": "evidence/DSR-PLSP-003_en.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: 3 results: left aligned | unchanged vs JOB-07: left 2 vs grid 0; not ver0.4",
+   "evidence": "evidence/DSR-PLSP-005_en.png",
+   "suspect": "test",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "en",
+   "result": "pass",
+   "error": "",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: TD-583-01 ≥ 6 products | unchanged vs JOB-07: 3 products, 1 column; not ver0.4",
+   "evidence": "evidence/DSR-PRODLIST-001_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PRODLIST-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 320: distinct column offsets | unchanged vs JOB-07 (test-space listing 1 column); not ver0.4",
+   "evidence": "evidence/DSR-PRODLIST-002_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: open: distinct column offsets | unchanged vs JOB-07 (1 column); not ver0.4",
+   "evidence": "evidence/DSR-PRODLIST-003_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "en",
+   "result": "skip",
+   "error": "blocked-data: TD-583-01 page missing (/master/en/test-space/product-list and /master/en/product-list HTTP 404)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-005",
+   "lang": "ja",
+   "result": "skip",
+   "error": "blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "en",
+   "result": "skip",
+   "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-007",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual TC (real iOS Safari / Android Chrome) – documented only, not automated",
+   "evidence": "",
+   "suspect": "",
+   "spec": "product-list/DSR-583.product-list.spec.ts"
+  },
+  {
+   "tc": "DSR-PRODLIST-004",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 1440: distinct column offsets | unchanged vs JOB-07 (1 column at 1440); not ver0.4",
+   "evidence": "evidence/DSR-PRODLIST-004_ja.png",
+   "suspect": "data",
+   "spec": "product-list/DSR-583.product-list.spec.ts",
+   "cause": "none",
+   "confidence": 0,
+   "classification": "unchanged"
+  }
+ ],
+ "lighthouse": [],
+ "code_changes": [],
+ "notes": "Read-only verification after DM_product ver0.4. Spec rerun once: PDO_ID=46 DSR585_VER04_DONE=1 npm run test:dev -- tests/product-list tests/product-detail tests/product-cf (chromium; 24 pass / 10 fail / 30 skip, rc 1, tsc 0 errors). All 10 failures identical to JOB-07 (DSR-583, cause none); DSR-586 (id 46) identical to JOB-20261021-03; DSR-585 identical to 21/10 01:45Z run. Classification: 0 cr-expected, 0 product, 0 test, 0 env. TC 19.0 proposed Pass for all 4 queries. No old names found, so no old-name cache headers to record (product-detail CDN HIT age 26165 s already ver0.4). Report: results/regression/DEV/automation-run-20261021-job08.md. Raw: raw.md."
+}
