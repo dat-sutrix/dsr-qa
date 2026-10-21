@@ -30,6 +30,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 | P2 | Gửi Martin tin trong mục 📣 (2 câu hỏi: redirect isActive OFF + xác nhận deploy cấu hình 404) | Martin | 22/10 sáng | xem cuối mục 📣 |
 | P3 | Chốt nháp 🐞 BUG-OVL-INACTIVE (50%) sau khi Martin trả lời | — | 22/10 | — |
 | ✅ | Martin đã merge fix 657/658/659/660 (16:45) + deploy cấu hình 404 → QA-PT publish lại 6 trang tối nay là đủ (sau merge) → JOB-20261021-05 sáng 22/10 · JOB-20261021-06 smoke overlay/404 sau deploy | — | — | — |
+| P2 | **Author agent P0′:** sáng 22/10 trên VPS (terminal `bash`, user `qa`) chạy lại `tools/author/probe.sh` → báo claude-web dòng "Cookie age" + check 1 có 200 không (đo tuổi thọ cookie) | — | 22/10 sáng | lệnh: xem AUTHOR-AGENT.md §2b |
 | ✅ | 21/10 đã xong: tin Martin (404, ver0.4, 529 Q), daily report group, Quentin (566 → Sprint 13), Sprint 12 gán cho 657–660 + 611 | — | — | — |
 
 ## 3. 🌙 QA part-time tối nay (T4 21/10) – [Night Work Pack 2026-10-21 (v3)](https://docs.google.com/document/d/1xY_ghkX8I3LqTSyziO-Ef8AU_tN3JF4aru0R29aMddo) · evidence [Evidence_20261021](https://drive.google.com/drive/folders/1JZFIibeWPO3y2gR05MFlirQb0u0dCjCq)
