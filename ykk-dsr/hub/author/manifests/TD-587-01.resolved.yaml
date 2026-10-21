@@ -1,0 +1,24 @@
+# TD-587-01 (resolved) – qa587-main (YouTube) – source: TD-587-01.yaml, PLAN-sprint12.md Night 21/10 task 1, BL-OVL-1
+# (?) field names resolved from author/models.md (live DEV schema, JOB-20261021-08):
+#   DM_movie_related 表示フラグ = isActive (boolean) · reference to content CF = movie (content-fragment, required)
+#   DM_movie ID field = movieId (required text) – must equal node name
+# No other change vs TD-587-01.yaml (no rename item added: that is Claude's decision).
+id: TD-587-01
+us: DSR-587
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en, ja]
+    path: /content/dam/common/{lang}/movies/qa587-main
+    fields:
+      movieId: qa587-main          # = node name (BL-OVL-1)
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/movies/standard/qa587-main
+    fields:
+      isActive: true               # 表示フラグ (confirmed)
+      movie: ref(/content/dam/common/{lang}/movies/qa587-main)   # confirmed
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/video/qa587-main"]

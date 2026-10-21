@@ -1,0 +1,525 @@
+{
+  "job": "JOB-20261021-08",
+  "agent": "claude-code",
+  "us": "SETUP (author lane P1a)",
+  "env": "dev",
+  "started": "2026-10-21T10:26:40Z",
+  "finished": "2026-10-21T10:34:16Z",
+  "status": "done",
+  "totals": {
+    "checks": 61,
+    "pass": 40,
+    "fail": 21,
+    "warn": 1
+  },
+  "tests": [
+    {
+      "tc": "TD-587-01 L0 lang-pair (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 path-guard (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 node-name (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 model-exists (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 target-exists (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 live-model (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-name:movieId (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-type:movieId (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 id=node-name:movieId (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 live-id:movieId (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "warn: expected \"qa587-main (manifest will patch)\" / actual \"QA587 main1\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 required-fields (patch) (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 path-guard (#1 content-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 node-name (#1 content-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 model-exists (#1 content-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 target-exists (#1 content-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"CF at /content/dam/common/ja/movies/qa587-main (or rename item)\" / actual \"missing; found mis-named qa-587-main → add rename item\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L0 field-name:movieId (#1 content-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-type:movieId (#1 content-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 id=node-name:movieId (#1 content-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 required-fields (create) (#1 content-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"all required present\" / actual \"missing: movieTitle, description, thumbnail, movieSource, publishDate\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L0 lang-pair (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 path-guard (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 node-name (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 model-exists (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 target-exists (#2 dsr-cf)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"CF at /content/dam/dsr/en/movies/standard/qa587-main (or rename item)\" / actual \"missing; found mis-named qa-587-main → add rename item\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L0 field-name:isActive (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-type:isActive (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-name:movie (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-type:movie (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 flag-set:isActive (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 required-fields (create) (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 ref-exists:movie (#2 dsr-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 path-guard (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 node-name (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 model-exists (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 target-exists (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"CF at /content/dam/dsr/ja/movies/standard/qa587-main (or rename item)\" / actual \"missing; found mis-named qa-587-main → add rename item\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L0 field-name:isActive (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-type:isActive (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-name:movie (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 field-type:movie (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 flag-set:isActive (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 required-fields (create) (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L0 ref-exists:movie (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08lint.json"
+    },
+    {
+      "tc": "TD-587-01 L1 exists (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json"
+    },
+    {
+      "tc": "TD-587-01 L1 model (#1 content-cf)",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json"
+    },
+    {
+      "tc": "TD-587-01 L1 field:movieId (#1 content-cf)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"qa587-main\" / actual \"QA587 main1\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 exists (#1 content-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"/content/dam/common/ja/movies/qa587-main\" / actual \"missing\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 field:movieId (#1 content-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"qa587-main\" / actual \"(CF missing)\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 exists (#2 dsr-cf)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"/content/dam/dsr/en/movies/standard/qa587-main\" / actual \"missing\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 field:isActive (#2 dsr-cf)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected true / actual \"(CF missing)\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 field:movie (#2 dsr-cf)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"/content/dam/common/en/movies/qa587-main\" / actual \"(CF missing)\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L2 replicated:preview (#2 dsr-cf)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"Activate (timestamp present)\" / actual \"jcr:content HTTP 404\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L2 replicated:publish (#2 dsr-cf)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"Activate (timestamp present)\" / actual \"jcr:content HTTP 404\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 exists (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"/content/dam/dsr/ja/movies/standard/qa587-main\" / actual \"missing\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 field:isActive (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected true / actual \"(CF missing)\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L1 field:movie (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"/content/dam/common/ja/movies/qa587-main\" / actual \"(CF missing)\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L2 replicated:preview (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"Activate (timestamp present)\" / actual \"jcr:content HTTP 404\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L2 replicated:publish (#2 dsr-cf)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"Activate (timestamp present)\" / actual \"jcr:content HTTP 404\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L3 delivery:.aem.page (url page)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"200 + <title> on /en/library/video/qa587-main\" / actual \"404; title=\\\"Page not found\\\"\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L3 delivery:.aem.live (url live)",
+      "lang": "en",
+      "result": "fail",
+      "error": "expected \"200 + <title> on /en/library/video/qa587-main\" / actual \"404; title=\\\"Page not found\\\"\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L3 delivery:.aem.page (url page)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"200 + <title> on /ja/library/video/qa587-main\" / actual \"404; title=\\\"Page not found\\\"\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 L3 delivery:.aem.live (url live)",
+      "lang": "ja",
+      "result": "fail",
+      "error": "expected \"200 + <title> on /ja/library/video/qa587-main\" / actual \"404; title=\\\"Page not found\\\"\"",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-08verify.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "code_changes": [
+    "tools/author/author.mjs",
+    "tools/author/lib/http.mjs",
+    "tools/author/lib/guard.mjs",
+    "tools/author/lib/manifest.mjs",
+    "tools/author/lib/aem.mjs",
+    "tools/author/lib/lint.mjs",
+    "tools/author/lib/verify.mjs",
+    "tools/author/lib/apply.mjs",
+    "tools/author/lib/models.mjs",
+    "tools/author/lib/report.mjs",
+    "tools/author/README.md",
+    "package.json",
+    "package-lock.json",
+    "ykk-dsr/hub/author/models.md",
+    "ykk-dsr/hub/author/manifests/TD-587-01.resolved.yaml"
+  ],
+  "questions": []
+}

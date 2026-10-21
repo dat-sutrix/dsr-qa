@@ -1,0 +1,192 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "FAIL",
+    "expected": "qa587-main",
+    "actual": "QA587 main1"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "FAIL",
+    "expected": "/content/dam/common/ja/movies/qa587-main",
+    "actual": "missing"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "FAIL",
+    "expected": "qa587-main",
+    "actual": "(CF missing)"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "actual": "missing"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": true,
+    "actual": "(CF missing)"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "/content/dam/common/en/movies/qa587-main",
+    "actual": "(CF missing)"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "Activate (timestamp present)",
+    "actual": "jcr:content HTTP 404"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "Activate (timestamp present)",
+    "actual": "jcr:content HTTP 404"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "actual": "missing"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": true,
+    "actual": "(CF missing)"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "/content/dam/common/ja/movies/qa587-main",
+    "actual": "(CF missing)"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "Activate (timestamp present)",
+    "actual": "jcr:content HTTP 404"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "Activate (timestamp present)",
+    "actual": "jcr:content HTTP 404"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main",
+    "result": "FAIL",
+    "expected": "200 + <title> on /en/library/video/qa587-main",
+    "actual": "404; title=\"Page not found\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+    "result": "FAIL",
+    "expected": "200 + <title> on /en/library/video/qa587-main",
+    "actual": "404; title=\"Page not found\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa587-main",
+    "result": "FAIL",
+    "expected": "200 + <title> on /ja/library/video/qa587-main",
+    "actual": "404; title=\"Page not found\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+    "result": "FAIL",
+    "expected": "200 + <title> on /ja/library/video/qa587-main",
+    "actual": "404; title=\"Page not found\""
+  }
+]
