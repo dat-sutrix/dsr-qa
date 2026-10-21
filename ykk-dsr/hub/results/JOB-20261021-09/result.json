@@ -1,0 +1,1175 @@
+{
+  "job": "JOB-20261021-09",
+  "agent": "claude-code",
+  "us": "SETUP author lane step V (verify Night 21/10 data)",
+  "env": "dev",
+  "started": "2026-10-21T17:05:55Z",
+  "finished": "2026-10-21T17:10:00Z",
+  "status": "done",
+  "totals": {
+    "lint:TD-587-01": {
+      "pass": 58,
+      "fail": 6,
+      "warn": 0
+    },
+    "verify:TD-587-01": {
+      "pass": 30,
+      "fail": 2,
+      "warn": 0
+    },
+    "lint:TD-587-14-15": {
+      "pass": 212,
+      "fail": 18,
+      "warn": 0
+    },
+    "verify:TD-587-14-15": {
+      "pass": 90,
+      "fail": 18,
+      "warn": 0
+    },
+    "lint:TD-557-DAM": {
+      "pass": 50,
+      "fail": 0,
+      "warn": 0
+    },
+    "verify:TD-557-DAM": {
+      "pass": 24,
+      "fail": 4,
+      "warn": 0
+    },
+    "lint:TD-190-CAT-CORE": {
+      "pass": 98,
+      "fail": 2,
+      "warn": 0
+    },
+    "verify:TD-190-CAT-CORE": {
+      "pass": 48,
+      "fail": 16,
+      "warn": 0
+    },
+    "lint:TD-586-01-02": {
+      "pass": 50,
+      "fail": 12,
+      "warn": 0
+    },
+    "verify:TD-586-01-02": {
+      "pass": 25,
+      "fail": 6,
+      "warn": 0
+    }
+  },
+  "tests": [
+    {
+      "tc": "TD-587-01 lint #1 rename qa587-main",
+      "lang": "ja",
+      "result": "fail",
+      "error": "rename-source: rename already done by QA-PT (target exists, L1 PASS) – manifest not idempotent | rename-target-free: rename already done by QA-PT (target exists, L1 PASS) – manifest not idempotent",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-01 lint #2 rename qa587-main",
+      "lang": "en",
+      "result": "fail",
+      "error": "rename-source: rename already done by QA-PT (target exists, L1 PASS) – manifest not idempotent | rename-target-free: rename already done by QA-PT (target exists, L1 PASS) – manifest not idempotent",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-01 lint #2 rename qa587-main",
+      "lang": "ja",
+      "result": "fail",
+      "error": "rename-source: rename already done by QA-PT (target exists, L1 PASS) – manifest not idempotent | rename-target-free: rename already done by QA-PT (target exists, L1 PASS) – manifest not idempotent",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-01 lint #3 content-cf qa587-main",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 lint #3 content-cf qa587-main",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 lint #4 dsr-cf qa587-main",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 lint #4 dsr-cf qa587-main",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify #1 rename qa587-main",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify #2 rename qa587-main",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify #2 rename qa587-main",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify #3 content-cf qa587-main",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-01 verify #3 content-cf qa587-main",
+      "lang": "ja",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-01 verify #4 dsr-cf qa587-main",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify #4 dsr-cf qa587-main",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify delivery:.aem.page /ja/library/video/qa587-main",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify delivery:.aem.live /ja/library/video/qa587-main",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify delivery:.aem.page /en/library/video/qa587-main",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-01 verify delivery:.aem.live /en/library/video/qa587-main",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-01.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #1 content-cf qa587-r1",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #2 content-cf qa587-r2",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #3 content-cf qa587-r3",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #4 content-cf qa587-r4",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #5 content-cf qa587-r5",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #6 content-cf qa587-r6",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #7 dsr-cf qa587-r1",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #8 dsr-cf qa587-r2",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #9 dsr-cf qa587-r3",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #10 dsr-cf qa587-r4",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #11 dsr-cf qa587-r5",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #12 dsr-cf qa587-r6",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #13 content-cf qa587-rel-a",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #14 dsr-cf qa587-rel-a",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #15 content-cf qa587-off",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #16 dsr-cf qa587-off",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #17 content-cf qa587-rel-b",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 lint #18 dsr-cf qa587-rel-b",
+      "lang": "en",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #1 content-cf qa587-r1",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #2 content-cf qa587-r2",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #3 content-cf qa587-r3",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #4 content-cf qa587-r4",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #5 content-cf qa587-r5",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #6 content-cf qa587-r6",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #7 dsr-cf qa587-r1",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #8 dsr-cf qa587-r2",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #9 dsr-cf qa587-r3",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #10 dsr-cf qa587-r4",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #11 dsr-cf qa587-r5",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #12 dsr-cf qa587-r6",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #13 content-cf qa587-rel-a",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #14 dsr-cf qa587-rel-a",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #15 content-cf qa587-off",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #16 dsr-cf qa587-off",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #17 content-cf qa587-rel-b",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify #18 dsr-cf qa587-rel-b",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify delivery:.aem.page /en/library/video/qa587-rel-a",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify delivery:.aem.live /en/library/video/qa587-rel-a",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify delivery:.aem.page /en/library/video/qa587-rel-b",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify delivery:.aem.live /en/library/video/qa587-rel-b",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify delivery:.aem.page /en/library/video/qa587-r1",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-587-14/TD-587-15 verify delivery:.aem.live /en/library/video/qa587-r1",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-587-14-15.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM lint #1 content-cf qa557-dam",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM lint #1 content-cf qa557-dam",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM lint #2 dsr-cf qa557-dam",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM lint #2 dsr-cf qa557-dam",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM verify #1 content-cf qa557-dam",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-557-DAM verify #1 content-cf qa557-dam",
+      "lang": "ja",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-557-DAM verify #2 dsr-cf qa557-dam",
+      "lang": "en",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-557-DAM verify #2 dsr-cf qa557-dam",
+      "lang": "ja",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-557-DAM verify delivery:.aem.page /en/library/video/qa557-dam",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM verify delivery:.aem.live /en/library/video/qa557-dam",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM verify delivery:.aem.page /ja/library/video/qa557-dam",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-557-DAM verify delivery:.aem.live /ja/library/video/qa557-dam",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-557-DAM.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #1 dsr-cf qa190-cat-pdf",
+      "lang": "en",
+      "result": "fail",
+      "error": "catalog ref = missing; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #1 dsr-cf qa190-cat-pdf",
+      "lang": "ja",
+      "result": "fail",
+      "error": "catalog ref = missing; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #2 dsr-cf qa190-cat-pdf-form",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #2 dsr-cf qa190-cat-pdf-form",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #3 dsr-cf qa190-cat-ebook",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #3 dsr-cf qa190-cat-ebook",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #4 dsr-cf qa190-cat-ebook-form",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW lint #4 dsr-cf qa190-cat-ebook-form",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #1 dsr-cf qa190-cat-pdf",
+      "lang": "en",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/en/catalogs/qa190-cat-pdf; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publish onl",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #1 dsr-cf qa190-cat-pdf",
+      "lang": "ja",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/ja/catalogs/qa190-cat-pdf; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publish onl",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #2 dsr-cf qa190-cat-pdf-form",
+      "lang": "en",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/en/catalogs/qa190-cat-pdf-form; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publis",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #2 dsr-cf qa190-cat-pdf-form",
+      "lang": "ja",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/ja/catalogs/qa190-cat-pdf-form; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publis",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #3 dsr-cf qa190-cat-ebook",
+      "lang": "en",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/en/catalogs/qa190-cat-ebook; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publish o",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #3 dsr-cf qa190-cat-ebook",
+      "lang": "ja",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/ja/catalogs/qa190-cat-ebook; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publish o",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #4 dsr-cf qa190-cat-ebook-form",
+      "lang": "en",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/en/catalogs/qa190-cat-ebook-form; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publ",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify #4 dsr-cf qa190-cat-ebook-form",
+      "lang": "ja",
+      "result": "fail",
+      "error": "catalog ref = /content/dam/common/ja/catalogs/qa190-cat-ebook-form; matches Night Pack/BL-OVL-1, resolved manifest expects ykk/common/product-cf/test | L2 preview-tier props never set (QA-PT uses Publ",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /en/library/catalog/qa190-cat-pdf",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /en/library/catalog/qa190-cat-pdf",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /ja/library/catalog/qa190-cat-pdf",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /ja/library/catalog/qa190-cat-pdf",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /en/library/catalog/qa190-cat-pdf-form",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /en/library/catalog/qa190-cat-pdf-form",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /ja/library/catalog/qa190-cat-pdf-form",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /ja/library/catalog/qa190-cat-pdf-form",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /en/library/catalog/qa190-cat-ebook",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /en/library/catalog/qa190-cat-ebook",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /ja/library/catalog/qa190-cat-ebook",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /ja/library/catalog/qa190-cat-ebook",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /en/library/catalog/qa190-cat-ebook-form",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /en/library/catalog/qa190-cat-ebook-form",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.page /ja/library/catalog/qa190-cat-ebook-form",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-190-CAT-NEW verify delivery:.aem.live /ja/library/catalog/qa190-cat-ebook-form",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-190-CAT-CORE.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 lint #1 content-cf 990586001",
+      "lang": "ja",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint path-guard: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint node-name: manifest/guard design (JOB-10 open Q1/Q2), da",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 lint #2 dsr-cf 990586001",
+      "lang": "ja",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint path-guard: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint node-name: manifest/guard design (JOB-10 open Q1/Q2), da",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 lint #3 content-cf 990586002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint path-guard: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint node-name: manifest/guard design (JOB-10 open Q1/Q2), da",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 lint #4 dsr-cf 990586002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "lint lang-pair: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint path-guard: manifest/guard design (JOB-10 open Q1/Q2), data OK | lint node-name: manifest/guard design (JOB-10 open Q1/Q2), da",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/lint-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify #1 content-cf 990586001",
+      "lang": "ja",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify #2 dsr-cf 990586001",
+      "lang": "ja",
+      "result": "fail",
+      "error": "L2 preview-tier props never set (QA-PT uses Publish only); .aem.page 200 → tool check, not data",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "env"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify #3 content-cf 990586002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "TD-586-02 needs Preview: CF never previewed (content CF PUBLISHED, DSR CF DRAFT) → /ja/products/990586002 .aem.page 404",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "data"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify #4 dsr-cf 990586002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "TD-586-02 needs Preview: CF never previewed (content CF PUBLISHED, DSR CF DRAFT) → /ja/products/990586002 .aem.page 404",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "data"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify delivery:.aem.page /ja/products/990586001",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify delivery:.aem.live /ja/products/990586001",
+      "lang": "-",
+      "result": "pass",
+      "error": "",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify delivery:.aem.page /ja/products/990586002",
+      "lang": "-",
+      "result": "fail",
+      "error": "TD-586-02: DSR CF ja/990586002 status DRAFT, never previewed → .aem.page 404 (expected 200 on .page)",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "data"
+    },
+    {
+      "tc": "TD-586-01/TD-586-02 verify delivery:.aem.live /ja/products/990586002",
+      "lang": "-",
+      "result": "fail",
+      "error": "TD-586-02 .live 404 is EXPECTED (preview-only); manifest verify.urls wrongly requires 200 on .live",
+      "evidence": "ykk-dsr/hub/results/JOB-20261021-09/verify-TD-586-01-02.md",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}

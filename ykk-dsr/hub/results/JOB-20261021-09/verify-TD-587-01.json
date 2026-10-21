@@ -1,0 +1,322 @@
+[
+  {
+    "layer": "L1",
+    "check": "renamed-target",
+    "item": "#1 rename",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "exists: /content/dam/common/ja/movies/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "renamed-source-gone",
+    "item": "#1 rename",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "absent: /content/dam/common/ja/movies/qa-587-main",
+    "actual": "absent"
+  },
+  {
+    "layer": "L1",
+    "check": "renamed-target",
+    "item": "#2 rename",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "exists: /content/dam/dsr/en/movies/standard/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "renamed-source-gone",
+    "item": "#2 rename",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "absent: /content/dam/dsr/en/movies/standard/qa-587-main",
+    "actual": "absent"
+  },
+  {
+    "layer": "L1",
+    "check": "renamed-target",
+    "item": "#2 rename",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "exists: /content/dam/dsr/ja/movies/standard/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "renamed-source-gone",
+    "item": "#2 rename",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "absent: /content/dam/dsr/ja/movies/standard/qa-587-main",
+    "actual": "absent"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "qa587-main",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 08:08:23 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:10:12 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "qa587-main",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "none @ none"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:08:52 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-main",
+    "actual": "/content/dam/common/en/movies/qa587-main"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:06:28 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:06:27 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa587-main",
+    "actual": "/content/dam/common/ja/movies/qa587-main"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:07:56 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:14:16 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa587-main",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/video/qa587-main",
+    "actual": "200; title=\"QA587 main movie | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/video/qa587-main",
+    "actual": "200; title=\"QA587 main movie | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/video/qa587-main",
+    "actual": "200; title=\"QA587 main movie | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/video/qa587-main",
+    "actual": "200; title=\"QA587 main movie | YKK DIGITAL SHOWROOM\""
+  }
+]

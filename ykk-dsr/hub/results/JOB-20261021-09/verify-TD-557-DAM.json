@@ -1,0 +1,282 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa557-dam",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "qa557-dam",
+    "actual": "qa557-dam"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "dam",
+    "actual": "dam"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-dam",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 08:08:23 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:45:24 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa557-dam",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "qa557-dam",
+    "actual": "qa557-dam"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieSource",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "dam",
+    "actual": "dam"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-dam",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "none @ none"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-dam",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:46:51 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa557-dam",
+    "actual": "/content/dam/common/en/movies/qa557-dam"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 08:08:23 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:46:08 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa557-dam",
+    "actual": "/content/dam/common/ja/movies/qa557-dam"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "none @ none"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 13:47:43 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa557-dam",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/video/qa557-dam",
+    "actual": "200; title=\"QA557 DAM movie | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa557-dam",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/video/qa557-dam",
+    "actual": "200; title=\"QA557 DAM movie | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa557-dam",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/video/qa557-dam",
+    "actual": "200; title=\"QA557 DAM movie | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa557-dam",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/video/qa557-dam",
+    "actual": "200; title=\"QA557 DAM movie | YKK DIGITAL SHOWROOM\""
+  }
+]

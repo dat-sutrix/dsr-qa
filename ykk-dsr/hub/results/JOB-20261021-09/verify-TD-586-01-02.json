@@ -1,0 +1,312 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/products/990586001",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "DM_product",
+    "actual": "DM_product"
+  },
+  {
+    "layer": "L1",
+    "check": "field:productId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "990586001",
+    "actual": "990586001"
+  },
+  {
+    "layer": "L1",
+    "check": "field:productCode",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "QA586-A",
+    "actual": "QA586-A"
+  },
+  {
+    "layer": "L1",
+    "check": "field:productName",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "QA586 product A",
+    "actual": "QA586 product A"
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "QA586 description for SEO check",
+    "actual": "QA586 description for SEO check"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "none @ none"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586001",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 14:57:00 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586001",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/products/990586001",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586001",
+    "result": "PASS",
+    "expected": "DM_product_related",
+    "actual": "DM_product_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586001",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:product",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586001",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/products/990586001",
+    "actual": "/content/dam/common/ja/products/990586001"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586001",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "none @ none"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586001",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "Activate @ Wed Oct 21 2026 14:54:26 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/products/990586002",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "DM_product",
+    "actual": "DM_product"
+  },
+  {
+    "layer": "L1",
+    "check": "field:productId",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "990586002",
+    "actual": "990586002"
+  },
+  {
+    "layer": "L1",
+    "check": "field:productCode",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "QA586-B",
+    "actual": "QA586-B"
+  },
+  {
+    "layer": "L1",
+    "check": "field:productName",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "QA586 product B",
+    "actual": "QA586 product B"
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#3 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "none @ none"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/products/990586002",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "PASS",
+    "expected": "DM_product_related",
+    "actual": "DM_product_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:product",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/products/990586002",
+    "actual": "/content/dam/common/ja/products/990586002"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#4 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "FAIL",
+    "expected": "Activate ≥ 2026-10-21T10:00:00Z (timestamp present)",
+    "actual": "none @ none"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586001",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/products/990586001",
+    "actual": "200; title=\"YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/products/990586001",
+    "actual": "200; title=\"YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002",
+    "result": "FAIL",
+    "expected": "200 + <title> on /ja/products/990586002",
+    "actual": "404; title=\"Page not found\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586002",
+    "result": "FAIL",
+    "expected": "200 + <title> on /ja/products/990586002",
+    "actual": "404; title=\"Page not found\""
+  }
+]
