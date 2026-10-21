@@ -67,9 +67,4 @@
 - Lỗi QA-PT: `QA-PT-ERRORS.md` (14 mục; nhóm lớn nhất: ID ≠ tên CF).
 
 ## 7. Chủ đề đang mở cho session "DSR – Setup"
-- **Agent hỗ trợ Author** (Dat muốn giảm phụ thuộc QA-PT). Dữ kiện cần cân nhắc:
-  - Hiện quy tắc an toàn: agents **read-only trên AEM** (không sửa content, không submit form, không login) – tạo Author agent = đổi quy tắc này, cần Dat duyệt rõ phạm vi (chỉ DEV, chỉ path test `qa*`, không xóa).
-  - Việc Author lặp lại nhiều nhất: tạo/sửa CF (content + DSR, đúng folder/tên/ID/表示フラグ), Move→Name, Publish/Preview, page properties (Sites + UE), kiểm .page/.live.
-  - Lỗi QA-PT 15–21/10 (QA-PT-ERRORS.md) gần như đều là lỗi nhập liệu có quy tắc → ứng viên tự động hóa tốt.
-  - Kênh khả thi cần đánh giá: AEM Assets HTTP API / Sling POST / CF API (OpenAPI) với service credential (env var, không hard-code), hoặc Playwright UI trên Author. Cần tài khoản/credential riêng + quyền chỉ ghi `/content/dam/{common,dsr}/*/qa*` và trang `stories/qa529-*`.
-  - Giữ QA-PT cho manual TC/đánh giá cảm quan; agent Author chạy theo job file như hiện tại (lane mới, vd `author`), log kết quả + verify bằng GraphQL/EDS status.
+- **Agent hỗ trợ Author:** thiết kế ở `AUTHOR-AGENT.md` (DRAFT 21/10, chờ Dat duyệt phạm vi §2). Tóm tắt: lane `author` chạy script tất định đọc manifest (không LLM), API + technical account DEV với ACL chỉ `qa*`, không xóa, lint → snapshot → apply → replicate → verify L0–L3. Agent test giữ read-only. Bước kế: P0a technical account (Martin) → P0b spike read-only.
