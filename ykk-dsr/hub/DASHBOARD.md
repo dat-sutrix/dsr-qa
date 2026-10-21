@@ -44,7 +44,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 Kết quả 21/10 chiều (17:10 đã đọc): JOB-20261020-08 product ver0.4 không regression (10 fail = DSR-583 cũ) · JOB-20261021-04 529: 010 ✅, 002/006/011 ❌ = bug 657/658/659 (chạy trước merge), 012/014/028 = data (chờ publish lại), 007 chưa assert định dạng ngày → sửa trong -07 · JOB-20261021-06: en qa587-main ✅ 200 .page+.live; trang 404 = template site; deploy cấu hình 404 **không thấy công khai** · IDLE-25 catalog en .page ✅, .live 404 = chưa publish lại (Night việc 5) · IDLE-24 visual URL mới DSR-638: 8/8 khớp layout.
 
 ## 5. TC (Jira sub-task `qa-tc`)
-Night TC job (21/10 19:07): done 2/2 (✅ 529 re-baseline 6 TC + A12–A15 · ✅ DSR-654 21 TC DSR-CATOV-001…021) · upload queue pending 0 / fail 0 (654 lên Drive 11:35Z) · TC backlog trống 21/10 19:07 (Jira check 10 US đã phủ) · auto-added 0 · job agent đã xếp 2 (JOB-20261021-11 queue, -12 hold) · hold: CL-v0.1. **Night 22/10 cần thêm TD-654-02..08** (How-to trong TestData 654).
+Night TC job (21/10 20:07): done 2/2 hôm nay (✅ 529 re-baseline · ✅ DSR-654 21 TC) · upload queue pending 0 / fail 0 · TC backlog trống 21/10 20:07 · Jira check KHÔNG chạy được (Atlassian connector timeout) → lượt 21:05 thử lại · auto-added 0 · job agent đã xếp 0 lượt này (2 trong ngày: JOB-20261021-11 queue, -12 hold) · hold: CL-v0.1. **Night 22/10 cần thêm TD-654-02..08** (How-to trong TestData 654).
 
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
