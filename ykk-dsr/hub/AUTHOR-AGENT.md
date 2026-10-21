@@ -1,6 +1,6 @@
 # AUTHOR-AGENT – Lane `author` (tạo test data trên AEM Author DEV)
 
-> Trạng thái: **DRAFT – chờ Dat duyệt phạm vi (§2)**. Session `DSR – Setup`, 2026-10-21. Khi duyệt: cập nhật CONTEXT.md §2/§3, hub/AGENTS.md, 03_Working_Model §2.
+> Trạng thái: **Phạm vi §2 đã duyệt (Dat 21/10 17:02)** · credential: chờ Dat kiểm tra account (§2b). Session `DSR – Setup`. Khi duyệt: cập nhật CONTEXT.md §2/§3, hub/AGENTS.md, 03_Working_Model §2.
 > Mục tiêu: chuyển phần **nhập liệu có quy tắc** của QA-PT sang máy. 14/14 lỗi trong `QA-PT-ERRORS.md` thuộc nhóm A–F, trong đó A/B/C (ID ≠ tên CF, sai/thiếu giá trị, sai tên CF) chặn được 100% bằng kiểm tra trước khi ghi.
 
 ## 1. Quyết định chính
@@ -8,7 +8,7 @@
 |---|---|---|
 | D1 | **Không dùng LLM để nhập liệu.** Lane `author` chạy script tất định `tools/author/apply` đọc **manifest** trong job | Lỗi QA-PT là lỗi diễn giải; LLM click UI cũng diễn giải → cùng loại lỗi + khó audit |
 | D2 | Kênh **API** (Assets HTTP API / CF OpenAPI cho CF, Sling POST cho page properties, `/bin/replicate` cho Preview/Publish). **Không UI Playwright** ở Phase 1 | Tất định, nhanh, đọc lại được từng field; UI Author/UE dễ vỡ |
-| D3 | Credential = **technical account (Service Credentials) của môi trường DEV** tạo từ AEM Developer Console, quyền ACL chỉ trên path `qa*` | Quyền giới hạn ở phía server, không dựa vào việc script "tự giác" |
+| D3 | Credential theo §2b (account Author **dùng chung với QA-PT**, không xin thêm account người dùng) | Ràng buộc Dat 21/10 |
 | D4 | Claude web viết manifest (thay cho bảng TestData trong Night Pack); validator + read-back là cổng chất lượng | Một nguồn dữ liệu cho cả agent author, agent test và QA-PT |
 | D5 | Agent test (`claude-code`, `codex`) **giữ nguyên read-only**. Chỉ lane `author` được ghi | Thu hẹp bề mặt rủi ro |
 
@@ -24,6 +24,20 @@
 - Ghi ngoài `qa*`, sửa CF model, template, config, user/group, workflow.
 - Mọi host khác DEV (STG/PRO) – host allowlist hard-code, sai host → thoát.
 - Ghi vào data `qa*` không có trong manifest của job.
+
+## 2b. Credential – account dùng chung (Dat 21/10)
+Ràng buộc: chỉ có 1 account Author (Dat + QA-PT dùng chung); đăng nhập web lần đầu trên máy mới cần mã gửi về email. Chọn theo thứ tự, dừng ở mức đầu tiên account làm được:
+| Mức | Cách | Điều kiện | Hệ quả |
+|---|---|---|---|
+| **T** (ưu tiên) | Account này tự tạo **technical account** trong Developer Console → service credential JSON trên VPS | Có nút "Create new technical account" | Không login người, không OTP, không gia hạn tay; gán ACL `qa*` được (account có quyền admin Author). Là integration, không chiếm license người dùng |
+| **L** | **Local Development Token** (Developer Console) – token của chính account, sống 24h | Vào được Developer Console nhưng không tạo được technical account | Mỗi sáng Dat lấy token mới, dán vào VPS (~1 phút, hướng dẫn từng click). Quyền = full account → chỉ dựa vào guard script |
+| **U** | Playwright đăng nhập UI trên VPS **1 lần** (Dat nhập mã email trong terminal), lưu session; script vẫn tất định, đọc manifest | Không vào được Developer Console | Session hết hạn → Dat đăng nhập lại; mật khẩu lưu `~/.dsr-secrets` (chmod 600). Kênh UI chậm và dễ vỡ hơn API |
+
+Bổ sung an toàn khi dùng account chung (mức L/U, và T nếu không gán được ACL):
+- **Cửa sổ chạy:** lane author chỉ ghi **08:00–18:00 VN T2–T6**; QA-PT làm tối → không sửa cùng lúc.
+- **Không đụng data của Night Pack đêm đó** (path nằm trong pack ngày hiện tại → lint chặn).
+- Lịch sử Author hiển thị cùng tên account → `writes.log` là nguồn phân biệt agent vs QA-PT.
+- Token/mật khẩu không bao giờ vào repo, log hay result; file token tự xóa khi quá 24h.
 
 ## 3. Kiến trúc
 ```
@@ -110,7 +124,7 @@ Chỉ khi L0–L2 pass cho mọi item → `status: done`, mở khóa `unblocks`.
 ## 8. Lộ trình
 | Phase | Việc | Ai | Điều kiện xong |
 |---|---|---|---|
-| P0a | Tạo technical account DEV + group ACL `qa*` | Dev có quyền Developer Console (đề xuất Martin) | Có file service credential trên VPS |
+| P0a | Dat kiểm tra account → chốt mức T / L / U (§2b); mức T: tạo technical account + ACL `qa*` theo hướng dẫn | Dat | Có credential trên VPS |
 | P0b | Spike (job claude-code, **read-only**): đổi token, GET CF `qa587-main` qua Assets HTTP API và CF OpenAPI, đọc schema model, đọc replication status | Agent | Chốt endpoint từng thao tác trong §9 |
 | P1 | Viết `tools/author/apply` (lint, snapshot, CF create/patch/move, replicate, verify) + dry-run trên data qa587 hiện có → 1 job apply nhỏ (1 CF ja/en) | Agent + Claude review | L0–L3 pass, writes.log đúng |
 | P2 | Page properties (529 stories qa*) | Agent | Như trên |
@@ -120,4 +134,4 @@ Chỉ khi L0–L2 pass cho mọi item → `status: done`, mở khóa `unblocks`.
 - Endpoint ghi CF ưu tiên: CF OpenAPI (`/adobe/sites/cf/...`) hay Assets HTTP API (`/api/assets/...`) trên môi trường này.
 - Replicate Preview qua `/bin/replicate` với agent `preview` có kích hoạt cơ chế tự sinh trang (.page) giống thao tác UI không.
 - UE Page properties (navtitle, category) lưu ở `jcr:content` dạng property thường → ghi được bằng Sling POST.
-- Technical account có được cấp quyền replicate chỉ trên `qa*` bằng ACL không.
+- (Mức T) Technical account có được cấp quyền replicate chỉ trên `qa*` bằng ACL không. (Mức L) Local token gọi được API ghi CF + replicate.
