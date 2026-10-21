@@ -1,9 +1,9 @@
-import { test, expect, type APIRequestContext, type Page } from '@playwright/test';
+import { test, expect, type APIRequestContext, type Browser, type Page } from '@playwright/test';
 import { ProductDetailPage } from '../../pages/ProductDetailPage';
 import {
   type Language, base, hosts, productPath, productsRoot, td, notSeeded, seeded, descriptionPrefix, settleMs, redirectWaitMs,
-  graphqlPattern, indexPath, sitemapPath, htmlLang, fixedDisplayFields, removedFieldLabels, fixListPending,
-  pdoId, needsTd, literalEmpty, publishHost,
+  graphqlPattern, indexPath, sitemapPath, htmlLang, removedFieldLabels, displayFields, newFields, noNewFieldDesign, td01,
+  pdoId, needsTd, literalEmpty, publishHost, incomplete, unavailableRow,
 } from '../../fixtures/dsr-586';
 
 // DSR-586 product detail overlay (json2html), baseline BL-OVL-1 (docs/DSR-587/overlay-data-flow-BL.md).
@@ -19,6 +19,14 @@ const url = (path: string, host = base()) => `${host}${path}`;
 const productId = (tdId: keyof typeof td) => pdoId() || td[tdId].id;
 const valueSpecific = () => test.skip(!!pdoId(), `${needsTd} (PDO_ID=${pdoId()} override: TC asserts TD-586 data)`);
 
+// Positive TDs only (01, 02): an overlay 'unavailable' row means the TD is not resolved → skip (see fixtures incomplete()).
+const positive = (tdId: keyof typeof td) => tdId === '01' || tdId === '02';
+function skipIfUnavailable(tdId: keyof typeof td, html: string, target: string) {
+  const reason = html.match(unavailableRow)?.[1];
+  observations.push({ url: target, unavailable: reason ?? null });
+  test.skip(reason !== undefined && positive(tdId), incomplete(tdId, reason ?? ''));
+}
+
 async function status(request: APIRequestContext, target: string) {
   const response = await request.get(target, { maxRedirects: 0, failOnStatusCode: false });
   observations.push({ url: target, status: response.status(), location: response.headers().location ?? null });
@@ -32,6 +40,7 @@ async function openProduct(page: Page, lang: Language, tdId: keyof typeof td) {
   const response = await detail.goto(target);
   test.skip(response?.status() === 404, `${notSeeded(tdId)} (${target} HTTP 404)`);
   observations.push({ language: lang, url: target, finalUrl: page.url(), status: response?.status() });
+  skipIfUnavailable(tdId, await (await page.request.get(target, { failOnStatusCode: false })).text(), target);
   return { detail, response, target };
 }
 
@@ -39,7 +48,9 @@ async function rawProduct(request: APIRequestContext, lang: Language, tdId: keyo
   const target = url(productPath(lang, productId(tdId)));
   const response = await status(request, target);
   test.skip(response.status() === 404, `${notSeeded(tdId)} (${target} HTTP 404)`);
-  return { response, target, html: await response.text() };
+  const html = await response.text();
+  skipIfUnavailable(tdId, html, target);
+  return { response, target, html };
 }
 
 test.describe('DSR-586 product detail overlay', () => {
@@ -247,23 +258,80 @@ test.describe('DSR-586 product detail overlay', () => {
   }
   test.fixme('DSR-PDO-014 [cn] language variant – no /cn path on DEV (Issue #18)', async () => {});
 
-  test('DSR-PDO-017 [ja] fixed Product CF field set displayed, removed fields absent', { tag: ['@auto'] }, async ({ page }) => {
-    const { detail } = await openProduct(page, 'ja', '01');
+  test('DSR-PDO-017 [ja] ver0.4 display fields show the CF values, removed fields absent', { tag: ['@auto'] }, async ({ page, request, browser }) => {
+    const { detail, target } = await openProduct(page, 'ja', '01');
     const text = await detail.block.innerText();
     const shownRemoved = removedFieldLabels.filter(f => text.includes(f));
     const literals = text.match(new RegExp(literalEmpty, 'g')) ?? [];
     observations.push({ shownRemoved, literals });
-    // Value-agnostic steps: removed labels (step 3) and ver0.4 field-name tolerance (no literal undefined / null).
     expect.soft(shownRemoved, 'removed fields shown').toEqual([]);
     expect.soft(literals, "literal 'undefined' / 'null' in block text").toEqual([]);
-    // Step 2 (TD values per display field): needs TD-586-01 and the fix list.
-    if (pdoId() || !fixedDisplayFields.length) {
-      test.info().annotations.push({ type: 'not-verified', description: `step 2 display values: ${pdoId() ? needsTd : fixListPending}` });
-      return;
+
+    // Step 2: oracle = raw overlay row (CF value); TD-586-01 value cross-checked (TD ≠ CF = data, not product).
+    const rows = await rawRows(request, browser, target);
+    const tdValue: Record<string, string> = { productName: td['01'].name, productCode: td['01'].code, description: td['01'].description, ...td01.display };
+    const rendered: string[] = [], notRendered: string[] = [], notInCf: string[] = [], tdMismatch: string[] = [];
+    for (const field of displayFields) {
+      const cf = rowValue(rows, field);
+      if (!cf) { notInCf.push(field); continue; }
+      if (!pdoId() && tdValue[field] && !squash(cf).includes(squash(tdValue[field]))) tdMismatch.push(`${field}: CF '${cf}' ≠ TD '${tdValue[field]}'`);
+      const shown = field === 'colorVariationsPdf'
+        ? (await detail.block.locator('a[href]').evaluateAll(as => as.map(a => decodeURIComponent((a as HTMLAnchorElement).href)))).some(h => h.includes(baseName(cf)))
+        : squash(text).includes(squash(cf));
+      (shown ? rendered : notRendered).push(field);
     }
-    const missing = fixedDisplayFields.filter(f => !text.includes(f));
-    observations.push({ missing });
-    expect.soft(missing, 'display fields missing').toEqual([]);
+    observations.push({ rendered, notRendered, notInCf, tdMismatch });
+    // Spec 17.0: values not rendered are listed, Pending until design (Q29) – recorded, not failed.
+    if (notRendered.length) test.info().annotations.push({ type: 'pending', description: `not rendered (design Q29): ${notRendered.join(', ')}` });
+    if (notInCf.length) test.info().annotations.push({ type: 'not-verified', description: `no CF value (TD optional fields not filled): ${notInCf.join(', ')}` });
+    if (tdMismatch.length) test.info().annotations.push({ type: 'data', description: tdMismatch.join(' · ') });
+    expect.soft(rendered, 'productName / productCode rendered').toEqual(expect.arrayContaining(['productName', 'productCode']));
+  });
+
+  test('DSR-PDO-020 [ja] ver0.4 new fields – current state recorded (Blocked: no design)', { tag: ['@auto'] }, async ({ page, request, browser }) => {
+    const { detail, target } = await openProduct(page, 'ja', '01');
+    const text = squash(await detail.block.innerText());
+    const srcs = await detail.block.locator('img').evaluateAll(is => is.map(i => decodeURIComponent((i as HTMLImageElement).currentSrc || (i as HTMLImageElement).src)));
+    const rows = await rawRows(request, browser, target);
+    const state = await Promise.all(newFields.map(async field => {
+      const cf = rowValue(rows, field);
+      const image = /Image$/.test(field);
+      const rendered = !!cf && (image ? srcs.some(s => s.includes(baseName(cf))) : text.includes(squash(cf)));
+      const images = image && rendered ? await detail.block.locator('img').evaluateAll((is, b) => is
+        .filter(i => decodeURIComponent((i as HTMLImageElement).currentSrc || (i as HTMLImageElement).src).includes(b))
+        .map(i => (i as HTMLImageElement).naturalWidth), baseName(cf)) : [];
+      return { field, cf: cf || null, td: pdoId() ? null : td01.newValues[field] ?? null, rendered, naturalWidths: images };
+    }));
+    observations.push({ newFields: state });
+    test.skip(true, `${noNewFieldDesign}: rendered ${state.filter(s => s.rendered).map(s => s.field).join(', ') || 'none'}`);
+  });
+
+  test('DSR-PDO-021 [ja] media slots: media01 first, one item per filled slot, 0 broken images', { tag: ['@auto'] }, async ({ page, request, browser }) => {
+    const failed: string[] = [];
+    const media = (type: string) => type === 'image' || type === 'media';
+    page.on('requestfailed', r => { if (media(r.resourceType())) failed.push(`${r.url()} ${r.failure()?.errorText ?? ''}`); });
+    page.on('response', r => { if (media(r.request().resourceType()) && r.status() >= 400) failed.push(`${r.url()} HTTP ${r.status()}`); });
+    const { detail, target } = await openProduct(page, 'ja', '01');
+    const rows = await rawRows(request, browser, target);
+    const filled = [...new Set(rows.map(r => r.key.match(/^(media\d{2})(Asset|Url)$/)?.[1]).filter((m): m is string => !!m))].sort();
+    const external = filled.filter(m => /external/i.test(rowValue(rows, `${m}Type`)));
+    await detail.gallery.scrollIntoViewIfNeeded().catch(() => undefined);
+    await page.waitForTimeout(settleMs);
+    const items = await detail.thumbs.evaluateAll(ts => ts.map(t => t.getAttribute('data-media') ?? ''));
+    const images = await detail.images.evaluateAll(is => is.map(i => ({
+      src: (i as HTMLImageElement).currentSrc, complete: (i as HTMLImageElement).complete, naturalWidth: (i as HTMLImageElement).naturalWidth })));
+    observations.push({ filled, external, items, images, failed, stageSrc: images[0]?.src ?? null });
+    if (!pdoId() && filled.join() !== td01.media.join()) {
+      test.info().annotations.push({ type: 'data', description: `filled slots ${filled.join(',')} ≠ TD-586-01 ${td01.media.join(',')}` });
+    }
+    expect.soft(items[0], 'first gallery item').toBe('media01');
+    // Spec 21.0: External may be shown as a link instead of a gallery item → recorded, not failed.
+    const missing = filled.filter(m => !items.includes(m));
+    if (missing.some(m => external.includes(m))) test.info().annotations.push({ type: 'record', description: `External slot not a gallery item: ${missing.filter(m => external.includes(m)).join(', ')}` });
+    expect.soft(missing.filter(m => !external.includes(m)), 'filled slots without gallery item').toEqual([]);
+    expect.soft(items.filter(m => !filled.includes(m)), 'gallery items for empty slots').toEqual([]);
+    expect.soft(images.filter(i => i.complete && i.naturalWidth === 0).map(i => i.src), 'broken images (naturalWidth 0)').toEqual([]);
+    expect.soft(failed, 'failed media requests').toEqual([]);
   });
 
   test('DSR-PDO-019 [ja] DSR-457 regression items recorded on overlay page', { tag: ['@auto'] }, async ({ page }) => {
@@ -284,6 +352,14 @@ test.describe('DSR-586 product detail overlay', () => {
     test.info().annotations.push({ type: 'not-verified', description: 'DSR-457 items 2/4/5/9/11/12: check definitions not in repo' });
   });
 });
+
+// Raw overlay rows (JS disabled) – the CF values json2html delivered for this page.
+async function rawRows(request: APIRequestContext, browser: Browser, target: string) {
+  return (await ProductDetailPage.parseRaw(browser, await (await request.get(target, { failOnStatusCode: false })).text())).rows;
+}
+const rowValue = (rows: { key: string; value: string }[], key: string) => rows.filter(r => r.key === key).map(r => r.value.replace(/\s+/g, ' ').trim()).join(' ').trim();
+const squash = (v: string) => v.replace(/\s+/g, '');
+const baseName = (path: string) => decodeURIComponent(path.split('/').pop() ?? '').replace(/\.[a-z0-9]+$/i, '');
 
 async function queryIndexPaths(request: APIRequestContext) {
   const paths: string[] = [];

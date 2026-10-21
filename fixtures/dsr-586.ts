@@ -31,7 +31,21 @@ export const td = {
   '09': { id: '990586009' },
   '11': { id: '990586011' },
 } as const;
+// TD-586-01 ver0.4 values (spec.json testdata, re-baseline 2026-10-20): 17.0 display, 20.0 new fields, 21.0 media slots.
+// 'any' values in the sheet (colorVariationsPdf, images) are not listed: the raw overlay row is the oracle.
+export const td01 = {
+  display: {
+    itemVariations: 'QA586 item', colorVariations: 'QA586 colors', notice: 'QA586 notice',
+    printableTapeNote: 'QA586 print note', recycledTapeNote: 'QA586 recycled tape note',
+  } as Record<string, string>,
+  newValues: { howToUse: 'QA586 how to use', recycledMaterialNote: 'QA586 recycled material note' } as Record<string, string>,
+  media: ['media01', 'media02', 'media03'], // media01 image · media02 Image · media03 External https://www.ykkfastening.com/
+};
 export const notSeeded = (tdId: string) => `TD-586-${tdId} not seeded`;
+// Positive TD rendered as the unavailable state (raw row 'unavailable | <reason>') = data not resolved (e.g. CF commune
+// not published / product reference empty) → skip, never fail on incomplete data (product 46 renders on the same build).
+export const incomplete = (tdId: string, reason: string) => `TD-586-${tdId} incomplete: overlay row 'unavailable | ${reason}'`;
+export const unavailableRow = /<div>\s*unavailable\s*<\/div>\s*<div>\s*([^<]*?)\s*<\/div>/;
 
 // Negative TCs (6.0, 7.0, 11.0, 5.0 alpha step) expect 404, so a 404 cannot prove the data exists.
 // QA-PT confirms seeding via DSR586_SEEDED=06,07,11,05 (comma list of TD numbers); otherwise the TC/step is skipped.
@@ -45,10 +59,12 @@ export const indexPath = '/query-index.json'; // DEV 2026-10-19: only root index
 export const sitemapPath = '/sitemap.xml';
 export const htmlLang: Record<Language, string> = { ja: 'ja', en: 'en' };
 
-// 17.0: DSR-585 項目fix版 display fields – empty until the fix list review closes (Q27); the value step skips while empty.
-export const fixedDisplayFields: string[] = [];
+// 17.0 step 2 fields (spec.json 17.0, DM_product ver0.4). Value = TD-586-01 value or the raw overlay row (colorVariationsPdf).
+export const displayFields = ['productName', 'productCode', 'description', 'itemVariations', 'colorVariations', 'colorVariationsPdf', 'notice', 'printableTapeNote', 'recycledTapeNote'] as const;
+// 20.0: ver0.4 new fields (差分管理 0.3→0.4). No design yet (Q29) → current state recorded, verdict Blocked.
+export const newFields = ['itemVariationsImage', 'colorVariationsImage', 'howToUse', 'howToUseImage', 'recycledMaterial', 'recycledMaterialNote', 'parentProduct', 'applicableSliderSameAsParent'] as const;
+export const noNewFieldDesign = 'Blocked: no design for ver0.4 new fields (Figma B04 – Q29); current state recorded';
 // 17.0 step 3 (ykk-dsr/hub/tc-out/DSR-586.spec.json): removed labels that must not appear.
 export const removedFieldLabels = ['生産国', '上下止', 'スタンダードアイテム', '縫製適正', '外観', '特殊材質', 'MOQ', 'オーダーロット', 'ケアインフォメーション', '納期', '開発会社', '生産会社'];
 export const literalEmpty = /\b(undefined|null)\b/; // 17.0: no literal 'undefined' / 'null'
 export const publishHost = /adobeaemcloud\.com/; // DSR-538: related cards must not link to the AEM publish domain
-export const fixListPending = 'DSR-585 項目fix版 field list not in repo (Q27 review open)';

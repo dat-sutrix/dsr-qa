@@ -17,6 +17,8 @@ export class ProductDetailPage {
   readonly name: Locator;
   readonly code: Locator;
   readonly images: Locator;
+  readonly gallery: Locator;
+  readonly thumbs: Locator;
   readonly headings: Locator;
   readonly contact: Locator;
   readonly toolbarIcons: Locator;
@@ -33,6 +35,9 @@ export class ProductDetailPage {
     this.code = this.block.locator('.pd-code-value').filter({ visible: true });
     // TODO: data-testid product-detail-image
     this.images = this.block.locator('.pd-gallery img');
+    // TODO: data-testid product-detail-gallery / product-detail-media (thumb data-media = slot, observed on /ja/products/46 2026-10-21)
+    this.gallery = this.block.locator('.pd-gallery');
+    this.thumbs = this.gallery.locator('.pd-gallery-thumb[data-media]');
     // TODO: data-testid product-detail-spec
     this.headings = this.block.locator('h2, h3');
     // TODO: data-testid product-detail-contact

@@ -1,0 +1,160 @@
+{
+  "job": "JOB-20261020-03",
+  "agent": "claude-code",
+  "us": "DSR-586",
+  "env": "dev",
+  "started": "2026-10-21T16:43:49Z",
+  "finished": "2026-10-21T16:46:14Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-PDO-001",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-002",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-02 not seeded: /ja/products/990586002 HTTP 404 on .aem.page (and .aem.live)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 10
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-004",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-012",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-013",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-014",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-017",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-019",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-021",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product' on .aem.live and .aem.page (DSR CF published, product data not resolved)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15
+    },
+    {
+      "tc": "DSR-PDO-020",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked by spec (no design for ver0.4 new fields, Q29); also TD-586-01 unavailable | no-product → current state not recordable",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-015",
+      "lang": "ja",
+      "result": "skip",
+      "error": "not run: visual – lane codex",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-016",
+      "lang": "ja",
+      "result": "skip",
+      "error": "not run: visual – lane codex",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-018",
+      "lang": "ja",
+      "result": "skip",
+      "error": "not run: manual – review list URL Q31",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-586.ts",
+    "pages/ProductDetailPage.ts",
+    "tests/product-detail/DSR-586.product-detail.spec.ts",
+    "results/DSR-586/DEV/automation-run-20261021-job20261020-03-live.md",
+    "results/DSR-586/DEV/automation-run-20261021-job20261020-03-page.md"
+  ],
+  "questions": []
+}
