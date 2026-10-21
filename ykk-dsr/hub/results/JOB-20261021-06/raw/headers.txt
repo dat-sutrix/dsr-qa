@@ -1,0 +1,124 @@
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main
+HTTP/2 200 
+last-modified: Wed, 21 Oct 2026 08:26:40 GMT
+content-length: 3861
+<title>QA587 main movie | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa-587-main
+HTTP/2 200 
+last-modified: Wed, 21 Oct 2026 08:25:55 GMT
+content-length: 3861
+<title>QA587 main movie | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main
+HTTP/2 200 
+last-modified: Wed, 21 Oct 2026 08:38:39 GMT
+content-length: 3972
+<title>QA587 main movie | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa-587-main
+HTTP/2 200 
+last-modified: Wed, 21 Oct 2026 08:38:39 GMT
+content-length: 3972
+<title>QA587 main movie | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form
+HTTP/2 200 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+content-length: 4464
+<title>QA190 PDF form required | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/catalog/qa190-cat-pdf-form.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form
+HTTP/2 200 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+content-length: 4448
+<title>QA190 e-book form | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook-form
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/catalog/qa190-cat-ebook-form.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/46
+HTTP/2 200 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+content-length: 10564
+<title>QUICKFIT® | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/46
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/products/46.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/46
+HTTP/2 200 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+content-length: 11568
+<title>QUICKFIT® | YKK DIGITAL SHOWROOM
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/46
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /ja/products/46.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-nonexistent-404
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/video/qa-nonexistent-404.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa-nonexistent-404
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/video/qa-nonexistent-404.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/999999999
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/products/999999999.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/999999999
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/products/999999999.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa-nonexistent
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/catalog/qa-nonexistent.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa-nonexistent
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/catalog/qa-nonexistent.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-rel-a
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/video/qa587-rel-a.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/video/qa587-rel-a.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa557-dam
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/video/qa557-dam.md from content-bus: 404
+content-length: 2133
+<title>Page not found
+=== https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa557-dam
+HTTP/2 404 
+last-modified: Tue, 20 Oct 2026 11:36:16 GMT
+x-error: [pipeline: html] Lambda: x-error: failed to load /en/library/video/qa557-dam.md from content-bus: 404
+content-length: 2133
+<title>Page not found

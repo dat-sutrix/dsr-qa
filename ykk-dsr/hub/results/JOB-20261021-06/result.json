@@ -1,0 +1,25 @@
+{
+  "job": "JOB-20261021-06",
+  "agent": "claude-code",
+  "us": "DSR-587, DSR-586, DSR-654 (overlay 404 handling after dev deployment)",
+  "env": "dev",
+  "started": "2026-10-21T09:53:35Z",
+  "finished": "2026-10-21T09:56:30Z",
+  "status": "done",
+  "tests": [
+    { "tc": "SMOKE ja/library/video/qa-587-main", "lang": "ja", "result": "pass", "error": "200 .page/.live; unchanged vs JOB-21-01", "evidence": "raw/headers.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "SMOKE en/library/video/qa-587-main", "lang": "en", "result": "pass", "error": "200 .page/.live (preview+live 21/10 08:38:40Z); was 404/404 in JOB-21-01", "evidence": "raw/admin-status-all.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "SMOKE en/library/catalog/qa190-cat-pdf-form", "lang": "en", "result": "fail", "error": ".page 200, .live 404 (never published live); unchanged vs JOB-21-01", "evidence": "raw/admin-status-all.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "SMOKE en/library/catalog/qa190-cat-ebook-form", "lang": "en", "result": "fail", "error": ".page 200, .live 404 (never published live); not in JOB-21-01", "evidence": "raw/admin-status-all.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "SMOKE en/products/46", "lang": "en", "result": "fail", "error": ".page 200 (moustache-branch preview 16/10), .live 404 never published; unchanged", "evidence": "raw/admin-status-all.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "SMOKE ja/products/46", "lang": "ja", "result": "fail", "error": ".page 200, .live 404 never published; unchanged", "evidence": "raw/admin-status-all.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "404 en/library/video/qa-nonexistent-404", "lang": "en", "result": "pass", "error": "404 .page/.live, site /404.html template", "evidence": "raw/headers.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "404 en/products/999999999", "lang": "en", "result": "pass", "error": "404 .page/.live, site /404.html template", "evidence": "raw/headers.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "404 en/library/catalog/qa-nonexistent", "lang": "en", "result": "pass", "error": "404 .page/.live, site /404.html template", "evidence": "raw/headers.txt", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "isActive-OFF en/library/video/qa587-rel-a", "lang": "en", "result": "blocked", "error": "isActive=false, no preview entry -> 404 site page, no redirect; redirect untestable. json2html renders 200 'unavailable|inactive', no block JS handler found", "evidence": "raw/j2h_en_library_video_qa587-rel-a.html", "suspect": "product", "cause": "none", "confidence": 50 },
+    { "tc": "DEPLOY-EVIDENCE 404 config", "lang": "-", "result": "blocked", "error": "No 21/10 change visible: config.json + 404 last-modified 20/10 11:36:16Z, code 404.html 07/09; admin config 401", "evidence": "raw/admin-code-status.txt", "suspect": "env", "cause": "none", "confidence": 0 }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}

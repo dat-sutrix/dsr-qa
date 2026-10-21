@@ -1,0 +1,115 @@
+{
+  "public": {
+    "paths": {
+      "mappings": [
+        "/content/ykk/digital-showroom/:/",
+        "/content/sites/digital-showroom/:/",
+        "/content/dam/dsr/ja/movies/standard/:/ja/library/video/",
+        "/content/dam/dsr/ja/movies/tech/:/ja/library/video/tech-talk/",
+        "/content/ykk/digital-showroom/ja/library/video/search:/ja/library/video/search",
+        "/content/ykk/digital-showroom/ja/library/video/search/:/ja/library/video/search/",
+        "/content/ykk/digital-showroom/ja/library/video/tech-talk:/ja/library/video/tech-talk",
+        "/content/sites/digital-showroom/ja/library/video/search:/ja/library/video/search",
+        "/content/sites/digital-showroom/ja/library/video/search/:/ja/library/video/search/",
+        "/content/sites/digital-showroom/ja/library/video/tech-talk:/ja/library/video/tech-talk",
+        "/content/dam/dsr/en/movies/standard/:/en/library/video/",
+        "/content/dam/dsr/en/movies/tech/:/en/library/video/tech-talk/",
+        "/content/ykk/digital-showroom/en/library/video/search:/en/library/video/search",
+        "/content/ykk/digital-showroom/en/library/video/search/:/en/library/video/search/",
+        "/content/ykk/digital-showroom/en/library/video/tech-talk:/en/library/video/tech-talk",
+        "/content/sites/digital-showroom/en/library/video/search:/en/library/video/search",
+        "/content/sites/digital-showroom/en/library/video/search/:/en/library/video/search/",
+        "/content/sites/digital-showroom/en/library/video/tech-talk:/en/library/video/tech-talk",
+        "/content/dam/dsr/cn/movies/standard/:/cn/library/video/",
+        "/content/dam/dsr/cn/movies/tech/:/cn/library/video/tech-talk/",
+        "/content/ykk/digital-showroom/cn/library/video/search:/cn/library/video/search",
+        "/content/ykk/digital-showroom/cn/library/video/search/:/cn/library/video/search/",
+        "/content/ykk/digital-showroom/cn/library/video/tech-talk:/cn/library/video/tech-talk",
+        "/content/sites/digital-showroom/cn/library/video/search:/cn/library/video/search",
+        "/content/sites/digital-showroom/cn/library/video/search/:/cn/library/video/search/",
+        "/content/sites/digital-showroom/cn/library/video/tech-talk:/cn/library/video/tech-talk",
+        "/content/dam/dsr/ja/products/:/ja/products/",
+        "/content/dam/dsr/en/products/:/en/products/",
+        "/content/dam/dsr/cn/products/:/cn/products/",
+        "/content/dam/dsr/ja/catalogs/:/ja/library/catalog/",
+        "/content/ykk/digital-showroom/ja/library/catalog/search:/ja/library/catalog/search",
+        "/content/sites/digital-showroom/ja/library/catalog/search:/ja/library/catalog/search",
+        "/content/dam/dsr/en/catalogs/:/en/library/catalog/",
+        "/content/ykk/digital-showroom/en/library/catalog/search:/en/library/catalog/search",
+        "/content/sites/digital-showroom/en/library/catalog/search:/en/library/catalog/search",
+        "/content/dam/dsr/cn/catalogs/:/cn/library/catalog/",
+        "/content/ykk/digital-showroom/cn/library/catalog/search:/cn/library/catalog/search",
+        "/content/sites/digital-showroom/cn/library/catalog/search:/cn/library/catalog/search"
+      ],
+      "includes": [
+        "/content/ykk/digital-showroom/",
+        "/content/sites/digital-showroom/",
+        "/content/dam/dsr/"
+      ]
+    },
+    "xwalk": {
+      "content-fragment-overlay": {
+        "/content/dam/dsr/ja/movies/standard/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+          ]
+        },
+        "/content/dam/dsr/ja/movies/tech/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+          ]
+        },
+        "/content/dam/dsr/en/movies/standard/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+          ]
+        },
+        "/content/dam/dsr/en/movies/tech/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+          ]
+        },
+        "/content/dam/dsr/cn/movies/standard/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+          ]
+        },
+        "/content/dam/dsr/cn/movies/tech/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+          ]
+        },
+        "/content/dam/dsr/ja/products/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_product_related"
+          ]
+        },
+        "/content/dam/dsr/en/products/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_product_related"
+          ]
+        },
+        "/content/dam/dsr/cn/products/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_product_related"
+          ]
+        },
+        "/content/dam/dsr/ja/catalogs/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+          ]
+        },
+        "/content/dam/dsr/en/catalogs/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+          ]
+        },
+        "/content/dam/dsr/cn/catalogs/**": {
+          "includes": [
+            "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+          ]
+        }
+      }
+    }
+  }
+}
