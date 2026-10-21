@@ -1,0 +1,158 @@
+{
+  "started": "2026-10-21T11:04:48.830Z",
+  "finished": "2026-10-21T11:05:38.735Z",
+  "records": [
+    {
+      "us": "DSR-587",
+      "lang": "ja",
+      "device": "PC",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\nライブラリー\nQA587 main movie | YKK DIGITAL SHOWROOM\n動画一覧へ戻る\n動画\nQA587 main movie\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_ja_PC.png",
+      "result": "pass"
+    },
+    {
+      "us": "DSR-587",
+      "lang": "ja",
+      "device": "SP",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "HOME\nライブラリー\nQA587 main movie | YKK DIGITAL SHOWROOM\n動画\nQA587 main movie\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_ja_SP.png",
+      "result": "pass"
+    },
+    {
+      "us": "DSR-587",
+      "lang": "en",
+      "device": "PC",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\nQA587 main movie | YKK DIGITAL SHOWROOM\nBack to video list\nMOVIE\nQA587 main movie\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_en_PC.png",
+      "result": "pass"
+    },
+    {
+      "us": "DSR-587",
+      "lang": "en",
+      "device": "SP",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "HOME\nlibrary\nQA587 main movie | YKK DIGITAL SHOWROOM\nMOVIE\nQA587 main movie\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_en_SP.png",
+      "result": "pass"
+    },
+    {
+      "us": "DSR-654",
+      "lang": "en",
+      "device": "PC",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "title": "QA190 PDF form required | YKK DIGITAL SHOWROOM",
+      "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\ncatalog\nQA190 PDF form required | YKK DIGITAL SHOWROOM\nProduct Catalog\nQA190 PDF form required\n\ncatelog description\n\n2026.09.15\n\n必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-pdf-form_en_PC.png",
+      "result": "pass"
+    },
+    {
+      "us": "DSR-654",
+      "lang": "en",
+      "device": "SP",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "title": "QA190 PDF form required | YKK DIGITAL SHOWROOM",
+      "text": "HOME\nlibrary\ncatalog\nQA190 PDF form required | YKK DIGITAL SHOWROOM\nProduct Catalog\nQA190 PDF form required\n\ncatelog description\n\n2026.09.15\n\n必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-pdf-form_en_SP.png",
+      "result": "pass"
+    },
+    {
+      "us": "DSR-654",
+      "lang": "en",
+      "device": "PC",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+      "title": "QA190 e-book form | YKK DIGITAL SHOWROOM",
+      "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\ncatalog\nQA190 e-book form | YKK DIGITAL SHOWROOM\nProduct Catalog\nQA190 e-book form\n\ncatelog description\n\n2026.09.15\n\n必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-ebook-form_en_PC.png",
+      "result": "pass"
+    },
+    {
+      "us": "DSR-654",
+      "lang": "en",
+      "device": "SP",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+      "consoleErrors": [],
+      "pageErrors": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+      "title": "QA190 e-book form | YKK DIGITAL SHOWROOM",
+      "text": "HOME\nlibrary\ncatalog\nQA190 e-book form | YKK DIGITAL SHOWROOM\nProduct Catalog\nQA190 e-book form\n\ncatelog description\n\n2026.09.15\n\n必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-ebook-form_en_SP.png",
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "job": "JOB-ZZ-IDLE-29",
+  "agent": "codex",
+  "us": "DSR-587, DSR-654",
+  "env": "dev",
+  "started": "2026-10-21T11:04:48.830Z",
+  "finished": "2026-10-21T11:05:38.735Z",
+  "status": "done",
+  "automation_head": "bb5a8d59fcb7ca728c29934a2a8a299da0279d9b",
+  "tests": [
+    {
+      "tc": "BASELINE-01",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Failed to load resource: the server responded with a status of 404 ()",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_ja_PC.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+      "http_status": 200,
+      "device": "PC"
+    },
+    {
+      "tc": "BASELINE-02",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Failed to load resource: the server responded with a status of 404 ()",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_ja_SP.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+      "http_status": 200,
+      "device": "SP"
+    },
+    {
+      "tc": "BASELINE-03",
+      "lang": "en",
+      "result": "pass",
+      "error": "Failed to load resource: the server responded with a status of 404 ()",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_en_PC.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+      "http_status": 200,
+      "device": "PC"
+    },
+    {
+      "tc": "BASELINE-04",
+      "lang": "en",
+      "result": "pass",
+      "error": "Failed to load resource: the server responded with a status of 404 ()",
+      "evidence": "evidence/DSR-587/baseline-20261021/qa-587-main_en_SP.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+      "http_status": 200,
+      "device": "SP"
+    },
+    {
+      "tc": "BASELINE-05",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-pdf-form_en_PC.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "http_status": 200,
+      "device": "PC"
+    },
+    {
+      "tc": "BASELINE-06",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-pdf-form_en_SP.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "http_status": 200,
+      "device": "SP"
+    },
+    {
+      "tc": "BASELINE-07",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-ebook-form_en_PC.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+      "http_status": 200,
+      "device": "PC"
+    },
+    {
+      "tc": "BASELINE-08",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-654/baseline-20261021/qa190-cat-ebook-form_en_SP.png",
+      "note": "Capture completion only; not a visual QA verdict.",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+      "http_status": 200,
+      "device": "SP"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}
