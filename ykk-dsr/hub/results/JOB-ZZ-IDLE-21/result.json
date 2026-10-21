@@ -1,0 +1,1688 @@
+{
+  "job": "JOB-ZZ-IDLE-21",
+  "agent": "codex",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-21T00:55:39.819Z",
+  "status": "done",
+  "tests": [],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "device": "mobile",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:57:28.077Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "performance": 94,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        }
+      ],
+      "flags": [
+        "performance < 95",
+        "image 404s"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "device": "desktop",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:57:44.779Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "performance": 99,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        }
+      ],
+      "flags": [
+        "image 404s"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+      "device": "mobile",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:58:02.716Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+      "performance": 85,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [],
+      "flags": [
+        "performance < 95"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+      "device": "desktop",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:58:21.881Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+      "performance": 99,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [],
+      "flags": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1",
+      "device": "mobile",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:58:40.081Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1",
+      "performance": 92,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [],
+      "flags": [
+        "performance < 95"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1",
+      "device": "desktop",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:59:01.565Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1",
+      "performance": 88,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [],
+      "flags": [
+        "performance < 95"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+      "device": "mobile",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:59:25.540Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+      "performance": 84,
+      "accessibility": 95,
+      "best-practices": 100,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [],
+      "flags": [
+        "performance < 95"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+      "device": "desktop",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:59:48.193Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+      "performance": 95,
+      "accessibility": 90,
+      "best-practices": 100,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [],
+      "flags": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "device": "mobile",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T01:00:21.634Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "performance": 75,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        }
+      ],
+      "flags": [
+        "performance < 95",
+        "image 404s"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "device": "desktop",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T01:00:47.342Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "performance": 94,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        }
+      ],
+      "flags": [
+        "performance < 95",
+        "image 404s"
+      ]
+    }
+  ],
+  "code_changes": [],
+  "questions": [],
+  "records": [
+    {
+      "page": "qa529-01",
+      "lang": "ja",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "screenshots": [
+        {
+          "viewport": "PC",
+          "width": 1440,
+          "height": 2890,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-01_ja_PC.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+          "title": "QA529 ストーリー詳細テスト",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=2000&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 104
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=2000&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 186
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=png&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 1200
+            },
+            {
+              "src": "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=png&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 0
+            },
+            {
+              "src": "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=png&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 0
+            },
+            {
+              "src": "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=png&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 155
+            },
+            {
+              "src": "/blocks/footer/icons/in.png",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+              "complete": true,
+              "naturalWidth": 840
+            }
+          ],
+          "image404s": [
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+              "status": 404,
+              "relatedTicket": "DSR-659"
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+              "status": 404,
+              "relatedTicket": "DSR-659"
+            },
+            {
+              "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+              "status": 404,
+              "relatedTicket": "DSR-659"
+            }
+          ],
+          "bytes": 96030,
+          "sha256": "15bd219b24a5ea4dd72b6a2d44a937f92b360eeaf0e936b53677a8f8da7cc69a"
+        },
+        {
+          "viewport": "SP",
+          "width": 390,
+          "height": 1011,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-01_ja_SP.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+          "title": "QA529 ストーリー詳細テスト",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=png&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 1200
+            }
+          ],
+          "image404s": [],
+          "bytes": 18635,
+          "sha256": "e87fdacc8eba4b2474a479113ade703f0d5c092ce09e8bc4230778c0f058537e"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01"
+    },
+    {
+      "page": "qa529-01",
+      "lang": "en",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "screenshots": [
+        {
+          "viewport": "PC",
+          "width": 1440,
+          "height": 900,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-01_en_PC.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+          "title": "QA529 Story detail test",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            }
+          ],
+          "image404s": [],
+          "bytes": 4346,
+          "sha256": "85012a1822f04a7ab6e32e4c7b9bc8acf8cafc646ca6458463815476a126b4db"
+        },
+        {
+          "viewport": "SP",
+          "width": 390,
+          "height": 844,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-01_en_SP.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+          "title": "QA529 Story detail test",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            }
+          ],
+          "image404s": [],
+          "bytes": 3045,
+          "sha256": "1960328a58c0c9bca66ecfc77eb02a1f166f470057944ef006c771f9ca0cb808"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01"
+    },
+    {
+      "page": "qa529-r1",
+      "lang": "ja",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+      "screenshots": [
+        {
+          "viewport": "PC",
+          "width": 1440,
+          "height": 1739,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-r1_ja_PC.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+          "title": "QA529 関連1",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=2000&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 104
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=2000&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 186
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/ja/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=jpg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 940
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 155
+            },
+            {
+              "src": "/blocks/footer/icons/in.png",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+              "complete": true,
+              "naturalWidth": 840
+            }
+          ],
+          "image404s": [],
+          "bytes": 77908,
+          "sha256": "6051bb195b13b9d75c95a1ed18e7392c67cd33dc1db86051af1efc50694e0478"
+        },
+        {
+          "viewport": "SP",
+          "width": 390,
+          "height": 2605,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-r1_ja_SP.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+          "title": "QA529 関連1",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 104
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 186
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+              "currentSrc": "",
+              "complete": false,
+              "naturalWidth": 0
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/ja/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=jpg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 940
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 155
+            },
+            {
+              "src": "/blocks/footer/icons/in.png",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+              "complete": true,
+              "naturalWidth": 840
+            }
+          ],
+          "image404s": [],
+          "bytes": 39358,
+          "sha256": "1d28b7ff7a29346a1193953db8d58360a1a214a6a1b8684c3bd6e567bcd13526"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1"
+    },
+    {
+      "page": "qa529-r1",
+      "lang": "en",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1",
+      "screenshots": [
+        {
+          "viewport": "PC",
+          "width": 1440,
+          "height": 1739,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-r1_en_PC.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1",
+          "title": "QA529 Related 1",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/en/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=jpg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 940
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=svg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 155
+            },
+            {
+              "src": "/blocks/footer/icons/in.png",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+              "complete": true,
+              "naturalWidth": 840
+            }
+          ],
+          "image404s": [],
+          "bytes": 72473,
+          "sha256": "f7eabd7efa3bf80beca3163b3ffff6c351646002100bbbea04ef4d7cf952e531"
+        },
+        {
+          "viewport": "SP",
+          "width": 390,
+          "height": 852,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-r1_en_SP.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1",
+          "title": "QA529 Related 1",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/en/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=jpg&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/media_13d1e7b2551ba5a9913cc9150540c525d4913ca90.jpg?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 940
+            }
+          ],
+          "image404s": [],
+          "bytes": 17283,
+          "sha256": "3147d2315f1a8aa343260d57f2a1e4f8e204e11d7445dd49a38430bebc4336b2"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-r1"
+    },
+    {
+      "page": "qa529-02",
+      "lang": "ja",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+      "screenshots": [
+        {
+          "viewport": "PC",
+          "width": 1440,
+          "height": 1359,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-02_ja_PC.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+          "title": "QA529 最小記事",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=png&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 1200
+            }
+          ],
+          "image404s": [],
+          "bytes": 52796,
+          "sha256": "331e03160ad79e89776f3d82a014a09460382560b7901a4409a6fca8ccd5fc67"
+        },
+        {
+          "viewport": "SP",
+          "width": 390,
+          "height": 1019,
+          "evidence": "results/JOB-ZZ-IDLE-21/baseline/qa529-02_ja_SP.png",
+          "httpStatus": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+          "title": "QA529 最小記事",
+          "fonts": "loaded",
+          "images": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+              "complete": true,
+              "naturalWidth": 10
+            },
+            {
+              "src": "/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=png&optimize=medium",
+              "currentSrc": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+              "complete": true,
+              "naturalWidth": 1200
+            }
+          ],
+          "image404s": [],
+          "bytes": 19319,
+          "sha256": "dbec98abaec9c22e993871826b94af53ea8a7c52dff1ff70bb85fa8f8728d1bb"
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02"
+    }
+  ],
+  "automation_head": "ab115cab925042624b22e10e023e240a4791733e",
+  "typescript": {
+    "command": "npx tsc --noEmit",
+    "exitCode": 0,
+    "result": "no errors"
+  },
+  "method": "Record only; no verdict. Fresh context per viewport, scroll to load lazy images, fonts.ready, animations disabled, full-page PNG. Lighthouse single sequential cold run per device/page; standard mobile and desktop presets.",
+  "command": "node /tmp/job-idle21/run.cjs",
+  "browser": "153.0.8010.12",
+  "finished": "2026-10-21T01:01:01.550Z",
+  "supersededLighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "device": "mobile",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:56:49.817Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "performance": 87,
+      "accessibility": 95,
+      "best-practices": 96,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "mobile",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        }
+      ],
+      "flags": [
+        "performance < 95",
+        "image 404s"
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "device": "desktop",
+      "exitCode": 0,
+      "version": "13.5.0",
+      "fetchTime": "2026-10-21T00:57:09.870Z",
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "performance": 99,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 69,
+      "config": {
+        "output": [
+          "json"
+        ],
+        "maxWaitForFcp": 30000,
+        "maxWaitForLoad": 45000,
+        "pauseAfterFcpMs": 1000,
+        "pauseAfterLoadMs": 1000,
+        "networkQuietThresholdMs": 1000,
+        "cpuQuietThresholdMs": 1000,
+        "formFactor": "desktop",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "throttlingMethod": "simulate",
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        },
+        "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+        "auditMode": false,
+        "gatherMode": false,
+        "clearStorageTypes": [
+          "file_systems",
+          "shader_cache",
+          "service_workers",
+          "cache_storage"
+        ],
+        "disableStorageReset": false,
+        "debugNavigation": false,
+        "channel": "cli",
+        "usePassiveGathering": false,
+        "disableFullPageScreenshot": false,
+        "skipAboutBlank": false,
+        "blankPage": "about:blank",
+        "ignoreStatusCode": false,
+        "locale": "en-US",
+        "blockedUrlPatterns": null,
+        "additionalTraceCategories": null,
+        "extraHeaders": null,
+        "precomputedLanternData": null,
+        "onlyAudits": null,
+        "onlyCategories": [
+          "performance",
+          "accessibility",
+          "best-practices",
+          "seo"
+        ],
+        "skipAudits": null
+      },
+      "warnings": [],
+      "image404s": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png?width=750&format=webply&optimize=medium",
+          "status": 404,
+          "relatedTicket": "DSR-659"
+        }
+      ],
+      "flags": [
+        "image 404s"
+      ]
+    }
+  ],
+  "rerunReason": "Repeated ja qa529-01 audits sequentially after discovering an earlier helper process had not exited and overlapped these initial audits.",
+  "baselineBytes": 401193,
+  "compression": "Lossless PNG compression level 9; original dimensions and colors preserved",
+  "build": "Deployed build not independently verified",
+  "notes": [
+    "No verdicts; tests array intentionally empty. Lighthouse <95 is a recording flag, not a failed test.",
+    "Expanded …/qa529-r1 to both ja and en. Baseline path is project-relative as explicitly specified in the job.",
+    "Initial helper attempts were stopped for an API setup error and an unbounded image-decode wait; completed collection uses a 10s image-decode bound, document.fonts.ready, and a fixed-height lazy-image scroll.",
+    "Lighthouse raw reports remain in /tmp/job-idle21 and are not committed. No npm test suite was run."
+  ]
+}
