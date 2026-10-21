@@ -10,7 +10,7 @@
 4. `ykk-dsr/hub/BUG-RULES.md` – quy tắc tạo bug (tự tạo ≥ 80%, sprint, nhất quán hiển thị).
 5. `ykk-dsr/hub/BUGS.md`, `ykk-dsr/hub/us/DSR-<ID>.md`, `ykk-dsr/hub/bugs/*-decision-*.md`.
 6. Baseline: `docs/DSR-587/overlay-data-flow-BL.md` (BL-OVL-1 – overlay video/product/catalog, có "Update 2026-10-21" BẮT BUỘC) · `docs/client-layout/CL-v0.1-numata-20261020.md` (sheet khách v0.1 – tham khảo, KHÔNG baseline) · `docs/incidents/`.
-7. Project claude.ai "Stx - DSR (new)": `claude/03_Working_Model.md` (cách vận hành), `claude/04_Report_Template.md`, `claude/BL-OVL-1_Overlay_Data_Flow.md`.
+7. Project claude.ai "Stx - DSR (new)" (bản sao repo: `docs/03_Working_Model.md`): `claude/03_Working_Model.md` (cách vận hành), `claude/04_Report_Template.md`, `claude/BL-OVL-1_Overlay_Data_Flow.md`.
 
 ## 2. Vai trò
 | Ai | Vai trò | Giới hạn |
