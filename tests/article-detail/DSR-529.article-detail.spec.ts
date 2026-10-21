@@ -68,12 +68,16 @@ for (const lang of languages) {
       for (const label of labels) expect.soft(label, 'not a raw tag ID').not.toMatch(/^[\w-]+:[\w/-]+$/);
     });
 
-    test(`DSR-ARTICLE-007 [${lang}] info bar date = meta publicationdate`, { tag: ['@auto'] }, async ({ page, request }) => {
+    test(`DSR-ARTICLE-007 [${lang}] info bar date = meta publicationdate, format YYYY.MM.DD`, { tag: ['@auto'] }, async ({ page, request }) => {
       const { article, path } = await openArticle(page, lang);
       await expect(article.date.first(), 'info bar date').toBeVisible();
       const shown = (await article.date.first().innerText()).trim();
       const meta = metaValues((await article.rawMeta(request, path)).meta, metaNames.publicationDate)[0] ?? null;
-      observations.push({ shown, metaPublicationDate: meta, shownIso: isoDate(shown), metaIso: isoDate(meta), expectedFormat: 'YYYY.MM.DD (A4 / Q4 open – format recorded only)' });
+      // Date display standard YYYY.MM.DD for all languages (BUG-RULES §6, DSR-660).
+      const expectedShown = isoDate(meta)?.replace(/-/g, '.') ?? null;
+      observations.push({ shown, metaPublicationDate: meta, shownIso: isoDate(shown), metaIso: isoDate(meta), expectedShown });
+      expect.soft(shown, 'shown date format YYYY.MM.DD').toMatch(/^\d{4}\.\d{2}\.\d{2}$/);
+      expect.soft(shown, 'shown date = meta publicationdate as YYYY.MM.DD').toBe(expectedShown);
       expect(isoDate(shown), 'shown date parsable').not.toBeNull();
       expect(isoDate(shown)).toBe(isoDate(meta));
     });

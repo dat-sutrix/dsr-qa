@@ -1,0 +1,1181 @@
+{
+  "job": "JOB-20261021-07",
+  "agent": "claude-code",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-21T10:18:06Z",
+  "finished": "2026-10-21T10:23:07Z",
+  "status": "done",
+  "totals": {
+    "total": 48,
+    "passed": 16,
+    "failed": 17,
+    "skipped": 15,
+    "flaky": 0,
+    "exit_code": 1
+  },
+  "freshness": {
+    "qa529-01 ja published-time": "2026-10-20T15:38:30Z",
+    "qa529-01 en published-time": "2026-10-20T12:56:13Z",
+    "qa529-02 ja published-time": "2026-10-19T15:31:26Z",
+    "last_modified": {
+      "page /master/ja/.../qa529-01": "Tue, 20 Oct 2026 15:38:34 GMT",
+      "page /master/en/.../qa529-01": "Tue, 20 Oct 2026 12:56:13 GMT",
+      "/scripts/scripts.js": "Mon, 19 Oct 2026 03:10:29 GMT",
+      "/blocks/article-meta/article-meta.js": "Wed, 21 Oct 2026 09:42:41 GMT",
+      "/blocks/image/image.js": "Wed, 21 Oct 2026 09:42:41 GMT",
+      "/blocks/listing/adapters/normalize.js": "Wed, 21 Oct 2026 09:42:41 GMT",
+      "/blocks/listing/adapters/query-index.js": "Wed, 21 Oct 2026 09:42:41 GMT",
+      "/blocks/related-articles/related-articles.js": "Thu, 01 Oct 2026 07:31:25 GMT",
+      "/blocks/article-title/article-title.js": "Thu, 24 Sep 2026 05:17:16 GMT",
+      "/blocks/article-meta/article-meta.css": "Thu, 24 Sep 2026 05:17:16 GMT"
+    },
+    "note": "merged code is live (article-meta.js, image.js, listing adapters last-modified 2026-10-21T09:42:41Z); scripts.js unchanged (19/10). Pages not republished since 20/10."
+  },
+  "bugs": {
+    "DSR-660": {
+      "proposal": "Pass",
+      "tc": "DSR-ARTICLE-007",
+      "raw": "ja+en shown \"2026.10.01\"; meta publicationdate 2026-10-01T00:00:00.000Z → expected 2026.10.01 (JOB-04: 2026/10/01)",
+      "cause": "none",
+      "confidence": 5
+    },
+    "DSR-658": {
+      "proposal": "Pass",
+      "tc": "DSR-ARTICLE-006",
+      "raw": "ja+en: 2 span.article-meta-tag (\"do-not-translate\", \"バイオベース\") = 2 article:tag metas (do-not-translate, site:product/bio-based); JOB-04: 0 chips. Spec fails only because locator also matches wrapper div.article-meta-tags (test issue). Open: en shows ja label; \"do-not-translate\" label = tag value (A5/Q5, data?)",
+      "cause": "none",
+      "confidence": 10
+    },
+    "DSR-659": {
+      "proposal": "Fail (partial)",
+      "tc": "DSR-ARTICLE-011 / 013",
+      "raw": "related-story card img src absolute https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/... ×3, HTTP 200 image/png ja+en (fixed part). meta thumbnail still relative /content/dam/ykk/digital-showroom/test/png/{gradient-transparent-1920x1080|highres-photo-4000x3000}.png (ja|en), resolves 404 on .aem.live; page HTML last-modified 20/10 (before merge) → may need republish",
+      "cause": "none",
+      "confidence": 60
+    },
+    "DSR-657": {
+      "proposal": "record only (still Fail)",
+      "tc": "DSR-ARTICLE-002",
+      "raw": "ja: 1 image block h=640, img media_1b1b7cd…png 200 image/webp; en: 0 image blocks; 0 empty blocks, 0 console errors (JOB-04: empty image block, 3× 404); subtitle/articleImage/description still missing (data)",
+      "cause": "none",
+      "confidence": 50
+    }
+  },
+  "tests": [
+    {
+      "tc": "DSR-ARTICLE-001",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-001 [ja] page creation with article template (Author, BAC#1)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-004",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-004 [ja] article-specific info not editable in body (Author, BAC#5)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-005",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-005 [ja] author-editable areas 4/5/6/9/11 (Author, BAC#1)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-021",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-021 [ja] related stories picker max 3, stories only (Author)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-032",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-032 [ja] required page properties validation (Author, negative)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-030 [ja] visual PC 1440 vs Figma",
+      "result": "skip",
+      "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)"
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-031 [ja] visual SP 390 vs Figma",
+      "result": "skip",
+      "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)"
+    },
+    {
+      "tc": "DSR-ARTICLE-017",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-017 [ja] related stories cards r1..r3 (block 12)",
+      "result": "skip",
+      "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 (helix-query.yaml) / Q7"
+    },
+    {
+      "tc": "DSR-ARTICLE-018",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-018 [ja] related stories NEW icon on r1 only",
+      "result": "skip",
+      "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; NEW period Q6"
+    },
+    {
+      "tc": "DSR-ARTICLE-019",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-019 [ja] related stories max 3, missing path skipped (qa529-04)",
+      "result": "skip",
+      "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; TD-529-04 not seeded"
+    },
+    {
+      "tc": "DSR-ARTICLE-022",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-022 [ja] related items cards from product index (block 13)",
+      "result": "skip",
+      "error": "Blocked: 製品index relatedArticles/sortOrder not defined – 製品詳細 ticket (Martin prereq #3)"
+    },
+    {
+      "tc": "DSR-ARTICLE-027",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-027 [ja] published article appears in article list",
+      "result": "skip",
+      "error": "Blocked: Article list DSR-170 (out of scope) + stories index"
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "cn",
+      "title": "DSR-ARTICLE-029 [cn] language page (cn)",
+      "result": "skip",
+      "error": "Blocked: no /master/cn on DEV (Issue #18) – all cn rows"
+    },
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-002 [ja] blocks in design order 3→4→5→6→7→9→11→12→13→14, no console error",
+      "result": "fail",
+      "error": "required blocks missing | infoBar before body",
+      "evidence": "evidence/DSR-ARTICLE-002_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "DSR-657",
+      "observed": "ja: still missing subtitle/articleImage/description; infoBar not before body. Improved vs JOB-04: 0 empty blocks, 0 console errors. Needs QA-PT data fix (657)",
+      "raw": [
+        {
+          "present": [
+            {
+              "name": "title",
+              "count": 1
+            },
+            {
+              "name": "subtitle",
+              "count": 0
+            },
+            {
+              "name": "articleImage",
+              "count": 0
+            },
+            {
+              "name": "description",
+              "count": 0
+            },
+            {
+              "name": "infoBar",
+              "count": 1
+            },
+            {
+              "name": "body",
+              "count": 3
+            },
+            {
+              "name": "profile",
+              "count": 7
+            },
+            {
+              "name": "relatedStories",
+              "count": 1
+            },
+            {
+              "name": "relatedItems",
+              "count": 0
+            },
+            {
+              "name": "footerAction",
+              "count": 1
+            }
+          ],
+          "emptyBlocks": [],
+          "consoleErrors": [],
+          "blockNames": [
+            "breadcrumb",
+            "article-title",
+            "text",
+            "image",
+            "text",
+            "article-meta",
+            "text",
+            "profile",
+            "related-articles",
+            "related-product",
+            "footer-actions"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-003",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-003 [ja] title block = TD title, one h1, <title> = title",
+      "result": "pass",
+      "raw": [
+        {
+          "h1": {
+            "text": "QA529 ストーリー詳細テスト",
+            "images": 0
+          },
+          "documentTitle": "QA529 ストーリー詳細テスト",
+          "expected": "QA529 ストーリー詳細テスト"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-006 [ja] info bar shows 2 tag labels, not raw tag IDs",
+      "result": "fail",
+      "error": "tag labels",
+      "evidence": "evidence/DSR-ARTICLE-006_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "ref": "DSR-658",
+      "observed": "2 .article-meta-tag chips = 2 article:tag metas (DSR-658 fixed); locator [class*=\"tag\"] also matches wrapper .article-meta-tags → 3",
+      "raw": [
+        {
+          "labels": [
+            "do-not-translate\nバイオベース",
+            "do-not-translate",
+            "バイオベース"
+          ],
+          "note": "label language = page language is assumption A5 / Q5"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-007",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-007 [ja] info bar date = meta publicationdate, format YYYY.MM.DD",
+      "result": "pass",
+      "raw": [
+        {
+          "shown": "2026.10.01",
+          "metaPublicationDate": "2026-10-01T00:00:00.000Z",
+          "shownIso": "2026-10-01",
+          "metaIso": "2026-10-01",
+          "expectedShown": "2026.10.01"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-008",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-008 [ja] My List button and share icons visible/enabled; share href has encoded page URL (no click)",
+      "result": "pass",
+      "raw": [
+        {
+          "infoBarClass": "article-meta auto block",
+          "myList": 1,
+          "shares": [
+            {
+              "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+              "label": "Facebookでシェア"
+            },
+            {
+              "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01&text=QA529%20%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E8%A9%B3%E7%B4%B0%E3%83%86%E3%82%B9%E3%83%88",
+              "label": "Xでシェア"
+            },
+            {
+              "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+              "label": "LinkedInでシェア"
+            },
+            {
+              "href": "https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+              "label": "LINEでシェア"
+            }
+          ],
+          "pageUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-010",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-010 [ja] meta publicationdate / updatedate ISO 8601, one each; update date not visible",
+      "result": "pass",
+      "raw": [
+        {
+          "published": [
+            "2026-10-01T00:00:00.000Z"
+          ],
+          "updated": [
+            "2026-10-10T00:00:00.000Z"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-011 [ja] meta thumbnail: 1, absolute, no transform params, GET 200 image/*",
+      "result": "fail",
+      "error": "absolute URL",
+      "evidence": "evidence/DSR-ARTICLE-011_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "ref": "DSR-659",
+      "observed": "thumbnail meta still relative /content/dam/... (404 on .aem.live); page not republished since merge, so may need republish",
+      "raw": [
+        {
+          "thumbnail": [
+            "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-012 [ja] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible",
+      "result": "fail",
+      "error": "category meta count | category tag IDs",
+      "evidence": "evidence/DSR-ARTICLE-012_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "no category meta; qa529-01 not republished after Night 21/10 0b",
+      "raw": [
+        {
+          "category": [],
+          "keywords": "qa529kw1, qa529kw2",
+          "categoryAuthored": true
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-013",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-013 [ja] meta related-stories = r1,r2,r3 in order",
+      "result": "pass",
+      "raw": [
+        {
+          "related": "/master/ja/library/article/stories/qa529-r1, /master/ja/library/article/stories/qa529-r2, /master/ja/library/article/stories/qa529-r3",
+          "paths": [
+            "/master/ja/library/article/stories/qa529-r1",
+            "/master/ja/library/article/stories/qa529-r2",
+            "/master/ja/library/article/stories/qa529-r3"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-014 [ja] title/description/OGP/publicationdate/thumbnail/category exactly once, non-empty",
+      "result": "fail",
+      "error": "category count | category non-empty",
+      "evidence": "evidence/DSR-ARTICLE-014_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "category count 0 (same cause as 012); other metas OK; thumbnail relative (659)",
+      "raw": [
+        {
+          "counts": {
+            "title": [
+              "QA529 ストーリー詳細テスト"
+            ],
+            "description": [
+              "QA529 説明 ja"
+            ],
+            "og:title": [
+              "QA529 OGPタイトル"
+            ],
+            "og:description": [
+              "QA529 OGP説明"
+            ],
+            "og:image": [
+              "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png?width=1200&format=pjpg&optimize=medium"
+            ],
+            "publicationdate": [
+              "2026-10-01T00:00:00.000Z"
+            ],
+            "thumbnail": [
+              "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png"
+            ],
+            "category": []
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-016 [ja] robots: qa529-02 noindex,nofollow; qa529-01 no noindex",
+      "result": "fail",
+      "error": "qa529-01 robots | qa529-02 robots | qa529-02 robots",
+      "evidence": "evidence/DSR-ARTICLE-016_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-04: qa529-01 noindex,nofollow; qa529-02 no robots (ja)",
+      "raw": [
+        {
+          "page": "qa529-01",
+          "robots": [
+            "noindex, nofollow"
+          ]
+        },
+        {
+          "language": "ja",
+          "path": "/master/ja/library/article/stories/qa529-02",
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+          "status": 200
+        },
+        {
+          "page": "qa529-02",
+          "robots": ""
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-024",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-024 [ja] VIEW ALL STORIES + Contact visible; hrefs recorded",
+      "result": "fail",
+      "error": "viewAllStories href | contact href",
+      "evidence": "evidence/DSR-ARTICLE-024_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-04: VIEW ALL STORIES / Contact href \"#\" (targets undecided A8/Q8)",
+      "raw": [
+        {
+          "viewAllStories": {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        },
+        {
+          "contact": {
+            "text": "お問い合わせ",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-026",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-026 [ja] stories query-index contains qa529-01 with 6 properties",
+      "result": "skip",
+      "error": "blocked-data: no stories query-index returns 200 (/ja/stories/query-index.json, /master/ja/stories/query-index.json, /master/ja/library/article/stories/query-index.json)"
+    },
+    {
+      "tc": "DSR-ARTICLE-028",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-028 [ja] breadcrumb present; last item = navtitle (no link); earlier items link",
+      "result": "fail",
+      "error": "last item = navtitle",
+      "evidence": "evidence/DSR-ARTICLE-028_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "last item = page title (fallback), not navtitle; page not republished since Night 0b",
+      "raw": [
+        {
+          "items": [
+            {
+              "text": "HOME",
+              "href": "/master/ja"
+            },
+            {
+              "text": "Library",
+              "href": "/master/ja/library"
+            },
+            {
+              "text": "Article",
+              "href": "/master/ja/library/article"
+            },
+            {
+              "text": "Stories",
+              "href": "/master/ja/library/article/stories"
+            },
+            {
+              "text": "QA529 ストーリー詳細テスト",
+              "href": null
+            }
+          ],
+          "expectedLast": "QA529 ナビ",
+          "fallback": "QA529 ストーリー詳細テスト",
+          "note": "navtitle authored in UE Page properties (Night 21/10 0b); fallback = page title"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-029 [ja] language page: 200, title/info bar in ja, <html lang>=ja",
+      "result": "pass",
+      "raw": [
+        {
+          "htmlLang": "ja",
+          "title": "QA529 ストーリー詳細テスト",
+          "infoBar": "do-not-translate\nバイオベース\n\n2026.10.01\n\nマイリストに追加\nシェア"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "en",
+      "title": "DSR-ARTICLE-002 [en] blocks in design order 3→4→5→6→7→9→11→12→13→14, no console error",
+      "result": "fail",
+      "error": "required blocks missing | infoBar before body",
+      "evidence": "evidence/DSR-ARTICLE-002_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "DSR-657",
+      "observed": "en: still missing subtitle/articleImage/description; infoBar not before body. Improved vs JOB-04: 0 empty blocks, 0 console errors. Needs QA-PT data fix (657)",
+      "raw": [
+        {
+          "present": [
+            {
+              "name": "title",
+              "count": 1
+            },
+            {
+              "name": "subtitle",
+              "count": 0
+            },
+            {
+              "name": "articleImage",
+              "count": 0
+            },
+            {
+              "name": "description",
+              "count": 0
+            },
+            {
+              "name": "infoBar",
+              "count": 1
+            },
+            {
+              "name": "body",
+              "count": 3
+            },
+            {
+              "name": "profile",
+              "count": 7
+            },
+            {
+              "name": "relatedStories",
+              "count": 1
+            },
+            {
+              "name": "relatedItems",
+              "count": 0
+            },
+            {
+              "name": "footerAction",
+              "count": 1
+            }
+          ],
+          "emptyBlocks": [],
+          "consoleErrors": [],
+          "blockNames": [
+            "breadcrumb",
+            "article-title",
+            "text",
+            "text",
+            "article-meta",
+            "text",
+            "profile",
+            "related-articles",
+            "related-product",
+            "footer-actions"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-003",
+      "lang": "en",
+      "title": "DSR-ARTICLE-003 [en] title block = TD title, one h1, <title> = title",
+      "result": "pass",
+      "raw": [
+        {
+          "h1": {
+            "text": "QA529 Story detail test",
+            "images": 0
+          },
+          "documentTitle": "QA529 Story detail test",
+          "expected": "QA529 Story detail test"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "en",
+      "title": "DSR-ARTICLE-006 [en] info bar shows 2 tag labels, not raw tag IDs",
+      "result": "fail",
+      "error": "tag labels",
+      "evidence": "evidence/DSR-ARTICLE-006_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "ref": "DSR-658",
+      "observed": "2 .article-meta-tag chips = 2 article:tag metas (DSR-658 fixed); locator [class*=\"tag\"] also matches wrapper .article-meta-tags → 3",
+      "raw": [
+        {
+          "labels": [
+            "do-not-translate\nバイオベース",
+            "do-not-translate",
+            "バイオベース"
+          ],
+          "note": "label language = page language is assumption A5 / Q5"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-007",
+      "lang": "en",
+      "title": "DSR-ARTICLE-007 [en] info bar date = meta publicationdate, format YYYY.MM.DD",
+      "result": "pass",
+      "raw": [
+        {
+          "shown": "2026.10.01",
+          "metaPublicationDate": "2026-10-01T00:00:00.000Z",
+          "shownIso": "2026-10-01",
+          "metaIso": "2026-10-01",
+          "expectedShown": "2026.10.01"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-008",
+      "lang": "en",
+      "title": "DSR-ARTICLE-008 [en] My List button and share icons visible/enabled; share href has encoded page URL (no click)",
+      "result": "pass",
+      "raw": [
+        {
+          "infoBarClass": "article-meta auto block",
+          "myList": 1,
+          "shares": [
+            {
+              "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+              "label": "Facebookでシェア"
+            },
+            {
+              "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01&text=QA529%20Story%20detail%20test",
+              "label": "Xでシェア"
+            },
+            {
+              "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+              "label": "LinkedInでシェア"
+            },
+            {
+              "href": "https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+              "label": "LINEでシェア"
+            }
+          ],
+          "pageUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-010",
+      "lang": "en",
+      "title": "DSR-ARTICLE-010 [en] meta publicationdate / updatedate ISO 8601, one each; update date not visible",
+      "result": "pass",
+      "raw": [
+        {
+          "published": [
+            "2026-10-01T00:00:00.000Z"
+          ],
+          "updated": [
+            "2026-10-10T00:00:00.000Z"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "title": "DSR-ARTICLE-011 [en] meta thumbnail: 1, absolute, no transform params, GET 200 image/*",
+      "result": "fail",
+      "error": "absolute URL",
+      "evidence": "evidence/DSR-ARTICLE-011_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "ref": "DSR-659",
+      "observed": "thumbnail meta still relative /content/dam/... (404 on .aem.live); page not republished since merge, so may need republish",
+      "raw": [
+        {
+          "thumbnail": [
+            "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "en",
+      "title": "DSR-ARTICLE-012 [en] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible",
+      "result": "fail",
+      "error": "category meta count | category tag IDs",
+      "evidence": "evidence/DSR-ARTICLE-012_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "no category meta; qa529-01 not republished after Night 21/10 0b",
+      "raw": [
+        {
+          "category": [],
+          "keywords": "qa529kw1, qa529kw2",
+          "categoryAuthored": true
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-013",
+      "lang": "en",
+      "title": "DSR-ARTICLE-013 [en] meta related-stories = r1,r2,r3 in order",
+      "result": "pass",
+      "raw": [
+        {
+          "related": "/master/en/library/article/stories/qa529-r1, /master/en/library/article/stories/qa529-r2, /master/en/library/article/stories/qa529-r3",
+          "paths": [
+            "/master/en/library/article/stories/qa529-r1",
+            "/master/en/library/article/stories/qa529-r2",
+            "/master/en/library/article/stories/qa529-r3"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "en",
+      "title": "DSR-ARTICLE-014 [en] title/description/OGP/publicationdate/thumbnail/category exactly once, non-empty",
+      "result": "fail",
+      "error": "category count | category non-empty",
+      "evidence": "evidence/DSR-ARTICLE-014_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "category count 0 (same cause as 012); other metas OK; thumbnail relative (659)",
+      "raw": [
+        {
+          "counts": {
+            "title": [
+              "QA529 Story detail test"
+            ],
+            "description": [
+              "QA529 description en"
+            ],
+            "og:title": [
+              "QA529 OGP title"
+            ],
+            "og:description": [
+              "QA529 OGP description"
+            ],
+            "og:image": [
+              "https://dev-eds.ykkdigitalshowroom.com/master/en/library/article/stories/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=1200&format=pjpg&optimize=medium"
+            ],
+            "publicationdate": [
+              "2026-10-01T00:00:00.000Z"
+            ],
+            "thumbnail": [
+              "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png"
+            ],
+            "category": []
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "en",
+      "title": "DSR-ARTICLE-016 [en] robots: qa529-02 noindex,nofollow; qa529-01 no noindex",
+      "result": "fail",
+      "error": "qa529-01 robots",
+      "evidence": "evidence/DSR-ARTICLE-016_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-04: qa529-01 noindex,nofollow; qa529-02 no robots (ja)",
+      "raw": [
+        {
+          "page": "qa529-01",
+          "robots": [
+            "noindex, nofollow"
+          ]
+        },
+        {
+          "note": "qa529-02 not in TD for en (TD-529-02 is ja only) – full-page part only"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-024",
+      "lang": "en",
+      "title": "DSR-ARTICLE-024 [en] VIEW ALL STORIES + Contact visible; hrefs recorded",
+      "result": "fail",
+      "error": "viewAllStories href | contact href",
+      "evidence": "evidence/DSR-ARTICLE-024_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-04: VIEW ALL STORIES / Contact href \"#\" (targets undecided A8/Q8)",
+      "raw": [
+        {
+          "viewAllStories": {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        },
+        {
+          "contact": {
+            "text": "お問い合わせ",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-026",
+      "lang": "en",
+      "title": "DSR-ARTICLE-026 [en] stories query-index contains qa529-01 with 6 properties",
+      "result": "skip",
+      "error": "blocked-data: no stories query-index returns 200 (/en/stories/query-index.json, /master/en/stories/query-index.json, /master/en/library/article/stories/query-index.json)"
+    },
+    {
+      "tc": "DSR-ARTICLE-028",
+      "lang": "en",
+      "title": "DSR-ARTICLE-028 [en] breadcrumb present; last item = navtitle (no link); earlier items link",
+      "result": "fail",
+      "error": "last item = navtitle",
+      "evidence": "evidence/DSR-ARTICLE-028_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "last item = page title (fallback), not navtitle; page not republished since Night 0b",
+      "raw": [
+        {
+          "items": [
+            {
+              "text": "HOME",
+              "href": "/master/en"
+            },
+            {
+              "text": "Library",
+              "href": "/master/en/library"
+            },
+            {
+              "text": "Article",
+              "href": "/master/en/library/article"
+            },
+            {
+              "text": "Stories",
+              "href": "/master/en/library/article/stories"
+            },
+            {
+              "text": "QA529 Story detail test",
+              "href": null
+            }
+          ],
+          "expectedLast": "QA529 Nav",
+          "fallback": "QA529 Story detail test",
+          "note": "navtitle authored in UE Page properties (Night 21/10 0b); fallback = page title"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "en",
+      "title": "DSR-ARTICLE-029 [en] language page: 200, title/info bar in en, <html lang>=en",
+      "result": "pass",
+      "raw": [
+        {
+          "htmlLang": "en",
+          "title": "QA529 Story detail test",
+          "infoBar": "do-not-translate\nバイオベース\n\n2026.10.01\n\nマイリストに追加\nシェア"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-015",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-015 [ja] OGP fallback: og:title = title, og:description = description, og:image 200",
+      "result": "pass",
+      "raw": [
+        {
+          "og": {
+            "title": [
+              "QA529 最小記事"
+            ],
+            "description": [
+              "QA529 最小説明"
+            ],
+            "image": [
+              "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=pjpg&optimize=medium"
+            ]
+          }
+        },
+        {
+          "ogImageStatus": 200
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-020",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-020 [ja] no related stories block/heading when not specified (トルツメ)",
+      "result": "pass",
+      "raw": [
+        {
+          "relatedStoriesBlocks": [],
+          "headings": [],
+          "gapToFooterActionPx": 322
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-023",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-023 [ja] no related items block/heading when 0 results (トルツメ)",
+      "result": "fail",
+      "error": "visible related items heading",
+      "evidence": "evidence/DSR-ARTICLE-023_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-04: related items heading visible (h=32) with 0 blocks",
+      "raw": [
+        {
+          "relatedItemsBlocks": [],
+          "headings": [
+            {
+              "visible": true,
+              "height": 32.390625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-025",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-025 [ja] no empty profile wrapper with height > 0 (トルツメ)",
+      "result": "pass",
+      "raw": [
+        {
+          "profile": [],
+          "emptySections": []
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-009",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-009 [ja] My List add → localStorage has page under stories; kept after reload",
+      "result": "pass",
+      "raw": [
+        {
+          "stateBefore": {
+            "pressed": "false",
+            "class": "article-meta-fav"
+          },
+          "store": {
+            "dsr:mylist:v1": "{\"version\":1,\"products\":[],\"stories\":[{\"id\":\"/master/ja/library/article/stories/qa529-01\",\"title\":\"QA529 ストーリー詳細テスト\",\"image\":\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\",\"url\":\"https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01\",\"addedAt\":1792578185199}],\"cases\":[],\"catalogs\":[]}"
+          },
+          "stateAfter": {
+            "pressed": "true",
+            "class": "article-meta-fav"
+          },
+          "storeAfterReload": {
+            "dsr:mylist:v1": "{\"version\":1,\"products\":[],\"stories\":[{\"id\":\"/master/ja/library/article/stories/qa529-01\",\"title\":\"QA529 ストーリー詳細テスト\",\"image\":\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\",\"url\":\"https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01\",\"addedAt\":1792578185199}],\"cases\":[],\"catalogs\":[]}"
+          },
+          "stateReload": {
+            "pressed": "true",
+            "class": "article-meta-fav"
+          }
+        }
+      ]
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/article-detail/DSR-529.article-detail.spec.ts"
+  ],
+  "probe_raw": {
+    "ja": {
+      "metaTagsRaw": [
+        "do-not-translate",
+        "site:product/bio-based"
+      ],
+      "domThumbnail": "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+      "tagHtml": [
+        {
+          "cls": "article-meta-tags",
+          "tag": "DIV",
+          "text": "do-not-translate\nバイオベース",
+          "children": 2
+        },
+        {
+          "cls": "article-meta-tag",
+          "tag": "SPAN",
+          "text": "do-not-translate",
+          "children": 0
+        },
+        {
+          "cls": "article-meta-tag",
+          "tag": "SPAN",
+          "text": "バイオベース",
+          "children": 0
+        }
+      ],
+      "imageBlocks": [
+        {
+          "cls": "image block",
+          "h": 640,
+          "imgs": [
+            {
+              "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+              "nw": 1200,
+              "status": 200,
+              "ct": "image/webp"
+            }
+          ]
+        }
+      ],
+      "imageDivsAll": [
+        {
+          "cls": "image block",
+          "h": 640,
+          "html": "<picture><source type=\"image/webp\" srcset=\"/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=webply&amp;optimize=medium\"><img loading=\"eager\""
+        }
+      ],
+      "relatedCards": [
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+          "attr": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+          "nw": 1920,
+          "status": 200,
+          "ct": "image/png"
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+          "attr": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+          "nw": 1200,
+          "status": 200,
+          "ct": "image/png"
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+          "attr": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+          "nw": 4000,
+          "status": 200,
+          "ct": "image/png"
+        }
+      ],
+      "thumbnailResolved": {
+        "u": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+        "status": 404,
+        "ct": "text/html; charset=utf-8"
+      },
+      "failedResponses": []
+    },
+    "en": {
+      "metaTagsRaw": [
+        "do-not-translate",
+        "site:product/bio-based"
+      ],
+      "domThumbnail": "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+      "tagHtml": [
+        {
+          "cls": "article-meta-tags",
+          "tag": "DIV",
+          "text": "do-not-translate\nバイオベース",
+          "children": 2
+        },
+        {
+          "cls": "article-meta-tag",
+          "tag": "SPAN",
+          "text": "do-not-translate",
+          "children": 0
+        },
+        {
+          "cls": "article-meta-tag",
+          "tag": "SPAN",
+          "text": "バイオベース",
+          "children": 0
+        }
+      ],
+      "imageBlocks": [],
+      "imageDivsAll": [],
+      "relatedCards": [
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+          "attr": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+          "nw": 1920,
+          "status": 200,
+          "ct": "image/png"
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+          "attr": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+          "nw": 1200,
+          "status": 200,
+          "ct": "image/png"
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+          "attr": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+          "nw": 4000,
+          "status": 200,
+          "ct": "image/png"
+        }
+      ],
+      "thumbnailResolved": {
+        "u": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+        "status": 404,
+        "ct": "text/html; charset=utf-8"
+      },
+      "failedResponses": []
+    }
+  },
+  "questions": []
+}
