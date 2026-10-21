@@ -1,0 +1,14 @@
+# TD-190-CAT-NEW (core 4 catalogs) – DSR-557/570/654 – Night Pack 21/10 v3 việc 5
+# Known deviation: content CFs still in /content/dam/ykk/common/product-cf/test/ (Martin: naming rule only) → content ref NOT checked by lint path guard.
+id: TD-190-CAT-CORE
+us: DSR-557, DSR-570, DSR-654
+items:
+  - kind: dsr-cf
+    model: (?)   # catalog related model – from models.md
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/catalogs/{id}
+    each: [qa190-cat-pdf, qa190-cat-pdf-form, qa190-cat-ebook, qa190-cat-ebook-form]
+    fields: { catalogId: "{id}", isActive: true }
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/catalog/{id}"]

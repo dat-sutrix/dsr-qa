@@ -1,0 +1,28 @@
+# TD-586-01/02 – product overlay ver0.4 (ja) – Night Pack 21/10 v3 việc 6
+id: TD-586-01-02
+us: DSR-586
+items:
+  - kind: content-cf
+    model: DM_product
+    lang: [ja]
+    path: /content/dam/common/ja/products/990586001
+    fields: { productId: "990586001", productCode: QA586-A, productName: QA586 product A, publishDate: 2026-10-01, description: QA586 description for SEO check }
+  - kind: dsr-cf
+    model: (?)   # product related model
+    lang: [ja]
+    path: /content/dam/dsr/ja/products/990586001
+    fields: { isActive: true, product: ref(/content/dam/common/ja/products/990586001) }
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_product
+    lang: [ja]
+    path: /content/dam/common/ja/products/990586002
+    fields: { productId: "990586002", productCode: QA586-B, productName: QA586 product B, publishDate: 2026-10-01 }
+  - kind: dsr-cf
+    model: (?)
+    lang: [ja]
+    path: /content/dam/dsr/ja/products/990586002
+    fields: { isActive: true, product: ref(/content/dam/common/ja/products/990586002) }
+    replicate: [preview]          # TD-586-02 = preview only, must NOT be on .live
+verify:
+  urls: ["/ja/products/990586001", "/ja/products/990586002"]

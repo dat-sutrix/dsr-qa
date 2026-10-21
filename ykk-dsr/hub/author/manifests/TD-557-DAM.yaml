@@ -1,0 +1,17 @@
+# TD-557-DAM – DAM video (DSR-557) – Night Pack 21/10 v3 việc 4
+id: TD-557-DAM
+us: DSR-557
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en, ja]
+    path: /content/dam/common/{lang}/movies/qa557-dam
+    fields: { movieId: qa557-dam, movieSource: DAM }   # movieAsset: any mp4 (not checked)
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/movies/standard/qa557-dam
+    fields: { isActive: true, movie: ref(/content/dam/common/{lang}/movies/qa557-dam) }
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/video/qa557-dam"]

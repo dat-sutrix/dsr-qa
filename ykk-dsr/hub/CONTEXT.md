@@ -76,7 +76,7 @@ Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – m�
 | P1a | JOB-20261021-08 (claude-code): viết `tools/author` (models, lint, verify, apply **bị khóa**) + chạy read-only TD-587-01 | 🔄 running từ 17:27 | Agent |
 | P1a′ | Review kết quả JOB-08: code guard (host/path allowlist, không có delete, apply khóa 3 lớp), `author/models.md`, lint/verify bắt đúng lỗi qa587 đã biết | ☐ | Claude |
 | P0′ | Đo tuổi thọ cookie: Dat chạy lại `probe.sh` sáng 22/10 → xem "Cookie age" + check 1 = 200 | ☐ | Dat → Claude |
-| V | **Dùng ngay (không ghi):** sáng 07:45 chạy `verify` cho manifest data của Night Pack đêm trước → fail = lỗi data QA-PT, báo trước khi agent test chạy | ☐ cần job/lane | Claude |
+| V | **Dùng ngay (không ghi):** sáng 07:45 chạy `verify` cho manifest data của Night Pack đêm trước → fail = lỗi data QA-PT, báo trước khi agent test chạy | 🔄 manifest Night 21/10 viết xong (`author/manifests/` 5 file) · JOB-20261021-09 hold (chờ JOB-08 + review) | Claude |
 | P1b | Ghi thử 1 CF `qaagent-probe` (common/en/movies) giờ 08–18 với `AUTHOR_WRITE_ENABLED=1` → verify L0–L3 | ☐ sau P1a′ | Claude + Dat bật cờ |
 | P1c | Thêm lane `author` vào `runner.sh` (clone `~/dsr-qa-author`, gọi script trực tiếp, không LLM, chỉ 08–18 T2–T6) + cập nhật hub/AGENTS.md, 03 §2 | ☐ sau P1b | Claude sửa, Dat khởi động runner |
 | P2 | Page properties stories qa529-* · P3 Night Pack: data = manifest cho lane author | ☐ | Claude |
