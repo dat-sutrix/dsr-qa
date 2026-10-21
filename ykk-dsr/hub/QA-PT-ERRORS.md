@@ -22,3 +22,5 @@
 **Phần lỗi do pack (QA lead tự nhận):** 15/10 thiếu field Release date; 20/10 pack ghi "isActive" trong khi giao diện là 表示フラグ; chưa hướng dẫn Move→Name; giá trị chưa tô nổi bật. Đã sửa từ pack 21/10.
 
 **Nhóm lỗi:** A. ID ≠ tên CF (2 lần, ~13 CF) · B. Nhập sai/thiếu giá trị (6) · C. Sai tên CF (1, 3 CF) · D. Sai trang (1) · E. Report (3) · F. Thao tác UE (1).
+
+**Night 21/10 (pack v3 định dạng mới): 0 lỗi data** – 2 câu hỏi do pack (nhãn 'Navigation title' = ô Breadcrumb label; field tùy chọn trỏ sang sheet) → đã sửa quy tắc pack.

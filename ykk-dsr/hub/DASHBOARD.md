@@ -34,9 +34,9 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 | P3 | TC job: Atlassian connector timeout 2 lượt liền (20:07, 21:06) → không tự thêm được ticket mới giao Dat. Nếu có ticket mới giao trong ngày 21/10: kiểm tra connector Atlassian trên claude.ai (Settings > Connectors) | — | 22/10 | — |
 | ✅ | 21/10 đã xong: tin Martin (404, ver0.4, 529 Q), daily report group, Quentin (566 → Sprint 13), Sprint 12 gán cho 657–660 + 611 | — | — | — |
 
-## 3. 🌙 QA part-time tối nay (T4 21/10) – [Night Work Pack 2026-10-21 (v3)](https://docs.google.com/document/d/1xY_ghkX8I3LqTSyziO-Ef8AU_tN3JF4aru0R29aMddo) · evidence [Evidence_20261021](https://drive.google.com/drive/folders/1JZFIibeWPO3y2gR05MFlirQb0u0dCjCq)
-~4h20: **0.** 529 (robots, navtitle/category UE, sửa block ảnh, publish lại 6 trang, publish video/search) · **1.** qa587-main đổi tên + movieId · **2.** r1–r6 + rel-a · **3.** off + rel-b · **4.** qa557-dam · **5.** catalog lõi en+ja · **6.** TD-586-01/02 ja · **7.** (nếu còn giờ) 570 manual. v1/v2 = CŨ.
-
+## 3. 🌙 QA part-time – Night 21/10 ✅ (4h, báo 23:15)
+Việc 0–6 **Pass hết** (0 lỗi data): 529 robots OFF, Breadcrumb label ja/en, block ảnh sửa, publish 6 trang 19:44, /video/search ja+en 200 · qa587-main ja/en video chạy · rel-a 5 thẻ r6→r2 · rel-b đúng 1 thẻ r1 · qa557-dam ja/en phát · catalog lõi 8 trang 200 · TD-586-01/02 tạo (02 DSR chỉ preview). Not run: 570 manual (việc 7), field tùy chọn TD-586-01 (QA-PT bổ sung 22/10 theo doc). → 7 job hold đã chuyển queue 23:25 (agent chạy đêm nay).
+Night 22/10: TD-586 en + negative, TD-587 negative, 570 manual 6 TC, retest bug nếu cần (pack 17:10).
 ## 4. 🤖 Agents
 | Lane | Hàng đợi | Hold (07:45 tự chuyển khi đủ điều kiện) |
 |---|---|---|
