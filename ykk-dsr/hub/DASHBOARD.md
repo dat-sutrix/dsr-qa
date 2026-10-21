@@ -1,3 +1,4 @@
+> 📌 Ngữ cảnh chung cho mọi session: [CONTEXT.md](CONTEXT.md)
 # YKK DSR – QA Dashboard
 
 > 🗣 **Daily standup hôm nay: [STANDUP.md](STANDUP.md)** (tự cập nhật 08:19 T2–T6)

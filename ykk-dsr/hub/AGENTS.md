@@ -1,3 +1,5 @@
+> **Claude sessions & scheduled tasks: đọc `CONTEXT.md` (cùng thư mục) TRƯỚC file này** – quy tắc đứng, IDs, baseline mới nhất. Agents VPS: theo file này.
+
 # AGENTS.md – Job protocol for VPS agents (YKK DSR QA)
 
 This file adds the **job protocol** only. Code layout, env config (`ENV=dev|stg|pro`, `envs/<env>.env`), selectors, evidence and run reports follow the **root `AGENTS.md`**. If they conflict, the job file wins, then this file, then root AGENTS.md.
