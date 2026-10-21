@@ -29,6 +29,7 @@ def keys(x,depth=0):
       if isinstance(v,(dict,list)): out.append(f"{k}{{…}}" if isinstance(v,dict) else f"{k}[{len(v)}]")
       else:
         s=str(v); s=re.sub(r'[\w.+-]+@[\w-]+\.[\w.]+','<email>',s)
+        if k.lower() in ('token','cursor','home','path_home') or k.lower().endswith('token'): s='<hidden>'
         out.append(f"{k}={s[:60]}")
     return "; ".join(out)
   if isinstance(x,list): return f"list[{len(x)}] " + (keys(x[0]) if x else "")
@@ -49,6 +50,35 @@ get "5 DSR CF jcr:content (replication props)" "/content/dam/dsr/ja/movies/stand
 get "6 DSR CF data node"    "/content/dam/dsr/ja/movies/standard/qa587-main/jcr:content/data/master.json"
 get "7 CF OpenAPI"          "/adobe/sites/cf/fragments?path=/content/dam/dsr/ja/movies/standard&limit=1"
 get "8 find page qa529-01"  "/bin/querybuilder.json?path=/content/sites/digital-showroom&type=cq:Page&nodename=qa529-01&p.limit=5&p.hits=selective&p.properties=jcr:path"
+
+# --- Discovery (v2): where do qa* CFs really live? ---
+list_paths() {  # $1 label, $2 path ; prints every path/name found in JSON (hits[].jcr:path, items[].path/name)
+  local code; code=$(curl -s -o "$TMP/b" -w '%{http_code}' -H "Cookie: login-token=$AEM_LOGIN_TOKEN" -H "Accept: application/json" "$HOST$2")
+  local found; found=$(python3 -I - "$TMP/b" <<'PY'
+import json,sys
+try: d=json.load(open(sys.argv[1]))
+except Exception: print("non-JSON"); sys.exit()
+out=[]
+for h in d.get('hits',[]) if isinstance(d,dict) else []:
+  out.append(h.get('jcr:path') or h.get('path') or str(h)[:80])
+for it in d.get('items',[]) if isinstance(d,dict) else []:
+  out.append(f"{it.get('path') or it.get('name')} (model={ (it.get('model') or {}).get('name') if isinstance(it.get('model'),dict) else it.get('model')}, status={it.get('status')})")
+print('<br>'.join(out[:40]) or 'none')
+PY
+)
+  printf '| %s | `%s` | %s | %s |\n' "$1" "$2" "$code" "${found//|//}" >> "$OUT"
+}
+list_paths "9 DAM nodes named qa587-main" "/bin/querybuilder.json?path=/content/dam&nodename=qa587-main&p.limit=20&p.hits=selective&p.properties=jcr:path"
+list_paths "10 DAM qa587* (any)" "/bin/querybuilder.json?path=/content/dam&nodename=qa587*&p.limit=40&p.hits=selective&p.properties=jcr:path"
+list_paths "11 OpenAPI dsr/ja/movies/standard" "/adobe/sites/cf/fragments?path=/content/dam/dsr/ja/movies/standard&limit=20"
+list_paths "12 OpenAPI common/ja/movies" "/adobe/sites/cf/fragments?path=/content/dam/common/ja/movies&limit=20"
+list_paths "13 page qa529-01 paths" "/bin/querybuilder.json?path=/content/sites/digital-showroom&type=cq:Page&nodename=qa529-01&p.limit=5&p.hits=selective&p.properties=jcr:path"
+FIRST=$(curl -s -H "Cookie: login-token=$AEM_LOGIN_TOKEN" "$HOST/bin/querybuilder.json?path=/content/dam&nodename=qa587-main&p.limit=1&p.hits=selective&p.properties=jcr:path" | python3 -I -c 'import json,sys;h=json.load(sys.stdin).get("hits",[]);print(h[0]["jcr:path"] if h else "")' 2>/dev/null)
+if [ -n "$FIRST" ]; then
+  get "14 first hit jcr:content (replication props)" "$FIRST/jcr:content.json"
+  get "15 first hit data/master"  "$FIRST/jcr:content/data/master.json"
+  get "16 first hit Assets API"   "/api/assets${FIRST#/content/dam}.json"
+fi
 sed -i 's/login-token=[^;" ]*/login-token=<hidden>/g' "$OUT"
 cat "$OUT"
 

@@ -4,8 +4,8 @@ Cookie age: 0h
 
 | Check | Path | HTTP | Summary |
 |---|---|---|---|
-| 1 session user | `/libs/granite/security/currentuser.json` | 200 | type=user; authorizableId_xss=<email>; authorizableId=<email>; name_xss=Agent QA; name=Agent QA; home=/home/users/ims/qa.a/Eqz-tWQsaMz4eeOkcBlT; isImpersonated=False |
-| 2 csrf token endpoint | `/libs/granite/csrf/token.json` | 200 | token=eyJleHAiOjE3OTI1Nzg1OTIsImlhdCI6MTc5MjU3Nzk5Mn0.7qxfZe5t5xmM |
+| 1 session user | `/libs/granite/security/currentuser.json` | 200 | type=user; authorizableId_xss=<email>; authorizableId=<email>; name_xss=Agent QA; name=Agent QA; home=<hidden> isImpersonated=False |
+| 2 csrf token endpoint | `/libs/granite/csrf/token.json` | 200 | token=<hidden> |
 | 3 content CF (Assets API) | `/api/assets/common/ja/movies/qa587-main.json` | 404 | non-JSON: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> <html> <head><title>404 Resource at '/api/assets/common/ja/movies/qa587-main.json' not found: No resource |
 | 4 DSR CF (Assets API) | `/api/assets/dsr/ja/movies/standard/qa587-main.json` | 404 | non-JSON: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> <html> <head><title>404 Resource at '/api/assets/dsr/ja/movies/standard/qa587-main.json' not found: No re |
 | 5 DSR CF jcr:content (replication props) | `/content/dam/dsr/ja/movies/standard/qa587-main/jcr:content.json` | 404 | non-JSON: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> <html> <head><title>404 Resource at '/content/dam/dsr/ja/movies/standard/qa587-main/jcr:content.json' not |
