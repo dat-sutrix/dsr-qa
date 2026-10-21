@@ -14,12 +14,18 @@ Owner mô hình: Claude (QA Manager). Đánh giá mỗi cuối sprint (Sprint Re
 | H6 | Duyệt: Done US, bug < 80%, chốt scope | Dat | số quyết định/ngày |
 | H7 | Vận hành: khởi động runner, dán cookie, upload file, VPS | Dat | số lần/tuần |
 
+## 1b. Look & Feel (cảm quan) → Dat review, không phải QA-PT (Dat 21/10 17:56)
+- Phần cảm quan = **look & feel** (bố cục, khoảng cách, màu, font, ảnh, cảm giác tổng thể PC/SP so với Figma). Không giao QA-PT, không đẩy hết cho UAT: **Dat "have a look" trước khi gửi khách UAT** (bước an toàn).
+- **Mỗi item ≤ 2–5 phút, không thao tác**: agent chuẩn bị sẵn 1 "L&F card": ảnh PC + SP của trang (codex) đặt cạnh frame Figma, vùng khác biệt đã khoanh, A3 Design-judge ghi tối đa 5 điểm cần nhìn (kèm % chắc chắn), 1 link trang thật. Dat chỉ chọn **OK / NG + 1 dòng ghi chú**.
+- Kênh: mục "👀 Look & Feel" trên DASHBOARD → mỗi card là 1 file `hub/lf/<US>-<date>.md` (ảnh hiển thị ngay trên GitHub/điện thoại); Dat trả lời OK/NG trong chat hoặc sheet review → 07:45/17:10 đọc: NG → bug (assignee dev, ảnh card làm evidence), OK → TC L&F Pass "reviewed by Dat".
+- Chỉ đưa card khi functional + visual tự động đã xanh (không bắt Dat nhìn trang còn lỗi). Gom theo US, tối đa ~5 card/ngày (~20 phút).
+
 ## 2. Đội agent mục tiêu (bộ não = Claude cho mọi agent đụng AEM; codex chỉ visual)
 | Agent / lane | Việc nhận | Thay H | Sprint |
 |---|---|---|---|
 | **A1 Author-data** (lane `author`, script + Claude) | CF create/patch/rename/publish theo manifest (P1) → page properties Sites + UE prop (P2) → nội dung block trang qua JCR/Sling (P3) | H1, H2, H3 | P1 S12 cuối/S13 · P2 S13 · P3 S14 |
 | **A2 Author-UI** (Playwright trên Author/UE, Claude) | Manual TC loại "thao tác Author": required/validation/dialog/picker, chỉ path `qa*` DEV | H4 (Author UI) | S13 spike → S14 |
-| **A3 Design-judge** (scheduled Claude có Figma connector + ảnh từ codex) | So screenshot PC/SP với frame Figma, chấm theo checklist, chỉ báo khác biệt có bằng chứng | H4 (cảm quan) | S13 thử → S14 |
+| **A3 Design-judge** (scheduled Claude có Figma connector + ảnh từ codex) | So screenshot PC/SP với frame Figma, khoanh khác biệt, soạn **L&F card** cho Dat (§1b) | H4 (cảm quan → Dat review 2–5 phút/item) | S13 thử → S14 |
 | **A5 Ops-watch** (Claude scheduled, hỗ trợ – không thay Dat) | Cảnh báo sớm runner/job treo, cookie sắp hết hạn, upload fail → giảm sự cố làm gián đoạn agent thay QA-PT | – | S13 |
 | **A6 Gatekeeper** (Claude, độc lập) | Kiểm độc lập kết quả agent Author/UI trước khi thay QA-PT (thay vai trò "QA-PT kiểm mẫu" ở bậc B2→B3) | – | S14 |
 | Hiện có: claude-code (functional), codex (visual) | Automation + chạy test; chuyển dần Manual → Automation/Visual | H4 | liên tục |
@@ -39,7 +45,7 @@ Owner mô hình: Claude (QA Manager). Đánh giá mỗi cuối sprint (Sprint Re
 | Baseline S12 (đo 15–21/10) | 100% người | 31% TC Manual | – | ~4h | ~100% |
 | Hết S13 | H1 B2–B3 · H2 B1–B2 · H3 B0 | Manual ≤ 20% (chuyển sang auto/visual) · A2/A3 B1 | A5 chạy | ≤ 1h | ≤ 30% |
 | Hết S14 | H1–H2 B3 · H3 B2 | Manual ≤ 10% · A2/A3 B2 | A6 kiểm thay QA-PT audit | ≤ 30 phút (audit) | ≤ 10% |
-| Hết S15 (nếu cần) | B3 toàn bộ | Manual ≈ 0 (còn lại = chấp nhận rủi ro hoặc test bởi khách/UAT) | A6 B3 | 0 (QA-PT on-call) | ~0% |
+| Hết S15 (nếu cần) | B3 toàn bộ | Manual ≈ 0 (look & feel = L&F card Dat review ≤ 5 phút/item, rồi UAT khách) | A6 B3 | 0 (QA-PT on-call) | ~0% |
 
 ## 5. Phụ thuộc cần mở khóa (ai, khi nào)
 | # | Cần gì | Từ ai | Hạn | Thay thế nếu không có |
@@ -52,7 +58,7 @@ Owner mô hình: Claude (QA Manager). Đánh giá mỗi cuối sprint (Sprint Re
 - Agent ghi sai data trên Author → guard path `qa*`, không có delete, dry-run trước, `before.json`, A6 kiểm.
 - Phụ thuộc cookie/người khởi động runner → D1 + A5.
 - STG/PRO (Sprint sau): agent **không** ghi data trên STG/PRO trừ khi Dat duyệt riêng; test STG/PRO read-only.
-- Đánh giá cảm quan không thay hoàn toàn bằng máy → chấp nhận phần còn lại cho UAT của khách, ghi rõ trong DoD.
+- Đánh giá cảm quan không thay hoàn toàn bằng máy → **Dat review L&F card (2–5 phút/item)** trước UAT khách; ghi trong DoD: "L&F reviewed by Dat".
 
 ## 7. Đo lường (cập nhật mỗi ngày bởi 07:45, tổng kết cuối sprint)
-`WORKLOAD.md` (giờ công quy đổi theo actor) + bảng KPI: QA-PT phút/đêm (theo H1–H4) · số lỗi data QA-PT · % TC chạy không cần người · (theo dõi, không phải mục tiêu) số việc Dat/ngày · lead time ticket giao → Done DEV · số bug giả.
+`WORKLOAD.md` (giờ công quy đổi theo actor) + bảng KPI: QA-PT phút/đêm (theo H1–H4) · số lỗi data QA-PT · % TC chạy không cần người · (theo dõi, không phải mục tiêu) số việc Dat/ngày · thời gian L&F review/item (đích ≤ 5 phút) · lead time ticket giao → Done DEV · số bug giả.
