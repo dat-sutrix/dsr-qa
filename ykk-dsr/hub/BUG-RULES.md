@@ -3,7 +3,7 @@
 Applies to every scheduled run (07:45 morning, 17:10 evening) and every session.
 
 1. **Confidence ≥ 80% → create the Jira Bug yourself** (no Dat approval needed):
-   project DSR · type Bug · label `qa-ai` · assignee = dev of the US (Martin = accountId `712020:fc54319c-c8aa-4a0d-a4fe-dc8ec641be79` for 552/529/586/587/647/585) · link "relates to" the US · English: Summary `[DSR-<US>] …`, Env, Preconditions, Steps, Expected (baseline ref), Actual (raw values), Evidence (project-relative paths / Drive links), Affected TCs.
+   project DSR · type Bug · label `qa-ai` · **Sprint = sprint đang active** (Martin 21/10; Sprint 12 = id 3275, field `customfield_10020`; sprint mới → tra id từ US cha) · assignee = dev of the US (Martin = accountId `712020:fc54319c-c8aa-4a0d-a4fe-dc8ec641be79` for 552/529/586/587/647/585) · link "relates to" the US · English: Summary `[DSR-<US>] …`, Env, Preconditions, Steps, Expected (baseline ref), Actual (raw values), Evidence (project-relative paths / Drive links), Affected TCs.
    Check for duplicates first (JQL `project = DSR AND type = Bug AND statusCategory != Done AND text ~ "<key words>"`). Never change priority of dev tickets; severity → Priority field of the new bug only.
    After creating: add row to BUGS.md "Bug đang mở" with Việc kế tiếp.
 2. **Confidence < 80% → do NOT create.** Add a row to DASHBOARD.md section **"🐞 Bug < 80% – Dat chốt"**: draft ID · 1-line title · % · what is missing to reach 80% · suggested decision. Standup copies this section.
