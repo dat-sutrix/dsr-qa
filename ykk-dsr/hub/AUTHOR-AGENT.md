@@ -4,6 +4,8 @@
 > Mục tiêu: chuyển phần **nhập liệu có quy tắc** của QA-PT sang máy. 14/14 lỗi trong `QA-PT-ERRORS.md` thuộc nhóm A–F, trong đó A/B/C (ID ≠ tên CF, sai/thiếu giá trị, sai tên CF) chặn được 100% bằng kiểm tra trước khi ghi.
 
 ## 1. Quyết định chính
+> **D0 (Dat 21/10 17:34): "bộ não" của Agent Author = Claude (Claude Code), KHÔNG dùng OpenAI/Codex.** Mọi job viết/sửa `tools/author`, resolve manifest, xử lý `needs-input`, verify có quyền đọc Author → chỉ lane `claude-code` hoặc lane `author` (script + Claude). Lane `codex` không bao giờ nhận job author, không được đọc cookie `~/.dsr-secrets/`.
+
 | # | Quyết định | Lý do (1 dòng) |
 |---|---|---|
 | D1 | **Không dùng LLM để nhập liệu.** Lane `author` chạy script tất định `tools/author/apply` đọc **manifest** trong job | Lỗi QA-PT là lỗi diễn giải; LLM click UI cũng diễn giải → cùng loại lỗi + khó audit |

@@ -80,5 +80,6 @@ Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – m�
 | P1b | Ghi thử 1 CF `qaagent-probe` (common/en/movies) giờ 08–18 với `AUTHOR_WRITE_ENABLED=1` → verify L0–L3 | ☐ sau P1a′ | Claude + Dat bật cờ |
 | P1c | Thêm lane `author` vào `runner.sh` (clone `~/dsr-qa-author`, gọi script trực tiếp, không LLM, chỉ 08–18 T2–T6) + cập nhật hub/AGENTS.md, 03 §2 | ☐ sau P1b | Claude sửa, Dat khởi động runner |
 | P2 | Page properties stories qa529-* · P3 Night Pack: data = manifest cho lane author | ☐ | Claude |
+- **Bộ não Agent Author = Claude (Claude Code), không dùng OpenAI/Codex** (Dat 21/10). Job author/verify-Author chỉ ở lane `claude-code`/`author`; `codex` không nhận job author, không đọc `~/.dsr-secrets/`.
 - Quy tắc đứng: agent test (`claude-code`, `codex`) vẫn **read-only** AEM; chỉ lane `author` được ghi, trong phạm vi §2. Cookie hết hạn → Dat dán lại (hướng dẫn: AUTHOR-AGENT §2b; terminal phải là `bash`, user `qa`). Không dán cookie vào chat/Jira.
 - Manifest đặt ở `hub/author/manifests/` (mẫu `TD-587-01.yaml`).
