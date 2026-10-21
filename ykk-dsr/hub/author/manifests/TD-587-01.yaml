@@ -1,0 +1,21 @@
+# TD-587-01 – qa587-main (YouTube) – source: PLAN-sprint12.md Night 21/10 task 1, BL-OVL-1
+# Field names marked (?) must be confirmed from the live model (author/models.md).
+id: TD-587-01
+us: DSR-587
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en, ja]
+    path: /content/dam/common/{lang}/movies/qa587-main
+    fields:
+      movieId: qa587-main          # = node name (BL-OVL-1)
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/movies/standard/qa587-main
+    fields:
+      isActive: true               # 表示フラグ (?) field name
+      movie: ref(/content/dam/common/{lang}/movies/qa587-main)   # (?) field name
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/video/qa587-main"]

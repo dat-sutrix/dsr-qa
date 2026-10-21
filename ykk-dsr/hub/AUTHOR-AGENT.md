@@ -132,12 +132,16 @@ Chỉ khi L0–L2 pass cho mọi item → `status: done`, mở khóa `unblocks`.
 |---|---|---|---|
 | P0a | ✅ Account: không Cloud Manager → U1. Dat dán cookie lên VPS + chạy `tools/author/probe.sh` | Dat | `probe.md` có HTTP 200 cho check 1–6 |
 | P0b | Claude đọc probe → chốt endpoint (§9); đo tuổi thọ cookie (chạy lại probe sau 8h/24h) | Claude | Endpoint + chu kỳ refresh cookie |
-| P1 | Viết `tools/author/apply` (lint, snapshot, CF create/patch/move, replicate, verify) + dry-run trên data qa587 hiện có → 1 job apply nhỏ (1 CF ja/en) | Agent + Claude review | L0–L3 pass, writes.log đúng |
+| P1a | JOB-20261021-08: viết `tools/author` (models, lint, verify, apply bị khóa) + chạy read-only trên TD-587-01 | Agent claude-code | Lint/verify bắt đúng lỗi đã biết; dry-run plan hợp lý |
+| P1b | Claude review → bật ghi thử 1 CF `qaagent-probe` (en) trong giờ 08–18 → lane `author` trong runner | Claude + Dat (khởi động runner) | L0–L3 pass |
+| P1 (cũ) | Viết `tools/author/apply` (lint, snapshot, CF create/patch/move, replicate, verify) + dry-run trên data qa587 hiện có → 1 job apply nhỏ (1 CF ja/en) | Agent + Claude review | L0–L3 pass, writes.log đúng |
 | P2 | Page properties (529 stories qa*) | Agent | Như trên |
 | P3 | Night Pack mới: phần data = manifest cho lane author; QA-PT chỉ manual TC | Claude web | 3 đêm liên tiếp không có lỗi nhóm A–C |
 
-## 9. Điểm phải xác minh ở spike (chưa coi là sự thật)
-- Endpoint ghi CF ưu tiên: CF OpenAPI (`/adobe/sites/cf/...`) hay Assets HTTP API (`/api/assets/...`) trên môi trường này.
-- Replicate Preview qua `/bin/replicate` với agent `preview` có kích hoạt cơ chế tự sinh trang (.page) giống thao tác UI không.
-- UE Page properties (navtitle, category) lưu ở `jcr:content` dạng property thường → ghi được bằng Sling POST.
-- (Mức T) Technical account có được cấp quyền replicate chỉ trên `qa*` bằng ACL không. (Mức L) Local token gọi được API ghi CF + replicate.
+## 9. Kết quả probe 21/10 (đã xác minh, chỉ GET)
+- Cookie U1 dùng được: currentuser 200 ("Agent QA"), CSRF 200.
+- Đọc CF: **CF OpenAPI** `/adobe/sites/cf/fragments?path=…` (path, model, status) · JCR `<cf>/jcr:content/data/master.json` (giá trị field) · Assets HTTP API `/api/assets/<path bỏ /content/dam>.json` – cả 3 trả 200.
+- Replication: `<cf>/jcr:content.json` có `cq:lastReplicated_preview|_publish` + `cq:lastReplicationAction_preview|_publish` → L2 kiểm được.
+- Model: content CF movie = `DM_movie`, DSR CF movie = `DM_movie_related`. Trang article: `/content/sites/digital-showroom/master/{lang}/library/article/stories/qa529-*`.
+- Chưa xác minh (cần ghi thật, P1b): tạo/sửa CF qua OpenAPI (ETag), rename, replicate Preview/Publish qua API có kích hoạt trang tự sinh.
+- Probe thấy đúng các lỗi data đã biết (ja còn `qa-587-main`, en thiếu DSR CF `qa587-main`, movieId = "QA587 main1") → `verify` dùng được ngay để **kiểm data QA-PT** mỗi sáng, trước khi agent test chạy.
