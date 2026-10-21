@@ -37,7 +37,7 @@
 - Cảnh báo trước tác vụ nặng (ngoại lệ: TC job, scale theo velocity). Không đổi priority ticket dev. Không xóa file Drive nếu không được yêu cầu. Không ghi password, không PII. Chỉ dùng Jira/Drive Sutrix.
 - Chat với Dat tiếng Việt; TC, bug, tin cho dev/PM tiếng Anh.
 
-- **Mục tiêu chiến lược (Dat 21/10): human → 0% sau 2–3 sprint (S13–S15)**, giữ QA-PT làm lưới an toàn, chuyển việc theo 4 bậc (Human → Shadow → Agent+audit → Agent only), được tạo thêm agent. Kế hoạch: `ZERO-HUMAN-ROADMAP.md`; đo: `WORKLOAD.md`; tổng kết mỗi cuối sprint (Sprint Review QA).
+- **Mục tiêu chiến lược (Dat 21/10): QA-PT → 0% sau 2–3 sprint (S13–S15); Dat giữ nguyên vai trò**, giữ QA-PT làm lưới an toàn, chuyển việc theo 4 bậc (Human → Shadow → Agent+audit → Agent only), được tạo thêm agent. Kế hoạch: `ZERO-HUMAN-ROADMAP.md`; đo: `WORKLOAD.md`; tổng kết mỗi cuối sprint (Sprint Review QA).
 
 ## 4. IDs
 | Thứ | ID |

@@ -141,7 +141,7 @@ Nguyên tắc: không chờ – TC bị env/ticket khác chặn ghi ⛔ Blocked 
 
 
 ## Sprint 12 Review QA – 27/10 (thảo luận chiến lược Sprint 13)
-Scheduled task 27/10 09:40 tổng hợp `SPRINT12-REVIEW.md`: kết quả ticket (Done DEV / trễ / lý do), bug (tạo, đóng, giả), WORKLOAD (giờ công theo actor), KPI human (QA-PT phút/đêm theo H1–H4, lỗi data QA-PT, % TC không cần người, việc Dat/ngày), tiến độ Agent Author, đề xuất Sprint 13 theo `ZERO-HUMAN-ROADMAP.md` (mốc 'Hết S13').
+Scheduled task 27/10 09:40 tổng hợp `SPRINT12-REVIEW.md`: kết quả ticket (Done DEV / trễ / lý do), bug (tạo, đóng, giả), WORKLOAD (giờ công theo actor), KPI QA-PT (phút/đêm theo H1–H4, lỗi data, % TC không cần QA-PT; mục tiêu 0% QA-PT, Dat giữ vai trò), tiến độ Agent Author, đề xuất Sprint 13 theo `ZERO-HUMAN-ROADMAP.md` (mốc 'Hết S13').
 
 ## Quy tắc Night Pack (rút từ đêm 15/10 – task 17:10 phải áp dụng)
 - **Ước lượng ×1.5 cho việc tạo trang/CF trên Author** (đêm 19/10: dự kiến 2h05, thực tế 3h30).
