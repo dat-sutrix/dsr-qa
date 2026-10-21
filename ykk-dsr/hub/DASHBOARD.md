@@ -5,7 +5,7 @@
 > Cập nhật: 2026-10-21 07:45 (UTC+7, [schedule] morning) · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
 > Lượt tự động 07:45 / 17:10 cập nhật file này. Giữ gọn: chỉ trạng thái hiện tại, lịch sử nằm trong git log và us/*.md.
 
-## 1. Ticket đang giao Dat: 7 mở (Jira 20/10 17:10) – 566 + 653 tính là 1 việc · ✅ Done 20/10 (Jira xác nhận): DSR-552, DSR-648, DSR-651
+## 1. Ticket đang giao Dat: 10 mở (Jira 21/10 13:40) – 566 + 653 tính là 1 việc · ✅ Done 20/10 (Jira xác nhận): DSR-552, DSR-648, DSR-651
 | Ticket | Trạng thái | Kế hoạch (khi nào) | Blocked / đang đợi ai | Done DEV đích |
 |---|---|---|---|---|
 | [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | e-book ✅; 016/017 ✅ | video: seed tối 20/10 → agent 21/10 · catalog: merge ✅ 12:45 → seed lại tối 20–21/10 → agent 22/10 | Martin (catalog merge) · Quentin DSR-611 (mặc định) | 22/10 |
@@ -15,8 +15,10 @@
 | 🆕 [DSR-587](https://sutrix.atlassian.net/browse/DSR-587) 動画詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, automation scaffold (IDLE-06) | positive: seed TD-587 tối 20/10 → JOB-20261020-02 21/10 · negative: tối 20–21/10 → agent 22/10 | Không | **22/10** |
 | 🆕 [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) 製品詳細 Overlay (giao Dat 20/10) | 19 TC sẵn, scaffold (IDLE-05); URL /products/ hay /product/ (JOB-05 kiểm) | Product data: Martin báo **đã sửa 13:50 JST** (incident DSR-585 CR, chỉ kiểm tĩnh) → JOB-20261020-07 xác minh trên DEV · TC/TD 586 re-baseline theo model mới (TC job tối nay) → TD-586 tối 21/10 → agent 22/10 | **Martin** (fix query/FE) · 項目fix版 (Quentin) | 22/10 (fallback 23/10) |
 | 🆕 [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) bug video liên quan (giao Dat retest) | Martin fix + merge 20/10 | seed qa587-r1…r6/off/rel-a/rel-b tối 20/10 → JOB-20261019-03 21/10 → đóng bug | Không | 21/10 |
+| 🆕 [DSR-654](https://sutrix.atlassian.net/browse/DSR-654) CATALOG Overlay (sub-task 586, giao Dat 20/10) | [Dev] In Testing · chưa TC riêng | Gộp vào TC 557/570 catalog + DSR-190 TD (trang `/{lang}/library/catalog/{id}`) → chạy cùng JOB-20261020-04 khi hết 404 | overlay 404 (表示フラグ) | 22/10 |
+| 🆕 [DSR-538](https://sutrix.atlassian.net/browse/DSR-538) bug Related Content link → publish domain (retest) | [Dev] In Testing | Retest trên qa587-main (relatedArticles) trong JOB-20261020-02 khi hết 404 → Pass thì đóng | overlay 404 | 22/10 |
 
-Theo dõi (không giao Dat): DSR-590 環境配慮型製品 (C14 4 ✅ / 2 ❌ data; C15 chờ Ngọc) · DSR-457 (R1 Ngọc, 61015 Kohei – mặc định 20/10) · DSR-433 (TC gửi mail ⛔ SendGrid).
+Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohei) → mục OK cũ + #13 kiểm lại trong DSR-586** · DSR-503 Dismissed · DSR-585 → [STG] In Testing (Quentin; Sprint 12 chỉ DEV) · ⚠ **DSR-638 (Mayuka, In Progress): chuyển trang test-space ja sang URL chính thức** (list-catalog → /ja/library/catalog, video-list → /ja/library/video/search, product-list → /ja/product/…/product-index, article-list → /ja/library/article) – đường dẫn cũ sẽ 404 → automation 557/570/583/590 vỡ; IDLE-22 theo dõi · DSR-433 (⛔ SendGrid).
 
 > ⚠ **T3 20/10:** overlay đã merge, Martin dọn folder → một số CF test bị xóa → tạo lại bằng TD-587 (PLAN "Night Pack 20/10"). **Product:** hỏng 12:12–13:50 JST do CR DSR-585 đổi model (−30/+9 field), Martin đã sửa – QA đang xác minh (JOB-20261020-07); field mới chưa hiển thị (chưa có design); catalog overlay đang được merge (Dat OK).
 
