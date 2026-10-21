@@ -146,6 +146,7 @@ Scheduled task 27/10 09:40 tổng hợp `SPRINT12-REVIEW.md`: kết quả ticket
 ## Quy tắc Night Pack (rút từ đêm 15/10 – task 17:10 phải áp dụng)
 - **Ước lượng ×1.5 cho việc tạo trang/CF trên Author** (đêm 19/10: dự kiến 2h05, thực tế 3h30).
 - **Tổng sau nhân ~4h, không ít hơn** (Dat 20–21/10, kéo tiến độ; thay quy tắc ≤ 3h cũ). Có việc dự phòng cuối pack.
+- **Không trỏ sang file khác ("theo sheet TestData…")**: mọi giá trị (kể cả field tùy chọn) ghi thẳng trong pack – QA-PT không có/không tìm được sheet (21/10 22:06). Tên field đúng nhãn trên màn hình (vd UE: Navigation title = ô **Breadcrumb label**).
 - **Định dạng pack (Dat 21/10 – lỗi QA-PT ảnh hưởng cả ngày + dev):** khung đỏ "5 quy tắc bắt buộc" đầu pack; **mọi giá trị phải nhập chính xác (tên CF, ID, đường dẫn, mã TC) tô vàng + đậm + font mono**; việc cấm / sai thường gặp tô đỏ; ô ON/OFF tô xanh; checklist "tự kiểm 30 giây trước Publish" (tên CF, ID = tên CF, 表示フラグ ON, trỏ đúng CF cùng tên cùng ngôn ngữ); bảng giá trị theo từng CF thay vì đoạn văn; ghi cả giá trị SAI hiện tại nếu đang sửa; mỗi việc có TC ID report và tên ảnh = TC ID. Mẫu: Night Work Pack 2026-10-21 (Drive 1ei7k_ENSM8aXBgDjXkAgxpQmhsKnk4d6_3ezLvJxul4).
 - Tạo CF: liệt kê **mọi field bắt buộc (\*)** với giá trị chính xác, đặc biệt **動画ID = tên CF** (DM_movie) và **Release date** (catalog/movie). Đêm 15/10 thiếu → qa501 sai ID, TD-190-03/04 không publish được.
 - Bước gắn CF vào trang / sửa trang phải có 1 dòng báo cáo riêng + link .aem.live kiểm tra (đêm 15/10 bỏ sót P1b dòng 6).
