@@ -1,0 +1,2034 @@
+{
+  "started": "2026-10-21T08:22:22.279Z",
+  "captures": [
+    {
+      "id": "catalog-en-page-1440-new",
+      "name": "catalog",
+      "lang": "en",
+      "host": "page",
+      "width": 1440,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog",
+      "raw": {
+        "title": "catalog",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\ncatalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-16T01:00:04.531Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-14T02:55:46.494Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSN4hV00Sv5V7iHMTNjZx3XDbuaIMRAM5GohyuJd309-34WtLQNg0bj30v-bOHUAb50"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 4525,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 3788.546875,
+              "top": 230,
+              "right": 1340,
+              "bottom": 4018.546875,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-page-1440-new.png",
+      "durationMs": 9283
+    },
+    {
+      "id": "catalog-en-page-1440-old",
+      "name": "catalog",
+      "lang": "en",
+      "host": "page",
+      "width": 1440,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/list-catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/list-catalog",
+      "raw": {
+        "title": "list-catalog",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\ntest-space\nlist-catalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/list-catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-15T12:16:22.177Z"
+          },
+          {
+            "name": "showbreadcrumb",
+            "content": "true"
+          },
+          {
+            "name": "showfooter",
+            "content": "true"
+          },
+          {
+            "name": "showheader",
+            "content": "true"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-15T12:16:01.853Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMaNQPV34yB1Tfz-MLFwrVW_fsO0r3TPRX1yhsDhh292e4AeyBV6VVNzxEoICFketm5fkMsAQs3yRw5uh1Ba125"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 4525,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 3788.546875,
+              "top": 230,
+              "right": 1340,
+              "bottom": 4018.546875,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-page-1440-old.png",
+      "durationMs": 4591
+    },
+    {
+      "id": "catalog-en-page-375-new",
+      "name": "catalog",
+      "lang": "en",
+      "host": "page",
+      "width": 375,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog",
+      "raw": {
+        "title": "catalog",
+        "text": "HOME\nlibrary\ncatalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-16T01:00:04.531Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-14T02:55:46.494Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSN4hV00Sv5V7iHMTNjZx3XDbuaIMRAM5GohyuJd309-34WtLQNg0bj30v-bOHUAb50"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 8854,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 8082.046875,
+              "top": 146,
+              "right": 351,
+              "bottom": 8228.046875,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-page-375-new.png",
+      "durationMs": 7716
+    },
+    {
+      "id": "catalog-en-page-375-old",
+      "name": "catalog",
+      "lang": "en",
+      "host": "page",
+      "width": 375,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/list-catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/list-catalog",
+      "raw": {
+        "title": "list-catalog",
+        "text": "HOME\ntest-space\nlist-catalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/list-catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-15T12:16:22.177Z"
+          },
+          {
+            "name": "showbreadcrumb",
+            "content": "true"
+          },
+          {
+            "name": "showfooter",
+            "content": "true"
+          },
+          {
+            "name": "showheader",
+            "content": "true"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-15T12:16:01.853Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMaNQPV34yB1Tfz-MLFwrVW_fsO0r3TPRX1yhsDhh292e4AeyBV6VVNzxEoICFketm5fkMsAQs3yRw5uh1Ba125"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 8854,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 8082.046875,
+              "top": 146,
+              "right": 351,
+              "bottom": 8228.046875,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-page-375-old.png",
+      "durationMs": 5116
+    },
+    {
+      "id": "catalog-en-live-1440-new",
+      "name": "catalog",
+      "lang": "en",
+      "host": "live",
+      "width": 1440,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "raw": {
+        "title": "catalog",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\ncatalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-16T01:00:04.531Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-14T02:55:46.494Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSN4hV00Sv5V7iHMTNjZx3XDbuaIMRAM5GohyuJd309-34WtLQNg0bj30v-bOHUAb50"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 4525,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 3788.546875,
+              "top": 230,
+              "right": 1340,
+              "bottom": 4018.546875,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-live-1440-new.png",
+      "durationMs": 9826
+    },
+    {
+      "id": "catalog-en-live-1440-old",
+      "name": "catalog",
+      "lang": "en",
+      "host": "live",
+      "width": 1440,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "raw": {
+        "title": "list-catalog",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\ntest-space\nlist-catalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/list-catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-15T12:16:22.177Z"
+          },
+          {
+            "name": "showbreadcrumb",
+            "content": "true"
+          },
+          {
+            "name": "showfooter",
+            "content": "true"
+          },
+          {
+            "name": "showheader",
+            "content": "true"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-15T12:16:01.853Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMaNQPV34yB1Tfz-MLFwrVW_fsO0r3TPRX1yhsDhh292e4AeyBV6VVNzxEoICFketm5fkMsAQs3yRw5uh1Ba125"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 4525,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 3788.546875,
+              "top": 230,
+              "right": 1340,
+              "bottom": 4018.546875,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-live-1440-old.png",
+      "durationMs": 5301
+    },
+    {
+      "id": "catalog-en-live-375-new",
+      "name": "catalog",
+      "lang": "en",
+      "host": "live",
+      "width": 375,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "raw": {
+        "title": "catalog",
+        "text": "HOME\nlibrary\ncatalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-16T01:00:04.531Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-14T02:55:46.494Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSN4hV00Sv5V7iHMTNjZx3XDbuaIMRAM5GohyuJd309-34WtLQNg0bj30v-bOHUAb50"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 8854,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 8082.046875,
+              "top": 146,
+              "right": 351,
+              "bottom": 8228.046875,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-live-375-new.png",
+      "durationMs": 9920
+    },
+    {
+      "id": "catalog-en-live-375-old",
+      "name": "catalog",
+      "lang": "en",
+      "host": "live",
+      "width": 375,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+      "raw": {
+        "title": "list-catalog",
+        "text": "HOME\ntest-space\nlist-catalog\nCLEAR\nALL\naluminium\nconcealing\ncotton\ndecorative\nmagnet\nPick up\nNEW\nQA190 NEW 0\n2026.10.15\nPDF\nNEW\nQA190 BOTH\n2026.10.14\nPDF\nNEW\nqa190-cat-noupd\n2026.10.14\nPDF\naluminium\ncatalog 02\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nカタログ 02\n2026.09.03\nPDF\nqa190-cat-pdf\n2026.09.03\nPDF\ncatalog 02\n2026.09.03\nPDF\nconcealing\nカタログ 01\n2026.09.03\ne-book\ncatalog 01\n2026.09.03\ne-book\nQA190 NEW 10\n2026.10.06\nPDF\nQA190 NEW 11\n2026.10.05\nPDF\nQA190 PDF catalog\n2026.09.15\nPDF\nQA190 e-book\n2026.09.15\ne-book\nQA190 e-book form\n2026.09.15\nPDF\nQA190 PDF form required\n2026.09.15\nPDF\nUPDATE\nQA190 UPD 0\n2026.09.15\nPDF\nQA190 UPD 10\n2026.09.15\nPDF\nQA190 UPD 11\n2026.09.15\nPDF\ncatalog 01\n2026.09.03\nPDF\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/en/test-space/list-catalog"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "list-catalog"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-15T12:16:22.177Z"
+          },
+          {
+            "name": "showbreadcrumb",
+            "content": "true"
+          },
+          {
+            "name": "showfooter",
+            "content": "true"
+          },
+          {
+            "name": "showheader",
+            "content": "true"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-15T12:16:01.853Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMaNQPV34yB1Tfz-MLFwrVW_fsO0r3TPRX1yhsDhh292e4AeyBV6VVNzxEoICFketm5fkMsAQs3yRw5uh1Ba125"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 8854,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 8082.046875,
+              "top": 146,
+              "right": 351,
+              "bottom": 8228.046875,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/catalog-en-live-375-old.png",
+      "durationMs": 5572
+    },
+    {
+      "id": "video-ja-page-1440-new",
+      "name": "video",
+      "lang": "ja",
+      "host": "page",
+      "width": 1440,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+      "raw": {
+        "title": "動画 検索・一覧",
+        "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\nライブラリー\n動画 検索・一覧\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA557 DAM movie\nQA587 line1 QA587 line2\n長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\n動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文\n動画タイトル\n動画の説明文\nDM_movie_テスト名\nDM_movie_テスト説明文\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "動画 検索・一覧"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/library/video/search"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "動画 検索・一覧"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-13T04:38:48.484Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-13T04:37:32.793Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSNlpSP4_Ik1T2-_FihnfFVFk8vmUZ8F_lQZBdQSHPTPF9TE8dSqK-y_Wf6_zlyVkVw"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1615,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 879.390625,
+              "top": 230,
+              "right": 1340,
+              "bottom": 1109.390625,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/video-ja-page-1440-new.png",
+      "durationMs": 6458
+    },
+    {
+      "id": "video-ja-page-1440-old",
+      "name": "video",
+      "lang": "ja",
+      "host": "page",
+      "width": 1440,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/video-list",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/video-list",
+      "raw": {
+        "title": "video-list",
+        "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\ntest space\nvideo-list\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA557 DAM movie\nQA587 line1 QA587 line2\n長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\n動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文\n動画タイトル\n動画の説明文\nDM_movie_テスト名\nDM_movie_テスト説明文\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "video-list"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/ja/test-space/video-list"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "video-list"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-05T07:41:26.690Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-09-15T01:47:41.216Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMAxM8ScPNbcvIRtPkPv3QfV_YIp-fEP3R5knPP2uvvWgRugRg7g8Y6OENvUh4y99G8sYt1IOqZCBh329ze_FNE"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1615,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 879.390625,
+              "top": 230,
+              "right": 1340,
+              "bottom": 1109.390625,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/video-ja-page-1440-old.png",
+      "durationMs": 4474
+    },
+    {
+      "id": "video-ja-page-375-new",
+      "name": "video",
+      "lang": "ja",
+      "host": "page",
+      "width": 375,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+      "raw": {
+        "title": "動画 検索・一覧",
+        "text": "HOME\nライブラリー\n動画 検索・一覧\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA557 DAM movie\nQA587 line1 QA587 line2\n長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\n動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文\n動画タイトル\n動画の説明文\nDM_movie_テスト名\nDM_movie_テスト説明文\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "動画 検索・一覧"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/library/video/search"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "動画 検索・一覧"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-13T04:38:48.484Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-13T04:37:32.793Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSNlpSP4_Ik1T2-_FihnfFVFk8vmUZ8F_lQZBdQSHPTPF9TE8dSqK-y_Wf6_zlyVkVw"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 2519,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 1746.828125,
+              "top": 146,
+              "right": 351,
+              "bottom": 1892.828125,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/video-ja-page-375-new.png",
+      "durationMs": 4522
+    },
+    {
+      "id": "video-ja-page-375-old",
+      "name": "video",
+      "lang": "ja",
+      "host": "page",
+      "width": 375,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/video-list",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/video-list",
+      "raw": {
+        "title": "video-list",
+        "text": "HOME\ntest space\nvideo-list\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA557 DAM movie\nQA587 line1 QA587 line2\n長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\n動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文\n動画タイトル\n動画の説明文\nDM_movie_テスト名\nDM_movie_テスト説明文\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "video-list"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/ja/test-space/video-list"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "video-list"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-05T07:41:26.690Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-09-15T01:47:41.216Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMAxM8ScPNbcvIRtPkPv3QfV_YIp-fEP3R5knPP2uvvWgRugRg7g8Y6OENvUh4y99G8sYt1IOqZCBh329ze_FNE"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 2519,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 1746.828125,
+              "top": 146,
+              "right": 351,
+              "bottom": 1892.828125,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/video-ja-page-375-old.png",
+      "durationMs": 3901
+    },
+    {
+      "id": "video-en-page-1440-new",
+      "name": "video",
+      "lang": "en",
+      "host": "page",
+      "width": 1440,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+      "raw": {
+        "title": "search",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\nsearch\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nvideo title main a\nVideo description main a\nvideo title main b\nVideo description main b\nmovie tile bad\nmovie description\ntest title with long character test title with long character test title with long character test title with long character test title with long character\nMovie description Movie description Movie description Movie description Movie description\nmovie tile noid\nmovie description\nmovierel6\nmovie description rel6\nQA587 related 6\nQA587 related 6 des\nQA587 related 6\nQA587 related 6 des\nQA587 related 4\nQA587 related 4 des\nQA587 related 3\nQA587 related 3 des\nQA587 related 2\nQA587 related 2 des\nPrevious\n1 / 2\nNext\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "search"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/video/search"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "search"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-05T23:54:03.055Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-05T23:53:56.764Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMOpcFZ0-CTbMZyi0Bv7tzbk8vmUZ8F_lQZBdQSHPTPF9TE8dSqK-y_Wf6_zlyVkVw"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 2353,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 1616.984375,
+              "top": 230,
+              "right": 1340,
+              "bottom": 1846.984375,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/video-en-page-1440-new.png",
+      "durationMs": 6440
+    },
+    {
+      "id": "video-en-page-1440-old",
+      "name": "video",
+      "lang": "en",
+      "host": "page",
+      "width": 1440,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/video-list",
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/video-list",
+      "raw": {
+        "title": "Page not found",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\n404\nPage Not Found\n\nGo home\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "height": 1442,
+        "blocks": []
+      },
+      "screenshot": "baselines/video-en-page-1440-old.png",
+      "durationMs": 3348
+    },
+    {
+      "id": "video-en-page-375-new",
+      "name": "video",
+      "lang": "en",
+      "host": "page",
+      "width": 375,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+      "raw": {
+        "title": "search",
+        "text": "HOME\nlibrary\nsearch\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nvideo title main a\nVideo description main a\nvideo title main b\nVideo description main b\nmovie tile bad\nmovie description\ntest title with long character test title with long character test title with long character test title with long character test title with long character\nMovie description Movie description Movie description Movie description Movie description\nmovie tile noid\nmovie description\nmovierel6\nmovie description rel6\nQA587 related 6\nQA587 related 6 des\nQA587 related 6\nQA587 related 6 des\nQA587 related 4\nQA587 related 4 des\nQA587 related 3\nQA587 related 3 des\nQA587 related 2\nQA587 related 2 des\nPrevious\n1 / 2\nNext\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "search"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/video/search"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "search"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-05T23:54:03.055Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-05T23:53:56.764Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMOpcFZ0-CTbMZyi0Bv7tzbk8vmUZ8F_lQZBdQSHPTPF9TE8dSqK-y_Wf6_zlyVkVw"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 4653,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 3880.671875,
+              "top": 146,
+              "right": 351,
+              "bottom": 4026.671875,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/video-en-page-375-new.png",
+      "durationMs": 5938
+    },
+    {
+      "id": "video-en-page-375-old",
+      "name": "video",
+      "lang": "en",
+      "host": "page",
+      "width": 375,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/video-list",
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/video-list",
+      "raw": {
+        "title": "Page not found",
+        "text": "404\nPage Not Found\n\nGo home\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "height": 1494,
+        "blocks": []
+      },
+      "screenshot": "baselines/video-en-page-375-old.png",
+      "durationMs": 2742
+    },
+    {
+      "id": "product-ja-page-1440-new",
+      "name": "product",
+      "lang": "ja",
+      "host": "page",
+      "width": 1440,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/product/performance/sustainable/product-index",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/product/performance/sustainable/product-index",
+      "raw": {
+        "title": "product_index",
+        "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\nproduct\nproduct_index\nADVANCEN® for ISOFIX\nItem Code : productCode2223323\nホーススリーブ\nItem Code : ABC-123\nQUICKFIT®\nItem Code : Z15-1\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "product_index"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/product/performance/sustainable/product-index"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "product_index"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-06T00:14:04.920Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-05T23:46:40.517Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMNqJ0f5lvx2PzYP_wqwuDfYFP6HXQ6QWm1dWV0HysqbvhrWIaOl2zDOJE6b-SYBKLVCxf2BFej1XspBOEDsJoWULM0mqxjby52q_etrHk3ww"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1483,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 747,
+              "top": 230,
+              "right": 1340,
+              "bottom": 977,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/product-ja-page-1440-new.png",
+      "durationMs": 6234
+    },
+    {
+      "id": "product-ja-page-1440-old",
+      "name": "product",
+      "lang": "ja",
+      "host": "page",
+      "width": 1440,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/product-list",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/product-list",
+      "raw": {
+        "title": "product-list",
+        "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\ntest space\nproduct-list\nADVANCEN® for ISOFIX\nItem Code : productCode2223323\nホーススリーブ\nItem Code : ABC-123\nQUICKFIT®\nItem Code : Z15-1\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "product-list"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/ja/test-space/product-list"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "product-list"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-19T02:28:55.717Z"
+          },
+          {
+            "name": "showbreadcrumb",
+            "content": "true"
+          },
+          {
+            "name": "showfooter",
+            "content": "true"
+          },
+          {
+            "name": "showheader",
+            "content": "true"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-19T02:28:43.394Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMAxM8ScPNbcvIRtPkPv3QfQ3ZKyom8FTeOdbA1JpNQuP_oqqMptDzoBg1p8--uP5e5fkMsAQs3yRw5uh1Ba125"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1483,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 747,
+              "top": 230,
+              "right": 1340,
+              "bottom": 977,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/product-ja-page-1440-old.png",
+      "durationMs": 4238
+    },
+    {
+      "id": "product-ja-page-375-new",
+      "name": "product",
+      "lang": "ja",
+      "host": "page",
+      "width": 375,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/product/performance/sustainable/product-index",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/product/performance/sustainable/product-index",
+      "raw": {
+        "title": "product_index",
+        "text": "HOME\nproduct\nproduct_index\nADVANCEN® for ISOFIX\nItem Code : productCode2223323\nホーススリーブ\nItem Code : ABC-123\nQUICKFIT®\nItem Code : Z15-1\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "product_index"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/product/performance/sustainable/product-index"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "product_index"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-06T00:14:04.920Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-05T23:46:40.517Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMNqJ0f5lvx2PzYP_wqwuDfYFP6HXQ6QWm1dWV0HysqbvhrWIaOl2zDOJE6b-SYBKLVCxf2BFej1XspBOEDsJoWULM0mqxjby52q_etrHk3ww"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1494,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 435,
+              "top": 146,
+              "right": 351,
+              "bottom": 581,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/product-ja-page-375-new.png",
+      "durationMs": 4723
+    },
+    {
+      "id": "product-ja-page-375-old",
+      "name": "product",
+      "lang": "ja",
+      "host": "page",
+      "width": 375,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/product-list",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/product-list",
+      "raw": {
+        "title": "product-list",
+        "text": "HOME\ntest space\nproduct-list\nADVANCEN® for ISOFIX\nItem Code : productCode2223323\nホーススリーブ\nItem Code : ABC-123\nQUICKFIT®\nItem Code : Z15-1\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "product-list"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/master/ja/test-space/product-list"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "product-list"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-19T02:28:55.717Z"
+          },
+          {
+            "name": "showbreadcrumb",
+            "content": "true"
+          },
+          {
+            "name": "showfooter",
+            "content": "true"
+          },
+          {
+            "name": "showheader",
+            "content": "true"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-19T02:28:43.394Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMAxM8ScPNbcvIRtPkPv3QfQ3ZKyom8FTeOdbA1JpNQuP_oqqMptDzoBg1p8--uP5e5fkMsAQs3yRw5uh1Ba125"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1494,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 435,
+              "top": 146,
+              "right": 351,
+              "bottom": 581,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/product-ja-page-375-old.png",
+      "durationMs": 3639
+    },
+    {
+      "id": "product-en-page-1440-new",
+      "name": "product",
+      "lang": "en",
+      "host": "page",
+      "width": 1440,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/product/performance/sustainable/product-index",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/product/performance/sustainable/product-index",
+      "raw": {
+        "title": "product_index",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nproduct\nproduct_index\nADVANCEN® for ISOFIX\nItem Code : productCode2223323\nHose Sleeve\nItem Code : ABC-123\nQUICKFIT®\nItem Code : Z15-1\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "product_index"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/product/performance/sustainable/product-index"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "product_index"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-05T23:44:22.592Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-05T23:44:10.774Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSM02SU5zW0Jf1OV3qVe8KuOYFP6HXQ6QWm1dWV0HysqbvhrWIaOl2zDOJE6b-SYBKLVCxf2BFej1XspBOEDsJoWULM0mqxjby52q_etrHk3ww"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1483,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 140,
+              "width": 1440,
+              "height": 50,
+              "top": 140,
+              "right": 1440,
+              "bottom": 190,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 100,
+              "y": 230,
+              "width": 1240,
+              "height": 747,
+              "top": 230,
+              "right": 1340,
+              "bottom": 977,
+              "left": 100
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/product-en-page-1440-new.png",
+      "durationMs": 5201
+    },
+    {
+      "id": "product-en-page-1440-old",
+      "name": "product",
+      "lang": "en",
+      "host": "page",
+      "width": 1440,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/product-list",
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/product-list",
+      "raw": {
+        "title": "Page not found",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\n404\nPage Not Found\n\nGo home\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "height": 1442,
+        "blocks": []
+      },
+      "screenshot": "baselines/product-en-page-1440-old.png",
+      "durationMs": 2994
+    },
+    {
+      "id": "product-en-page-375-new",
+      "name": "product",
+      "lang": "en",
+      "host": "page",
+      "width": 375,
+      "kind": "new",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/product/performance/sustainable/product-index",
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/product/performance/sustainable/product-index",
+      "raw": {
+        "title": "product_index",
+        "text": "HOME\nproduct\nproduct_index\nADVANCEN® for ISOFIX\nItem Code : productCode2223323\nHose Sleeve\nItem Code : ABC-123\nQUICKFIT®\nItem Code : Z15-1\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "og:title",
+            "content": "product_index"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/product/performance/sustainable/product-index"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "product_index"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "published-time",
+            "content": "2026-10-05T23:44:22.592Z"
+          },
+          {
+            "name": "modified-time",
+            "content": "2026-10-05T23:44:10.774Z"
+          },
+          {
+            "name": "content-page-ref",
+            "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSM02SU5zW0Jf1OV3qVe8KuOYFP6HXQ6QWm1dWV0HysqbvhrWIaOl2zDOJE6b-SYBKLVCxf2BFej1XspBOEDsJoWULM0mqxjby52q_etrHk3ww"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "height": 1494,
+        "blocks": [
+          {
+            "name": "breadcrumb",
+            "rect": {
+              "x": 0,
+              "y": 72,
+              "width": 375,
+              "height": 34,
+              "top": 72,
+              "right": 375,
+              "bottom": 106,
+              "left": 0
+            }
+          },
+          {
+            "name": "listing",
+            "rect": {
+              "x": 24,
+              "y": 146,
+              "width": 327,
+              "height": 435,
+              "top": 146,
+              "right": 351,
+              "bottom": 581,
+              "left": 24
+            }
+          }
+        ]
+      },
+      "screenshot": "baselines/product-en-page-375-new.png",
+      "durationMs": 4946
+    },
+    {
+      "id": "product-en-page-375-old",
+      "name": "product",
+      "lang": "en",
+      "host": "page",
+      "width": 375,
+      "kind": "old",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/product-list",
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/product-list",
+      "raw": {
+        "title": "Page not found",
+        "text": "404\nPage Not Found\n\nGo home\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "height": 1494,
+        "blocks": []
+      },
+      "screenshot": "baselines/product-en-page-375-old.png",
+      "durationMs": 2663
+    }
+  ],
+  "finished": "2026-10-21T08:24:35.132Z"
+}

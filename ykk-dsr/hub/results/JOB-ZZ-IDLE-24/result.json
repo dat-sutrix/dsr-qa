@@ -1,0 +1,206 @@
+{
+  "job": "JOB-ZZ-IDLE-24",
+  "agent": "codex",
+  "us": "DSR-638",
+  "env": "dev",
+  "started": "2026-10-21T08:22:22.279Z",
+  "finished": "2026-10-21T08:24:35.132Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "catalog-en-page-1440-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/catalog-en-page-1440-new.png"
+    },
+    {
+      "tc": "catalog-en-page-1440-comparison",
+      "lang": "en",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/catalog-en-page-1440-new.png",
+      "reference": "baselines/catalog-en-page-1440-old.png"
+    },
+    {
+      "tc": "catalog-en-page-375-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/catalog-en-page-375-new.png"
+    },
+    {
+      "tc": "catalog-en-page-375-comparison",
+      "lang": "en",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/catalog-en-page-375-new.png",
+      "reference": "baselines/catalog-en-page-375-old.png"
+    },
+    {
+      "tc": "catalog-en-live-1440-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/catalog-en-live-1440-new.png"
+    },
+    {
+      "tc": "catalog-en-live-1440-comparison",
+      "lang": "en",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/catalog-en-live-1440-new.png",
+      "reference": "baselines/catalog-en-live-1440-old.png"
+    },
+    {
+      "tc": "catalog-en-live-375-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/catalog-en-live-375-new.png"
+    },
+    {
+      "tc": "catalog-en-live-375-comparison",
+      "lang": "en",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/catalog-en-live-375-new.png",
+      "reference": "baselines/catalog-en-live-375-old.png"
+    },
+    {
+      "tc": "video-ja-page-1440-new-capture",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/video-ja-page-1440-new.png"
+    },
+    {
+      "tc": "video-ja-page-1440-comparison",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/video-ja-page-1440-new.png",
+      "reference": "baselines/video-ja-page-1440-old.png"
+    },
+    {
+      "tc": "video-ja-page-375-new-capture",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/video-ja-page-375-new.png"
+    },
+    {
+      "tc": "video-ja-page-375-comparison",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/video-ja-page-375-new.png",
+      "reference": "baselines/video-ja-page-375-old.png"
+    },
+    {
+      "tc": "video-en-page-1440-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/video-en-page-1440-new.png"
+    },
+    {
+      "tc": "video-en-page-1440-comparison",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Old same-language page returns HTTP 404; comparison unavailable.",
+      "evidence": "baselines/video-en-page-1440-new.png",
+      "reference": "baselines/video-en-page-1440-old.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "video-en-page-375-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/video-en-page-375-new.png"
+    },
+    {
+      "tc": "video-en-page-375-comparison",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Old same-language page returns HTTP 404; comparison unavailable.",
+      "evidence": "baselines/video-en-page-375-new.png",
+      "reference": "baselines/video-en-page-375-old.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "product-ja-page-1440-new-capture",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/product-ja-page-1440-new.png"
+    },
+    {
+      "tc": "product-ja-page-1440-comparison",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/product-ja-page-1440-new.png",
+      "reference": "baselines/product-ja-page-1440-old.png"
+    },
+    {
+      "tc": "product-ja-page-375-new-capture",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/product-ja-page-375-new.png"
+    },
+    {
+      "tc": "product-ja-page-375-comparison",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Same layout; breadcrumb labels differ.",
+      "evidence": "baselines/product-ja-page-375-new.png",
+      "reference": "baselines/product-ja-page-375-old.png"
+    },
+    {
+      "tc": "product-en-page-1440-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/product-en-page-1440-new.png"
+    },
+    {
+      "tc": "product-en-page-1440-comparison",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Old same-language page returns HTTP 404; comparison unavailable.",
+      "evidence": "baselines/product-en-page-1440-new.png",
+      "reference": "baselines/product-en-page-1440-old.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "product-en-page-375-new-capture",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "baselines/product-en-page-375-new.png"
+    },
+    {
+      "tc": "product-en-page-375-comparison",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Old same-language page returns HTTP 404; comparison unavailable.",
+      "evidence": "baselines/product-en-page-375-new.png",
+      "reference": "baselines/product-en-page-375-old.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}
