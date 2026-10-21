@@ -1,0 +1,339 @@
+{
+  "job": "JOB-20261020-04",
+  "agent": "claude-code",
+  "us": "DSR-557, DSR-570",
+  "env": "dev",
+  "started": "2026-10-21T16:44:00Z",
+  "finished": "2026-10-21T17:05:00Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "re-seeded common/ja/catalogs/qa190-cat-ebook-form has requiresForm=false (TD expects true)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "result": "blocked",
+      "error": "re-seeded common/en/catalogs/qa190-cat-ebook-form has requiresForm=false (TD expects true)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "ja",
+      "result": "pass",
+      "error": "on TD-570-01 demo page (overlay detail qa190-cat-pdf-form has no form)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "ja",
+      "result": "pass",
+      "error": "on TD-570-01 demo page",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-003",
+      "lang": "ja",
+      "result": "pass",
+      "error": "on TD-570-01 demo page",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "common/ja/catalogs/qa190-cat-pdf-form requiresForm=false (TD-570-03 expects true)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "common/ja/catalogs/qa190-cat-ebook-form requiresForm=false (TD-570-04 expects true)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "en",
+      "result": "blocked",
+      "error": "common/en/catalogs/qa190-cat-pdf-form requiresForm=false (TD-570-03 expects true)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "en",
+      "result": "blocked",
+      "error": "common/en/catalogs/qa190-cat-ebook-form requiresForm=false (TD-570-04 expects true)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "en",
+      "result": "blocked",
+      "error": "demo page /master/en/test-space/dsr-570-catalog-detail 404; /en/library/catalog/qa190-cat-pdf-form renders no form",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "en",
+      "result": "blocked",
+      "error": "demo page /master/en/test-space/dsr-570-catalog-detail 404; /en/library/catalog/qa190-cat-pdf-form renders no form",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "en",
+      "result": "blocked",
+      "error": "demo page /master/en/test-space/dsr-570-catalog-detail 404; /en/library/catalog/qa190-cat-pdf-form renders no form",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-007",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "re-seeded qa190-cat-pdf-form not gated (requiresForm=false); old gated CF still exposes pdfAsset in dm-catalog-list",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-010",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "qa190-cat-pdf-form requiresForm=false (TD-570-03) + HubSpot EX-06/07",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-017",
+      "lang": "ja",
+      "result": "skip",
+      "error": "no catalog-ID mechanism: 'catalog pdf form' card links straight to PDF (requiresForm=false)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "cn",
+      "result": "skip",
+      "error": "fixme: no /master/cn (Issue #18)",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-557.ts",
+    "fixtures/dsr-570.ts",
+    "pages/CatalogDisplayPage.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+    "results/DSR-557/DEV/automation-run-20261021-job20261020-04.md",
+    "results/DSR-570/DEV/automation-run-20261021-job20261020-04.md"
+  ],
+  "detail_urls": {
+    "/ja/library/catalog/qa190-cat-pdf": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/ja/catalogs/qa190-cat-pdf, robots noindex",
+    "/ja/library/catalog/qa190-cat-pdf-form": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/ja/catalogs/qa190-cat-pdf-form, robots noindex",
+    "/ja/library/catalog/qa190-cat-ebook": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/ja/catalogs/qa190-cat-ebook, robots noindex",
+    "/ja/library/catalog/qa190-cat-ebook-form": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/ja/catalogs/qa190-cat-ebook-form, robots noindex",
+    "/en/library/catalog/qa190-cat-pdf": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/en/catalogs/qa190-cat-pdf, robots noindex",
+    "/en/library/catalog/qa190-cat-pdf-form": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/en/catalogs/qa190-cat-pdf-form, robots noindex",
+    "/en/library/catalog/qa190-cat-ebook": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/en/catalogs/qa190-cat-ebook, robots noindex",
+    "/en/library/catalog/qa190-cat-ebook-form": "200 (.live + .page), source=overlay, cf-path /content/dam/dsr/en/catalogs/qa190-cat-ebook-form, robots noindex"
+  },
+  "merge_record": {
+    "old_cards_disappeared": [],
+    "old_cards_still_listed": "all 15 CFs in /content/dam/ykk/common/product-cf/test/ (dm-catalog-1/10/11, qa-190-cat-pdf, qa190-cat-both/ebook/ebook-form/new-0/10/11/noupd/pdf-form/upd-0/10/11)",
+    "list_language_filter": "none: ja and en list pages show the same 26 cards (common/en + common/ja + old folder)",
+    "cause": "overlay-merge",
+    "confidence": 55
+  },
+  "questions": []
+}

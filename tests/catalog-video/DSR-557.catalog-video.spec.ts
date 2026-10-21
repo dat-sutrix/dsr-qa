@@ -1,7 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
 import { VideoPlayerPage } from '../../pages/VideoPlayerPage';
-import { viewports, languages, type Language, catalogPath, videoPath, videoHosts, youtubeVideos, damVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, qa190, notRendered, type CatalogItem } from '../../fixtures/dsr-557';
+import { viewports, languages, type Language, catalogPath, videoPath, videoHosts, youtubeVideos, damVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, qa190, core, type CoreKey, coreItem, contentCfPath, oldFolder, type CatalogItem } from '../../fixtures/dsr-557';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -33,28 +33,34 @@ async function openVideo(page: Page, host: string, lang: Language, id: string) {
   await expect(video.player).toBeVisible();
   return video;
 }
-function pick(data: CatalogItem[], lang: Language, title: string, match: (item: CatalogItem) => boolean, name: string): CatalogItem {
-  const item = data.find(i => i.catalogTitle === title && match(i));
-  test.skip(!item, `Blocked – no DEV data for ${name} "${title}" (${lang})`);
+// Core catalogs: the re-seeded content CF /content/dam/common/{lang}/catalogs/{id} (JOB-20261020-04), never the old folder.
+function pick(data: CatalogItem[], lang: Language, key: CoreKey, match: (item: CatalogItem) => boolean, name: string): CatalogItem {
+  const item = coreItem(data, lang, key);
+  observations.push({ core: core[key], contentCf: contentCfPath(lang, core[key]), inResponse: !!item, item: item ?? null });
+  test.skip(!item, `Blocked – no DEV data: ${contentCfPath(lang, core[key])} absent from dm-catalog-list (${lang})`);
+  test.skip(!match(item!), `Blocked – data: ${core[key]} (${lang}) is not a ${name}: catalogType=${item!.catalogType}, requiresForm=${item!.requiresForm}, ebookUrl=${item!.ebookUrl}`);
   return item!;
 }
-// Known data/product gaps (fixtures notRendered): record instead of failing; fixme if the TC depends on the card.
-async function noteNotRendered(catalog: CatalogDisplayPage, title: string, fixme = false) {
-  const reason = notRendered[title];
-  if (!reason || (await catalog.item(title).count())) return;
-  test.info().annotations.push({ type: 'not-rendered', description: `${title}: ${reason}` });
-  test.fixme(fixme, `${title} not rendered – ${reason}`);
+function cardsOf(catalog: CatalogDisplayPage, data: CatalogItem[], cf: CatalogItem) {
+  const match = catalog.cards(data, cf);
+  test.skip(!match, `Blocked – title "${cf.catalogTitle}" is shared by CFs that link differently; card cannot be attributed to ${cf._path}`);
+  return match!;
 }
 
 for (const lang of languages) {
   test.describe(lang, () => {
     test('DSR-CATV-012 catalog item shows thumbnail and title', { tag: ['@auto'] }, async ({ page }) => {
       const { catalog, data } = await openCatalog(page, lang);
-      const seeded = Object.values(qa190).flat();
-      for (const title of seeded.filter(t => data.some(i => i.catalogTitle === t))) {
-        if (notRendered[title]) { await noteNotRendered(catalog, title); continue; }
+      // Core: ≥ 1 card (ja and en CFs with identical values can share a title). Old-folder NEW/UPDATE CFs: exactly 1.
+      for (const key of Object.keys(core) as CoreKey[]) {
+        const cf = coreItem(data, lang, key);
+        if (cf) expect.soft(await catalog.item(cf.catalogTitle).count(), `core card ${core[key]} "${cf.catalogTitle}"`).toBeGreaterThan(0);
+      }
+      for (const title of [...qa190.new, ...qa190.upd, ...qa190.both].filter(t => data.some(i => i.catalogTitle === t))) {
         expect.soft(await catalog.item(title).count(), `qa190 card "${title}"`).toBe(1);
       }
+      // Merge record: pre-merge CFs still delivered by dm-catalog-list (expected to disappear, BL-OVL-1 2026-10-20 12:40).
+      observations.push({ language: lang, oldFolderItems: data.filter(i => i._path?.startsWith(oldFolder)).map(i => i._path), otherLangItems: data.filter(i => /^\/content\/dam\/common\/(ja|en|cn)\//.test(i._path ?? '') && !i._path!.startsWith(`/content/dam/common/${lang}/`)).map(i => i._path) });
       const count = await catalog.items.count();
       for (let i = 0; i < count; i++) {
         const item = catalog.items.nth(i);
@@ -69,10 +75,11 @@ for (const lang of languages) {
 
     test('DSR-CATV-013 PDF item without form opens in a new tab', { tag: ['@auto'] }, async ({ page, context }) => {
       const { catalog, data } = await openCatalog(page, lang);
-      const pdf = pick(data, lang, qa190.pdf, i => i.catalogType === 'pdf' && i.requiresForm !== true && !!i.pdfAsset, 'pdf requiresForm=false item');
-      const item = catalog.item(pdf.catalogTitle);
-      await expect(item).toHaveCount(1);
-      for (const link of await catalog.links(item).all()) {
+      const pdf = pick(data, lang, 'pdf', i => i.catalogType === 'pdf' && i.requiresForm !== true && !!i.pdfAsset, 'pdf requiresForm=false item');
+      const { cards, twins } = cardsOf(catalog, data, pdf);
+      await expect(cards).toHaveCount(twins);
+      const item = cards.first();
+      for (const link of await catalog.links(cards).all()) {
         const attrs = await link.evaluate(a => ({ href: a.getAttribute('href'), target: a.getAttribute('target'), rel: a.getAttribute('rel'), download: a.hasAttribute('download') }));
         observations.push({ link: attrs });
         expect.soft(attrs.target).toBe('_blank');
@@ -93,13 +100,13 @@ for (const lang of languages) {
       expect(context.pages()).toContain(popup);
     });
 
-    for (const [number, title, requiresForm, cf] of [[16, 'e-book item opens ebookUrl without form', false, qa190.ebook], [17, 'e-book item flagged requiresForm opens ebookUrl without form', true, qa190.ebookForm]] as const) {
+    for (const [number, title, requiresForm, cf] of [[16, 'e-book item opens ebookUrl without form', false, 'ebook'], [17, 'e-book item flagged requiresForm opens ebookUrl without form', true, 'ebookForm']] as const) {
       test(`DSR-CATV-0${number} ${title}`, { tag: ['@auto'] }, async ({ page, context }) => {
         const { catalog, data } = await openCatalog(page, lang);
         const ebook = pick(data, lang, cf, i => i.catalogType === 'ebook' && !!i.ebookUrl && (i.requiresForm === true) === requiresForm, `ebook requiresForm=${requiresForm} item`);
-        await noteNotRendered(catalog, cf, true);
-        const item = catalog.item(ebook.catalogTitle);
-        await expect(item).toHaveCount(1);
+        const { cards, twins } = cardsOf(catalog, data, ebook);
+        await expect(cards).toHaveCount(twins);
+        const item = cards.first();
         const link = catalog.title(item);
         expect(normalize(new URL((await link.getAttribute('href'))!, page.url()).href)).toBe(normalize(ebook.ebookUrl!));
         // QA decision 2026-10-19 (JOB-20261019-01): count forms on the DSR origin only, between the click and the popup navigation; forms on the external e-book site are ignored.
@@ -124,8 +131,8 @@ for (const lang of languages) {
         const on = today();
         // Blocked: dates come from the dm-catalog-list GraphQL response; DOM shows one formatted date only.
         test.skip(data.every(i => !i.publishDate && !i.updateDate), `Blocked – publishDate/updateDate not exposed (checked DOM .cards-card-meta and dm-catalog-list response) (${lang})`);
-        // Only this TC's qa190 rows (JOB-20261016-06).
-        const own = data.filter(i => (titles as readonly string[]).includes(i.catalogTitle));
+        // Only this TC's qa190 rows (JOB-20261016-06); not re-seeded after the overlay merge, so old folder only (JOB-20261020-04).
+        const own = data.filter(i => (titles as readonly string[]).includes(i.catalogTitle) && i._path?.startsWith(oldFolder));
         test.skip(!own.length, `Blocked – no DEV data for ${titles.join(', ')} (${lang})`);
         const rows = [];
         for (const item of own) {

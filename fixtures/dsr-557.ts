@@ -28,6 +28,8 @@ export const embedSrc = /^https:\/\/(www\.)?youtube(-nocookie)?\.com\/embed\//;
 export const labelDays = 10;
 
 export interface CatalogItem {
+  _path?: string;
+  catalogId?: string;
   catalogTitle: string;
   catalogType: string;
   requiresForm: boolean | null;
@@ -49,20 +51,19 @@ export function expectedLabel(item: Pick<CatalogItem, 'publishDate' | 'updateDat
   return '';
 }
 
-// QA-seeded catalog CFs on DEV (JOB-20261016-02). Title on page; CF name in comments where it differs from the title.
+// Catalog overlay merge (Martin 20/10 12:45, BL-OVL-1): core catalogs re-seeded (Night 21/10 việc 5) as content CF
+// /content/dam/common/{lang}/catalogs/{id} + DSR CF /content/dam/dsr/{lang}/catalogs/{id}; detail /{lang}/library/catalog/{id}.
+// Titles differ per CF ("catalog pdf", "qa190-cat-pdf" …) → resolved at run time from dm-catalog-list by _path (JOB-20261020-04).
+export const core = { pdf: 'qa190-cat-pdf', pdfForm: 'qa190-cat-pdf-form', ebook: 'qa190-cat-ebook', ebookForm: 'qa190-cat-ebook-form' } as const;
+export type CoreKey = keyof typeof core;
+export const contentCfPath = (lang: string, id: string) => `/content/dam/common/${lang}/catalogs/${id}`;
+export const detailPath = (lang: string, id: string) => `/${lang}/library/catalog/${id}`;
+export const coreItem = <T extends CatalogItem>(data: T[], lang: string, key: CoreKey): T | undefined =>
+  data.find(i => i._path === contentCfPath(lang, core[key]));
+// Pre-merge QA CF folder. dm-catalog-list still returns it (JOB-20261020-04); NEW/UPDATE CFs were not re-seeded and stay here.
+export const oldFolder = '/content/dam/ykk/common/product-cf/test/';
 export const qa190 = {
-  pdf: 'QA190 PDF catalog', // CF qa-190-cat-pdf
-  pdfForm: 'QA190 PDF form required',
-  ebook: 'QA190 e-book',
-  ebookForm: 'QA190 e-book form',
   new: ['QA190 NEW 0', 'QA190 NEW 10', 'QA190 NEW 11'],
   upd: ['QA190 UPD 0', 'QA190 UPD 10', 'QA190 UPD 11'],
   both: ['QA190 BOTH', 'qa190-cat-noupd'], // noupd has no title; the page shows the CF name
 } as const;
-// qa190 items in the GraphQL response that DEV does not render (JOB-20261016-02). Reported, not failed.
-export const blockedEbookData = 'blocked-data: QA-PT fixes ebookUrl 16/10 night';
-export const notRendered: Record<string, string> = {
-  [qa190.ebook]: blockedEbookData,
-  [qa190.ebookForm]: blockedEbookData,
-  [qa190.pdfForm]: 'suspect product or DSR-570 gate',
-};

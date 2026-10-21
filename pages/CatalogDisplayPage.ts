@@ -31,6 +31,14 @@ export class CatalogDisplayPage {
     return this.items.filter({ has: this.page.locator('.cards-card-title a', { hasText: exact }) });
   }
 
+  // dm-catalog-list is not filtered by language or folder (JOB-20261020-04), so CFs can share a title and cards carry no CF id.
+  // Title-matched cards are usable only when every CF with that title links the same way; otherwise returns null.
+  cards(data: CatalogItem[], cf: CatalogItem): { cards: Locator; twins: number } | null {
+    const key = (i: CatalogItem) => JSON.stringify([i.catalogType, i.requiresForm === true, i.ebookUrl, i.pdfAsset?._publishUrl ?? null]);
+    const twins = data.filter(i => i.catalogTitle === cf.catalogTitle);
+    return twins.every(i => key(i) === key(cf)) ? { cards: this.item(cf.catalogTitle), twins: twins.length } : null;
+  }
+
   // Badge element only (span.cards-badge-new, plus .cards-badge-update for UPDATE); the title may contain "NEW".
   badge(item: Locator): Locator { return item.locator('.cards-card-image [class*="cards-badge"]'); }
 

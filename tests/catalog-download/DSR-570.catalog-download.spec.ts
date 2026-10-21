@@ -1,7 +1,7 @@
 import { test, expect, type Page, type Request, type Response } from '@playwright/test';
 import { CatalogDownloadPage } from '../../pages/CatalogDownloadPage';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
-import type { CatalogItem } from '../../fixtures/dsr-557';
+import { type CatalogItem, coreItem, contentCfPath, detailPath, oldFolder } from '../../fixtures/dsr-557';
 import { viewports, languages, type Language, formPath, listPath, td, consentText, dateFormat, japanese, unknownId, blockedData } from '../../fixtures/dsr-570';
 
 // Read-only: the download button is never clicked; no form is submitted (A7).
@@ -16,14 +16,21 @@ const isPdf = (href: string) => new URL(href).pathname.toLowerCase().endsWith('.
 
 type ListItem = CatalogItem & { catalogId?: string; _path?: string; pdfAsset: { _publishUrl: string; _path?: string } | null };
 
+// Form page: overlay detail of TD-570-03 when it renders the form; otherwise the TD-570-01 demo page (JOB-20261020-04).
 async function openForm(page: Page, lang: Language) {
   const form = new CatalogDownloadPage(page);
+  const detail = detailPath(lang, td.pdfForm.catalogId);
+  const detailResponse = await form.goto(detail);
+  const detailForms = detailResponse?.ok() && new URL(page.url()).pathname === detail ? await form.form.count() : 0;
+  observations.push({ formTarget: detail, status: detailResponse?.status(), finalUrl: page.url(), forms: detailForms });
+  if (detailForms) return { form, response: detailResponse, path: detail };
+  test.info().annotations.push({ type: 'target', description: `${detail}: no form (HTTP ${detailResponse?.status()}, final ${page.url()}) → TD-570-01 demo page` });
   const response = await form.goto(formPath(lang));
   // Preflight: page 404 → blocked-data (job JOB-20261016-12).
-  test.skip(response?.status() === 404, blockedData(`TD-570-01 ${lang} form page ${formPath(lang)} HTTP 404`));
+  test.skip(response?.status() === 404, blockedData(`TD-570-01 ${lang} form page ${formPath(lang)} HTTP 404; ${detail} renders no form`));
   expect(response?.status()).toBe(200);
   await expect(form.block).toBeVisible();
-  return { form, response };
+  return { form, response, path: formPath(lang) };
 }
 async function openList(page: Page, lang: Language) {
   const list = new CatalogDisplayPage(page);
@@ -33,15 +40,20 @@ async function openList(page: Page, lang: Language) {
   await expect(list.items.first()).toBeVisible();
   return { list, data: data as ListItem[] };
 }
-// Preflight: card not rendered → blocked-data. Records the CF as returned by dm-catalog-list.
-async function card(list: CatalogDisplayPage, data: ListItem[], lang: Language, key: keyof typeof td, cause: string) {
-  const { title, catalogId } = td[key];
-  const item = data.find(i => i.catalogTitle === title);
-  const rendered = await list.item(title).count();
-  observations.push({ language: lang, card: title, inResponse: !!item, catalogId: item?.catalogId, catalogType: item?.catalogType, requiresForm: item?.requiresForm, ebookUrl: item?.ebookUrl, pdfAsset: item?.pdfAsset?._publishUrl ?? null, rendered });
-  test.skip(!rendered, blockedData(`card "${title}" (${catalogId}) not rendered on ${listPath(lang)} (in dm-catalog-list: ${item ? 'yes' : 'no'}) – ${cause}`));
-  expect(rendered).toBe(1);
-  return { card: list.item(title), item };
+// Preflight: CF absent, requiresForm ≠ TD (gated TCs only), or card not attributable/rendered → blocked-data.
+async function card(list: CatalogDisplayPage, data: ListItem[], lang: Language, key: keyof typeof td, cause: string, gated = false) {
+  const { catalogId, requiresForm } = td[key];
+  const cfPath = contentCfPath(lang, catalogId);
+  const item = coreItem(data, lang, td[key].key);
+  const match = item ? list.cards(data, item) : null;
+  const rendered = match ? await match.cards.count() : 0;
+  observations.push({ language: lang, catalogId, cfPath, inResponse: !!item, title: item?.catalogTitle, catalogType: item?.catalogType, requiresForm: item?.requiresForm, ebookUrl: item?.ebookUrl, pdfAsset: item?.pdfAsset?._publishUrl ?? null, rendered, twins: match?.twins ?? null });
+  test.skip(!item, blockedData(`${cfPath} absent from dm-catalog-list – ${cause}`));
+  test.skip(gated && item!.requiresForm !== requiresForm, blockedData(`${catalogId} (${lang}) requiresForm=${item!.requiresForm} in ${cfPath}; TD expects ${requiresForm} – ${cause}`));
+  test.skip(!match, blockedData(`title "${item!.catalogTitle}" shared by CFs that link differently; card not attributable to ${cfPath}`));
+  test.skip(!rendered, blockedData(`card "${item!.catalogTitle}" (${catalogId}) not rendered on ${listPath(lang)} – ${cause}`));
+  expect(rendered).toBe(match!.twins);
+  return { card: match!.cards.first(), item };
 }
 
 for (const lang of languages) {
@@ -91,7 +103,7 @@ for (const lang of languages) {
 
     test(`DSR-CATDL-006 [${lang}] requiresForm=true card leads to the download form`, { tag: ['@auto'] }, async ({ page }) => {
       const { list, data } = await openList(page, lang);
-      const { card: item } = await card(list, data, lang, 'pdfForm', 'DSR-570 CF integration (Ngoc 10/15: demo page is layout only, not bound to catalog CF)');
+      const { card: item, item: cf } = await card(list, data, lang, 'pdfForm', 'TD-570-03', true);
       const href = new URL((await list.title(item).getAttribute('href'))!, page.url()).href;
       observations.push({ href });
       expect(isPdf(href), 'href is not a .pdf').toBe(false);
@@ -100,13 +112,13 @@ for (const lang of languages) {
       observations.push({ target: page.url(), name: await form.name.allInnerTexts() });
       await expect(form.form).toHaveCount(1);
       await expect(form.submit).toBeVisible();
-      await expect(form.name).toHaveText(td.pdfForm.title);
+      await expect(form.name).toHaveText(cf!.catalogTitle);
     });
 
     test(`DSR-CATDL-018 [${lang}] e-book form card opens ebookUrl without form`, { tag: ['@auto'] }, async ({ page, context }) => {
       const { list, data } = await openList(page, lang);
-      const { card: item, item: cf } = await card(list, data, lang, 'ebookForm', 'TD-570-04');
-      test.skip(!cf?.ebookUrl, blockedData(`"${td.ebookForm.title}" has no ebookUrl in dm-catalog-list (ebookUrl fix QA-PT 16/10)`));
+      const { card: item, item: cf } = await card(list, data, lang, 'ebookForm', 'TD-570-04', true);
+      test.skip(!cf?.ebookUrl, blockedData(`${td.ebookForm.catalogId} has no ebookUrl in dm-catalog-list (ebookUrl fix QA-PT 16/10)`));
       const ebookUrl = cf!.ebookUrl!;
       const links = await list.links(item).evaluateAll((as, base) => as.map(a => ({ href: new URL(a.getAttribute('href')!, base).href, target: a.getAttribute('target'), rel: a.getAttribute('rel') })), page.url());
       // Navigations outside the list page, in order. frame() throws for a popup's first navigation (issued before its frame exists).
@@ -160,14 +172,18 @@ test.describe('ja', () => {
     page.on('response', capture);
     const { list, data } = await openList(page, 'ja');
     await page.waitForLoadState('networkidle');
-    const gated = data.find(i => i.catalogTitle === td.pdfForm.title);
-    test.skip(!gated, blockedData(`"${td.pdfForm.title}" absent from dm-catalog-list on ${listPath('ja')}`));
+    const gated = coreItem(data, 'ja', td.pdfForm.key);
+    // Merge record: the pre-merge gated CF (old folder) is still listed (JOB-20261020-04).
+    const old = data.find(i => i._path === `${oldFolder}${td.pdfForm.catalogId}`);
+    observations.push({ oldGatedCf: old ? { path: old._path, requiresForm: old.requiresForm, pdfAsset: old.pdfAsset?._publishUrl ?? null } : null });
+    test.skip(!gated, blockedData(`${contentCfPath('ja', td.pdfForm.catalogId)} absent from dm-catalog-list on ${listPath('ja')}`));
+    test.skip(gated!.requiresForm !== true, blockedData(`${td.pdfForm.catalogId} (ja) requiresForm=${gated!.requiresForm} in ${contentCfPath('ja', td.pdfForm.catalogId)}; nothing is gated (TD-570-03 expects true)`));
     const listBodies = await Promise.all(bodies.splice(0));
     const listDom = await page.content();
     // The gated PDF path as the CMS knows it; if pdfAsset is not delivered at all, the CF's own path is the search key.
     const pdfPath = gated!.pdfAsset?._path ?? gated!.pdfAsset?._publishUrl ?? null;
     const file = pdfPath?.split('/').pop() ?? null;
-    const rendered = await list.item(td.pdfForm.title).count();
+    const rendered = await list.item(gated!.catalogTitle).count();
 
     await openForm(page, 'ja');
     await page.waitForLoadState('networkidle');
@@ -191,7 +207,7 @@ test.describe('ja', () => {
     const { form } = await openForm(page, 'ja');
     observations.push({ demoFormUrl: page.url(), query: Object.fromEntries(new URL(page.url()).searchParams), hiddenInputs: await form.hiddenInputs() });
     const { list, data } = await openList(page, 'ja');
-    const { card: item } = await card(list, data, 'ja', 'pdfForm', 'DSR-570 CF integration (Ngoc 10/15) + HubSpot EX-06/EX-07');
+    const { card: item } = await card(list, data, 'ja', 'pdfForm', 'TD-570-03 + HubSpot EX-06/EX-07', true);
     await page.goto(new URL((await list.title(item).getAttribute('href'))!, page.url()).href);
     const target = new CatalogDownloadPage(page);
     const hidden = await target.hiddenInputs();
@@ -208,11 +224,13 @@ test.describe('ja', () => {
       observations.push({ demo: formPath('ja') + query, status: response?.status(), finalUrl: page.url(), name: await demo.name.allInnerTexts(), forms: await demo.form.count() });
     }
     const { list, data } = await openList(page, 'ja');
-    const rendered = await list.item(td.pdfForm.title).count();
-    const href = rendered ? new URL((await list.title(list.item(td.pdfForm.title)).getAttribute('href'))!, page.url()) : null;
+    const gated = coreItem(data, 'ja', td.pdfForm.key);
+    const title = gated?.catalogTitle ?? td.pdfForm.catalogId;
+    const rendered = gated ? await list.item(title).count() : 0;
+    const href = rendered ? new URL((await list.title(list.item(title).first()).getAttribute('href'))!, page.url()) : null;
     const param = href && [...href.searchParams].find(([, v]) => v.includes(td.pdfForm.catalogId))?.[0];
-    observations.push({ pdfFormCardRendered: rendered, href: href?.href ?? null, idParam: param ?? null });
-    test.skip(!param, `no catalog-ID mechanism on DEV yet: "${td.pdfForm.title}" card ${rendered ? 'href carries no catalog id' : 'not rendered'}; demo form page is not bound to a CF (Ngoc 10/15)`);
+    observations.push({ pdfFormCf: gated?._path ?? null, requiresForm: gated?.requiresForm ?? null, pdfFormCardRendered: rendered, href: href?.href ?? null, idParam: param ?? null });
+    test.skip(!param, `no catalog-ID mechanism on DEV yet: "${title}" card ${rendered ? `href carries no catalog id (requiresForm=${gated?.requiresForm})` : 'not rendered'}; overlay detail is /{lang}/library/catalog/{id} (path, not query)`);
     const names = data.map(i => i.catalogTitle);
     for (const mutate of [(u: URL) => u.searchParams.set(param!, unknownId), (u: URL) => u.searchParams.delete(param!)]) {
       const url = new URL(href!.href); mutate(url);
