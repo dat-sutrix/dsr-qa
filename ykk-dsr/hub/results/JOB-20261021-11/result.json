@@ -1,0 +1,396 @@
+{
+ "job": "JOB-20261021-11",
+ "agent": "claude-code",
+ "us": "DSR-654",
+ "env": "dev",
+ "started": "2026-10-21T11:40:19Z",
+ "finished": "2026-10-21T11:41:33Z",
+ "status": "done",
+ "totals": {
+  "total": 62,
+  "passed": 11,
+  "failed": 2,
+  "skipped": 49,
+  "flaky": 0,
+  "exit_code": 1
+ },
+ "tsc": "exit 0, no errors",
+ "tests": [
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (/ja/library/catalog/qa190-cat-pdf HTTP 404 on .aem.page and .aem.live)"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf-form) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf-form) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf-form) (/ja/library/catalog/qa190-cat-pdf-form HTTP 404 on .aem.page and .aem.live)"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf-form) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (/ja/library/catalog/qa190-cat-ebook HTTP 404 on .aem.page and .aem.live)"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook-form) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook-form) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook-form) (/ja/library/catalog/qa190-cat-ebook-form HTTP 404 on .aem.page and .aem.live)"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook-form) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-02 not seeded (qa654-inactive) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa654-inactive HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-654-03 exists in en only (A7)"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf-form) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf-form) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook-form) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-020",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Visual – codex job"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (/en/library/catalog/qa190-cat-pdf HTTP 404 on .aem.page and .aem.live)"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "fail",
+   "error": "qa190-cat-pdf-form: .aem.live HTTP 404, expected 200 (.aem.page 200)",
+   "evidence": "",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 30
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf-form) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (/en/library/catalog/qa190-cat-ebook HTTP 404 on .aem.page and .aem.live)"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "fail",
+   "error": "qa190-cat-ebook-form: .aem.live HTTP 404, expected 200 (.aem.page 200)",
+   "evidence": "",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 30
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook-form) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook-form HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-02 not seeded (qa654-inactive) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-inactive HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-ebook) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "en",
+   "result": "blocked",
+   "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-01 not seeded (qa190-cat-pdf) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-020",
+   "lang": "en",
+   "result": "skip",
+   "error": "Visual – codex job"
+  },
+  {
+   "tc": "DSR-CATOV-009",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-04 not seeded (qa654-preview) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-preview HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-010",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-011",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-013",
+   "lang": "en",
+   "result": "skip",
+   "error": "Manual – QA-PT"
+  },
+  {
+   "tc": "DSR-CATOV-014",
+   "lang": "en",
+   "result": "blocked",
+   "error": "TD-654-08 not seeded (qa654-content-unpub) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-content-unpub HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "cn",
+   "result": "skip",
+   "error": "Issue #18: no /cn path on DEV"
+  }
+ ],
+ "code_changes": [
+  "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+  "fixtures/dsr-654.ts",
+  "pages/CatalogDetailPage.ts"
+ ],
+ "run_report": "results/DSR-654/DEV/automation-run-20261021-job11.md",
+ "questions": []
+}
