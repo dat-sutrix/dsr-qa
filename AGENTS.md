@@ -1,3 +1,5 @@
+> **Session context (Claude web / scheduled tasks): read `ykk-dsr/hub/CONTEXT.md` first.** Project rules for the DSR hub live there and in `ykk-dsr/hub/BUG-RULES.md`.
+
 # Project: YKK DSR (AEM Sites + Edge Delivery Services)
 
 ## Context
