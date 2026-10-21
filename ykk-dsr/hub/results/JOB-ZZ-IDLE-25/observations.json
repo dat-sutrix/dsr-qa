@@ -1,0 +1,550 @@
+[
+  {
+    "title": "DSR-CATOV-001 [en] qa190-cat-pdf: overlay page 200, no redirect, catalog title shown",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 1403
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "TD-190 qa190-cat-pdf not seeded / not published to this tier (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 71,
+          "column": 14
+        }
+      }
+    ],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf",
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf",
+        "status": 404
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-002 [en] qa190-cat-pdf: raw HTML head + overlay rows, DSR CF same id as content CF",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 133
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "TD-190 qa190-cat-pdf not seeded / not published to this tier (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf HTTP 404)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 29,
+          "column": 8
+        }
+      }
+    ],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf",
+        "status": 404,
+        "location": null
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-003 [en] qa190-cat-pdf: live-published → 200 on .aem.page and .aem.live",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 321
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "TD-190 qa190-cat-pdf not seeded / not published to this tier (/en/library/catalog/qa190-cat-pdf HTTP 404 on .aem.page and .aem.live)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 103,
+          "column": 14
+        }
+      }
+    ],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf",
+        "status": 404,
+        "location": null
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf",
+        "status": 404,
+        "location": null
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-001 [en] qa190-cat-pdf-form: overlay page 200, no redirect, catalog title shown",
+    "status": "expected",
+    "attempts": [
+      {
+        "status": "passed",
+        "durationMs": 626
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-002 [en] qa190-cat-pdf-form: raw HTML head + overlay rows, DSR CF same id as content CF",
+    "status": "expected",
+    "attempts": [
+      {
+        "status": "passed",
+        "durationMs": 409
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+        "status": 200,
+        "location": null
+      },
+      {
+        "title": "QA190 PDF form required | YKK DIGITAL SHOWROOM",
+        "description": "catelog description",
+        "robots": null,
+        "ogImage": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=pjpg&optimize=medium",
+        "cfPath": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+        "rows": [
+          {
+            "key": "source",
+            "value": "overlay"
+          },
+          {
+            "key": "cfPath",
+            "value": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form"
+          },
+          {
+            "key": "catalogTitle",
+            "value": "QA190 PDF form required"
+          },
+          {
+            "key": "catalogId",
+            "value": "qa190-cat-pdf-form"
+          },
+          {
+            "key": "description",
+            "value": "catelog description"
+          },
+          {
+            "key": "catalogCategories",
+            "value": "properties:"
+          },
+          {
+            "key": "thumbnail",
+            "value": "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          },
+          {
+            "key": "catalogType",
+            "value": "pdf"
+          },
+          {
+            "key": "requiresForm",
+            "value": "true"
+          },
+          {
+            "key": "publishDate",
+            "value": "2026-09-15"
+          },
+          {
+            "key": "related.catalogLabel",
+            "value": "qa190-cat-pdf-form"
+          },
+          {
+            "key": "related.meta.jcr:created",
+            "value": "2026-10-20T06:11:28.349Z"
+          },
+          {
+            "key": "related.meta.cq:lastModified",
+            "value": "2026-10-20T06:11:19.953Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-003 [en] qa190-cat-pdf-form: live-published → 200 on .aem.page and .aem.live",
+    "status": "unexpected",
+    "attempts": [
+      {
+        "status": "failed",
+        "durationMs": 171
+      },
+      {
+        "status": "failed",
+        "durationMs": 186
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+        "status": 404,
+        "location": null
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-001 [en] qa190-cat-ebook: overlay page 200, no redirect, catalog title shown",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 1164
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "TD-190 qa190-cat-ebook not seeded / not published to this tier (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook HTTP 404)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 71,
+          "column": 14
+        }
+      }
+    ],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook",
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook",
+        "status": 404
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-002 [en] qa190-cat-ebook: raw HTML head + overlay rows, DSR CF same id as content CF",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 96
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "TD-190 qa190-cat-ebook not seeded / not published to this tier (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook HTTP 404)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 29,
+          "column": 8
+        }
+      }
+    ],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook",
+        "status": 404,
+        "location": null
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-003 [en] qa190-cat-ebook: live-published → 200 on .aem.page and .aem.live",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 319
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "TD-190 qa190-cat-ebook not seeded / not published to this tier (/en/library/catalog/qa190-cat-ebook HTTP 404 on .aem.page and .aem.live)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 103,
+          "column": 14
+        }
+      }
+    ],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook",
+        "status": 404,
+        "location": null
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook",
+        "status": 404,
+        "location": null
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-001 [en] qa190-cat-ebook-form: overlay page 200, no redirect, catalog title shown",
+    "status": "expected",
+    "attempts": [
+      {
+        "status": "passed",
+        "durationMs": 1293
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-002 [en] qa190-cat-ebook-form: raw HTML head + overlay rows, DSR CF same id as content CF",
+    "status": "expected",
+    "attempts": [
+      {
+        "status": "passed",
+        "durationMs": 316
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+        "status": 200,
+        "location": null
+      },
+      {
+        "title": "QA190 e-book form | YKK DIGITAL SHOWROOM",
+        "description": "catelog description",
+        "robots": null,
+        "ogImage": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=pjpg&optimize=medium",
+        "cfPath": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+        "rows": [
+          {
+            "key": "source",
+            "value": "overlay"
+          },
+          {
+            "key": "cfPath",
+            "value": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form"
+          },
+          {
+            "key": "catalogTitle",
+            "value": "QA190 e-book form"
+          },
+          {
+            "key": "catalogId",
+            "value": "qa190-cat-ebook-form"
+          },
+          {
+            "key": "description",
+            "value": "catelog description"
+          },
+          {
+            "key": "catalogCategories",
+            "value": "properties:"
+          },
+          {
+            "key": "thumbnail",
+            "value": "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          },
+          {
+            "key": "catalogType",
+            "value": "ebook"
+          },
+          {
+            "key": "requiresForm",
+            "value": "true"
+          },
+          {
+            "key": "publishDate",
+            "value": "2026-09-15"
+          },
+          {
+            "key": "related.catalogLabel",
+            "value": "qa190-cat-ebook-form"
+          },
+          {
+            "key": "related.meta.jcr:created",
+            "value": "2026-10-20T06:10:49.998Z"
+          },
+          {
+            "key": "related.meta.cq:lastModified",
+            "value": "2026-10-20T06:10:38.473Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-003 [en] qa190-cat-ebook-form: live-published → 200 on .aem.page and .aem.live",
+    "status": "unexpected",
+    "attempts": [
+      {
+        "status": "failed",
+        "durationMs": 93
+      },
+      {
+        "status": "failed",
+        "durationMs": 274
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook-form",
+        "status": 404,
+        "location": null
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-004 [en] naming rule: uppercase / underscore id → 404",
+    "status": "expected",
+    "attempts": [
+      {
+        "status": "passed",
+        "durationMs": 962
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/QA190-CAT-PDF-FORM",
+        "status": 404,
+        "location": null
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190_cat_pdf_form",
+        "status": 404,
+        "location": null
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-005 [en] isActive (表示フラグ) = false → noindex, browser sent to catalog list",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 252
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "isActive=false: no TD id yet (set DSR654_INACTIVE_ID once seeded)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 120,
+          "column": 12
+        }
+      }
+    ],
+    "observed": []
+  },
+  {
+    "title": "DSR-CATOV-006 [en] unpublished DSR CF → 404 on both hosts, absent from query-index",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 23
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "unpublished: no TD id yet (set DSR654_REMOVED_ID once seeded)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 133,
+          "column": 12
+        }
+      }
+    ],
+    "observed": []
+  },
+  {
+    "title": "DSR-CATOV-007 [en] catalog/search is not an overlay page",
+    "status": "skipped",
+    "attempts": [
+      {
+        "status": "skipped",
+        "durationMs": 1089
+      }
+    ],
+    "annotations": [
+      {
+        "type": "skip",
+        "description": "catalog/search Sites page not published (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/search HTTP 404)",
+        "location": {
+          "file": "/home/qa/dsr-qa/tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+          "line": 146,
+          "column": 12
+        }
+      }
+    ],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/search",
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/search",
+        "status": 404
+      }
+    ]
+  },
+  {
+    "title": "DSR-CATOV-008 [en] overlay page makes 0 GraphQL requests; html lang",
+    "status": "expected",
+    "attempts": [
+      {
+        "status": "passed",
+        "durationMs": 1995
+      }
+    ],
+    "annotations": [],
+    "observed": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+        "status": 200,
+        "location": null
+      },
+      {
+        "graphql": [],
+        "htmlLang": "en"
+      }
+    ]
+  }
+]
