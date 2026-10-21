@@ -45,7 +45,9 @@ export class ArticleDetailPage {
     this.body = this.main.locator('[data-block-name*="body"], .text.block');
     this.profile = this.main.locator('[data-block-name*="profile"], [class*="profile"]');
     // TODO: data-testid article-related-stories / article-related-items (blocks 12/13)
-    this.relatedStories = this.main.locator('[data-block-name*="related-stories"], [class*="related-stories"]');
+    // Block is related-articles on DEV (JOB-20261020-10). Match the block only: the section wrapper
+    // "related-articles-container" is present even without the block (JOB-ZZ-IDLE-19).
+    this.relatedStories = this.main.locator('[data-block-name="related-articles"], .related-articles.block, [data-block-name*="related-stories"], .related-stories.block');
     this.relatedStoriesHeading = this.main.getByRole('heading', { name: relatedStoriesName });
     this.relatedItems = this.main.locator('[data-block-name*="related-items"], [class*="related-items"], [class*="related-products"]');
     this.relatedItemsHeading = this.main.getByRole('heading', { name: relatedItemsName });
