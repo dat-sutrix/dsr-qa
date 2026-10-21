@@ -1,0 +1,157 @@
+{
+  "job": "JOB-ZZ-IDLE-27",
+  "agent": "codex",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-21T10:22:35.240Z",
+  "finished": "2026-10-21T10:22:58.761833Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/en_library_article_1440x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/en/library/article",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/en_library_article_375x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/en/library/article",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/en_library_article_stories_qa529-01_1440x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/en/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/en_library_article_stories_qa529-01_375x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/en/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/ja_library_article_1440x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/ja/library/article",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/ja_library_article_375x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/ja/library/article",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/ja_library_article_stories_qa529-01_1440x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/ja/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/ja_library_article_stories_qa529-01_375x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/ja/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/ja_library_article_stories_qa529-02_1440x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/ja/library/article/stories/qa529-02",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; HTTP 404 recorded. Execution only, no visual verdict.",
+      "evidence": "results/JOB-ZZ-IDLE-27/baselines/ja_library_article_stories_qa529-02_375x900.png",
+      "suspect": "none",
+      "verdict": null,
+      "target": "/ja/library/article/stories/qa529-02",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      }
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/article-detail/DSR-529.idle27-capture.spec.ts"
+  ],
+  "questions": [],
+  "note": "Record only. pass means capture execution succeeded, not a product verdict. All requested URLs returned 404. Observations: results/JOB-ZZ-IDLE-27/*.json"
+}

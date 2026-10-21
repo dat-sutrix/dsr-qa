@@ -1,0 +1,13 @@
+# JOB-ZZ-IDLE-27 — record only
+- Captured all five exact job URLs on DEV .aem.live in Chromium, PC 1440×900 and SP 375×900.
+- 10/10 capture executions completed; no visual or product verdict assigned.
+- All five URLs returned HTTP 404 at both sizes; final URLs remained unchanged.
+- All responses: Last-Modified `Tue, 20 Oct 2026 11:36:16 GMT`.
+- No article info-bar dates, tag chips, image blocks, main images or related cards were present on the returned 404 pages.
+- Full-page PNGs: `results/JOB-ZZ-IDLE-27/baselines/` (10 files).
+- Per-capture raw observations: `results/JOB-ZZ-IDLE-27/*.json` (HTTP, dates, tags, images/statuses, related cards, last-modified).
+- `npx tsc --noEmit`: exit 0, no errors.
+- No failed execution tests; no bug classification. Article rendering could not be observed at these exact URLs.
+- Paths were used literally without `/master`; no fallback paths substituted.
+- Deployment identity and QA-PT republish timing were not independently verified.
+- Read-only navigation and image GETs only; no content writes.

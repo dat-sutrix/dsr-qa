@@ -1,0 +1,24 @@
+{
+  "tc": "DSR-ARTICLE-030",
+  "target": "/ja/library/article/stories/qa529-02",
+  "started": "2026-10-21T10:22:45.694Z",
+  "finished": "2026-10-21T10:22:47.974Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "httpStatus": 404,
+  "lastModified": "Tue, 20 Oct 2026 11:36:16 GMT",
+  "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/article/stories/qa529-02",
+  "title": "Page not found",
+  "infoBarDateText": [],
+  "tagChipCount": 0,
+  "tagChipText": [],
+  "imageBlockCount": 0,
+  "blocks": [],
+  "images": [],
+  "related": [],
+  "imageStatuses": [],
+  "screenshot": "results/JOB-ZZ-IDLE-27/baselines/ja_library_article_stories_qa529-02_1440x900.png",
+  "verdict": null
+}
