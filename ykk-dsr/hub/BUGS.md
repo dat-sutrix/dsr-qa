@@ -1,6 +1,6 @@
 # YKK DSR – Bug register
 
-> Cập nhật: 2026-10-20 17:10 (UTC+7, [schedule] evening) · **DSR-648, DSR-651 = Done** (Jira 20/10 11:02 JST) · DSR-552 Done · 0 bug mới tạo: 529 chờ áp bugs/529-decision-20261021.md lúc 07:45 21/10 (sau Night 20/10 BUGCHK-529-*) · catalog fails JOB-09 < 80% → DASHBOARD 📣 · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR)
+> Cập nhật: 2026-10-21 07:45 (UTC+7, [schedule] morning) · 🐞 3 bug mới DSR-529: **DSR-657, DSR-658, DSR-659** (qa-ai, 90%) · BUG-1/BUG-5 529 = data (đóng nháp) · 529 <80% → DASHBOARD 🐞 · DSR-457/647/538 trạng thái Jira không đổi · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR)
 
 ## 🔔 Việc cần làm về bug
 | # | Bug | Việc | Ai | Với ai | Hạn |
@@ -15,11 +15,14 @@
 |---|---|---|---|---|---|---|---|---|
 | [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | Product Detail – Integrate issue (13 item) · ⚠ 20/10 CR DSR-585 bỏ `topBottomStopVariation` → item #12 (dòng dưới tên sản phẩm) không còn kỳ vọng hiển thị = thay đổi spec, không phải fail | Major | [Dev] In Testing (Jira 20/10) | Kohei Okumura (Jira 20/10) | DEV | 19/10 QA-PT: ✅ 10 · 16/10 QA-PT: ✅ 1 · 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 10 | R1 (Ngọc) · 61015 (Kohei – mặc định có hiệu lực 20/10) · #13 sau DSR-587 (overlay merge 20/10) |
 | [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) | DSR-501 | video-detail: relatedMovies không bao giờ hiển thị (query thiếu relatedMovies, FE đọc relatedVideos) | High | **[Dev] In Testing** · Martin 20/10: merge main 20/10 | Portal Martin | DEV (branch DSR-PRODUCTDETAIL-moustache) | 16/10 QA-PT: P3-order ❌ (sau khi set 更新日 rel-1..6) – chưa kết luận (nghi preview cũ). 16/10 JOB-05: blocked-data. Order rule = update date mới nhất trước (61177) | 19/10 JOB-20261019-01: ✅ P2 (sau khi bỏ assertion static HTML) · P3 hold JOB-20261019-03 (re-preview hoặc overlay merge 20/10 + QA-PT seed lại tối 20/10) |
+| [DSR-657](https://sutrix.atlassian.net/browse/DSR-657) | DSR-529 | Article image block duplicated in UE / empty image block on Publish (TC 002) | Medium | To Do (tạo 21/10) | Portal Martin | DEV | JOB-20261020-10: ja 1 trống + 1 ảnh, en 1 trống · Night 19/10 TD-529-01 ❌ | Martin fix → rerun DSR-ARTICLE-002 |
+| [DSR-658](https://sutrix.atlassian.net/browse/DSR-658) | DSR-529 | Tag chips not rendered (article:tag metas present) (TC 006) | Medium | To Do (tạo 21/10) | Portal Martin | DEV | JOB-20261020-10: 0 chip, 2 meta article:tag | Martin fix → rerun DSR-ARTICLE-006 |
+| [DSR-659](https://sutrix.atlassian.net/browse/DSR-659) | DSR-529 | Thumbnail + related-article images relative /content/dam → 404 .live (TC 011, 013) | Medium | To Do (tạo 21/10) | Portal Martin | DEV | JOB-20261020-10: relative path 404 · TD-529-fix ảnh related không hiện | Martin fix → rerun 011/013 |
 
 ### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
 | Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
 |---|---|---|---|---|---|
-| PEND-529-01 | DSR-529 | Article image: changing the image in UE duplicates it; after deleting one image and publishing, no image is shown | Major? (chưa chốt) | Night 19/10 TD-529-01 ❌ (evidence https://drive.google.com/file/d/1PDx8cV4oVuLjrjBEBlSIVeprRafxvl46/view) | Chưa đủ để kết luận bug: ảnh chụp ở `/master/en/qa529-01` (ngoài stories). ✅ JOB-20261019-02 xác nhận: ja có 2 block ảnh (1 trống = nhân đôi), en block ảnh trống (không hiện ảnh); ảnh QA-PT ở /master/en/qa529-01 chỉ là URL Author cũ, trang đúng ở …/stories/qa529-01. → **bug thật 90%** – tạo lúc 07:45 21/10 cùng các bug 529 khác theo bugs/529-decision-20261021.md (Medium, Martin) |
+| ~~PEND-529-01~~ | DSR-529 | → đã tạo **DSR-657** (21/10 07:45) | — | — | — |
 
 **(Đã tạo DSR-648 16/10 12:53) Nội dung ticket PEND-552-016 (copy nguyên văn, label `qa-ai`, link "is a bug of" DSR-552, priority Low):**
 ```
