@@ -2,7 +2,7 @@ import { test, expect, type APIRequestContext, type Browser, type Page } from '@
 import { MovieDetailPage } from '../../pages/MovieDetailPage';
 import {
   type Language, base, hosts, videoPath, listPath, techTalkListPath, td, notSeeded, seeded, siteTitleSuffix, maxRelatedMovies,
-  playWaitMs, redirectWaitMs, graphqlPattern, indexPath, htmlLang, cnPending, techTalkPending, dsr173GroupA,
+  playWaitMs, redirectWaitMs, graphqlPattern, indexPath, htmlLang, cnPending, techTalkPending, dsr173GroupA, nonStandardHref, manual009,
 } from '../../fixtures/dsr-587';
 import { detailPath } from '../../fixtures/dsr-173';
 
@@ -91,6 +91,8 @@ test.describe('DSR-587 movie detail overlay', () => {
         expect(currentTime, 'video currentTime').toBeGreaterThan(0);
       } else {
         // YouTube: the iframe is cross-origin, so playback is checked through the embed src (TC Expected allows this).
+        // Step 3 "click play": the YouTube player is a facade until clicked (DSR-109).
+        if (await movie.playerFacade.count()) await movie.playerFacade.click();
         await expect(movie.playerEmbed).toHaveAttribute('src', /\/embed\/[\w-]+/);
         const src = await movie.playerEmbedSrc();
         observations.push({ player: 'youtube', src });
@@ -120,10 +122,12 @@ test.describe('DSR-587 movie detail overlay', () => {
       expect.soft(raw.description ?? '', 'meta description: no line break').not.toMatch(/[\r\n]|<br/i);
       for (const line of td['01'].descriptionLines) expect.soft(raw.description ?? '', 'meta description').toContain(line);
       expect.soft(raw.bodyText, 'body: movie title').toContain(td['01'].title);
-      expect(raw.ogImage ?? '', 'og:image absolute URL').toMatch(/^https?:\/\//);
-      const og = await request.get(raw.ogImage!, { failOnStatusCode: false });
-      observations.push({ ogImage: raw.ogImage, status: og.status() });
-      expect.soft(og.status(), 'og:image HTTP').toBe(200);
+      expect.soft(raw.ogImage ?? '', 'og:image absolute URL').toMatch(/^https?:\/\//);
+      if (/^https?:\/\//.test(raw.ogImage ?? '')) {
+        const og = await request.get(raw.ogImage!, { failOnStatusCode: false });
+        observations.push({ ogImage: raw.ogImage, status: og.status() });
+        expect.soft(og.status(), 'og:image HTTP').toBe(200);
+      }
 
       const graphql: string[] = [];
       page.on('request', r => { if (graphqlPattern.test(r.url())) graphql.push(r.url()); });
@@ -178,6 +182,8 @@ test.describe('DSR-587 movie detail overlay', () => {
     await expect.soft(movie.title, 'movie title not shown').toHaveCount(0);
   });
 
+  test('DSR-VOV-009 [en] CF commune edit shows only after CF related republish', () => { test.fixme(true, manual009); });
+
   test('DSR-VOV-010 [en] unpublished CF related → 404 on both hosts, absent from query-index', { tag: ['@auto'] }, async ({ request }) => {
     test.skip(!seeded('10'), `${notSeeded('10')} (negative TC: confirm via DSR587_SEEDED)`);
     const path = videoPath('en', td['10'].id);
@@ -215,6 +221,22 @@ test.describe('DSR-587 movie detail overlay', () => {
   }
 
   test('DSR-VOV-011 [cn] list pages', () => { test.fixme(true, cnPending); });
+
+  test('DSR-VOV-013 [en] movie list shows standard movies only', { tag: ['@auto'] }, async ({ page }) => {
+    const target = url(listPath('en'));
+    let navigations = 0;
+    page.on('framenavigated', f => { if (f === page.mainFrame()) navigations++; });
+    const response = await page.goto(target);
+    expect(response?.status(), target).toBe(200);
+    const listed = await listingCards(page).first().waitFor({ state: 'visible', timeout: 5_000 }).then(() => true, () => false);
+    observations.push({ url: target, finalUrl: page.url(), status: response?.status(), mainFrameNavigations: navigations, videoDetailBlocks: await videoDetailBlock(page).count().catch(() => null) });
+    expect(listed, `first list card (main-frame navigations: ${navigations})`).toBe(true);
+    const hrefs = await listingCards(page).evaluateAll(links => links.map(a => a.getAttribute('href') ?? ''));
+    const paths = hrefs.map(h => new URL(h, page.url()).pathname);
+    observations.push({ cardPaths: paths });
+    expect.soft(paths, `${td['01'].id} card`).toContain(videoPath('en', td['01'].id));
+    expect.soft(paths.filter(p => nonStandardHref.test(p)), 'hrefs to /video/search or /video/tech-talk').toEqual([]);
+  });
 
   test('DSR-VOV-014 [en] related movies max 5 when 6 are linked', { tag: ['@auto'] }, async ({ page }) => {
     const { movie } = await openVideo(page, 'en', '14');

@@ -4,13 +4,15 @@ export class VideoPlayerPage {
   readonly player: Locator;
   readonly facade: Locator;
   readonly embed: Locator;
+  readonly video: Locator;
   readonly iframes: Locator;
 
   constructor(readonly page: Page) {
-    // Shared player inside the DSR-173 video-detail block; no standalone DSR-557 video-player block found on DEV.
+    // Shared player inside the video-detail block (overlay /{lang}/library/video/{id}); no standalone DSR-557 video-player block on DEV.
     this.player = page.getByTestId('movie-detail-player');
     this.facade = page.getByTestId('movie-detail-player-facade');
     this.embed = page.getByTestId('movie-detail-player-embed');
+    this.video = page.getByTestId('movie-detail-player-video'); // DAM movie
     this.iframes = page.locator('iframe');
   }
 

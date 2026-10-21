@@ -2,15 +2,24 @@ import { pagePath } from './paths';
 export const languages = ['ja', 'en'] as const;
 export type Language = typeof languages[number];
 export const viewports = { PC: { width: 1440, height: 900 } };
-// Discovery 2026-10-15 (docs/DSR-557/discovery-DEV.md): only ja has a catalog test page; only en has a video page.
+// Discovery 2026-10-15 (docs/DSR-557/discovery-DEV.md): only ja has a catalog test page.
 export const catalogPath = (lang: Language) => pagePath('listCatalog', lang); // DSR-638: fixtures/paths.ts
-export const videoPath = (lang: Language, id: string) => `/master/${lang}/test-space/dsr-173-video-detail?id=${id}`;
-export const catalogQuery = /\/graphql\/execute\.json\/ykk\/dm-catalog-list/;
-// Dev-published Movie CFs (movieSource = youtube) and the id expected from movieSourceId.
+// JOB-20261020-02 (Martin 19/10): video TCs run only on overlay pages /{lang}/library/video/{id} (BL-OVL-1);
+// test-space dsr-173-video-detail?id= is obsolete. Both tiers: .aem.page (preview) and .aem.live (publish).
+export const videoPath = (lang: Language, id: string) => `/${lang}/library/video/${id}`;
+export const videoHosts = () => {
+  const b = (process.env.BASE_URL || '').replace(/\/$/, '');
+  return [b.replace('.aem.live', '.aem.page'), b.replace('.aem.page', '.aem.live')];
+};
+// QA-seeded overlay Movie CFs. youtubeId = TD-587-01 movieSourceId (raw video-detail row, DEV 2026-10-21).
 export const youtubeVideos = [
-  { id: 'sort-main', movieSourceId: 'irFRtAVphCY&t=38s', youtubeId: 'irFRtAVphCY' },
-  { id: 'long', movieSourceId: 'https://youtu.be/LQe4d3ulijQ?si=MNlaiWwf__LURE6w', youtubeId: 'LQe4d3ulijQ' },
+  { id: 'qa587-main', movieSourceId: 'irFRtAVphCY', youtubeId: 'irFRtAVphCY' },
 ];
+// DAM mp4 movie (movieSource = dam, movieAsset sample-4.mp4).
+export const damVideos = [
+  { id: 'qa557-dam', assetPath: '/content/dam/ykk/digital-showroom/test/video/sample-4.mp4' },
+];
+export const catalogQuery = /\/graphql\/execute\.json\/ykk\/dm-catalog-list/;
 export const embedDomains = /^https?:\/\/([^/]+\.)?(youtube\.com|youtube-nocookie\.com|youtu\.be|ytimg\.com|youku\.com|ykimg\.com)(\/|$)/;
 // DSR-109 facade: thumbnail allowed (QA decision 2026-10-15). Only embed/player requests are forbidden before interaction.
 export const playerRequests = /^https?:\/\/(([^/]+\.)?youtube\.com\/embed(\/|\?|$)|([^/]+\.)?youtube-nocookie\.com(\/|$)|www\.youtube\.com\/(s\/|iframe_api|player)|player\.youku\.com(\/|$)|[^/]+\.ytimg\.com\/yts\/)/;

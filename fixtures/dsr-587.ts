@@ -14,12 +14,14 @@ export const videoPath = (lang: string, id: string) => `/${lang}/library/video/$
 // A3: movie list for isActive = false / unavailable = /{lang}/library/video/search (Martin test URL).
 export const listPath = (lang: string) => `/${lang}/library/video/search`;
 export const techTalkListPath = (lang: string) => `/${lang}/library/video/tech-talk`;
+// 13.0: list cards must not link to list pages or tech-talk movies (TCC#4, DSR-523).
+export const nonStandardHref = /\/library\/video\/(search|tech-talk)(\/|$|\?)/;
 
 // DSR-587 TestData sheet (spec.json testdata). QA ids qa587-* (A2). ja copy of TD-587-01 / 07 = same id and values (assumed; sheet: "ja, cn copies").
 export const td = {
   '01': { id: 'qa587-main', title: 'QA587 main movie', descriptionLines: ['QA587 line1', 'line2'],
-    // TestData: "any public YouTube id" – not fixed in the sheet. TODO(QA-PT): record the seeded movieSourceId.
-    movieSourceId: null as string | null },
+    // TestData: "any public YouTube id". Seeded value read from the raw video-detail row movieSourceId (en + ja, DEV 2026-10-21, JOB-20261020-02).
+    movieSourceId: 'irFRtAVphCY' as string | null },
   '02': { id: 'qa587-preview', title: 'QA587 preview' },
   '04': { ids: ['QA587_Upper', 'qa587_upper'] },
   '05': { id: 'qa587-sub', subfolder: 'qa587', legacyId: 'qa501-main-a' },
@@ -46,6 +48,7 @@ export const graphqlPattern = /graphql|execute\.json/i;
 export const indexPath = '/query-index.json'; // DEV 2026-10-19: only root index exists
 export const htmlLang: Record<Language, string> = { ja: 'ja', en: 'en' };
 export const cnPending = 'Issue #18: no /cn path on DEV';
+export const manual009 = 'Manual TC: Author edit + publish of CF commune / CF related; agents are read-only (A6) – QA-PT';
 export const techTalkPending = 'tech-talk list page not published on DEV (HTTP 404); 11.0 runs on video/search only (job JOB-ZZ-IDLE-06)';
 
 // 17.0: DSR-173 Group A page switched via DSR173_MOVIE_PATH (fixtures/dsr-173.ts). Related checks use TD-587-14.

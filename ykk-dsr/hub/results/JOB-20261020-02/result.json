@@ -1,0 +1,479 @@
+{
+  "job": "JOB-20261020-02",
+  "agent": "claude-code",
+  "us": "DSR-557, DSR-587",
+  "env": "dev",
+  "started": "2026-10-21T16:21:39Z",
+  "finished": "2026-10-21T16:39:23Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "us": "DSR-557",
+      "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "us": "DSR-557",
+      "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-001",
+      "lang": "ja",
+      "us": "DSR-587",
+      "title": "DSR-VOV-001 [ja] live CF related → movie detail page 200, title shown, movie plays",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-001",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-001 [en] live CF related → movie detail page 200, title shown, movie plays",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "us": "DSR-587",
+      "title": "DSR-VOV-003 [ja] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "host": ".aem.live",
+      "result": "fail",
+      "error": "og:image = \"about:error\" in raw HTML (og:image:secure_url correct, 200)",
+      "suspect": "product",
+      "cause": "overlay-merge",
+      "confidence": 65,
+      "note": "same value on every QA overlay page (video + catalog); all use thumbnail \"image 7.png\" (space in name) → data cause not excluded",
+      "evidence": "evidence/DSR-VOV-003_ja.png"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-003 [en] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "host": ".aem.live",
+      "result": "fail",
+      "error": "og:image = \"about:error\" in raw HTML (og:image:secure_url correct, 200)",
+      "suspect": "product",
+      "cause": "overlay-merge",
+      "confidence": 65,
+      "note": "same value on every QA overlay page (video + catalog); all use thumbnail \"image 7.png\" (space in name) → data cause not excluded",
+      "evidence": "evidence/DSR-VOV-003_en.png"
+    },
+    {
+      "tc": "DSR-VOV-009",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-009 [en] CF commune edit shows only after CF related republish",
+      "host": ".aem.live",
+      "result": "skip",
+      "error": "Manual TC: Author edit + publish of CF commune / CF related; agents are read-only (A6) – QA-PT"
+    },
+    {
+      "tc": "DSR-VOV-013",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-013 [en] movie list shows standard movies only",
+      "host": ".aem.live",
+      "result": "fail",
+      "error": "/en/library/video/search served by overlay as video-detail unavailable=not-found; video-detail.js:238 redirects to backListUrl() = same URL → endless reload, no list cards",
+      "suspect": "product",
+      "cause": "overlay-merge",
+      "confidence": 85,
+      "note": "ja + en, .aem.page + .aem.live; BL-OVL-1 regex (?!search$|tech-talk$) excludes search; QA-PT published the list pages 19:44 (Night 21/10)",
+      "evidence": "evidence/DSR-VOV-013_en.png"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "ja",
+      "us": "DSR-587",
+      "title": "DSR-VOV-018 [ja] language variant: 200, html lang, title",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-018 [en] language variant: 200, html lang, title",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "cn",
+      "us": "DSR-587",
+      "title": "DSR-VOV-018 [cn] language variant",
+      "host": ".aem.live",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV"
+    },
+    {
+      "tc": "DSR-VOV-001",
+      "lang": "ja",
+      "us": "DSR-587",
+      "title": "DSR-VOV-001 [ja] live CF related → movie detail page 200, title shown, movie plays",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-001",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-001 [en] live CF related → movie detail page 200, title shown, movie plays",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "us": "DSR-587",
+      "title": "DSR-VOV-003 [ja] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "host": ".aem.page",
+      "result": "fail",
+      "error": "og:image = \"about:error\" in raw HTML (og:image:secure_url correct, 200)",
+      "suspect": "product",
+      "cause": "overlay-merge",
+      "confidence": 65,
+      "note": "same value on every QA overlay page (video + catalog); all use thumbnail \"image 7.png\" (space in name) → data cause not excluded",
+      "evidence": "evidence/DSR-VOV-003_ja.png (same symptom on .aem.live; .aem.page screenshot not committed)"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-003 [en] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "host": ".aem.page",
+      "result": "fail",
+      "error": "og:image = \"about:error\" in raw HTML (og:image:secure_url correct, 200)",
+      "suspect": "product",
+      "cause": "overlay-merge",
+      "confidence": 65,
+      "note": "same value on every QA overlay page (video + catalog); all use thumbnail \"image 7.png\" (space in name) → data cause not excluded",
+      "evidence": "evidence/DSR-VOV-003_en.png (same symptom on .aem.live; .aem.page screenshot not committed)"
+    },
+    {
+      "tc": "DSR-VOV-009",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-009 [en] CF commune edit shows only after CF related republish",
+      "host": ".aem.page",
+      "result": "skip",
+      "error": "Manual TC: Author edit + publish of CF commune / CF related; agents are read-only (A6) – QA-PT"
+    },
+    {
+      "tc": "DSR-VOV-013",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-013 [en] movie list shows standard movies only",
+      "host": ".aem.page",
+      "result": "fail",
+      "error": "/en/library/video/search served by overlay as video-detail unavailable=not-found; video-detail.js:238 redirects to backListUrl() = same URL → endless reload, no list cards",
+      "suspect": "product",
+      "cause": "overlay-merge",
+      "confidence": 85,
+      "note": "ja + en, .aem.page + .aem.live; BL-OVL-1 regex (?!search$|tech-talk$) excludes search; QA-PT published the list pages 19:44 (Night 21/10)",
+      "evidence": "evidence/DSR-VOV-013_en.png (same symptom on .aem.live; .aem.page screenshot not committed)"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "ja",
+      "us": "DSR-587",
+      "title": "DSR-VOV-018 [ja] language variant: 200, html lang, title",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-018 [en] language variant: 200, html lang, title",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-018",
+      "lang": "cn",
+      "us": "DSR-587",
+      "title": "DSR-VOV-018 [cn] language variant",
+      "host": ".aem.page",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV"
+    },
+    {
+      "tc": "DSR-MOVIE-012",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-012 displays the exact movie title",
+      "host": ".aem.live",
+      "result": "fail",
+      "job_tc": "DSR-587 17.0",
+      "error": "title \"QA587 main movie\" vs DSR-173 fixture \"movieTitle\" (fixture still holds test-space values)",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 5,
+      "evidence": "evidence/DSR-MOVIE-012_en.png"
+    },
+    {
+      "tc": "DSR-MOVIE-014",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-014 embeds the configured YouTube movie",
+      "host": ".aem.live",
+      "result": "fail",
+      "job_tc": "DSR-587 17.0",
+      "error": "embed iframe not attached: DSR-173 spec does not click the YouTube facade",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 5,
+      "evidence": "evidence/DSR-MOVIE-014_en.png"
+    },
+    {
+      "tc": "DSR-MOVIE-020",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-020 displays visible related product codes in order",
+      "host": ".aem.live",
+      "result": "skip",
+      "job_tc": "DSR-587 17.0",
+      "error": "Issue #1: related products specification pending"
+    },
+    {
+      "tc": "DSR-MOVIE-025",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-025 navigates the related content carousel to its end",
+      "host": ".aem.live",
+      "result": "skip",
+      "job_tc": "DSR-587 17.0",
+      "error": "Issue #5: carousel behavior pending"
+    },
+    {
+      "tc": "DSR-MOVIE-026",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-026 displays related thumbnails, types, tags and valid links",
+      "host": ".aem.live",
+      "result": "fail",
+      "job_tc": "DSR-587 17.0",
+      "error": "0 related-content cards on qa587-main; spec opens VALID_YOUTUBE path, 17.0 wants qa587-rel-a for related checks",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "evidence": "evidence/DSR-MOVIE-026_en.png"
+    },
+    {
+      "tc": "DSR-MOVIE-027",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-027 outputs exactly one title and og:title",
+      "host": ".aem.live",
+      "result": "fail",
+      "job_tc": "DSR-587 17.0",
+      "error": "<title> \"QA587 main movie | YKK DIGITAL SHOWROOM\" vs fixture \"movieTitle | YKK DIGITAL SHOWROOM\"",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 5,
+      "evidence": "evidence/DSR-MOVIE-027_en.png"
+    },
+    {
+      "tc": "DSR-MOVIE-028",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-028 removes line breaks from description metadata",
+      "host": ".aem.live",
+      "result": "skip",
+      "job_tc": "DSR-587 17.0",
+      "error": "Description line-break separator is unconfirmed"
+    },
+    {
+      "tc": "DSR-MOVIE-029",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-029 outputs an absolute reachable CF thumbnail",
+      "host": ".aem.live",
+      "result": "fail",
+      "job_tc": "DSR-587 17.0",
+      "error": "og:image \"about:error\" (same as DSR-VOV-003)",
+      "suspect": "product",
+      "cause": "overlay-merge",
+      "confidence": 65,
+      "evidence": "evidence/DSR-MOVIE-029_en.png"
+    },
+    {
+      "tc": "DSR-MOVIE-033",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-033 displays component sections in vertical order on PC",
+      "host": ".aem.live",
+      "result": "fail",
+      "job_tc": "DSR-587 17.0",
+      "error": "movie-detail-related-products not rendered; raw HTML of qa587-main has no relatedProducts row (TD-587-01 needs 1 product)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 20,
+      "evidence": "evidence/DSR-MOVIE-033_en.png"
+    },
+    {
+      "tc": "DSR-MOVIE-034",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-MOVIE-034 displays the component back control",
+      "host": ".aem.live",
+      "result": "pass",
+      "job_tc": "DSR-587 17.0"
+    },
+    {
+      "tc": "DSR-VOV-017",
+      "lang": "en",
+      "us": "DSR-587",
+      "title": "DSR-VOV-017 [en] DSR-173 Group A page switched to the overlay page",
+      "host": ".aem.live",
+      "result": "pass",
+      "job_tc": "DSR-587 17.0"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-557.ts",
+    "pages/VideoPlayerPage.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "fixtures/dsr-587.ts",
+    "pages/MovieDetailPage.ts",
+    "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  ],
+  "reports": [
+    "results/DSR-557/DEV/automation-run-20261021-job20261020-02.md",
+    "results/DSR-557/DEV/automation-run-20261021-job20261020-02-collect.md",
+    "results/DSR-587/DEV/automation-run-20261021-job20261020-02-live.md",
+    "results/DSR-587/DEV/automation-run-20261021-job20261020-02-page.md",
+    "results/DSR-587/DEV/automation-run-20261021-job20261020-02-live-rerun.md",
+    "results/DSR-587/DEV/automation-run-20261021-job20261020-02-page-rerun.md",
+    "results/DSR-587/DEV/automation-run-20261021-job20261020-02-tc17.md"
+  ],
+  "notes": [
+    "Results above are from the final runs (DSR-557 r1; DSR-587 reruns on .aem.live and .aem.page; 17.0 run). Initial DSR-587 runs failed VOV-001 because the spec did not click the facade (test bug, fixed).",
+    "DSR-173 Group A on overlay (17.0) needs TD-587-01 values in fixtures/dsr-173.ts + facade click in DSR-MOVIE-014; not changed by the agent (Expected values).",
+    "Raw movieId on qa587-main = \"QA587 main1\" (BL-OVL-1: ID = node name) – not asserted, likely data."
+  ],
+  "questions": []
+}

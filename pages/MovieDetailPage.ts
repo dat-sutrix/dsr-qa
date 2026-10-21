@@ -15,6 +15,7 @@ export class MovieDetailPage {
   readonly heading: Locator;
   readonly title: Locator;
   readonly player: Locator;
+  readonly playerFacade: Locator;
   readonly playerEmbed: Locator;
   readonly playerVideo: Locator;
   readonly relatedProductsSection: Locator;
@@ -56,6 +57,7 @@ export class MovieDetailPage {
     this.heading = page.getByTestId('movie-detail-heading');
     this.title = page.getByTestId('movie-detail-title');
     this.player = page.getByTestId('movie-detail-player');
+    this.playerFacade = page.getByTestId('movie-detail-player-facade');
     this.playerEmbed = page.getByTestId('movie-detail-player-embed');
     this.playerVideo = page.getByTestId('movie-detail-player-video');
     this.relatedProductsSection = page.getByTestId('movie-detail-related-products');

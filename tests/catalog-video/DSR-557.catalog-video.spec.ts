@@ -1,7 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
 import { VideoPlayerPage } from '../../pages/VideoPlayerPage';
-import { viewports, languages, type Language, catalogPath, videoPath, youtubeVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, qa190, notRendered, type CatalogItem } from '../../fixtures/dsr-557';
+import { viewports, languages, type Language, catalogPath, videoPath, videoHosts, youtubeVideos, damVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, qa190, notRendered, type CatalogItem } from '../../fixtures/dsr-557';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -22,12 +22,14 @@ async function openCatalog(page: Page, lang: Language) {
   observations.push({ language: lang, url: page.url(), status: response?.status(), items: data });
   return { catalog, data };
 }
-async function openVideo(page: Page, lang: Language, id: string) {
+async function openVideo(page: Page, host: string, lang: Language, id: string) {
   const video = new VideoPlayerPage(page);
-  const response = await video.goto(videoPath(lang, id));
-  // Blocked: no DEV data — see docs/DSR-557/discovery-DEV.md
-  test.skip(response?.status() === 404, `Blocked – no DEV data for ${lang} video page (${videoPath(lang, id)} HTTP 404)`);
+  const target = `${host}${videoPath(lang, id)}`;
+  const response = await video.goto(target);
+  // Blocked: overlay page not generated (CF related not published on this tier)
+  test.skip(response?.status() === 404, `Blocked – no DEV data: ${target} HTTP 404`);
   expect(response?.status()).toBe(200);
+  expect(page.url(), 'no redirect').toBe(target);
   await expect(video.player).toBeVisible();
   return video;
 }
@@ -140,42 +142,55 @@ for (const lang of languages) {
       });
     }
 
-    test('DSR-CATV-001 no autoplay before click', { tag: ['@auto'] }, async ({ page }) => {
-      const video = await openVideo(page, lang, youtubeVideos[0].id);
-      await page.waitForLoadState('networkidle');
-      const srcs = await video.iframeSrcs(); const paused = await video.videosPaused();
-      observations.push({ url: page.url(), iframes: srcs, videoPaused: paused, facadeVisible: await video.facade.isVisible() });
-      expect(srcs.filter(s => /[?&]autoplay=1(&|$)/.test(s))).toEqual([]);
-      expect(paused.every(Boolean)).toBe(true);
-    });
+  });
+}
 
-    for (const v of youtubeVideos) {
-      test(`DSR-CATV-002 YouTube embed src after click (${v.id})`, { tag: ['@auto'] }, async ({ page }) => {
-        const video = await openVideo(page, lang, v.id);
+// Video TCs on overlay pages (JOB-20261020-02): YouTube qa587-main, DAM mp4 qa557-dam, on .aem.page and .aem.live.
+for (const lang of languages) {
+  for (const host of videoHosts()) {
+    const tier = new URL(host).hostname.endsWith('.aem.live') ? 'live' : 'page';
+    test.describe(`${lang} video ${tier}`, () => {
+      for (const id of [youtubeVideos[0].id, damVideos[0].id]) {
+        test(`DSR-CATV-001 [${lang}] no autoplay before click (${id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+          const video = await openVideo(page, host, lang, id);
+          await page.waitForLoadState('networkidle');
+          const srcs = await video.iframeSrcs(); const paused = await video.videosPaused();
+          const autoplayAttr = await video.page.locator('video').evaluateAll(v => v.map(x => (x as HTMLVideoElement).autoplay));
+          observations.push({ url: page.url(), iframes: srcs, videoPaused: paused, videoAutoplay: autoplayAttr, facadeVisible: await video.facade.isVisible(), damVideo: await video.video.count() });
+          if (id === damVideos[0].id) await expect(video.video, 'DAM <video>').toHaveCount(1);
+          expect(srcs.filter(s => /[?&]autoplay=1(&|$)/.test(s))).toEqual([]);
+          expect(paused.every(Boolean)).toBe(true);
+        });
+      }
+
+      for (const v of youtubeVideos) {
+        test(`DSR-CATV-002 [${lang}] YouTube embed src after click (${v.id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+          const video = await openVideo(page, host, lang, v.id);
+          await video.facade.click();
+          await expect(video.embed).toBeAttached();
+          const src = (await video.embed.getAttribute('src'))!;
+          observations.push({ url: page.url(), movieSourceId: v.movieSourceId, src });
+          expect(new URL(src).hostname).toMatch(/^(www\.)?youtube(-nocookie)?\.com$/);
+          expect(src).toContain(v.youtubeId);
+        });
+      }
+
+      test(`DSR-CATV-006 [${lang}] no YouTube/Youku request before interaction (${youtubeVideos[0].id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+        // DSR-109 facade: thumbnail allowed (QA decision 2026-10-15)
+        const requests: string[] = [];
+        page.on('request', r => { if (embedDomains.test(r.url())) requests.push(r.url()); });
+        const video = await openVideo(page, host, lang, youtubeVideos[0].id);
+        await page.waitForLoadState('networkidle');
+        const before = [...requests]; const iframes = await video.iframeSrcs();
+        const playerBefore = before.filter(u => playerRequests.test(u));
         await video.facade.click();
         await expect(video.embed).toBeAttached();
-        const src = (await video.embed.getAttribute('src'))!;
-        observations.push({ url: page.url(), movieSourceId: v.movieSourceId, src });
-        expect(new URL(src).hostname).toMatch(/^(www\.)?youtube(-nocookie)?\.com$/);
-        expect(src).toContain(v.youtubeId);
+        const src = await video.embed.getAttribute('src');
+        observations.push({ url: page.url(), requestsBeforeInteraction: before, playerRequestsBefore: playerBefore, thumbnailsBefore: before.filter(u => facadeThumbnails.test(u)), iframesBefore: iframes, iframeAfterClick: src, requestsAfterClick: requests.slice(before.length) });
+        expect.soft(iframes, 'iframes before interaction').toEqual([]);
+        expect.soft(playerBefore, 'embed/player requests before interaction').toEqual([]);
+        expect(src ?? '', 'iframe src after click').toMatch(embedSrc);
       });
-    }
-
-    test('DSR-CATV-006 no YouTube/Youku request before interaction', { tag: ['@auto'] }, async ({ page }) => {
-      // DSR-109 facade: thumbnail allowed (QA decision 2026-10-15)
-      const requests: string[] = [];
-      page.on('request', r => { if (embedDomains.test(r.url())) requests.push(r.url()); });
-      const video = await openVideo(page, lang, youtubeVideos[0].id);
-      await page.waitForLoadState('networkidle');
-      const before = [...requests]; const iframes = await video.iframeSrcs();
-      const playerBefore = before.filter(u => playerRequests.test(u));
-      await video.facade.click();
-      await expect(video.embed).toBeAttached();
-      const src = await video.embed.getAttribute('src');
-      observations.push({ url: page.url(), requestsBeforeInteraction: before, playerRequestsBefore: playerBefore, thumbnailsBefore: before.filter(u => facadeThumbnails.test(u)), iframesBefore: iframes, iframeAfterClick: src, requestsAfterClick: requests.slice(before.length) });
-      expect.soft(iframes, 'iframes before interaction').toEqual([]);
-      expect.soft(playerBefore, 'embed/player requests before interaction').toEqual([]);
-      expect(src ?? '', 'iframe src after click').toMatch(embedSrc);
     });
-  });
+  }
 }
