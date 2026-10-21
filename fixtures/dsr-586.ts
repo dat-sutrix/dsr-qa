@@ -3,7 +3,14 @@ export type Language = typeof languages[number];
 
 // Host under test: BASE_URL (envs/<env>.env). Optional override DSR586_BASE (branch test page, Martin 16/10):
 // DSR586_BASE=https://dsr-productdetail-moustache--dsr-eds-dev--sutrix-projects.aem.page
-export const base = () => (process.env.DSR586_BASE || process.env.BASE_URL || '').replace(/\/$/, '');
+// Optional PDO_ID override (JOB-20261021-03): run the value-agnostic TCs on an existing product (e.g. PDO_ID=46, preview only)
+// until TD-586 is seeded. Host defaults to the .aem.page tier of BASE_URL; value-specific TCs skip with needsTd.
+export const pdoId = () => (process.env.PDO_ID || '').trim();
+export const needsTd = 'needs TD-586';
+export const base = () => {
+  const b = (process.env.DSR586_BASE || process.env.BASE_URL || '').replace(/\/$/, '');
+  return pdoId() && !process.env.DSR586_BASE ? b.replace('.aem.live', '.aem.page') : b;
+};
 // BL-OVL-1: preview publish → .aem.page, live publish → .aem.page + .aem.live. Same branch/site, other tier.
 export const hosts = () => {
   const b = base();
@@ -38,7 +45,10 @@ export const indexPath = '/query-index.json'; // DEV 2026-10-19: only root index
 export const sitemapPath = '/sitemap.xml';
 export const htmlLang: Record<Language, string> = { ja: 'ja', en: 'en' };
 
-// 17.0: DSR-585 項目fix版 display / removed field labels. Empty until the fix list review closes (Q27) – TC skips while empty.
+// 17.0: DSR-585 項目fix版 display fields – empty until the fix list review closes (Q27); the value step skips while empty.
 export const fixedDisplayFields: string[] = [];
-export const removedFieldLabels: string[] = [];
+// 17.0 step 3 (ykk-dsr/hub/tc-out/DSR-586.spec.json): removed labels that must not appear.
+export const removedFieldLabels = ['生産国', '上下止', 'スタンダードアイテム', '縫製適正', '外観', '特殊材質', 'MOQ', 'オーダーロット', 'ケアインフォメーション', '納期', '開発会社', '生産会社'];
+export const literalEmpty = /\b(undefined|null)\b/; // 17.0: no literal 'undefined' / 'null'
+export const publishHost = /adobeaemcloud\.com/; // DSR-538: related cards must not link to the AEM publish domain
 export const fixListPending = 'DSR-585 項目fix版 field list not in repo (Q27 review open)';

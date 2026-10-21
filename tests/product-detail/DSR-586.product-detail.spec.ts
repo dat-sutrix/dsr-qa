@@ -3,6 +3,7 @@ import { ProductDetailPage } from '../../pages/ProductDetailPage';
 import {
   type Language, base, hosts, productPath, productsRoot, td, notSeeded, seeded, descriptionPrefix, settleMs, redirectWaitMs,
   graphqlPattern, indexPath, sitemapPath, htmlLang, fixedDisplayFields, removedFieldLabels, fixListPending,
+  pdoId, needsTd, literalEmpty, publishHost,
 } from '../../fixtures/dsr-586';
 
 // DSR-586 product detail overlay (json2html), baseline BL-OVL-1 (docs/DSR-587/overlay-data-flow-BL.md).
@@ -14,6 +15,9 @@ test.afterEach(async ({}, info) => {
 });
 
 const url = (path: string, host = base()) => `${host}${path}`;
+// PDO_ID override: the product id under test replaces the TD id; TD values are then not asserted.
+const productId = (tdId: keyof typeof td) => pdoId() || td[tdId].id;
+const valueSpecific = () => test.skip(!!pdoId(), `${needsTd} (PDO_ID=${pdoId()} override: TC asserts TD-586 data)`);
 
 async function status(request: APIRequestContext, target: string) {
   const response = await request.get(target, { maxRedirects: 0, failOnStatusCode: false });
@@ -24,7 +28,7 @@ async function status(request: APIRequestContext, target: string) {
 // Preflight: TD page 404 → skip (never fail on missing data).
 async function openProduct(page: Page, lang: Language, tdId: keyof typeof td) {
   const detail = new ProductDetailPage(page);
-  const target = url(productPath(lang, td[tdId].id));
+  const target = url(productPath(lang, productId(tdId)));
   const response = await detail.goto(target);
   test.skip(response?.status() === 404, `${notSeeded(tdId)} (${target} HTTP 404)`);
   observations.push({ language: lang, url: target, finalUrl: page.url(), status: response?.status() });
@@ -32,7 +36,7 @@ async function openProduct(page: Page, lang: Language, tdId: keyof typeof td) {
 }
 
 async function rawProduct(request: APIRequestContext, lang: Language, tdId: keyof typeof td) {
-  const target = url(productPath(lang, td[tdId].id));
+  const target = url(productPath(lang, productId(tdId)));
   const response = await status(request, target);
   test.skip(response.status() === 404, `${notSeeded(tdId)} (${target} HTTP 404)`);
   return { response, target, html: await response.text() };
@@ -40,12 +44,20 @@ async function rawProduct(request: APIRequestContext, lang: Language, tdId: keyo
 
 test.describe('DSR-586 product detail overlay', () => {
   for (const lang of ['ja', 'en'] as const) {
-    test(`DSR-PDO-001 [${lang}] live CF related → detail page shows name, code, images and specs`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-PDO-001 [${lang}] live CF related → detail page shows name, code, images and specs`, { tag: ['@auto'] }, async ({ page, request }) => {
       const { detail, response, target } = await openProduct(page, lang, '01');
       expect(response?.status()).toBe(200);
       expect(page.url(), 'no redirect').toBe(target);
-      await expect(detail.name).toHaveText(td['01'].name);
-      await expect(detail.code).toHaveText(td['01'].code);
+      if (pdoId()) {
+        await expect(detail.name).not.toBeEmpty();
+        await expect(detail.code).not.toBeEmpty();
+        observations.push({ name: await detail.name.innerText(), code: await detail.code.innerText() });
+        // Observation only: live tier of the same path (publish-to-live gap).
+        await status(request, url(productPath(lang, pdoId()), hosts().live));
+      } else {
+        await expect(detail.name).toHaveText(td['01'].name);
+        await expect(detail.code).toHaveText(td['01'].code);
+      }
       const images = await detail.loadedImages();
       const specs = await detail.headings.allInnerTexts();
       observations.push({ images, specs });
@@ -56,6 +68,7 @@ test.describe('DSR-586 product detail overlay', () => {
   }
 
   test('DSR-PDO-002 [ja] preview-only CF related → 200 on .aem.page, 404 on .aem.live', { tag: ['@auto'] }, async ({ request }) => {
+    valueSpecific();
     const path = productPath('ja', td['02'].id);
     const preview = await status(request, url(path, hosts().page));
     test.skip(preview.status() === 404, `${notSeeded('02')} (${url(path, hosts().page)} HTTP 404)`);
@@ -70,9 +83,15 @@ test.describe('DSR-586 product detail overlay', () => {
       expect(response.status()).toBe(200);
       const raw = await ProductDetailPage.parseRaw(browser, html);
       observations.push({ title: raw.title, description: raw.description, ogImage: raw.ogImage, rows: raw.rows });
-      expect.soft(raw.bodyText, 'body: product name').toContain(td['01'].name);
-      expect.soft(raw.bodyText, `body: first ${descriptionPrefix} chars of description`).toContain(td['01'].description.slice(0, descriptionPrefix));
-      expect.soft(raw.title, '<title>').toContain(td['01'].name);
+      // PDO_ID: no TD values → expect the CF values the raw rows themselves carry (productName / description rows).
+      const row = (key: string) => raw.rows.find(r => r.key === key)?.value.replace(/\s+/g, ' ') ?? '';
+      const name = pdoId() ? row('productName') : td['01'].name;
+      const description = pdoId() ? row('description') : td['01'].description;
+      if (pdoId()) expect.soft(name, 'productName row').not.toBe('');
+      if (pdoId()) expect.soft(description, 'description row').not.toBe('');
+      expect.soft(raw.bodyText, 'body: product name').toContain(name);
+      expect.soft(raw.bodyText, `body: first ${descriptionPrefix} chars of description`).toContain(description.slice(0, descriptionPrefix));
+      expect.soft(raw.title, '<title>').toContain(name);
       expect.soft(raw.description?.trim() ?? '', 'meta description').not.toBe('');
       expect(raw.ogImage ?? '', 'og:image absolute URL').toMatch(/^https?:\/\//);
       const og = await request.get(raw.ogImage!, { failOnStatusCode: false });
@@ -90,12 +109,13 @@ test.describe('DSR-586 product detail overlay', () => {
     const graphql = requests.filter(u => graphqlPattern.test(u));
     observations.push({ requests: requests.length, graphql });
     expect.soft(graphql, 'requests to */graphql/* or */execute.json/*').toEqual([]);
-    await expect(detail.name).toHaveText(td['01'].name);
+    if (pdoId()) await expect(detail.name).not.toBeEmpty();
+    else await expect(detail.name).toHaveText(td['01'].name);
   });
 
   test('DSR-PDO-005 [ja] only numeric ids render product detail; non-numeric and /products/ are not overlay pages', { tag: ['@auto'] }, async ({ page }) => {
     const { detail } = await openProduct(page, 'ja', '01');
-    await expect(detail.block, `${td['01'].id}: product-detail block`).toBeVisible();
+    await expect(detail.block, `${productId('01')}: product-detail block`).toBeVisible();
 
     if (seeded('05')) {
       const alpha = url(productPath('ja', td['05'].id));
@@ -116,6 +136,7 @@ test.describe('DSR-586 product detail overlay', () => {
   });
 
   test('DSR-PDO-006 [ja] CF related in subfolder → no page (404)', { tag: ['@auto'] }, async ({ request }) => {
+    valueSpecific();
     test.skip(!seeded('06'), `${notSeeded('06')} (negative TC: confirm via DSR586_SEEDED)`);
     for (const path of [productPath('ja', td['06'].id), `/ja/products/${td['06'].subfolder}/${td['06'].id}`]) {
       expect.soft((await status(request, url(path))).status(), path).toBe(404);
@@ -123,12 +144,14 @@ test.describe('DSR-586 product detail overlay', () => {
   });
 
   test('DSR-PDO-007 [ja] CF commune alone → 404 on .aem.page and .aem.live', { tag: ['@auto'] }, async ({ request }) => {
+    valueSpecific();
     test.skip(!seeded('07'), `${notSeeded('07')} (negative TC: confirm via DSR586_SEEDED)`);
     const path = productPath('ja', td['07'].id);
     for (const host of [hosts().page, hosts().live]) expect.soft((await status(request, url(path, host))).status(), host).toBe(404);
   });
 
   test('DSR-PDO-008 [ja] isActive = false → 200 + noindex, browser sent to product list', { tag: ['@auto'] }, async ({ request, browser, page }) => {
+    valueSpecific();
     const { response, html, target } = await rawProduct(request, 'ja', '08');
     expect.soft(response.status(), 'raw HTTP').toBe(200);
     const raw = await ProductDetailPage.parseRaw(browser, html);
@@ -145,6 +168,7 @@ test.describe('DSR-586 product detail overlay', () => {
   });
 
   test('DSR-PDO-009 [ja] CF commune unpublished → single unavailable row + noindex', { tag: ['@auto'] }, async ({ request, browser, page }) => {
+    valueSpecific();
     const { html, target } = await rawProduct(request, 'ja', '09');
     const raw = await ProductDetailPage.parseRaw(browser, html);
     observations.push({ robots: raw.robots, rows: raw.rows });
@@ -161,6 +185,7 @@ test.describe('DSR-586 product detail overlay', () => {
   });
 
   test('DSR-PDO-011 [ja] unpublished CF related → 404 on both hosts, absent from query-index', { tag: ['@auto'] }, async ({ request }) => {
+    valueSpecific();
     test.skip(!seeded('11'), `${notSeeded('11')} (negative TC: confirm via DSR586_SEEDED)`);
     const path = productPath('ja', td['11'].id);
     for (const host of [hosts().page, hosts().live]) expect.soft((await status(request, url(path, host))).status(), host).toBe(404);
@@ -169,6 +194,7 @@ test.describe('DSR-586 product detail overlay', () => {
   });
 
   test('DSR-PDO-012 [ja] live product page listed in query-index and sitemap; preview-only absent', { tag: ['@auto'] }, async ({ request }) => {
+    valueSpecific();
     const { response } = await rawProduct(request, 'ja', '01');
     expect(response.status()).toBe(200);
     const path = productPath('ja', td['01'].id);
@@ -191,6 +217,8 @@ test.describe('DSR-586 product detail overlay', () => {
       const { detail } = await openProduct(page, lang, '01');
       const contact = detail.contact.first();
       await expect(contact).toBeVisible();
+      // PDO_ID: expected code = the code the page itself shows (no TD value).
+      const expectedCode = pdoId() ? (await detail.code.first().innerText()).trim() : td['01'].code;
       const href = await contact.getAttribute('href');
       await contact.click();
       await page.waitForLoadState('networkidle').catch(() => undefined);
@@ -200,7 +228,7 @@ test.describe('DSR-586 product detail overlay', () => {
       const fieldValue = (await field.count()) ? await field.inputValue() : null;
       observations.push({ href, finalUrl: page.url(), fieldValue });
       const finalParam = new URL(page.url()).searchParams.get('productCode');
-      expect.soft(fieldValue ?? finalParam, 'product code (field or URL param)').toBe(td['01'].code);
+      expect.soft(fieldValue ?? finalParam, 'product code (field or URL param)').toBe(expectedCode);
     });
   }
 
@@ -213,20 +241,29 @@ test.describe('DSR-586 product detail overlay', () => {
       observations.push({ htmlLang: lang_, name });
       expect.soft(lang_, 'html lang').toBe(htmlLang[lang]);
       // Per-language TD name not in the TestData sheet ("en, cn copies"): recorded; the shared TD value is asserted.
-      expect.soft(name, 'product name').toBe(td['01'].name);
+      if (pdoId()) expect.soft(name?.trim() ?? '', 'product name').not.toBe('');
+      else expect.soft(name, 'product name').toBe(td['01'].name);
     });
   }
   test.fixme('DSR-PDO-014 [cn] language variant – no /cn path on DEV (Issue #18)', async () => {});
 
   test('DSR-PDO-017 [ja] fixed Product CF field set displayed, removed fields absent', { tag: ['@auto'] }, async ({ page }) => {
-    test.skip(!fixedDisplayFields.length, fixListPending);
     const { detail } = await openProduct(page, 'ja', '01');
     const text = await detail.block.innerText();
-    const missing = fixedDisplayFields.filter(f => !text.includes(f));
     const shownRemoved = removedFieldLabels.filter(f => text.includes(f));
-    observations.push({ missing, shownRemoved });
-    expect.soft(missing, 'display fields missing').toEqual([]);
+    const literals = text.match(new RegExp(literalEmpty, 'g')) ?? [];
+    observations.push({ shownRemoved, literals });
+    // Value-agnostic steps: removed labels (step 3) and ver0.4 field-name tolerance (no literal undefined / null).
     expect.soft(shownRemoved, 'removed fields shown').toEqual([]);
+    expect.soft(literals, "literal 'undefined' / 'null' in block text").toEqual([]);
+    // Step 2 (TD values per display field): needs TD-586-01 and the fix list.
+    if (pdoId() || !fixedDisplayFields.length) {
+      test.info().annotations.push({ type: 'not-verified', description: `step 2 display values: ${pdoId() ? needsTd : fixListPending}` });
+      return;
+    }
+    const missing = fixedDisplayFields.filter(f => !text.includes(f));
+    observations.push({ missing });
+    expect.soft(missing, 'display fields missing').toEqual([]);
   });
 
   test('DSR-PDO-019 [ja] DSR-457 regression items recorded on overlay page', { tag: ['@auto'] }, async ({ page }) => {
@@ -238,8 +275,11 @@ test.describe('DSR-586 product detail overlay', () => {
       item3ToolbarIcons: await detail.toolbarIcons.count(),
       item7PlayIconsVisible: await detail.playIcons.filter({ visible: true }).count(),
       item13MovieLinks: await detail.movieLinks.evaluateAll(as => as.map(a => (a as HTMLAnchorElement).href)),
+      relatedCards: await detail.relatedCards.evaluateAll(as => as.map(a => a.getAttribute('href') ?? '')),
     };
     observations.push(record);
+    // DSR-538 regression: related card links are EDS paths, not the AEM publish domain.
+    expect.soft(record.relatedCards.filter(h => publishHost.test(h)), 'related cards → publish domain').toEqual([]);
     // Items 2/4/5/9/11/12: check definitions are in QA-PT evidence (BUGS.md), not in the repo → not verified here.
     test.info().annotations.push({ type: 'not-verified', description: 'DSR-457 items 2/4/5/9/11/12: check definitions not in repo' });
   });

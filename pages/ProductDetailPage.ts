@@ -22,6 +22,7 @@ export class ProductDetailPage {
   readonly toolbarIcons: Locator;
   readonly playIcons: Locator;
   readonly movieLinks: Locator;
+  readonly relatedCards: Locator;
 
   constructor(readonly page: Page) {
     // TODO: data-testid product-detail
@@ -42,6 +43,8 @@ export class ProductDetailPage {
     this.playIcons = this.block.locator('[class*="play"]');
     // TODO: data-testid product-detail-movie-link (DSR-457 #13)
     this.movieLinks = this.block.getByRole('link', { name: /movie/i });
+    // TODO: data-testid product-detail-related-card (class observed on /{ja,en}/products/46, 2026-10-21)
+    this.relatedCards = this.block.locator('a.pd-related-card');
   }
 
   async goto(url: string): Promise<Response | null> {

@@ -1,0 +1,219 @@
+{
+  "job": "JOB-20261021-03",
+  "agent": "claude-code",
+  "us": "DSR-586",
+  "env": "dev",
+  "started": "2026-10-21T08:37:54Z",
+  "finished": "2026-10-21T08:41:00Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-PDO-001",
+      "lang": "ja",
+      "result": "pass",
+      "error": "PDO_ID=46 .aem.page 200, QUICKFIT®/Z15-1, 5 images. Observation: .aem.live /ja/products/46 404 (publish-to-live gap)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-001",
+      "lang": "en",
+      "result": "pass",
+      "error": "PDO_ID=46 .aem.page 200, QUICKFIT®/Z15-1, 5 images. Observation: .aem.live /en/products/46 404 (publish-to-live gap)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "ja",
+      "result": "pass",
+      "error": "raw HTML: name+description in body, title/meta description/og:image (200 image/jpeg)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "en",
+      "result": "pass",
+      "error": "raw HTML: name+description in body, title/meta description/og:image (200 image/jpeg)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-004",
+      "lang": "ja",
+      "result": "pass",
+      "error": "103 requests, 0 graphql/execute.json",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-005",
+      "lang": "ja",
+      "result": "pass",
+      "error": "46 renders block; /ja/products/ 404, 0 blocks; qa586-alpha step not run (TD-586-05)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-013",
+      "lang": "ja",
+      "result": "pass",
+      "error": "href ?productCode=Z15-1#contact (same-page anchor; DSR-504 target pending)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-013",
+      "lang": "en",
+      "result": "pass",
+      "error": "href ?productCode=Z15-1#contact (same-page anchor; DSR-504 target pending)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-014",
+      "lang": "ja",
+      "result": "pass",
+      "error": "200, html lang ja, name non-empty (TD name not asserted)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-014",
+      "lang": "en",
+      "result": "pass",
+      "error": "200, html lang en, name non-empty (TD name not asserted)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-017",
+      "lang": "ja",
+      "result": "pass",
+      "error": "partial: 0 of 12 removed labels, 0 literal undefined/null; step 2 values: needs TD-586",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-019",
+      "lang": "ja",
+      "result": "pass",
+      "error": "record-only DSR-457 items; 3 related cards, all relative EDS paths (DSR-538 check)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-002",
+      "lang": "ja",
+      "result": "skip",
+      "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-006",
+      "lang": "ja",
+      "result": "skip",
+      "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-007",
+      "lang": "ja",
+      "result": "skip",
+      "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-008",
+      "lang": "ja",
+      "result": "skip",
+      "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-009",
+      "lang": "ja",
+      "result": "skip",
+      "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-011",
+      "lang": "ja",
+      "result": "skip",
+      "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-012",
+      "lang": "ja",
+      "result": "skip",
+      "error": "needs TD-586 (PDO_ID=46 override: TC asserts TD-586 data)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-PDO-014",
+      "lang": "cn",
+      "result": "skip",
+      "error": "fixme: Issue #18 no /cn path on DEV",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-586.ts",
+    "pages/ProductDetailPage.ts",
+    "tests/product-detail/DSR-586.product-detail.spec.ts",
+    "results/DSR-586/DEV/automation-run-20261021-job03.md"
+  ],
+  "questions": []
+}
