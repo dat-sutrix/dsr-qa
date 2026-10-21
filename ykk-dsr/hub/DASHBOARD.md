@@ -62,7 +62,7 @@ Backlog 18/18 xong · Night TC job 20/10 18:35: done 1/1 (re-baseline DSR-585 19
 | CAT-2 | [DSR-557/570] e-book requiresForm card → trang catalog thay vì ebookUrl | 30% | Khớp DSR-655 Y3 → TC cũ | Không tạo; re-baseline đã áp dụng |
 ✅ Đã xử lý 21/10: PEND-529-01 → DSR-657 · BUG-3 → DSR-658 · BUG-4 (+ ảnh related) → DSR-659 · BUG-1, BUG-5 = data (đóng).
 
-## ⚠ Night 20/10 – overlay pages 404 (claude-web 23:20, morning 21/10 cập nhật)
+## ⚠ Overlay pages 404 – **21/10 14:55 Dat: bật 表示フラグ + Publish DSR CF en qa587-main (cả 4 CF đều Published) → .page vẫn 404 → phía dev, đã gửi Martin**. Night 21/10 không seed thêm overlay.
 QA-PT tạo đủ CF (qa587-main, r1–r6, rel-a, off, rel-b, qa557-dam, catalog lõi) nhưng mọi trang `/en/library/video/<id>` và `/en/library/catalog/<id>` = 404 (.page và .live). Note QA-PT: "DSR CF thiếu isActive". Ảnh DSR CF qa587-main (model DM_movie_related): field là **表示フラグ** (không có nhãn isActive) chưa bật, trạng thái **Draft** (Last published trống).
 Suy luận (70%): **data** – 表示フラグ = isActive chưa ON + DSR CF chưa publish. Chưa xác minh.
 Việc sáng 21/10 (Dat, 10 phút, mở khóa sớm 1 ngày): mở DSR CF `/content/dam/dsr/en/movies/standard/qa587-main` → bật 表示フラグ → Save → Publish → mở https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main. 200 → báo claude-web, QA-PT tối 21/10 bật cho các CF còn lại (hoặc Dat làm luôn). Vẫn 404 → hỏi Martin (tin dưới).
