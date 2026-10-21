@@ -1,3 +1,4 @@
+import { pagePath } from './paths';
 export const languages = ['ja', 'en'] as const;
 export type Language = typeof languages[number];
 export const viewports = { PC: { width: 1440, height: 900 } };
@@ -5,7 +6,7 @@ export const viewports = { PC: { width: 1440, height: 900 } };
 // TD-570-01: demo page, layout only, not bound to catalog CF (Ngoc 10/15, DSR-570 comment 61054).
 export const formPath = (lang: Language) => `/master/${lang}/test-space/dsr-570-catalog-detail`;
 // TD-570-02..04: list page shared with DSR-557.
-export const listPath = (lang: Language) => `/master/${lang}/test-space/list-catalog`;
+export const listPath = (lang: Language) => pagePath('listCatalog', lang); // DSR-638: fixtures/paths.ts
 
 // QA-seeded catalog CFs (title on page / catalogId in dm-catalog-list).
 export const td = {

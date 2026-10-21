@@ -1,0 +1,532 @@
+{
+  "job": "JOB-ZZ-IDLE-22",
+  "agent": "claude-code",
+  "us": "DSR-638 impact (557, 570, 583, 589; 529/590 no hit)",
+  "env": "dev",
+  "started": "2026-10-21T06:44:00Z",
+  "finished": "2026-10-21T06:55:16Z",
+  "status": "done",
+  "totals": {
+    "total": 72,
+    "passed": 30,
+    "failed": 19,
+    "skipped": 23,
+    "flaky": 0,
+    "exit_code": 1
+  },
+  "tsc": {
+    "exit_code": 0,
+    "result": "no errors"
+  },
+  "path_status_source": "fixtures/dsr-638-path-status.cjs @ 2026-10-21T06:45Z (table in summary.md)",
+  "tests": [
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: expect(locator).toHaveCount(expected) failed Locator:  locator('.catalog-detail.block').locator('form') Expected: 1",
+      "evidence": "evidence/DSR-CATDL-006_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Test timeout of 30000ms exceeded.",
+      "evidence": "evidence/DSR-CATDL-018_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 20,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "en",
+      "result": "blocked",
+      "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404"
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "en",
+      "result": "blocked",
+      "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404"
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "Error: expect(locator).toHaveCount(expected) failed Locator:  locator('.catalog-detail.block').locator('form') Expected: 1",
+      "evidence": "evidence/DSR-CATDL-006_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "en",
+      "result": "fail",
+      "error": "Test timeout of 30000ms exceeded.",
+      "evidence": "evidence/DSR-CATDL-018_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 20,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-CATDL-003",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: gated PDF URL delivered to the browser before submit expect(received).toEqual(expected) // deep equality - Expected  - 1",
+      "evidence": "evidence/DSR-CATDL-007_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-CATDL-010",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-017",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no catalog-ID mechanism on DEV yet: \"QA190 PDF form required\" card href carries no catalog id; demo form page is not bound to a CF (Ngoc 10/15)"
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "en",
+      "result": "blocked",
+      "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404"
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "cn",
+      "result": "blocked",
+      "error": "cn: no /master/cn (Issue #18)"
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality Expected: \"https://www.ykkfastening.com/\" Received: \"https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook",
+      "evidence": "evidence/DSR-CATV-017_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 20,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "result": "fail",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality Expected: \"https://www.ykkfastening.com/\" Received: \"https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook",
+      "evidence": "evidence/DSR-CATV-017_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 20,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-ICON-001",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-589-04 official icon list"
+    },
+    {
+      "tc": "DSR-ICON-002",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-589-04 official icon list"
+    },
+    {
+      "tc": "DSR-ICON-003",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-589-04 official icon list"
+    },
+    {
+      "tc": "DSR-ICON-004",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run"
+    },
+    {
+      "tc": "DSR-ICON-001",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Blocked: TD-589-04 official icon list"
+    },
+    {
+      "tc": "DSR-ICON-002",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Blocked: TD-589-04 official icon list"
+    },
+    {
+      "tc": "DSR-ICON-003",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Blocked: TD-589-04 official icon list"
+    },
+    {
+      "tc": "DSR-ICON-004",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run"
+    },
+    {
+      "tc": "DSR-ICON-005",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-589-04 official icon list"
+    },
+    {
+      "tc": "DSR-ICON-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: console errors expect(received).toEqual(expected) // deep equality - Expected  - 1",
+      "evidence": "evidence/DSR-ICON-006_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-ICON-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "Error: console errors expect(received).toEqual(expected) // deep equality - Expected  - 1",
+      "evidence": "evidence/DSR-ICON-006_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-ICON-007",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "blocked-data: TD-589-02 product with 0 function values not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+    },
+    {
+      "tc": "DSR-ICON-008",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "blocked-data: TD-589-03 product with the most function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+    },
+    {
+      "tc": "DSR-ICON-009",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "blocked-data: TD-589-01 product with ≥ 3 function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+    },
+    {
+      "tc": "DSR-ICON-009",
+      "lang": "en",
+      "result": "blocked",
+      "error": "blocked-data: TD-589-01 product with ≥ 3 function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+    },
+    {
+      "tc": "DSR-PLSP-001",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-PLSP-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: 320: cards overflowing their column expect(received).toEqual(expected) // deep equality - Expected  - 1",
+      "evidence": "evidence/DSR-PLSP-002_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PLSP-003",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Test timeout of 30000ms exceeded.",
+      "evidence": "evidence/DSR-PLSP-003_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PLSP-005",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: 3 results: left aligned expect(received).toBe(expected) // Object.is equality Expected: 0",
+      "evidence": "evidence/DSR-PLSP-005_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PLSP-004",
+      "lang": "ja",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-PLSP-001",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-PLSP-002",
+      "lang": "en",
+      "result": "fail",
+      "error": "Error: 320: cards overflowing their column expect(received).toEqual(expected) // deep equality - Expected  - 1",
+      "evidence": "evidence/DSR-PLSP-002_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PLSP-003",
+      "lang": "en",
+      "result": "fail",
+      "error": "Test timeout of 30000ms exceeded.",
+      "evidence": "evidence/DSR-PLSP-003_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PLSP-005",
+      "lang": "en",
+      "result": "fail",
+      "error": "Error: 3 results: left aligned expect(received).toBe(expected) // Object.is equality Expected: 0",
+      "evidence": "evidence/DSR-PLSP-005_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PLSP-004",
+      "lang": "en",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-PRODLIST-001",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: TD-583-01 ≥ 6 products expect(received).toBeGreaterThanOrEqual(expected) Expected: >= 6",
+      "evidence": "evidence/DSR-PRODLIST-001_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 40,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PRODLIST-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: 320: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 2",
+      "evidence": "evidence/DSR-PRODLIST-002_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PRODLIST-003",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: open: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 2",
+      "evidence": "evidence/DSR-PRODLIST-003_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    },
+    {
+      "tc": "DSR-PRODLIST-003",
+      "lang": "en",
+      "result": "blocked",
+      "error": "blocked-data: TD-583-01 page missing (/master/en/test-space/product-list and /master/en/product-list HTTP 404)"
+    },
+    {
+      "tc": "DSR-PRODLIST-005",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)"
+    },
+    {
+      "tc": "DSR-PRODLIST-006",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)"
+    },
+    {
+      "tc": "DSR-PRODLIST-006",
+      "lang": "en",
+      "result": "skip",
+      "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)"
+    },
+    {
+      "tc": "DSR-PRODLIST-007",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Manual TC (real iOS Safari / Android Chrome) – documented only, not automated"
+    },
+    {
+      "tc": "DSR-PRODLIST-004",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Error: 1440: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 4",
+      "evidence": "evidence/DSR-PRODLIST-004_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "note": "pre-existing; not caused by the path refactor (default paths unchanged)"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/paths.ts",
+    "fixtures/dsr-557.ts",
+    "fixtures/dsr-570.ts",
+    "fixtures/dsr-583.ts",
+    "fixtures/dsr-589.ts",
+    "fixtures/dsr-638-path-status.cjs",
+    "results/DSR-638/DEV/automation-run-20261021.md"
+  ],
+  "questions": []
+}

@@ -1,12 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+import { pagePath } from './paths';
 
 export const languages = ['ja', 'en'] as const;
 export type Language = typeof languages[number];
 
 // A3: product list /master/{lang}/product-list, fallback /{lang}/product-list (DEV 2026-10-19: /master/* 404, fallback 200).
 // Condition search = filter panel of the product list (A3, Q34 open).
-export const listPaths = (lang: Language) => [`/master/${lang}/product-list`, `/${lang}/product-list`];
+export const listPaths = (lang: Language) => [`/master/${lang}/product-list`, pagePath('productSearch', lang)];
 export const productPath = (lang: Language, id: string) => `/${lang}/products/${id}`;
 
 // TD-589-01/02/03 product ids: not identified yet (all card ids → /{lang}/products/{id} HTTP 404 on DEV, JOB-ZZ-IDLE-10).

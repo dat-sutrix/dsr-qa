@@ -1,8 +1,9 @@
+import { pagePath } from './paths';
 export const languages = ['ja', 'en'] as const;
 export type Language = typeof languages[number];
 export const viewports = { PC: { width: 1440, height: 900 } };
 // Discovery 2026-10-15 (docs/DSR-557/discovery-DEV.md): only ja has a catalog test page; only en has a video page.
-export const catalogPath = (lang: Language) => `/master/${lang}/test-space/list-catalog`;
+export const catalogPath = (lang: Language) => pagePath('listCatalog', lang); // DSR-638: fixtures/paths.ts
 export const videoPath = (lang: Language, id: string) => `/master/${lang}/test-space/dsr-173-video-detail?id=${id}`;
 export const catalogQuery = /\/graphql\/execute\.json\/ykk\/dm-catalog-list/;
 // Dev-published Movie CFs (movieSource = youtube) and the id expected from movieSourceId.

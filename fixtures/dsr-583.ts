@@ -1,8 +1,10 @@
+import { pagePath } from './paths';
 export const languages = ['ja', 'en'] as const;
 export type Language = typeof languages[number];
 // Pages under test (JOB-ZZ-IDLE-03): primary = existing DEV page under test-space; fallback = A1 path /master/{lang}/product-list.
 // Override the primary root without code change: DSR583_ROOT=<root> (e.g. DSR583_ROOT=product-list).
-export const primaryPath = (lang: Language) => `/master/${lang}/${process.env.DSR583_ROOT || 'test-space/product-list'}`;
+// DSR-638: default root from fixtures/paths.ts (DSR_PATHS=v2 → new ja path).
+export const primaryPath = (lang: Language) => process.env.DSR583_ROOT ? `/master/${lang}/${process.env.DSR583_ROOT}` : pagePath('productList', lang);
 export const fallbackPath = (lang: Language) => `/master/${lang}/product-list`;
 export const blockedData = 'blocked-data: TD-583-01 page missing';
 
@@ -28,7 +30,7 @@ export const filterBlocked = 'blocked-data: TD-583-02 no filter on page (no 1-/3
 // JOB-ZZ-IDLE-17 (DSR-PLSP-001…005, spec tests/product-list/DSR-583.product-list-sp.spec.ts).
 // Page: /master/{lang}/product-list, fallback /{lang}/product-list (Q22 default). Renders the product-list block.
 export const plspPath = (lang: Language) => `/master/${lang}/product-list`;
-export const plspFallbackPath = (lang: Language) => `/${lang}/product-list`;
+export const plspFallbackPath = (lang: Language) => pagePath('productSearch', lang); // DSR-638: fixtures/paths.ts
 export const plspMinCards = 2; // preflight: < 2 cards → skip
 export const plspDataMissing = 'DSR-583 product list data missing';
 // SP widths incl. 767 (Q22 breakpoint unknown; A2 default SP < 768). Columns = distinct card left values in the first row.
