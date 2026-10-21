@@ -33,7 +33,7 @@ Bug gán **dev phụ trách US** (Portal Martin cho 529/552/586/587/647/654). PM
 ## 2. Không có prompt tay cho agents
 `runner.sh` chạy nền trên VPS, 5 phút `git pull`, thấy job đúng lane thì gọi agent headless, xong push kết quả; tự upload `hub/tc-out/upload-queue.tsv` bằng rclone (lane claude-code). Runner tự giải conflict rebase (output agent giữ bản agent, còn lại giữ upstream). Dat chỉ khởi động lại runner khi VPS reboot hoặc `runner.sh` đổi.
 
-Lane: `claude-code` = functional Playwright (POM, TypeScript) · `codex` = visual + Lighthouse (`codex exec --dangerously-bypass-approvals-and-sandbox`).
+Lane: `claude-code` = functional Playwright (POM, TypeScript) · `codex` = visual + Lighthouse (`codex exec --dangerously-bypass-approvals-and-sandbox`) · **`author` (đang setup 21/10)** = tạo test data trên Author DEV bằng script tất định đọc manifest, không LLM, chỉ path `qa*`, không xóa, 08–18 T2–T6 – thiết kế `hub/AUTHOR-AGENT.md`, trạng thái CONTEXT §7. Agent test vẫn read-only AEM.
 
 Job ID: `JOB-YYYYMMDD-NN` (git pull, NN lớn nhất trong `jobs/queue|running|done|hold` + 1). `jobs/hold/` = chờ điều kiện `hold_reason`; 07:45 chuyển sang `queue/`. Idle: `JOB-ZZ-IDLE-NN` (§12).
 
