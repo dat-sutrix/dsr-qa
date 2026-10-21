@@ -1,6 +1,6 @@
 # AUTHOR-AGENT – Lane `author` (tạo test data trên AEM Author DEV)
 
-> Trạng thái: **Phạm vi §2 đã duyệt (Dat 21/10 17:02)** · credential: chờ Dat kiểm tra account (§2b). Session `DSR – Setup`. Khi duyệt: cập nhật CONTEXT.md §2/§3, hub/AGENTS.md, 03_Working_Model §2.
+> Trạng thái: **Phạm vi §2 đã duyệt (Dat 21/10 17:02)** · credential: **mức U1** (account không có Cloud Manager → không có T/L), chờ probe read-only. Session `DSR – Setup`. Khi duyệt: cập nhật CONTEXT.md §2/§3, hub/AGENTS.md, 03_Working_Model §2.
 > Mục tiêu: chuyển phần **nhập liệu có quy tắc** của QA-PT sang máy. 14/14 lỗi trong `QA-PT-ERRORS.md` thuộc nhóm A–F, trong đó A/B/C (ID ≠ tên CF, sai/thiếu giá trị, sai tên CF) chặn được 100% bằng kiểm tra trước khi ghi.
 
 ## 1. Quyết định chính
@@ -32,6 +32,12 @@ Ràng buộc: chỉ có 1 account Author (Dat + QA-PT dùng chung); đăng nhậ
 | **T** (ưu tiên) | Account này tự tạo **technical account** trong Developer Console → service credential JSON trên VPS | Có nút "Create new technical account" | Không login người, không OTP, không gia hạn tay; gán ACL `qa*` được (account có quyền admin Author). Là integration, không chiếm license người dùng |
 | **L** | **Local Development Token** (Developer Console) – token của chính account, sống 24h | Vào được Developer Console nhưng không tạo được technical account | Mỗi sáng Dat lấy token mới, dán vào VPS (~1 phút, hướng dẫn từng click). Quyền = full account → chỉ dựa vào guard script |
 | **U** | Playwright đăng nhập UI trên VPS **1 lần** (Dat nhập mã email trong terminal), lưu session; script vẫn tất định, đọc manifest | Không vào được Developer Console | Session hết hạn → Dat đăng nhập lại; mật khẩu lưu `~/.dsr-secrets` (chmod 600). Kênh UI chậm và dễ vỡ hơn API |
+
+**Chốt 21/10: U1 = chuyển cookie phiên + API.** Account không có Cloud Manager → T/L không khả dụng. Không tự động đăng nhập (tránh lưu mật khẩu + OTP trên VPS):
+- Dat đăng nhập Author trên trình duyệt của mình như thường, copy giá trị cookie `login-token` của domain Author, dán vào VPS `~/.dsr-secrets/aem-dev.env` (`AEM_LOGIN_TOKEN=…`, chmod 600) – ~1 phút, khi cookie hết hạn.
+- Script dùng cookie đó gọi API (Assets HTTP API / Sling POST + CSRF token / `/bin/replicate`) – vẫn đúng D1/D2, không thao tác UI.
+- Cookie hết hạn → lane author trả `needs-input: refresh cookie`, DASHBOARD 🔔 nhắc Dat. Probe đo tuổi thọ cookie; nếu < 8h → xem lại (U2 = Playwright đăng nhập với mật khẩu lưu VPS).
+- Bước xác minh: `tools/author/probe.sh` (chỉ GET) → `results/AUTHOR-PROBE-*/probe.md`.
 
 Bổ sung an toàn khi dùng account chung (mức L/U, và T nếu không gán được ACL):
 - **Cửa sổ chạy:** lane author chỉ ghi **08:00–18:00 VN T2–T6**; QA-PT làm tối → không sửa cùng lúc.
@@ -124,8 +130,8 @@ Chỉ khi L0–L2 pass cho mọi item → `status: done`, mở khóa `unblocks`.
 ## 8. Lộ trình
 | Phase | Việc | Ai | Điều kiện xong |
 |---|---|---|---|
-| P0a | Dat kiểm tra account → chốt mức T / L / U (§2b); mức T: tạo technical account + ACL `qa*` theo hướng dẫn | Dat | Có credential trên VPS |
-| P0b | Spike (job claude-code, **read-only**): đổi token, GET CF `qa587-main` qua Assets HTTP API và CF OpenAPI, đọc schema model, đọc replication status | Agent | Chốt endpoint từng thao tác trong §9 |
+| P0a | ✅ Account: không Cloud Manager → U1. Dat dán cookie lên VPS + chạy `tools/author/probe.sh` | Dat | `probe.md` có HTTP 200 cho check 1–6 |
+| P0b | Claude đọc probe → chốt endpoint (§9); đo tuổi thọ cookie (chạy lại probe sau 8h/24h) | Claude | Endpoint + chu kỳ refresh cookie |
 | P1 | Viết `tools/author/apply` (lint, snapshot, CF create/patch/move, replicate, verify) + dry-run trên data qa587 hiện có → 1 job apply nhỏ (1 CF ja/en) | Agent + Claude review | L0–L3 pass, writes.log đúng |
 | P2 | Page properties (529 stories qa*) | Agent | Như trên |
 | P3 | Night Pack mới: phần data = manifest cho lane author; QA-PT chỉ manual TC | Claude web | 3 đêm liên tiếp không có lỗi nhóm A–C |
