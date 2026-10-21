@@ -1,0 +1,24 @@
+{
+  "job": "JOB-20261021-02",
+  "agent": "claude-code",
+  "us": "DSR-538 (bug retest prep), DSR-654 (catalog overlay automation)",
+  "env": "dev",
+  "started": "2026-10-21T08:28:54Z",
+  "finished": "2026-10-21T08:36:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-538 static pre-check", "lang": "en", "result": "pass", "error": "Proposed: likely fixed. Related card href built from _path via resolvePageRefs → relative EDS path; 0/13 live sample cards on publish domain (.aem.page only)", "evidence": "raw/live-related-cards.json", "suspect": "product", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-CATOV-003 qa190-cat-pdf-form", "lang": "en", "result": "fail", "error": ".aem.page 200, .aem.live 404 (never live-published)", "evidence": "evidence/DSR-CATOV-003_en_qa190-cat-pdf-form_live.png", "suspect": "env", "cause": "overlay-merge", "confidence": 40 },
+    { "tc": "DSR-CATOV-003 qa190-cat-ebook-form", "lang": "en", "result": "fail", "error": ".aem.page 200, .aem.live 404 (never live-published)", "evidence": "evidence/DSR-CATOV-003_en_qa190-cat-ebook-form_live.png", "suspect": "env", "cause": "overlay-merge", "confidence": 40 },
+    { "tc": "DSR-CATOV-001/002/003/004/008 (all ids)", "lang": "ja", "result": "skip", "error": "All qa190-cat-* 404 on .page and .live: no ja DSR CF (JOB-20261021-01)", "evidence": "raw/catalog-status.txt", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-CATOV-001/002 (all ids), 003 qa190-cat-pdf/ebook, 004, 008", "lang": "en", "result": "skip", "error": "Preflight: page 404 on .aem.live (base tier); qa190-cat-pdf/ebook 404 on both tiers", "evidence": "raw/catalog-status.txt", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-CATOV-005/006", "lang": "ja", "result": "skip", "error": "No TD id for isActive=false / unpublished DSR CF yet", "evidence": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-CATOV-005/006", "lang": "en", "result": "skip", "error": "No TD id for isActive=false / unpublished DSR CF yet", "evidence": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-CATOV-007", "lang": "ja", "result": "skip", "error": "catalog/search 404 on .aem.live", "evidence": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-CATOV-007", "lang": "en", "result": "skip", "error": "catalog/search 404 on .aem.live", "evidence": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-CATOV-001", "lang": "cn", "result": "skip", "error": "fixme: Issue #18 no /cn path on DEV", "evidence": "", "suspect": "env", "cause": "none", "confidence": 0 }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts", "fixtures/dsr-654.ts", "pages/CatalogDetailPage.ts", "results/DSR-654/DEV/automation-run-20261021.md"],
+  "questions": []
+}

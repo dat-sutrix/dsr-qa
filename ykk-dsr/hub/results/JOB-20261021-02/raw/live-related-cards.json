@@ -1,0 +1,105 @@
+{
+ "path": "/en/library/video/sort-main",
+ "status": 200,
+ "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/sort-main",
+ "cards": [
+  {
+   "href": "/en/library/catalog",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog",
+   "text": "catalogSTORY",
+   "status": 200
+  },
+  {
+   "href": "/en/myList",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/myList",
+   "text": "myListSTORY",
+   "status": 404
+  },
+  {
+   "href": "/en/top-page",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/top-page",
+   "text": "TOP-PAGESTORY",
+   "status": 200
+  },
+  {
+   "href": "/en/library/video/sort-a",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/sort-a",
+   "text": "movieTitle sort aMOVIE",
+   "status": 200
+  },
+  {
+   "href": "/en/library/video/sort-b",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/sort-b",
+   "text": "movieTitle sort bMOVIE",
+   "status": 200
+  },
+  {
+   "href": "/en/library/video/sort-c",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/sort-c",
+   "text": "movieTitle sort cMOVIE",
+   "status": 200
+  }
+ ]
+}
+{
+ "path": "/ja/library/video/qa-587-main",
+ "status": 200,
+ "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+ "cards": []
+}
+{
+ "path": "/en/products/46",
+ "status": 200,
+ "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/46",
+ "cards": [
+  {
+   "href": "/en/top-page",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/top-page",
+   "text": "TOP-PAGESTORY",
+   "status": 200
+  },
+  {
+   "href": "/en/product-list",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/product-list",
+   "text": "product-listSTORY",
+   "status": 200
+  },
+  {
+   "href": "/en/product-detail",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/product-detail",
+   "text": "Product DetailSTORY",
+   "status": 200
+  },
+  {
+   "href": "/en/search-condition",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/search-condition",
+   "text": "Product Condition SearchSTORY",
+   "status": 200
+  }
+ ]
+}
+{
+ "path": "/ja/products/46",
+ "status": 200,
+ "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/46",
+ "cards": [
+  {
+   "href": "/ja/test-space/pages/article-page-1",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/test-space/pages/article-page-1",
+   "text": "Article Page 1STORY",
+   "status": 200
+  },
+  {
+   "href": "/ja/test-space/pages/article-page-2",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/test-space/pages/article-page-2",
+   "text": "Article Page 2STORY",
+   "status": 200
+  },
+  {
+   "href": "/ja/test-space/pages/article-page-3",
+   "resolved": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/test-space/pages/article-page-3",
+   "text": "Article Page 3STORY",
+   "status": 200
+  }
+ ]
+}

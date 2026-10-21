@@ -1,0 +1,16 @@
+# JOB-20261021-02: DSR-538 static pre-check + DSR-654 catalog overlay scaffold (DEV, read-only), 2026-10-21 08:28–08:36Z
+## Merge/incident-related
+| TC | lang | symptom | cause | confidence (product bug) | evidence |
+|---|---|---|---|---|---|
+| DSR-CATOV-003 qa190-cat-pdf-form | en | .aem.page 200, .aem.live 404 (never live-published) | overlay-merge | 40% (may just be a missing publish step) | evidence/DSR-CATOV-003_en_qa190-cat-pdf-form_live.png |
+| DSR-CATOV-003 qa190-cat-ebook-form | en | .aem.page 200 (new since JOB-01), .aem.live 404 | overlay-merge | 40% | evidence/DSR-CATOV-003_en_qa190-cat-ebook-form_live.png |
+## Part A: DSR-538 (Related Content → publish domain). Proposed verdict: **likely fixed**
+- Template rows: json2html writes each `related.relatedArticles` ref as `<a href="https://publish-p192812-e2014374.adobeaemcloud.com/digital-showroom/en/…html">/content/sites/digital-showroom/en/…</a>`. The publish host is still in the raw HTML (raw/sort-main-en.page.html).
+- Block: `scripts/overlay-rows.js:44-48` maps the row to `{_path: link text, _publishUrl: href}`. `blocks/video-detail/video-detail.js:259-262` then calls `resolvePageRefs` on relatedArticles/LPs, and `scripts/page-refs.js:66-67` sets `href = toHref(toIndexPath(_path))`. On an EDS host that is the relative path (`/en/library/catalog`), with no host prefix. The card uses `item.href || publishUrl || path` (`video-detail.js:155`).
+- Live sample (.aem.page, rendered): en/sort-main has 6 cards, all relative (3 STORY + 3 MOVIE `/en/library/video/sort-*`). products/46 en has 4 cards and ja has 3, all relative `/…` STORY cards (product block, same page-refs path). 0 cards point at publish-p192812. All targets return 200 except `/en/myList` 404, which is a missing EDS page and not this bug. Raw data: raw/live-related-cards.json and screenshots in raw/.
+- Residual risk: the `_publishUrl` fallback is still there. A ref whose `_path` is not under `/content/{sites,ykk}/digital-showroom` (a DAM asset or CF picked by mistake) would still link to the publish domain. Not verified on .aem.live or on the original repro page: qa-587-main en is 404, and ja qa-587-main has 0 related cards. A real retest is still needed.
+## Part B: DSR-654 scaffold
+- New: tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts, fixtures/dsr-654.ts, pages/CatalogDetailPage.ts. TCs DSR-CATOV-001…008 are placeholders (`// TODO TC id from TC job`): 200 + title + form slot, raw head/rows/cf-path same-id, .page+.live tiers, uppercase/underscore → 404, isActive=false, unpublished → 404 + query-index, catalog/search, 0 GraphQL + html lang. ja/en × the 4 qa190-cat ids; cn is fixme.
+- `npx tsc --noEmit` exit 0. Run against .aem.live: 35 tests, 0 passed, 2 failed (above), 33 skipped (32 preflight/no-TD skips + 1 cn fixme). Assertions were not changed.
+- Skip causes (cause none, data): no ja DSR CF for any qa190-cat id, so all are 404 on both tiers. en qa190-cat-pdf and qa190-cat-ebook are 404 on both tiers. There are no TD ids for isActive=false or unpublished. catalog/search is 404. The content checks will run once .live is published, or now with `DSR654_BASE=<.aem.page>` (not run: one run only).
+- Run report: results/DSR-654/DEV/automation-run-20261021.md.
