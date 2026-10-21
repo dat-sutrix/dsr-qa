@@ -1,6 +1,6 @@
 # CONTEXT – YKK DSR QA (đọc ĐẦU TIÊN ở mọi session)
 
-> Cập nhật: 2026-10-21 16:50 (UTC+7) bởi session "DSR – Điều phối". Mọi session/scheduled task: `git pull` rồi đọc file này trước khi làm. Sửa quy tắc/IDs → sửa ở đây + file chi tiết, commit cùng lúc.
+> Cập nhật: 2026-10-21 17:30 (UTC+7) bởi session "DSR – Setup" (§7 Agent Author). Mọi session/scheduled task: `git pull` rồi đọc file này trước khi làm. Sửa quy tắc/IDs → sửa ở đây + file chi tiết, commit cùng lúc.
 > Chat giữa các session không đọc được của nhau → **trạng thái chỉ tin vào repo + Jira + Project docs**. Memory của Claude chỉ là con trỏ tới file này.
 
 ## 1. Đọc theo thứ tự
@@ -66,5 +66,19 @@
 - Bug mở của QA: DSR-657/658/659/660 – Martin **đã merge 21/10 16:45** (+ deploy cấu hình trang 404 vào repo) → retest JOB-20261021-05 sáng 22/10 sau khi QA-PT publish lại trang 529.
 - Lỗi QA-PT: `QA-PT-ERRORS.md` (14 mục; nhóm lớn nhất: ID ≠ tên CF).
 
-## 7. Chủ đề đang mở cho session "DSR – Setup"
-- **Agent hỗ trợ Author:** thiết kế ở `AUTHOR-AGENT.md` – phạm vi §2 **đã duyệt 21/10**; account Author dùng chung với QA-PT (OTP email trên máy mới) → account không có Cloud Manager → credential **U1**: Dat dán cookie `login-token` vào VPS, script gọi API (§2b). Tóm tắt: lane `author` chạy script tất định đọc manifest (không LLM), API + technical account DEV với ACL chỉ `qa*`, không xóa, lint → snapshot → apply → replicate → verify L0–L3. Agent test giữ read-only. Probe 21/10 OK (§9 AUTHOR-AGENT). Bước kế: JOB-20261021-08 (claude-code) viết `tools/author` – models/lint/verify read-only, apply bị khóa → Claude review → P1b ghi thử.
+## 7. Agent Author (lane `author`) – trạng thái setup (21/10 17:30, session Setup đã đóng)
+Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – mới xong P0, P1a đang chạy.** Session Commander/Điều phối tiếp quản theo checklist:
+| # | Bước | Trạng thái | Ai |
+|---|---|---|---|
+| P0 | Phạm vi quyền (§2) | ✅ Dat duyệt 21/10 | – |
+| P0 | Credential U1: cookie `login-token` của account dùng chung (không Cloud Manager) ở VPS `~/.dsr-secrets/aem-dev.env` | ✅ 21/10 ~17:15 | Dat |
+| P0 | Probe read-only `tools/author/probe.sh` | ✅ `results/AUTHOR-PROBE-20261021-1023` (§9) | – |
+| P1a | JOB-20261021-08 (claude-code): viết `tools/author` (models, lint, verify, apply **bị khóa**) + chạy read-only TD-587-01 | 🔄 running từ 17:27 | Agent |
+| P1a′ | Review kết quả JOB-08: code guard (host/path allowlist, không có delete, apply khóa 3 lớp), `author/models.md`, lint/verify bắt đúng lỗi qa587 đã biết | ☐ | Claude |
+| P0′ | Đo tuổi thọ cookie: Dat chạy lại `probe.sh` sáng 22/10 → xem "Cookie age" + check 1 = 200 | ☐ | Dat → Claude |
+| V | **Dùng ngay (không ghi):** sáng 07:45 chạy `verify` cho manifest data của Night Pack đêm trước → fail = lỗi data QA-PT, báo trước khi agent test chạy | ☐ cần job/lane | Claude |
+| P1b | Ghi thử 1 CF `qaagent-probe` (common/en/movies) giờ 08–18 với `AUTHOR_WRITE_ENABLED=1` → verify L0–L3 | ☐ sau P1a′ | Claude + Dat bật cờ |
+| P1c | Thêm lane `author` vào `runner.sh` (clone `~/dsr-qa-author`, gọi script trực tiếp, không LLM, chỉ 08–18 T2–T6) + cập nhật hub/AGENTS.md, 03 §2 | ☐ sau P1b | Claude sửa, Dat khởi động runner |
+| P2 | Page properties stories qa529-* · P3 Night Pack: data = manifest cho lane author | ☐ | Claude |
+- Quy tắc đứng: agent test (`claude-code`, `codex`) vẫn **read-only** AEM; chỉ lane `author` được ghi, trong phạm vi §2. Cookie hết hạn → Dat dán lại (hướng dẫn: AUTHOR-AGENT §2b; terminal phải là `bash`, user `qa`). Không dán cookie vào chat/Jira.
+- Manifest đặt ở `hub/author/manifests/` (mẫu `TD-587-01.yaml`).

@@ -1,6 +1,6 @@
 # AUTHOR-AGENT – Lane `author` (tạo test data trên AEM Author DEV)
 
-> Trạng thái: **Phạm vi §2 đã duyệt (Dat 21/10 17:02)** · credential: **mức U1** (account không có Cloud Manager → không có T/L), chờ probe read-only. Session `DSR – Setup`. Khi duyệt: cập nhật CONTEXT.md §2/§3, hub/AGENTS.md, 03_Working_Model §2.
+> Trạng thái: **Phạm vi §2 đã duyệt (Dat 21/10 17:02)** · credential **U1** ✅ · probe ✅ · P1a đang chạy (JOB-20261021-08). Checklist sống: CONTEXT.md §7. Session `DSR – Setup`. Khi duyệt: cập nhật CONTEXT.md §2/§3, hub/AGENTS.md, 03_Working_Model §2.
 > Mục tiêu: chuyển phần **nhập liệu có quy tắc** của QA-PT sang máy. 14/14 lỗi trong `QA-PT-ERRORS.md` thuộc nhóm A–F, trong đó A/B/C (ID ≠ tên CF, sai/thiếu giá trị, sai tên CF) chặn được 100% bằng kiểm tra trước khi ghi.
 
 ## 1. Quyết định chính
