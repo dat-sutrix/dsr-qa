@@ -35,6 +35,7 @@
 - **Night Pack:** ~4h (không ít hơn), ước lượng ×1.5 cho việc Author, mọi field bắt buộc + giá trị chính xác, **giá trị tô vàng/đậm, cấm tô đỏ, ON tô xanh, khung "quy tắc bắt buộc" + checklist trước Publish**, mỗi dòng report có Date + Env, chưa làm = Not run. Mẫu: Night Work Pack 2026-10-21 (v3).
 - **Agents luôn có việc:** ≥ 1 idle job/lane; cuối tuần việc không phụ thuộc người.
 - Cảnh báo trước tác vụ nặng (ngoại lệ: TC job, scale theo velocity). Không đổi priority ticket dev. Không xóa file Drive nếu không được yêu cầu. Không ghi password, không PII. Chỉ dùng Jira/Drive Sutrix.
+- **Daily report cho group chat (EN, copy-paste) nằm ở đầu `STANDUP.md` mục A**, tạo 08:19 T2–T6, Dat dán trước 9:00 VN; mục B = ý present nhanh + câu dễ bị hỏi.
 - Chat với Dat tiếng Việt; TC, bug, tin cho dev/PM tiếng Anh.
 
 - **Mục tiêu chiến lược (Dat 21/10): QA-PT → 0% sau 2–3 sprint (S13–S15); Dat giữ nguyên vai trò; look & feel = Dat review L&F card 2–5 phút/item trước UAT khách (agent chuẩn bị sẵn, Dat chỉ OK/NG)**, giữ QA-PT làm lưới an toàn, chuyển việc theo 4 bậc (Human → Shadow → Agent+audit → Agent only), được tạo thêm agent. Kế hoạch: `ZERO-HUMAN-ROADMAP.md`; đo: `WORKLOAD.md`; tổng kết mỗi cuối sprint (Sprint Review QA).
