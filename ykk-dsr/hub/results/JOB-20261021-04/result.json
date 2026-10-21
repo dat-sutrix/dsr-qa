@@ -1,0 +1,838 @@
+{
+  "job": "JOB-20261021-04",
+  "agent": "claude-code",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-21T09:12:45Z",
+  "finished": "2026-10-21T09:16:33Z",
+  "status": "done",
+  "totals": {
+    "total": 48,
+    "passed": 16,
+    "failed": 17,
+    "skipped": 15,
+    "flaky": 0,
+    "exit_code": 1
+  },
+  "freshness": {
+    "qa529-01 ja published-time": "2026-10-20T15:38:30Z",
+    "qa529-01 en published-time": "2026-10-20T12:56:13Z",
+    "qa529-02 ja published-time": "2026-10-19T15:31:26Z",
+    "note": "no page republished after Night 21/10 0b (category / navtitle not live yet)"
+  },
+  "tests": [
+    {
+      "tc": "DSR-ARTICLE-001",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-001 [ja] page creation with article template (Author, BAC#1)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-004",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-004 [ja] article-specific info not editable in body (Author, BAC#5)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-005",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-005 [ja] author-editable areas 4/5/6/9/11 (Author, BAC#1)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-021",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-021 [ja] related stories picker max 3, stories only (Author)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-032",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-032 [ja] required page properties validation (Author, negative)",
+      "result": "skip",
+      "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+    },
+    {
+      "tc": "DSR-ARTICLE-030",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-030 [ja] visual PC 1440 vs Figma",
+      "result": "skip",
+      "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)"
+    },
+    {
+      "tc": "DSR-ARTICLE-031",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-031 [ja] visual SP 390 vs Figma",
+      "result": "skip",
+      "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)"
+    },
+    {
+      "tc": "DSR-ARTICLE-017",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-017 [ja] related stories cards r1..r3 (block 12)",
+      "result": "skip",
+      "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 (helix-query.yaml) / Q7"
+    },
+    {
+      "tc": "DSR-ARTICLE-018",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-018 [ja] related stories NEW icon on r1 only",
+      "result": "skip",
+      "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; NEW period Q6"
+    },
+    {
+      "tc": "DSR-ARTICLE-019",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-019 [ja] related stories max 3, missing path skipped (qa529-04)",
+      "result": "skip",
+      "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; TD-529-04 not seeded"
+    },
+    {
+      "tc": "DSR-ARTICLE-022",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-022 [ja] related items cards from product index (block 13)",
+      "result": "skip",
+      "error": "Blocked: 製品index relatedArticles/sortOrder not defined – 製品詳細 ticket (Martin prereq #3)"
+    },
+    {
+      "tc": "DSR-ARTICLE-027",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-027 [ja] published article appears in article list",
+      "result": "skip",
+      "error": "Blocked: Article list DSR-170 (out of scope) + stories index"
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "cn",
+      "title": "DSR-ARTICLE-029 [cn] language page (cn)",
+      "result": "skip",
+      "error": "Blocked: no /master/cn on DEV (Issue #18) – all cn rows"
+    },
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-002 [ja] blocks in design order 3→4→5→6→7→9→11→12→13→14, no console error",
+      "result": "fail",
+      "error": "required blocks missing | infoBar before body | empty blocks | console errors",
+      "evidence": "evidence/DSR-ARTICLE-002_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 90,
+      "ref": "DSR-657",
+      "observed": "missing subtitle/articleImage/description; empty image block (h=0); infoBar not before body; 3 console 404 (related-card DAM images, DSR-659)",
+      "raw": [
+        {
+          "present": [
+            {
+              "name": "title",
+              "count": 1
+            },
+            {
+              "name": "subtitle",
+              "count": 0
+            },
+            {
+              "name": "articleImage",
+              "count": 0
+            },
+            {
+              "name": "description",
+              "count": 0
+            },
+            {
+              "name": "infoBar",
+              "count": 1
+            },
+            {
+              "name": "body",
+              "count": 3
+            },
+            {
+              "name": "profile",
+              "count": 7
+            },
+            {
+              "name": "relatedStories",
+              "count": 1
+            },
+            {
+              "name": "relatedItems",
+              "count": 0
+            },
+            {
+              "name": "footerAction",
+              "count": 1
+            }
+          ],
+          "emptyBlocks": [
+            "image block"
+          ],
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 404 ()"
+          ],
+          "blockNames": [
+            "breadcrumb",
+            "article-title",
+            "text",
+            "image",
+            "text",
+            "image",
+            "article-meta",
+            "text",
+            "profile",
+            "related-articles",
+            "related-product",
+            "footer-actions"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-003",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-003 [ja] title block = TD title, one h1, <title> = title",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-006 [ja] info bar shows 2 tag labels, not raw tag IDs",
+      "result": "fail",
+      "error": "tag labels",
+      "evidence": "evidence/DSR-ARTICLE-006_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 90,
+      "ref": "DSR-658",
+      "observed": "0 tag chips; 2 article:tag metas (do-not-translate, site:product/bio-based)",
+      "raw": [
+        {
+          "labels": [],
+          "note": "label language = page language is assumption A5 / Q5"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-007",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-007 [ja] info bar date = meta publicationdate",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-008",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-008 [ja] My List button and share icons visible/enabled; share href has encoded page URL (no click)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-010",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-010 [ja] meta publicationdate / updatedate ISO 8601, one each; update date not visible",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-011 [ja] meta thumbnail: 1, absolute, no transform params, GET 200 image/*",
+      "result": "fail",
+      "error": "absolute URL",
+      "evidence": "evidence/DSR-ARTICLE-011_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 90,
+      "ref": "DSR-659",
+      "observed": "thumbnail meta is relative /content/dam/... path",
+      "raw": [
+        {
+          "thumbnail": [
+            "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-012 [ja] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible",
+      "result": "fail",
+      "error": "category meta count | category tag IDs",
+      "evidence": "evidence/DSR-ARTICLE-012_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "no category meta; qa529-01 not republished after Night 21/10 0b (published-time 20/10)",
+      "raw": [
+        {
+          "category": [],
+          "keywords": "qa529kw1, qa529kw2",
+          "categoryAuthored": true
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-013",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-013 [ja] meta related-stories = r1,r2,r3 in order",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-014 [ja] title/description/OGP/publicationdate/thumbnail/category exactly once, non-empty",
+      "result": "fail",
+      "error": "category count | category non-empty",
+      "evidence": "evidence/DSR-ARTICLE-014_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "category count 0 (same cause as 012); other metas OK",
+      "raw": [
+        {
+          "counts": {
+            "title": [
+              "QA529 ストーリー詳細テスト"
+            ],
+            "description": [
+              "QA529 説明 ja"
+            ],
+            "og:title": [
+              "QA529 OGPタイトル"
+            ],
+            "og:description": [
+              "QA529 OGP説明"
+            ],
+            "og:image": [
+              "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png?width=1200&format=pjpg&optimize=medium"
+            ],
+            "publicationdate": [
+              "2026-10-01T00:00:00.000Z"
+            ],
+            "thumbnail": [
+              "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png"
+            ],
+            "category": []
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-016 [ja] robots: qa529-02 noindex,nofollow; qa529-01 no noindex",
+      "result": "fail",
+      "error": "qa529-01 robots | qa529-02 robots | qa529-02 robots",
+      "evidence": "evidence/DSR-ARTICLE-016_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-10: qa529-01 noindex,nofollow; qa529-02 no robots",
+      "raw": [
+        {
+          "page": "qa529-01",
+          "robots": [
+            "noindex, nofollow"
+          ]
+        },
+        {
+          "language": "ja",
+          "path": "/master/ja/library/article/stories/qa529-02",
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+          "status": 200
+        },
+        {
+          "page": "qa529-02",
+          "robots": ""
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-024",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-024 [ja] VIEW ALL STORIES + Contact visible; hrefs recorded",
+      "result": "fail",
+      "error": "viewAllStories href | contact href",
+      "evidence": "evidence/DSR-ARTICLE-024_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-10: VIEW ALL STORIES / Contact href \"#\" (targets undecided A8/Q8)",
+      "raw": [
+        {
+          "viewAllStories": {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        },
+        {
+          "contact": {
+            "text": "お問い合わせ",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-026",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-026 [ja] stories query-index contains qa529-01 with 6 properties",
+      "result": "skip",
+      "error": "blocked-data: no stories query-index returns 200 (/ja/stories/query-index.json, /master/ja/stories/query-index.json, /master/ja/library/article/stories/query-index.json)"
+    },
+    {
+      "tc": "DSR-ARTICLE-028",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-028 [ja] breadcrumb present; last item = navtitle (no link); earlier items link",
+      "result": "fail",
+      "error": "last item = navtitle",
+      "evidence": "evidence/DSR-ARTICLE-028_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "last item = page title (fallback), not navtitle; navtitle set in Night 21/10 0b, page not republished since",
+      "raw": [
+        {
+          "items": [
+            {
+              "text": "HOME",
+              "href": "/master/ja"
+            },
+            {
+              "text": "Library",
+              "href": "/master/ja/library"
+            },
+            {
+              "text": "Article",
+              "href": "/master/ja/library/article"
+            },
+            {
+              "text": "Stories",
+              "href": "/master/ja/library/article/stories"
+            },
+            {
+              "text": "QA529 ストーリー詳細テスト",
+              "href": null
+            }
+          ],
+          "expectedLast": "QA529 ナビ",
+          "fallback": "QA529 ストーリー詳細テスト",
+          "note": "navtitle authored in UE Page properties (Night 21/10 0b); fallback = page title"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-029 [ja] language page: 200, title/info bar in ja, <html lang>=ja",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "en",
+      "title": "DSR-ARTICLE-002 [en] blocks in design order 3→4→5→6→7→9→11→12→13→14, no console error",
+      "result": "fail",
+      "error": "required blocks missing | infoBar before body | empty blocks | console errors",
+      "evidence": "evidence/DSR-ARTICLE-002_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 90,
+      "ref": "DSR-657",
+      "observed": "missing subtitle/articleImage/description; empty image block (h=0); infoBar not before body; 3 console 404 (related-card DAM images, DSR-659)",
+      "raw": [
+        {
+          "present": [
+            {
+              "name": "title",
+              "count": 1
+            },
+            {
+              "name": "subtitle",
+              "count": 0
+            },
+            {
+              "name": "articleImage",
+              "count": 0
+            },
+            {
+              "name": "description",
+              "count": 0
+            },
+            {
+              "name": "infoBar",
+              "count": 1
+            },
+            {
+              "name": "body",
+              "count": 3
+            },
+            {
+              "name": "profile",
+              "count": 7
+            },
+            {
+              "name": "relatedStories",
+              "count": 1
+            },
+            {
+              "name": "relatedItems",
+              "count": 0
+            },
+            {
+              "name": "footerAction",
+              "count": 1
+            }
+          ],
+          "emptyBlocks": [
+            "image block"
+          ],
+          "consoleErrors": [
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 404 ()",
+            "Failed to load resource: the server responded with a status of 404 ()"
+          ],
+          "blockNames": [
+            "breadcrumb",
+            "article-title",
+            "text",
+            "image",
+            "text",
+            "article-meta",
+            "text",
+            "profile",
+            "related-articles",
+            "related-product",
+            "footer-actions"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-003",
+      "lang": "en",
+      "title": "DSR-ARTICLE-003 [en] title block = TD title, one h1, <title> = title",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "en",
+      "title": "DSR-ARTICLE-006 [en] info bar shows 2 tag labels, not raw tag IDs",
+      "result": "fail",
+      "error": "tag labels",
+      "evidence": "evidence/DSR-ARTICLE-006_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 90,
+      "ref": "DSR-658",
+      "observed": "0 tag chips; 2 article:tag metas (do-not-translate, site:product/bio-based)",
+      "raw": [
+        {
+          "labels": [],
+          "note": "label language = page language is assumption A5 / Q5"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-007",
+      "lang": "en",
+      "title": "DSR-ARTICLE-007 [en] info bar date = meta publicationdate",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-008",
+      "lang": "en",
+      "title": "DSR-ARTICLE-008 [en] My List button and share icons visible/enabled; share href has encoded page URL (no click)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-010",
+      "lang": "en",
+      "title": "DSR-ARTICLE-010 [en] meta publicationdate / updatedate ISO 8601, one each; update date not visible",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "title": "DSR-ARTICLE-011 [en] meta thumbnail: 1, absolute, no transform params, GET 200 image/*",
+      "result": "fail",
+      "error": "absolute URL",
+      "evidence": "evidence/DSR-ARTICLE-011_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 90,
+      "ref": "DSR-659",
+      "observed": "thumbnail meta is relative /content/dam/... path",
+      "raw": [
+        {
+          "thumbnail": [
+            "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png"
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "en",
+      "title": "DSR-ARTICLE-012 [en] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible",
+      "result": "fail",
+      "error": "category meta count | category tag IDs",
+      "evidence": "evidence/DSR-ARTICLE-012_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "no category meta; qa529-01 not republished after Night 21/10 0b (published-time 20/10)",
+      "raw": [
+        {
+          "category": [],
+          "keywords": "qa529kw1, qa529kw2",
+          "categoryAuthored": true
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-013",
+      "lang": "en",
+      "title": "DSR-ARTICLE-013 [en] meta related-stories = r1,r2,r3 in order",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "en",
+      "title": "DSR-ARTICLE-014 [en] title/description/OGP/publicationdate/thumbnail/category exactly once, non-empty",
+      "result": "fail",
+      "error": "category count | category non-empty",
+      "evidence": "evidence/DSR-ARTICLE-014_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "category count 0 (same cause as 012); other metas OK",
+      "raw": [
+        {
+          "counts": {
+            "title": [
+              "QA529 Story detail test"
+            ],
+            "description": [
+              "QA529 description en"
+            ],
+            "og:title": [
+              "QA529 OGP title"
+            ],
+            "og:description": [
+              "QA529 OGP description"
+            ],
+            "og:image": [
+              "https://dev-eds.ykkdigitalshowroom.com/master/en/library/article/stories/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=1200&format=pjpg&optimize=medium"
+            ],
+            "publicationdate": [
+              "2026-10-01T00:00:00.000Z"
+            ],
+            "thumbnail": [
+              "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png"
+            ],
+            "category": []
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "en",
+      "title": "DSR-ARTICLE-016 [en] robots: qa529-02 noindex,nofollow; qa529-01 no noindex",
+      "result": "fail",
+      "error": "qa529-01 robots",
+      "evidence": "evidence/DSR-ARTICLE-016_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-10: qa529-01 noindex,nofollow; qa529-02 no robots",
+      "raw": [
+        {
+          "page": "qa529-01",
+          "robots": [
+            "noindex, nofollow"
+          ]
+        },
+        {
+          "note": "qa529-02 not in TD for en (TD-529-02 is ja only) – full-page part only"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-024",
+      "lang": "en",
+      "title": "DSR-ARTICLE-024 [en] VIEW ALL STORIES + Contact visible; hrefs recorded",
+      "result": "fail",
+      "error": "viewAllStories href | contact href",
+      "evidence": "evidence/DSR-ARTICLE-024_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-10: VIEW ALL STORIES / Contact href \"#\" (targets undecided A8/Q8)",
+      "raw": [
+        {
+          "viewAllStories": {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        },
+        {
+          "contact": {
+            "text": "お問い合わせ",
+            "href": "#",
+            "note": "targets undecided (A8 / Q8) – not judged"
+          }
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-026",
+      "lang": "en",
+      "title": "DSR-ARTICLE-026 [en] stories query-index contains qa529-01 with 6 properties",
+      "result": "skip",
+      "error": "blocked-data: no stories query-index returns 200 (/en/stories/query-index.json, /master/en/stories/query-index.json, /master/en/library/article/stories/query-index.json)"
+    },
+    {
+      "tc": "DSR-ARTICLE-028",
+      "lang": "en",
+      "title": "DSR-ARTICLE-028 [en] breadcrumb present; last item = navtitle (no link); earlier items link",
+      "result": "fail",
+      "error": "last item = navtitle",
+      "evidence": "evidence/DSR-ARTICLE-028_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30,
+      "ref": "-",
+      "observed": "last item = page title (fallback), not navtitle; navtitle set in Night 21/10 0b, page not republished since",
+      "raw": [
+        {
+          "items": [
+            {
+              "text": "HOME",
+              "href": "/master/en"
+            },
+            {
+              "text": "Library",
+              "href": "/master/en/library"
+            },
+            {
+              "text": "Article",
+              "href": "/master/en/library/article"
+            },
+            {
+              "text": "Stories",
+              "href": "/master/en/library/article/stories"
+            },
+            {
+              "text": "QA529 Story detail test",
+              "href": null
+            }
+          ],
+          "expectedLast": "QA529 Nav",
+          "fallback": "QA529 Story detail test",
+          "note": "navtitle authored in UE Page properties (Night 21/10 0b); fallback = page title"
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-029",
+      "lang": "en",
+      "title": "DSR-ARTICLE-029 [en] language page: 200, title/info bar in en, <html lang>=en",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-015",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-015 [ja] OGP fallback: og:title = title, og:description = description, og:image 200",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-020",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-020 [ja] no related stories block/heading when not specified (トルツメ)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-023",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-023 [ja] no related items block/heading when 0 results (トルツメ)",
+      "result": "fail",
+      "error": "visible related items heading",
+      "evidence": "evidence/DSR-ARTICLE-023_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 50,
+      "ref": "-",
+      "observed": "same as JOB-10: related-items heading visible (h=32) with no block",
+      "raw": [
+        {
+          "relatedItemsBlocks": [],
+          "headings": [
+            {
+              "visible": true,
+              "height": 32.390625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc": "DSR-ARTICLE-025",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-025 [ja] no empty profile wrapper with height > 0 (トルツメ)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-ARTICLE-009",
+      "lang": "ja",
+      "title": "DSR-ARTICLE-009 [ja] My List add → localStorage has page under stories; kept after reload",
+      "result": "pass",
+      "error": ""
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-529.ts",
+    "tests/article-detail/DSR-529.article-detail.spec.ts"
+  ],
+  "tc_expectations_changed": [
+    "DSR-ARTICLE-007: compare info bar date with meta publicationdate (was published-date)",
+    "DSR-ARTICLE-010: meta publicationdate / updatedate (were published-date / updated-date)",
+    "DSR-ARTICLE-012: meta searchkeywords (was search-keywords); category present iff the page field is filled (TD-529-01 filled -> 1 meta, 2 tag IDs; not filled -> no meta)",
+    "DSR-ARTICLE-014: unique-meta list uses publicationdate (was published-date); category only when authored",
+    "DSR-ARTICLE-026: index properties navtitle, thumbnail, publicationdate, updatedate, searchkeywords, related-stories",
+    "DSR-ARTICLE-028: unblocked and automated: breadcrumb last item = navtitle (UE Page properties; fallback page title), not a link; earlier items link"
+  ],
+  "questions": []
+}

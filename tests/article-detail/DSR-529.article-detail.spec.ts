@@ -2,8 +2,9 @@ import { test, expect, type Locator, type Page } from '@playwright/test';
 import { ArticleDetailPage, type MetaEntry } from '../../pages/ArticleDetailPage';
 import {
   languages, type Language, viewports, slugs, articlePath, minimalLanguages, blockedData,
-  td01, td01Common, td02, blockOrder, optionalBlocks, uniqueMeta, transformParams, storiesIndexPaths, indexProperties, isoDate,
+  td01, td01Common, td02, blockOrder, optionalBlocks, uniqueMeta, transformParams, storiesIndexPaths, indexProperties, isoDate, metaNames,
 } from '../../fixtures/dsr-529';
+import { BreadcrumbPage } from '../../pages/BreadcrumbPage';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -67,12 +68,12 @@ for (const lang of languages) {
       for (const label of labels) expect.soft(label, 'not a raw tag ID').not.toMatch(/^[\w-]+:[\w/-]+$/);
     });
 
-    test(`DSR-ARTICLE-007 [${lang}] info bar date = meta published-date`, { tag: ['@auto'] }, async ({ page, request }) => {
+    test(`DSR-ARTICLE-007 [${lang}] info bar date = meta publicationdate`, { tag: ['@auto'] }, async ({ page, request }) => {
       const { article, path } = await openArticle(page, lang);
       await expect(article.date.first(), 'info bar date').toBeVisible();
       const shown = (await article.date.first().innerText()).trim();
-      const meta = metaValues((await article.rawMeta(request, path)).meta, 'published-date')[0] ?? null;
-      observations.push({ shown, metaPublishedDate: meta, shownIso: isoDate(shown), metaIso: isoDate(meta), expectedFormat: 'YYYY.MM.DD (A4 / Q4 open – format recorded only)' });
+      const meta = metaValues((await article.rawMeta(request, path)).meta, metaNames.publicationDate)[0] ?? null;
+      observations.push({ shown, metaPublicationDate: meta, shownIso: isoDate(shown), metaIso: isoDate(meta), expectedFormat: 'YYYY.MM.DD (A4 / Q4 open – format recorded only)' });
       expect(isoDate(shown), 'shown date parsable').not.toBeNull();
       expect(isoDate(shown)).toBe(isoDate(meta));
     });
@@ -91,16 +92,16 @@ for (const lang of languages) {
       }
     });
 
-    test(`DSR-ARTICLE-010 [${lang}] meta published-date / updated-date ISO 8601, one each; update date not visible`, { tag: ['@auto'] }, async ({ page, request }) => {
+    test(`DSR-ARTICLE-010 [${lang}] meta publicationdate / updatedate ISO 8601, one each; update date not visible`, { tag: ['@auto'] }, async ({ page, request }) => {
       const { article, path } = await openArticle(page, lang);
       const { meta } = await article.rawMeta(request, path);
-      const published = metaValues(meta, 'published-date');
-      const updated = metaValues(meta, 'updated-date');
+      const published = metaValues(meta, metaNames.publicationDate);
+      const updated = metaValues(meta, metaNames.updateDate);
       const visible = await article.main.innerText();
       observations.push({ published, updated });
-      expect.soft(published, 'published-date count').toHaveLength(1);
-      expect.soft(updated, 'updated-date count').toHaveLength(1);
-      for (const [name, value, start] of [['published-date', published[0], td01Common.publishDate], ['updated-date', updated[0], td01Common.updateDate]] as const) {
+      expect.soft(published, `${metaNames.publicationDate} count`).toHaveLength(1);
+      expect.soft(updated, `${metaNames.updateDate} count`).toHaveLength(1);
+      for (const [name, value, start] of [[metaNames.publicationDate, published[0], td01Common.publishDate], [metaNames.updateDate, updated[0], td01Common.updateDate]] as const) {
         expect.soft(value ?? '', `${name} starts with ${start}`).toMatch(new RegExp(`^${start}`));
         expect.soft(Number.isNaN(Date.parse(value ?? '')), `${name} parses as ISO 8601`).toBe(false);
       }
@@ -122,16 +123,22 @@ for (const lang of languages) {
       expect.soft(res.headers()['content-type'] ?? '').toMatch(/^image\//);
     });
 
-    test(`DSR-ARTICLE-012 [${lang}] meta category = 2 tag IDs; search-keywords has qa529kw1/qa529kw2, not visible`, { tag: ['@auto'] }, async ({ page, request }) => {
+    test(`DSR-ARTICLE-012 [${lang}] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible`, { tag: ['@auto'] }, async ({ page, request }) => {
       const { article, path } = await openArticle(page, lang);
       const { meta } = await article.rawMeta(request, path);
-      const category = metaValues(meta, 'category')[0] ?? '';
-      const keywords = metaValues(meta, 'search-keywords')[0] ?? '';
-      const ids = category.split(',').map(s => s.trim()).filter(Boolean);
-      observations.push({ category, keywords });
-      expect.soft(ids, 'category tag IDs').toHaveLength(td01Common.tagCount);
-      for (const id of ids) expect.soft(id, 'tag ID namespace:path').toMatch(/^[\w-]+:\S+$/);
-      for (const kw of td01Common.keywords) expect.soft(keywords, `search-keywords has ${kw}`).toContain(kw);
+      const categories = metaValues(meta, metaNames.category);
+      const keywords = metaValues(meta, metaNames.searchKeywords)[0] ?? '';
+      observations.push({ category: categories, keywords, categoryAuthored: td01Common.categoryAuthored });
+      // category is emitted only when the page field is filled (Martin 21/10).
+      if (td01Common.categoryAuthored) {
+        expect.soft(categories, 'category meta count').toHaveLength(1);
+        const ids = (categories[0] ?? '').split(',').map(s => s.trim()).filter(Boolean);
+        expect.soft(ids, 'category tag IDs').toHaveLength(td01Common.tagCount);
+        for (const id of ids) expect.soft(id, 'tag ID namespace:path').toMatch(/^[\w-]+:\S+$/);
+      } else {
+        expect.soft(categories, 'no category meta when not authored').toEqual([]);
+      }
+      for (const kw of td01Common.keywords) expect.soft(keywords, `${metaNames.searchKeywords} has ${kw}`).toContain(kw);
       const visible = await article.main.innerText();
       for (const kw of td01Common.keywords) expect.soft(visible, `${kw} not visible`).not.toContain(kw);
     });
@@ -148,7 +155,7 @@ for (const lang of languages) {
       });
     });
 
-    test(`DSR-ARTICLE-014 [${lang}] title/description/OGP/published-date/thumbnail/category exactly once, non-empty`, { tag: ['@auto'] }, async ({ page, request }) => {
+    test(`DSR-ARTICLE-014 [${lang}] title/description/OGP/publicationdate/thumbnail/category exactly once, non-empty`, { tag: ['@auto'] }, async ({ page, request }) => {
       const { article, path } = await openArticle(page, lang);
       const { title, meta } = await article.rawMeta(request, path);
       const counts = Object.fromEntries(uniqueMeta.map(k => [k, k === 'title' ? [title ?? ''] : metaValues(meta, k)]));
@@ -213,6 +220,19 @@ for (const lang of languages) {
         expect.soft(Object.keys(found!.row).map(k => k.toLowerCase()), `property ${key}`).toContain(key);
         expect.soft(String(found!.row[key] ?? ''), `${key} non-empty`).not.toBe('');
       }
+    });
+
+    test(`DSR-ARTICLE-028 [${lang}] breadcrumb present; last item = navtitle (no link); earlier items link`, { tag: ['@auto'] }, async ({ page }) => {
+      await openArticle(page, lang);
+      const breadcrumb = new BreadcrumbPage(page);
+      await expect(breadcrumb.breadcrumb, 'breadcrumb').toBeVisible();
+      const items = await breadcrumb.items.evaluateAll(els => els.map(e => ({ text: (e as HTMLElement).innerText.trim(), href: e.querySelector('a')?.getAttribute('href') ?? null })));
+      observations.push({ items, expectedLast: td01[lang].navTitle, fallback: td01[lang].title, note: 'navtitle authored in UE Page properties (Night 21/10 0b); fallback = page title' });
+      expect(items.length, 'breadcrumb items').toBeGreaterThan(1);
+      // navtitle = last breadcrumb item (Martin 21/10); TD-529-01 has navtitle authored.
+      expect.soft(items.at(-1)!.text, 'last item = navtitle').toBe(td01[lang].navTitle);
+      expect.soft(items.at(-1)!.href, 'last item not a link').toBeNull();
+      for (const [i, item] of items.slice(0, -1).entries()) expect.soft(item.href ?? '', `item ${i + 1} links to ancestor`).not.toBe('');
     });
 
     test(`DSR-ARTICLE-029 [${lang}] language page: 200, title/info bar in ${lang}, <html lang>=${lang}`, { tag: ['@auto'] }, async ({ page }) => {
@@ -322,7 +342,6 @@ for (const [tc, title, reason] of [
   ['019', 'related stories max 3, missing path skipped (qa529-04)', 'Stories index not on DEV yet – Martin prereq #1 / Q7; TD-529-04 not seeded'],
   ['022', 'related items cards from product index (block 13)', '製品index relatedArticles/sortOrder not defined – 製品詳細 ticket (Martin prereq #3)'],
   ['027', 'published article appears in article list', 'Article list DSR-170 (out of scope) + stories index'],
-  ['028', 'breadcrumb on article page', 'Martin open decision #4 (breadcrumb in scope?) + DSR-552 – Q9'],
 ] as const) {
   test(`DSR-ARTICLE-${tc} [ja] ${title}`, { tag: ['@auto', '@blocked'] }, () => test.fixme(true, `Blocked: ${reason}`));
 }

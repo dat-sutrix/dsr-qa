@@ -15,19 +15,22 @@ export const td01 = {
   ja: { title: 'QA529 ストーリー詳細テスト', navTitle: 'QA529 ナビ', description: 'QA529 説明 ja', ogTitle: 'QA529 OGPタイトル', ogDescription: 'QA529 OGP説明' },
   en: { title: 'QA529 Story detail test', navTitle: 'QA529 Nav', description: 'QA529 description en', ogTitle: 'QA529 OGP title', ogDescription: 'QA529 OGP description' },
 } as const;
-export const td01Common = { publishDate: '2026-10-01', updateDate: '2026-10-10', keywords: ['qa529kw1', 'qa529kw2'], tagCount: 2 };
+// categoryAuthored: TD-529-01 category field is filled (Night 21/10 0b). Meta `category` is emitted only when filled (Martin 21/10).
+export const td01Common = { publishDate: '2026-10-01', updateDate: '2026-10-10', keywords: ['qa529kw1', 'qa529kw2'], tagCount: 2, categoryAuthored: true };
+// Page meta names (Martin 21/10, binding; supersedes design #58594 §A hyphenated names).
+export const metaNames = { publicationDate: 'publicationdate', updateDate: 'updatedate', searchKeywords: 'searchkeywords', category: 'category' } as const;
 export const td02 = { ja: { title: 'QA529 最小記事', description: 'QA529 最小説明' } } as const;
 
 // DSR-ARTICLE-002: design order (Figma 162-450). 13 (related items) may be absent – recorded, not failed.
 export const blockOrder = ['title', 'subtitle', 'articleImage', 'description', 'infoBar', 'body', 'profile', 'relatedStories', 'relatedItems', 'footerAction'] as const;
 export const optionalBlocks: readonly string[] = ['relatedItems'];
-// DSR-ARTICLE-014: each must appear exactly once and be non-empty.
-export const uniqueMeta = ['title', 'description', 'og:title', 'og:description', 'og:image', 'published-date', 'thumbnail', 'category'] as const;
+// DSR-ARTICLE-014: each must appear exactly once and be non-empty (category only when authored).
+export const uniqueMeta = ['title', 'description', 'og:title', 'og:description', 'og:image', 'publicationdate', 'thumbnail', ...(td01Common.categoryAuthored ? ['category'] as const : [])] as const;
 // DSR-ARTICLE-011: image-transform params that must not be on the thumbnail URL.
 export const transformParams = ['width', 'height', 'format', 'optimize'];
 // DSR-ARTICLE-026: candidate stories index paths (A7 / Q7); record which returns 200.
 export const storiesIndexPaths = (lang: Language) => [`/${lang}/stories/query-index.json`, `/master/${lang}/stories/query-index.json`, `/master/${lang}/library/article/stories/query-index.json`];
-export const indexProperties = ['navtitle', 'thumbnail', 'published-date', 'updated-date', 'search-keywords', 'related-stories'] as const;
+export const indexProperties = ['navtitle', 'thumbnail', 'publicationdate', 'updatedate', 'searchkeywords', 'related-stories'] as const;
 
 export const myListName = /my ?list|マイリスト/i;
 export const relatedStoriesName = /related stories|関連ストーリー|関連記事/i;
