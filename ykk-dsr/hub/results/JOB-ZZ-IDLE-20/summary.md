@@ -1,0 +1,9 @@
+# JOB-ZZ-IDLE-20 – DSR-585 product CF (DM_product ver0.4) scaffold, DEV publish GraphQL (run 01:45–01:46Z)
+## Merge/incident-related
+None. 0 fails. One change related to dm_product-ver0.4 (not a fail): `product-detail;productId=productId-01x` now returns the ver0.4 names (howToUse/howToUseImage, notice/noticeImage, applicableSliderSameAsParent). It no longer returns Howtouse/Notice/applicableSliderStandard/Special, which JOB-20261020-09 still saw. So Q46 looks resolved on the data side, but Martin's "done" ping is still not recorded.
+
+- **What ran:** new `tests/product-cf/DSR-585.product-cf.spec.ts` + `fixtures/dsr-585.ts`, titles DSR-PCF-001…019, ja/en. `npm run test:dev -- --grep "DSR-PCF"` gave 25 tests: 8 pass, 0 fail, 17 skip (fixme). tsc had no errors. Report: results/DSR-585/DEV/automation-run-20261021.md.
+- **Pass (proposed):** 019 ja/en: all product persisted queries return 200 with no errors and 0 of the 27 removed or 6 old names. The 007/016/017 ja/en results are **publish proxies** on existing CFs and do not replace the Author TCs. In 007, openingType is an array (Enumeration multiple, Q45 default), so it is not Pending. In 016, media01 has no Type/Url and media02–15 each have Type/Asset/Url. In 017, all 7 new fields are present, but only howToUse is filled.
+- **Blocked (fixme):** 001–006 and 008–012 need the Author UI (A5) and TD-585 data. 013/014/015/018 need TD-585-01 to be seeded. Setting `DSR585_SEEDED=01` enables them. `DSR585_VER04_DONE=1` makes old names in 019 a Fail instead of Pending (Q46).
+- **Data to clean (018, not a model fail):** in the ja folder, CF `461` has productId 46, `1350` has productId 135, and `cf-products1` has productId-01x. The en folder has these plus 4 non-numeric test CFs.
+- **Not verified:** build identity, Author widgets/defaults/options, the 83-field completeness (the full field list is not in the repo), and whether ver0.4 is finished. I made no Jira, DASHBOARD or BUGS edits.

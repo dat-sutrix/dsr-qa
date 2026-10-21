@@ -1,0 +1,218 @@
+{
+  "job": "JOB-ZZ-IDLE-20",
+  "agent": "claude-code",
+  "us": "DSR-585",
+  "env": "dev",
+  "started": "2026-10-21T01:42:31Z",
+  "finished": "2026-10-21T01:55:00Z",
+  "status": "done",
+  "totals": {
+    "total": 25,
+    "passed": 8,
+    "failed": 0,
+    "skipped": 17,
+    "flaky": 0,
+    "exit_code": 0
+  },
+  "tests": [
+    {
+      "tc": "DSR-PCF-001",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-01; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-002",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-01; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-003",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-01; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-004",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-02; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-005",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-02; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-006",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-01 + chain tags; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-008",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-03 + Q28; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-009",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-03 + Q28; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-010",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-03 + Q28; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-011",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-04; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-012",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: Author UI (A5) + TD-585-01 en/cn; Issue #18; ver0.4 done ping + TD-585 seed",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-007",
+      "lang": "ja",
+      "result": "pass",
+      "error": "publish proxy: openingType arrays (Enumeration multiple); Author save/reopen not verified",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-PCF-007",
+      "lang": "en",
+      "result": "pass",
+      "error": "publish proxy: openingType arrays (Enumeration multiple); Author save/reopen not verified",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-PCF-013",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-585-01 not seeded",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-013",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Blocked: TD-585-01 not seeded",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-014",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-585-01 not seeded; DSR-560/182 search JSON",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-015",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-585-01 not seeded; DSR-586 overlay",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-016",
+      "lang": "ja",
+      "result": "pass",
+      "error": "publish proxy on product 46: media01 no Type/Url, media02-15 Type/Asset/Url; Type options list not verified",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-PCF-016",
+      "lang": "en",
+      "result": "pass",
+      "error": "publish proxy on product 46: media01 no Type/Url, media02-15 Type/Asset/Url; Type options list not verified",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-PCF-017",
+      "lang": "ja",
+      "result": "pass",
+      "error": "publish proxy on product 46: 7 fields present; only howToUse filled, defaults not verified",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-PCF-017",
+      "lang": "en",
+      "result": "pass",
+      "error": "publish proxy on product 46: 7 fields present; only howToUse filled, defaults not verified",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-PCF-018",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Blocked: TD-585-01 not seeded. Data to clean: 1350(135), 461(46), cf-products1",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-018",
+      "lang": "en",
+      "result": "blocked",
+      "error": "Blocked: TD-585-01 is ja only. Data to clean: 1350, 461, applicable-slider-special-2, cf-products1/10/11, parent-product-2",
+      "evidence": "",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-PCF-019",
+      "lang": "ja",
+      "result": "pass",
+      "error": "4 queries 200, 0 removed names, 0 old spellings (product-detail now ver0.4 names, changed since JOB-20261020-09)",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-PCF-019",
+      "lang": "en",
+      "result": "pass",
+      "error": "dsr-product-page/list en: 0 removed/old names",
+      "evidence": ""
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-585.ts",
+    "tests/product-cf/DSR-585.product-cf.spec.ts"
+  ],
+  "report": "results/DSR-585/DEV/automation-run-20261021.md",
+  "questions": []
+}
