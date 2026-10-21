@@ -30,3 +30,23 @@ export const maxRelatedMovies = 5;
 export const blockedNo6th = 'blocked-data: 6th related movie not on publish';
 export const blockedStalePreview = 'blocked-data: stale preview, static HTML has fewer relatedMovies rows than query';
 export const blockedNoDistinctUpdateDate = 'blocked-data: relatedMovies updateDate missing or not distinct';
+
+// JOB-20261019-03 retarget (2026-10-20 09:00): qa501-* not re-seeded after the overlay merge; retest on main with TD-587-14/15
+// (fixtures/dsr-587.ts, Night Pack 21/10 việc 2–3). Content CF titles "QA587 related N" (r1 has a trailing space on publish 21/10).
+export const mainBase = 'https://main--dsr-eds-dev--sutrix-projects.aem.page';
+export const mainPageA = {
+  movieId: 'qa587-rel-a',
+  // 更新日 r1 = 2026-10-01 … r6 = 2026-10-06; DSR-647 comment 61177: newest updateDate first, max 5 → r1 absent.
+  expectedRelatedIdsByUpdateDesc: ['qa587-r6', 'qa587-r5', 'qa587-r4', 'qa587-r3', 'qa587-r2'],
+  absentId: 'qa587-r1',
+} as const;
+export const mainPageB = {
+  movieId: 'qa587-rel-b',
+  expectedRelatedIds: ['qa587-r1'],
+  excludedId: 'qa587-off',
+  excludedTitle: 'QA587 off',
+} as const;
+// Freshness: page last-modified must be after the Night 21/10 data fix started.
+// [Giả định] job says "after the Night Report time"; the report (23:15 VN) is written after publishing, so the Night 21/10 start (18:00 VN) is used.
+export const nightReportSince = '2026-10-21T11:00:00Z';
+export const blockedStaleNightReport = 'blocked-data: page last-modified before Night 21/10 data fix';
