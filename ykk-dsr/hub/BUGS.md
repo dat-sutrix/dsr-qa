@@ -18,6 +18,7 @@
 | [DSR-657](https://sutrix.atlassian.net/browse/DSR-657) | DSR-529 | Article image block duplicated in UE / empty image block on Publish (TC 002) | Medium | To Do (tạo 21/10) | Portal Martin | DEV | JOB-20261020-10: ja 1 trống + 1 ảnh, en 1 trống · Night 19/10 TD-529-01 ❌ | Martin fix → rerun DSR-ARTICLE-002 |
 | [DSR-658](https://sutrix.atlassian.net/browse/DSR-658) | DSR-529 | Tag chips not rendered (article:tag metas present) (TC 006) | Medium | To Do (tạo 21/10) | Portal Martin | DEV | JOB-20261020-10: 0 chip, 2 meta article:tag | Martin fix → rerun DSR-ARTICLE-006 |
 | [DSR-659](https://sutrix.atlassian.net/browse/DSR-659) | DSR-529 | Thumbnail + related-article images relative /content/dam → 404 .live (TC 011, 013) | Medium | To Do (tạo 21/10) | Portal Martin | DEV | JOB-20261020-10: relative path 404 · TD-529-fix ảnh related không hiện | Martin fix → rerun 011/013 |
+| [DSR-660](https://sutrix.atlassian.net/browse/DSR-660) | DSR-529 | Info bar date YYYY/MM/DD ≠ site standard YYYY.MM.DD (TC 007) | Low | To Do (tạo 21/10 15:05, claude-web) | Portal Martin | Martin fix → rerun ARTICLE-007 |
 
 ### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
 | Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
