@@ -27,7 +27,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
 |---|---|---|---|---|
 | P1 | Gửi QA-PT link **Night Work Pack 2026-10-21 (v3)** + bảng lỗi QA-PT (QA-PT-ERRORS.md) | QA-PT | 21/10 tối | https://docs.google.com/document/d/1xY_ghkX8I3LqTSyziO-Ef8AU_tN3JF4aru0R29aMddo |
-| P1 | Khi Martin báo **merge fix 657/658/659/660** → báo claude-web (chuyển JOB-20261021-05). Merge sau giờ QA-PT publish (BUGCHK-529-PUB) → publish lại 6 trang 529 (5 phút) | Martin | 22/10 | — |
+| ✅ | Martin đã merge fix 657/658/659/660 (16:45) + deploy cấu hình 404 → QA-PT publish lại 6 trang tối nay là đủ (sau merge) → JOB-20261021-05 sáng 22/10 · JOB-20261021-06 smoke overlay/404 sau deploy | — | — | — |
 | ✅ | 21/10 đã xong: tin Martin (404, ver0.4, 529 Q), daily report group, Quentin (566 → Sprint 13), Sprint 12 gán cho 657–660 + 611 | — | — | — |
 
 ## 3. 🌙 QA part-time tối nay (T4 21/10) – [Night Work Pack 2026-10-21 (v3)](https://docs.google.com/document/d/1xY_ghkX8I3LqTSyziO-Ef8AU_tN3JF4aru0R29aMddo) · evidence [Evidence_20261021](https://drive.google.com/drive/folders/1JZFIibeWPO3y2gR05MFlirQb0u0dCjCq)
@@ -36,7 +36,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 ## 4. 🤖 Agents
 | Lane | Hàng đợi | Hold (07:45 tự chuyển khi đủ điều kiện) |
 |---|---|---|
-| claude-code | JOB-20261020-08 (product smoke ver0.4) · JOB-20261021-04 (529 automation re-baseline) · IDLE-25 (654 trên .page) | -20-02 (587/557 video + 538) · -19-03 (647 rel-a/b) · -20-04 (catalog 557/570 + 654) · -20-03 (586 positives ← TD-586) · **-21-05 (retest 657–660 ← Martin merge)** |
+| claude-code | JOB-20261021-06 (smoke overlay + 404 sau deploy) · JOB-20261020-08 (product smoke ver0.4) · JOB-20261021-04 (529 automation re-baseline) · IDLE-25 (654 trên .page) | -20-02 (587/557 video + 538) · -19-03 (647 rel-a/b) · -20-04 (catalog 557/570 + 654) · -20-03 (586 positives ← TD-586) · **-21-05 (retest 657–660 ← Night 21/10 việc 0; merge ✅)** |
 | codex | IDLE-24 (visual URL mới DSR-638) | -20-11 (587 visual) · -16-11 (566 visual ← template) |
 
 ## 5. TC (Jira sub-task `qa-tc`)

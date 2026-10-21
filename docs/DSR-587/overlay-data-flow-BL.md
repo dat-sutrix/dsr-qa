@@ -90,3 +90,7 @@ Martin: "working on updating CF Product to new version (DM_product_ver0.4.xlsx, 
 - 表示フラグ = isActive. OFF → page redirects to list. Empty → shown, but set ON.
 - QA data errors found (Night 20/10, TestData itself was correct): node `qa-587-main` (extra "-") en+ja; movieId free text ("QA587 main1", "related 1", "rel A", "QA587 dam"); en qa587-r5 DSR CF points to content qa587-r6; 表示フラグ OFF on en qa557-dam / qa587-rel-a, empty on r1–r6, ja qa557-dam; qa587-rel-b has no DSR CF.
 - Verified 21/10 15:40: Dat opened /en/library/video/qa-587-main → video plays (page generated after re-publish).
+
+## Update 2026-10-21 16:45 VN – Martin
+- Article fixes (DSR-657/658/659/660) merged to main.
+- DEV deployment for **404 pages**: the overlay 404 config Martin had changed manually is now in the repo (no behaviour change intended). Verify: JOB-20261021-06.

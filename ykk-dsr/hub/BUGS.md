@@ -1,6 +1,6 @@
 # YKK DSR – Bug register
 
-> 21/10 16:33 Martin: fix DSR-657/658/659/660 xong (local), chờ merge → .aem.live; JOB-20261021-05 hold retest. Cả 4 đã gán Sprint 12.
+> 21/10 16:45 Martin: fix DSR-657/658/659/660 **ĐÃ MERGE** (.aem.live) + deploy DEV cấu hình trang 404 (đưa vào repo). Retest JOB-20261021-05 chạy sáng 22/10 sau khi QA-PT sửa block ảnh + publish lại (Night 21/10 việc 0). Cả 4 đã gán Sprint 12.
 > Cập nhật: 2026-10-21 07:45 (UTC+7, [schedule] morning) · 🐞 3 bug mới DSR-529: **DSR-657, DSR-658, DSR-659** (qa-ai, 90%) · BUG-1/BUG-5 529 = data (đóng nháp) · 529 <80% → DASHBOARD 🐞 · DSR-457/647/538 trạng thái Jira không đổi · Nguồn sự thật: Jira (sutrix.atlassian.net, project DSR)
 
 ## 🔔 Việc cần làm về bug

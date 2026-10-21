@@ -63,7 +63,7 @@
 ## 6. Trạng thái tóm tắt (21/10 16:50) – chi tiết DASHBOARD
 - 10 ticket mở giao Dat: 587, 647, 538, 557, 570, 654, 586, 529, 653+566 (566/653 đề xuất Sprint 13). Đích Done 22/10 (586 fallback 23/10).
 - Night 21/10 (pack v3, ~4h20): sửa data overlay + 529, catalog lõi, TD-586-01/02 → agent sáng 22/10 (hold jobs tự chuyển).
-- Bug mở của QA: DSR-657/658/659/660 (Martin fix xong local, chờ merge → JOB-20261021-05).
+- Bug mở của QA: DSR-657/658/659/660 – Martin **đã merge 21/10 16:45** (+ deploy cấu hình trang 404 vào repo) → retest JOB-20261021-05 sáng 22/10 sau khi QA-PT publish lại trang 529.
 - Lỗi QA-PT: `QA-PT-ERRORS.md` (14 mục; nhóm lớn nhất: ID ≠ tên CF).
 
 ## 7. Chủ đề đang mở cho session "DSR – Setup"
