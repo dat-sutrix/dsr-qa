@@ -12,6 +12,18 @@ export function loadManifest(file) {
 }
 
 const sub = (s, lang) => String(s).replaceAll('{lang}', lang);
+// D10: content CFs are replicated on their own (no reliance on reference publishing).
+export const DEFAULT_REPLICATE = { 'content-cf': ['preview', 'publish'] };
+
+/** `each: [id, …]` → one item per id with `{id}` substituted everywhere (paths, values, refs). */
+function expandEach(items) {
+  return items.flatMap((item) => {
+    if (!item.each) return [item];
+    const { each, ...rest } = item;
+    const json = JSON.stringify(rest);
+    return [].concat(each).map((id) => JSON.parse(json.replaceAll('{id}', String(id))));
+  });
+}
 
 /** Resolve one manifest value for a language → { value, ref } (ref = true when value is a CF/asset path reference). */
 export function resolveValue(v, lang) {
@@ -31,10 +43,10 @@ export function resolveValue(v, lang) {
 /** Expand items into one entry per (item, lang). */
 export function expandItems(doc) {
   const out = [];
-  doc.items.forEach((item, idx) => {
+  expandEach(doc.items).forEach((item, idx) => {
     const langs = item.lang ?? LANGS;
     for (const lang of langs) {
-      const e = { idx, kind: item.kind, model: item.model, lang, langs, replicate: [].concat(item.replicate ?? []) };
+      const e = { idx, kind: item.kind, model: item.model, lang, langs, replicate: [].concat(item.replicate ?? DEFAULT_REPLICATE[item.kind] ?? []) };
       if (item.kind === 'rename') {
         e.from = sub(item.from, lang);
         e.to = sub(item.to, lang);
@@ -51,7 +63,8 @@ export function expandItems(doc) {
 }
 
 export function verifyUrls(doc) {
-  const urls = doc.verify?.urls ?? [];
   const langs = [...new Set(doc.items.flatMap((i) => i.lang ?? LANGS))];
+  const ids = [...new Set(doc.items.flatMap((i) => [].concat(i.each ?? [])))];
+  const urls = (doc.verify?.urls ?? []).flatMap((u) => (u.includes('{id}') ? ids.map((id) => u.replaceAll('{id}', id)) : [u]));
   return urls.flatMap((u) => (u.includes('{lang}') ? langs.map((l) => ({ lang: l, url: sub(u, l) })) : [{ lang: '-', url: u }]));
 }

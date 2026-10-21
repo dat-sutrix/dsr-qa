@@ -1,0 +1,66 @@
+# TD-587-14 + TD-587-15 (resolved) – related movies (DSR-647) – source: TD-587-14-15.yaml (Night Pack 21/10 v3 việc 2–3, BL-OVL-1 update 21/10)
+# (?) resolved from author/models.md (JOB-20261021-10): DM_movie_related 表示フラグ = isActive (boolean), content ref = movie (content-fragment, required);
+#   DM_movie relatedMovies = content-fragment (multiple), isUnavailable = boolean (配信終了フラグ). No value changed vs source.
+# D10: every content-cf item carries replicate (published before the DSR CFs).
+id: TD-587-14-15
+us: DSR-587, DSR-647
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    path: /content/dam/common/{lang}/movies/{id}
+    each: [qa587-r1, qa587-r2, qa587-r3, qa587-r4, qa587-r5, qa587-r6]
+    fields:
+      movieId: "{id}"
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    path: /content/dam/dsr/{lang}/movies/standard/{id}
+    each: [qa587-r1, qa587-r2, qa587-r3, qa587-r4, qa587-r5, qa587-r6]
+    fields:
+      isActive: true                                       # 表示フラグ
+      movie: ref(/content/dam/common/{lang}/movies/{id})   # r5 must point to r5, not r6
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    path: /content/dam/common/en/movies/qa587-rel-a
+    fields:
+      movieId: qa587-rel-a
+      relatedMovies: [ref(/content/dam/common/en/movies/qa587-r1), ref(/content/dam/common/en/movies/qa587-r2), ref(/content/dam/common/en/movies/qa587-r3), ref(/content/dam/common/en/movies/qa587-r4), ref(/content/dam/common/en/movies/qa587-r5), ref(/content/dam/common/en/movies/qa587-r6)]
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    path: /content/dam/dsr/en/movies/standard/qa587-rel-a
+    fields: { isActive: true, movie: ref(/content/dam/common/en/movies/qa587-rel-a) }
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    path: /content/dam/common/en/movies/qa587-off
+    fields: { movieId: qa587-off, isUnavailable: true }
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    path: /content/dam/dsr/en/movies/standard/qa587-off
+    fields: { isActive: true, movie: ref(/content/dam/common/en/movies/qa587-off) }
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    path: /content/dam/common/en/movies/qa587-rel-b
+    fields:
+      movieId: qa587-rel-b
+      relatedMovies: [ref(/content/dam/common/en/movies/qa587-r1), ref(/content/dam/common/en/movies/qa587-off)]
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    path: /content/dam/dsr/en/movies/standard/qa587-rel-b
+    fields: { isActive: true, movie: ref(/content/dam/common/en/movies/qa587-rel-b) }
+    replicate: [preview, publish]
+verify:
+  urls: ["/en/library/video/qa587-rel-a", "/en/library/video/qa587-rel-b", "/en/library/video/qa587-r1"]

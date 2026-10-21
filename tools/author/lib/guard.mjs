@@ -4,12 +4,23 @@ export const PATH_GUARDS = [
   /^\/content\/sites\/digital-showroom\/master\/(ja|en)\/library\/article\/stories\/qa[0-9a-z][0-9a-z-]*$/,
 ];
 export const NODE_NAME = /^qa[0-9a-z][0-9a-z-]*$/; // lowercase, digits, "-"; "qa-" prefix rejected by [0-9a-z]
+// D8: a rename SOURCE may also be a legacy "qa-" name (e.g. qa-587-main). Targets, creates and patches keep PATH_GUARDS.
+export const RENAME_SOURCE_GUARDS = PATH_GUARDS.map((re) => new RegExp(re.source.replace('qa[0-9a-z]', 'qa-?[0-9a-z]')));
 
 export function isWritablePath(p) {
   return PATH_GUARDS.some((re) => re.test(p));
 }
 export function assertWritablePath(p) {
   if (!isWritablePath(p)) throw new Error(`Path outside guard: ${p}`);
+}
+export function isRenameSourcePath(p) {
+  return RENAME_SOURCE_GUARDS.some((re) => re.test(p));
+}
+/** Rename (MOVE): legacy-tolerant source, strict target, same folder only (D8). */
+export function assertRenamable(from, to) {
+  if (!isRenameSourcePath(from)) throw new Error(`Rename source outside guard: ${from}`);
+  assertWritablePath(to);
+  if (parentPath(from) !== parentPath(to)) throw new Error(`Rename must stay in the same folder: ${from} → ${to}`);
 }
 export const nodeName = (p) => p.split('/').pop();
 export const parentPath = (p) => p.split('/').slice(0, -1).join('/');

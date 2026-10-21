@@ -13,6 +13,10 @@
 | D3 | Credential theo §2b (account Author **dùng chung với QA-PT**, không xin thêm account người dùng) | Ràng buộc Dat 21/10 |
 | D4 | Claude web viết manifest (thay cho bảng TestData trong Night Pack); validator + read-back là cổng chất lượng | Một nguồn dữ liệu cho cả agent author, agent test và QA-PT |
 | D5 | Agent test (`claude-code`, `codex`) **giữ nguyên read-only**. Chỉ lane `author` được ghi | Thu hẹp bề mặt rủi ro |
+| D8 | (P1a′ 21/10) Rename **source** được khớp `^qa-?[0-9a-z][0-9a-z-]*$` (cho phép node cũ `qa-587-main`); rename **target** và mọi path create/patch giữ guard chặt (không `qa-`). Chỉ trong cùng folder | Sửa được data QA-PT đặt sai tên mà không nới guard ghi |
+| D9 | Sửa tên sai bằng **rename (MOVE)**, không bao giờ xóa + tạo lại; manifest phải tự set lại ref `movie`/`product`/`catalog` sau rename (MOVE không viết lại ref) – lint `ref-set-after-rename` | Không xóa (§2); ref cũ trỏ path chết |
+| D10 | Item content-cf có `replicate:` riêng (mặc định `[preview, publish]`); thứ tự publish mỗi tier: content CF trước, rồi DSR CF. Không dựa vào publish reference | Trang DSR sinh ra phải thấy content CF đã ở tier đó |
+| D11 | `agentId: preview` và MOVE qua Assets HTTP API **chưa xác minh** tới P1b (lần ghi thử đầu) – vẫn sau cổng apply | Chưa từng gửi request ghi |
 
 ## 2. Phạm vi quyền (cần Dat duyệt)
 **Được làm** – chỉ Author DEV `author-p192812-e2014374`:

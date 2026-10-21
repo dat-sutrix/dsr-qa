@@ -22,12 +22,18 @@ node tools/author/author.mjs apply   <manifest> [--dry-run] [--out <dir>]   # de
 - `{lang}` in paths and values is expanded for every language in `lang:`.
 - `{ ja: "…", en: "…" }` = per-language value.
 - `ref(/content/dam/...)` = CF / asset reference (lint checks it exists or is created in the same manifest).
-- `replicate: [preview, publish]` per item; `verify.urls` are checked on `.aem.page` / `.aem.live`.
+- `each: [id1, id2, …]` = one item per id, `{id}` substituted in path, values, refs and `verify.urls`.
+  Quote values that contain `{lang}`/`{id}` inside a flow map (`{ movie: "ref(/…/{lang}/…)" }`) – unquoted braces there are invalid YAML.
+- `replicate: [preview, publish]` per item; **content-cf items default to `[preview, publish]`** (D10), other kinds have no default.
+  Each tier publishes content CFs first, then DSR CFs, one request each; references are never published implicitly.
+- `kind: rename` items (`from`, `to`, optional `lang`) fix mis-named nodes by MOVE (D9, never delete + recreate). Items whose
+  path is a rename target are patched on the moved node; DSR items must set their content-CF ref themselves (MOVE does not rewrite refs).
+- `verify.urls` are checked on `.aem.page` / `.aem.live`.
 
 ### Checks
 | Layer | What |
 |---|---|
-| L0 lint | path guard; node name `^qa[0-9a-z][0-9a-z-]*$` (no `qa-`); ja+en pair; model exists and matches live CF; field names/types exist in the live model; ID field (`movieId`/`productId`/`catalogId`) = node name (`live-id` WARN shows the current live value); 表示フラグ set; required fields present (create: manifest only; patch: manifest ∪ live); references exist or are in the manifest; missing target with a mis-named `qa-…` sibling → FAIL with hint |
+| L0 lint | path guard (rename source: legacy `qa-` allowed, D8); node name `^qa[0-9a-z][0-9a-z-]*$` (no `qa-`); ja+en pair (not for rename items); rename source exists / target free / same folder; content-CF ref set on items reached via rename (D9); model exists and matches live CF; field names/types exist in the live model; ID field (`movieId`/`productId`/`catalogId`) = node name (`live-id` WARN shows the current live value); 表示フラグ set; required fields present (create: manifest only; patch: manifest ∪ live); references exist or are in the manifest; missing target with a mis-named `qa-…` sibling → FAIL with hint |
 | L1 | CF exists, model, each manifest field exact (dates compared as `YYYY-MM-DD`, multi-values in order) |
 | L2 | `jcr:content` `cq:lastReplicationAction_<tier>` = Activate and `cq:lastReplicated_<tier>` present (and ≥ `--since`) |
 | L3 | GET `https://main--dsr-eds-dev--sutrix-projects.aem.{page,live}<url>` → 200 + non-empty `<title>` |
@@ -39,12 +45,14 @@ node tools/author/author.mjs apply   <manifest> [--dry-run] [--out <dir>]   # de
 - **Path guard** (`lib/guard.mjs`) on every manifest path (lint) and again on every write target (execute):
   `^/content/dam/(common|dsr)/(ja|en)/(movies|movies/standard|movies/tech|products|catalogs)/qa[0-9a-z][0-9a-z-]*$`,
   `^/content/sites/digital-showroom/master/(ja|en)/library/article/stories/qa[0-9a-z][0-9a-z-]*$`.
+  **Rename source only** (D8): same patterns with `qa-?[0-9a-z]` (legacy `qa-587-main`); the rename target keeps the strict
+  guard and must be in the same folder (`assertRenamable`, checked in lint and again right before the MOVE).
 - **apply executes only if ALL gates pass**: `AUTHOR_WRITE_ENABLED=1` env, `--apply` flag (and no `--dry-run`),
   Asia/Saigon Mon–Fri 08:00–18:00, lint has 0 FAIL. Otherwise it prints the plan and exits 0 without sending anything.
 - `max_writes` (manifest or `--max-writes`, default 40) caps the plan; every write is appended to `<out>/writes.log`
   (time, method, path, field before/after, HTTP status); first non-2xx stops the run.
 
-## Write endpoints (planned; NOT yet exercised – P1b)
+## Write endpoints (planned; NOT yet exercised – P1b, D11: `agentId: "preview"` and MOVE stay unverified until then)
 Source: Adobe AEM Sites OpenAPI (`developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/`, spec version 2026.07).
 | Op | Request | Notes |
 |---|---|---|

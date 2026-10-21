@@ -53,7 +53,7 @@ export async function verify(doc, opts = {}) {
   }
 
   // L3: tiers = union of replicate tiers in manifest (default both)
-  const tiersWanted = new Set(doc.items.flatMap((i) => [].concat(i.replicate ?? [])));
+  const tiersWanted = new Set(expandItems(doc).flatMap((e) => e.replicate));
   const tiers = [['preview', 'page'], ['publish', 'live']].filter(([t]) => tiersWanted.size === 0 || tiersWanted.has(t));
   for (const { lang, url } of verifyUrls(doc)) {
     for (const [, tier] of tiers) {

@@ -1,0 +1,135 @@
+{
+  "/content/dam/common/ja/movies/qa-587-main": {
+    "exists": true,
+    "id": "d103a6ce-8e88-49c0-9099-0664d709d69b",
+    "model": "DM_movie",
+    "etag": "\"bb0dc2d8ac155ec8bd8b1083f13b8b86\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "movieId": [
+        "QA587 main"
+      ],
+      "movieTitle": [
+        "QA587 main movie"
+      ],
+      "description": [
+        "QA587 line1 \nQA587 line2"
+      ],
+      "searchKeywords": [],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "movieSource": [
+        "youtube"
+      ],
+      "movieSourceId": [
+        "irFRtAVphCY"
+      ],
+      "movieAsset": [],
+      "relatedMovies": [],
+      "relatedProducts": [],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-10-20"
+      ],
+      "updateDate": [],
+      "isUnavailable": []
+    }
+  },
+  "/content/dam/common/ja/movies/qa587-main": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/movies/standard/qa-587-main": {
+    "exists": true,
+    "id": "c66e04e2-b59e-48fd-b201-fce618d6acdd",
+    "model": "DM_movie_related",
+    "etag": "\"a5f08d75863795933430a79d078d395d\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [
+        "QA587 main1"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-main"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-main": {
+    "exists": false
+  },
+  "/content/dam/dsr/ja/movies/standard/qa-587-main": {
+    "exists": true,
+    "id": "bbc2c557-89da-43f6-aec5-9bca60d8d66d",
+    "model": "DM_movie_related",
+    "etag": "\"a9f8383d77974b3046c27369df157dc8\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [],
+      "movie": [
+        "/content/dam/common/ja/movies/qa-587-main"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/movies/standard/qa587-main": {
+    "exists": false
+  },
+  "/content/dam/common/en/movies/qa587-main": {
+    "exists": true,
+    "id": "c30079bc-0421-4b88-ba54-83d307a338ce",
+    "model": "DM_movie",
+    "etag": "\"9431047c141c046b2583015151f1b7eb\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieId": [
+        "QA587 main1"
+      ],
+      "movieTitle": [
+        "QA587 main movie"
+      ],
+      "description": [
+        "QA587 line1 \nQA587 line2"
+      ],
+      "searchKeywords": [],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "movieSource": [
+        "youtube"
+      ],
+      "movieSourceId": [
+        "irFRtAVphCY"
+      ],
+      "movieAsset": [],
+      "relatedMovies": [],
+      "relatedProducts": [],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-10-20"
+      ],
+      "updateDate": [],
+      "isUnavailable": []
+    }
+  }
+}

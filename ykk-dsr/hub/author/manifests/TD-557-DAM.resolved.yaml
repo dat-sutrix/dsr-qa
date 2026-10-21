@@ -1,0 +1,21 @@
+# TD-557-DAM (resolved) – DAM video (DSR-557) – source: TD-557-DAM.yaml (Night Pack 21/10 v3 việc 4)
+# Resolved from author/models.md (JOB-20261021-10): DM_movie.movieSource is an enumeration youtube/youku/dam → value "dam" (source said "DAM");
+#   DM_movie_related content ref = movie, 表示フラグ = isActive. movieAsset (content-reference) left unchecked as in source.
+# D10: content CF carries its own replicate. ref() values containing {lang}/{id} are quoted (unquoted braces inside a flow map are invalid YAML – source file does not parse).
+id: TD-557-DAM
+us: DSR-557
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en, ja]
+    path: /content/dam/common/{lang}/movies/qa557-dam
+    fields: { movieId: qa557-dam, movieSource: dam }   # movieAsset: any mp4 (not checked)
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/movies/standard/qa557-dam
+    fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/qa557-dam)" }
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/video/qa557-dam"]

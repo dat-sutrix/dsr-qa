@@ -4,7 +4,7 @@ import { appendFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { getModels, getFragment } from './aem.mjs';
 import { aemWrite, csrfToken } from './http.mjs';
-import { assertWritablePath, inWriteWindow, nodeName, parentPath } from './guard.mjs';
+import { assertWritablePath, assertRenamable, inWriteWindow, nodeName, parentPath } from './guard.mjs';
 
 const toApi = (p) => `/api/assets${p.replace(/^\/content\/dam/, '')}`;
 const ORDER = { rename: 0, 'content-cf': 1, 'dsr-cf': 2 };
@@ -64,15 +64,18 @@ export async function buildPlan(lintResult) {
       });
     }
   }
-  // Replication: one request per tier with all paths that ask for it (after all content writes)
+  // Replication (after all content writes): per tier, content CFs first, then DSR CFs (D10) – one request each.
+  // References are never published implicitly (filterReferencesByStatus: []); every CF carries its own replicate.
   for (const tier of ['preview', 'publish']) {
-    const paths = sorted.filter((e) => e.kind !== 'rename' && e.replicate.includes(tier)).map((e) => e.path);
-    if (paths.length) plan.push({
-      op: `replicate:${tier}`, method: 'POST', path: '/adobe/sites/cf/fragments/publish', target: paths.join(', '),
-      headers: { 'Content-Type': 'application/json', 'CSRF-Token': '<runtime>' },
-      body: { paths, agentId: tier, filterReferencesByStatus: [], workflowTitle: `qa-author ${tier}` },
-      bodyKeys: ['paths', 'agentId', 'filterReferencesByStatus', 'workflowTitle'],
-    });
+    for (const kind of ['content-cf', 'dsr-cf']) {
+      const paths = sorted.filter((e) => e.kind === kind && e.replicate.includes(tier)).map((e) => e.path);
+      if (paths.length) plan.push({
+        op: `replicate:${tier} ${kind}`, method: 'POST', path: '/adobe/sites/cf/fragments/publish', target: paths.join(', '),
+        headers: { 'Content-Type': 'application/json', 'CSRF-Token': '<runtime>' },
+        body: { paths, agentId: tier, filterReferencesByStatus: [], workflowTitle: `qa-author ${tier} ${kind}` },
+        bodyKeys: ['paths', 'agentId', 'filterReferencesByStatus', 'workflowTitle'],
+      });
+    }
   }
   return plan;
 }
@@ -113,8 +116,8 @@ export async function execute(plan, { outDir, maxWrites = 40 }) {
   const csrf = await csrfToken();
   const results = [];
   for (const p of writes) {
-    for (const t of p.target.split(', ')) assertWritablePath(t);
-    if (p.op === 'rename') assertWritablePath(`/content/dam${p.headers['X-Destination'].replace(/^\/api\/assets/, '')}`);
+    if (p.op === 'rename') assertRenamable(p.target, `/content/dam${p.headers['X-Destination'].replace(/^\/api\/assets/, '')}`);
+    else for (const t of p.target.split(', ')) assertWritablePath(t);
     const headers = { ...p.headers, 'CSRF-Token': csrf };
     if (p.op === 'patch') {
       const fresh = await getFragment(p.target); // re-read for current id + ETag

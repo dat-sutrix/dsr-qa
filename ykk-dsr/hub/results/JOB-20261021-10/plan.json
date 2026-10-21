@@ -1,0 +1,253 @@
+[
+  {
+    "op": "rename",
+    "lang": "ja",
+    "method": "MOVE",
+    "path": "/api/assets/common/ja/movies/qa-587-main",
+    "target": "/content/dam/common/ja/movies/qa-587-main",
+    "headers": {
+      "X-Destination": "/api/assets/common/ja/movies/qa587-main",
+      "X-Depth": "infinity",
+      "X-Overwrite": "F"
+    },
+    "bodyKeys": [],
+    "note": "qa-587-main → qa587-main"
+  },
+  {
+    "op": "rename",
+    "lang": "en",
+    "method": "MOVE",
+    "path": "/api/assets/dsr/en/movies/standard/qa-587-main",
+    "target": "/content/dam/dsr/en/movies/standard/qa-587-main",
+    "headers": {
+      "X-Destination": "/api/assets/dsr/en/movies/standard/qa587-main",
+      "X-Depth": "infinity",
+      "X-Overwrite": "F"
+    },
+    "bodyKeys": [],
+    "note": "qa-587-main → qa587-main"
+  },
+  {
+    "op": "rename",
+    "lang": "ja",
+    "method": "MOVE",
+    "path": "/api/assets/dsr/ja/movies/standard/qa-587-main",
+    "target": "/content/dam/dsr/ja/movies/standard/qa-587-main",
+    "headers": {
+      "X-Destination": "/api/assets/dsr/ja/movies/standard/qa587-main",
+      "X-Depth": "infinity",
+      "X-Overwrite": "F"
+    },
+    "bodyKeys": [],
+    "note": "qa-587-main → qa587-main"
+  },
+  {
+    "op": "patch",
+    "lang": "en",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/c30079bc-0421-4b88-ba54-83d307a338ce",
+    "target": "/content/dam/common/en/movies/qa587-main",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/0/values",
+        "value": [
+          "qa587-main"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.movieId"
+    ],
+    "changes": [
+      {
+        "field": "movieId",
+        "before": [
+          "QA587 main1"
+        ],
+        "after": [
+          "qa587-main"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "ja",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/<id of qa-587-main after rename>",
+    "target": "/content/dam/common/ja/movies/qa587-main",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/0/values",
+        "value": [
+          "qa587-main"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.movieId"
+    ],
+    "changes": [
+      {
+        "field": "movieId",
+        "before": [
+          "QA587 main"
+        ],
+        "after": [
+          "qa587-main"
+        ]
+      }
+    ]
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main"
+  },
+  {
+    "op": "patch",
+    "lang": "ja",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/<id of qa-587-main after rename>",
+    "target": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/1/values",
+        "value": [
+          "/content/dam/common/ja/movies/qa587-main"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.movie"
+    ],
+    "changes": [
+      {
+        "field": "movie",
+        "before": [
+          "/content/dam/common/ja/movies/qa-587-main"
+        ],
+        "after": [
+          "/content/dam/common/ja/movies/qa587-main"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-main, /content/dam/common/ja/movies/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-main",
+        "/content/dam/common/ja/movies/qa587-main"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-main, /content/dam/dsr/ja/movies/standard/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-main",
+        "/content/dam/dsr/ja/movies/standard/qa587-main"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-main, /content/dam/common/ja/movies/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-main",
+        "/content/dam/common/ja/movies/qa587-main"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-main, /content/dam/dsr/ja/movies/standard/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-main",
+        "/content/dam/dsr/ja/movies/standard/qa587-main"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

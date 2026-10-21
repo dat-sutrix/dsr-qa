@@ -1,0 +1,18 @@
+# TD-190-CAT-CORE (resolved) – core 4 catalogs – DSR-557/570/654 – source: TD-190-CAT-CORE.yaml (Night Pack 21/10 v3 việc 5)
+# Resolved from author/models.md (JOB-20261021-10): model = DM_catalog_related (表示フラグ isActive, content ref `catalog`, required).
+#   DM_catalog_related has NO catalogId field (URL = node name) → `catalogId` removed (it would fail field-name lint).
+#   `catalog` ref added: known deviation – content CFs live in /content/dam/ykk/common/product-cf/test/{id} (Martin: naming rule only);
+#   path matches the live en DSR CFs qa190-cat-pdf-form / qa190-cat-ebook-form (GET 21/10). Lang-neutral path for en and ja.
+# No content-cf item in this manifest (content CFs are outside the write guard) → nothing replicated for them here.
+id: TD-190-CAT-CORE
+us: DSR-557, DSR-570, DSR-654
+items:
+  - kind: dsr-cf
+    model: DM_catalog_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/catalogs/{id}
+    each: [qa190-cat-pdf, qa190-cat-pdf-form, qa190-cat-ebook, qa190-cat-ebook-form]
+    fields: { isActive: true, catalog: "ref(/content/dam/ykk/common/product-cf/test/{id})" }
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/catalog/{id}"]

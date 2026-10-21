@@ -1,0 +1,25 @@
+{
+  "job": "JOB-20261021-10",
+  "agent": "claude-code",
+  "us": "SETUP author lane P1a fix",
+  "env": "dev",
+  "started": "2026-10-21T11:05:00Z",
+  "finished": "2026-10-21T11:09:55Z",
+  "status": "done",
+  "tests": [
+    { "tc": "LINT-TD-587-01", "lang": "en+ja", "result": "pass", "error": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "LINT-TD-587-14-15", "lang": "en", "result": "fail", "error": "18x lang-pair: manifest is en-only", "suspect": "test", "cause": "none", "confidence": 0 },
+    { "tc": "LINT-TD-557-DAM", "lang": "en+ja", "result": "pass", "error": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "LINT-TD-190-CAT-CORE", "lang": "en+ja", "result": "fail", "error": "ref ykk/common/product-cf/test/qa190-cat-pdf missing (en, ja)", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "LINT-TD-586-01-02", "lang": "ja", "result": "fail", "error": "numeric node names outside qa* guard (8), lang-pair (4), required fields missing on create (2)", "suspect": "test", "cause": "none", "confidence": 0 },
+    { "tc": "DRYRUN-TD-587-01", "lang": "en+ja", "result": "pass", "error": "", "suspect": "data", "cause": "none", "confidence": 0 }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tools/author/lib/guard.mjs", "tools/author/lib/lint.mjs", "tools/author/lib/apply.mjs", "tools/author/lib/manifest.mjs", "tools/author/lib/verify.mjs", "tools/author/README.md",
+    "ykk-dsr/hub/AUTHOR-AGENT.md",
+    "ykk-dsr/hub/author/manifests/TD-587-01.resolved.yaml", "ykk-dsr/hub/author/manifests/TD-587-14-15.resolved.yaml", "ykk-dsr/hub/author/manifests/TD-557-DAM.resolved.yaml",
+    "ykk-dsr/hub/author/manifests/TD-190-CAT-CORE.resolved.yaml", "ykk-dsr/hub/author/manifests/TD-586-01-02.resolved.yaml"
+  ],
+  "questions": []
+}

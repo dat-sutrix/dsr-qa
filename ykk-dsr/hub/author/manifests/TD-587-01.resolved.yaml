@@ -2,23 +2,34 @@
 # (?) field names resolved from author/models.md (live DEV schema, JOB-20261021-08):
 #   DM_movie_related 表示フラグ = isActive (boolean) · reference to content CF = movie (content-fragment, required)
 #   DM_movie ID field = movieId (required text) – must equal node name
-# No other change vs TD-587-01.yaml (no rename item added: that is Claude's decision).
+# JOB-20261021-10 (D8–D10): rename items for the mis-named legacy nodes (MOVE, same folder, never delete+recreate);
+#   en common is already named qa587-main (only movieId is wrong) → no rename for en common.
+#   DSR `movie` ref is set explicitly (MOVE does not rewrite refs, D9); content CF has its own replicate (D10).
 id: TD-587-01
 us: DSR-587
 items:
+  - kind: rename
+    lang: [ja]
+    from: /content/dam/common/{lang}/movies/qa-587-main
+    to: /content/dam/common/{lang}/movies/qa587-main
+  - kind: rename
+    lang: [en, ja]
+    from: /content/dam/dsr/{lang}/movies/standard/qa-587-main
+    to: /content/dam/dsr/{lang}/movies/standard/qa587-main
   - kind: content-cf
     model: DM_movie
     lang: [en, ja]
     path: /content/dam/common/{lang}/movies/qa587-main
     fields:
       movieId: qa587-main          # = node name (BL-OVL-1)
+    replicate: [preview, publish]  # D10: published before the DSR CFs
   - kind: dsr-cf
     model: DM_movie_related
     lang: [en, ja]
     path: /content/dam/dsr/{lang}/movies/standard/qa587-main
     fields:
       isActive: true               # 表示フラグ (confirmed)
-      movie: ref(/content/dam/common/{lang}/movies/qa587-main)   # confirmed
+      movie: ref(/content/dam/common/{lang}/movies/qa587-main)   # confirmed; re-set after rename (D9)
     replicate: [preview, publish]
 verify:
   urls: ["/{lang}/library/video/qa587-main"]

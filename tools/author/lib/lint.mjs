@@ -2,7 +2,7 @@
 import { getModels, getFragment, idField, flagField } from './aem.mjs';
 import { aemGet } from './http.mjs';
 import { expandItems, LANGS } from './manifest.mjs';
-import { isWritablePath, NODE_NAME, nodeName, parentPath } from './guard.mjs';
+import { isWritablePath, isRenameSourcePath, NODE_NAME, nodeName, parentPath } from './guard.mjs';
 
 const REF_TYPES = new Set(['content-fragment', 'content-reference']);
 
@@ -35,12 +35,12 @@ export async function lint(doc) {
   const renameTargets = new Map(entries.filter((e) => e.kind === 'rename').map((e) => [e.to, e.from]));
 
   for (const e of entries) {
-    // ja+en pair
+    // ja+en pair (data items; a rename only fixes whichever language is mis-named)
     const missingLang = LANGS.filter((l) => !e.langs.includes(l));
-    if (e.lang === e.langs[0]) add(e, 'lang-pair', missingLang.length === 0, 'ja+en', e.langs.join('+'));
+    if (e.kind !== 'rename' && e.lang === e.langs[0]) add(e, 'lang-pair', missingLang.length === 0, 'ja+en', e.langs.join('+'));
 
-    const paths = e.kind === 'rename' ? [e.from, e.to] : [e.path];
-    for (const p of paths) add(e, 'path-guard', isWritablePath(p), 'allowed qa* path', p);
+    if (e.kind === 'rename') add(e, 'path-guard:rename-source', isRenameSourcePath(e.from), 'allowed qa* or legacy qa-* path (D8)', e.from);
+    add(e, 'path-guard', isWritablePath(e.path), 'allowed qa* path', e.path);
     const name = nodeName(e.path);
     add(e, 'node-name', NODE_NAME.test(name), '^qa[0-9a-z][0-9a-z-]*$ (no leading "qa-")', name);
 
@@ -89,6 +89,11 @@ export async function lint(doc) {
       add(e, `id=node-name:${idf}`, val === name, name, val ?? '(empty)');
       const liveId = base?.fields?.[idf]?.[0];
       if (base?.exists && idf in e.fields) add(e, `live-id:${idf}`, liveId === name, `${name} (manifest will patch)`, liveId ?? '(empty)', true);
+    }
+    // D9: MOVE does not rewrite references → an item reached via rename must set its content-CF ref itself
+    if (viaRename) {
+      const refs = model.fields.filter((f) => f.type === 'content-fragment' && f.required).map((f) => f.name);
+      for (const r of refs) add(e, `ref-set-after-rename:${r}`, r in e.fields, `${r} set in manifest (D9)`, r in e.fields ? e.fields[r].value : 'not set');
     }
     // 表示フラグ must be stated explicitly (related models)
     const flag = flagField(model);
