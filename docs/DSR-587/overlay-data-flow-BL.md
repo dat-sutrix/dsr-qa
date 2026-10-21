@@ -80,3 +80,13 @@ json2html Mustache template (`cf-templates/video.html`; product/catalog to do) w
 
 ## Update 2026-10-20 17:14 JST (15:14 VN) – dm_product → ver0.4 (Martin)
 Martin: "working on updating CF Product to new version (DM_product_ver0.4.xlsx, Drive 1uUgIMKKSL93jjVCQpfTTYtkrFJlAAiSD). It may break some product relative part." Second product model change today (after DSR-585 CR). QA: product results after this time are unstable until Martin pings done; then run JOB-20261020-08 (diff vs JOB-07). TD-586 (Night 21/10) must be built on ver0.4 fields.
+
+## Update 2026-10-21 15:40 VN – Martin DSR CF audit + platform fix (BINDING)
+- FIXED by dev: publishing a DSR CF in AEM now auto-generates the EDS page (Preview → .aem.page, Publish → .aem.live). Only CFs published **after 2026-10-21 08:25 UTC** have a page → every older DSR CF must be re-published once.
+- Page URL = **DSR CF node name**: /{lang}/library/video/{name} · /{lang}/products/{name} · /{lang}/library/catalog/{name}.
+- The id field (movieId / productId / catalogId) **must equal the node name**: lowercase letters, digits, "-" only (case-sensitive). Related links (videos, products, catalog buttons) are built from the id → wrong id = card without link / 404.
+- Rename = Move > Name (title change is not enough), then publish the new path.
+- Content CF and DSR CF share the same name (naming rule; not enforced on pages).
+- 表示フラグ = isActive. OFF → page redirects to list. Empty → shown, but set ON.
+- QA data errors found (Night 20/10, TestData itself was correct): node `qa-587-main` (extra "-") en+ja; movieId free text ("QA587 main1", "related 1", "rel A", "QA587 dam"); en qa587-r5 DSR CF points to content qa587-r6; 表示フラグ OFF on en qa557-dam / qa587-rel-a, empty on r1–r6, ja qa557-dam; qa587-rel-b has no DSR CF.
+- Verified 21/10 15:40: Dat opened /en/library/video/qa-587-main → video plays (page generated after re-publish).
