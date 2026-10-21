@@ -1,0 +1,99 @@
+{
+  "job": "JOB-ZZ-IDLE-23",
+  "agent": "codex",
+  "us": "DSR-586 (visual baseline)",
+  "env": "dev",
+  "started": "2026-10-21T06:43:39.647Z",
+  "finished": "2026-10-21T06:45:54.664049+00:00",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "JOB-ZZ-IDLE-23-page-ja-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture succeeded; visual conformance not assessed",
+      "evidence": "evidence/DSR-586/baseline-20261021/page-ja-1440.png",
+      "http_status": 200,
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-23-page-ja-375",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture succeeded; visual conformance not assessed",
+      "evidence": "evidence/DSR-586/baseline-20261021/page-ja-375.png",
+      "http_status": 200,
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-23-page-en-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture succeeded; visual conformance not assessed",
+      "evidence": "evidence/DSR-586/baseline-20261021/page-en-1440.png",
+      "http_status": 200,
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-23-page-en-375",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture succeeded; visual conformance not assessed",
+      "evidence": "evidence/DSR-586/baseline-20261021/page-en-375.png",
+      "http_status": 200,
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-23-live-ja-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture succeeded; HTTP 404 error-page baseline only",
+      "evidence": "evidence/DSR-586/baseline-20261021/live-ja-1440.png",
+      "http_status": 404,
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-23-live-ja-375",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture succeeded; HTTP 404 error-page baseline only",
+      "evidence": "evidence/DSR-586/baseline-20261021/live-ja-375.png",
+      "http_status": 404,
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-23-live-en-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture succeeded; HTTP 404 error-page baseline only",
+      "evidence": "evidence/DSR-586/baseline-20261021/live-en-1440.png",
+      "http_status": 404,
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-23-live-en-375",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture succeeded; HTTP 404 error-page baseline only",
+      "evidence": "evidence/DSR-586/baseline-20261021/live-en-375.png",
+      "http_status": 404,
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": [],
+  "reports": [
+    "results/DSR-586/DEV/automation-run-20261021-idle23.md",
+    "results/JOB-ZZ-IDLE-23/summary.md"
+  ],
+  "outcome_scope": "Pass means screenshot and diagnostics captured, not product acceptance."
+}

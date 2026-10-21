@@ -1,0 +1,572 @@
+{
+  "started": "2026-10-21T06:43:39.647Z",
+  "head": "f759217187e67e2d03351f2ba5fe1e6a3d1d236e",
+  "captures": [
+    {
+      "id": "page-ja-1440",
+      "lang": "ja",
+      "width": 1440,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products",
+          "status": 404
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/46",
+      "observed": {
+        "title": "QUICKFIT® | YKK DIGITAL SHOWROOM",
+        "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\nQUICKFIT® | YKK DIGITAL SHOWROOM\nQUICKFIT®\n\n製品コード：\nZ15-1\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\nQUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。\n曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。\n優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。\nQUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。\n\n用途\n性能\nアイテムバリエーション\n\nストレートタイプ・フレキシブルタイプ\n\n関連コンテンツ\n\nArticle Page 1\n\nSTORY\n\nArticle Page 2\n\nSTORY\n\nArticle Page 3\n\nSTORY\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "QUICKFIT®",
+          "QUICKFIT®",
+          "用途",
+          "性能",
+          "アイテムバリエーション",
+          "関連コンテンツ"
+        ],
+        "meta": [
+          {
+            "name": "description",
+            "content": "QUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。 曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。 優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。 QUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。"
+          },
+          {
+            "name": "og:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "og:description",
+            "content": "QUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。 曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。 優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。 QUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/products/46"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/common/products/product-sample/QUICKFIT%C2%AE_1.png"
+          },
+          {
+            "name": "og:image:alt",
+            "content": "/content/dam/ykk/common/products/product-sample/QUICKFIT®_1.png"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "twitter:description",
+            "content": "QUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。 曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。 優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。 QUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "cf-path",
+            "content": "/content/dam/dsr/ja/products/46"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "width": 1440,
+        "height": 2275
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/page-ja-1440.png",
+      "durationMs": 9637
+    },
+    {
+      "id": "page-ja-375",
+      "lang": "ja",
+      "width": 375,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products",
+          "status": 404
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/46",
+      "observed": {
+        "title": "QUICKFIT® | YKK DIGITAL SHOWROOM",
+        "text": "HOME\nQUICKFIT® | YKK DIGITAL SHOWROOM\nQUICKFIT®\n\n製品コード：\nZ15-1\n\nこの製品についてお問い合わせする\nマイリストに登録する\n\nQUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。\n曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。\n優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。\nQUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。\n\n用途\n性能\nアイテムバリエーション\n\nストレートタイプ・フレキシブルタイプ\n\n関連コンテンツ\n\nArticle Page 1\n\nSTORY\n\nArticle Page 2\n\nSTORY\n\nArticle Page 3\n\nSTORY\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "QUICKFIT®",
+          "QUICKFIT®",
+          "用途",
+          "性能",
+          "アイテムバリエーション",
+          "関連コンテンツ"
+        ],
+        "meta": [
+          {
+            "name": "description",
+            "content": "QUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。 曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。 優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。 QUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。"
+          },
+          {
+            "name": "og:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "og:description",
+            "content": "QUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。 曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。 優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。 QUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/products/46"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/common/products/product-sample/QUICKFIT%C2%AE_1.png"
+          },
+          {
+            "name": "og:image:alt",
+            "content": "/content/dam/ykk/common/products/product-sample/QUICKFIT®_1.png"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "twitter:description",
+            "content": "QUICKFIT®フックファスナーは、自動車シートの表皮を効率よく固定するためのシステムです。 曲線に沿わせることができ、継ぎ目のない長い縫製ラインにも対応します。 優れたセルフアライメント機能により、取り付け時間を短縮できます。ループはシートカバーの外側から使用でき、QUICKLOOP®ループファスナーとの併用をおすすめします。 QUICKFIT®フックファスナーには磁性素材が使われており、金型の溝にすばやく簡単にセットできます。セルフアライメント機能により作業スピードが上がり、生産性が向上します。"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/ja/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "cf-path",
+            "content": "/content/dam/dsr/ja/products/46"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "width": 375,
+        "height": 2793
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/page-ja-375.png",
+      "durationMs": 8341
+    },
+    {
+      "id": "page-en-1440",
+      "lang": "en",
+      "width": 1440,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "status": 404
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/46",
+      "observed": {
+        "title": "QUICKFIT® | YKK DIGITAL SHOWROOM",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nQUICKFIT® | YKK DIGITAL SHOWROOM\nQUICKFIT®\n\nProduct code：\nZ15-1\n\nContact us about this product\nAdd to My List\n\nThe QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats.\nIts design accommodates curve lines and also provides long and joint-less seam lines.\nIts excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener.\nThe QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The \"self- aligning\" feature of the QUICKFIT® hook fastener increases work speed and improves productivity. Self-aligning is a productivity-enhancing feature, and the QUICKFIT® hook fastener can be easily attached to the die set.\n\nApplications\nPerformance\nItem Variations\n\nStraight & flexible types\n\nRelated Content\n\nTOP-PAGE\n\nSTORY\n\nproduct-list\n\nSTORY\n\nProduct Detail\n\nSTORY\n\nProduct Condition Search\n\nSTORY\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "QUICKFIT®",
+          "QUICKFIT®",
+          "Applications",
+          "Performance",
+          "Item Variations",
+          "Related Content"
+        ],
+        "meta": [
+          {
+            "name": "description",
+            "content": "The QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats. Its design accommodates curve lines and also provides long and joint-less seam lines. Its excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener. The QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The"
+          },
+          {
+            "name": "og:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "og:description",
+            "content": "The QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats. Its design accommodates curve lines and also provides long and joint-less seam lines. Its excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener. The QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/products/46"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/common/products/product-sample/QUICKFIT%C2%AE_1.png"
+          },
+          {
+            "name": "og:image:alt",
+            "content": "/content/dam/ykk/common/products/product-sample/QUICKFIT®_1.png"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "twitter:description",
+            "content": "The QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats. Its design accommodates curve lines and also provides long and joint-less seam lines. Its excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener. The QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "cf-path",
+            "content": "/content/dam/dsr/en/products/46"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "width": 1440,
+        "height": 2353
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/page-en-1440.png",
+      "durationMs": 9027
+    },
+    {
+      "id": "page-en-375",
+      "lang": "en",
+      "width": 375,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products",
+          "status": 404
+        },
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/46",
+      "observed": {
+        "title": "QUICKFIT® | YKK DIGITAL SHOWROOM",
+        "text": "HOME\nQUICKFIT® | YKK DIGITAL SHOWROOM\nQUICKFIT®\n\nProduct code：\nZ15-1\n\nContact us about this product\nAdd to My List\n\nThe QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats.\nIts design accommodates curve lines and also provides long and joint-less seam lines.\nIts excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener.\nThe QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The \"self- aligning\" feature of the QUICKFIT® hook fastener increases work speed and improves productivity. Self-aligning is a productivity-enhancing feature, and the QUICKFIT® hook fastener can be easily attached to the die set.\n\nApplications\nPerformance\nItem Variations\n\nStraight & flexible types\n\nRelated Content\n\nTOP-PAGE\n\nSTORY\n\nproduct-list\n\nSTORY\n\nProduct Detail\n\nSTORY\n\nProduct Condition Search\n\nSTORY\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "QUICKFIT®",
+          "QUICKFIT®",
+          "Applications",
+          "Performance",
+          "Item Variations",
+          "Related Content"
+        ],
+        "meta": [
+          {
+            "name": "description",
+            "content": "The QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats. Its design accommodates curve lines and also provides long and joint-less seam lines. Its excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener. The QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The"
+          },
+          {
+            "name": "og:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "og:description",
+            "content": "The QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats. Its design accommodates curve lines and also provides long and joint-less seam lines. Its excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener. The QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The"
+          },
+          {
+            "name": "og:url",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/products/46"
+          },
+          {
+            "name": "og:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "og:image:secure_url",
+            "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/common/products/product-sample/QUICKFIT%C2%AE_1.png"
+          },
+          {
+            "name": "og:image:alt",
+            "content": "/content/dam/ykk/common/products/product-sample/QUICKFIT®_1.png"
+          },
+          {
+            "name": "twitter:card",
+            "content": "summary_large_image"
+          },
+          {
+            "name": "twitter:title",
+            "content": "QUICKFIT® | YKK DIGITAL SHOWROOM"
+          },
+          {
+            "name": "twitter:description",
+            "content": "The QUICKFIT® hook fastener is an effective and efficient seat tie down system for automotive seats. Its design accommodates curve lines and also provides long and joint-less seam lines. Its excellent self-alignment capability helps shorten the time required to install. The loop is able to be used from the outside of the seat cover. It is recommended to be used with the QUICKLOOP® loop fastener. The QUICKFIT® hook fastener has a magnetic material that allows the operator to easily and quickly install it in the die set groove. The"
+          },
+          {
+            "name": "twitter:image",
+            "content": "https://dev-eds.ykkdigitalshowroom.com/en/products/media_17796e5bfb124f00a54d89c9efd603aba77618b9c.png?width=1200&format=pjpg&optimize=medium"
+          },
+          {
+            "name": "cf-path",
+            "content": "/content/dam/dsr/en/products/46"
+          },
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          }
+        ],
+        "width": 375,
+        "height": 2923
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/page-en-375.png",
+      "durationMs": 8667
+    },
+    {
+      "id": "live-ja-1440",
+      "lang": "ja",
+      "width": 1440,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/46",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/46",
+      "observed": {
+        "title": "Page not found",
+        "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\n404\nPage Not Found\n\nGo home\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "Page Not Found"
+        ],
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "width": 1440,
+        "height": 1442
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/live-ja-1440.png",
+      "durationMs": 8667
+    },
+    {
+      "id": "live-ja-375",
+      "lang": "ja",
+      "width": 375,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/46",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/46",
+      "observed": {
+        "title": "Page not found",
+        "text": "404\nPage Not Found\n\nGo home\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "Page Not Found"
+        ],
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "width": 375,
+        "height": 1406
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/live-ja-375.png",
+      "durationMs": 8299
+    },
+    {
+      "id": "live-en-1440",
+      "lang": "en",
+      "width": 1440,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/46",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/46",
+      "observed": {
+        "title": "Page not found",
+        "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\n404\nPage Not Found\n\nGo home\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "Page Not Found"
+        ],
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "width": 1440,
+        "height": 1442
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/live-en-1440.png",
+      "durationMs": 8541
+    },
+    {
+      "id": "live-en-375",
+      "lang": "en",
+      "width": 375,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/46",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failedRequests": [],
+      "httpErrors": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/46",
+          "status": 404
+        }
+      ],
+      "productData": [],
+      "status": 404,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/46",
+      "observed": {
+        "title": "Page not found",
+        "text": "404\nPage Not Found\n\nGo home\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+        "headings": [
+          "Page Not Found"
+        ],
+        "meta": [
+          {
+            "name": "viewport",
+            "content": "width=device-width, initial-scale=1"
+          },
+          {
+            "name": "og:title",
+            "content": "Page not found"
+          }
+        ],
+        "width": 375,
+        "height": 1406
+      },
+      "evidence": "evidence/DSR-586/baseline-20261021/live-en-375.png",
+      "durationMs": 8268
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "finished": "2026-10-21T06:44:50.027Z"
+}

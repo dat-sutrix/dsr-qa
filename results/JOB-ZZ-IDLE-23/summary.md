@@ -1,0 +1,14 @@
+# JOB-ZZ-IDLE-23 — done
+- Captured eight full-page PNGs: ja/en × .aem.page/.aem.live × PC 1440×900 / SP 375×812, Chromium, DPR 1.
+- Evidence: `evidence/DSR-586/baseline-20261021/`; all screenshots committed as explicitly requested by the job.
+- Preview pages: HTTP 200, QUICKFIT® / Z15-1 at both widths in both languages.
+- Live pages: HTTP 404 at both widths in both languages; screenshots show the error page, not a product baseline.
+- Each preview capture logged two console resource errors: `/placeholders.json` and `/{lang}/products` returned 404; placeholders also emitted `net::ERR_ABORTED`.
+- Each live capture logged the main-document 404 console error. No uncaught page errors were observed.
+- HTTP observations: cause `none`, product-bug confidence 0%; no approved expected publication state or design assertion was supplied.
+- JOB-20261020-09 comparison: Japanese preview 200/live 404 and QUICKFIT / Z15-1 remain unchanged; that job did not record English page status.
+- Both current dsr-product-page queries returned 200 without GraphQL errors, one product each, and the same product field set recorded in JOB-09 (howToUse, notice, applicableSliderSameAsParent; no applicableSliderStandard/Special).
+- First visual baseline in this evidence folder; no pixel diff or Figma conformance verdict. Prior full product values were unavailable for comparison.
+- TypeScript: `npx tsc --noEmit` exit 0, no errors. Capture process exit 0; eight capture operations succeeded (not eight functional test passes).
+- Raw URLs, HTTP status, exact text, metadata and diagnostics: `observations.json`; query comparison: `product-comparison.json`.
+- No content edits, form submission or login. Build identity and actual mobile hardware not independently verified; SP uses a narrow desktop Chromium viewport.
