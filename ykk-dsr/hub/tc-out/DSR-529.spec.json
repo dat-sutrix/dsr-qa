@@ -98,17 +98,17 @@
   {
    "id": "7.0",
    "feature": "Info bar – publish date display (block 7)",
-   "summary": "EN: Verify the info bar shows publishDate in the design format. JP: 情報バーに掲載日が設計どおりの形式で表示されることを確認する。",
+   "summary": "EN: Verify the info bar shows publishDate as YYYY.MM.DD, the same date as meta publicationdate. JP: 情報バーに掲載日が YYYY.MM.DD 形式で表示され、meta publicationdate と同日であることを確認する。",
    "pre": "EN: TD-529-01 publishDate 2026-10-01. JP: 掲載日 2026-10-01。",
-   "steps": "EN: 1. Open the page. 2. Read the date text in the info bar. JP: 1. ページを開く。2. 日付表示を確認。",
-   "expected": "EN: Date text = 2026.10.01 (format YYYY.MM.DD per Figma); same date as meta published-date. JP: 2026.10.01 表示、meta と同日。",
-   "design": "Figma #7 (YYYY.MM.DD); property publishDate",
+   "steps": "EN: 1. Open the page. 2. Read the date text in the info bar. 3. Fetch Publish HTML and read <meta name=publicationdate>. JP: 1. ページを開く。2. 日付表示を確認。3. HTML取得し meta publicationdate を確認。",
+   "expected": "EN: Date text = 2026.10.01 exactly (YYYY.MM.DD, zero-padded, dot separator) in every language; same date as meta publicationdate. Any other format (2026/10/01, Oct 1, 2026, 2026-10-01, 2026年10月1日) = Fail. JP: 全言語で 2026.10.01（YYYY.MM.DD）表示、meta publicationdate と同日。他形式は Fail。",
+   "design": "Figma #7 (YYYY.MM.DD); property publishDate; BUG-RULES §6 (date = YYYY.MM.DD all languages); DSR-660",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja, en, cn",
    "device": "PC Chromium",
    "td": "TD-529-01",
-   "blocked": "[Giả định] format YYYY.MM.DD for ja/en/cn – Q4"
+   "blocked": "—"
   },
   {
    "id": "8.0",
@@ -143,11 +143,11 @@
   {
    "id": "10.0",
    "feature": "Meta published-date / updated-date (ISO 8601)",
-   "summary": "EN: Verify meta published-date and updated-date are output in ISO 8601 once each, and updateDate is not displayed on screen. JP: meta published-date／updated-date がISO 8601で1つずつ出力され、更新日は画面に表示されないことを確認する。",
+   "summary": "EN: Verify meta publicationdate and updatedate are output in ISO 8601 once each, and updateDate is not displayed on screen. JP: meta publicationdate／updatedate がISO 8601で1つずつ出力され、更新日は画面に表示されないことを確認する。",
    "pre": "EN: TD-529-01 publishDate 2026-10-01, updateDate 2026-10-10. JP: 掲載日・更新日設定済み。",
-   "steps": "EN: 1. Fetch Publish HTML. 2. Read <meta name=published-date|updated-date>. 3. Search visible text for 2026.10.10 / 2026-10-10. JP: 1. HTML取得。2. meta確認。3. 画面テキスト確認。",
-   "expected": "EN: published-date starts with 2026-10-01, updated-date starts with 2026-10-10, both parse as ISO 8601, 1 tag each; update date not visible. JP: ISO 8601、各1件、更新日は非表示。",
-   "design": "Property table publishDate/updateDate; Martin §A",
+   "steps": "EN: 1. Fetch Publish HTML. 2. Read <meta name=publicationdate> and <meta name=updatedate> (no hyphen). 3. Search visible text for 2026.10.10 / 2026-10-10. JP: 1. HTML取得。2. meta publicationdate／updatedate 確認（ハイフンなし）。3. 画面テキスト確認。",
+   "expected": "EN: publicationdate starts with 2026-10-01, updatedate starts with 2026-10-10, both parse as ISO 8601, exactly 1 tag each; update date not visible. Hyphenated names (published-date/updated-date) are NOT expected (#58594 outdated). JP: ISO 8601、各1件、更新日は非表示。ハイフン付き名称は旧仕様。",
+   "design": "Property table publishDate/updateDate; Martin §A; re-baseline 2026-10-21 (bugs/529-decision-20261021.md, Martin 21/10)",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja, en, cn",
@@ -173,11 +173,11 @@
   {
    "id": "12.0",
    "feature": "Meta category / search-keywords",
-   "summary": "EN: Verify meta category is comma-separated tag IDs and search-keywords is output but not shown in the page body. JP: meta category がタグIDのカンマ区切り、search-keywords が出力され本文には表示されないことを確認する。",
+   "summary": "EN: Verify meta category is comma-separated tag IDs and meta searchkeywords is output but not shown in the page body. JP: meta category がタグIDのカンマ区切り、searchkeywords が出力され本文には表示されないことを確認する。",
    "pre": "EN: TD-529-01 2 categories, keywords 'qa529kw1, qa529kw2'. JP: TD-529-01。",
-   "steps": "EN: 1. Fetch HTML. 2. Read meta category, search-keywords. 3. Search visible text for qa529kw1. JP: 1. HTML取得。2. meta確認。3. 画面検索。",
-   "expected": "EN: category = 2 tag IDs (namespace:path) comma-separated; search-keywords contains qa529kw1 and qa529kw2; keywords not visible. JP: タグID2件、キーワード出力・非表示。",
-   "design": "Property table categories/searchKeywords; Martin §A",
+   "steps": "EN: 1. Fetch HTML. 2. Read <meta name=category> and <meta name=searchkeywords> (no hyphen). 3. Search visible text for qa529kw1. JP: 1. HTML取得。2. meta category／searchkeywords 確認。3. 画面検索。",
+   "expected": "EN: category = 2 tag IDs (namespace:path) comma-separated (meta present because categories are authored in TD-529-01); searchkeywords contains qa529kw1 and qa529kw2; keywords not visible. Missing category meta while TD-529-01 has no categories authored = data issue, not Fail. JP: タグID2件（カテゴリ設定時のみ出力）、キーワード出力・非表示。",
+   "design": "Property table categories/searchKeywords; Martin §A; re-baseline 2026-10-21 (bugs/529-decision-20261021.md, Martin 21/10)",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja, en, cn",
@@ -206,8 +206,8 @@
    "summary": "EN: Verify <title>, description, og:title, og:description, og:image and article meta are each output exactly once and non-empty. JP: <title>・description・og:*・記事metaがそれぞれ1件のみ、空でないことを確認する。",
    "pre": "EN: TD-529-01 with og:title/og:description/og:image set. JP: OGP設定あり。",
    "steps": "EN: 1. Fetch HTML. 2. Count each meta name/property. JP: 1. HTML取得。2. 件数確認。",
-   "expected": "EN: Count = 1 and non-empty for: title, description, og:title, og:description, og:image, published-date, thumbnail, category; og:title/og:description = authored OGP values; og:image absolute URL 200. JP: 各1件・非空、OGP値一致。",
-   "design": "DSR-356 BAC#4; Martin AC#5",
+   "expected": "EN: Count = 1 and non-empty for: title, description, og:title, og:description, og:image, publicationdate, thumbnail, and category (category only counted when categories are authored – TD-529-01 has 2); og:title/og:description = authored OGP values; og:image absolute URL 200. JP: 各1件・非空（category はカテゴリ設定時のみ）、OGP値一致。",
+   "design": "DSR-356 BAC#4; Martin AC#5; re-baseline 2026-10-21 (bugs/529-decision-20261021.md, Martin 21/10)",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja, en, cn",
@@ -386,8 +386,8 @@
    "summary": "EN: Verify the stories index exists and contains the published article with the required properties. JP: 記事indexが生成され、公開記事が必要プロパティ付きで含まれることを確認する。",
    "pre": "EN: TD-529-01 published. JP: TD-529-01 公開済み。",
    "steps": "EN: 1. GET /{lang}/stories/query-index.json (and /master/{lang}/... variant). 2. Find qa529-01. JP: 1. index取得。2. 記事検索。",
-   "expected": "EN: 200 JSON; row for qa529-01 has navtitle, thumbnail, published-date, updated-date, search-keywords, related-stories (non-empty where set). JP: 200、該当行に6プロパティ。",
-   "design": "Martin prereq #1, AC#1",
+   "expected": "EN: 200 JSON; row for qa529-01 has navtitle, thumbnail, publicationdate, updatedate, searchkeywords, related-stories (non-empty where set). Index is updated only after the page is (re)published. JP: 200、該当行に6プロパティ（再公開後に反映）。",
+   "design": "Martin prereq #1, AC#1; re-baseline 2026-10-21 (bugs/529-decision-20261021.md, Martin 21/10)",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja, en, cn",
@@ -414,16 +414,16 @@
    "id": "28.0",
    "feature": "Breadcrumb on article page",
    "summary": "EN: Verify the breadcrumb shows Home > … > article title (navTitle if set). JP: パンくずに記事タイトル（navTitle優先）が表示されることを確認する。",
-   "pre": "EN: TD-529-01 navTitle set. JP: navTitle 設定済み。",
+   "pre": "EN: TD-529-01 navtitle 'QA529 ナビ' set in Universal Editor > Page properties (not Sites > Page Properties), page republished. JP: navtitle を Universal Editor のページプロパティで設定し再公開済み。",
    "steps": "EN: 1. Open the page. 2. Read breadcrumb items. JP: 1. 開く。2. パンくず確認。",
-   "expected": "EN: Breadcrumb present; last item = navTitle (not link); earlier items link to ancestors. JP: 最後＝navTitle（リンクなし）。",
-   "design": "Figma パンくず; property navTitle; Martin prereq #4",
+   "expected": "EN: Breadcrumb present; last item text = navtitle 'QA529 ナビ' (en: 'QA529 Nav'), not a link; earlier items link to ancestors. If navtitle is empty, last item = title. JP: 最後＝navtitle（リンクなし）、未設定時は title。",
+   "design": "Figma パンくず; property navtitle (UE Page properties); Martin prereq #4; DSR-552; re-baseline 2026-10-21 (bugs/529-decision-20261021.md, Martin 21/10)",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja, en, cn",
    "device": "PC Chromium",
    "td": "TD-529-01",
-   "blocked": "Martin open decision #4 (breadcrumb in scope?) + DSR-552 – Q9"
+   "blocked": "—"
   },
   {
    "id": "29.0",
@@ -552,6 +552,30 @@
    "C06 (採用事例) is out of scope; cn site not on DEV (Issue #18) → cn rows Blocked.",
    "DSR-356 対応範囲外",
    "TC 29"
+  ],
+  [
+   "A12",
+   "Meta names on DEV are publicationdate / updatedate / searchkeywords / category (lowercase, no hyphen). Martin comment #58594 (published-date, updated-date, search-keywords) is outdated. Applies to TC 7, 10, 12, 14, 26.",
+   "Martin 21/10 via Dat; bugs/529-decision-20261021.md (BUG-2 = not a bug)",
+   "Re-baseline if dev renames again"
+  ],
+  [
+   "A13",
+   "meta category is output only when at least 1 category is authored; absence with no categories = expected, not Fail.",
+   "Martin 21/10; bugs/529-decision-20261021.md",
+   "TC 12, 14"
+  ],
+  [
+   "A14",
+   "navtitle (Navigation Title) is authored in Universal Editor > Page properties, not in Sites > Page Properties; it is the last breadcrumb item. Index/meta update only after republish.",
+   "Martin 21/10; bugs/529-decision-20261021.md (NEW-1 = not a bug)",
+   "TC 26, 28; TD-529-01"
+  ],
+  [
+   "A15",
+   "Date display = YYYY.MM.DD in every language (ja/en/cn); replaces the Q4 assumption.",
+   "BUG-RULES §6; DSR-660",
+   "TC 7, 18"
   ]
  ],
  "testdata": [
@@ -635,7 +659,7 @@
   ],
   [
    "3",
-   "Page properties: Universal Editor → Properties (select the Page node in Content tree). Fill tabs ページ基本 (title, navTitle, description, robots), OGP, 記事情報 (publishDate, updateDate, thumbnail, categories, searchKeywords), 関連 (relatedStories) per Data sheet. Save.",
+   "Page properties: open the page in Universal Editor → Content tree → select the Page node → Properties panel (this is 'Universal Editor > Page properties'; do NOT use Sites console > Page Properties – navtitle is only in UE). Fill tabs ページ基本 (title, navtitle = 'QA529 ナビ', description, robots), OGP, 記事情報 (publishDate, updateDate, thumbnail, categories = 2 tags – required for meta category, searchKeywords), 関連 (relatedStories) per Data sheet. Save.",
    "Tab 記事情報/関連 not present → screenshot, Note 'page metadata tabs missing', stop TD-529."
   ],
   [
@@ -645,7 +669,7 @@
   ],
   [
    "5",
-   "Publish qa529-r1..r3, qa529-01, -02, -04 (Quick Publish). Create en language copies of r1..r3 and qa529-01 under master/en/library/article/stories with English values; publish.",
+   "Publish qa529-r1..r3, qa529-01, -02, -04 (Quick Publish). Create en language copies of r1..r3 and qa529-01 under master/en/library/article/stories with English values; publish. After ANY property change: Publish again (meta and stories index update only on publish).",
    "Check: open https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01 → 200 and title visible. 404 after 10 min → Note URL + time."
   ]
  ]
