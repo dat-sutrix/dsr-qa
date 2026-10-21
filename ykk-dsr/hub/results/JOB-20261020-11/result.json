@@ -1,0 +1,735 @@
+{
+  "job": "JOB-20261020-11",
+  "agent": "codex",
+  "us": "DSR-587",
+  "env": "dev",
+  "started": "2026-10-21T16:18:20.717Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-587 19.0",
+      "lang": "en",
+      "device": "PC",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-587-19.0_en_qa587-rel-a_PC.png",
+      "suspect": "env",
+      "http_status": 200,
+      "last_modified": "Wed, 21 Oct 2026 13:30:07 GMT",
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a",
+      "title": "QA587 rel A | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 1440,
+      "scrollHeight": 1442,
+      "h1": [
+        "QA587 rel A"
+      ],
+      "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\nQA587 rel A | YKK DIGITAL SHOWROOM\nBack to video list\nMOVIE\nQA587 rel A\nRelated Content\n\nQA587 related 6\n\nMOVIE\n\nQA587 related 5\n\nMOVIE\n\nQA587 related 4\n\nMOVIE\n\nQA587 related 3\n\nMOVIE\n\nQA587 related 2\n\nMOVIE\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "meta": [
+        {
+          "name": "description",
+          "content": "QA587 related A  des"
+        },
+        {
+          "name": "og:title",
+          "content": "QA587 rel A | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "QA587 related A  des"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/video/qa587-rel-a"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "QA587 rel A | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "QA587 related A  des"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/en/movies/standard/qa587-rel-a"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "related_links": [
+        {
+          "text": "Back to video list",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search"
+        },
+        {
+          "text": "QA587 related 6\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r6"
+        },
+        {
+          "text": "QA587 related 5\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r5"
+        },
+        {
+          "text": "QA587 related 4\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r4"
+        },
+        {
+          "text": "QA587 related 3\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r3"
+        },
+        {
+          "text": "QA587 related 2\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r2"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": true,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": true,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": true,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": true,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": true,
+          "naturalWidth": 220
+        }
+      ],
+      "duration_ms": 8642,
+      "screenshot_dimensions": {
+        "width": 1440,
+        "height": 1442
+      }
+    },
+    {
+      "tc": "DSR-587 19.0",
+      "lang": "en",
+      "device": "SP",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-587-19.0_en_qa587-rel-a_SP.png",
+      "suspect": "env",
+      "http_status": 200,
+      "last_modified": "Wed, 21 Oct 2026 13:30:07 GMT",
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a",
+      "title": "QA587 rel A | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 390,
+      "scrollHeight": 1438,
+      "h1": [
+        "QA587 rel A"
+      ],
+      "text": "HOME\nlibrary\nQA587 rel A | YKK DIGITAL SHOWROOM\nMOVIE\nQA587 rel A\nRelated Content\n\nQA587 related 6\n\nMOVIE\n\nQA587 related 5\n\nMOVIE\n\nQA587 related 4\n\nMOVIE\n\nQA587 related 3\n\nMOVIE\n\nQA587 related 2\n\nMOVIE\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "meta": [
+        {
+          "name": "description",
+          "content": "QA587 related A  des"
+        },
+        {
+          "name": "og:title",
+          "content": "QA587 rel A | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "QA587 related A  des"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/video/qa587-rel-a"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "QA587 rel A | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "QA587 related A  des"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/en/movies/standard/qa587-rel-a"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "related_links": [
+        {
+          "text": "Back to video list",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search"
+        },
+        {
+          "text": "QA587 related 6\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r6"
+        },
+        {
+          "text": "QA587 related 5\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r5"
+        },
+        {
+          "text": "QA587 related 4\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r4"
+        },
+        {
+          "text": "QA587 related 3\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r3"
+        },
+        {
+          "text": "QA587 related 2\n\nMOVIE",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r2"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": true,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": true,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": false,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": false,
+          "naturalWidth": 220
+        },
+        {
+          "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+          "complete": false,
+          "naturalWidth": 220
+        }
+      ],
+      "duration_ms": 7371,
+      "screenshot_dimensions": {
+        "width": 390,
+        "height": 1438
+      }
+    },
+    {
+      "tc": "DSR-587 19.0",
+      "lang": "en",
+      "device": "PC",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-587-19.0_en_qa587-main_PC.png",
+      "suspect": "env",
+      "http_status": 200,
+      "last_modified": "Wed, 21 Oct 2026 13:06:39 GMT",
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 1440,
+      "scrollHeight": 1442,
+      "h1": [
+        "QA587 main movie"
+      ],
+      "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\nQA587 main movie | YKK DIGITAL SHOWROOM\nBack to video list\nMOVIE\nQA587 main movie\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "meta": [
+        {
+          "name": "description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/video/qa587-main"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/en/movies/standard/qa587-main"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "related_links": [
+        {
+          "text": "Back to video list",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://img.youtube.com/vi/irFRtAVphCY/maxresdefault.jpg",
+          "complete": true,
+          "naturalWidth": 1280
+        }
+      ],
+      "duration_ms": 7862,
+      "screenshot_dimensions": {
+        "width": 1440,
+        "height": 1442
+      }
+    },
+    {
+      "tc": "DSR-587 19.0",
+      "lang": "en",
+      "device": "SP",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-587-19.0_en_qa587-main_SP.png",
+      "suspect": "env",
+      "http_status": 200,
+      "last_modified": "Wed, 21 Oct 2026 13:06:39 GMT",
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 390,
+      "scrollHeight": 1438,
+      "h1": [
+        "QA587 main movie"
+      ],
+      "text": "HOME\nlibrary\nQA587 main movie | YKK DIGITAL SHOWROOM\nMOVIE\nQA587 main movie\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "meta": [
+        {
+          "name": "description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/video/qa587-main"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/en/movies/standard/qa587-main"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "related_links": [
+        {
+          "text": "Back to video list",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://img.youtube.com/vi/irFRtAVphCY/maxresdefault.jpg",
+          "complete": true,
+          "naturalWidth": 1280
+        }
+      ],
+      "duration_ms": 7194,
+      "screenshot_dimensions": {
+        "width": 390,
+        "height": 1438
+      }
+    },
+    {
+      "tc": "DSR-587 19.0",
+      "lang": "ja",
+      "device": "PC",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-587-19.0_ja_qa587-main_PC.png",
+      "suspect": "env",
+      "http_status": 200,
+      "last_modified": "Wed, 21 Oct 2026 13:14:19 GMT",
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 1440,
+      "scrollHeight": 1442,
+      "h1": [
+        "QA587 main movie"
+      ],
+      "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\nQA587 main movie | YKK DIGITAL SHOWROOM\n動画一覧へ戻る\n動画\nQA587 main movie\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "meta": [
+        {
+          "name": "description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/ja/library/video/qa587-main"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/ja/movies/standard/qa587-main"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "related_links": [
+        {
+          "text": "動画一覧へ戻る",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://img.youtube.com/vi/irFRtAVphCY/maxresdefault.jpg",
+          "complete": true,
+          "naturalWidth": 1280
+        }
+      ],
+      "duration_ms": 8021,
+      "screenshot_dimensions": {
+        "width": 1440,
+        "height": 1442
+      }
+    },
+    {
+      "tc": "DSR-587 19.0",
+      "lang": "ja",
+      "device": "SP",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-587-19.0_ja_qa587-main_SP.png",
+      "suspect": "env",
+      "http_status": 200,
+      "last_modified": "Wed, 21 Oct 2026 13:14:19 GMT",
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 390,
+      "scrollHeight": 1438,
+      "h1": [
+        "QA587 main movie"
+      ],
+      "text": "HOME\nQA587 main movie | YKK DIGITAL SHOWROOM\n動画\nQA587 main movie\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "meta": [
+        {
+          "name": "description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/ja/library/video/qa587-main"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "QA587 main movie | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "QA587 line1  QA587 line2"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/ja/movies/standard/qa587-main"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "related_links": [
+        {
+          "text": "動画一覧へ戻る",
+          "href": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search"
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "complete": true,
+          "naturalWidth": 10
+        },
+        {
+          "src": "https://img.youtube.com/vi/irFRtAVphCY/maxresdefault.jpg",
+          "complete": true,
+          "naturalWidth": 1280
+        }
+      ],
+      "duration_ms": 7555,
+      "screenshot_dimensions": {
+        "width": 390,
+        "height": 1438
+      }
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "ykk-dsr/hub/results/JOB-20261020-11/capture.cjs"
+  ],
+  "questions": [],
+  "automation_head": "b356445a953ff419da287afe3624746be709ccb7",
+  "base_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "baseline": "BL-OVL-1; job TC 19.0 measurable expectation; Figma C08 unavailable",
+  "design_comparison": "Pending Claude web; SP informational",
+  "browser": "153.0.8010.12",
+  "finished": "2026-10-21T16:19:08.829Z",
+  "duration_ms": 48112,
+  "evidence_bytes": 1012073,
+  "typescript": {
+    "command": "npx tsc --noEmit",
+    "exit_code": 0,
+    "result": "no errors"
+  },
+  "outcome_scope": "Proposed capture and scrollWidth outcomes only; full design verdict pending Claude web."
+}
