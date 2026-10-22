@@ -4,7 +4,7 @@ import {
   type Language, languages, topPaths, detailPaths, finderPaths, categorySlugs, td03, td06, productIndexPaths,
   tagColumnPattern, productHref, legacyDomain, codePaths, damPattern, emptyFrameMaxPx, htmlLang,
   pageMissing, indexMissing, tagMissing, td06Missing, cnMissing,
-  langPrefix, topMissing, detailMissing, finderNotBuilt, countNote, dotsNote,
+  langPrefix, topMissing, detailMissing, finderNotBuilt, countNote, dotsNote, detailDemoPath, isDemo, demoData,
 } from '../../fixtures/dsr-590';
 
 const observations: Record<string, unknown>[] = [];
@@ -25,9 +25,9 @@ async function open(eco: EcoProductsPage, candidates: string[], missing = pageMi
 }
 // TOP: C14 demo page first, then URL-design paths (A1, JOB-20261019-08).
 const openTop = (eco: EcoProductsPage, lang: Language) => open(eco, topPaths(lang), topMissing(lang));
-// TD-590-03 = recycled; spec: "if missing use any published detail".
+// C15 demo page first (JOB-20261022-04), then TD-590-03 = recycled; spec: "if missing use any published detail".
 const openDetail = (eco: EcoProductsPage, lang: Language) =>
-  open(eco, [...detailPaths(lang, td03.slug), ...categorySlugs.filter(s => s !== td03.slug).flatMap(s => detailPaths(lang, s))]);
+  open(eco, [detailDemoPath(lang), ...detailPaths(lang, td03.slug), ...categorySlugs.filter(s => s !== td03.slug).flatMap(s => detailPaths(lang, s))]);
 
 function watchConsole(page: Page) {
   const errors: string[] = [];
@@ -92,6 +92,7 @@ for (const lang of languages) {
   test(`DSR-ECO-002 [${lang}] each category card VIEW MORE links to its TD-590-02 detail page (200, same language)`, { tag: ['@auto'] }, async ({ page }) => {
     const eco = new EcoProductsPage(page);
     const top = await openTop(eco, lang);
+    test.skip(isDemo(top), demoData);
     const prefix = langPrefix(top);
     const hrefs = await eco.carousel.locator('a[href]').evaluateAll(as => as.map(a => (a as HTMLAnchorElement).href));
     // GET only, no click-through (JOB-20261019-08).
@@ -112,6 +113,7 @@ for (const lang of languages) {
   test(`DSR-ECO-004 [${lang}] 環境配慮型製品診断 button links to the product finder (P087, 200)`, { tag: ['@auto'] }, async ({ page }) => {
     const eco = new EcoProductsPage(page);
     const top = await openTop(eco, lang);
+    test.skip(isDemo(top), demoData);
     const prefix = langPrefix(top);
     await expect(eco.finderButton, 'finder button').toBeVisible();
     const href = (await eco.finderButton.getAttribute('href')) ?? '';
@@ -175,7 +177,7 @@ for (const lang of languages) {
     const statuses = await Promise.all(backgrounds.map(async u => ({ u, status: await status(page, u) })));
     const heroImg = eco.hero.locator('img').first();
     const h1 = page.locator('h1');
-    observations.push({ path, isTd03, backgrounds: statuses, h1: await h1.allTextContents(), tag: await eco.heroTag.textContent().catch(() => null) });
+    observations.push({ path, isTd03, backgrounds: statuses, h1: await h1.allTextContents(), tag: await eco.heroTag.textContent({ timeout: 2000 }).catch(() => null) });
     expect.soft(statuses.length, 'background image present').toBeGreaterThan(0);
     expect.soft(statuses.filter(s => s.status !== 200), 'background not 200').toEqual([]);
     if (await heroImg.count()) expect.soft(await eco.loaded(heroImg), 'hero image naturalWidth > 0').toBe(true);
@@ -190,6 +192,7 @@ for (const lang of languages) {
   test(`DSR-ECO-007 [${lang}] detail product list equals the query-index products carrying the eco tag`, { tag: ['@auto'] }, async ({ page }) => {
     const eco = new EcoProductsPage(page);
     const path = await openDetail(eco, lang);
+    test.skip(isDemo(path), demoData);
     const tag = slugOf(new URL(path, 'http://x').href);
     const hrefs = await eco.productHrefs();
     const expected = await taggedProducts(page, lang, tag);
@@ -204,6 +207,7 @@ for (const lang of languages) {
   test(`DSR-ECO-010 [${lang}] detail product cards link to /${lang}/products/{id} with HTTP 200`, { tag: ['@auto'] }, async ({ page }) => {
     const eco = new EcoProductsPage(page);
     const path = await openDetail(eco, lang);
+    test.skip(isDemo(path), demoData);
     const hrefs = await eco.productHrefs();
     const statuses = await Promise.all(hrefs.map(async h => ({ h, status: await status(page, h) })));
     observations.push({ path, statuses });
@@ -217,10 +221,11 @@ test('DSR-ECO-006 [ja] free editing area renders between hero and product list',
   const eco = new EcoProductsPage(page);
   const path = await openDetail(eco, 'ja');
   const img = eco.freeArea.locator('img').first();
-  const imgSrc = await img.evaluate(el => (el as HTMLImageElement).currentSrc).catch(() => null);
-  const y = async (l: typeof eco.hero) => (await l.boundingBox())?.y ?? NaN;
+  const imgSrc = await img.evaluate(el => (el as HTMLImageElement).currentSrc, null, { timeout: 2000 }).catch(() => null);
+  // Short timeout: a missing section records NaN instead of hanging until the test timeout.
+  const y = async (l: typeof eco.hero) => (await l.boundingBox({ timeout: 2000 }).catch(() => null))?.y ?? NaN;
   const order = { hero: await y(eco.hero), free: await y(eco.freeArea), list: await y(eco.productList) };
-  observations.push({ path, text: (await eco.freeArea.innerText().catch(() => '')).slice(0, 300), imgSrc, order });
+  observations.push({ path, text: (await eco.freeArea.innerText({ timeout: 2000 }).catch(() => '')).slice(0, 300), imgSrc, order });
   // TD-590-03 free-area content (A5) is not specified verbatim; record and check non-empty + image + order.
   await expect.soft(eco.freeArea, 'free area text').not.toBeEmpty();
   expect.soft(imgSrc && await status(page, imgSrc), 'free area image 200').toBe(200);
@@ -230,7 +235,7 @@ test('DSR-ECO-006 [ja] free editing area renders between hero and product list',
 test('DSR-ECO-009 [ja] detail with 0 matching products shows no broken list and no error', { tag: ['@auto'] }, async ({ page }) => {
   const eco = new EcoProductsPage(page);
   const slug = td06();
-  if (!slug) { await openDetail(eco, 'ja'); test.skip(true, td06Missing); }
+  if (!slug) { test.skip(isDemo(await openDetail(eco, 'ja')), demoData); test.skip(true, td06Missing); }
   const errors = watchConsole(page);
   await open(eco, detailPaths('ja', slug!));
   const cards = await eco.productCards.count();

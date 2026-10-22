@@ -1,0 +1,41 @@
+{
+  "job": "JOB-20261022-04",
+  "agent": "claude-code",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-22T02:16:35Z",
+  "finished": "2026-10-22T02:24:47Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-ECO-001", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "", "hosts": "live+page" },
+    { "tc": "DSR-ECO-003", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "", "hosts": "live+page" },
+    { "tc": "DSR-ECO-012", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "", "hosts": "live+page" },
+    { "tc": "DSR-ECO-013", "lang": "ja", "result": "pass", "error": "", "evidence": "", "suspect": "", "hosts": "live+page" },
+    { "tc": "DSR-ECO-005", "lang": "ja", "result": "fail", "error": "detail hero has no tag label element (.hero [class*=tag] not found); background 200, one h1, summary OK. live+page", "evidence": "evidence/DSR-ECO-005_ja_live.png", "suspect": "product", "cause": "none", "confidence": 50, "hosts": "live+page" },
+    { "tc": "DSR-ECO-006", "lang": "ja", "result": "fail", "error": "no free area between hero and listing; only .text.block after the listing. List locator [class*=product-list] misses .listing-product-index", "evidence": "evidence/DSR-ECO-006_ja_live.png", "suspect": "data", "cause": "none", "confidence": 30, "hosts": "live+page" },
+    { "tc": "DSR-ECO-002", "lang": "ja", "result": "skip", "error": "demo data (Ngọc 21/10)", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-004", "lang": "ja", "result": "skip", "error": "demo data (Ngọc 21/10)", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-007", "lang": "ja", "result": "skip", "error": "demo data (Ngọc 21/10)", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-009", "lang": "ja", "result": "skip", "error": "demo data (Ngọc 21/10)", "evidence": "", "suspect": "" },
+    { "tc": "DSR-ECO-010", "lang": "ja", "result": "skip", "error": "demo data (Ngọc 21/10)", "evidence": "", "suspect": "" }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-590.ts",
+    "tests/eco-products/DSR-590.eco-products.spec.ts",
+    "tests/eco-products/DSR-590.layout-capture.spec.ts"
+  ],
+  "captures": [
+    "evidence/DSR-590/20261022/eco-top_PC1440_live.png", "evidence/DSR-590/20261022/eco-top_SP390_live.png",
+    "evidence/DSR-590/20261022/eco-detail_PC1440_live.png", "evidence/DSR-590/20261022/eco-detail_SP390_live.png",
+    "evidence/DSR-590/20261022/eco-top_PC1440_page.png", "evidence/DSR-590/20261022/eco-top_SP390_page.png",
+    "evidence/DSR-590/20261022/eco-detail_PC1440_page.png", "evidence/DSR-590/20261022/eco-detail_SP390_page.png"
+  ],
+  "reports": [
+    "results/DSR-590/DEV/automation-run-20261022.md",
+    "results/DSR-590/DEV/automation-run-20261022-rerun-live.md",
+    "results/DSR-590/DEV/automation-run-20261022-page.md",
+    "results/DSR-590/DEV/automation-run-20261022-capture.md"
+  ],
+  "questions": []
+}

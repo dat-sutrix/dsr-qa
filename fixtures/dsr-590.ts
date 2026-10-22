@@ -11,6 +11,11 @@ export const topPaths = (lang: string) => [topDemoPath(lang), ...prefixes(lang).
 // Language prefix of a resolved path: /ja or /master/ja (demo and URL-design paths differ).
 export const langPrefix = (path: string) => path.match(/^(\/master)?\/(ja|en|zh|cn)(?=\/)/)?.[0] ?? '';
 export const detailPaths = (lang: string, slug: string) => prefixes(lang).map(p => `${p}${root}/${slug}`);
+// JOB-20261022-04: C15 demo page (Ngoc, Jira DSR-590 21/10) – demo data only, layout check only.
+export const detailDemoPath = (lang: string) => `/master/${lang}/test-space/dsr-590-eco-detail-page`;
+// Demo pages carry placeholder content: content-value TCs skip there (JOB-20261022-04).
+export const isDemo = (path: string) => path.includes('/test-space/');
+export const demoData = 'demo data (Ngọc 21/10)';
 // 4.0: finder page P087 (S10).
 export const finderSlug = 'sustainable-solution-finder';
 export const finderPaths = (lang: string) => detailPaths(lang, finderSlug);
