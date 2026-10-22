@@ -1,0 +1,23 @@
+{
+  "job": "JOB-20261022-16",
+  "agent": "claude-code",
+  "us": "DSR-664",
+  "env": "dev",
+  "started": "2026-10-22T09:11:19Z",
+  "finished": "2026-10-22T09:16:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-VCAP-001", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "", "cause": "none", "hosts": "live+page" },
+    { "tc": "DSR-VCAP-002", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "", "cause": "none", "hosts": "page", "note": "full-page scan of booth TOP (DSR-662 c.64873) found no \"null\" text" },
+    { "tc": "DSR-VCAP-002", "lang": "en", "result": "skip", "error": "live /en/product/application/fashion/fashion returns 404 (not published on this host)", "evidence": "", "suspect": "", "hosts": "live" },
+    { "tc": "DSR-VCAP-003", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "", "cause": "none", "hosts": "live+page" },
+    { "tc": "DSR-VCAP-004", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "", "cause": "none", "hosts": "page" },
+    { "tc": "DSR-VCAP-004", "lang": "en", "result": "skip", "error": "live /en/products/46 returns 404 (not published on this host)", "evidence": "", "suspect": "", "hosts": "live" }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "reports": ["results/DSR-664/DEV/automation-run-20261022-rerun-job16.md"],
+  "code_version": { "file": "blocks/video/video.js", "etag": "9d598c2aec56299c36ab93b5281d8f42", "last_modified": "Thu, 22 Oct 2026 09:07:32 GMT", "sha256_decompressed": "9c3d25a1b6a0fd930168a2421aae7585e5392bacc8c3c14128c6bd3b85112946", "fix_present": true, "hosts": "live+page identical" },
+  "recommendation": "DSR-664 ready to close (QA confirm DEV – fixed)",
+  "questions": []
+}
