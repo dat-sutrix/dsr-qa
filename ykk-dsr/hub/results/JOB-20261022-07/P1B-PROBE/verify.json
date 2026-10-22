@@ -1,0 +1,92 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qaagent-probe",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "qaagent-probe",
+    "actual": "qaagent-probe"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "QA agent probe",
+    "actual": "QA agent probe"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "QA agent probe",
+    "actual": "QA agent probe"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "youtube",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "2026-10-22",
+    "actual": "2026-10-22"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:17Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:55:32 GMT+0000"
+  }
+]

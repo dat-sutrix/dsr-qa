@@ -1,0 +1,18 @@
+{
+  "job": "JOB-20261022-07",
+  "agent": "claude-code",
+  "us": "Author agent P1b write + Night 22/10 CF tasks (BUGCHK-586, BUGCHK-190-FORM, TD-654-02..08)",
+  "env": "dev",
+  "started": "2026-10-22T04:54:00Z",
+  "finished": "2026-10-22T05:12:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "P1B-PROBE", "lang": "en", "result": "pass", "error": "2 writes (201 create, 200 preview). L0 0 FAIL, L1 8/8, L2 1/1, L3 n/a (no verify.urls). D11: agentId preview OK, publish tier untouched", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "TD-586-01-02", "lang": "ja", "result": "skip", "error": "SKIP per job: numeric node names outside path guard (lint FAIL), guard not widened; stays with QA-PT", "suspect": "test", "cause": "none", "confidence": 0 },
+    { "tc": "BUGCHK-190-FORM", "lang": "ja+en", "result": "pass", "error": "6 writes all 200 (4 PATCH requiresForm false→true, preview, publish). L0 0 FAIL, L1 12/12, L2 8/8, L3 8/8", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "TD-654-02-08", "lang": "ja+en", "result": "pass", "error": "15 writes (11×201 create, 4×200 replicate). L0 0 FAIL, L1 86/86, L2 19/19, L3 9/12: 3×404 = expected by design (qa654-preview .live, qa654-content-only)", "suspect": "env", "cause": "none", "confidence": 0 }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}

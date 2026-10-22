@@ -1,0 +1,35 @@
+{
+  "/content/dam/common/ja/catalogs/qa654-inactive": {
+    "exists": false
+  },
+  "/content/dam/common/en/catalogs/qa654-inactive": {
+    "exists": false
+  },
+  "/content/dam/dsr/ja/catalogs/qa654-inactive": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/catalogs/qa654-inactive": {
+    "exists": false
+  },
+  "/content/dam/common/en/catalogs/qa654-preview": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/catalogs/qa654-preview": {
+    "exists": false
+  },
+  "/content/dam/common/en/catalogs/qa654-content-only": {
+    "exists": false
+  },
+  "/content/dam/common/en/catalogs/qa654-update": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/catalogs/qa654-update": {
+    "exists": false
+  },
+  "/content/dam/common/en/catalogs/qa654-content-unpub": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/catalogs/qa654-content-unpub": {
+    "exists": false
+  }
+}

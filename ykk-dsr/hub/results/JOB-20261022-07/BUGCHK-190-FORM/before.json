@@ -1,0 +1,202 @@
+{
+  "/content/dam/common/ja/catalogs/qa190-cat-pdf-form": {
+    "exists": true,
+    "id": "580d98c3-f3b4-48c1-afa8-de556bbb0958",
+    "model": "DM_catalog",
+    "etag": "\"98388506002c8ad2a205494cd05cdb11\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogId": [
+        "qa190-cat-pdf-form"
+      ],
+      "catalogTitle": [
+        "catalog pdf form"
+      ],
+      "description": [
+        "Catalog description\nCatalog description"
+      ],
+      "catalogCategories": [
+        "site:product/material/aluminium",
+        "site:product/material/cotton",
+        "site:product/material/magnet"
+      ],
+      "searchKeywords": [
+        "key word|keyword 2|keyword 2"
+      ],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "catalogType": [
+        "pdf"
+      ],
+      "pdfAsset": [
+        "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "ebookUrl": [],
+      "requiresForm": [
+        false
+      ],
+      "sortOrder": [
+        1
+      ],
+      "publishDate": [
+        "2026-09-03"
+      ],
+      "updateDate": [
+        "2026-09-03"
+      ],
+      "isUnavailable": []
+    }
+  },
+  "/content/dam/common/en/catalogs/qa190-cat-pdf-form": {
+    "exists": true,
+    "id": "8d0893f5-0d7a-4c9e-9a55-581ecdb244b7",
+    "model": "DM_catalog",
+    "etag": "\"98388506002c8ad2a205494cd05cdb11\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogId": [
+        "qa190-cat-pdf-form"
+      ],
+      "catalogTitle": [
+        "catalog pdf form"
+      ],
+      "description": [
+        "Catalog description\nCatalog description"
+      ],
+      "catalogCategories": [
+        "site:product/material/aluminium",
+        "site:product/material/cotton",
+        "site:product/material/magnet"
+      ],
+      "searchKeywords": [
+        "key word|keyword 2|keyword 2"
+      ],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "catalogType": [
+        "pdf"
+      ],
+      "pdfAsset": [
+        "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "ebookUrl": [],
+      "requiresForm": [
+        false
+      ],
+      "sortOrder": [
+        1
+      ],
+      "publishDate": [
+        "2026-09-03"
+      ],
+      "updateDate": [
+        "2026-09-03"
+      ],
+      "isUnavailable": []
+    }
+  },
+  "/content/dam/common/ja/catalogs/qa190-cat-ebook-form": {
+    "exists": true,
+    "id": "8d3f9e81-6a27-4858-a593-2337aed57d58",
+    "model": "DM_catalog",
+    "etag": "\"5dcc0630e82d1ce96f230690f626f7bc\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogId": [
+        "qa190-cat-ebook-form"
+      ],
+      "catalogTitle": [
+        "catalog ebook form"
+      ],
+      "description": [
+        "Catalog description\nCatalog description"
+      ],
+      "catalogCategories": [
+        "site:product/material/aluminium",
+        "site:product/material/cotton",
+        "site:product/material/magnet"
+      ],
+      "searchKeywords": [
+        "key word|keyword 2|keyword 2"
+      ],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "catalogType": [
+        "ebook"
+      ],
+      "pdfAsset": [],
+      "ebookUrl": [
+        "https://www.ykkfastening.com/"
+      ],
+      "requiresForm": [
+        false
+      ],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-09-03"
+      ],
+      "updateDate": [
+        "2026-09-03"
+      ],
+      "isUnavailable": []
+    }
+  },
+  "/content/dam/common/en/catalogs/qa190-cat-ebook-form": {
+    "exists": true,
+    "id": "14ffb780-d713-4bcd-bc23-05e53bdc79ab",
+    "model": "DM_catalog",
+    "etag": "\"5dcc0630e82d1ce96f230690f626f7bc\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogId": [
+        "qa190-cat-ebook-form"
+      ],
+      "catalogTitle": [
+        "catalog ebook form"
+      ],
+      "description": [
+        "Catalog description\nCatalog description"
+      ],
+      "catalogCategories": [
+        "site:product/material/aluminium",
+        "site:product/material/cotton",
+        "site:product/material/magnet"
+      ],
+      "searchKeywords": [
+        "key word|keyword 2|keyword 2"
+      ],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "catalogType": [
+        "ebook"
+      ],
+      "pdfAsset": [],
+      "ebookUrl": [
+        "https://www.ykkfastening.com/"
+      ],
+      "requiresForm": [
+        false
+      ],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-09-03"
+      ],
+      "updateDate": [
+        "2026-09-03"
+      ],
+      "isUnavailable": []
+    }
+  }
+}

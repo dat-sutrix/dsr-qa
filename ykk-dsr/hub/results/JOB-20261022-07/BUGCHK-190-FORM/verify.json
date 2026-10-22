@@ -1,0 +1,282 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:16 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:17 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:16 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:17 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:16 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:17 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:16 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:55:51Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:56:17 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/catalog/qa190-cat-pdf-form",
+    "actual": "200; title=\"catalog pdf form | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/catalog/qa190-cat-pdf-form",
+    "actual": "200; title=\"catalog pdf form | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa190-cat-pdf-form",
+    "actual": "200; title=\"catalog pdf form | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa190-cat-pdf-form",
+    "actual": "200; title=\"catalog pdf form | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/catalog/qa190-cat-ebook-form",
+    "actual": "200; title=\"catalog ebook form | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/catalog/qa190-cat-ebook-form",
+    "actual": "200; title=\"catalog ebook form | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa190-cat-ebook-form",
+    "actual": "200; title=\"catalog ebook form | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa190-cat-ebook-form",
+    "actual": "200; title=\"catalog ebook form | YKK DIGITAL SHOWROOM\""
+  }
+]

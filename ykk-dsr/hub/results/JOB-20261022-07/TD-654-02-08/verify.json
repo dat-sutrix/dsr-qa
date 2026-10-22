@@ -1,0 +1,1172 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "qa654-inactive",
+    "actual": "qa654-inactive"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogTitle",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "QA654 inactive",
+    "actual": "QA654 inactive"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "QA654 description",
+    "actual": "QA654 description"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogCategories",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "site:product/material/aluminium",
+    "actual": "site:product/material/aluminium"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogType",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "pdf",
+    "actual": "pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:pdfAsset",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "actual": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:32 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:33 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-inactive",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "qa654-inactive",
+    "actual": "qa654-inactive"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "QA654 inactive",
+    "actual": "QA654 inactive"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "QA654 description",
+    "actual": "QA654 description"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogCategories",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "site:product/material/aluminium",
+    "actual": "site:product/material/aluminium"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogType",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "pdf",
+    "actual": "pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:pdfAsset",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "actual": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:32 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:33 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalog",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "actual": "/content/dam/common/ja/catalogs/qa654-inactive"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:34 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:35 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalog",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-inactive",
+    "actual": "/content/dam/common/en/catalogs/qa654-inactive"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:34 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:35 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-preview",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogId",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "qa654-preview",
+    "actual": "qa654-preview"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogTitle",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "QA654 preview",
+    "actual": "QA654 preview"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "QA654 description",
+    "actual": "QA654 description"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogCategories",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "site:product/material/aluminium",
+    "actual": "site:product/material/aluminium"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogType",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "pdf",
+    "actual": "pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:pdfAsset",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "actual": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:32 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:33 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalog",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-preview",
+    "actual": "/content/dam/common/en/catalogs/qa654-preview"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:34 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-content-only",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogId",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "qa654-content-only",
+    "actual": "qa654-content-only"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogTitle",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "QA654 content only",
+    "actual": "QA654 content only"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "QA654 description",
+    "actual": "QA654 description"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogCategories",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "site:product/material/aluminium",
+    "actual": "site:product/material/aluminium"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogType",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "pdf",
+    "actual": "pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:pdfAsset",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "actual": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:32 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-only",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:33 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-update",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogId",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "qa654-update",
+    "actual": "qa654-update"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogTitle",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "QA654 update",
+    "actual": "QA654 update"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "QA654 before",
+    "actual": "QA654 before"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogCategories",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "site:product/material/aluminium",
+    "actual": "site:product/material/aluminium"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogType",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "pdf",
+    "actual": "pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:pdfAsset",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "actual": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:32 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:33 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-update",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalog",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-update",
+    "actual": "/content/dam/common/en/catalogs/qa654-update"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:34 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:35 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogId",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "qa654-content-unpub",
+    "actual": "qa654-content-unpub"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogTitle",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "QA654 content unpublished",
+    "actual": "QA654 content unpublished"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "QA654 description",
+    "actual": "QA654 description"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogCategories",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "site:product/material/aluminium",
+    "actual": "site:product/material/aluminium"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalogType",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "pdf",
+    "actual": "pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:pdfAsset",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "actual": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+  },
+  {
+    "layer": "L1",
+    "check": "field:requiresForm",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": false,
+    "actual": false
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#8 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:catalog",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "actual": "/content/dam/common/en/catalogs/qa654-content-unpub"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:34 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-22T04:56:33Z (timestamp present)",
+    "actual": "Activate @ Thu Oct 22 2026 04:57:35 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-inactive",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-inactive",
+    "actual": "200; title=\"QA654 inactive | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-inactive",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-inactive",
+    "actual": "200; title=\"QA654 inactive | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa654-inactive",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/catalog/qa654-inactive",
+    "actual": "200; title=\"QA654 inactive | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa654-inactive",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/catalog/qa654-inactive",
+    "actual": "200; title=\"QA654 inactive | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-preview",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-preview",
+    "actual": "200; title=\"YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-preview",
+    "result": "FAIL",
+    "expected": "200 + <title> on /en/library/catalog/qa654-preview",
+    "actual": "404; title=\"Page not found\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-content-only",
+    "result": "FAIL",
+    "expected": "200 + <title> on /en/library/catalog/qa654-content-only",
+    "actual": "404; title=\"Page not found\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-content-only",
+    "result": "FAIL",
+    "expected": "200 + <title> on /en/library/catalog/qa654-content-only",
+    "actual": "404; title=\"Page not found\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-update",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-update",
+    "actual": "200; title=\"QA654 update | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-update",
+    "actual": "200; title=\"QA654 update | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-content-unpub",
+    "actual": "200; title=\"YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-content-unpub",
+    "actual": "200; title=\"YKK DIGITAL SHOWROOM\""
+  }
+]

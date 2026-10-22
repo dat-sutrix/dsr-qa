@@ -1,0 +1,137 @@
+[
+  {
+    "at": "2026-10-22T04:57:15.229Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa654-inactive",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:16.174Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa654-inactive",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:16.776Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa654-preview",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:17.445Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa654-content-only",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:18.037Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa654-update",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:18.966Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa654-content-unpub",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:19.471Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:20.315Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:20.803Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:21.701Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa654-update",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:22.204Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:23.343Z",
+    "op": "replicate:preview content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa654-inactive, /content/dam/common/en/catalogs/qa654-inactive, /content/dam/common/en/catalogs/qa654-preview, /content/dam/common/en/catalogs/qa654-content-only, /content/dam/common/en/catalogs/qa654-update",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:23.909Z",
+    "op": "replicate:preview dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/ja/catalogs/qa654-inactive, /content/dam/dsr/en/catalogs/qa654-inactive, /content/dam/dsr/en/catalogs/qa654-preview, /content/dam/dsr/en/catalogs/qa654-update, /content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:24.943Z",
+    "op": "replicate:publish content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa654-inactive, /content/dam/common/en/catalogs/qa654-inactive, /content/dam/common/en/catalogs/qa654-preview, /content/dam/common/en/catalogs/qa654-content-only, /content/dam/common/en/catalogs/qa654-update",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-22T04:57:25.643Z",
+    "op": "replicate:publish dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/ja/catalogs/qa654-inactive, /content/dam/dsr/en/catalogs/qa654-inactive, /content/dam/dsr/en/catalogs/qa654-update, /content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "status": 200,
+    "changes": null
+  }
+]
