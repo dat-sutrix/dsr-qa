@@ -1,0 +1,1 @@
+- 2026-10-22: /content/sites/digital-showroom/master/en/test-space/qa566-template-check (Dat, template check, not published) → xóa tay khi xong DSR-566
