@@ -1,0 +1,1064 @@
+{
+  "job": "JOB-20261021-12",
+  "agent": "codex",
+  "us": "DSR-654",
+  "env": "dev",
+  "started": "2026-10-22T00:57:17.515Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "ja",
+      "demo": false,
+      "width": 1440,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "result": "blocked",
+      "error": "Catalog block height 0; no title, image or form. PDF navigation aborted. Known requiresForm data issue prevents layout comparison.",
+      "evidence": "evidence/DSR-654/DEV/DSR-CATOV-020_DEV_01.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "requests_failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 1440,
+      "scrollHeight": 1442,
+      "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\ncatalog pdf form | YKK DIGITAL SHOWROOM\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "h1": [],
+      "blocks": [
+        {
+          "name": "breadcrumb",
+          "status": "loaded",
+          "x": 0,
+          "y": 140,
+          "width": 1440,
+          "height": 50
+        },
+        {
+          "name": "catalog-detail",
+          "status": "loaded",
+          "x": 340,
+          "y": 230,
+          "width": 760,
+          "height": 0
+        }
+      ],
+      "headings": [],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 85,
+          "y": 159.984375,
+          "width": 10,
+          "height": 10
+        }
+      ],
+      "controls": [
+        {
+          "tag": "A",
+          "text": "HOME",
+          "href": "/ja",
+          "src": null,
+          "x": 40,
+          "y": 153.09375,
+          "width": 39,
+          "height": 23.796875
+        }
+      ],
+      "meta": [
+        {
+          "name": "description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/ja/library/catalog/qa190-cat-pdf-form"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "robots",
+          "content": "noindex"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "no_horizontal_overflow": true
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "ja",
+      "demo": false,
+      "width": 375,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "result": "blocked",
+      "error": "Catalog block height 0; no title, image or form. PDF navigation aborted. Known requiresForm data issue prevents layout comparison.",
+      "evidence": "evidence/DSR-654/DEV/DSR-CATOV-020_DEV_02.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "requests_failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 375,
+      "scrollHeight": 1494,
+      "text": "HOME\ncatalog pdf form | YKK DIGITAL SHOWROOM\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "h1": [],
+      "blocks": [
+        {
+          "name": "breadcrumb",
+          "status": "loaded",
+          "x": 0,
+          "y": 72,
+          "width": 375,
+          "height": 34
+        },
+        {
+          "name": "catalog-detail",
+          "status": "loaded",
+          "x": 16,
+          "y": 130,
+          "width": 343,
+          "height": 0
+        }
+      ],
+      "headings": [],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 57,
+          "y": 85,
+          "width": 8,
+          "height": 8
+        }
+      ],
+      "controls": [
+        {
+          "tag": "A",
+          "text": "HOME",
+          "href": "/ja",
+          "src": null,
+          "x": 16,
+          "y": 81,
+          "width": 35,
+          "height": 16
+        }
+      ],
+      "meta": [
+        {
+          "name": "description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/ja/library/catalog/qa190-cat-pdf-form"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "robots",
+          "content": "noindex"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "no_horizontal_overflow": true
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "en",
+      "demo": false,
+      "width": 1440,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "result": "blocked",
+      "error": "Catalog block height 0; no title, image or form. PDF navigation aborted. Known requiresForm data issue prevents layout comparison.",
+      "evidence": "evidence/DSR-654/DEV/DSR-CATOV-020_DEV_03.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "requests_failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 1440,
+      "scrollHeight": 1442,
+      "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\ncatalog\ncatalog pdf form | YKK DIGITAL SHOWROOM\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "h1": [],
+      "blocks": [
+        {
+          "name": "breadcrumb",
+          "status": "loaded",
+          "x": 0,
+          "y": 140,
+          "width": 1440,
+          "height": 50
+        },
+        {
+          "name": "catalog-detail",
+          "status": "loaded",
+          "x": 340,
+          "y": 230,
+          "width": 760,
+          "height": 0
+        }
+      ],
+      "headings": [],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 88,
+          "y": 159.984375,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 154,
+          "y": 159.984375,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 225,
+          "y": 159.984375,
+          "width": 10,
+          "height": 10
+        }
+      ],
+      "controls": [
+        {
+          "tag": "A",
+          "text": "HOME",
+          "href": "/en",
+          "src": null,
+          "x": 40,
+          "y": 153.09375,
+          "width": 42,
+          "height": 23.796875
+        },
+        {
+          "tag": "A",
+          "text": "library",
+          "href": "/en/library",
+          "src": null,
+          "x": 104,
+          "y": 153.09375,
+          "width": 44,
+          "height": 23.796875
+        },
+        {
+          "tag": "A",
+          "text": "catalog",
+          "href": "/en/library/catalog",
+          "src": null,
+          "x": 170,
+          "y": 153.09375,
+          "width": 49,
+          "height": 23.796875
+        }
+      ],
+      "meta": [
+        {
+          "name": "description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog/qa190-cat-pdf-form"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "robots",
+          "content": "noindex"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "no_horizontal_overflow": true
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "en",
+      "demo": false,
+      "width": 375,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "result": "blocked",
+      "error": "Catalog block height 0; no title, image or form. PDF navigation aborted. Known requiresForm data issue prevents layout comparison.",
+      "evidence": "evidence/DSR-654/DEV/DSR-CATOV-020_DEV_04.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "requests_failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+      "scrollWidth": 375,
+      "scrollHeight": 1494,
+      "text": "HOME\nlibrary\ncatalog\ncatalog pdf form | YKK DIGITAL SHOWROOM\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "h1": [],
+      "blocks": [
+        {
+          "name": "breadcrumb",
+          "status": "loaded",
+          "x": 0,
+          "y": 72,
+          "width": 375,
+          "height": 34
+        },
+        {
+          "name": "catalog-detail",
+          "status": "loaded",
+          "x": 16,
+          "y": 130,
+          "width": 343,
+          "height": 0
+        }
+      ],
+      "headings": [],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 58,
+          "y": 85,
+          "width": 8,
+          "height": 8
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 114,
+          "y": 85,
+          "width": 8,
+          "height": 8
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 175,
+          "y": 85,
+          "width": 8,
+          "height": 8
+        }
+      ],
+      "controls": [
+        {
+          "tag": "A",
+          "text": "HOME",
+          "href": "/en",
+          "src": null,
+          "x": 16,
+          "y": 81,
+          "width": 36,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "library",
+          "href": "/en/library",
+          "src": null,
+          "x": 72,
+          "y": 81,
+          "width": 36,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "catalog",
+          "href": "/en/library/catalog",
+          "src": null,
+          "x": 128,
+          "y": 81,
+          "width": 41,
+          "height": 16
+        }
+      ],
+      "meta": [
+        {
+          "name": "description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "og:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/en/library/catalog/qa190-cat-pdf-form"
+        },
+        {
+          "name": "og:image",
+          "content": "about:error"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+        },
+        {
+          "name": "og:image:alt",
+          "content": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "catalog pdf form | YKK DIGITAL SHOWROOM"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Catalog description Catalog description"
+        },
+        {
+          "name": "twitter:image",
+          "content": "about:error"
+        },
+        {
+          "name": "robots",
+          "content": "noindex"
+        },
+        {
+          "name": "cf-path",
+          "content": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "no_horizontal_overflow": true
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "ja",
+      "demo": true,
+      "width": 1440,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "result": "pass",
+      "error": "Reference capture only; not an overlay TC pass",
+      "evidence": "evidence/DSR-654/DEV/DSR-CATOV-020_DEV_05.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "requests_failed": [],
+      "http_status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "title": "DSR-570: Catalog Detail",
+      "scrollWidth": 1440,
+      "scrollHeight": 2448,
+      "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\ntest space\nDSR-570: Catalog Detail\n製品カタログ\nAQUASEAL® 製品カタログ\n\nAQUASEAL® ︎は、マリン業界から産業資材まで幅広い業界で活用できる防水ファスナーです。製品詳細情報をご覧いただけます。\n\n2022.01.20\n\nSTANDARD CATALOG\n必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "h1": [
+        {
+          "text": "製品カタログ",
+          "x": 340,
+          "y": 230,
+          "width": 760,
+          "height": 54.390625
+        }
+      ],
+      "blocks": [
+        {
+          "name": "breadcrumb",
+          "status": "loaded",
+          "x": 0,
+          "y": 140,
+          "width": 1440,
+          "height": 50
+        },
+        {
+          "name": "catalog-detail",
+          "status": "loaded",
+          "x": 340,
+          "y": 230,
+          "width": 760,
+          "height": 1711.90625
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "製品カタログ",
+          "x": 340,
+          "y": 230,
+          "width": 760,
+          "height": 54.390625
+        },
+        {
+          "tag": "H2",
+          "text": "AQUASEAL® 製品カタログ",
+          "x": 740,
+          "y": 324.390625,
+          "width": 360,
+          "height": 32
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 85,
+          "y": 159.984375,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 174,
+          "y": 159.984375,
+          "width": 10,
+          "height": 10
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/listing/fixtures/placeholder1.svg",
+          "alt": "AQUASEAL® 製品カタログ",
+          "naturalWidth": 400,
+          "x": 416,
+          "y": 325.390625,
+          "width": 208,
+          "height": 298
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/catalog-detail/assets/bookmark.svg",
+          "alt": "",
+          "naturalWidth": 33,
+          "x": 586.1875,
+          "y": 330.046875,
+          "width": 32.5,
+          "height": 30.90625
+        }
+      ],
+      "controls": [
+        {
+          "tag": "A",
+          "text": "HOME",
+          "href": "/master/ja",
+          "src": null,
+          "x": 40,
+          "y": 153.09375,
+          "width": 39,
+          "height": 23.796875
+        },
+        {
+          "tag": "A",
+          "text": "test space",
+          "href": "/master/ja/test-space",
+          "src": null,
+          "x": 101,
+          "y": 153.09375,
+          "width": 67,
+          "height": 23.796875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "href": null,
+          "src": null,
+          "x": 586.1875,
+          "y": 330.046875,
+          "width": 32.515625,
+          "height": 30.90625
+        },
+        {
+          "tag": "FORM",
+          "text": "必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする",
+          "href": null,
+          "src": null,
+          "x": 340,
+          "y": 664.390625,
+          "width": 760,
+          "height": 1277.515625
+        },
+        {
+          "tag": "A",
+          "text": "個人情報保護方針",
+          "href": "https://ykkdigitalshowroom.com/jp/privacy_policy",
+          "src": null,
+          "x": 637,
+          "y": 1832.515625,
+          "width": 104,
+          "height": 19
+        },
+        {
+          "tag": "BUTTON",
+          "text": "ダウンロードする",
+          "href": null,
+          "src": null,
+          "x": 552,
+          "y": 1887.90625,
+          "width": 336,
+          "height": 54
+        }
+      ],
+      "meta": [
+        {
+          "name": "og:title",
+          "content": "DSR-570: Catalog Detail"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/master/ja/test-space/dsr-570-catalog-detail"
+        },
+        {
+          "name": "og:image",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "DSR-570: Catalog Detail"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+        },
+        {
+          "name": "published-time",
+          "content": "2026-10-15T03:51:33.765Z"
+        },
+        {
+          "name": "modified-time",
+          "content": "2026-10-15T03:51:22.897Z"
+        },
+        {
+          "name": "content-page-ref",
+          "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMAxM8ScPNbcvIRtPkPv3QfN4Jhq6Y33DIDzlKoLhPfi-HZPJ4D4hJV2EixUiyft7aea5ZaX8-IOpNLzMD6rCA9"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "no_horizontal_overflow": true,
+      "reference_only": true
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "ja",
+      "demo": true,
+      "width": 375,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "result": "pass",
+      "error": "Reference capture only; not an overlay TC pass",
+      "evidence": "evidence/DSR-654/DEV/DSR-CATOV-020_DEV_06.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "requests_failed": [],
+      "http_status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "title": "DSR-570: Catalog Detail",
+      "scrollWidth": 375,
+      "scrollHeight": 2905,
+      "text": "HOME\ntest space\nDSR-570: Catalog Detail\n製品カタログ\nAQUASEAL® 製品カタログ\n\nAQUASEAL® ︎は、マリン業界から産業資材まで幅広い業界で活用できる防水ファスナーです。製品詳細情報をご覧いただけます。\n\n2022.01.20\n\nSTANDARD CATALOG\n必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "h1": [
+        {
+          "text": "製品カタログ",
+          "x": 16,
+          "y": 130,
+          "width": 343,
+          "height": 40.796875
+        }
+      ],
+      "blocks": [
+        {
+          "name": "breadcrumb",
+          "status": "loaded",
+          "x": 0,
+          "y": 72,
+          "width": 375,
+          "height": 34
+        },
+        {
+          "name": "catalog-detail",
+          "status": "loaded",
+          "x": 16,
+          "y": 130,
+          "width": 343,
+          "height": 2149.390625
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H1",
+          "text": "製品カタログ",
+          "x": 16,
+          "y": 130,
+          "width": 343,
+          "height": 40.796875
+        },
+        {
+          "tag": "H2",
+          "text": "AQUASEAL® 製品カタログ",
+          "x": 16,
+          "y": 491.796875,
+          "width": 343,
+          "height": 32
+        }
+      ],
+      "images": [
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 57,
+          "y": 85,
+          "width": 8,
+          "height": 8
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+          "alt": "",
+          "naturalWidth": 10,
+          "x": 136,
+          "y": 85,
+          "width": 8,
+          "height": 8
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/listing/fixtures/placeholder1.svg",
+          "alt": "AQUASEAL® 製品カタログ",
+          "naturalWidth": 400,
+          "x": 96.5,
+          "y": 211.796875,
+          "width": 182,
+          "height": 253
+        },
+        {
+          "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/catalog-detail/assets/bookmark-sp.svg",
+          "alt": "",
+          "naturalWidth": 29,
+          "x": 245.65625,
+          "y": 216.453125,
+          "width": 28.515625,
+          "height": 30.90625
+        }
+      ],
+      "controls": [
+        {
+          "tag": "A",
+          "text": "HOME",
+          "href": "/master/ja",
+          "src": null,
+          "x": 16,
+          "y": 81,
+          "width": 35,
+          "height": 16
+        },
+        {
+          "tag": "A",
+          "text": "test space",
+          "href": "/master/ja/test-space",
+          "src": null,
+          "x": 71,
+          "y": 81,
+          "width": 59,
+          "height": 16
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "href": null,
+          "src": null,
+          "x": 245.65625,
+          "y": 216.453125,
+          "width": 28.53125,
+          "height": 30.90625
+        },
+        {
+          "tag": "FORM",
+          "text": "必須\n氏名（姓）\n必須\n氏名（名）\n必須\nメールアドレス\n必須\n電話番号\n必須\n会社名\n任意\n部署名\n必須\n役職\n管理職\n一般職\nその他\n必須\n職種\nデザイナー\nMD\n購買/調達\n営業/マーケティング\nQC\nProduction\n製造/エンジニアリング\nR&D\nその他\n必須\n勤務地\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\nあなたの担当分野は？\n埼玉県\n東京都\n神奈川県\n千葉県\nその他\n必須\n利用規約への同意\n\nYKK株式会社は、お客様のプライバシーを尊重して保護するために最大限の努力を投じています。お客様の個人情報は、お客様のアカウントの管理、およびお客様が要求した製品やサービスに関する情報の提供にのみ利用されます。弊社は、お客様が興味を持たれる可能性がある製品、サービス、コンテンツの情報について、随時お客様にご連絡を差し上げる場合があります。こうした目的でご連絡を差し上げることに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社からの連絡を許可します。\n\n弊社はお客様が要求した情報を提供するために、お客様の個人情報を保管・処理する必要があります。こうした目的で個人情報を保管することに同意いただける場合は、以下のチェックボックスをオンにしてください。\n\nYKK株式会社が私の個人情報を保存して処理することを許可することに同意します。\n\nお客様はこれらの情報提供をいつでも停止できます。情報提供を停止する方法、およびお客様の個人情報を尊重して保護するための弊社の取り組みについては、弊社の個人情報保護方針をご覧ください。\n\nダウンロードする",
+          "href": null,
+          "src": null,
+          "x": 16,
+          "y": 738.1875,
+          "width": 343,
+          "height": 1541.203125
+        },
+        {
+          "tag": "A",
+          "text": "個人情報保護方針",
+          "href": "https://ykkdigitalshowroom.com/jp/privacy_policy",
+          "src": null,
+          "x": 16,
+          "y": 2164.609375,
+          "width": 338,
+          "height": 42.390625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "ダウンロードする",
+          "href": null,
+          "src": null,
+          "x": 42.5,
+          "y": 2225.390625,
+          "width": 290,
+          "height": 54
+        }
+      ],
+      "meta": [
+        {
+          "name": "og:title",
+          "content": "DSR-570: Catalog Detail"
+        },
+        {
+          "name": "og:url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/master/ja/test-space/dsr-570-catalog-detail"
+        },
+        {
+          "name": "og:image",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+        },
+        {
+          "name": "og:image:secure_url",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "DSR-570: Catalog Detail"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+        },
+        {
+          "name": "published-time",
+          "content": "2026-10-15T03:51:33.765Z"
+        },
+        {
+          "name": "modified-time",
+          "content": "2026-10-15T03:51:22.897Z"
+        },
+        {
+          "name": "content-page-ref",
+          "content": "vj4ztMT9wbD0MjbXx-KIsN-xbKOZQLsGlph8TTRrkSMAxM8ScPNbcvIRtPkPv3QfN4Jhq6Y33DIDzlKoLhPfi-HZPJ4D4hJV2EixUiyft7aea5ZaX8-IOpNLzMD6rCA9"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        }
+      ],
+      "no_horizontal_overflow": true,
+      "reference_only": true
+    }
+  ],
+  "lighthouse": [],
+  "questions": [],
+  "code_changes": [
+    "ykk-dsr/hub/results/JOB-20261021-12/capture.cjs"
+  ],
+  "automation_head": "81033ca08778398c8731f2c009c3c16e4ed8b447",
+  "baseline": "DSR-654.spec.json TC 20.0; BL-OVL-1 update 2026-10-21",
+  "typescript": {
+    "command": "npx tsc --noEmit",
+    "exit_code": 0,
+    "result": "no errors"
+  },
+  "command": "node ykk-dsr/hub/results/JOB-20261021-12/capture.cjs",
+  "probes": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "last_modified": "Wed, 21 Oct 2026 14:17:41 GMT"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "last_modified": "Wed, 21 Oct 2026 14:20:08 GMT"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "status": 200,
+      "final_url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "last_modified": "Tue, 20 Oct 2026 11:36:16 GMT"
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "finished": "2026-10-22T00:58:11.116Z",
+  "outcome": "Pending: four overlay captures blocked by absent catalog layout; two demo reference captures completed",
+  "evidence_bytes": 758101,
+  "review_notes": [
+    "All three URLs HTTP 200 on .aem.live; no .aem.page fallback needed.",
+    "Demo: title, image/text, form, download button. Overlay: breadcrumb then empty catalog-detail, footer.",
+    "No horizontal overflow at 375 for ja, en or demo; empty overlay content limits this observation.",
+    "Public ja HTML omits requiresForm; live catalog-detail.js lines 165-168 redirects non-form catalogs to file; all four overlay captures record PDF net::ERR_ABORTED. Author values not checked.",
+    "TC outcomes are proposals; Dat L&F approval pending."
+  ]
+}
