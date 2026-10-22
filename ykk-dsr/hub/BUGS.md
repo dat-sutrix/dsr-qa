@@ -1,5 +1,7 @@
 # YKK DSR – Bug register
 
+> 22/10 17:10 [schedule] evening: ✅ **DSR-664** retest Pass 4/4 (JOB-20261022-16) → Dat đóng · DSR-665 Done · og:image (BUG-OVL-OGIMG) đóng – 0 about:error (JOB-13) · 0 bug mới ≥ 80% · 4 nháp catalog < 80% → DASHBOARD 🐞.
+
 > 22/10 07:45 [schedule] morning: 🐞 **DSR-665** mới (587 video/search reload loop, 85%, Martin) · retest ✅ 647/657/658/660 (comment, Dat chuyển Done) · ⚠ 659 thumbnail meta vẫn tương đối (trả Martin) · DSR-538 chưa retest (JOB-20261022-01) · DSR-457 Dismissed (Jira).
 
 > 21/10 17:10 [schedule] evening: Jira 657–660 → In Progress (merged); kiểm sớm JOB-20261021-07 tối nay, retest chính thức JOB-20261021-05 sáng 22/10. Không bug mới ≥ 80%.
@@ -23,7 +25,8 @@
 | [DSR-658](https://sutrix.atlassian.net/browse/DSR-658) | DSR-529 | Tag chips not rendered (TC 006) | Medium | [Dev] In Testing (Jira 22/10) | Dat (QA) | DEV | ✅ JOB-20261021-05: 2 meta → 2 chip – comment 64795 | Dat chuyển Done · 22/10 |
 | [DSR-659](https://sutrix.atlassian.net/browse/DSR-659) | DSR-529 | Thumbnail + related-article images relative /content/dam → 404 .live (TC 011, 013) | Medium | [Dev] In Testing (Jira 22/10) | Dat (QA) | DEV | ⚠ JOB-20261021-05: ảnh related ✅ tuyệt đối 200 · **thumbnail meta vẫn tương đối → 404** – comment 64797 | Dat trả lại Martin (Reopen/In Progress) · 22/10 |
 | [DSR-660](https://sutrix.atlassian.net/browse/DSR-660) | DSR-529 | Info bar date YYYY/MM/DD ≠ YYYY.MM.DD (TC 007) | Low | [Dev] In Testing (Jira 22/10) | Dat (QA) | DEV | ✅ JOB-20261021-05 + IDLE-28: 2026.10.01 – comment 64796 | Dat chuyển Done · 22/10 |
-| [DSR-665](https://sutrix.atlassian.net/browse/DSR-665) | DSR-587 | /{lang}/library/video/search bị overlay coi là video-detail not-found → reload vô hạn, trang trắng (TC VOV-013) · cause overlay-merge · 85% | High | To Do (tạo 22/10 07:50, qa-ai, Sprint 12) | Portal Martin | DEV | JOB-20261020-02: ja+en, .page+.live, 56–213 lần reload/3–8 s | Martin fix → rerun DSR-VOV-013 |
+| [DSR-665](https://sutrix.atlassian.net/browse/DSR-665) | DSR-587 | /{lang}/library/video/search reload vô hạn (VOV-013) | High | **Done 22/10** | Portal Martin | DEV | ✅ JOB-20261022-08 + IDLE-35 VOV-013 Pass | — (đã đóng) |
+| [DSR-664](https://sutrix.atlassian.net/browse/DSR-664) | DSR-190 | Video block shows "null" when caption empty (+ DSR-662 ブースTOP) | — | [Dev] In Testing (giao lại Dat 18:14 JST) | Dat (QA) | DEV | ✅ JOB-20261022-16: VCAP-001..004 Pass (.page + .live; booth TOP/46 chỉ .page) | **Dat đóng** (comment sẵn DASHBOARD 🔔 P1, 211→221→231→31) · 22–23/10 |
 
 ### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
 | Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
