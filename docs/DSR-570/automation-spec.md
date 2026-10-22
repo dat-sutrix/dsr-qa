@@ -23,7 +23,7 @@ Automation ID `DSR-CATDL-0NN` = TC NN.0. Spec: `tests/catalog-download/DSR-570.c
 | DSR-CATDL-015 | 15.0 | Visual SP – form and thank-you at 375px | Visual (Playwright VPS) | ja | no | No horizontal scroll (scrollWidth ≤ 375); inputs full width; button fully visible. Thank-you compared to Figma 3326-81328 when reachable. | Thank-you part: HubSpot form integration EX-06/EX-07 (LOWP) + DSR-570 – owner Ngoc / Quentin |
 | DSR-CATDL-016 | 16.0 | en / cn – texts translated | Automation | en, cn | yes | en: no Japanese characters in fixed texts; cn: Chinese text. | en page not created (QA-PT TD-570-01 en) · cn: no /master/cn (Issue #18) |
 | DSR-CATDL-017 | 17.0 | Form page with unknown / missing catalog ID (negative) | Automation | ja | yes | Either HTTP 404 / error message, or redirect to the catalog list; never a form showing another catalog's name. Behaviour recorded (A5). | DSR-570 CF integration (Ngoc 10/15: demo is layout only, not bound to catalog CF) – owner Ngoc |
-| DSR-CATDL-018 | 18.0 | e-book catalog with requiresForm = true | Automation | ja, en | yes | href = ebookUrl, target _blank; no form page in between. | EX-10 (YKK) – default A6 · ebookUrl fix QA-PT 16/10 |
+| DSR-CATDL-018 | 18.0 | e-book catalog with requiresForm = true | Automation | ja, en | yes | Card href = overlay detail page `/{lang}/library/catalog/qa190-cat-ebook-form`; that page shows the download form (A8). Was: href = ebookUrl, target _blank (A6, superseded 2026-10-22). | DSR-655 Y3 (A8) · JOB-20261022-14 |
 | DSR-CATDL-019 | 19.0 | Lighthouse – form page | Visual (Playwright VPS) | ja | no | Performance ≥ 95 and Accessibility ≥ 95 on mobile and desktop (DoD); scores recorded. | — |
 
 ## Assumptions (from spec.json)
@@ -35,15 +35,18 @@ Automation ID `DSR-CATDL-0NN` = TC NN.0. Spec: `tests/catalog-download/DSR-570.c
 | A3 | [Giả định] When HubSpot embed replaces the HTML form, 2.0/3.0 are re-run against the HubSpot DOM without TC change. | DSR-570 comment 61054; EX-06 | 2.0, 3.0 |
 | A4 | [Giả định] TCC#3 gating method undecided; 7.0 passes if the PDF path is absent from everything sent before submit. | DSR-192 TCC#3 | 7.0 |
 | A5 | [Giả định] Unknown/missing catalog ID: 404, error message or redirect to list all accepted. | Not specified | 17.0 |
-| A6 | [Giả định] EX-10 open: e-book opens without form (same as DSR-557 CATV-017). | DSR-192 EX-10 | 18.0 |
+| A6 | ~~[Giả định] EX-10 open: e-book opens without form (same as DSR-557 CATV-017).~~ Superseded 2026-10-22 by A8. | DSR-192 EX-10 | 18.0 |
+| A8 | E-book + requiresForm is gated like a PDF. The card links to the overlay detail page `/{lang}/library/catalog/{id}` (same origin) and that page shows the download form (never submitted). Applies to CATDL-018 and DSR-557 CATV-017. | DSR-655 Y3; JOB-20261022-14 rule 2 | 18.0 |
+| A9 | The catalog list loads `dsr-catalog-list;folder=/content/dam/dsr/{lang}/` (response `data.related.items[]` = DSR CF + `catalog` content CF), not `dm-catalog-list`. The query excludes isActive false, booth-limited and unpublished CFs. Expected on DEV once the AEM query is live: ja 6 / en 5 cards. An empty list is skipped as "Blocked-by: catalog list AEM query deploy (Martin 22/10)", not failed. Applies to CATDL-005/006/007/010/018 and DSR-557 CATV-012..020. | Martin 22/10 13:45 VN; JOB-20261022-10 (deploy 06:19:14Z); JOB-20261022-14 rule 3 | 5.0, 6.0, 7.0, 10.0, 18.0 |
 | A7 | Read-only for agents: no form submit, no Author edits. Submits (4.0, 11.0–13.0) and CF edits (8.0, 9.0) are Manual by QA-PT. | AGENTS.md | 4.0, 8.0, 9.0, 11.0–13.0 |
 
 ## Automation notes (JOB-20261016-12)
 
 - 002: "associated label" accepts `label[for]`, a wrapping `<label>` (HTMLInputElement.labels) or `aria-label`. The consent check counts checkboxes whose accessible name contains 個人情報 (exactly 1).
 - 003: reads `required` on the 個人情報 consent checkbox and the button `disabled` / `aria-disabled`; never clicks the button.
-- 007: the gated PDF path is taken from the `dm-catalog-list` item `qa190-cat-pdf-form`. A non-null `pdfAsset` on that item = exposure (Fail, location recorded). The same file is shared by requiresForm=false CFs on DEV, so plain string hits on the list page are recorded, not attributed.
+- 007: the gated PDF path is taken from the `dsr-catalog-list` item (was `dm-catalog-list` until 2026-10-22, A9) `qa190-cat-pdf-form`. A non-null `pdfAsset` on that item = exposure (Fail, location recorded). The same file is shared by requiresForm=false CFs on DEV, so plain string hits on the list page are recorded, not attributed.
 - 010/006: follow the `QA190 PDF form required` card; card not rendered → blocked-data skip. The demo page URL/hidden inputs are recorded anyway.
 - 017: skipped while no catalog-ID mechanism exists (no card href carrying the catalog id). Demo page behaviour with/without `?id=999999` is recorded.
-- 018: href = ebookUrl and target _blank on all card links; the first popup navigation must be ebookUrl (redirects after it belong to the external site).
+- 018 (from 2026-10-22, A8): every card link resolves to the overlay detail page; following it stays on that page and shows 1 form + a visible submit button (not clicked). Was: href = ebookUrl, target _blank, first popup navigation = ebookUrl.
+- DSR-557 CATV-017 (same list, A8): card links resolve to `/{lang}/library/catalog/qa190-cat-ebook-form`; the page shows 1 `form.catalog-detail-form`. Was: opens ebookUrl without a form.
 - 016 cn: fixme (no /master/cn, Issue #18).

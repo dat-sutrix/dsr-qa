@@ -19,7 +19,10 @@ export const youtubeVideos = [
 export const damVideos = [
   { id: 'qa557-dam', assetPath: '/content/dam/ykk/digital-showroom/test/video/sample-4.mp4' },
 ];
-export const catalogQuery = /\/graphql\/execute\.json\/ykk\/dm-catalog-list/;
+// JOB-20261022-14: the list calls dsr-catalog-list;folder=/content/dam/dsr/{lang}/ (deploy 22/10 06:19Z, Martin 22/10 13:45 VN), not dm-catalog-list.
+// Excludes isActive false / booth-limited / unpublished CF; DEV ja 6 / en 5 cards once the AEM query is live.
+export const catalogQuery = /\/graphql\/execute\.json\/ykk\/dsr-catalog-list/;
+export const listBlocked = 'Blocked-by: catalog list AEM query deploy (Martin 22/10)';
 export const embedDomains = /^https?:\/\/([^/]+\.)?(youtube\.com|youtube-nocookie\.com|youtu\.be|ytimg\.com|youku\.com|ykimg\.com)(\/|$)/;
 // DSR-109 facade: thumbnail allowed (QA decision 2026-10-15). Only embed/player requests are forbidden before interaction.
 export const playerRequests = /^https?:\/\/(([^/]+\.)?youtube\.com\/embed(\/|\?|$)|([^/]+\.)?youtube-nocookie\.com(\/|$)|www\.youtube\.com\/(s\/|iframe_api|player)|player\.youku\.com(\/|$)|[^/]+\.ytimg\.com\/yts\/)/;
@@ -27,8 +30,12 @@ export const facadeThumbnails = /^https?:\/\/(img\.youtube\.com|i\.ytimg\.com)\/
 export const embedSrc = /^https:\/\/(www\.)?youtube(-nocookie)?\.com\/embed\//;
 export const labelDays = 10;
 
+// One dsr-catalog-list item flattened: the content CF fields, plus the wrapping DSR CF path and flags.
 export interface CatalogItem {
   _path?: string;
+  dsrPath?: string;
+  isActive?: boolean | null;
+  isBoothLimited?: boolean | null;
   catalogId?: string;
   catalogTitle: string;
   catalogType: string;
@@ -53,14 +60,14 @@ export function expectedLabel(item: Pick<CatalogItem, 'publishDate' | 'updateDat
 
 // Catalog overlay merge (Martin 20/10 12:45, BL-OVL-1): core catalogs re-seeded (Night 21/10 việc 5) as content CF
 // /content/dam/common/{lang}/catalogs/{id} + DSR CF /content/dam/dsr/{lang}/catalogs/{id}; detail /{lang}/library/catalog/{id}.
-// Titles differ per CF ("catalog pdf", "qa190-cat-pdf" …) → resolved at run time from dm-catalog-list by _path (JOB-20261020-04).
+// Titles differ per CF ("catalog pdf", "qa190-cat-pdf" …) → resolved at run time from dsr-catalog-list by content CF _path (JOB-20261020-04).
 export const core = { pdf: 'qa190-cat-pdf', pdfForm: 'qa190-cat-pdf-form', ebook: 'qa190-cat-ebook', ebookForm: 'qa190-cat-ebook-form' } as const;
 export type CoreKey = keyof typeof core;
 export const contentCfPath = (lang: string, id: string) => `/content/dam/common/${lang}/catalogs/${id}`;
 export const detailPath = (lang: string, id: string) => `/${lang}/library/catalog/${id}`;
 export const coreItem = <T extends CatalogItem>(data: T[], lang: string, key: CoreKey): T | undefined =>
   data.find(i => i._path === contentCfPath(lang, core[key]));
-// Pre-merge QA CF folder. dm-catalog-list still returns it (JOB-20261020-04); NEW/UPDATE CFs were not re-seeded and stay here.
+// Pre-merge QA CF folder (JOB-20261020-04); NEW/UPDATE CFs were not re-seeded and stay here. dsr-catalog-list reads only DSR CFs, so they are no longer listed.
 export const oldFolder = '/content/dam/ykk/common/product-cf/test/';
 export const qa190 = {
   new: ['QA190 NEW 0', 'QA190 NEW 10', 'QA190 NEW 11'],

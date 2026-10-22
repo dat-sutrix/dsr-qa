@@ -57,6 +57,41 @@ async function parseRaw(browser: Browser, html: string) {
 }
 
 const row = (rows: { key: string; value: string }[], key: string) => rows.find(r => r.key === key)?.value ?? null;
+const normalize = (href: string) => { const u = new URL(href); u.pathname = u.pathname.replace(/\/+$/, '') || '/'; return u.href; };
+
+// IDLE-32 / catalog-detail.js:165-169: a non-form catalog has no detail page by design; the client calls location.replace(file).
+// Headless Chromium turns the inline PDF navigation into a download, so main-frame navigation requests are the evidence (JOB-20261022-14 rule 1).
+async function openNonForm(page: import('@playwright/test').Page, target: string) {
+  const navigations: string[] = [];
+  const downloads: string[] = [];
+  page.on('request', r => { if (r.isNavigationRequest() && r.frame() === page.mainFrame()) navigations.push(r.url()); });
+  page.on('download', d => downloads.push(d.url()));
+  await page.goto(target).catch(e => observations.push({ gotoError: String(e) }));
+  await page.waitForTimeout(redirectWaitMs);
+  // First navigation away from the detail URL = the client's location.replace target; later hops belong to the file host (e.g. ebookUrl site redirects).
+  const first = navigations.find(u => u !== target);
+  observations.push({ navigations, downloads, finalUrl: page.url() });
+  return { first: first ?? page.url(), downloads };
+}
+
+// Expected file: pdfAsset row (DAM path) for a PDF, ebookUrl row for an e-book, both from the static overlay HTML.
+async function expectRedirectToFile(page: import('@playwright/test').Page, browser: Browser, html: string, target: string, catalogType: string) {
+  const raw = await parseRaw(browser, html);
+  const pdfAsset = row(raw.rows, 'pdfAsset');
+  const ebook = row(raw.rows, 'ebookUrl');
+  const { first, downloads } = await openNonForm(page, target);
+  observations.push({ pdfAsset, ebookUrl: ebook, redirectedTo: first, finalUrl: page.url() });
+  if (catalogType === 'pdf') {
+    expect(pdfAsset, 'pdfAsset row in static HTML').not.toBeNull();
+    expect(decodeURIComponent(new URL(first).pathname), 'redirect target = PDF (pdfAsset)').toBe(pdfAsset);
+    if (downloads.length) expect.soft(decodeURIComponent(new URL(downloads[0]).pathname), 'download = PDF').toBe(pdfAsset);
+  } else {
+    expect(ebook, 'ebookUrl row in static HTML').not.toBeNull();
+    expect(normalize(first), 'redirect target = ebookUrl').toBe(normalize(ebook!));
+  }
+  await expect.soft(new CatalogDetailPage(page).title, 'no rendered detail page').toHaveCount(0);
+  return first;
+}
 // Attribute values pointing at a PDF file (href/src/data-*), for the "PDF URL not exposed" check.
 const pdfRefs = (html: string) => [...html.matchAll(/=\s*["']([^"']*\.pdf(?:[?#][^"']*)?)["']/gi)].map(m => m[1]);
 
@@ -86,9 +121,16 @@ test.describe('DSR-654 catalog detail overlay', () => {
     for (const key of tdKeys) {
       const data = td[key];
 
-      test(`DSR-CATOV-001 [${lang}] ${data.id}: publishing DSR CF creates the catalog detail page with the catalog name shown`, { tag: ['@auto'] }, async ({ page }) => {
+      test(`DSR-CATOV-001 [${lang}] ${data.id}: publishing DSR CF creates the catalog detail page${data.requiresForm ? ' with the catalog name shown' : '; non-form → redirect to the file'}`, { tag: ['@auto'] }, async ({ page, request, browser }) => {
         const catalog = new CatalogDetailPage(page);
         const target = url(catalogPath(lang, data.id));
+        if (!data.requiresForm) {
+          // JOB-20261022-14 rule 1 (IDLE-32): page served (HTTP 200), then the browser is sent to the PDF / ebookUrl.
+          const { response, html } = await rawCatalog(request, lang, data.id);
+          expect(response.status()).toBe(200);
+          await expectRedirectToFile(page, browser, html, target, data.catalogType);
+          return;
+        }
         const response = await catalog.goto(target);
         observations.push({ url: target, finalUrl: page.url(), status: response?.status(), title: await page.title() });
         test.skip(response?.status() === 404, `${notSeeded(coreTdId, data.id)} (${target} HTTP 404)`);
@@ -97,7 +139,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
         await expect(catalog.title).toHaveText(data.title);
         expect.soft(await page.title(), '<title> starts with catalog name').toMatch(new RegExp(`^${data.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
         // requiresForm = true → download form shown on the detail page (DSR-570 / DSR-655 Y3).
-        await expect.soft(catalog.form, 'form slot').toHaveCount(data.requiresForm ? 1 : 0);
+        await expect.soft(catalog.form, 'form slot').toHaveCount(1);
       });
 
       test(`DSR-CATOV-002 [${lang}] ${data.id}: static HTML carries title, description, og:image and the content CF rows with the same id`, { tag: ['@auto'] }, async ({ request, browser }) => {
@@ -105,7 +147,11 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect(response.status()).toBe(200);
         const raw = await parseRaw(browser, html);
         observations.push(raw);
-        expect.soft(raw.title, '<title>').toBe(`${data.title}${siteTitleSuffix}`);
+        // JOB-20261022-14 rule 4: expected title = live content CF title (dev sample on DEV); TD-190 title stays the target (docs/DSR-654).
+        const liveTitle = row(raw.rows, 'catalogTitle') ?? '';
+        if (liveTitle !== data.title) test.info().annotations.push({ type: 'data', description: `content CF title "${liveTitle}" is a dev sample; TD-190 target "${data.title}" not seeded` });
+        expect.soft(liveTitle, 'row catalogTitle (live content CF)').not.toBe('');
+        expect.soft(raw.title, '<title>').toBe(`${liveTitle}${siteTitleSuffix}`);
         expect.soft(raw.description ?? '', 'meta description').not.toBe('');
         expect.soft(raw.ogImage ?? '', 'og:image absolute URL').toMatch(/^https?:\/\//);
         expect.soft(raw.robots ?? '', 'meta robots').not.toContain('noindex');
@@ -115,7 +161,6 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect.soft(row(raw.rows, 'cfPath'), 'row cfPath').toBe(dsrCfPath(lang, data.id));
         // 1 content CF ⇒ 1 DSR CF same id: catalogId (= node name) comes from the content CF.
         expect.soft(row(raw.rows, 'catalogId'), 'row catalogId (content CF)').toBe(data.id);
-        expect.soft(row(raw.rows, 'catalogTitle'), 'row catalogTitle').toBe(data.title);
         expect.soft(row(raw.rows, 'catalogType'), 'row catalogType').toBe(data.catalogType);
         expect.soft(row(raw.rows, 'requiresForm'), 'row requiresForm').toBe(String(data.requiresForm));
         expect.soft(raw.rows.map(r => r.key), 'no unavailable row').not.toContain('unavailable');
@@ -227,22 +272,16 @@ test.describe('DSR-654 catalog detail overlay', () => {
       await expect.soft(new CatalogDetailPage(page).title, 'same catalog name').toHaveText(data.title);
     });
 
-    test(`DSR-CATOV-015 [${lang}] PDF, requiresForm OFF → download opens the PDF directly`, { tag: ['@auto'] }, async ({ request, page }) => {
+    test(`DSR-CATOV-015 [${lang}] PDF, requiresForm OFF → detail redirects to the PDF directly`, { tag: ['@auto'] }, async ({ request, page, browser }) => {
+      // JOB-20261022-14 rule 1 (IDLE-32): final URL = PDF, not a rendered detail page.
       const data = td.pdf;
-      const { target } = await rawCatalog(request, lang, data.id);
-      const catalog = new CatalogDetailPage(page);
-      await catalog.goto(target).catch(e => observations.push({ gotoError: String(e) }));
-      await page.waitForTimeout(redirectWaitMs);
-      observations.push({ finalUrl: page.url() });
-      await expect(catalog.action, 'download button').toBeVisible();
-      const href = (await catalog.action.getAttribute('href')) ?? '';
-      observations.push({ href });
-      expect.soft(new URL(href, target).pathname, 'href ends with .pdf').toMatch(/\.pdf$/i);
-      const file = await request.get(new URL(href, target).href, { failOnStatusCode: false });
-      observations.push({ fileStatus: file.status(), contentType: file.headers()['content-type'] });
-      expect.soft(file.status(), 'PDF HTTP').toBe(200);
-      expect.soft(file.headers()['content-type'] ?? '', 'content-type').toContain('application/pdf');
-      await expect.soft(catalog.form, 'no form').toHaveCount(0);
+      const { target, html } = await rawCatalog(request, lang, data.id);
+      const file = await expectRedirectToFile(page, browser, html, target, 'pdf');
+      const response = await request.get(file, { failOnStatusCode: false });
+      observations.push({ fileStatus: response.status(), contentType: response.headers()['content-type'] });
+      expect.soft(response.status(), 'PDF HTTP').toBe(200);
+      expect.soft(response.headers()['content-type'] ?? '', 'content-type').toContain('application/pdf');
+      await expect.soft(new CatalogDetailPage(page).form, 'no form').toHaveCount(0);
     });
 
     test(`DSR-CATOV-016 [${lang}] PDF, requiresForm ON → form first, PDF URL not exposed`, { tag: ['@auto'] }, async ({ request, page }) => {
@@ -264,18 +303,12 @@ test.describe('DSR-654 catalog detail overlay', () => {
       expect.soft(exposed.pdfAssetRow, 'pdfAsset row in raw HTML').toBe(false);
     });
 
-    test(`DSR-CATOV-017 [${lang}] e-book, requiresForm OFF → opens ebookUrl in a new tab without a form`, { tag: ['@auto'] }, async ({ request, page }) => {
+    test(`DSR-CATOV-017 [${lang}] e-book, requiresForm OFF → detail redirects to ebookUrl without a form`, { tag: ['@auto'] }, async ({ request, page, browser }) => {
+      // JOB-20261022-14 rule 1 (IDLE-32): final URL = ebookUrl (location.replace, same tab), not a rendered detail page.
       const data = td.ebook;
-      const { target } = await rawCatalog(request, lang, data.id);
-      const catalog = new CatalogDetailPage(page);
-      await catalog.goto(target).catch(e => observations.push({ gotoError: String(e) }));
-      await page.waitForTimeout(redirectWaitMs);
-      observations.push({ finalUrl: page.url() });
-      await expect(catalog.action, 'view button').toBeVisible();
-      observations.push({ href: await catalog.action.getAttribute('href'), target: await catalog.action.getAttribute('target') });
-      await expect.soft(catalog.action, 'href = ebookUrl').toHaveAttribute('href', ebookUrl);
-      await expect.soft(catalog.action, 'target').toHaveAttribute('target', '_blank');
-      await expect.soft(catalog.form, 'no form').toHaveCount(0);
+      const { target, html } = await rawCatalog(request, lang, data.id);
+      const first = await expectRedirectToFile(page, browser, html, target, 'ebook');
+      expect.soft(normalize(first), 'redirect target = TD-654-01 ebookUrl').toBe(normalize(ebookUrl));
     });
 
     test(`DSR-CATOV-018 [${lang}] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)`, { tag: ['@auto'] }, async ({ request, page }) => {
@@ -296,22 +329,11 @@ test.describe('DSR-654 catalog detail overlay', () => {
       await expect.soft(catalog.action, 'target').toHaveAttribute('target', '_blank');
     });
 
-    test(`DSR-CATOV-019 [${lang}] catalog detail shows image, name, description, date and type label of the content CF`, { tag: ['@auto'] }, async ({ request, browser, page }) => {
+    test(`DSR-CATOV-019 [${lang}] non-form PDF catalog: detail redirects to the file instead of rendering image, name, description, date and type`, { tag: ['@auto'] }, async ({ request, browser, page }) => {
+      // JOB-20261022-14 rule 1 (IDLE-32): the rendered detail (image/name/description/date/type) exists only for form-gated catalogs.
       const data = td.pdf;
       const { target, html } = await rawCatalog(request, lang, data.id);
-      const raw = await parseRaw(browser, html);
-      const catalog = new CatalogDetailPage(page);
-      await catalog.goto(target);
-      await expect(catalog.block, 'catalog-detail block').toBeVisible();
-      const naturalWidth = await catalog.image.first().evaluate((img: HTMLImageElement) => img.naturalWidth).catch(() => 0);
-      const publishDate = row(raw.rows, 'publishDate') ?? '';
-      observations.push({ finalUrl: page.url(), naturalWidth, rows: raw.rows });
-      expect.soft(naturalWidth, 'image naturalWidth').toBeGreaterThan(0);
-      await expect.soft(catalog.title, 'name = catalogTitle').toHaveText(data.title);
-      await expect.soft(catalog.description, 'description = content CF').toHaveText(row(raw.rows, 'description') ?? '');
-      await expect.soft(catalog.date, 'date YYYY.MM.DD').toHaveText(dateFormat);
-      await expect.soft(catalog.date, 'date = publishDate').toHaveText(publishDate.slice(0, 10).replace(/-/g, '.'));
-      await expect.soft(catalog.typeLabel, 'type label').not.toHaveText('');
+      await expectRedirectToFile(page, browser, html, target, 'pdf');
     });
 
     test(`DSR-CATOV-020 [${lang}] layout PC 1440 / SP 375 vs pre-overlay demo`, () => { test.fixme(true, visualPending); });

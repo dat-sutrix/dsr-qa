@@ -16,7 +16,10 @@ export class CatalogDisplayPage {
     const query = this.page.waitForResponse(r => catalogQuery.test(r.url()), { timeout: 15_000 }).catch(() => null);
     const response = await this.page.goto(path);
     const json = await (await query)?.json().catch(() => null);
-    return { response, data: json?.data?.dmCatalogList?.items ?? [] };
+    // dsr-catalog-list: data.related.items[] = DSR CF { _path, isActive, isBoothLimited, catalog: content CF }.
+    const items: { _path?: string; isActive?: boolean | null; isBoothLimited?: boolean | null; catalog?: CatalogItem | null }[] = json?.data?.related?.items ?? [];
+    const data = items.filter(i => i.catalog).map(i => ({ ...i.catalog!, dsrPath: i._path, isActive: i.isActive, isBoothLimited: i.isBoothLimited }));
+    return { response, data };
   }
 
   // TODO: data-testid catalog-title / catalog-thumbnail / catalog-link / catalog-date / catalog-label
@@ -31,7 +34,7 @@ export class CatalogDisplayPage {
     return this.items.filter({ has: this.page.locator('.cards-card-title a', { hasText: exact }) });
   }
 
-  // dm-catalog-list is not filtered by language or folder (JOB-20261020-04), so CFs can share a title and cards carry no CF id.
+  // CFs can share a title (dev sample titles) and cards carry no CF id.
   // Title-matched cards are usable only when every CF with that title links the same way; otherwise returns null.
   cards(data: CatalogItem[], cf: CatalogItem): { cards: Locator; twins: number } | null {
     const key = (i: CatalogItem) => JSON.stringify([i.catalogType, i.requiresForm === true, i.ebookUrl, i.pdfAsset?._publishUrl ?? null]);

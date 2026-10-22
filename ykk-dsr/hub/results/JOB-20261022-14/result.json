@@ -1,0 +1,2011 @@
+{
+  "job": "JOB-20261022-14",
+  "agent": "claude-code",
+  "us": "DSR-557, DSR-570, DSR-654",
+  "env": "dev",
+  "started": "2026-10-22T07:46:06Z",
+  "finished": "2026-10-22T08:09:53Z",
+  "status": "done",
+  "runs": {
+    "557-page": {
+      "startTime": "2026-10-22T07:49:40.006Z",
+      "duration": 94390.154,
+      "expected": 24,
+      "skipped": 6,
+      "unexpected": 0,
+      "flaky": 0,
+      "start": "2026-10-22T07:49:38Z",
+      "end": "2026-10-22T07:51:14Z"
+    },
+    "570-page": {
+      "startTime": "2026-10-22T07:51:15.848Z",
+      "duration": 45607.662,
+      "expected": 12,
+      "skipped": 2,
+      "unexpected": 2,
+      "flaky": 0,
+      "start": "2026-10-22T07:51:14Z",
+      "end": "2026-10-22T07:52:01Z"
+    },
+    "654-page2": {
+      "startTime": "2026-10-22T08:03:54.922Z",
+      "duration": 242024.74300000002,
+      "expected": 40,
+      "skipped": 7,
+      "unexpected": 15,
+      "flaky": 0,
+      "start": "2026-10-22T08:03:53Z",
+      "end": "2026-10-22T08:07:57Z"
+    },
+    "557-live": {
+      "startTime": "2026-10-22T07:57:02.051Z",
+      "duration": 91199.965,
+      "expected": 24,
+      "skipped": 6,
+      "unexpected": 0,
+      "flaky": 0,
+      "start": "2026-10-22T07:57:00Z",
+      "end": "2026-10-22T07:58:33Z"
+    },
+    "570-live": {
+      "startTime": "2026-10-22T07:58:34.680Z",
+      "duration": 70694.495,
+      "expected": 12,
+      "skipped": 2,
+      "unexpected": 2,
+      "flaky": 0,
+      "start": "2026-10-22T07:58:33Z",
+      "end": "2026-10-22T07:59:45Z"
+    },
+    "654-live": {
+      "startTime": "2026-10-22T07:59:46.821Z",
+      "duration": 237535.044,
+      "expected": 40,
+      "skipped": 7,
+      "unexpected": 15,
+      "flaky": 0,
+      "start": "2026-10-22T07:59:45Z",
+      "end": "2026-10-22T08:03:44Z"
+    }
+  },
+  "superseded_run": {
+    "654-page": "07:52–07:57Z, 36/19/7 – first redirect helper asserted the last navigation; CATOV-001 ebook + 017 failed on the external ykkfastening.com → ykkdigitalshowroom.com hop (test bug, fixed, rerun as 654-page2)"
+  },
+  "totals": {
+    "pass": 152,
+    "fail": 34,
+    "blocked": 16,
+    "skip": 14
+  },
+  "tsc": "exit 0, no errors",
+  "tests": [
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATV-012 catalog item shows thumbnail and title",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATV-013 PDF item without form opens in a new tab",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATV-016 e-book item opens ebookUrl without form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATV-018 NEW label within 10 days of publishDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (ja)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATV-019 UPDATE label within 10 days of updateDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (ja)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (ja)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATV-012 catalog item shows thumbnail and title",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATV-013 PDF item without form opens in a new tab",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATV-016 e-book item opens ebookUrl without form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATV-018 NEW label within 10 days of publishDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (en)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATV-019 UPDATE label within 10 days of updateDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (en)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (en)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video page > DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video page > DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video page > DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video page > DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video live > DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video live > DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video live > DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja video live > DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video page > DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video page > DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video page > DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video page > DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video live > DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video live > DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video live > DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en video live > DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-001 [ja] catalog detail header renders",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-002 [ja] download form fields, labels, consent and button present",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-005 [ja] requiresForm=false card downloads PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-006 [ja] requiresForm=true card leads to the download form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-018 [ja] e-book form card links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATDL-001 [en] catalog detail header renders",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATDL-002 [en] download form fields, labels, consent and button present",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATDL-005 [en] requiresForm=false card downloads PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATDL-006 [en] requiresForm=true card leads to the download form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATDL-018 [en] e-book form card links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-003",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-007",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit",
+      "result": "fail",
+      "error": "gated PDF URL delivered before submit: dsr-catalog-list item qa190-cat-pdf-form (requiresForm=true) carries pdfAsset._publishUrl",
+      "evidence": "evidence/DSR-CATDL-007_ja_page.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-CATDL-010",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-010 [ja] catalog ID handed to the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-017",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "ja > DSR-CATDL-017 [ja] unknown or missing catalog ID never shows another catalog form",
+      "result": "skip",
+      "error": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=true); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "en > DSR-CATDL-016 [en] fixed texts translated (no Japanese)",
+      "result": "fail",
+      "error": "en overlay form /en/library/catalog/qa190-cat-pdf-form renders all labels, options, consent and button in Japanese",
+      "evidence": "evidence/DSR-CATDL-016_en_page.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "cn",
+      "host": ".aem.page",
+      "title": "cn > DSR-CATDL-016 [cn] fixed texts translated (Chinese)",
+      "result": "skip",
+      "error": "cn: no /master/cn (Issue #18)"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-pdf_page.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-pdf: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-pdf: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-pdf-form_page.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-pdf-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-pdf-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-ebook_page.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-ebook: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-ebook: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-ebook-form_page.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-ebook-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-ebook-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-004",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-004 [ja] naming rule: uppercase / underscore catalog URL → 404",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-005 [ja] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-006",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-006 [ja] unpublished DSR CF → 404 on both hosts, removed from query-index",
+      "result": "skip",
+      "error": "TD-654-03 exists in en only (A7)"
+    },
+    {
+      "tc": "DSR-CATOV-007",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-007 [ja] catalog/search is not taken by the overlay",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-008",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-008 [ja] catalog detail page makes 0 GraphQL requests; html lang matches the site",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-012",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-012 [ja] catalog list card links to the overlay page",
+      "result": "fail",
+      "error": "no card titled TD-190 'QA190 PDF catalog' (dev sample titles); pdf card links to the PDF by design (IDLE-32) – TC outside JOB-14 scope",
+      "evidence": "evidence/DSR-CATOV-012_ja_page.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-015",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-015 [ja] PDF, requiresForm OFF → detail redirects to the PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-016 [ja] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-017",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-017 [ja] e-book, requiresForm OFF → detail redirects to ebookUrl without a form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-018 [ja] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "blocked",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-019",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-019 [ja] non-form PDF catalog: detail redirects to the file instead of rendering image, name, description, date and type",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "ja",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-020 [ja] layout PC 1440 / SP 375 vs pre-overlay demo",
+      "result": "skip",
+      "error": "Visual – codex job"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-pdf_page.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-pdf: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-pdf: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-pdf-form_page.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-pdf-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-pdf-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-ebook_page.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-ebook: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-ebook: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-ebook-form_page.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-ebook-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-ebook-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-004",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-004 [en] naming rule: uppercase / underscore catalog URL → 404",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-005 [en] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-006",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-006 [en] unpublished DSR CF → 404 on both hosts, removed from query-index",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-007",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-007 [en] catalog/search is not taken by the overlay",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-008",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-008 [en] catalog detail page makes 0 GraphQL requests; html lang matches the site",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-012",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-012 [en] catalog list card links to the overlay page",
+      "result": "fail",
+      "error": "no card titled TD-190 'QA190 PDF catalog' (dev sample titles); pdf card links to the PDF by design (IDLE-32) – TC outside JOB-14 scope",
+      "evidence": "evidence/DSR-CATOV-012_en_page.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-015",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-015 [en] PDF, requiresForm OFF → detail redirects to the PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-016 [en] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-017",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-017 [en] e-book, requiresForm OFF → detail redirects to ebookUrl without a form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-018 [en] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "blocked",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-019",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-019 [en] non-form PDF catalog: detail redirects to the file instead of rendering image, name, description, date and type",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-020 [en] layout PC 1440 / SP 375 vs pre-overlay demo",
+      "result": "skip",
+      "error": "Visual – codex job"
+    },
+    {
+      "tc": "DSR-CATOV-009",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-009 [en] DSR CF published to Preview only → served on .aem.page, not on .aem.live",
+      "result": "fail",
+      "error": "qa654-preview on .aem.page has no 'QA654 preview' (same as JOB-10)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50
+    },
+    {
+      "tc": "DSR-CATOV-010",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-010 [en] DSR CF in a subfolder → no page (directory-strict)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-011",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-011 [en] content CF only (no DSR CF) → no page",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-013",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-013 [en] content CF change shows only after DSR CF republish",
+      "result": "skip",
+      "error": "Manual – QA-PT"
+    },
+    {
+      "tc": "DSR-CATOV-014",
+      "lang": "en",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-014 [en] content CF unpublished → page unavailable + noindex, visitor sent to the catalog list",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "cn",
+      "host": ".aem.page",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [cn] catalog overlay pages",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV"
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATV-012 catalog item shows thumbnail and title",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATV-013 PDF item without form opens in a new tab",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATV-016 e-book item opens ebookUrl without form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATV-018 NEW label within 10 days of publishDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (ja)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATV-019 UPDATE label within 10 days of updateDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (ja)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (ja)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATV-012 catalog item shows thumbnail and title",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATV-013 PDF item without form opens in a new tab",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATV-016 e-book item opens ebookUrl without form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATV-018 NEW label within 10 days of publishDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (en)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATV-019 UPDATE label within 10 days of updateDate",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (en)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+      "result": "blocked",
+      "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (en)",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video page > DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video page > DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video page > DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video page > DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video live > DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video live > DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video live > DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja video live > DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video page > DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video page > DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video page > DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video page > DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video live > DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video live > DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-002",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video live > DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATV-006",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en video live > DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-001 [ja] catalog detail header renders",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-002 [ja] download form fields, labels, consent and button present",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-005 [ja] requiresForm=false card downloads PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-006 [ja] requiresForm=true card leads to the download form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-018 [ja] e-book form card links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATDL-001 [en] catalog detail header renders",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-002",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATDL-002 [en] download form fields, labels, consent and button present",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATDL-005 [en] requiresForm=false card downloads PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATDL-006 [en] requiresForm=true card leads to the download form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-018",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATDL-018 [en] e-book form card links to the detail page with the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-003",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-007",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit",
+      "result": "fail",
+      "error": "gated PDF URL delivered before submit: dsr-catalog-list item qa190-cat-pdf-form (requiresForm=true) carries pdfAsset._publishUrl",
+      "evidence": "evidence/DSR-CATDL-007_ja_live.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-CATDL-010",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-010 [ja] catalog ID handed to the form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATDL-017",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "ja > DSR-CATDL-017 [ja] unknown or missing catalog ID never shows another catalog form",
+      "result": "skip",
+      "error": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=true); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "en > DSR-CATDL-016 [en] fixed texts translated (no Japanese)",
+      "result": "fail",
+      "error": "en overlay form /en/library/catalog/qa190-cat-pdf-form renders all labels, options, consent and button in Japanese",
+      "evidence": "evidence/DSR-CATDL-016_en_live.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "cn",
+      "host": ".aem.live",
+      "title": "cn > DSR-CATDL-016 [cn] fixed texts translated (Chinese)",
+      "result": "skip",
+      "error": "cn: no /master/cn (Issue #18)"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-pdf_live.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-pdf: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-pdf: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-pdf-form_live.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-pdf-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-pdf-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-ebook_live.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-ebook: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-ebook: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [ja] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-ebook-form_live.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [ja] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [ja] qa190-cat-ebook-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [ja] qa190-cat-ebook-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-004",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-004 [ja] naming rule: uppercase / underscore catalog URL → 404",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-005 [ja] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-006",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-006 [ja] unpublished DSR CF → 404 on both hosts, removed from query-index",
+      "result": "skip",
+      "error": "TD-654-03 exists in en only (A7)"
+    },
+    {
+      "tc": "DSR-CATOV-007",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-007 [ja] catalog/search is not taken by the overlay",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-008",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-008 [ja] catalog detail page makes 0 GraphQL requests; html lang matches the site",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-012",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-012 [ja] catalog list card links to the overlay page",
+      "result": "fail",
+      "error": "no card titled TD-190 'QA190 PDF catalog' (dev sample titles); pdf card links to the PDF by design (IDLE-32) – TC outside JOB-14 scope",
+      "evidence": "evidence/DSR-CATOV-012_ja_live.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-015",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-015 [ja] PDF, requiresForm OFF → detail redirects to the PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-016 [ja] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-017",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-017 [ja] e-book, requiresForm OFF → detail redirects to ebookUrl without a form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-018 [ja] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "blocked",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-019",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-019 [ja] non-form PDF catalog: detail redirects to the file instead of rendering image, name, description, date and type",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "ja",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-020 [ja] layout PC 1440 / SP 375 vs pre-overlay demo",
+      "result": "skip",
+      "error": "Visual – codex job"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-pdf_live.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-pdf: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-pdf: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-pdf-form_live.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-pdf-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-pdf-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots=noindex; requiresForm row absent (TC expects \"false\"); title/og:image OK",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-ebook_live.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-ebook: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-ebook: live page listed once in query-index and sitemap",
+      "result": "fail",
+      "error": "non-form page in query-index but not in sitemap (consistent with its robots=noindex)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [en] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "title = content CF dev sample (e.g. \"catalog pdf form\"), TD-190 \"QA190 …\" not seeded; page + form OK",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-ebook-form_live.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-002 [en] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-003",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-003 [en] qa190-cat-ebook-form: live-published catalog is served on .aem.page and .aem.live",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-021 [en] qa190-cat-ebook-form: live page listed once in query-index and sitemap",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-004",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-004 [en] naming rule: uppercase / underscore catalog URL → 404",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-005 [en] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-006",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-006 [en] unpublished DSR CF → 404 on both hosts, removed from query-index",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-007",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-007 [en] catalog/search is not taken by the overlay",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-008",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-008 [en] catalog detail page makes 0 GraphQL requests; html lang matches the site",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-012",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-012 [en] catalog list card links to the overlay page",
+      "result": "fail",
+      "error": "no card titled TD-190 'QA190 PDF catalog' (dev sample titles); pdf card links to the PDF by design (IDLE-32) – TC outside JOB-14 scope",
+      "evidence": "evidence/DSR-CATOV-012_en_live.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-015",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-015 [en] PDF, requiresForm OFF → detail redirects to the PDF directly",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-016 [en] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-017",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-017 [en] e-book, requiresForm OFF → detail redirects to ebookUrl without a form",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-018 [en] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "blocked",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-019",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-019 [en] non-form PDF catalog: detail redirects to the file instead of rendering image, name, description, date and type",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-020",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-020 [en] layout PC 1440 / SP 375 vs pre-overlay demo",
+      "result": "skip",
+      "error": "Visual – codex job"
+    },
+    {
+      "tc": "DSR-CATOV-009",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-009 [en] DSR CF published to Preview only → served on .aem.page, not on .aem.live",
+      "result": "fail",
+      "error": "qa654-preview on .aem.page has no 'QA654 preview' (same as JOB-10)",
+      "evidence": null,
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50
+    },
+    {
+      "tc": "DSR-CATOV-010",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-010 [en] DSR CF in a subfolder → no page (directory-strict)",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-011",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-011 [en] content CF only (no DSR CF) → no page",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-013",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-013 [en] content CF change shows only after DSR CF republish",
+      "result": "skip",
+      "error": "Manual – QA-PT"
+    },
+    {
+      "tc": "DSR-CATOV-014",
+      "lang": "en",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-014 [en] content CF unpublished → page unavailable + noindex, visitor sent to the catalog list",
+      "result": "pass",
+      "error": ""
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "cn",
+      "host": ".aem.live",
+      "title": "DSR-654 catalog detail overlay > DSR-CATOV-001 [cn] catalog overlay pages",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-557.ts",
+    "pages/CatalogDisplayPage.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+    "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+    "docs/DSR-654/assumptions.md",
+    "docs/DSR-570/automation-spec.md"
+  ],
+  "reports": [
+    "results/DSR-557/DEV/automation-run-20261022-job14.md",
+    "results/DSR-570/DEV/automation-run-20261022-job14.md",
+    "results/DSR-654/DEV/automation-run-20261022-job14.md"
+  ],
+  "questions": []
+}

@@ -1,7 +1,7 @@
-import { test, expect, type Page, type Request, type Response } from '@playwright/test';
+import { test, expect, type Page, type Response } from '@playwright/test';
 import { CatalogDownloadPage } from '../../pages/CatalogDownloadPage';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
-import { type CatalogItem, coreItem, contentCfPath, detailPath, oldFolder } from '../../fixtures/dsr-557';
+import { type CatalogItem, coreItem, contentCfPath, detailPath, oldFolder, listBlocked } from '../../fixtures/dsr-557';
 import { viewports, languages, type Language, formPath, listPath, td, consentText, dateFormat, japanese, unknownId, blockedData } from '../../fixtures/dsr-570';
 
 // Read-only: the download button is never clicked; no form is submitted (A7).
@@ -37,6 +37,8 @@ async function openList(page: Page, lang: Language) {
   const { response, data } = await list.goto(listPath(lang));
   test.skip(response?.status() === 404, blockedData(`${lang} list page ${listPath(lang)} HTTP 404`));
   expect(response?.status()).toBe(200);
+  // JOB-20261022-14 rule 3: empty dsr-catalog-list → blocked by the AEM query deploy, not a fail.
+  test.skip(!data.length, `${listBlocked}: dsr-catalog-list returned 0 items (${lang})`);
   await expect(list.items.first()).toBeVisible();
   return { list, data: data as ListItem[] };
 }
@@ -48,7 +50,7 @@ async function card(list: CatalogDisplayPage, data: ListItem[], lang: Language, 
   const match = item ? list.cards(data, item) : null;
   const rendered = match ? await match.cards.count() : 0;
   observations.push({ language: lang, catalogId, cfPath, inResponse: !!item, title: item?.catalogTitle, catalogType: item?.catalogType, requiresForm: item?.requiresForm, ebookUrl: item?.ebookUrl, pdfAsset: item?.pdfAsset?._publishUrl ?? null, rendered, twins: match?.twins ?? null });
-  test.skip(!item, blockedData(`${cfPath} absent from dm-catalog-list – ${cause}`));
+  test.skip(!item, blockedData(`${cfPath} absent from dsr-catalog-list – ${cause}`));
   test.skip(gated && item!.requiresForm !== requiresForm, blockedData(`${catalogId} (${lang}) requiresForm=${item!.requiresForm} in ${cfPath}; TD expects ${requiresForm} – ${cause}`));
   test.skip(!match, blockedData(`title "${item!.catalogTitle}" shared by CFs that link differently; card not attributable to ${cfPath}`));
   test.skip(!rendered, blockedData(`card "${item!.catalogTitle}" (${catalogId}) not rendered on ${listPath(lang)} – ${cause}`));
@@ -115,32 +117,22 @@ for (const lang of languages) {
       await expect(form.name).toHaveText(cf!.catalogTitle);
     });
 
-    test(`DSR-CATDL-018 [${lang}] e-book form card opens ebookUrl without form`, { tag: ['@auto'] }, async ({ page, context }) => {
+    // DSR-655 Y3: e-book + requiresForm is gated like a PDF; the card links to the overlay detail page with the form (JOB-20261022-14 rule 2).
+    test(`DSR-CATDL-018 [${lang}] e-book form card links to the detail page with the form`, { tag: ['@auto'] }, async ({ page }) => {
       const { list, data } = await openList(page, lang);
       const { card: item, item: cf } = await card(list, data, lang, 'ebookForm', 'TD-570-04', true);
-      test.skip(!cf?.ebookUrl, blockedData(`${td.ebookForm.catalogId} has no ebookUrl in dm-catalog-list (ebookUrl fix QA-PT 16/10)`));
-      const ebookUrl = cf!.ebookUrl!;
-      const links = await list.links(item).evaluateAll((as, base) => as.map(a => ({ href: new URL(a.getAttribute('href')!, base).href, target: a.getAttribute('target'), rel: a.getAttribute('rel') })), page.url());
-      // Navigations outside the list page, in order. frame() throws for a popup's first navigation (issued before its frame exists).
-      const navigations: string[] = [];
-      const record = (r: Request) => {
-        if (!r.isNavigationRequest()) return;
-        try { if (r.frame().page() === page || r.frame().parentFrame()) return; } catch { /* popup navigation before frame creation */ }
-        navigations.push(r.url());
-      };
-      context.on('request', record);
-      const [popup] = await Promise.all([page.waitForEvent('popup'), list.title(item).click()]);
-      await expect.poll(() => navigations.length, { timeout: 15_000 }).toBeGreaterThan(0);
-      context.off('request', record);
-      const first = navigations[0];
-      observations.push({ ebookUrl, requiresForm: cf!.requiresForm, catalogType: cf!.catalogType, links, popupNavigations: navigations, popupUrl: popup.url(), originalUrl: page.url() });
+      const expected = new URL(detailPath(lang, td.ebookForm.catalogId), page.url()).href;
+      const links = await list.links(item).evaluateAll((as, base) => as.map(a => ({ href: new URL(a.getAttribute('href')!, base).href, target: a.getAttribute('target') })), page.url());
+      observations.push({ ebookUrl: cf!.ebookUrl, requiresForm: cf!.requiresForm, catalogType: cf!.catalogType, links, expected });
       expect.soft(cf!.catalogType).toBe('ebook');
-      for (const link of links) {
-        expect.soft(normalize(link.href), 'href = ebookUrl').toBe(normalize(ebookUrl));
-        expect.soft(link.target, 'target').toBe('_blank');
-      }
-      expect(normalize(first), 'first popup navigation = ebookUrl (no form page in between)').toBe(normalize(ebookUrl));
-      await popup.close();
+      expect.soft(links.filter(l => normalize(l.href) !== normalize(expected)), 'card links not pointing to the overlay detail page').toEqual([]);
+      await page.goto(expected);
+      const form = new CatalogDownloadPage(page);
+      observations.push({ finalUrl: page.url(), forms: await form.form.count(), name: await form.name.allInnerTexts() });
+      expect(normalize(page.url()), 'stays on the detail page').toBe(normalize(expected));
+      // Read-only: the form is never submitted.
+      await expect(form.form).toHaveCount(1);
+      await expect(form.submit).toBeVisible();
     });
   });
 }
@@ -176,7 +168,7 @@ test.describe('ja', () => {
     // Merge record: the pre-merge gated CF (old folder) is still listed (JOB-20261020-04).
     const old = data.find(i => i._path === `${oldFolder}${td.pdfForm.catalogId}`);
     observations.push({ oldGatedCf: old ? { path: old._path, requiresForm: old.requiresForm, pdfAsset: old.pdfAsset?._publishUrl ?? null } : null });
-    test.skip(!gated, blockedData(`${contentCfPath('ja', td.pdfForm.catalogId)} absent from dm-catalog-list on ${listPath('ja')}`));
+    test.skip(!gated, blockedData(`${contentCfPath('ja', td.pdfForm.catalogId)} absent from dsr-catalog-list on ${listPath('ja')}`));
     test.skip(gated!.requiresForm !== true, blockedData(`${td.pdfForm.catalogId} (ja) requiresForm=${gated!.requiresForm} in ${contentCfPath('ja', td.pdfForm.catalogId)}; nothing is gated (TD-570-03 expects true)`));
     const listBodies = await Promise.all(bodies.splice(0));
     const listDom = await page.content();
@@ -192,7 +184,7 @@ test.describe('ja', () => {
     page.off('response', capture);
 
     const where = (body: string) => !!file && body.includes(file);
-    const gatedHits = gated!.pdfAsset ? [`dm-catalog-list response: item ${gated!.catalogId} (requiresForm=${gated!.requiresForm}) pdfAsset._publishUrl = ${gated!.pdfAsset._publishUrl}`] : [];
+    const gatedHits = gated!.pdfAsset ? [`dsr-catalog-list response: item ${gated!.catalogId} (requiresForm=${gated!.requiresForm}) pdfAsset._publishUrl = ${gated!.pdfAsset._publishUrl}`] : [];
     // The same asset file is shared by requiresForm=false CFs on DEV, so plain string hits on the list page are not attributable to the gated CF.
     const sharedBy = data.filter(i => i !== gated && file && JSON.stringify(i.pdfAsset ?? '').includes(file)).map(i => `${i.catalogId} (requiresForm=${i.requiresForm})`);
     const listHits = listBodies.filter(b => where(b.body)).map(b => b.url).concat(where(listDom) ? ['list DOM'] : []);
