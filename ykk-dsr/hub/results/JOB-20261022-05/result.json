@@ -1,0 +1,22 @@
+{
+  "job": "JOB-20261022-05",
+  "agent": "claude-code",
+  "us": "DSR-664",
+  "env": "dev",
+  "started": "2026-10-22T02:27:11Z",
+  "finished": "2026-10-22T02:33:38Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-VCAP-001", "lang": "en", "result": "fail", "error": "repro: authored video block (block library, above 21. Accordion) has text node \"null\" after .vp-frame; no caption. live+page", "evidence": "evidence/DSR-VCAP-001_en_live.png", "suspect": "product", "cause": "none", "confidence": 95, "hosts": "live+page" },
+    { "tc": "DSR-VCAP-002", "lang": "en", "result": "fail", "error": "repro: booth TOP /en/product/application/fashion/fashion code-built video block (booth-top media.js, link only) shows \"null\". page only; live 404", "evidence": "evidence/DSR-VCAP-002_en_page.png", "suspect": "product", "cause": "none", "confidence": 95, "hosts": "page" },
+    { "tc": "DSR-VCAP-002", "lang": "en", "result": "skip", "error": "live /en/product/application/fashion/fashion returns 404 (not published on this host)", "evidence": "", "suspect": "", "hosts": "live" },
+    { "tc": "DSR-VCAP-003", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "", "hosts": "live+page" },
+    { "tc": "DSR-VCAP-004", "lang": "en", "result": "pass", "error": "", "evidence": "", "suspect": "", "hosts": "page" },
+    { "tc": "DSR-VCAP-004", "lang": "en", "result": "skip", "error": "live /en/products/46 returns 404 (not published on this host)", "evidence": "", "suspect": "", "hosts": "live" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/video-block/DSR-664.video-caption-null.spec.ts"],
+  "reports": ["results/DSR-664/DEV/automation-run-20261022.md"],
+  "root_cause_hint": "blocks/video/video.js:80-83 block.replaceChildren(player.element, caption ? el('p', ...) : null) - replaceChildren() stringifies null into a \"null\" text node (unlike dom.js el(), which filters null). Fix: drop the null child (e.g. ...(caption ? [el(...)] : [])).",
+  "questions": []
+}
