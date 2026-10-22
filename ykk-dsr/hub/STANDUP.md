@@ -22,9 +22,9 @@ In progress
 
 Blockers / need help
 
-* @martin portal : please fix DSR-665 (video search page reload loop) and DSR-659 (thumbnail meta). Also: og:image is "about:error" on every overlay page – could the space in the thumbnail file name "image 7.png" be the cause? Is the catalog list already on the overlay / language-filtered? (it still shows 15 old CFs, same 26 cards on ja and en). Is isActive OFF supposed to redirect to the list?
+* @martin portal : ~~please fix DSR-665~~ (✅ Done 22/10) and DSR-659 (thumbnail meta – reassigned with comment 64851). Also: og:image is "about:error" on every overlay page – could the space in the thumbnail file name "image 7.png" be the cause? Is the catalog list already on the overlay / language-filtered? (it still shows 15 old CFs, same 26 cards on ja and en). Is isActive OFF supposed to redirect to the list?
 * @martin portal / @Quentin Milavec : non-form catalogs open the PDF directly with no detail page. Is this intended? (DSR-654)
-* @Quentin Milavec : news-article template for DSR-566/653 is still missing. We propose moving them to Sprint 13 – please confirm.
+* ~~@Quentin Milavec : news-article template for DSR-566/653 is still missing. We propose moving them to Sprint 13 – please confirm.~~ ✅ đã trả lời DSR-566 (Ngọc 19/10: template deployed DEV) – KHÔNG gửi. Thay bằng: "@Quentin Milavec : DSR-566/653 – the news-article template is already on DEV (Ngọc, 19/10); QA tests on 23/10, no Sprint 13 move. DSR-665 is fixed and closed, so DSR-587 is unblocked."
 * FYI DSR-638: test-space pages are moving to public URLs; QA will switch test paths once done. Some public paths (article qa529-01, catalog qa190-cat-pdf) already return 404 on .aem.live.
 
 Plan
@@ -38,8 +38,8 @@ Plan
 - Retest sáng nay: 657/658/660/647/538 **Pass DEV** → Dat đóng hôm nay; 659 chưa fix → trả Martin.
 - Bug mới **DSR-665** (High): trang video/search reload vô hạn – chặn Done 587.
 - 557/570/654/586: fail còn lại là **data test**, tối nay sửa → automation sáng 23/10.
-- Đích Done DEV dời sang **23/10** (buffer sprint); 566/653 đề xuất Sprint 13 (chưa có template).
-- Cần Martin: 665, 659, og:image, catalog list; cần Quentin: chốt 566/653 sang Sprint 13.
+- Đích Done DEV dời sang **23/10** (buffer sprint); ~~566/653 đề xuất Sprint 13~~ ✅ đã trả lời DSR-566 19/10 – KHÔNG gửi; 566/653 đích 23/10.
+- Cần Martin: ~~665~~ (Done), 659, og:image, catalog list; ~~cần Quentin: chốt 566/653 sang Sprint 13~~ ✅ KHÔNG gửi – báo Quentin template đã có.
 
 **Nếu bị hỏi:**
 - *Sao hạn 22/10 trượt?* → Overlay 404 do dev fix auto-gen 21/10 + data test sai; data sửa đêm 21–22/10, còn trong buffer 23/10.
@@ -57,13 +57,13 @@ Plan
 - Close DSR-647/657/658/660/538; move DSR-659 back to Martin.
 - Night: data fixes 586/570/557/654, negative data 587/586, DSR-570 manual 6 TCs.
 - Automation 23/10 morning: 586/557/570/654 rerun (JOB-20261022-03).
-- Sprint 12 deadline today: report split of 566/653 (and leftovers) to Quentin at 17:10.
+- ~~Sprint 12 deadline today: report split of 566/653 (and leftovers) to Quentin at 17:10.~~ ✅ không cần – 566/653 trong Sprint 12 (template có từ 19/10)
 
 **Blockers / need help**
-- Martin: fix DSR-665 + DSR-659 – blocks 587, 529 Done 23/10.
+- Martin: fix DSR-659 (~~665~~ ✅ Done) – blocks 529 Done 23/10.
 - Martin: og:image `about:error`, catalog list old CFs, isActive redirect – 587/557/654.
 - Martin/Quentin: non-form catalog opens PDF directly – intended? (DSR-654, by 23/10).
-- Quentin: news-article template / Sprint 13 decision – DSR-566/653.
+- ~~Quentin: news-article template / Sprint 13 decision – DSR-566/653.~~ ✅ đã trả lời DSR-566 19/10 – KHÔNG gửi
 
 ## D.
 ### 🐞 Bug < 80% – Dat chốt sáng nay
@@ -105,4 +105,4 @@ Jira: 16 ticket mở giao Dat · đã lên kế hoạch 14
 
 ⚠ Lệch DASHBOARD mục 1 vs Jira: mục 1 ghi "10 mở" (566+653 tính 1); Jira hiện 16 (thêm 4 bug 657/658/659/660 – đã có trong BUGS.md, + 664, 590). DSR-665 giao Martin (không tính).
 
-Dat cần nhắc trong meeting: DSR-665 + DSR-659 là điều kiện Done 587/529 ngày 23/10, Martin cần fix hôm nay; Quentin chốt 566/653 sang Sprint 13; xác nhận DSR-590 có giao QA không.
+Dat cần nhắc trong meeting: DSR-665 + DSR-659 là điều kiện Done 587/529 ngày 23/10, Martin cần fix hôm nay; ~~Quentin chốt 566/653 sang Sprint 13~~ ✅ KHÔNG gửi (template có 19/10); xác nhận DSR-590 có giao QA không.

@@ -4,6 +4,14 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-22 | DSR-587 | Quentin | 11:43 JST comment "Blocked by DSR-665" – DSR-665 đã Done 13:40 JST (retest Pass) → 587 không còn blocked | DSR-587 comment 64827 |
+| 2026-10-22 | DSR-566/653 | Quentin | 11:54 JST comment "Blocked by Missing News Article Template" – **mâu thuẫn** Ngọc 19/10 (template đã deploy DEV) → Dat đính chính, không dời S13 | DSR-566 c.64832 · DSR-653 c.64833 |
+| 2026-10-22 | DSR-558 | Quentin | DSR-558 (TC 動画・カタログ, Nakamoto) blocked by DSR-664 | DSR-558 comment 64830 |
+| 2026-10-22 | DSR-664 | QA→Ngọc | Repro YES DEV (en, .page+.live); giao Ngọc Sprint 12; nghi `blocks/video/video.js:80-83` replaceChildren(null); spec retest `tests/video-block/DSR-664.video-caption-null.spec.ts` | DSR-664 comment 64849 |
+| 2026-10-22 | DSR-665/538 | QA | Retest Pass DEV → Done | DSR-665 c.64850 · DSR-538 c.64847 |
+| 2026-10-22 | DSR-546 | Quentin | SendGrid webhook blocked by access/API key (DSR-302) | DSR-546 comment 64828 |
+| 2026-10-22 | DSR-636 | Kohei | Directory map sheet (gid 1578088003, file 1NCngsRiDeb-IkkSDYSVgpjRNoXb8RbcV) + dev EDS domain ví dụ `main--dsr-eds-dev--sutrix-projects.aem.page/ja/about-fasteners` (gửi Mayuka) | DSR-636 c.64841/64842 |
+| 2026-10-22 | DSR-583 | Quentin | "got answer from backlog" (câu hỏi SP 2 cột đã có trả lời ở Backlog) | DSR-583 comment 64814 |
 | 2026-10-22 | DSR-664 | Nakamoto | Bug mới: video block hiện "null" khi caption trống; giao Dat, chưa gán dev, chưa sprint | Jira DSR-664 |
 | 2026-10-21 | DSR-590 | Ngọc | Eco TOP đã xong trên DEV, data là demo → chỉ cần check layout; Figma mới node 3351-51595 (Martin) | DSR-590 comment 21/10 18:18 |
 | 2026-10-21 | DM_product | Martin | DM_product ver0.4 đã lên DEV; meta article 529 dùng tên không gạch: publicationdate / updatedate / searchkeywords / category | chat Martin 21/10 |
