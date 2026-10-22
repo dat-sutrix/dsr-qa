@@ -54,10 +54,13 @@ tc-backlog: 2/2 done 21/10 (529 re-baseline, DSR-654 21 TC) · backlog trống �
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
 |---|---|---|---|---|
-| BUG-OVL-INACTIVE (587/586/654) | 表示フラグ OFF: json2html 200 + `unavailable \| inactive`, không redirect list (BL-OVL-1) | 50% | Chưa quan sát end-to-end; Martin chưa trả lời | Giữ; Night 22/10 seed TD-587-07 `qa587-inactive` → agent 23/10 |
-| BUG-OVL-OGIMG (587, cả catalog) | Raw `og:image` = `about:error` trên mọi trang overlay QA (og:image:secure_url đúng 200) – VOV-003, MOVIE-029 | 65% | Mọi CF test dùng thumbnail `image 7.png` (có dấu cách) → chưa loại trừ data | Hỏi Martin (📣); nếu cần: QA-PT đổi thumbnail 1 CF sang tên không dấu cách → agent so sánh |
+| ~~BUG-OVL-INACTIVE~~ ✅ không phải bug (Martin 22/10: redirect ở browser) → JOB-20261022-13 kiểm bằng browser | | | | |
+| (cũ) BUG-OVL-INACTIVE (587/586/654) | 表示フラグ OFF: json2html 200 + `unavailable \| inactive`, không redirect list (BL-OVL-1) | 50% | Chưa quan sát end-to-end; Martin chưa trả lời | Giữ; Night 22/10 seed TD-587-07 `qa587-inactive` → agent 23/10 |
+| ~~BUG-OVL-OGIMG~~ ✅ Martin fix PR #206 (22/10) – cần republish DSR CF → JOB-11/12 agent republish → JOB-13 retest | | | | |
+| (cũ) BUG-OVL-OGIMG (587, cả catalog) | Raw `og:image` = `about:error` trên mọi trang overlay QA (og:image:secure_url đúng 200) – VOV-003, MOVIE-029 | 65% | Mọi CF test dùng thumbnail `image 7.png` (có dấu cách) → chưa loại trừ data | Hỏi Martin (📣); nếu cần: QA-PT đổi thumbnail 1 CF sang tên không dấu cách → agent so sánh |
 | ~~BUG-CAT-EMPTY~~ ✅ đóng (IDLE-32) | Không phải bug: `-form` CF requiresForm=false (data) + qa190-cat-pdf non-form redirect PDF theo thiết kế (test sai kỳ vọng) | 5% | — | KHÔNG báo Martin; sửa data BUGCHK-190-FORM + sửa kỳ vọng CATOV-001/015/019 |
-| BUG-CAT-LIST-OLD (557/654) | Catalog list vẫn trả 15 CF folder cũ `ykk/common/product-cf/test`, ja/en cùng 26 thẻ (không lọc ngôn ngữ) | 55% | Chưa rõ list đã lên overlay chưa (BL-OVL-1 20/10 12:40) | Hỏi Martin (📣) |
+| ~~BUG-CAT-LIST-OLD~~ ✅ Martin 22/10: list chuyển sang overlay data (`dsr-catalog-list`), đang deploy – list rỗng trên DEV tới khi Martin ping; kỳ vọng ja 6 / en 5 thẻ | | | | |
+| (cũ) BUG-CAT-LIST-OLD (557/654) | Catalog list vẫn trả 15 CF folder cũ `ykk/common/product-cf/test`, ja/en cùng 26 thẻ (không lọc ngôn ngữ) | 55% | Chưa rõ list đã lên overlay chưa (BL-OVL-1 20/10 12:40) | Hỏi Martin (📣) |
 Đã xử lý 22/10: VOV-013 → **DSR-665** (85%) · 586/570/557 fail = data (Night 22/10) · CATOV-003 en .live 404 = data.
 
 ## ✅ Overlay 404 – xong nguyên nhân (21/10 15:40)
