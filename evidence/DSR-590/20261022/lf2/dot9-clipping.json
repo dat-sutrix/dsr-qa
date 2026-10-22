@@ -1,0 +1,137 @@
+[
+  {
+    "class": "eco-carousel-dot",
+    "rect": {
+      "x": 288,
+      "y": 956.390625,
+      "width": 10,
+      "height": 10,
+      "top": 956.390625,
+      "right": 298,
+      "bottom": 966.390625,
+      "left": 288
+    },
+    "overflowX": "hidden",
+    "overflowY": "hidden"
+  },
+  {
+    "class": "eco-carousel-dots",
+    "rect": {
+      "x": 96,
+      "y": 956.390625,
+      "width": 198,
+      "height": 10,
+      "top": 956.390625,
+      "right": 294,
+      "bottom": 966.390625,
+      "left": 96
+    },
+    "overflowX": "hidden",
+    "overflowY": "hidden"
+  },
+  {
+    "class": "eco-carousel-controls",
+    "rect": {
+      "x": 16,
+      "y": 941.390625,
+      "width": 358,
+      "height": 40,
+      "top": 941.390625,
+      "right": 374,
+      "bottom": 981.390625,
+      "left": 16
+    },
+    "overflowX": "visible",
+    "overflowY": "visible"
+  },
+  {
+    "class": "eco-carousel block",
+    "rect": {
+      "x": 0,
+      "y": 146,
+      "width": 390,
+      "height": 941.390625,
+      "top": 146,
+      "right": 390,
+      "bottom": 1087.390625,
+      "left": 0
+    },
+    "overflowX": "hidden",
+    "overflowY": "hidden"
+  },
+  {
+    "class": "eco-carousel-wrapper",
+    "rect": {
+      "x": 0,
+      "y": 146,
+      "width": 390,
+      "height": 941.390625,
+      "top": 146,
+      "right": 390,
+      "bottom": 1087.390625,
+      "left": 0
+    },
+    "overflowX": "visible",
+    "overflowY": "visible"
+  },
+  {
+    "class": "section eco-carousel-container",
+    "rect": {
+      "x": 0,
+      "y": 146,
+      "width": 390,
+      "height": 941.390625,
+      "top": 146,
+      "right": 390,
+      "bottom": 1087.390625,
+      "left": 0
+    },
+    "overflowX": "visible",
+    "overflowY": "visible"
+  },
+  {
+    "class": "",
+    "rect": {
+      "x": 0,
+      "y": 72,
+      "width": 390,
+      "height": 1015.390625,
+      "top": 72,
+      "right": 390,
+      "bottom": 1087.390625,
+      "left": 0
+    },
+    "overflowX": "visible",
+    "overflowY": "visible"
+  },
+  {
+    "class": "appear",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1135.390625,
+      "top": 0,
+      "right": 390,
+      "bottom": 1135.390625,
+      "left": 0
+    },
+    "overflowX": "visible",
+    "overflowY": "visible"
+  },
+  {
+    "class": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 1135.390625,
+      "top": 0,
+      "right": 390,
+      "bottom": 1135.390625,
+      "left": 0
+    },
+    "overflowX": "visible",
+    "overflowY": "visible"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "job": "JOB-ZZ-IDLE-34",
+  "agent": "codex",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-22T05:48:38.910Z",
+  "finished": "2026-10-22T05:49:12.206Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "JOB-ZZ-IDLE-34-top-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-590/20261022/lf2/top-1440-y0.png",
+      "suspect": "none"
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-34-top-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-590/20261022/lf2/top-390-y0.png",
+      "suspect": "none"
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-34-detail-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-590/20261022/lf2/detail-1440-y0.png",
+      "suspect": "none"
+    },
+    {
+      "tc": "JOB-ZZ-IDLE-34-detail-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/DSR-590/20261022/lf2/detail-390-y0.png",
+      "suspect": "none"
+    },
+    {
+      "tc": "DSR-666-observation",
+      "lang": "ja",
+      "result": "fail",
+      "error": "TOP breadcrumb-section to hero gap is 40 CSS px at both widths; Detail is 0.",
+      "evidence": "evidence/DSR-590/20261022/lf2/top-1440-y0.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85
+    },
+    {
+      "tc": "SP-dot9-observation",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Dot 9 clipped by dots container by 4 CSS px; no next-button overlap (36 px clearance).",
+      "evidence": "evidence/DSR-590/20261022/lf2/top-390-controls-3x.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "ykk-dsr/hub/results/JOB-ZZ-IDLE-34/capture.cjs"
+  ],
+  "questions": [],
+  "typescript": {
+    "command": "npx tsc --noEmit",
+    "exitCode": 0,
+    "result": "no errors"
+  }
+}

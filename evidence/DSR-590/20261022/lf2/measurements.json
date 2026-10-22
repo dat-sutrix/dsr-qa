@@ -1,0 +1,404 @@
+{
+  "started": "2026-10-22T05:48:38.910Z",
+  "finished": "2026-10-22T05:49:12.206Z",
+  "records": [
+    {
+      "name": "top",
+      "width": 1440,
+      "height": 900,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+      "httpStatus": 200,
+      "screenshots": [
+        {
+          "file": "evidence/DSR-590/20261022/lf2/top-1440-y0.png",
+          "scrollY": 0
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/top-1440-y600.png",
+          "scrollY": 600
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/top-1440-y743.png",
+          "scrollY": 743
+        }
+      ],
+      "geometry": {
+        "breadcrumb": {
+          "selector": "[data-testid=\"breadcrumb\"]",
+          "x": 40,
+          "y": 153.09375,
+          "width": 1360,
+          "height": 23.796875,
+          "top": 153.09375,
+          "right": 1400,
+          "bottom": 176.890625,
+          "left": 40
+        },
+        "section": {
+          "selector": ".breadcrumb-section",
+          "x": 0,
+          "y": 140,
+          "width": 1440,
+          "height": 50,
+          "top": 140,
+          "right": 1440,
+          "bottom": 190,
+          "left": 0
+        },
+        "hero": {
+          "selector": ".eco-carousel",
+          "x": 0,
+          "y": 230,
+          "width": 1440,
+          "height": 947.390625,
+          "top": 230,
+          "right": 1440,
+          "bottom": 1177.390625,
+          "left": 0
+        },
+        "gapFromNav": 53.109375,
+        "gapFromSection": 40,
+        "scrollY": 0,
+        "scrollHeight": 1643
+      },
+      "staticHeaderFullPage": "evidence/DSR-590/20261022/lf2/top-1440-header-static-full.png"
+    },
+    {
+      "name": "top",
+      "width": 390,
+      "height": 844,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+      "httpStatus": 200,
+      "screenshots": [
+        {
+          "file": "evidence/DSR-590/20261022/lf2/top-390-y0.png",
+          "scrollY": 0
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/top-390-y600.png",
+          "scrollY": 600
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/top-390-y829.png",
+          "scrollY": 829
+        }
+      ],
+      "geometry": {
+        "breadcrumb": {
+          "selector": "[data-testid=\"breadcrumb\"]",
+          "x": 16,
+          "y": 81,
+          "width": 358,
+          "height": 16,
+          "top": 81,
+          "right": 374,
+          "bottom": 97,
+          "left": 16
+        },
+        "section": {
+          "selector": ".breadcrumb-section",
+          "x": 0,
+          "y": 72,
+          "width": 390,
+          "height": 34,
+          "top": 72,
+          "right": 390,
+          "bottom": 106,
+          "left": 0
+        },
+        "hero": {
+          "selector": ".eco-carousel",
+          "x": 0,
+          "y": 146,
+          "width": 390,
+          "height": 941.390625,
+          "top": 146,
+          "right": 390,
+          "bottom": 1087.390625,
+          "left": 0
+        },
+        "gapFromNav": 49,
+        "gapFromSection": 40,
+        "scrollY": 0,
+        "scrollHeight": 1673
+      },
+      "controls": [
+        {
+          "class": "eco-carousel-nav eco-carousel-prev",
+          "label": "前へ",
+          "text": "",
+          "x": 16,
+          "y": 112.390625,
+          "width": 40,
+          "height": 40,
+          "top": 112.390625,
+          "right": 56,
+          "bottom": 152.390625,
+          "left": 16
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 96,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 106,
+          "bottom": 137.390625,
+          "left": 96
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 120,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 130,
+          "bottom": 137.390625,
+          "left": 120
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 144,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 154,
+          "bottom": 137.390625,
+          "left": 144
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 168,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 178,
+          "bottom": 137.390625,
+          "left": 168
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 192,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 202,
+          "bottom": 137.390625,
+          "left": 192
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 216,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 226,
+          "bottom": 137.390625,
+          "left": 216
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 240,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 250,
+          "bottom": 137.390625,
+          "left": 240
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 264,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 274,
+          "bottom": 137.390625,
+          "left": 264
+        },
+        {
+          "class": "eco-carousel-dot",
+          "label": "bluesign認証商品",
+          "text": "",
+          "x": 288,
+          "y": 127.390625,
+          "width": 10,
+          "height": 10,
+          "top": 127.390625,
+          "right": 298,
+          "bottom": 137.390625,
+          "left": 288
+        },
+        {
+          "class": "eco-carousel-nav eco-carousel-next",
+          "label": "次へ",
+          "text": "",
+          "x": 334,
+          "y": 112.390625,
+          "width": 40,
+          "height": 40,
+          "top": 112.390625,
+          "right": 374,
+          "bottom": 152.390625,
+          "left": 334
+        }
+      ],
+      "controlsCrop": "evidence/DSR-590/20261022/lf2/top-390-controls-3x.png",
+      "staticHeaderFullPage": "evidence/DSR-590/20261022/lf2/top-390-header-static-full.png"
+    },
+    {
+      "name": "detail",
+      "width": 1440,
+      "height": 900,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-detail-page",
+      "httpStatus": 200,
+      "screenshots": [
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-1440-y0.png",
+          "scrollY": 0
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-1440-y600.png",
+          "scrollY": 600
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-1440-y1200.png",
+          "scrollY": 1200
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-1440-y1341.png",
+          "scrollY": 1341
+        }
+      ],
+      "geometry": {
+        "breadcrumb": {
+          "selector": "[data-testid=\"breadcrumb\"]",
+          "x": 40,
+          "y": 153.09375,
+          "width": 1360,
+          "height": 23.796875,
+          "top": 153.09375,
+          "right": 1400,
+          "bottom": 176.890625,
+          "left": 40
+        },
+        "section": {
+          "selector": ".breadcrumb-section",
+          "x": 0,
+          "y": 140,
+          "width": 1440,
+          "height": 50,
+          "top": 140,
+          "right": 1440,
+          "bottom": 190,
+          "left": 0
+        },
+        "hero": {
+          "selector": ".hero-banner",
+          "x": 40,
+          "y": 190,
+          "width": 1360,
+          "height": 400,
+          "top": 190,
+          "right": 1400,
+          "bottom": 590,
+          "left": 40
+        },
+        "gapFromNav": 13.109375,
+        "gapFromSection": 0,
+        "scrollY": 0,
+        "scrollHeight": 2241
+      },
+      "staticHeaderFullPage": "evidence/DSR-590/20261022/lf2/detail-1440-header-static-full.png"
+    },
+    {
+      "name": "detail",
+      "width": 390,
+      "height": 844,
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-detail-page",
+      "httpStatus": 200,
+      "screenshots": [
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-390-y0.png",
+          "scrollY": 0
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-390-y600.png",
+          "scrollY": 600
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-390-y1200.png",
+          "scrollY": 1200
+        },
+        {
+          "file": "evidence/DSR-590/20261022/lf2/detail-390-y1214.png",
+          "scrollY": 1214
+        }
+      ],
+      "geometry": {
+        "breadcrumb": {
+          "selector": "[data-testid=\"breadcrumb\"]",
+          "x": 16,
+          "y": 81,
+          "width": 358,
+          "height": 16,
+          "top": 81,
+          "right": 374,
+          "bottom": 97,
+          "left": 16
+        },
+        "section": {
+          "selector": ".breadcrumb-section",
+          "x": 0,
+          "y": 72,
+          "width": 390,
+          "height": 34,
+          "top": 72,
+          "right": 390,
+          "bottom": 106,
+          "left": 0
+        },
+        "hero": {
+          "selector": ".hero-banner",
+          "x": 0,
+          "y": 106,
+          "width": 390,
+          "height": 200,
+          "top": 106,
+          "right": 390,
+          "bottom": 306,
+          "left": 0
+        },
+        "gapFromNav": 9,
+        "gapFromSection": 0,
+        "scrollY": 0,
+        "scrollHeight": 2058
+      },
+      "staticHeaderFullPage": "evidence/DSR-590/20261022/lf2/detail-390-header-static-full.png"
+    }
+  ]
+}
