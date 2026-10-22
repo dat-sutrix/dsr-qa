@@ -1,4 +1,5 @@
 > **Claude sessions & scheduled tasks: đọc `CONTEXT.md` (cùng thư mục) TRƯỚC file này** – quy tắc đứng, IDs, baseline mới nhất. Agents VPS: theo file này.
+> **Scheduled tasks (07:45/17:10/standup/TC job): trước khi soạn câu hỏi, tin đuổi, blocker hay đề xuất dời scope → đọc `KNOWN-FACTS.md` + `JIRA-SWEEP.md`; đã có câu trả lời thì không hỏi, không ghi là blocker.**
 
 # AGENTS.md – Job protocol for VPS agents (YKK DSR QA)
 
