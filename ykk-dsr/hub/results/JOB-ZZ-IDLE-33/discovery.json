@@ -1,0 +1,78 @@
+{
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/query-index.json",
+  "retrieved": "2026-10-22T02:29:54.171Z",
+  "offset": 0,
+  "total": 175,
+  "count": 175,
+  "matches": [
+    {
+      "path": "/master/en/library/article/stories/qa529-01",
+      "lastModified": 1792595440,
+      "robots": "noindex, nofollow",
+      "title": "QA529 OGP title",
+      "description": "QA529 description en",
+      "category": "",
+      "tags": [
+        "do-not-translate",
+        "site:product/bio-based"
+      ],
+      "image": "https://dev-eds.ykkdigitalshowroom.com/master/en/library/article/stories/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=1200&format=pjpg&optimize=medium",
+      "template": "article-detail",
+      "publicationdate": "2026-10-01T00:00:00.000Z",
+      "navtitle": "QA529 Nav",
+      "updatedate": "2026-10-10T00:00:00.000Z",
+      "thumbnail": "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+      "searchkeywords": "qa529kw1, qa529kw2",
+      "caseitem": "",
+      "caseuse": "",
+      "caseissue": "",
+      "caseproduct": ""
+    },
+    {
+      "path": "/master/ja/library/article/stories/qa529-01",
+      "lastModified": 1792595376,
+      "robots": "",
+      "title": "QA529 OGPタイトル",
+      "description": "QA529 説明 ja",
+      "category": "",
+      "tags": [
+        "do-not-translate",
+        "site:product/bio-based"
+      ],
+      "image": "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png?width=1200&format=pjpg&optimize=medium",
+      "template": "article-detail",
+      "publicationdate": "2026-10-01T00:00:00.000Z",
+      "navtitle": "QA529 ナビ",
+      "updatedate": "2026-10-10T00:00:00.000Z",
+      "thumbnail": "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+      "searchkeywords": "qa529kw1, qa529kw2",
+      "caseitem": "",
+      "caseuse": "",
+      "caseissue": "",
+      "caseproduct": ""
+    },
+    {
+      "path": "/master/ja/library/article/stories/qa529-02",
+      "lastModified": 1792423890,
+      "robots": "",
+      "title": "QA529 最小記事",
+      "description": "QA529 最小説明",
+      "category": "",
+      "tags": "",
+      "image": "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=pjpg&optimize=medium",
+      "template": "article-detail",
+      "publicationdate": "2026-09-01T00:00:00.000Z",
+      "navtitle": "",
+      "updatedate": "",
+      "thumbnail": "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+      "searchkeywords": "",
+      "caseitem": "",
+      "caseuse": "",
+      "caseissue": "",
+      "caseproduct": ""
+    }
+  ],
+  "missing": [
+    "en qa529-02"
+  ]
+}

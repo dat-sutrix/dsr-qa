@@ -1,0 +1,74 @@
+[
+  {
+    "class": "eco-carousel-dot",
+    "x": 288,
+    "right": 298,
+    "width": 10,
+    "overflow": "hidden",
+    "clipPath": "none"
+  },
+  {
+    "class": "eco-carousel-dots",
+    "x": 96,
+    "right": 294,
+    "width": 198,
+    "overflow": "hidden",
+    "clipPath": "none"
+  },
+  {
+    "class": "eco-carousel-controls",
+    "x": 16,
+    "right": 374,
+    "width": 358,
+    "overflow": "visible",
+    "clipPath": "none"
+  },
+  {
+    "class": "eco-carousel block",
+    "x": 0,
+    "right": 390,
+    "width": 390,
+    "overflow": "hidden",
+    "clipPath": "none"
+  },
+  {
+    "class": "eco-carousel-wrapper",
+    "x": 0,
+    "right": 390,
+    "width": 390,
+    "overflow": "visible",
+    "clipPath": "none"
+  },
+  {
+    "class": "section eco-carousel-container",
+    "x": 0,
+    "right": 390,
+    "width": 390,
+    "overflow": "visible",
+    "clipPath": "none"
+  },
+  {
+    "class": "",
+    "x": 0,
+    "right": 390,
+    "width": 390,
+    "overflow": "visible",
+    "clipPath": "none"
+  },
+  {
+    "class": "appear",
+    "x": 0,
+    "right": 390,
+    "width": 390,
+    "overflow": "visible",
+    "clipPath": "none"
+  },
+  {
+    "class": "",
+    "x": 0,
+    "right": 390,
+    "width": 390,
+    "overflow": "visible",
+    "clipPath": "none"
+  }
+]

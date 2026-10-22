@@ -1,0 +1,222 @@
+[
+  {
+    "width": 1440,
+    "status": 200,
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+    "controls": [
+      {
+        "text": "",
+        "label": "前へ",
+        "class": "eco-carousel-nav eco-carousel-prev",
+        "x": 40,
+        "y": 798.390625,
+        "width": 60,
+        "height": 60
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 579,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 613,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 647,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 681,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 715,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 749,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 783,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 817,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 851,
+        "y": 823.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "次へ",
+        "class": "eco-carousel-nav eco-carousel-next",
+        "x": 1340,
+        "y": 798.390625,
+        "width": 60,
+        "height": 60
+      }
+    ],
+    "screenshots": [
+      "evidence/DSR-590/20261022/lf/TOP-1440.png",
+      "evidence/DSR-590/20261022/lf/TOP-1440-controls-2x.png"
+    ]
+  },
+  {
+    "width": 390,
+    "status": 200,
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+    "controls": [
+      {
+        "text": "",
+        "label": "前へ",
+        "class": "eco-carousel-nav eco-carousel-prev",
+        "x": 16,
+        "y": 795.390625,
+        "width": 40,
+        "height": 40
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 96,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 120,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 144,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 168,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 192,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 216,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 240,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 264,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "bluesign認証商品",
+        "class": "eco-carousel-dot",
+        "x": 288,
+        "y": 810.390625,
+        "width": 10,
+        "height": 10
+      },
+      {
+        "text": "",
+        "label": "次へ",
+        "class": "eco-carousel-nav eco-carousel-next",
+        "x": 334,
+        "y": 795.390625,
+        "width": 40,
+        "height": 40
+      }
+    ],
+    "screenshots": [
+      "evidence/DSR-590/20261022/lf/TOP-390.png",
+      "evidence/DSR-590/20261022/lf/TOP-390-controls-2x.png"
+    ]
+  }
+]

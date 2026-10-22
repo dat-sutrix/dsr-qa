@@ -1,0 +1,308 @@
+{
+  "job": "JOB-ZZ-IDLE-33",
+  "agent": "codex",
+  "us": "DSR-529, DSR-590, DSR-587",
+  "env": "dev",
+  "started": "2026-10-22T02:29:54.172Z",
+  "finished": "2026-10-22T02:35:27.075Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "/master/en/library/article/stories/qa529-01 mobile run 1",
+      "lang": "en",
+      "result": "fail",
+      "error": "Performance 48 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/en/library/article/stories/qa529-01 desktop run 1",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/library/article/stories/qa529-01 mobile run 1",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Performance 93 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/library/article/stories/qa529-01 desktop run 1",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Performance 92 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/library/article/stories/qa529-02 mobile run 1",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Performance 82 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/library/article/stories/qa529-02 desktop run 1",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Performance 94 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/test-space/dsr-590-eco-top-page mobile run 1",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Performance 92 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/test-space/dsr-590-eco-top-page desktop run 1",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/test-space/dsr-590-eco-detail-page mobile run 1",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Performance 94 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/master/ja/test-space/dsr-590-eco-detail-page desktop run 1",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Performance 74 < IDLE-31 reference target 95",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/ja/library/video/qa587-main mobile run 1",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/ja/library/video/qa587-main mobile run 2",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/ja/library/video/qa587-main mobile run 3",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/ja/library/video/qa587-main desktop run 1",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/ja/library/video/qa587-main desktop run 2",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "/ja/library/video/qa587-main desktop run 3",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "lighthouse-summary.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "qa529-02 mobile",
+      "lang": "en",
+      "result": "blocked",
+      "error": "No EN qa529-02 path in complete /query-index.json",
+      "evidence": "discovery.json",
+      "suspect": "data"
+    },
+    {
+      "tc": "qa529-02 desktop",
+      "lang": "en",
+      "result": "blocked",
+      "error": "No EN qa529-02 path in complete /query-index.json",
+      "evidence": "discovery.json",
+      "suspect": "data"
+    },
+    {
+      "tc": "DSR-590 TOP SP dots",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Ninth dot clipped 4 CSS px by dots container",
+      "evidence": "evidence/DSR-590/20261022/lf/TOP-390-controls-2x.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    }
+  ],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "device": "mobile",
+      "run": 1,
+      "performance": 48
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "device": "desktop",
+      "run": 1,
+      "performance": 98
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "device": "mobile",
+      "run": 1,
+      "performance": 93
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "device": "desktop",
+      "run": 1,
+      "performance": 92
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+      "device": "mobile",
+      "run": 1,
+      "performance": 82
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+      "device": "desktop",
+      "run": 1,
+      "performance": 94
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+      "device": "mobile",
+      "run": 1,
+      "performance": 92
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+      "device": "desktop",
+      "run": 1,
+      "performance": 96
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-detail-page",
+      "device": "mobile",
+      "run": 1,
+      "performance": 94
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-detail-page",
+      "device": "desktop",
+      "run": 1,
+      "performance": 74
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "mobile",
+      "run": 1,
+      "performance": 96
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "mobile",
+      "run": 2,
+      "performance": 98
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "mobile",
+      "run": 3,
+      "performance": 98
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "desktop",
+      "run": 1,
+      "performance": 99
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "desktop",
+      "run": 2,
+      "performance": 99
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "desktop",
+      "run": 3,
+      "performance": 99
+    }
+  ],
+  "code_changes": [],
+  "questions": [],
+  "automation_head": "c0e8437168f3c37bfb4db23344b055da63e749e6",
+  "typescript": {
+    "command": "npx tsc --noEmit",
+    "exit": 0,
+    "result": "no errors"
+  },
+  "limitations": [
+    "EN qa529-02 absent from query-index; publication not verified",
+    "Performance threshold inherited as reference from IDLE-31; no new baseline asserted",
+    "No npm test suite requested or run; Lighthouse and read-only Playwright capture scripts only"
+  ]
+}
