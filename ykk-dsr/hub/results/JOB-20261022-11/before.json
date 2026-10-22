@@ -1,0 +1,608 @@
+{
+  "/content/dam/dsr/en/catalogs/qa190-cat-ebook": {
+    "exists": true,
+    "id": "946a84ec-0253-4adb-a88b-88d454db291a",
+    "model": "DM_catalog_related",
+    "etag": "\"8b519a3b0f0cf5fbc53806bdcaa29333\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-ebook"
+      ],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa190-cat-ebook"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form": {
+    "exists": true,
+    "id": "4dcf76c0-61f2-4478-8bdf-b41850bc752b",
+    "model": "DM_catalog_related",
+    "etag": "\"d12c87665df5e804dbb5c32bb96fbbf3\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-ebook-form"
+      ],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa190-cat-pdf": {
+    "exists": true,
+    "id": "05a09bdb-4052-41ef-a8fe-e7f0cb8c5ee8",
+    "model": "DM_catalog_related",
+    "etag": "\"a8044596ed063194408f7d2a13e71f57\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-pdf"
+      ],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa190-cat-pdf"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form": {
+    "exists": true,
+    "id": "f215508e-43ec-48e7-9ddd-799d38410f5e",
+    "model": "DM_catalog_related",
+    "etag": "\"effee9e23b3e5684e77fe2a2495f78c9\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-pdf-form"
+      ],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa190-cat-pdf-form"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa654-content-unpub": {
+    "exists": true,
+    "id": "c59f5923-89c0-4990-b7e0-afb3b737c50d",
+    "model": "DM_catalog_related",
+    "etag": "\"9a571c74ec697ee8e495f34d88fd6bff\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "catalogLabel": [],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa654-content-unpub"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa654-inactive": {
+    "exists": true,
+    "id": "82360099-8d34-48ec-a7e3-8bc52929c2fb",
+    "model": "DM_catalog_related",
+    "etag": "\"8735ab61d40880671f199abdb7869660\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "catalogLabel": [],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa654-inactive"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        false
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa654-preview": {
+    "exists": true,
+    "id": "4e41aac2-6ebe-4767-bb0a-769a8e2e304b",
+    "model": "DM_catalog_related",
+    "etag": "\"446d679a3c4539977c888c42a221116d\"",
+    "status": "DRAFT",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "catalogLabel": [],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa654-preview"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa654-update": {
+    "exists": true,
+    "id": "a7a0bb35-2247-4ab5-8e4e-b8ecc141bcf8",
+    "model": "DM_catalog_related",
+    "etag": "\"122efed521fa050940b31296f7ff74a2\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "catalogLabel": [],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa654-update"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa501-main-a": {
+    "exists": true,
+    "id": "df983303-1e0c-47a1-ba6d-1b15fb31fe25",
+    "model": "DM_movie_related",
+    "etag": "\"1ab22c06ebcd92cd95c9b7501c989363\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [
+        "qa501-main-a"
+      ],
+      "movie": [
+        "/content/dam/ykk/common/product-cf/test/qa501-main-a"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa501-main-b": {
+    "exists": true,
+    "id": "bbe87f8b-3c0d-4a0a-9152-0fdc1f1752fe",
+    "model": "DM_movie_related",
+    "etag": "\"3994db8adef8476cc803cecc6cf7703d\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [
+        "qa501-main-b"
+      ],
+      "movie": [
+        "/content/dam/ykk/common/product-cf/test/qa501-main-b"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": []
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa557-dam": {
+    "exists": true,
+    "id": "2c631d44-4b94-44bc-8e5f-45fa47d02d7c",
+    "model": "DM_movie_related",
+    "etag": "\"968b552e16d253a4bfa89e6aeb74a28b\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa557-dam"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa557-dam"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-main": {
+    "exists": true,
+    "id": "c66e04e2-b59e-48fd-b201-fce618d6acdd",
+    "model": "DM_movie_related",
+    "etag": "\"637303544bb7a0ef35c82f61a46085c6\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [
+        "qa587-main"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-main"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-off": {
+    "exists": true,
+    "id": "1da84a77-9b5d-4571-b7cd-2ef354d83640",
+    "model": "DM_movie_related",
+    "etag": "\"30445f6294cac54fb1a109361558f615\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "movieLabel": [
+        "qa587-off"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-off"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-r1": {
+    "exists": true,
+    "id": "25d706c9-5237-49e9-a887-eb716e18da64",
+    "model": "DM_movie_related",
+    "etag": "\"a7482b4cdc1049e78a32cbb1aea03969\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-r1"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-r1"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-r2": {
+    "exists": true,
+    "id": "7ee18801-556f-4b45-bd9a-93a0cec2e979",
+    "model": "DM_movie_related",
+    "etag": "\"f6580eb4abaf827b22c2a1a7ec9adcc1\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-r2"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-r2"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-r3": {
+    "exists": true,
+    "id": "6c304b08-57e5-435e-b274-4019923ac88c",
+    "model": "DM_movie_related",
+    "etag": "\"5d15a9704acc6ec9290101e02b42e78c\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-r3"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-r3"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-r4": {
+    "exists": true,
+    "id": "408dc9ce-1d76-4b17-830d-c7128eada4da",
+    "model": "DM_movie_related",
+    "etag": "\"cd9febbe90d677d08f7a2a89d9681cfd\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-r4"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-r4"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-r5": {
+    "exists": true,
+    "id": "b5cf7b11-557c-4655-b35b-5771cdc2e40c",
+    "model": "DM_movie_related",
+    "etag": "\"aee5c049ab43115fc216085e54382f26\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-r5"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-r5"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-r6": {
+    "exists": true,
+    "id": "ce8c4150-3a4e-4250-8ae5-47e9950fce9f",
+    "model": "DM_movie_related",
+    "etag": "\"498957fc9e057e604b26847ebe8e9e98\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-r6"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-r6"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-rel-a": {
+    "exists": true,
+    "id": "e3f5910e-0644-4e41-bf9d-d4455fc57113",
+    "model": "DM_movie_related",
+    "etag": "\"a83ddc3896b3ff6a66c37f8ae4047a43\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-rel-a"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-rel-a"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-rel-b": {
+    "exists": true,
+    "id": "c73e8606-8c86-4a61-84ab-3925df3d8907",
+    "model": "DM_movie_related",
+    "etag": "\"d70565f02720e7491edc42539c37d381\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "movieLabel": [
+        "qa587-rel-b"
+      ],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-rel-b"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/catalogs/qa190-cat-ebook": {
+    "exists": true,
+    "id": "cf6f0a34-b6f7-42f5-abc3-f174593e5ccd",
+    "model": "DM_catalog_related",
+    "etag": "\"c4e64e1dbc0b3d8a65d2894ab6c150e8\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-ebook"
+      ],
+      "catalog": [
+        "/content/dam/common/ja/catalogs/qa190-cat-ebook"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form": {
+    "exists": true,
+    "id": "225478a2-7c2f-4718-a05e-f408a32724a3",
+    "model": "DM_catalog_related",
+    "etag": "\"774c4a6d50ea182e535226e800b90849\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-ebook-form"
+      ],
+      "catalog": [
+        "/content/dam/common/ja/catalogs/qa190-cat-ebook-form"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/catalogs/qa190-cat-pdf": {
+    "exists": true,
+    "id": "8132d465-0e6e-4f37-8a19-78e291a43aa9",
+    "model": "DM_catalog_related",
+    "etag": "\"88719b0684110bd6881b2fc9f0db1422\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-pdf"
+      ],
+      "catalog": [
+        "/content/dam/common/ja/catalogs/qa190-cat-pdf"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form": {
+    "exists": true,
+    "id": "8ab8c3ef-4821-493d-ae23-23c20ac27586",
+    "model": "DM_catalog_related",
+    "etag": "\"9a259aee38fb9de0f1a0aadcf1bc52d6\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "catalogLabel": [
+        "qa190-cat-pdf-form"
+      ],
+      "catalog": [
+        "/content/dam/common/ja/catalogs/qa190-cat-pdf-form"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/catalogs/qa654-inactive": {
+    "exists": true,
+    "id": "94da0609-d928-4b29-88a1-df066c64e4ad",
+    "model": "DM_catalog_related",
+    "etag": "\"bba473004ea6940078cafe2c80bfa479\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "catalogLabel": [],
+      "catalog": [
+        "/content/dam/common/ja/catalogs/qa654-inactive"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        false
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/movies/standard/qa557-dam": {
+    "exists": true,
+    "id": "4fd91a88-1d64-444d-b3f8-c0841d6e1a94",
+    "model": "DM_movie_related",
+    "etag": "\"b7ac72c318d2d024cd66d672394e2a2f\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "movieLabel": [
+        "qa557 dam"
+      ],
+      "movie": [
+        "/content/dam/common/ja/movies/qa557-dam"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/ja/movies/standard/qa587-main": {
+    "exists": true,
+    "id": "bbc2c557-89da-43f6-aec5-9bca60d8d66d",
+    "model": "DM_movie_related",
+    "etag": "\"866fd4a7dec6151795e5383ace59c29f\"",
+    "status": "PUBLISHED",
+    "previewStatus": "MODIFIED",
+    "fields": {
+      "movieLabel": [
+        "qa587-main"
+      ],
+      "movie": [
+        "/content/dam/common/ja/movies/qa587-main"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  }
+}

@@ -1,0 +1,797 @@
+[
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:14:49 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:20:39 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:30:42 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:20:05 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": "Thu Oct 22 2026 04:57:34 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Thu Oct 22 2026 04:57:35 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": "Thu Oct 22 2026 04:57:34 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Thu Oct 22 2026 04:57:35 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": "Thu Oct 22 2026 04:57:34 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": null,
+   "action": null
+  },
+  "api_status": "DRAFT",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/catalogs/qa654-update",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": "Thu Oct 22 2026 04:57:34 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Thu Oct 22 2026 04:57:35 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/badid",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:03 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/fil-unav",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:03 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/filtered",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:04 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/long",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Fri Oct 16 2026 01:16:19 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/movieid-01",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:02 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/noid",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:03 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/norelated",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:02 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Fri Oct 16 2026 12:29:13 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Fri Oct 16 2026 06:41:49 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:46:08 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 13:06:28 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:06:27 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": null,
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:38:30 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:21:24 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:23:14 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:25:08 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:26:07 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:27:39 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:28:47 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:30:04 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": null,
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:42:49 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/rel6",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:02 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/sort-a",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:04 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/sort-b",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:05 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/sort-c",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:05 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/movies/standard/sort-main",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 08:08:23 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 06:03:10 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/products/135",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": "Tue Oct 20 2026 08:37:22 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Tue Oct 20 2026 08:36:11 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/products/46",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": "Tue Oct 20 2026 08:37:22 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Tue Oct 20 2026 08:36:11 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/en/products/productid-01x",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": "Tue Oct 20 2026 08:37:22 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Tue Oct 20 2026 08:36:11 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/catalogs/catalogid-01",
+  "in_guard": false,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:30 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:09 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/catalogs/catalogid-02",
+  "in_guard": false,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:29 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:08 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:15:45 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:18:09 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:36:44 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:17:35 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+  "in_guard": true,
+  "model": "dm_catalog_related",
+  "preview": {
+   "at": "Thu Oct 22 2026 04:57:34 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Thu Oct 22 2026 04:57:35 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/movies/standard/filtered",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:28 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:07 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/movies/standard/long",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:27 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:06 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:47:43 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+  "in_guard": true,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Wed Oct 21 2026 13:07:56 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 13:14:16 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "MODIFIED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/movies/standard/sort-main",
+  "in_guard": false,
+  "model": "dm_movie_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:27 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:06 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/products/135",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:28 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:07 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/products/46",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:29 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:08 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/products/990586001",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": "Wed Oct 21 2026 14:54:26 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/products/990586002",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": null,
+   "action": null
+  },
+  "publish": {
+   "at": null,
+   "action": "Activate"
+  },
+  "api_status": "DRAFT",
+  "api_preview_status": "NEVER_PUBLISHED"
+ },
+ {
+  "path": "/content/dam/dsr/ja/products/productid-01x",
+  "in_guard": false,
+  "model": "dm_product_related",
+  "preview": {
+   "at": "Mon Oct 19 2026 05:31:29 GMT+0000",
+   "action": "Activate"
+  },
+  "publish": {
+   "at": "Mon Oct 19 2026 05:37:08 GMT+0000",
+   "action": "Activate"
+  },
+  "api_status": "PUBLISHED",
+  "api_preview_status": "PUBLISHED"
+ }
+]
