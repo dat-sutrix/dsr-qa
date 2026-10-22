@@ -25,3 +25,4 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 | 2026-10-22 | DSR-665 | Martin→QA | Fixed DEV, retest Pass (JOB-20261022-08) → Done | Jira |
 | 2026-10-22 | DSR-659 | QA→Martin | og:image/twitter:image đã absolute ✅; `thumbnail` meta vẫn relative (cả .page preview 01:47Z) → trả Martin hỏi fix có cover thumbnail chưa | Jira comment 64851 |
 | 2026-10-22 | Author cookie | Dat | Cookie login-token sống < 16h → dán lại mỗi sáng tới khi có D1 | probe 20261022-0435 |
+| 2026-10-22 | DSR-590 | Dat (L&F) | Eco TOP: khoảng trắng dưới breadcrumb trước banner = bug UI → DSR-666 (Ngọc). Thứ tự header/breadcrumb + tiêu đề hero PC đúng (ảnh agent sai) | DSR-666 |

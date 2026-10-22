@@ -24,3 +24,6 @@
 **Nhóm lỗi:** A. ID ≠ tên CF (2 lần, ~13 CF) · B. Nhập sai/thiếu giá trị (6) · C. Sai tên CF (1, 3 CF) · D. Sai trang (1) · E. Report (3) · F. Thao tác UE (1).
 
 **Night 21/10 (pack v3 định dạng mới): 0 lỗi data** – 2 câu hỏi do pack (nhãn 'Navigation title' = ô Breadcrumb label; field tùy chọn trỏ sang sheet) → đã sửa quy tắc pack.
+
+## Lỗi agent/Claude (không phải QA-PT) – để rút kinh nghiệm
+- 2026-10-22 L&F DSR-590: ảnh full-page Playwright vẽ header sticky ở giữa trang → card báo sai 3 điểm (breadcrumb trên header, thiếu tiêu đề PC, khung lạ SP). **Quy tắc mới cho ảnh L&F:** chụp theo viewport khi cuộn (không fullPage) hoặc set header `position: static` trước khi chụp; Claude phải so 1 ảnh viewport đầu trang trước khi kết luận về thứ tự header/breadcrumb.
