@@ -1,0 +1,1079 @@
+{
+  "job": "JOB-20261022-13",
+  "agent": "claude-code",
+  "us": "DSR-587/654/586 og:image retest · DSR-529 TC-011 re-baseline · isActive OFF browser redirect · DSR-654/570 catalog -form rerun",
+  "env": "dev",
+  "started": "2026-10-22T08:15:40Z",
+  "finished": "2026-10-22T08:31:24Z",
+  "status": "done",
+  "parts": {
+    "1_og_image": "52 page×tier from manifest REPUBLISH-OVL-20261022: 42 full pass (og:image + twitter:image absolute, GET 200 image/*), 9 unavailable pages with site-default og:image = expected, 1 preview-only skip on .live; 0 about:error. VOV-003 ja/en pass both tiers; MOVIE-029 pass both tiers; CATOV-002 og:image assertion pass; PDO-003 TD-586-01 blocked (unavailable | no-product / en 404), pass on product 46 (.page, PDO_ID).",
+    "2_article_011": "Re-baselined (spec + docs/DSR-529 A16 + tc-out 11.0, source Martin 22/10 DSR-659 c.64884). ja+en pass on both tiers; listing card part blocked (no article listing with qa529 cards on DEV).",
+    "3_isactive_off": "qa654-inactive ja/en both tiers: raw 200 + unavailable | inactive + noindex, browser final URL = /{lang}/library/catalog, list HTTP 200 (browser navigation). qa587-inactive 404 (not seeded) → blocked. qa587-off (movie-unavailable) → /en/library/video/search 200. Existing inactive TCs assert browser final URL (no HTTP 30x) → no TC text change.",
+    "4_catalog_form": "Preflight requiresForm=true on 4 -form pages × 2 tiers. CATOV-016, CATDL-006 ja/en, CATDL-010 ja pass both tiers; CATOV-001 non-form pass; CATOV-001 -form fail (data, TD-190 title); CATOV-002 non-form fail (noindex / requiresForm row, 40%, known JOB-14); CATOV-018 pending (A5)."
+  },
+  "tests": [
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa190-cat-ebook",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa190-cat-ebook",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa190-cat-ebook-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa190-cat-ebook-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa190-cat-pdf",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa190-cat-pdf",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa190-cat-pdf-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa190-cat-pdf-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa654-content-unpub",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | no-catalog; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa654-content-unpub",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | no-catalog; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa654-inactive",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | inactive; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa654-inactive",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | inactive; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa654-preview",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | not-found; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa654-preview",
+      "result": "blocked",
+      "error": "preview-only CF: not on .aem.live (HTTP 404 = expected)"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] og:image sweep page /en/library/catalog/qa654-update",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] og:image sweep live /en/library/catalog/qa654-update",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa501-main-a",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa501-main-a",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa501-main-b",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa501-main-b",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa557-dam",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa557-dam",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-main",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-main",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-off",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | movie-unavailable; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-off",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | movie-unavailable; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-r1",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-r1",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-r2",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-r2",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-r3",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-r3",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-r4",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-r4",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-r5",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-r5",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-r6",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-r6",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-rel-a",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-rel-a",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] og:image sweep page /en/library/video/qa587-rel-b",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] og:image sweep live /en/library/video/qa587-rel-b",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] og:image sweep page /ja/library/catalog/qa190-cat-ebook",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] og:image sweep live /ja/library/catalog/qa190-cat-ebook",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] og:image sweep page /ja/library/catalog/qa190-cat-ebook-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] og:image sweep live /ja/library/catalog/qa190-cat-ebook-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] og:image sweep page /ja/library/catalog/qa190-cat-pdf",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] og:image sweep live /ja/library/catalog/qa190-cat-pdf",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] og:image sweep page /ja/library/catalog/qa190-cat-pdf-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] og:image sweep live /ja/library/catalog/qa190-cat-pdf-form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] og:image sweep page /ja/library/catalog/qa654-inactive",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | inactive; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] og:image sweep live /ja/library/catalog/qa654-inactive",
+      "result": "pass",
+      "note": "expected no page og:image (Martin 22/10): unavailable | inactive; og:image=https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&format=pjpg&optimize=medium"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-VOV-003 [ja] og:image sweep page /ja/library/video/qa557-dam",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-VOV-003 [ja] og:image sweep live /ja/library/video/qa557-dam",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-VOV-003 [ja] og:image sweep page /ja/library/video/qa587-main",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-VOV-003 [ja] og:image sweep live /ja/library/video/qa587-main",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-005 [ja] qa654-inactive page: raw 200 + unavailable | inactive, browser ends on /ja/library/catalog (HTTP 200)",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-005 [ja] qa654-inactive live: raw 200 + unavailable | inactive, browser ends on /ja/library/catalog (HTTP 200)",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-005 [en] qa654-inactive page: raw 200 + unavailable | inactive, browser ends on /en/library/catalog (HTTP 200)",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-005",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-005 [en] qa654-inactive live: raw 200 + unavailable | inactive, browser ends on /en/library/catalog (HTTP 200)",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-VOV-007 [ja] qa587-inactive page: raw 200 + unavailable | inactive, browser ends on /ja/library/video/search (HTTP 200)",
+      "result": "blocked",
+      "error": "page not seeded on .aem.page (HTTP 404)"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-VOV-007 [ja] qa587-inactive live: raw 200 + unavailable | inactive, browser ends on /ja/library/video/search (HTTP 200)",
+      "result": "blocked",
+      "error": "page not seeded on .aem.live (HTTP 404)"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-007 [en] qa587-inactive page: raw 200 + unavailable | inactive, browser ends on /en/library/video/search (HTTP 200)",
+      "result": "blocked",
+      "error": "page not seeded on .aem.page (HTTP 404)"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-007 [en] qa587-inactive live: raw 200 + unavailable | inactive, browser ends on /en/library/video/search (HTTP 200)",
+      "result": "blocked",
+      "error": "page not seeded on .aem.live (HTTP 404)"
+    },
+    {
+      "tc": "DSR-VOV-008",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-008 [en] qa587-off page: raw 200 + unavailable | movie-unavailable, browser ends on /en/library/video/search (HTTP 200)",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-008",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-008 [en] qa587-off live: raw 200 + unavailable | movie-unavailable, browser ends on /en/library/video/search (HTTP 200)",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-VOV-003 [ja] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-VOV-003 [en] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-VOV-003 [ja] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-VOV-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-VOV-003 [en] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-029",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-MOVIE-029 outputs an absolute reachable CF thumbnail",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-029",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-MOVIE-029 outputs an absolute reachable CF thumbnail",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-PDO-003 [ja] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-PDO-003 [en] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+      "result": "blocked",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/products/990586001 HTTP 404)"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-PDO-003 [ja] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+      "result": "blocked",
+      "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-PDO-003 [en] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+      "result": "blocked",
+      "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-PDO-003 [ja] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-PDO-003",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-PDO-003 [en] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-pdf_page.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-pdf-form_page.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-ebook_page.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-ebook-form_page.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-016 [ja] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATOV-018 [ja] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "skip",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [en] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-pdf_page.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [en] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-pdf-form_page.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [en] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-ebook_page.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [en] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-ebook-form_page.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-002 [en] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-016 [en] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATOV-018 [en] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "skip",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "cn",
+      "tier": "page",
+      "title": "DSR-CATOV-001 [cn] catalog overlay pages",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-pdf_live.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-pdf-form_live.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-ebook_live.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [ja] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-ebook-form_live.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [ja] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-016 [ja] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATOV-018 [ja] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "skip",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [en] qa190-cat-pdf: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-pdf_live.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [en] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-pdf-form_live.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [en] qa190-cat-ebook: publishing DSR CF creates the catalog detail page; non-form → redirect to the file",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "fail",
+      "error": "non-form page: meta robots = noindex and requiresForm row omitted (expected \"false\") – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-ebook_live.png",
+      "cause": "none",
+      "suspect": "product",
+      "confidence": 40
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [en] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+      "result": "fail",
+      "error": "-form detail title = content CF dev sample (\"catalog … form\"), not TD-190 title – same as JOB-14",
+      "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-ebook-form_live.png",
+      "cause": "none",
+      "suspect": "data",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-002",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-002 [en] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-016",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-016 [en] PDF, requiresForm ON → form first, PDF URL not exposed",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATOV-018",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATOV-018 [en] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+      "result": "skip",
+      "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "cn",
+      "tier": "live",
+      "title": "DSR-CATOV-001 [cn] catalog overlay pages",
+      "result": "skip",
+      "error": "Issue #18: no /cn path on DEV"
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATDL-006 [ja] requiresForm=true card leads to the download form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-CATDL-006 [en] requiresForm=true card leads to the download form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-010",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-CATDL-010 [ja] catalog ID handed to the form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATDL-006 [ja] requiresForm=true card leads to the download form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-CATDL-006 [en] requiresForm=true card leads to the download form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-CATDL-010",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-CATDL-010 [ja] catalog ID handed to the form",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-ARTICLE-011 [ja] og:image + twitter:image absolute, GET 200; related card images absolute, GET 200; thumbnail meta present",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "tier": "page",
+      "title": "DSR-ARTICLE-011 [ja] listing card images of qa529 articles absolute, GET 200",
+      "result": "blocked",
+      "error": "Blocked: article list /master/ja/test-space/article-list shows no qa529 card (listing renders 9 placeholder fixture images, not the stories index)"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-ARTICLE-011 [en] og:image + twitter:image absolute, GET 200; related card images absolute, GET 200; thumbnail meta present",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "tier": "page",
+      "title": "DSR-ARTICLE-011 [en] listing card images of qa529 articles absolute, GET 200",
+      "result": "blocked",
+      "error": "Blocked: article list /master/en/test-space/article-list HTTP 404"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-ARTICLE-011 [ja] og:image + twitter:image absolute, GET 200; related card images absolute, GET 200; thumbnail meta present",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "tier": "live",
+      "title": "DSR-ARTICLE-011 [ja] listing card images of qa529 articles absolute, GET 200",
+      "result": "blocked",
+      "error": "Blocked: article list /master/ja/test-space/article-list shows no qa529 card (listing renders 9 placeholder fixture images, not the stories index)"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-ARTICLE-011 [en] og:image + twitter:image absolute, GET 200; related card images absolute, GET 200; thumbnail meta present",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "tier": "live",
+      "title": "DSR-ARTICLE-011 [en] listing card images of qa529 articles absolute, GET 200",
+      "result": "blocked",
+      "error": "Blocked: article list /master/en/test-space/article-list HTTP 404"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/overlay-seo/DSR-587.overlay-seo.spec.ts",
+    "tests/article-detail/DSR-529.article-detail.spec.ts",
+    "fixtures/dsr-529.ts",
+    "docs/DSR-529/baseline-BL-v1.md",
+    "ykk-dsr/hub/tc-out/DSR-529.spec.json"
+  ],
+  "reports": [
+    "results/DSR-587/DEV/automation-run-20261022-job13.md",
+    "results/DSR-586/DEV/automation-run-20261022-job13.md",
+    "results/DSR-654/DEV/automation-run-20261022-job13.md",
+    "results/DSR-570/DEV/automation-run-20261022-job13.md",
+    "results/DSR-529/DEV/automation-run-20261022-job13.md"
+  ],
+  "questions": []
+}

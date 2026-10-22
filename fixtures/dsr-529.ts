@@ -26,8 +26,6 @@ export const blockOrder = ['title', 'subtitle', 'articleImage', 'description', '
 export const optionalBlocks: readonly string[] = ['relatedItems'];
 // DSR-ARTICLE-014: each must appear exactly once and be non-empty (category only when authored).
 export const uniqueMeta = ['title', 'description', 'og:title', 'og:description', 'og:image', 'publicationdate', 'thumbnail', ...(td01Common.categoryAuthored ? ['category'] as const : [])] as const;
-// DSR-ARTICLE-011: image-transform params that must not be on the thumbnail URL.
-export const transformParams = ['width', 'height', 'format', 'optimize'];
 // DSR-ARTICLE-026: candidate stories index paths (A7 / Q7); record which returns 200.
 export const storiesIndexPaths = (lang: Language) => [`/${lang}/stories/query-index.json`, `/master/${lang}/stories/query-index.json`, `/master/${lang}/library/article/stories/query-index.json`];
 export const indexProperties = ['navtitle', 'thumbnail', 'publicationdate', 'updatedate', 'searchkeywords', 'related-stories'] as const;

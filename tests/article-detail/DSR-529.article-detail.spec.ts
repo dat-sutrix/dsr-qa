@@ -2,9 +2,10 @@ import { test, expect, type Locator, type Page } from '@playwright/test';
 import { ArticleDetailPage, type MetaEntry } from '../../pages/ArticleDetailPage';
 import {
   languages, type Language, viewports, slugs, articlePath, minimalLanguages, blockedData,
-  td01, td01Common, td02, blockOrder, optionalBlocks, uniqueMeta, transformParams, storiesIndexPaths, indexProperties, isoDate, metaNames,
+  td01, td01Common, td02, blockOrder, optionalBlocks, uniqueMeta, storiesIndexPaths, indexProperties, isoDate, metaNames,
 } from '../../fixtures/dsr-529';
 import { BreadcrumbPage } from '../../pages/BreadcrumbPage';
+import { pagePath } from '../../fixtures/paths';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -114,19 +115,59 @@ for (const lang of languages) {
       for (const text of ['2026.10.10', '2026-10-10']) expect.soft(visible, `update date ${text} not visible`).not.toContain(text);
     });
 
-    test(`DSR-ARTICLE-011 [${lang}] meta thumbnail: 1, absolute, no transform params, GET 200 image/*`, { tag: ['@auto'] }, async ({ page, request }) => {
+    // Re-baseline (Martin 22/10, DSR-659 c.64884): EDS makes only og:image / og:image:secure_url / twitter:image absolute;
+    // the custom `thumbnail` meta stays as authored (query-index only) → presence only, no URL-form assertion.
+    test(`DSR-ARTICLE-011 [${lang}] og:image + twitter:image absolute, GET 200; related card images absolute, GET 200; thumbnail meta present`, { tag: ['@auto'] }, async ({ page, request }) => {
       const { article, path } = await openArticle(page, lang);
-      const thumbs = metaValues((await article.rawMeta(request, path)).meta, 'thumbnail');
+      const { meta } = await article.rawMeta(request, path);
+      const thumbs = metaValues(meta, 'thumbnail');
       observations.push({ thumbnail: thumbs });
-      expect(thumbs, 'thumbnail meta count').toHaveLength(1);
-      const url = thumbs[0];
-      expect(url, 'absolute URL').toMatch(/^https?:\/\//);
-      const params = [...new URL(url).searchParams.keys()];
-      expect.soft(params.filter(p => transformParams.includes(p)), 'transform params').toEqual([]);
-      const res = await request.get(url);
-      observations.push({ params, status: res.status(), contentType: res.headers()['content-type'] });
-      expect.soft(res.status()).toBe(200);
-      expect.soft(res.headers()['content-type'] ?? '').toMatch(/^image\//);
+      expect.soft(thumbs.filter(Boolean), 'thumbnail meta present').toHaveLength(1);
+      for (const key of ['og:image', 'twitter:image']) {
+        const url = metaValues(meta, key)[0] ?? '';
+        expect.soft(url, `${key} absolute`).toMatch(/^https?:\/\//);
+        if (!/^https?:\/\//.test(url)) continue;
+        const res = await request.get(url, { failOnStatusCode: false });
+        observations.push({ key, url, status: res.status(), contentType: res.headers()['content-type'] });
+        expect.soft(res.status(), `${key} HTTP`).toBe(200);
+        expect.soft(res.headers()['content-type'] ?? '', `${key} content-type`).toMatch(/^image\//);
+      }
+      // Related stories cards (block 12): raw src attribute must already be absolute.
+      const cardSrcs = await article.relatedStories.locator('img').evaluateAll(imgs => imgs.map(i => i.getAttribute('src') ?? ''));
+      observations.push({ relatedCardImageSrc: cardSrcs });
+      expect.soft(cardSrcs.length, 'related card images').toBeGreaterThan(0);
+      for (const src of cardSrcs) {
+        expect.soft(src, 'related card image absolute').toMatch(/^https?:\/\//);
+        if (!/^https?:\/\//.test(src)) continue;
+        const res = await request.get(src, { failOnStatusCode: false });
+        observations.push({ src, status: res.status(), contentType: res.headers()['content-type'] });
+        expect.soft(res.status(), `${src} HTTP`).toBe(200);
+        expect.soft(res.headers()['content-type'] ?? '', `${src} content-type`).toMatch(/^image\//);
+      }
+    });
+
+    test(`DSR-ARTICLE-011 [${lang}] listing card images of qa529 articles absolute, GET 200`, { tag: ['@auto'] }, async ({ page, request }) => {
+      const target = pagePath('articleList', lang);
+      const response = await page.goto(target);
+      await page.waitForLoadState('networkidle').catch(() => undefined);
+      observations.push({ url: target, status: response?.status() });
+      test.skip(response?.status() === 404, `Blocked: article list ${target} HTTP 404`);
+      // TODO: data-testid for the listing block and its cards (DSR-523).
+      const cards = page.locator('main .listing a[href*="/stories/qa529-"]');
+      const count = await cards.count();
+      const placeholders = await page.locator('main .listing img[src*="/fixtures/placeholder"]').count();
+      observations.push({ qa529Cards: count, placeholderImages: placeholders });
+      test.skip(count === 0, `Blocked: article list ${target} shows no qa529 card (listing renders ${placeholders} placeholder fixture images, not the stories index)`);
+      const srcs = await cards.evaluateAll(links => links.flatMap(a => [...a.querySelectorAll('img')].map(i => i.getAttribute('src') ?? '')));
+      observations.push({ listingCardImageSrc: srcs });
+      expect.soft(srcs.length, 'listing card images').toBeGreaterThan(0);
+      for (const src of srcs) {
+        expect.soft(src, 'listing card image absolute').toMatch(/^https?:\/\//);
+        if (!/^https?:\/\//.test(src)) continue;
+        const res = await request.get(src, { failOnStatusCode: false });
+        observations.push({ src, status: res.status() });
+        expect.soft(res.status(), `${src} HTTP`).toBe(200);
+      }
     });
 
     test(`DSR-ARTICLE-012 [${lang}] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible`, { tag: ['@auto'] }, async ({ page, request }) => {

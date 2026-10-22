@@ -157,12 +157,12 @@
   },
   {
    "id": "11.0",
-   "feature": "Meta thumbnail – delivery URL",
-   "summary": "EN: Verify meta thumbnail holds the asset delivery URL without transform parameters. JP: meta thumbnail が変換パラメータなしの配信URLであることを確認する。",
+   "feature": "OGP image absolute + thumbnail meta present (re-baseline 22/10)",
+   "summary": "EN: Verify og:image / twitter:image and card images are absolute and reachable; the custom thumbnail meta is present (kept as authored). JP: og:image・twitter:image・カード画像が絶対URLで取得可能、thumbnail meta が存在することを確認する。",
    "pre": "EN: TD-529-01. JP: TD-529-01。",
-   "steps": "EN: 1. Fetch HTML. 2. Read <meta name=thumbnail>. 3. GET that URL. JP: 1. HTML取得。2. meta確認。3. URLにGET。",
-   "expected": "EN: Exactly 1 thumbnail meta; absolute URL; no width/height/format/optimize query params; GET = 200 image/*. JP: 1件、パラメータなし、200 画像。",
-   "design": "Property table thumbnail; Martin §A",
+   "steps": "EN: 1. Fetch HTML. 2. Read og:image, twitter:image, <meta name=thumbnail>. 3. GET og:image / twitter:image. 4. Read related stories card image src (and article list cards for qa529-*), GET each. JP: 1. HTML取得。2. meta確認。3. 画像URLにGET。4. カード画像src確認・GET。",
+   "expected": "EN: og:image and twitter:image absolute (https), GET = 200 image/*; related stories / listing card images absolute, GET = 200; <meta name=thumbnail> present (exactly 1, non-empty) – no URL-form assertion (EDS only makes og:image / og:image:secure_url / twitter:image absolute; thumbnail stays as authored, used by query-index only). JP: og:image・twitter:image が絶対URLで200 画像、関連/一覧カード画像が絶対URLで200、thumbnail meta は存在のみ確認（URL形式は検証しない）。",
+   "design": "Property table thumbnail; Martin §A; re-baseline Martin 22/10 DSR-659 c.64884",
    "layer": "Page",
    "exec": "Automation",
    "lang": "ja, en, cn",
@@ -576,6 +576,12 @@
    "Date display = YYYY.MM.DD in every language (ja/en/cn); replaces the Q4 assumption.",
    "BUG-RULES §6; DSR-660",
    "TC 7, 18"
+  ],
+  [
+   "A16",
+   "EDS makes only og:image / og:image:secure_url / twitter:image absolute; the custom `thumbnail` meta stays as authored (relative DAM path, used by query-index only) – by design. TC 11 asserts og:image + twitter:image absolute + 200, card images absolute + 200, thumbnail meta present only.",
+   "Martin 22/10 DSR-659 c.64884",
+   "TC 11"
   ]
  ],
  "testdata": [
