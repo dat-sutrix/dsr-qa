@@ -4,6 +4,13 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-22 | DSR-611 | Quentin | **Q4 Youku test ID:** `XNTgyNzE1ODE5Ng==` (CN movie 345 闪亮金属拉链简介); dự phòng `XNTgyNTc0MDg4NA==` (movie 346) – nguồn DSR-582 動画_CN → mở TC 3.0/7.0/11.0 phần Youku (557). Q1/Q2 đang hỏi Numata; Q3 (setting NEW/UPDATE) chuyển Kohei – chưa trả lời | DSR-611 c.64863 (14:50 JST) |
+| 2026-10-22 | DSR-664 | Martin | Martin nhận lại bug (từ Ngọc 17:37 JST), → **[Dev] In Testing 17:52 JST**; deploy dev/2026.10.22_2 (b6b1416, 08:52Z); liên kết DSR-662 c.64873 → retest JOB-20261022-16 | DSR-664 c.64902 + changelog |
+| 2026-10-22 | DSR-662 | 石谷 | ブースTOP: chữ "null" dưới related videos (cùng lỗi DSR-664); 662 → [Dev] In Testing 17:52 JST | DSR-662 c.64873 |
+| 2026-10-22 | DSR-357/566 | Kohei/Ngọc | Deploy dev/2026.10.22_2 08:52Z trên epic 357; Ngọc chuyển DSR-566 → In Progress 18:01 JST (chưa comment "template updated"). JOB-15: template thật tên `news-detail`, đã có component sẵn (70%) | DSR-357 c.64904 · DSR-566 changelog |
+| 2026-10-22 | DSR-649 | Martin | Trang search-result chưa implement (#8); News list field: tự lấy tin cùng ngôn ngữ (/en → EN) (#12); "ảnh các tầng" thuộc DSR-610 | DSR-649 c.64890 |
+| 2026-10-22 | DSR-582 | Quentin | Migration data 動画・カタログ blocked by SharePoint access | DSR-582 c.64861 |
+| 2026-10-22 | DSR-654 | Kohei | Deploy dev/2026.10.22 (bf2073a, 06:48Z) – trùng fix og:image/catalog Martin 13:45 VN | DSR-654 c.64885 |
 | 2026-10-22 | DSR-587 | Quentin | 11:43 JST comment "Blocked by DSR-665" – DSR-665 đã Done 13:40 JST (retest Pass) → 587 không còn blocked | DSR-587 comment 64827 |
 | 2026-10-22 | DSR-566/653 | Quentin | 11:54 JST comment "Blocked by Missing News Article Template" – **mâu thuẫn** Ngọc 19/10 (template đã deploy DEV) → Dat đính chính, không dời S13 | DSR-566 c.64832 · DSR-653 c.64833 |
 | 2026-10-22 | DSR-558 | Quentin | DSR-558 (TC 動画・カタログ, Nakamoto) blocked by DSR-664 | DSR-558 comment 64830 |

@@ -1,0 +1,29 @@
+# TD-557-YOUKU – Youku video (DSR-557 TC 3.0 / 7.0 / 11.0 Youku parts) – jira-sweep 22/10 16:05 VN
+# Source: DSR-611 Q4 answer (Quentin 22/10 14:50 JST, c.64863): real Youku ID from current CN site (movie 345 闪亮金属拉链简介).
+# Required DM_movie fields per author/models.md (movieId, movieTitle, description, thumbnail, movieSource, publishDate).
+# Not resolved/approved yet: Claude review → dry-run → apply (lane author, 08–18 T2–T6) or QA-PT Night Pack.
+id: TD-557-YOUKU
+us: DSR-557
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en, ja]
+    path: /content/dam/common/{lang}/movies/qa557-youku
+    fields:
+      movieId: qa557-youku
+      movieTitle: QA557 Youku video
+      description: QA557 Youku test (DSR-611 Q4)
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)"
+      movieSource: youku
+      movieSourceId: "XNTgyNzE1ODE5Ng=="
+      publishDate: "2026-10-01"
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/movies/standard/qa557-youku
+    fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/qa557-youku)" }
+    replicate: [preview, publish]
+# Spare ID if a 2nd Youku video is needed: XNTgyNTc0MDg4NA== (movie 346 铝合金拉链简介)
+verify:
+  urls: ["/{lang}/library/video/qa557-youku"]
