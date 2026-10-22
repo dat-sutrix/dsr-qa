@@ -1,0 +1,470 @@
+[
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+  "status": 200,
+  "title": "catalog ebook | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+  "status": 200,
+  "title": "catalog ebook form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+  "status": 200,
+  "title": "catalog pdf | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+  "status": 200,
+  "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-content-unpub",
+  "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+  "status": 200,
+  "title": "YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-inactive",
+  "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+  "status": 200,
+  "title": "QA654 inactive | YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-preview",
+  "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+  "status": 200,
+  "title": "YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-update",
+  "path": "/content/dam/dsr/en/catalogs/qa654-update",
+  "status": 200,
+  "title": "QA654 update | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa501-main-a",
+  "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+  "status": 200,
+  "title": "video title main a | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa501-main-b",
+  "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+  "status": 200,
+  "title": "video title main b | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa557-dam",
+  "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+  "status": 200,
+  "title": "QA557 DAM movie | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+  "status": 200,
+  "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-r1",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+  "status": 200,
+  "title": "QA587 related 1 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-r2",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+  "status": 200,
+  "title": "QA587 related 2 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-r3",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+  "status": 200,
+  "title": "QA587 related 3 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-r4",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+  "status": 200,
+  "title": "QA587 related 4 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-r5",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+  "status": 200,
+  "title": "QA587 related 5 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-r6",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+  "status": 200,
+  "title": "QA587 related 6 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-rel-a",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+  "status": 200,
+  "title": "QA587 rel A | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+  "status": 200,
+  "title": "catalog ebook | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook-form",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+  "status": 200,
+  "title": "catalog ebook form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+  "status": 200,
+  "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+  "status": 200,
+  "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa654-inactive",
+  "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+  "status": 200,
+  "title": "QA654 inactive | YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "page",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa587-main",
+  "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+  "status": 200,
+  "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+  "status": 200,
+  "title": "catalog ebook | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook-form",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+  "status": 200,
+  "title": "catalog ebook form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+  "status": 200,
+  "title": "catalog pdf | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+  "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+  "status": 200,
+  "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-content-unpub",
+  "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+  "status": 200,
+  "title": "YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-inactive",
+  "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+  "status": 200,
+  "title": "QA654 inactive | YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+  "path": "/content/dam/dsr/en/catalogs/qa654-update",
+  "status": 200,
+  "title": "QA654 update | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa501-main-a",
+  "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+  "status": 200,
+  "title": "video title main a | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa501-main-b",
+  "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+  "status": 200,
+  "title": "video title main b | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa557-dam",
+  "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+  "status": 200,
+  "title": "QA557 DAM movie | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+  "status": 200,
+  "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-off",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+  "status": 200,
+  "title": "QA587 off | YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r1",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+  "status": 200,
+  "title": "QA587 related 1 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r2",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+  "status": 200,
+  "title": "QA587 related 2 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r3",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+  "status": 200,
+  "title": "QA587 related 3 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r4",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+  "status": 200,
+  "title": "QA587 related 4 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r5",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+  "status": 200,
+  "title": "QA587 related 5 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-r6",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+  "status": 200,
+  "title": "QA587 related 6 | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-a",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+  "status": 200,
+  "title": "QA587 rel A | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-rel-b",
+  "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+  "status": 200,
+  "title": "QA587 rel B | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+  "status": 200,
+  "title": "catalog ebook | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook-form",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+  "status": 200,
+  "title": "catalog ebook form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+  "status": 200,
+  "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+  "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+  "status": 200,
+  "title": "catalog pdf form | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa654-inactive",
+  "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+  "status": 200,
+  "title": "QA654 inactive | YKK DIGITAL SHOWROOM",
+  "og_image": "https://dev-eds.ykkdigitalshowroom.com/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa557-dam",
+  "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+  "status": 200,
+  "title": "QA557 DAM movie | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ },
+ {
+  "tier": "live",
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+  "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+  "status": 200,
+  "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+  "og_image": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png",
+  "ok": true
+ }
+]

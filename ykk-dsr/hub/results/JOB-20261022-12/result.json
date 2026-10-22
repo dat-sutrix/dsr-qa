@@ -1,0 +1,58 @@
+{
+ "job": "JOB-20261022-12",
+ "agent": "claude-code",
+ "us": "DSR-587/654/586",
+ "env": "dev",
+ "started": "2026-10-22T07:41:30Z",
+ "finished": "2026-10-22T07:50:00Z",
+ "status": "done",
+ "tests": [],
+ "author_apply": {
+  "manifest": "ykk-dsr/hub/author/manifests/REPUBLISH-OVL-20261022.yaml",
+  "apply_start": "2026-10-22T07:42:52Z",
+  "lint": {
+   "PASS": 168,
+   "FAIL": 0,
+   "WARN": 56
+  },
+  "plan_diff_vs_JOB_11": "only the 8 qa190-cat-* paths added to the preview request (17→25 paths); publish request and the 28 skips identical",
+  "writes": [
+   {
+    "op": "replicate:preview",
+    "paths": 25,
+    "http": 200
+   },
+   {
+    "op": "replicate:publish",
+    "paths": 27,
+    "http": 200
+   }
+  ],
+  "field_changes": 0,
+  "verify": {
+   "L1_L2": {
+    "PASS": 108,
+    "FAIL": 0
+   },
+   "L3": {
+    "page_pass": 25,
+    "live_pass": 27,
+    "fail": 0
+   }
+  },
+  "og_image_default_meta_image": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-content-unpub",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-inactive",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-off",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa654-inactive",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-content-unpub",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-inactive",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-preview",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa654-inactive"
+  ]
+ },
+ "code_changes": [
+  "ykk-dsr/hub/author/manifests/REPUBLISH-OVL-20261022.yaml"
+ ],
+ "questions": []
+}

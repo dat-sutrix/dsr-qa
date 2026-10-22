@@ -1,0 +1,2242 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-content-unpub"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa654-content-unpub"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-update"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa654-update"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-update",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa501-main-a"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa501-main-a"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa501-main-b"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa501-main-b"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-off"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-off"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r1"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-r1"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r2"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-r2"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r3"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-r3"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r4"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-r4"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r5"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-r5"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r6"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-r6"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-rel-a"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-rel-a"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-rel-b"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-rel-b"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/catalogs/qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/movies/standard/qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/movies/standard/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  }
+]

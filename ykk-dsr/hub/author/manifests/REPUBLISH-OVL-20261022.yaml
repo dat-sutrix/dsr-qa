@@ -19,28 +19,28 @@ items:
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-ebook
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-ebook-form
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-pdf
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-pdf-form
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [en]
@@ -166,28 +166,28 @@ items:
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-ebook
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-ebook-form
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-pdf
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-pdf-form
-    replicate: [publish]
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
     model: DM_catalog_related
     lang: [ja]
