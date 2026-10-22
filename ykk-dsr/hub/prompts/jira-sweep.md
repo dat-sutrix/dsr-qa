@@ -24,6 +24,10 @@ Giới hạn: ≤ 60 ticket/lần (Dat đã duyệt cho sweep này, ngoại lệ
 - Bug ≥ 80% không tạo ở đây (để 07:45/17:10 theo BUG-RULES); chỉ ghi vào 🐞 nếu thấy.
 - Không comment/chuyển trạng thái Jira, không đổi priority.
 
+## Theo dõi forecast (Dat 22/10 16:11)
+- Mọi ticket chuyển sang [Dev] In Testing / giao QA trong cửa sổ: ghi ngày giờ vào `FORECAST.md` (cột Hiện tại). Sau **23/10 17:00 VN** (Sprint 12) hoặc khi việc test còn lại > năng lực (bảng Năng lực) → ghi `LATE HANDOVER` + PushNotification ngay cho Dat với tin EN soạn sẵn cho Quentin (+ dev): ảnh hưởng, đề xuất (dời S13 / bỏ TC nào).
+- Thông tin làm ticket trễ đích baseline (blocker mới, dev hẹn ngày mới) → cập nhật `FORECAST.md` cột Δ + push Dat.
+
 ## Ghi kết quả
 - Ghi đè `JIRA-SWEEP.md`: `last_sweep_utc: <ISO>` · bảng **Mới phát hiện** (Ticket | Ai/khi nào | Loại a–f | Nội dung | Đã cập nhật gì) · **Câu hỏi/tin đã gạch** · **Dat cần làm** · số ticket đã đọc / bỏ lại.
 - `git pull --rebase` trước khi sửa; commit `[jira-sweep] <YYYY-MM-DD HH:MM>`; push (thử lại 3 lần).

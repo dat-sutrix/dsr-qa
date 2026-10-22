@@ -31,6 +31,7 @@
 - **Đóng bug fixed:** comment "QA confirm DEV – fixed" → transitions 211 → 221 → 231 → 31. **US/Task Done (Dat duyệt):** 151 → 161 → 171 → 71 (từ To Do: 11 → 221 → 151 → 161 → 171 → 71).
 - **TC trace:** mỗi US 1 sub-task Jira (label `qa-tc`, SP 1 = 1h, assignee Dat), description = link folder TC → Done. Task "Create Test Case" giao Dat: link folder + Done.
 - **Trước khi soạn tin hỏi/đuổi ai:** đọc lại mọi comment mới trên ticket + **`KNOWN-FACTS.md`** – đã có câu trả lời thì KHÔNG hỏi lại.
+- **Forecast tracker (Dat 22/10):** `FORECAST.md` – baseline gửi Quentin 22/10; standup 08:19 cập nhật mỗi ngày làm việc + dòng Forecast trong Daily report; ticket lùi đích / rủi ro xấu đi / dev bàn giao muộn (sau 23/10 17:00 hoặc vượt năng lực test còn lại) → **escalate ngay trong ngày** (Daily report + tin EN cho Quentin), không để bất ngờ cuối sprint.
 - **Jira sweep (Dat 22/10):** T2–T6 08:05 (trước standup) · 12:05 · 16:05 VN rà TOÀN BỘ ticket giao Dat + mọi comment mới project DSR (mention Dat, deploy/"implemented", trả lời câu hỏi, ticket mới giao Dat) → cập nhật DASHBOARD/PLAN/job ngay, gạch câu hỏi đã có trả lời, ghi `KNOWN-FACTS.md`. Quy trình: `prompts/jira-sweep.md`; kết quả: `JIRA-SWEEP.md`.
 - **QA tự tạo data/trang test**, không chờ dev xác nhận.
 - **Night Pack:** ~4h (không ít hơn), ước lượng ×1.5 cho việc Author, mọi field bắt buộc + giá trị chính xác, **giá trị tô vàng/đậm, cấm tô đỏ, ON tô xanh, khung "quy tắc bắt buộc" + checklist trước Publish**, mỗi dòng report có Date + Env, chưa làm = Not run. Mẫu: Night Work Pack 2026-10-21 (v3).
