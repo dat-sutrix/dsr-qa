@@ -18,7 +18,9 @@
 | [DSR-654](https://sutrix.atlassian.net/browse/DSR-654) CATALOG Overlay (sub-task 586) | 21 TC + automation CATOV-001..021 (JOB-21-11): 11 ✅ 2 ❌ (data) 49 skip (chưa seed TD-654-02..08) · ⚠ catalog-detail.js: non-form → mở file thẳng → TC 1/12/15/17/19 có thể sai kỳ vọng | Night 22/10 TD-654-02..08 + BUGCHK-190-FORM → JOB-20261022-03 · visual JOB-21-12 queue | QA-PT | 23/10 |
 | [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) 製品詳細 Overlay | JOB-20-03: 11/11 skip – 990586001 overlay `unavailable \| no-product` (data), 990586002 DSR CF chưa Preview (lỗi pack v3) | Night 22/10 BUGCHK-586-01/02 → JOB-20261022-03 23/10 | QA-PT | 23/10 |
 | [DSR-529](https://sutrix.atlassian.net/browse/DSR-529) 記事詳細 | retest: ✅ 657/658/660 · ⚠ 659 thumbnail meta vẫn tương đối · 012/014 `category` rỗng, 016 robots, 023 (data/test) | JOB-20261022-02 (sửa locator + rerun) sáng nay · 659 trả Martin | Martin (659) | 23/10 |
-| [DSR-653](https://sutrix.atlassian.net/browse/DSR-653) + [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) ニュース詳細 | 5/18 ✅ · 12 ⛔ (không có template news-article) | Có template → seed tối đó → agent hôm sau · Dat đã báo Quentin đề xuất Sprint 13 | Quentin | Sprint 13 (đề xuất) |
+| [DSR-653](https://sutrix.atlassian.net/browse/DSR-653) + [DSR-566](https://sutrix.atlassian.net/browse/DSR-566) ニュース詳細 | 5/18 ✅ · ⚠ **template news-article đã deploy DEV từ 19/10 (Ngọc, bị bỏ sót)** | Night 22/10 tạo TD-566-01/02 → JOB-20261016-08/-11 sáng 23/10 | QA-PT | **23/10** (rút đề xuất Sprint 13) |
+| 🆕 [DSR-590](https://sutrix.atlassian.net/browse/DSR-590) 環境配慮型製品 (giao Dat, [Dev] In Testing) | 16 TC có sẵn · Ngọc 21/10: Eco TOP xong, data demo, chỉ check layout · Figma mới 3351-51595 (Martin) | JOB-20261022-04 chạy ngay + chụp ảnh → L&F card cho Dat | — | 23/10 |
+| 🆕 [DSR-664](https://sutrix.atlassian.net/browse/DSR-664) bug video block hiện "null" (Nakamoto tạo, giao Dat) | To Do | JOB-20261022-05 repro + viết check retest | Dev (chưa gán) | theo dõi |
 Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohei) → mục OK cũ + #13 kiểm lại trong DSR-586** · DSR-503 Dismissed · DSR-585 → [STG] In Testing (Quentin; Sprint 12 chỉ DEV) · ⚠ **DSR-638 (Mayuka, In Progress): chuyển trang test-space ja sang URL chính thức** (list-catalog → /ja/library/catalog, video-list → /ja/library/video/search, product-list → /ja/product/…/product-index, article-list → /ja/library/article) – đường dẫn cũ sẽ 404 → automation 557/570/583/590 vỡ; IDLE-22 theo dõi · DSR-433 (⛔ SendGrid).
 
 > ⚠ **T3 20/10:** overlay đã merge, Martin dọn folder → một số CF test bị xóa → tạo lại bằng TD-587 (PLAN "Night Pack 20/10"). **Product:** hỏng 12:12–13:50 JST do CR DSR-585 đổi model (−30/+9 field), Martin đã sửa – QA đang xác minh (JOB-20261020-07); field mới chưa hiển thị (chưa có design); catalog overlay đang được merge (Dat OK).
@@ -26,6 +28,8 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 ## 2. 🔔 Dat cần làm
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
 |---|---|---|---|---|
+| P1 | **Đính chính với Quentin: DSR-566 KHÔNG cần dời Sprint 13** – template news-article đã có (Ngọc 19/10) → QA test tối 22/10, đích 23/10 | Quentin (+Ngọc) | 22/10 sáng | xem tin trong chat |
+| P2 | Trả lời Ngọc DSR-590: QA đang check layout Eco TOP (kết quả 22/10 chiều) | Ngọc | 22/10 | "Thanks Ngọc, QA is checking the Eco TOP layout today and will update this ticket." |
 | P1 | Chuyển **Done** 4 bug đã retest Pass DEV (comment QA đã có): DSR-647, DSR-657, DSR-658, DSR-660 | Jira (Dat là assignee) | 22/10 sáng | "QA confirm DEV – fixed (see comment)." |
 | P1 | Trả **DSR-659** lại Martin (thumbnail meta vẫn tương đối → 404 .live; ảnh related đã OK) | Martin | 22/10 sáng | xem comment 64797 trong DSR-659 + tin 📣 |
 | P1 | Gửi Martin tin 📣 (DSR-665 mới High + og:image + catalog list + 2 câu hỏi cũ) | Martin | 22/10 sáng | xem cuối mục 📣 |

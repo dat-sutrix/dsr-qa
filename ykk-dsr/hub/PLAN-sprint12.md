@@ -141,6 +141,16 @@ Scheduled task "DSR TC – Đêm 18–22h" (chỉ Claude) viết/adopt TC theo `
 Nguyên tắc: không chờ – TC bị env/ticket khác chặn ghi ⛔ Blocked + owner, không giữ ticket ở In Testing.
 
 
+
+**Night Pack 22/10 – bổ sung bắt buộc (claude-web 09:20, sau khi rà Jira):** thứ tự đầu pack:
+1. BUGCHK sửa data (theo DASHBOARD/JOB-21-09, JOB-20-03, JOB-20-04): DSR CF `/content/dam/dsr/ja/products/990586002` → **Preview** (không Publish); 990586001: content CF Publish + DSR CF ô `product` trỏ `/content/dam/common/ja/products/990586001` → Publish; catalog `common/{ja,en}/catalogs/qa190-cat-pdf-form` + `-ebook-form`: **requiresForm = ON** → Publish; field tùy chọn TD-586-01 (doc 1VkiFqzmlrJVnGB0rVq8awmVnedjwiDlNxsLtbrUoP1o).
+2. **DSR-566 – template news-article ĐÃ CÓ trên DEV (Ngọc 19/10 15:52 trên DSR-566; trước đó bị bỏ sót)** → tạo trang (ghi giá trị inline trong pack, không trỏ file):
+   - TD-566-01 ja: Sites → `/content/sites/digital-showroom/master/ja/test-space` → Create Page → template **news-article** → tên **`qa566-news-01`** · title **`QA566 ニュース詳細テスト`** · category **お知らせ** · publish date **2026-10-01** · tags **2 tag bất kỳ (ghi tên vào Note)** · description **`QA566 description ja`** · body: 1 heading h2 **`QA566 見出し`**, 1 câu **in đậm**, 1 list 3 dòng, 1 link tới `/master/ja/test-space` · 1 ảnh test png · CTA **`詳しく見る`** → `/master/ja/test-space` → Publish.
+   - TD-566-01 en: tương tự trong `/master/en/test-space`, tên **`qa566-news-01`**, title **`QA566 News detail test`**, category **News**, description **`QA566 description en`**, CTA **`Learn more`** → `/master/en/test-space` → Publish.
+   - TD-566-02 ja: tên **`qa566-news-02`**, title = 100 ký tự full-width (dán: 「長いタイトル」×16 + 「長いタ」 = 100 ký tự – pack phải ghi sẵn chuỗi), **không ảnh, không CTA** → Publish.
+   - Không thấy template news-article → chụp màn hình Create Page, ghi Blocked, làm tiếp.
+3. Sau đó: TD-654-02..08 · 570 manual 6 TC · TD-586 en + negative · TD-587 negative (cắt từ cuối nếu hết giờ).
+
 ## Sprint 12 Review QA – 27/10 (thảo luận chiến lược Sprint 13)
 Scheduled task 27/10 09:40 tổng hợp `SPRINT12-REVIEW.md`: kết quả ticket (Done DEV / trễ / lý do), bug (tạo, đóng, giả), WORKLOAD (giờ công theo actor), KPI QA-PT (phút/đêm theo H1–H4, lỗi data, % TC không cần QA-PT; mục tiêu 0% QA-PT, Dat giữ vai trò), tiến độ Agent Author, đề xuất Sprint 13 theo `ZERO-HUMAN-ROADMAP.md` (mốc 'Hết S13').
 
