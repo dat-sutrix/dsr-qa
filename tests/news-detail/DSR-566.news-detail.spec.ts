@@ -1,6 +1,6 @@
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import { NewsDetailPage } from '../../pages/NewsDetailPage';
-import { languages, type Language, viewports, newsPath, queryIndexPaths, rootQueryIndex, indexFields, backToListSuffix, relatedPattern, seoMeta, isoDate } from '../../fixtures/dsr-566';
+import { languages, type Language, viewports, newsPath, queryIndexPaths, rootQueryIndex, indexFields, backToListSuffix, relatedPattern, seoMeta, isoDate, dateFormat, newsListPath } from '../../fixtures/dsr-566';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -33,14 +33,16 @@ for (const lang of languages) {
       }
     });
 
-    test(`DSR-NEWS-002 [${lang}] fixed order date → category → title → body → CTA → Back to list`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-NEWS-002 [${lang}] fixed order meta → title → news type → spacer → body → image → spacer → CTA → Back to list`, { tag: ['@auto'] }, async ({ page }) => {
       const news = await openNews(page, lang);
-      const chain: [string, Locator][] = [['date', news.date], ['category', news.category], ['title', news.title], ['body', news.body], ['cta', news.cta], ['backToList', news.backToList]];
+      // Template news-detail order (JOB-20261022-15); spacers are checked by position between their neighbours.
+      const chain: [string, Locator][] = [['date', news.date], ['title', news.title], ['category', news.category], ['spacer', news.spacers.nth(0)], ['body', news.body], ['image', news.images], ['spacer2', news.spacers.nth(1)], ['cta', news.cta], ['backToList', news.backToList]];
       const present: { name: string; count: number }[] = [];
       for (const [name, el] of chain) present.push({ name, count: await el.count() });
-      observations.push({ present });
-      // CTA is optional (if authored); Back to list is a template area and must exist.
-      const missing = present.filter(p => p.count === 0 && p.name !== 'cta').map(p => p.name);
+      const blockSequence = await news.main.locator('.block').evaluateAll(els => els.map(e => e.classList[0]).filter(n => n !== 'breadcrumb'));
+      observations.push({ present, blockSequence });
+      // Image and CTA (with its spacer) are optional (TD-566-02); Back to list is a template area and must exist.
+      const missing = present.filter(p => p.count === 0 && !['image', 'spacer2', 'cta'].includes(p.name)).map(p => p.name);
       expect(missing, 'required elements missing').toEqual([]);
       const ordered = chain.filter(([name]) => present.find(p => p.name === name)!.count > 0);
       for (let i = 0; i < ordered.length - 1; i++) {
@@ -51,12 +53,17 @@ for (const lang of languages) {
     test(`DSR-NEWS-003 [${lang}] shown date equals meta publish date`, { tag: ['@auto'] }, async ({ page }) => {
       const news = await openNews(page, lang);
       const shown = (await news.date.first().innerText()).trim();
-      const meta = await page.locator('meta[name="published-time"]').getAttribute('content');
-      observations.push({ shown, metaPublishedTime: meta, shownIso: isoDate(shown), metaIso: isoDate(meta), note: 'format recorded only (A4 / tc-questions Q1 open)' });
+      // Page property publish date (meta publicationdate); published-time only as fallback.
+      const publicationDate = await page.locator('meta[name="publicationdate"]').getAttribute('content', { timeout: 1_000 }).catch(() => null);
+      const publishedTime = await page.locator('meta[name="published-time"]').getAttribute('content', { timeout: 1_000 }).catch(() => null);
+      const meta = publicationDate ?? publishedTime;
+      observations.push({ shown, publicationDate, publishedTime, shownIso: isoDate(shown), metaIso: isoDate(meta) });
+      expect.soft(shown, 'date format YYYY.MM.DD (DSR-660 rule)').toMatch(dateFormat);
       expect(isoDate(shown), 'shown date parsable').not.toBeNull();
       expect(isoDate(shown)).toBe(isoDate(meta));
     });
 
+    // Category = news type, read from the Text block directly under Title (template news-detail).
     test(`DSR-NEWS-004 [${lang}] category and title are non-empty text`, { tag: ['@auto'] }, async ({ page }) => {
       const news = await openNews(page, lang);
       for (const [name, el] of [['category', news.category], ['title', news.title]] as const) {
@@ -96,12 +103,32 @@ for (const lang of languages) {
       const rootJson = root.ok() ? await root.json().catch(() => null) : null;
       observations.push({ index: rootQueryIndex, status: root.status(), row: rootJson?.data?.find((r: { path: string }) => r.path === path) ?? null, recordedOnly: true });
       expect(found, `page ${path} in ${queryIndexPaths(lang).join(' or ')}`).not.toBeNull();
-      observations.push({ foundIn: found!.index, row: found!.row });
+      // Page-level category meta (output only when set): the index row must carry the same value.
+      const categoryMeta = await new NewsDetailPage(page).categoryMeta();
+      observations.push({ foundIn: found!.index, row: found!.row, categoryMeta });
+      if (categoryMeta) expect.soft(String(found!.row.category ?? ''), 'index category = page category meta').toBe(categoryMeta);
       for (const field of indexFields) {
         // Index column may be named publicationdate on DEV; record both.
         const keys = field === 'publishDate' ? ['publishDate', 'publicationdate'] : [field];
         expect.soft(keys.some(k => found!.columns.includes(k)), `field ${field} present`).toBe(true);
       }
+    });
+
+    test(`DSR-NEWS-008 [${lang}] page appears on the news list with title and date`, { tag: ['@auto'] }, async ({ page }) => {
+      test.skip(lang !== 'ja', 'TC 8.0 is ja only');
+      test.skip(!newsPath(lang).includes(`/${lang}/news/`), `Blocked – page under test is not under /${lang}/news/ (needs TD-566-03)`);
+      const news = await openNews(page, lang);
+      const title = (await news.title.first().innerText()).trim();
+      const date = (await news.date.first().innerText()).trim();
+      const categoryMeta = await news.categoryMeta();
+      const list = await page.goto(newsListPath(lang));
+      observations.push({ title, date, categoryMeta, list: newsListPath(lang), listStatus: list?.status() });
+      expect(list?.status()).toBe(200);
+      // TODO: data-testid news-list-item
+      const item = page.locator('main li, main article').filter({ hasText: title });
+      await expect(item.first(), 'list item with page title').toBeVisible();
+      await expect.soft(item.first(), 'list item date').toContainText(date);
+      if (categoryMeta) await expect.soft(item.first(), 'list item category (page meta)').toContainText(categoryMeta);
     });
 
     test(`DSR-NEWS-009 [${lang}] no related-content block`, { tag: ['@auto'] }, async ({ page }) => {

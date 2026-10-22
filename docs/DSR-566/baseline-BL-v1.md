@@ -14,6 +14,11 @@ Automation ID: `DSR-NEWS-0NN`, NN = TC number.
 | A4 | Date display format follows Figma C27 (ja YYYY.MM.DD). Confirm via tc-questions. | Figma 6010-59004 | TC 3 expected |
 | A5 | Test pages are created under /master/{lang}/test-space/qa566-*; query-index check uses the index that contains these paths. Breadcrumb TC 11 needs a page under the news path (TD-566-04). | [Giả định] | TC 7, 11 |
 | A6 | DEV phase only (03 §0): cn and visual baselines may be Blocked; Lighthouse not in this ticket. | 03 §0 | — |
+| A7 | Template changed 2026-10-22: `news-detail` (ニュース詳細) = Article Meta → Title → Text (news type, free text "お知らせ") → Spacer → Text (body) → Image → Spacer → Button (button8). The `news-detail` block with `category@select` is gone. A2 is superseded for selectors only; TC intent unchanged. | JOB-20261022-15 + Dat 22/10 | Selectors TC 1, 2, 4, 13 (JOB-ZZ-IDLE-37) |
+| A8 | TC 2.0 order is checked as meta (date) → title → news type → spacer → body → image → spacer → CTA → Back to list. Image, second spacer and CTA are optional (TD-566-02). Back to list is still required (TC intent), but the new template does not place it, so a fail is possible and goes to Claude. | JOB-20261022-15 + Dat 22/10 | TC 2 |
+| A9 | TC 4.0 category = the news type, read from the Text block directly under Title (`.title-wrapper + .text-wrapper > .text.block`). Body = every other Text block. The title is read from the heading in the Title block (template level h2, so the "single h1" check stays recorded only). | JOB-20261022-15 + Dat 22/10 | TC 1, 4, 13 |
+| A10 | TC 3.0: shown date must match YYYY.MM.DD in every language (DSR-660 rule), and must equal page meta `publicationdate`, falling back to `published-time`. Supersedes A4. | JOB-20261022-15 + Dat 22/10 | TC 3 |
+| A11 | TC 7.0 / 8.0 also read page-level `<meta name="category">` when present: the index row `category`, and the list item for TC 8, must contain it. TC 8 runs only when the page under test is under `/{lang}/news/` (TD-566-03); otherwise it is skipped as Blocked. | JOB-20261022-15 + Dat 22/10 | TC 7, 8 |
 
 ## Test cases
 
