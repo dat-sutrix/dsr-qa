@@ -1,34 +1,41 @@
 import { expect, test, type TestInfo } from '@playwright/test';
 import { blockedNotWired, dsr173MovieTitle, pageA, pageB } from '../../fixtures/dsr-501';
 import {
-  descriptionLineBreakSeparator, detailPath, movieData, requireData,
+  blockedNoRelatedProducts, descriptionLineBreakSeparator, detailPath, languages, movieData, onOverlay, requireData,
+  type Language, type MovieDataKey,
 } from '../../fixtures/dsr-173';
 import { MovieDetailPage } from '../../pages/MovieDetailPage';
 
 const fixture = movieData.VALID_YOUTUBE;
+// en always; ja too when the fixture has a ja path (overlay page, JOB-20261022-01).
+const titleLanguages = languages.filter((lang) => lang === 'en' || detailPath('VALID_YOUTUBE', lang) !== null);
 
-async function openMovie(movie: MovieDetailPage): Promise<void> {
-  const path = detailPath('VALID_YOUTUBE', 'en');
-  requireData(['VALID_YOUTUBE.path.en', path]);
+async function openMovie(movie: MovieDetailPage, lang: Language = 'en', key: MovieDataKey = 'VALID_YOUTUBE'): Promise<void> {
+  const path = detailPath(key, lang);
+  requireData([`${key}.path.${lang}`, path]);
   await movie.goto(path!);
   await expect(movie.title).toBeVisible();
 }
 
-test('DSR-MOVIE-012 displays the exact movie title', async ({ page }) => {
-  requireData(['VALID_YOUTUBE.movieTitle.en', fixture.movieTitle.en]);
+for (const lang of titleLanguages) test(`DSR-MOVIE-012 [${lang}] displays the exact movie title`, async ({ page }) => {
+  requireData([`VALID_YOUTUBE.movieTitle.${lang}`, fixture.movieTitle[lang]]);
   const movie = new MovieDetailPage(page);
-  await openMovie(movie);
-  await expect(movie.title).toHaveText(fixture.movieTitle.en!);
-  expect(await movie.title.innerText()).toBe(fixture.movieTitle.en);
+  await openMovie(movie, lang);
+  await expect(movie.title).toHaveText(fixture.movieTitle[lang]!);
+  expect(await movie.title.innerText()).toBe(fixture.movieTitle[lang]);
   expect(await movie.title.innerText()).not.toMatch(/&amp;|&reg;/);
 });
 
-test('DSR-MOVIE-014 embeds the configured YouTube movie', async ({ page, baseURL }, testInfo) => {
+for (const lang of titleLanguages) test(`DSR-MOVIE-014 [${lang}] embeds the configured YouTube movie`, async ({ page, baseURL }, testInfo) => {
   requireData(['VALID_YOUTUBE.movieSourceId', fixture.movieSourceId]);
   expect(baseURL, 'Site origin must be configured').toBeTruthy();
   const movie = new MovieDetailPage(page);
   try {
-    await openMovie(movie);
+    await openMovie(movie, lang);
+    // TC step: click the player facade (DSR-109); the embed must load only after the click.
+    await expect(movie.playerFacade).toBeVisible();
+    await expect(movie.playerEmbed).toHaveCount(0);
+    await movie.playerFacade.click();
     await expect(movie.playerEmbed).toHaveAttribute('src', /\/embed\//);
     const src = await movie.playerEmbedSrc();
     // The CF also contains provider parameters; compare the actual YouTube ID.
@@ -117,9 +124,12 @@ test('DSR-MOVIE-025 navigates the related content carousel to its end', async ({
 });
 
 test('DSR-MOVIE-026 displays related thumbnails, types, tags and valid links', { tag: ['@known-bug-DSR-538'] }, async ({ page, request }) => {
-  // Use the verified host's related content while RELATED_MIXED remains unseeded.
+  // RELATED_MIXED when seeded; else RELATED_6 (overlay: TD-587-14 qa587-rel-a, TC 17.0); else the verified host's related content.
+  const key = (['RELATED_MIXED', 'RELATED_6'] as const).find((k) => detailPath(k, 'en') !== null) ?? 'VALID_YOUTUBE';
   const movie = new MovieDetailPage(page);
-  await openMovie(movie);
+  await openMovie(movie, 'en', key);
+  // Same-language links: same language prefix as the opened page (/master/en/ on test-space, /en/ on the overlay, BL-OVL-1).
+  const languagePrefix = new URL(page.url()).pathname.match(/^\/(?:master\/)?en\//)?.[0] ?? '/en/';
   const cards = movie.relatedContentCards();
   await expect(cards.first()).toBeVisible();
   const count = await cards.count();
@@ -146,17 +156,18 @@ test('DSR-MOVIE-026 displays related thumbnails, types, tags and valid links', {
     expect.soft(href, `${label} href`).toBeTruthy();
     if (href) {
       const url = new URL(href, page.url());
-      expect.soft(url.pathname, `${label} language`).toMatch(/^\/master\/en\//);
+      expect.soft(url.pathname.startsWith(languagePrefix), `${label} language (${url.pathname}, prefix ${languagePrefix})`).toBe(true);
       const response = await request.get(url.href);
       expect.soft(response.status(), `${label} ${url.href}`).toBe(200);
     }
   }
 });
 
-test('DSR-MOVIE-027 outputs exactly one title and og:title', async ({ page }) => {
+for (const lang of titleLanguages) test(`DSR-MOVIE-027 [${lang}] outputs exactly one title and og:title`, async ({ page }) => {
+  requireData([`VALID_YOUTUBE.movieTitle.${lang}`, fixture.movieTitle[lang]]);
   const movie = new MovieDetailPage(page);
-  await openMovie(movie);
-  const expected = `${fixture.movieTitle.en} | YKK DIGITAL SHOWROOM`;
+  await openMovie(movie, lang);
+  const expected = `${fixture.movieTitle[lang]} | YKK DIGITAL SHOWROOM`;
   await expect(page).toHaveTitle(expected);
   expect(await page.evaluate(() => ({
     title: document.head.getElementsByTagName('title').length,
@@ -193,6 +204,7 @@ test('DSR-MOVIE-029 outputs an absolute reachable CF thumbnail', async ({ page, 
 
 test('DSR-MOVIE-033 displays component sections in vertical order on PC', async ({ page }) => {
   // DSR-539: breadcrumb is a separate component and is outside this check.
+  test.skip(onOverlay && fixture.relatedProducts === null, blockedNoRelatedProducts);
   await page.setViewportSize({ width: 1440, height: 900 });
   const movie = new MovieDetailPage(page);
   await openMovie(movie);

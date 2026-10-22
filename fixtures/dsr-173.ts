@@ -1,4 +1,5 @@
 import { test } from '@playwright/test';
+import { td } from './dsr-587';
 
 export const languages = ['ja', 'en', 'zh'] as const;
 export type Language = (typeof languages)[number];
@@ -33,6 +34,12 @@ export const detailUrlPattern: string | null = null;
 
 // TODO(dev): confirm whether metadata line breaks are removed or replaced by a space.
 export const descriptionLineBreakSeparator: '' | ' ' | null = null;
+
+// DSR-587 17.0: DSR173_MOVIE_PATH (e.g. /en/library/video/qa587-main) switches Group A to the overlay page.
+// Then VALID_YOUTUBE uses TD-587-01 data (JOB-20261022-01); ja copy = same id and values (fixtures/dsr-587.ts td['01']).
+export const overlayMoviePath = process.env.DSR173_MOVIE_PATH || null;
+export const onOverlay = overlayMoviePath !== null;
+export const blockedNoRelatedProducts = 'Blocked-by data: TD-587-01 (qa587-main) has no relatedProducts row';
 
 export const movieListPaths: Localized<string> = {
   // TODO(dev): provide the Japanese movie-list URL.
@@ -92,14 +99,16 @@ export const movieData = {
   // Author CFs: DM_movie_1 / DM_movie_related_1.
   VALID_YOUTUBE: {
     ...pendingMovie(),
-    movieId: 'movieid-01',
-    // DSR-587 17.0: DSR173_MOVIE_PATH switches Group A to an overlay page (e.g. /en/library/video/qa587-main).
-    paths: { ja: null, en: process.env.DSR173_MOVIE_PATH || '/master/en/test-space/dsr-173-video-detail', zh: null },
-    movieTitle: { ja: null, en: 'movieTitle', zh: null },
+    movieId: onOverlay ? td['01'].id : 'movieid-01',
+    paths: overlayMoviePath
+      ? { ja: overlayMoviePath.replace(/^\/en\//, '/ja/'), en: overlayMoviePath, zh: null }
+      : { ja: null, en: '/master/en/test-space/dsr-173-video-detail', zh: null },
+    movieTitle: onOverlay ? { ja: td['01'].title, en: td['01'].title, zh: null } : { ja: null, en: 'movieTitle', zh: null },
     description: { ja: null, en: 'movie description\nmovie description', zh: null },
-    movieSourceId: 'irFRtAVphCY&t=38s',
+    movieSourceId: onOverlay ? td['01'].movieSourceId : 'irFRtAVphCY&t=38s',
     thumbnail: '/content/dam/ykk/digital-showroom/test/png/image 7.png',
-    relatedProducts: ['productId-01'],
+    // TD-587-01 has no relatedProducts row (JOB-20261020-02) → DSR-MOVIE-033 blocked-by data on the overlay page.
+    relatedProducts: onOverlay ? null : ['productId-01'],
     relatedArticles: ['Article Page 1', 'Article Page 2', 'Article Page 3'],
     relatedLandingPages: ['Landing page 1', 'Landing page 2'],
   },

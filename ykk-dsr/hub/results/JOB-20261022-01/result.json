@@ -1,0 +1,207 @@
+{
+  "job": "JOB-20261022-01",
+  "agent": "claude-code",
+  "us": "DSR-587 (+ DSR-538 retest, DSR-173 Group A on overlay)",
+  "env": "dev",
+  "started": "2026-10-22T00:59:44Z",
+  "finished": "2026-10-22T01:01:10Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-MOVIE-012",
+      "lang": "ja",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-012",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-014",
+      "lang": "ja",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "pass",
+      "note": "facade click added; embed absent before click, irFRtAVphCY after"
+    },
+    {
+      "tc": "DSR-MOVIE-014",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "pass",
+      "note": "facade click added; embed absent before click, irFRtAVphCY after"
+    },
+    {
+      "tc": "DSR-MOVIE-026",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "pass",
+      "note": "qa587-rel-a: 5 movie cards, MOVIE tag, thumbnails loaded, hrefs /en/library/video/qa587-r6..r2 HTTP 200"
+    },
+    {
+      "tc": "DSR-MOVIE-027",
+      "lang": "ja",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-027",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-033",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.live",
+      "result": "skip",
+      "error": "Blocked-by data: TD-587-01 (qa587-main) has no relatedProducts row",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-MOVIE-012",
+      "lang": "ja",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-012",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-014",
+      "lang": "ja",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "pass",
+      "note": "facade click added; embed absent before click, irFRtAVphCY after"
+    },
+    {
+      "tc": "DSR-MOVIE-014",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "pass",
+      "note": "facade click added; embed absent before click, irFRtAVphCY after"
+    },
+    {
+      "tc": "DSR-MOVIE-026",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "pass",
+      "note": "qa587-rel-a: 5 movie cards, MOVIE tag, thumbnails loaded, hrefs /en/library/video/qa587-r6..r2 HTTP 200"
+    },
+    {
+      "tc": "DSR-MOVIE-027",
+      "lang": "ja",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-027",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "pass"
+    },
+    {
+      "tc": "DSR-MOVIE-033",
+      "lang": "en",
+      "us": "DSR-587",
+      "host": ".aem.page",
+      "result": "skip",
+      "error": "Blocked-by data: TD-587-01 (qa587-main) has no relatedProducts row",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-538-retest",
+      "lang": "en",
+      "us": "DSR-538",
+      "host": ".aem.page",
+      "result": "pass",
+      "page": "qa587-rel-a",
+      "note": "5 card hrefs, all on main--dsr-eds-dev--sutrix-projects.aem.page, 0 on publish-p192812, each HTTP 200"
+    },
+    {
+      "tc": "DSR-538-retest",
+      "lang": "en",
+      "us": "DSR-538",
+      "host": ".aem.page",
+      "result": "skip",
+      "page": "qa587-main",
+      "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+    },
+    {
+      "tc": "DSR-538-retest",
+      "lang": "ja",
+      "us": "DSR-538",
+      "host": ".aem.page",
+      "result": "skip",
+      "page": "qa587-main",
+      "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+    },
+    {
+      "tc": "DSR-538-retest",
+      "lang": "en",
+      "us": "DSR-538",
+      "host": ".aem.live",
+      "result": "pass",
+      "page": "qa587-rel-a",
+      "note": "5 card hrefs, all on main--dsr-eds-dev--sutrix-projects.aem.live, 0 on publish-p192812, each HTTP 200"
+    },
+    {
+      "tc": "DSR-538-retest",
+      "lang": "en",
+      "us": "DSR-538",
+      "host": ".aem.live",
+      "result": "skip",
+      "page": "qa587-main",
+      "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+    },
+    {
+      "tc": "DSR-538-retest",
+      "lang": "ja",
+      "us": "DSR-538",
+      "host": ".aem.live",
+      "result": "skip",
+      "page": "qa587-main",
+      "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+    }
+  ],
+  "recorded_only": {
+    "og_image": "about:error on qa587-main ja/en and qa587-rel-a en, both tiers (not re-tested; open point)",
+    "dsr_vov_013": "not re-run (bug DSR-665)",
+    "publish_domain_in_raw_html": "DAM thumbnail sources https://publish-p192812-e2014374.adobeaemcloud.com/.../image%207.png (json2html rows + og:image:secure_url), HTTP 200 image/png – image sources, not card links"
+  },
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-173.ts",
+    "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+    "tests/movie-detail/DSR-587.related-links-retest-DSR-538.spec.ts"
+  ],
+  "reports": [
+    "results/DSR-587/DEV/automation-run-20261022-job20261022-01-live.md",
+    "results/DSR-587/DEV/automation-run-20261022-job20261022-01-page.md"
+  ],
+  "questions": []
+}
