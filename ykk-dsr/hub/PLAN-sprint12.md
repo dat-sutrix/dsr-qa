@@ -202,3 +202,4 @@ Nguyên tắc: job dựa trên data QA-PT để sẵn ở `jobs/hold/` với đi
 - 17:10 khi tạo pack: đọc `results/JOB-20261022-07/summary.md`. Item nào **done + L0–L3 pass** → trong pack thay bằng "Shadow check ≤ 5 phút" (QA-PT mở URL, xác nhận đúng giá trị, ghi Night Report `SHADOW-<TD>`; không sửa gì). Item failed/không làm → giữ nguyên task đầy đủ cho QA-PT như cũ (giá trị inline).
 - Vẫn QA-PT: TD-566 trang news (UE, P2/P3 chưa có), TD-654-03 (cần xóa), TD-586-01 optional fields (giá trị ở Drive doc), 570 manual, TD-586 en + negative, TD-587 negative. Giờ trống → thêm manual TC tồn (giữ ~4h).
 - Bậc: CF data Night 22/10 = **B2 (Agent + QA-PT shadow)**, sớm hơn roadmap 1 sprint.
+- 12:05 review JOB-20261022-09: agent ghi **P1B-PROBE, BUGCHK-190-FORM, TD-654-02/04/06/07/08** (JOB-07). **TD-586 (BUGCHK-586-01/02) + TD-654-03 + TD-654-05 vẫn QA-PT** (ngoài guard `qa*` / cần xóa / sub-folder). BUGCHK-586 chỉ còn bước Preview/Publish (giá trị field đã đúng – JOB-09 đọc lại).
