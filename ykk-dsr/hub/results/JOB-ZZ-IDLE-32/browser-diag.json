@@ -1,0 +1,785 @@
+{
+  "started": "2026-10-22T02:35:44.551Z",
+  "runs": [
+    {
+      "tier": "live",
+      "lang": "ja",
+      "id": "qa190-cat-pdf",
+      "path": "/ja/library/catalog/qa190-cat-pdf",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf",
+      "console": [
+        "error: Failed to load resource: the server responded with a status of 404 ()",
+        "error: Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_qa190-cat-pdf_01.png"
+    },
+    {
+      "tier": "live",
+      "lang": "ja",
+      "id": "qa190-cat-pdf-form",
+      "path": "/ja/library/catalog/qa190-cat-pdf-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "console": [
+        "error: Failed to load resource: the server responded with a status of 404 ()",
+        "error: Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_qa190-cat-pdf-form_02.png"
+    },
+    {
+      "tier": "live",
+      "lang": "ja",
+      "id": "qa190-cat-ebook-form",
+      "path": "/ja/library/catalog/qa190-cat-ebook-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook-form",
+      "console": [
+        "error: Failed to load resource: the server responded with a status of 404 ()",
+        "error: Failed to load resource: the server responded with a status of 404 ()",
+        "warning: Unrecognized feature: 'web-share'."
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+          "error": "net::ERR_ABORTED",
+          "nav": false
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://www.ykkfastening.com/",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636564069&li_adsId=d95ecea6-9180-4c25-aecf-33624c2ddc5a&pageLoadId=f3d6c43e-b254-4dd6-867f-b73ec481b5d1&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636564069&li_adsId=d95ecea6-9180-4c25-aecf-33624c2ddc5a&pageLoadId=f3d6c43e-b254-4dd6-867f-b73ec481b5d1&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D3366313%26time%3D1792636564069%26li_adsId%3Dd95ecea6-9180-4c25-aecf-33624c2ddc5a%26pageLoadId%3Df3d6c43e-b254-4dd6-867f-b73ec481b5d1%26url%3Dhttps%253A%252F%252Fykkdigitalshowroom.com%252F%253Futm_source%253Dykkfastening%2526utm_medium%253Dredirect%2526utm_campaign%253Ddsr_f3%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636564069&li_adsId=d95ecea6-9180-4c25-aecf-33624c2ddc5a&pageLoadId=f3d6c43e-b254-4dd6-867f-b73ec481b5d1&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636564069&li_adsId=d95ecea6-9180-4c25-aecf-33624c2ddc5a&pageLoadId=f3d6c43e-b254-4dd6-867f-b73ec481b5d1&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true&e_ipv6=AQL1SaFZk_1xdQAAAaFhdzjPu0Yiq7zcfLeVDIQ1gRwd9j1zrHdwqicvByUx8qhiDfHs7G29XMU",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636569373&vi=27504306708bc3d1acfe2522b9b54ac1&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636569374&vi=27504306708bc3d1acfe2522b9b54ac1&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-ebook-form",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/en/"
+      ],
+      "downloads": [],
+      "httpStatus": 200,
+      "finalUrl": "https://ykkdigitalshowroom.com/en/",
+      "dom": {
+        "block": false
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_qa190-cat-ebook-form_03.png"
+    },
+    {
+      "tier": "live",
+      "lang": "en",
+      "id": "qa190-cat-pdf",
+      "path": "/en/library/catalog/qa190-cat-pdf",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf",
+      "console": [],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_en_qa190-cat-pdf_04.png"
+    },
+    {
+      "tier": "live",
+      "lang": "en",
+      "id": "qa190-cat-pdf-form",
+      "path": "/en/library/catalog/qa190-cat-pdf-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "console": [],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_en_qa190-cat-pdf-form_05.png"
+    },
+    {
+      "tier": "live",
+      "lang": "en",
+      "id": "qa190-cat-ebook-form",
+      "path": "/en/library/catalog/qa190-cat-ebook-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook-form",
+      "console": [
+        "warning: Unrecognized feature: 'web-share'.",
+        "warning: No available adapters."
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+          "error": "net::ERR_ABORTED",
+          "nav": false
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://www.ykkfastening.com/",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636587243&li_adsId=aa3849f3-9109-4a4e-8cc6-19abc29d2a00&pageLoadId=3d948dd9-8e6e-4cf3-9fef-13fdda2f492e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636587243&li_adsId=aa3849f3-9109-4a4e-8cc6-19abc29d2a00&pageLoadId=3d948dd9-8e6e-4cf3-9fef-13fdda2f492e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D3366313%26time%3D1792636587243%26li_adsId%3Daa3849f3-9109-4a4e-8cc6-19abc29d2a00%26pageLoadId%3D3d948dd9-8e6e-4cf3-9fef-13fdda2f492e%26url%3Dhttps%253A%252F%252Fykkdigitalshowroom.com%252F%253Futm_source%253Dykkfastening%2526utm_medium%253Dredirect%2526utm_campaign%253Ddsr_f3%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636587243&li_adsId=aa3849f3-9109-4a4e-8cc6-19abc29d2a00&pageLoadId=3d948dd9-8e6e-4cf3-9fef-13fdda2f492e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636587243&li_adsId=aa3849f3-9109-4a4e-8cc6-19abc29d2a00&pageLoadId=3d948dd9-8e6e-4cf3-9fef-13fdda2f492e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true&e_ipv6=AQK4eXyWq0AaDwAAAaFhd5G5izfPEFPMAhf11jzRNU6H9jqvg-tqYiYpX6Nblsg_Rv51Q7XimHc",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636590926&vi=53a4244b4e09b60570887bb96c56e6a4&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636590927&vi=53a4244b4e09b60570887bb96c56e6a4&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-ebook-form",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/en/"
+      ],
+      "downloads": [],
+      "httpStatus": 200,
+      "finalUrl": "https://ykkdigitalshowroom.com/en/",
+      "dom": {
+        "block": false
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_en_qa190-cat-ebook-form_06.png"
+    },
+    {
+      "tier": "live",
+      "lang": "ja",
+      "id": "demo-dsr-570",
+      "path": "/master/ja/test-space/dsr-570-catalog-detail",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "console": [],
+      "pageErrors": [],
+      "failed": [],
+      "damRequests": [],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail"
+      ],
+      "downloads": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-570-catalog-detail",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 1711.90625,
+        "childCount": 3,
+        "h1": [
+          "製品カタログ"
+        ],
+        "h2": [
+          "AQUASEAL® 製品カタログ"
+        ],
+        "form": true,
+        "img": [
+          "/blocks/listing/fixtures/placeholder1.svg",
+          "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/catalog-detail/assets/bookmark.svg"
+        ],
+        "date": "2022.01.20",
+        "categories": [
+          "STANDARD CATALOG"
+        ],
+        "description": "AQUASEAL® ︎は、マリン業界から産業資材まで幅広い業界で活用できる防水ファスナーです。製品詳細情報をご覧いただけます。",
+        "robots": null
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_demo-dsr-570_07.png"
+    },
+    {
+      "tier": "page",
+      "lang": "ja",
+      "id": "qa190-cat-pdf",
+      "path": "/ja/library/catalog/qa190-cat-pdf",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf",
+      "console": [
+        "error: Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_page_ja_qa190-cat-pdf_08.png"
+    },
+    {
+      "tier": "page",
+      "lang": "ja",
+      "id": "qa190-cat-pdf-form",
+      "path": "/ja/library/catalog/qa190-cat-pdf-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form",
+      "console": [
+        "error: Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-pdf-form",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_page_ja_qa190-cat-pdf-form_09.png"
+    },
+    {
+      "tier": "page",
+      "lang": "ja",
+      "id": "qa190-cat-ebook-form",
+      "path": "/ja/library/catalog/qa190-cat-ebook-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook-form",
+      "console": [
+        "error: Failed to load resource: the server responded with a status of 404 ()",
+        "warning: Unrecognized feature: 'web-share'.",
+        "warning: No available adapters."
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+          "error": "net::ERR_ABORTED",
+          "nav": false
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://www.ykkfastening.com/",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636616037&li_adsId=af955fc9-6a0a-4b2c-a989-8da2c134cf96&pageLoadId=0bc6b08e-40b5-495d-8355-bd6964176e4e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636616037&li_adsId=af955fc9-6a0a-4b2c-a989-8da2c134cf96&pageLoadId=0bc6b08e-40b5-495d-8355-bd6964176e4e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D3366313%26time%3D1792636616037%26li_adsId%3Daf955fc9-6a0a-4b2c-a989-8da2c134cf96%26pageLoadId%3D0bc6b08e-40b5-495d-8355-bd6964176e4e%26url%3Dhttps%253A%252F%252Fykkdigitalshowroom.com%252F%253Futm_source%253Dykkfastening%2526utm_medium%253Dredirect%2526utm_campaign%253Ddsr_f3%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636616037&li_adsId=af955fc9-6a0a-4b2c-a989-8da2c134cf96&pageLoadId=0bc6b08e-40b5-495d-8355-bd6964176e4e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636616037&li_adsId=af955fc9-6a0a-4b2c-a989-8da2c134cf96&pageLoadId=0bc6b08e-40b5-495d-8355-bd6964176e4e&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true&e_ipv6=AQKNiaZFn5N4zQAAAaFheAHJDPLeNNTW1hq4IDKCIZ79FR38wCa7yItPvaV2NLm_6W5--BqzQLo",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.page%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636619724&vi=3765fb2c948be77822e0f2ce1236c7a7&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.page%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636619725&vi=3765fb2c948be77822e0f2ce1236c7a7&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/catalog/qa190-cat-ebook-form",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/en/"
+      ],
+      "downloads": [],
+      "httpStatus": 200,
+      "finalUrl": "https://ykkdigitalshowroom.com/en/",
+      "dom": {
+        "block": false
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_page_ja_qa190-cat-ebook-form_10.png"
+    },
+    {
+      "tier": "page",
+      "lang": "en",
+      "id": "qa190-cat-pdf",
+      "path": "/en/library/catalog/qa190-cat-pdf",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf",
+      "console": [],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_page_en_qa190-cat-pdf_11.png"
+    },
+    {
+      "tier": "page",
+      "lang": "en",
+      "id": "qa190-cat-pdf-form",
+      "path": "/en/library/catalog/qa190-cat-pdf-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "console": [],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "error": "net::ERR_ABORTED",
+          "nav": true
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+          "type": "document",
+          "nav": true
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form"
+      ],
+      "downloads": [
+        "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-pdf-form",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 0,
+        "childCount": 0,
+        "h1": [],
+        "h2": [],
+        "form": false,
+        "img": [],
+        "date": null,
+        "categories": [],
+        "description": null,
+        "robots": "noindex"
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_page_en_qa190-cat-pdf-form_12.png"
+    },
+    {
+      "tier": "page",
+      "lang": "en",
+      "id": "qa190-cat-ebook-form",
+      "path": "/en/library/catalog/qa190-cat-ebook-form",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+      "console": [
+        "warning: Unrecognized feature: 'web-share'.",
+        "warning: No available adapters."
+      ],
+      "pageErrors": [],
+      "failed": [
+        {
+          "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+          "error": "net::ERR_ABORTED",
+          "nav": false
+        }
+      ],
+      "damRequests": [
+        {
+          "url": "https://www.ykkfastening.com/",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+          "type": "document",
+          "nav": true
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636636197&li_adsId=e7a3e19a-ce91-45af-b56c-987ad994b419&pageLoadId=0fb600b0-0bce-410e-8f04-d04bed1ff991&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636636197&li_adsId=e7a3e19a-ce91-45af-b56c-987ad994b419&pageLoadId=0fb600b0-0bce-410e-8f04-d04bed1ff991&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://www.linkedin.com/px/li_sync?redirect=https%3A%2F%2Fpx.ads.linkedin.com%2Fcollect%3Fv%3D2%26fmt%3Djs%26pid%3D3366313%26time%3D1792636636197%26li_adsId%3De7a3e19a-ce91-45af-b56c-987ad994b419%26pageLoadId%3D0fb600b0-0bce-410e-8f04-d04bed1ff991%26url%3Dhttps%253A%252F%252Fykkdigitalshowroom.com%252F%253Futm_source%253Dykkfastening%2526utm_medium%253Dredirect%2526utm_campaign%253Ddsr_f3%26cookiesTest%3Dtrue%26liSync%3Dtrue",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636636197&li_adsId=e7a3e19a-ce91-45af-b56c-987ad994b419&pageLoadId=0fb600b0-0bce-410e-8f04-d04bed1ff991&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://px4.ads.linkedin.com/collect?v=2&fmt=js&pid=3366313&time=1792636636197&li_adsId=e7a3e19a-ce91-45af-b56c-987ad994b419&pageLoadId=0fb600b0-0bce-410e-8f04-d04bed1ff991&url=https%3A%2F%2Fykkdigitalshowroom.com%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&cookiesTest=true&liSync=true&e_ipv6=AQJZXz3RznOAcgAAAaFheFD2LcwzlHrwbyfnV8A25ooeeMBiu15FDlmWMy1km4zlYyrAfx5TgiM",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.page%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636639887&vi=e12d5309e06a63698df2706394e3175d&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        },
+        {
+          "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x900&cd=24-bit&cs=UTF-8&ln=en-us&v=1.1&a=19496050&po=%2Fen&qo=false&opo=%2Fen&rpo=%2F%3Futm_source%3Dykkfastening%26utm_medium%3Dredirect%26utm_campaign%3Ddsr_f3&rcu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&r=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.page%2F&pu=https%3A%2F%2Fykkdigitalshowroom.com%2Fen%2F&t=YKK+DIGITAL+SHOWROOM%EF%BD%9CYKK+Fastening+Products+%26+Zipper&cts=1792636639888&vi=e12d5309e06a63698df2706394e3175d&nc=true&ce=false&pt=3&cc=0",
+          "type": "image",
+          "nav": false
+        }
+      ],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa190-cat-ebook-form",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/?utm_source=ykkfastening&utm_medium=redirect&utm_campaign=dsr_f3",
+        "https://ykkdigitalshowroom.com/en/"
+      ],
+      "downloads": [],
+      "httpStatus": 200,
+      "finalUrl": "https://ykkdigitalshowroom.com/en/",
+      "dom": {
+        "block": false
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_page_en_qa190-cat-ebook-form_13.png"
+    },
+    {
+      "tier": "page",
+      "lang": "ja",
+      "id": "demo-dsr-570",
+      "path": "/master/ja/test-space/dsr-570-catalog-detail",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/dsr-570-catalog-detail",
+      "console": [],
+      "pageErrors": [],
+      "failed": [],
+      "damRequests": [],
+      "mainFrameNavigations": [
+        "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/dsr-570-catalog-detail"
+      ],
+      "downloads": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/dsr-570-catalog-detail",
+      "dom": {
+        "block": true,
+        "status": "loaded",
+        "height": 1711.90625,
+        "childCount": 3,
+        "h1": [
+          "製品カタログ"
+        ],
+        "h2": [
+          "AQUASEAL® 製品カタログ"
+        ],
+        "form": true,
+        "img": [
+          "/blocks/listing/fixtures/placeholder1.svg",
+          "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/catalog-detail/assets/bookmark.svg"
+        ],
+        "date": "2022.01.20",
+        "categories": [
+          "STANDARD CATALOG"
+        ],
+        "description": "AQUASEAL® ︎は、マリン業界から産業資材まで幅広い業界で活用できる防水ファスナーです。製品詳細情報をご覧いただけます。",
+        "robots": null
+      },
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_page_ja_demo-dsr-570_14.png"
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "finished": "2026-10-22T02:37:28.616Z"
+}

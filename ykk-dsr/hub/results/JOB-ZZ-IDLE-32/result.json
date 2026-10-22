@@ -1,0 +1,97 @@
+{
+  "job": "JOB-ZZ-IDLE-32",
+  "agent": "claude-code",
+  "us": "DSR-654, DSR-557, DSR-570",
+  "env": "dev",
+  "started": "2026-10-22T02:34:00Z",
+  "finished": "2026-10-22T02:45:00Z",
+  "status": "done",
+  "verdict": {
+    "bug": "BUG-CAT-EMPTY",
+    "proposal": "close as data + test, do not file",
+    "product_bug_confidence": 5,
+    "missing_field": "content CF requiresForm (=false on qa190-cat-pdf-form / qa190-cat-ebook-form ja+en)"
+  },
+  "tests": [
+    {
+      "tc": "DIAG-qa190-cat-pdf-form",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "content CF requiresForm=false (TD expects true); block cleared then location.replace(PDF) -> headless net::ERR_ABORTED, empty block",
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_qa190-cat-pdf-form_02.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 5
+    },
+    {
+      "tc": "DIAG-qa190-cat-ebook-form",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "content CF requiresForm=false (TD expects true); browser leaves to ebookUrl, final https://ykkdigitalshowroom.com/en/",
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_qa190-cat-ebook-form_03.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 5
+    },
+    {
+      "tc": "DIAG-qa190-cat-pdf",
+      "lang": "ja",
+      "result": "fail",
+      "error": "non-form PDF redirects to file by design (catalog-detail.js:165-169); CATOV-001/015/019 expect rendered page; ja catalogTitle \"qa190-cat-pdf\" != TD-190",
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_qa190-cat-pdf_01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DIAG-qa190-cat-pdf-form",
+      "lang": "en",
+      "result": "blocked",
+      "error": "content CF requiresForm=false (TD expects true); block cleared then location.replace(PDF) -> headless net::ERR_ABORTED, empty block",
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_en_qa190-cat-pdf-form_05.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 5
+    },
+    {
+      "tc": "DIAG-qa190-cat-ebook-form",
+      "lang": "en",
+      "result": "blocked",
+      "error": "content CF requiresForm=false (TD expects true); browser leaves to ebookUrl, final https://ykkdigitalshowroom.com/en/",
+      "evidence": "browser-diag.json",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 5
+    },
+    {
+      "tc": "DIAG-qa190-cat-pdf",
+      "lang": "en",
+      "result": "fail",
+      "error": "non-form PDF redirects to file by design (catalog-detail.js:165-169); CATOV-001/015/019 expect rendered page",
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_en_qa190-cat-pdf_04.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DIAG-demo-dsr-570",
+      "lang": "ja",
+      "result": "pass",
+      "error": "renders MOCK_CATALOG (no source|overlay row) - not real data",
+      "evidence": "evidence/DSR-654/DEV/diag-20261022/IDLE32_live_ja_demo-dsr-570_07.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "ykk-dsr/hub/results/JOB-ZZ-IDLE-32/diag.cjs"
+  ],
+  "deployed": {
+    "catalog_detail_js_last_modified": "Thu, 22 Oct 2026 01:48:45 GMT",
+    "catalog_link_js_last_modified": "Tue, 20 Oct 2026 05:55:17 GMT"
+  },
+  "automation_head": "0f59bf2e076742de338bfbe4989ad7212a04dde9",
+  "questions": []
+}
