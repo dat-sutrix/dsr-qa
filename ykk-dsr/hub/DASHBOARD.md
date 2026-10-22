@@ -12,7 +12,7 @@
 |---|---|---|---|---|
 | [DSR-587](https://sutrix.atlassian.net/browse/DSR-587) 動画詳細 Overlay | Night 21/10 data ✅ (verify JOB-21-09) · JOB-20-02: 1.0/18.0 ✅, 3.0 ❌ og:image `about:error` (65%), 13.0 ❌ **🐞 DSR-665** video/search reload vô hạn · visual 19.0 ✅ (JOB-20-11) · 17.0 6 fail (4 test, 1 data, 1 og:image) | JOB-20261022-01 (fixture 173 + 538) sáng nay · DSR-665 chờ Martin | Martin (DSR-665, og:image) | 23/10 (rủi ro DSR-665) |
 | [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) bug related movies (retest) | ✅ retest Pass 2/2 (JOB-19-03), comment 64798 | Dat chuyển Done hôm nay | — | ✅ 22/10 |
-| [DSR-538](https://sutrix.atlassian.net/browse/DSR-538) bug link publish domain (retest) | JOB-20-02 **không chạy** phần 538 | JOB-20261022-01 (queue P1) sáng nay → Pass thì Dat đóng | Agent | 22/10 |
+| [DSR-538](https://sutrix.atlassian.net/browse/DSR-538) bug link publish domain (retest) | ✅ JOB-20261022-01 Pass (.page + .live, 5 card) | Dat đóng hôm nay | — | ✅ 22/10 |
 | [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) 動画・カタログ | video 16/16 ✅ (qa587-main + qa557-dam) · catalog 12 ✅ 2 skip (017: requiresForm=false – data) | Night 22/10 BUGCHK-190-FORM → JOB-20261022-03 23/10 | QA-PT (data) | 23/10 |
 | [DSR-570](https://sutrix.atlassian.net/browse/DSR-570) 資料DL | 5 ✅ thêm (JOB-20-04) · 11 skip: catalog `-form` requiresForm=false (data) · manual 6 TC chưa chạy | Night 22/10 BUGCHK-190-FORM + manual 6 TC → JOB-20261022-03 | QA-PT · Quentin (TC 007) | 23/10 |
 | [DSR-654](https://sutrix.atlassian.net/browse/DSR-654) CATALOG Overlay (sub-task 586) | 21 TC + automation CATOV-001..021 (JOB-21-11): 11 ✅ 2 ❌ (data) 49 skip (chưa seed TD-654-02..08) · ⚠ catalog-detail.js: non-form → mở file thẳng → TC 1/12/15/17/19 có thể sai kỳ vọng | Night 22/10 TD-654-02..08 + BUGCHK-190-FORM → JOB-20261022-03 · visual JOB-21-12 queue | QA-PT | 23/10 |
@@ -56,6 +56,7 @@ tc-backlog: 2/2 done 21/10 (529 re-baseline, DSR-654 21 TC) · backlog trống �
 |---|---|---|---|---|
 | BUG-OVL-INACTIVE (587/586/654) | 表示フラグ OFF: json2html 200 + `unavailable \| inactive`, không redirect list (BL-OVL-1) | 50% | Chưa quan sát end-to-end; Martin chưa trả lời | Giữ; Night 22/10 seed TD-587-07 `qa587-inactive` → agent 23/10 |
 | BUG-OVL-OGIMG (587, cả catalog) | Raw `og:image` = `about:error` trên mọi trang overlay QA (og:image:secure_url đúng 200) – VOV-003, MOVIE-029 | 65% | Mọi CF test dùng thumbnail `image 7.png` (có dấu cách) → chưa loại trừ data | Hỏi Martin (📣); nếu cần: QA-PT đổi thumbnail 1 CF sang tên không dấu cách → agent so sánh |
+| BUG-CAT-EMPTY (654/557/570) | Trang catalog overlay 200 nhưng block catalog-detail rỗng (không title/field/nút) – IDLE-30 22 test | 70% | Chưa loại trừ data requiresForm (BUGCHK-190-FORM) | JOB-ZZ-IDLE-32 chẩn đoán hôm nay; hỏi Martin (📣) |
 | BUG-CAT-LIST-OLD (557/654) | Catalog list vẫn trả 15 CF folder cũ `ykk/common/product-cf/test`, ja/en cùng 26 thẻ (không lọc ngôn ngữ) | 55% | Chưa rõ list đã lên overlay chưa (BL-OVL-1 20/10 12:40) | Hỏi Martin (📣) |
 Đã xử lý 22/10: VOV-013 → **DSR-665** (85%) · 586/570/557 fail = data (Night 22/10) · CATOV-003 en .live 404 = data.
 
