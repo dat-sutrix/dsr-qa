@@ -1,0 +1,1279 @@
+{
+  "started": "2026-10-22T10:29:51.234Z",
+  "finished": "2026-10-22T10:30:46.887Z",
+  "head": "cbb5e401ba635c575ee866cc793b0bc374b0a64f",
+  "captures": [
+    {
+      "lang": "ja",
+      "device": "PC and SP",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "status": 200,
+      "query": null,
+      "note": "list empty",
+      "cardCount": 0,
+      "mainHtml": "<div class=\"full-bleed breadcrumb-section section breadcrumb-container\" data-auto-block=\"breadcrumb\" data-section-status=\"loaded\" style=\"\"><div class=\"breadcrumb-wrapper\"><div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/ja\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"catalog\">catalog</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div></div></div>\n      <div class=\"section\" data-section-status=\"loaded\" style=\"\"></div>\n    ",
+      "bodyText": "HOME\ncatalog\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": [
+        "evidence/capture-20261022/ja-PC-1440x900-viewport.png",
+        "evidence/capture-20261022/ja-PC-1440x900-full.png",
+        "evidence/capture-20261022/ja-SP-390x844-viewport.png",
+        "evidence/capture-20261022/ja-SP-390x844-full.png"
+      ]
+    },
+    {
+      "lang": "en",
+      "device": "PC",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "status": 200,
+      "query": {
+        "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/en/catalogs/;cb=1792665039262",
+        "status": 200,
+        "items": 7
+      },
+      "cardCount": 5,
+      "cards": [
+        {
+          "index": 0,
+          "title": "QA654 update",
+          "text": "QA654 update\n2026.10.01\nPDF",
+          "meta": "2026.10.01",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.10.01</div>",
+          "box": {
+            "x": 100,
+            "y": 542.390625,
+            "width": 390,
+            "height": 380.796875,
+            "right": 490,
+            "bottom": 923.1875
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 100,
+                "y": 542.390625,
+                "width": 390,
+                "height": 255,
+                "right": 490,
+                "bottom": 797.390625
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "QA654 update",
+              "box": {
+                "x": 100,
+                "y": 816.390625,
+                "width": 91.84375,
+                "height": 16,
+                "right": 191.84375,
+                "bottom": 832.390625
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 100,
+                  "y": 816.390625,
+                  "width": 91.84375,
+                  "height": 16,
+                  "right": 191.84375
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.10.01",
+              "box": {
+                "x": 100,
+                "y": 843.390625,
+                "width": 390,
+                "height": 23.796875,
+                "right": 490,
+                "bottom": 867.1875
+              },
+              "clientWidth": 390,
+              "scrollWidth": 390,
+              "ranges": [
+                {
+                  "x": 100,
+                  "y": 846.390625,
+                  "width": 70.078125,
+                  "height": 16,
+                  "right": 170.078125
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 190,
+                "y": 883.1875,
+                "width": 210,
+                "height": 40,
+                "right": 400,
+                "bottom": 923.1875
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 294.5,
+                  "y": 894.1875,
+                  "width": 32,
+                  "height": 17,
+                  "right": 326.5
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.10.01",
+          "typeLabel": "PDF"
+        },
+        {
+          "index": 1,
+          "title": "catalog ebook",
+          "text": "catalog ebook\n2026.09.03\ne-book",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 525,
+            "y": 542.390625,
+            "width": 390,
+            "height": 380.796875,
+            "right": 915,
+            "bottom": 923.1875
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 525,
+                "y": 542.390625,
+                "width": 390,
+                "height": 255,
+                "right": 915,
+                "bottom": 797.390625
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog ebook",
+              "box": {
+                "x": 525,
+                "y": 816.390625,
+                "width": 91.640625,
+                "height": 16,
+                "right": 616.640625,
+                "bottom": 832.390625
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 525,
+                  "y": 816.390625,
+                  "width": 91.640625,
+                  "height": 16,
+                  "right": 616.640625
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 525,
+                "y": 843.390625,
+                "width": 390,
+                "height": 23.796875,
+                "right": 915,
+                "bottom": 867.1875
+              },
+              "clientWidth": 390,
+              "scrollWidth": 390,
+              "ranges": [
+                {
+                  "x": 525,
+                  "y": 846.390625,
+                  "width": 70.078125,
+                  "height": 16,
+                  "right": 595.078125
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "e-book",
+              "box": {
+                "x": 615,
+                "y": 883.1875,
+                "width": 210,
+                "height": 40,
+                "right": 825,
+                "bottom": 923.1875
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 709.265625,
+                  "y": 894.1875,
+                  "width": 52.453125,
+                  "height": 17,
+                  "right": 761.71875
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "e-book"
+        },
+        {
+          "index": 2,
+          "title": "catalog ebook form",
+          "text": "catalog ebook form\n2026.09.03\nPDF",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 950,
+            "y": 542.390625,
+            "width": 390,
+            "height": 380.796875,
+            "right": 1340,
+            "bottom": 923.1875
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 950,
+                "y": 542.390625,
+                "width": 390,
+                "height": 255,
+                "right": 1340,
+                "bottom": 797.390625
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog ebook form",
+              "box": {
+                "x": 950,
+                "y": 816.390625,
+                "width": 125.6875,
+                "height": 16,
+                "right": 1075.6875,
+                "bottom": 832.390625
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 950,
+                  "y": 816.390625,
+                  "width": 125.6875,
+                  "height": 16,
+                  "right": 1075.6875
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 950,
+                "y": 843.390625,
+                "width": 390,
+                "height": 23.796875,
+                "right": 1340,
+                "bottom": 867.1875
+              },
+              "clientWidth": 390,
+              "scrollWidth": 390,
+              "ranges": [
+                {
+                  "x": 950,
+                  "y": 846.390625,
+                  "width": 70.078125,
+                  "height": 16,
+                  "right": 1020.078125
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 1040,
+                "y": 883.1875,
+                "width": 210,
+                "height": 40,
+                "right": 1250,
+                "bottom": 923.1875
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 1144.5,
+                  "y": 894.1875,
+                  "width": 32,
+                  "height": 17,
+                  "right": 1176.5
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "PDF"
+        },
+        {
+          "index": 3,
+          "title": "catalog pdf",
+          "text": "catalog pdf\n2026.09.03\nPDF",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 100,
+            "y": 1035.578125,
+            "width": 390,
+            "height": 380.796875,
+            "right": 490,
+            "bottom": 1416.375
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 100,
+                "y": 1035.578125,
+                "width": 390,
+                "height": 255,
+                "right": 490,
+                "bottom": 1290.578125
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog pdf",
+              "box": {
+                "x": 100,
+                "y": 1309.578125,
+                "width": 72.5625,
+                "height": 16,
+                "right": 172.5625,
+                "bottom": 1325.578125
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 100,
+                  "y": 1309.578125,
+                  "width": 72.5625,
+                  "height": 16,
+                  "right": 172.5625
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 100,
+                "y": 1336.578125,
+                "width": 390,
+                "height": 23.796875,
+                "right": 490,
+                "bottom": 1360.375
+              },
+              "clientWidth": 390,
+              "scrollWidth": 390,
+              "ranges": [
+                {
+                  "x": 100,
+                  "y": 1339.578125,
+                  "width": 70.078125,
+                  "height": 16,
+                  "right": 170.078125
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 190,
+                "y": 1376.375,
+                "width": 210,
+                "height": 40,
+                "right": 400,
+                "bottom": 1416.375
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 294.5,
+                  "y": 1387.375,
+                  "width": 32,
+                  "height": 17,
+                  "right": 326.5
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "PDF"
+        },
+        {
+          "index": 4,
+          "title": "catalog pdf form",
+          "text": "catalog pdf form\n2026.09.03\nPDF",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 525,
+            "y": 1035.578125,
+            "width": 390,
+            "height": 380.796875,
+            "right": 915,
+            "bottom": 1416.375
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 525,
+                "y": 1035.578125,
+                "width": 390,
+                "height": 255,
+                "right": 915,
+                "bottom": 1290.578125
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog pdf form",
+              "box": {
+                "x": 525,
+                "y": 1309.578125,
+                "width": 106.609375,
+                "height": 16,
+                "right": 631.609375,
+                "bottom": 1325.578125
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 525,
+                  "y": 1309.578125,
+                  "width": 106.609375,
+                  "height": 16,
+                  "right": 631.609375
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 525,
+                "y": 1336.578125,
+                "width": 390,
+                "height": 23.796875,
+                "right": 915,
+                "bottom": 1360.375
+              },
+              "clientWidth": 390,
+              "scrollWidth": 390,
+              "ranges": [
+                {
+                  "x": 525,
+                  "y": 1339.578125,
+                  "width": 70.078125,
+                  "height": 16,
+                  "right": 595.078125
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 615,
+                "y": 1376.375,
+                "width": 210,
+                "height": 40,
+                "right": 825,
+                "bottom": 1416.375
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 719.5,
+                  "y": 1387.375,
+                  "width": 32,
+                  "height": 17,
+                  "right": 751.5
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "PDF"
+        }
+      ],
+      "layout": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "height": 1504
+      },
+      "cardsPerRow": [
+        3,
+        2
+      ],
+      "evidence": [
+        "evidence/capture-20261022/en-PC-1440x900-viewport.png",
+        "evidence/capture-20261022/en-PC-1440x900-full.png"
+      ]
+    },
+    {
+      "lang": "en",
+      "device": "SP",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "status": 200,
+      "query": {
+        "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/en/catalogs/;cb=1792665044327",
+        "status": 200,
+        "items": 7
+      },
+      "cardCount": 5,
+      "cards": [
+        {
+          "index": 0,
+          "title": "QA654 update",
+          "text": "QA654 update\n2026.10.01\nPDF",
+          "meta": "2026.10.01",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.10.01</div>",
+          "box": {
+            "x": 24,
+            "y": 540.390625,
+            "width": 342,
+            "height": 349.40625,
+            "right": 366,
+            "bottom": 889.796875
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 24,
+                "y": 540.390625,
+                "width": 342,
+                "height": 223.609375,
+                "right": 366,
+                "bottom": 764
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "QA654 update",
+              "box": {
+                "x": 24,
+                "y": 781,
+                "width": 95.703125,
+                "height": 19,
+                "right": 119.703125,
+                "bottom": 800
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 781,
+                  "width": 95.703125,
+                  "height": 19,
+                  "right": 119.703125
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.10.01",
+              "box": {
+                "x": 24,
+                "y": 810,
+                "width": 342,
+                "height": 23.796875,
+                "right": 366,
+                "bottom": 833.796875
+              },
+              "clientWidth": 342,
+              "scrollWidth": 342,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 812,
+                  "width": 72,
+                  "height": 19,
+                  "right": 96
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 90,
+                "y": 849.796875,
+                "width": 210,
+                "height": 40,
+                "right": 300,
+                "bottom": 889.796875
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 195,
+                  "y": 858.796875,
+                  "width": 31,
+                  "height": 22,
+                  "right": 226
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.10.01",
+          "typeLabel": "PDF"
+        },
+        {
+          "index": 1,
+          "title": "catalog ebook",
+          "text": "catalog ebook\n2026.09.03\ne-book",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 24,
+            "y": 924.796875,
+            "width": 342,
+            "height": 349.40625,
+            "right": 366,
+            "bottom": 1274.203125
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 24,
+                "y": 924.796875,
+                "width": 342,
+                "height": 223.609375,
+                "right": 366,
+                "bottom": 1148.40625
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog ebook",
+              "box": {
+                "x": 24,
+                "y": 1165.40625,
+                "width": 96.515625,
+                "height": 19,
+                "right": 120.515625,
+                "bottom": 1184.40625
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 1165.40625,
+                  "width": 96.515625,
+                  "height": 19,
+                  "right": 120.515625
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 24,
+                "y": 1194.40625,
+                "width": 342,
+                "height": 23.796875,
+                "right": 366,
+                "bottom": 1218.203125
+              },
+              "clientWidth": 342,
+              "scrollWidth": 342,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 1196.40625,
+                  "width": 72,
+                  "height": 19,
+                  "right": 96
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "e-book",
+              "box": {
+                "x": 90,
+                "y": 1234.203125,
+                "width": 210,
+                "height": 40,
+                "right": 300,
+                "bottom": 1274.203125
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 183,
+                  "y": 1243.203125,
+                  "width": 55,
+                  "height": 22,
+                  "right": 238
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "e-book"
+        },
+        {
+          "index": 2,
+          "title": "catalog ebook form",
+          "text": "catalog ebook form\n2026.09.03\nPDF",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 24,
+            "y": 1309.203125,
+            "width": 342,
+            "height": 349.40625,
+            "right": 366,
+            "bottom": 1658.609375
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 24,
+                "y": 1309.203125,
+                "width": 342,
+                "height": 223.609375,
+                "right": 366,
+                "bottom": 1532.8125
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog ebook form",
+              "box": {
+                "x": 24,
+                "y": 1549.8125,
+                "width": 133.546875,
+                "height": 19,
+                "right": 157.546875,
+                "bottom": 1568.8125
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 1549.8125,
+                  "width": 133.546875,
+                  "height": 19,
+                  "right": 157.546875
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 24,
+                "y": 1578.8125,
+                "width": 342,
+                "height": 23.796875,
+                "right": 366,
+                "bottom": 1602.609375
+              },
+              "clientWidth": 342,
+              "scrollWidth": 342,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 1580.8125,
+                  "width": 72,
+                  "height": 19,
+                  "right": 96
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 90,
+                "y": 1618.609375,
+                "width": 210,
+                "height": 40,
+                "right": 300,
+                "bottom": 1658.609375
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 195,
+                  "y": 1627.609375,
+                  "width": 31,
+                  "height": 22,
+                  "right": 226
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "PDF"
+        },
+        {
+          "index": 3,
+          "title": "catalog pdf",
+          "text": "catalog pdf\n2026.09.03\nPDF",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 24,
+            "y": 1771,
+            "width": 342,
+            "height": 349.40625,
+            "right": 366,
+            "bottom": 2120.40625
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 24,
+                "y": 1771,
+                "width": 342,
+                "height": 223.609375,
+                "right": 366,
+                "bottom": 1994.609375
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog pdf",
+              "box": {
+                "x": 24,
+                "y": 2011.609375,
+                "width": 75.890625,
+                "height": 19,
+                "right": 99.890625,
+                "bottom": 2030.609375
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 2011.609375,
+                  "width": 75.890625,
+                  "height": 19,
+                  "right": 99.890625
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 24,
+                "y": 2040.609375,
+                "width": 342,
+                "height": 23.796875,
+                "right": 366,
+                "bottom": 2064.40625
+              },
+              "clientWidth": 342,
+              "scrollWidth": 342,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 2042.609375,
+                  "width": 72,
+                  "height": 19,
+                  "right": 96
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 90,
+                "y": 2080.40625,
+                "width": 210,
+                "height": 40,
+                "right": 300,
+                "bottom": 2120.40625
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 195,
+                  "y": 2089.40625,
+                  "width": 31,
+                  "height": 22,
+                  "right": 226
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "PDF"
+        },
+        {
+          "index": 4,
+          "title": "catalog pdf form",
+          "text": "catalog pdf form\n2026.09.03\nPDF",
+          "meta": "2026.09.03",
+          "metaHtml": "<div class=\"cards-card-meta\">2026.09.03</div>",
+          "box": {
+            "x": 24,
+            "y": 2155.40625,
+            "width": 342,
+            "height": 349.40625,
+            "right": 366,
+            "bottom": 2504.8125
+          },
+          "images": [
+            {
+              "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+              "naturalWidth": 220,
+              "naturalHeight": 132,
+              "complete": true,
+              "box": {
+                "x": 24,
+                "y": 2155.40625,
+                "width": 342,
+                "height": 223.609375,
+                "right": 366,
+                "bottom": 2379.015625
+              },
+              "httpResponses": [
+                {
+                  "url": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "status": 200
+                }
+              ]
+            }
+          ],
+          "textBounds": [
+            {
+              "tag": "A",
+              "class": "",
+              "text": "catalog pdf form",
+              "box": {
+                "x": 24,
+                "y": 2396.015625,
+                "width": 112.9375,
+                "height": 19,
+                "right": 136.9375,
+                "bottom": 2415.015625
+              },
+              "clientWidth": 0,
+              "scrollWidth": 0,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 2396.015625,
+                  "width": 112.9375,
+                  "height": 19,
+                  "right": 136.9375
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "DIV",
+              "class": "cards-card-meta",
+              "text": "2026.09.03",
+              "box": {
+                "x": 24,
+                "y": 2425.015625,
+                "width": 342,
+                "height": 23.796875,
+                "right": 366,
+                "bottom": 2448.8125
+              },
+              "clientWidth": 342,
+              "scrollWidth": 342,
+              "ranges": [
+                {
+                  "x": 24,
+                  "y": 2427.015625,
+                  "width": 72,
+                  "height": 19,
+                  "right": 96
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            },
+            {
+              "tag": "A",
+              "class": "button",
+              "text": "PDF",
+              "box": {
+                "x": 90,
+                "y": 2464.8125,
+                "width": 210,
+                "height": 40,
+                "right": 300,
+                "bottom": 2504.8125
+              },
+              "clientWidth": 208,
+              "scrollWidth": 208,
+              "ranges": [
+                {
+                  "x": 195,
+                  "y": 2473.8125,
+                  "width": 31,
+                  "height": 22,
+                  "right": 226
+                }
+              ],
+              "exceedsCard": false,
+              "exceedsElement": false
+            }
+          ],
+          "dateText": "2026.09.03",
+          "typeLabel": "PDF"
+        }
+      ],
+      "layout": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "height": 2593
+      },
+      "cardsPerRow": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "evidence": [
+        "evidence/capture-20261022/en-SP-390x844-viewport.png",
+        "evidence/capture-20261022/en-SP-390x844-full.png"
+      ]
+    }
+  ]
+}

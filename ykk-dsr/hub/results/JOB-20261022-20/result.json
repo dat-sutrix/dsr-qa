@@ -1,0 +1,79 @@
+{
+  "job": "JOB-20261022-20",
+  "agent": "codex",
+  "us": "DSR-557",
+  "env": "dev",
+  "started": "2026-10-22T10:29:51.234Z",
+  "finished": "2026-10-22T10:30:46.887Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "list empty; no dsr-catalog-list response in 45s; empty main",
+      "evidence": "evidence/capture-20261022/ja-PC-1440x900-full.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "list empty; no dsr-catalog-list response in 45s; empty main",
+      "evidence": "evidence/capture-20261022/ja-PC-1440x900-full.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-014",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "list empty; no dsr-catalog-list response in 45s; empty main",
+      "evidence": "evidence/capture-20261022/ja-SP-390x844-full.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-012",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture and measurement complete; no pixel verdict",
+      "evidence": "evidence/capture-20261022/en-PC-1440x900-full.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture and measurement complete; no pixel verdict",
+      "evidence": "evidence/capture-20261022/en-PC-1440x900-full.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-014",
+      "lang": "en",
+      "result": "pass",
+      "error": "Capture and measurement complete; no pixel verdict",
+      "evidence": "evidence/capture-20261022/en-SP-390x844-full.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": [],
+  "observations": "observations.json",
+  "result_semantics": "pass means capture/measurement completed only; no pixel verdict. Japanese checks blocked under job list-empty stop rule.",
+  "browser": "Chromium 156.0.8078.4",
+  "png_bytes": 873131,
+  "setup_note": "Initial launch failed: matching Chromium missing; installed with npx playwright install chromium. Initial capture timed out on ja; diagnostic confirmed HTTP 200 with empty main. Capture rerun records empty list explicitly."
+}
