@@ -46,7 +46,7 @@ export function expandItems(doc) {
   expandEach(doc.items).forEach((item, idx) => {
     const langs = item.lang ?? LANGS;
     for (const lang of langs) {
-      const e = { idx, kind: item.kind, model: item.model, lang, langs, replicate: [].concat(item.replicate ?? DEFAULT_REPLICATE[item.kind] ?? []) };
+      const e = { idx, kind: item.kind, model: item.model, lang, langs, langPair: item.lang_pair !== false, langPairReason: item.lang_pair_reason ?? null, replicate: [].concat(item.replicate ?? DEFAULT_REPLICATE[item.kind] ?? []) };
       if (item.kind === 'rename') {
         e.from = sub(item.from, lang);
         e.to = sub(item.to, lang);

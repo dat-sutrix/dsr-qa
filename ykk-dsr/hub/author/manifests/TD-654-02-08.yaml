@@ -1,0 +1,136 @@
+# TD-654-02..08 – DSR-654 catalog overlay negative/lifecycle data (JOB-20261022-09).
+# Source: tc-out/[Sutrix] DSR -654- … _TestData.xlsx (sheet Data) + fixtures/dsr-654.ts (td654). 02 = ja+en, others en only (A7).
+# Common content values (sheet): description 'QA654 description', catalogCategories = any 1 existing tag, thumbnail = same as qa190-cat-pdf,
+#   catalogType pdf, pdfAsset qa190-catalog-sample.pdf, requiresForm OFF, publishDate 2026-10-01. DSR CF: catalog = content CF same name/lang.
+#   Tag site:product/material/aluminium and the thumbnail are taken from the live qa190-cat-pdf content CF (GET 22/10).
+# Excluded:
+#   03 qa654-removed – needs Unpublish of the DSR CF (tool has no unpublish/delete) → QA-PT.
+#   05 qa654-sub – DSR CF in sub-folder dsr/en/catalogs/qa654-folder/qa654-sub is outside the path guard (and the tool cannot create folders) → QA-PT.
+# 08: sheet order "Publish both → Unpublish content CF → Publish DSR CF" is approximated as "content CF never replicated" (job 22/10).
+id: TD-654-02-08
+us: DSR-654
+items:
+  # TD-654-02 inactive (ja+en): DSR CF published with 表示フラグ OFF
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa654-inactive
+    fields:
+      catalogId: qa654-inactive
+      catalogTitle: QA654 inactive
+      description: QA654 description
+      catalogCategories: [site:product/material/aluminium]
+      thumbnail: ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)
+      catalogType: pdf
+      pdfAsset: ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)
+      requiresForm: false
+      publishDate: "2026-10-01"
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_catalog_related
+    lang: [ja, en]
+    path: /content/dam/dsr/{lang}/catalogs/qa654-inactive
+    fields: { isActive: false, catalog: "ref(/content/dam/common/{lang}/catalogs/qa654-inactive)" }
+    replicate: [preview, publish]
+
+  # TD-654-04 preview: content CF Publish, DSR CF Preview ONLY
+  - kind: content-cf
+    model: DM_catalog
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: TD-654-04 is en only (A7)
+    path: /content/dam/common/en/catalogs/qa654-preview
+    fields:
+      catalogId: qa654-preview
+      catalogTitle: QA654 preview
+      description: QA654 description
+      catalogCategories: [site:product/material/aluminium]
+      thumbnail: ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)
+      catalogType: pdf
+      pdfAsset: ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)
+      requiresForm: false
+      publishDate: "2026-10-01"
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_catalog_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: TD-654-04 is en only (A7)
+    path: /content/dam/dsr/en/catalogs/qa654-preview
+    fields: { isActive: true, catalog: ref(/content/dam/common/en/catalogs/qa654-preview) }
+    replicate: [preview]          # must NOT be on .live
+
+  # TD-654-06 content only: NO DSR CF
+  - kind: content-cf
+    model: DM_catalog
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: TD-654-06 is en only (A7)
+    path: /content/dam/common/en/catalogs/qa654-content-only
+    fields:
+      catalogId: qa654-content-only
+      catalogTitle: QA654 content only
+      description: QA654 description
+      catalogCategories: [site:product/material/aluminium]
+      thumbnail: ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)
+      catalogType: pdf
+      pdfAsset: ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)
+      requiresForm: false
+      publishDate: "2026-10-01"
+    replicate: [preview, publish]
+
+  # TD-654-07 update propagation (TC 13 changes description during the test)
+  - kind: content-cf
+    model: DM_catalog
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: TD-654-07 is en only (A7)
+    path: /content/dam/common/en/catalogs/qa654-update
+    fields:
+      catalogId: qa654-update
+      catalogTitle: QA654 update
+      description: QA654 before
+      catalogCategories: [site:product/material/aluminium]
+      thumbnail: ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)
+      catalogType: pdf
+      pdfAsset: ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)
+      requiresForm: false
+      publishDate: "2026-10-01"
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_catalog_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: TD-654-07 is en only (A7)
+    path: /content/dam/dsr/en/catalogs/qa654-update
+    fields: { isActive: true, catalog: ref(/content/dam/common/en/catalogs/qa654-update) }
+    replicate: [preview, publish]
+
+  # TD-654-08 content CF not published, DSR CF published
+  - kind: content-cf
+    model: DM_catalog
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: TD-654-08 is en only (A7)
+    path: /content/dam/common/en/catalogs/qa654-content-unpub
+    fields:
+      catalogId: qa654-content-unpub
+      catalogTitle: QA654 content unpublished
+      description: QA654 description
+      catalogCategories: [site:product/material/aluminium]
+      thumbnail: ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)
+      catalogType: pdf
+      pdfAsset: ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)
+      requiresForm: false
+      publishDate: "2026-10-01"
+    replicate: []                 # content CF must NOT be published
+  - kind: dsr-cf
+    model: DM_catalog_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: TD-654-08 is en only (A7)
+    path: /content/dam/dsr/en/catalogs/qa654-content-unpub
+    fields: { isActive: true, catalog: ref(/content/dam/common/en/catalogs/qa654-content-unpub) }
+    replicate: [preview, publish]
+verify:
+  urls: ["/en/library/catalog/qa654-inactive", "/ja/library/catalog/qa654-inactive", "/en/library/catalog/qa654-preview", "/en/library/catalog/qa654-content-only", "/en/library/catalog/qa654-update", "/en/library/catalog/qa654-content-unpub"]

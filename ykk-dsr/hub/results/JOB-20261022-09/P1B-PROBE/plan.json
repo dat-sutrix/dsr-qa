@@ -1,0 +1,99 @@
+[
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qaagent-probe",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qaagent-probe",
+      "name": "qaagent-probe",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qaagent-probe"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA agent probe"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA agent probe"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-22"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qaagent-probe",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qaagent-probe"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+# P1B-PROBE – Author agent P1b write test (JOB-20261022-09): 1 content CF, preview tier only.
+# Minimum required DM_movie fields only (live model 22/10: movieId, movieTitle, description, thumbnail, movieSource, publishDate).
+# thumbnail = QA image already used by qa587-main / qa190-cat-pdf.
+id: P1B-PROBE
+us: Author agent P1b
+max_writes: 2
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: write test (P1b probe), no ja pair needed
+    path: /content/dam/common/en/movies/qaagent-probe
+    fields:
+      movieId: qaagent-probe
+      movieTitle: QA agent probe
+      description: QA agent probe
+      thumbnail: ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)
+      movieSource: youtube
+      publishDate: "2026-10-22"
+    replicate: [preview]

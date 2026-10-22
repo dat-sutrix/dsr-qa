@@ -1,0 +1,16 @@
+# BUGCHK-190-FORM – requiresForm ON for the 2 "form" catalogs (DSR-190 bug check), ja + en.
+# Live content CFs (QueryBuilder 22/10): /content/dam/common/{lang}/catalogs/{id} → inside the path guard (decision 3 of 22/10).
+#   Copies also exist at /content/dam/ykk/common/product-cf/test/{id} (outside the guard) – not touched by this manifest.
+# Patch only requiresForm; other required fields come from the live CF (patch: manifest ∪ live).
+id: BUGCHK-190-FORM
+us: DSR-190
+items:
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/{id}
+    each: [qa190-cat-pdf-form, qa190-cat-ebook-form]
+    fields: { requiresForm: true }
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/catalog/{id}"]

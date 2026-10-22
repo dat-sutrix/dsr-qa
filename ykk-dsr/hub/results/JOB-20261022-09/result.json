@@ -1,0 +1,27 @@
+{
+  "job": "JOB-20261022-09",
+  "agent": "claude-code",
+  "us": "Author agent P1b prep – move Night 22/10 CF tasks from QA-PT to agent",
+  "env": "dev",
+  "started": "2026-10-22T04:43:00Z",
+  "finished": "2026-10-22T04:49:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "PROBE-1..6", "lang": "-", "result": "pass", "error": "checks 1-6 all HTTP 200; cookie age 0h", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "LINT+DRYRUN-P1B-PROBE", "lang": "en", "result": "pass", "error": "lint PASS 18 FAIL 0 WARN 2; plan 2 writes (1 create, 1 preview)", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "LINT+DRYRUN-TD-586-01-02.resolved", "lang": "ja", "result": "fail", "error": "lint FAIL 8: path-guard + node-name for 990586001/002 (numeric names outside qa* guard; guard not widened); plan 4 replicate writes", "suspect": "test", "cause": "none", "confidence": 0 },
+    { "tc": "LINT+DRYRUN-BUGCHK-190-FORM", "lang": "ja+en", "result": "pass", "error": "lint PASS 38 FAIL 0; plan 6 writes (4 PATCH requiresForm false→true, 2 replicate)", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "LINT+DRYRUN-TD-654-02-08", "lang": "ja+en", "result": "pass", "error": "lint PASS 202 FAIL 0 WARN 18; plan 15 writes (11 create, 4 replicate); 03 and 05 excluded → QA-PT", "suspect": "data", "cause": "none", "confidence": 0 }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tools/author/lib/lint.mjs",
+    "tools/author/lib/manifest.mjs",
+    "tools/author/README.md",
+    "ykk-dsr/hub/author/manifests/P1B-PROBE.yaml",
+    "ykk-dsr/hub/author/manifests/BUGCHK-190-FORM.yaml",
+    "ykk-dsr/hub/author/manifests/TD-654-02-08.yaml",
+    "ykk-dsr/hub/author/manifests/TD-586-01-02.resolved.yaml"
+  ],
+  "questions": []
+}

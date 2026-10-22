@@ -24,6 +24,7 @@ node tools/author/author.mjs apply   <manifest> [--dry-run] [--out <dir>]   # de
 - `ref(/content/dam/...)` = CF / asset reference (lint checks it exists or is created in the same manifest).
 - `each: [id1, id2, …]` = one item per id, `{id}` substituted in path, values, refs and `verify.urls`.
   Quote values that contain `{lang}`/`{id}` inside a flow map (`{ movie: "ref(/…/{lang}/…)" }`) – unquoted braces there are invalid YAML.
+- `lang_pair: false` + `lang_pair_reason: <text>` per item = opt-out of the ja+en pair check (single-language TDs): lint WARN with the reason; without a reason it stays FAIL.
 - `replicate: [preview, publish]` per item; **content-cf items default to `[preview, publish]`** (D10), other kinds have no default.
   Each tier publishes content CFs first, then DSR CFs, one request each; references are never published implicitly.
 - `kind: rename` items (`from`, `to`, optional `lang`) fix mis-named nodes by MOVE (D9, never delete + recreate). Items whose

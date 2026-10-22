@@ -37,7 +37,11 @@ export async function lint(doc) {
   for (const e of entries) {
     // ja+en pair (data items; a rename only fixes whichever language is mis-named)
     const missingLang = LANGS.filter((l) => !e.langs.includes(l));
-    if (e.kind !== 'rename' && e.lang === e.langs[0]) add(e, 'lang-pair', missingLang.length === 0, 'ja+en', e.langs.join('+'));
+    // Opt-out (Claude 22/10): `lang_pair: false` + `lang_pair_reason` → WARN; without a reason → FAIL.
+    if (e.kind !== 'rename' && e.lang === e.langs[0]) {
+      if (missingLang.length && !e.langPair) add(e, 'lang-pair', false, 'ja+en or lang_pair: false + lang_pair_reason', `${e.langs.join('+')} (opt-out: ${e.langPairReason ?? 'no reason'})`, !!e.langPairReason);
+      else add(e, 'lang-pair', missingLang.length === 0, 'ja+en', e.langs.join('+'));
+    }
 
     if (e.kind === 'rename') add(e, 'path-guard:rename-source', isRenameSourcePath(e.from), 'allowed qa* or legacy qa-* path (D8)', e.from);
     add(e, 'path-guard', isWritablePath(e.path), 'allowed qa* path', e.path);
