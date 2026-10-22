@@ -59,11 +59,13 @@ for (const lang of languages) {
       expect.soft(await page.title(), '<title>').toBe(td01[lang].title);
     });
 
-    test(`DSR-ARTICLE-006 [${lang}] info bar shows 2 tag labels, not raw tag IDs`, { tag: ['@auto'] }, async ({ page }) => {
-      const { article } = await openArticle(page, lang);
+    test(`DSR-ARTICLE-006 [${lang}] info bar shows 2 tag labels, not raw tag IDs`, { tag: ['@auto'] }, async ({ page, request }) => {
+      const { article, path } = await openArticle(page, lang);
       const labels = (await article.tags.allInnerTexts()).map(t => t.trim()).filter(Boolean);
-      observations.push({ labels, note: 'label language = page language is assumption A5 / Q5' });
+      const metaTags = metaValues((await article.rawMeta(request, path)).meta, 'article:tag');
+      observations.push({ labels, metaTags, note: 'label language = page language is assumption A5 / Q5' });
       expect.soft(labels, 'tag labels').toHaveLength(td01Common.tagCount);
+      expect.soft(labels.length, 'chip count = article:tag meta count').toBe(metaTags.length);
       // Raw tag IDs look like namespace:path (spec.json 12.0).
       for (const label of labels) expect.soft(label, 'not a raw tag ID').not.toMatch(/^[\w-]+:[\w/-]+$/);
     });

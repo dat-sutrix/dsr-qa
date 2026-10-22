@@ -31,25 +31,31 @@ export class ArticleDetailPage {
     // TODO: data-testid article-title (block 3)
     this.title = this.main.locator('h1');
     // TODO: data-testid article-subtitle / article-image / article-description (blocks 4/5/6)
-    this.subtitle = this.main.locator('[data-block-name*="subtitle"], [class*="subtitle"]');
-    this.articleImage = this.main.locator('[data-block-name*="article-image"], [class*="article-image"]');
-    this.description = this.main.locator('[data-block-name*="description"], [class*="article-description"]');
+    // DEV renders 4/5/6 as plain text/image blocks in the article-title section (JOB-20261022-02):
+    // title → text (subtitle) → image → text (description) → article-meta. Scope to that section's blocks, not wrappers.
+    const header = this.main.locator('.section:has(.article-title.block)');
+    this.subtitle = header.locator('.article-title-wrapper + .text-wrapper > .text.block');
+    this.articleImage = header.locator('.image-wrapper > .image.block');
+    this.description = header.locator('.image-wrapper + .text-wrapper > .text.block');
     // TODO: data-testid article-info-bar / article-date / article-tag (block 7)
     this.infoBar = this.main.locator('.article-meta.block, [data-block-name*="info-bar"]');
     this.date = this.infoBar.locator('.article-meta-date, time');
-    this.tags = this.infoBar.locator('[class*="tag"], [class*="category"]');
+    // Leaf chips only: the .article-meta-tags wrapper also matched [class*="tag"] (JOB-20261021-05).
+    this.tags = this.infoBar.locator('.article-meta-tag');
     // TODO: data-testid article-mylist / article-share
     this.myList = this.infoBar.getByRole('button', { name: myListName });
     this.share = this.infoBar.locator('.article-meta-actions a, a[href*="facebook"], a[href*="twitter"], a[href*="x.com"], a[href*="linkedin"]');
     // TODO: data-testid article-body / article-profile (blocks 9/11)
-    this.body = this.main.locator('[data-block-name*="body"], .text.block');
+    // Body text is outside the article-title section (that section's text blocks are 4/6).
+    this.body = this.main.locator('.section:not(:has(.article-title.block)) .text.block');
     this.profile = this.main.locator('[data-block-name*="profile"], [class*="profile"]');
     // TODO: data-testid article-related-stories / article-related-items (blocks 12/13)
     // Block is related-articles on DEV (JOB-20261020-10). Match the block only: the section wrapper
     // "related-articles-container" is present even without the block (JOB-ZZ-IDLE-19).
     this.relatedStories = this.main.locator('[data-block-name="related-articles"], .related-articles.block, [data-block-name*="related-stories"], .related-stories.block');
     this.relatedStoriesHeading = this.main.getByRole('heading', { name: relatedStoriesName });
-    this.relatedItems = this.main.locator('[data-block-name*="related-items"], [class*="related-items"], [class*="related-products"]');
+    // Block is related-product on DEV; match the block, not the related-product-container section.
+    this.relatedItems = this.main.locator('[data-block-name="related-product"], .related-product.block, [data-block-name*="related-items"], .related-items.block');
     this.relatedItemsHeading = this.main.getByRole('heading', { name: relatedItemsName });
     // TODO: data-testid article-view-all-stories / article-contact (block 14)
     this.viewAllStories = page.getByRole('link', { name: viewAllStoriesName });

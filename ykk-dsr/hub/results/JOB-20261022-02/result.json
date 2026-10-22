@@ -1,0 +1,224 @@
+{
+  "job": "JOB-20261022-02",
+  "agent": "claude-code",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-22T01:04:54Z",
+  "finished": "2026-10-22T01:07:55Z",
+  "status": "done",
+  "totals": {
+    "total": 15,
+    "passed": 6,
+    "failed": 9,
+    "skipped": 0,
+    "flaky": 0,
+    "exit_code": 1
+  },
+  "freshness": {
+    "qa529-01 ja last-modified (HTTP)": "2026-10-21T15:09:36Z",
+    "qa529-01 en last-modified (HTTP)": "2026-10-21T15:10:40Z",
+    "qa529-02 ja last-modified (HTTP)": "2026-10-20T11:36:16Z",
+    "qa529-02 ja query-index lastModified": "2026-10-19T15:31:30Z",
+    "qa529-r1..r3 ja/en query-index lastModified": "2026-10-21T12:44:40Z / 12:45:00Z",
+    "/query-index.json": "2026-10-21T15:11:35Z",
+    "note": "Nothing has been republished since the JOB-20261021-05 run. The '6 pages 19:44' are qa529-r1..r3 ja+en (index 12:44–12:45Z). qa529-01 is from 15:09/15:10Z. qa529-02 was NOT republished, so 016 (qa529-02 part) and 023 run on stale data."
+  },
+  "index_check": {
+    "source": "/query-index.json (200, total 175); stories-specific index paths not re-checked (404 in JOB-05)",
+    "qa529-01 ja": {
+      "category": "",
+      "tags": [
+        "do-not-translate",
+        "site:product/bio-based"
+      ],
+      "navtitle": "QA529 ナビ",
+      "robots": "",
+      "thumbnail": "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+      "searchkeywords": "qa529kw1, qa529kw2",
+      "title": "QA529 OGPタイトル"
+    },
+    "qa529-01 en": {
+      "category": "",
+      "tags": [
+        "do-not-translate",
+        "site:product/bio-based"
+      ],
+      "navtitle": "QA529 Nav",
+      "robots": "noindex, nofollow",
+      "thumbnail": "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+      "searchkeywords": "qa529kw1, qa529kw2",
+      "title": "QA529 OGP title"
+    },
+    "qa529-02 ja": {
+      "category": "",
+      "tags": "",
+      "robots": "",
+      "navtitle": "",
+      "publicationdate": "2026-09-01T00:00:00.000Z"
+    },
+    "note": "category is '' in every qa529 row (r1–r3 too). In the index, title = og:title for qa529-01. Recorded only, not in this job's scope."
+  },
+  "tests": [
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "ja",
+      "result": "pass",
+      "duration_ms": 7878,
+      "observed": "All 10 blocks are present in order (title, subtitle, articleImage, description, infoBar, body, profile, relatedStories, relatedItems, footerAction). Exactly 1 image block. 0 empty blocks, 0 console errors. Locators fixed (test)."
+    },
+    {
+      "tc": "DSR-ARTICLE-002",
+      "lang": "en",
+      "result": "pass",
+      "duration_ms": 5575,
+      "observed": "Same as ja."
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "ja",
+      "result": "pass",
+      "duration_ms": 5793,
+      "observed": "chips .article-meta-tag = [do-not-translate, バイオベース] (2) = article:tag metas [do-not-translate, site:product/bio-based] (2)"
+    },
+    {
+      "tc": "DSR-ARTICLE-006",
+      "lang": "en",
+      "result": "pass",
+      "duration_ms": 3128,
+      "observed": "chips = [do-not-translate, バイオベース] (2) = 2 article:tag metas. On the en page the label is Japanese ('バイオベース'): A5/Q5 (label language) is still open, not judged"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "ja",
+      "result": "fail",
+      "duration_ms": 24780,
+      "error": "thumbnail meta relative: /content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png → 404 on .aem.live, 200 on publish host",
+      "evidence": "evidence/DSR-ARTICLE-011_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85,
+      "observed": "DSR-659 open, unchanged since JOB-05"
+    },
+    {
+      "tc": "DSR-ARTICLE-011",
+      "lang": "en",
+      "result": "fail",
+      "duration_ms": 8134,
+      "error": "thumbnail meta relative: /content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png → 404 on .aem.live",
+      "evidence": "evidence/DSR-ARTICLE-011_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85,
+      "observed": "DSR-659 open"
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "ja",
+      "result": "fail",
+      "duration_ms": 23753,
+      "error": "category meta count 0 (expected 1 with 2 tag IDs); searchkeywords OK",
+      "evidence": "evidence/DSR-ARTICLE-012_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "observed": "meta category absent; index category ''; searchkeywords 'qa529kw1, qa529kw2' OK. navtitle (same UE Page properties dialog) IS published, so the page was republished after the navtitle edit; Author category value not verified"
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "en",
+      "result": "fail",
+      "duration_ms": 7148,
+      "error": "category meta count 0 (expected 1 with 2 tag IDs); searchkeywords OK",
+      "evidence": "evidence/DSR-ARTICLE-012_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "observed": "meta category absent; index category ''; searchkeywords 'qa529kw1, qa529kw2' OK. navtitle (same UE Page properties dialog) IS published, so the page was republished after the navtitle edit; Author category value not verified"
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "ja",
+      "result": "fail",
+      "duration_ms": 11963,
+      "error": "only 'category' fails: count 0. title/description/og:*/publicationdate/thumbnail = 1 each, OGP = authored",
+      "evidence": "evidence/DSR-ARTICLE-014_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "observed": "Same root cause as 012. og:image absolute (dev-eds.ykkdigitalshowroom.com) 200"
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "en",
+      "result": "fail",
+      "duration_ms": 6578,
+      "error": "only 'category' fails: count 0; others 1 each, OGP = authored",
+      "evidence": "evidence/DSR-ARTICLE-014_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50,
+      "observed": "Same root cause as 012"
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "ja",
+      "result": "fail",
+      "duration_ms": 14180,
+      "error": "qa529-02 robots meta absent (expected noindex,nofollow); qa529-01 no robots OK",
+      "evidence": "evidence/DSR-ARTICLE-016_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15,
+      "observed": "qa529-02 was not republished (last-modified 2026-10-20T11:36:16Z; index row robots '' tags '' vs TD 1 tag), so robots ON is not live"
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "en",
+      "result": "fail",
+      "duration_ms": 6921,
+      "error": "qa529-01 en robots = 'noindex, nofollow' (TD: robots OFF)",
+      "evidence": "evidence/DSR-ARTICLE-016_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15,
+      "observed": "qa529-01 en was republished 15:10:40Z with robots still ON. Index row robots 'noindex, nofollow'. ja qa529-01 is correct, so emission works"
+    },
+    {
+      "tc": "DSR-ARTICLE-023",
+      "lang": "ja",
+      "result": "fail",
+      "duration_ms": 4315,
+      "error": "qa529-02 related items block visible (282 px) + heading 関連アイテム; 4 products p00320/p00101/p00001/p00210",
+      "evidence": "evidence/DSR-ARTICLE-023_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 40,
+      "observed": "Identical 4 products on qa529-01 and qa529-02, so the block does not depend on the page. The '0 results' precondition cannot be set from the page: product index relatedArticles/sortOrder is undefined (Martin prereq #3, same as blocked 022). Block now matched as .related-product.block (locator fix)"
+    },
+    {
+      "tc": "DSR-ARTICLE-028",
+      "lang": "ja",
+      "result": "pass",
+      "duration_ms": 4620,
+      "observed": "breadcrumb HOME>Library>Article>Stories>'QA529 ナビ' (last no link = navtitle meta); ancestors link /master/ja/..."
+    },
+    {
+      "tc": "DSR-ARTICLE-028",
+      "lang": "en",
+      "result": "pass",
+      "duration_ms": 2416,
+      "observed": "breadcrumb HOME>Library>Article>Stories>'QA529 Nav' (no link); ancestors link"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "pages/ArticleDetailPage.ts",
+    "tests/article-detail/DSR-529.article-detail.spec.ts"
+  ],
+  "run_report": "results/DSR-529/DEV/automation-run-20261022-job02.md",
+  "assumptions": [
+    "Job input path '/{ja,en}/library/article/stories/qa529-0x' returns 404 on .aem.live. The fixture path /master/{lang}/library/article/stories/qa529-0x (200) was used, as in JOB-05.",
+    "No Expected value was changed. Only locators changed (subtitle/articleImage/description/body/tags/relatedItems), plus one 006 assertion: chip count = article:tag meta count, which is the job's Expected."
+  ],
+  "questions": []
+}
