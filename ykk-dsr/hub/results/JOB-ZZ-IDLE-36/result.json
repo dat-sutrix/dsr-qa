@@ -1,0 +1,425 @@
+{
+  "job": "JOB-ZZ-IDLE-36",
+  "agent": "codex",
+  "us": "DSR-587/654/586",
+  "env": "dev",
+  "started": "2026-10-22T09:17:02.586Z",
+  "finished": "2026-10-22T09:34:56.372Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "IDLE36-CAPTURE-01",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/ja-library-video-qa587-main-1440-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-02",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/ja-library-video-qa587-main-390-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-03",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-video-qa587-main-1440-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-04",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-video-qa587-main-390-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-05",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/ja-library-catalog-qa190-cat-pdf-form-1440-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-06",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/ja-library-catalog-qa190-cat-pdf-form-390-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-07",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa190-cat-pdf-form-1440-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-08",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa190-cat-pdf-form-390-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-09",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-1440-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-10",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-390-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-11",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/ja-library-catalog-1440-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-12",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/ja-library-catalog-390-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-13",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-1440-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "tc": "IDLE36-CAPTURE-14",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-390-y0.png",
+      "suspect": "test",
+      "scope": "Capture completed; not visual conformance",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    }
+  ],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "mobile",
+      "performance": 95,
+      "runs": [
+        95,
+        95,
+        80
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "desktop",
+      "performance": 96,
+      "runs": [
+        96,
+        96,
+        96
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "device": "mobile",
+      "performance": 93,
+      "runs": [
+        91,
+        94,
+        93
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main",
+      "device": "desktop",
+      "performance": 96,
+      "runs": [
+        96,
+        96,
+        100
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "device": "mobile",
+      "performance": 57,
+      "runs": [
+        56,
+        66,
+        57
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa190-cat-pdf-form",
+      "device": "desktop",
+      "performance": 91,
+      "runs": [
+        91,
+        91,
+        90
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "device": "mobile",
+      "performance": 67,
+      "runs": [
+        69,
+        67,
+        65
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa190-cat-pdf-form",
+      "device": "desktop",
+      "performance": 91,
+      "runs": [
+        93,
+        91,
+        84
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "mobile",
+      "performance": null,
+      "runs": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "desktop",
+      "performance": null,
+      "runs": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "mobile",
+      "performance": 77,
+      "runs": [
+        78,
+        74,
+        77
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "desktop",
+      "performance": 93,
+      "runs": [
+        94,
+        92,
+        93
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "device": "mobile",
+      "performance": 93,
+      "runs": [
+        93,
+        91,
+        93
+      ]
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "device": "desktop",
+      "performance": 96,
+      "runs": [
+        96,
+        96,
+        99
+      ]
+    }
+  ],
+  "audit_failures": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "mobile",
+      "run": 1,
+      "result": "blocked",
+      "error": "The page provided is not HTML (served as MIME type application/pdf).",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-1440-y0.png",
+      "finalUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "mobile",
+      "run": 2,
+      "result": "blocked",
+      "error": "The page provided is not HTML (served as MIME type application/pdf).",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-1440-y0.png",
+      "finalUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "mobile",
+      "run": 3,
+      "result": "blocked",
+      "error": "The page provided is not HTML (served as MIME type application/pdf).",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-1440-y0.png",
+      "finalUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "desktop",
+      "run": 1,
+      "result": "blocked",
+      "error": "The page provided is not HTML (served as MIME type application/pdf).",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-1440-y0.png",
+      "finalUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "desktop",
+      "run": 2,
+      "result": "blocked",
+      "error": "The page provided is not HTML (served as MIME type application/pdf).",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-1440-y0.png",
+      "finalUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "device": "desktop",
+      "run": 3,
+      "result": "blocked",
+      "error": "The page provided is not HTML (served as MIME type application/pdf).",
+      "evidence": "evidence/baseline-20261022/en-library-catalog-qa654-update-1440-y0.png",
+      "finalUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    }
+  ],
+  "code_changes": [
+    "results/JOB-ZZ-IDLE-36/run.cjs",
+    "results/JOB-ZZ-IDLE-36/report.cjs"
+  ],
+  "questions": [],
+  "notes": [
+    "Deadline already elapsed at start.",
+    "No approved visual comparator or performance threshold; outcomes are proposals.",
+    "TypeScript recheck passed after restoring missing declared dependency."
+  ]
+}
