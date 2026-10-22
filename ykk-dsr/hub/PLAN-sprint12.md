@@ -196,3 +196,9 @@ Nguyên tắc: job dựa trên data QA-PT để sẵn ở `jobs/hold/` với đi
 ## Ghi chú 16/10 17:45
 - DSR-647/501-P3: trang overlay trên nhánh Martin KHÔNG tự tạo lại sau khi publish CF related (JOB-20261016-09: last-modified 06:43Z). Kết quả Việc 1 của QA-PT tối 16/10 nếu "Fail" = **blocked-env**, không phải bug. Cần Martin re-preview sau khi QA-PT set 更新日 → Dat nhắn Martin sáng T2 19/10.
 - DSR-552: B3 đã gỡ (JOB-09 8/8 pass HOME). Còn 026 (QA-PT tối 16/10). Bug mở chỉ Low (DSR-648, DSR-651). → đề xuất Done DEV khi 026 Pass.
+
+### Night Pack 22/10 – chuyển sớm sang Agent Author (Claude 22/10 09:40, Dat duyệt đẩy sớm, không chờ S13)
+- Ban ngày 22/10 agent làm thay (JOB-20261022-06 dry-run → JOB-20261022-07 apply, hạn 16:30): **BUGCHK-586-01/02**, **BUGCHK-190-FORM** (nếu trong guard), **TD-654-02, 04–08**.
+- 17:10 khi tạo pack: đọc `results/JOB-20261022-07/summary.md`. Item nào **done + L0–L3 pass** → trong pack thay bằng "Shadow check ≤ 5 phút" (QA-PT mở URL, xác nhận đúng giá trị, ghi Night Report `SHADOW-<TD>`; không sửa gì). Item failed/không làm → giữ nguyên task đầy đủ cho QA-PT như cũ (giá trị inline).
+- Vẫn QA-PT: TD-566 trang news (UE, P2/P3 chưa có), TD-654-03 (cần xóa), TD-586-01 optional fields (giá trị ở Drive doc), 570 manual, TD-586 en + negative, TD-587 negative. Giờ trống → thêm manual TC tồn (giữ ~4h).
+- Bậc: CF data Night 22/10 = **B2 (Agent + QA-PT shadow)**, sớm hơn roadmap 1 sprint.
