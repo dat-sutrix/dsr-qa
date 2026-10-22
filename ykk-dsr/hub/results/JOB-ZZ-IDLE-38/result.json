@@ -1,0 +1,146 @@
+{
+  "job": "JOB-ZZ-IDLE-38",
+  "agent": "codex",
+  "us": "DSR-557/654 + DSR-529",
+  "env": "dev",
+  "started": "2026-10-22T15:54:13.740Z",
+  "finished": "2026-10-22T15:56:26.706Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "viewport-catalog-PC",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Expected 6 catalog cards; observed 0",
+      "evidence": "evidence/baseline-20261023/ja-catalog-PC-01.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50
+    },
+    {
+      "tc": "viewport-catalog-SP",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Expected 6 catalog cards; observed 0",
+      "evidence": "evidence/baseline-20261023/ja-catalog-SP-01.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50
+    },
+    {
+      "tc": "viewport-article-PC",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/ja-article-PC-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "viewport-article-SP",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/ja-article-SP-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "viewport-video-PC",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/ja-video-PC-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "viewport-video-SP",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/ja-video-SP-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "viewport-catalog-PC",
+      "lang": "en",
+      "result": "fail",
+      "error": "Expected 5 catalog cards; observed 6",
+      "evidence": "evidence/baseline-20261023/en-catalog-PC-01.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50
+    },
+    {
+      "tc": "viewport-catalog-SP",
+      "lang": "en",
+      "result": "fail",
+      "error": "Expected 5 catalog cards; observed 6",
+      "evidence": "evidence/baseline-20261023/en-catalog-SP-01.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 50
+    },
+    {
+      "tc": "viewport-article-PC",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/en-article-PC-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "viewport-article-SP",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/en-article-SP-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "viewport-video-PC",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/en-video-PC-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "viewport-video-SP",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/baseline-20261023/en-video-SP-01.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "results/JOB-ZZ-IDLE-38/run.cjs",
+    "results/JOB-ZZ-IDLE-38/report.cjs"
+  ],
+  "questions": [],
+  "limitations": [
+    "Outcomes are proposals for QA review; no approved visual comparator supplied.",
+    "Card count uses rendered data-card-id elements; article related cards included if present.",
+    "Broken images means rendered img elements complete with naturalWidth=0; CSS backgrounds excluded.",
+    "Only baseline screenshots were requested; no form submission or AEM mutation performed.",
+    "Deadline interpreted as 2026-10-23 07:30 VN from requested baseline date (00:30 UTC).",
+    "Deployed build and data publication were not independently verified."
+  ],
+  "deadlineMet": true
+}

@@ -1,0 +1,2580 @@
+{
+  "started": "2026-10-22T15:54:13.740Z",
+  "baseURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+  "head": "1ab2f58aab450b309a81edc7f36ed0434cbbfb3f",
+  "pages": [
+    {
+      "lang": "ja",
+      "kind": "catalog",
+      "device": "PC",
+      "path": "/ja/library/catalog",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/ja-catalog-PC-01.png",
+          "scrollY": 0,
+          "scrollHeight": 1442,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-catalog-PC-02.png",
+          "scrollY": 542,
+          "scrollHeight": 1442,
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "dom": {
+        "title": "catalog",
+        "text": "HOME\ncatalog",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/ja\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"catalog\">catalog</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 104,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 186,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/ja",
+            "class": "breadcrumb-label"
+          }
+        ]
+      },
+      "cardCount": 0,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": [
+        "Expected 6 catalog cards; observed 0"
+      ]
+    },
+    {
+      "lang": "ja",
+      "kind": "catalog",
+      "device": "SP",
+      "path": "/ja/library/catalog",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/ja-catalog-SP-01.png",
+          "scrollY": 0,
+          "scrollHeight": 1438,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-catalog-SP-02.png",
+          "scrollY": 594,
+          "scrollHeight": 1438,
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "dom": {
+        "title": "catalog",
+        "text": "HOME\ncatalog",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/ja\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"catalog\">catalog</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 104,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 186,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/ja",
+            "class": "breadcrumb-label"
+          }
+        ]
+      },
+      "cardCount": 0,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": [
+        "Expected 6 catalog cards; observed 0"
+      ]
+    },
+    {
+      "lang": "ja",
+      "kind": "article",
+      "device": "PC",
+      "path": "/master/ja/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/ja-article-PC-01.png",
+          "scrollY": 0,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-PC-02.png",
+          "scrollY": 700,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-PC-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-PC-04.png",
+          "scrollY": 2074,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "dom": {
+        "title": "QA529 ストーリー詳細テスト",
+        "text": "HOME\nLibrary\nArticle\nStories\nQA529 ナビ\nQA529 ストーリー詳細テスト\n\nQA529 サブタイトル\n\nQA529 記事説明\n\ndo-not-translate\nバイオベース\n\n2026.10.01\n\nマイリストに追加\nシェア\nBody H2\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります (bold phase)。\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります。\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります。\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります。\n\nTest link\n\nPROFILE\n\nQA529 プロフィール\n\n会社名・部署名が入ります\n\nプロフィールが入ります。プロフィールが入ります。\n\n関連ストーリー\nNEW\nQA529 関連1\n2026.10.16\ndo-not-translate\nQA529 関連2\n2026.01.15\ndo-not-translate\nQA529 関連3\n2026.02.01\ndo-not-translate\n関連アイテム\nQuickFree® click-TRAK® Magnetic\nNATULON® Fiber Sourced®\nEXCELLA®\nAiryString®\nVIEW ALL STORIES\nお問い合わせ",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/library\" data-testid=\"breadcrumb-link\" title=\"Library\">Library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/library/article\" data-testid=\"breadcrumb-link\" title=\"Article\">Article</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/library/article/stories\" data-testid=\"breadcrumb-link\" title=\"Stories\">Stories</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"QA529 ナビ\">QA529 ナビ</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "article-title block",
+            "html": "<div class=\"article-title block\" data-auto-block=\"\" data-block-name=\"article-title\" data-block-status=\"loaded\"><h1 class=\"article-title-heading\">QA529 ストーリー詳細テスト</h1></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 サブタイトル</p></div></div>"
+          },
+          {
+            "class": "image block",
+            "html": "<div class=\"image block\" data-block-name=\"image\" data-block-status=\"loaded\"><picture><source type=\"image/webp\" srcset=\"/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=webply&amp;optimize=medium\"><img loading=\"eager\" alt=\"\" src=\"/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=png&amp;optimize=medium\"></picture></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 記事説明</p></div></div>"
+          },
+          {
+            "class": "article-meta auto block",
+            "html": "<div class=\"article-meta auto block\" data-auto-block=\"\" data-block-name=\"article-meta\" data-block-status=\"loaded\"><div class=\"article-meta-tags\"><span class=\"article-meta-tag\">do-not-translate</span><span class=\"article-meta-tag\">バイオベース</span></div><div class=\"article-meta-row\"><p class=\"article-meta-date\">2026.10.01</p><div class=\"article-meta-actions\"><button type=\"button\" class=\"article-meta-fav\" aria-pressed=\"false\"><span class=\"article-meta-fav-icon\" aria-hidden=\"true\"></span><span>マイリストに追加</span></button><div class=\"article-meta-share\"><span class=\"article-meta-share-label\">シェア</span><div class=\"article-meta-share-links\"><a class=\"article-meta-share-link share-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Facebookでシェア\"></a><a class=\"article-meta-share-link share-x\" href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01&amp;text=QA529%20%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E8%A9%B3%E7%B4%B0%E3%83%86%E3%82%B9%E3%83%88\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Xでシェア\"></a><a class=\"article-meta-share-link share-linkedin\" href=\"https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LinkedInでシェア\"></a><a class=\"article-meta-share-link share-line\" href=\"https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LINEでシェア\"></a></div></div></div></div></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\">\n              <h2 id=\"body-h2\">Body H2</h2>\n              <p><strong>本文が入ります。本文が入ります。本文が入ります。本文が入ります (bold phase)。</strong></p>\n              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>\n              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>\n              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>\n              <p class=\"button-container\"><a href=\"https://google.com/\" title=\"Title link\" class=\"button\">Test link</a></p>\n            </div></div>"
+          },
+          {
+            "class": "profile author-profile block",
+            "html": "<div class=\"profile author-profile block\" data-block-name=\"profile\" data-block-status=\"loaded\"><p class=\"profile-label\">PROFILE</p>\n          \n          <div class=\"profile-company\">\n            <div><p>QA529 プロフィール</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>会社名・部署名が入ります</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>プロフィールが入ります。プロフィールが入ります。</p></div>\n          </div>\n        </div>"
+          },
+          {
+            "class": "related-articles auto block",
+            "html": "<div class=\"related-articles auto block\" data-auto-block=\"\" data-block-name=\"related-articles\" data-block-status=\"loaded\"><h2 class=\"related-heading\">関連ストーリー</h2><div class=\"cards story\"><ul><li data-card-id=\"/master/ja/library/article/stories/qa529-r1\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png\" alt=\"QA529 関連1\" loading=\"lazy\"></picture><span class=\"cards-badge-new\">NEW</span><button type=\"button\" class=\"cards-fav\" data-id=\"/master/ja/library/article/stories/qa529-r1\" data-category=\"stories\" aria-label=\"QA529 関連1 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/ja/library/article/stories/qa529-r1\">QA529 関連1</a></div><div class=\"cards-card-meta\">2026.10.16</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/ja/library/article/stories/qa529-r2\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png\" alt=\"QA529 関連2\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/ja/library/article/stories/qa529-r2\" data-category=\"stories\" aria-label=\"QA529 関連2 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/ja/library/article/stories/qa529-r2\">QA529 関連2</a></div><div class=\"cards-card-meta\">2026.01.15</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/ja/library/article/stories/qa529-r3\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png\" alt=\"QA529 関連3\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/ja/library/article/stories/qa529-r3\" data-category=\"stories\" aria-label=\"QA529 関連3 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/ja/library/article/stories/qa529-r3\">QA529 関連3</a></div><div class=\"cards-card-meta\">2026.02.01</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li></ul></div></div>"
+          },
+          {
+            "class": "related-product auto block",
+            "html": "<div class=\"related-product auto block\" data-auto-block=\"\" data-block-name=\"related-product\" data-block-status=\"loaded\"><h2 class=\"related-heading\">関連アイテム</h2><div class=\"cards product-mini\"><ul><li data-card-id=\"/ja/products/p00320\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00320\" data-category=\"products\" aria-label=\"QuickFree® click-TRAK® Magnetic をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00320\">QuickFree® click-TRAK® Magnetic</a></div></li><li data-card-id=\"/ja/products/p00101\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00101\" data-category=\"products\" aria-label=\"NATULON® Fiber Sourced® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00101\">NATULON® Fiber Sourced®</a></div></li><li data-card-id=\"/ja/products/p00001\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00001\" data-category=\"products\" aria-label=\"EXCELLA® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00001\">EXCELLA®</a></div></li><li data-card-id=\"/ja/products/p00210\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00210\" data-category=\"products\" aria-label=\"AiryString® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00210\">AiryString®</a></div></li></ul></div></div>"
+          },
+          {
+            "class": "footer-actions block",
+            "html": "<div class=\"footer-actions block\" data-auto-block=\"\" data-block-name=\"footer-actions\" data-block-status=\"loaded\"><div class=\"footer-actions-row\"><a class=\"button secondary\" href=\"#\">VIEW ALL STORIES</a><a class=\"button\" href=\"#\">お問い合わせ</a></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 104,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 186,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+            "complete": true,
+            "naturalWidth": 4000,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/master/ja",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Library",
+            "href": "/master/ja/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Article",
+            "href": "/master/ja/library/article",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Stories",
+            "href": "/master/ja/library/article/stories",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "",
+            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-facebook"
+          },
+          {
+            "text": "",
+            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01&text=QA529%20%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E8%A9%B3%E7%B4%B0%E3%83%86%E3%82%B9%E3%83%88",
+            "class": "article-meta-share-link share-x"
+          },
+          {
+            "text": "",
+            "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-linkedin"
+          },
+          {
+            "text": "",
+            "href": "https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-line"
+          },
+          {
+            "text": "Test link",
+            "href": "https://google.com/",
+            "class": "button"
+          },
+          {
+            "text": "QA529 関連1",
+            "href": "/master/ja/library/article/stories/qa529-r1",
+            "class": ""
+          },
+          {
+            "text": "QA529 関連2",
+            "href": "/master/ja/library/article/stories/qa529-r2",
+            "class": ""
+          },
+          {
+            "text": "QA529 関連3",
+            "href": "/master/ja/library/article/stories/qa529-r3",
+            "class": ""
+          },
+          {
+            "text": "QuickFree® click-TRAK® Magnetic",
+            "href": "/ja/products/p00320",
+            "class": ""
+          },
+          {
+            "text": "NATULON® Fiber Sourced®",
+            "href": "/ja/products/p00101",
+            "class": ""
+          },
+          {
+            "text": "EXCELLA®",
+            "href": "/ja/products/p00001",
+            "class": ""
+          },
+          {
+            "text": "AiryString®",
+            "href": "/ja/products/p00210",
+            "class": ""
+          },
+          {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "class": "button secondary"
+          },
+          {
+            "text": "お問い合わせ",
+            "href": "#",
+            "class": "button"
+          }
+        ]
+      },
+      "cardCount": 7,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    },
+    {
+      "lang": "ja",
+      "kind": "article",
+      "device": "SP",
+      "path": "/master/ja/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/ja-article-SP-01.png",
+          "scrollY": 0,
+          "scrollHeight": 4245,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-SP-02.png",
+          "scrollY": 700,
+          "scrollHeight": 4245,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-SP-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 4245,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-SP-04.png",
+          "scrollY": 2100,
+          "scrollHeight": 4245,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-SP-05.png",
+          "scrollY": 2800,
+          "scrollHeight": 4245,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-article-SP-06.png",
+          "scrollY": 3401,
+          "scrollHeight": 4245,
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+      "dom": {
+        "title": "QA529 ストーリー詳細テスト",
+        "text": "HOME\nLibrary\nArticle\nStories\nQA529 ナビ\nQA529 ストーリー詳細テスト\n\nQA529 サブタイトル\n\nQA529 記事説明\n\ndo-not-translate\nバイオベース\n\n2026.10.01\n\nマイリストに追加\nシェア\nBody H2\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります (bold phase)。\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります。\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります。\n\n本文が入ります。本文が入ります。本文が入ります。本文が入ります。\n\nTest link\n\nPROFILE\n\nQA529 プロフィール\n\n会社名・部署名が入ります\n\nプロフィールが入ります。プロフィールが入ります。\n\n関連ストーリー\nNEW\nQA529 関連1\n2026.10.16\ndo-not-translate\nQA529 関連2\n2026.01.15\ndo-not-translate\nQA529 関連3\n2026.02.01\ndo-not-translate\n関連アイテム\nQuickFree® click-TRAK® Magnetic\nNATULON® Fiber Sourced®\nEXCELLA®\nAiryString®\nVIEW ALL STORIES\nお問い合わせ",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/library\" data-testid=\"breadcrumb-link\" title=\"Library\">Library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/library/article\" data-testid=\"breadcrumb-link\" title=\"Article\">Article</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/ja/library/article/stories\" data-testid=\"breadcrumb-link\" title=\"Stories\">Stories</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"QA529 ナビ\">QA529 ナビ</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "article-title block",
+            "html": "<div class=\"article-title block\" data-auto-block=\"\" data-block-name=\"article-title\" data-block-status=\"loaded\"><h1 class=\"article-title-heading\">QA529 ストーリー詳細テスト</h1></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 サブタイトル</p></div></div>"
+          },
+          {
+            "class": "image block",
+            "html": "<div class=\"image block\" data-block-name=\"image\" data-block-status=\"loaded\"><picture><source type=\"image/webp\" srcset=\"/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=webply&amp;optimize=medium\"><img loading=\"eager\" alt=\"\" src=\"/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=png&amp;optimize=medium\"></picture></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 記事説明</p></div></div>"
+          },
+          {
+            "class": "article-meta auto block",
+            "html": "<div class=\"article-meta auto block\" data-auto-block=\"\" data-block-name=\"article-meta\" data-block-status=\"loaded\"><div class=\"article-meta-tags\"><span class=\"article-meta-tag\">do-not-translate</span><span class=\"article-meta-tag\">バイオベース</span></div><div class=\"article-meta-row\"><p class=\"article-meta-date\">2026.10.01</p><div class=\"article-meta-actions\"><button type=\"button\" class=\"article-meta-fav\" aria-pressed=\"false\"><span class=\"article-meta-fav-icon\" aria-hidden=\"true\"></span><span>マイリストに追加</span></button><div class=\"article-meta-share\"><span class=\"article-meta-share-label\">シェア</span><div class=\"article-meta-share-links\"><a class=\"article-meta-share-link share-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Facebookでシェア\"></a><a class=\"article-meta-share-link share-x\" href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01&amp;text=QA529%20%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E8%A9%B3%E7%B4%B0%E3%83%86%E3%82%B9%E3%83%88\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Xでシェア\"></a><a class=\"article-meta-share-link share-linkedin\" href=\"https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LinkedInでシェア\"></a><a class=\"article-meta-share-link share-line\" href=\"https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LINEでシェア\"></a></div></div></div></div></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\">\n              <h2 id=\"body-h2\">Body H2</h2>\n              <p><strong>本文が入ります。本文が入ります。本文が入ります。本文が入ります (bold phase)。</strong></p>\n              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>\n              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>\n              <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>\n              <p class=\"button-container\"><a href=\"https://google.com/\" title=\"Title link\" class=\"button\">Test link</a></p>\n            </div></div>"
+          },
+          {
+            "class": "profile author-profile block",
+            "html": "<div class=\"profile author-profile block\" data-block-name=\"profile\" data-block-status=\"loaded\"><p class=\"profile-label\">PROFILE</p>\n          \n          <div class=\"profile-company\">\n            <div><p>QA529 プロフィール</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>会社名・部署名が入ります</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>プロフィールが入ります。プロフィールが入ります。</p></div>\n          </div>\n        </div>"
+          },
+          {
+            "class": "related-articles auto block",
+            "html": "<div class=\"related-articles auto block\" data-auto-block=\"\" data-block-name=\"related-articles\" data-block-status=\"loaded\"><h2 class=\"related-heading\">関連ストーリー</h2><div class=\"cards story\"><ul><li data-card-id=\"/master/ja/library/article/stories/qa529-r1\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png\" alt=\"QA529 関連1\" loading=\"lazy\"></picture><span class=\"cards-badge-new\">NEW</span><button type=\"button\" class=\"cards-fav\" data-id=\"/master/ja/library/article/stories/qa529-r1\" data-category=\"stories\" aria-label=\"QA529 関連1 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/ja/library/article/stories/qa529-r1\">QA529 関連1</a></div><div class=\"cards-card-meta\">2026.10.16</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/ja/library/article/stories/qa529-r2\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png\" alt=\"QA529 関連2\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/ja/library/article/stories/qa529-r2\" data-category=\"stories\" aria-label=\"QA529 関連2 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/ja/library/article/stories/qa529-r2\">QA529 関連2</a></div><div class=\"cards-card-meta\">2026.01.15</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/ja/library/article/stories/qa529-r3\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png\" alt=\"QA529 関連3\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/ja/library/article/stories/qa529-r3\" data-category=\"stories\" aria-label=\"QA529 関連3 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/ja/library/article/stories/qa529-r3\">QA529 関連3</a></div><div class=\"cards-card-meta\">2026.02.01</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li></ul></div></div>"
+          },
+          {
+            "class": "related-product auto block",
+            "html": "<div class=\"related-product auto block\" data-auto-block=\"\" data-block-name=\"related-product\" data-block-status=\"loaded\"><h2 class=\"related-heading\">関連アイテム</h2><div class=\"cards product-mini\"><ul><li data-card-id=\"/ja/products/p00320\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00320\" data-category=\"products\" aria-label=\"QuickFree® click-TRAK® Magnetic をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00320\">QuickFree® click-TRAK® Magnetic</a></div></li><li data-card-id=\"/ja/products/p00101\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00101\" data-category=\"products\" aria-label=\"NATULON® Fiber Sourced® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00101\">NATULON® Fiber Sourced®</a></div></li><li data-card-id=\"/ja/products/p00001\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00001\" data-category=\"products\" aria-label=\"EXCELLA® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00001\">EXCELLA®</a></div></li><li data-card-id=\"/ja/products/p00210\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00210\" data-category=\"products\" aria-label=\"AiryString® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00210\">AiryString®</a></div></li></ul></div></div>"
+          },
+          {
+            "class": "footer-actions block",
+            "html": "<div class=\"footer-actions block\" data-auto-block=\"\" data-block-name=\"footer-actions\" data-block-status=\"loaded\"><div class=\"footer-actions-row\"><a class=\"button secondary\" href=\"#\">VIEW ALL STORIES</a><a class=\"button\" href=\"#\">お問い合わせ</a></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 104,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 186,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+            "complete": true,
+            "naturalWidth": 4000,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/master/ja",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Library",
+            "href": "/master/ja/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Article",
+            "href": "/master/ja/library/article",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Stories",
+            "href": "/master/ja/library/article/stories",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "",
+            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-facebook"
+          },
+          {
+            "text": "",
+            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01&text=QA529%20%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E8%A9%B3%E7%B4%B0%E3%83%86%E3%82%B9%E3%83%88",
+            "class": "article-meta-share-link share-x"
+          },
+          {
+            "text": "",
+            "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-linkedin"
+          },
+          {
+            "text": "",
+            "href": "https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fja%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-line"
+          },
+          {
+            "text": "Test link",
+            "href": "https://google.com/",
+            "class": "button"
+          },
+          {
+            "text": "QA529 関連1",
+            "href": "/master/ja/library/article/stories/qa529-r1",
+            "class": ""
+          },
+          {
+            "text": "QA529 関連2",
+            "href": "/master/ja/library/article/stories/qa529-r2",
+            "class": ""
+          },
+          {
+            "text": "QA529 関連3",
+            "href": "/master/ja/library/article/stories/qa529-r3",
+            "class": ""
+          },
+          {
+            "text": "QuickFree® click-TRAK® Magnetic",
+            "href": "/ja/products/p00320",
+            "class": ""
+          },
+          {
+            "text": "NATULON® Fiber Sourced®",
+            "href": "/ja/products/p00101",
+            "class": ""
+          },
+          {
+            "text": "EXCELLA®",
+            "href": "/ja/products/p00001",
+            "class": ""
+          },
+          {
+            "text": "AiryString®",
+            "href": "/ja/products/p00210",
+            "class": ""
+          },
+          {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "class": "button secondary"
+          },
+          {
+            "text": "お問い合わせ",
+            "href": "#",
+            "class": "button"
+          }
+        ]
+      },
+      "cardCount": 7,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    },
+    {
+      "lang": "ja",
+      "kind": "video",
+      "device": "PC",
+      "path": "/ja/library/video/search",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/ja-video-PC-01.png",
+          "scrollY": 0,
+          "scrollHeight": 1615,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-video-PC-02.png",
+          "scrollY": 700,
+          "scrollHeight": 1615,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-video-PC-03.png",
+          "scrollY": 715,
+          "scrollHeight": 1615,
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+      "dom": {
+        "title": "動画 検索・一覧",
+        "text": "HOME\n動画 検索・一覧\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA557 DAM movie\nQA587 line1 QA587 line2\n長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\n動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文\n動画タイトル\n動画の説明文\nDM_movie_テスト名\nDM_movie_テスト説明文",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/ja\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"動画 検索・一覧\">動画 検索・一覧</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "listing block listing-video",
+            "html": "<div class=\"listing block listing-video\" data-block-name=\"listing\" data-block-status=\"loaded\"><div class=\"listing-band\"><div class=\"listing-band-inner\"><div class=\"listing-search\"><div class=\"listing-search-field\"><input type=\"search\" class=\"listing-search-input\" placeholder=\"キーワードで探す\" aria-label=\"キーワードで探す\" style=\"\"></div><button type=\"button\" class=\"listing-clear\">CLEAR</button></div></div></div><div class=\"listing-results\"><section class=\"listing-group listing-group-untitled\"><div class=\"cards video-card\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/common/ja/movies/qa587-main\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 main movie\" loading=\"eager\" fetchpriority=\"high\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/qa587-main\" data-category=\"products\" aria-label=\"QA587 main movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/qa587-main\">QA587 main movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/ja/movies/qa557-dam\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA557 DAM movie\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/qa557-dam\" data-category=\"products\" aria-label=\"QA557 DAM movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/qa557-dam\">QA557 DAM movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/ja/movies/test-mv-long\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/test-mv-long\" data-category=\"products\" aria-label=\"長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/long\">長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル</a></div><div class=\"cards-card-desc\">動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文</div></li><li data-card-id=\"/content/dam/common/ja/movies/copy-of-test-mv-sort\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"動画タイトル\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/copy-of-test-mv-sort\" data-category=\"products\" aria-label=\"動画タイトル をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/sort-main\">動画タイトル</a></div><div class=\"cards-card-desc\">動画の説明文</div></li><li data-card-id=\"/content/dam/common/ja/movies/dm-movie-2\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"DM_movie_テスト名\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/dm-movie-2\" data-category=\"products\" aria-label=\"DM_movie_テスト名 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/filtered\">DM_movie_テスト名</a></div><div class=\"cards-card-desc\">DM_movie_テスト説明文</div></li></ul></div></section></div><nav class=\"listing-pager\"></nav></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 104,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 186,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/ja",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "QA587 main movie",
+            "href": "/ja/library/video/qa587-main",
+            "class": ""
+          },
+          {
+            "text": "QA557 DAM movie",
+            "href": "/ja/library/video/qa557-dam",
+            "class": ""
+          },
+          {
+            "text": "長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル",
+            "href": "/ja/library/video/long",
+            "class": ""
+          },
+          {
+            "text": "動画タイトル",
+            "href": "/ja/library/video/sort-main",
+            "class": ""
+          },
+          {
+            "text": "DM_movie_テスト名",
+            "href": "/ja/library/video/filtered",
+            "class": ""
+          }
+        ]
+      },
+      "cardCount": 5,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    },
+    {
+      "lang": "ja",
+      "kind": "video",
+      "device": "SP",
+      "path": "/ja/library/video/search",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/ja-video-SP-01.png",
+          "scrollY": 0,
+          "scrollHeight": 2561,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-video-SP-02.png",
+          "scrollY": 700,
+          "scrollHeight": 2561,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-video-SP-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 2561,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/ja-video-SP-04.png",
+          "scrollY": 1717,
+          "scrollHeight": 2561,
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+      "dom": {
+        "title": "動画 検索・一覧",
+        "text": "HOME\n動画 検索・一覧\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA557 DAM movie\nQA587 line1 QA587 line2\n長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\n動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文\n動画タイトル\n動画の説明文\nDM_movie_テスト名\nDM_movie_テスト説明文",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/ja\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"動画 検索・一覧\">動画 検索・一覧</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "listing block listing-video",
+            "html": "<div class=\"listing block listing-video\" data-block-name=\"listing\" data-block-status=\"loaded\"><div class=\"listing-band\"><div class=\"listing-band-inner\"><div class=\"listing-search\"><div class=\"listing-search-field\"><input type=\"search\" class=\"listing-search-input\" placeholder=\"キーワードで探す\" aria-label=\"キーワードで探す\" style=\"\"></div><button type=\"button\" class=\"listing-clear\">CLEAR</button></div></div></div><div class=\"listing-results\"><section class=\"listing-group listing-group-untitled\"><div class=\"cards video-card\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/common/ja/movies/qa587-main\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 main movie\" loading=\"eager\" fetchpriority=\"high\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/qa587-main\" data-category=\"products\" aria-label=\"QA587 main movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/qa587-main\">QA587 main movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/ja/movies/qa557-dam\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA557 DAM movie\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/qa557-dam\" data-category=\"products\" aria-label=\"QA557 DAM movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/qa557-dam\">QA557 DAM movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/ja/movies/test-mv-long\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/test-mv-long\" data-category=\"products\" aria-label=\"長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/long\">長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル</a></div><div class=\"cards-card-desc\">動画の説明文 動画の説明文 動画の説明文 動画の説明文 動画の説明文</div></li><li data-card-id=\"/content/dam/common/ja/movies/copy-of-test-mv-sort\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"動画タイトル\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/copy-of-test-mv-sort\" data-category=\"products\" aria-label=\"動画タイトル をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/sort-main\">動画タイトル</a></div><div class=\"cards-card-desc\">動画の説明文</div></li><li data-card-id=\"/content/dam/common/ja/movies/dm-movie-2\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"DM_movie_テスト名\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/ja/movies/dm-movie-2\" data-category=\"products\" aria-label=\"DM_movie_テスト名 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/library/video/filtered\">DM_movie_テスト名</a></div><div class=\"cards-card-desc\">DM_movie_テスト説明文</div></li></ul></div></section></div><nav class=\"listing-pager\"></nav></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_135453508aefa6000f5f2204f7c70ba90efe15e84.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 104,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_1b28f7e8f8c9a66f8cbe2164b6f3f5186095b2956.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 186,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_133c223720b35cd5f71bf7b688a81f0570f663551.jpg?width=750&format=jpg&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/ja",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "QA587 main movie",
+            "href": "/ja/library/video/qa587-main",
+            "class": ""
+          },
+          {
+            "text": "QA557 DAM movie",
+            "href": "/ja/library/video/qa557-dam",
+            "class": ""
+          },
+          {
+            "text": "長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル",
+            "href": "/ja/library/video/long",
+            "class": ""
+          },
+          {
+            "text": "動画タイトル",
+            "href": "/ja/library/video/sort-main",
+            "class": ""
+          },
+          {
+            "text": "DM_movie_テスト名",
+            "href": "/ja/library/video/filtered",
+            "class": ""
+          }
+        ]
+      },
+      "cardCount": 5,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    },
+    {
+      "lang": "en",
+      "kind": "catalog",
+      "device": "PC",
+      "path": "/en/library/catalog",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/en-catalog-PC-01.png",
+          "scrollY": 0,
+          "scrollHeight": 1922,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-catalog-PC-02.png",
+          "scrollY": 700,
+          "scrollHeight": 1922,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-catalog-PC-03.png",
+          "scrollY": 1022,
+          "scrollHeight": 1922,
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "dom": {
+        "title": "catalog",
+        "text": "HOME\nlibrary\ncatalog\nCLEAR\nALL\naluminium\ncotton\nmagnet\nPick up\nQA654 subfolder\n2026.10.01\nPDF\nQA654 update\n2026.10.01\nPDF\ncatalog ebook\n2026.09.03\ne-book\naluminium\ncatalog ebook form\n2026.09.03\nPDF\ncatalog pdf\n2026.09.03\nPDF\ncatalog pdf form\n2026.09.03\nPDF",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en/library\" data-testid=\"breadcrumb-link\" title=\"library\">library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"catalog\">catalog</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "listing block listing-catalog",
+            "html": "<div class=\"listing block listing-catalog\" data-block-name=\"listing\" data-block-status=\"loaded\"><div class=\"listing-band\"><div class=\"listing-band-inner\"><div class=\"listing-search\"><div class=\"listing-search-field\"><input type=\"search\" class=\"listing-search-input\" placeholder=\"Search by keyword\" aria-label=\"Search by keyword\" style=\"\"></div><button type=\"button\" class=\"listing-clear\">CLEAR</button></div><div class=\"listing-chips\"><button type=\"button\" class=\"listing-chip\" data-key=\"__all__\" data-param=\"category\" aria-pressed=\"true\">ALL</button><button type=\"button\" class=\"listing-chip\" data-key=\"aluminium\" data-param=\"category\" aria-pressed=\"false\">aluminium</button><button type=\"button\" class=\"listing-chip\" data-key=\"cotton\" data-param=\"category\" aria-pressed=\"false\">cotton</button><button type=\"button\" class=\"listing-chip\" data-key=\"magnet\" data-param=\"category\" aria-pressed=\"false\">magnet</button></div></div></div><div class=\"listing-results\"><section class=\"listing-group\"><h2 class=\"listing-group-title\">Pick up</h2><div class=\"cards catalog\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA654 subfolder\" loading=\"eager\" fetchpriority=\"high\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" data-category=\"catalogs\" aria-label=\"QA654 subfolder をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">QA654 subfolder</a></div><div class=\"cards-card-meta\">2026.10.01</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a></div></li><li data-card-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA654 update\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" data-category=\"catalogs\" aria-label=\"QA654 update をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">QA654 update</a></div><div class=\"cards-card-meta\">2026.10.01</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a></div></li><li data-card-id=\"/\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog ebook\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/\" data-category=\"catalogs\" aria-label=\"catalog ebook をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://www.ykkfastening.com/\" target=\"_blank\" rel=\"noopener\">catalog ebook</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://www.ykkfastening.com/\" target=\"_blank\" rel=\"noopener\">e-book</a></div></li></ul></div></section><section class=\"listing-group\"><h2 class=\"listing-group-title\">aluminium</h2><div class=\"cards catalog\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/common/en/catalogs/qa190-cat-ebook-form\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog ebook form\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/catalogs/qa190-cat-ebook-form\" data-category=\"catalogs\" aria-label=\"catalog ebook form をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/catalog/qa190-cat-ebook-form\">catalog ebook form</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"/en/library/catalog/qa190-cat-ebook-form\">PDF</a></div></li><li data-card-id=\"/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog pdf\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\" data-category=\"catalogs\" aria-label=\"catalog pdf をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\" target=\"_blank\" rel=\"noopener\">catalog pdf</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a></div></li><li data-card-id=\"/content/dam/common/en/catalogs/qa190-cat-pdf-form\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog pdf form\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/catalogs/qa190-cat-pdf-form\" data-category=\"catalogs\" aria-label=\"catalog pdf form をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/catalog/qa190-cat-pdf-form\">catalog pdf form</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"/en/library/catalog/qa190-cat-pdf-form\">PDF</a></div></li></ul></div></section></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/en",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "library",
+            "href": "/en/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "QA654 subfolder",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": "button"
+          },
+          {
+            "text": "QA654 update",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": "button"
+          },
+          {
+            "text": "catalog ebook",
+            "href": "https://www.ykkfastening.com/",
+            "class": ""
+          },
+          {
+            "text": "e-book",
+            "href": "https://www.ykkfastening.com/",
+            "class": "button"
+          },
+          {
+            "text": "catalog ebook form",
+            "href": "/en/library/catalog/qa190-cat-ebook-form",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "/en/library/catalog/qa190-cat-ebook-form",
+            "class": "button"
+          },
+          {
+            "text": "catalog pdf",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+            "class": "button"
+          },
+          {
+            "text": "catalog pdf form",
+            "href": "/en/library/catalog/qa190-cat-pdf-form",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "/en/library/catalog/qa190-cat-pdf-form",
+            "class": "button"
+          }
+        ]
+      },
+      "cardCount": 6,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": [
+        "Expected 5 catalog cards; observed 6"
+      ]
+    },
+    {
+      "lang": "en",
+      "kind": "catalog",
+      "device": "SP",
+      "path": "/en/library/catalog",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/en-catalog-SP-01.png",
+          "scrollY": 0,
+          "scrollHeight": 3515,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-catalog-SP-02.png",
+          "scrollY": 700,
+          "scrollHeight": 3515,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-catalog-SP-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 3515,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-catalog-SP-04.png",
+          "scrollY": 2100,
+          "scrollHeight": 3515,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-catalog-SP-05.png",
+          "scrollY": 2671,
+          "scrollHeight": 3515,
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+      "dom": {
+        "title": "catalog",
+        "text": "HOME\nlibrary\ncatalog\nCLEAR\nALL\naluminium\ncotton\nmagnet\nPick up\nQA654 subfolder\n2026.10.01\nPDF\nQA654 update\n2026.10.01\nPDF\ncatalog ebook\n2026.09.03\ne-book\naluminium\ncatalog ebook form\n2026.09.03\nPDF\ncatalog pdf\n2026.09.03\nPDF\ncatalog pdf form\n2026.09.03\nPDF",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en/library\" data-testid=\"breadcrumb-link\" title=\"library\">library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"catalog\">catalog</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "listing block listing-catalog",
+            "html": "<div class=\"listing block listing-catalog\" data-block-name=\"listing\" data-block-status=\"loaded\"><div class=\"listing-band\"><div class=\"listing-band-inner\"><div class=\"listing-search\"><div class=\"listing-search-field\"><input type=\"search\" class=\"listing-search-input\" placeholder=\"Search by keyword\" aria-label=\"Search by keyword\" style=\"\"></div><button type=\"button\" class=\"listing-clear\">CLEAR</button></div><div class=\"listing-chips\"><button type=\"button\" class=\"listing-chip\" data-key=\"__all__\" data-param=\"category\" aria-pressed=\"true\">ALL</button><button type=\"button\" class=\"listing-chip\" data-key=\"aluminium\" data-param=\"category\" aria-pressed=\"false\">aluminium</button><button type=\"button\" class=\"listing-chip\" data-key=\"cotton\" data-param=\"category\" aria-pressed=\"false\">cotton</button><button type=\"button\" class=\"listing-chip\" data-key=\"magnet\" data-param=\"category\" aria-pressed=\"false\">magnet</button></div></div></div><div class=\"listing-results\"><section class=\"listing-group\"><h2 class=\"listing-group-title\">Pick up</h2><div class=\"cards catalog\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA654 subfolder\" loading=\"eager\" fetchpriority=\"high\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" data-category=\"catalogs\" aria-label=\"QA654 subfolder をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">QA654 subfolder</a></div><div class=\"cards-card-meta\">2026.10.01</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a></div></li><li data-card-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA654 update\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" data-category=\"catalogs\" aria-label=\"QA654 update をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">QA654 update</a></div><div class=\"cards-card-meta\">2026.10.01</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a></div></li><li data-card-id=\"/\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog ebook\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/\" data-category=\"catalogs\" aria-label=\"catalog ebook をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://www.ykkfastening.com/\" target=\"_blank\" rel=\"noopener\">catalog ebook</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://www.ykkfastening.com/\" target=\"_blank\" rel=\"noopener\">e-book</a></div></li></ul></div></section><section class=\"listing-group\"><h2 class=\"listing-group-title\">aluminium</h2><div class=\"cards catalog\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/common/en/catalogs/qa190-cat-ebook-form\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog ebook form\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/catalogs/qa190-cat-ebook-form\" data-category=\"catalogs\" aria-label=\"catalog ebook form をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/catalog/qa190-cat-ebook-form\">catalog ebook form</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"/en/library/catalog/qa190-cat-ebook-form\">PDF</a></div></li><li data-card-id=\"/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog pdf\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\" data-category=\"catalogs\" aria-label=\"catalog pdf をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\" target=\"_blank\" rel=\"noopener\">catalog pdf</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf\" target=\"_blank\" rel=\"noopener\">PDF</a></div></li><li data-card-id=\"/content/dam/common/en/catalogs/qa190-cat-pdf-form\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"catalog pdf form\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/catalogs/qa190-cat-pdf-form\" data-category=\"catalogs\" aria-label=\"catalog pdf form をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/catalog/qa190-cat-pdf-form\">catalog pdf form</a></div><div class=\"cards-card-meta\">2026.09.03</div><div class=\"cards-card-cta\"><a class=\"button\" href=\"/en/library/catalog/qa190-cat-pdf-form\">PDF</a></div></li></ul></div></section></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/en",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "library",
+            "href": "/en/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "QA654 subfolder",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": "button"
+          },
+          {
+            "text": "QA654 update",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+            "class": "button"
+          },
+          {
+            "text": "catalog ebook",
+            "href": "https://www.ykkfastening.com/",
+            "class": ""
+          },
+          {
+            "text": "e-book",
+            "href": "https://www.ykkfastening.com/",
+            "class": "button"
+          },
+          {
+            "text": "catalog ebook form",
+            "href": "/en/library/catalog/qa190-cat-ebook-form",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "/en/library/catalog/qa190-cat-ebook-form",
+            "class": "button"
+          },
+          {
+            "text": "catalog pdf",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+            "class": "button"
+          },
+          {
+            "text": "catalog pdf form",
+            "href": "/en/library/catalog/qa190-cat-pdf-form",
+            "class": ""
+          },
+          {
+            "text": "PDF",
+            "href": "/en/library/catalog/qa190-cat-pdf-form",
+            "class": "button"
+          }
+        ]
+      },
+      "cardCount": 6,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": [
+        "Expected 5 catalog cards; observed 6"
+      ]
+    },
+    {
+      "lang": "en",
+      "kind": "article",
+      "device": "PC",
+      "path": "/master/en/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/en-article-PC-01.png",
+          "scrollY": 0,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-PC-02.png",
+          "scrollY": 700,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-PC-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-PC-04.png",
+          "scrollY": 2074,
+          "scrollHeight": 2974,
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "dom": {
+        "title": "QA529 Story detail test",
+        "text": "HOME\nLibrary\nArticle\nStories\nQA529 Nav\nQA529 Story detail test\n\nQA529 Subtitle\n\nQA529 description en\n\ndo-not-translate\nバイオベース\n\n2026.10.01\n\nマイリストに追加\nシェア\nBody H2\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nTest link\n\nPROFILE\n\nQA529 Profile\n\n会社名・部署名が入ります\n\nプロフィールが入ります。プロフィールが入ります。\n\nRelated Stories\nNEW\nQA529 Related 1\n2026.10.16\ndo-not-translate\nQA529 Related 2\n2026.01.15\ndo-not-translate\nQA529 Related 3\n2026.02.01\ndo-not-translate\nRelated Items\nQuickFree® click-TRAK® Magnetic\nNATULON® Fiber Sourced®\nEXCELLA®\nAiryString®\nVIEW ALL STORIES\nお問い合わせ",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en/library\" data-testid=\"breadcrumb-link\" title=\"Library\">Library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en/library/article\" data-testid=\"breadcrumb-link\" title=\"Article\">Article</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en/library/article/stories\" data-testid=\"breadcrumb-link\" title=\"Stories\">Stories</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"QA529 Nav\">QA529 Nav</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "article-title block",
+            "html": "<div class=\"article-title block\" data-auto-block=\"\" data-block-name=\"article-title\" data-block-status=\"loaded\"><h1 class=\"article-title-heading\">QA529 Story detail test</h1></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 Subtitle</p></div></div>"
+          },
+          {
+            "class": "image block",
+            "html": "<div class=\"image block\" data-block-name=\"image\" data-block-status=\"loaded\"><picture><source type=\"image/webp\" srcset=\"/master/en/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=webply&amp;optimize=medium\"><img loading=\"eager\" alt=\"\" src=\"/master/en/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=png&amp;optimize=medium\"></picture></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 description en</p></div></div>"
+          },
+          {
+            "class": "article-meta auto block",
+            "html": "<div class=\"article-meta auto block\" data-auto-block=\"\" data-block-name=\"article-meta\" data-block-status=\"loaded\"><div class=\"article-meta-tags\"><span class=\"article-meta-tag\">do-not-translate</span><span class=\"article-meta-tag\">バイオベース</span></div><div class=\"article-meta-row\"><p class=\"article-meta-date\">2026.10.01</p><div class=\"article-meta-actions\"><button type=\"button\" class=\"article-meta-fav\" aria-pressed=\"false\"><span class=\"article-meta-fav-icon\" aria-hidden=\"true\"></span><span>マイリストに追加</span></button><div class=\"article-meta-share\"><span class=\"article-meta-share-label\">シェア</span><div class=\"article-meta-share-links\"><a class=\"article-meta-share-link share-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Facebookでシェア\"></a><a class=\"article-meta-share-link share-x\" href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01&amp;text=QA529%20Story%20detail%20test\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Xでシェア\"></a><a class=\"article-meta-share-link share-linkedin\" href=\"https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LinkedInでシェア\"></a><a class=\"article-meta-share-link share-line\" href=\"https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LINEでシェア\"></a></div></div></div></div></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\">\n              <h2 id=\"body-h2\">Body H2</h2>\n              <p><strong>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</strong></p>\n              <p>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</p>\n              <p>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</p>\n              <p>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</p>\n              <p class=\"button-container\"><a href=\"https://google.com/\" title=\"Test link\" class=\"button\">Test link</a></p>\n            </div></div>"
+          },
+          {
+            "class": "profile author-profile block",
+            "html": "<div class=\"profile author-profile block\" data-block-name=\"profile\" data-block-status=\"loaded\"><p class=\"profile-label\">PROFILE</p>\n          \n          <div class=\"profile-company\">\n            <div><p>QA529 Profile</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>会社名・部署名が入ります</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>プロフィールが入ります。プロフィールが入ります。</p></div>\n          </div>\n        </div>"
+          },
+          {
+            "class": "related-articles auto block",
+            "html": "<div class=\"related-articles auto block\" data-auto-block=\"\" data-block-name=\"related-articles\" data-block-status=\"loaded\"><h2 class=\"related-heading\">Related Stories</h2><div class=\"cards story\"><ul><li data-card-id=\"/master/en/library/article/stories/qa529-r1\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png\" alt=\"QA529 Related 1\" loading=\"lazy\"></picture><span class=\"cards-badge-new\">NEW</span><button type=\"button\" class=\"cards-fav\" data-id=\"/master/en/library/article/stories/qa529-r1\" data-category=\"stories\" aria-label=\"QA529 Related 1 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/en/library/article/stories/qa529-r1\">QA529 Related 1</a></div><div class=\"cards-card-meta\">2026.10.16</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/en/library/article/stories/qa529-r2\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png\" alt=\"QA529 Related 2\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/en/library/article/stories/qa529-r2\" data-category=\"stories\" aria-label=\"QA529 Related 2 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/en/library/article/stories/qa529-r2\">QA529 Related 2</a></div><div class=\"cards-card-meta\">2026.01.15</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/en/library/article/stories/qa529-r3\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png\" alt=\"QA529 Related 3\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/en/library/article/stories/qa529-r3\" data-category=\"stories\" aria-label=\"QA529 Related 3 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/en/library/article/stories/qa529-r3\">QA529 Related 3</a></div><div class=\"cards-card-meta\">2026.02.01</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li></ul></div></div>"
+          },
+          {
+            "class": "related-product auto block",
+            "html": "<div class=\"related-product auto block\" data-auto-block=\"\" data-block-name=\"related-product\" data-block-status=\"loaded\"><h2 class=\"related-heading\">Related Items</h2><div class=\"cards product-mini\"><ul><li data-card-id=\"/en/products/p00320\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00320\" data-category=\"products\" aria-label=\"QuickFree® click-TRAK® Magnetic をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00320\">QuickFree® click-TRAK® Magnetic</a></div></li><li data-card-id=\"/en/products/p00101\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00101\" data-category=\"products\" aria-label=\"NATULON® Fiber Sourced® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00101\">NATULON® Fiber Sourced®</a></div></li><li data-card-id=\"/en/products/p00001\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00001\" data-category=\"products\" aria-label=\"EXCELLA® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00001\">EXCELLA®</a></div></li><li data-card-id=\"/en/products/p00210\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00210\" data-category=\"products\" aria-label=\"AiryString® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00210\">AiryString®</a></div></li></ul></div></div>"
+          },
+          {
+            "class": "footer-actions block",
+            "html": "<div class=\"footer-actions block\" data-auto-block=\"\" data-block-name=\"footer-actions\" data-block-status=\"loaded\"><div class=\"footer-actions-row\"><a class=\"button secondary\" href=\"#\">VIEW ALL STORIES</a><a class=\"button\" href=\"#\">お問い合わせ</a></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+            "complete": true,
+            "naturalWidth": 4000,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/master/en",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Library",
+            "href": "/master/en/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Article",
+            "href": "/master/en/library/article",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Stories",
+            "href": "/master/en/library/article/stories",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "",
+            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-facebook"
+          },
+          {
+            "text": "",
+            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01&text=QA529%20Story%20detail%20test",
+            "class": "article-meta-share-link share-x"
+          },
+          {
+            "text": "",
+            "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-linkedin"
+          },
+          {
+            "text": "",
+            "href": "https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-line"
+          },
+          {
+            "text": "Test link",
+            "href": "https://google.com/",
+            "class": "button"
+          },
+          {
+            "text": "QA529 Related 1",
+            "href": "/master/en/library/article/stories/qa529-r1",
+            "class": ""
+          },
+          {
+            "text": "QA529 Related 2",
+            "href": "/master/en/library/article/stories/qa529-r2",
+            "class": ""
+          },
+          {
+            "text": "QA529 Related 3",
+            "href": "/master/en/library/article/stories/qa529-r3",
+            "class": ""
+          },
+          {
+            "text": "QuickFree® click-TRAK® Magnetic",
+            "href": "/en/products/p00320",
+            "class": ""
+          },
+          {
+            "text": "NATULON® Fiber Sourced®",
+            "href": "/en/products/p00101",
+            "class": ""
+          },
+          {
+            "text": "EXCELLA®",
+            "href": "/en/products/p00001",
+            "class": ""
+          },
+          {
+            "text": "AiryString®",
+            "href": "/en/products/p00210",
+            "class": ""
+          },
+          {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "class": "button secondary"
+          },
+          {
+            "text": "お問い合わせ",
+            "href": "#",
+            "class": "button"
+          }
+        ]
+      },
+      "cardCount": 7,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    },
+    {
+      "lang": "en",
+      "kind": "article",
+      "device": "SP",
+      "path": "/master/en/library/article/stories/qa529-01",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/en-article-SP-01.png",
+          "scrollY": 0,
+          "scrollHeight": 4269,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-SP-02.png",
+          "scrollY": 700,
+          "scrollHeight": 4269,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-SP-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 4269,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-SP-04.png",
+          "scrollY": 2100,
+          "scrollHeight": 4269,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-SP-05.png",
+          "scrollY": 2800,
+          "scrollHeight": 4269,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-article-SP-06.png",
+          "scrollY": 3425,
+          "scrollHeight": 4269,
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+      "dom": {
+        "title": "QA529 Story detail test",
+        "text": "HOME\nLibrary\nArticle\nStories\nQA529 Nav\nQA529 Story detail test\n\nQA529 Subtitle\n\nQA529 description en\n\ndo-not-translate\nバイオベース\n\n2026.10.01\n\nマイリストに追加\nシェア\nBody H2\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nBody text goes here. Body text goes here. Body text goes here. Body text goes here.\n\nTest link\n\nPROFILE\n\nQA529 Profile\n\n会社名・部署名が入ります\n\nプロフィールが入ります。プロフィールが入ります。\n\nRelated Stories\nNEW\nQA529 Related 1\n2026.10.16\ndo-not-translate\nQA529 Related 2\n2026.01.15\ndo-not-translate\nQA529 Related 3\n2026.02.01\ndo-not-translate\nRelated Items\nQuickFree® click-TRAK® Magnetic\nNATULON® Fiber Sourced®\nEXCELLA®\nAiryString®\nVIEW ALL STORIES\nお問い合わせ",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en/library\" data-testid=\"breadcrumb-link\" title=\"Library\">Library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en/library/article\" data-testid=\"breadcrumb-link\" title=\"Article\">Article</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/master/en/library/article/stories\" data-testid=\"breadcrumb-link\" title=\"Stories\">Stories</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"QA529 Nav\">QA529 Nav</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "article-title block",
+            "html": "<div class=\"article-title block\" data-auto-block=\"\" data-block-name=\"article-title\" data-block-status=\"loaded\"><h1 class=\"article-title-heading\">QA529 Story detail test</h1></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 Subtitle</p></div></div>"
+          },
+          {
+            "class": "image block",
+            "html": "<div class=\"image block\" data-block-name=\"image\" data-block-status=\"loaded\"><picture><source type=\"image/webp\" srcset=\"/master/en/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=webply&amp;optimize=medium\"><img loading=\"eager\" alt=\"\" src=\"/master/en/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&amp;format=png&amp;optimize=medium\"></picture></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\"><p>QA529 description en</p></div></div>"
+          },
+          {
+            "class": "article-meta auto block",
+            "html": "<div class=\"article-meta auto block\" data-auto-block=\"\" data-block-name=\"article-meta\" data-block-status=\"loaded\"><div class=\"article-meta-tags\"><span class=\"article-meta-tag\">do-not-translate</span><span class=\"article-meta-tag\">バイオベース</span></div><div class=\"article-meta-row\"><p class=\"article-meta-date\">2026.10.01</p><div class=\"article-meta-actions\"><button type=\"button\" class=\"article-meta-fav\" aria-pressed=\"false\"><span class=\"article-meta-fav-icon\" aria-hidden=\"true\"></span><span>マイリストに追加</span></button><div class=\"article-meta-share\"><span class=\"article-meta-share-label\">シェア</span><div class=\"article-meta-share-links\"><a class=\"article-meta-share-link share-facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Facebookでシェア\"></a><a class=\"article-meta-share-link share-x\" href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01&amp;text=QA529%20Story%20detail%20test\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Xでシェア\"></a><a class=\"article-meta-share-link share-linkedin\" href=\"https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LinkedInでシェア\"></a><a class=\"article-meta-share-link share-line\" href=\"https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"LINEでシェア\"></a></div></div></div></div></div>"
+          },
+          {
+            "class": "text block",
+            "html": "<div class=\"text block\" data-block-name=\"text\" data-block-status=\"loaded\"><div class=\"text-content\">\n              <h2 id=\"body-h2\">Body H2</h2>\n              <p><strong>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</strong></p>\n              <p>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</p>\n              <p>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</p>\n              <p>Body text goes here. Body text goes here. Body text goes here. Body text goes here.</p>\n              <p class=\"button-container\"><a href=\"https://google.com/\" title=\"Test link\" class=\"button\">Test link</a></p>\n            </div></div>"
+          },
+          {
+            "class": "profile author-profile block",
+            "html": "<div class=\"profile author-profile block\" data-block-name=\"profile\" data-block-status=\"loaded\"><p class=\"profile-label\">PROFILE</p>\n          \n          <div class=\"profile-company\">\n            <div><p>QA529 Profile</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>会社名・部署名が入ります</p></div>\n          </div>\n          <div class=\"profile-text\">\n            <div><p>プロフィールが入ります。プロフィールが入ります。</p></div>\n          </div>\n        </div>"
+          },
+          {
+            "class": "related-articles auto block",
+            "html": "<div class=\"related-articles auto block\" data-auto-block=\"\" data-block-name=\"related-articles\" data-block-status=\"loaded\"><h2 class=\"related-heading\">Related Stories</h2><div class=\"cards story\"><ul><li data-card-id=\"/master/en/library/article/stories/qa529-r1\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png\" alt=\"QA529 Related 1\" loading=\"lazy\"></picture><span class=\"cards-badge-new\">NEW</span><button type=\"button\" class=\"cards-fav\" data-id=\"/master/en/library/article/stories/qa529-r1\" data-category=\"stories\" aria-label=\"QA529 Related 1 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/en/library/article/stories/qa529-r1\">QA529 Related 1</a></div><div class=\"cards-card-meta\">2026.10.16</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/en/library/article/stories/qa529-r2\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png\" alt=\"QA529 Related 2\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/en/library/article/stories/qa529-r2\" data-category=\"stories\" aria-label=\"QA529 Related 2 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/en/library/article/stories/qa529-r2\">QA529 Related 2</a></div><div class=\"cards-card-meta\">2026.01.15</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li><li data-card-id=\"/master/en/library/article/stories/qa529-r3\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png\" alt=\"QA529 Related 3\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/master/en/library/article/stories/qa529-r3\" data-category=\"stories\" aria-label=\"QA529 Related 3 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/master/en/library/article/stories/qa529-r3\">QA529 Related 3</a></div><div class=\"cards-card-meta\">2026.02.01</div><div class=\"cards-card-tag\"><span class=\"cards-tag\">do-not-translate</span></div></li></ul></div></div>"
+          },
+          {
+            "class": "related-product auto block",
+            "html": "<div class=\"related-product auto block\" data-auto-block=\"\" data-block-name=\"related-product\" data-block-status=\"loaded\"><h2 class=\"related-heading\">Related Items</h2><div class=\"cards product-mini\"><ul><li data-card-id=\"/en/products/p00320\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00320\" data-category=\"products\" aria-label=\"QuickFree® click-TRAK® Magnetic をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00320\">QuickFree® click-TRAK® Magnetic</a></div></li><li data-card-id=\"/en/products/p00101\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00101\" data-category=\"products\" aria-label=\"NATULON® Fiber Sourced® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00101\">NATULON® Fiber Sourced®</a></div></li><li data-card-id=\"/en/products/p00001\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00001\" data-category=\"products\" aria-label=\"EXCELLA® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00001\">EXCELLA®</a></div></li><li data-card-id=\"/en/products/p00210\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/en/products/p00210\" data-category=\"products\" aria-label=\"AiryString® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/products/p00210\">AiryString®</a></div></li></ul></div></div>"
+          },
+          {
+            "class": "footer-actions block",
+            "html": "<div class=\"footer-actions block\" data-auto-block=\"\" data-block-name=\"footer-actions\" data-block-status=\"loaded\"><div class=\"footer-actions-row\"><a class=\"button secondary\" href=\"#\">VIEW ALL STORIES</a><a class=\"button\" href=\"#\">お問い合わせ</a></div></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/media_1b1b7cd0b37a798c7049ce075bdd59701412bec92.png?width=1200&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png",
+            "complete": true,
+            "naturalWidth": 1200,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+            "complete": true,
+            "naturalWidth": 4000,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/master/en",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Library",
+            "href": "/master/en/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Article",
+            "href": "/master/en/library/article",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "Stories",
+            "href": "/master/en/library/article/stories",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "",
+            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-facebook"
+          },
+          {
+            "text": "",
+            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01&text=QA529%20Story%20detail%20test",
+            "class": "article-meta-share-link share-x"
+          },
+          {
+            "text": "",
+            "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-linkedin"
+          },
+          {
+            "text": "",
+            "href": "https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fmain--dsr-eds-dev--sutrix-projects.aem.live%2Fmaster%2Fen%2Flibrary%2Farticle%2Fstories%2Fqa529-01",
+            "class": "article-meta-share-link share-line"
+          },
+          {
+            "text": "Test link",
+            "href": "https://google.com/",
+            "class": "button"
+          },
+          {
+            "text": "QA529 Related 1",
+            "href": "/master/en/library/article/stories/qa529-r1",
+            "class": ""
+          },
+          {
+            "text": "QA529 Related 2",
+            "href": "/master/en/library/article/stories/qa529-r2",
+            "class": ""
+          },
+          {
+            "text": "QA529 Related 3",
+            "href": "/master/en/library/article/stories/qa529-r3",
+            "class": ""
+          },
+          {
+            "text": "QuickFree® click-TRAK® Magnetic",
+            "href": "/en/products/p00320",
+            "class": ""
+          },
+          {
+            "text": "NATULON® Fiber Sourced®",
+            "href": "/en/products/p00101",
+            "class": ""
+          },
+          {
+            "text": "EXCELLA®",
+            "href": "/en/products/p00001",
+            "class": ""
+          },
+          {
+            "text": "AiryString®",
+            "href": "/en/products/p00210",
+            "class": ""
+          },
+          {
+            "text": "VIEW ALL STORIES",
+            "href": "#",
+            "class": "button secondary"
+          },
+          {
+            "text": "お問い合わせ",
+            "href": "#",
+            "class": "button"
+          }
+        ]
+      },
+      "cardCount": 7,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    },
+    {
+      "lang": "en",
+      "kind": "video",
+      "device": "PC",
+      "path": "/en/library/video/search",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/en-video-PC-01.png",
+          "scrollY": 0,
+          "scrollHeight": 2353,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-PC-02.png",
+          "scrollY": 700,
+          "scrollHeight": 2353,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-PC-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 2353,
+          "width": 1440,
+          "scrollWidth": 1440
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-PC-04.png",
+          "scrollY": 1453,
+          "scrollHeight": 2353,
+          "width": 1440,
+          "scrollWidth": 1440
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+      "dom": {
+        "title": "search",
+        "text": "HOME\nlibrary\nsearch\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA587 rel B\nQA587 rel B des\nvideo title main a\nVideo description main a\nvideo title main b\nVideo description main b\nQA557 DAM movie\nQA587 line1 QA587 line2\nmovie tile bad\nmovie description\ntest title with long character test title with long character test title with long character test title with long character test title with long character\nMovie description Movie description Movie description Movie description Movie description\nmovie tile noid\nmovie description\nmovierel6\nmovie description rel6\nQA587 related 6\nQA587 related 6 des\nQA587 rel A\nQA587 related A des\nQA587 related 5\nQA587 related 5 des\nPrevious\n1 / 2\nNext",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en/library\" data-testid=\"breadcrumb-link\" title=\"library\">library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"search\">search</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "listing block listing-video",
+            "html": "<div class=\"listing block listing-video\" data-block-name=\"listing\" data-block-status=\"loaded\"><div class=\"listing-band\"><div class=\"listing-band-inner\"><div class=\"listing-search\"><div class=\"listing-search-field\"><input type=\"search\" class=\"listing-search-input\" placeholder=\"Search by keyword\" aria-label=\"Search by keyword\" style=\"\"></div><button type=\"button\" class=\"listing-clear\">CLEAR</button></div></div></div><div class=\"listing-results\"><section class=\"listing-group listing-group-untitled\"><div class=\"cards video-card\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/common/en/movies/qa587-main\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 main movie\" loading=\"eager\" fetchpriority=\"high\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-main\" data-category=\"products\" aria-label=\"QA587 main movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-main\">QA587 main movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-rel-b\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 rel B\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-rel-b\" data-category=\"products\" aria-label=\"QA587 rel B をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-rel-b\">QA587 rel B</a></div><div class=\"cards-card-desc\">QA587 rel B  des</div></li><li data-card-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-a\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg\" alt=\"video title main a\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-a\" data-category=\"products\" aria-label=\"video title main a をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa501-main-a\">video title main a</a></div><div class=\"cards-card-desc\">Video description main a</div></li><li data-card-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-b\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg\" alt=\"video title main b\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-b\" data-category=\"products\" aria-label=\"video title main b をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa501-main-b\">video title main b</a></div><div class=\"cards-card-desc\">Video description main b</div></li><li data-card-id=\"/content/dam/common/en/movies/qa557-dam\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA557 DAM movie\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa557-dam\" data-category=\"products\" aria-label=\"QA557 DAM movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa557-dam\">QA557 DAM movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-badid\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"movie tile bad\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-badid\" data-category=\"products\" aria-label=\"movie tile bad をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/badid\">movie tile bad</a></div><div class=\"cards-card-desc\">movie description</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-long\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"test title with long character test title with long character test title with long character test title with long character test title with long character\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-long\" data-category=\"products\" aria-label=\"test title with long character test title with long character test title with long character test title with long character test title with long character をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/long\">test title with long character test title with long character test title with long character test title with long character test title with long character</a></div><div class=\"cards-card-desc\">Movie description Movie description Movie description Movie description Movie description</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-noid\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"movie tile noid\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-noid\" data-category=\"products\" aria-label=\"movie tile noid をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/noid\">movie tile noid</a></div><div class=\"cards-card-desc\">movie description</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-rel-6\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"movierel6\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-rel-6\" data-category=\"products\" aria-label=\"movierel6 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/rel6\">movierel6</a></div><div class=\"cards-card-desc\">movie description rel6</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-r6\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 related 6\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-r6\" data-category=\"products\" aria-label=\"QA587 related 6 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-r6\">QA587 related 6</a></div><div class=\"cards-card-desc\">QA587 related 6  des</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-rel-a\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 rel A\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-rel-a\" data-category=\"products\" aria-label=\"QA587 rel A をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-rel-a\">QA587 rel A</a></div><div class=\"cards-card-desc\">QA587 related A  des</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-r5\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 related 5\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-r5\" data-category=\"products\" aria-label=\"QA587 related 5 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-r5\">QA587 related 5</a></div><div class=\"cards-card-desc\">QA587 related 5  des</div></li></ul></div></section></div><nav class=\"listing-pager\"><button type=\"button\" class=\"listing-page-prev\" disabled=\"\">Previous</button><span class=\"listing-page-of\">1 / 2</span><button type=\"button\" class=\"listing-page-next\">Next</button></nav></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=2000&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/en",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "library",
+            "href": "/en/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "QA587 main movie",
+            "href": "/en/library/video/qa587-main",
+            "class": ""
+          },
+          {
+            "text": "QA587 rel B",
+            "href": "/en/library/video/qa587-rel-b",
+            "class": ""
+          },
+          {
+            "text": "video title main a",
+            "href": "/en/library/video/qa501-main-a",
+            "class": ""
+          },
+          {
+            "text": "video title main b",
+            "href": "/en/library/video/qa501-main-b",
+            "class": ""
+          },
+          {
+            "text": "QA557 DAM movie",
+            "href": "/en/library/video/qa557-dam",
+            "class": ""
+          },
+          {
+            "text": "movie tile bad",
+            "href": "/en/library/video/badid",
+            "class": ""
+          },
+          {
+            "text": "test title with long character test title with long character test title with long character test title with long character test title with long character",
+            "href": "/en/library/video/long",
+            "class": ""
+          },
+          {
+            "text": "movie tile noid",
+            "href": "/en/library/video/noid",
+            "class": ""
+          },
+          {
+            "text": "movierel6",
+            "href": "/en/library/video/rel6",
+            "class": ""
+          },
+          {
+            "text": "QA587 related 6",
+            "href": "/en/library/video/qa587-r6",
+            "class": ""
+          },
+          {
+            "text": "QA587 rel A",
+            "href": "/en/library/video/qa587-rel-a",
+            "class": ""
+          },
+          {
+            "text": "QA587 related 5",
+            "href": "/en/library/video/qa587-r5",
+            "class": ""
+          }
+        ]
+      },
+      "cardCount": 12,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    },
+    {
+      "lang": "en",
+      "kind": "video",
+      "device": "SP",
+      "path": "/en/library/video/search",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshots": [
+        {
+          "file": "evidence/baseline-20261023/en-video-SP-01.png",
+          "scrollY": 0,
+          "scrollHeight": 4754,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-SP-02.png",
+          "scrollY": 700,
+          "scrollHeight": 4754,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-SP-03.png",
+          "scrollY": 1400,
+          "scrollHeight": 4754,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-SP-04.png",
+          "scrollY": 2100,
+          "scrollHeight": 4754,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-SP-05.png",
+          "scrollY": 2800,
+          "scrollHeight": 4754,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-SP-06.png",
+          "scrollY": 3500,
+          "scrollHeight": 4754,
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "file": "evidence/baseline-20261023/en-video-SP-07.png",
+          "scrollY": 3910,
+          "scrollHeight": 4754,
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ],
+      "consoleErrors": [],
+      "status": 200,
+      "finalURL": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+      "dom": {
+        "title": "search",
+        "text": "HOME\nlibrary\nsearch\nCLEAR\nQA587 main movie\nQA587 line1 QA587 line2\nQA587 rel B\nQA587 rel B des\nvideo title main a\nVideo description main a\nvideo title main b\nVideo description main b\nQA557 DAM movie\nQA587 line1 QA587 line2\nmovie tile bad\nmovie description\ntest title with long character test title with long character test title with long character test title with long character test title with long character\nMovie description Movie description Movie description Movie description Movie description\nmovie tile noid\nmovie description\nmovierel6\nmovie description rel6\nQA587 related 6\nQA587 related 6 des\nQA587 rel A\nQA587 related A des\nQA587 related 5\nQA587 related 5 des\nPrevious\n1 / 2\nNext",
+        "blocks": [
+          {
+            "class": "breadcrumb block",
+            "html": "<div class=\"breadcrumb block\" data-auto-block=\"breadcrumb\" data-block-name=\"breadcrumb\" data-block-status=\"loaded\"><nav class=\"breadcrumb-nav\" aria-label=\"パンくずリスト\" data-testid=\"breadcrumb\"><ol class=\"breadcrumb-list\" data-testid=\"breadcrumb-list\"><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en\" data-testid=\"breadcrumb-link\" title=\"HOME\">HOME</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><a class=\"breadcrumb-label\" href=\"/en/library\" data-testid=\"breadcrumb-link\" title=\"library\">library</a><img class=\"breadcrumb-arrow\" src=\"https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg\" alt=\"\" width=\"10\" height=\"10\" data-testid=\"breadcrumb-arrow\"></li><li class=\"breadcrumb-item\" data-testid=\"breadcrumb-item\"><span class=\"breadcrumb-label\" aria-current=\"page\" data-testid=\"breadcrumb-current\" title=\"search\">search</span></li></ol></nav><div class=\"breadcrumb-aside\"></div></div>"
+          },
+          {
+            "class": "listing block listing-video",
+            "html": "<div class=\"listing block listing-video\" data-block-name=\"listing\" data-block-status=\"loaded\"><div class=\"listing-band\"><div class=\"listing-band-inner\"><div class=\"listing-search\"><div class=\"listing-search-field\"><input type=\"search\" class=\"listing-search-input\" placeholder=\"Search by keyword\" aria-label=\"Search by keyword\" style=\"\"></div><button type=\"button\" class=\"listing-clear\">CLEAR</button></div></div></div><div class=\"listing-results\"><section class=\"listing-group listing-group-untitled\"><div class=\"cards video-card\" style=\"--listing-col-min: 300px;\"><ul><li data-card-id=\"/content/dam/common/en/movies/qa587-main\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 main movie\" loading=\"eager\" fetchpriority=\"high\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-main\" data-category=\"products\" aria-label=\"QA587 main movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-main\">QA587 main movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-rel-b\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 rel B\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-rel-b\" data-category=\"products\" aria-label=\"QA587 rel B をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-rel-b\">QA587 rel B</a></div><div class=\"cards-card-desc\">QA587 rel B  des</div></li><li data-card-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-a\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg\" alt=\"video title main a\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-a\" data-category=\"products\" aria-label=\"video title main a をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa501-main-a\">video title main a</a></div><div class=\"cards-card-desc\">Video description main a</div></li><li data-card-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-b\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg\" alt=\"video title main b\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/ykk/common/product-cf/test/qa501-main-b\" data-category=\"products\" aria-label=\"video title main b をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa501-main-b\">video title main b</a></div><div class=\"cards-card-desc\">Video description main b</div></li><li data-card-id=\"/content/dam/common/en/movies/qa557-dam\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA557 DAM movie\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa557-dam\" data-category=\"products\" aria-label=\"QA557 DAM movie をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa557-dam\">QA557 DAM movie</a></div><div class=\"cards-card-desc\">QA587 line1 \nQA587 line2</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-badid\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"movie tile bad\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-badid\" data-category=\"products\" aria-label=\"movie tile bad をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/badid\">movie tile bad</a></div><div class=\"cards-card-desc\">movie description</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-long\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"test title with long character test title with long character test title with long character test title with long character test title with long character\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-long\" data-category=\"products\" aria-label=\"test title with long character test title with long character test title with long character test title with long character test title with long character をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/long\">test title with long character test title with long character test title with long character test title with long character test title with long character</a></div><div class=\"cards-card-desc\">Movie description Movie description Movie description Movie description Movie description</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-noid\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"movie tile noid\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-noid\" data-category=\"products\" aria-label=\"movie tile noid をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/noid\">movie tile noid</a></div><div class=\"cards-card-desc\">movie description</div></li><li data-card-id=\"/content/dam/common/en/movies/test-mv-rel-6\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"movierel6\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/test-mv-rel-6\" data-category=\"products\" aria-label=\"movierel6 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/rel6\">movierel6</a></div><div class=\"cards-card-desc\">movie description rel6</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-r6\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 related 6\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-r6\" data-category=\"products\" aria-label=\"QA587 related 6 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-r6\">QA587 related 6</a></div><div class=\"cards-card-desc\">QA587 related 6  des</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-rel-a\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 rel A\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-rel-a\" data-category=\"products\" aria-label=\"QA587 rel A をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-rel-a\">QA587 rel A</a></div><div class=\"cards-card-desc\">QA587 related A  des</div></li><li data-card-id=\"/content/dam/common/en/movies/qa587-r5\"><div class=\"cards-card-image\"><picture><img src=\"https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\" alt=\"QA587 related 5\" loading=\"lazy\"></picture><button type=\"button\" class=\"cards-fav\" data-id=\"/content/dam/common/en/movies/qa587-r5\" data-category=\"products\" aria-label=\"QA587 related 5 をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/en/library/video/qa587-r5\">QA587 related 5</a></div><div class=\"cards-card-desc\">QA587 related 5  des</div></li></ul></div></section></div><nav class=\"listing-pager\"><button type=\"button\" class=\"listing-page-prev\" disabled=\"\">Previous</button><span class=\"listing-page-of\">1 / 2</span><button type=\"button\" class=\"listing-page-next\">Next</button></nav></div>"
+          }
+        ],
+        "images": [
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=750&format=png&optimize=medium",
+            "complete": false,
+            "naturalWidth": 0,
+            "visible": false
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/breadcrumb/assets/arrow.svg",
+            "complete": true,
+            "naturalWidth": 10,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--78a994d3-05b3-4888-a6db-8b61c7c501cf/gradient_transparent_1920x1080.jpg",
+            "complete": true,
+            "naturalWidth": 1920,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://publish-p192812-e2014374.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+            "complete": true,
+            "naturalWidth": 220,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/media_13dbfe7de3bad8ae3bb4669e1c9300276582a006b.svg?width=750&format=webply&optimize=medium",
+            "complete": true,
+            "naturalWidth": 155,
+            "visible": true
+          },
+          {
+            "src": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/footer/icons/in.png",
+            "complete": true,
+            "naturalWidth": 840,
+            "visible": true
+          }
+        ],
+        "links": [
+          {
+            "text": "HOME",
+            "href": "/en",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "library",
+            "href": "/en/library",
+            "class": "breadcrumb-label"
+          },
+          {
+            "text": "QA587 main movie",
+            "href": "/en/library/video/qa587-main",
+            "class": ""
+          },
+          {
+            "text": "QA587 rel B",
+            "href": "/en/library/video/qa587-rel-b",
+            "class": ""
+          },
+          {
+            "text": "video title main a",
+            "href": "/en/library/video/qa501-main-a",
+            "class": ""
+          },
+          {
+            "text": "video title main b",
+            "href": "/en/library/video/qa501-main-b",
+            "class": ""
+          },
+          {
+            "text": "QA557 DAM movie",
+            "href": "/en/library/video/qa557-dam",
+            "class": ""
+          },
+          {
+            "text": "movie tile bad",
+            "href": "/en/library/video/badid",
+            "class": ""
+          },
+          {
+            "text": "test title with long character test title with long character test title with long character test title with long character test title with long character",
+            "href": "/en/library/video/long",
+            "class": ""
+          },
+          {
+            "text": "movie tile noid",
+            "href": "/en/library/video/noid",
+            "class": ""
+          },
+          {
+            "text": "movierel6",
+            "href": "/en/library/video/rel6",
+            "class": ""
+          },
+          {
+            "text": "QA587 related 6",
+            "href": "/en/library/video/qa587-r6",
+            "class": ""
+          },
+          {
+            "text": "QA587 rel A",
+            "href": "/en/library/video/qa587-rel-a",
+            "class": ""
+          },
+          {
+            "text": "QA587 related 5",
+            "href": "/en/library/video/qa587-r5",
+            "class": ""
+          }
+        ]
+      },
+      "cardCount": 12,
+      "horizontalOverflowPx": 0,
+      "brokenImages": [],
+      "pendingImages": [],
+      "failures": []
+    }
+  ],
+  "finished": "2026-10-22T15:56:26.706Z"
+}
