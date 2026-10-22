@@ -1,0 +1,32 @@
+{
+  "job": "JOB-20261022-08",
+  "agent": "claude-code",
+  "us": "Retest DSR-665 (587) + DSR-659 (529)",
+  "env": "dev",
+  "started": "2026-10-22T04:31:21Z",
+  "finished": "2026-10-22T04:39:30Z",
+  "status": "done",
+  "bugs": [
+    { "bug": "DSR-665", "proposed": "pass", "note": "search pages 200, listing block, no video-detail, 1 document load in 15 s (2 framenavigated: 2nd same-document), ja+en, .page+.live" },
+    { "bug": "DSR-659", "proposed": "pending", "note": "needs republish: .live last-modified 2026-10-21 15:09/15:10 GMT; thumbnail meta still relative -> 404; og:image/twitter:image absolute 200; .page re-previewed 2026-10-22 01:47 GMT still relative" }
+  ],
+  "tests": [
+    { "tc": "DSR-VOV-011", "lang": "ja", "result": "pass", "error": "", "evidence": "evidence/DSR-665_live_ja.png", "suspect": "", "cause": "none", "confidence": 0, "note": ".live + .page; 5 cards" },
+    { "tc": "DSR-VOV-011", "lang": "en", "result": "pass", "error": "", "evidence": "evidence/DSR-665_live_en.png", "suspect": "", "cause": "none", "confidence": 0, "note": ".live + .page; 12 cards" },
+    { "tc": "DSR-VOV-011-tech-talk", "lang": "ja", "result": "skip", "error": "tech-talk list page not published on DEV (HTTP 404)", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-VOV-011-tech-talk", "lang": "en", "result": "skip", "error": "tech-talk list page not published on DEV (HTTP 404)", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-VOV-013", "lang": "en", "result": "pass", "error": "", "evidence": "evidence/DSR-665_live_en.png", "suspect": "", "cause": "none", "confidence": 0, "note": ".live + .page; mainFrameNavigations 2 = 1 load + 1 same-document history update" },
+    { "tc": "DSR-VOV-013-probe", "lang": "ja", "result": "pass", "error": "", "evidence": "evidence/DSR-665_page_ja.png", "suspect": "", "cause": "none", "confidence": 0, "note": "no [ja] test in spec; probe: 1 document load in 15 s, listing 5 cards, video-detail 0" },
+    { "tc": "DSR-ARTICLE-011", "lang": "ja", "result": "fail", "error": "thumbnail meta relative /content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png -> 404 on .live; page not republished since 2026-10-21 15:09 GMT", "evidence": "evidence/DSR-ARTICLE-011_ja.png", "suspect": "product", "cause": "none", "confidence": 85 },
+    { "tc": "DSR-ARTICLE-011", "lang": "en", "result": "fail", "error": "thumbnail meta relative /content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png -> 404 on .live; page not republished since 2026-10-21 15:10 GMT", "evidence": "evidence/DSR-ARTICLE-011_en.png", "suspect": "product", "cause": "none", "confidence": 85 }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "reports": [
+    "results/DSR-587/DEV/automation-run-20261022-job20261022-08-live.md",
+    "results/DSR-587/DEV/automation-run-20261022-job20261022-08-live-rerun.md",
+    "results/DSR-587/DEV/automation-run-20261022-job20261022-08-page.md",
+    "results/DSR-529/DEV/automation-run-20261022-job20261022-08.md"
+  ],
+  "questions": []
+}

@@ -1,0 +1,134 @@
+[
+ {
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+  "events": [
+   {
+    "t": 17,
+    "kind": "document-request",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search"
+   },
+   {
+    "t": 617,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search"
+   },
+   {
+    "t": 1426,
+    "kind": "load"
+   },
+   {
+    "t": 2756,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search"
+   }
+  ],
+  "sameDocumentAfter15s": true,
+  "navigationTiming": [
+   "navigate"
+  ],
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+  "notFound": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json"
+  ]
+ },
+ {
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+  "events": [
+   {
+    "t": 13,
+    "kind": "document-request",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search"
+   },
+   {
+    "t": 781,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search"
+   },
+   {
+    "t": 1759,
+    "kind": "load"
+   },
+   {
+    "t": 3489,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search"
+   }
+  ],
+  "sameDocumentAfter15s": true,
+  "navigationTiming": [
+   "navigate"
+  ],
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+  "notFound": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/placeholders.json"
+  ]
+ },
+ {
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+  "events": [
+   {
+    "t": 12,
+    "kind": "document-request",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search"
+   },
+   {
+    "t": 732,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search"
+   },
+   {
+    "t": 1854,
+    "kind": "load"
+   },
+   {
+    "t": 3376,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search"
+   }
+  ],
+  "sameDocumentAfter15s": true,
+  "navigationTiming": [
+   "navigate"
+  ],
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+  "notFound": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json"
+  ]
+ },
+ {
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+  "events": [
+   {
+    "t": 9,
+    "kind": "document-request",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search"
+   },
+   {
+    "t": 710,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search"
+   },
+   {
+    "t": 1598,
+    "kind": "load"
+   },
+   {
+    "t": 4571,
+    "kind": "framenavigated",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search"
+   }
+  ],
+  "sameDocumentAfter15s": true,
+  "navigationTiming": [
+   "navigate"
+  ],
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+  "notFound": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/placeholders.json"
+  ]
+ }
+]

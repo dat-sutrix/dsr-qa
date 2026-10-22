@@ -1,0 +1,196 @@
+{
+ "v665": [
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+   "rawStatus": 200,
+   "rawLocation": null,
+   "rawLastModified": "Thu, 22 Oct 2026 01:49:39 GMT",
+   "browserStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/search",
+   "navigations15s": 2,
+   "template": null,
+   "robots": null,
+   "title": "動画 検索・一覧",
+   "blocks": [
+    "breadcrumb",
+    "listing"
+   ],
+   "mainClasses": [
+    "breadcrumb block",
+    "listing block listing-video"
+   ],
+   "listing": 1,
+   "cards": 5,
+   "videoDetail": 0,
+   "notFoundText": false,
+   "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+   ],
+   "shot": "shots/DSR-665_page_ja.png"
+  },
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+   "rawStatus": 200,
+   "rawLocation": null,
+   "rawLastModified": "Thu, 22 Oct 2026 01:49:44 GMT",
+   "browserStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/search",
+   "navigations15s": 2,
+   "template": null,
+   "robots": null,
+   "title": "search",
+   "blocks": [
+    "breadcrumb",
+    "listing"
+   ],
+   "mainClasses": [
+    "breadcrumb block",
+    "listing block listing-video"
+   ],
+   "listing": 1,
+   "cards": 12,
+   "videoDetail": 0,
+   "notFoundText": false,
+   "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+   ],
+   "shot": "shots/DSR-665_page_en.png"
+  },
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+   "rawStatus": 200,
+   "rawLocation": null,
+   "rawLastModified": "Thu, 22 Oct 2026 01:49:39 GMT",
+   "browserStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+   "navigations15s": 2,
+   "template": null,
+   "robots": null,
+   "title": "動画 検索・一覧",
+   "blocks": [
+    "breadcrumb",
+    "listing"
+   ],
+   "mainClasses": [
+    "breadcrumb block",
+    "listing block listing-video"
+   ],
+   "listing": 1,
+   "cards": 5,
+   "videoDetail": 0,
+   "notFoundText": false,
+   "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+   ],
+   "shot": "shots/DSR-665_live_ja.png"
+  },
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+   "rawStatus": 200,
+   "rawLocation": null,
+   "rawLastModified": "Thu, 22 Oct 2026 01:49:44 GMT",
+   "browserStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+   "navigations15s": 2,
+   "template": null,
+   "robots": null,
+   "title": "search",
+   "blocks": [
+    "breadcrumb",
+    "listing"
+   ],
+   "mainClasses": [
+    "breadcrumb block",
+    "listing block listing-video"
+   ],
+   "listing": 1,
+   "cards": 12,
+   "videoDetail": 0,
+   "notFoundText": false,
+   "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()"
+   ],
+   "shot": "shots/DSR-665_live_en.png"
+  }
+ ],
+ "v659": [
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+   "status": 200,
+   "lastModified": "Wed, 21 Oct 2026 15:09:36 GMT",
+   "age": null,
+   "updatedate": [
+    "2026-10-10T00:00:00.000Z"
+   ],
+   "checks": {
+    "og:image": [
+     {
+      "raw": "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "absolute": true,
+      "fetched": "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "status": 200,
+      "contentType": "image/png"
+     }
+    ],
+    "twitter:image": [
+     {
+      "raw": "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "absolute": true,
+      "fetched": "https://dev-eds.ykkdigitalshowroom.com/master/ja/library/article/stories/media_125138bf052d9d483ebc4bd3b9ec7dda2cfd566c5.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "status": 200,
+      "contentType": "image/png"
+     }
+    ],
+    "thumbnail": [
+     {
+      "raw": "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+      "absolute": false,
+      "fetched": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8"
+     }
+    ]
+   },
+   "shot": "shots/DSR-659_live_ja.png"
+  },
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+   "status": 200,
+   "lastModified": "Wed, 21 Oct 2026 15:10:40 GMT",
+   "age": null,
+   "updatedate": [
+    "2026-10-10T00:00:00.000Z"
+   ],
+   "checks": {
+    "og:image": [
+     {
+      "raw": "https://dev-eds.ykkdigitalshowroom.com/master/en/library/article/stories/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "absolute": true,
+      "fetched": "https://dev-eds.ykkdigitalshowroom.com/master/en/library/article/stories/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "status": 200,
+      "contentType": "image/png"
+     }
+    ],
+    "twitter:image": [
+     {
+      "raw": "https://dev-eds.ykkdigitalshowroom.com/master/en/library/article/stories/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "absolute": true,
+      "fetched": "https://dev-eds.ykkdigitalshowroom.com/master/en/library/article/stories/media_14f6ec45300969a41023acb94fb0df63487cafec8.png?width=1200&#x26;format=pjpg&#x26;optimize=medium",
+      "status": 200,
+      "contentType": "image/png"
+     }
+    ],
+    "thumbnail": [
+     {
+      "raw": "/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+      "absolute": false,
+      "fetched": "https://main--dsr-eds-dev--sutrix-projects.aem.live/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8"
+     }
+    ]
+   },
+   "shot": "shots/DSR-659_live_en.png"
+  }
+ ]
+}
