@@ -53,7 +53,7 @@ Thứ tự: (1) BUGCHK-586-01/02 25' · (2) shadow check SHADOW-190-FORM + SHADO
 Kết quả hôm nay 22/10 (đọc 6 job mới nhất): **JOB-16 ✅ DSR-664 Pass 4/4** · JOB-13 og:image 0 `about:error` ✅, ARTICLE-011 re-baseline ✅, isActive OFF redirect browser ✅ (qa654), 16 fail = data (title -form) + noindex 40% · JOB-14 spec catalog sửa xong, list `dsr-catalog-list` ja 6/en 5 ✅; 2 điểm 70% mới (🐞) · JOB-10 trước republish (đã giải quyết bởi JOB-12/14) · IDLE-35 regression 541: 281✅/63❌/197 skip – mới fail NEWS-001/004 en (data 40%), ECO-005/006 (demo/test) · IDLE-36 Lighthouse: catalog detail mobile 57/67 (< 95, chưa có ngưỡng Sprint 12 – ghi nhận). **0 fail cause ≠ none → không có mục 📣 mới. 0 bug ≥ 80%.**
 
 ## 5. TC (Jira sub-task `qa-tc`)
-tc-backlog: 2/2 done 21/10 (529 re-baseline, DSR-654 21 TC) · Night TC job 22/10 18:09: done 0/0 · upload queue pending 0 / fail 0 · auto-added 0 (Jira OK lại: 664 bug/611 question/653/590/587/586/570/566/557/529 đã phủ) · job agent đã xếp 0 · TC backlog trống 2026-10-22 18:09 · tc-questions: không câu mới sau Q47.
+tc-backlog: 2/2 done 21/10 (529 re-baseline, DSR-654 21 TC) · Night TC job 22/10 19:06: done 0/0 · upload queue pending 0 / fail 0 · auto-added 0 (Jira OK lại: 664 bug/611 question/653/590/587/586/570/566/557/529 đã phủ) · job agent đã xếp 0 · TC backlog trống 2026-10-22 19:06 · tc-questions: không câu mới sau Q47.
 
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
