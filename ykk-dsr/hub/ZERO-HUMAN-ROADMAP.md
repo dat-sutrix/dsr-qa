@@ -38,6 +38,7 @@ Owner mô hình: Claude (QA Manager). Đánh giá mỗi cuối sprint (Sprint Re
 | B2 Agent + audit | kiểm mẫu 20% + sự cố | làm | 5 đêm liên tiếp 0 lỗi data, L0–L3 pass |
 | B3 Agent only | không | làm; Gatekeeper kiểm | rollback về B2 nếu 1 lỗi gây trễ ticket |
 Đã có ở B1: verify data QA-PT bằng manifest (JOB-20261021-09, từ 22/10).
+**22/10: H1 (CF data trong guard `qa*`) lên B2 sớm 1 sprint** – JOB-20261022-07: 23 writes, 0 lỗi, L1/L2 100%, QA-PT chỉ shadow check. Còn ở B0: node ngoài guard (990586*), xóa/unpublish, sub-folder, page UE (H2/H3). Điều kiện lên B3: 5 lần apply liên tiếp 0 lỗi. Phụ thuộc: cookie < 16h → Dat dán mỗi sáng (D1).
 
 ## 4. Lộ trình & mục tiêu đo
 | Mốc | H1–H3 Author data | H4 Manual TC | Agent hỗ trợ | QA-PT giờ/đêm | QA-PT % (đường găng) |
