@@ -1,0 +1,21 @@
+{
+  "job": "JOB-20261022-15",
+  "agent": "claude-code",
+  "us": "DSR-566",
+  "env": "dev",
+  "started": "2026-10-22T08:57:00Z",
+  "finished": "2026-10-22T09:02:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "JOB15-1-locate", "lang": "ja", "result": "pass", "error": "news-article not found; template is /conf/digital-showroom/settings/wcm/templates/news-detail (created 2026-10-19, no jcr:lastModified)", "evidence": "dumps/template-news-detail.infinity.json", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "JOB15-3a-design-order", "lang": "ja", "result": "fail", "error": "all 5 present but order is date, title, news type(Text), body, image; expected date, news type, title, description, image", "evidence": "dumps/template-news-detail.infinity.json", "suspect": "product", "cause": "none", "confidence": 55 },
+    { "tc": "JOB15-3b-authorable", "lang": "ja", "result": "pass", "error": "JCR/model level only; data-aue in UE DOM not verified", "evidence": "dumps/ue-models-filters.json", "suspect": "product", "cause": "none", "confidence": 0 },
+    { "tc": "JOB15-3c-policy", "lang": "ja", "result": "pass", "error": "no template policy; section filter allows 57 blocks; news-detail model removed", "evidence": "dumps/ue-models-filters.json", "suspect": "product", "cause": "none", "confidence": 0 },
+    { "tc": "JOB15-3d-modified-after-0755Z", "lang": "ja", "result": "pass", "error": "indirect only: no jcr:lastModified; component json deployed 08:25Z, page from template 08:44Z has new structure", "evidence": "dumps/page-test-news-detail-template.infinity.json", "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "JOB15-4-news-test-1", "lang": "en", "result": "blocked", "error": "page news-test-1 not found on Author DEV; compared with /master/en/test-space/dsr-357-news-detail instead", "evidence": "dumps/page-dsr-357-news-detail.infinity.json", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "JOB15-5-spacing", "lang": "ja", "result": "skip", "error": "needs visual check (Dat, 2 min)", "evidence": "", "suspect": "test", "cause": "none", "confidence": 0 }
+  ],
+  "verdict": { "template_ready_for_authoring": "yes (conditional: news-type/title order + spacing)", "confidence": 70 },
+  "code_changes": [],
+  "questions": []
+}

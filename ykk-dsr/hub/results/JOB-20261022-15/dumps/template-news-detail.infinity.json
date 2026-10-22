@@ -1,0 +1,130 @@
+{
+    "jcr:primaryType": "cq:Template",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Mon Oct 19 2026 06:45:50 GMT+0000",
+    "initial": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Mon Oct 19 2026 06:45:50 GMT+0000",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:createdBy": "admin",
+            "cq:template": "/conf/digital-showroom/settings/wcm/templates/news-detail",
+            "jcr:created": "Mon Oct 19 2026 06:45:50 GMT+0000",
+            "sling:resourceType": "core/franklin/components/page/v1/page",
+            "root": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "core/franklin/components/root/v1/root",
+                "section": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "style": [
+                        "w-744"
+                    ],
+                    "sling:resourceType": "core/franklin/components/section/v1/section",
+                    "article_meta": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "date": "2026/01/01",
+                        "name": "Article Meta",
+                        "model": "article-meta",
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    },
+                    "title": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "name": "Title",
+                        "level": "h2",
+                        "model": "title",
+                        "title": "<p>\u30bf\u30a4\u30c8\u30eb\u304c\u5165\u308a\u307e\u3059\u3002\u30bf\u30a4\u30c8\u30eb\u304c\u5165\u308a\u307e\u3059\u3002</p>",
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    },
+                    "text": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "name": "Text",
+                        "text": "<p>\u304a\u77e5\u3089\u305b</p>",
+                        "model": "text",
+                        "classes": [
+                            "text-12"
+                        ],
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    },
+                    "spacer": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "name": "Spacer",
+                        "model": "spacer",
+                        "classes": "spacer-50",
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    },
+                    "text_0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "name": "Text",
+                        "text": "<p>\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002</p>",
+                        "model": "text",
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    },
+                    "image": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "imageAlt": "\u30cb\u30e5\u30fc\u30b9\u753b\u50cf",
+                        "name": "Image",
+                        "image": "/content/dam/ykk/asset.jpg",
+                        "model": "image",
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    },
+                    "spacer_0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "name": "Spacer",
+                        "model": "spacer",
+                        "classes": "spacer-40",
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    },
+                    "button": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "name": "Button",
+                        "text": "\u8a73\u3057\u304f\u898b\u308b",
+                        "model": "button",
+                        "classes": [
+                            "button8"
+                        ],
+                        "sling:resourceType": "core/franklin/components/block/v1/block"
+                    }
+                }
+            }
+        }
+    },
+    "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:title": "\u30cb\u30e5\u30fc\u30b9\u8a73\u7d30 / News Detail",
+        "status": "enabled",
+        "jcr:created": "Mon Oct 19 2026 06:45:50 GMT+0000",
+        "jcr:description": "\u30cb\u30e5\u30fc\u30b9\u8a73\u7d30\u306e\u30ec\u30a4\u30a2\u30a6\u30c8\u3002/{lang}/news/ \u914d\u4e0b\u3067\u4f7f\u7528\u3057\u307e\u3059\u3002"
+    },
+    "structure": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Mon Oct 19 2026 06:45:50 GMT+0000",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:createdBy": "admin",
+            "cq:template": "/conf/digital-showroom/settings/wcm/templates/news-detail",
+            "jcr:created": "Mon Oct 19 2026 06:45:50 GMT+0000",
+            "sling:resourceType": "core/franklin/components/page/v1/page",
+            "root": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "core/franklin/components/root/v1/root",
+                "editable": true
+            }
+        }
+    },
+    "policies": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Mon Oct 19 2026 06:45:50 GMT+0000",
+        "jcr:content": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/core/components/policies/mappings",
+            "root": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "wcm/core/components/policies/mapping"
+            }
+        }
+    }
+}

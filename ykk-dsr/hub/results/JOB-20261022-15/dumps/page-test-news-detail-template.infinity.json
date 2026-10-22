@@ -1,0 +1,99 @@
+{
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+        "mix:referenceable"
+    ],
+    "jcr:createdBy": "<email>",
+    "jcr:title": "Test News Detail Template",
+    "cq:template": "/conf/digital-showroom/settings/wcm/templates/news-detail",
+    "jcr:created": "Thu Oct 22 2026 08:44:46 GMT+0000",
+    "cq:lastModified": "Thu Oct 22 2026 08:52:43 GMT+0000",
+    "jcr:uuid": "9ce39866-d209-46cf-898a-b8f2f8ea335b",
+    "sling:resourceType": "core/franklin/components/page/v1/page",
+    "cq:lastModifiedBy": "<email>",
+    "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "core/franklin/components/root/v1/root",
+        "section": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:lastModifiedBy": "<email>",
+            "modelFields": [
+                "name@text",
+                "style@multiselect"
+            ],
+            "jcr:lastModified": "Thu Oct 22 2026 08:49:49 GMT+0000",
+            "sling:resourceType": "core/franklin/components/section/v1/section",
+            "article_meta": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:lastModifiedBy": "<email>",
+                "date": "2026/01/01",
+                "name": "Article Meta",
+                "level": "h2",
+                "model": "article-meta",
+                "modelFields": [
+                    "date@text",
+                    "classes@multiselect"
+                ],
+                "jcr:lastModified": "Thu Oct 22 2026 08:52:43 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "title": {
+                "jcr:primaryType": "nt:unstructured",
+                "name": "Title",
+                "level": "h2",
+                "model": "title",
+                "title": "<p>\u30bf\u30a4\u30c8\u30eb\u304c\u5165\u308a\u307e\u3059\u3002\u30bf\u30a4\u30c8\u30eb\u304c\u5165\u308a\u307e\u3059\u3002</p>",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "name": "Text",
+                "text": "<p>\u304a\u77e5\u3089\u305b</p>",
+                "model": "text",
+                "classes": [
+                    "text-12"
+                ],
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "spacer": {
+                "jcr:primaryType": "nt:unstructured",
+                "name": "Spacer",
+                "model": "spacer",
+                "classes": "spacer-50",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "text_0": {
+                "jcr:primaryType": "nt:unstructured",
+                "name": "Text",
+                "text": "<p>\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002\u672c\u6587\u304c\u5165\u308a\u307e\u3059\u3002</p>",
+                "model": "text",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "imageAlt": "\u30cb\u30e5\u30fc\u30b9\u753b\u50cf",
+                "name": "Image",
+                "image": "/content/dam/ykk/asset.jpg",
+                "model": "image",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "spacer_0": {
+                "jcr:primaryType": "nt:unstructured",
+                "name": "Spacer",
+                "model": "spacer",
+                "classes": "spacer-40",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "button": {
+                "jcr:primaryType": "nt:unstructured",
+                "name": "Button",
+                "text": "\u8a73\u3057\u304f\u898b\u308b",
+                "model": "button",
+                "classes": [
+                    "button8"
+                ],
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            }
+        }
+    }
+}

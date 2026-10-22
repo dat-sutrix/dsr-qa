@@ -1,0 +1,442 @@
+{
+ "source": "https://main--dsr-eds-dev--sutrix-projects.aem.page/component-*.json (last-modified Thu, 22 Oct 2026 08:25:17 GMT)",
+ "section_filter": {
+  "id": "section",
+  "components": [
+   "text",
+   "image",
+   "button",
+   "title",
+   "accordion",
+   "carousel",
+   "embed",
+   "form",
+   "hero",
+   "cards",
+   "columns",
+   "fragment",
+   "quote",
+   "search",
+   "search-form",
+   "table",
+   "tabs",
+   "video",
+   "catalog",
+   "spacer",
+   "news-list",
+   "listing",
+   "product-condition-search",
+   "product-list",
+   "product-detail",
+   "video-detail",
+   "catalog-detail",
+   "spin-set",
+   "image-zoom",
+   "real-3d-model",
+   "my-list",
+   "add-to-my-list",
+   "shared-list",
+   "wireframe-hero",
+   "wireframe-overview",
+   "wireframe-page-structure",
+   "wireframe-feature",
+   "hubspot-form",
+   "profile",
+   "steps",
+   "article-meta",
+   "section-divider",
+   "related-articles",
+   "related-cases",
+   "related-product",
+   "product-intro",
+   "product-intro-detail",
+   "search-area",
+   "breadcrumb",
+   "top-page",
+   "showroom",
+   "showroom-floor",
+   "booth-top",
+   "booth-item",
+   "related-content",
+   "eco-carousel"
+  ]
+ },
+ "models": [
+  {
+   "id": "image",
+   "fields": [
+    {
+     "component": "reference",
+     "valueType": "string",
+     "name": "image",
+     "label": "Image — 画像",
+     "multi": false
+    },
+    {
+     "component": "text",
+     "valueType": "string",
+     "name": "imageAlt",
+     "value": "",
+     "label": "Alt Text — ALTテキスト領域"
+    },
+    {
+     "component": "aem-content",
+     "name": "imageLink",
+     "label": "Link — リンク (optional)"
+    },
+    {
+     "component": "multiselect",
+     "valueType": "string",
+     "name": "classes",
+     "label": "Options",
+     "options": [
+      {
+       "name": "外部アイコン — External link icon",
+       "value": "external-link"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "fields": [
+    {
+     "component": "richtext",
+     "valueType": "string",
+     "name": "title",
+     "value": "",
+     "label": "Title — 見出しテキスト"
+    },
+    {
+     "component": "select",
+     "valueType": "string",
+     "name": "level",
+     "value": "h2",
+     "label": "Title Type — 見出しレベル",
+     "options": [
+      {
+       "name": "h1 — 通常ページ・ストーリー用タイトル",
+       "value": "h1"
+      },
+      {
+       "name": "h2 — ストーリー用セクション見出し",
+       "value": "h2"
+      },
+      {
+       "name": "h3 — ストーリー用セクション見出し",
+       "value": "h3"
+      },
+      {
+       "name": "h4",
+       "value": "h4"
+      },
+      {
+       "name": "h5",
+       "value": "h5"
+      },
+      {
+       "name": "h6",
+       "value": "h6"
+      }
+     ]
+    },
+    {
+     "component": "multiselect",
+     "valueType": "string",
+     "name": "classes",
+     "label": "Style — 表示位置・下線",
+     "description": "下線 is specified for h2/h3 only in the design library.",
+     "options": [
+      {
+       "name": "表示位置 左 — Align left",
+       "value": "align-left"
+      },
+      {
+       "name": "表示位置 中 — Align center",
+       "value": "align-center"
+      },
+      {
+       "name": "表示位置 右 — Align right",
+       "value": "align-right"
+      },
+      {
+       "name": "下線 — Underline",
+       "value": "underline"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "text",
+   "fields": [
+    {
+     "component": "richtext",
+     "valueType": "string",
+     "name": "text",
+     "value": "",
+     "label": "Text — テキスト領域",
+     "description": "リンクはテキストを選択して設定します（複数可・別タブ表示可）。"
+    },
+    {
+     "component": "multiselect",
+     "valueType": "string",
+     "name": "classes",
+     "label": "Style — ウエイト・サイズ・表示位置・下線",
+     "options": [
+      {
+       "name": "ウエイト Bold",
+       "value": "text-bold"
+      },
+      {
+       "name": "サイズ 12px",
+       "value": "text-12"
+      },
+      {
+       "name": "サイズ 14px（標準）",
+       "value": "text-14"
+      },
+      {
+       "name": "サイズ 16px",
+       "value": "text-16"
+      },
+      {
+       "name": "サイズ 18px",
+       "value": "text-18"
+      },
+      {
+       "name": "サイズ 20px",
+       "value": "text-20"
+      },
+      {
+       "name": "表示位置 左",
+       "value": "align-left"
+      },
+      {
+       "name": "表示位置 中",
+       "value": "align-center"
+      },
+      {
+       "name": "表示位置 右",
+       "value": "align-right"
+      },
+      {
+       "name": "下線",
+       "value": "text-underline"
+      },
+      {
+       "name": "別タブ表示リンク — Open links in a new tab",
+       "value": "links-new-tab"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "button",
+   "fields": [
+    {
+     "component": "text",
+     "valueType": "string",
+     "name": "text",
+     "value": "",
+     "label": "Text — テキスト領域"
+    },
+    {
+     "component": "aem-content",
+     "name": "link",
+     "label": "Link — LINK（内部・外部あり）"
+    },
+    {
+     "component": "multiselect",
+     "valueType": "string",
+     "name": "classes",
+     "label": "Style — ボタン種別",
+     "description": "種別は1つだけ選択してください。外部アイコンは併用できます。",
+     "options": [
+      {
+       "name": "Button1 Primary",
+       "value": "primary"
+      },
+      {
+       "name": "Button2 Secondary",
+       "value": "secondary"
+      },
+      {
+       "name": "Button3 Secondary_small",
+       "value": "secondary-small"
+      },
+      {
+       "name": "Button4 Teriary",
+       "value": "teriary"
+      },
+      {
+       "name": "Button5 (VIEW ALL STORIES)",
+       "value": "button5"
+      },
+      {
+       "name": "Button6 (CLEAR)",
+       "value": "button6"
+      },
+      {
+       "name": "ボタンリンク (CMP-XXX)",
+       "value": "button-link"
+      },
+      {
+       "name": "Button8 (詳しく見る)",
+       "value": "button8"
+      },
+      {
+       "name": "外部アイコン — External icon",
+       "value": "external-link"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "section",
+   "fields": [
+    {
+     "component": "text",
+     "name": "name",
+     "label": "Section Name",
+     "description": "The label shown for this section in the Content Tree"
+    },
+    {
+     "component": "multiselect",
+     "name": "style",
+     "label": "Style",
+     "description": "Pick at most one width. Default is 1240px.",
+     "options": [
+      {
+       "name": "1240px — コンテナブロック (default)",
+       "value": "w-1240"
+      },
+      {
+       "name": "960px — 記事全体コンテナブロック",
+       "value": "w-960"
+      },
+      {
+       "name": "744px — 記事本文コンテナブロック",
+       "value": "w-744"
+      },
+      {
+       "name": "Full bleed (no width cap)",
+       "value": "full-bleed"
+      },
+      {
+       "name": "2カラム — 60 / 40",
+       "value": "ratio-60-40"
+      },
+      {
+       "name": "2カラム — 40 / 60",
+       "value": "ratio-40-60"
+      },
+      {
+       "name": "2カラム — 70 / 30",
+       "value": "ratio-70-30"
+      },
+      {
+       "name": "2カラム — 30 / 70",
+       "value": "ratio-30-70"
+      },
+      {
+       "name": "3カラム — 50 / 25 / 25",
+       "value": "ratio-50-25-25"
+      },
+      {
+       "name": "3カラム — 25 / 50 / 25",
+       "value": "ratio-25-50-25"
+      },
+      {
+       "name": "3カラム — 25 / 25 / 50",
+       "value": "ratio-25-25-50"
+      },
+      {
+       "name": "表示位置 左 — Align left",
+       "value": "align-left"
+      },
+      {
+       "name": "表示位置 中 — Align center",
+       "value": "align-center"
+      },
+      {
+       "name": "表示位置 右 — Align right",
+       "value": "align-right"
+      },
+      {
+       "name": "見出し下線 — Heading underline (h2/h3)",
+       "value": "heading-underline"
+      },
+      {
+       "name": "Highlight",
+       "value": "highlight"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "article-meta",
+   "fields": [
+    {
+     "component": "text",
+     "valueType": "string",
+     "name": "date",
+     "value": "",
+     "label": "Date — 日付",
+     "description": "例: 2026.03.13"
+    },
+    {
+     "component": "multiselect",
+     "valueType": "string",
+     "name": "classes",
+     "label": "Options",
+     "options": [
+      {
+       "name": "マイリストボタンを非表示",
+       "value": "no-mylist"
+      },
+      {
+       "name": "シェアを非表示",
+       "value": "no-share"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "spacer",
+   "fields": [
+    {
+     "component": "select",
+     "valueType": "string",
+     "name": "classes",
+     "value": "spacer-40",
+     "label": "Height — 高さ",
+     "options": [
+      {
+       "name": "80px",
+       "value": "spacer-80"
+      },
+      {
+       "name": "50px",
+       "value": "spacer-50"
+      },
+      {
+       "name": "40px",
+       "value": "spacer-40"
+      },
+      {
+       "name": "10px",
+       "value": "spacer-10"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "news-detail_model_present": false
+}

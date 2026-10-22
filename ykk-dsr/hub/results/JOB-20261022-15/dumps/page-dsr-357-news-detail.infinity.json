@@ -1,0 +1,197 @@
+{
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+        "mix:referenceable",
+        "mix:versionable",
+        "cq:ReplicationStatus2"
+    ],
+    "jcr:createdBy": "<email>",
+    "jcr:title": "DSR-357 News-Detail",
+    "cq:lastReplicatedBy_publish": "<email>",
+    "cq:isDelivered": false,
+    "jcr:versionHistory": "64880b14-e41f-46b6-9d72-0397cd9aa318",
+    "cq:template": "/libs/core/franklin/templates/page",
+    "jcr:lastModifiedBy": "<email>",
+    "cq:lastReplicationAction_publish": "Activate",
+    "jcr:predecessors": [
+        "eaf1a234-94d2-42cd-ae33-e0042d20f28e"
+    ],
+    "jcr:created": "Tue Sep 29 2026 03:34:51 GMT+0000",
+    "cq:lastModified": "Tue Sep 29 2026 04:26:07 GMT+0000",
+    "modelFields": [
+        "navtitle@text",
+        "robots@select",
+        "template@select",
+        "keywords@text",
+        "publicationdate@date-time",
+        "category@select",
+        "tags@aem-tag",
+        "caseitem@text",
+        "caseuse@text",
+        "caseissue@text",
+        "caseproduct@text",
+        "og:title@text",
+        "og:description@text",
+        "og:image@reference",
+        "showheader@boolean",
+        "showbreadcrumb@boolean",
+        "showfooter@boolean"
+    ],
+    "jcr:baseVersion": "eaf1a234-94d2-42cd-ae33-e0042d20f28e",
+    "jcr:isCheckedOut": true,
+    "showbreadcrumb": true,
+    "jcr:lastModified": "Tue Sep 29 2026 04:03:34 GMT+0000",
+    "jcr:uuid": "0e9330c6-437e-4b0f-b003-970882b19d01",
+    "sling:resourceType": "core/franklin/components/page/v1/page",
+    "showfooter": true,
+    "showheader": true,
+    "cq:lastReplicated_publish": "Tue Sep 29 2026 04:17:59 GMT+0000",
+    "cq:lastModifiedBy": "<email>",
+    "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "core/franklin/components/root/v1/root",
+        "section": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "core/franklin/components/section/v1/section",
+            "article_meta": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "article-meta",
+                "jcr:created": "Tue Sep 29 2026 04:04:25 GMT+0000",
+                "date": "2026.03.30",
+                "name": "Article Meta",
+                "model": "article-meta",
+                "modelFields": [
+                    "date@text",
+                    "classes@multiselect"
+                ],
+                "classes": [
+                    "no-mylist",
+                    "no-share"
+                ],
+                "jcr:lastModified": "Tue Sep 29 2026 04:05:21 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "news_detail": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "news-detail",
+                "jcr:created": "Tue Sep 29 2026 03:37:46 GMT+0000",
+                "body": "<p>YKK \u30ed\u30f3\u30c9\u30f3\u30b7\u30e7\u30fc\u30eb\u30fc\u30e0\u3092\u306f\u3058\u3081\u306b\u3001YKK\u88fd\u54c1\u3092\u4f53\u9a13\u3067\u304d\u308b\u65bd\u8a2d\u3092\u3054\u7d39\u4ecb\u3057\u3066\u3044\u307e\u3059\u3002High Fashion \u00d7 Sustainability \u9ad8\u7d1a\u30d5\u30a1\u30c3\u30b7\u30e7\u30f3\u3068\u6301\u7d9a\u53ef\u80fd\u6027\u306e\u51fa\u4f1a\u3044\u3002\u30f4\u30a7\u30cd\u30c4\u30a3\u30a2\u5efa\u7bc9\u5927\u5b66(IUAV)\u3068\u306e\u5171\u540c\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u3066\u767a\u8868\u3057\u305f\u5b66\u751f\u306e\u4f5c\u54c1\u3067\u3059\u3002\u2028\u30d5\u30a1\u30b9\u30cb\u30f3\u30b0\u5546\u54c1\u306e\u7279\u6027\u3092\u6d3b\u304b\u3057\u305f\u4f5c\u54c1\u3092\u3054\u89a7\u304f\u3060\u3055\u3044\u3002</p>",
+                "name": "News Detail",
+                "category": "news",
+                "model": "news-detail",
+                "modelFields": [
+                    "category@select",
+                    "title@text"
+                ],
+                "title": "\u300cYKK EXPERIENCE\u300d\u30da\u30fc\u30b8\u3092\u516c\u958b\u3057\u307e\u3057\u305f\u3002",
+                "classes": "spacer-40",
+                "jcr:lastModified": "Tue Sep 29 2026 04:26:07 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "spacer_340101424": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "spacer",
+                "jcr:created": "Tue Sep 29 2026 04:15:27 GMT+0000",
+                "name": "Spacer",
+                "model": "spacer",
+                "modelFields": [
+                    "classes@select"
+                ],
+                "classes": "spacer-80",
+                "jcr:lastModified": "Tue Sep 29 2026 04:15:45 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "text",
+                "jcr:created": "Tue Sep 29 2026 03:58:15 GMT+0000",
+                "name": "Text",
+                "text": "<p>YKK \u30ed\u30f3\u30c9\u30f3\u30b7\u30e7\u30fc\u30eb\u30fc\u30e0\u3092\u306f\u3058\u3081\u306b\u3001YKK\u88fd\u54c1\u3092\u4f53\u9a13\u3067\u304d\u308b\u65bd\u8a2d\u3092\u3054\u7d39\u4ecb\u3057\u3066\u3044\u307e\u3059\u3002High Fashion \u00d7 Sustainability \u9ad8\u7d1a\u30d5\u30a1\u30c3\u30b7\u30e7\u30f3\u3068\u6301\u7d9a\u53ef\u80fd\u6027\u306e\u51fa\u4f1a\u3044\u3002\u30f4\u30a7\u30cd\u30c4\u30a3\u30a2\u5efa\u7bc9\u5927\u5b66(IUAV)\u3068\u306e\u5171\u540c\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u3066\u767a\u8868\u3057\u305f\u5b66\u751f\u306e\u4f5c\u54c1\u3067\u3059\u3002\u2028\u30d5\u30a1\u30b9\u30cb\u30f3\u30b0\u5546\u54c1\u306e\u7279\u6027\u3092\u6d3b\u304b\u3057\u305f\u4f5c\u54c1\u3092\u3054\u89a7\u304f\u3060\u3055\u3044\u3002</p>",
+                "model": "text",
+                "modelFields": [
+                    "text@richtext",
+                    "classes@multiselect"
+                ],
+                "jcr:lastModified": "Tue Sep 29 2026 03:58:27 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "spacer": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "spacer",
+                "jcr:created": "Tue Sep 29 2026 04:15:27 GMT+0000",
+                "name": "Spacer",
+                "model": "spacer",
+                "modelFields": [
+                    "classes@select"
+                ],
+                "classes": "spacer-40",
+                "jcr:lastModified": "Tue Sep 29 2026 04:17:49 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "image",
+                "jcr:created": "Tue Sep 29 2026 04:00:01 GMT+0000",
+                "name": "Image",
+                "image": "/content/dam/ykk/digital-showroom/e16c7df925c1984349883ef02dfb9dfeb61bde57.png",
+                "model": "image",
+                "modelFields": [
+                    "image@reference",
+                    "imageAlt@text",
+                    "imageLink@aem-content",
+                    "classes@multiselect"
+                ],
+                "jcr:lastModified": "Tue Sep 29 2026 04:00:18 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "spacer_58118510": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "spacer",
+                "jcr:created": "Tue Sep 29 2026 04:15:27 GMT+0000",
+                "name": "Spacer",
+                "model": "spacer",
+                "modelFields": [
+                    "classes@select"
+                ],
+                "classes": "spacer-80",
+                "jcr:lastModified": "Tue Sep 29 2026 04:15:45 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            },
+            "button": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "<email>",
+                "jcr:lastModifiedBy": "<email>",
+                "aueComponentId": "button",
+                "jcr:created": "Tue Sep 29 2026 04:01:00 GMT+0000",
+                "link": "google.com",
+                "name": "Button",
+                "text": "\u8a73\u3057\u304f\u898b\u308b",
+                "model": "button",
+                "modelFields": [
+                    "text@text",
+                    "link@aem-content",
+                    "classes@multiselect"
+                ],
+                "classes": [
+                    "button8"
+                ],
+                "jcr:lastModified": "Tue Sep 29 2026 04:03:16 GMT+0000",
+                "sling:resourceType": "core/franklin/components/block/v1/block"
+            }
+        }
+    }
+}
