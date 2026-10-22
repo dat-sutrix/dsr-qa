@@ -1,0 +1,78 @@
+[
+  {
+    "lang": "ja",
+    "device": "PC",
+    "before": "evidence/DSR-587/baseline-20261021/qa-587-main_ja_PC.png",
+    "after": "evidence/DSR-587/baseline-20261022/qa587-main_ja_PC.png",
+    "dimensions": [
+      {
+        "width": 1440,
+        "height": 1442
+      },
+      {
+        "width": 1440,
+        "height": 1442
+      }
+    ],
+    "differentPixels": 0,
+    "totalPixels": 2076480,
+    "percent": 0
+  },
+  {
+    "lang": "ja",
+    "device": "SP",
+    "before": "evidence/DSR-587/baseline-20261021/qa-587-main_ja_SP.png",
+    "after": "evidence/DSR-587/baseline-20261022/qa587-main_ja_SP.png",
+    "dimensions": [
+      {
+        "width": 375,
+        "height": 1406
+      },
+      {
+        "width": 375,
+        "height": 1406
+      }
+    ],
+    "differentPixels": 0,
+    "totalPixels": 527250,
+    "percent": 0
+  },
+  {
+    "lang": "en",
+    "device": "PC",
+    "before": "evidence/DSR-587/baseline-20261021/qa-587-main_en_PC.png",
+    "after": "evidence/DSR-587/baseline-20261022/qa587-main_en_PC.png",
+    "dimensions": [
+      {
+        "width": 1440,
+        "height": 1442
+      },
+      {
+        "width": 1440,
+        "height": 1442
+      }
+    ],
+    "differentPixels": 3959,
+    "totalPixels": 2076480,
+    "percent": 0.19065919247958082
+  },
+  {
+    "lang": "en",
+    "device": "SP",
+    "before": "evidence/DSR-587/baseline-20261021/qa-587-main_en_SP.png",
+    "after": "evidence/DSR-587/baseline-20261022/qa587-main_en_SP.png",
+    "dimensions": [
+      {
+        "width": 375,
+        "height": 1406
+      },
+      {
+        "width": 375,
+        "height": 1406
+      }
+    ],
+    "differentPixels": 2402,
+    "totalPixels": 527250,
+    "percent": 0.4555713608345187
+  }
+]

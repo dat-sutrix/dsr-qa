@@ -1,0 +1,48 @@
+[
+  {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+    "responses": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+        "status": 404
+      }
+    ],
+    "console": [
+      {
+        "text": "Failed to load resource: the server responded with a status of 404 ()",
+        "location": {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "status": 404,
+    "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa-587-main"
+  },
+  {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+    "responses": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+        "status": 404
+      }
+    ],
+    "console": [
+      {
+        "text": "Failed to load resource: the server responded with a status of 404 ()",
+        "location": {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "status": 404,
+    "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa-587-main"
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "started": "2026-10-22T00:59:48.420Z",
+  "finished": "2026-10-22T01:00:24.999Z",
+  "records": [
+    {
+      "lang": "ja",
+      "device": "PC",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa587-main",
+      "errors": [
+        {
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "responses": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video",
+          "status": 404
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "製品情報\nライブラリー\nギャラリー\nYKKについて\nファスナーについて\nニュース\nマイリスト\nマイページ\nお問い合わせ\nJP\n販売地域/拠点を選択する\nHOME\nライブラリー\nQA587 main movie | YKK DIGITAL SHOWROOM\n動画一覧へ戻る\n動画\nQA587 main movie\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261022/qa587-main_ja_PC.png"
+    },
+    {
+      "lang": "ja",
+      "device": "SP",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa587-main",
+      "errors": [
+        {
+          "text": "Failed to load resource: the server responded with a status of 404 ()",
+          "location": {
+            "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ],
+      "responses": [
+        {
+          "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video",
+          "status": 404
+        }
+      ],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "HOME\nライブラリー\nQA587 main movie | YKK DIGITAL SHOWROOM\n動画\nQA587 main movie\n\n他のYKKサイト\n他のYKKアカウント\n拠点紹介\nYKKの商標登録\nご利用規約\nYKKグループ個人情報保護方針\nプライバシー・ステートメント\nクッキーの設定\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261022/qa587-main_ja_SP.png"
+    },
+    {
+      "lang": "en",
+      "device": "PC",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main",
+      "errors": [],
+      "responses": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "Products\nLibrary\nGallery\nAbout YKK\nAbout Fasteners\nMy List\nMy Page\nContact\nEN\nSelect Region / Location\nHOME\nlibrary\nvideo\nQA587 main movie | YKK DIGITAL SHOWROOM\nBack to video list\nMOVIE\nQA587 main movie\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261022/qa587-main_en_PC.png"
+    },
+    {
+      "lang": "en",
+      "device": "SP",
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main",
+      "errors": [],
+      "responses": [],
+      "httpStatus": 200,
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-main",
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "text": "HOME\nlibrary\nvideo\nQA587 main movie | YKK DIGITAL SHOWROOM\nMOVIE\nQA587 main movie\n\nOther YKK sites\nOther YKK accounts\nLocations\nYKK Trademarks\nTerms of Use\nYKK Group Privacy Policy\nPrivacy Statement\nCookie settings\n\nCopyright©2021 YKK Corporation. All Rights Reserved.",
+      "evidence": "evidence/DSR-587/baseline-20261022/qa587-main_en_SP.png"
+    }
+  ]
+}
