@@ -1,0 +1,3611 @@
+{
+ "job": "JOB-ZZ-IDLE-30",
+ "agent": "claude-code",
+ "us": "regression",
+ "env": "dev",
+ "started": "2026-10-22T01:11:30Z",
+ "finished": "2026-10-22T01:35:33Z",
+ "status": "done",
+ "totals": {
+  "total": 461,
+  "passed": 179,
+  "failed": 86,
+  "skipped": 196,
+  "flaky": 1,
+  "exit_code": 1
+ },
+ "compared_with": "JOB-ZZ-IDLE-28",
+ "changes": [
+  {
+   "tests": "DSR-ARTICLE-002/006/028 ja/en",
+   "before": "fail",
+   "now": "pass",
+   "cause": "data Night 21/10",
+   "confidence": null,
+   "note": "qa529-01 republished 21/10 15:09-15:10Z"
+  },
+  {
+   "tests": "DSR-ARTICLE-016 ja",
+   "before": "fail (qa529-01 noindex)",
+   "now": "fail (qa529-02 no robots)",
+   "cause": "data Night 21/10",
+   "confidence": 40
+  },
+  {
+   "tests": "DSR-ARTICLE-023 ja",
+   "before": "fail (heading 32px)",
+   "now": "fail (block 282px)",
+   "cause": "data Night 21/10",
+   "confidence": 50
+  },
+  {
+   "tests": "DSR-VOV-001/014/015/018, DSR-501-P3 (647 retest)",
+   "before": "skip",
+   "now": "pass",
+   "cause": "data Night 21/10",
+   "confidence": null
+  },
+  {
+   "tests": "DSR-VOV-003 ja/en",
+   "before": "skip",
+   "now": "fail",
+   "cause": "overlay auto-gen",
+   "confidence": 75,
+   "note": "og:image = about:error"
+  },
+  {
+   "tests": "DSR-VOV-011 ja/en, VOV-013 en",
+   "before": "fail 404 / absent",
+   "now": "fail (video-detail, no listing)",
+   "cause": "overlay auto-gen",
+   "confidence": 65,
+   "note": "video/search republished 22/10 01:04Z"
+  },
+  {
+   "tests": "DSR-CATOV-001/015-019 ja/en",
+   "before": "skip/absent",
+   "now": "fail (block empty)",
+   "cause": "overlay auto-gen",
+   "confidence": 70
+  },
+  {
+   "tests": "DSR-CATOV-002 ja/en x4",
+   "before": "skip",
+   "now": "fail (CF title != TD)",
+   "cause": "data Night 21/10",
+   "confidence": 20
+  },
+  {
+   "tests": "DSR-CATOV-021 ja/en x4",
+   "before": "absent",
+   "now": "fail (0 sitemap loc)",
+   "cause": "overlay auto-gen",
+   "confidence": 50
+  },
+  {
+   "tests": "DSR-CATOV-012 en",
+   "before": "absent",
+   "now": "fail (href = DAM PDF)",
+   "cause": "overlay auto-gen",
+   "confidence": 60
+  },
+  {
+   "tests": "DSR-CATOV-003/004/006/007/008/010/011",
+   "before": "fail/skip",
+   "now": "pass",
+   "cause": "overlay auto-gen",
+   "confidence": null
+  },
+  {
+   "tests": "DSR-CATDL-006/007/010/018, DSR-CATV-017",
+   "before": "fail/pass",
+   "now": "skip blocked-data",
+   "cause": "none",
+   "confidence": null,
+   "note": "spec preflight: requiresForm=false in content CF"
+  },
+  {
+   "tests": "DSR-ASSET-016 ja",
+   "before": "skip",
+   "now": "pass",
+   "cause": "data Night 21/10",
+   "confidence": null
+  },
+  {
+   "tests": "DSR-MOVIE-014 en",
+   "before": "fail",
+   "now": "fail (new reason)",
+   "cause": "none",
+   "confidence": 30,
+   "note": "spec change: facade step"
+  },
+  {
+   "tests": "DSR-PLSP-005 ja",
+   "before": "fail",
+   "now": "fail (timeout)",
+   "cause": "none",
+   "confidence": 20
+  },
+  {
+   "tests": "article fix merge",
+   "before": "-",
+   "now": "-",
+   "cause": "article fix merge",
+   "confidence": null,
+   "note": "no result changed by it since IDLE-28 (merge was already in IDLE-28)"
+  }
+ ],
+ "dsr638_url_check": {
+  "checked": "2026-10-22T01:11Z",
+  "mode_used_in_run": "v1 (DSR_PATHS unset)",
+  "old_paths": "all ja old paths still 200 on .page and .live; en test-space video-list/product-list/article-list/actual-cases 404 (pre-existing, DSR-638 is ja only)",
+  "new_paths_404_on_live": [
+   "/ja/library/catalog (404 .page + .live)",
+   "/ja/product/performance/sustainable/product-index (.page 200)",
+   "/ja/library/article (.page 200)",
+   "/ja/product/application/industrial/actual-cases (.page 200)",
+   "/ja/product/search (.page 200)",
+   "/ja/product/select (.page 200)"
+  ],
+  "new_path_wrong_block": [
+   "/ja/library/video/search: 200 but video-detail block, not listing"
+  ],
+  "specs_broken_by_move_now": [],
+  "specs_broken_if_v2": [
+   "DSR-557 catalog-video (catalogPath -> /ja/library/catalog)",
+   "DSR-570 catalog-download (listPath -> /ja/library/catalog)",
+   "DSR-583 product-list (primary product-index, fallback /ja/product/search: both .live 404)",
+   "DSR-589 icons (2nd list path /ja/product/search .live 404; 1st /master/ja/product-list 404)"
+  ],
+  "specs_hitting_list_path_directly": [
+   "DSR-587 movie-overlay VOV-011/013 (/ja|en/library/video/search: listing gone)",
+   "DSR-654 CATOV-012 ja (/ja/library/catalog 404 -> skip)"
+  ],
+  "other_404_base_paths_not_638": [
+   "/master/ja/test-space/dsr-357-news-detail (DSR-566 ja)",
+   "/master/ja/product-list (DSR-583 fallback, DSR-589 1st path)",
+   "/ja/library/article/stories/qa529-01 (DSR-529 idle27-capture)",
+   "/en/library/video/tech-talk (DSR-587)",
+   "/ja|en/library/catalog/search (DSR-654 CATOV-007)"
+  ]
+ },
+ "tests": [
+  {
+   "tc": "DSR-ARTICLE-001",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-001 [ja] page creation with article template (Author, BAC#1)",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+  },
+  {
+   "tc": "DSR-ARTICLE-004",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-004 [ja] article-specific info not editable in body (Author, BAC#5)",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+  },
+  {
+   "tc": "DSR-ARTICLE-005",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-005 [ja] author-editable areas 4/5/6/9/11 (Author, BAC#1)",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+  },
+  {
+   "tc": "DSR-ARTICLE-021",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-021 [ja] related stories picker max 3, stories only (Author)",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+  },
+  {
+   "tc": "DSR-ARTICLE-032",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-032 [ja] required page properties validation (Author, negative)",
+   "result": "skip",
+   "error": "Manual TC (Author / Universal Editor) – documented only, not automated (read-only rule)"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-030 [ja] visual PC 1440 vs Figma",
+   "result": "skip",
+   "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-031 [ja] visual SP 390 vs Figma",
+   "result": "skip",
+   "error": "Visual TC – Figma PC/SP design frames missing, only spec board 162-450 (owner: Dat)"
+  },
+  {
+   "tc": "DSR-ARTICLE-017",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-017 [ja] related stories cards r1..r3 (block 12)",
+   "result": "skip",
+   "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 (helix-query.yaml) / Q7"
+  },
+  {
+   "tc": "DSR-ARTICLE-018",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-018 [ja] related stories NEW icon on r1 only",
+   "result": "skip",
+   "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; NEW period Q6"
+  },
+  {
+   "tc": "DSR-ARTICLE-019",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-019 [ja] related stories max 3, missing path skipped (qa529-04)",
+   "result": "skip",
+   "error": "Blocked: Stories index not on DEV yet – Martin prereq #1 / Q7; TD-529-04 not seeded"
+  },
+  {
+   "tc": "DSR-ARTICLE-022",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-022 [ja] related items cards from product index (block 13)",
+   "result": "skip",
+   "error": "Blocked: 製品index relatedArticles/sortOrder not defined – 製品詳細 ticket (Martin prereq #3)"
+  },
+  {
+   "tc": "DSR-ARTICLE-027",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-027 [ja] published article appears in article list",
+   "result": "skip",
+   "error": "Blocked: Article list DSR-170 (out of scope) + stories index"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "cn",
+   "title": "DSR-ARTICLE-029 [cn] language page (cn)",
+   "result": "skip",
+   "error": "Blocked: no /master/cn on DEV (Issue #18) – all cn rows"
+  },
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-002 [ja] blocks in design order 3→4→5→6→7→9→11→12→13→14, no console error",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-003 [ja] title block = TD title, one h1, <title> = title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-006 [ja] info bar shows 2 tag labels, not raw tag IDs",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-007 [ja] info bar date = meta publicationdate, format YYYY.MM.DD",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-008 [ja] My List button and share icons visible/enabled; share href has encoded page URL (no click)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-010 [ja] meta publicationdate / updatedate ISO 8601, one each; update date not visible",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-011 [ja] meta thumbnail: 1, absolute, no transform params, GET 200 image/*",
+   "result": "fail",
+   "error": "Error: absolute URL expect(received).toMatch(expected) Expected pattern: /^https?:\\/\\// Received string: \"/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png\"",
+   "cause": "none",
+   "confidence": 85,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-6152a-sform-params-GET-200-image--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-012 [ja] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible",
+   "result": "fail",
+   "error": "Error: category meta count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "confidence": 30,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-8b907-529kw1-qa529kw2-not-visible-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-013 [ja] meta related-stories = r1,r2,r3 in order",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-014 [ja] title/description/OGP/publicationdate/thumbnail/category exactly once, non-empty",
+   "result": "fail",
+   "error": "Error: category count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "confidence": 30,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-00408-gory-exactly-once-non-empty-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-016 [ja] robots: qa529-02 noindex,nofollow; qa529-01 no noindex",
+   "result": "fail",
+   "error": "Error: qa529-02 robots expect(received).toMatch(expected) Expected pattern: /noindex/i Received string: \"\"",
+   "cause": "data Night 21/10",
+   "confidence": 40,
+   "suspect": "data",
+   "evidence": "evidence/DSR-ARTICLE-016_ja.png"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-024 [ja] VIEW ALL STORIES + Contact visible; hrefs recorded",
+   "result": "fail",
+   "error": "Error: viewAllStories href expect(received).not.toMatch(expected) Expected pattern: not /^(#?)$/ Received string: \"#\"",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "test",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-54265-tact-visible-hrefs-recorded-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-026 [ja] stories query-index contains qa529-01 with 6 properties",
+   "result": "skip",
+   "error": "blocked-data: no stories query-index returns 200 (/ja/stories/query-index.json, /master/ja/stories/query-index.json, /master/ja/library/article/stories/query-index.json)"
+  },
+  {
+   "tc": "DSR-ARTICLE-028",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-028 [ja] breadcrumb present; last item = navtitle (no link); earlier items link",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-029 [ja] language page: 200, title/info bar in ja, <html lang>=ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "en",
+   "title": "DSR-ARTICLE-002 [en] blocks in design order 3→4→5→6→7→9→11→12→13→14, no console error",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "en",
+   "title": "DSR-ARTICLE-003 [en] title block = TD title, one h1, <title> = title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "en",
+   "title": "DSR-ARTICLE-006 [en] info bar shows 2 tag labels, not raw tag IDs",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "en",
+   "title": "DSR-ARTICLE-007 [en] info bar date = meta publicationdate, format YYYY.MM.DD",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "en",
+   "title": "DSR-ARTICLE-008 [en] My List button and share icons visible/enabled; share href has encoded page URL (no click)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "en",
+   "title": "DSR-ARTICLE-010 [en] meta publicationdate / updatedate ISO 8601, one each; update date not visible",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "en",
+   "title": "DSR-ARTICLE-011 [en] meta thumbnail: 1, absolute, no transform params, GET 200 image/*",
+   "result": "fail",
+   "error": "Error: absolute URL expect(received).toMatch(expected) Expected pattern: /^https?:\\/\\// Received string: \"/content/dam/ykk/digital-showroom/test/png/highres-photo-4000x3000.png\"",
+   "cause": "none",
+   "confidence": 85,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-f0210-sform-params-GET-200-image--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "en",
+   "title": "DSR-ARTICLE-012 [en] meta category = 2 tag IDs (present iff authored); searchkeywords has qa529kw1/qa529kw2, not visible",
+   "result": "fail",
+   "error": "Error: category meta count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "confidence": 30,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-3ce31-529kw1-qa529kw2-not-visible-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "en",
+   "title": "DSR-ARTICLE-013 [en] meta related-stories = r1,r2,r3 in order",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "en",
+   "title": "DSR-ARTICLE-014 [en] title/description/OGP/publicationdate/thumbnail/category exactly once, non-empty",
+   "result": "fail",
+   "error": "Error: category count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "confidence": 30,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-856a2-gory-exactly-once-non-empty-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "en",
+   "title": "DSR-ARTICLE-016 [en] robots: qa529-02 noindex,nofollow; qa529-01 no noindex",
+   "result": "fail",
+   "error": "Error: qa529-01 robots expect(received).not.toMatch(expected) Expected pattern: not /noindex/i Received string: \"noindex, nofollow\"",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "test",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-d945e-ofollow-qa529-01-no-noindex-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "en",
+   "title": "DSR-ARTICLE-024 [en] VIEW ALL STORIES + Contact visible; hrefs recorded",
+   "result": "fail",
+   "error": "Error: viewAllStories href expect(received).not.toMatch(expected) Expected pattern: not /^(#?)$/ Received string: \"#\"",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "test",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/article-detail-DSR-529.art-f5300-tact-visible-hrefs-recorded-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "en",
+   "title": "DSR-ARTICLE-026 [en] stories query-index contains qa529-01 with 6 properties",
+   "result": "skip",
+   "error": "blocked-data: no stories query-index returns 200 (/en/stories/query-index.json, /master/en/stories/query-index.json, /master/en/library/article/stories/query-index.json)"
+  },
+  {
+   "tc": "DSR-ARTICLE-028",
+   "lang": "en",
+   "title": "DSR-ARTICLE-028 [en] breadcrumb present; last item = navtitle (no link); earlier items link",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "en",
+   "title": "DSR-ARTICLE-029 [en] language page: 200, title/info bar in en, <html lang>=en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-015",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-015 [ja] OGP fallback: og:title = title, og:description = description, og:image 200",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-020",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-020 [ja] no related stories block/heading when not specified (トルツメ)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-023",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-023 [ja] no related items block/heading when 0 results (トルツメ)",
+   "result": "fail",
+   "error": "Error: visible related items block expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 6 - Array [] + Array [ + Object { + \"height\": 281.984375, + \"visible\": true, + }, + ]",
+   "cause": "data Night 21/10",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": "evidence/DSR-ARTICLE-023_ja.png"
+  },
+  {
+   "tc": "DSR-ARTICLE-025",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-025 [ja] no empty profile wrapper with height > 0 (トルツメ)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-009",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-009 [ja] My List add → localStorage has page under stories; kept after reload",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "",
+   "title": "DSR-ARTICLE-030 /ja/library/article/stories/qa529-01 1440x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "",
+   "title": "DSR-ARTICLE-031 /ja/library/article/stories/qa529-01 375x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "",
+   "title": "DSR-ARTICLE-030 /en/library/article/stories/qa529-01 1440x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "",
+   "title": "DSR-ARTICLE-031 /en/library/article/stories/qa529-01 375x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "",
+   "title": "DSR-ARTICLE-030 /ja/library/article/stories/qa529-02 1440x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "",
+   "title": "DSR-ARTICLE-031 /ja/library/article/stories/qa529-02 375x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "",
+   "title": "DSR-ARTICLE-030 /ja/library/article 1440x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "",
+   "title": "DSR-ARTICLE-031 /ja/library/article 375x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "",
+   "title": "DSR-ARTICLE-030 /en/library/article 1440x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "",
+   "title": "DSR-ARTICLE-031 /en/library/article 375x900 record only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-030 [ja] qa529-01 1440x900 capture only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-031 [ja] qa529-01 390x844 capture only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "en",
+   "title": "DSR-ARTICLE-030 [en] qa529-01 1440x900 capture only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "en",
+   "title": "DSR-ARTICLE-031 [en] qa529-01 390x844 capture only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-030",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-030 [ja] qa529-02 1440x900 capture only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ARTICLE-031",
+   "lang": "ja",
+   "title": "DSR-ARTICLE-031 [ja] qa529-02 390x844 capture only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ASSET-003",
+   "lang": "ja",
+   "title": "DSR-ASSET-003 [ja] migrated asset paths after the DAM root use lowercase letters, digits and hyphens only",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-009",
+   "lang": "ja",
+   "title": "DSR-ASSET-009 [ja] product page images load from the new DAM (naturalWidth > 0, 200, no legacy/sample path)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-010",
+   "lang": "ja",
+   "title": "DSR-ASSET-010 [ja] product PDFs open from the new DAM (200, application/pdf, size > 0, naming rule)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-012",
+   "lang": "ja",
+   "title": "DSR-ASSET-012 [ja] main image: SP (375, DPR 2) rendition smaller than PC (1440, DPR 1) and not upscaled",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-013",
+   "lang": "ja",
+   "title": "DSR-ASSET-013 [ja] .webp-source image displays in Chromium and WebKit (naturalWidth > 0, 200, image content-type)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-014",
+   "lang": "ja",
+   "title": "DSR-ASSET-014 [ja] migrated assets are reachable without login (fresh context, 200)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-015",
+   "lang": "ja",
+   "title": "DSR-ASSET-015 [ja] migrated content images keep a non-empty alt",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-016",
+   "lang": "ja",
+   "title": "DSR-ASSET-016 [ja] no asset response >= 400 on DEV product pages (query-index, max 50)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ASSET-003",
+   "lang": "en",
+   "title": "DSR-ASSET-003 [en] migrated asset paths after the DAM root use lowercase letters, digits and hyphens only",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-009",
+   "lang": "en",
+   "title": "DSR-ASSET-009 [en] product page images load from the new DAM (naturalWidth > 0, 200, no legacy/sample path)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-010",
+   "lang": "en",
+   "title": "DSR-ASSET-010 [en] product PDFs open from the new DAM (200, application/pdf, size > 0, naming rule)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-012",
+   "lang": "en",
+   "title": "DSR-ASSET-012 [en] main image: SP (375, DPR 2) rendition smaller than PC (1440, DPR 1) and not upscaled",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-013",
+   "lang": "en",
+   "title": "DSR-ASSET-013 [en] .webp-source image displays in Chromium and WebKit (naturalWidth > 0, 200, image content-type)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-014",
+   "lang": "en",
+   "title": "DSR-ASSET-014 [en] migrated assets are reachable without login (fresh context, 200)",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-015",
+   "lang": "en",
+   "title": "DSR-ASSET-015 [en] migrated content images keep a non-empty alt",
+   "result": "skip",
+   "error": "blocked-data: TD-227-02 sample migrated products not delivered (DSR-227 In Progress – Quentin); pre-migration baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-016",
+   "lang": "en",
+   "title": "DSR-ASSET-016 [en] no asset response >= 400 on DEV product pages (query-index, max 50)",
+   "result": "skip",
+   "error": "blocked-data: no /{lang}/products/<digits> row in DEV query-index (TD-227-08, DSR-586 – Martin); fallback page baseline recorded, no verdict"
+  },
+  {
+   "tc": "DSR-ASSET-017",
+   "lang": "",
+   "title": "DSR-ASSET-017 [ja+en] same product uses the same DAM image paths in ja and en",
+   "result": "skip",
+   "error": "blocked-data: no product id published in both ja and en"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "ja",
+   "title": "DSR-BREAD-001 [ja] child trail follows URL hierarchy",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "ja",
+   "title": "DSR-BREAD-005 [ja] grandchild trail follows URL hierarchy",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-002",
+   "lang": "ja",
+   "title": "DSR-BREAD-002 [ja] ancestor links navigate in same tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-011",
+   "lang": "ja",
+   "title": "DSR-BREAD-011 [ja] items equal page titles",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "en",
+   "title": "DSR-BREAD-001 [en] child trail follows URL hierarchy",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "en",
+   "title": "DSR-BREAD-005 [en] grandchild trail follows URL hierarchy",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-002",
+   "lang": "en",
+   "title": "DSR-BREAD-002 [en] ancestor links navigate in same tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-011",
+   "lang": "en",
+   "title": "DSR-BREAD-011 [en] items equal page titles",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-010",
+   "lang": "ja",
+   "title": "DSR-BREAD-010 [ja] display name overrides page title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-010",
+   "lang": "en",
+   "title": "DSR-BREAD-010 [en] display name overrides page title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-014",
+   "lang": "ja",
+   "title": "DSR-BREAD-014 [ja] 100-character display name keeps layout",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-015",
+   "lang": "ja",
+   "title": "DSR-BREAD-015 [ja] special characters in display name are plain text",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "ja",
+   "title": "DSR-BREAD-018 [ja] each language uses its own display names",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "en",
+   "title": "DSR-BREAD-018 [en] each language uses its own display names",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "cn",
+   "title": "DSR-BREAD-018 [cn] each language uses its own display names",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-019",
+   "lang": "",
+   "title": "DSR-BREAD-019 Japanese and Chinese fonts",
+   "result": "skip",
+   "error": "DSR-555 + cn"
+  },
+  {
+   "tc": "DSR-BREAD-021",
+   "lang": "",
+   "title": "DSR-BREAD-021 SP breadcrumb and back control",
+   "result": "skip",
+   "error": "DSR-575 Q5 (SP display)"
+  },
+  {
+   "tc": "DSR-BREAD-022",
+   "lang": "",
+   "title": "DSR-BREAD-022 SP parent navigation",
+   "result": "skip",
+   "error": "DSR-575 Q5 (SP display)"
+  },
+  {
+   "tc": "DSR-BREAD-023",
+   "lang": "",
+   "title": "DSR-BREAD-023 narrow SP overflow",
+   "result": "skip",
+   "error": "DSR-575 Q5 (SP display)"
+  },
+  {
+   "tc": "DSR-BREAD-029",
+   "lang": "",
+   "title": "DSR-BREAD-029 STG Lighthouse performance",
+   "result": "skip",
+   "error": "Run on STG (Lighthouse)"
+  },
+  {
+   "tc": "DSR-BREAD-030",
+   "lang": "",
+   "title": "DSR-BREAD-030 movie breadcrumb regression",
+   "result": "skip",
+   "error": "DSR-536 / movie-detail placement"
+  },
+  {
+   "tc": "DSR-BREAD-033",
+   "lang": "",
+   "title": "DSR-BREAD-033 all page types",
+   "result": "skip",
+   "error": "Layout tickets"
+  },
+  {
+   "tc": "DSR-BREAD-034",
+   "lang": "",
+   "title": "DSR-BREAD-034 responsive movie back control",
+   "result": "skip",
+   "error": "DSR-536 / movie-detail placement"
+  },
+  {
+   "tc": "DSR-BREAD-020",
+   "lang": "",
+   "title": "DSR-BREAD-020 PC breadcrumb baseline",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-032",
+   "lang": "",
+   "title": "DSR-BREAD-032 cross-browser baseline",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-032",
+   "lang": "",
+   "title": "DSR-BREAD-032 cross-browser baseline (firefox)",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveScreenshot(expected) failed Locator: locator('main > [data-auto-block=\"breadcrumb\"]').filter({ has: getByTestId('breadcrumb') }) 865 pixels (ratio 0.02 of all image pixels",
+   "cause": "none",
+   "confidence": 20,
+   "suspect": "env",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/breadcrumb-DSR-552.breadcr-02fb2--032-cross-browser-baseline-firefox/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-BREAD-032",
+   "lang": "",
+   "title": "DSR-BREAD-032 cross-browser baseline (webkit)",
+   "result": "fail",
+   "error": "Error: browserType.launch: ╔══════════════════════════════════════════════════════╗ ║ Host system is missing dependencies to run browsers. ║ ║ Missing libraries: ║ ║ libgtk-4.so.1 ║ ║ libgraphene-1.0.",
+   "cause": "none",
+   "confidence": 20,
+   "suspect": "env",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "",
+   "title": "DSR-BREAD-001 child trail and placement",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-002",
+   "lang": "",
+   "title": "DSR-BREAD-002 ancestor links",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-003",
+   "lang": "",
+   "title": "DSR-BREAD-003 current page is not linked",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-004",
+   "lang": "",
+   "title": "DSR-BREAD-004 HOME label and destination",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "",
+   "title": "DSR-BREAD-005 grandchild trail order",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-006",
+   "lang": "",
+   "title": "DSR-BREAD-006 parent trail",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-007",
+   "lang": "",
+   "title": "DSR-BREAD-007 missing intermediate page",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "",
+   "title": "DSR-BREAD-008 HOME excludes breadcrumb",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-009",
+   "lang": "",
+   "title": "DSR-BREAD-009 404 excludes breadcrumb",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-011",
+   "lang": "",
+   "title": "DSR-BREAD-011 empty label uses title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "",
+   "title": "DSR-BREAD-017 localized HOME destinations",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "",
+   "title": "DSR-BREAD-025 BreadcrumbList structured data",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-027",
+   "lang": "",
+   "title": "DSR-BREAD-027 semantic markup and accessibility",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-028",
+   "lang": "",
+   "title": "DSR-BREAD-028 keyboard navigation",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-031",
+   "lang": "",
+   "title": "DSR-BREAD-031 site-origin console errors",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-035",
+   "lang": "",
+   "title": "DSR-BREAD-035 arrow asset origin and status",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "",
+   "title": "DSR-BREAD-001 child trail and placement",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "",
+   "title": "DSR-BREAD-005 grandchild trail order",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "",
+   "title": "DSR-BREAD-008 HOME excludes breadcrumb",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "",
+   "title": "DSR-BREAD-017 localized HOME destinations",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "",
+   "title": "DSR-BREAD-025 BreadcrumbList structured data",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "",
+   "title": "DSR-BREAD-001 child trail and placement",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "",
+   "title": "DSR-BREAD-005 grandchild trail order",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "",
+   "title": "DSR-BREAD-008 HOME excludes breadcrumb",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "",
+   "title": "DSR-BREAD-017 localized HOME destinations",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "",
+   "title": "DSR-BREAD-025 BreadcrumbList structured data",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-CATDL-014",
+   "lang": "ja",
+   "title": "DSR-CATDL-014 [ja] capture catalog download form at 1440px",
+   "result": "pass",
+   "error": "flaky: passed on retry"
+  },
+  {
+   "tc": "DSR-CATDL-015",
+   "lang": "ja",
+   "title": "DSR-CATDL-015 [ja] capture catalog download form at 375px",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "ja",
+   "title": "DSR-CATDL-001 [ja] catalog detail header renders",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "ja",
+   "title": "DSR-CATDL-002 [ja] download form fields, labels, consent and button present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "ja",
+   "title": "DSR-CATDL-005 [ja] requiresForm=false card downloads PDF directly",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "ja",
+   "title": "DSR-CATDL-006 [ja] requiresForm=true card leads to the download form",
+   "result": "skip",
+   "error": "blocked-data: qa190-cat-pdf-form (ja) requiresForm=false in /content/dam/common/ja/catalogs/qa190-cat-pdf-form; TD expects true – TD-570-03"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "ja",
+   "title": "DSR-CATDL-018 [ja] e-book form card opens ebookUrl without form",
+   "result": "skip",
+   "error": "blocked-data: qa190-cat-ebook-form (ja) requiresForm=false in /content/dam/common/ja/catalogs/qa190-cat-ebook-form; TD expects true – TD-570-04"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "en",
+   "title": "DSR-CATDL-001 [en] catalog detail header renders",
+   "result": "skip",
+   "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404; /en/library/catalog/qa190-cat-pdf-form renders no form"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "en",
+   "title": "DSR-CATDL-002 [en] download form fields, labels, consent and button present",
+   "result": "skip",
+   "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404; /en/library/catalog/qa190-cat-pdf-form renders no form"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "en",
+   "title": "DSR-CATDL-005 [en] requiresForm=false card downloads PDF directly",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "en",
+   "title": "DSR-CATDL-006 [en] requiresForm=true card leads to the download form",
+   "result": "skip",
+   "error": "blocked-data: qa190-cat-pdf-form (en) requiresForm=false in /content/dam/common/en/catalogs/qa190-cat-pdf-form; TD expects true – TD-570-03"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "en",
+   "title": "DSR-CATDL-018 [en] e-book form card opens ebookUrl without form",
+   "result": "skip",
+   "error": "blocked-data: qa190-cat-ebook-form (en) requiresForm=false in /content/dam/common/en/catalogs/qa190-cat-ebook-form; TD expects true – TD-570-04"
+  },
+  {
+   "tc": "DSR-CATDL-003",
+   "lang": "ja",
+   "title": "DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-007",
+   "lang": "ja",
+   "title": "DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit",
+   "result": "skip",
+   "error": "blocked-data: qa190-cat-pdf-form (ja) requiresForm=false in /content/dam/common/ja/catalogs/qa190-cat-pdf-form; nothing is gated (TD-570-03 expects true)"
+  },
+  {
+   "tc": "DSR-CATDL-010",
+   "lang": "ja",
+   "title": "DSR-CATDL-010 [ja] catalog ID handed to the form",
+   "result": "skip",
+   "error": "blocked-data: qa190-cat-pdf-form (ja) requiresForm=false in /content/dam/common/ja/catalogs/qa190-cat-pdf-form; TD expects true – TD-570-03 + HubSpot EX-06/EX-07"
+  },
+  {
+   "tc": "DSR-CATDL-017",
+   "lang": "ja",
+   "title": "DSR-CATDL-017 [ja] unknown or missing catalog ID never shows another catalog form",
+   "result": "skip",
+   "error": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=false); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "en",
+   "title": "DSR-CATDL-016 [en] fixed texts translated (no Japanese)",
+   "result": "skip",
+   "error": "blocked-data: TD-570-01 en form page /master/en/test-space/dsr-570-catalog-detail HTTP 404; /en/library/catalog/qa190-cat-pdf-form renders no form"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "cn",
+   "title": "DSR-CATDL-016 [cn] fixed texts translated (Chinese)",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "title": "DSR-CATOV-001 [ja] qa190-cat-pdf: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF catalog\" Timeout: 5000ms Error: element(s) not found C",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-48f08-with-the-catalog-name-shown-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "title": "DSR-CATOV-002 [ja] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 PDF catalog | YKK DIGITAL SHOWROOM\" Received: \"qa190-cat-pdf | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-53eff-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "title": "DSR-CATOV-003 [ja] qa190-cat-pdf: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "title": "DSR-CATOV-021 [ja] qa190-cat-pdf: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "title": "DSR-CATOV-001 [ja] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Timeout: 5000ms Error: element(s) not f",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-df8ef-with-the-catalog-name-shown-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "title": "DSR-CATOV-002 [ja] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 PDF form required | YKK DIGITAL SHOWROOM\" Received: \"catalog pdf form | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-645e6-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "title": "DSR-CATOV-003 [ja] qa190-cat-pdf-form: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "title": "DSR-CATOV-021 [ja] qa190-cat-pdf-form: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "title": "DSR-CATOV-001 [ja] qa190-cat-ebook: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 e-book\" Timeout: 5000ms Error: element(s) not found Call l",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-908da-with-the-catalog-name-shown-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "title": "DSR-CATOV-002 [ja] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 e-book | YKK DIGITAL SHOWROOM\" Received: \"catalog ebook | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-a755e-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "title": "DSR-CATOV-003 [ja] qa190-cat-ebook: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "title": "DSR-CATOV-021 [ja] qa190-cat-ebook: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "title": "DSR-CATOV-001 [ja] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 e-book form\" Timeout: 5000ms Error: element(s) not found C",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-7452c-with-the-catalog-name-shown-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "title": "DSR-CATOV-002 [ja] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 e-book form | YKK DIGITAL SHOWROOM\" Received: \"catalog ebook form | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-5c267-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "title": "DSR-CATOV-003 [ja] qa190-cat-ebook-form: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "title": "DSR-CATOV-021 [ja] qa190-cat-ebook-form: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "ja",
+   "title": "DSR-CATOV-004 [ja] naming rule: uppercase / underscore catalog URL → 404",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "ja",
+   "title": "DSR-CATOV-005 [ja] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list",
+   "result": "skip",
+   "error": "TD-654-02 not seeded (qa654-inactive) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa654-inactive HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "ja",
+   "title": "DSR-CATOV-006 [ja] unpublished DSR CF → 404 on both hosts, removed from query-index",
+   "result": "skip",
+   "error": "TD-654-03 exists in en only (A7)"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "ja",
+   "title": "DSR-CATOV-007 [ja] catalog/search is not taken by the overlay",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "ja",
+   "title": "DSR-CATOV-008 [ja] catalog detail page makes 0 GraphQL requests; html lang matches the site",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "ja",
+   "title": "DSR-CATOV-012 [ja] catalog list card links to the overlay page",
+   "result": "skip",
+   "error": "catalog list not published (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog HTTP 404, DSR-638)"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "ja",
+   "title": "DSR-CATOV-015 [ja] PDF, requiresForm OFF → download opens the PDF directly",
+   "result": "fail",
+   "error": "Error: download button expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail').getByRole('link', { name: /download|view|ダウンロード|閲覧|見る/i }) Expected: visible Timeout: 5000ms Error:",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-d9520-load-opens-the-PDF-directly-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "ja",
+   "title": "DSR-CATOV-016 [ja] PDF, requiresForm ON → form first, PDF URL not exposed",
+   "result": "fail",
+   "error": "Error: catalog-detail block expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail') Expected: visible Received: hidden Timeout: 5000ms Call log: - catalog-detail block locator('m",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-dc8f3-m-first-PDF-URL-not-exposed-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "ja",
+   "title": "DSR-CATOV-017 [ja] e-book, requiresForm OFF → opens ebookUrl in a new tab without a form",
+   "result": "fail",
+   "error": "Error: view button expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail').getByRole('link', { name: /download|view|ダウンロード|閲覧|見る/i }) Expected: visible Timeout: 5000ms Error: ele",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-c164e-in-a-new-tab-without-a-form-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "ja",
+   "title": "DSR-CATOV-018 [ja] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+   "result": "fail",
+   "error": "Error: view button expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail').getByRole('link', { name: /download|view|ダウンロード|閲覧|見る/i }) Expected: visible Timeout: 5000ms Error: ele",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-5abe2-ult-no-form-opens-ebookUrl--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "ja",
+   "title": "DSR-CATOV-019 [ja] catalog detail shows image, name, description, date and type label of the content CF",
+   "result": "fail",
+   "error": "Error: catalog-detail block expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail') Expected: visible Received: hidden Timeout: 5000ms Call log: - catalog-detail block locator('m",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-0fa3f-ype-label-of-the-content-CF-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-020",
+   "lang": "ja",
+   "title": "DSR-CATOV-020 [ja] layout PC 1440 / SP 375 vs pre-overlay demo",
+   "result": "skip",
+   "error": "Visual – codex job"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "title": "DSR-CATOV-001 [en] qa190-cat-pdf: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF catalog\" Timeout: 5000ms Error: element(s) not found C",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "evidence/DSR-CATOV-001_en.png"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "title": "DSR-CATOV-002 [en] qa190-cat-pdf: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 PDF catalog | YKK DIGITAL SHOWROOM\" Received: \"catalog pdf | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-42b16-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "title": "DSR-CATOV-003 [en] qa190-cat-pdf: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "title": "DSR-CATOV-021 [en] qa190-cat-pdf: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "title": "DSR-CATOV-001 [en] qa190-cat-pdf-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Timeout: 5000ms Error: element(s) not f",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "evidence/DSR-CATOV-001_en.png"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "title": "DSR-CATOV-002 [en] qa190-cat-pdf-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 PDF form required | YKK DIGITAL SHOWROOM\" Received: \"catalog pdf form | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-598d3-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "title": "DSR-CATOV-003 [en] qa190-cat-pdf-form: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "title": "DSR-CATOV-021 [en] qa190-cat-pdf-form: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "title": "DSR-CATOV-001 [en] qa190-cat-ebook: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 e-book\" Timeout: 5000ms Error: element(s) not found Call l",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "evidence/DSR-CATOV-001_en.png"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "title": "DSR-CATOV-002 [en] qa190-cat-ebook: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 e-book | YKK DIGITAL SHOWROOM\" Received: \"catalog ebook | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-65f33-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "title": "DSR-CATOV-003 [en] qa190-cat-ebook: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "title": "DSR-CATOV-021 [en] qa190-cat-ebook: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "title": "DSR-CATOV-001 [en] qa190-cat-ebook-form: publishing DSR CF creates the catalog detail page with the catalog name shown",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 e-book form\" Timeout: 5000ms Error: element(s) not found C",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "evidence/DSR-CATOV-001_en.png"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "title": "DSR-CATOV-002 [en] qa190-cat-ebook-form: static HTML carries title, description, og:image and the content CF rows with the same id",
+   "result": "fail",
+   "error": "Error: <title> expect(received).toBe(expected) // Object.is equality Expected: \"QA190 e-book form | YKK DIGITAL SHOWROOM\" Received: \"catalog ebook form | YKK DIGITAL SHOWROOM\"",
+   "cause": "data Night 21/10",
+   "confidence": 20,
+   "suspect": "data",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-35ccf-nt-CF-rows-with-the-same-id-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "title": "DSR-CATOV-003 [en] qa190-cat-ebook-form: live-published catalog is served on .aem.page and .aem.live",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "title": "DSR-CATOV-021 [en] qa190-cat-ebook-form: live page listed once in query-index and sitemap",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "en",
+   "title": "DSR-CATOV-004 [en] naming rule: uppercase / underscore catalog URL → 404",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "en",
+   "title": "DSR-CATOV-005 [en] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list",
+   "result": "skip",
+   "error": "TD-654-02 not seeded (qa654-inactive) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-inactive HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "en",
+   "title": "DSR-CATOV-006 [en] unpublished DSR CF → 404 on both hosts, removed from query-index",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "en",
+   "title": "DSR-CATOV-007 [en] catalog/search is not taken by the overlay",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "en",
+   "title": "DSR-CATOV-008 [en] catalog detail page makes 0 GraphQL requests; html lang matches the site",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "en",
+   "title": "DSR-CATOV-012 [en] catalog list card links to the overlay page",
+   "result": "fail",
+   "error": "Error: href path expect(received).toBe(expected) // Object.is equality Expected: \"/en/library/catalog/qa190-cat-pdf\" Received: \"/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf\"",
+   "cause": "overlay auto-gen",
+   "confidence": 60,
+   "suspect": "product",
+   "evidence": "evidence/DSR-CATOV-012_en.png"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "en",
+   "title": "DSR-CATOV-015 [en] PDF, requiresForm OFF → download opens the PDF directly",
+   "result": "fail",
+   "error": "Error: download button expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail').getByRole('link', { name: /download|view|ダウンロード|閲覧|見る/i }) Expected: visible Timeout: 5000ms Error:",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-ff7ef-load-opens-the-PDF-directly-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "en",
+   "title": "DSR-CATOV-016 [en] PDF, requiresForm ON → form first, PDF URL not exposed",
+   "result": "fail",
+   "error": "Error: catalog-detail block expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail') Expected: visible Received: hidden Timeout: 5000ms Call log: - catalog-detail block locator('m",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-d7d00-m-first-PDF-URL-not-exposed-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "en",
+   "title": "DSR-CATOV-017 [en] e-book, requiresForm OFF → opens ebookUrl in a new tab without a form",
+   "result": "fail",
+   "error": "Error: view button expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail').getByRole('link', { name: /download|view|ダウンロード|閲覧|見る/i }) Expected: visible Timeout: 5000ms Error: ele",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-a8859-in-a-new-tab-without-a-form-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "en",
+   "title": "DSR-CATOV-018 [en] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)",
+   "result": "fail",
+   "error": "Error: view button expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail').getByRole('link', { name: /download|view|ダウンロード|閲覧|見る/i }) Expected: visible Timeout: 5000ms Error: ele",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "test-results/catalog-overlay-DSR-654.ca-ad0d2-ult-no-form-opens-ebookUrl--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "en",
+   "title": "DSR-CATOV-019 [en] catalog detail shows image, name, description, date and type label of the content CF",
+   "result": "fail",
+   "error": "Error: catalog-detail block expect(locator).toBeVisible() failed Locator: locator('main .catalog-detail') Expected: visible Received: hidden Timeout: 5000ms Call log: - catalog-detail block locator('m",
+   "cause": "overlay auto-gen",
+   "confidence": 70,
+   "suspect": "product",
+   "evidence": "evidence/DSR-CATOV-019_en.png"
+  },
+  {
+   "tc": "DSR-CATOV-020",
+   "lang": "en",
+   "title": "DSR-CATOV-020 [en] layout PC 1440 / SP 375 vs pre-overlay demo",
+   "result": "skip",
+   "error": "Visual – codex job"
+  },
+  {
+   "tc": "DSR-CATOV-009",
+   "lang": "en",
+   "title": "DSR-CATOV-009 [en] DSR CF published to Preview only → served on .aem.page, not on .aem.live",
+   "result": "skip",
+   "error": "TD-654-04 not seeded (qa654-preview) (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-preview HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-010",
+   "lang": "en",
+   "title": "DSR-CATOV-010 [en] DSR CF in a subfolder → no page (directory-strict)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-011",
+   "lang": "en",
+   "title": "DSR-CATOV-011 [en] content CF only (no DSR CF) → no page",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-013",
+   "lang": "en",
+   "title": "DSR-CATOV-013 [en] content CF change shows only after DSR CF republish",
+   "result": "skip",
+   "error": "Manual – QA-PT"
+  },
+  {
+   "tc": "DSR-CATOV-014",
+   "lang": "en",
+   "title": "DSR-CATOV-014 [en] content CF unpublished → page unavailable + noindex, visitor sent to the catalog list",
+   "result": "skip",
+   "error": "TD-654-08 not seeded (qa654-content-unpub) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-content-unpub HTTP 404)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "cn",
+   "title": "DSR-CATOV-001 [cn] catalog overlay pages",
+   "result": "skip",
+   "error": "Issue #18: no /cn path on DEV"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "",
+   "title": "DSR-CATV-012 catalog item shows thumbnail and title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "",
+   "title": "DSR-CATV-013 PDF item without form opens in a new tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "",
+   "title": "DSR-CATV-016 e-book item opens ebookUrl without form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "",
+   "title": "DSR-CATV-017 e-book item flagged requiresForm opens ebookUrl without form",
+   "result": "skip",
+   "error": "Blocked – data: qa190-cat-ebook-form (ja) is not a ebook requiresForm=true item: catalogType=ebook, requiresForm=false, ebookUrl=https://www.ykkfastening.com/"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "",
+   "title": "DSR-CATV-018 NEW label within 10 days of publishDate",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "",
+   "title": "DSR-CATV-019 UPDATE label within 10 days of updateDate",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "",
+   "title": "DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "",
+   "title": "DSR-CATV-012 catalog item shows thumbnail and title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "",
+   "title": "DSR-CATV-013 PDF item without form opens in a new tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "",
+   "title": "DSR-CATV-016 e-book item opens ebookUrl without form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "",
+   "title": "DSR-CATV-017 e-book item flagged requiresForm opens ebookUrl without form",
+   "result": "skip",
+   "error": "Blocked – data: qa190-cat-ebook-form (en) is not a ebook requiresForm=true item: catalogType=ebook, requiresForm=false, ebookUrl=https://www.ykkfastening.com/"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "",
+   "title": "DSR-CATV-018 NEW label within 10 days of publishDate",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "",
+   "title": "DSR-CATV-019 UPDATE label within 10 days of updateDate",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "",
+   "title": "DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-001",
+   "lang": "ja",
+   "title": "DSR-ECO-001 [ja] TOP shows one card per category with image, name, and active summary + VIEW MORE",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-002",
+   "lang": "ja",
+   "title": "DSR-ECO-002 [ja] each category card VIEW MORE links to its TD-590-02 detail page (200, same language)",
+   "result": "fail",
+   "error": "Error: detail slugs = TD-590-02 expect(received).toEqual(expected) // deep equality - Expected - 9 + Received + 9 Array [ - \"bio-based\", - \"bluesign-approved\", - \"circularity\", - \"natural-fiber\", - \"n",
+   "cause": "none",
+   "confidence": 30,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/eco-products-DSR-590.eco-p-b04ae-ail-page-200-same-language--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ECO-004",
+   "lang": "ja",
+   "title": "DSR-ECO-004 [ja] 環境配慮型製品診断 button links to the product finder (P087, 200)",
+   "result": "fail",
+   "error": "Error: finder URL (P087), same language expect(received).toContain(expected) // indexOf Expected value: \"\" Received array: [\"/ja/product/performance/sustainable/sustainable-solution-finder\", \"/master/",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/eco-products-DSR-590.eco-p-54993-he-product-finder-P087-200--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ECO-001",
+   "lang": "en",
+   "title": "DSR-ECO-001 [en] TOP shows one card per category with image, name, and active summary + VIEW MORE",
+   "result": "skip",
+   "error": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-002",
+   "lang": "en",
+   "title": "DSR-ECO-002 [en] each category card VIEW MORE links to its TD-590-02 detail page (200, same language)",
+   "result": "skip",
+   "error": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-004",
+   "lang": "en",
+   "title": "DSR-ECO-004 [en] 環境配慮型製品診断 button links to the product finder (P087, 200)",
+   "result": "skip",
+   "error": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-003",
+   "lang": "ja",
+   "title": "DSR-ECO-003 [ja] carousel arrows and dots move the active category by one and wrap at first/last",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-005",
+   "lang": "ja",
+   "title": "DSR-ECO-005 [ja] detail hero shows tag, background image, category name, and summary",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-007",
+   "lang": "ja",
+   "title": "DSR-ECO-007 [ja] detail product list equals the query-index products carrying the eco tag",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-010",
+   "lang": "ja",
+   "title": "DSR-ECO-010 [ja] detail product cards link to /ja/products/{id} with HTTP 200",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-005",
+   "lang": "en",
+   "title": "DSR-ECO-005 [en] detail hero shows tag, background image, category name, and summary",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-007",
+   "lang": "en",
+   "title": "DSR-ECO-007 [en] detail product list equals the query-index products carrying the eco tag",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-010",
+   "lang": "en",
+   "title": "DSR-ECO-010 [en] detail product cards link to /en/products/{id} with HTTP 200",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-006",
+   "lang": "ja",
+   "title": "DSR-ECO-006 [ja] free editing area renders between hero and product list",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-009",
+   "lang": "ja",
+   "title": "DSR-ECO-009 [ja] detail with 0 matching products shows no broken list and no error",
+   "result": "skip",
+   "error": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-012",
+   "lang": "ja",
+   "title": "DSR-ECO-012 [ja] TOP background and card images are DAM references, not code-bundled files",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "ja",
+   "title": "DSR-ECO-013 [ja] TOP exists with html lang, names in its language, and language-kept internal links",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "en",
+   "title": "DSR-ECO-013 [en] TOP exists with html lang, names in its language, and language-kept internal links",
+   "result": "skip",
+   "error": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "cn",
+   "title": "DSR-ECO-013 [cn] TOP and detail exist with html lang and language-kept internal links",
+   "result": "skip",
+   "error": "cn: no /master/cn on DEV (Issue #18)"
+  },
+  {
+   "tc": "DSR-ECO-014",
+   "lang": "ja",
+   "title": "DSR-ECO-014 [ja] stable PC initial, Next, dot 5 and fullPage captures",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-016",
+   "lang": "ja",
+   "title": "DSR-ECO-016 [ja] stable SP initial and swipe captures",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-014",
+   "lang": "ja",
+   "title": "DSR-ECO-014 [ja] PC carousel visual capture and measurements",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ECO-016",
+   "lang": "ja",
+   "title": "DSR-ECO-016 [ja] SP capture, horizontal overflow and carousel interaction facts",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-ICON-001",
+   "lang": "ja",
+   "title": "DSR-ICON-001 [ja] product detail performance/function icons all match the official set (TD-589-04)",
+   "result": "skip",
+   "error": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-002",
+   "lang": "ja",
+   "title": "DSR-ICON-002 [ja] product list card icons all match the official set (TD-589-04)",
+   "result": "skip",
+   "error": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-003",
+   "lang": "ja",
+   "title": "DSR-ICON-003 [ja] condition search option and result icons all match the official set (TD-589-04)",
+   "result": "skip",
+   "error": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-004",
+   "lang": "ja",
+   "title": "DSR-ICON-004 [ja] no temporary icon (TD-589-06) remains on the target pages",
+   "result": "skip",
+   "error": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run"
+  },
+  {
+   "tc": "DSR-ICON-001",
+   "lang": "en",
+   "title": "DSR-ICON-001 [en] product detail performance/function icons all match the official set (TD-589-04)",
+   "result": "skip",
+   "error": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-002",
+   "lang": "en",
+   "title": "DSR-ICON-002 [en] product list card icons all match the official set (TD-589-04)",
+   "result": "skip",
+   "error": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-003",
+   "lang": "en",
+   "title": "DSR-ICON-003 [en] condition search option and result icons all match the official set (TD-589-04)",
+   "result": "skip",
+   "error": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-004",
+   "lang": "en",
+   "title": "DSR-ICON-004 [en] no temporary icon (TD-589-06) remains on the target pages",
+   "result": "skip",
+   "error": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run"
+  },
+  {
+   "tc": "DSR-ICON-005",
+   "lang": "ja",
+   "title": "DSR-ICON-005 [ja] same function uses the same asset on detail, list card and condition search",
+   "result": "skip",
+   "error": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-006",
+   "lang": "ja",
+   "title": "DSR-ICON-006 [ja] icons load (HTTP 200, not broken) and have a text alternative; no console error",
+   "result": "fail",
+   "error": "Error: console errors expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [ + \"Failed to load resource: the server responded with a status of 404 ()\", ",
+   "cause": "none",
+   "confidence": 40,
+   "suspect": "env",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/icons-DSR-589.icons-DSR-IC-9fa3a-lternative-no-console-error-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ICON-006",
+   "lang": "en",
+   "title": "DSR-ICON-006 [en] icons load (HTTP 200, not broken) and have a text alternative; no console error",
+   "result": "fail",
+   "error": "Error: console errors expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [ + \"Failed to load resource: the server responded with a status of 404 ()\", ",
+   "cause": "none",
+   "confidence": 40,
+   "suspect": "env",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/icons-DSR-589.icons-DSR-IC-4b0a4-lternative-no-console-error-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-ICON-007",
+   "lang": "ja",
+   "title": "DSR-ICON-007 [ja] product without function values shows no icon area",
+   "result": "skip",
+   "error": "blocked-data: TD-589-02 product with 0 function values not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-ICON-008",
+   "lang": "ja",
+   "title": "DSR-ICON-008 [ja] maximum number of icons wraps on SP without overflow or overlap",
+   "result": "skip",
+   "error": "blocked-data: TD-589-03 product with the most function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-ICON-009",
+   "lang": "ja",
+   "title": "DSR-ICON-009 [ja] language versions show the same ordered icon set",
+   "result": "skip",
+   "error": "blocked-data: TD-589-01 product with ≥ 3 function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-ICON-009",
+   "lang": "en",
+   "title": "DSR-ICON-009 [en] language versions show the same ordered icon set",
+   "result": "skip",
+   "error": "blocked-data: TD-589-01 product with ≥ 3 function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-MAIL-016",
+   "lang": "",
+   "title": "DSR-MAIL-016 [—] webhook GET without auth is refused",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-MAIL-017",
+   "lang": "",
+   "title": "DSR-MAIL-017 [—] test-send GET without params or auth is not public",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-MOVIE-012",
+   "lang": "en",
+   "title": "DSR-MOVIE-012 [en] displays the exact movie title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-MOVIE-014",
+   "lang": "en",
+   "title": "DSR-MOVIE-014 [en] embeds the configured YouTube movie",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-player-facade') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTestI",
+   "cause": "none",
+   "confidence": 30,
+   "suspect": "test",
+   "evidence": "evidence/DSR-MOVIE-014_en.png"
+  },
+  {
+   "tc": "DSR-MOVIE-036",
+   "lang": "",
+   "title": "DSR-MOVIE-036 no site-origin console errors on the movie component page",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-MOVIE-020",
+   "lang": "",
+   "title": "DSR-MOVIE-020 displays visible related product codes in order",
+   "result": "skip",
+   "error": "Issue #1: related products specification pending"
+  },
+  {
+   "tc": "DSR-MOVIE-021",
+   "lang": "",
+   "title": "DSR-MOVIE-021 sorts related content by update date descending",
+   "result": "skip",
+   "error": "Test data pending: RELATED_SORT.path.en, RELATED_SORT.expectedOrder"
+  },
+  {
+   "tc": "DSR-MOVIE-023",
+   "lang": "",
+   "title": "DSR-MOVIE-023 excludes unavailable and inactive related movies",
+   "result": "skip",
+   "error": "Test data pending: RELATED_FILTERED.path.en, RELATED_FILTERED.expectedOrder, RELATED_FILTERED.excludedTitles"
+  },
+  {
+   "tc": "DSR-MOVIE-025",
+   "lang": "",
+   "title": "DSR-MOVIE-025 navigates the related content carousel to its end",
+   "result": "skip",
+   "error": "Test data pending: RELATED_6.path.en"
+  },
+  {
+   "tc": "DSR-MOVIE-026",
+   "lang": "",
+   "title": "DSR-MOVIE-026 displays related thumbnails, types, tags and valid links",
+   "result": "fail",
+   "error": "Error: Related card 1 thumbnail expect(locator).toBeVisible() failed Locator: getByTestId('related-content-card').first().getByTestId('related-content-card-image') Expected: visible Timeout: 1000ms Er",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/movie-detail-DSR-173.movie-77720--types-tags-and-valid-links-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-MOVIE-027",
+   "lang": "en",
+   "title": "DSR-MOVIE-027 [en] outputs exactly one title and og:title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-MOVIE-028",
+   "lang": "",
+   "title": "DSR-MOVIE-028 removes line breaks from description metadata",
+   "result": "skip",
+   "error": "Description line-break separator is unconfirmed"
+  },
+  {
+   "tc": "DSR-MOVIE-029",
+   "lang": "",
+   "title": "DSR-MOVIE-029 outputs an absolute reachable CF thumbnail",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-MOVIE-033",
+   "lang": "",
+   "title": "DSR-MOVIE-033 displays component sections in vertical order on PC",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-player') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTestId('movi",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/movie-detail-DSR-173.movie-e47ea-ons-in-vertical-order-on-PC-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-MOVIE-034",
+   "lang": "",
+   "title": "DSR-MOVIE-034 displays the component back control",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-MOVIE-001",
+   "lang": "",
+   "title": "DSR-MOVIE-001 B: page auto-generation not implemented",
+   "result": "skip",
+   "error": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-002",
+   "lang": "",
+   "title": "DSR-MOVIE-002 B: page auto-generation not implemented",
+   "result": "skip",
+   "error": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-003",
+   "lang": "",
+   "title": "DSR-MOVIE-003 B: page auto-generation not implemented",
+   "result": "skip",
+   "error": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-004",
+   "lang": "",
+   "title": "DSR-MOVIE-004 M: Universal Editor requires IMS login; manual only",
+   "result": "skip",
+   "error": "M: Universal Editor requires IMS login; manual only"
+  },
+  {
+   "tc": "DSR-MOVIE-005",
+   "lang": "",
+   "title": "DSR-MOVIE-005 B: page auto-generation not implemented",
+   "result": "skip",
+   "error": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-006",
+   "lang": "",
+   "title": "DSR-MOVIE-006 B: URL structure not implemented, DSR-536",
+   "result": "skip",
+   "error": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-007",
+   "lang": "",
+   "title": "DSR-MOVIE-007 B: URL structure not implemented, DSR-536",
+   "result": "skip",
+   "error": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-008",
+   "lang": "",
+   "title": "DSR-MOVIE-008 B: URL structure not implemented, DSR-536",
+   "result": "skip",
+   "error": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-009",
+   "lang": "",
+   "title": "DSR-MOVIE-009 B: URL structure not implemented, DSR-536",
+   "result": "skip",
+   "error": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-010",
+   "lang": "",
+   "title": "DSR-MOVIE-010 B: URL structure not implemented, DSR-536",
+   "result": "skip",
+   "error": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-011",
+   "lang": "",
+   "title": "DSR-MOVIE-011 B: page auto-generation not implemented",
+   "result": "skip",
+   "error": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-013",
+   "lang": "",
+   "title": "DSR-MOVIE-013 C: overflow automation deferred; CJK font manual",
+   "result": "skip",
+   "error": "C: overflow automation deferred; CJK font manual"
+  },
+  {
+   "tc": "DSR-MOVIE-015",
+   "lang": "",
+   "title": "DSR-MOVIE-015 C: iframe source automation deferred; playback manual",
+   "result": "skip",
+   "error": "C: iframe source automation deferred; playback manual"
+  },
+  {
+   "tc": "DSR-MOVIE-016",
+   "lang": "",
+   "title": "DSR-MOVIE-016 B: movie-detail-player-video not implemented, DAM test data pending",
+   "result": "skip",
+   "error": "B: movie-detail-player-video not implemented, DAM test data pending"
+  },
+  {
+   "tc": "DSR-MOVIE-017",
+   "lang": "",
+   "title": "DSR-MOVIE-017 B: movie-detail-player-video not implemented, DAM test data pending",
+   "result": "skip",
+   "error": "B: movie-detail-player-video not implemented, DAM test data pending"
+  },
+  {
+   "tc": "DSR-MOVIE-018",
+   "lang": "",
+   "title": "DSR-MOVIE-018 B: test data pending (docs/DSR-173/test-data.md); Issue #12",
+   "result": "skip",
+   "error": "B: test data pending (docs/DSR-173/test-data.md); Issue #12"
+  },
+  {
+   "tc": "DSR-MOVIE-019",
+   "lang": "",
+   "title": "DSR-MOVIE-019 C: layout automation deferred; in-iframe error manual",
+   "result": "skip",
+   "error": "C: layout automation deferred; in-iframe error manual"
+  },
+  {
+   "tc": "DSR-MOVIE-022",
+   "lang": "",
+   "title": "DSR-MOVIE-022 B: test data pending (docs/DSR-173/test-data.md)",
+   "result": "skip",
+   "error": "B: test data pending (docs/DSR-173/test-data.md)"
+  },
+  {
+   "tc": "DSR-MOVIE-024",
+   "lang": "",
+   "title": "DSR-MOVIE-024 B: test data pending (docs/DSR-173/test-data.md)",
+   "result": "skip",
+   "error": "B: test data pending (docs/DSR-173/test-data.md)"
+  },
+  {
+   "tc": "DSR-MOVIE-030",
+   "lang": "",
+   "title": "DSR-MOVIE-030 M: SNS debuggers need login and public URL; manual only",
+   "result": "skip",
+   "error": "M: SNS debuggers need login and public URL; manual only"
+  },
+  {
+   "tc": "DSR-MOVIE-031",
+   "lang": "",
+   "title": "DSR-MOVIE-031 B: page auto-generation not implemented",
+   "result": "skip",
+   "error": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-032",
+   "lang": "",
+   "title": "DSR-MOVIE-032 B: ja/zh pages not available",
+   "result": "skip",
+   "error": "B: ja/zh pages not available"
+  },
+  {
+   "tc": "DSR-MOVIE-035",
+   "lang": "",
+   "title": "DSR-MOVIE-035 B: SP design pending",
+   "result": "skip",
+   "error": "B: SP design pending"
+  },
+  {
+   "tc": "DSR-501-P3",
+   "lang": "en",
+   "title": "DSR-501-P3 [en] related movies are limited to 5 in authored order",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-related-content') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTes",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/movie-detail-DSR-173.movie-7baab-ited-to-5-in-authored-order-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-501-P2",
+   "lang": "en",
+   "title": "DSR-501-P2 [en] unavailable related movie is not displayed",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-related-content') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTes",
+   "cause": "none",
+   "confidence": null,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/movie-detail-DSR-173.movie-93f32-ated-movie-is-not-displayed-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "ja",
+   "title": "DSR-VOV-001 [ja] live CF related → movie detail page 200, title shown, movie plays",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "en",
+   "title": "DSR-VOV-001 [en] live CF related → movie detail page 200, title shown, movie plays",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-002",
+   "lang": "en",
+   "title": "DSR-VOV-002 [en] preview-only CF related → 200 on .aem.page, 404 on .aem.live",
+   "result": "skip",
+   "error": "TD-587-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-preview HTTP 404)"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "title": "DSR-VOV-003 [ja] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+   "result": "fail",
+   "error": "Error: og:image absolute URL expect(received).toMatch(expected) Expected pattern: /^https?:\\/\\// Received string: \"about:error\"",
+   "cause": "overlay auto-gen",
+   "confidence": 75,
+   "suspect": "product",
+   "evidence": "evidence/DSR-VOV-003_ja.png"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "title": "DSR-VOV-003 [en] raw HTML has title / description / og:image and movie title; 0 GraphQL requests",
+   "result": "fail",
+   "error": "Error: og:image absolute URL expect(received).toMatch(expected) Expected pattern: /^https?:\\/\\// Received string: \"about:error\"",
+   "cause": "overlay auto-gen",
+   "confidence": 75,
+   "suspect": "product",
+   "evidence": "test-results/movie-detail-DSR-587.movie-86245-ie-title-0-GraphQL-requests-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-VOV-004",
+   "lang": "en",
+   "title": "DSR-VOV-004 [en] CF related name with uppercase / underscore → 404",
+   "result": "skip",
+   "error": "TD-587-04 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-005",
+   "lang": "en",
+   "title": "DSR-VOV-005 [en] CF related in subfolder / outside /content/dam/dsr → 404",
+   "result": "skip",
+   "error": "TD-587-05 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-006",
+   "lang": "en",
+   "title": "DSR-VOV-006 [en] CF commune alone → 404 on .aem.page and .aem.live",
+   "result": "skip",
+   "error": "TD-587-06 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "ja",
+   "title": "DSR-VOV-007 [ja] isActive = false → noindex, browser sent to movie list",
+   "result": "skip",
+   "error": "TD-587-07 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-inactive HTTP 404)"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "en",
+   "title": "DSR-VOV-007 [en] isActive = false → noindex, browser sent to movie list",
+   "result": "skip",
+   "error": "TD-587-07 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-inactive HTTP 404)"
+  },
+  {
+   "tc": "DSR-VOV-008",
+   "lang": "en",
+   "title": "DSR-VOV-008 [en] CF commune unpublished → single unavailable row, noindex, browser sent to movie list",
+   "result": "skip",
+   "error": "TD-587-08 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-unavail HTTP 404)"
+  },
+  {
+   "tc": "DSR-VOV-009",
+   "lang": "en",
+   "title": "DSR-VOV-009 [en] CF commune edit shows only after CF related republish",
+   "result": "skip",
+   "error": "Manual TC: Author edit + publish of CF commune / CF related; agents are read-only (A6) – QA-PT"
+  },
+  {
+   "tc": "DSR-VOV-010",
+   "lang": "en",
+   "title": "DSR-VOV-010 [en] unpublished CF related → 404 on both hosts, absent from query-index",
+   "result": "skip",
+   "error": "TD-587-10 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "ja",
+   "title": "DSR-VOV-011 [ja] video/search stays a list page (list block with ≥ 1 card, no video-detail)",
+   "result": "fail",
+   "error": "Error: list block expect(locator).toHaveCount(expected) failed Locator: locator('main .listing') Expected: 1 Received: 0 Timeout: 5000ms Call log: - list block locator('main .listing') with timeout 50",
+   "cause": "overlay auto-gen",
+   "confidence": 65,
+   "suspect": "product",
+   "evidence": "evidence/DSR-VOV-011_ja.png"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "ja",
+   "title": "DSR-VOV-011 [ja] video/tech-talk stays a list page",
+   "result": "skip",
+   "error": "tech-talk list page not published on DEV (HTTP 404); 11.0 runs on video/search only (job JOB-ZZ-IDLE-06) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk)"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "en",
+   "title": "DSR-VOV-011 [en] video/search stays a list page (list block with ≥ 1 card, no video-detail)",
+   "result": "fail",
+   "error": "Error: list block expect(locator).toHaveCount(expected) failed Locator: locator('main .listing') Expected: 1 Received: 0 Timeout: 5000ms Call log: - list block locator('main .listing') with timeout 50",
+   "cause": "overlay auto-gen",
+   "confidence": 65,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "en",
+   "title": "DSR-VOV-011 [en] video/tech-talk stays a list page",
+   "result": "skip",
+   "error": "tech-talk list page not published on DEV (HTTP 404); 11.0 runs on video/search only (job JOB-ZZ-IDLE-06) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/tech-talk)"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "cn",
+   "title": "DSR-VOV-011 [cn] list pages",
+   "result": "skip",
+   "error": "Issue #18: no /cn path on DEV"
+  },
+  {
+   "tc": "DSR-VOV-013",
+   "lang": "en",
+   "title": "DSR-VOV-013 [en] movie list shows standard movies only",
+   "result": "fail",
+   "error": "Error: first list card (main-frame navigations: 60) expect(received).toBe(expected) // Object.is equality Expected: true Received: false",
+   "cause": "overlay auto-gen",
+   "confidence": 50,
+   "suspect": "product",
+   "evidence": ""
+  },
+  {
+   "tc": "DSR-VOV-014",
+   "lang": "en",
+   "title": "DSR-VOV-014 [en] related movies max 5 when 6 are linked",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-015",
+   "lang": "en",
+   "title": "DSR-VOV-015 [en] related movie with isUnavailable = true is hidden",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-016",
+   "lang": "en",
+   "title": "DSR-VOV-016 [en] related contents ordered by update date, newest first",
+   "result": "skip",
+   "error": "TD-587-14 update dates not recorded (fixtures/dsr-587.ts expectedOrderByUpdateDesc)"
+  },
+  {
+   "tc": "DSR-VOV-017",
+   "lang": "en",
+   "title": "DSR-VOV-017 [en] DSR-173 Group A page switched to the overlay page",
+   "result": "skip",
+   "error": "DSR173_MOVIE_PATH / DSR173_RELATED_PATH not set to the TD-587-01 / 14 pages (now /master/en/test-space/dsr-173-video-detail / null); run DSR-173 Group A with them"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "ja",
+   "title": "DSR-VOV-018 [ja] language variant: 200, html lang, title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "en",
+   "title": "DSR-VOV-018 [en] language variant: 200, html lang, title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "cn",
+   "title": "DSR-VOV-018 [cn] language variant",
+   "result": "skip",
+   "error": "Issue #18: no /cn path on DEV"
+  },
+  {
+   "tc": "DSR-501-P3",
+   "lang": "en",
+   "title": "DSR-501-P3 [en] related movies are max 5, newest updated first",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-501-P2",
+   "lang": "en",
+   "title": "DSR-501-P2 [en] unavailable related movie is not displayed",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "title": "DSR-538-retest [en] qa587-rel-a (.aem.page) related card hrefs on the EDS host, HTTP 200",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "title": "DSR-538-retest [en] qa587-main (.aem.page) related card hrefs on the EDS host, HTTP 200",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "ja",
+   "title": "DSR-538-retest [ja] qa587-main (.aem.page) related card hrefs on the EDS host, HTTP 200",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "title": "DSR-538-retest [en] qa587-rel-a (.aem.live) related card hrefs on the EDS host, HTTP 200",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "title": "DSR-538-retest [en] qa587-main (.aem.live) related card hrefs on the EDS host, HTTP 200",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "ja",
+   "title": "DSR-538-retest [ja] qa587-main (.aem.live) related card hrefs on the EDS host, HTTP 200",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-NEWS-001",
+   "lang": "en",
+   "title": "DSR-NEWS-001 [en] page shows date, category, title and body",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-NEWS-002",
+   "lang": "en",
+   "title": "DSR-NEWS-002 [en] fixed order date → category → title → body → CTA → Back to list",
+   "result": "fail",
+   "error": "Error: required elements missing expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [ + \"backToList\", + ]",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/news-detail-DSR-566.news-d-85807-→-body-→-CTA-→-Back-to-list-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-NEWS-003",
+   "lang": "en",
+   "title": "DSR-NEWS-003 [en] shown date equals meta publish date",
+   "result": "fail",
+   "error": "Error: expect(received).toBe(expected) // Object.is equality Expected: \"2026-09-29\" Received: \"2026-03-30\"",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/news-detail-DSR-566.news-d-7e96d-te-equals-meta-publish-date-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-NEWS-004",
+   "lang": "en",
+   "title": "DSR-NEWS-004 [en] category and title are non-empty text",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-NEWS-006",
+   "lang": "en",
+   "title": "DSR-NEWS-006 [en] Back to list href resolves to /en/news/",
+   "result": "fail",
+   "error": "Error: Back to list link expect(locator).toHaveCount(expected) failed Locator: locator('main').getByRole('link', { name: /back to list|一覧へ戻る/i }) Expected: 1 Received: 0 Timeout: 5000ms Call log: - Ba",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/news-detail-DSR-566.news-d-cba47-t-href-resolves-to-en-news--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-NEWS-007",
+   "lang": "en",
+   "title": "DSR-NEWS-007 [en] page row in query-index with publishDate/category/tags/template",
+   "result": "fail",
+   "error": "Error: page /master/en/test-space/dsr-357-news-detail in /master/en/query-index.json or /master/en/news/query-index.json expect(received).not.toBeNull() Received: null",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/news-detail-DSR-566.news-d-8cd37-Date-category-tags-template-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-NEWS-009",
+   "lang": "en",
+   "title": "DSR-NEWS-009 [en] no related-content block",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-NEWS-010",
+   "lang": "en",
+   "title": "DSR-NEWS-010 [en] CTA (Button8) href equals authored URL",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-NEWS-012",
+   "lang": "en",
+   "title": "DSR-NEWS-012 [en] My List button and share icons visible and enabled (no click)",
+   "result": "fail",
+   "error": "Error: My List button expect(locator).toBeVisible() failed Locator: locator('main').locator('.article-meta.block').getByRole('button', { name: /my ?list|マイリスト/i }) Expected: visible Timeout: 5000ms Er",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/news-detail-DSR-566.news-d-931a9-sible-and-enabled-no-click--chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-NEWS-013",
+   "lang": "en",
+   "title": "DSR-NEWS-013 [en] body keeps h2/h3, strong, ul/ol, a when present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-NEWS-018",
+   "lang": "en",
+   "title": "DSR-NEWS-018 [en] title, description and og tags non-empty",
+   "result": "fail",
+   "error": "Error: meta[name=\"description\"] expect(received).not.toBe(expected) // Object.is equality Expected: not \"\"",
+   "cause": "none",
+   "confidence": 50,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/news-detail-DSR-566.news-d-cadfe-ption-and-og-tags-non-empty-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-NEWS-001",
+   "lang": "ja",
+   "title": "DSR-NEWS-001 [ja] page shows date, category, title and body",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-002",
+   "lang": "ja",
+   "title": "DSR-NEWS-002 [ja] fixed order date → category → title → body → CTA → Back to list",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-003",
+   "lang": "ja",
+   "title": "DSR-NEWS-003 [ja] shown date equals meta publish date",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-004",
+   "lang": "ja",
+   "title": "DSR-NEWS-004 [ja] category and title are non-empty text",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-006",
+   "lang": "ja",
+   "title": "DSR-NEWS-006 [ja] Back to list href resolves to /ja/news/",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-007",
+   "lang": "ja",
+   "title": "DSR-NEWS-007 [ja] page row in query-index with publishDate/category/tags/template",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-009",
+   "lang": "ja",
+   "title": "DSR-NEWS-009 [ja] no related-content block",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-010",
+   "lang": "ja",
+   "title": "DSR-NEWS-010 [ja] CTA (Button8) href equals authored URL",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-012",
+   "lang": "ja",
+   "title": "DSR-NEWS-012 [ja] My List button and share icons visible and enabled (no click)",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-013",
+   "lang": "ja",
+   "title": "DSR-NEWS-013 [ja] body keeps h2/h3, strong, ul/ol, a when present",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-NEWS-018",
+   "lang": "ja",
+   "title": "DSR-NEWS-018 [ja] title, description and og tags non-empty",
+   "result": "skip",
+   "error": "Blocked – page not on DEV (/master/ja/test-space/dsr-357-news-detail HTTP 404)"
+  },
+  {
+   "tc": "DSR-PCF-001",
+   "lang": "ja",
+   "title": "DSR-PCF-001 [ja] DM_product field set matches ver0.4 (10 tabs, 83 fields)",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-002",
+   "lang": "ja",
+   "title": "DSR-PCF-002 [ja] removed fields and old spellings not shown in the CF editor",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-003",
+   "lang": "ja",
+   "title": "DSR-PCF-003 [ja] field types match fix list",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-004",
+   "lang": "ja",
+   "title": "DSR-PCF-004 [ja] required fields enforced on save (negative)",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-005",
+   "lang": "ja",
+   "title": "DSR-PCF-005 [ja] single-line text accepts 255 characters (boundary)",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-006",
+   "lang": "ja",
+   "title": "DSR-PCF-006 [ja] zipperChainTypeCategories tag picker stores several chain-type tags",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 + chain-type tag namespace; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-008",
+   "lang": "ja",
+   "title": "DSR-PCF-008 [ja] data entry template columns match the model",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + template revision (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-009",
+   "lang": "ja",
+   "title": "DSR-PCF-009 [ja] bulk import with revised template",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-010",
+   "lang": "ja",
+   "title": "DSR-PCF-010 [ja] bulk import rejects row missing a required field (negative)",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-011",
+   "lang": "ja",
+   "title": "DSR-PCF-011 [ja] pre-change product CF opens and keeps retained values",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-04; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-012",
+   "lang": "ja",
+   "title": "DSR-PCF-012 [ja] ja / en / cn folders use the same model",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 en/cn copies; cn folder may not exist (Issue #18); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "ja",
+   "title": "DSR-PCF-007 [ja] openingType stored as multi-value Enumeration with the 4 defined values (publish proxy)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "en",
+   "title": "DSR-PCF-007 [en] openingType stored as multi-value Enumeration with the 4 defined values (publish proxy)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "ja",
+   "title": "DSR-PCF-013 [ja] published TD-585-01 returns ver0.4 fields via dsr-product-page, no removed or old names",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "en",
+   "title": "DSR-PCF-013 [en] published TD-585-01 returns ver0.4 fields via dsr-product-page, no removed or old names",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-014",
+   "lang": "ja",
+   "title": "DSR-PCF-014 [ja] product search JSON entry has search keys and no removed fields",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-560/182 search JSON (Nakamoto); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-015",
+   "lang": "ja",
+   "title": "DSR-PCF-015 [ja] product detail of TD-585-01 renders without errors (regression)",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-586 overlay; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "ja",
+   "title": "DSR-PCF-016 [ja] media01 image only, media02–15 each Type/Asset/Url (publish proxy)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "en",
+   "title": "DSR-PCF-016 [en] media01 image only, media02–15 each Type/Asset/Url (publish proxy)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "ja",
+   "title": "DSR-PCF-017 [ja] 7 fields added in ver0.4 exist with the defined type (publish proxy)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "en",
+   "title": "DSR-PCF-017 [en] 7 fields added in ver0.4 exist with the defined type (publish proxy)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "ja",
+   "title": "DSR-PCF-018 [ja] product CF name = numeric productId in content CF folder",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "en",
+   "title": "DSR-PCF-018 [en] product CF name = numeric productId in content CF folder",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 is ja only; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "ja",
+   "title": "DSR-PCF-019 [ja] all product persisted queries return ver0.4 names only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "en",
+   "title": "DSR-PCF-019 [en] en product persisted queries return ver0.4 names only",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "title": "DSR-PDO-001 [ja] live CF related → detail page shows name, code, images and specs",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "title": "DSR-PDO-001 [en] live CF related → detail page shows name, code, images and specs",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "title": "DSR-PDO-002 [ja] preview-only CF related → 200 on .aem.page, 404 on .aem.live",
+   "result": "skip",
+   "error": "TD-586-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "title": "DSR-PDO-003 [ja] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "title": "DSR-PDO-003 [en] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "title": "DSR-PDO-004 [ja] no GraphQL / execute.json request from the browser",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-005",
+   "lang": "ja",
+   "title": "DSR-PDO-005 [ja] only numeric ids render product detail; non-numeric and /products/ are not overlay pages",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-006",
+   "lang": "ja",
+   "title": "DSR-PDO-006 [ja] CF related in subfolder → no page (404)",
+   "result": "skip",
+   "error": "TD-586-06 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-007",
+   "lang": "ja",
+   "title": "DSR-PDO-007 [ja] CF commune alone → 404 on .aem.page and .aem.live",
+   "result": "skip",
+   "error": "TD-586-07 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-008",
+   "lang": "ja",
+   "title": "DSR-PDO-008 [ja] isActive = false → 200 + noindex, browser sent to product list",
+   "result": "skip",
+   "error": "TD-586-08 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586008 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-009",
+   "lang": "ja",
+   "title": "DSR-PDO-009 [ja] CF commune unpublished → single unavailable row + noindex",
+   "result": "skip",
+   "error": "TD-586-09 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586009 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-011",
+   "lang": "ja",
+   "title": "DSR-PDO-011 [ja] unpublished CF related → 404 on both hosts, absent from query-index",
+   "result": "skip",
+   "error": "TD-586-11 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "title": "DSR-PDO-012 [ja] live product page listed in query-index and sitemap; preview-only absent",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "title": "DSR-PDO-013 [ja] Contact button → inquiry page with product code (no submit)",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "title": "DSR-PDO-013 [en] Contact button → inquiry page with product code (no submit)",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "title": "DSR-PDO-014 [ja] language variant: 200, html lang matches, product name present",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "title": "DSR-PDO-014 [en] language variant: 200, html lang matches, product name present",
+   "result": "skip",
+   "error": "TD-586-01 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "cn",
+   "title": "DSR-PDO-014 [cn] language variant – no /cn path on DEV (Issue #18)",
+   "result": "skip",
+   "error": "fixme"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "title": "DSR-PDO-017 [ja] ver0.4 display fields show the CF values, removed fields absent",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-020",
+   "lang": "ja",
+   "title": "DSR-PDO-020 [ja] ver0.4 new fields – current state recorded (Blocked: no design)",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-021",
+   "lang": "ja",
+   "title": "DSR-PDO-021 [ja] media slots: media01 first, one item per filled slot, 0 broken images",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "title": "DSR-PDO-019 [ja] DSR-457 regression items recorded on overlay page",
+   "result": "skip",
+   "error": "TD-586-01 incomplete: overlay row 'unavailable | no-product'"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "ja",
+   "title": "DSR-PLSP-001 [ja] SP 375px: exactly 2 card columns, no horizontal scroll",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "ja",
+   "title": "DSR-PLSP-002 [ja] SP widths 320–767: 2 card columns at every width",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 6 - Array [] + Array [ + \"\", + \"\", + \"\", + \"\", + ]",
+   "cause": "none",
+   "confidence": 70,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-5da44-card-columns-at-every-width-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "ja",
+   "title": "DSR-PLSP-003 [ja] SP column count stays 2 after scroll, filter and reload",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "confidence": 20,
+   "suspect": "test",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-063f2-er-scroll-filter-and-reload-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "ja",
+   "title": "DSR-PLSP-005 [ja] SP odd result count: last card = other card width, left aligned",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "confidence": 20,
+   "suspect": "test",
+   "evidence": "test-results/product-list-DSR-583.produ-58aaf-her-card-width-left-aligned-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "ja",
+   "title": "DSR-PLSP-004 [ja] PC/TB columns recorded at 768/1024/1440 (Figma: 768→3, 1440→4)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "en",
+   "title": "DSR-PLSP-001 [en] SP 375px: exactly 2 card columns, no horizontal scroll",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "en",
+   "title": "DSR-PLSP-002 [en] SP widths 320–767: 2 card columns at every width",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 5 - Array [] + Array [ + \"\", + \"\", + \"\", + ]",
+   "cause": "none",
+   "confidence": 70,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-777ce-card-columns-at-every-width-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "en",
+   "title": "DSR-PLSP-003 [en] SP column count stays 2 after scroll, filter and reload",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "confidence": 20,
+   "suspect": "test",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-fa118-er-scroll-filter-and-reload-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "en",
+   "title": "DSR-PLSP-005 [en] SP odd result count: last card = other card width, left aligned",
+   "result": "fail",
+   "error": "Error: 3 results: left aligned expect(received).toBe(expected) // Object.is equality Expected: 0 Received: 2",
+   "cause": "none",
+   "confidence": 20,
+   "suspect": "test",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-a7886-her-card-width-left-aligned-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "en",
+   "title": "DSR-PLSP-004 [en] PC/TB columns recorded at 768/1024/1440 (Figma: 768→3, 1440→4)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PRODLIST-001",
+   "lang": "ja",
+   "title": "DSR-PRODLIST-001 [ja] SP 375px: exactly 2 card columns, no horizontal scroll",
+   "result": "fail",
+   "error": "Error: TD-583-01 ≥ 6 products expect(received).toBeGreaterThanOrEqual(expected) Expected: >= 6 Received: 4",
+   "cause": "none",
+   "confidence": 10,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-500a1-olumns-no-horizontal-scroll-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PRODLIST-002",
+   "lang": "ja",
+   "title": "DSR-PRODLIST-002 [ja] SP boundary widths 320–767: 2 columns, no overflow, no horizontal scroll",
+   "result": "fail",
+   "error": "Error: 320: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 1",
+   "cause": "none",
+   "confidence": 10,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-70fa9-erflow-no-horizontal-scroll-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "ja",
+   "title": "DSR-PRODLIST-003 [ja] SP column count stays 2 after scroll, load more, filter and 3 reloads",
+   "result": "fail",
+   "error": "Error: open: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 1",
+   "cause": "none",
+   "confidence": 10,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-5df0e-d-more-filter-and-3-reloads-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "en",
+   "title": "DSR-PRODLIST-003 [en] SP column count stays 2 after scroll, load more, filter and 3 reloads",
+   "result": "skip",
+   "error": "blocked-data: TD-583-01 page missing (/master/en/test-space/product-list and /master/en/product-list HTTP 404)"
+  },
+  {
+   "tc": "DSR-PRODLIST-005",
+   "lang": "ja",
+   "title": "DSR-PRODLIST-005 [ja] SP odd count (3) and single result (1): last card = column width, left aligned",
+   "result": "skip",
+   "error": "blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)"
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "ja",
+   "title": "DSR-PRODLIST-006 [ja] SP card layout vs Figma 375 frame (visual)",
+   "result": "skip",
+   "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)"
+  },
+  {
+   "tc": "DSR-PRODLIST-006",
+   "lang": "en",
+   "title": "DSR-PRODLIST-006 [en] SP card layout vs Figma 375 frame (visual)",
+   "result": "skip",
+   "error": "Visual TC – codex lane (Playwright screenshot vs Figma 1333-6510 375 frame)"
+  },
+  {
+   "tc": "DSR-PRODLIST-007",
+   "lang": "ja",
+   "title": "DSR-PRODLIST-007 [ja] Real device iOS Safari / Android Chrome: 2 columns (manual)",
+   "result": "skip",
+   "error": "Manual TC (real iOS Safari / Android Chrome) – documented only, not automated"
+  },
+  {
+   "tc": "DSR-PRODLIST-004",
+   "lang": "ja",
+   "title": "DSR-PRODLIST-004 [ja] PC/TB columns unchanged: 1440→4, 1200→4, 980→3, 768→3",
+   "result": "fail",
+   "error": "Error: 1440: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 4 Received: 1",
+   "cause": "none",
+   "confidence": 10,
+   "suspect": "data",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/product-list-DSR-583.produ-8e264-d-1440→4-1200→4-980→3-768→3-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "SMOKE-001",
+   "lang": "",
+   "title": "SMOKE-001 DSR-173 test page is reachable",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "ja",
+   "title": "DSR-TOP-004 [ja] quick search hover style and keyword search navigates to product search",
+   "result": "fail",
+   "error": "Error: text/background colour changes on hover expect(received).not.toEqual(expected) // deep equality Expected: not []",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-ja-DSR-TOP-40820-navigates-to-product-search-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "ja",
+   "title": "DSR-TOP-005 [ja] RECOMMEND CONTENTS ≤ 4 cards, same image ratio, rounded corners, card-wide link",
+   "result": "fail",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"}) expect(received).toBe(expected) // Object.is equality Expected: true Received: false",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-ja-DSR-TOP-5f9cf-nded-corners-card-wide-link-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "ja",
+   "title": "DSR-TOP-006 [ja] NEWS shows the 3 newest items by publish date",
+   "result": "fail",
+   "error": "Error: page requests /ja/news/query-index.json expect(received).toContain(expected) // indexOf Expected value: \"/ja/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-ja-DSR-TOP-9e53e-ewest-items-by-publish-date-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "ja",
+   "title": "DSR-TOP-007 [ja] NEWS title clamp PC 2 lines / SP 1 line, image ratio PC = SP",
+   "result": "fail",
+   "error": "Error: SP item 1 title lines ≤ 1 expect(received).toBeLessThanOrEqual(expected) Expected: <= 1 Received: 2",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-ja-DSR-TOP-1c949-SP-1-line-image-ratio-PC-SP-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-008",
+   "lang": "ja",
+   "title": "DSR-TOP-008 [ja] NEWS with empty query-index renders without error",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-009",
+   "lang": "ja",
+   "title": "DSR-TOP-009 [ja] main visual image is eager and is the LCP element",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "en",
+   "title": "DSR-TOP-004 [en] quick search hover style and keyword search navigates to product search",
+   "result": "fail",
+   "error": "Error: text/background colour changes on hover expect(received).not.toEqual(expected) // deep equality Expected: not []",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-en-DSR-TOP-ac27f-navigates-to-product-search-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "en",
+   "title": "DSR-TOP-005 [en] RECOMMEND CONTENTS ≤ 4 cards, same image ratio, rounded corners, card-wide link",
+   "result": "fail",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"}) expect(received).toBe(expected) // Object.is equality Expected: true Received: false",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-en-DSR-TOP-de1e7-nded-corners-card-wide-link-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "en",
+   "title": "DSR-TOP-006 [en] NEWS shows the 3 newest items by publish date",
+   "result": "fail",
+   "error": "Error: page requests /en/news/query-index.json expect(received).toContain(expected) // indexOf Expected value: \"/en/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-en-DSR-TOP-f5b5a-ewest-items-by-publish-date-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "en",
+   "title": "DSR-TOP-007 [en] NEWS title clamp PC 2 lines / SP 1 line, image ratio PC = SP",
+   "result": "fail",
+   "error": "Error: SP item 1 title lines ≤ 1 expect(received).toBeLessThanOrEqual(expected) Expected: <= 1 Received: 2",
+   "cause": "none",
+   "confidence": 60,
+   "suspect": "product",
+   "previous": "same fail in JOB-ZZ-IDLE-28",
+   "evidence": "test-results/top-DSR-609.top-en-DSR-TOP-5446f-SP-1-line-image-ratio-PC-SP-chromium/test-failed-1.png (not committed)"
+  },
+  {
+   "tc": "DSR-TOP-008",
+   "lang": "en",
+   "title": "DSR-TOP-008 [en] NEWS with empty query-index renders without error",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-009",
+   "lang": "en",
+   "title": "DSR-TOP-009 [en] main visual image is eager and is the LCP element",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-001",
+   "lang": "ja",
+   "title": "DSR-TOP-001 [ja] PC full-page capture and horizontal overflow",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-001",
+   "lang": "ja",
+   "title": "DSR-TOP-001 [ja] SP full-page capture and horizontal overflow",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-001",
+   "lang": "en",
+   "title": "DSR-TOP-001 [en] PC full-page capture and horizontal overflow",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-TOP-001",
+   "lang": "en",
+   "title": "DSR-TOP-001 [en] SP full-page capture and horizontal overflow",
+   "result": "pass"
+  }
+ ],
+ "code_changes": [],
+ "run_report": "results/regression/DEV/automation-run-20261022-idle30.md"
+}
