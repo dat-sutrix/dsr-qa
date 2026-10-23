@@ -1,0 +1,25 @@
+{
+  "job": "JOB-20261022-19",
+  "agent": "claude-code",
+  "us": "DSR-654",
+  "env": "dev",
+  "started": "2026-10-23T01:17:46Z",
+  "finished": "2026-10-23T01:20:02Z",
+  "status": "done",
+  "preflight": {
+    "data_proof": "PASS (from job release note quoting Night Report 22/10, not read directly): TD-654-03 Pass – before unpublish opened PDF, after 404; TD-654-05 Pass – .page qa654-sub 404, .live qa654-folder/qa654-sub → catalog list",
+    "shadow_vs_job07": "Note only: SHADOW-TD-654 qa654-preview .page → catalog list vs JOB-07 L3 .page 200 + title (consistent: 200 page with 'unavailable: not-found' redirects to list, seen in JOB-10). qa654-update → PDF, qa654-content-unpub → list, qa654-content-only → 404 match JOB-07/10. TC expectations unchanged."
+  },
+  "tests": [
+    { "tc": "DSR-CATOV-006", "lang": "en", "result": "pass", "error": "", "evidence": "",
+      "cause": "none", "confidence": 0,
+      "observed": ".page 404, .live 404 /en/library/catalog/qa654-removed; .live query-index.json 200, no row ending /catalog/qa654-removed" },
+    { "tc": "DSR-CATOV-010", "lang": "en", "result": "fail",
+      "error": "/en/library/catalog/qa654-folder/qa654-sub HTTP 200 (also .page by curl), expected 404; noindex page with 'unavailable: not-found', client redirects to list. qa654-sub 404 both tiers",
+      "evidence": "evidence/DSR-CATOV-010_en_live.png", "suspect": "product", "cause": "none", "confidence": 70 }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "reports": ["results/DSR-654/DEV/automation-run-20261023-job19.md"],
+  "questions": []
+}
