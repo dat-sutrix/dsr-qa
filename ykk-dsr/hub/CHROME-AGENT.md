@@ -75,4 +75,5 @@ Nội dung step viết như Night Work Pack (giá trị chính xác, từng clic
 | Ngày | Job | Bước | Ghi | Blocked | Lỗi môi trường | Ghi chú |
 |---|---|---|---|---|---|---|
 | 2026-10-23 | JOB-20261023-16 (566 UE xóa block rỗng) | ~25 | 3/3 | 0 | 2 (tab UE mở ngoài tab group; trang treo – Dat reload) | verify JOB-23-17 đang chạy |
+| 2026-10-23 | Audit QA-PT đêm 23/10: JOB-23-16 ✅, JOB-23-20 ✅ (2/2 khớp) | – | – | – | – | 20% audit ngày 1: 0 lỗi chrome |
 | 2026-10-23 | JOB-20261023-20 (529 manual 4.0/21.0/32.0) | ~30 | 3/6 (trả lại 100%) | 0 (32.0 làm một phần) | 2 (tab treo, Dat reload sau khi đổi site access) | Bài học: field bài viết nằm ở **UE > Page > 記事情報** (tự lưu, không có Save/Cancel), không phải Sites properties → job sau viết bước theo UE. JOB-23-18 không kịp chạy → chuyển Night Pack |
