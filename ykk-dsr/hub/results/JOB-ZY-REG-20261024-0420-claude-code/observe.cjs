@@ -1,0 +1,21 @@
+// Read-only observation for JOB-ZY-REG-20261024-0420-claude-code step 4 (no verdict): Last-Modified + ETag on .live and .page.
+// Usage: node observe.cjs (cwd = repo root). Compares with REG-0020 observations.json (4c).
+const fs=require('node:fs');
+const dir='ykk-dsr/hub/results/JOB-ZY-REG-20261024-0420-claude-code';
+const prev=JSON.parse(fs.readFileSync('ykk-dsr/hub/results/JOB-ZY-REG-20261024-0020-claude-code/observations.json')).headers;
+const base=require('dotenv').parse(fs.readFileSync('envs/dev.env')).BASE_URL;
+const files=['scripts/scripts.js','styles/styles.css','blocks/header/header.js','blocks/footer/footer.js',
+ 'blocks/related-content/related-content.js','blocks/related-content/related-content.css'];
+(async()=>{
+ const out={started:new Date().toISOString(),base,baseline:'JOB-ZY-REG-20261024-0020-claude-code observations.json',headers:[]};
+ for(const host of ['live','page'])for(const f of files){
+  const url=base.replace('.aem.live','.aem.'+host)+'/'+f;
+  const r=await fetch(url,{method:'HEAD',cache:'no-store'});
+  const p=prev.find(x=>x.host===host&&x.file===f);
+  out.headers.push({host,file:f,httpStatus:r.status,lastModified:r.headers.get('last-modified'),etag:r.headers.get('etag'),
+   reg0020:p?{lastModified:p.lastModified,etag:p.etag}:null,
+   changed:p?(p.lastModified!==r.headers.get('last-modified')||p.etag!==r.headers.get('etag')):'no baseline'});
+ }
+ out.finished=new Date().toISOString();fs.writeFileSync(`${dir}/observations.json`,JSON.stringify(out,null,1));
+ for(const h of out.headers)console.log(h.host,h.file,h.httpStatus,h.lastModified,h.etag,'changed:',h.changed);
+})();

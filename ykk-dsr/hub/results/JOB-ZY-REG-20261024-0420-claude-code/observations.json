@@ -1,0 +1,180 @@
+{
+ "started": "2026-10-23T21:24:47.285Z",
+ "base": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+ "baseline": "JOB-ZY-REG-20261024-0020-claude-code observations.json",
+ "headers": [
+  {
+   "host": "live",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\"",
+   "reg0020": {
+    "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+    "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\"",
+   "reg0020": {
+    "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+    "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\"",
+   "reg0020": {
+    "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+    "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/footer/footer.js",
+   "httpStatus": 200,
+   "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+   "etag": "\"aa6a40168ca726bc1abf9001f5965a69\"",
+   "reg0020": {
+    "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+    "etag": "\"aa6a40168ca726bc1abf9001f5965a69\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/related-content/related-content.js",
+   "httpStatus": 200,
+   "lastModified": "Thu, 22 Oct 2026 09:07:32 GMT",
+   "etag": "\"adcf45ff0276e15e4d8d3846204c41e5\"",
+   "reg0020": null,
+   "changed": "no baseline"
+  },
+  {
+   "host": "live",
+   "file": "blocks/related-content/related-content.css",
+   "httpStatus": 200,
+   "lastModified": "Tue, 06 Oct 2026 04:34:36 GMT",
+   "etag": "\"e5854f6c898b7b7532d4ddb48859d3e5\"",
+   "reg0020": null,
+   "changed": "no baseline"
+  },
+  {
+   "host": "page",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\"",
+   "reg0020": {
+    "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+    "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\"",
+   "reg0020": {
+    "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+    "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\"",
+   "reg0020": {
+    "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+    "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/footer/footer.js",
+   "httpStatus": 200,
+   "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+   "etag": "\"aa6a40168ca726bc1abf9001f5965a69\"",
+   "reg0020": {
+    "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+    "etag": "\"aa6a40168ca726bc1abf9001f5965a69\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/related-content/related-content.js",
+   "httpStatus": 200,
+   "lastModified": "Thu, 22 Oct 2026 09:07:32 GMT",
+   "etag": "\"adcf45ff0276e15e4d8d3846204c41e5\"",
+   "reg0020": null,
+   "changed": "no baseline"
+  },
+  {
+   "host": "page",
+   "file": "blocks/related-content/related-content.css",
+   "httpStatus": 200,
+   "lastModified": "Tue, 06 Oct 2026 04:34:36 GMT",
+   "etag": "\"e5854f6c898b7b7532d4ddb48859d3e5\"",
+   "reg0020": null,
+   "changed": "no baseline"
+  }
+ ],
+ "finished": "2026-10-23T21:24:48.890Z",
+ "news566_query_index": {
+  "checked_at": "2026-10-23T21:43Z",
+  "http": {
+   "/master/ja/query-index.json": 404,
+   "/master/ja/news/query-index.json": 404,
+   "/ja/query-index.json": 404,
+   "/master/en/query-index.json": 404,
+   "/master/en/news/query-index.json": 404,
+   "/en/query-index.json": 404,
+   "/query-index.json": 200
+  },
+  "root_query_index_total": 238,
+  "root_qa566_rows": [
+   {
+    "path": "/master/ja/test-space/qa566-news-01",
+    "template": ""
+   },
+   {
+    "path": "/master/ja/test-space/qa566-news-02",
+    "template": ""
+   },
+   {
+    "path": "/master/en/test-space/qa566-news-01",
+    "template": ""
+   }
+  ]
+ },
+ "catv_tz_tokyo": {
+  "started": "2026-10-23T21:42:45Z",
+  "finished": "2026-10-23T21:43:13Z",
+  "command": "ENV=dev npx playwright test -c playwright.tz-tokyo.config.ts (temporary, = playwright.config + use.timezoneId 'Asia/Tokyo', not committed) tests/catalog-video/DSR-557.catalog-video.spec.ts --project=chromium --grep 'DSR-CATV-01[89]|DSR-CATV-020' --retries 0",
+  "result": {
+   "DSR-CATV-018 [ja]": "pass",
+   "DSR-CATV-018 [en]": "pass",
+   "DSR-CATV-019 [ja]": "pass",
+   "DSR-CATV-019 [en]": "pass",
+   "DSR-CATV-020 [ja]": "pass",
+   "DSR-CATV-020 [en]": "pass"
+  }
+ }
+}
