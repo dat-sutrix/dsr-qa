@@ -217,3 +217,7 @@ Nguyên tắc: job dựa trên data QA-PT để sẵn ở `jobs/hold/` với đi
 - **16:15 sửa pack TD-566:** tên template trên Create Page là **"ニュース詳細 / News Detail"** (path `/conf/digital-showroom/settings/wcm/templates/news-detail`), KHÔNG phải "news-article". Map ô: Article Meta (ngày) · Title · Text #1 = news type · Text #2 = body · Image · Button. Không thấy template "News Detail" → chụp Create Page, Blocked, làm tiếp.
 - 16:20 bổ sung pack TD-566 (JOB-15): ngoài Text "news type", QA-PT đặt **Page properties → Category = お知らせ (ja) / News (en)** nếu ô có; thay ảnh placeholder bằng ảnh test và ngày thật (2026-10-01) – không để giá trị mẫu.
 - **17:10 [schedule] evening: ĐÃ TẠO Night Work Pack 2026-10-22** (Drive 1_ZmmosDXtIHqO8FTnQTR_L-qIhMg-R9fYKYGBahfgrM, Evidence_20261022 1zE4Xj-kDYdZywN13l-o0fm_HHW6-erFR) – thứ tự: BUGCHK-586 → shadow 190-FORM/TD-654 → TD-566 → TD-654-03/05 → 570 manual → TD-586 en + âm (mốc ~4h25) → dự phòng TD-587 âm → TD-557-YOUKU. Session khác KHÔNG tạo lại. Jobs: hold -17 (586 âm), -18 (587 âm), -19 (654 006/010); queue -20 (codex capture list catalog).
+
+### Ghi chú 23/10 07:50 ([schedule] morning) – Night Pack 23/10 (T6)
+- Night 22/10: 17 Pass / 2 Fail / 4 Blocked; Not run: TD-587 âm + TD-557-YOUKU.
+- Pack 23/10 phải có: (1) BUGCHK-586-02 làm lại nếu JOB-20261022-03 xác nhận DSR CF 990586002 chưa Preview (data QA-PT); (2) TD-587 âm + Youku nếu Agent Author không được duyệt trước 17:10.
