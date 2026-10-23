@@ -1,0 +1,79 @@
+{
+  "top [ja] mobile": {
+    "key": "top",
+    "lang": "ja",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+    "device": "mobile",
+    "runs": [
+      {
+        "run": 1,
+        "scores": {
+          "performance": 91,
+          "accessibility": 96,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 1785.018,
+          "cumulative-layout-shift": 0.018359608322736906,
+          "total-blocking-time": 366
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+        ],
+        "version": "13.5.0",
+        "durationMs": 21745
+      },
+      {
+        "run": 2,
+        "scores": {
+          "performance": 91,
+          "accessibility": 96,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 1854.0575,
+          "cumulative-layout-shift": 0.018422505292669648,
+          "total-blocking-time": 251.5
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 20749
+      },
+      {
+        "run": 3,
+        "scores": {
+          "performance": 95,
+          "accessibility": 96,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 1826.6565,
+          "cumulative-layout-shift": 0.018359722993602782,
+          "total-blocking-time": 156.5
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 19764
+      }
+    ],
+    "scores": {
+      "performance": 91,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 61
+    },
+    "metrics": {
+      "largest-contentful-paint": 1826.6565,
+      "cumulative-layout-shift": 0.018359722993602782,
+      "total-blocking-time": 251.5
+    },
+    "at": "2026-10-23T05:31:50.047Z",
+    "job": "JOB-ZY-REG-20261023-1220-codex"
+  }
+}
