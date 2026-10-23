@@ -1,0 +1,2321 @@
+{
+ "DSR-501-P2 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T04:48:39Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-501-P3 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T04:48:39Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-ARTICLE-002 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-002 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-003 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-006 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-006 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-007 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-007 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-008 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-008 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-009 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-010 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-010 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-011 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-011 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-012 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-012 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-013 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-013 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-014 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-014 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-015 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-016 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-016 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-020 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-023 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-024 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-024 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-025 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-026 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-026 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-028 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-028 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-029 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-ARTICLE-029 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+ },
+ "DSR-BREAD-001 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-001 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-001 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-002 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-004 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-005 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-005 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-005 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-006 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-007 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-008 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-008 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-008 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-009 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-010 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-010 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-011 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-015 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-017 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-017 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-017 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-018 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-018 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-018 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-022 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-025 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-025 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-025 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-027 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-028 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-029 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-030 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-031 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-033 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-034 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-BREAD-035 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+ },
+ "DSR-CATDL-001 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-001 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-002 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-002 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-005 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-005 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-006 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-006 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-007 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-010 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-016 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-016 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-017 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-018 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATDL-018 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+ },
+ "DSR-CATOV-001 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-21T11:40:19Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-001 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-002 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-002 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-003 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-004 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-004 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-005 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-005 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-006 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-006 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-007 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-007 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-008 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-008 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-009 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-010 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-011 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-012 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-012 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-014 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-015 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-015 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-016 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-016 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-017 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-017 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-018 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-018 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-019 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-019 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-021 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATOV-021 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+ },
+ "DSR-CATV-001 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-001 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-002 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-002 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-003 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-006 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-006 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-007 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-007 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-012 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-012 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-013 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-013 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-016 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-016 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-017 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-017 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-018 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-018 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-019 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-019 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-020 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-CATV-020 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+ },
+ "DSR-ECO-001 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-001 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-002 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-002 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-004 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-004 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-005 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-005 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-006 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-007 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-007 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-009 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-010 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-010 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-012 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-013 [cn]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-013 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ECO-013 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+ },
+ "DSR-ICON-001 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-001 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-002 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-002 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-003 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-003 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-004 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-004 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-005 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-006 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-006 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-007 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-008 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-009 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-ICON-009 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/icons/DSR-589.icons.spec.ts"
+ },
+ "DSR-MOVIE-001 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-002 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-003 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-004 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-005 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-006 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-007 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-008 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-009 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-010 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-011 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-012 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-013 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-014 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-22T01:00:46Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-015 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-016 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-017 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-018 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-019 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-020 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-021 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-022 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-023 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-024 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-025 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-026 [-]": {
+  "last": "fail",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-22T01:00:46Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-027 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-028 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-029 [-]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-030 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-031 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-032 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-033 [-]": {
+  "last": "fail",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-14T11:09:19Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-034 [-]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-035 [-]": {
+  "last": "skip",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-MOVIE-036 [-]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+ },
+ "DSR-NEWS-001 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-001 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-002 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-002 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-003 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-003 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T04:39:28Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-004 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-004 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-006 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-006 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-007 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-007 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-008 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-008 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-009 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-009 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-010 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-010 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-012 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-012 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-013 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-013 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-018 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-NEWS-018 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+ },
+ "DSR-PCF-007 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-007 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-013 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-013 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-014 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-015 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-016 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-016 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-017 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-017 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-018 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-018 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-019 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PCF-019 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+ },
+ "DSR-PDO-001 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-001 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-002 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-003 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-004 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-005 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-006 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-007 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T01:12:52Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-008 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-009 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-011 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T01:12:52Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-012 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-013 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-013 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-014 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-014 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-017 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-019 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-020 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PDO-021 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+ },
+ "DSR-PLSP-001 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-001 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-002 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-002 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-003 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-003 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-004 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-004 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-005 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PLSP-005 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+ },
+ "DSR-PRODLIST-001 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list.spec.ts"
+ },
+ "DSR-PRODLIST-002 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list.spec.ts"
+ },
+ "DSR-PRODLIST-003 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list.spec.ts"
+ },
+ "DSR-PRODLIST-003 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list.spec.ts"
+ },
+ "DSR-PRODLIST-004 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list.spec.ts"
+ },
+ "DSR-PRODLIST-005 [ja]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/product-list/DSR-583.product-list.spec.ts"
+ },
+ "DSR-TOP-004 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-004 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-005 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-005 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-006 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-006 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-007 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-007 [ja]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-008 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-008 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-009 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-TOP-009 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/top/DSR-609.top.spec.ts"
+ },
+ "DSR-VCAP-001 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+ },
+ "DSR-VCAP-002 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+ },
+ "DSR-VCAP-003 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+ },
+ "DSR-VCAP-004 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+ },
+ "DSR-VOV-001 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-001 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-002 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-003 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-003 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-004 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-005 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-006 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T02:35:31Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-007 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-007 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-008 [en]": {
+  "last": "fail",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-22T09:13:42Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-010 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T03:32:05Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-011 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:30:30Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:30:30Z",
+  "note": "fail both attempts in main run (~05:19Z), pass on recheck 2026-10-23T05:30:30Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-011 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-013 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:30:30Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:30:30Z",
+  "note": "fail both attempts in main run (~05:19Z), pass on recheck 2026-10-23T05:30:30Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-014 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-015 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-016 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": null,
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-017 [en]": {
+  "last": "skip",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-21T16:33:48Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-018 [en]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "DSR-VOV-018 [ja]": {
+  "last": "pass",
+  "at": "2026-10-23T05:26:32Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:26:32Z",
+  "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+ },
+ "SMOKE-001 DSR-173 test page is reachable [-]": {
+  "last": "pass",
+  "at": "2026-10-23T05:28:36Z",
+  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last_pass_at": "2026-10-23T05:28:36Z",
+  "spec": "tests/smoke.spec.ts"
+ }
+}
