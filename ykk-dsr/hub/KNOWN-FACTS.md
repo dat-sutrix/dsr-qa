@@ -4,6 +4,7 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-23 | DSR-669/671 | Martin | Google Chat 11:24 VN: sẽ sửa + đổi tên CF theo 669/671; giữ **draft PR** dsr-eds#212 + dsr-fullstack#108 tới khi mọi bên approve, hỏi ai có blocker. Chưa có ngày deploy; 670 không nhắc. QA trả lời: không blocker, 3 điều kiện (deploy DEV ≤ 26/10 12:00, migrate cả CF qa*/99058xxxx, báo trước 30 phút để dừng Agent Author). Session QA không đọc được 2 PR (không có quyền repo) | Chat DSR 23/10 11:24 |
 | 2026-10-23 | DSR-673 | QA | Retest Pass (JOB-20261023-04: ja 6 / en 6 thẻ) → **Done** 23/10 | DSR-673 comment + transition 31 |
 | 2026-10-23 | DSR-587 / 557 | QA (Agent Author) | JOB-20261023-03 PASS: data TD-587-NEG + Youku (`XNTgyNzE1ODE5Ng==`) đã ghi (25 writes) → VOV-006/007, CATV-003/007 pass. QA-PT không cần làm lại phần này | results/JOB-20261023-03 |
 | 2026-10-23 | DSR-669/670/671 | Martin/Kohei | CF model refactor Sprint 12 (tạo 23/10): DM_*_related → DM_*_dsr (+GraphQL dm*DsrList, 8 persisted query, migrate cq:model + republish, fullstack+eds deploy cùng lúc); DM_techmovie_dsr mới cho movies/tech; 671: catalog thêm hubspotFormId/promoText, product label {productId}｜{productName}, bỏ relatedMoodboards, kiểm ngôn ngữ ref, isActive của catalog/video liên quan trên product detail. Giữ alias related/inactive → template overlay không đổi | DSR-669/670/671 description |

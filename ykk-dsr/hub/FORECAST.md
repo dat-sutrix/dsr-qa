@@ -19,7 +19,7 @@
 | DSR-570 Doc download | 27/10 · 🟠 | 27/10 · 🟠 – 12/2/2; CATDL-009/011/012/013 Blocked (CF binding + HubSpot POST, Ngọc, chưa ETA); 007/016 70% | 🔴 xấu đi (escalate) | Ngọc · Quentin (007) | không fix trước 26/10 12:00 → TC bị chặn sang S13 |
 | DSR-529 Article | 26/10 · 🟠 | 26/10 · 🟡 – còn data category/robots (tối 23/10) | = | QA-PT | |
 | DSR-611 Question (Youku) | – | Q4 trả lời; Q1/Q2 Numata, Q3 Kohei | = | Numata / Kohei | mặc định giữ |
-| 🆕 **DSR-669 / 670 / 671** CF model refactor (Martin/Kohei, tạo 23/10 10:19–10:38 JST, Sprint 12) | – (mới) | 669 In Progress, 670 In Progress, 671 To Do. Đổi tên DM_*_related → DM_*_dsr, đổi 8 persisted query, migrate cq:model mọi CF dsr rồi republish, model mới techmovie, thêm hubspotFormId/promoText | 🔴 **LATE SCOPE** (escalate 23/10 09:25) | Martin / Kohei | Deploy lên DEV = **regression toàn bộ overlay 587/586/654/557/570 + list** + Agent Author/manifest/fixture đổi model; deploy sau 26/10 12:00 → không kịp retest trong S12 |
+| 🆕 **DSR-669 / 670 / 671** CF model refactor (Martin/Kohei, tạo 23/10 10:19–10:38 JST, Sprint 12) | – (mới) | 669 In Progress, 670 In Progress, 671 To Do. Đổi tên DM_*_related → DM_*_dsr, đổi 8 persisted query, migrate cq:model mọi CF dsr rồi republish, model mới techmovie, thêm hubspotFormId/promoText | 🔴 **LATE SCOPE** (escalate 23/10 09:25) | Martin / Kohei | 23/10 11:24 Martin: draft PR eds#212 + fullstack#108, chờ approve, chưa có ngày deploy. Deploy lên DEV = **regression toàn bộ overlay 587/586/654/557/570 + list** + Agent Author/manifest/fixture đổi model; deploy sau 26/10 12:00 → không kịp retest trong S12 |
 **Forecast 23/10: 4/9 on track** (664, 586, 587, 529) · 5 at risk chờ fix dev (590, 566/653, 557, 654, 570).
 
 ## Năng lực test còn lại (cập nhật 23/10 08:25)
