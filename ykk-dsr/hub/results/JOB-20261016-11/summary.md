@@ -1,0 +1,15 @@
+# JOB-20261016-11 — done
+- DEV Chromium ja; both navigations returned HTTP 200 at the requested qa566-news-01 URL.
+- PC 1440×900: DSR-NEWS-014 captured; article width 744 px, margins 348/348 px.
+- PC scrollWidth 1440; no visible nonzero-sized element bounds overflow the viewport.
+- SP 390×844: DSR-NEWS-015 proposed PASS; scrollWidth 390, content width 342, margins 24/24 px.
+- SP title wraps to two lines, text-overflow clip, no line clamp.
+- Extra date check: proposed FAIL — 2026-10-01T00:00:00.000Z instead of YYYY.MM.DD; cause=none, product-bug confidence=70% (Author data not independently verified).
+- News type お知らせ follows the title: PC y=353.19; SP y=307.58 px.
+- Article image renders at 220×132 px on both viewports; natural dimensions 220×132.
+- Figma PC 6010-59004 / SP 6018-60532 comparison is deferred to Claude web as instructed; position/height design compliance unverified.
+- Both full-page PNGs committed as explicitly required; facts JSON includes URLs, HTTP status, exact text, metadata and bounds.
+- Playwright: 2 passed, 0 failed, 0 skipped; TypeScript: no errors.
+- result.json uses skip for PC because schema lacks captured; capture succeeded, visual verdict pending (not a runtime skip).
+- Build identity and template provenance not independently verified; no Author access used.
+- All outcomes are proposals for human QA review. No Jira or hub coordination files changed.

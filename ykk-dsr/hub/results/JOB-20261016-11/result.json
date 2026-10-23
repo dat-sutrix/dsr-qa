@@ -1,0 +1,53 @@
+{
+  "job": "JOB-20261016-11",
+  "agent": "codex",
+  "us": "DSR-566",
+  "env": "dev",
+  "started": "2026-10-23T00:54:06Z",
+  "finished": "2026-10-23T00:54:26Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-NEWS-014",
+      "lang": "ja",
+      "result": "skip",
+      "capture_status": "captured",
+      "error": "Capture completed; schema has no captured value. Visual verdict deferred to Claude web; no runtime skip.",
+      "evidence": "evidence/DSR-NEWS-014_DEV_01.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-NEWS-015",
+      "lang": "ja",
+      "result": "pass",
+      "error": "scrollWidth 390 <= 390; title wraps to 2 lines, no ellipsis. Figma comparison pending.",
+      "evidence": "evidence/DSR-NEWS-015_DEV_01.png"
+    }
+  ],
+  "additional_checks": [
+    {
+      "check": "date-format",
+      "result": "fail",
+      "expected": "YYYY.MM.DD",
+      "actual": "2026-10-01T00:00:00.000Z",
+      "cause": "none",
+      "confidence": 70,
+      "suspect": "product",
+      "evidence": [
+        "evidence/DSR-NEWS-014_DEV_01.png",
+        "evidence/DSR-NEWS-015_DEV_01.png"
+      ],
+      "note": "Explicit display rule; Author data not independently verified."
+    },
+    {
+      "check": "news-type-position-and-image-height-vs-Figma",
+      "result": "blocked",
+      "note": "Capture-only job delegates Figma comparison to Claude web. Raw positions and dimensions captured; no local design baseline."
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/news-detail/DSR-566.visual-capture.spec.ts"
+  ],
+  "questions": []
+}
