@@ -1,4 +1,5 @@
 # Regression guard log (mới nhất trên)
 | Lượt (VN) | claude-code | codex | Ghi chú |
 |---|---|---|---|
+| 2026-10-23 16:20 | queued JOB-ZY-REG-20261023-1620-claude-code (R2+R1 publish-side: @overlay + P1 + 529/585/590 after 669/670/671 migration, catalog-detail, 667) | queued JOB-ZY-REG-20261023-1620-codex (retry visual P1+P2 post-669 baseline + Lighthouse 3 P1) | Review: REG-1200 done – NEW FAIL VOV-011/013 en 30% (transient, recheck pass) → DASHBOARD 🐞 REG-VOV-EN; codex 1220 failed (PNG size) + 1250 (usage limit) → no results. JOB-23-11 needs-input cookie (Author part waits). CHANGES: 10 rows → yes (REG-1200 / JOB-23-12). Jira 18:05–18:21 JST: no updates (sweep 16:05 covered rest) → no new rows. No bug created. |
 | 2026-10-23 12:20 | busy – JOB-ZY-REG-20261023-1200-claude-code running (baseline R2 = P1+P2) → no new job | queued JOB-ZY-REG-20261023-1220-codex (visual P1+P2 baseline + Lighthouse 3 P1) | Review: no finished JOB-ZY-REG yet. Jira −5h: no new deploy tag/PR; DSR-674 dismissed by-design (overlay needs Publish), DSR-672/673/664 closed → no new CHANGES rows. 669/670/671 still pending Martin. |
