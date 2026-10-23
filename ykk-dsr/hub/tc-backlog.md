@@ -74,6 +74,7 @@
 | 2026-10-22 19:06 | — | backlog trống (row 0 hold) · Jira check OK: auto-added 0 (cùng tập 18:09: 664 bug, 611 question, 653/590/587/586/570/566/557/529 đã phủ) · upload pending 0 / fail 0 | ~2' |
 | 2026-10-22 20:07 | — | backlog trống (row 0 hold) · Jira check lỗi: Atlassian connector CONNECT_TIMEOUT (không thêm được) → retry 21:05 · upload pending 0 / fail 0 | ~3' |
 | 2026-10-22 21:11 | — | backlog trống (row 0 hold) · Jira check lỗi lần 2 trong ngày: Atlassian CONNECT_TIMEOUT → 🔔 Dat, retry 23/10 18:05 · upload pending 0 / fail 0 · báo cáo cuối ngày | ~2' |
+| 2026-10-23 18:08 | — | backlog trống (row 0 hold) · Jira check OK: auto-added 0 (611 question, 653→618, 570→623, 590/587/586/566/557/529 đã phủ) · upload pending 0 / fail 0 | ~3' |
 
 - 2026-10-19 11:40 DSR-585: 項目fix版 xuất hiện (Quentin comment 61280, đang review, sheet 1Rxiw3S-3AkmAP2Jbzkx3FI1-3S3jYbOo). Khi review xong (Jira comment) → re-baseline 15 TC từ v0.1 sang bản fix, ưu tiên sau ticket mới giao Dat.
 
