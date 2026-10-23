@@ -1,0 +1,23 @@
+{
+  "cutoffUTC": "2026-10-23T11:00:00.000Z",
+  "pid": 396073,
+  "state": "running",
+  "rounds": [
+    {
+      "dueUTC": "2026-10-23T04:17:56.596Z",
+      "state": "pending"
+    },
+    {
+      "dueUTC": "2026-10-23T06:17:56.596Z",
+      "state": "pending"
+    },
+    {
+      "dueUTC": "2026-10-23T08:17:56.596Z",
+      "state": "pending"
+    },
+    {
+      "dueUTC": "2026-10-23T10:17:56.596Z",
+      "state": "pending"
+    }
+  ]
+}

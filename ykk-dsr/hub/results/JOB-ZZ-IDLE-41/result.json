@@ -1,0 +1,52 @@
+{
+  "job": "JOB-ZZ-IDLE-41",
+  "agent": "codex",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-23T02:17:56.596Z",
+  "finished": "2026-10-23T02:18:36.906Z",
+  "status": "done",
+  "scope": "Latest capture round only; repetition completion tracked in schedule.json",
+  "tests": [
+    {
+      "tc": "DSR-590-observation-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; no product verdict",
+      "evidence": "evidence/DSR-590/retest/20261023T021756/1440x900-top.png"
+    },
+    {
+      "tc": "DSR-590-observation-428",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; no product verdict",
+      "evidence": "evidence/DSR-590/retest/20261023T021756/428x926-top.png"
+    },
+    {
+      "tc": "DSR-590-observation-393",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; no product verdict",
+      "evidence": "evidence/DSR-590/retest/20261023T021756/393x852-top.png"
+    },
+    {
+      "tc": "DSR-590-observation-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; no product verdict",
+      "evidence": "evidence/DSR-590/retest/20261023T021756/390x844-top.png"
+    },
+    {
+      "tc": "DSR-590-observation-375",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Capture completed; no product verdict",
+      "evidence": "evidence/DSR-590/retest/20261023T021756/375x667-top.png"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "ykk-dsr/hub/results/JOB-ZZ-IDLE-41/capture.cjs"
+  ],
+  "questions": []
+}

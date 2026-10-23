@@ -1,0 +1,429 @@
+[
+  {
+    "started": "2026-10-23T02:17:56.596Z",
+    "finished": "2026-10-23T02:18:36.906Z",
+    "changed": false,
+    "records": [
+      {
+        "width": 1440,
+        "height": 900,
+        "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "evidence": [
+          "evidence/DSR-590/retest/20261023T021756/1440x900-top.png",
+          "evidence/DSR-590/retest/20261023T021756/1440x900-controls.png"
+        ],
+        "httpStatus": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 40,
+            "y": 153.09375,
+            "width": 1360,
+            "height": 23.796875,
+            "top": 153.09375,
+            "right": 1400,
+            "bottom": 176.890625,
+            "left": 40
+          },
+          "section": {
+            "x": 0,
+            "y": 140,
+            "width": 1440,
+            "height": 50,
+            "top": 140,
+            "right": 1440,
+            "bottom": 190,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 230,
+            "width": 1440,
+            "height": 947.390625,
+            "top": 230,
+            "right": 1440,
+            "bottom": 1177.390625,
+            "left": 0
+          },
+          "navGap": 53.109375,
+          "sectionGap": 40,
+          "scrollY": 0
+        },
+        "controls": {
+          "dotCount": 9,
+          "dot9": {
+            "x": 851,
+            "y": 445.390625,
+            "width": 10,
+            "height": 10,
+            "top": 445.390625,
+            "right": 861,
+            "bottom": 455.390625,
+            "left": 851
+          },
+          "next": {
+            "x": 1340,
+            "y": 420.390625,
+            "width": 60,
+            "height": 60,
+            "top": 420.390625,
+            "right": 1400,
+            "bottom": 480.390625,
+            "left": 1340
+          },
+          "container": {
+            "x": 140,
+            "y": 445.390625,
+            "width": 1160,
+            "height": 10,
+            "top": 445.390625,
+            "right": 1300,
+            "bottom": 455.390625,
+            "left": 140
+          },
+          "clearance": 479,
+          "clippedRight": 0,
+          "overflowX": "hidden",
+          "scrollY": 608
+        },
+        "capturedAt": "2026-10-23T02:18:09.766Z"
+      },
+      {
+        "width": 428,
+        "height": 926,
+        "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "evidence": [
+          "evidence/DSR-590/retest/20261023T021756/428x926-top.png",
+          "evidence/DSR-590/retest/20261023T021756/428x926-controls.png"
+        ],
+        "httpStatus": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 16,
+            "y": 81,
+            "width": 396,
+            "height": 16,
+            "top": 81,
+            "right": 412,
+            "bottom": 97,
+            "left": 16
+          },
+          "section": {
+            "x": 0,
+            "y": 72,
+            "width": 428,
+            "height": 34,
+            "top": 72,
+            "right": 428,
+            "bottom": 106,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 146,
+            "width": 428,
+            "height": 941.390625,
+            "top": 146,
+            "right": 428,
+            "bottom": 1087.390625,
+            "left": 0
+          },
+          "navGap": 49,
+          "sectionGap": 40,
+          "scrollY": 0
+        },
+        "controls": {
+          "dotCount": 9,
+          "dot9": {
+            "x": 305,
+            "y": 458.390625,
+            "width": 10,
+            "height": 10,
+            "top": 458.390625,
+            "right": 315,
+            "bottom": 468.390625,
+            "left": 305
+          },
+          "next": {
+            "x": 372,
+            "y": 443.390625,
+            "width": 40,
+            "height": 40,
+            "top": 443.390625,
+            "right": 412,
+            "bottom": 483.390625,
+            "left": 372
+          },
+          "container": {
+            "x": 96,
+            "y": 458.390625,
+            "width": 236,
+            "height": 10,
+            "top": 458.390625,
+            "right": 332,
+            "bottom": 468.390625,
+            "left": 96
+          },
+          "clearance": 57,
+          "clippedRight": 0,
+          "overflowX": "hidden",
+          "scrollY": 498
+        },
+        "capturedAt": "2026-10-23T02:18:16.487Z"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "evidence": [
+          "evidence/DSR-590/retest/20261023T021756/393x852-top.png",
+          "evidence/DSR-590/retest/20261023T021756/393x852-controls.png"
+        ],
+        "httpStatus": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 16,
+            "y": 81,
+            "width": 361,
+            "height": 16,
+            "top": 81,
+            "right": 377,
+            "bottom": 97,
+            "left": 16
+          },
+          "section": {
+            "x": 0,
+            "y": 72,
+            "width": 393,
+            "height": 34,
+            "top": 72,
+            "right": 393,
+            "bottom": 106,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 146,
+            "width": 393,
+            "height": 941.390625,
+            "top": 146,
+            "right": 393,
+            "bottom": 1087.390625,
+            "left": 0
+          },
+          "navGap": 49,
+          "sectionGap": 40,
+          "scrollY": 0
+        },
+        "controls": {
+          "dotCount": 9,
+          "dot9": {
+            "x": 288,
+            "y": 421.390625,
+            "width": 10,
+            "height": 10,
+            "top": 421.390625,
+            "right": 298,
+            "bottom": 431.390625,
+            "left": 288
+          },
+          "next": {
+            "x": 337,
+            "y": 406.390625,
+            "width": 40,
+            "height": 40,
+            "top": 406.390625,
+            "right": 377,
+            "bottom": 446.390625,
+            "left": 337
+          },
+          "container": {
+            "x": 96,
+            "y": 421.390625,
+            "width": 201,
+            "height": 10,
+            "top": 421.390625,
+            "right": 297,
+            "bottom": 431.390625,
+            "left": 96
+          },
+          "clearance": 39,
+          "clippedRight": 1,
+          "overflowX": "hidden",
+          "scrollY": 535
+        },
+        "capturedAt": "2026-10-23T02:18:23.088Z"
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "evidence": [
+          "evidence/DSR-590/retest/20261023T021756/390x844-top.png",
+          "evidence/DSR-590/retest/20261023T021756/390x844-controls.png"
+        ],
+        "httpStatus": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 16,
+            "y": 81,
+            "width": 358,
+            "height": 16,
+            "top": 81,
+            "right": 374,
+            "bottom": 97,
+            "left": 16
+          },
+          "section": {
+            "x": 0,
+            "y": 72,
+            "width": 390,
+            "height": 34,
+            "top": 72,
+            "right": 390,
+            "bottom": 106,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 146,
+            "width": 390,
+            "height": 941.390625,
+            "top": 146,
+            "right": 390,
+            "bottom": 1087.390625,
+            "left": 0
+          },
+          "navGap": 49,
+          "sectionGap": 40,
+          "scrollY": 0
+        },
+        "controls": {
+          "dotCount": 9,
+          "dot9": {
+            "x": 288,
+            "y": 417.390625,
+            "width": 10,
+            "height": 10,
+            "top": 417.390625,
+            "right": 298,
+            "bottom": 427.390625,
+            "left": 288
+          },
+          "next": {
+            "x": 334,
+            "y": 402.390625,
+            "width": 40,
+            "height": 40,
+            "top": 402.390625,
+            "right": 374,
+            "bottom": 442.390625,
+            "left": 334
+          },
+          "container": {
+            "x": 96,
+            "y": 417.390625,
+            "width": 198,
+            "height": 10,
+            "top": 417.390625,
+            "right": 294,
+            "bottom": 427.390625,
+            "left": 96
+          },
+          "clearance": 36,
+          "clippedRight": 4,
+          "overflowX": "hidden",
+          "scrollY": 539
+        },
+        "capturedAt": "2026-10-23T02:18:30.053Z"
+      },
+      {
+        "width": 375,
+        "height": 667,
+        "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "evidence": [
+          "evidence/DSR-590/retest/20261023T021756/375x667-top.png",
+          "evidence/DSR-590/retest/20261023T021756/375x667-controls.png"
+        ],
+        "httpStatus": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 16,
+            "y": 81,
+            "width": 343,
+            "height": 16,
+            "top": 81,
+            "right": 359,
+            "bottom": 97,
+            "left": 16
+          },
+          "section": {
+            "x": 0,
+            "y": 72,
+            "width": 375,
+            "height": 34,
+            "top": 72,
+            "right": 375,
+            "bottom": 106,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 146,
+            "width": 375,
+            "height": 973.390625,
+            "top": 146,
+            "right": 375,
+            "bottom": 1119.390625,
+            "left": 0
+          },
+          "navGap": 49,
+          "sectionGap": 40,
+          "scrollY": 0
+        },
+        "controls": {
+          "dotCount": 9,
+          "dot9": {
+            "x": 288,
+            "y": 328.390625,
+            "width": 10,
+            "height": 10,
+            "top": 328.390625,
+            "right": 298,
+            "bottom": 338.390625,
+            "left": 288
+          },
+          "next": {
+            "x": 319,
+            "y": 313.390625,
+            "width": 40,
+            "height": 40,
+            "top": 313.390625,
+            "right": 359,
+            "bottom": 353.390625,
+            "left": 319
+          },
+          "container": {
+            "x": 96,
+            "y": 328.390625,
+            "width": 183,
+            "height": 10,
+            "top": 328.390625,
+            "right": 279,
+            "bottom": 338.390625,
+            "left": 96
+          },
+          "clearance": 21,
+          "clippedRight": 19,
+          "overflowX": "hidden",
+          "scrollY": 660
+        },
+        "capturedAt": "2026-10-23T02:18:36.814Z"
+      }
+    ]
+  }
+]
