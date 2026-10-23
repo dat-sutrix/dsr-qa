@@ -3,7 +3,7 @@
 
 > 🗣 **Daily standup hôm nay: [STANDUP.md](STANDUP.md)** (tự cập nhật 08:19 T2–T6)
 
-> Cập nhật: 2026-10-23 07:50 (UTC+7, [schedule] morning) · 22/10 17:20 evening · 16:15 [jira-sweep] · 12:10 [jira-sweep] · 07:50 morning · trước đó 21/10 17:10 evening · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 (đã qua) → đích Done DEV 23/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
+> Cập nhật: 2026-10-23 12:10 (UTC+7, [jira-sweep]) · 07:50 [schedule] morning · 22/10 17:20 evening · 16:15 [jira-sweep] · 12:10 [jira-sweep] · 07:50 morning · trước đó 21/10 17:10 evening · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 (đã qua) → đích Done DEV 23/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
 > Lượt tự động 07:45 / 17:10 cập nhật file này. Giữ gọn: chỉ trạng thái hiện tại, lịch sử nằm trong git log và us/*.md.
 
 ## 1. Ticket đang giao Dat: 10 mở (Jira 21/10 16:40) – 566 + 653 tính là 1 việc · ✅ Done 20/10: DSR-552, DSR-648, DSR-651
@@ -22,6 +22,7 @@
 | 🆕 [DSR-590](https://sutrix.atlassian.net/browse/DSR-590) 環境配慮型製品 (giao Dat, [Dev] In Testing) | 16 TC có sẵn · Ngọc 21/10: Eco TOP xong, data demo, chỉ check layout · Figma mới 3351-51595 (Martin) | JOB-20261022-04 chạy ngay + chụp ảnh → L&F card cho Dat | — | 23/10 |
 | 🆕 [DSR-664](https://sutrix.atlassian.net/browse/DSR-664) bug video block hiện "null" (Nakamoto tạo) | **[Dev] In Testing 17:52 JST (Martin nhận từ Ngọc 17:37)** · deploy dev/2026.10.22_2 08:52Z · liên kết DSR-662 c.64873 (null dưới related videos ブースTOP) · Quentin: DSR-558 blocked by 664 | ✅ **JOB-20261022-16 retest PASS 4/4** (VCAP-001..004, video.js đã fix) · Jira 18:14 JST giao lại Dat → **Dat đóng** (🔔 P1) | Dat | 22/10 |
 | [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) QA questions 動画・カタログ | Q4 Youku ID trả lời 22/10; Q1/Q2 Numata, Q3 Kohei | giữ mặc định; Youku seed JOB-23-02/03 | Numata · Kohei | đóng khi Q1–Q3 trả lời |
+| 🆕 [DSR-666](https://sutrix.atlassian.net/browse/DSR-666) bug eco TOP khoảng trắng breadcrumb→hero (590) | **Ngọc fixed + build DEV, [Dev] In Testing giao Dat 12:36 JST (10:36 VN)** · IDLE-41 04:17Z: gap 0 px (CHANGED) | **JOB-20261023-12 (codex) queue** retest → Pass → Dat đóng (🔔 P1) | Agent → Dat | 23/10 |
 | 🆕 [DSR-669](https://sutrix.atlassian.net/browse/DSR-669)/[670](https://sutrix.atlassian.net/browse/DSR-670)/[671](https://sutrix.atlassian.net/browse/DSR-671) CF model refactor (Martin/Kohei, không giao Dat) | tạo 23/10, Sprint 12 | khi deploy DEV: regression overlay toàn bộ + cập nhật Agent Author models/manifest + fixtures | Martin · Kohei | escalate – xem FORECAST |
 Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohei) → mục OK cũ + #13 kiểm lại trong DSR-586** · DSR-503 Dismissed · DSR-585 → [STG] In Testing (Quentin; Sprint 12 chỉ DEV) · ⚠ **DSR-638 (Mayuka, In Progress): chuyển trang test-space ja sang URL chính thức** (list-catalog → /ja/library/catalog, video-list → /ja/library/video/search, product-list → /ja/product/…/product-index, article-list → /ja/library/article) – đường dẫn cũ sẽ 404 → automation 557/570/583/590 vỡ; IDLE-22 theo dõi · DSR-433 (⛔ SendGrid).
 
@@ -30,13 +31,14 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 ## 2. 🔔 Dat cần làm
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
 |---|---|---|---|---|
-| P1 | **Đóng DSR-664** (Jira vẫn [Dev] In Testing) – retest Pass 4/4 (JOB-20261022-16): comment rồi transitions 211 → 221 → 231 → 31 | Jira | 23/10 sáng | "QA confirm DEV – fixed. Retest 22/10 (JOB-20261022-16, .page + .live, en): no \"null\" text in the video block (authored block, booth TOP code-built video, video-detail and product-detail controls). Served video.js last-modified 2026-10-22 09:07 GMT. Booth TOP + product 46 verified on .page only (.live 404). Report: dsr-qa ykk-dsr/hub/results/DSR-664/DEV/automation-run-20261022-rerun-job16.md" |
-| P1 | **Duyệt Agent Author** cho TD-587 âm (07/02/06/10/08/05/04/12) + TD-557-YOUKU – Night 22/10 = Not run → JOB-20261022-18 còn hold, DSR-587 không Done DEV hôm nay nếu không seed | claude-web (session Điều phối) | 23/10 10:00 | – |
+| ~~P1~~ | ~~**Đóng DSR-664** (Jira vẫn [Dev] In Testing) – retest Pass 4/4 (JOB-20261022-16): comment rồi transitions 211 → 221 → 231 → 31 | Jira | 23/10 sáng | "QA confirm DEV – fixed. Retest 22/10 (JOB-20261022-16, .page + .live, en): no \"null\" text in the video block (authored block, booth TOP code-built video, video-detail and product-detail controls). Served video.js last-modified 2026-10-22 09:07 GMT. Booth TOP + product 46 verified on .page only (.live 404). Report: dsr-qa ykk-dsr/hub/results/DSR-664/DEV/automation-run-20261022-rerun-job16.md"~~ ✅ DSR-664 Done 23/10 09:12 – xong |
+| ~~P1~~ | ~~**Duyệt Agent Author** cho TD-587 âm + TD-557-YOUKU~~ ✅ đã làm – JOB-20261023-03 PASS (25 writes) – KHÔNG cần | claude-web | – | – |
 | P2 | Hỏi Ngọc 2 điểm block 570: CATDL-009 (demo chưa gắn catalog CF) + CATDL-011 (form không POST tới HubSpot) | Ngọc | 23/10 | "Hi Ngọc, DSR-570 on DEV (22/10 night run): (1) the download-form demo is still not bound to the catalog CF (TC 9.0 blocked); (2) submitting the form sends no POST to *.hubspot.com / *.hsforms.com (TC 11–13 blocked). When will the CF binding and HubSpot integration be on DEV?" |
 | P2 | Duyệt (session Điều phối) 🐞 < 80%: BUG-CAT-PREVIEW 70% (mới tăng), BUG-CAT-LIST-JA 50% (mới), CATDL-004 50% (mới) + 4 điểm cũ | claude-web | 23/10 | – |
-| P2 | Gửi Martin tin 📣 – 4b (form en tiếng Nhật) + 404 config + mới: preview overlay (.page) | Martin | 23/10 sáng | xem cuối mục 📣 |
+| 🆕 P1 | **Đóng DSR-666** khi JOB-20261023-12 Pass (Claude báo): comment rồi transitions 211 → 221 → 231 → 31 | Jira | 23/10 chiều | "QA confirm DEV – fixed. Retest 23/10 (JOB-20261023-12, .live + .page, 1440/428/393/390/375 px): no extra white space between breadcrumb and hero banner. Thanks Ngọc." |
+| P2 | Gửi Martin tin 📣 – 4b (form en tiếng Nhật) + 404 config (~~preview overlay~~ ✅ đã trả lời DSR-674 by design 23/10 – bỏ câu 2) | Martin | 23/10 | xem cuối mục 📣 |
 | P2 | Cảm ơn Quentin DSR-611 (Youku ID) – nếu chưa gửi 22/10 | Quentin | 23/10 | "Thanks Quentin – QA will use Youku ID XNTgyNzE1ODE5Ng== (movie 345) for TC 3.0/7.0/11.0. Q1/Q2: waiting for Numata-san; Q3: @Kohei Okumura please confirm. Until then QA keeps the defaults in this ticket." |
-| P3 | Re-baseline câu hỏi DSR-654: catalog non-form mở file thẳng → TC 1/12/15/17/18/19 cần chốt (Q47) | Martin/Quentin | 23/10 | "Is opening the file directly (no detail page) intended for non-form catalogs?" |
+| ~~P3~~ | ~~Re-baseline câu hỏi DSR-654: catalog non-form mở file thẳng (Q47) – "Is opening the file directly … intended for non-form catalogs?"~~ ✅ đã trả lời KNOWN-FACTS 23/10 (Dat 11:52: by design) – KHÔNG gửi | – | – | – |
 | P3 | 4 câu hỏi tool author JOB-20261021-10 + Author probe (đã chạy 22/10 15:49, cookie age 0h ✅) | claude-web | 23/10 | results/JOB-20261021-10/summary.md |
 
 ## 3. 🌙 QA part-time – Night 22/10 (T5) kết quả · Night 23/10 (T6): 17:10 tạo pack
@@ -55,7 +57,7 @@ tc-backlog: trống (row 0 hold) · Night TC job 22/10: 18:09/19:06 Jira OK, aut
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
 |---|---|---|---|---|
-| BUG-CAT-PREVIEW (654/586) ↑ | Overlay DSR CF chỉ Preview không hiện trên .aem.page: catalog qa654-preview → list (JOB-10/-14 + SHADOW-TD-654), **product 990586002 → 404 (.page + .live, BUGCHK-586-02 22/10)** | 70% | Chưa xác minh DSR CF 990586002 thật sự đã Preview (data QA-PT); video qa587-preview chưa seed | JOB-20261022-03 ghi replication props → Preview OK + vẫn 404 → bug 85% (Martin) |
+| ~~BUG-CAT-PREVIEW (654/586)~~ ✅ by design (Martin 23/10, DSR-674 Dismissed) | Overlay DSR CF chỉ Preview không hiện trên .aem.page: catalog qa654-preview → list (JOB-10/-14 + SHADOW-TD-654), **product 990586002 → 404 (.page + .live, BUGCHK-586-02 22/10)** | 70% | Chưa xác minh DSR CF 990586002 thật sự đã Preview (data QA-PT); video qa587-preview chưa seed | JOB-20261022-03 ghi replication props → Preview OK + vẫn 404 → bug 85% (Martin) |
 | 🆕 BUG-CAT-LIST-JA (557/654) | /ja/library/catalog 0 thẻ, không có response `dsr-catalog-list` trong 45s (JOB-22-20 + IDLE-38); en 5–6 thẻ | 50% | Chỉ 2 lần đo cùng tối; QA-PT SHADOW-TD-654 mở ja list không báo lỗi; JSON ja chưa kiểm | JOB-20261023-01 (3 lần + JSON trực tiếp) → vẫn 0 + JSON có item → bug 80% (Martin) |
 | 🆕 CATDL-004 (570) | Form tải tài liệu: lỗi bắt buộc hiện dạng popup từng ô thay vì message cạnh ô | 50% | 1 screenshot; có thể là tooltip HTML5 mặc định; Figma C10 chưa final | Giữ; xem screenshot + hỏi Ngọc kiểu lỗi mong muốn khi HubSpot form xong (cùng tin 🔔 P2) |
 | BUG-CAT-FORM-EN (570/654) | en catalog form hiển thị tiếng Nhật (CATDL-016 en) | 70% | Chưa rõ HubSpot form en đã có GUID (DSR-655 L1) | Giữ; câu 4b trong tin Martin |
@@ -76,7 +78,7 @@ Tin gửi sẵn (Dat copy):
 ```
 Hi Martin, two open questions from the DEV runs (read-only):
 1) Is an English HubSpot form configured for the /en catalog overlay pages? /en/library/catalog/qa190-cat-pdf-form currently renders the Japanese form (labels, options, consent).
-2) Should a DSR CF that is only Previewed (not Published) render on .aem.page? qa654-preview (catalog) shows the catalog list and 990586002 (product) returns 404 on .aem.page. We are verifying the replication state this morning and will file a bug if the data is correct.
+~~2) Should a DSR CF that is only Previewed (not Published) render on .aem.page? qa654-preview (catalog) shows the catalog list and 990586002 (product) returns 404 on .aem.page. We are verifying the replication state this morning and will file a bug if the data is correct.~~ ✅ đã trả lời 23/10 (DSR-674 by design) – KHÔNG gửi
 3) The public 404 config.json still shows last-modified 20/10 – is the 404 page config deployed on DEV?
 Thanks!
 ```

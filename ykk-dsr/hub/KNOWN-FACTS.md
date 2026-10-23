@@ -4,6 +4,10 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-23 | DSR-666 | Ngọc | "This issue was fixed and built on dev, please check it again" → [Dev] In Testing + giao Dat 12:36 JST (10:36 VN). IDLE-41 04:17Z: breadcrumb section → hero = 0 px (CHANGED) → retest JOB-20261023-12 | DSR-666 c.64967 |
+| 2026-10-23 | DSR-583 | Martin | SP 2 cột product list → **Dismissed (resolution Not a bug)** 11:22 JST (sau Quentin 22/10 "got answer from backlog") → không test/hỏi thêm 583; Q22 đóng | DSR-583 changelog 23/10 |
+| 2026-10-23 | DSR-182 | Kohei | Xác nhận luồng index tìm kiếm 3 bước: publish CF → json2html (`ykk/dsr-product-page` + `cf-templates/product.html`, sinh meta) → EDS `helix-query.yaml` → block đọc JSON ở browser. Thêm field vào persisted query: nhờ Martin hoặc PR cho Martin review. **Chưa có URL JSON** → Q14 vẫn mở | DSR-182 c.64938 |
+| 2026-10-23 | DSR-671 | Kohei | "LGTM" cho spec chỉnh model DM*dsr (Martin nhờ validate) 11:23 JST | DSR-671 c.64948 |
 | 2026-10-23 | DSR-654 BUG-CAT-NOINDEX | Dat | Catalog non-form (requiresForm=false): robots noindex + không có trong query-index/sitemap = **by design** (chỉ redirect tới file). Mục 🐞 đóng; CATOV-002/021 thêm ngoại lệ → JOB-23-10 | Dat 23/10 11:52 |
 | 2026-10-23 | DSR-654 CATOV-010 | Martin | DSR CF trong sub-folder: tạo CF directory-strict; overlay chỉ trả 200 hoặc 404; URL có sub-folder (`/en/library/catalog/qa654-folder/qa654-sub`) = 200 trang trống (stub, noindex) → **redirect về list = by design**; URL phẳng `qa654-sub` 404. TC 654 10.0 đổi kỳ vọng → JOB-23-10 | Chat Martin 23/10 ~11:48 VN |
 | 2026-10-23 | DSR-674 / Overlay preview | Martin | **Preview KHÔNG hoạt động với overlay** – phải Publish (live) DSR CF + content CF mới thấy trang; Preview-only → .page 200 stub `unavailable: not-found` = by design → DSR-674 **Dismissed**; TC VOV-002 / CATOV-009 / PDO-002 đổi kỳ vọng. Không seed/test "Preview only" cho overlay nữa (pack QA-PT + manifest) | Chat Martin 23/10 ~11:45 VN · DSR-674 c.64984 |

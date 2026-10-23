@@ -10,7 +10,7 @@
 | DSR-665 | (blocker 587) | ✅ Done 22/10 | = | – | |
 | DSR-659 | (blocker 529) | ✅ Done 22/10 (by design) | = | – | |
 | DSR-664 null caption | Ngọc | ✅ Done 23/10 09:12 | = | – | |
-| DSR-590 Eco | 23/10 · 🟢 | **26/10 · 🟡** – DSR-666/667 → **In Progress 09:05** (Ngọc đang làm); IDLE-41 theo dõi fix | 🔴 lùi đích (escalate 23/10) – xu hướng tốt lên | Ngọc | Done khi 666/667 fixed + retest |
+| DSR-590 Eco | 23/10 · 🟢 | **26/10 · 🟡** – **DSR-666 fixed → [Dev] In Testing giao QA 23/10 10:36 VN** (trước 17:00, không LATE) → JOB-20261023-12; DSR-667 In Progress (IDLE-41: dot 9 không còn bị che ở 375–428 px, chưa có comment) | 🔴 lùi đích (escalate 23/10) – xu hướng tốt lên | Ngọc | Done khi 666/667 fixed + retest |
 | DSR-566/653 News | 23–26/10 · 🟢 | **26/10 · 🟡** – JOB-16-08 12/10: ngày raw ISO → **bug DSR-672** (Ngọc), thiếu Back to list (70%), index (70%); title placeholder = data | 🔴 rủi ro xấu đi (escalate 23/10) | Ngọc + QA-PT (title, My list/share) | |
 | DSR-586 Product overlay | 23–26/10 · 🟢 | 26/10 · 🟢 – positives 13/0, âm 6/2 (PDO-005 TC cũ, PDO-006 65%); 990586002 chưa Preview = data → tối 23/10 | = | QA-PT (Preview 990586002) | PDO-020 Blocked (no design) |
 | DSR-587 Video overlay | 26/10 · 🟡 | 26/10 · 🟡 – TD-587 âm: Agent Author dry-run JOB-23-02 → apply JOB-23-03 trước 13:30 (fallback QA-PT tối 23/10) | = | Agent | |

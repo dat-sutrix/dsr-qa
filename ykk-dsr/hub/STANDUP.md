@@ -26,7 +26,7 @@ Blockers / need help
 
 * @martin portal : /ja/library/catalog shows 0 cards, although the dsr-catalog-list JSON returns 7 items (3 loads, same result). /en shows 6 cards. Can you check the JA rendering? (DSR-557, DSR-654)
 * @Minh Ngọc Hoàng : DSR-566 news detail: the date shows the raw value "2026-10-01T00:00:00.000Z" instead of 2026.10.01, and there is no "Back to list" link. Is the link planned for this template? (DSR-566/653)
-* @Minh Ngọc Hoàng : DSR-666 / DSR-667 are still To Do. When can they be fixed? DSR-590 cannot be Done without them.
+* ~~@Minh Ngọc Hoàng : DSR-666 / DSR-667 are still To Do. When can they be fixed? DSR-590 cannot be Done without them.~~ ✅ đã trả lời DSR-666 23/10 (fixed, In Testing) – KHÔNG gửi lại (667 vẫn In Progress)
 * @Minh Ngọc Hoàng : DSR-570: (1) the download-form demo is still not bound to the catalog CF; (2) the form sends no request to HubSpot. When will both be on DEV? 4 TCs are blocked.
 * @Quentin Milavec : DSR-590 moves from 23/10 to 26/10, and DSR-566/653, 557, 654, 570 now depend on the fixes above. If they are not on DEV by 26/10 12:00, we propose closing the tested scope and moving the blocked TCs to Sprint 13.
 * FYI DSR-611: QA uses Youku ID XNTgyNzE1ODE5Ng== (thanks @Quentin Milavec). Q1/Q2 still wait for Numata-san, Q3 for Kohei; QA keeps the defaults until then.
