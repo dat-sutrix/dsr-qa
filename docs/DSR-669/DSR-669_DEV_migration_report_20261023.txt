@@ -1,0 +1,169 @@
+DSR-669 DEV migration report
+
+
+
+
+  DSR-669 DEV migration report
+    Oct 23, 2026         · ​@Martin
+
+  DSR-669 is live on DEV: the CF related models are now DM_*_dsr , all 84 DSR CFs were
+  migrated, the 78 live ones republished, and every existing overlay page regenerated. QA
+  can start the regression.
+
+
+  Released
+  Two PRs went to DEV together for DSR-669. DSR-670 (#109) was merged at 07:50 UTC,
+  and its DEV deploy is running.
+
+
+     PR          Repo             Scope                                      Merged (UTC)
+
+     #108        dsr-             DSR-669: models dm_*_related →             2026-10-23 06:49
+                 fullstack         dm_*_dsr , 8 persisted queries, DAM
+                                  policy, CF editor config. DSR-671 items
+                                  1–5: hubspotFormId and promoText on
+                                   DM_catalog_dsr and in dsr-catalog-
+                                  page , productLabel = {productId}      ｜
+                                  {productName} , relatedMoodboards
+                                  removed
+
+     #212        dsr-eds          DSR-669: overlay allowlists, product       2026-10-23 07:15
+                                  and video detail blocks, gap-check,
+                                  docs
+
+     #109        dsr-             DSR-670: DM_techmovie_dsr and dsr-         2026-10-23 07:50 (DEV
+                 fullstack        techmovie-page                             deploy running)
+
+
+
+
+  Steps run on DEV
+  Every step finished without a failure. Times are UTC, 2026-10-23.
+
+
+
+
+                                                                                                     Page 1 of 4
+DSR-669 DEV migration report
+
+
+
+
+     Time               Step                                         Result
+
+     06:50              DSR Dev Deploy (Cloud Manager) after         DEV publish serves
+                        #108                                         DmMovieDsrModel ;
+                                                                     DmMovieRelatedModel is gone;
+                                                                     DM_catalog_dsr has
+                                                                     hubspotFormId and promoText
+
+     07:24              Overlay config applied to dsr-eds-dev        The 12 overlay folders (ja / en / cn)
+                        / main (video, product, catalog)             allow their dm_*_dsr model;
+                                                                     json2html has the repo's 21 entries;
+                                                                     reserved-check OK
+
+     07:30              Migration report (read only)                 84 CFs under /content/dam/dsr , all
+                                                                     on old models, no unknown model
+
+     07:32              Migration ( cq:model only)                   84 migrated, 0 failed; report after: 0
+                                                                     changes left
+
+     07:33              Test republish of                            Page regenerated 6 s later on
+                         ja/movies/standard/qa587-main               preview and live, same content
+
+     07:37–             Republish of every live CF                   78 republished, 6 unpublished
+     07:39                                                           skipped, 0 failed
+
+     07:39–             Page check                                   All 55 existing overlay pages
+     07:44                                                           regenerated
+
+
+
+
+  CF migration
+  All 84 CFs under /content/dam/dsr/ now point to a dm_*_dsr model, and each still
+  resolves its CF commune on author.
+
+
+     Language            Folder             Model after         CFs
+
+     en                  movies/standard     dm_movie_dsr       30
+
+     en                  catalogs            dm_catalog_dsr     18
+
+     en                  products            dm_product_dsr     4
+
+     ja                  catalogs            dm_catalog_dsr     15
+
+
+
+
+                                                                                                         Page 2 of 4
+DSR-669 DEV migration report
+
+
+
+
+     Language            Folder            Model after       CFs
+
+     ja                  products          dm_product_dsr    10
+
+     ja                  movies/standard   dm_movie_dsr      7
+
+
+       QA data: 61 of the 84 CFs are QA items ( qa* and 99058xxxx ), all migrated.
+       No tech talks on DEV: movies/tech/ holds no CF in either language, so DSR-670
+       needs no tech talk migration unless some are created first.
+       Not republished (6): these CFs were not live before, so they stay unpublished:
+       en/catalogs/qa654-preview , en/catalogs/qa654-removed ,
+          en/movies/standard/qa587-preview , en/movies/standard/qa587-removed ,
+          ja/products/990586002 , ja/products/990586011 .
+
+
+
+  Overlay pages
+  All 55 overlay pages that existed before regenerated within 5 minutes, on preview
+  ( aem.page ) and live ( aem.live ); one page is still missing on live.
+
+
+     Result                                Pages   Detail
+
+     Regenerated, same content             35      Only the per-request script nonce differs
+
+     Regenerated, content                  20      The 16 qa190-cat-* catalogs (ja and en), qa557-
+     changed                                       youku (ja and en), en/products/990586001 ,
+                                                   ja/products/qa586-alpha . Spot-checked pages
+                                                   now match publish GraphQL exactly.
+
+     Newly on live                         22      Older test items that were on preview only before:
+                                                   badid , noid , sort-* , products 135 / 46 ,
+                                                   catalogid-02 , and others
+
+     Still 404 on live                     1        ja/library/catalog/catalogid-01 : fine on
+                                                   preview, data correct on publish
+
+
+       Why 17 of the changed pages differ: applying the overlay config at 07:24 rebuilt them
+       while their CFs were still on the old models, so they briefly rendered without data. The
+       republish restored them. The other 3 ( en/qa557-youku , en/products/990586001 ,
+        ja/products/qa586-alpha ) were last built on 10-22 or early 10-23. Edits to their CF
+       commune since then are the likely cause; not confirmed.
+
+
+
+                                                                                                  Page 3 of 4
+DSR-669 DEV migration report
+
+
+
+
+       URLs: pages follow the overlay paths, not the DAM folder names:
+       /{lang}/library/video/{movieId} , /{lang}/products/{productId} ,
+        /{lang}/library/catalog/{catalogId} . The video list is
+        /{lang}/library/video/search . /ja/movies/{id} is not a page.
+
+
+
+
+                                                                          Page 4 of 4
+
