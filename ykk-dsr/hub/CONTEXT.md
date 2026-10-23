@@ -92,3 +92,6 @@ Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – m�
 
 ## Regression guard (Dat 23/10 11:56)
 Mỗi 4h (00:20/04:20/08:20/12:20/16:20/20:20 VN, mọi ngày) scheduled task "DSR regression guard": lane rảnh → job `JOB-ZY-REG-…` theo `regression/README.md` (feature P1/P2/P3 + `regression/CHANGES.md` impact map). NEW FAIL (trước pass, nay fail) ≥ 80% → bug label `regression` + link thay đổi gây ra. Mọi tin dev về thay đổi → 1 dòng `regression/CHANGES.md`.
+
+## Client blockers (Dat 23/10 13:07)
+Việc cần khách (YKK/LOWP/Numata) → `CLIENT-BLOCKERS.md`, TC `Blocked-by: <ticket> (client)`, không tính vào forecast S12, không coi là fail. Standup mỗi ngày + tin forecast cho Quentin có mục "Client blockers" (1 dòng/mục); nhắc Quentin mỗi thứ Hai. Không kỳ vọng có sớm.

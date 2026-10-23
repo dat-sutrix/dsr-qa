@@ -34,3 +34,6 @@ Còn 2 ngày làm việc + 1 đêm data. Việc data còn lại (990586002 Previ
 - 23/10 09:25 (Điều phối): 664 Done; bug mới DSR-672 (566 date, Ngọc), DSR-673 (ja catalog list, Martin High); 666/667 In Progress. **Escalation #5: DSR-669/670/671 CF model refactor đưa vào Sprint 12 ngày 23/10** → rủi ro regression toàn bộ overlay nếu deploy cuối sprint; đề xuất deploy DEV trước 26/10 12:00 hoặc dời S13.
 - 23/10 08:25 (standup): 4/9 on track. Escalate 4: 590 lùi 23→26/10 (666/667 To Do); 566/653 xấu đi (ngày raw 85%, Back to list); 557/654 ja catalog list 0 thẻ (JSON 7 item); 570 4 TC Blocked không ETA. 664 Done hôm nay. Không LATE HANDOVER.
 - 22/10 16:15: baseline + cập nhật sau 7 bug đóng, template 566 sửa, catalog list live.
+
+## Client blockers (không tính vào forecast S12 – xem CLIENT-BLOCKERS.md)
+CB-1 HubSpot form (DSR-655 LOWP) · CB-2 PDF URL protection (DSR-655 Y4) · CB-3 form rules (DSR-655 Y) · CB-4 DSR-611 Q1/Q2 · CB-5 SharePoint (DSR-582) · CB-6 SendGrid (DSR-546/302). 570: các TC form/HubSpot → S13+.

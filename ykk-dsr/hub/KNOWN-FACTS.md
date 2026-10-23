@@ -4,6 +4,7 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-23 | DSR-655 HubSpot | Martin | "Hubspot is not ready yet, we didn't get it from client" (chat 13:05 VN) → form/HubSpot TC = client blocker CB-1; DSR-655 Y4 (bảo vệ URL PDF) = câu hỏi khách → CATDL-007 chờ Y4 (CB-2), không hỏi Quentin TC 007 nữa | Chat DSR-570 thread 23/10 |
 | 2026-10-23 | DSR-666 | Ngọc | "This issue was fixed and built on dev, please check it again" → [Dev] In Testing + giao Dat 12:36 JST (10:36 VN). IDLE-41 04:17Z: breadcrumb section → hero = 0 px (CHANGED) → retest JOB-20261023-12 | DSR-666 c.64967 |
 | 2026-10-23 | DSR-583 | Martin | SP 2 cột product list → **Dismissed (resolution Not a bug)** 11:22 JST (sau Quentin 22/10 "got answer from backlog") → không test/hỏi thêm 583; Q22 đóng | DSR-583 changelog 23/10 |
 | 2026-10-23 | DSR-182 | Kohei | Xác nhận luồng index tìm kiếm 3 bước: publish CF → json2html (`ykk/dsr-product-page` + `cf-templates/product.html`, sinh meta) → EDS `helix-query.yaml` → block đọc JSON ở browser. Thêm field vào persisted query: nhờ Martin hoặc PR cho Martin review. **Chưa có URL JSON** → Q14 vẫn mở | DSR-182 c.64938 |
