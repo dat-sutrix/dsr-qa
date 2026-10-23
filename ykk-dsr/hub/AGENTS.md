@@ -67,3 +67,6 @@ In every summary.md / result.json, each fail gets `cause`: `overlay-merge` | `dm
 
 ## Author lane (Dat 21/10)
 AEM Author jobs (`tools/author`, manifests, authenticated Author reads/writes) run ONLY in lane `claude-code` or `author` – brain = Claude. Lane `codex` must refuse any job touching `tools/author`, `author/manifests` or `~/.dsr-secrets/`.
+
+## Regression jobs (Dat 23/10)
+Jobs `JOB-ZY-REG-…` follow `hub/regression/README.md`. Exception to §2: they may also write `results/REGRESSION/ledger.json`, `results/REGRESSION/visual-ledger.json` and run reports under `results/REGRESSION/DEV/`. Put every "previous pass → now fail" in a **NEW FAIL** table at the top of summary.md.

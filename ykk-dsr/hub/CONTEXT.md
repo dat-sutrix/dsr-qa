@@ -88,3 +88,7 @@ Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – m�
 - **Bộ não Agent Author = Claude (Claude Code), không dùng OpenAI/Codex** (Dat 21/10). Job author/verify-Author chỉ ở lane `claude-code`/`author`; `codex` không nhận job author, không đọc `~/.dsr-secrets/`.
 - Quy tắc đứng: agent test (`claude-code`, `codex`) vẫn **read-only** AEM; chỉ lane `author` được ghi, trong phạm vi §2. Cookie hết hạn → Dat dán lại (hướng dẫn: AUTHOR-AGENT §2b; terminal phải là `bash`, user `qa`). Không dán cookie vào chat/Jira.
 - Manifest đặt ở `hub/author/manifests/` (mẫu `TD-587-01.yaml`).
+
+
+## Regression guard (Dat 23/10 11:56)
+Mỗi 4h (00:20/04:20/08:20/12:20/16:20/20:20 VN, mọi ngày) scheduled task "DSR regression guard": lane rảnh → job `JOB-ZY-REG-…` theo `regression/README.md` (feature P1/P2/P3 + `regression/CHANGES.md` impact map). NEW FAIL (trước pass, nay fail) ≥ 80% → bug label `regression` + link thay đổi gây ra. Mọi tin dev về thay đổi → 1 dòng `regression/CHANGES.md`.
