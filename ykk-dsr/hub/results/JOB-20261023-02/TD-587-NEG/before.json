@@ -1,0 +1,41 @@
+{
+  "/content/dam/common/en/movies/qa587-preview": {
+    "exists": false
+  },
+  "/content/dam/common/en/movies/qa587-sub": {
+    "exists": false
+  },
+  "/content/dam/common/en/movies/qa587-commune-only": {
+    "exists": false
+  },
+  "/content/dam/common/en/movies/qa587-unavail": {
+    "exists": false
+  },
+  "/content/dam/common/en/movies/qa587-removed": {
+    "exists": false
+  },
+  "/content/dam/common/en/movies/qa587-tt": {
+    "exists": false
+  },
+  "/content/dam/common/en/movies/qa587-inactive": {
+    "exists": false
+  },
+  "/content/dam/common/ja/movies/qa587-inactive": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-preview": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-inactive": {
+    "exists": false
+  },
+  "/content/dam/dsr/ja/movies/standard/qa587-inactive": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-unavail": {
+    "exists": false
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-removed": {
+    "exists": false
+  }
+}

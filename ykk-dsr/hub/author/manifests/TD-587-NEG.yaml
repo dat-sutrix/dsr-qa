@@ -1,0 +1,124 @@
+# TD-587-NEG – DSR-587 negative TDs (TD-587-02/04/05/06/07/08/10/12) – JOB-20261023-02 (Agent Author dry-run, GET only)
+# Sources: tc-out/DSR-587.spec.json testdata + howto, fixtures/dsr-587.ts (td ids), jobs/hold/JOB-20261022-18.md (URL per TC).
+# Live model check 23/10 02:17 UTC: DM_movie / DM_movie_related unchanged vs author/models.md (DSR-669 rename not live yet).
+# Content CF values "same as 01" = live values of /content/dam/common/en/movies/qa587-main (read 23/10):
+#   youtube irFRtAVphCY, thumbnail image 7.png, description 2 lines, no relatedProducts (01 live has none).
+# Languages: only TD-587-07 has a ja copy ("ja copy"); all others are en only (TD column ja/cn = "—").
+#
+# NOT in this manifest → QA-PT (Night Pack), see results/JOB-20261023-02/summary.md:
+#   TD-587-04 QA587_Upper (commune + DSR CF): node name fails strict guard ^qa[0-9a-z][0-9a-z-]*$ (by design; "refused" = Pass input for 4.0).
+#   TD-587-05 DSR CF /content/dam/dsr/en/movies/standard/qa587/qa587-sub: sub-folder (outside guard; folder qa587 does not exist).
+#   TD-587-08 step 2: Unpublish commune qa587-unavail, then republish DSR CF qa587-unavail (tool has no unpublish).
+#   TD-587-10 step 2: ≥ 10 min after publish, Unpublish DSR CF qa587-removed (tool has no unpublish).
+#   TD-587-12 DSR CF qa587-tt: folder /content/dam/dsr/en/movies/tech does not exist on DEV (404, 23/10) and
+#             DSR-669 will add DM_techmovie_dsr for movies/tech → model for that folder not stable (Q32).
+id: TD-587-NEG
+us: DSR-587
+max_writes: 40
+items:
+  # --- content CFs (en), all published preview + live (D10 default, stated explicitly) ---
+  # TD-587-02
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-02 en only (TestData ja/cn column = —)"
+    path: /content/dam/common/{lang}/movies/qa587-preview
+    fields: { movieId: qa587-preview, movieTitle: "QA587 preview", description: "QA587 line1 \nQA587 line2", thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)", movieSource: youtube, movieSourceId: irFRtAVphCY, publishDate: "2026-10-23" }
+    replicate: [preview, publish]
+  # TD-587-05 (commune only; DSR CF in sub-folder = QA-PT)
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-05 en only (TestData ja/cn column = —)"
+    path: /content/dam/common/{lang}/movies/qa587-sub
+    fields: { movieId: qa587-sub, movieTitle: "QA587 sub", description: "QA587 line1 \nQA587 line2", thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)", movieSource: youtube, movieSourceId: irFRtAVphCY, publishDate: "2026-10-23" }
+    replicate: [preview, publish]
+  # TD-587-06
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-06 en only (TestData ja/cn column = —)"
+    path: /content/dam/common/{lang}/movies/qa587-commune-only
+    fields: { movieId: qa587-commune-only, movieTitle: "QA587 commune only", description: "QA587 line1 \nQA587 line2", thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)", movieSource: youtube, movieSourceId: irFRtAVphCY, publishDate: "2026-10-23" }
+    replicate: [preview, publish]
+  # TD-587-08 (title not in TestData → [Giả định])
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-08 en only (TestData ja/cn column = —)"
+    path: /content/dam/common/{lang}/movies/qa587-unavail
+    fields: { movieId: qa587-unavail, movieTitle: "QA587 unavail", description: "QA587 line1 \nQA587 line2", thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)", movieSource: youtube, movieSourceId: irFRtAVphCY, publishDate: "2026-10-23" }
+    replicate: [preview, publish]
+  # TD-587-10 (title not in TestData → [Giả định])
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-10 en only (TestData ja/cn column = —)"
+    path: /content/dam/common/{lang}/movies/qa587-removed
+    fields: { movieId: qa587-removed, movieTitle: "QA587 removed", description: "QA587 line1 \nQA587 line2", thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)", movieSource: youtube, movieSourceId: irFRtAVphCY, publishDate: "2026-10-23" }
+    replicate: [preview, publish]
+  # TD-587-12 (commune only; DSR CF = QA-PT)
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-12 en only (TestData ja/cn column = —)"
+    path: /content/dam/common/{lang}/movies/qa587-tt
+    fields: { movieId: qa587-tt, movieTitle: "QA587 tech talk", description: "QA587 line1 \nQA587 line2", thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)", movieSource: youtube, movieSourceId: irFRtAVphCY, publishDate: "2026-10-23" }
+    replicate: [preview, publish]
+  # TD-587-07 commune: en + ja (title not in TestData → [Giả định])
+  - kind: content-cf
+    model: DM_movie
+    lang: [en, ja]
+    path: /content/dam/common/{lang}/movies/qa587-inactive
+    fields:
+      movieId: qa587-inactive
+      movieTitle: QA587 inactive
+      description: "QA587 line1 \nQA587 line2"
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)"
+      movieSource: youtube
+      movieSourceId: irFRtAVphCY
+      publishDate: "2026-10-23"
+    replicate: [preview, publish]
+
+  # --- DSR CFs ---
+  # TD-587-02 preview only → .aem.page 200 / .aem.live 404 (2.0)
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-02 en only"
+    path: /content/dam/dsr/{lang}/movies/standard/qa587-preview
+    fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/qa587-preview)" }
+    replicate: [preview]
+  # TD-587-07 isActive OFF, published (7.0, en + ja). [Giả định] create OFF + publish = "OFF, republish" end state;
+  # if 7.0 shows no page at all, phase 2 = ON publish → OFF republish (separate manifest).
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/movies/standard/qa587-inactive
+    fields: { isActive: false, movie: "ref(/content/dam/common/{lang}/movies/qa587-inactive)" }
+    replicate: [preview, publish]
+  # TD-587-08 phase 1 (agent): DSR CF live; phase 2 (QA-PT): unpublish commune, republish this DSR CF (8.0)
+  # TD-587-10 phase 1 (agent): DSR CF live; phase 2 (QA-PT): unpublish after ≥ 10 min (10.0)
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-08/10 en only"
+    path: /content/dam/dsr/{lang}/movies/standard/{id}
+    each: [qa587-unavail, qa587-removed]
+    fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/{id})" }
+    replicate: [preview, publish]
+  # TD-587-06 qa587-commune-only: no DSR CF by design (6.0)
+verify:
+  urls:
+    - "/en/library/video/qa587-preview"
+    - "/{lang}/library/video/qa587-inactive"
+    - "/en/library/video/qa587-unavail"
+    - "/en/library/video/qa587-removed"

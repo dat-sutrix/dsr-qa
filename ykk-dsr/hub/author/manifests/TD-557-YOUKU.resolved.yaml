@@ -1,0 +1,30 @@
+# TD-557-YOUKU (resolved) – Youku video (DSR-557 TC 3.0 / 7.0 / 11.0 Youku parts) – source: TD-557-YOUKU.yaml (jira-sweep 22/10 16:05 VN)
+# Resolved JOB-20261023-02 against the LIVE model (23/10 02:17 UTC, no drift vs author/models.md):
+#   DM_movie required = movieId, movieTitle, description, thumbnail, movieSource, publishDate – all set; movieSource enum youtube/youku/dam → "youku".
+#   movieSourceId = "XNTgyNzE1ODE5Ng==" (DSR-611 Q4, Quentin c.64863; quoted – "=" padding kept verbatim).
+#   DM_movie_related content ref = movie, 表示フラグ = isActive. No field name/value changed vs source.
+id: TD-557-YOUKU
+us: DSR-557
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en, ja]
+    path: /content/dam/common/{lang}/movies/qa557-youku
+    fields:
+      movieId: qa557-youku
+      movieTitle: QA557 Youku video
+      description: QA557 Youku test (DSR-611 Q4)
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/image 7.png)"
+      movieSource: youku
+      movieSourceId: "XNTgyNzE1ODE5Ng=="
+      publishDate: "2026-10-01"
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en, ja]
+    path: /content/dam/dsr/{lang}/movies/standard/qa557-youku
+    fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/qa557-youku)" }
+    replicate: [preview, publish]
+# Spare ID if a 2nd Youku video is needed: XNTgyNTc0MDg4NA== (movie 346 铝合金拉链简介)
+verify:
+  urls: ["/{lang}/library/video/qa557-youku"]

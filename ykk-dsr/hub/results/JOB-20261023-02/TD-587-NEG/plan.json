@@ -1,0 +1,972 @@
+[
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa587-preview",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-preview",
+      "name": "qa587-preview",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-preview"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 preview"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa587-sub",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-sub",
+      "name": "qa587-sub",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-sub"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 sub"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa587-commune-only",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-commune-only",
+      "name": "qa587-commune-only",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-commune-only"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 commune only"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa587-unavail",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-unavail",
+      "name": "qa587-unavail",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-unavail"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 unavail"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa587-removed",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-removed",
+      "name": "qa587-removed",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-removed"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 removed"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa587-tt",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-tt",
+      "name": "qa587-tt",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-tt"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 tech talk"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-inactive",
+      "name": "qa587-inactive",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-inactive"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 inactive"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/movies/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-inactive",
+      "name": "qa587-inactive",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/ja/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa587-inactive"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA587 inactive"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA587 line1 \nQA587 line2"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youtube"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "irFRtAVphCY"
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-preview",
+      "name": "qa587-preview",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmllX3JlbGF0ZWQ",
+      "parentPath": "/dsr/en/movies/standard",
+      "fields": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "movie",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/movies/qa587-preview"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.isActive",
+      "fields.movie"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-inactive",
+      "name": "qa587-inactive",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmllX3JlbGF0ZWQ",
+      "parentPath": "/dsr/en/movies/standard",
+      "fields": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "movie",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/movies/qa587-inactive"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.isActive",
+      "fields.movie"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-inactive",
+      "name": "qa587-inactive",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmllX3JlbGF0ZWQ",
+      "parentPath": "/dsr/ja/movies/standard",
+      "fields": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "movie",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/movies/qa587-inactive"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.isActive",
+      "fields.movie"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-unavail",
+      "name": "qa587-unavail",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmllX3JlbGF0ZWQ",
+      "parentPath": "/dsr/en/movies/standard",
+      "fields": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "movie",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/movies/qa587-unavail"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.isActive",
+      "fields.movie"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa587-removed",
+      "name": "qa587-removed",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmllX3JlbGF0ZWQ",
+      "parentPath": "/dsr/en/movies/standard",
+      "fields": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "movie",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/movies/qa587-removed"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.isActive",
+      "fields.movie"
+    ]
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-preview, /content/dam/common/en/movies/qa587-sub, /content/dam/common/en/movies/qa587-commune-only, /content/dam/common/en/movies/qa587-unavail, /content/dam/common/en/movies/qa587-removed, /content/dam/common/en/movies/qa587-tt, /content/dam/common/en/movies/qa587-inactive, /content/dam/common/ja/movies/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-preview",
+        "/content/dam/common/en/movies/qa587-sub",
+        "/content/dam/common/en/movies/qa587-commune-only",
+        "/content/dam/common/en/movies/qa587-unavail",
+        "/content/dam/common/en/movies/qa587-removed",
+        "/content/dam/common/en/movies/qa587-tt",
+        "/content/dam/common/en/movies/qa587-inactive",
+        "/content/dam/common/ja/movies/qa587-inactive"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-preview, /content/dam/dsr/en/movies/standard/qa587-inactive, /content/dam/dsr/ja/movies/standard/qa587-inactive, /content/dam/dsr/en/movies/standard/qa587-unavail, /content/dam/dsr/en/movies/standard/qa587-removed",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-preview",
+        "/content/dam/dsr/en/movies/standard/qa587-inactive",
+        "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+        "/content/dam/dsr/en/movies/standard/qa587-unavail",
+        "/content/dam/dsr/en/movies/standard/qa587-removed"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-preview, /content/dam/common/en/movies/qa587-sub, /content/dam/common/en/movies/qa587-commune-only, /content/dam/common/en/movies/qa587-unavail, /content/dam/common/en/movies/qa587-removed, /content/dam/common/en/movies/qa587-tt, /content/dam/common/en/movies/qa587-inactive, /content/dam/common/ja/movies/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-preview",
+        "/content/dam/common/en/movies/qa587-sub",
+        "/content/dam/common/en/movies/qa587-commune-only",
+        "/content/dam/common/en/movies/qa587-unavail",
+        "/content/dam/common/en/movies/qa587-removed",
+        "/content/dam/common/en/movies/qa587-tt",
+        "/content/dam/common/en/movies/qa587-inactive",
+        "/content/dam/common/ja/movies/qa587-inactive"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-inactive, /content/dam/dsr/ja/movies/standard/qa587-inactive, /content/dam/dsr/en/movies/standard/qa587-unavail, /content/dam/dsr/en/movies/standard/qa587-removed",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-inactive",
+        "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+        "/content/dam/dsr/en/movies/standard/qa587-unavail",
+        "/content/dam/dsr/en/movies/standard/qa587-removed"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

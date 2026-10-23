@@ -1,0 +1,25 @@
+{
+  "job": "JOB-20261023-02",
+  "agent": "claude-code",
+  "us": "DSR-587, DSR-557",
+  "env": "dev",
+  "started": "2026-10-23T02:16:59Z",
+  "finished": "2026-10-23T02:21:04Z",
+  "status": "done",
+  "mode": "author dry-run (GET only; AUTHOR_WRITE_ENABLED unset, no --apply; 0 write requests sent)",
+  "model_drift": "none – live DM_movie / DM_movie_related schema + model paths identical to author/models.md (models-live.md, 2026-10-23T02:17Z); DM_*_dsr / DM_techmovie_dsr (DSR-669) not on DEV yet",
+  "manifests": [
+    { "manifest": "author/manifests/TD-587-NEG.yaml", "lint": "PASS 212 · FAIL 0 · WARN 22", "planned_writes": 17, "creates": 13, "replicate_requests": 4, "out": "TD-587-NEG/" },
+    { "manifest": "author/manifests/TD-557-YOUKU.resolved.yaml", "lint": "PASS 62 · FAIL 0 · WARN 4", "planned_writes": 8, "creates": 4, "replicate_requests": 4, "out": "TD-557-YOUKU/" }
+  ],
+  "excluded_qa_pt": [
+    "TD-587-04 QA587_Upper commune + DSR CF: node name outside strict guard (by design; Author 'refused' = Pass input for 4.0)",
+    "TD-587-05 DSR CF dsr/en/movies/standard/qa587/qa587-sub: sub-folder outside guard; folder qa587 missing (commune qa587-sub is in manifest)",
+    "TD-587-08 phase 2: Unpublish commune qa587-unavail, then republish DSR CF qa587-unavail (tool has no unpublish)",
+    "TD-587-10 phase 2: >= 10 min after publish, Unpublish DSR CF qa587-removed (tool has no unpublish)",
+    "TD-587-12 DSR CF qa587-tt: dsr/en/movies/tech folder 404 on DEV; DSR-669 adds DM_techmovie_dsr for movies/tech (Q32) (commune qa587-tt is in manifest)"
+  ],
+  "tests": [],
+  "code_changes": ["ykk-dsr/hub/author/manifests/TD-587-NEG.yaml", "ykk-dsr/hub/author/manifests/TD-557-YOUKU.resolved.yaml"],
+  "questions": []
+}
