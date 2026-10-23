@@ -1,0 +1,96 @@
+{
+ "started": "2026-10-23T13:26:18.331Z",
+ "headers": [
+  {
+   "host": "live",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+  },
+  {
+   "host": "live",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+  },
+  {
+   "host": "live",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+  },
+  {
+   "host": "live",
+   "file": "blocks/eco-carousel/eco-carousel.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 04:43:32 GMT",
+   "etag": "\"b6a6184df2ad0494a62dcb61ad23aec9\""
+  },
+  {
+   "host": "live",
+   "file": "blocks/eco-carousel/eco-carousel.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 23 Oct 2026 07:21:26 GMT",
+   "etag": "\"d1d7c97a33d41070aadf667c396ed474\""
+  },
+  {
+   "host": "page",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+  },
+  {
+   "host": "page",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+  },
+  {
+   "host": "page",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+  },
+  {
+   "host": "page",
+   "file": "blocks/eco-carousel/eco-carousel.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 04:43:32 GMT",
+   "etag": "\"b6a6184df2ad0494a62dcb61ad23aec9\""
+  },
+  {
+   "host": "page",
+   "file": "blocks/eco-carousel/eco-carousel.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 23 Oct 2026 07:21:26 GMT",
+   "etag": "\"d1d7c97a33d41070aadf667c396ed474\""
+  }
+ ],
+ "label671": [
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+   "httpStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+   "h1": "QA586 product A",
+   "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+   "fullwidthBar": [],
+   "idOccurrences": []
+  },
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+   "httpStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+   "h1": "QA586 product A",
+   "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+   "fullwidthBar": [],
+   "idOccurrences": []
+  }
+ ],
+ "finished": "2026-10-23T13:26:39.480Z"
+}
