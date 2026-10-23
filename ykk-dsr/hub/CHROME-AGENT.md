@@ -25,7 +25,7 @@
 | QA-PT | ~4h/tối | **chỉ việc còn sót (overflow) + audit mẫu 20% việc chrome trong 5 ngày làm việc đầu** → rồi theo ZERO-HUMAN §3 |
 
 ## 3. Phạm vi & an toàn (giữ AUTHOR-AGENT §2, thêm cho UI)
-- Chỉ Author DEV `author-p192812-e2014374`, EDS DEV `.aem.page/.aem.live`, path `qa*` (CF `/content/dam/{common,dsr}/{ja,en}/…/qa*`, trang `…/stories/qa*`). Mở URL ngoài danh sách → dừng.
+- Chỉ Author DEV `author-p192812-e2014374`, EDS DEV `.aem.page/.aem.live`, path `qa*` (CF `/content/dam/{common,dsr}/{ja,en}/…/qa*`, trang `…/stories/qa*` và `…/master/{ja,en}/test-space/qa*` (như D15, Claude 23/10)). Ngoại lệ tên/folder chỉ khi job ghi rõ "Claude duyệt ngoại lệ". Mở URL ngoài danh sách → dừng.
 - **Không**: Delete / Unpublish ngoài job ghi rõ path · sửa model/template/config/user · nhập mật khẩu hay bấm Sign out · trả lời hộp thoại xác nhận không có trong job · đụng STG/PRO · thao tác tab không do agent tạo.
 - Hộp thoại lạ / trang khác mong đợi / 2 lần thử không được → ghi `blocked` + mô tả, chuyển bước kế, **không đoán**.
 - Giờ chạy: **08:30–18:00 T2–T6** (QA-PT làm tối → không sửa cùng lúc; item nào nằm trong Night Pack đêm nay thì chrome không đụng).
