@@ -26,7 +26,7 @@
    "summary": "EN: Verify a CF related published to preview only creates the page on .aem.page but not on .aem.live. JP: プレビュー公開のみの場合、.aem.page にのみページが生成されることを確認する。",
    "pre": "EN: TD-586-02 CF related 990586002 published to preview only. JP: TD-586-02 プレビュー公開のみ。",
    "steps": "EN: 1. Open https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002. 2. Open the same path on .aem.live. 3. Record both statuses. JP: 1. aem.page を開く 2. aem.live を開く 3. ステータス記録。",
-   "expected": "EN: .aem.page → 200 with product name; .aem.live → 404. JP: page=200、live=404。",
+   "expected": "EN: .aem.page → 200 with the overlay not-found stub (rows source: overlay + unavailable: not-found, noindex, no product name); .aem.live → 404. By design: Preview does not work with the overlay feature (Martin 23/10, DSR-674 Dismissed). JP: page=200（not-found スタブ）、live=404。仕様：プレビュー非対応。",
    "design": "BL-OVL-1 Editor action 'Publish CF related (preview)'",
    "layer": "Page",
    "exec": "Automation",

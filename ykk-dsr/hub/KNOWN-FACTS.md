@@ -4,6 +4,7 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-23 | DSR-674 / Overlay preview | Martin | **Preview KHÔNG hoạt động với overlay** – phải Publish (live) DSR CF + content CF mới thấy trang; Preview-only → .page 200 stub `unavailable: not-found` = by design → DSR-674 **Dismissed**; TC VOV-002 / CATOV-009 / PDO-002 đổi kỳ vọng. Không seed/test "Preview only" cho overlay nữa (pack QA-PT + manifest) | Chat Martin 23/10 ~11:45 VN · DSR-674 c.64984 |
 | 2026-10-23 | DSR-672 | Ngọc / QA | Ngọc 12:43 JST: "date now input via Text block instead of article metadata". QA: qa566-news-01 ja/en hiện 2026.10.01 (JOB-23-06 03:40Z, sau khi TD-566-FIX đặt publicationdate) → **Done**. Kiểm phần dư: qa566-news-02 (không có publicationdate) → JOB-23-08 | DSR-672 c.64972 / c.64978 |
 | 2026-10-23 | DSR-674 (BUG-PREVIEW) | QA | Bug mới (Martin, Medium, 85%): DSR CF chỉ Preview → .aem.page 200 + `unavailable: not-found` (qa587-preview, qa654-preview, 990586002), vẫn lỗi sau re-preview → VOV-002/CATOV-009/PDO-002 Blocked-by DSR-674 | JOB-23-06 summary |
 | 2026-10-23 | DSR-669/671 | Martin | Google Chat 11:24 VN: sẽ sửa + đổi tên CF theo 669/671; giữ **draft PR** dsr-eds#212 + dsr-fullstack#108 tới khi mọi bên approve, hỏi ai có blocker. Chưa có ngày deploy; 670 không nhắc. QA trả lời: không blocker, 3 điều kiện (deploy DEV ≤ 26/10 12:00, migrate cả CF qa*/99058xxxx, báo trước 30 phút để dừng Agent Author). Session QA không đọc được 2 PR (không có quyền repo) | Chat DSR 23/10 11:24 |
