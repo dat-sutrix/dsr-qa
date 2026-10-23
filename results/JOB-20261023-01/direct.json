@@ -1,0 +1,1210 @@
+[
+  {
+    "host": "live",
+    "lang": "ja",
+    "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/ja/catalogs/;cb=1792716999986",
+    "urlSource": "derived from observed English page request; Japanese page made no catalog request",
+    "fetched": "2026-10-23T00:57:48.038Z",
+    "status": 200,
+    "durationMs": 669,
+    "bodyLengthBytes": 6977,
+    "itemCount": 7,
+    "items": [
+      {
+        "name": "カタログ 01",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/catalogid-01",
+        "catalogPath": "/content/dam/common/ja/catalogs/dm-catalog-10"
+      },
+      {
+        "name": "カタログ 02",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/catalogid-02",
+        "catalogPath": "/content/dam/common/ja/catalogs/dm-catalog-1"
+      },
+      {
+        "name": "catalog ebook",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-ebook"
+      },
+      {
+        "name": "catalog ebook form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form"
+      },
+      {
+        "name": "qa190-cat-pdf",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-pdf"
+      },
+      {
+        "name": "catalog pdf form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form"
+      },
+      {
+        "name": "QA654 inactive",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa654-inactive"
+      }
+    ],
+    "json": {
+      "data": {
+        "related": {
+          "items": [
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/catalogid-01",
+              "isActive": true,
+              "isBoothLimited": false,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/dm-catalog-10",
+                "catalogId": "catalogid-01",
+                "catalogTitle": "カタログ 01",
+                "catalogCategories": [
+                  "site:product/appearance/concealing",
+                  "site:product/appearance/decorative"
+                ],
+                "description": {
+                  "plaintext": "カタログの説明文\nカタログの説明文"
+                },
+                "searchKeywords": "キーワード|キーワード2|キーワード2",
+                "catalogType": "ebook",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": "https://translate.google.com/",
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/catalogid-02",
+              "isActive": true,
+              "isBoothLimited": false,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/dm-catalog-1",
+                "catalogId": "catalogid-02",
+                "catalogTitle": "カタログ 02",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "カタログの説明文\nカタログの説明文"
+                },
+                "searchKeywords": "キーワード|キーワード2|キーワード2",
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-ebook",
+                "catalogId": "qa190-cat-ebook",
+                "catalogTitle": "catalog ebook",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+                "catalogId": "qa190-cat-ebook-form",
+                "catalogTitle": "catalog ebook form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-pdf",
+                "catalogId": "qa190-cat-pdf",
+                "catalogTitle": "qa190-cat-pdf",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "カタログの説明文\nカタログの説明文"
+                },
+                "searchKeywords": "キーワード|キーワード2|キーワード2",
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+                "catalogId": "qa190-cat-pdf-form",
+                "catalogTitle": "catalog pdf form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "pdf",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+              "isActive": false,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa654-inactive",
+                "catalogId": "qa654-inactive",
+                "catalogTitle": "QA654 inactive",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 description"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "host": "live",
+    "lang": "en",
+    "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/en/catalogs/;cb=1792716999986",
+    "urlSource": "observed page request",
+    "fetched": "2026-10-23T00:57:48.611Z",
+    "status": 200,
+    "durationMs": 572,
+    "bodyLengthBytes": 6931,
+    "itemCount": 8,
+    "items": [
+      {
+        "name": "catalog ebook",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-ebook"
+      },
+      {
+        "name": "catalog ebook form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+      },
+      {
+        "name": "catalog pdf",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-pdf"
+      },
+      {
+        "name": "catalog pdf form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-pdf-form"
+      },
+      {
+        "name": null,
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub"
+      },
+      {
+        "name": "QA654 subfolder",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-folder/qa654-sub",
+        "catalogPath": "/content/dam/common/en/catalogs/qa654-sub"
+      },
+      {
+        "name": "QA654 inactive",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+        "catalogPath": "/content/dam/common/en/catalogs/qa654-inactive"
+      },
+      {
+        "name": "QA654 update",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-update",
+        "catalogPath": "/content/dam/common/en/catalogs/qa654-update"
+      }
+    ],
+    "json": {
+      "data": {
+        "related": {
+          "items": [
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-ebook",
+                "catalogId": "qa190-cat-ebook",
+                "catalogTitle": "catalog ebook",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+                "catalogId": "qa190-cat-ebook-form",
+                "catalogTitle": "catalog ebook form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-pdf",
+                "catalogId": "qa190-cat-pdf",
+                "catalogTitle": "catalog pdf",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+                "catalogId": "qa190-cat-pdf-form",
+                "catalogTitle": "catalog pdf form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "pdf",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": null
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-folder/qa654-sub",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa654-sub",
+                "catalogId": "qa654-sub",
+                "catalogTitle": "QA654 subfolder",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 description"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+              "isActive": false,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa654-inactive",
+                "catalogId": "qa654-inactive",
+                "catalogTitle": "QA654 inactive",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 description"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-update",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa654-update",
+                "catalogId": "qa654-update",
+                "catalogTitle": "QA654 update",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 before"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "host": "page",
+    "lang": "ja",
+    "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/ja/catalogs/;cb=1792716999995",
+    "urlSource": "derived from observed English page request; Japanese page made no catalog request",
+    "fetched": "2026-10-23T00:57:49.124Z",
+    "status": 200,
+    "durationMs": 512,
+    "bodyLengthBytes": 6977,
+    "itemCount": 7,
+    "items": [
+      {
+        "name": "カタログ 01",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/catalogid-01",
+        "catalogPath": "/content/dam/common/ja/catalogs/dm-catalog-10"
+      },
+      {
+        "name": "カタログ 02",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/catalogid-02",
+        "catalogPath": "/content/dam/common/ja/catalogs/dm-catalog-1"
+      },
+      {
+        "name": "catalog ebook",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-ebook"
+      },
+      {
+        "name": "catalog ebook form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form"
+      },
+      {
+        "name": "qa190-cat-pdf",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-pdf"
+      },
+      {
+        "name": "catalog pdf form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form"
+      },
+      {
+        "name": "QA654 inactive",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+        "catalogPath": "/content/dam/common/ja/catalogs/qa654-inactive"
+      }
+    ],
+    "json": {
+      "data": {
+        "related": {
+          "items": [
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/catalogid-01",
+              "isActive": true,
+              "isBoothLimited": false,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/dm-catalog-10",
+                "catalogId": "catalogid-01",
+                "catalogTitle": "カタログ 01",
+                "catalogCategories": [
+                  "site:product/appearance/concealing",
+                  "site:product/appearance/decorative"
+                ],
+                "description": {
+                  "plaintext": "カタログの説明文\nカタログの説明文"
+                },
+                "searchKeywords": "キーワード|キーワード2|キーワード2",
+                "catalogType": "ebook",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": "https://translate.google.com/",
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/catalogid-02",
+              "isActive": true,
+              "isBoothLimited": false,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/dm-catalog-1",
+                "catalogId": "catalogid-02",
+                "catalogTitle": "カタログ 02",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "カタログの説明文\nカタログの説明文"
+                },
+                "searchKeywords": "キーワード|キーワード2|キーワード2",
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-ebook",
+                "catalogId": "qa190-cat-ebook",
+                "catalogTitle": "catalog ebook",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+                "catalogId": "qa190-cat-ebook-form",
+                "catalogTitle": "catalog ebook form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-pdf",
+                "catalogId": "qa190-cat-pdf",
+                "catalogTitle": "qa190-cat-pdf",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "カタログの説明文\nカタログの説明文"
+                },
+                "searchKeywords": "キーワード|キーワード2|キーワード2",
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+                "catalogId": "qa190-cat-pdf-form",
+                "catalogTitle": "catalog pdf form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "pdf",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+              "isActive": false,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/ja/catalogs/qa654-inactive",
+                "catalogId": "qa654-inactive",
+                "catalogTitle": "QA654 inactive",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 description"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "host": "page",
+    "lang": "en",
+    "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/en/catalogs/;cb=1792716999995",
+    "urlSource": "observed page request",
+    "fetched": "2026-10-23T00:57:49.649Z",
+    "status": 200,
+    "durationMs": 525,
+    "bodyLengthBytes": 6931,
+    "itemCount": 8,
+    "items": [
+      {
+        "name": "catalog ebook",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-ebook"
+      },
+      {
+        "name": "catalog ebook form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+      },
+      {
+        "name": "catalog pdf",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-pdf"
+      },
+      {
+        "name": "catalog pdf form",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+        "catalogPath": "/content/dam/common/en/catalogs/qa190-cat-pdf-form"
+      },
+      {
+        "name": null,
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub"
+      },
+      {
+        "name": "QA654 subfolder",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-folder/qa654-sub",
+        "catalogPath": "/content/dam/common/en/catalogs/qa654-sub"
+      },
+      {
+        "name": "QA654 inactive",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+        "catalogPath": "/content/dam/common/en/catalogs/qa654-inactive"
+      },
+      {
+        "name": "QA654 update",
+        "lang": null,
+        "catalogLang": null,
+        "path": "/content/dam/dsr/en/catalogs/qa654-update",
+        "catalogPath": "/content/dam/common/en/catalogs/qa654-update"
+      }
+    ],
+    "json": {
+      "data": {
+        "related": {
+          "items": [
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-ebook",
+                "catalogId": "qa190-cat-ebook",
+                "catalogTitle": "catalog ebook",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+                "catalogId": "qa190-cat-ebook-form",
+                "catalogTitle": "catalog ebook form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "ebook",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": "https://www.ykkfastening.com/",
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": null
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-pdf",
+                "catalogId": "qa190-cat-pdf",
+                "catalogTitle": "catalog pdf",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+                "catalogId": "qa190-cat-pdf-form",
+                "catalogTitle": "catalog pdf form",
+                "catalogCategories": [
+                  "site:product/material/aluminium",
+                  "site:product/material/cotton",
+                  "site:product/material/magnet"
+                ],
+                "description": {
+                  "plaintext": "Catalog description\nCatalog description"
+                },
+                "searchKeywords": "key word|keyword 2|keyword 2",
+                "catalogType": "pdf",
+                "requiresForm": true,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 1,
+                "publishDate": "2026-09-03",
+                "updateDate": "2026-09-03",
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": null
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-folder/qa654-sub",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa654-sub",
+                "catalogId": "qa654-sub",
+                "catalogTitle": "QA654 subfolder",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 description"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+              "isActive": false,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa654-inactive",
+                "catalogId": "qa654-inactive",
+                "catalogTitle": "QA654 inactive",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 description"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            },
+            {
+              "_path": "/content/dam/dsr/en/catalogs/qa654-update",
+              "isActive": true,
+              "isBoothLimited": null,
+              "catalog": {
+                "_path": "/content/dam/common/en/catalogs/qa654-update",
+                "catalogId": "qa654-update",
+                "catalogTitle": "QA654 update",
+                "catalogCategories": [
+                  "site:product/material/aluminium"
+                ],
+                "description": {
+                  "plaintext": "QA654 before"
+                },
+                "searchKeywords": null,
+                "catalogType": "pdf",
+                "requiresForm": false,
+                "isUnavailable": null,
+                "ebookUrl": null,
+                "sortOrder": 0,
+                "publishDate": "2026-10-01",
+                "updateDate": null,
+                "thumbnail": {
+                  "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/png/image%207.png"
+                },
+                "pdfAsset": {
+                  "_path": "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+                  "_publishUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+]
