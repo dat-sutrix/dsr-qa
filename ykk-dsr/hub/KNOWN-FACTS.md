@@ -4,6 +4,10 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-23 | DSR-669/670/671 | Martin/Kohei | CF model refactor Sprint 12 (tạo 23/10): DM_*_related → DM_*_dsr (+GraphQL dm*DsrList, 8 persisted query, migrate cq:model + republish, fullstack+eds deploy cùng lúc); DM_techmovie_dsr mới cho movies/tech; 671: catalog thêm hubspotFormId/promoText, product label {productId}｜{productName}, bỏ relatedMoodboards, kiểm ngôn ngữ ref, isActive của catalog/video liên quan trên product detail. Giữ alias related/inactive → template overlay không đổi | DSR-669/670/671 description |
+| 2026-10-23 | DSR-666/667 | Ngọc | → In Progress 23/10 ~09:05 VN | Jira changelog |
+| 2026-10-23 | DSR-664 | QA | Done 23/10 (retest Pass 4/4) | DSR-664 c.64945 |
+| 2026-10-23 | DSR-672/673 | QA | Bug mới: 672 news date raw ISO (Ngọc, Medium); 673 ja catalog list 0 thẻ/JSON 7 (Martin, High) | Jira |
 | 2026-10-22 | DSR-357 (566) | Kohei | Deploy Dev `dev/2026.10.22_3` commit 12dece2 lúc 09:25Z, trùng lúc 566 → [Dev] In Testing giao Dat 18:25 JST | https://sutrix.atlassian.net/browse/DSR-357?focusedCommentId=64910 |
 | 2026-10-22 | DSR-578 | Martin | List (一覧) Design Fixes: Ngọc đã thêm field tag vào list configuration; Martin nhờ 石谷 kiểm tra (chưa xác nhận fixed) | https://sutrix.atlassian.net/browse/DSR-578?focusedCommentId=64909 |
 | 2026-10-22 | DSR-611 | Quentin | **Q4 Youku test ID:** `XNTgyNzE1ODE5Ng==` (CN movie 345 闪亮金属拉链简介); dự phòng `XNTgyNTc0MDg4NA==` (movie 346) – nguồn DSR-582 動画_CN → mở TC 3.0/7.0/11.0 phần Youku (557). Q1/Q2 đang hỏi Numata; Q3 (setting NEW/UPDATE) chuyển Kohei – chưa trả lời | DSR-611 c.64863 (14:50 JST) |
