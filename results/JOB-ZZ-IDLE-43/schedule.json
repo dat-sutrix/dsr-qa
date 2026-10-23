@@ -1,0 +1,30 @@
+{
+  "started": "2026-10-23T04:35:59.083Z",
+  "cutoffUTC": "2026-10-23T11:00:00.000Z",
+  "intervalMinutes": 90,
+  "pid": 417294,
+  "state": "running",
+  "rounds": [
+    {
+      "dueUTC": "2026-10-23T04:35:59.084Z",
+      "state": "captured",
+      "finished": "2026-10-23T04:36:29.564Z"
+    },
+    {
+      "dueUTC": "2026-10-23T05:42:06.160Z",
+      "state": "pending"
+    },
+    {
+      "dueUTC": "2026-10-23T07:12:06.160Z",
+      "state": "pending"
+    },
+    {
+      "dueUTC": "2026-10-23T08:42:06.160Z",
+      "state": "pending"
+    },
+    {
+      "dueUTC": "2026-10-23T10:12:06.160Z",
+      "state": "pending"
+    }
+  ]
+}

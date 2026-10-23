@@ -1,0 +1,64 @@
+{
+  "job": "JOB-ZZ-IDLE-43",
+  "agent": "codex",
+  "us": "DSR-590/566",
+  "env": "dev",
+  "started": "2026-10-23T04:35:59.083Z",
+  "finished": "2026-10-23T04:36:29.564Z",
+  "status": "needs-input",
+  "watch_state": "running",
+  "tests": [
+    {
+      "tc": "DSR-666/667",
+      "lang": "ja",
+      "width": 1440,
+      "result": "blocked",
+      "error": "Geometry captured; QA acceptance pending",
+      "evidence": "results/JOB-ZZ-IDLE-43/evidence/20261023T043559/1440-top.png"
+    },
+    {
+      "tc": "DSR-666/667",
+      "lang": "ja",
+      "width": 390,
+      "result": "blocked",
+      "error": "Geometry captured; QA acceptance pending",
+      "evidence": "results/JOB-ZZ-IDLE-43/evidence/20261023T043559/390-top.png"
+    },
+    {
+      "tc": "DSR-666/667",
+      "lang": "ja",
+      "width": 393,
+      "result": "blocked",
+      "error": "Geometry captured; QA acceptance pending",
+      "evidence": "results/JOB-ZZ-IDLE-43/evidence/20261023T043559/393-top.png"
+    },
+    {
+      "tc": "DSR-672",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "results/JOB-ZZ-IDLE-43/evidence/20261023T043559/news-ja.png"
+    },
+    {
+      "tc": "DSR-NEWS-014",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Figma export and comparison threshold unavailable; see visual-review.md",
+      "evidence": "evidence/DSR-566/visual-20261023/"
+    },
+    {
+      "tc": "DSR-NEWS-015",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Figma export and comparison threshold unavailable; see visual-review.md",
+      "evidence": "evidence/DSR-566/visual-20261023/"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "results/JOB-ZZ-IDLE-43/watch.cjs"
+  ],
+  "questions": [
+    "Provide accessible Figma 6010-59004 export and applicable comparison threshold; repository and available tools contain no reference."
+  ]
+}
