@@ -31,6 +31,12 @@ Giới hạn: ≤ 60 ticket/lần (Dat đã duyệt cho sweep này, ngoại lệ
 ## Thay đổi dev → regression (Dat 23/10)
 - Mọi thông tin deploy / merge / PR / đổi template, CF model, query, block, URL, nội dung dev tự author → thêm 1 dòng vào `regression/CHANGES.md` (loại theo `regression/README.md` §2, `regressed = no`). Chưa merge/deploy → `pending`.
 
+## Sprint scope (Dat 23/10 13:12) – toàn bộ ticket mở của sprint, không chỉ ticket của Dat
+- **Mỗi lượt (rẻ):** `project = DSR AND sprint in openSprints() AND statusCategory != Done AND issuetype != Epic AND (labels is EMPTY OR labels != qa-tc)` chỉ lấy fields summary/status/assignee/updated → so với `SPRINT-SCOPE.md`: ticket mới, đổi status/assignee → cập nhật dòng; ticket có `updated` sau `last_sweep_utc` → đọc description + comment mới rồi cập nhật dòng (Làm gì / QA coverage / Regression impact / Chờ ai / Rủi ro).
+- **Thứ Hai lượt 08:05:** đọc lại đầy đủ mọi ticket mở (description + comment), ghi `last_full_read_utc`.
+- Ticket ngoài tầm QA mà đang/sắp [Dev] In Testing, không có người test hoặc TC → mục "QA gaps" + đề xuất; đổi URL/template/model/block → `regression/CHANGES.md`; cần khách → `CLIENT-BLOCKERS.md`.
+- Standup: mục "Scope hôm nay" ≤ 5 dòng (ticket mới / đổi scope / gap mới).
+
 ## Ghi kết quả
 - Ghi đè `JIRA-SWEEP.md`: `last_sweep_utc: <ISO>` · bảng **Mới phát hiện** (Ticket | Ai/khi nào | Loại a–f | Nội dung | Đã cập nhật gì) · **Câu hỏi/tin đã gạch** · **Dat cần làm** · số ticket đã đọc / bỏ lại.
 - `git pull --rebase` trước khi sửa; commit `[jira-sweep] <YYYY-MM-DD HH:MM>`; push (thử lại 3 lần).

@@ -95,3 +95,6 @@ Mỗi 4h (00:20/04:20/08:20/12:20/16:20/20:20 VN, mọi ngày) scheduled task "D
 
 ## Client blockers (Dat 23/10 13:07)
 Việc cần khách (YKK/LOWP/Numata) → `CLIENT-BLOCKERS.md`, TC `Blocked-by: <ticket> (client)`, không tính vào forecast S12, không coi là fail. Standup mỗi ngày + tin forecast cho Quentin có mục "Client blockers" (1 dòng/mục); nhắc Quentin mỗi thứ Hai. Không kỳ vọng có sớm.
+
+## Sprint scope (Dat 23/10 13:12)
+`SPRINT-SCOPE.md` = toàn cảnh mọi ticket mở của sprint (mọi assignee): feature, QA coverage, regression impact, chờ ai, rủi ro, QA gaps. Cập nhật bởi Jira sweep (mỗi lượt: ticket thay đổi; thứ Hai 08:05: đọc lại toàn bộ). Đọc trước khi hỏi dev hoặc lập kế hoạch test.
