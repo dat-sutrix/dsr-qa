@@ -98,3 +98,9 @@ Việc cần khách (YKK/LOWP/Numata) → `CLIENT-BLOCKERS.md`, TC `Blocked-by: 
 
 ## Sprint scope (Dat 23/10 13:12)
 `SPRINT-SCOPE.md` = toàn cảnh mọi ticket mở của sprint (mọi assignee): feature, QA coverage, regression impact, chờ ai, rủi ro, QA gaps. Cập nhật bởi Jira sweep (mỗi lượt: ticket thay đổi; thứ Hai 08:05: đọc lại toàn bộ). Đọc trước khi hỏi dev hoặc lập kế hoạch test.
+
+## Handoff 23/10 15:00 (session Điều phối → mọi session, vd "DSR - Setup")
+**Cơ chế mới hôm nay (file nguồn):** Jira sweep toàn sprint + `SPRINT-SCOPE.md` (baseline 51 ticket mở) · Regression guard 4h (`regression/README.md`, `CHANGES.md`, `LOG.md`, `FREEZE.md`, ledger `results/REGRESSION/ledger.json`) · `CLIENT-BLOCKERS.md` (CB-1…12) · `BUG-RULES.md` mục "Trả bug về dev" (bằng chứng phải mới hơn fix cuối) · L&F card `lf/DSR-566-20261023.md` (chờ Dat OK/NG 5 điểm).
+**Trạng thái:** bug Done hôm nay 664/666/667/672/673; 674 Dismissed (overlay không có preview – BL-OVL-1); CATOV-010 + non-form noindex = by design. DSR-669/671 **deploy `dev/2026.10.23` a47274d 14:21 VN** – Martin: catalog/product/video có thể hỏng ~1h → **FREEZE đang bật**, chờ Martin "fixed" → xóa FREEZE, chuyển `jobs/hold/JOB-20261023-11.md` (regression 669 + 671 checks + catalog-detail rerun) vào queue; Dat dán cookie (cookie 22/10 hết ~14:00).
+**Mở:** CATDL-007 chờ Quentin trả lời "ẩn UI hay không giao URL" (CB-2) · HubSpot = client (CB-1, test khi có HubSpot ID; Martin đã thêm field vào DM_catalog_dsr) · QA gaps trong SPRINT-SCOPE (mail 543–548, DSR-607 chưa assignee, trang ja 640–646).
+**Scheduled tasks đang bật:** standup 08:19 T2–T6 · 07:45 / 17:10 hằng ngày · Jira sweep 08:05/12:05/16:05 T2–T6 · TC job · regression guard 00:20/04:20/…/20:20 · Sprint 12 review 27/10 09:40. Bám session Điều phối (sẽ chạy trong session đó): "Check 669 migration done → JOB-23-11" (lặp 45', dừng 18:00).
