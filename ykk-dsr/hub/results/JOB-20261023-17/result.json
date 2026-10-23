@@ -1,0 +1,36 @@
+{
+  "job": "JOB-20261023-17",
+  "agent": "claude-code",
+  "us": "DSR-566",
+  "env": "dev",
+  "started": "2026-10-23T08:50:31Z",
+  "finished": "2026-10-23T09:01:41Z",
+  "status": "done",
+  "verify": {
+    "target": "/master/ja/test-space/qa566-news-02",
+    "hosts_checked": [".aem.live?cb=1792745432424", ".aem.page?cb=1792745432424"],
+    "http_status": { "live": 200, "page": 200 },
+    "last_modified": "Fri, 23 Oct 2026 08:45:32 GMT (live + page)",
+    "check1_no_empty_button_no_image": { "result": "pass", "observed": "main: .button-container/a.button/.button = 0 (also 0 in whole document); .image block = 0; <img> in main = 2, both breadcrumb arrow.svg (breadcrumb-arrow), no content image" },
+    "check2_title_meta_spacers": { "result": "pass", "observed": "title h2 = '長いタイトル'x16+'長いタイ' exact match, 100 chars; date 2026.10.02; news type お知らせ; body QA566 本文02; spacer blocks 2 (spacer-50, spacer-40); block order breadcrumb, article-meta, title, text, spacer, text, spacer" },
+    "check3_compare_chrome_JOB-20261023-16_after": { "result": "match", "observed": "chrome step 7 after = 'breadcrumb, article-meta, title, text, spacer-50, text, spacer-40; button blocks 0; no content image; title/date/type/body unchanged; last-modified 08:45:32 GMT' – every item matches on .live and .page. No chrome error." }
+  },
+  "tests": [
+    { "tc": "DSR-NEWS-001", "lang": "ja", "result": "pass" },
+    { "tc": "DSR-NEWS-002", "lang": "ja", "result": "fail", "error": "required element missing: backToList (image/CTA absent = allowed for TD-566-02). Order of present blocks OK", "evidence": "evidence/DSR-NEWS-002_ja.png", "suspect": "product", "cause": "none", "confidence": 70 },
+    { "tc": "DSR-NEWS-003", "lang": "ja", "result": "fail", "error": "shown 2026.10.02 vs published-time 2026-10-23T08:45:32Z (no publicationdate meta). Display uses Article Meta component date (JOB-23-08) – spec fallback wrong", "evidence": "evidence/DSR-NEWS-003_ja.png", "suspect": "test", "cause": "none", "confidence": 10 },
+    { "tc": "DSR-NEWS-004", "lang": "ja", "result": "pass" },
+    { "tc": "DSR-NEWS-006", "lang": "ja", "result": "fail", "error": "Back to list / 一覧へ戻る link count 0 in main (same as news-01, JOB-23-06/08)", "evidence": "evidence/DSR-NEWS-006_ja.png", "suspect": "product", "cause": "none", "confidence": 70 },
+    { "tc": "DSR-NEWS-007", "lang": "ja", "result": "fail", "error": "/master/ja/query-index.json and /master/ja/news/query-index.json = 404; row exists in /query-index.json (category news, publicationdate empty)", "evidence": "evidence/DSR-NEWS-007_ja.png", "suspect": "test", "cause": "none", "confidence": 30 },
+    { "tc": "DSR-NEWS-008", "lang": "ja", "result": "skip", "error": "Blocked – page under test is not under /ja/news/ (needs TD-566-03)" },
+    { "tc": "DSR-NEWS-009", "lang": "ja", "result": "pass" },
+    { "tc": "DSR-NEWS-010", "lang": "ja", "result": "fail", "error": "Button8 CTA count 0. TC 10.0 Expected for TD-566-02 = 'shows no button' → product correct; spec asserts count 1 for every page", "evidence": "evidence/DSR-NEWS-010_ja.png", "suspect": "test", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-NEWS-012", "lang": "ja", "result": "fail", "error": "article-meta class 'no-mylist no-share' (authored option) → My List 0, share icons 0", "evidence": "evidence/DSR-NEWS-012_ja.png", "suspect": "data", "cause": "none", "confidence": 15 },
+    { "tc": "DSR-NEWS-013", "lang": "ja", "result": "pass" },
+    { "tc": "DSR-NEWS-018", "lang": "ja", "result": "pass" }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "reports": ["results/DSR-566/DEV/automation-run-20261023-job17.md"],
+  "questions": []
+}
