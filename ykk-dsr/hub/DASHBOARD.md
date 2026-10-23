@@ -3,7 +3,7 @@
 
 > 🗣 **Daily standup hôm nay: [STANDUP.md](STANDUP.md)** (tự cập nhật 08:19 T2–T6)
 
-> Cập nhật: 2026-10-23 12:10 (UTC+7, [jira-sweep]) · 07:50 [schedule] morning · 22/10 17:20 evening · 16:15 [jira-sweep] · 12:10 [jira-sweep] · 07:50 morning · trước đó 21/10 17:10 evening · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 (đã qua) → đích Done DEV 23/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
+> Cập nhật: 2026-10-23 17:25 (UTC+7, [schedule] evening) · 12:10 [jira-sweep] · 07:50 [schedule] morning · 22/10 17:20 evening · 16:15 [jira-sweep] · 12:10 [jira-sweep] · 07:50 morning · trước đó 21/10 17:10 evening · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 (đã qua) → đích Done DEV 23/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
 > Lượt tự động 07:45 / 17:10 cập nhật file này. Giữ gọn: chỉ trạng thái hiện tại, lịch sử nằm trong git log và us/*.md.
 
 ## 1. Ticket đang giao Dat: 10 mở (Jira 21/10 16:40) – 566 + 653 tính là 1 việc · ✅ Done 20/10: DSR-552, DSR-648, DSR-651
@@ -41,19 +41,21 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 | ~~P3~~ | ~~Re-baseline câu hỏi DSR-654: catalog non-form mở file thẳng (Q47) – "Is opening the file directly … intended for non-form catalogs?"~~ ✅ đã trả lời KNOWN-FACTS 23/10 (Dat 11:52: by design) – KHÔNG gửi | – | – | – |
 | P3 | 4 câu hỏi tool author JOB-20261021-10 + Author probe (đã chạy 22/10 15:49, cookie age 0h ✅) | claude-web | 23/10 | results/JOB-20261021-10/summary.md |
 
-## 3. 🌙 QA part-time – Night 22/10 (T5) kết quả · Night 23/10 (T6): 17:10 tạo pack
-Night 22/10: **23 dòng mới** – Pass 17 (BUGCHK-586-01, SHADOW-190-FORM, SHADOW-TD-654, NEWS-017, TD-566-01 ja/en, TD-566-02, TD-654-03/05, CATDL-008, TD-586-01 en/05/06/07/08/09/11) · Fail 2 (BUGCHK-586-02, CATDL-004) · Blocked 4 (CATDL-009/011/012/013) · Not run: DSR-587 (TD-587 âm), DSR-557 (Youku). Pack Night 23/10 (17:10) phải có: (1) nếu JOB-22-03 xác nhận 990586002 DSR CF chưa Preview → BUGCHK-586-02 làm lại (Preview DSR CF, mở .page) · (2) TD-587 âm/Youku nếu Agent Author không được duyệt.
+## 3. 🌙 QA part-time – Night 23/10 (T6): pack đã tạo · T7/CN QA-PT nghỉ
+**Pack:** [Night Work Pack 2026-10-23](https://docs.google.com/document/d/1oeDv45dho3IKj8JLhf1WPdT54iT8AU_vOstol04PGsI/edit) · ảnh → [Evidence_20261023](https://drive.google.com/drive/folders/1jvGRvqVBDesUM9GxBoqhXwh49TTVQOfy) · ~3h45, 13 dòng report.
+Thứ tự (theo PLAN "Night Pack 23/10 – CHỐT 17:00"): (1) TD-587-04 · (2) TD-587-05 · (3) CATDL-008 · (4) ARTICLE-032 (qa529-02, UE tự lưu → trả before) · (5) AUDIT-CHROME-16/20 · (6) manual tồn: DSR-BREAD-016/013/012/026/024 → ARTICLE-001/005 (trang mới `qa529-tc01`).
+Sáng T7 07:45: đọc Night Report → TD-587-04+05 Pass → JOB-20261023-19 queue · ARTICLE-032/005 có dòng → JOB-20261023-23 queue. Night 22/10: 17 Pass / 2 Fail / 4 Blocked (chi tiết git log).
 
 ## 4. 🤖 Agents
-| Lane | Hàng đợi (23/10 07:50) | Hold |
+| Lane | Hàng đợi (23/10 17:25) | Hold |
 |---|---|---|
-| claude-code | **JOB-20261022-03** (586/557/570) → **-22-17** (586 âm) → **-22-19** (654 CATOV-006/010) → **-16-08** (566 news) → IDLE-39 (regression) | -22-18 (587 âm – Not run) |
-| codex | **JOB-20261016-11** (566 visual) → **JOB-20261023-01** (recheck ja catalog list) → IDLE-40 (LH + baseline trang seed 22/10) | – |
-Kết quả mới từ 22/10 17:10 (3 job + 1 probe): **JOB-22-20** capture catalog list: en 5 thẻ ✅ (YYYY.MM.DD, ảnh 200, SP không tràn) · **ja 0 thẻ** (không có response dsr-catalog-list 45s) · **IDLE-37** spec 566 sang template mới, tsc ✅, dry run 24 skip (test-news-detail-template 404) · **IDLE-38** baseline: article/video OK, catalog ja 0 / en 6 (kỳ vọng 5) · **Author probe** 15:49 ✅ (cookie 0h, 16/16 HTTP 200). Không job treo (running trống). upload-queue fail 0. **0 fail cause ≠ none.**
+| claude-code | running **JOB-20261023-22** (manifests `model: auto` + spec 566) → regression guard 20:20/00:20/04:20 tự xếp | **JOB-20261023-19** (verify TD-587-04/05 – chờ Night Report) · 🆕 **JOB-20261023-23** (verify ARTICLE-032 restore + qa529-tc01 – chờ Night Report) |
+| codex | trống → regression guard xếp visual P1 (time box 40') | – |
+🆕 17:10: **JOB-ZY-REG-20261023-1620-claude-code** (R1+R2 sau 669/670/671): 376 test · 275 pass / 32 fail / 69 skip · **0 NEW FAIL** (260 key so ledger), 32 fail đều đã biết, cause none · catalog-detail.js Last-Modified 22/10 (Martin 17:08: refactor đã deploy từ trước – JOB-23-15/21 đã phủ) · 671 productLabel = id (đã ở 🐞 671-LABEL, Martin cuối tuần). 0 bug ≥ 80% mới.
 
 **Lane chrome (23/10 15:47):** ✅ JOB-20261023-16 (566 xóa Image/Button rỗng qa566-news-02 + Publish live) done, 3 ghi, 0 blocked → verify JOB-20261023-17 vào queue · JOB-20261023-18 (587) vẫn hold FREEZE · CHROME_DEVICE_ID = 8eea8eec (DSR-QA).
 
-**Lane chrome (23/10 16:56):** ✅ JOB-20261023-20 (529 manual) – 4.0 Pass đề xuất · 21.0 Fail đề xuất (picker không giới hạn stories, không max 3 – cần đối chiếu spec) · 32.0 một phần (Title bắt buộc OK; 掲載日/サムネイル/カテゴリ không có dấu bắt buộc). 3 ghi, mọi giá trị đã trả lại. JOB-20261023-18 (587) dời T2 26/10 08:30.
+**Lane chrome (23/10 16:56):** ✅ JOB-20261023-20 (529 manual) – 4.0 Pass đề xuất · 21.0 Fail đề xuất (picker không giới hạn stories, không max 3 – cần đối chiếu spec) · 32.0 một phần (Title bắt buộc OK; 掲載日/サムネイル/カテゴリ không có dấu bắt buộc). 3 ghi, mọi giá trị đã trả lại. JOB-20261023-18 (587) chrome không chạy kịp → chuyển vào Night Pack 23/10 (mục 1–2).
 
 ## 5. TC (Jira sub-task `qa-tc`)
 tc-backlog: trống (row 0 hold) · Night TC job 22/10: 18:09/19:06 Jira OK, auto-added 0 · 20:07/21:11 Atlassian CONNECT_TIMEOUT (retry 23/10 18:05) · upload pending 0 / fail 0 · tc-questions: không câu mới sau Q47.
@@ -83,7 +85,7 @@ Dev fix auto-generate trang khi Publish DSR CF (từ 08:25 UTC 21/10) + data QA 
 | URL | Triệu chứng | cause | Job | Evidence |
 |---|---|---|---|---|
 | (còn mở 21/10) isActive OFF · config 404 last-modified 20/10 | — | none | JOB-20261021-06 | results/JOB-20261021-06/raw/ |
-Không có fail mới với cause ≠ none (23/10 07:50). Dòng cũ 22/10 đã đóng (DSR-665, og:image, catalog list, 659) – xem git log.
+Không có fail mới với cause ≠ none (23/10 17:25 – REG-1620 0 NEW FAIL). Dòng cũ 22/10 đã đóng (DSR-665, og:image, catalog list, 659) – xem git log.
 Tin gửi sẵn (Dat copy):
 ```
 Hi Martin, two open questions from the DEV runs (read-only):

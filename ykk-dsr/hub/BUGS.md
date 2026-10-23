@@ -1,5 +1,7 @@
 # YKK DSR – Bug register
 
+> 23/10 17:10 [schedule] evening: REG-1620 claude-code 0 NEW FAIL, 32 fail đã biết (cause none) · Jira: không bug mới chuyển fixed/In Testing sau 16:05 sweep · 0 bug mới ≥ 80% · nháp < 80% giữ nguyên (DASHBOARD 🐞).
+
 > 23/10 07:50 [schedule] morning: Jira – **DSR-647/657/658/659/660/665 = Done** · DSR-664 vẫn [Dev] In Testing (Dat đóng, 🔔 P1) · 0 bug mới ≥ 80% · nháp < 80%: BUG-CAT-PREVIEW ↑70% (thêm 990586002 .page 404), BUG-CAT-LIST-JA 50%, CATDL-004 50% → DASHBOARD 🐞.
 
 > 22/10 17:10 [schedule] evening: ✅ **DSR-664** retest Pass 4/4 (JOB-20261022-16) → Dat đóng · DSR-665 Done · og:image (BUG-OVL-OGIMG) đóng – 0 about:error (JOB-13) · 0 bug mới ≥ 80% · 4 nháp catalog < 80% → DASHBOARD 🐞.
