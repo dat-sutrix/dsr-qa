@@ -1,6 +1,6 @@
 # CONTEXT – YKK DSR QA (đọc ĐẦU TIÊN ở mọi session)
 
-> Cập nhật: 2026-10-21 17:30 (UTC+7) bởi session "DSR – Setup" (§7 Agent Author). Mọi session/scheduled task: `git pull` rồi đọc file này trước khi làm. Sửa quy tắc/IDs → sửa ở đây + file chi tiết, commit cùng lúc.
+> Cập nhật: 2026-10-23 15:20 (UTC+7) bởi session "DSR – Setup" (§7b lane `chrome`). Mọi session/scheduled task: `git pull` rồi đọc file này trước khi làm. Sửa quy tắc/IDs → sửa ở đây + file chi tiết, commit cùng lúc.
 > Chat giữa các session không đọc được của nhau → **trạng thái chỉ tin vào repo + Jira + Project docs**. Memory của Claude chỉ là con trỏ tới file này.
 
 ## 1. Đọc theo thứ tự
@@ -17,9 +17,10 @@
 |---|---|---|
 | Claude web (session Điều phối / Setup / theo US / Bugs) | QA Manager: strategy, TC, job, Night Pack, review, Jira bug/question | Không chạy code trên VPS |
 | Scheduled tasks (Claude) | 07:45 morning, 17:10 evening, 08:19 standup, TC job tối | Mỗi lần = session mới, đọc repo |
+| **Lane `chrome`** (Claude web + Claude in Chrome trên máy Dat, từ 23/10) | Việc QA-PT ban ngày: page properties Sites/UE, sửa block UE, manual TC Author UI, retest bug; dự phòng CF khi cookie hết hạn – `CHROME-AGENT.md` | 08:30–18:00 T2–T6, chỉ DEV + `qa*`, không xóa, chỉ tab tự tạo; mọi lần ghi phải có verify độc lập |
 | VPS agents `claude-code` (functional) / `codex` (visual) | Playwright/Lighthouse qua `runner.sh` (poll 5', job trong `jobs/queue`) | **Read-only AEM**: không sửa content, không submit form, không login. Không có Jira/Figma/Drive |
 | Dat | Cầu nối: chuyển tin dev/PM, duyệt Done, việc trong "🔔 Dat cần làm" | Không review code; không có kinh nghiệm Author → hướng dẫn từng click |
-| QA part-time (QA-PT) | Tạo test data trên Author, manual TC – **tối T2–T6, ~4h**, không T7/CN | Không có Jira; làm theo Night Work Pack; lỗi ghi `QA-PT-ERRORS.md` |
+| QA part-time (QA-PT) | **Từ 23/10: chỉ việc chrome/author không làm được + audit mẫu 20% việc chrome (5 ngày làm việc đầu)** – tối T2–T6, không T7/CN | Không có Jira; làm theo Night Work Pack; lỗi ghi `QA-PT-ERRORS.md` |
 | Dev | **Portal Martin** (dev chính; FE: **Hoàng Minh Ngọc** – bug FE gợi ý gán Ngọc) 529/552/586/587/647/654/657–660), Ngọc (590), Mayuka (DSR-638), Okumura (CF design 614) | — |
 | PM | **Milavec Quentin** (Question ticket, scope) · khách: Numata-san (layout sheets) | — |
 
@@ -34,7 +35,7 @@
 - **Forecast tracker (Dat 22/10):** `FORECAST.md` – baseline gửi Quentin 22/10; standup 08:19 cập nhật mỗi ngày làm việc + dòng Forecast trong Daily report; ticket lùi đích / rủi ro xấu đi / dev bàn giao muộn (sau 23/10 17:00 hoặc vượt năng lực test còn lại) → **escalate ngay trong ngày** (Daily report + tin EN cho Quentin), không để bất ngờ cuối sprint.
 - **Jira sweep (Dat 22/10):** T2–T6 08:05 (trước standup) · 12:05 · 16:05 VN rà TOÀN BỘ ticket giao Dat + mọi comment mới project DSR (mention Dat, deploy/"implemented", trả lời câu hỏi, ticket mới giao Dat) → cập nhật DASHBOARD/PLAN/job ngay, gạch câu hỏi đã có trả lời, ghi `KNOWN-FACTS.md`. Quy trình: `prompts/jira-sweep.md`; kết quả: `JIRA-SWEEP.md`.
 - **QA tự tạo data/trang test**, không chờ dev xác nhận.
-- **Night Pack:** ~4h (không ít hơn), ước lượng ×1.5 cho việc Author, mọi field bắt buộc + giá trị chính xác, **giá trị tô vàng/đậm, cấm tô đỏ, ON tô xanh, khung "quy tắc bắt buộc" + checklist trước Publish**, mỗi dòng report có Date + Env, chưa làm = Not run. Mẫu: Night Work Pack 2026-10-21 (v3).
+- **Night Pack (đổi 23/10):** việc ban ngày → job `chrome`/`author`; Night Pack QA-PT chỉ gồm phần còn lại (không ép đủ 4h nữa) + audit chrome. Khi có Night Pack: ước lượng ×1.5 cho việc Author, mọi field bắt buộc + giá trị chính xác, **giá trị tô vàng/đậm, cấm tô đỏ, ON tô xanh, khung "quy tắc bắt buộc" + checklist trước Publish**, mỗi dòng report có Date + Env, chưa làm = Not run. Mẫu: Night Work Pack 2026-10-21 (v3).
 - **Agents luôn có việc:** ≥ 1 idle job/lane; cuối tuần việc không phụ thuộc người.
 - Cảnh báo trước tác vụ nặng (ngoại lệ: TC job, scale theo velocity). Không đổi priority ticket dev. Không xóa file Drive nếu không được yêu cầu. Không ghi password, không PII. Chỉ dùng Jira/Drive Sutrix.
 - **Daily report cho group chat (EN, copy-paste) nằm ở đầu `STANDUP.md` mục A, theo đúng mẫu `templates/DAILY-REPORT.md`** (mention @martin portal / @Quentin Milavec / @Minh Ngọc Hoàng), tạo 08:19 T2–T6, Dat dán trước 9:00 VN; mục B = ý present nhanh + câu dễ bị hỏi.
@@ -89,6 +90,13 @@ Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – m�
 - Quy tắc đứng: agent test (`claude-code`, `codex`) vẫn **read-only** AEM; chỉ lane `author` được ghi, trong phạm vi §2. Cookie hết hạn → Dat dán lại (hướng dẫn: AUTHOR-AGENT §2b; terminal phải là `bash`, user `qa`). Không dán cookie vào chat/Jira.
 - Manifest đặt ở `hub/author/manifests/` (mẫu `TD-587-01.yaml`).
 
+
+## 7b. Lane `chrome` – Claude in Chrome (Dat 23/10 15:06)
+- Thiết kế: `CHROME-AGENT.md`; prompt chạy: `prompts/chrome-run.md`; job `agent: chrome` trong `jobs/queue` (runner.sh không nhặt).
+- Đã xác minh 23/10 15:10: session cloud điều khiển Chrome của Dat, Author DEV đăng nhập sẵn user "Agent QA" (không cookie/OTP).
+- Chia việc: CF data giữ lane `author` (API, B2); chrome làm H2 page properties, H3 block UE, H4 manual TC Author UI, retest; dự phòng CF khi cookie hết hạn. Mọi lần chrome ghi → verify độc lập (`tools/author verify` hoặc job claude-code đọc HTML).
+- Chạy: thủ công – Dat mở session **`DSR – Chrome`**, gõ "chạy chrome queue". Tự động (scheduled giờ hành chính) chỉ sau 3 ngày thủ công ổn + xác nhận scheduled session thấy Chrome tools + Dat duyệt (tác vụ nặng).
+- Checklist setup: ☐ Dat tạo profile Chrome "DSR-QA" + cài extension + đăng nhập Author trong profile đó (CHROME-AGENT §7) · ☐ job chrome đầu tiên (Điều phối tạo từ việc QA-PT tối nay/mai) · ☐ 17:10 chuyển phần ban ngày của Night Pack thành job chrome.
 
 ## Regression guard (Dat 23/10 11:56)
 Mỗi 4h (00:20/04:20/08:20/12:20/16:20/20:20 VN, mọi ngày) scheduled task "DSR regression guard": lane rảnh → job `JOB-ZY-REG-…` theo `regression/README.md` (feature P1/P2/P3 + `regression/CHANGES.md` impact map). NEW FAIL (trước pass, nay fail) ≥ 80% → bug label `regression` + link thay đổi gây ra. Mọi tin dev về thay đổi → 1 dòng `regression/CHANGES.md`.

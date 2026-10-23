@@ -24,7 +24,7 @@ Owner mô hình: Claude (QA Manager). Đánh giá mỗi cuối sprint (Sprint Re
 | Agent / lane | Việc nhận | Thay H | Sprint |
 |---|---|---|---|
 | **A1 Author-data** (lane `author`, script + Claude) | CF create/patch/rename/publish theo manifest (P1) → page properties Sites + UE prop (P2) → nội dung block trang qua JCR/Sling (P3) | H1, H2, H3 | P1 S12 cuối/S13 · P2 S13 · P3 S14 |
-| **A2 Author-UI** (Playwright trên Author/UE, Claude) | Manual TC loại "thao tác Author": required/validation/dialog/picker, chỉ path `qa*` DEV | H4 (Author UI) | S13 spike → S14 |
+| **A2 Author-UI = lane `chrome`** (Claude in Chrome trên máy Dat – đổi 23/10, thay Playwright) | H2 page properties, H3 block UE, H4 manual TC Author UI, retest bug; dự phòng H1 khi cookie hết hạn – `CHROME-AGENT.md` | H2, H3, H4 | **B2 từ 23/10** (S12) |
 | **A3 Design-judge** (scheduled Claude có Figma connector + ảnh từ codex) | So screenshot PC/SP với frame Figma, khoanh khác biệt, soạn **L&F card** cho Dat (§1b) | H4 (cảm quan → Dat review 2–5 phút/item) | S13 thử → S14 |
 | **A5 Ops-watch** (Claude scheduled, hỗ trợ – không thay Dat) | Cảnh báo sớm runner/job treo, cookie sắp hết hạn, upload fail → giảm sự cố làm gián đoạn agent thay QA-PT | – | S13 |
 | **A6 Gatekeeper** (Claude, độc lập) | Kiểm độc lập kết quả agent Author/UI trước khi thay QA-PT (thay vai trò "QA-PT kiểm mẫu" ở bậc B2→B3) | – | S14 |
@@ -37,6 +37,7 @@ Owner mô hình: Claude (QA Manager). Đánh giá mỗi cuối sprint (Sprint Re
 | B1 Shadow | làm | làm song song / verify việc người làm | 3 đêm agent khớp 100% với kết quả đúng |
 | B2 Agent + audit | kiểm mẫu 20% + sự cố | làm | 5 đêm liên tiếp 0 lỗi data, L0–L3 pass |
 | B3 Agent only | không | làm; Gatekeeper kiểm | rollback về B2 nếu 1 lỗi gây trễ ticket |
+**23/10: lane `chrome` nhận H2/H3/H4 ở B2** (QA-PT audit mẫu 20% trong 5 ngày làm việc, verify độc lập mọi lần ghi).
 Đã có ở B1: verify data QA-PT bằng manifest (JOB-20261021-09, từ 22/10).
 **22/10: H1 (CF data trong guard `qa*`) lên B2 sớm 1 sprint** – JOB-20261022-07: 23 writes, 0 lỗi, L1/L2 100%, QA-PT chỉ shadow check. Còn ở B0: node ngoài guard (990586*), xóa/unpublish, sub-folder, page UE (H2/H3). Điều kiện lên B3: 5 lần apply liên tiếp 0 lỗi. Phụ thuộc: cookie < 16h → Dat dán mỗi sáng (D1).
 
