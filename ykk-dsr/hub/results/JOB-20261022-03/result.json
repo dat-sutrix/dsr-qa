@@ -1,0 +1,1075 @@
+{
+ "job": "JOB-20261022-03",
+ "agent": "claude-code",
+ "us": "DSR-586, DSR-557, DSR-570",
+ "env": "dev",
+ "started": "2026-10-23T01:01:16Z",
+ "finished": "2026-10-23T01:12:09Z",
+ "status": "done",
+ "preflight": {
+  "990586001": {
+   "ja/en .aem.page": "200, title \"QA586 product A | YKK DIGITAL SHOWROOM\", cfPath dsr/{lang}/products/990586001, productCode QA586-A",
+   "ja/en .aem.live": "same",
+   "verdict": "BUGCHK-586-01 holds (resolves, product ref OK)"
+  },
+  "990586002": {
+   "eds": {
+    "ja .aem.page": 404,
+    "ja .aem.live": 404,
+    "en .aem.page": 404,
+    "en .aem.live": 404
+   },
+   "author_dsr_cf": {
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "status": "DRAFT",
+    "previewReplicationStatus": "NEVER_PUBLISHED",
+    "cq:lastReplicationAction_publish": "Activate",
+    "cq:lastReplicated_publish": null,
+    "cq:lastReplicated_preview": null,
+    "cq:lastReplicationAction_preview": null,
+    "cq:lastModified": "2026-10-21T14:57:23Z (qa.agent)",
+    "fields": "isActive=true, product=/content/dam/common/ja/products/990586002"
+   },
+   "author_content_cf": {
+    "path": "/content/dam/common/ja/products/990586002",
+    "status": "PUBLISHED",
+    "previewReplicationStatus": "NEVER_PUBLISHED",
+    "cq:lastReplicated_publish": "2026-10-21T14:56:27Z",
+    "note": "TD-586-02 says preview only; content CF is on publish"
+   },
+   "comparison_990586001_dsr_cf": "PUBLISHED, previewReplicationStatus NEVER_PUBLISHED, no _preview props, yet .aem.page 200 → .page also serves published DSR CFs",
+   "verdict": "data: DSR CF never Previewed (and no completed publish) → 404 is expected; not evidence for BUG-CAT-PREVIEW",
+   "raw": "author-props-990586002.json"
+  },
+  "requiresForm_rows": "true on /{ja,en}/library/catalog/{qa190-cat-pdf-form,qa190-cat-ebook-form}, .aem.page + .aem.live (8/8)"
+ },
+ "runs": {
+  "586-page": {
+   "startTime": "2026-10-23T01:03:03.106Z",
+   "duration": 39684.754,
+   "expected": 13,
+   "skipped": 2,
+   "unexpected": 0,
+   "flaky": 0,
+   "start": "2026-10-23T01:03:00Z",
+   "end": "2026-10-23T01:03:42Z"
+  },
+  "586-live": {
+   "startTime": "2026-10-23T01:03:44.111Z",
+   "duration": 34600.022000000004,
+   "expected": 13,
+   "skipped": 2,
+   "unexpected": 0,
+   "flaky": 0,
+   "start": "2026-10-23T01:03:42Z",
+   "end": "2026-10-23T01:04:18Z"
+  },
+  "557-page": {
+   "startTime": "2026-10-23T01:04:31.865Z",
+   "duration": 103574.758,
+   "expected": 24,
+   "skipped": 6,
+   "unexpected": 0,
+   "flaky": 0,
+   "start": "2026-10-23T01:04:30Z",
+   "end": "2026-10-23T01:06:15Z"
+  },
+  "557-live": {
+   "startTime": "2026-10-23T01:06:16.880Z",
+   "duration": 71115.634,
+   "expected": 24,
+   "skipped": 6,
+   "unexpected": 0,
+   "flaky": 0,
+   "start": "2026-10-23T01:06:15Z",
+   "end": "2026-10-23T01:07:28Z"
+  },
+  "570-page": {
+   "startTime": "2026-10-23T01:07:29.556Z",
+   "duration": 81777.495,
+   "expected": 12,
+   "skipped": 2,
+   "unexpected": 2,
+   "flaky": 0,
+   "start": "2026-10-23T01:07:28Z",
+   "end": "2026-10-23T01:08:51Z"
+  },
+  "570-live": {
+   "startTime": "2026-10-23T01:08:52.836Z",
+   "duration": 63445.305,
+   "expected": 12,
+   "skipped": 2,
+   "unexpected": 2,
+   "flaky": 0,
+   "start": "2026-10-23T01:08:51Z",
+   "end": "2026-10-23T01:09:56Z"
+  }
+ },
+ "totals": {
+  "pass": 98,
+  "fail": 4,
+  "blocked": 16,
+  "skip": 4
+ },
+ "tsc": "exit 0, no errors",
+ "tests": [
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-001 [ja] live CF related → detail page shows name, code, images and specs",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-PDO-001 [en] live CF related → detail page shows name, code, images and specs",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-002 [ja] preview-only CF related → 200 on .aem.page, 404 on .aem.live",
+   "result": "blocked",
+   "error": "TD-586-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002 HTTP 404)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-003 [ja] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-PDO-003 [en] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-004 [ja] no GraphQL / execute.json request from the browser",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-012 [ja] live product page listed in query-index and sitemap; preview-only absent",
+   "result": "pass",
+   "error": "not-verified: TD-586-02 not seeded – preview-only absence not checked"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-013 [ja] Contact button → inquiry page with product code (no submit)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-PDO-013 [en] Contact button → inquiry page with product code (no submit)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-014 [ja] language variant: 200, html lang matches, product name present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-PDO-014 [en] language variant: 200, html lang matches, product name present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-017 [ja] ver0.4 display fields show the CF values, removed fields absent",
+   "result": "pass",
+   "error": "not-verified: no CF value (TD optional fields not filled): itemVariations, colorVariations, colorVariationsPdf, notice, printableTapeNote, recycledTapeNote"
+  },
+  {
+   "tc": "DSR-PDO-020",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-020 [ja] ver0.4 new fields – current state recorded (Blocked: no design)",
+   "result": "blocked",
+   "error": "Blocked: no design for ver0.4 new fields (Figma B04 – Q29); current state recorded: rendered none",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-PDO-021",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-021 [ja] media slots: media01 first, one item per filled slot, 0 broken images",
+   "result": "pass",
+   "error": "data: filled slots media01 ≠ TD-586-01 media01,media02,media03"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-PDO-019 [ja] DSR-457 regression items recorded on overlay page",
+   "result": "pass",
+   "error": "not-verified: DSR-457 items 2/4/5/9/11/12: check definitions not in repo"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-001 [ja] live CF related → detail page shows name, code, images and specs",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-PDO-001 [en] live CF related → detail page shows name, code, images and specs",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-002 [ja] preview-only CF related → 200 on .aem.page, 404 on .aem.live",
+   "result": "blocked",
+   "error": "TD-586-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002 HTTP 404)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-003 [ja] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-PDO-003 [en] raw HTML (no JS) has name and description in body, title / description / og:image in head",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-004 [ja] no GraphQL / execute.json request from the browser",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-012 [ja] live product page listed in query-index and sitemap; preview-only absent",
+   "result": "pass",
+   "error": "not-verified: TD-586-02 not seeded – preview-only absence not checked"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-013 [ja] Contact button → inquiry page with product code (no submit)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-PDO-013 [en] Contact button → inquiry page with product code (no submit)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-014 [ja] language variant: 200, html lang matches, product name present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-PDO-014 [en] language variant: 200, html lang matches, product name present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-017 [ja] ver0.4 display fields show the CF values, removed fields absent",
+   "result": "pass",
+   "error": "not-verified: no CF value (TD optional fields not filled): itemVariations, colorVariations, colorVariationsPdf, notice, printableTapeNote, recycledTapeNote"
+  },
+  {
+   "tc": "DSR-PDO-020",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-020 [ja] ver0.4 new fields – current state recorded (Blocked: no design)",
+   "result": "blocked",
+   "error": "Blocked: no design for ver0.4 new fields (Figma B04 – Q29); current state recorded: rendered none",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-PDO-021",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-021 [ja] media slots: media01 first, one item per filled slot, 0 broken images",
+   "result": "pass",
+   "error": "data: filled slots media01 ≠ TD-586-01 media01,media02,media03"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-PDO-019 [ja] DSR-457 regression items recorded on overlay page",
+   "result": "pass",
+   "error": "not-verified: DSR-457 items 2/4/5/9/11/12: check definitions not in repo"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-012 catalog item shows thumbnail and title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-013 PDF item without form opens in a new tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-016 e-book item opens ebookUrl without form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-018 NEW label within 10 days of publishDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (ja)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-019 UPDATE label within 10 days of updateDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (ja)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (ja)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-012 catalog item shows thumbnail and title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-013 PDF item without form opens in a new tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-016 e-book item opens ebookUrl without form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-018 NEW label within 10 days of publishDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (en)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-019 UPDATE label within 10 days of updateDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (en)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (en)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-012 catalog item shows thumbnail and title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-013 PDF item without form opens in a new tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-016 e-book item opens ebookUrl without form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-018 NEW label within 10 days of publishDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (ja)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-019 UPDATE label within 10 days of updateDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (ja)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (ja)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-012 catalog item shows thumbnail and title",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-013 PDF item without form opens in a new tab",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-016 e-book item opens ebookUrl without form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-018 NEW label within 10 days of publishDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (en)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-019 UPDATE label within 10 days of updateDate",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (en)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-020 only NEW when publishDate and updateDate both apply",
+   "result": "blocked",
+   "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (en)",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [ja] no autoplay before click (qa557-dam, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-002 [ja] YouTube embed src after click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATV-006 [ja] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.page)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-001 [en] no autoplay before click (qa557-dam, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-002 [en] YouTube embed src after click (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATV-006 [en] no YouTube/Youku request before interaction (qa587-main, .aem.live)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-001 [ja] catalog detail header renders",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-002 [ja] download form fields, labels, consent and button present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-005 [ja] requiresForm=false card downloads PDF directly",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-006 [ja] requiresForm=true card leads to the download form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-018 [ja] e-book form card links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-001 [en] catalog detail header renders",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-002 [en] download form fields, labels, consent and button present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-005 [en] requiresForm=false card downloads PDF directly",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-006 [en] requiresForm=true card leads to the download form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-018 [en] e-book form card links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-003",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-007",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit",
+   "result": "fail",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "error": "gated PDF URL delivered before submit: dsr-catalog-list item qa190-cat-pdf-form (requiresForm=true) carries pdfAsset._publishUrl",
+   "evidence": "evidence/DSR-CATDL-007_ja_page.png"
+  },
+  {
+   "tc": "DSR-CATDL-010",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-010 [ja] catalog ID handed to the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-017",
+   "lang": "ja",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-017 [ja] unknown or missing catalog ID never shows another catalog form",
+   "result": "skip",
+   "error": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=true); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "en",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-016 [en] fixed texts translated (no Japanese)",
+   "result": "fail",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "error": "en overlay form /en/library/catalog/qa190-cat-pdf-form renders all labels, options, consent and button in Japanese",
+   "evidence": "evidence/DSR-CATDL-016_en_page.png"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "cn",
+   "host": ".aem.page",
+   "title": "DSR-CATDL-016 [cn] fixed texts translated (Chinese)",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-001 [ja] catalog detail header renders",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-002 [ja] download form fields, labels, consent and button present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-005 [ja] requiresForm=false card downloads PDF directly",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-006 [ja] requiresForm=true card leads to the download form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-018 [ja] e-book form card links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-001 [en] catalog detail header renders",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-002 [en] download form fields, labels, consent and button present",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-005 [en] requiresForm=false card downloads PDF directly",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-006 [en] requiresForm=true card leads to the download form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-018 [en] e-book form card links to the detail page with the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-003",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click)",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-007",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit",
+   "result": "fail",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "error": "gated PDF URL delivered before submit: dsr-catalog-list item qa190-cat-pdf-form (requiresForm=true) carries pdfAsset._publishUrl",
+   "evidence": "evidence/DSR-CATDL-007_ja_live.png"
+  },
+  {
+   "tc": "DSR-CATDL-010",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-010 [ja] catalog ID handed to the form",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-017",
+   "lang": "ja",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-017 [ja] unknown or missing catalog ID never shows another catalog form",
+   "result": "skip",
+   "error": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=true); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "en",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-016 [en] fixed texts translated (no Japanese)",
+   "result": "fail",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "error": "en overlay form /en/library/catalog/qa190-cat-pdf-form renders all labels, options, consent and button in Japanese",
+   "evidence": "evidence/DSR-CATDL-016_en_live.png"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "cn",
+   "host": ".aem.live",
+   "title": "DSR-CATDL-016 [cn] fixed texts translated (Chinese)",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  }
+ ],
+ "lighthouse": [],
+ "code_changes": [],
+ "reports": [
+  "results/DSR-586/DEV/automation-run-20261023-job20261022-03.md",
+  "results/DSR-557/DEV/automation-run-20261023-job20261022-03.md",
+  "results/DSR-570/DEV/automation-run-20261023-job20261022-03.md"
+ ],
+ "questions": []
+}

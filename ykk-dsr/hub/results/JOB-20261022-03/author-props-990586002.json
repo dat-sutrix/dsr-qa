@@ -1,0 +1,79 @@
+{
+ "path": "/content/dam/dsr/ja/products/990586002",
+ "http": 200,
+ "jcrContent": {
+  "jcr:lastModifiedBy": "qa.agent@sutrixsolutions.com",
+  "cq:lastReplicationAction_publish": "Activate",
+  "cq:lastModified": "Wed Oct 21 2026 14:57:23 GMT+0000",
+  "jcr:lastModified": "Wed Oct 21 2026 14:58:04 GMT+0000",
+  "cq:lastModifiedBy": "qa.agent@sutrixsolutions.com"
+ },
+ "fragment": {
+  "exists": true,
+  "status": "DRAFT",
+  "previewStatus": "NEVER_PUBLISHED",
+  "title": "990586002"
+ }
+}
+{
+ "path": "/content/dam/common/ja/products/990586002",
+ "http": 200,
+ "jcrContent": {
+  "cq:lastReplicatedBy_publish": "qa.agent@sutrixsolutions.com",
+  "cq:lastReplicationAction": "Activate",
+  "cq:lastReplicatedBy": "qa.agent@sutrixsolutions.com",
+  "jcr:lastModifiedBy": "qa.agent@sutrixsolutions.com",
+  "cq:lastReplicationAction_publish": "Activate",
+  "cq:lastReplicated": "Wed Oct 21 2026 14:56:27 GMT+0000",
+  "cq:lastModified": "Wed Oct 21 2026 14:55:06 GMT+0000",
+  "jcr:lastModified": "Wed Oct 21 2026 14:56:19 GMT+0000",
+  "cq:lastReplicated_publish": "Wed Oct 21 2026 14:56:27 GMT+0000",
+  "cq:lastModifiedBy": "qa.agent@sutrixsolutions.com"
+ },
+ "fragment": {
+  "exists": true,
+  "status": "PUBLISHED",
+  "previewStatus": "NEVER_PUBLISHED",
+  "title": "990586002"
+ }
+}
+{
+ "path": "/content/dam/dsr/ja/products/990586001",
+ "http": 200,
+ "jcrContent": {
+  "cq:lastReplicatedBy_publish": "qa.agent@sutrixsolutions.com",
+  "cq:lastReplicationAction": "Activate",
+  "cq:lastReplicatedBy": "qa.agent@sutrixsolutions.com",
+  "jcr:lastModifiedBy": "qa.agent@sutrixsolutions.com",
+  "cq:lastReplicationAction_publish": "Activate",
+  "cq:lastReplicated": "Thu Oct 22 2026 12:31:22 GMT+0000",
+  "jcr:lastModified": "Thu Oct 22 2026 12:25:44 GMT+0000",
+  "cq:lastReplicated_publish": "Thu Oct 22 2026 12:31:22 GMT+0000"
+ },
+ "fragment": {
+  "exists": true,
+  "status": "PUBLISHED",
+  "previewStatus": "NEVER_PUBLISHED",
+  "title": "990586001"
+ }
+}
+{
+ "path": "/content/dam/dsr/en/products/990586001",
+ "http": 200,
+ "jcrContent": {
+  "cq:lastReplicatedBy_publish": "qa.agent@sutrixsolutions.com",
+  "cq:lastReplicationAction": "Activate",
+  "cq:lastReplicatedBy": "qa.agent@sutrixsolutions.com",
+  "jcr:lastModifiedBy": "qa.agent@sutrixsolutions.com",
+  "cq:lastReplicationAction_publish": "Activate",
+  "cq:lastReplicated": "Thu Oct 22 2026 15:30:28 GMT+0000",
+  "jcr:lastModified": "Thu Oct 22 2026 15:30:16 GMT+0000",
+  "cq:lastReplicated_publish": "Thu Oct 22 2026 15:30:28 GMT+0000"
+ },
+ "fragment": {
+  "exists": true,
+  "status": "PUBLISHED",
+  "previewStatus": "NEVER_PUBLISHED",
+  "title": "990586001"
+ }
+}
