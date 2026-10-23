@@ -68,3 +68,5 @@ Nội dung step viết như Night Work Pack (giá trị chính xác, từng clic
 3. Gỡ/tắt extension ở profile thường (để agent không vào nhầm profile có Jira/mail).
 4. Extension → site permissions: chỉ cho phép `author-p192812-e2014374.adobeaemcloud.com`, `*.aem.page`, `*.aem.live` (và `experience.adobe.com` nếu UE mở qua đó).
 5. Máy: tắt sleep trong giờ làm việc khi có job chrome.
+6. **Nhận diện đúng profile:** mỗi profile có extension = 1 "browser" riêng với `deviceId` riêng (tên mặc định chung chung, vd "Browser 1" – không dùng tên để nhận diện). Sau khi tạo profile DSR-QA, session Setup/Chrome gọi `list_connected_browsers` và ghi `deviceId` của DSR-QA vào CONTEXT §7b (`CHROME_DEVICE_ID`). Session chỉ dùng đúng deviceId đó + kiểm user Author = "Agent QA" (2 lớp).
+7. Khi chạy job DSR mà profile dự án khác cũng đang mở extension → session hỏi Dat chọn 1 lần (1 click). Muốn không bị hỏi: chỉ mở profile DSR-QA trong lượt chạy DSR. Scheduled run gặp nhiều browser chưa chọn → dừng, không tự chọn.
