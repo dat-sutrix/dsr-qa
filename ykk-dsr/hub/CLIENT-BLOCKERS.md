@@ -9,6 +9,12 @@
 | CB-4 | DSR-611 Q1/Q2 (動画・カタログ) | Numata | 557 – đang giữ mặc định | 2026-10-22 | 2026-10-22 | Q3 = Kohei (nội bộ) |
 | CB-5 | Migration data 動画・カタログ – quyền SharePoint (DSR-582) | YKK | data thật 557/654 (QA dùng data qa*) | 2026-10-22 | – | Quentin DSR-582 c.64861 |
 | CB-6 | SendGrid webhook – access/API key (DSR-546 / DSR-302) | YKK | 433 mail, 546 | 2026-10-22 | – | Quentin DSR-546 c.64828 |
+| CB-7 | **Sửa directory map** – DSR-637 (#2 function/performance row #72 và các điểm cần khách xác nhận) | 石谷 (khách) | 637 → URL chốt cho 638–646, 639 header/footer; spec dùng path chính thức | 2026-10-23 | – | Đề xuất trong 637 chưa chốt; QA giữ path hiện tại tới khi có PDF danh sách |
+| CB-8 | **Icon chính thức** + A03 – DSR-589 | YKK | 589 toàn bộ TC (Q34/Q35) | 2026-10-21 | – | Quentin 21/10 "Blocked. Pending Icons" |
+| CB-9 | **Ảnh nền eco** (bản bỏ object) – DSR-590, dự kiến cuối 10 | YKK | 590 visual (baseline sẽ đổi khi thay ảnh) | 2026-10-23 | – | Không chặn TC layout; chỉ ghi chú L&F |
+| CB-10 | **Booth CTA modal** (nội dung) – DSR-172 / DSR-661 #9; **TOP hover** – DSR-649 #8 (仕様未決定) | YKK | 608-9.0 (tc Q18), TOP hover | 2026-10-23 | – | 石谷 c.64723 · Martin c.61568 |
+| CB-11 | **Mail nghiệp vụ** – DSR-433 確認事項1 (gửi mail catalog/eBook DL và 3D simulator từ đâu) + DSR-655 L6 (thank-you mail có link tài liệu?) + L3 (legacy form editor) | YKK / LOWP | 433 mail thật (ngoài mail tham chiếu), 570 sau submit | 2026-10-23 | – | Bổ sung ngoài CB-1 (L1/L2/L4/L5/L7) |
+| CB-12 | **DAM path asset / mã ngôn ngữ** – DSR-606 Q2/Q3/Q4/Q5/Q9 `[Giả định: cần khách]` | YKK (qua Quentin) | 227 TC asset path, fixture path CF | 2026-10-23 | – | Q6/Q7/Q8 đã có đáp án ở 669–671 (KNOWN-FACTS 23/10) |
 
 ## Tin nhắc mẫu (Dat gửi Quentin, thứ Hai / khi cần)
 ```

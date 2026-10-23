@@ -3,6 +3,11 @@ Loại: `cf-model` `query` `overlay` `block:<tên>` `global` `template:<tên>` `
 
 | Ngày giờ (VN) | Nguồn | Loại | Thay đổi | Vùng ảnh hưởng (US) | regressed |
 |---|---|---|---|---|---|
+| 2026-10-23 14:32 JST | Ngọc DSR-667 c.65003 | fix:DSR-667, block:eco-carousel | Fix dot carousel SP build DEV (QA retest 14:48 JST: chưa đạt – dot 9 bị container cắt) | 590 | no |
+| 2026-10-22 18:07 JST (chờ deploy) | Martin DSR-661 c.64907 | block:related-content, content | Fix 関連コンテンツ booth + author `/ja/digital-showroom/both/item`; "must be deployed to DEV before testing" | booth 608/610, 586 related | pending |
+| S12 (In Progress) | Mayuka DSR-639 | global | Đổi href header `/ja/nav` + footer `/ja/footer` sang URL chốt (DSR-637) | smoke, 552, 609 + mọi spec click header | pending |
+| S12 (To Do) | Mayuka DSR-640–646 (+638) | content | ~165 trang ja mới / port từ test-space; path cũ 404 | 557, 570, 583, 590, 529, 568 | pending |
+| 21/10 → (chưa ngày) | Martin DSR-649 c.64890 → DSR-610 | block:digital-showroom | Thêm ảnh các tầng DIGITAL SHOWROOM | 610 | pending |
 | 2026-10-23 ~12:50 (Ngọc thấy) | Martin commits (chat DSR-570 thread 13:00) | block:catalog-detail | Refactor detail page navigation + reserved entry checks; catalog detail hỗ trợ PDF + e-book; thêm catalog paths | 654, 570, 557 → JOB-23-14 (L&F) + JOB-23-15 (R2) | no |
 | 2026-10-23 10:36 | Ngọc DSR-666 c.64967 | fix:DSR-666, block:breadcrumb/eco | Bỏ khoảng trắng breadcrumb → hero eco TOP (build DEV) | 590 (+552 breadcrumb) | no → JOB-20261023-12 |
 | 2026-10-23 (deploy dự kiến hôm nay, ~1–2h sau 12:00) | Martin chat 12:04 · draft PR dsr-eds#212, dsr-fullstack#108 | cf-model, query | DSR-669/671 rename DM_*_related → DM_*_dsr, dm*DsrList, migrate cq:model (mọi CF dưới /content/dam/dsr/, dry-run → migrate → republish CF đang live), field 671 | toàn bộ P1 + 529 + 585 → JOB-20261023-11 (hold) | pending (chạy khi Martin ping) |
