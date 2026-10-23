@@ -1,0 +1,72 @@
+{
+  "job": "JOB-ZZ-IDLE-42",
+  "agent": "codex",
+  "us": "DSR-590/566",
+  "env": "dev",
+  "started": "2026-10-23T02:42:06.159Z",
+  "finished": "2026-10-23T02:42:24.550Z",
+  "status": "done",
+  "scope": "Latest round only; watch completion tracked in schedule.json",
+  "tests": [
+    {
+      "tc": "DSR-666/667",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Geometry captured; QA acceptance pending",
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/1440-top.png"
+    },
+    {
+      "tc": "DSR-666/667",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Geometry captured; QA acceptance pending",
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/390-top.png"
+    },
+    {
+      "tc": "DSR-666/667",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Geometry captured; QA acceptance pending",
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/393-top.png"
+    },
+    {
+      "tc": "DSR-672",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Displayed date does not match YYYY.MM.DD",
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/news-ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85
+    },
+    {
+      "tc": "DSR-672",
+      "lang": "en",
+      "result": "fail",
+      "error": "Displayed date does not match YYYY.MM.DD",
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/news-en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85
+    },
+    {
+      "tc": "DSR-NEWS-014",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Viewport captures completed; approved visual reference/threshold not available for pixel-diff verdict.",
+      "evidence": "evidence/DSR-566/visual-20261023/DSR-NEWS-014_ja_1440_01.png"
+    },
+    {
+      "tc": "DSR-NEWS-015",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Viewport captures completed; approved visual reference/threshold not available for pixel-diff verdict.",
+      "evidence": "evidence/DSR-566/visual-20261023/DSR-NEWS-015_ja_390_01.png"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "results/JOB-ZZ-IDLE-42/watch.cjs"
+  ],
+  "questions": []
+}
