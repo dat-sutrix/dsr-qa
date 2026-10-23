@@ -1,0 +1,9 @@
+{
+  "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+  "navigations": [
+    "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update"
+  ],
+  "observed": "2026-10-23T01:02:02.049Z"
+}

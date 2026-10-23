@@ -1,0 +1,536 @@
+{
+  "job": "JOB-ZZ-IDLE-40",
+  "agent": "codex",
+  "us": "DSR-566/586/654",
+  "env": "dev",
+  "started": "2026-10-23T01:00:34.918Z",
+  "finished": "2026-10-23T01:05:42.007Z",
+  "status": "done",
+  "tests": [],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+      "device": "mobile",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_master_ja_test_space_qa566_news_01-mobile.json",
+      "scores": {
+        "performance": 92,
+        "accessibility": 95,
+        "best-practices": 96,
+        "seo": 69
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+      "device": "desktop",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_master_ja_test_space_qa566_news_01-desktop.json",
+      "scores": {
+        "performance": 100,
+        "accessibility": 90,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+      "device": "mobile",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_master_ja_test_space_qa566_news_02-mobile.json",
+      "scores": {
+        "performance": 77,
+        "accessibility": 95,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+      "device": "desktop",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_master_ja_test_space_qa566_news_02-desktop.json",
+      "scores": {
+        "performance": 100,
+        "accessibility": 90,
+        "best-practices": 100,
+        "seo": 69
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+      "device": "mobile",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_master_en_test_space_qa566_news_01-mobile.json",
+      "scores": {
+        "performance": 100,
+        "accessibility": 95,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+      "device": "desktop",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_master_en_test_space_qa566_news_01-desktop.json",
+      "scores": {
+        "performance": 100,
+        "accessibility": 90,
+        "best-practices": 100,
+        "seo": 61
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+      "device": "mobile",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_ja_products_990586001-mobile.json",
+      "scores": {
+        "performance": 91,
+        "accessibility": 83,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+      "device": "desktop",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_ja_products_990586001-desktop.json",
+      "scores": {
+        "performance": 97,
+        "accessibility": 78,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+      "device": "mobile",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_en_products_990586001-mobile.json",
+      "scores": {
+        "performance": 91,
+        "accessibility": 83,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+      "device": "desktop",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_en_products_990586001-desktop.json",
+      "scores": {
+        "performance": 96,
+        "accessibility": 78,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+      "warnings": []
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005",
+      "device": "mobile",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_ja_products_990586005-mobile.json",
+      "error": "Command failed: /usr/bin/node /home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/cli/index.js https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005 --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=results/JOB-ZZ-IDLE-40/lighthouse/_ja_products_990586005-mobile.json --quiet\nRuntime error encountered: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)\n",
+      "runtimeError": {
+        "code": "ERRORED_DOCUMENT_REQUEST",
+        "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+        "errorStack": "LighthouseError: ERRORED_DOCUMENT_REQUEST\n    at getNetworkError (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/lib/navigation-error.js:61:14)\n    at getPageLoadError (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/lib/navigation-error.js:165:24)\n    at _computeNavigationResult (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/gather/navigation-runner.js:148:7)\n    at async gatherFn (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/gather/navigation-runner.js:300:23)\n    at async Runner.gather (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/runner.js:232:25)\n    at async navigationGather (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/gather/navigation-runner.js:306:21)\n    at async navigation (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/index.js:58:24)\n    at async runLighthouse (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/cli/run.js:210:26)\n    at async file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/cli/index.js:10:1",
+        "artifactKey": "PageLoadError"
+      },
+      "scores": {
+        "performance": null,
+        "accessibility": null,
+        "best-practices": null,
+        "seo": null
+      },
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "data"
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005",
+      "device": "desktop",
+      "file": "results/JOB-ZZ-IDLE-40/lighthouse/_ja_products_990586005-desktop.json",
+      "error": "Command failed: /usr/bin/node /home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/cli/index.js https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005 --chrome-flags=--headless --no-sandbox --disable-dev-shm-usage --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=results/JOB-ZZ-IDLE-40/lighthouse/_ja_products_990586005-desktop.json --quiet --preset=desktop\nRuntime error encountered: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)\n",
+      "runtimeError": {
+        "code": "ERRORED_DOCUMENT_REQUEST",
+        "message": "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 404)",
+        "errorStack": "LighthouseError: ERRORED_DOCUMENT_REQUEST\n    at getNetworkError (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/lib/navigation-error.js:61:14)\n    at getPageLoadError (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/lib/navigation-error.js:165:24)\n    at _computeNavigationResult (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/gather/navigation-runner.js:148:7)\n    at async gatherFn (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/gather/navigation-runner.js:300:23)\n    at async Runner.gather (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/runner.js:232:25)\n    at async navigationGather (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/gather/navigation-runner.js:306:21)\n    at async navigation (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/core/index.js:58:24)\n    at async runLighthouse (file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/cli/run.js:210:26)\n    at async file:///home/qa/.npm/_npx/0f94ee7615faf582/node_modules/lighthouse/cli/index.js:10:1",
+        "artifactKey": "PageLoadError"
+      },
+      "scores": {
+        "performance": null,
+        "accessibility": null,
+        "best-practices": null,
+        "seo": null
+      },
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "data"
+    }
+  ],
+  "code_changes": [
+    "results/JOB-ZZ-IDLE-40/run.cjs",
+    "results/JOB-ZZ-IDLE-40/report.cjs"
+  ],
+  "questions": [],
+  "observations": [
+    {
+      "path": "/master/ja/test-space/qa566-news-01",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+      "captures": [
+        {
+          "device": "PC",
+          "width": 1440,
+          "height": 900,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_01_PC_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_01_PC_02.png",
+              "scrollY": 542
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+          "brokenImages": []
+        },
+        {
+          "device": "SP",
+          "width": 390,
+          "height": 844,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_01_SP_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_01_SP_02.png",
+              "scrollY": 652
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+          "brokenImages": []
+        }
+      ],
+      "live": {
+        "status": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01"
+      },
+      "auditUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01"
+    },
+    {
+      "path": "/master/ja/test-space/qa566-news-02",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+      "captures": [
+        {
+          "device": "PC",
+          "width": 1440,
+          "height": 900,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_02_PC_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_02_PC_02.png",
+              "scrollY": 542
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+          "brokenImages": []
+        },
+        {
+          "device": "SP",
+          "width": 390,
+          "height": 844,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_02_SP_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_ja_test_space_qa566_news_02_SP_02.png",
+              "scrollY": 594
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+          "brokenImages": []
+        }
+      ],
+      "live": {
+        "status": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02"
+      },
+      "auditUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02"
+    },
+    {
+      "path": "/master/en/test-space/qa566-news-01",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+      "captures": [
+        {
+          "device": "PC",
+          "width": 1440,
+          "height": 900,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_en_test_space_qa566_news_01_PC_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_en_test_space_qa566_news_01_PC_02.png",
+              "scrollY": 542
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+          "brokenImages": []
+        },
+        {
+          "device": "SP",
+          "width": 390,
+          "height": 844,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_en_test_space_qa566_news_01_SP_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__master_en_test_space_qa566_news_01_SP_02.png",
+              "scrollY": 652
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+          "brokenImages": []
+        }
+      ],
+      "live": {
+        "status": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01"
+      },
+      "auditUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01"
+    },
+    {
+      "path": "/ja/products/990586001",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+      "captures": [
+        {
+          "device": "PC",
+          "width": 1440,
+          "height": 900,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586001_PC_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586001_PC_02.png",
+              "scrollY": 700
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586001_PC_03.png",
+              "scrollY": 737
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+          "brokenImages": []
+        },
+        {
+          "device": "SP",
+          "width": 390,
+          "height": 844,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586001_SP_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586001_SP_02.png",
+              "scrollY": 700
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586001_SP_03.png",
+              "scrollY": 972
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+          "brokenImages": []
+        }
+      ],
+      "live": {
+        "status": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001"
+      },
+      "auditUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001"
+    },
+    {
+      "path": "/en/products/990586001",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+      "captures": [
+        {
+          "device": "PC",
+          "width": 1440,
+          "height": 900,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__en_products_990586001_PC_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__en_products_990586001_PC_02.png",
+              "scrollY": 700
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__en_products_990586001_PC_03.png",
+              "scrollY": 737
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+          "brokenImages": []
+        },
+        {
+          "device": "SP",
+          "width": 390,
+          "height": 844,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__en_products_990586001_SP_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__en_products_990586001_SP_02.png",
+              "scrollY": 700
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__en_products_990586001_SP_03.png",
+              "scrollY": 972
+            }
+          ],
+          "overflowPx": 0,
+          "status": 200,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+          "brokenImages": []
+        }
+      ],
+      "live": {
+        "status": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001"
+      },
+      "auditUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001"
+    },
+    {
+      "path": "/ja/products/990586005",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586005",
+      "captures": [
+        {
+          "device": "PC",
+          "width": 1440,
+          "height": 900,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586005_PC_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586005_PC_02.png",
+              "scrollY": 542
+            }
+          ],
+          "overflowPx": 0,
+          "status": 404,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005",
+          "brokenImages": []
+        },
+        {
+          "device": "SP",
+          "width": 390,
+          "height": 844,
+          "screenshots": [
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586005_SP_01.png",
+              "scrollY": 0
+            },
+            {
+              "file": "evidence/baseline-20261024/IDLE40__ja_products_990586005_SP_02.png",
+              "scrollY": 594
+            }
+          ],
+          "overflowPx": 0,
+          "status": 404,
+          "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005",
+          "brokenImages": []
+        }
+      ],
+      "live": {
+        "status": 404,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586005"
+      },
+      "preview": {
+        "status": 404,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005"
+      },
+      "auditUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586005"
+    },
+    {
+      "path": "/en/library/catalog/qa654-update",
+      "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "captures": [],
+      "live": {
+        "status": 200,
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update"
+      },
+      "auditUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+      "redirectOnly": true
+    }
+  ],
+  "catalogRedirect": {
+    "requestedUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+    "http": 200,
+    "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update",
+    "navigations": [
+      "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog/qa654-update"
+    ],
+    "observed": "2026-10-23T01:02:02.049Z"
+  },
+  "validation": {
+    "typescript": {
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "result": "no errors"
+    },
+    "visualVerdict": "Not assigned: baseline only",
+    "lighthouseThreshold": "None; record only"
+  },
+  "cause": "none",
+  "confidence": 0
+}
