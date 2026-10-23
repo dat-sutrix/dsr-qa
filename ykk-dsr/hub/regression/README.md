@@ -48,3 +48,6 @@
 
 ## 6. Ai ghi CHANGES.md
 Jira sweep (08:05/12:05/16:05), mọi session Claude khi Dat chuyển tin dev (chat Martin/Ngọc/Kohei), lượt guard (Jira comment deploy `dev/<tag>`). 1 dòng / 1 thay đổi.
+
+## 7. Kiểm build (bài học 23/10)
+Không kết luận "thay đổi chưa deploy" chỉ từ `Last-Modified` của 1 file. Ghi là "chưa xác minh" và hỏi dev (commit/PR + thời gian deploy) trước khi báo.
