@@ -3,6 +3,7 @@ Loại: `cf-model` `query` `overlay` `block:<tên>` `global` `template:<tên>` `
 
 | Ngày giờ (VN) | Nguồn | Loại | Thay đổi | Vùng ảnh hưởng (US) | regressed |
 |---|---|---|---|---|---|
+| 2026-10-23 ~12:50 (Ngọc thấy) | Martin commits (chat DSR-570 thread 13:00) | block:catalog-detail | Refactor detail page navigation + reserved entry checks; catalog detail hỗ trợ PDF + e-book; thêm catalog paths | 654, 570, 557 → JOB-23-14 (L&F) + JOB-23-15 (R2) | no |
 | 2026-10-23 10:36 | Ngọc DSR-666 c.64967 | fix:DSR-666, block:breadcrumb/eco | Bỏ khoảng trắng breadcrumb → hero eco TOP (build DEV) | 590 (+552 breadcrumb) | no → JOB-20261023-12 |
 | 2026-10-23 (deploy dự kiến hôm nay, ~1–2h sau 12:00) | Martin chat 12:04 · draft PR dsr-eds#212, dsr-fullstack#108 | cf-model, query | DSR-669/671 rename DM_*_related → DM_*_dsr, dm*DsrList, migrate cq:model (mọi CF dưới /content/dam/dsr/, dry-run → migrate → republish CF đang live), field 671 | toàn bộ P1 + 529 + 585 → JOB-20261023-11 (hold) | pending (chạy khi Martin ping) |
 | 2026-10-23 (PR riêng, xếp sau 669) | Martin chat 12:04 | cf-model, query | DSR-670: tech talks `/content/dam/dsr/{lang}/movies/tech/` → DM_techmovie_dsr, query `dsr-techmovie-page`, cùng template; nếu ship sau 669 thì tạm dùng DM_movie_dsr | 587 tech-talk, 557 | pending |
