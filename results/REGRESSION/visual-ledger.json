@@ -7,7 +7,47 @@
     "http": 200,
     "size": 177143,
     "committed": true,
-    "title": "TOP-PAGE"
+    "title": "TOP-PAGE",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/top_ja_1440.jpg",
+      "sha": "57bd3277892f44361eabac79a7c98d87c529100fd0f655d974d0c89685de307d",
+      "at": "2026-10-23T09:29:27.978Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 177143,
+      "committed": true,
+      "title": "TOP-PAGE"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/top_ja_1440.jpg",
+      "sha": "57bd3277892f44361eabac79a7c98d87c529100fd0f655d974d0c89685de307d",
+      "at": "2026-10-23T13:26:59.271Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 177143,
+      "committed": true,
+      "title": "TOP-PAGE",
+      "masks": [
+        {
+          "x": 303,
+          "y": 1533,
+          "right": 393,
+          "bottom": 1558
+        },
+        {
+          "x": 303,
+          "y": 1712,
+          "right": 393,
+          "bottom": 1737
+        },
+        {
+          "x": 303,
+          "y": 1873,
+          "right": 393,
+          "bottom": 1898
+        }
+      ]
+    }
   },
   "top [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/top_ja_390.png",
@@ -17,7 +57,28 @@
     "http": 200,
     "size": 120262,
     "committed": true,
-    "title": "TOP-PAGE"
+    "title": "TOP-PAGE",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/top_ja_390.png",
+      "sha": "84d42b876e798c72e5bff8c69879d6ec20c3828d09fd51866ee25fbefa850035",
+      "at": "2026-10-23T09:29:32.255Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 120262,
+      "committed": true,
+      "title": "TOP-PAGE"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/top_ja_390.png",
+      "sha": "84d42b876e798c72e5bff8c69879d6ec20c3828d09fd51866ee25fbefa850035",
+      "at": "2026-10-23T13:27:07.604Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 120262,
+      "committed": true,
+      "title": "TOP-PAGE",
+      "masks": []
+    }
   },
   "top [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/top_en_1440.jpg",
@@ -27,7 +88,47 @@
     "http": 200,
     "size": 176582,
     "committed": true,
-    "title": "TOP-PAGE"
+    "title": "TOP-PAGE",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/top_en_1440.jpg",
+      "sha": "ebc8e324c46121ca3f1dcf58efa267f5f72a6146d5936e511496edcc24119b6f",
+      "at": "2026-10-23T09:29:37.702Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 176582,
+      "committed": true,
+      "title": "TOP-PAGE"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/top_en_1440.jpg",
+      "sha": "ebc8e324c46121ca3f1dcf58efa267f5f72a6146d5936e511496edcc24119b6f",
+      "at": "2026-10-23T13:27:17.267Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 176582,
+      "committed": true,
+      "title": "TOP-PAGE",
+      "masks": [
+        {
+          "x": 303,
+          "y": 1533,
+          "right": 393,
+          "bottom": 1558
+        },
+        {
+          "x": 303,
+          "y": 1712,
+          "right": 393,
+          "bottom": 1737
+        },
+        {
+          "x": 303,
+          "y": 1873,
+          "right": 393,
+          "bottom": 1898
+        }
+      ]
+    }
   },
   "top [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/top_en_390.png",
@@ -37,7 +138,28 @@
     "http": 200,
     "size": 119968,
     "committed": true,
-    "title": "TOP-PAGE"
+    "title": "TOP-PAGE",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/top_en_390.png",
+      "sha": "168b73b292b0069f3e34f6a74fd37d2e92c4dccebaf5917adbd9d58887484ab1",
+      "at": "2026-10-23T09:29:41.555Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 119968,
+      "committed": true,
+      "title": "TOP-PAGE"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/top_en_390.png",
+      "sha": "168b73b292b0069f3e34f6a74fd37d2e92c4dccebaf5917adbd9d58887484ab1",
+      "at": "2026-10-23T13:27:25.132Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 119968,
+      "committed": true,
+      "title": "TOP-PAGE",
+      "masks": []
+    }
   },
   "breadcrumb [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/breadcrumb_ja_1440.png",
@@ -47,7 +169,28 @@
     "http": 200,
     "size": 34015,
     "committed": true,
-    "title": "QA Grandchild"
+    "title": "QA Grandchild",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/breadcrumb_ja_1440.png",
+      "sha": "7769d01aa8936a7679200eb9001828d07766253426c4a82c4d3d0486bf11ea37",
+      "at": "2026-10-23T09:29:44.531Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 34015,
+      "committed": true,
+      "title": "QA Grandchild"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/breadcrumb_ja_1440.png",
+      "sha": "7769d01aa8936a7679200eb9001828d07766253426c4a82c4d3d0486bf11ea37",
+      "at": "2026-10-23T13:27:30.332Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 34015,
+      "committed": true,
+      "title": "QA Grandchild",
+      "masks": []
+    }
   },
   "breadcrumb [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/breadcrumb_ja_390.png",
@@ -57,7 +200,28 @@
     "http": 200,
     "size": 11063,
     "committed": true,
-    "title": "QA Grandchild"
+    "title": "QA Grandchild",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/breadcrumb_ja_390.png",
+      "sha": "5f42277f50393f7b90bfc8a803c1fc589450e0c906b094637b3fe8578519a2e1",
+      "at": "2026-10-23T09:29:47.024Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 11063,
+      "committed": true,
+      "title": "QA Grandchild"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/breadcrumb_ja_390.png",
+      "sha": "5f42277f50393f7b90bfc8a803c1fc589450e0c906b094637b3fe8578519a2e1",
+      "at": "2026-10-23T13:27:35.147Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 11063,
+      "committed": true,
+      "title": "QA Grandchild",
+      "masks": []
+    }
   },
   "breadcrumb [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/breadcrumb_en_1440.png",
@@ -67,7 +231,28 @@
     "http": 200,
     "size": 28563,
     "committed": true,
-    "title": "QA Grandchild"
+    "title": "QA Grandchild",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/breadcrumb_en_1440.png",
+      "sha": "1599fa3a3cb71dc417eee23b883a299e994e657e0375ebfbf2f48682d84ccfa9",
+      "at": "2026-10-23T09:29:49.272Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 28563,
+      "committed": true,
+      "title": "QA Grandchild"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/breadcrumb_en_1440.png",
+      "sha": "1599fa3a3cb71dc417eee23b883a299e994e657e0375ebfbf2f48682d84ccfa9",
+      "at": "2026-10-23T13:27:40.368Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 28563,
+      "committed": true,
+      "title": "QA Grandchild",
+      "masks": []
+    }
   },
   "breadcrumb [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/breadcrumb_en_390.png",
@@ -77,7 +262,28 @@
     "http": 200,
     "size": 11157,
     "committed": true,
-    "title": "QA Grandchild"
+    "title": "QA Grandchild",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/breadcrumb_en_390.png",
+      "sha": "9e9d9dc6be2944c1bcb25617597ef2e26659579e86c9fa739703c3d9a9795952",
+      "at": "2026-10-23T09:29:51.566Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 11157,
+      "committed": true,
+      "title": "QA Grandchild"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/breadcrumb_en_390.png",
+      "sha": "9e9d9dc6be2944c1bcb25617597ef2e26659579e86c9fa739703c3d9a9795952",
+      "at": "2026-10-23T13:27:45.245Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 11157,
+      "committed": true,
+      "title": "QA Grandchild",
+      "masks": []
+    }
   },
   "video-detail [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/video-detail_ja_1440.png",
@@ -87,7 +293,28 @@
     "http": 200,
     "size": 243123,
     "committed": true,
-    "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-detail_ja_1440.png",
+      "sha": "a083a7c77ca31f1b5d3d718f5df234b0693517594c578aedf2db9d87baf5612c",
+      "at": "2026-10-23T09:29:55.317Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 243123,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-detail_ja_1440.png",
+      "sha": "a083a7c77ca31f1b5d3d718f5df234b0693517594c578aedf2db9d87baf5612c",
+      "at": "2026-10-23T13:27:52.192Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 243123,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "video-detail [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/video-detail_ja_390.png",
@@ -97,7 +324,28 @@
     "http": 200,
     "size": 68783,
     "committed": true,
-    "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-detail_ja_390.png",
+      "sha": "173aa58ed8378062f226e5d6b9398806c12490b4a96b693c76604f6876566798",
+      "at": "2026-10-23T09:29:58.401Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 68783,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-detail_ja_390.png",
+      "sha": "173aa58ed8378062f226e5d6b9398806c12490b4a96b693c76604f6876566798",
+      "at": "2026-10-23T13:27:58.167Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 68783,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "video-detail [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/video-detail_en_1440.png",
@@ -107,7 +355,28 @@
     "http": 200,
     "size": 238896,
     "committed": true,
-    "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-detail_en_1440.png",
+      "sha": "a2dc71728c585eef33779f6f9dcff897cdf01abb8a06f916c2cf1eb5e56f875c",
+      "at": "2026-10-23T09:30:01.742Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 238896,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-detail_en_1440.png",
+      "sha": "a2dc71728c585eef33779f6f9dcff897cdf01abb8a06f916c2cf1eb5e56f875c",
+      "at": "2026-10-23T13:28:05.265Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 238896,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "video-detail [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/video-detail_en_390.png",
@@ -117,7 +386,28 @@
     "http": 200,
     "size": 69491,
     "committed": true,
-    "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-detail_en_390.png",
+      "sha": "221c3f33f2c5a5e7d28716aa0f7fb59c5ddbe3dd32d37cce0f770fe68eb25e7f",
+      "at": "2026-10-23T09:30:07.793Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 69491,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-detail_en_390.png",
+      "sha": "221c3f33f2c5a5e7d28716aa0f7fb59c5ddbe3dd32d37cce0f770fe68eb25e7f",
+      "at": "2026-10-23T13:28:11.769Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 69491,
+      "committed": true,
+      "title": "QA587 main movie | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "video-list [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/video-list_ja_1440.png",
@@ -127,7 +417,28 @@
     "http": 200,
     "size": 156260,
     "committed": true,
-    "title": "動画 検索・一覧"
+    "title": "動画 検索・一覧",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-list_ja_1440.png",
+      "sha": "7e933786b3ed411a991c206f4017c489ca34f0a588b5e684f5e3c28a7bd90a39",
+      "at": "2026-10-23T09:30:12.759Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 156260,
+      "committed": true,
+      "title": "動画 検索・一覧"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-list_ja_1440.png",
+      "sha": "7e933786b3ed411a991c206f4017c489ca34f0a588b5e684f5e3c28a7bd90a39",
+      "at": "2026-10-23T13:28:19.240Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 156260,
+      "committed": true,
+      "title": "動画 検索・一覧",
+      "masks": []
+    }
   },
   "video-list [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/video-list_ja_390.png",
@@ -137,7 +448,28 @@
     "http": 200,
     "size": 120041,
     "committed": true,
-    "title": "動画 検索・一覧"
+    "title": "動画 検索・一覧",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-list_ja_390.png",
+      "sha": "25baddc71110de60b7f1f46baf268d42ad298040e2207323cd0bffbb6d64be3b",
+      "at": "2026-10-23T09:30:17.258Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 120041,
+      "committed": true,
+      "title": "動画 検索・一覧"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-list_ja_390.png",
+      "sha": "25baddc71110de60b7f1f46baf268d42ad298040e2207323cd0bffbb6d64be3b",
+      "at": "2026-10-23T13:28:26.739Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 120041,
+      "committed": true,
+      "title": "動画 検索・一覧",
+      "masks": []
+    }
   },
   "video-list [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/video-list_en_1440.png",
@@ -147,7 +479,28 @@
     "http": 200,
     "size": 230883,
     "committed": true,
-    "title": "search"
+    "title": "search",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-list_en_1440.png",
+      "sha": "fef2ef24149e19add68317ba6e73389ce871e946d8bfee3f6ebafcfb9219288c",
+      "at": "2026-10-23T09:30:20.642Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 230883,
+      "committed": true,
+      "title": "search"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-list_en_1440.png",
+      "sha": "e1a809bae996d3a38f9b7952d7ffb1cf8ad98b8185c83083284deedeaa8c68e0",
+      "at": "2026-10-23T13:28:34.081Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 189362,
+      "committed": true,
+      "title": "search",
+      "masks": []
+    }
   },
   "video-list [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/video-list_en_390.png",
@@ -157,7 +510,28 @@
     "http": 200,
     "size": 119678,
     "committed": true,
-    "title": "search"
+    "title": "search",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-list_en_390.png",
+      "sha": "574a00d626430230a06b5f586eb62118028b832d45f1653c9cf0eb6571a4b368",
+      "at": "2026-10-23T09:30:24.780Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 119678,
+      "committed": true,
+      "title": "search"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-list_en_390.png",
+      "sha": "574a00d626430230a06b5f586eb62118028b832d45f1653c9cf0eb6571a4b368",
+      "at": "2026-10-23T13:28:41.735Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 119678,
+      "committed": true,
+      "title": "search",
+      "masks": []
+    }
   },
   "catalog-list [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-list_ja_1440.png",
@@ -167,7 +541,28 @@
     "http": 200,
     "size": 71244,
     "committed": true,
-    "title": "catalog"
+    "title": "catalog",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-list_ja_1440.png",
+      "sha": "5b1695c495deec85df71b86ffece9e4bd22a59c9b15c90af50e54399ab101f11",
+      "at": "2026-10-23T09:30:30.656Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 71244,
+      "committed": true,
+      "title": "catalog"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-list_ja_1440.png",
+      "sha": "5b1695c495deec85df71b86ffece9e4bd22a59c9b15c90af50e54399ab101f11",
+      "at": "2026-10-23T13:28:49.163Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 71244,
+      "committed": true,
+      "title": "catalog",
+      "masks": []
+    }
   },
   "catalog-list [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-list_ja_390.png",
@@ -177,7 +572,28 @@
     "http": 200,
     "size": 38253,
     "committed": true,
-    "title": "catalog"
+    "title": "catalog",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-list_ja_390.png",
+      "sha": "4953ba8182dd2c4366bcde8c7b8bcb665446055cec054816000866aec9c54f43",
+      "at": "2026-10-23T09:30:35.259Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 38253,
+      "committed": true,
+      "title": "catalog"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-list_ja_390.png",
+      "sha": "4953ba8182dd2c4366bcde8c7b8bcb665446055cec054816000866aec9c54f43",
+      "at": "2026-10-23T13:28:56.471Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 38253,
+      "committed": true,
+      "title": "catalog",
+      "masks": []
+    }
   },
   "catalog-list [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-list_en_1440.png",
@@ -187,7 +603,28 @@
     "http": 200,
     "size": 64606,
     "committed": true,
-    "title": "catalog"
+    "title": "catalog",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-list_en_1440.png",
+      "sha": "76e5a41cf600eb79e2eee96d5136d64951fe43258093ea4be7655628ddf2e9e7",
+      "at": "2026-10-23T09:30:39.199Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 64606,
+      "committed": true,
+      "title": "catalog"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-list_en_1440.png",
+      "sha": "76e5a41cf600eb79e2eee96d5136d64951fe43258093ea4be7655628ddf2e9e7",
+      "at": "2026-10-23T13:29:04.054Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 64606,
+      "committed": true,
+      "title": "catalog",
+      "masks": []
+    }
   },
   "catalog-list [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-list_en_390.png",
@@ -197,7 +634,28 @@
     "http": 200,
     "size": 36448,
     "committed": true,
-    "title": "catalog"
+    "title": "catalog",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-list_en_390.png",
+      "sha": "ea207a2090ab6ebdc6c9eec114c2f7b0d6773270ce2e85e3e1a6d564796cfe53",
+      "at": "2026-10-23T09:30:43.864Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 36448,
+      "committed": true,
+      "title": "catalog"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-list_en_390.png",
+      "sha": "ea207a2090ab6ebdc6c9eec114c2f7b0d6773270ce2e85e3e1a6d564796cfe53",
+      "at": "2026-10-23T13:29:09.034Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 36448,
+      "committed": true,
+      "title": "catalog",
+      "masks": []
+    }
   },
   "catalog-detail [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-detail_ja_1440.png",
@@ -207,7 +665,28 @@
     "http": 200,
     "size": 35993,
     "committed": true,
-    "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM"
+    "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-detail_ja_1440.png",
+      "sha": "05dff709ace9ea7747f0f34f0ea54413b4800f875bd35c2987c588c400b78c18",
+      "at": "2026-10-23T09:30:46.613Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 35993,
+      "committed": true,
+      "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-detail_ja_1440.png",
+      "sha": "05dff709ace9ea7747f0f34f0ea54413b4800f875bd35c2987c588c400b78c18",
+      "at": "2026-10-23T13:29:12.462Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 35993,
+      "committed": true,
+      "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "catalog-detail [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-detail_ja_390.png",
@@ -217,7 +696,28 @@
     "http": 200,
     "size": 12101,
     "committed": true,
-    "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM"
+    "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-detail_ja_390.png",
+      "sha": "33b5cb647bcbaf488fa99d4eb03ffdbcd62b427521990fb9a1fa707edcac9805",
+      "at": "2026-10-23T09:30:49.412Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 12101,
+      "committed": true,
+      "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-detail_ja_390.png",
+      "sha": "33b5cb647bcbaf488fa99d4eb03ffdbcd62b427521990fb9a1fa707edcac9805",
+      "at": "2026-10-23T13:29:15.606Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 12101,
+      "committed": true,
+      "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "catalog-detail [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-detail_en_1440.png",
@@ -227,7 +727,28 @@
     "http": 200,
     "size": 30378,
     "committed": true,
-    "title": "catalog pdf | YKK DIGITAL SHOWROOM"
+    "title": "catalog pdf | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-detail_en_1440.png",
+      "sha": "158fec5bbd05d2341bc1e3e42ece036ecc80c2bfb8b5ca1d3498faa8b5748fc7",
+      "at": "2026-10-23T09:30:52.057Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 30378,
+      "committed": true,
+      "title": "catalog pdf | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-detail_en_1440.png",
+      "sha": "158fec5bbd05d2341bc1e3e42ece036ecc80c2bfb8b5ca1d3498faa8b5748fc7",
+      "at": "2026-10-23T13:29:18.457Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 30378,
+      "committed": true,
+      "title": "catalog pdf | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "catalog-detail [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-detail_en_390.png",
@@ -237,7 +758,28 @@
     "http": 200,
     "size": 11617,
     "committed": true,
-    "title": "catalog pdf | YKK DIGITAL SHOWROOM"
+    "title": "catalog pdf | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-detail_en_390.png",
+      "sha": "a563fda7c8adb988615eaba17f7458b859be9f47319157cd0a041bfdd62a8f9d",
+      "at": "2026-10-23T09:30:54.703Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 11617,
+      "committed": true,
+      "title": "catalog pdf | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-detail_en_390.png",
+      "sha": "a563fda7c8adb988615eaba17f7458b859be9f47319157cd0a041bfdd62a8f9d",
+      "at": "2026-10-23T13:29:21.118Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 11617,
+      "committed": true,
+      "title": "catalog pdf | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "product-detail [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/product-detail_ja_1440.png",
@@ -247,7 +789,28 @@
     "http": 200,
     "size": 183652,
     "committed": true,
-    "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-detail_ja_1440.png",
+      "sha": "c50716760b05adea9630b10ba15a64e0aaff57800ef8100ca788f51210a6be6d",
+      "at": "2026-10-23T09:31:00.685Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 183652,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-detail_ja_1440.png",
+      "sha": "c50716760b05adea9630b10ba15a64e0aaff57800ef8100ca788f51210a6be6d",
+      "at": "2026-10-23T13:29:25.302Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 183652,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "product-detail [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/product-detail_ja_390.png",
@@ -257,7 +820,28 @@
     "http": 200,
     "size": 75282,
     "committed": true,
-    "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-detail_ja_390.png",
+      "sha": "1c9349d4eba818a12f265f8935fd20debeaeea3468a289db2fbc6a2176d306e9",
+      "at": "2026-10-23T09:31:06.450Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 75282,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-detail_ja_390.png",
+      "sha": "1c9349d4eba818a12f265f8935fd20debeaeea3468a289db2fbc6a2176d306e9",
+      "at": "2026-10-23T13:29:28.632Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 75282,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "product-detail [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/product-detail_en_1440.png",
@@ -267,7 +851,28 @@
     "http": 200,
     "size": 175944,
     "committed": true,
-    "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-detail_en_1440.png",
+      "sha": "017a7c9896025fe289c04eabe628c15f6a93c59a7fb8f641a8c9e7a4291f9e01",
+      "at": "2026-10-23T09:31:10.767Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 175944,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-detail_en_1440.png",
+      "sha": "017a7c9896025fe289c04eabe628c15f6a93c59a7fb8f641a8c9e7a4291f9e01",
+      "at": "2026-10-23T13:29:33.049Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 175944,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "product-detail [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/product-detail_en_390.png",
@@ -277,7 +882,28 @@
     "http": 200,
     "size": 72555,
     "committed": true,
-    "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-detail_en_390.png",
+      "sha": "72fb6f45c420ff3bf544e08878e2f96ec574e43807e981afc24d7a6d9f483fbb",
+      "at": "2026-10-23T09:31:14.605Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 72555,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-detail_en_390.png",
+      "sha": "72fb6f45c420ff3bf544e08878e2f96ec574e43807e981afc24d7a6d9f483fbb",
+      "at": "2026-10-23T13:29:36.136Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 72555,
+      "committed": true,
+      "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+      "masks": []
+    }
   },
   "product-list [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/product-list_ja_1440.png",
@@ -287,7 +913,28 @@
     "http": 404,
     "size": 40671,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-list_ja_1440.png",
+      "sha": "0ce1f61914d81599d65e2d4e4c57d7870780df4115f9809f0c18a3d49d49f2ed",
+      "at": "2026-10-23T09:31:17.757Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 40671,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-list_ja_1440.png",
+      "sha": "91f3aba26347a8d905b13bafbb3992bb4ffcc967898d2161fa3e3eb570749992",
+      "at": "2026-10-23T13:29:38.992Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 40619,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "product-list [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/product-list_ja_390.png",
@@ -297,7 +944,28 @@
     "http": 404,
     "size": 17691,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-list_ja_390.png",
+      "sha": "2ddc86fd238aba915c4ff291817b16c2ff6bb2feeb135e1bbaf1c0f65c2c8b31",
+      "at": "2026-10-23T09:31:20.122Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 17691,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-list_ja_390.png",
+      "sha": "2ddc86fd238aba915c4ff291817b16c2ff6bb2feeb135e1bbaf1c0f65c2c8b31",
+      "at": "2026-10-23T13:29:41.515Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 17691,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "product-list [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/product-list_en_1440.png",
@@ -307,7 +975,28 @@
     "http": 404,
     "size": 35161,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-list_en_1440.png",
+      "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
+      "at": "2026-10-23T09:31:23.123Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 35161,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-list_en_1440.png",
+      "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
+      "at": "2026-10-23T13:29:43.785Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 35161,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "product-list [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/product-list_en_390.png",
@@ -317,7 +1006,28 @@
     "http": 404,
     "size": 17621,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/product-list_en_390.png",
+      "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
+      "at": "2026-10-23T09:31:25.315Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 17621,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/product-list_en_390.png",
+      "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
+      "at": "2026-10-23T13:29:46.139Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 17621,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "catalog-download [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-download_ja_1440.png",
@@ -327,7 +1037,28 @@
     "http": 200,
     "size": 73751,
     "committed": true,
-    "title": "DSR-570: Catalog Detail"
+    "title": "DSR-570: Catalog Detail",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-download_ja_1440.png",
+      "sha": "9805bf4e3fc515e528641bef7edd341ef3a6026802f281ea7a2f555c49f5a314",
+      "at": "2026-10-23T09:31:28.115Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 73751,
+      "committed": true,
+      "title": "DSR-570: Catalog Detail"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-download_ja_1440.png",
+      "sha": "9805bf4e3fc515e528641bef7edd341ef3a6026802f281ea7a2f555c49f5a314",
+      "at": "2026-10-23T13:29:49.244Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 73751,
+      "committed": true,
+      "title": "DSR-570: Catalog Detail",
+      "masks": []
+    }
   },
   "catalog-download [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-download_ja_390.png",
@@ -337,7 +1068,28 @@
     "http": 200,
     "size": 41660,
     "committed": true,
-    "title": "DSR-570: Catalog Detail"
+    "title": "DSR-570: Catalog Detail",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-download_ja_390.png",
+      "sha": "ff4af66c95060106df07aa50111252e3ef27a501e55afab8fd346dfd06e545ef",
+      "at": "2026-10-23T09:31:31.133Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 41660,
+      "committed": true,
+      "title": "DSR-570: Catalog Detail"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-download_ja_390.png",
+      "sha": "ff4af66c95060106df07aa50111252e3ef27a501e55afab8fd346dfd06e545ef",
+      "at": "2026-10-23T13:29:52.064Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 41660,
+      "committed": true,
+      "title": "DSR-570: Catalog Detail",
+      "masks": []
+    }
   },
   "catalog-download [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-download_en_1440.png",
@@ -347,7 +1099,28 @@
     "http": 404,
     "size": 35161,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-download_en_1440.png",
+      "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
+      "at": "2026-10-23T09:31:33.849Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 35161,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-download_en_1440.png",
+      "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
+      "at": "2026-10-23T13:29:54.681Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 35161,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "catalog-download [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/catalog-download_en_390.png",
@@ -357,7 +1130,28 @@
     "http": 404,
     "size": 17621,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/catalog-download_en_390.png",
+      "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
+      "at": "2026-10-23T09:31:36.080Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 17621,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/catalog-download_en_390.png",
+      "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
+      "at": "2026-10-23T13:29:56.845Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 17621,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "article [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/article_ja_1440.png",
@@ -367,7 +1161,28 @@
     "http": 200,
     "size": 144089,
     "committed": true,
-    "title": "QA529 ストーリー詳細テスト"
+    "title": "QA529 ストーリー詳細テスト",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/article_ja_1440.png",
+      "sha": "1acc2faba1745969802a1c6642218bccdb869f83916e4687cb4726da9ae4a20b",
+      "at": "2026-10-23T09:31:44.398Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 144089,
+      "committed": true,
+      "title": "QA529 ストーリー詳細テスト"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/article_ja_1440.png",
+      "sha": "1acc2faba1745969802a1c6642218bccdb869f83916e4687cb4726da9ae4a20b",
+      "at": "2026-10-23T13:30:03.865Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 144089,
+      "committed": true,
+      "title": "QA529 ストーリー詳細テスト",
+      "masks": []
+    }
   },
   "article [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/article_ja_390.png",
@@ -377,7 +1192,28 @@
     "http": 200,
     "size": 66256,
     "committed": true,
-    "title": "QA529 ストーリー詳細テスト"
+    "title": "QA529 ストーリー詳細テスト",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/article_ja_390.png",
+      "sha": "0af226af3563a0cc9fa9b81ef3780e06d1d1d7885745544c6002f6344ee3e063",
+      "at": "2026-10-23T09:31:49.673Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 66256,
+      "committed": true,
+      "title": "QA529 ストーリー詳細テスト"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/article_ja_390.png",
+      "sha": "0af226af3563a0cc9fa9b81ef3780e06d1d1d7885745544c6002f6344ee3e063",
+      "at": "2026-10-23T13:30:16.255Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 66256,
+      "committed": true,
+      "title": "QA529 ストーリー詳細テスト",
+      "masks": []
+    }
   },
   "article [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/article_en_1440.png",
@@ -387,7 +1223,28 @@
     "http": 200,
     "size": 138778,
     "committed": true,
-    "title": "QA529 Story detail test"
+    "title": "QA529 Story detail test",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/article_en_1440.png",
+      "sha": "06aff499b80af2ae020c5411c9d0fc4136d83ccde97d47cc37d9e79babdfadeb",
+      "at": "2026-10-23T09:31:54.925Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 138778,
+      "committed": true,
+      "title": "QA529 Story detail test"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/article_en_1440.png",
+      "sha": "06aff499b80af2ae020c5411c9d0fc4136d83ccde97d47cc37d9e79babdfadeb",
+      "at": "2026-10-23T13:30:26.938Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 138778,
+      "committed": true,
+      "title": "QA529 Story detail test",
+      "masks": []
+    }
   },
   "article [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/article_en_390.png",
@@ -397,7 +1254,28 @@
     "http": 200,
     "size": 62887,
     "committed": true,
-    "title": "QA529 Story detail test"
+    "title": "QA529 Story detail test",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/article_en_390.png",
+      "sha": "d2066baf22e07df20fbf293cabc4c3eaa59848169dae5595f01dcb5610b67c4b",
+      "at": "2026-10-23T09:32:01.059Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 62887,
+      "committed": true,
+      "title": "QA529 Story detail test"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/article_en_390.png",
+      "sha": "d2066baf22e07df20fbf293cabc4c3eaa59848169dae5595f01dcb5610b67c4b",
+      "at": "2026-10-23T13:30:37.175Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 62887,
+      "committed": true,
+      "title": "QA529 Story detail test",
+      "masks": []
+    }
   },
   "news [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/news_ja_1440.png",
@@ -407,7 +1285,28 @@
     "http": 200,
     "size": 81961,
     "committed": true,
-    "title": "QA566 ニュース詳細テスト"
+    "title": "QA566 ニュース詳細テスト",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/news_ja_1440.png",
+      "sha": "ed74dbd402d72dec043024b0e95695cdfc8febfbd8b8b146733538f5ab097cca",
+      "at": "2026-10-23T09:32:08.413Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 81961,
+      "committed": true,
+      "title": "QA566 ニュース詳細テスト"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/news_ja_1440.png",
+      "sha": "ed74dbd402d72dec043024b0e95695cdfc8febfbd8b8b146733538f5ab097cca",
+      "at": "2026-10-23T13:30:44.266Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 81961,
+      "committed": true,
+      "title": "QA566 ニュース詳細テスト",
+      "masks": []
+    }
   },
   "news [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/news_ja_390.png",
@@ -417,7 +1316,28 @@
     "http": 200,
     "size": 56318,
     "committed": true,
-    "title": "QA566 ニュース詳細テスト"
+    "title": "QA566 ニュース詳細テスト",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/news_ja_390.png",
+      "sha": "c71502ad9aba77c5912de46f6b4e43a10ca33e8ed1a78d5651b03076a898217e",
+      "at": "2026-10-23T09:32:15.326Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 56318,
+      "committed": true,
+      "title": "QA566 ニュース詳細テスト"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/news_ja_390.png",
+      "sha": "c71502ad9aba77c5912de46f6b4e43a10ca33e8ed1a78d5651b03076a898217e",
+      "at": "2026-10-23T13:30:50.663Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 56318,
+      "committed": true,
+      "title": "QA566 ニュース詳細テスト",
+      "masks": []
+    }
   },
   "news [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/news_en_1440.png",
@@ -427,7 +1347,28 @@
     "http": 200,
     "size": 74289,
     "committed": true,
-    "title": "QA566 News detail test"
+    "title": "QA566 News detail test",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/news_en_1440.png",
+      "sha": "8493dad4578dbf2ba52ceebf30e1b78e37a5c4b3f8c4b1fd217bf80d4d9468b9",
+      "at": "2026-10-23T09:32:21.728Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 74289,
+      "committed": true,
+      "title": "QA566 News detail test"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/news_en_1440.png",
+      "sha": "8493dad4578dbf2ba52ceebf30e1b78e37a5c4b3f8c4b1fd217bf80d4d9468b9",
+      "at": "2026-10-23T13:30:57.952Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 74289,
+      "committed": true,
+      "title": "QA566 News detail test",
+      "masks": []
+    }
   },
   "news [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/news_en_390.png",
@@ -437,7 +1378,28 @@
     "http": 200,
     "size": 54720,
     "committed": true,
-    "title": "QA566 News detail test"
+    "title": "QA566 News detail test",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/news_en_390.png",
+      "sha": "25cd1b4299e957e54de6f7e15c91c0da88e558e4fa2e6c3ac57b988f3e11d071",
+      "at": "2026-10-23T09:32:28.059Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 54720,
+      "committed": true,
+      "title": "QA566 News detail test"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/news_en_390.png",
+      "sha": "25cd1b4299e957e54de6f7e15c91c0da88e558e4fa2e6c3ac57b988f3e11d071",
+      "at": "2026-10-23T13:31:05.584Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 54720,
+      "committed": true,
+      "title": "QA566 News detail test",
+      "masks": []
+    }
   },
   "eco-top [ja] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/eco-top_ja_1440.png",
@@ -447,7 +1409,809 @@
     "http": 200,
     "size": 249999,
     "committed": true,
-    "title": "DSR-590: Eco Top Page"
+    "title": "DSR-590: Eco Top Page",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/eco-top_ja_1440.png",
+      "sha": "fb11bde5c8197e1c2c8c25dc6cb5c8a24361745bcae8eeef3e43a61084a1c336",
+      "at": "2026-10-23T09:32:37.026Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 249999,
+      "committed": true,
+      "title": "DSR-590: Eco Top Page"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/eco-top_ja_1440.png",
+      "sha": "fb11bde5c8197e1c2c8c25dc6cb5c8a24361745bcae8eeef3e43a61084a1c336",
+      "at": "2026-10-23T13:31:15.374Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 249999,
+      "committed": true,
+      "title": "DSR-590: Eco Top Page",
+      "masks": [
+        {
+          "x": 0,
+          "y": 190,
+          "right": 1440,
+          "bottom": 1138
+        },
+        {
+          "x": 0,
+          "y": 190,
+          "right": 1440,
+          "bottom": 1138
+        },
+        {
+          "x": 0,
+          "y": 190,
+          "right": 1440,
+          "bottom": 1138
+        },
+        {
+          "x": 0,
+          "y": 190,
+          "right": 1440,
+          "bottom": 1138
+        },
+        {
+          "x": 40,
+          "y": 230,
+          "right": 1400,
+          "bottom": 385
+        },
+        {
+          "x": 1298,
+          "y": 230,
+          "right": 1400,
+          "bottom": 272
+        },
+        {
+          "x": 40,
+          "y": 295,
+          "right": 1400,
+          "bottom": 337
+        },
+        {
+          "x": 40,
+          "y": 360,
+          "right": 1400,
+          "bottom": 385
+        },
+        {
+          "x": 0,
+          "y": 408,
+          "right": 1440,
+          "bottom": 965
+        },
+        {
+          "x": 0,
+          "y": 408,
+          "right": 4260,
+          "bottom": 965
+        },
+        {
+          "x": 0,
+          "y": 433,
+          "right": 17,
+          "bottom": 940
+        },
+        {
+          "x": 0,
+          "y": 433,
+          "right": 17,
+          "bottom": 940
+        },
+        {
+          "x": 24,
+          "y": 433,
+          "right": 175,
+          "bottom": 940
+        },
+        {
+          "x": 24,
+          "y": 433,
+          "right": 175,
+          "bottom": 940
+        },
+        {
+          "x": 49,
+          "y": 469,
+          "right": 150,
+          "bottom": 570
+        },
+        {
+          "x": 85,
+          "y": 589,
+          "right": 114,
+          "bottom": 904
+        },
+        {
+          "x": 182,
+          "y": 433,
+          "right": 333,
+          "bottom": 940
+        },
+        {
+          "x": 182,
+          "y": 433,
+          "right": 333,
+          "bottom": 940
+        },
+        {
+          "x": 207,
+          "y": 469,
+          "right": 308,
+          "bottom": 570
+        },
+        {
+          "x": 243,
+          "y": 589,
+          "right": 272,
+          "bottom": 904
+        },
+        {
+          "x": 340,
+          "y": 433,
+          "right": 491,
+          "bottom": 940
+        },
+        {
+          "x": 340,
+          "y": 433,
+          "right": 491,
+          "bottom": 940
+        },
+        {
+          "x": 365,
+          "y": 469,
+          "right": 466,
+          "bottom": 570
+        },
+        {
+          "x": 401,
+          "y": 589,
+          "right": 430,
+          "bottom": 904
+        },
+        {
+          "x": 498,
+          "y": 408,
+          "right": 942,
+          "bottom": 965
+        },
+        {
+          "x": 498,
+          "y": 408,
+          "right": 942,
+          "bottom": 965
+        },
+        {
+          "x": 650,
+          "y": 440,
+          "right": 790,
+          "bottom": 581
+        },
+        {
+          "x": 530,
+          "y": 614,
+          "right": 910,
+          "bottom": 922
+        },
+        {
+          "x": 530,
+          "y": 614,
+          "right": 910,
+          "bottom": 674
+        },
+        {
+          "x": 530,
+          "y": 693,
+          "right": 910,
+          "bottom": 854
+        },
+        {
+          "x": 949,
+          "y": 433,
+          "right": 1100,
+          "bottom": 940
+        },
+        {
+          "x": 949,
+          "y": 433,
+          "right": 1100,
+          "bottom": 940
+        },
+        {
+          "x": 974,
+          "y": 469,
+          "right": 1075,
+          "bottom": 570
+        },
+        {
+          "x": 1010,
+          "y": 589,
+          "right": 1039,
+          "bottom": 904
+        },
+        {
+          "x": 1107,
+          "y": 433,
+          "right": 1258,
+          "bottom": 940
+        },
+        {
+          "x": 1107,
+          "y": 433,
+          "right": 1258,
+          "bottom": 940
+        },
+        {
+          "x": 1132,
+          "y": 469,
+          "right": 1233,
+          "bottom": 570
+        },
+        {
+          "x": 1168,
+          "y": 589,
+          "right": 1197,
+          "bottom": 904
+        },
+        {
+          "x": 1265,
+          "y": 433,
+          "right": 1416,
+          "bottom": 940
+        },
+        {
+          "x": 1265,
+          "y": 433,
+          "right": 1416,
+          "bottom": 940
+        },
+        {
+          "x": 1290,
+          "y": 469,
+          "right": 1391,
+          "bottom": 570
+        },
+        {
+          "x": 1326,
+          "y": 589,
+          "right": 1355,
+          "bottom": 904
+        },
+        {
+          "x": 1423,
+          "y": 433,
+          "right": 1574,
+          "bottom": 940
+        },
+        {
+          "x": 1423,
+          "y": 433,
+          "right": 1574,
+          "bottom": 940
+        },
+        {
+          "x": 1448,
+          "y": 469,
+          "right": 1549,
+          "bottom": 570
+        },
+        {
+          "x": 1484,
+          "y": 589,
+          "right": 1513,
+          "bottom": 904
+        },
+        {
+          "x": 1581,
+          "y": 433,
+          "right": 1732,
+          "bottom": 940
+        },
+        {
+          "x": 1581,
+          "y": 433,
+          "right": 1732,
+          "bottom": 940
+        },
+        {
+          "x": 1606,
+          "y": 469,
+          "right": 1707,
+          "bottom": 570
+        },
+        {
+          "x": 1642,
+          "y": 589,
+          "right": 1671,
+          "bottom": 904
+        },
+        {
+          "x": 1739,
+          "y": 433,
+          "right": 1890,
+          "bottom": 940
+        },
+        {
+          "x": 1739,
+          "y": 433,
+          "right": 1890,
+          "bottom": 940
+        },
+        {
+          "x": 1764,
+          "y": 469,
+          "right": 1865,
+          "bottom": 570
+        },
+        {
+          "x": 1800,
+          "y": 589,
+          "right": 1829,
+          "bottom": 904
+        },
+        {
+          "x": 1897,
+          "y": 433,
+          "right": 2048,
+          "bottom": 940
+        },
+        {
+          "x": 1897,
+          "y": 433,
+          "right": 2048,
+          "bottom": 940
+        },
+        {
+          "x": 1922,
+          "y": 469,
+          "right": 2023,
+          "bottom": 570
+        },
+        {
+          "x": 1958,
+          "y": 589,
+          "right": 1987,
+          "bottom": 904
+        },
+        {
+          "x": 2055,
+          "y": 433,
+          "right": 2206,
+          "bottom": 940
+        },
+        {
+          "x": 2055,
+          "y": 433,
+          "right": 2206,
+          "bottom": 940
+        },
+        {
+          "x": 2080,
+          "y": 469,
+          "right": 2181,
+          "bottom": 570
+        },
+        {
+          "x": 2116,
+          "y": 589,
+          "right": 2145,
+          "bottom": 904
+        },
+        {
+          "x": 2213,
+          "y": 433,
+          "right": 2364,
+          "bottom": 940
+        },
+        {
+          "x": 2213,
+          "y": 433,
+          "right": 2364,
+          "bottom": 940
+        },
+        {
+          "x": 2238,
+          "y": 469,
+          "right": 2339,
+          "bottom": 570
+        },
+        {
+          "x": 2274,
+          "y": 589,
+          "right": 2303,
+          "bottom": 904
+        },
+        {
+          "x": 2371,
+          "y": 433,
+          "right": 2522,
+          "bottom": 940
+        },
+        {
+          "x": 2371,
+          "y": 433,
+          "right": 2522,
+          "bottom": 940
+        },
+        {
+          "x": 2396,
+          "y": 469,
+          "right": 2497,
+          "bottom": 570
+        },
+        {
+          "x": 2432,
+          "y": 589,
+          "right": 2461,
+          "bottom": 904
+        },
+        {
+          "x": 2529,
+          "y": 433,
+          "right": 2680,
+          "bottom": 940
+        },
+        {
+          "x": 2529,
+          "y": 433,
+          "right": 2680,
+          "bottom": 940
+        },
+        {
+          "x": 2554,
+          "y": 469,
+          "right": 2655,
+          "bottom": 570
+        },
+        {
+          "x": 2590,
+          "y": 589,
+          "right": 2619,
+          "bottom": 904
+        },
+        {
+          "x": 2687,
+          "y": 433,
+          "right": 2838,
+          "bottom": 940
+        },
+        {
+          "x": 2687,
+          "y": 433,
+          "right": 2838,
+          "bottom": 940
+        },
+        {
+          "x": 2712,
+          "y": 469,
+          "right": 2813,
+          "bottom": 570
+        },
+        {
+          "x": 2748,
+          "y": 589,
+          "right": 2777,
+          "bottom": 904
+        },
+        {
+          "x": 2845,
+          "y": 433,
+          "right": 2996,
+          "bottom": 940
+        },
+        {
+          "x": 2845,
+          "y": 433,
+          "right": 2996,
+          "bottom": 940
+        },
+        {
+          "x": 2870,
+          "y": 469,
+          "right": 2971,
+          "bottom": 570
+        },
+        {
+          "x": 2906,
+          "y": 589,
+          "right": 2935,
+          "bottom": 904
+        },
+        {
+          "x": 3003,
+          "y": 433,
+          "right": 3154,
+          "bottom": 940
+        },
+        {
+          "x": 3003,
+          "y": 433,
+          "right": 3154,
+          "bottom": 940
+        },
+        {
+          "x": 3028,
+          "y": 469,
+          "right": 3129,
+          "bottom": 570
+        },
+        {
+          "x": 3064,
+          "y": 589,
+          "right": 3093,
+          "bottom": 904
+        },
+        {
+          "x": 3161,
+          "y": 433,
+          "right": 3312,
+          "bottom": 940
+        },
+        {
+          "x": 3161,
+          "y": 433,
+          "right": 3312,
+          "bottom": 940
+        },
+        {
+          "x": 3186,
+          "y": 469,
+          "right": 3287,
+          "bottom": 570
+        },
+        {
+          "x": 3222,
+          "y": 589,
+          "right": 3251,
+          "bottom": 904
+        },
+        {
+          "x": 3319,
+          "y": 433,
+          "right": 3470,
+          "bottom": 940
+        },
+        {
+          "x": 3319,
+          "y": 433,
+          "right": 3470,
+          "bottom": 940
+        },
+        {
+          "x": 3344,
+          "y": 469,
+          "right": 3445,
+          "bottom": 570
+        },
+        {
+          "x": 3380,
+          "y": 589,
+          "right": 3409,
+          "bottom": 904
+        },
+        {
+          "x": 3477,
+          "y": 433,
+          "right": 3628,
+          "bottom": 940
+        },
+        {
+          "x": 3477,
+          "y": 433,
+          "right": 3628,
+          "bottom": 940
+        },
+        {
+          "x": 3502,
+          "y": 469,
+          "right": 3603,
+          "bottom": 570
+        },
+        {
+          "x": 3538,
+          "y": 589,
+          "right": 3567,
+          "bottom": 904
+        },
+        {
+          "x": 3635,
+          "y": 433,
+          "right": 3786,
+          "bottom": 940
+        },
+        {
+          "x": 3635,
+          "y": 433,
+          "right": 3786,
+          "bottom": 940
+        },
+        {
+          "x": 3660,
+          "y": 469,
+          "right": 3761,
+          "bottom": 570
+        },
+        {
+          "x": 3696,
+          "y": 589,
+          "right": 3725,
+          "bottom": 904
+        },
+        {
+          "x": 3793,
+          "y": 433,
+          "right": 3944,
+          "bottom": 940
+        },
+        {
+          "x": 3793,
+          "y": 433,
+          "right": 3944,
+          "bottom": 940
+        },
+        {
+          "x": 3818,
+          "y": 469,
+          "right": 3919,
+          "bottom": 570
+        },
+        {
+          "x": 3854,
+          "y": 589,
+          "right": 3883,
+          "bottom": 904
+        },
+        {
+          "x": 3951,
+          "y": 433,
+          "right": 4102,
+          "bottom": 940
+        },
+        {
+          "x": 3951,
+          "y": 433,
+          "right": 4102,
+          "bottom": 940
+        },
+        {
+          "x": 3976,
+          "y": 469,
+          "right": 4077,
+          "bottom": 570
+        },
+        {
+          "x": 4012,
+          "y": 589,
+          "right": 4041,
+          "bottom": 904
+        },
+        {
+          "x": 4109,
+          "y": 433,
+          "right": 4260,
+          "bottom": 940
+        },
+        {
+          "x": 4109,
+          "y": 433,
+          "right": 4260,
+          "bottom": 940
+        },
+        {
+          "x": 4134,
+          "y": 469,
+          "right": 4235,
+          "bottom": 570
+        },
+        {
+          "x": 4170,
+          "y": 589,
+          "right": 4199,
+          "bottom": 904
+        },
+        {
+          "x": 40,
+          "y": 988,
+          "right": 1400,
+          "bottom": 1049
+        },
+        {
+          "x": 40,
+          "y": 988,
+          "right": 100,
+          "bottom": 1049
+        },
+        {
+          "x": 140,
+          "y": 1013,
+          "right": 1300,
+          "bottom": 1024
+        },
+        {
+          "x": 545,
+          "y": 1013,
+          "right": 555,
+          "bottom": 1024
+        },
+        {
+          "x": 579,
+          "y": 1013,
+          "right": 589,
+          "bottom": 1024
+        },
+        {
+          "x": 613,
+          "y": 1013,
+          "right": 623,
+          "bottom": 1024
+        },
+        {
+          "x": 647,
+          "y": 1013,
+          "right": 657,
+          "bottom": 1024
+        },
+        {
+          "x": 681,
+          "y": 1013,
+          "right": 691,
+          "bottom": 1024
+        },
+        {
+          "x": 715,
+          "y": 1013,
+          "right": 725,
+          "bottom": 1024
+        },
+        {
+          "x": 749,
+          "y": 1013,
+          "right": 759,
+          "bottom": 1024
+        },
+        {
+          "x": 783,
+          "y": 1013,
+          "right": 793,
+          "bottom": 1024
+        },
+        {
+          "x": 817,
+          "y": 1013,
+          "right": 827,
+          "bottom": 1024
+        },
+        {
+          "x": 851,
+          "y": 1013,
+          "right": 861,
+          "bottom": 1024
+        },
+        {
+          "x": 885,
+          "y": 1013,
+          "right": 895,
+          "bottom": 1024
+        },
+        {
+          "x": 1340,
+          "y": 988,
+          "right": 1400,
+          "bottom": 1049
+        },
+        {
+          "x": 602,
+          "y": 1053,
+          "right": 838,
+          "bottom": 1098
+        }
+      ]
+    }
   },
   "eco-top [ja] 390": {
     "png": "evidence/REGRESSION/20261023-1620/eco-top_ja_390.png",
@@ -457,7 +2221,971 @@
     "http": 200,
     "size": 181613,
     "committed": true,
-    "title": "DSR-590: Eco Top Page"
+    "title": "DSR-590: Eco Top Page",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/eco-top_ja_390.png",
+      "sha": "78a4651d5bf1e4c45676550ec9d550fb1279e3819d45b4f9aed1dc11bded5b46",
+      "at": "2026-10-23T09:32:42.889Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 181613,
+      "committed": true,
+      "title": "DSR-590: Eco Top Page"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/eco-top_ja_390.png",
+      "sha": "78a4651d5bf1e4c45676550ec9d550fb1279e3819d45b4f9aed1dc11bded5b46",
+      "at": "2026-10-23T13:31:21.074Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 181613,
+      "committed": true,
+      "title": "DSR-590: Eco Top Page",
+      "masks": [
+        {
+          "x": 0,
+          "y": 106,
+          "right": 390,
+          "bottom": 1053
+        },
+        {
+          "x": 0,
+          "y": 106,
+          "right": 390,
+          "bottom": 1053
+        },
+        {
+          "x": 0,
+          "y": 106,
+          "right": 390,
+          "bottom": 1053
+        },
+        {
+          "x": 0,
+          "y": 106,
+          "right": 390,
+          "bottom": 1053
+        },
+        {
+          "x": 16,
+          "y": 122,
+          "right": 374,
+          "bottom": 277
+        },
+        {
+          "x": 272,
+          "y": 122,
+          "right": 374,
+          "bottom": 164
+        },
+        {
+          "x": 16,
+          "y": 187,
+          "right": 374,
+          "bottom": 229
+        },
+        {
+          "x": 16,
+          "y": 252,
+          "right": 374,
+          "bottom": 277
+        },
+        {
+          "x": 16,
+          "y": 300,
+          "right": 374,
+          "bottom": 878
+        },
+        {
+          "x": 16,
+          "y": 300,
+          "right": 374,
+          "bottom": 878
+        },
+        {
+          "x": 16,
+          "y": 300,
+          "right": 374,
+          "bottom": 878
+        },
+        {
+          "x": 125,
+          "y": 332,
+          "right": 265,
+          "bottom": 473
+        },
+        {
+          "x": 48,
+          "y": 506,
+          "right": 342,
+          "bottom": 846
+        },
+        {
+          "x": 48,
+          "y": 506,
+          "right": 342,
+          "bottom": 566
+        },
+        {
+          "x": 48,
+          "y": 585,
+          "right": 342,
+          "bottom": 778
+        },
+        {
+          "x": 390,
+          "y": 300,
+          "right": 748,
+          "bottom": 878
+        },
+        {
+          "x": 390,
+          "y": 300,
+          "right": 748,
+          "bottom": 878
+        },
+        {
+          "x": 499,
+          "y": 332,
+          "right": 639,
+          "bottom": 473
+        },
+        {
+          "x": 422,
+          "y": 506,
+          "right": 716,
+          "bottom": 846
+        },
+        {
+          "x": 422,
+          "y": 506,
+          "right": 716,
+          "bottom": 566
+        },
+        {
+          "x": 422,
+          "y": 585,
+          "right": 716,
+          "bottom": 778
+        },
+        {
+          "x": 764,
+          "y": 300,
+          "right": 1122,
+          "bottom": 878
+        },
+        {
+          "x": 764,
+          "y": 300,
+          "right": 1122,
+          "bottom": 878
+        },
+        {
+          "x": 873,
+          "y": 332,
+          "right": 1013,
+          "bottom": 473
+        },
+        {
+          "x": 796,
+          "y": 506,
+          "right": 1090,
+          "bottom": 846
+        },
+        {
+          "x": 796,
+          "y": 506,
+          "right": 1090,
+          "bottom": 566
+        },
+        {
+          "x": 796,
+          "y": 585,
+          "right": 1090,
+          "bottom": 778
+        },
+        {
+          "x": 1138,
+          "y": 300,
+          "right": 1496,
+          "bottom": 878
+        },
+        {
+          "x": 1138,
+          "y": 300,
+          "right": 1496,
+          "bottom": 878
+        },
+        {
+          "x": 1247,
+          "y": 332,
+          "right": 1387,
+          "bottom": 473
+        },
+        {
+          "x": 1170,
+          "y": 506,
+          "right": 1464,
+          "bottom": 846
+        },
+        {
+          "x": 1170,
+          "y": 506,
+          "right": 1464,
+          "bottom": 566
+        },
+        {
+          "x": 1170,
+          "y": 585,
+          "right": 1464,
+          "bottom": 778
+        },
+        {
+          "x": 1512,
+          "y": 300,
+          "right": 1870,
+          "bottom": 878
+        },
+        {
+          "x": 1512,
+          "y": 300,
+          "right": 1870,
+          "bottom": 878
+        },
+        {
+          "x": 1621,
+          "y": 332,
+          "right": 1761,
+          "bottom": 473
+        },
+        {
+          "x": 1544,
+          "y": 506,
+          "right": 1838,
+          "bottom": 846
+        },
+        {
+          "x": 1544,
+          "y": 506,
+          "right": 1838,
+          "bottom": 566
+        },
+        {
+          "x": 1544,
+          "y": 585,
+          "right": 1838,
+          "bottom": 778
+        },
+        {
+          "x": 1886,
+          "y": 300,
+          "right": 2244,
+          "bottom": 878
+        },
+        {
+          "x": 1886,
+          "y": 300,
+          "right": 2244,
+          "bottom": 878
+        },
+        {
+          "x": 1995,
+          "y": 332,
+          "right": 2135,
+          "bottom": 473
+        },
+        {
+          "x": 1918,
+          "y": 506,
+          "right": 2212,
+          "bottom": 846
+        },
+        {
+          "x": 1918,
+          "y": 506,
+          "right": 2212,
+          "bottom": 566
+        },
+        {
+          "x": 1918,
+          "y": 585,
+          "right": 2212,
+          "bottom": 778
+        },
+        {
+          "x": 2260,
+          "y": 300,
+          "right": 2618,
+          "bottom": 878
+        },
+        {
+          "x": 2260,
+          "y": 300,
+          "right": 2618,
+          "bottom": 878
+        },
+        {
+          "x": 2369,
+          "y": 332,
+          "right": 2509,
+          "bottom": 473
+        },
+        {
+          "x": 2292,
+          "y": 506,
+          "right": 2586,
+          "bottom": 846
+        },
+        {
+          "x": 2292,
+          "y": 506,
+          "right": 2586,
+          "bottom": 566
+        },
+        {
+          "x": 2292,
+          "y": 585,
+          "right": 2586,
+          "bottom": 778
+        },
+        {
+          "x": 2634,
+          "y": 300,
+          "right": 2992,
+          "bottom": 878
+        },
+        {
+          "x": 2634,
+          "y": 300,
+          "right": 2992,
+          "bottom": 878
+        },
+        {
+          "x": 2743,
+          "y": 332,
+          "right": 2883,
+          "bottom": 473
+        },
+        {
+          "x": 2666,
+          "y": 506,
+          "right": 2960,
+          "bottom": 846
+        },
+        {
+          "x": 2666,
+          "y": 506,
+          "right": 2960,
+          "bottom": 566
+        },
+        {
+          "x": 2666,
+          "y": 585,
+          "right": 2960,
+          "bottom": 778
+        },
+        {
+          "x": 3008,
+          "y": 300,
+          "right": 3366,
+          "bottom": 878
+        },
+        {
+          "x": 3008,
+          "y": 300,
+          "right": 3366,
+          "bottom": 878
+        },
+        {
+          "x": 3117,
+          "y": 332,
+          "right": 3257,
+          "bottom": 473
+        },
+        {
+          "x": 3040,
+          "y": 506,
+          "right": 3334,
+          "bottom": 846
+        },
+        {
+          "x": 3040,
+          "y": 506,
+          "right": 3334,
+          "bottom": 566
+        },
+        {
+          "x": 3040,
+          "y": 585,
+          "right": 3334,
+          "bottom": 778
+        },
+        {
+          "x": 3382,
+          "y": 300,
+          "right": 3740,
+          "bottom": 878
+        },
+        {
+          "x": 3382,
+          "y": 300,
+          "right": 3740,
+          "bottom": 878
+        },
+        {
+          "x": 3491,
+          "y": 332,
+          "right": 3631,
+          "bottom": 473
+        },
+        {
+          "x": 3414,
+          "y": 506,
+          "right": 3708,
+          "bottom": 846
+        },
+        {
+          "x": 3414,
+          "y": 506,
+          "right": 3708,
+          "bottom": 566
+        },
+        {
+          "x": 3414,
+          "y": 585,
+          "right": 3708,
+          "bottom": 778
+        },
+        {
+          "x": 3756,
+          "y": 300,
+          "right": 4114,
+          "bottom": 878
+        },
+        {
+          "x": 3756,
+          "y": 300,
+          "right": 4114,
+          "bottom": 878
+        },
+        {
+          "x": 3865,
+          "y": 332,
+          "right": 4005,
+          "bottom": 473
+        },
+        {
+          "x": 3788,
+          "y": 506,
+          "right": 4082,
+          "bottom": 846
+        },
+        {
+          "x": 3788,
+          "y": 506,
+          "right": 4082,
+          "bottom": 566
+        },
+        {
+          "x": 3788,
+          "y": 585,
+          "right": 4082,
+          "bottom": 778
+        },
+        {
+          "x": 4130,
+          "y": 300,
+          "right": 4488,
+          "bottom": 878
+        },
+        {
+          "x": 4130,
+          "y": 300,
+          "right": 4488,
+          "bottom": 878
+        },
+        {
+          "x": 4239,
+          "y": 332,
+          "right": 4379,
+          "bottom": 473
+        },
+        {
+          "x": 4162,
+          "y": 506,
+          "right": 4456,
+          "bottom": 846
+        },
+        {
+          "x": 4162,
+          "y": 506,
+          "right": 4456,
+          "bottom": 566
+        },
+        {
+          "x": 4162,
+          "y": 585,
+          "right": 4456,
+          "bottom": 778
+        },
+        {
+          "x": 4504,
+          "y": 300,
+          "right": 4862,
+          "bottom": 878
+        },
+        {
+          "x": 4504,
+          "y": 300,
+          "right": 4862,
+          "bottom": 878
+        },
+        {
+          "x": 4613,
+          "y": 332,
+          "right": 4753,
+          "bottom": 473
+        },
+        {
+          "x": 4536,
+          "y": 506,
+          "right": 4830,
+          "bottom": 846
+        },
+        {
+          "x": 4536,
+          "y": 506,
+          "right": 4830,
+          "bottom": 566
+        },
+        {
+          "x": 4536,
+          "y": 585,
+          "right": 4830,
+          "bottom": 778
+        },
+        {
+          "x": 4878,
+          "y": 300,
+          "right": 5236,
+          "bottom": 878
+        },
+        {
+          "x": 4878,
+          "y": 300,
+          "right": 5236,
+          "bottom": 878
+        },
+        {
+          "x": 4987,
+          "y": 332,
+          "right": 5127,
+          "bottom": 473
+        },
+        {
+          "x": 4910,
+          "y": 506,
+          "right": 5204,
+          "bottom": 846
+        },
+        {
+          "x": 4910,
+          "y": 506,
+          "right": 5204,
+          "bottom": 566
+        },
+        {
+          "x": 4910,
+          "y": 585,
+          "right": 5204,
+          "bottom": 778
+        },
+        {
+          "x": 5252,
+          "y": 300,
+          "right": 5610,
+          "bottom": 878
+        },
+        {
+          "x": 5252,
+          "y": 300,
+          "right": 5610,
+          "bottom": 878
+        },
+        {
+          "x": 5361,
+          "y": 332,
+          "right": 5501,
+          "bottom": 473
+        },
+        {
+          "x": 5284,
+          "y": 506,
+          "right": 5578,
+          "bottom": 846
+        },
+        {
+          "x": 5284,
+          "y": 506,
+          "right": 5578,
+          "bottom": 566
+        },
+        {
+          "x": 5284,
+          "y": 585,
+          "right": 5578,
+          "bottom": 778
+        },
+        {
+          "x": 5626,
+          "y": 300,
+          "right": 5984,
+          "bottom": 878
+        },
+        {
+          "x": 5626,
+          "y": 300,
+          "right": 5984,
+          "bottom": 878
+        },
+        {
+          "x": 5735,
+          "y": 332,
+          "right": 5875,
+          "bottom": 473
+        },
+        {
+          "x": 5658,
+          "y": 506,
+          "right": 5952,
+          "bottom": 846
+        },
+        {
+          "x": 5658,
+          "y": 506,
+          "right": 5952,
+          "bottom": 566
+        },
+        {
+          "x": 5658,
+          "y": 585,
+          "right": 5952,
+          "bottom": 778
+        },
+        {
+          "x": 6000,
+          "y": 300,
+          "right": 6358,
+          "bottom": 878
+        },
+        {
+          "x": 6000,
+          "y": 300,
+          "right": 6358,
+          "bottom": 878
+        },
+        {
+          "x": 6109,
+          "y": 332,
+          "right": 6249,
+          "bottom": 473
+        },
+        {
+          "x": 6032,
+          "y": 506,
+          "right": 6326,
+          "bottom": 846
+        },
+        {
+          "x": 6032,
+          "y": 506,
+          "right": 6326,
+          "bottom": 566
+        },
+        {
+          "x": 6032,
+          "y": 585,
+          "right": 6326,
+          "bottom": 778
+        },
+        {
+          "x": 6374,
+          "y": 300,
+          "right": 6732,
+          "bottom": 878
+        },
+        {
+          "x": 6374,
+          "y": 300,
+          "right": 6732,
+          "bottom": 878
+        },
+        {
+          "x": 6483,
+          "y": 332,
+          "right": 6623,
+          "bottom": 473
+        },
+        {
+          "x": 6406,
+          "y": 506,
+          "right": 6700,
+          "bottom": 846
+        },
+        {
+          "x": 6406,
+          "y": 506,
+          "right": 6700,
+          "bottom": 566
+        },
+        {
+          "x": 6406,
+          "y": 585,
+          "right": 6700,
+          "bottom": 778
+        },
+        {
+          "x": 6748,
+          "y": 300,
+          "right": 7106,
+          "bottom": 878
+        },
+        {
+          "x": 6748,
+          "y": 300,
+          "right": 7106,
+          "bottom": 878
+        },
+        {
+          "x": 6857,
+          "y": 332,
+          "right": 6997,
+          "bottom": 473
+        },
+        {
+          "x": 6780,
+          "y": 506,
+          "right": 7074,
+          "bottom": 846
+        },
+        {
+          "x": 6780,
+          "y": 506,
+          "right": 7074,
+          "bottom": 566
+        },
+        {
+          "x": 6780,
+          "y": 585,
+          "right": 7074,
+          "bottom": 778
+        },
+        {
+          "x": 7122,
+          "y": 300,
+          "right": 7480,
+          "bottom": 878
+        },
+        {
+          "x": 7122,
+          "y": 300,
+          "right": 7480,
+          "bottom": 878
+        },
+        {
+          "x": 7231,
+          "y": 332,
+          "right": 7371,
+          "bottom": 473
+        },
+        {
+          "x": 7154,
+          "y": 506,
+          "right": 7448,
+          "bottom": 846
+        },
+        {
+          "x": 7154,
+          "y": 506,
+          "right": 7448,
+          "bottom": 566
+        },
+        {
+          "x": 7154,
+          "y": 585,
+          "right": 7448,
+          "bottom": 778
+        },
+        {
+          "x": 7496,
+          "y": 300,
+          "right": 7854,
+          "bottom": 878
+        },
+        {
+          "x": 7496,
+          "y": 300,
+          "right": 7854,
+          "bottom": 878
+        },
+        {
+          "x": 7605,
+          "y": 332,
+          "right": 7745,
+          "bottom": 473
+        },
+        {
+          "x": 7528,
+          "y": 506,
+          "right": 7822,
+          "bottom": 846
+        },
+        {
+          "x": 7528,
+          "y": 506,
+          "right": 7822,
+          "bottom": 566
+        },
+        {
+          "x": 7528,
+          "y": 585,
+          "right": 7822,
+          "bottom": 778
+        },
+        {
+          "x": 7870,
+          "y": 300,
+          "right": 8228,
+          "bottom": 878
+        },
+        {
+          "x": 7870,
+          "y": 300,
+          "right": 8228,
+          "bottom": 878
+        },
+        {
+          "x": 7979,
+          "y": 332,
+          "right": 8119,
+          "bottom": 473
+        },
+        {
+          "x": 7902,
+          "y": 506,
+          "right": 8196,
+          "bottom": 846
+        },
+        {
+          "x": 7902,
+          "y": 506,
+          "right": 8196,
+          "bottom": 566
+        },
+        {
+          "x": 7902,
+          "y": 585,
+          "right": 8196,
+          "bottom": 778
+        },
+        {
+          "x": 16,
+          "y": 901,
+          "right": 374,
+          "bottom": 947
+        },
+        {
+          "x": 16,
+          "y": 901,
+          "right": 56,
+          "bottom": 942
+        },
+        {
+          "x": 91,
+          "y": 916,
+          "right": 299,
+          "bottom": 947
+        },
+        {
+          "x": 91,
+          "y": 916,
+          "right": 101,
+          "bottom": 927
+        },
+        {
+          "x": 113,
+          "y": 916,
+          "right": 123,
+          "bottom": 927
+        },
+        {
+          "x": 135,
+          "y": 916,
+          "right": 145,
+          "bottom": 927
+        },
+        {
+          "x": 157,
+          "y": 916,
+          "right": 167,
+          "bottom": 927
+        },
+        {
+          "x": 179,
+          "y": 916,
+          "right": 189,
+          "bottom": 927
+        },
+        {
+          "x": 201,
+          "y": 916,
+          "right": 211,
+          "bottom": 927
+        },
+        {
+          "x": 223,
+          "y": 916,
+          "right": 233,
+          "bottom": 927
+        },
+        {
+          "x": 245,
+          "y": 916,
+          "right": 255,
+          "bottom": 927
+        },
+        {
+          "x": 267,
+          "y": 916,
+          "right": 277,
+          "bottom": 927
+        },
+        {
+          "x": 289,
+          "y": 916,
+          "right": 299,
+          "bottom": 927
+        },
+        {
+          "x": 190,
+          "y": 936,
+          "right": 200,
+          "bottom": 947
+        },
+        {
+          "x": 334,
+          "y": 901,
+          "right": 374,
+          "bottom": 942
+        },
+        {
+          "x": 77,
+          "y": 962,
+          "right": 313,
+          "bottom": 1007
+        }
+      ]
+    }
   },
   "eco-top [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/eco-top_en_1440.png",
@@ -467,7 +3195,28 @@
     "http": 404,
     "size": 35161,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/eco-top_en_1440.png",
+      "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
+      "at": "2026-10-23T09:32:47.567Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 35161,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/eco-top_en_1440.png",
+      "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
+      "at": "2026-10-23T13:31:25.788Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 35161,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "eco-top [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/eco-top_en_390.png",
@@ -477,7 +3226,28 @@
     "http": 404,
     "size": 17621,
     "committed": true,
-    "title": "Page not found"
+    "title": "Page not found",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/eco-top_en_390.png",
+      "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
+      "at": "2026-10-23T09:32:51.892Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 404,
+      "size": 17621,
+      "committed": true,
+      "title": "Page not found"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/eco-top_en_390.png",
+      "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
+      "at": "2026-10-23T13:31:30.040Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 404,
+      "size": 17621,
+      "committed": true,
+      "title": "Page not found",
+      "masks": []
+    }
   },
   "video-block [en] 1440": {
     "png": "evidence/REGRESSION/20261023-1620/video-block_en_1440.png",
@@ -487,7 +3257,173 @@
     "http": 200,
     "size": 264078,
     "committed": true,
-    "title": "[AEM] Block Libraryのセットアップ"
+    "title": "[AEM] Block Libraryのセットアップ",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-block_en_1440.png",
+      "sha": "c256cbaf8a930ee8c4ebacad46a8a694e09384c3fddcba47c642997f47e59e3b",
+      "at": "2026-10-23T09:33:05.244Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 264078,
+      "committed": true,
+      "title": "[AEM] Block Libraryのセットアップ"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-block_en_1440.png",
+      "sha": "c256cbaf8a930ee8c4ebacad46a8a694e09384c3fddcba47c642997f47e59e3b",
+      "at": "2026-10-23T13:31:41.322Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 264078,
+      "committed": true,
+      "title": "[AEM] Block Libraryのセットアップ",
+      "masks": [
+        {
+          "x": 0,
+          "y": 7762,
+          "right": 1440,
+          "bottom": 8229
+        },
+        {
+          "x": 68,
+          "y": 7856,
+          "right": 1372,
+          "bottom": 8229
+        },
+        {
+          "x": 100,
+          "y": 7856,
+          "right": 1340,
+          "bottom": 8229
+        },
+        {
+          "x": 100,
+          "y": 7856,
+          "right": 1340,
+          "bottom": 8151
+        },
+        {
+          "x": 124,
+          "y": 7976,
+          "right": 1316,
+          "bottom": 8031
+        },
+        {
+          "x": 100,
+          "y": 7856,
+          "right": 1340,
+          "bottom": 8151
+        },
+        {
+          "x": 100,
+          "y": 7856,
+          "right": 1340,
+          "bottom": 8151
+        },
+        {
+          "x": 1340,
+          "y": 7856,
+          "right": 2580,
+          "bottom": 8151
+        },
+        {
+          "x": 1432,
+          "y": 7948,
+          "right": 1992,
+          "bottom": 8059
+        },
+        {
+          "x": 100,
+          "y": 8150,
+          "right": 1340,
+          "bottom": 8229
+        },
+        {
+          "x": 690,
+          "y": 8162,
+          "right": 714,
+          "bottom": 8217
+        },
+        {
+          "x": 726,
+          "y": 8162,
+          "right": 750,
+          "bottom": 8217
+        },
+        {
+          "x": 0,
+          "y": 9308,
+          "right": 1440,
+          "bottom": 9626
+        },
+        {
+          "x": 68,
+          "y": 9308,
+          "right": 1372,
+          "bottom": 9626
+        },
+        {
+          "x": 100,
+          "y": 9308,
+          "right": 1340,
+          "bottom": 9626
+        },
+        {
+          "x": 100,
+          "y": 9308,
+          "right": 1340,
+          "bottom": 9548
+        },
+        {
+          "x": 124,
+          "y": 9400,
+          "right": 1316,
+          "bottom": 9455
+        },
+        {
+          "x": 100,
+          "y": 9308,
+          "right": 1340,
+          "bottom": 9548
+        },
+        {
+          "x": 100,
+          "y": 9308,
+          "right": 1340,
+          "bottom": 9548
+        },
+        {
+          "x": 192,
+          "y": 9400,
+          "right": 752,
+          "bottom": 9456
+        },
+        {
+          "x": 1340,
+          "y": 9308,
+          "right": 2580,
+          "bottom": 9548
+        },
+        {
+          "x": 100,
+          "y": 9547,
+          "right": 1340,
+          "bottom": 9626
+        },
+        {
+          "x": 690,
+          "y": 9559,
+          "right": 714,
+          "bottom": 9614
+        },
+        {
+          "x": 726,
+          "y": 9559,
+          "right": 750,
+          "bottom": 9614
+        }
+      ]
+    }
   },
   "video-block [en] 390": {
     "png": "evidence/REGRESSION/20261023-1620/video-block_en_390.png",
@@ -497,6 +3433,172 @@
     "http": 200,
     "size": 155781,
     "committed": true,
-    "title": "[AEM] Block Libraryのセットアップ"
+    "title": "[AEM] Block Libraryのセットアップ",
+    "baseline": {
+      "png": "evidence/REGRESSION/20261023-1620/video-block_en_390.png",
+      "sha": "65e91d4fe8fada837f6bad1d294e8b35ce9fdeae39cc0fec0f9ba542dc32feb9",
+      "at": "2026-10-23T09:33:14.649Z",
+      "job": "JOB-ZY-REG-20261023-1620-codex",
+      "http": 200,
+      "size": 155781,
+      "committed": true,
+      "title": "[AEM] Block Libraryのセットアップ"
+    },
+    "last": {
+      "png": "evidence/REGRESSION/20261023-2020/video-block_en_390.png",
+      "sha": "65e91d4fe8fada837f6bad1d294e8b35ce9fdeae39cc0fec0f9ba542dc32feb9",
+      "at": "2026-10-23T13:31:49.883Z",
+      "job": "JOB-ZY-REG-20261023-2020-codex",
+      "http": 200,
+      "size": 155781,
+      "committed": true,
+      "title": "[AEM] Block Libraryのセットアップ",
+      "masks": [
+        {
+          "x": 0,
+          "y": 8868,
+          "right": 390,
+          "bottom": 9498
+        },
+        {
+          "x": 0,
+          "y": 8962,
+          "right": 390,
+          "bottom": 9498
+        },
+        {
+          "x": 24,
+          "y": 8962,
+          "right": 366,
+          "bottom": 9498
+        },
+        {
+          "x": 24,
+          "y": 8962,
+          "right": 366,
+          "bottom": 9420
+        },
+        {
+          "x": 36,
+          "y": 9164,
+          "right": 354,
+          "bottom": 9219
+        },
+        {
+          "x": 24,
+          "y": 8962,
+          "right": 366,
+          "bottom": 9420
+        },
+        {
+          "x": 24,
+          "y": 8962,
+          "right": 366,
+          "bottom": 9420
+        },
+        {
+          "x": 366,
+          "y": 8962,
+          "right": 708,
+          "bottom": 9420
+        },
+        {
+          "x": 434,
+          "y": 9030,
+          "right": 640,
+          "bottom": 9352
+        },
+        {
+          "x": 24,
+          "y": 9419,
+          "right": 366,
+          "bottom": 9498
+        },
+        {
+          "x": 165,
+          "y": 9431,
+          "right": 189,
+          "bottom": 9486
+        },
+        {
+          "x": 201,
+          "y": 9431,
+          "right": 225,
+          "bottom": 9486
+        },
+        {
+          "x": 0,
+          "y": 10827,
+          "right": 390,
+          "bottom": 11098
+        },
+        {
+          "x": 0,
+          "y": 10827,
+          "right": 390,
+          "bottom": 11098
+        },
+        {
+          "x": 24,
+          "y": 10827,
+          "right": 366,
+          "bottom": 11098
+        },
+        {
+          "x": 24,
+          "y": 10827,
+          "right": 366,
+          "bottom": 11020
+        },
+        {
+          "x": 36,
+          "y": 10896,
+          "right": 354,
+          "bottom": 10951
+        },
+        {
+          "x": 24,
+          "y": 10827,
+          "right": 366,
+          "bottom": 11020
+        },
+        {
+          "x": 24,
+          "y": 10827,
+          "right": 366,
+          "bottom": 11020
+        },
+        {
+          "x": 92,
+          "y": 10895,
+          "right": 298,
+          "bottom": 10952
+        },
+        {
+          "x": 366,
+          "y": 10827,
+          "right": 708,
+          "bottom": 11020
+        },
+        {
+          "x": 24,
+          "y": 11019,
+          "right": 366,
+          "bottom": 11098
+        },
+        {
+          "x": 165,
+          "y": 11031,
+          "right": 189,
+          "bottom": 11086
+        },
+        {
+          "x": 201,
+          "y": 11031,
+          "right": 225,
+          "bottom": 11086
+        }
+      ]
+    }
   }
 }

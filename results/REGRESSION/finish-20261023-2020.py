@@ -1,0 +1,108 @@
+import json, pathlib, collections, datetime
+P=pathlib.Path
+job='JOB-ZY-REG-20261023-2020-codex'; root=P('ykk-dsr/hub/results')/job
+d=json.loads((root/'measurements.json').read_text()); candidates=[]; tests=[]
+def add(r,metric,before,now):
+ c=dict(page=r['key'],lang=r.get('lang','ja'),vw=r.get('width',r.get('device')),metric=metric,before=before,now=now,suspect='unannounced',confidence=50,cause='none')
+ candidates.append(c);return c
+for r in d['pages']:
+ changes=[]; comp=r.get('comparison',{})
+ if r.get('reason')=='Baseline capture; no previous visual comparison':r['reason']='Capture completed; comparison recorded separately'
+ for metric in ['http','title']:
+  before=comp.get(metric+'Before')
+  if before is not None and r.get(metric)!=before:changes.append(add(r,metric,before,r.get(metric)))
+ if r.get('http')!=404 and comp.get('diffPercent',0) is not None and comp.get('diffPercent',0)>1:changes.append(add(r,'pixel diff %',0,round(comp['diffPercent'],4)))
+ result=r['result'];reason=r.get('reason','')
+ if changes:result='fail';reason='NEW FAIL candidate: '+', '.join(c['metric'] for c in changes)
+ elif result=='pass':
+  if comp.get('error') or comp.get('diffPercent') is None:result='blocked';reason=comp.get('error','No comparable pixels')
+  else:reason=''
+ tests.append(dict(tc=f"VISUAL-{r['key']}-{r['width']}",lang=r['lang'],result=result,error=reason[:200],evidence=r.get('png','') if r.get('committed') else '',suspect='product' if changes else 'data',cause='none',confidence=50 if changes else 0,durationMs=r['durationMs'],changes=changes))
+for g in d['lighthouse']:
+ prev=d['previousLighthouse'].get(f"{g['key']} [ja] {g['device']}",{}); prev=prev.get('baseline',prev); changes=[]
+ before=prev.get('scores',{}).get('performance');now=g.get('scores',{}).get('performance')
+ if isinstance(before,(int,float)) and isinstance(now,(int,float)) and before-now>=10:changes.append(add(g,'performance',before,now))
+ before=prev.get('metrics',{}).get('largest-contentful-paint');now=g.get('metrics',{}).get('largest-contentful-paint')
+ if isinstance(before,(int,float)) and isinstance(now,(int,float)) and now-before>=1000:changes.append(add(g,'LCP ms',before,now))
+ blocked=len(g['runs'])!=3 or any(r.get('error') or r.get('runtimeError') for r in g['runs'])
+ tests.append(dict(tc=f"LIGHTHOUSE-{g['key']}-{g['device']}",lang='ja',result='blocked' if blocked else 'fail' if changes else 'pass',error='Lighthouse incomplete' if blocked else 'NEW FAIL candidate: '+', '.join(c['metric'] for c in changes) if changes else '',evidence='',suspect='env',cause='none',confidence=50 if changes else 0,durationMs=sum(r['durationMs'] for r in g['runs']),changes=changes))
+d['newFailCandidates']=candidates
+(root/'measurements.json').write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+result=dict(job=job,agent='codex',us='Regression S12',env='dev',started=d['started'],finished=d['finished'],status='failed' if d.get('error') else 'done',tests=tests,lighthouse=[dict(url=g['url'],device=g['device'],**g.get('scores',{}),metrics=g.get('metrics',{})) for g in d['lighthouse']],code_changes=['results/REGRESSION/run-20261023-2020.cjs','results/REGRESSION/finish-20261023-2020.py'],questions=[])
+(root/'result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+counts=collections.Counter(t['result'] for t in tests)
+def esc(s):return str(s).replace('|','\\|').replace('\n',' ')
+table=['# NEW FAIL','| page | lang | vw | metric | before | now | suspect CHANGES.md row | confidence |','|---|---|---|---|---|---|---|---|']
+for c in candidates:table.append('| '+' | '.join(esc(c[k]) for k in ['page','lang','vw','metric','before','now','suspect'])+f" | {c['confidence']}% |")
+if not candidates:table.append('| None | — | — | — | — | — | — | — |')
+reportpath='results/REGRESSION/DEV/automation-run-'+d['started'][:10].replace('-','')+'-2020.md'
+tsc=P('/tmp/reg2020-tsc.exit').read_text().strip();tscout=P('/tmp/reg2020-tsc.log').read_text().strip() or 'no errors'
+notes=[
+'Image inspection: English video list desktop first row changed from QA587 main movie / QA587 rel B / video title main a to QA587 main movie / QA587 main movie / QA587 rel B. This may be seed content or query ordering; no data writes or independent Author verification performed.',
+'Proposed outcomes only; human QA confirms. No login, writes, or form submission.',
+'Visual baseline preserved from REG-1620; last measurements updated. HTTP/title and >1% pixel changes compared.',
+'Pixel comparison: RGB max-channel difference >32/255, masking current/baseline carousel, video, iframe and time rectangles. Historical masks unavailable; current rectangles applied to both images. Compression can cause residual noise.',
+'404 pages skipped unless HTTP/title changed; eight known baseline 404 captures do not constitute new regression.',
+'Lighthouse: three runs per page/device, medians; performance drop >=10 or LCP rise >=1000 ms are candidates, not confirmed bugs.',
+'Pending DSR-639/661/649 changes are not confirmed deployed; none can be causally linked from screenshot/performance measurements. Unexplained changes tagged unannounced, cause none, confidence 50%.',
+'Build and AEM seed content not independently verified. P2 scope is the inherited page set; no dedicated booth page added.',
+'PNG palette compression then JPEG q80 above 300,000 bytes; oversized evidence omitted with SHA/size retained. Committed captures are under evidence/REGRESSION/20261023-2020. Raw Lighthouse /tmp files, test-results/ and playwright-report/ are not committed.'
+]
+summary=table+[f"Proposed: {counts['pass']} pass, {counts['fail']} candidate fail, {counts['skip']} skip, {counts['blocked']} blocked.",f"{len(d['pages'])} captures; {sum(len(g['runs']) for g in d['lighthouse'])} Lighthouse audits. Baseline preserved; last updated.",f"TypeScript exit {tsc}: {tscout}.",'All candidates: cause none, confidence 50%; attribution unverified. See measurements.json for full comparisons.',f'Report: {reportpath}']
+if len(summary)>20:summary=table[:3]+['| Full candidate table in run report and measurements.json | ja/en | both | visual/Lighthouse | baseline | current | unannounced | 50% |']+summary[len(table):]
+(root/'summary.md').write_text('\n'.join(summary)+'\n')
+wall=(datetime.datetime.fromisoformat(d['finished'])-datetime.datetime.fromisoformat(d['started'])).total_seconds()
+report=f'''# Regression DEV automation run — 20261023-2020
+
+## 1. Header
+
+- Run start (UTC): {d['started']}
+- Run end (UTC): {d['finished']}
+- Environment + base URL: DEV — {d['base']}
+- Target pages: {', '.join(sorted(set(r['path'] for r in d['pages'])))}
+- Build under test: not independently verified; latest recorded deploy dev/2026.10.23_2 b33514f.
+- Baseline ID: JOB-ZY-REG-20261023-1620-codex (post-669); previous ledgers snapshotted in measurements.json.
+- Automation HEAD commit SHA: {d['head']}
+- Exact command: `node results/REGRESSION/run-20261023-2020.cjs > /tmp/reg2020-run.log 2>&1`
+- Postprocessing: `python3 results/REGRESSION/finish-20261023-2020.py`
+
+## 2. TypeScript check
+
+- Command: `npx tsc --noEmit`
+- Exit code: {tsc}
+- Result: {tscout}
+
+## 3. Suite summary
+
+| Total | Passed | Failed | Skipped | Blocked | Exit code | Workers | Retries | Wall time |
+|---:|---:|---:|---:|---:|---:|---:|---|---|
+| {len(tests)} | {counts['pass']} | {counts['fail']} | {counts['skip']} | {counts['blocked']} | {1 if d.get('error') else 0} | 1 | 0 | {wall:.1f} s |
+
+Proposed outcomes only. Chromium capture script, not npm suite. Three Lighthouse measurements per combination are not retries.
+
+## 4. Executed tests
+
+Duration per capture or sum of three audits.
+
+| TC ID | Title | Result | Duration | One-line failure reason |
+|---|---|---|---|---|
+'''
+for i,t in enumerate(tests):
+ if t['result']=='skip':continue
+ title=d['pages'][i]['path'] if i<len(d['pages']) else d['lighthouse'][i-len(d['pages'])]['url']
+ report+=f"| {t['tc']} [{t['lang']}] | {title} | {t['result']} | {t['durationMs']} ms | {esc(t['error']) or '—'} |\n"
+report+='\n| Page | Device | Perf | A11y | BP | SEO | LCP ms | CLS | TBT ms |\n|---|---|---|---|---|---|---|---|---|\n'
+for g in d['lighthouse']:report+='| '+' | '.join(str(v) for v in [g['key'],g['device'],*[g.get('scores',{}).get(k) for k in ['performance','accessibility','best-practices','seo']],*[g.get('metrics',{}).get(k) for k in ['largest-contentful-paint','cumulative-layout-shift','total-blocking-time']]])+' |\n'
+report+='\n## 5. Skipped tests\n\n| TC ID | Verbatim skip reason |\n|---|---|\n'
+for t in tests:
+ if t['result']=='skip':report+=f"| {t['tc']} [{t['lang']}] | {esc(t['error'])} |\n"
+if not counts['skip']:report+='None.\n'
+report+='\n## 6. Failed tests\n\n'
+if not counts['fail']:report+='None.\n'
+for t in tests:
+ if t['result']!='fail':continue
+ report+=f"### {t['tc']} [{t['lang']}]\n\n- Failing comparison: `results/REGRESSION/finish-20261023-2020.py:{12 if t['tc'].startswith('VISUAL') else 26}`; no Playwright assertion exception.\n- Expected: unchanged HTTP/title, pixel diff <=1%, performance drop <10, LCP rise <1000 ms.\n- Actual: {esc(t['changes'])}\n- Attempts: one capture or three Lighthouse audits, no retry.\n- Evidence: {t['evidence'] or str(root/'measurements.json')}\n- Cause: none; product-bug confidence {t['confidence']}%; suspect {t['suspect']}.\n\n"
+report+='\n'+'\n'.join(table)+'\n\n## 7. Open points for QA\n\n'+'\n'.join('- '+n for n in notes)+'\n'
+assert not P(reportpath).exists(),'Refusing overwrite'
+P(reportpath).write_text(report)
+print(dict(counts));print(json.dumps(candidates,ensure_ascii=False,indent=2))
