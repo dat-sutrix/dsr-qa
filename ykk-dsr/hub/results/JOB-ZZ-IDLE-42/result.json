@@ -4,7 +4,7 @@
   "us": "DSR-590/566",
   "env": "dev",
   "started": "2026-10-23T02:42:06.159Z",
-  "finished": "2026-10-23T02:42:24.550Z",
+  "finished": "2026-10-23T04:12:40.481Z",
   "status": "done",
   "scope": "Latest round only; watch completion tracked in schedule.json",
   "tests": [
@@ -13,41 +13,35 @@
       "lang": "ja",
       "result": "blocked",
       "error": "Geometry captured; QA acceptance pending",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/1440-top.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/1440-top.png"
     },
     {
       "tc": "DSR-666/667",
       "lang": "ja",
       "result": "blocked",
       "error": "Geometry captured; QA acceptance pending",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/390-top.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/390-top.png"
     },
     {
       "tc": "DSR-666/667",
       "lang": "ja",
       "result": "blocked",
       "error": "Geometry captured; QA acceptance pending",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/393-top.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/393-top.png"
     },
     {
       "tc": "DSR-672",
       "lang": "ja",
-      "result": "fail",
-      "error": "Displayed date does not match YYYY.MM.DD",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/news-ja.png",
-      "suspect": "product",
-      "cause": "none",
-      "confidence": 85
+      "result": "pass",
+      "error": "",
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/news-ja.png"
     },
     {
       "tc": "DSR-672",
       "lang": "en",
-      "result": "fail",
-      "error": "Displayed date does not match YYYY.MM.DD",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T024206/news-en.png",
-      "suspect": "product",
-      "cause": "none",
-      "confidence": 85
+      "result": "pass",
+      "error": "",
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/news-en.png"
     },
     {
       "tc": "DSR-NEWS-014",

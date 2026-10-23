@@ -307,5 +307,323 @@
       }
     ],
     "changes": []
+  },
+  {
+    "started": "2026-10-23T04:12:06.178Z",
+    "finished": "2026-10-23T04:12:40.481Z",
+    "records": [
+      {
+        "bug": "DSR-666/667",
+        "width": 1440,
+        "lang": "ja",
+        "evidence": [
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/1440-top.png",
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/1440-controls.png"
+        ],
+        "httpStatus": 200,
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 40,
+            "y": 153.09375,
+            "width": 1360,
+            "height": 23.796875,
+            "top": 153.09375,
+            "right": 1400,
+            "bottom": 176.890625,
+            "left": 40
+          },
+          "section": {
+            "x": 0,
+            "y": 140,
+            "width": 1440,
+            "height": 50,
+            "top": 140,
+            "right": 1440,
+            "bottom": 190,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 190,
+            "width": 1440,
+            "height": 947.390625,
+            "top": 190,
+            "right": 1440,
+            "bottom": 1137.390625,
+            "left": 0
+          },
+          "navGap": 13.109375,
+          "sectionGap": 0
+        },
+        "controls": {
+          "dotCount": 11,
+          "dot9": {
+            "x": 817,
+            "y": 445.390625,
+            "width": 10,
+            "height": 10,
+            "top": 445.390625,
+            "right": 827,
+            "bottom": 455.390625,
+            "left": 817
+          },
+          "next": {
+            "x": 1340,
+            "y": 420.390625,
+            "width": 60,
+            "height": 60,
+            "top": 420.390625,
+            "right": 1400,
+            "bottom": 480.390625,
+            "left": 1340
+          },
+          "container": {
+            "x": 140,
+            "y": 445.390625,
+            "width": 1160,
+            "height": 10,
+            "top": 445.390625,
+            "right": 1300,
+            "bottom": 455.390625,
+            "left": 140
+          },
+          "clearance": 513,
+          "clippedRight": 0,
+          "centerHitClass": "eco-carousel-dot",
+          "centerHitsDot": true
+        }
+      },
+      {
+        "bug": "DSR-666/667",
+        "width": 390,
+        "lang": "ja",
+        "evidence": [
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/390-top.png",
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/390-controls.png"
+        ],
+        "httpStatus": 200,
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 16,
+            "y": 81,
+            "width": 358,
+            "height": 16,
+            "top": 81,
+            "right": 374,
+            "bottom": 97,
+            "left": 16
+          },
+          "section": {
+            "x": 0,
+            "y": 72,
+            "width": 390,
+            "height": 34,
+            "top": 72,
+            "right": 390,
+            "bottom": 106,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 106,
+            "width": 390,
+            "height": 941.390625,
+            "top": 106,
+            "right": 390,
+            "bottom": 1047.390625,
+            "left": 0
+          },
+          "navGap": 9,
+          "sectionGap": 0
+        },
+        "controls": {
+          "dotCount": 11,
+          "dot9": {
+            "x": 288,
+            "y": 417.390625,
+            "width": 10,
+            "height": 10,
+            "top": 417.390625,
+            "right": 298,
+            "bottom": 427.390625,
+            "left": 288
+          },
+          "next": {
+            "x": 334,
+            "y": 402.390625,
+            "width": 40,
+            "height": 40,
+            "top": 402.390625,
+            "right": 374,
+            "bottom": 442.390625,
+            "left": 334
+          },
+          "container": {
+            "x": 96,
+            "y": 417.390625,
+            "width": 198,
+            "height": 10,
+            "top": 417.390625,
+            "right": 294,
+            "bottom": 427.390625,
+            "left": 96
+          },
+          "clearance": 36,
+          "clippedRight": 4,
+          "centerHitClass": "eco-carousel-dot",
+          "centerHitsDot": true
+        }
+      },
+      {
+        "bug": "DSR-666/667",
+        "width": 393,
+        "lang": "ja",
+        "evidence": [
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/393-top.png",
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/393-controls.png"
+        ],
+        "httpStatus": 200,
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+        "gap": {
+          "breadcrumb": {
+            "x": 16,
+            "y": 81,
+            "width": 361,
+            "height": 16,
+            "top": 81,
+            "right": 377,
+            "bottom": 97,
+            "left": 16
+          },
+          "section": {
+            "x": 0,
+            "y": 72,
+            "width": 393,
+            "height": 34,
+            "top": 72,
+            "right": 393,
+            "bottom": 106,
+            "left": 0
+          },
+          "hero": {
+            "x": 0,
+            "y": 106,
+            "width": 393,
+            "height": 941.390625,
+            "top": 106,
+            "right": 393,
+            "bottom": 1047.390625,
+            "left": 0
+          },
+          "navGap": 9,
+          "sectionGap": 0
+        },
+        "controls": {
+          "dotCount": 11,
+          "dot9": {
+            "x": 288,
+            "y": 417.390625,
+            "width": 10,
+            "height": 10,
+            "top": 417.390625,
+            "right": 298,
+            "bottom": 427.390625,
+            "left": 288
+          },
+          "next": {
+            "x": 337,
+            "y": 402.390625,
+            "width": 40,
+            "height": 40,
+            "top": 402.390625,
+            "right": 377,
+            "bottom": 442.390625,
+            "left": 337
+          },
+          "container": {
+            "x": 96,
+            "y": 417.390625,
+            "width": 201,
+            "height": 10,
+            "top": 417.390625,
+            "right": 297,
+            "bottom": 427.390625,
+            "left": 96
+          },
+          "clearance": 39,
+          "clippedRight": 1,
+          "centerHitClass": "eco-carousel-dot",
+          "centerHitsDot": true
+        }
+      },
+      {
+        "bug": "DSR-672",
+        "lang": "ja",
+        "evidence": [
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/news-ja.png"
+        ],
+        "httpStatus": 200,
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+        "dates": [
+          "2026.10.01"
+        ],
+        "formatPass": true
+      },
+      {
+        "bug": "DSR-672",
+        "lang": "en",
+        "evidence": [
+          "results/JOB-ZZ-IDLE-42/evidence/20261023T041206/news-en.png"
+        ],
+        "httpStatus": 200,
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+        "dates": [
+          "2026.10.01"
+        ],
+        "formatPass": true
+      }
+    ],
+    "changes": [
+      {
+        "bug": "DSR-666",
+        "time": "2026-10-23T04:12:40.480Z",
+        "width": 1440,
+        "lang": "ja",
+        "before": "[53.109375,40]",
+        "after": "[13.109375,0]"
+      },
+      {
+        "bug": "DSR-666",
+        "time": "2026-10-23T04:12:40.481Z",
+        "width": 390,
+        "lang": "ja",
+        "before": "[49,40]",
+        "after": "[9,0]"
+      },
+      {
+        "bug": "DSR-666",
+        "time": "2026-10-23T04:12:40.481Z",
+        "width": 393,
+        "lang": "ja",
+        "before": "[49,40]",
+        "after": "[9,0]"
+      },
+      {
+        "bug": "DSR-672",
+        "time": "2026-10-23T04:12:40.481Z",
+        "lang": "ja",
+        "before": "[\"2026-10-01T00:00:00.000Z\"]",
+        "after": "[\"2026.10.01\"]"
+      },
+      {
+        "bug": "DSR-672",
+        "time": "2026-10-23T04:12:40.481Z",
+        "lang": "en",
+        "before": "[\"2026-10-01T00:00:00.000Z\"]",
+        "after": "[\"2026.10.01\"]"
+      }
+    ]
   }
 ]
