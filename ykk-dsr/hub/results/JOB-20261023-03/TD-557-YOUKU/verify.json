@@ -1,0 +1,382 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa557-youku",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "qa557-youku",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "QA557 Youku video",
+    "actual": "QA557 Youku video"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "QA557 Youku test (DSR-611 Q4)",
+    "actual": "QA557 Youku test (DSR-611 Q4)"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "youku",
+    "actual": "youku"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "XNTgyNzE1ODE5Ng==",
+    "actual": "XNTgyNzE1ODE5Ng=="
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:15 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:17 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa557-youku",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "qa557-youku",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "QA557 Youku video",
+    "actual": "QA557 Youku video"
+  },
+  {
+    "layer": "L1",
+    "check": "field:description",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "QA557 Youku test (DSR-611 Q4)",
+    "actual": "QA557 Youku test (DSR-611 Q4)"
+  },
+  {
+    "layer": "L1",
+    "check": "field:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieSource",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "youku",
+    "actual": "youku"
+  },
+  {
+    "layer": "L1",
+    "check": "field:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "XNTgyNzE1ODE5Ng==",
+    "actual": "XNTgyNzE1ODE5Ng=="
+  },
+  {
+    "layer": "L1",
+    "check": "field:publishDate",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:15 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:17 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa557-youku",
+    "actual": "/content/dam/common/en/movies/qa557-youku"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:16 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:18 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L1",
+    "check": "field:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": true,
+    "actual": true
+  },
+  {
+    "layer": "L1",
+    "check": "field:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa557-youku",
+    "actual": "/content/dam/common/ja/movies/qa557-youku"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:16 GMT+0000"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T02:30:51Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 02:31:18 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa557-youku",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/video/qa557-youku",
+    "actual": "200; title=\"QA557 Youku video | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa557-youku",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/video/qa557-youku",
+    "actual": "200; title=\"QA557 Youku video | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/library/video/qa557-youku",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/video/qa557-youku",
+    "actual": "200; title=\"QA557 Youku video | YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa557-youku",
+    "result": "PASS",
+    "expected": "200 + <title> on /ja/library/video/qa557-youku",
+    "actual": "200; title=\"QA557 Youku video | YKK DIGITAL SHOWROOM\""
+  }
+]

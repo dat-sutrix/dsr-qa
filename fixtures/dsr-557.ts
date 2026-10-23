@@ -15,6 +15,15 @@ export const videoHosts = () => {
 export const youtubeVideos = [
   { id: 'qa587-main', movieSourceId: 'irFRtAVphCY', youtubeId: 'irFRtAVphCY' },
 ];
+// TD-557-YOUKU (Agent Author JOB-20261023-03): movieSource = youku, Youku ID from Quentin DSR-611 Q4 (KNOWN-FACTS 22/10), ja + en.
+export const youkuVideos = [
+  { id: 'qa557-youku', movieSourceId: 'XNTgyNzE1ODE5Ng==' },
+];
+// TC 3.0: Youku embed URL (DEV 2026-10-23 player.youku.com/embed/{movieSourceId}). TC A4: playback not asserted from VPS.
+export const youkuEmbedSrc = (id: string) => `https://player.youku.com/embed/${id}`;
+export const youkuFrameHost = 'https://player.youku.com';
+// TC 11.0: switching rule open (DSR-611 Q2, Numata) and no /master/cn on DEV (Issue #18).
+export const cnSwitchPending = 'Blocked-by: DSR-611 #2 cn switching rule not decided; no /master/cn on DEV (Issue #18)';
 // DAM mp4 movie (movieSource = dam, movieAsset sample-4.mp4).
 export const damVideos = [
   { id: 'qa557-dam', assetPath: '/content/dam/ykk/digital-showroom/test/video/sample-4.mp4' },

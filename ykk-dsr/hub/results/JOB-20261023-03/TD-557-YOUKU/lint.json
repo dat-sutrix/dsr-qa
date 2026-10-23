@@ -1,0 +1,662 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "en+ja"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa557-youku (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA557 Youku video"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA557 Youku test (DSR-611 Q4)"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youku"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "XNTgyNzE1ODE5Ng=="
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "qa557-youku",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/ja/movies/qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/ja/movies/qa557-youku (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA557 Youku video"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA557 Youku test (DSR-611 Q4)"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youku"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "XNTgyNzE1ODE5Ng=="
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "qa557-youku",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "en+ja"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "WARN",
+    "expected": "CF at /content/dam/dsr/en/movies/standard/qa557-youku (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/en/movies/qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa557-youku",
+    "actual": "in manifest"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/movies/standard/qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "WARN",
+    "expected": "CF at /content/dam/dsr/ja/movies/standard/qa557-youku (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/ja/movies/qa557-youku"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa557-youku",
+    "actual": "in manifest"
+  }
+]

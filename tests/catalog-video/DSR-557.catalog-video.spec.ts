@@ -2,7 +2,7 @@ import { test, expect, type Page } from '@playwright/test';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
 import { CatalogDetailPage } from '../../pages/CatalogDetailPage';
 import { VideoPlayerPage } from '../../pages/VideoPlayerPage';
-import { viewports, languages, type Language, catalogPath, videoPath, videoHosts, youtubeVideos, damVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, expectedLabel, today, qa190, core, type CoreKey, coreItem, contentCfPath, oldFolder, type CatalogItem, listBlocked, detailPath } from '../../fixtures/dsr-557';
+import { viewports, languages, type Language, catalogPath, videoPath, videoHosts, youtubeVideos, damVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, youkuVideos, youkuEmbedSrc, youkuFrameHost, cnSwitchPending, expectedLabel, today, qa190, core, type CoreKey, coreItem, contentCfPath, oldFolder, type CatalogItem, listBlocked, detailPath } from '../../fixtures/dsr-557';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -223,3 +223,54 @@ for (const lang of languages) {
     });
   }
 }
+
+// Youku TCs 3.0 / 7.0 / 11.0 (JOB-20261023-03, TD-557-YOUKU). TC 3.0 is cn in the TC file; DEV has no cn → ja/en overlay pages.
+const cspViolations = (page: Page) => page.evaluate(() => (window as unknown as { __csp?: string[] }).__csp ?? []);
+const watchCsp = (page: Page) => page.addInitScript(() => {
+  const w = window as unknown as { __csp: string[] };
+  w.__csp = [];
+  document.addEventListener('securitypolicyviolation', e => w.__csp.push(`${e.violatedDirective} ${e.blockedURI}`));
+});
+for (const lang of languages) {
+  for (const host of videoHosts()) {
+    const tier = new URL(host).hostname.endsWith('.aem.live') ? 'live' : 'page';
+    test.describe(`${lang} youku ${tier}`, () => {
+      for (const v of youkuVideos) {
+        test(`DSR-CATV-003 [${lang}] Youku embed src after click (${v.id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+          const video = await openVideo(page, host, lang, v.id);
+          await page.waitForLoadState('networkidle');
+          const before = await video.iframeSrcs();
+          await video.facade.click();
+          await expect(video.embed).toBeAttached();
+          const src = (await video.embed.getAttribute('src'))!;
+          observations.push({ url: page.url(), movieSourceId: v.movieSourceId, iframesBefore: before, src });
+          test.info().annotations.push({ type: 'not-verified', description: 'TC A4: Youku playback not asserted from the VPS network; embed src only' });
+          expect.soft(before, 'iframes before click').toEqual([]);
+          expect(new URL(src).hostname).toBe('player.youku.com');
+          expect(src.split('?')[0]).toBe(youkuEmbedSrc(v.movieSourceId));
+          expect(src).not.toMatch(/[?&]autoplay=1(&|$)/);
+        });
+
+        test(`DSR-CATV-007 [${lang}] CSP allows the Youku embed, no violation (${v.id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+          await watchCsp(page);
+          const errors: string[] = [];
+          page.on('console', m => { if (m.type() === 'error' && /Content Security Policy|Refused to/i.test(m.text())) errors.push(m.text()); });
+          const video = await openVideo(page, host, lang, v.id);
+          const response = await page.request.get(page.url(), { failOnStatusCode: false });
+          const csp = response.headers()['content-security-policy'] ?? '';
+          const frameSrc = csp.split(';').map(d => d.trim()).find(d => d.startsWith('frame-src')) ?? '';
+          await video.facade.click();
+          await expect(video.embed).toBeAttached();
+          await page.waitForTimeout(3_000);
+          const violations = await cspViolations(page);
+          observations.push({ url: page.url(), frameSrc, violations, consoleErrors: errors, src: await video.embed.getAttribute('src') });
+          test.info().annotations.push({ type: 'not-verified', description: 'TC 7.0 "only the required domains are added" not asserted (no approved domain list); frame-src recorded in observed' });
+          expect(frameSrc.split(/\s+/), 'CSP frame-src').toContain(youkuFrameHost);
+          expect.soft(violations, 'securitypolicyviolation events').toEqual([]);
+          expect.soft(errors, 'console CSP errors').toEqual([]);
+        });
+      }
+    });
+  }
+}
+test('DSR-CATV-011 [cn] Youku on cn pages, YouTube on ja/en (switching rule)', () => { test.fixme(true, cnSwitchPending); });

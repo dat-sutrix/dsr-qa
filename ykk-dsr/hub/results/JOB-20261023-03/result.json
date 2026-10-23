@@ -1,0 +1,198 @@
+{
+  "job": "JOB-20261023-03",
+  "agent": "claude-code",
+  "us": "DSR-587, DSR-557",
+  "env": "dev",
+  "started": "2026-10-23T02:27:00Z",
+  "finished": "2026-10-23T02:39:35Z",
+  "status": "done",
+  "author_apply": {
+    "TD-587-NEG": {
+      "plan_equals_JOB-02": true,
+      "lint": "PASS 212 / FAIL 0 / WARN 22",
+      "writes": 17,
+      "http": "13x201 create, 4x200 replicate",
+      "apply_start": "2026-10-23T02:28:31Z",
+      "verify": "L1 PASS 92, L2 PASS 25, L3 PASS 9 / FAIL 1 (qa587-preview .aem.live 404 = intended, preview-only)"
+    },
+    "TD-557-YOUKU": {
+      "plan_equals_JOB-02": true,
+      "lint": "PASS 62 / FAIL 0 / WARN 4",
+      "writes": 8,
+      "http": "4x201 create, 4x200 replicate",
+      "apply_start": "2026-10-23T02:30:51Z",
+      "verify": "L1 PASS 26, L2 PASS 8, L3 PASS 4"
+    }
+  },
+  "tests": [
+    {
+      "tc": "DSR-VOV-002",
+      "lang": "en",
+      "result": "fail",
+      "error": ".aem.page 200 but body = 'unavailable: not-found', no 'QA587 preview' title (.aem.live 404 OK); same as CATOV-009 qa654-preview",
+      "evidence": "evidence/DSR-VOV-002_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60
+    },
+    {
+      "tc": "DSR-VOV-006",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-VOV-007",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-VOV-004",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked-by: TD-587-04 not seeded – QA587_Upper outside Agent Author name guard → QA-PT",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-VOV-005",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked-by: TD-587-05 not seeded – DSR CF sub-folder qa587/ missing → QA-PT",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-VOV-008",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked-by: TD-587-08 not seeded – phase 2 (unpublish commune, republish DSR) not in plan",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-VOV-010",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked-by: TD-587-10 not seeded – phase 2 (unpublish DSR CF ≥ 10 min) not in plan",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-VOV-012",
+      "lang": "en",
+      "result": "skip",
+      "error": "Blocked-by: TD-587-12 not seeded – DSR CF dsr/en/movies/tech not created (DSR-669/Q32); test not written",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-003",
+      "lang": "ja",
+      "result": "pass",
+      "error": ".aem.page",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-007",
+      "lang": "ja",
+      "result": "pass",
+      "error": ".aem.page",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-003",
+      "lang": "ja",
+      "result": "pass",
+      "error": ".aem.live",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-007",
+      "lang": "ja",
+      "result": "pass",
+      "error": ".aem.live",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-003",
+      "lang": "en",
+      "result": "pass",
+      "error": ".aem.page",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-007",
+      "lang": "en",
+      "result": "pass",
+      "error": ".aem.page",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-003",
+      "lang": "en",
+      "result": "pass",
+      "error": ".aem.live",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-007",
+      "lang": "en",
+      "result": "pass",
+      "error": ".aem.live",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-011",
+      "lang": "cn",
+      "result": "skip",
+      "error": "Blocked-by: DSR-611 #2 cn switching rule not decided; no /master/cn on DEV (Issue #18)",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-557.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  ],
+  "questions": []
+}

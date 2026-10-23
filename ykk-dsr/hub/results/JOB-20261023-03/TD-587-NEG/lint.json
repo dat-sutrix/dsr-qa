@@ -1,0 +1,2342 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-02 en only (TestData ja/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa587-preview (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 preview"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "qa587-preview",
+    "actual": "qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-05 en only (TestData ja/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa587-sub"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-sub"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa587-sub (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-sub"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 sub"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "qa587-sub",
+    "actual": "qa587-sub"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-sub",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-06 en only (TestData ja/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa587-commune-only"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-commune-only"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa587-commune-only (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-commune-only"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 commune only"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "qa587-commune-only",
+    "actual": "qa587-commune-only"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#3 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-commune-only",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-08 en only (TestData ja/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa587-unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa587-unavail (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "qa587-unavail",
+    "actual": "qa587-unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#4 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-unavail",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-10 en only (TestData ja/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa587-removed"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-removed"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa587-removed (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-removed"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 removed"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "qa587-removed",
+    "actual": "qa587-removed"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#5 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-removed",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-12 en only (TestData ja/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa587-tt"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-tt"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa587-tt (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-tt"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 tech talk"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "qa587-tt",
+    "actual": "qa587-tt"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#6 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-tt",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "en+ja"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/en/movies/qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/en/movies/qa587-inactive (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "qa587-inactive",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#7 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/common/ja/movies/qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "WARN",
+    "expected": "CF at /content/dam/common/ja/movies/qa587-inactive (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA587 inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA587 line1 \nQA587 line2"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSourceId",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSourceId",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "irFRtAVphCY"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-23"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "qa587-inactive",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#7 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-02 en only)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "WARN",
+    "expected": "CF at /content/dam/dsr/en/movies/standard/qa587-preview (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/en/movies/qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-preview",
+    "actual": "in manifest"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "en+ja"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "WARN",
+    "expected": "CF at /content/dam/dsr/en/movies/standard/qa587-inactive (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": false
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/en/movies/qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": false
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-inactive",
+    "actual": "in manifest"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/ja/movies/standard/qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "WARN",
+    "expected": "CF at /content/dam/dsr/ja/movies/standard/qa587-inactive (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": false
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/ja/movies/qa587-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": false
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#9 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa587-inactive",
+    "actual": "in manifest"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-08/10 en only)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "WARN",
+    "expected": "CF at /content/dam/dsr/en/movies/standard/qa587-unavail (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/en/movies/qa587-unavail"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-unavail",
+    "actual": "in manifest"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: TD-587-08/10 en only)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "allowed qa* path",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-removed"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\")",
+    "actual": "qa587-removed"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "WARN",
+    "expected": "CF at /content/dam/dsr/en/movies/standard/qa587-removed (or rename item)",
+    "actual": "missing → would create"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "field of DM_movie_related",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/en/movies/qa587-removed"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (create)",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-removed",
+    "actual": "in manifest"
+  }
+]

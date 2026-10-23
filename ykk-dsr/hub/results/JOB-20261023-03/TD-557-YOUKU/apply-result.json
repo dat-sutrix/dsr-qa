@@ -1,0 +1,74 @@
+[
+  {
+    "at": "2026-10-23T02:31:05.524Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa557-youku",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T02:31:07.401Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/movies/qa557-youku",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T02:31:07.961Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T02:31:08.441Z",
+    "op": "create",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "status": 201,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T02:31:09.024Z",
+    "op": "replicate:preview content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-youku, /content/dam/common/ja/movies/qa557-youku",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T02:31:10.000Z",
+    "op": "replicate:preview dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku, /content/dam/dsr/ja/movies/standard/qa557-youku",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T02:31:10.538Z",
+    "op": "replicate:publish content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-youku, /content/dam/common/ja/movies/qa557-youku",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T02:31:11.584Z",
+    "op": "replicate:publish dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku, /content/dam/dsr/ja/movies/standard/qa557-youku",
+    "status": 200,
+    "changes": null
+  }
+]

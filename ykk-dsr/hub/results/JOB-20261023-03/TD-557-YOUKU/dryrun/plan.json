@@ -1,0 +1,346 @@
+[
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/movies/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa557-youku",
+      "name": "qa557-youku",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/en/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa557-youku"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA557 Youku video"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA557 Youku test (DSR-611 Q4)"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youku"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "XNTgyNzE1ODE5Ng=="
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-01"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/movies/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa557-youku",
+      "name": "qa557-youku",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmll",
+      "parentPath": "/common/ja/movies",
+      "fields": [
+        {
+          "name": "movieId",
+          "type": "text",
+          "values": [
+            "qa557-youku"
+          ]
+        },
+        {
+          "name": "movieTitle",
+          "type": "text",
+          "values": [
+            "QA557 Youku video"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "QA557 Youku test (DSR-611 Q4)"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+          ]
+        },
+        {
+          "name": "movieSource",
+          "type": "enumeration",
+          "values": [
+            "youku"
+          ]
+        },
+        {
+          "name": "movieSourceId",
+          "type": "text",
+          "values": [
+            "XNTgyNzE1ODE5Ng=="
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-01"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.movieId",
+      "fields.movieTitle",
+      "fields.description",
+      "fields.thumbnail",
+      "fields.movieSource",
+      "fields.movieSourceId",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa557-youku",
+      "name": "qa557-youku",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmllX3JlbGF0ZWQ",
+      "parentPath": "/dsr/en/movies/standard",
+      "fields": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "movie",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/movies/qa557-youku"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.isActive",
+      "fields.movie"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa557-youku",
+      "name": "qa557-youku",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX21vdmllX3JlbGF0ZWQ",
+      "parentPath": "/dsr/ja/movies/standard",
+      "fields": [
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "movie",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/movies/qa557-youku"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.isActive",
+      "fields.movie"
+    ]
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-youku, /content/dam/common/ja/movies/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa557-youku",
+        "/content/dam/common/ja/movies/qa557-youku"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku, /content/dam/dsr/ja/movies/standard/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa557-youku",
+        "/content/dam/dsr/ja/movies/standard/qa557-youku"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-youku, /content/dam/common/ja/movies/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa557-youku",
+        "/content/dam/common/ja/movies/qa557-youku"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku, /content/dam/dsr/ja/movies/standard/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa557-youku",
+        "/content/dam/dsr/ja/movies/standard/qa557-youku"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]
