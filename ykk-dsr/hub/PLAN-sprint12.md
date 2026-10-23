@@ -221,3 +221,9 @@ Nguyên tắc: job dựa trên data QA-PT để sẵn ở `jobs/hold/` với đi
 ### Ghi chú 23/10 07:50 ([schedule] morning) – Night Pack 23/10 (T6)
 - Night 22/10: 17 Pass / 2 Fail / 4 Blocked; Not run: TD-587 âm + TD-557-YOUKU.
 - Pack 23/10 phải có: (1) BUGCHK-586-02 làm lại nếu JOB-20261022-03 xác nhận DSR CF 990586002 chưa Preview (data QA-PT); (2) TD-587 âm + Youku nếu Agent Author không được duyệt trước 17:10.
+
+### Ghi chú 23/10 09:35 (Điều phối)
+- Agent Author JOB-23-02 dry-run OK → **JOB-23-03 apply (queue)**: TD-587-02/06/07 + 08/10 phase 1 (qa587-preview, -sub, -commune-only, -unavail, -removed, -tt, -inactive ja/en) + TD-557-YOUKU (ja/en). Rồi chạy TC của JOB-22-18 + 557 Youku 3.0/7.0/11.0.
+- **Pack 23/10 (17:10) chỉ còn TD-587 cho QA-PT:** 04 (QA587_Upper – ngoài guard, nhập thử UI "refused"), 05 (DSR CF trong sub-folder `qa587/`), 08 phase 2 (unpublish commune qa587-unavail, republish DSR), 10 phase 2 (unpublish DSR qa587-removed sau ≥10 phút), 12 (tech talk – **bỏ, chờ DSR-669/670** DM_techmovie_dsr). Cộng: 990586002 Preview, 566 title/My list, 529 category/robots, QA190 dsr. Nếu JOB-23-03 fail → pack giữ TD-587 âm + Youku đầy đủ cho QA-PT.
+- DSR-673: Martin "page chưa author" → fixed; JOB-23-04 retest (codex).
+- QA-PT Night 22/10 = 5h (1→6 xong; CATDL-011 Blocked không POST HubSpot – khớp agent).
