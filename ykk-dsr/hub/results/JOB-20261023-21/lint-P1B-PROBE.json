@@ -1,0 +1,242 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: write test (P1b probe), no ja pair needed)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/en/movies/qaagent-probe"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qaagent-probe"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qaagent-probe",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qaagent-probe"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieTitle",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA agent probe"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "long-text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:description",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "long-text",
+    "actual": "QA agent probe"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "content-reference"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "content-reference",
+    "actual": "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "enumeration"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieSource",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "enumeration",
+    "actual": "youtube"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "date"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:publishDate",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "date",
+    "actual": "2026-10-22"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "qaagent-probe",
+    "actual": "qaagent-probe"
+  },
+  {
+    "layer": "L0",
+    "check": "live-id:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "qaagent-probe (manifest will patch)",
+    "actual": "qaagent-probe"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:thumbnail",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qaagent-probe",
+    "result": "PASS",
+    "expected": "/content/dam/ykk/digital-showroom/test/png/image 7.png",
+    "actual": "exists"
+  }
+]

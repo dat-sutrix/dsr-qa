@@ -1,0 +1,74 @@
+3c3
+< Generated: 2026-10-23T03:01:01.213Z · Source: CF OpenAPI `/adobe/sites/cf/models` (schema) + `/adobe/sites/cf/fragments/{id}` (samples). Types are the model's declared types, not guesses.
+---
+> Generated: 2026-10-23T09:25:01.068Z · Source: CF OpenAPI `/adobe/sites/cf/models` (schema) + `/adobe/sites/cf/fragments/{id}` (samples). Types are the model's declared types, not guesses.
+10,12c10,13
+< | DM_movie_related | DSR CF | – (URL = node name) | isActive | movie → DM_movie | 3 |
+< | DM_product_related | DSR CF | – (URL = node name) | isActive | product → DM_product | 3 |
+< | DM_catalog_related | DSR CF | – (URL = node name) | isActive | catalog → DM_catalog | 3 |
+---
+> | DM_movie_dsr | DSR CF | – (URL = node name) | isActive | movie → DM_movie | 3 |
+> | DM_techmovie_dsr | DSR CF | – (URL = node name) | isActive | movie → DM_movie | 0 |
+> | DM_product_dsr | DSR CF | – (URL = node name) | isActive | product → DM_product | 3 |
+> | DM_catalog_dsr | DSR CF | – (URL = node name) | isActive | catalog → DM_catalog | 3 |
+23c24
+< | /content/dam/common/ja/products | DM_product × 11 |
+---
+> | /content/dam/common/ja/products | DM_product × 14 |
+25,28c26,29
+< | /content/dam/common/ja/catalogs | DM_catalog × 8 |
+< | /content/dam/common/en/catalogs | DM_catalog × 15 |
+< | /content/dam/dsr/ja/movies/standard | DM_movie_related × 7 |
+< | /content/dam/dsr/en/movies/standard | DM_movie_related × 30 |
+---
+> | /content/dam/common/ja/catalogs | DM_catalog × 16 |
+> | /content/dam/common/en/catalogs | DM_catalog × 23 |
+> | /content/dam/dsr/ja/movies/standard | DM_movie_dsr × 7 |
+> | /content/dam/dsr/en/movies/standard | DM_movie_dsr × 30 |
+31,34c32,35
+< | /content/dam/dsr/ja/products | DM_product_related × 9 |
+< | /content/dam/dsr/en/products | DM_product_related × 4 |
+< | /content/dam/dsr/ja/catalogs | DM_catalog_related × 7 |
+< | /content/dam/dsr/en/catalogs | DM_catalog_related × 9 |
+---
+> | /content/dam/dsr/ja/products | DM_product_dsr × 9 |
+> | /content/dam/dsr/en/products | DM_product_dsr × 4 |
+> | /content/dam/dsr/ja/catalogs | DM_catalog_dsr × 15 |
+> | /content/dam/dsr/en/catalogs | DM_catalog_dsr × 17 |
+170,171c171,172
+< ## DM_movie_related
+< Model path `/conf/ykk/settings/dam/cfm/models/dm_movie_related` · ID field: **– (none; URL = node name)** · 表示フラグ: **isActive** · reference to content CF: **movie**
+---
+> ## DM_movie_dsr
+> Model path `/conf/ykk/settings/dam/cfm/models/dm_movie_dsr` · ID field: **– (none; URL = node name)** · 表示フラグ: **isActive** · reference to content CF: **movie**
+184,185c185,200
+< ## DM_product_related
+< Model path `/conf/ykk/settings/dam/cfm/models/dm_product_related` · ID field: **– (none; URL = node name)** · 表示フラグ: **isActive** · reference to content CF: **product**
+---
+> ## DM_techmovie_dsr
+> Model path `/conf/ykk/settings/dam/cfm/models/dm_techmovie_dsr` · ID field: **– (none; URL = node name)** · 表示フラグ: **isActive** · reference to content CF: **movie**
+> Samples read: none
+> 
+> | Field | Type (model) | Required | Multiple | Label | Samples with value | In sample data |
+> |---|---|---|---|---|---|---|
+> | movieLabel | text |  |  | 対象動画（参考表示） | 0/0 | 0/0 |
+> | movie | content-fragment | yes |  | 対象動画 | 0/0 | 0/0 |
+> | dsrFeatures | tag |  | yes | DSR掲載ブース | 0/0 | 0/0 |
+> | isBoothLimited | boolean |  |  | ブース限定掲載 | 0/0 | 0/0 |
+> | relatedArticles | content-reference |  | yes | 関連記事 | 0/0 | 0/0 |
+> | relatedLandingPages | content-reference |  | yes | 関連LP | 0/0 | 0/0 |
+> | isActive | boolean |  |  | 表示フラグ | 0/0 | 0/0 |
+> 
+> ## DM_product_dsr
+> Model path `/conf/ykk/settings/dam/cfm/models/dm_product_dsr` · ID field: **– (none; URL = node name)** · 表示フラグ: **isActive** · reference to content CF: **product**
+197d211
+< | relatedMoodboards | content-fragment |  | yes | 関連ムードボード | 0/3 | 3/3 |
+200,201c214,215
+< ## DM_catalog_related
+< Model path `/conf/ykk/settings/dam/cfm/models/dm_catalog_related` · ID field: **– (none; URL = node name)** · 表示フラグ: **isActive** · reference to content CF: **catalog**
+---
+> ## DM_catalog_dsr
+> Model path `/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr` · ID field: **– (none; URL = node name)** · 表示フラグ: **isActive** · reference to content CF: **catalog**
+210a225,226
+> | hubspotFormId | text |  |  | HubSpotフォームID | 0/3 | 3/3 |
+> | promoText | long-text |  |  | 訴求文言 | 0/3 | 3/3 |

@@ -1,0 +1,242 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "ja+en"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "QA page stories/qa* or test-space/qa* (D15)",
+    "actual": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa529-01"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01/jcr:content (no page create, D15)",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop:category",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "allowlisted page property (D15)",
+    "actual": "category"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop-type:category",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "string or string[]",
+    "actual": "product"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop:robots",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "allowlisted page property (D15)",
+    "actual": "robots"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop-type:robots",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "string or string[]",
+    "actual": ""
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "QA page stories/qa* or test-space/qa* (D15)",
+    "actual": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa529-01"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01/jcr:content (no page create, D15)",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop:category",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "allowlisted page property (D15)",
+    "actual": "category"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop-type:category",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "string or string[]",
+    "actual": "product"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop:robots",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "allowlisted page property (D15)",
+    "actual": "robots"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop-type:robots",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "string or string[]",
+    "actual": ""
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: TD-529-02 ja only (TestData en/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "QA page stories/qa* or test-space/qa* (D15)",
+    "actual": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa529-02"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "page-exists",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02/jcr:content (no page create, D15)",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop:robots",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "allowlisted page property (D15)",
+    "actual": "robots"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop-type:robots",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "string or string[]",
+    "actual": "noindex, nofollow"
+  }
+]

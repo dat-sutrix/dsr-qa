@@ -1,0 +1,1682 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa190-cat-ebook is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa190-cat-ebook-form is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa190-cat-pdf is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa190-cat-pdf-form is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-content-unpub"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa654-content-unpub"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa654-content-unpub is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#5 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-content-unpub",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa654-inactive is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#6 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-inactive",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa654-preview is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#7 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-update"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa654-update"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/en/catalogs/qa654-update is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#8 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-update",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa501-main-a"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa501-main-a"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa501-main-a is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#9 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa501-main-b"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa501-main-b"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa501-main-b is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#10 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa557-dam is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#11 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-main is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#12 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-off"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-off"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-off is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#13 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-off",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r1"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-r1"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-r1 is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#14 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r2"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-r2"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-r2 is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#15 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r3"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-r3"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-r3 is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#16 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r4"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-r4"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-r4 is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#17 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r5"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-r5"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-r5 is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#18 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-r6"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-r6"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-r6 is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#19 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-rel-a"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-rel-a"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-rel-a is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#20 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: republish of the existing en CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-rel-b"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-rel-b"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/en/movies/standard/qa587-rel-b is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#21 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-ebook"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/ja/catalogs/qa190-cat-ebook is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#22 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/ja/catalogs/qa190-cat-ebook-form is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#23 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-pdf"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/ja/catalogs/qa190-cat-pdf is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#24 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/ja/catalogs/qa190-cat-pdf-form is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#25 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/catalogs/qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa654-inactive"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "FAIL",
+    "expected": "DM_catalog_dsr",
+    "actual": "manifest names old model DM_catalog_related (not found on DEV); live model for /content/dam/dsr/ja/catalogs/qa654-inactive is DM_catalog_dsr (/conf/ykk/settings/dam/cfm/models/dm_catalog_dsr) → set model: DM_catalog_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#26 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/catalogs/qa654-inactive",
+    "result": "FAIL",
+    "expected": "DM_catalog_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/movies/standard/qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa557-dam"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/ja/movies/standard/qa557-dam is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#27 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: republish of the existing ja CF only (no data change))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/movies/standard/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "DM_movie_dsr",
+    "actual": "manifest names old model DM_movie_related (not found on DEV); live model for /content/dam/dsr/ja/movies/standard/qa587-main is DM_movie_dsr (/conf/ykk/settings/dam/cfm/models/dm_movie_dsr) → set model: DM_movie_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#28 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "FAIL",
+    "expected": "DM_movie_related",
+    "actual": "not found"
+  }
+]
