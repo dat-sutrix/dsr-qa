@@ -1,0 +1,107 @@
+{
+  "scrollWidth": 390,
+  "width": 390,
+  "cards": [
+    {
+      "title": "カタログ 01\n2026.09.03\ne-book",
+      "box": {
+        "x": 24,
+        "y": 586.390625,
+        "width": 342,
+        "height": 349.40625
+      },
+      "text": [
+        {
+          "text": "カタログ 01",
+          "scrollWidth": 342,
+          "clientWidth": 342
+        }
+      ]
+    },
+    {
+      "title": "カタログ 02\n2026.09.03\nPDF",
+      "box": {
+        "x": 24,
+        "y": 970.796875,
+        "width": 342,
+        "height": 349.40625
+      },
+      "text": [
+        {
+          "text": "カタログ 02",
+          "scrollWidth": 342,
+          "clientWidth": 342
+        }
+      ]
+    },
+    {
+      "title": "catalog ebook\n2026.09.03\ne-book",
+      "box": {
+        "x": 24,
+        "y": 1355.203125,
+        "width": 342,
+        "height": 349.40625
+      },
+      "text": [
+        {
+          "text": "catalog ebook",
+          "scrollWidth": 342,
+          "clientWidth": 342
+        }
+      ]
+    },
+    {
+      "title": "catalog ebook form\n2026.09.03\nPDF",
+      "box": {
+        "x": 24,
+        "y": 1817,
+        "width": 342,
+        "height": 349.40625
+      },
+      "text": [
+        {
+          "text": "catalog ebook form",
+          "scrollWidth": 342,
+          "clientWidth": 342
+        }
+      ]
+    },
+    {
+      "title": "qa190-cat-pdf\n2026.09.03\nPDF",
+      "box": {
+        "x": 24,
+        "y": 2201.40625,
+        "width": 342,
+        "height": 349.40625
+      },
+      "text": [
+        {
+          "text": "qa190-cat-pdf",
+          "scrollWidth": 342,
+          "clientWidth": 342
+        }
+      ]
+    },
+    {
+      "title": "catalog pdf form\n2026.09.03\nPDF",
+      "box": {
+        "x": 24,
+        "y": 2585.8125,
+        "width": 342,
+        "height": 349.40625
+      },
+      "text": [
+        {
+          "text": "catalog pdf form",
+          "scrollWidth": 342,
+          "clientWidth": 342
+        }
+      ]
+    }
+  ],
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog?cb=1792722742739",
+  "status": 200,
+  "evidence": "evidence/DSR-673/ja-live-mobile.png",
+  "baseline": "JOB-20261022-20 CATV-014 mobile bounds (ID reused; no canonical 014 implementation)",
+  "pass": true
+}

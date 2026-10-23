@@ -1,0 +1,261 @@
+{
+  "job": "JOB-20261023-04",
+  "agent": "codex",
+  "us": "DSR-673",
+  "env": "dev",
+  "started": "2026-10-23T02:30:12.013Z",
+  "status": "done",
+  "head": "bf52c4e0add7828b9c8dcefaf40c179960e3804f",
+  "finished": "2026-10-23T02:34:12.985660+00:00",
+  "tests": [
+    {
+      "tc": "DSR-673-page-1",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/en-page-1.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-live-1",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/en-live-1.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-page-1",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/ja-page-1.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-live-1",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/ja-live-1.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-live-2",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/en-live-2.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-page-2",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/ja-page-2.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-live-2",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/ja-live-2.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-page-2",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/en-page-2.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-live-3",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/en-live-3.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-page-3",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/en-page-3.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-live-3",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/ja-live-3.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-page-3",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "../../../../evidence/DSR-673/ja-page-3.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-005",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-006",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATDL-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "PDF URL exposed in gated item in dsr-catalog-list; known TC007 decision pending",
+      "evidence": "../../../../evidence/DSR-673/DSR-CATDL-007-attempt2.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-CATV-013",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-016",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-017",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked \u2013 no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (ja)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked \u2013 no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (ja)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked \u2013 no DEV data for QA190 BOTH, qa190-cat-noupd (ja)",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATV-014",
+      "lang": "ja",
+      "result": "pass",
+      "error": "Prior JOB-20261022-20 mobile-bounds check; canonical TC mapping unverified",
+      "evidence": "../../../../evidence/DSR-673/ja-live-mobile.png",
+      "cause": "none",
+      "confidence": 0,
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-CATV-015",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "No implementation or authoritative expected result found in local DSR-557 docs; not run",
+      "evidence": "",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-673-CONSOLE",
+      "lang": "ja/en",
+      "result": "fail",
+      "error": "placeholders.json 404; one ja/live load also /ja/library 404. No page exceptions. Separate from empty-list symptom.",
+      "evidence": "../../../../results/JOB-20261023-04/result.json",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 50
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "results/JOB-20261023-04/run.cjs",
+    "results/JOB-20261023-04/mobile.cjs"
+  ],
+  "questions": [],
+  "raw_observations": "results/JOB-20261023-04/result.json",
+  "suite": "results/JOB-20261023-04/suite.json",
+  "filter_note": "Published endpoint is used; unpublished inventory cannot be independently checked without Author. isActive=false/isBoothLimited=true/missing or unavailable content are excluded locally."
+}
