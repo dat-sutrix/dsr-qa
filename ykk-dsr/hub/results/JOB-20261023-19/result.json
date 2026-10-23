@@ -1,0 +1,29 @@
+{
+  "job": "JOB-20261023-19",
+  "agent": "claude-code",
+  "us": "DSR-587",
+  "env": "dev",
+  "started": "2026-10-23T16:49:40Z",
+  "finished": "2026-10-23T16:51:38Z",
+  "status": "needs-input",
+  "author_read": {
+    "result": "blocked",
+    "observed": "GET /adobe/sites/cf/fragments?path=/content/dam/dsr/en/movies/standard → HTTP 401; 'author.mjs models' → 401 too. ~/.dsr-secrets/aem-dev.env last written 2026-10-23 09:20 UTC. Not verified: real node name of the TD-587-04 CF (QA587_Upper?), qa587-sub exists/model/isActive/movie ref/replication."
+  },
+  "public_reads_aem_live_and_page": {
+    "/en/library/video/QA587_Upper": "404 (live + page)",
+    "/en/library/video/qa587_upper": "404 (live + page)",
+    "/en/library/video/qa587-sub": "404 (live + page)",
+    "/en/library/video/qa587/qa587-sub": "200 (live + page), title 'YKK DIGITAL SHOWROOM', robots noindex, video-detail body 'unavailable' = stub → list (by design, KNOWN-FACTS CATOV-010)",
+    "/en/library/video/qa501-main-a": "200 (live + page), title 'video title main a | YKK DIGITAL SHOWROOM'",
+    "compare_chrome_after": "Matches Night Report 23/10 (QA-PT): TD-587-04 '2 URLs 404'; TD-587-05 'flat 404, sub-folder → list'. Did not check the actual node name, because the Author read failed (401)."
+  },
+  "tests": [
+    { "tc": "DSR-VOV-004", "lang": "en", "result": "pass", "cause": "none" },
+    { "tc": "DSR-VOV-005", "lang": "en", "result": "fail", "error": "qa587-sub → 404 OK; legacyId qa501-main-a → 200 (expected 404). qa501-main-a was moved to movies/standard (JOB-ZZ-IDLE-06) → stale fixture", "evidence": "evidence/DSR-VOV-005_en.png", "suspect": "test", "cause": "none", "confidence": 5 }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "reports": ["results/DSR-587/DEV/automation-run-20261023-job19.md"],
+  "questions": ["cookie: AEM Author login-token in ~/.dsr-secrets/aem-dev.env returns 401 (cf/fragments list and cf/models). Tried: author.mjs models + GET-only fragment list. Dat to paste a new cookie (AUTHOR-AGENT §2b), then re-run step 1 only."]
+}
