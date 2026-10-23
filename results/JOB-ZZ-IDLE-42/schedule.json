@@ -22,7 +22,8 @@
     },
     {
       "dueUTC": "2026-10-23T07:12:06.160Z",
-      "state": "pending"
+      "state": "captured",
+      "finished": "2026-10-23T07:12:21.745Z"
     },
     {
       "dueUTC": "2026-10-23T08:42:06.160Z",
