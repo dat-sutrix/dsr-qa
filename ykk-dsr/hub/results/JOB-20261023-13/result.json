@@ -1,0 +1,124 @@
+{
+  "job": "JOB-20261023-13",
+  "agent": "claude-code",
+  "us": "DSR-587 / DSR-654 / DSR-529",
+  "env": "dev",
+  "started": "2026-10-23T05:54:16Z",
+  "finished": "2026-10-23T06:05:00Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-VOV-008",
+      "lang": "en",
+      "result": "pass",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "ja",
+      "result": "pass",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATOV-021",
+      "lang": "en",
+      "result": "pass",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-ARTICLE-023",
+      "lang": "ja",
+      "result": "skip",
+      "error": "fixme: Blocked-by DSR-356: related-product block renders dummy fixture (QUERY = null), 0-result case unreachable on DEV",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATDL-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "pre-existing: gated PDF URL delivered to the browser before submit (draft BUG-CAT-PDF-EXPOSE)",
+      "evidence": "evidence/DSR-CATDL-007_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-CATDL-016",
+      "lang": "en",
+      "result": "fail",
+      "error": "pre-existing: Japanese fixed texts on en form (draft BUG-CAT-FORM-EN)",
+      "evidence": "evidence/DSR-CATDL-016_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "ja",
+      "result": "fail",
+      "error": "pre-existing: -form titles are dev samples (\"catalog pdf form\"/\"catalog ebook form\"), expected \"QA190 …\"",
+      "evidence": "evidence/DSR-CATOV-001_ja_pdf-form.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-001",
+      "lang": "en",
+      "result": "fail",
+      "error": "pre-existing: -form titles are dev samples (\"catalog pdf form\"/\"catalog ebook form\"), expected \"QA190 …\"",
+      "evidence": "evidence/DSR-CATOV-001_en_pdf-form.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "pre-existing: no list card 'QA190 PDF catalog'",
+      "evidence": "evidence/DSR-CATOV-012_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    },
+    {
+      "tc": "DSR-CATOV-012",
+      "lang": "en",
+      "result": "fail",
+      "error": "pre-existing: no list card 'QA190 PDF catalog'",
+      "evidence": "evidence/DSR-CATOV-012_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "overlay_suite": {
+    "total": 257,
+    "passed": 208,
+    "failed": 8,
+    "skipped": 41,
+    "exit_code": 1,
+    "new_fail": 0
+  },
+  "tsc": {
+    "exit_code": 0,
+    "result": "no errors"
+  },
+  "code_changes": [
+    "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+    "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+    "tests/article-detail/DSR-529.article-detail.spec.ts"
+  ],
+  "reports": [
+    "results/DSR-587/DEV/automation-run-20261023-job13.md",
+    "results/DSR-587/DEV/automation-run-20261023-job13-overlay.md"
+  ],
+  "ledger_updated": [
+    "DSR-VOV-008 [en]",
+    "DSR-CATOV-021 [ja]",
+    "DSR-CATOV-021 [en]",
+    "DSR-ARTICLE-023 [ja]"
+  ],
+  "questions": []
+}

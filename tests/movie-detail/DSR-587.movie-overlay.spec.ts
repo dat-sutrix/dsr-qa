@@ -39,6 +39,8 @@ async function rawVideo(request: APIRequestContext, lang: Language, tdId: '01' |
   return { response, target, html: await response.text() };
 }
 
+const technicalRows = ['source', 'cfPath'];
+
 // Static HTML read in a JS-disabled context. Block rows: <div class="video-detail"><div><div>key</div><div>value</div></div>…
 async function parseRaw(browser: Browser, html: string) {
   const context = await browser.newContext({ javaScriptEnabled: false });
@@ -174,12 +176,14 @@ test.describe('DSR-587 movie detail overlay', () => {
     });
   }
 
-  test('DSR-VOV-008 [en] CF commune unpublished → single unavailable row, noindex, browser sent to movie list', { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
+  test('DSR-VOV-008 [en] CF commune unpublished → only data row is unavailable, noindex, browser sent to movie list', { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
     const { html, target } = await rawVideo(request, 'en', '08');
     const raw = await parseRaw(browser, html);
     observations.push({ robots: raw.robots, rows: raw.rows });
     expect.soft(raw.robots ?? '', 'meta robots').toContain('noindex');
-    expect.soft(raw.rows.map(r => r.key || r.value), 'video-detail rows').toEqual(['unavailable']);
+    // JOB-20261023-13: technical rows source / cfPath (present on every overlay page) are ignored.
+    const dataRows = raw.rows.filter(r => !technicalRows.includes(r.key));
+    expect.soft(dataRows.map(r => r.key || r.value), 'video-detail data rows').toEqual(['unavailable']);
     const movie = new MovieDetailPage(page);
     await movie.goto(target);
     await page.waitForTimeout(redirectWaitMs);

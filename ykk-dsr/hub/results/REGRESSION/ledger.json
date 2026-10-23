@@ -189,9 +189,9 @@
   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
  },
  "DSR-ARTICLE-023 [ja]": {
-  "last": "fail",
-  "at": "2026-10-23T05:26:32Z",
-  "job": "JOB-ZY-REG-20261023-1200-claude-code",
+  "last": "skip",
+  "at": "2026-10-23T06:00:47Z",
+  "job": "JOB-20261023-13",
   "last_pass_at": null,
   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
  },
@@ -854,17 +854,17 @@
   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
  },
  "DSR-CATOV-021 [en]": {
-  "last": "fail",
-  "at": "2026-10-23T05:26:32Z",
-  "job": "JOB-ZY-REG-20261023-1200-claude-code",
-  "last_pass_at": null,
+  "last": "pass",
+  "at": "2026-10-23T06:00:47Z",
+  "job": "JOB-20261023-13",
+  "last_pass_at": "2026-10-23T06:00:47Z",
   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
  },
  "DSR-CATOV-021 [ja]": {
-  "last": "fail",
-  "at": "2026-10-23T05:26:32Z",
-  "job": "JOB-ZY-REG-20261023-1200-claude-code",
-  "last_pass_at": null,
+  "last": "pass",
+  "at": "2026-10-23T06:00:47Z",
+  "job": "JOB-20261023-13",
+  "last_pass_at": "2026-10-23T06:00:47Z",
   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
  },
  "DSR-CATV-001 [en]": {
@@ -2233,10 +2233,10 @@
   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
  },
  "DSR-VOV-008 [en]": {
-  "last": "fail",
-  "at": "2026-10-23T05:26:32Z",
-  "job": "JOB-ZY-REG-20261023-1200-claude-code",
-  "last_pass_at": "2026-10-22T09:13:42Z",
+  "last": "pass",
+  "at": "2026-10-23T06:00:47Z",
+  "job": "JOB-20261023-13",
+  "last_pass_at": "2026-10-23T06:00:47Z",
   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
  },
  "DSR-VOV-010 [en]": {

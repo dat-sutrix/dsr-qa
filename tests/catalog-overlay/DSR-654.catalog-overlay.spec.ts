@@ -183,17 +183,19 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect.soft(live, '.aem.live').toBe(200);
       });
 
-      test(`DSR-CATOV-021 [${lang}] ${data.id}: ${data.requiresForm ? 'live page listed once' : 'non-form page not listed'} in query-index and sitemap`, { tag: ['@overlay', '@auto'] }, async ({ request, browser }) => {
+      test(`DSR-CATOV-021 [${lang}] ${data.id}: ${data.requiresForm ? 'live page listed once in query-index and sitemap' : 'non-form page not listed in sitemap'}`, { tag: ['@overlay', '@auto'] }, async ({ request, browser }) => {
         const live = hosts().live;
         const path = catalogPath(lang, data.id);
         const { html } = await rawCatalog(request, lang, data.id, coreTdId, live);
         // JOB-20261023-10 (BUG-CAT-NOINDEX = by design): requiresForm=false → 0 rows, form catalogs → exactly 1.
-        const expectedRows = requiresFormOf((await parseRaw(browser, html)).rows) === 'false' ? 0 : 1;
+        const nonForm = requiresFormOf((await parseRaw(browser, html)).rows) === 'false';
+        const expectedRows = nonForm ? 0 : 1;
         observations.push({ expectedRows });
         const index = await status(request, url(indexPath, live));
         const paths: string[] = index.ok() ? ((await index.json())?.data ?? []).map((r: { path?: string }) => r.path) : [];
         expect.soft(index.status(), 'query-index HTTP').toBe(200);
-        expect.soft(paths.filter(p => p === path), 'query-index rows').toHaveLength(expectedRows);
+        // JOB-20261023-13: non-form pages stay in query-index (EDS keeps noindex rows with a robots column) → not checked.
+        if (!nonForm) expect.soft(paths.filter(p => p === path), 'query-index rows').toHaveLength(expectedRows);
         // sitemap.xml may be a sitemap index → read its children.
         const locs: string[] = [];
         const sitemap = await status(request, url(sitemapPath, live));

@@ -324,7 +324,8 @@ for (const lang of minimalLanguages) {
       expect.soft(headings.filter(h => h.visible), 'visible related stories heading').toEqual([]);
     });
 
-    test(`DSR-ARTICLE-023 [${lang}] no related items block/heading when 0 results (トルツメ)`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-ARTICLE-023 [${lang}] no related items block/heading when 0 results (トルツメ)`, { tag: ['@auto', '@blocked'] }, async ({ page }) => {
+      test.fixme(true, 'Blocked-by DSR-356: related-product block renders dummy fixture (QUERY = null), 0-result case unreachable on DEV');
       const { article } = await openArticle(page, lang, slugs.minimal);
       const blocks = await article.boxes(article.relatedItems);
       const headings = await article.boxes(article.relatedItemsHeading);
