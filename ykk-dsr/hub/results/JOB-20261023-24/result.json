@@ -1,0 +1,29 @@
+{
+  "job": "JOB-20261023-24",
+  "agent": "claude-code",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-23T17:16:00Z",
+  "finished": "2026-10-23T17:18:19Z",
+  "status": "needs-input",
+  "tests": [
+    { "tc": "VERIFY-JOB23-author-jcr", "lang": "ja", "result": "blocked",
+      "error": "Author GET /content/sites/digital-showroom/master/ja/library/article/stories/qa529-02/jcr:content.json -> HTTP 401 at 2026-10-23T17:17:58Z (login-token cookie expired)",
+      "suspect": "env", "cause": "none", "confidence": 0 },
+    { "tc": "VERIFY-JOB23-live-meta", "lang": "ja", "result": "pass",
+      "error": "",
+      "suspect": null, "cause": "none", "confidence": 0,
+      "actual": ".aem.live + .aem.page 200; title 'QA529 最小記事'; meta thumbnail=/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png; publicationdate=2026-09-01T00:00:00.000Z; article:tag=do-not-translate; no category meta; description 'QA529 最小説明'; published-time 2026-10-23T03:33:51.774Z (before chrome write 17:13:34Z -> no publish since)" }
+  ],
+  "comparison": {
+    "before_json": "results/JOB-20261023-06/TD-529-META/before.json (qa529-02): jcr:title 'QA529 最小記事', publicationdate 2026-09-01, tags [do-not-translate], no category, thumbnail gradient-transparent-1920x1080.png",
+    "chrome_after": "results/JOB-20261023-23/result.json: thumbnail restored to same path; title / publicationdate 2026-09-01 / description unchanged; no category; tags [do-not-translate]",
+    "author_now": "NOT VERIFIED (401)",
+    "live_now": "matches before.json on title, thumbnail, publicationdate, tag, description; no category",
+    "mismatches": []
+  },
+  "code_changes": [],
+  "questions": [
+    "cookie: Author DEV login-token in ~/.dsr-secrets/aem-dev.env returns 401 (GET qa529-02/jcr:content.json, 2026-10-23T17:17:58Z). Dat please paste a fresh cookie (AUTHOR-AGENT §2b), then re-queue this job to complete step 1 (Author read-back of thumbnail/publicationdate/tags/title vs before.json). Live check (step 2) already done."
+  ]
+}
