@@ -1,0 +1,53 @@
+ *     ordered by sortOrder. buildAutoBlocks() puts the class there.
+ *
+ * The auto mode asks the inverse of the question the product side asks, and a
+ * persisted query cannot take a parameter, so the filtering is client-side over
+ * the full product list. That list is small — product count, not article count.
+ */
+
+/* TODO(DSR-356): set to 'dm-product-related' once the query in
+   dm-product-related.graphql is persisted and published in AEM. Until then
+   every environment falls through to the fixture, and the block renders dummy
+   data rather than nothing at all. */
+const QUERY = null;
+const MOCK = '/blocks/related-product/fixtures/dm-product-related.json';
+
+/* The authored block takes no heading — the design draws a lone card. Block 13
+async function renderFromCf(block) {
+  let rows = [];
+  let base = '';
+  let fromMock = true;
+  try {
+    ({ rows, base, fromMock } = await fetchCfRows({ query: QUERY, mock: MOCK }));
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('related-product: fetch failed', e);
+    collapseBlock(block);
+    return;
+  }
+
+  /* With the fixture, the filter is skipped on purpose: its relatedArticles
+     paths cannot match a real page, so filtering would always yield nothing and
+     the block would collapse — leaving the dummy data unable to show anything.
+     Against the live query the filter is the whole point. */
+  const pagePath = toIndexPath(window.location.pathname);
+  const matched = fromMock ? rows : rows.filter((row) => namesPage(row, pagePath));
+
+  const items = matched
+    .slice()
+    /* 並び順は製品indexの sortOrder に従う — it lives on the referenced product,
+       not on the relation row. Missing values sort last rather than as 0, so an
+       unset sortOrder does not jump the product to the front. */
+    .sort((a, b) => (productOf(a).sortOrder ?? Infinity) - (productOf(b).sortOrder ?? Infinity))
+    .map((row) => toItem(row, base))
+    .filter((item) => item.title);
+
+  /* 0件ならブロックごと非表示 (トルツメ). */
+  if (!items.length) {
+    collapseBlock(block);
+    return;
+  }
+
+  await loadCardStyles();
+  block.replaceChildren(
+    el('h2', { class: 'related-heading', textContent: HEADING[getLang()] || HEADING.ja }),

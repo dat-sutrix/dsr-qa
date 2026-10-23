@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "qa529-02",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02?cb=1792730410804",
+    "status": 200,
+    "blocks": [
+      {
+        "class": "related-product auto block",
+        "height": 281.984375,
+        "visible": true,
+        "headings": [
+          "関連アイテム"
+        ],
+        "items": 4,
+        "links": 4,
+        "dataAttrs": {
+          "class": "related-product auto block",
+          "data-auto-block": "",
+          "data-block-name": "related-product",
+          "data-block-status": "loaded"
+        },
+        "html": "<div class=\"related-product auto block\" data-auto-block=\"\" data-block-name=\"related-product\" data-block-status=\"loaded\"><h2 class=\"related-heading\">関連アイテム</h2><div class=\"cards product-mini\"><ul><li data-card-id=\"/ja/products/p00320\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00320\" data-category=\"products\" aria-label=\"QuickFree® click-TRAK® Magnetic をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00320\">QuickFree® click-TRAK® Magnetic</a></div></li><li data-card-id=\"/ja/products/p00101\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00101\" data-category=\"products\" aria-label=\"NATULON® Fiber Sourced® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00101\">NATULON® Fiber Sourced®</a></div></li><li data-card-id=\"/ja/products/p00001\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00001\" data-category=\"products\" aria-label=\"EXCELLA® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00001\">EXCELLA®</a></div></li><li data-card-id=\"/ja/products/p00210\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00210\" data-category=\"products\" aria-label=\"AiryString® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00210\">AiryString®</a></div></li></ul></div></div>"
+      }
+    ],
+    "authored": {
+      "relatedInSource": false,
+      "metaTags": [
+        "article:tag=do-not-translate",
+        "template=article-detail"
+      ]
+    },
+    "queries": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/scripts/query-index.js",
+        "status": 200
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/query-index.json",
+        "status": 200
+      },
+      {
+        "url": "https://publish-p192812-e2014374.adobeaemcloud.com/bin/ykk/tags.json?root=site%3Aproduct&depth=3",
+        "status": 200
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/listing/adapters/query-index.js",
+        "status": 200
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/related-product/fixtures/dm-product-related.json",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "slug": "qa529-01",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01?cb=1792730416038",
+    "status": 200,
+    "blocks": [
+      {
+        "class": "related-product auto block",
+        "height": 281.984375,
+        "visible": true,
+        "headings": [
+          "関連アイテム"
+        ],
+        "items": 4,
+        "links": 4,
+        "dataAttrs": {
+          "class": "related-product auto block",
+          "data-auto-block": "",
+          "data-block-name": "related-product",
+          "data-block-status": "loaded"
+        },
+        "html": "<div class=\"related-product auto block\" data-auto-block=\"\" data-block-name=\"related-product\" data-block-status=\"loaded\"><h2 class=\"related-heading\">関連アイテム</h2><div class=\"cards product-mini\"><ul><li data-card-id=\"/ja/products/p00320\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00320\" data-category=\"products\" aria-label=\"QuickFree® click-TRAK® Magnetic をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00320\">QuickFree® click-TRAK® Magnetic</a></div></li><li data-card-id=\"/ja/products/p00101\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00101\" data-category=\"products\" aria-label=\"NATULON® Fiber Sourced® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00101\">NATULON® Fiber Sourced®</a></div></li><li data-card-id=\"/ja/products/p00001\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00001\" data-category=\"products\" aria-label=\"EXCELLA® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00001\">EXCELLA®</a></div></li><li data-card-id=\"/ja/products/p00210\"><div class=\"cards-card-image cards-media-empty\"><button type=\"button\" class=\"cards-fav\" data-id=\"/ja/products/p00210\" data-category=\"products\" aria-label=\"AiryString® をマイリストに追加\" aria-pressed=\"false\"></button></div><div class=\"cards-card-title\"><a href=\"/ja/products/p00210\">AiryString®</a></div></li></ul></div></div>"
+      }
+    ],
+    "authored": {
+      "relatedInSource": false,
+      "metaTags": [
+        "article:tag=do-not-translate",
+        "article:tag=site:product/bio-based",
+        "template=article-detail",
+        "category=product"
+      ]
+    },
+    "queries": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/scripts/query-index.js",
+        "status": 200
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/query-index.json",
+        "status": 200
+      },
+      {
+        "url": "https://publish-p192812-e2014374.adobeaemcloud.com/bin/ykk/tags.json?root=site%3Aproduct&depth=3",
+        "status": 200
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/listing/adapters/query-index.js",
+        "status": 200
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/query-index.json?_=1792730417123",
+        "status": 200
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/related-product/fixtures/dm-product-related.json",
+        "status": 200
+      }
+    ]
+  }
+]

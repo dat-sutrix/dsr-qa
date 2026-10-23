@@ -1,0 +1,27 @@
+{
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01?cb=1792730398544",
+  "status": 200,
+  "newsLinks": [
+    {
+      "href": "/ja/news",
+      "text": "ニュース",
+      "inMain": false,
+      "region": "header"
+    }
+  ],
+  "textHits": [],
+  "mainBlocks": [
+    "breadcrumb",
+    "article-meta",
+    "title",
+    "text",
+    "spacer",
+    "text",
+    "image",
+    "spacer",
+    "button"
+  ],
+  "footerPresent": true,
+  "footerChildren": 1,
+  "scrollHeight": 1442
+}

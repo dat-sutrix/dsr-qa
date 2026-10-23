@@ -1,0 +1,26 @@
+{
+  "job": "JOB-20261023-08",
+  "agent": "claude-code",
+  "us": "DSR-566 / DSR-529 / DSR-587 (follow-up of JOB-20261023-06 fails)",
+  "env": "dev",
+  "started": "2026-10-23T04:39:28Z",
+  "finished": "2026-10-23T04:42:04Z",
+  "status": "done",
+  "dsr_672_residual": "not reproduced – qa566-news-02 ja shows 2026.10.02 (.aem.live + .aem.page); no meta publicationdate; date source = Article Meta component field 2026-10-02T00:00:00.000Z",
+  "tests": [
+    { "tc": "DSR-NEWS-003", "lang": "ja", "result": "pass", "error": "qa566-news-02: shown 2026.10.02; publicationdate absent; component date 2026-10-02T00:00:00.000Z; published-time 2026-10-23T03:33:59.091Z (not used)", "evidence": "evidence/DSR-NEWS-003_ja_news02_live.png", "suspect": "product", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-NEWS-002", "lang": "ja", "result": "fail", "error": "Back to list absent in whole document; only /ja/news link = header nav ニュース; main ends at button", "evidence": "evidence/DSR-NEWS-002-006_ja_bottom.png", "suspect": "product", "cause": "none", "confidence": 70 },
+    { "tc": "DSR-NEWS-006", "lang": "ja", "result": "fail", "error": "Back to list absent in whole document (no 一覧へ戻る text, no Back-to-list link)", "evidence": "evidence/DSR-NEWS-002-006_ja_bottom.png", "suspect": "product", "cause": "none", "confidence": 70 },
+    { "tc": "DSR-NEWS-002", "lang": "en", "result": "fail", "error": "Back to list absent in whole document; no /en/news link at all", "evidence": "evidence/DSR-NEWS-002-006_en_bottom.png", "suspect": "product", "cause": "none", "confidence": 70 },
+    { "tc": "DSR-NEWS-006", "lang": "en", "result": "fail", "error": "Back to list absent in whole document", "evidence": "evidence/DSR-NEWS-002-006_en_bottom.png", "suspect": "product", "cause": "none", "confidence": 70 },
+    { "tc": "DSR-NEWS-012", "lang": "ja", "result": "fail", "error": "class no-mylist no-share authored (plain.html); article-meta-actions empty. Option to untick: Options > マイリストボタンを非表示 / シェアを非表示", "evidence": "evidence/DSR-NEWS-012_ja_article-meta.png", "suspect": "data", "cause": "none", "confidence": 15 },
+    { "tc": "DSR-NEWS-012", "lang": "en", "result": "fail", "error": "same as ja: authored classes no-mylist no-share", "evidence": "evidence/DSR-NEWS-012_en_article-meta.png", "suspect": "data", "cause": "none", "confidence": 15 },
+    { "tc": "DSR-ARTICLE-023", "lang": "ja", "result": "blocked", "error": "related-product renders dummy fixture (QUERY = null, TODO DSR-356); 4 items on qa529-02 and qa529-01; filter skipped", "evidence": "evidence/DSR-ARTICLE-023_ja_qa529-02.png", "suspect": "product", "cause": "none", "confidence": 55 },
+    { "tc": "DSR-VOV-008", "lang": "en", "result": "fail", "error": "rows source, cfPath, unavailable:no-movie; source+cfPath on every overlay page → propose Expected = only data row unavailable", "evidence": "evidence/DSR-VOV-008_en_after-redirect.png", "suspect": "test", "cause": "none", "confidence": 10 }
+  ],
+  "code_changes": ["tests/analysis/JOB-20261023-08.analysis.spec.ts"],
+  "tsc": "exit 0, no errors",
+  "run_report": "results/DSR-566/DEV/automation-run-20261023-job08.md",
+  "facts": ["DSR-NEWS-003-facts.json", "DSR-NEWS-002-006_ja-facts.json", "DSR-NEWS-002-006_en-facts.json", "DSR-NEWS-012_ja-facts.json", "DSR-NEWS-012_en-facts.json", "DSR-ARTICLE-023-facts.json", "DSR-ARTICLE-023-related-product-js-excerpt.txt", "DSR-VOV-008-facts.json", "DSR-VOV-008-final.json"],
+  "questions": []
+}
