@@ -1,108 +1,133 @@
-# Daily standup 2026-10-22 (Thứ Năm)
+# Daily standup 2026-10-23 (Thứ Sáu)
 
-> Tạo 08:27 (UTC+7) [schedule standup] · nguồn: git log từ 21/10 08:00, DASHBOARD 22/10 07:50, BUGS.md, PLAN-sprint12 (RE-PLAN 19/10), Jira (16 ticket mở giao Dat), Night Report (không có dòng mới sau 21/10), summary JOB-20261022-01/-02, JOB-20261021-12, IDLE-31.
+> Tạo 08:25 (UTC+7) [schedule standup] · nguồn: git log từ 22/10 08:00, DASHBOARD 23/10 07:50, BUGS.md, PLAN-sprint12 (ghi chú 23/10 07:50), JIRA-SWEEP 01:08Z (mới, < 2h), KNOWN-FACTS, Jira (11 ticket mở giao Dat + 7 ticket liên quan), Night Report (Night 22/10 theo DASHBOARD mục 3), summary JOB-20261022-03/-17, JOB-20261016-08/-11, JOB-20261023-01 (result.json), IDLE-40.
 
 ## A. 📋 Daily report – copy & paste vào group chat (EN)
 
 ```
-QA Daily – 22/10 (DEV ENV)
+QA Daily – 23/10 (DEV ENV)
 Done
 
-* DSR-529 article-detail: fixes retested: DSR-657 (image block duplicated), DSR-658 (tag chips) and DSR-660 (date format) pass on DEV. DSR-659 (thumbnail meta still a relative path, 404 on .aem.live) is not fixed yet, moved back to @martin portal . Re-run today: 6 pass / 9 fail (fails = DSR-659 + test data, no new product bug).
-* DSR-647 (related movies) and DSR-538 (related card links on publish domain): retest pass on DEV. Will close today.
-* DSR-587 video overlay: re-run of movie-detail checks on overlay pages 14/14 pass. New bug DSR-665 (High) filed to @martin portal : /ja|en/library/video/search reloads endlessly and stays blank.
-* DSR-557 video part 16/16 pass. DSR-654: 21 TCs written + automation (11 pass, rest waiting for test data).
-* DSR-664 filed (video block shows "null" when caption is empty).
+* DSR-647, DSR-538, DSR-657, DSR-658, DSR-660: retest pass on DEV, closed. DSR-665 (video search page reloads endlessly): fixed by @martin portal, retest pass, closed. DSR-659: closed as by design (thumbnail meta).
+* DSR-664 (video block shows "null"): retest pass 4/4 on DEV. Closing today.
+* DSR-587 video overlay: og:image fix verified, no "about:error" left on the overlay pages.
+* DSR-586 product overlay: main cases 13 pass / 0 fail; negative cases 6 pass / 2 fail (1 test case outdated, 1 under review).
+* DSR-557 catalog/video: 24 pass / 0 fail / 6 skipped (test data). DSR-570: 12 pass / 2 fail / 2 skipped.
+* DSR-566/653 news detail: new template checked, test pages created. Automation 12 pass / 10 fail (see Blockers).
+* DSR-590 eco TOP: layout reviewed, 2 bugs filed: DSR-666 (extra space under breadcrumb), DSR-667 (SP carousel dot hidden by ">" button). Please assign the ticket to @Minh Ngọc Hoàng if they belong to FE.
 
 In progress
 
-* DSR-557 / 570 / 654 / 586: test data fixes found by automation (catalog form flag, product reference, preview) are scheduled tonight; automation re-run tomorrow morning.
-* DSR-529: remaining fails are test data (category, robots on qa529-02) + DSR-659.
-* DSR-587: negative cases (inactive flag etc.) seeded tonight.
+* DSR-654 catalog overlay: remaining checks (CATOV-006/010) running now.
+* DSR-586 / 587 / 557: last negative-case test data (inactive flag, preview-only, Youku video) prepared today and tonight; re-run on 26/10 morning.
+* DSR-529: remaining fails are test data (category, robots), fixed tonight.
 
 Blockers / need help
 
-* @martin portal : ~~please fix DSR-665~~ (✅ Done 22/10) and DSR-659 (thumbnail meta – reassigned with comment 64851). Also: og:image is "about:error" on every overlay page – could the space in the thumbnail file name "image 7.png" be the cause? Is the catalog list already on the overlay / language-filtered? (it still shows 15 old CFs, same 26 cards on ja and en). Is isActive OFF supposed to redirect to the list?
-* @martin portal / @Quentin Milavec : non-form catalogs open the PDF directly with no detail page. Is this intended? (DSR-654)
-* ~~@Quentin Milavec : news-article template for DSR-566/653 is still missing. We propose moving them to Sprint 13 – please confirm.~~ ✅ đã trả lời DSR-566 (Ngọc 19/10: template deployed DEV) – KHÔNG gửi. Thay bằng: "@Quentin Milavec : DSR-566/653 – the news-article template is already on DEV (Ngọc, 19/10); QA tests on 23/10, no Sprint 13 move. DSR-665 is fixed and closed, so DSR-587 is unblocked."
-* FYI DSR-638: test-space pages are moving to public URLs; QA will switch test paths once done. Some public paths (article qa529-01, catalog qa190-cat-pdf) already return 404 on .aem.live.
+* @martin portal : /ja/library/catalog shows 0 cards, although the dsr-catalog-list JSON returns 7 items (3 loads, same result). /en shows 6 cards. Can you check the JA rendering? (DSR-557, DSR-654)
+* @Minh Ngọc Hoàng : DSR-566 news detail: the date shows the raw value "2026-10-01T00:00:00.000Z" instead of 2026.10.01, and there is no "Back to list" link. Is the link planned for this template? (DSR-566/653)
+* @Minh Ngọc Hoàng : DSR-666 / DSR-667 are still To Do. When can they be fixed? DSR-590 cannot be Done without them.
+* @Minh Ngọc Hoàng : DSR-570: (1) the download-form demo is still not bound to the catalog CF; (2) the form sends no request to HubSpot. When will both be on DEV? 4 TCs are blocked.
+* @Quentin Milavec : DSR-590 moves from 23/10 to 26/10, and DSR-566/653, 557, 654, 570 now depend on the fixes above. If they are not on DEV by 26/10 12:00, we propose closing the tested scope and moving the blocked TCs to Sprint 13.
+* FYI DSR-611: QA uses Youku ID XNTgyNzE1ODE5Ng== (thanks @Quentin Milavec). Q1/Q2 still wait for Numata-san, Q3 for Kohei; QA keeps the defaults until then.
 
 Plan
 
-* Today: close DSR-647, 657, 658, 660, 538 on DEV.
-* Target Done DEV 23/10 for 587, 557, 570, 654, 586, 529. Depends on tonight's test data + DSR-665/659 fixes.
-* Risk: 587 Done depends on DSR-665; 529 depends on DSR-659 – if not fixed by 23/10, remaining parts move to Sprint 13.
+* Today: close DSR-664; finish DSR-654 checks; test data for the remaining negative cases tonight.
+* Target Done DEV 26/10: 586, 587, 529 (test data only). 26–27/10: 557, 654, 566/653, 590, 570 – each depends on the fix listed in Blockers.
+*Sprint forecast:* 4/9 tickets on track for Done DEV by 27/10 (changes vs yesterday: 664 done today; 590 23/10 → 26/10; 566/653, 557, 654, 570 now waiting for dev fixes)
 ```
 
 ## B. 🗣 Present nhanh (VI, 30 giây)
-- Retest sáng nay: 657/658/660/647/538 **Pass DEV** → Dat đóng hôm nay; 659 chưa fix → trả Martin.
-- Bug mới **DSR-665** (High): trang video/search reload vô hạn – chặn Done 587.
-- 557/570/654/586: fail còn lại là **data test**, tối nay sửa → automation sáng 23/10.
-- Đích Done DEV dời sang **23/10** (buffer sprint); ~~566/653 đề xuất Sprint 13~~ ✅ đã trả lời DSR-566 19/10 – KHÔNG gửi; 566/653 đích 23/10.
-- Cần Martin: ~~665~~ (Done), 659, og:image, catalog list; ~~cần Quentin: chốt 566/653 sang Sprint 13~~ ✅ KHÔNG gửi – báo Quentin template đã có.
+- Hôm qua đóng **7 bug/ticket** (647, 538, 657, 658, 660, 665, 659); 664 retest Pass → đóng sáng nay.
+- 586/557 phần chính **Pass hết**; fail còn lại là data test hoặc TC cũ.
+- **Mới phát hiện:** list catalog **ja 0 thẻ** dù JSON có 7 item (Martin); news detail **ngày hiển thị dạng thô** + thiếu "Back to list" (Ngọc).
+- **Rủi ro:** 590 lùi 23→26/10 (666/667 Ngọc chưa làm); 570 chờ HubSpot + gắn CF (Ngọc). Đã báo Quentin: fix chưa lên DEV trước 26/10 12:00 → đóng phần đã test, TC bị chặn sang Sprint 13.
+- Forecast: **4/9** ticket chắc Done DEV trước 27/10, 5 ticket phụ thuộc fix dev.
 
 **Nếu bị hỏi:**
-- *Sao hạn 22/10 trượt?* → Overlay 404 do dev fix auto-gen 21/10 + data test sai; data sửa đêm 21–22/10, còn trong buffer 23/10.
-- *529 còn bao nhiêu fail?* → 9/15 fail: 2 do DSR-659, còn lại là data (category/robots), không có bug sản phẩm mới.
-- *og:image có phải bug không?* → Chưa chắc (65%), có thể do tên file ảnh có dấu cách – đang hỏi Martin.
+- "Sao 586 chưa Done?" → Phần chính Pass; còn 1 case preview cần data (QA làm tối nay), rerun sáng 26/10.
+- "ja catalog 0 thẻ có phải data không?" → Không: JSON trả 7 item, en hiển thị bình thường, đo 3 lần → nghi lỗi render, nhờ Martin xem.
+- "Có kịp sprint không?" → 4 ticket chắc chắn; 5 ticket kịp nếu fix dev lên DEV trước trưa 26/10, không thì đóng phần đã test và dời TC bị chặn.
 
 ## C. Standup
 **Yesterday**
-- DSR-529: retest 657/658/660 pass; 659 still fails (thumbnail relative path); 6/15 pass.
-- DSR-647, DSR-538 retest pass on DEV; DSR-587 movie checks 14/14 pass on overlay.
-- New bugs: DSR-665 (587 search reload loop, Martin), DSR-664 (video caption "null").
-- DSR-654: 21 TCs + automation (11 pass); DSR-557 video 16/16 pass.
+- Closed DSR-647/538/657/658/660/665/659; DSR-664 retest Pass 4/4 (to close).
+- DSR-586 main 13/0, negatives 6/2; DSR-557 24/0/6; DSR-570 12/2/2.
+- DSR-566 new template verified, pages seeded, automation 12 pass / 10 fail.
+- DSR-590 L&F reviewed → DSR-666, DSR-667 filed (Ngọc); og:image fixed, 0 about:error.
 
 **Today**
-- Close DSR-647/657/658/660/538; move DSR-659 back to Martin.
-- Night: data fixes 586/570/557/654, negative data 587/586, DSR-570 manual 6 TCs.
-- Automation 23/10 morning: 586/557/570/654 rerun (JOB-20261022-03).
-- ~~Sprint 12 deadline today: report split of 566/653 (and leftovers) to Quentin at 17:10.~~ ✅ không cần – 566/653 trong Sprint 12 (template có từ 19/10)
+- Close DSR-664; finish DSR-654 CATOV-006/010 (running).
+- Approve automated test data for DSR-587 negatives + Youku (Dat, 10:00).
+- Tonight test data: 990586002 preview, 566 title, 529 category/robots, QA190 catalogs.
+- Send questions: Martin (ja catalog list), Ngọc (566 date, 666/667, 570).
 
 **Blockers / need help**
-- Martin: fix DSR-659 (~~665~~ ✅ Done) – blocks 529 Done 23/10.
-- Martin: og:image `about:error`, catalog list old CFs, isActive redirect – 587/557/654.
-- Martin/Quentin: non-form catalog opens PDF directly – intended? (DSR-654, by 23/10).
-- ~~Quentin: news-article template / Sprint 13 decision – DSR-566/653.~~ ✅ đã trả lời DSR-566 19/10 – KHÔNG gửi
+- Martin: ja catalog list 0 cards, JSON has 7 items – DSR-557/654.
+- Ngọc: 566 raw date + Back to list; 666/667 To Do – DSR-566/590.
+- Ngọc: 570 CF binding + HubSpot POST, 4 TCs blocked – DSR-570.
+- Quentin: agree Sprint 13 move for blocked TCs if fixes miss 26/10 12:00.
 
 ## D.
+### 🚨 Escalation (4)
+1. **DSR-590** đích 23/10 → **26/10**: DSR-666/667 (Ngọc) vẫn To Do.
+2. **DSR-566/653** rủi ro 🟢 → 🟡: ngày hiển thị raw ISO (85%, product) + thiếu Back to list (70%) – Ngọc.
+3. **DSR-557 + DSR-654** rủi ro xấu đi: /ja/library/catalog 0 thẻ, JSON 7 item (JOB-20261023-01, lần đo thứ 3) – Martin.
+4. **DSR-570** rủi ro 🟠 giữ nhưng 4 TC Blocked (CATDL-009/011/012/013) chờ Ngọc – không ETA.
+Không có LATE HANDOVER (sweep 08:05). Năng lực: còn 1 đêm data hữu ích (23/10) + agent 26–27/10 → đủ nếu fix dev lên trước 26/10 12:00.
+
+Tin EN cho Quentin (copy):
+```
+Hi Quentin, Sprint 12 forecast update (23/10, DEV):
+- DSR-664 closes today. DSR-586, 587, 529 stay on track for Done DEV 26/10 (test data only).
+- DSR-590: target moves 23/10 → 26/10. Bugs DSR-666/667 (Ngọc) are still To Do.
+- DSR-566/653: 2 new findings on the news detail page (date shows the raw value "2026-10-01T00:00:00.000Z" instead of 2026.10.01; no "Back to list" link). Waiting for Ngọc.
+- DSR-557/654: /ja/library/catalog shows 0 cards although the list JSON returns 7 items (en is fine). Asked Martin to check.
+- DSR-570: 4 TCs blocked (form demo not bound to the catalog CF, no HubSpot submission). No ETA yet from Ngọc.
+Proposal: if these fixes are not on DEV by 26/10 12:00, we close each ticket with the tested scope and move the blocked TCs to Sprint 13. Forecast: 4/9 on track, 5 at risk (dev fixes). Please confirm or tell us which tickets to prioritise.
+```
+
 ### 🐞 Bug < 80% – Dat chốt sáng nay
+(Nguyên văn DASHBOARD 23/10 07:50)
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
 |---|---|---|---|---|
-| BUG-OVL-INACTIVE (587/586/654) | 表示フラグ OFF: json2html 200 + `unavailable \| inactive`, không redirect list (BL-OVL-1) | 50% | Chưa quan sát end-to-end; Martin chưa trả lời | Giữ; Night 22/10 seed TD-587-07 `qa587-inactive` → agent 23/10 |
-| BUG-OVL-OGIMG (587, cả catalog) | Raw `og:image` = `about:error` trên mọi trang overlay QA (og:image:secure_url đúng 200) – VOV-003, MOVIE-029 | 65% | Mọi CF test dùng thumbnail `image 7.png` (có dấu cách) → chưa loại trừ data | Hỏi Martin (📣); nếu cần: QA-PT đổi thumbnail 1 CF sang tên không dấu cách → agent so sánh |
-| BUG-CAT-LIST-OLD (557/654) | Catalog list vẫn trả 15 CF folder cũ `ykk/common/product-cf/test`, ja/en cùng 26 thẻ (không lọc ngôn ngữ) | 55% | Chưa rõ list đã lên overlay chưa (BL-OVL-1 20/10 12:40) | Hỏi Martin (📣) |
+| BUG-CAT-PREVIEW (654/586) ↑ | Overlay DSR CF chỉ Preview không hiện trên .aem.page: catalog qa654-preview → list (JOB-10/-14 + SHADOW-TD-654), **product 990586002 → 404 (.page + .live, BUGCHK-586-02 22/10)** | 70% | Chưa xác minh DSR CF 990586002 thật sự đã Preview (data QA-PT); video qa587-preview chưa seed | JOB-20261022-03 ghi replication props → Preview OK + vẫn 404 → bug 85% (Martin) |
+| 🆕 BUG-CAT-LIST-JA (557/654) | /ja/library/catalog 0 thẻ, không có response `dsr-catalog-list` trong 45s (JOB-22-20 + IDLE-38); en 5–6 thẻ | 50% | Chỉ 2 lần đo cùng tối; QA-PT SHADOW-TD-654 mở ja list không báo lỗi; JSON ja chưa kiểm | JOB-20261023-01 (3 lần + JSON trực tiếp) → vẫn 0 + JSON có item → bug 80% (Martin) |
+| 🆕 CATDL-004 (570) | Form tải tài liệu: lỗi bắt buộc hiện dạng popup từng ô thay vì message cạnh ô | 50% | 1 screenshot; có thể là tooltip HTML5 mặc định; Figma C10 chưa final | Giữ; xem screenshot + hỏi Ngọc kiểu lỗi mong muốn khi HubSpot form xong (cùng tin 🔔 P2) |
+| BUG-CAT-FORM-EN (570/654) | en catalog form hiển thị tiếng Nhật (CATDL-016 en) | 70% | Chưa rõ HubSpot form en đã có GUID (DSR-655 L1) | Giữ; câu 4b trong tin Martin |
+| BUG-CAT-PDF-EXPOSE (570) | `dsr-catalog-list` trả `pdfAsset._publishUrl` cho catalog requiresForm=true (CATDL-007) | 70% | Chờ Quentin TC 007 (gating có là yêu cầu bảo mật) | Giữ; "phải ẩn" → bug 90% |
+| BUG-CAT-NOINDEX (654) | non-form catalog `robots=noindex`, không trong sitemap (CATOV-002/021) | 40% | non-form redirect file by design → có thể chủ ý | Đề xuất coi by design, sửa kỳ vọng (Dat OK/NG) |
+| BUG-OVL-INACTIVE (587/586/654) | 表示フラグ OFF: kiểm end-to-end | 50% | TD-587-07 chưa seed (Not run 22/10) | Giữ; chờ Agent Author |
 
-Đã xử lý 22/10: VOV-013 → **DSR-665** (85%) · 586/570/557 fail = data (Night 22/10) · CATOV-003 en .live 404 = data.
-Ghi chú sáng nay: JOB-20261022-01 xác nhận og:image vẫn `about:error` cả 3 trang. IDLE-31: perf ja mobile qa587-main = 71 (60%), article qa529-01 + catalog qa190-cat-pdf .live 404 (40%) – chưa đưa vào bảng, theo dõi.
+**Cập nhật sau 07:50 (job xong 08:00–08:17, chưa vào DASHBOARD) – để session Điều phối xử lý:**
+- BUG-CAT-PREVIEW: JOB-20261022-03 xác nhận DSR CF 990586002 **chưa từng Preview** (DRAFT, NEVER_PUBLISHED) → 404 là **data (0%)**, không phải bằng chứng bug. QA-PT Preview lại tối nay → rerun PDO-002/012.
+- BUG-CAT-LIST-JA: JOB-20261023-01: ja 0 thẻ / JSON **7 item**, en 6 thẻ, 12 lần tải → **đạt điều kiện 80%** → session Điều phối tạo bug (Martin). Lưu ý runner ghi job "failed" vì thiếu summary.md (agent đã chạy xong).
+- 🆕 NEWS-003 date (566): hiển thị `2026-10-01T00:00:00.000Z` ≠ YYYY.MM.DD – **85%** (JOB-16-08 + JOB-16-11, rule DSR-660) → session Điều phối tạo bug (Ngọc, FE).
+- 🆕 NEWS-002/006 Back to list (566): 70% · NEWS-007 index (566): 70% · PDO-006 subfolder page (586): 65% · PDO-005 = TC cũ (đề xuất sửa kỳ vọng theo BL-OVL-1 21/10).
 
 ### 📣 Báo Martin
+(Nguyên văn DASHBOARD 23/10 07:50)
 | URL | Triệu chứng | cause | Job | Evidence |
 |---|---|---|---|---|
-| /{ja,en}/library/video/search (.page + .live) | overlay trả video-detail not-found → video-detail.js:238 redirect về chính URL → reload vô hạn, trang trắng → **DSR-665** | overlay-merge | JOB-20261020-02 | results/JOB-20261020-02/evidence/DSR-VOV-013_en.png |
-| mọi trang overlay QA (video + catalog) | raw og:image = `about:error`; og:image:secure_url 200 | overlay-merge (65%) | JOB-20261020-02 | evidence/DSR-VOV-003_{ja,en}.png, DSR-MOVIE-029_en.png |
-| /{ja,en}/library/catalog (list) | còn 15 CF folder cũ, ja/en cùng 26 thẻ; thẻ gated cũ trùng id với CF mới không gated | overlay-merge (55%/30%) | JOB-20261020-04 | results/DSR-570/DEV/automation-run-20261021-job20261020-04.md |
-| /{ja,en}/library/article/stories/qa529-01 | DSR-659: thumbnail meta vẫn `/content/dam/…` tương đối → 404 .live | none | JOB-20261021-05 | results/DSR-529/DEV/automation-run-20261021-job05.md |
-| (còn mở 21/10) isActive OFF không redirect · config 404 last-modified 20/10 | — | none | JOB-20261021-06 | results/JOB-20261021-06/raw/ |
+| (còn mở 21/10) isActive OFF · config 404 last-modified 20/10 | — | none | JOB-20261021-06 | results/JOB-20261021-06/raw/ |
+Không có fail mới với cause ≠ none (23/10 07:50). Dòng cũ 22/10 đã đóng (DSR-665, og:image, catalog list, 659) – xem git log.
 
-Tin gửi sẵn (Dat copy):
+Việc cho Dat: gửi Martin tin dưới. ⚠ Câu 2 đã sửa: phần product 990586002 là lỗi data (JOB-20261022-03) → bỏ; thêm câu ja catalog list.
 ```
-Hi Martin, results from last night's DEV runs (read-only):
-1) New bug DSR-665 (High): /ja|en/library/video/search is served by the video overlay as a "not-found" detail; video-detail.js:238 redirects to backListUrl() = the same URL, so the page reloads endlessly and stays blank (.page and .live). BL-OVL-1 excludes search/tech-talk from the overlay route.
-2) DSR-659 is partly fixed: related-article images are absolute and 200 now, but the thumbnail meta on qa529-01 is still a relative /content/dam/... path (404 on .aem.live). I moved it back to you.
-3) og:image on every overlay page is "about:error" while og:image:secure_url is fine. Our test CFs all use a thumbnail named "image 7.png" (with a space) - could the space be the cause, or is og:image built differently?
-4) Catalog list still returns the 15 old CFs from /content/dam/ykk/common/product-cf/test and shows the same 26 cards on ja and en. Is the list already on the overlay / language-filtered, or still to come?
-5) Still open from yesterday: isActive OFF redirect to the list, and the 404 config deploy (public config.json last-modified 20/10).
+Hi Martin, open questions from the DEV runs (read-only):
+1) Is an English HubSpot form configured for the /en catalog overlay pages? /en/library/catalog/qa190-cat-pdf-form currently renders the Japanese form (labels, options, consent).
+2) Should a DSR CF that is only Previewed (not Published) render on .aem.page? (catalog qa654-preview). We will re-check a product case after tonight's data fix.
+3) The public 404 config.json still shows last-modified 20/10 – is the 404 page config deployed on DEV?
+4) /ja/library/catalog shows 0 cards, but the dsr-catalog-list JSON for ja returns 7 items (3 loads). /en shows 6 cards. Could you check the JA rendering?
 Thanks!
 ```
 
 ### 🆕 Ticket chưa lên kế hoạch
-Jira: 16 ticket mở giao Dat · đã lên kế hoạch 14
-| Mã | Tiêu đề ngắn | Type / status | Giao Dat khi nào | Việc QA đề xuất |
+Jira: 11 ticket mở giao Dat · đã lên kế hoạch 10. ⚠ Bảng mục 1 DASHBOARD lệch Jira: tiêu đề ghi "10 mở", còn 2 dòng đã Done (DSR-647, DSR-538), thiếu DSR-611.
+
+| Mã | Tiêu đề | Type/Status | Giao Dat | Việc QA đề xuất |
 |---|---|---|---|---|
-| [DSR-664](https://sutrix.atlassian.net/browse/DSR-664) | [DSR-190] Video block hiện "null" khi caption rỗng | Bug / To Do | tạo 21/10 20:39 JST (assignee Dat) | Thêm dòng BUGS.md; gán dev (Martin/Ngọc nếu FE), retest bằng TD-190 `qa190-mv-empty` khi fix |
-| [DSR-590](https://sutrix.atlassian.net/browse/DSR-590) | 環境配慮型製品 (TOP/詳細テンプレート) | Task / [Dev] In Testing | Jira cập nhật 21/10 18:18 JST | DASHBOARD ghi "Ngọc, không giao Dat" nhưng Jira giao Dat → Dat xác nhận; nếu của QA: viết TC + thêm dòng mục 1 (lưu ý DSR-638 đổi URL) |
+| [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) | QA questions 動画・カタログ (URL, cn video, NEW/UPDATE, Youku ID) | Question / To Do | 15/10 (QA tạo) | Q4 đã trả lời (Youku ID); giữ mặc định Q1–Q3, đóng khi Numata/Kohei trả lời – thêm 1 dòng DASHBOARD mục 1 |
 
-⚠ Lệch DASHBOARD mục 1 vs Jira: mục 1 ghi "10 mở" (566+653 tính 1); Jira hiện 16 (thêm 4 bug 657/658/659/660 – đã có trong BUGS.md, + 664, 590). DSR-665 giao Martin (không tính).
-
-Dat cần nhắc trong meeting: DSR-665 + DSR-659 là điều kiện Done 587/529 ngày 23/10, Martin cần fix hôm nay; ~~Quentin chốt 566/653 sang Sprint 13~~ ✅ KHÔNG gửi (template có 19/10); xác nhận DSR-590 có giao QA không.
+Dat cần nhắc trong meeting: Martin xem list catalog ja 0 thẻ; Ngọc cho ETA 666/667, ngày news 566 và HubSpot/CF 570; Quentin đồng ý hạn 26/10 12:00 (quá hạn → TC bị chặn sang Sprint 13); Dat đóng DSR-664 và duyệt data tự động cho 587 trước 10:00.
