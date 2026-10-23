@@ -4,7 +4,7 @@
   "us": "DSR-590/566",
   "env": "dev",
   "started": "2026-10-23T02:42:06.159Z",
-  "finished": "2026-10-23T07:12:21.745Z",
+  "finished": "2026-10-23T08:42:39.053Z",
   "status": "done",
   "scope": "Latest round only; watch completion tracked in schedule.json",
   "tests": [
@@ -13,35 +13,35 @@
       "lang": "ja",
       "result": "blocked",
       "error": "Geometry captured; QA acceptance pending",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T071206/1440-top.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T084206/1440-top.png"
     },
     {
       "tc": "DSR-666/667",
       "lang": "ja",
       "result": "blocked",
       "error": "Geometry captured; QA acceptance pending",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T071206/390-top.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T084206/390-top.png"
     },
     {
       "tc": "DSR-666/667",
       "lang": "ja",
       "result": "blocked",
       "error": "Geometry captured; QA acceptance pending",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T071206/393-top.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T084206/393-top.png"
     },
     {
       "tc": "DSR-672",
       "lang": "ja",
       "result": "pass",
       "error": "",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T071206/news-ja.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T084206/news-ja.png"
     },
     {
       "tc": "DSR-672",
       "lang": "en",
       "result": "pass",
       "error": "",
-      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T071206/news-en.png"
+      "evidence": "results/JOB-ZZ-IDLE-42/evidence/20261023T084206/news-en.png"
     },
     {
       "tc": "DSR-NEWS-014",
