@@ -8,43 +8,323 @@
       {
         "run": 1,
         "scores": {
-          "performance": 91,
+          "performance": 94,
           "accessibility": 96,
           "best-practices": 96,
           "seo": 61
         },
         "metrics": {
-          "largest-contentful-paint": 1785.018,
-          "cumulative-layout-shift": 0.018359608322736906,
-          "total-blocking-time": 366
-        },
-        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
-        "warnings": [
-          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
-        ],
-        "version": "13.5.0",
-        "durationMs": 21745
-      },
-      {
-        "run": 2,
-        "scores": {
-          "performance": 91,
-          "accessibility": 96,
-          "best-practices": 96,
-          "seo": 61
-        },
-        "metrics": {
-          "largest-contentful-paint": 1854.0575,
-          "cumulative-layout-shift": 0.018422505292669648,
-          "total-blocking-time": 251.5
+          "largest-contentful-paint": 1818.8815,
+          "cumulative-layout-shift": 0.018359722993602782,
+          "total-blocking-time": 191.5
         },
         "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
         "warnings": [],
         "version": "13.5.0",
-        "durationMs": 20749
+        "durationMs": 23098
+      },
+      {
+        "run": 2,
+        "scores": {
+          "performance": 90,
+          "accessibility": 96,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 1832.1825,
+          "cumulative-layout-shift": 0.018359722993602782,
+          "total-blocking-time": 295.5
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 20206
       },
       {
         "run": 3,
+        "scores": {
+          "performance": 89,
+          "accessibility": 96,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 1773.279,
+          "cumulative-layout-shift": 0.018359608322736906,
+          "total-blocking-time": 435
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 17922
+      }
+    ],
+    "scores": {
+      "performance": 90,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 61
+    },
+    "metrics": {
+      "largest-contentful-paint": 1818.8815,
+      "cumulative-layout-shift": 0.018359722993602782,
+      "total-blocking-time": 295.5
+    },
+    "at": "2026-10-23T09:34:16.089Z",
+    "job": "JOB-ZY-REG-20261023-1620-codex"
+  },
+  "top [ja] desktop": {
+    "key": "top",
+    "lang": "ja",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+    "device": "desktop",
+    "runs": [
+      {
+        "run": 1,
+        "scores": {
+          "performance": 99,
+          "accessibility": 91,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 765.0595000000001,
+          "cumulative-layout-shift": 0.05316666383133921,
+          "total-blocking-time": 0
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 18060
+      },
+      {
+        "run": 2,
+        "scores": {
+          "performance": 100,
+          "accessibility": 91,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 364.76099999999997,
+          "cumulative-layout-shift": 0.05340061275343724,
+          "total-blocking-time": 0
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 16472
+      },
+      {
+        "run": 3,
+        "scores": {
+          "performance": 100,
+          "accessibility": 91,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 324.574,
+          "cumulative-layout-shift": 0.05316666383133921,
+          "total-blocking-time": 0
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 18726
+      }
+    ],
+    "scores": {
+      "performance": 100,
+      "accessibility": 91,
+      "best-practices": 96,
+      "seo": 61
+    },
+    "metrics": {
+      "largest-contentful-paint": 364.76099999999997,
+      "cumulative-layout-shift": 0.05316666383133921,
+      "total-blocking-time": 0
+    },
+    "at": "2026-10-23T09:35:09.372Z",
+    "job": "JOB-ZY-REG-20261023-1620-codex"
+  },
+  "video-detail [ja] mobile": {
+    "key": "video-detail",
+    "lang": "ja",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+    "device": "mobile",
+    "runs": [
+      {
+        "run": 1,
+        "scores": {
+          "performance": 93,
+          "accessibility": 100,
+          "best-practices": 96,
+          "seo": 69
+        },
+        "metrics": {
+          "largest-contentful-paint": 2260.9434,
+          "cumulative-layout-shift": 0.009149918066949638,
+          "total-blocking-time": 276.5
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 18411
+      },
+      {
+        "run": 2,
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 96,
+          "seo": 69
+        },
+        "metrics": {
+          "largest-contentful-paint": 2262.315,
+          "cumulative-layout-shift": 0.009149918066949638,
+          "total-blocking-time": 81.49999999999994
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 18831
+      },
+      {
+        "run": 3,
+        "scores": {
+          "performance": 78,
+          "accessibility": 100,
+          "best-practices": 96,
+          "seo": 69
+        },
+        "metrics": {
+          "largest-contentful-paint": 2271.1113,
+          "cumulative-layout-shift": 0.009149918066949638,
+          "total-blocking-time": 904.5000000000002
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 23068
+      }
+    ],
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 69
+    },
+    "metrics": {
+      "largest-contentful-paint": 2262.315,
+      "cumulative-layout-shift": 0.009149918066949638,
+      "total-blocking-time": 276.5
+    },
+    "at": "2026-10-23T09:36:09.702Z",
+    "job": "JOB-ZY-REG-20261023-1620-codex"
+  },
+  "video-detail [ja] desktop": {
+    "key": "video-detail",
+    "lang": "ja",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+    "device": "desktop",
+    "runs": [
+      {
+        "run": 1,
+        "scores": {
+          "performance": 97,
+          "accessibility": 90,
+          "best-practices": 96,
+          "seo": 69
+        },
+        "metrics": {
+          "largest-contentful-paint": 751.5060000000001,
+          "cumulative-layout-shift": 0.05317134958304272,
+          "total-blocking-time": 0
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 19887
+      },
+      {
+        "run": 2,
+        "scores": {
+          "performance": 96,
+          "accessibility": 90,
+          "best-practices": 96,
+          "seo": 69
+        },
+        "metrics": {
+          "largest-contentful-paint": 746.2424,
+          "cumulative-layout-shift": 0.05317134958304272,
+          "total-blocking-time": 0
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 19806
+      },
+      {
+        "run": 3,
+        "scores": {
+          "performance": 96,
+          "accessibility": 90,
+          "best-practices": 96,
+          "seo": 69
+        },
+        "metrics": {
+          "largest-contentful-paint": 749.4738,
+          "cumulative-layout-shift": 0.05317134958304272,
+          "total-blocking-time": 0
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 21109
+      }
+    ],
+    "scores": {
+      "performance": 96,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 69
+    },
+    "metrics": {
+      "largest-contentful-paint": 749.4738,
+      "cumulative-layout-shift": 0.05317134958304272,
+      "total-blocking-time": 0
+    },
+    "at": "2026-10-23T09:37:10.519Z",
+    "job": "JOB-ZY-REG-20261023-1620-codex"
+  },
+  "catalog-list [ja] mobile": {
+    "key": "catalog-list",
+    "lang": "ja",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+    "device": "mobile",
+    "runs": [
+      {
+        "run": 1,
+        "scores": {
+          "performance": 93,
+          "accessibility": 96,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 2471.4198,
+          "cumulative-layout-shift": 0.009168107733049147,
+          "total-blocking-time": 223
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 18655
+      },
+      {
+        "run": 2,
         "scores": {
           "performance": 95,
           "accessibility": 96,
@@ -52,28 +332,121 @@
           "seo": 61
         },
         "metrics": {
-          "largest-contentful-paint": 1826.6565,
-          "cumulative-layout-shift": 0.018359722993602782,
-          "total-blocking-time": 156.5
+          "largest-contentful-paint": 2532.1002893563536,
+          "cumulative-layout-shift": 0.009168107733049147,
+          "total-blocking-time": 176.5
         },
-        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
         "warnings": [],
         "version": "13.5.0",
-        "durationMs": 19764
+        "durationMs": 17376
+      },
+      {
+        "run": 3,
+        "scores": {
+          "performance": 91,
+          "accessibility": 96,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 3120.692500000001,
+          "cumulative-layout-shift": 0.009168107733049147,
+          "total-blocking-time": 128.5
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 19630
       }
     ],
     "scores": {
-      "performance": 91,
+      "performance": 93,
       "accessibility": 96,
       "best-practices": 96,
       "seo": 61
     },
     "metrics": {
-      "largest-contentful-paint": 1826.6565,
-      "cumulative-layout-shift": 0.018359722993602782,
-      "total-blocking-time": 251.5
+      "largest-contentful-paint": 2532.1002893563536,
+      "cumulative-layout-shift": 0.009168107733049147,
+      "total-blocking-time": 176.5
     },
-    "at": "2026-10-23T05:31:50.047Z",
-    "job": "JOB-ZY-REG-20261023-1220-codex"
+    "at": "2026-10-23T09:38:06.197Z",
+    "job": "JOB-ZY-REG-20261023-1620-codex"
+  },
+  "catalog-list [ja] desktop": {
+    "key": "catalog-list",
+    "lang": "ja",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+    "device": "desktop",
+    "runs": [
+      {
+        "run": 1,
+        "scores": {
+          "performance": 99,
+          "accessibility": 89,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 795.0055,
+          "cumulative-layout-shift": 0.0581615847898709,
+          "total-blocking-time": 0.5
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 19023
+      },
+      {
+        "run": 2,
+        "scores": {
+          "performance": 98,
+          "accessibility": 89,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 854.057,
+          "cumulative-layout-shift": 0.05817446523485614,
+          "total-blocking-time": 19
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 18610
+      },
+      {
+        "run": 3,
+        "scores": {
+          "performance": 93,
+          "accessibility": 89,
+          "best-practices": 96,
+          "seo": 61
+        },
+        "metrics": {
+          "largest-contentful-paint": 1637.7609999999997,
+          "cumulative-layout-shift": 0.057966250649513835,
+          "total-blocking-time": 0
+        },
+        "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+        "warnings": [],
+        "version": "13.5.0",
+        "durationMs": 20077
+      }
+    ],
+    "scores": {
+      "performance": 98,
+      "accessibility": 89,
+      "best-practices": 96,
+      "seo": 61
+    },
+    "metrics": {
+      "largest-contentful-paint": 854.057,
+      "cumulative-layout-shift": 0.0581615847898709,
+      "total-blocking-time": 0.5
+    },
+    "at": "2026-10-23T09:39:03.922Z",
+    "job": "JOB-ZY-REG-20261023-1620-codex"
   }
 }

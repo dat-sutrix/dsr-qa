@@ -1,0 +1,712 @@
+{
+  "job": "JOB-ZY-REG-20261023-1620-codex",
+  "agent": "codex",
+  "us": "Regression S12",
+  "env": "dev",
+  "started": "2026-10-23T09:29:18.561Z",
+  "finished": "2026-10-23T09:39:03.923Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "VISUAL-top-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/top_ja_1440.jpg",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 8222
+    },
+    {
+      "tc": "VISUAL-top-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/top_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4247
+    },
+    {
+      "tc": "VISUAL-top-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/top_en_1440.jpg",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5429
+    },
+    {
+      "tc": "VISUAL-top-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/top_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3828
+    },
+    {
+      "tc": "VISUAL-breadcrumb-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/breadcrumb_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2958
+    },
+    {
+      "tc": "VISUAL-breadcrumb-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/breadcrumb_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2458
+    },
+    {
+      "tc": "VISUAL-breadcrumb-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/breadcrumb_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2237
+    },
+    {
+      "tc": "VISUAL-breadcrumb-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/breadcrumb_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2283
+    },
+    {
+      "tc": "VISUAL-video-detail-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-detail_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3732
+    },
+    {
+      "tc": "VISUAL-video-detail-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-detail_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3064
+    },
+    {
+      "tc": "VISUAL-video-detail-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-detail_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3321
+    },
+    {
+      "tc": "VISUAL-video-detail-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-detail_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5974
+    },
+    {
+      "tc": "VISUAL-video-list-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-list_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4955
+    },
+    {
+      "tc": "VISUAL-video-list-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-list_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4459
+    },
+    {
+      "tc": "VISUAL-video-list-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-list_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3364
+    },
+    {
+      "tc": "VISUAL-video-list-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-list_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4126
+    },
+    {
+      "tc": "VISUAL-catalog-list-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-list_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5849
+    },
+    {
+      "tc": "VISUAL-catalog-list-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-list_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4577
+    },
+    {
+      "tc": "VISUAL-catalog-list-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-list_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3925
+    },
+    {
+      "tc": "VISUAL-catalog-list-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-list_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4646
+    },
+    {
+      "tc": "VISUAL-catalog-detail-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-detail_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2729
+    },
+    {
+      "tc": "VISUAL-catalog-detail-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-detail_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2763
+    },
+    {
+      "tc": "VISUAL-catalog-detail-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-detail_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2624
+    },
+    {
+      "tc": "VISUAL-catalog-detail-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-detail_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2627
+    },
+    {
+      "tc": "VISUAL-product-detail-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-detail_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5961
+    },
+    {
+      "tc": "VISUAL-product-detail-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-detail_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5748
+    },
+    {
+      "tc": "VISUAL-product-detail-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-detail_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4236
+    },
+    {
+      "tc": "VISUAL-product-detail-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-detail_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3819
+    },
+    {
+      "tc": "VISUAL-product-list-1440",
+      "lang": "ja",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-list_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3053
+    },
+    {
+      "tc": "VISUAL-product-list-390",
+      "lang": "ja",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-list_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2346
+    },
+    {
+      "tc": "VISUAL-product-list-1440",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-list_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2978
+    },
+    {
+      "tc": "VISUAL-product-list-390",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/product-list_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2171
+    },
+    {
+      "tc": "VISUAL-catalog-download-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-download_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2771
+    },
+    {
+      "tc": "VISUAL-catalog-download-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-download_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 3000
+    },
+    {
+      "tc": "VISUAL-catalog-download-1440",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-download_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2679
+    },
+    {
+      "tc": "VISUAL-catalog-download-390",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/catalog-download_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 2210
+    },
+    {
+      "tc": "VISUAL-article-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/article_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 8309
+    },
+    {
+      "tc": "VISUAL-article-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/article_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5252
+    },
+    {
+      "tc": "VISUAL-article-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/article_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5230
+    },
+    {
+      "tc": "VISUAL-article-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/article_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6125
+    },
+    {
+      "tc": "VISUAL-news-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/news_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 7344
+    },
+    {
+      "tc": "VISUAL-news-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/news_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6878
+    },
+    {
+      "tc": "VISUAL-news-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/news_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6390
+    },
+    {
+      "tc": "VISUAL-news-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/news_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6324
+    },
+    {
+      "tc": "VISUAL-eco-top-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/eco-top_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 8957
+    },
+    {
+      "tc": "VISUAL-eco-top-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/eco-top_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5848
+    },
+    {
+      "tc": "VISUAL-eco-top-1440",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/eco-top_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4662
+    },
+    {
+      "tc": "VISUAL-eco-top-390",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261023-1620/eco-top_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4310
+    },
+    {
+      "tc": "VISUAL-video-block-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-block_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 13322
+    },
+    {
+      "tc": "VISUAL-video-block-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261023-1620/video-block_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 9388
+    },
+    {
+      "tc": "LIGHTHOUSE-top-mobile",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 61226
+    },
+    {
+      "tc": "LIGHTHOUSE-top-desktop",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 53258
+    },
+    {
+      "tc": "LIGHTHOUSE-video-detail-mobile",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 60310
+    },
+    {
+      "tc": "LIGHTHOUSE-video-detail-desktop",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 60802
+    },
+    {
+      "tc": "LIGHTHOUSE-catalog-list-mobile",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 55661
+    },
+    {
+      "tc": "LIGHTHOUSE-catalog-list-desktop",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 57710
+    }
+  ],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+      "device": "mobile",
+      "performance": 90,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 1818.8815,
+        "cumulative-layout-shift": 0.018359722993602782,
+        "total-blocking-time": 295.5
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+      "device": "desktop",
+      "performance": 100,
+      "accessibility": 91,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 364.76099999999997,
+        "cumulative-layout-shift": 0.05316666383133921,
+        "total-blocking-time": 0
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "mobile",
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 69,
+      "metrics": {
+        "largest-contentful-paint": 2262.315,
+        "cumulative-layout-shift": 0.009149918066949638,
+        "total-blocking-time": 276.5
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "desktop",
+      "performance": 96,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 69,
+      "metrics": {
+        "largest-contentful-paint": 749.4738,
+        "cumulative-layout-shift": 0.05317134958304272,
+        "total-blocking-time": 0
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "mobile",
+      "performance": 93,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 2532.1002893563536,
+        "cumulative-layout-shift": 0.009168107733049147,
+        "total-blocking-time": 176.5
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "desktop",
+      "performance": 98,
+      "accessibility": 89,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 854.057,
+        "cumulative-layout-shift": 0.0581615847898709,
+        "total-blocking-time": 0.5
+      }
+    }
+  ],
+  "code_changes": [
+    "results/REGRESSION/run-20261023-1620.cjs",
+    "results/REGRESSION/finish-20261023-1620.py"
+  ],
+  "questions": []
+}
