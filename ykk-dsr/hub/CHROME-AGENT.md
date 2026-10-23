@@ -70,3 +70,8 @@ Nội dung step viết như Night Work Pack (giá trị chính xác, từng clic
 5. Máy: tắt sleep trong giờ làm việc khi có job chrome.
 6. **Nhận diện đúng profile:** mỗi profile có extension = 1 "browser" riêng với `deviceId` riêng (tên mặc định chung chung, vd "Browser 1" – không dùng tên để nhận diện). Sau khi tạo profile DSR-QA, session Setup/Chrome gọi `list_connected_browsers` và ghi `deviceId` của DSR-QA vào CONTEXT §7b (`CHROME_DEVICE_ID`). Session chỉ dùng đúng deviceId đó + kiểm user Author = "Agent QA" (2 lớp).
 7. Khi chạy job DSR mà profile dự án khác cũng đang mở extension → session hỏi Dat chọn 1 lần (1 click). Muốn không bị hỏi: chỉ mở profile DSR-QA trong lượt chạy DSR. Scheduled run gặp nhiều browser chưa chọn → dừng, không tự chọn.
+
+## 8. Nhật ký vận hành
+| Ngày | Job | Bước | Ghi | Blocked | Lỗi môi trường | Ghi chú |
+|---|---|---|---|---|---|---|
+| 2026-10-23 | JOB-20261023-16 (566 UE xóa block rỗng) | ~25 | 3/3 | 0 | 2 (tab UE mở ngoài tab group; trang treo – Dat reload) | verify JOB-23-17 đang chạy |
