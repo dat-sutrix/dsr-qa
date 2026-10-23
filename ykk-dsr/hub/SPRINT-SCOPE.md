@@ -19,7 +19,8 @@ Cột QA coverage: TC = file `hub/tc-out/`; spec = `tests/`; "ai test" = ngườ
 | [DSR-586](https://sutrix.atlassian.net/browse/DSR-586) | Task | Dat | [Dev] In Testing | Product detail overlay json2html `/{lang}/products/{id}` | TC ✅ · spec `product-detail/DSR-586` · QA agent + QA-PT | P1 `@overlay` | Tsukiji: dev test chờ DSR-634 | 669/671 đổi query |
 | [DSR-587](https://sutrix.atlassian.net/browse/DSR-587) | Task | Dat | [Dev] In Testing | Video detail overlay + tech-talk URL + regex/paths.json 3 ngôn ngữ | TC ✅ · spec `movie-detail/DSR-587*`, `overlay-seo` | P1 `@overlay` | – | 670 đổi model tech-talk |
 | [DSR-654](https://sutrix.atlassian.net/browse/DSR-654) | Sub-task | Dat | [Dev] In Testing | Catalog overlay `/{lang}/library/catalog/{id}` | TC ✅ 21 TC · spec `catalog-overlay/DSR-654` | P1 `@overlay` | – | 671 hubspotFormId/promoText chưa có design TC |
-| [DSR-606](https://sutrix.atlassian.net/browse/DSR-606) | Question | Quentin | To Do | 9 câu về DAM path CF/asset, mã ngôn ngữ, quy tắc ID, URL catalog, model mới | – | – | Chưa ai trả lời (0 comment) | Q6/7/8 đã có đáp án ngầm ở 669–671 (xem §3); Q2/3/4/5/9 vẫn mở |
+| [DSR-675](https://sutrix.atlassian.net/browse/DSR-675) | Task | Martin | To Do | 🆕 23/10: product overlay xuất 22 meta search-index trong `<head>` + 8 field query `dsr-product-page` (con DSR-182) | chưa có TC (586 overlay-seo chỉ check og/robots) | overlay product 586 (head meta, detail không được đổi) | Martin | Thêm scope cuối S12; deploy sau 26/10 → retest S13 |
+| [DSR-606](https://sutrix.atlassian.net/browse/DSR-606) | Question | Martin (từ 23/10) | To Do | 9 câu về DAM path CF/asset, mã ngôn ngữ, quy tắc ID, URL catalog, model mới | – | – | Chưa ai trả lời (0 comment) | Q6/7/8 đã có đáp án ngầm ở 669–671 (xem §3); Q2/3/4/5/9 vẫn mở |
 | [DSR-614](https://sutrix.atlassian.net/browse/DSR-614) | Task | Kohei | In Progress | Thiết kế CF (product/catalog/movie/techmovie, 7 sheet Numata) | – | gián tiếp (nguồn spec 669–671) | Kohei review → gửi YKK | Spec CF có thể đổi tiếp sau review khách |
 
 ### Lists
@@ -27,7 +28,7 @@ Cột QA coverage: TC = file `hub/tc-out/`; spec = `tests/`; "ai test" = ngườ
 |---|---|---|---|---|---|---|---|---|
 | [DSR-557](https://sutrix.atlassian.net/browse/DSR-557) | Task | Dat | [Dev] In Testing | Video player + catalog list/hiển thị (DSR-190) | TC ✅ · spec `catalog-video/DSR-557` | P1 list | CB-4 (611 Q1/Q2) | Có **2 bộ TC** (QA + DSR-558 dev) |
 | [DSR-558](https://sutrix.atlassian.net/browse/DSR-558) | Task | Nakamoto | In Progress | Dev tạo TC cho DSR-190 (Google Sheet) + Tsukiji test | TC dev (Sheet c.60454) – không đồng bộ với TC QA | – | Quentin 22/10: blocked by 664 (664 Done 23/10) | Trùng việc QA 557; kết quả 2 bên có thể lệch |
-| [DSR-578](https://sutrix.atlassian.net/browse/DSR-578) | Bug | 石谷 (khách) | In Progress | Fix design 6 list (eco product, article, actual-cases, video, catalog, news) | none (khách test) | `block:list` → 557, 583, 590 list | 石谷 xác nhận tag field (Martin 22/10) | Thay CSS list → visual baseline list đổi |
+| [DSR-578](https://sutrix.atlassian.net/browse/DSR-578) | Bug | Martin (石谷 trả 23/10: line-height/letter-spacing tiêu đề category) | In Progress | Fix design 6 list (eco product, article, actual-cases, video, catalog, news) | none (khách test) | `block:list` → 557, 583, 590 list | 石谷 xác nhận tag field (Martin 22/10) | Thay CSS list → visual baseline list đổi |
 | [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) | Question | Dat | To Do | Câu hỏi QA 557: direct URL, cn Youku, NEW/UPDATE 10 ngày, Youku ID | – | – | Q1/Q2 Numata (CB-4), Q3 Kohei | Đang dùng mặc định |
 
 ### Catalog DL / HubSpot
@@ -53,7 +54,7 @@ Cột QA coverage: TC = file `hub/tc-out/`; spec = `tests/`; "ai test" = ngườ
 ### TOP / Booth / Layout fixes (khách test)
 | Ticket | Loại | Assignee | Status | Làm gì | QA coverage | Regression impact | Chờ ai / blocker | Rủi ro QA |
 |---|---|---|---|---|---|---|---|---|
-| [DSR-649](https://sutrix.atlassian.net/browse/DSR-649) | Bug | 石谷 (khách) | [Dev] In Testing | Fix TOP theo sheet test khách (DSR-196) | spec `top/DSR-609`, `top-page/DSR-609.visual` (regression, không test sheet khách) | P1 TOP | #8 hover 仕様未決定; search-result chưa làm | Fix TOP → smoke/609 visual đổi |
+| [DSR-649](https://sutrix.atlassian.net/browse/DSR-649) | Bug | Martin (石谷 trả 23/10 16:35) | [Dev] In Testing | Fix TOP theo sheet test khách (DSR-196) | spec `top/DSR-609`, `top-page/DSR-609.visual` (regression, không test sheet khách) | P1 TOP | #8 hover 仕様未決定; search-result chưa làm | Fix TOP → smoke/609 visual đổi |
 | [DSR-661](https://sutrix.atlassian.net/browse/DSR-661) | Bug | 石谷 (khách) | [Dev] In Testing | Fix booth (DSR-172): related content, CTA modal | TC ✅ (DSR-172 xlsx, `tc-out/DSR-608.spec.json`) · **không có spec** | `block:related-content` → booth, 586 | #9 modal chờ YKK (CB-10); fix Martin "must be deployed to DEV" | Video chưa hiện trong related content (query thiếu tag) |
 | [DSR-610](https://sutrix.atlassian.net/browse/DSR-610) | Task | 石谷 (khách) | **[Dev] In Testing** | Test trang DIGITAL SHOWROOM (DSR-172) | TC ✅ (DSR-172 xlsx) · **không spec, us/DSR-610.md dừng 15/10 ("To Do")** | P2 booth | Q16/Q17/Q19; ảnh các tầng Martin đang làm (649 c.64890) | QA chưa biết ticket đã sang testing |
 
@@ -117,8 +118,10 @@ Cột QA coverage: TC = file `hub/tc-out/`; spec = `tests/`; "ai test" = ngườ
 | G8 | DSR-558 vs 557 | 2 bộ TC cho cùng DSR-190 (dev Sheet + QA xlsx) | **Dat** gửi Tsukiji link TC QA + kết quả run 557 (26/10), đề xuất 558 dùng kết quả QA thay vì test lại |
 | G9 | DSR-663 | Adobe hỏi "test plan" (#13), dự án chưa có | **Dat** đề xuất Kohei 24/10: dùng `regression/README.md` + test strategy (2 lớp CF/Page, DEV→STG→PRO) làm bản nháp mục 13 |
 | G10 | DSR-578 / 649 | Khách fix CSS list/TOP → baseline visual đổi | **Agent codex** lượt visual kế tiếp: đánh dấu diff list/TOP là "expected change (578/649)" thay vì L&F mới |
+| G11 | DSR-675 | 22 meta mới trên product overlay, không TC | **Claude** khi 675 lên [Dev] In Testing: thêm TC meta vào file 586 (đọc `<head>` .live, so giá trị CF qa586) + job claude-code read-only |
 
 ## 3. Facts that answer questions (đọc trước khi hỏi)
+- DSR-606 Q1: category sản phẩm = tag, không folder · Q4: `{lang}` = ja/en/cn – [DSR-606 c.65039](https://sutrix.atlassian.net/browse/DSR-606?focusedCommentId=65039)
 - DSR-606 Q7 (model mới, khi nào): đổi tên DM_*_related → DM_*_dsr + migrate mọi CF `/content/dam/dsr/` trong DSR-669 – [DSR-669](https://sutrix.atlassian.net/browse/DSR-669)
 - DSR-606 Q8 / tc Q32 (tech-talk): model riêng `DM_techmovie_dsr`, folder `/content/dam/dsr/{lang}/movies/tech/`, trang `/{lang}/library/video/tech-talk/{movieId}`, cùng template video – [DSR-670](https://sutrix.atlassian.net/browse/DSR-670)
 - DSR-606 Q8: `dsrFeatures` / `isBoothLimited` **có** trong DM_movie_dsr (thêm lại 20/10) – [DSR-671](https://sutrix.atlassian.net/browse/DSR-671)

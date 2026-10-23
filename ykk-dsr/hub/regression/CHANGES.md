@@ -3,6 +3,8 @@ Loại: `cf-model` `query` `overlay` `block:<tên>` `global` `template:<tên>` `
 
 | Ngày giờ (VN) | Nguồn | Loại | Thay đổi | Vùng ảnh hưởng (US) | regressed |
 |---|---|---|---|---|---|
+| 2026-10-23 17:25 JST (deploy 08:25Z) | Kohei DSR-670 c.65033 | cf-model, query | Deploy `dev/2026.10.23_2` b33514f: DM_techmovie_dsr + `dsr-techmovie-page` (tech talks `movies/tech/`) | 587 tech-talk, 557 | no → JOB-20261023-11 (hold, FREEZE) |
+| S12 (To Do) | Nakamoto DSR-675 | query, overlay | Query `dsr-product-page` +8 field; `product.html` xuất 22 meta search-index trong head | 586 (+ overlay-seo) | pending |
 | 2026-10-23 14:32 JST | Ngọc DSR-667 c.65003 | fix:DSR-667, block:eco-carousel | Fix dot carousel SP build DEV (QA retest 14:48 JST: chưa đạt – dot 9 bị container cắt) | 590 | no |
 | 2026-10-22 18:07 JST (chờ deploy) | Martin DSR-661 c.64907 | block:related-content, content | Fix 関連コンテンツ booth + author `/ja/digital-showroom/both/item`; "must be deployed to DEV before testing" | booth 608/610, 586 related | pending |
 | S12 (In Progress) | Mayuka DSR-639 | global | Đổi href header `/ja/nav` + footer `/ja/footer` sang URL chốt (DSR-637) | smoke, 552, 609 + mọi spec click header | pending |

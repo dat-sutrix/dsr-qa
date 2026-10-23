@@ -37,3 +37,4 @@ Còn 2 ngày làm việc + 1 đêm data. Việc data còn lại (990586002 Previ
 
 ## Client blockers (không tính vào forecast S12 – xem CLIENT-BLOCKERS.md)
 CB-1 HubSpot form (DSR-655 LOWP) · CB-2 PDF URL protection (DSR-655 Y4) · CB-3 form rules (DSR-655 Y) · CB-4 DSR-611 Q1/Q2 · CB-5 SharePoint (DSR-582) · CB-6 SendGrid (DSR-546/302). 570: các TC form/HubSpot → S13+.
+- 23/10 16:05 (Jira sweep): 670 deploy DEV `dev/2026.10.23_2` 15:25 VN (669 đã deploy 14:21) – vẫn chờ Martin "fixed" → JOB-23-11. 🆕 **DSR-675** (Martin, To Do, S12): 22 meta search-index trên product overlay → scope 586 tăng; chưa giao QA, chưa LATE (theo dõi: nếu [Dev] In Testing sau 23/10 17:00 → LATE HANDOVER, đề xuất S13).

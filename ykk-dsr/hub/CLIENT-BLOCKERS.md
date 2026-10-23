@@ -14,7 +14,7 @@
 | CB-9 | **Ảnh nền eco** (bản bỏ object) – DSR-590, dự kiến cuối 10 | YKK | 590 visual (baseline sẽ đổi khi thay ảnh) | 2026-10-23 | – | Không chặn TC layout; chỉ ghi chú L&F |
 | CB-10 | **Booth CTA modal** (nội dung) – DSR-172 / DSR-661 #9; **TOP hover** – DSR-649 #8 (仕様未決定) | YKK | 608-9.0 (tc Q18), TOP hover | 2026-10-23 | – | 石谷 c.64723 · Martin c.61568 |
 | CB-11 | **Mail nghiệp vụ** – DSR-433 確認事項1 (gửi mail catalog/eBook DL và 3D simulator từ đâu) + DSR-655 L6 (thank-you mail có link tài liệu?) + L3 (legacy form editor) | YKK / LOWP | 433 mail thật (ngoài mail tham chiếu), 570 sau submit | 2026-10-23 | – | Bổ sung ngoài CB-1 (L1/L2/L4/L5/L7) |
-| CB-12 | **DAM path asset / mã ngôn ngữ** – DSR-606 Q2/Q3/Q4/Q5/Q9 `[Giả định: cần khách]` | YKK (qua Quentin) | 227 TC asset path, fixture path CF | 2026-10-23 | – | Q6/Q7/Q8 đã có đáp án ở 669–671 (KNOWN-FACTS 23/10) |
+| CB-12 | **DAM path asset / mã ngôn ngữ** – DSR-606 ~~Q4~~ ✅ (ja/en/cn, Quentin 23/10) · Q2/Q3/Q9 → nội bộ Martin+Kohei (không còn là khách) · Q5/Q6 Quentin kiểm · Q8 khách cập nhật sau | YKK (qua Quentin) | 227 TC asset path, fixture path CF | 2026-10-23 | – | Q6/Q7/Q8 đã có đáp án ở 669–671 (KNOWN-FACTS 23/10) |
 
 ## Tin nhắc mẫu (Dat gửi Quentin, thứ Hai / khi cần)
 ```
