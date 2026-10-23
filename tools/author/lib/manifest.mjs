@@ -51,20 +51,33 @@ export function expandItems(doc) {
         e.from = sub(item.from, lang);
         e.to = sub(item.to, lang);
         e.path = e.to;
+      } else if (item.kind === 'page') {
+        // D15: page props on jcr:content + text props of existing component nodes (node path relative to jcr:content).
+        e.path = sub(item.path, lang);
+        e.props = {};
+        for (const [k, v] of Object.entries(item.props ?? {})) e.props[k] = resolveValue(v, lang).value;
+        e.components = (item.components ?? []).map((c) => ({
+          node: c.node,
+          props: Object.fromEntries(Object.entries(c.props ?? {}).map(([k, v]) => [k, resolveValue(v, lang).value])),
+        }));
       } else {
         e.path = sub(item.path, lang);
         e.fields = {};
         for (const [k, v] of Object.entries(item.fields ?? {})) e.fields[k] = resolveValue(v, lang);
       }
+      if (item.not_before) e.notBefore = String(item.not_before);
       out.push(e);
     }
   });
   return out;
 }
 
+/** verify.urls: "url" (expects 200 on each replicated tier) or { url, page: <status>, live: <status> } (e.g. 404 after unpublish). */
 export function verifyUrls(doc) {
   const langs = [...new Set(doc.items.flatMap((i) => i.lang ?? LANGS))];
   const ids = [...new Set(doc.items.flatMap((i) => [].concat(i.each ?? [])))];
-  const urls = (doc.verify?.urls ?? []).flatMap((u) => (u.includes('{id}') ? ids.map((id) => u.replaceAll('{id}', id)) : [u]));
-  return urls.flatMap((u) => (u.includes('{lang}') ? langs.map((l) => ({ lang: l, url: sub(u, l) })) : [{ lang: '-', url: u }]));
+  const norm = (u) => (typeof u === 'string' ? { url: u } : u);
+  const urls = (doc.verify?.urls ?? []).map(norm)
+    .flatMap((u) => (u.url.includes('{id}') ? ids.map((id) => ({ ...u, url: u.url.replaceAll('{id}', id) })) : [u]));
+  return urls.flatMap((u) => (u.url.includes('{lang}') ? langs.map((l) => ({ ...u, lang: l, url: sub(u.url, l) })) : [{ ...u, lang: '-' }]));
 }

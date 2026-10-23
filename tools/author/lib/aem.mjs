@@ -66,3 +66,22 @@ export async function findByNodeName(name, root = '/content/dam') {
   const r = await aemGet(q);
   return r.status === 200 ? (r.json.hits ?? []).map((h) => h['jcr:path']) : [];
 }
+
+// Page props that identify people – never copied into snapshots or reports.
+const PEOPLE = /By(_\w+)?$/;
+const clean = (j) => Object.fromEntries(Object.entries(j ?? {}).filter(([k, v]) => !PEOPLE.test(k) && (v === null || typeof v !== 'object' || Array.isArray(v))));
+
+/** JCR node (depth 0) → { exists, props } (people fields dropped). */
+export async function getNode(path) {
+  const r = await aemGet(`${path}.json`);
+  return r.status === 200 ? { exists: true, path, props: clean(r.json) } : { exists: false, path, status: r.status };
+}
+
+/** Page (D15) → { exists, props of jcr:content, components{node: props} } for the given component nodes. */
+export async function getPage(path, nodes = []) {
+  const jc = await getNode(`${path}/jcr:content`);
+  if (!jc.exists) return { exists: false, path, kind: 'page' };
+  const components = {};
+  for (const n of nodes) components[n] = await getNode(`${path}/jcr:content/${n}`);
+  return { exists: true, path, kind: 'page', props: jc.props, components };
+}

@@ -1,13 +1,14 @@
 // apply: build an ordered request plan from lint state; execute ONLY when every gate passes.
+// Order: renames → CF create/patch → page props/component text (D15) → unpublish (D14) → publish/preview (D10).
 // Gates: AUTHOR_WRITE_ENABLED=1 AND --apply AND Asia/Saigon Mon–Fri 08:00–18:00 AND lint has no FAIL.
 import { appendFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { getModels, getFragment } from './aem.mjs';
+import { getModels, getFragment, getNode } from './aem.mjs';
 import { aemWrite, csrfToken } from './http.mjs';
-import { assertWritablePath, assertRenamable, inWriteWindow, nodeName, parentPath } from './guard.mjs';
+import { assertWritablePath, assertRenamable, assertSlingParams, componentPath, inWriteWindow, nodeName, parentPath, PAGE_DATE_PROPS } from './guard.mjs';
 
 const toApi = (p) => `/api/assets${p.replace(/^\/content\/dam/, '')}`;
-const ORDER = { rename: 0, 'content-cf': 1, 'dsr-cf': 2 };
+const ORDER = { rename: 0, 'content-cf': 1, 'dsr-cf': 2, page: 3 };
 const asArray = (v) => [].concat(v ?? []);
 
 /** Build the plan. `lintResult` = output of lint(); no network writes. */
@@ -29,6 +30,7 @@ export async function buildPlan(lintResult) {
       });
       continue;
     }
+    if (e.kind === 'page') { plan.push(...pageOps(e, live.get(e.path))); continue; }
     const model = models[e.model];
     const cur = live.get(e.path) ?? (await getFragment(e.path));
     const base = cur.exists ? cur : renamed.has(e.path) ? live.get(renamed.get(e.path)) : null;
@@ -64,20 +66,91 @@ export async function buildPlan(lintResult) {
       });
     }
   }
-  // Replication (after all content writes): per tier, content CFs first, then DSR CFs (D10) – one request each.
-  // References are never published implicitly (filterReferencesByStatus: []); every CF carries its own replicate.
+  plan.push(...replicationOps(sorted));
+  return plan;
+}
+
+const FORM = { 'Content-Type': 'application/x-www-form-urlencoded', 'CSRF-Token': '<runtime>' };
+
+/**
+ * Replication requests (after all content writes), pure – no network.
+ * 1. Unpublish (D14, Deactivate via /bin/replicate): publish tier first, then preview; per tier DSR CFs, content CFs, pages.
+ * 2. Activate per tier preview → publish: content CFs, then DSR CFs (D10), then pages. CFs via CF OpenAPI publish
+ *    (references never published implicitly), pages via /bin/replicate.
+ */
+export function replicationOps(entries) {
+  const ops = [];
+  const pathsFor = (kind, value) => entries.filter((e) => e.kind === kind && e.replicate.includes(value)).map((e) => e.path);
+  for (const tier of ['publish', 'preview']) {
+    for (const kind of ['dsr-cf', 'content-cf', 'page']) {
+      const paths = pathsFor(kind, `unpublish-${tier}`);
+      if (paths.length) ops.push(binReplicate('Deactivate', tier, kind, paths));
+    }
+  }
   for (const tier of ['preview', 'publish']) {
-    for (const kind of ['content-cf', 'dsr-cf']) {
-      const paths = sorted.filter((e) => e.kind === kind && e.replicate.includes(tier)).map((e) => e.path);
-      if (paths.length) plan.push({
-        op: `replicate:${tier} ${kind}`, method: 'POST', path: '/adobe/sites/cf/fragments/publish', target: paths.join(', '),
+    for (const kind of ['content-cf', 'dsr-cf', 'page']) {
+      const paths = pathsFor(kind, tier);
+      if (!paths.length) continue;
+      if (kind === 'page') { ops.push(binReplicate('Activate', tier, kind, paths)); continue; }
+      ops.push({
+        op: `replicate:${tier} ${kind}`, kind, paths, method: 'POST', path: '/adobe/sites/cf/fragments/publish', target: paths.join(', '),
         headers: { 'Content-Type': 'application/json', 'CSRF-Token': '<runtime>' },
         body: { paths, agentId: tier, filterReferencesByStatus: [], workflowTitle: `qa-author ${tier} ${kind}` },
         bodyKeys: ['paths', 'agentId', 'filterReferencesByStatus', 'workflowTitle'],
       });
     }
   }
-  return plan;
+  return ops;
+}
+
+function binReplicate(cmd, tier, kind, paths) {
+  return {
+    op: `${cmd === 'Deactivate' ? 'unpublish' : 'replicate'}:${tier} ${kind}`, kind, paths, method: 'POST', path: '/bin/replicate', target: paths.join(', '),
+    headers: FORM, form: [['_charset_', 'utf-8'], ['cmd', cmd], ['agentId', tier], ...paths.map((p) => ['path', p])],
+    bodyKeys: ['cmd', 'agentId', 'path'],
+  };
+}
+
+/** Live page prop → comparable value (dates as YYYY-MM-DD, multi as array). */
+export function normPageValue(name, v) {
+  if (v === undefined || v === null) return null;
+  if (PAGE_DATE_PROPS.has(name)) { const t = Date.parse(v); return Number.isNaN(t) ? String(v) : new Date(t).toISOString().slice(0, 10); }
+  return v;
+}
+// "" = absent (select default, e.g. robots "Indexed (default)" value "") → no write when the property is not set.
+export const samePageValue = (want, have) => JSON.stringify(want) === JSON.stringify(have) || (want === '' && have === null);
+
+/** Sling POST form for a set of property changes. Dates → ISO + @TypeHint=Date, arrays → repeated + @TypeHint=String[]. */
+export function slingForm(changes) {
+  const form = [['_charset_', 'utf-8']];
+  for (const { field, after } of changes) {
+    if (Array.isArray(after)) { for (const v of after) form.push([field, v]); form.push([`${field}@TypeHint`, 'String[]']); }
+    else if (PAGE_DATE_PROPS.has(field)) { form.push([field, `${after}T00:00:00.000Z`]); form.push([`${field}@TypeHint`, 'Date']); }
+    else { form.push([field, after]); form.push([`${field}@TypeHint`, 'String']); }
+  }
+  return form;
+}
+
+/** D15 page item → Sling POST per node with only the changed props (pure, from lint live state). */
+export function pageOps(e, cur) {
+  const ops = [];
+  const one = (target, node, wanted, have) => {
+    const changes = Object.entries(wanted)
+      .filter(([k, v]) => !samePageValue(v, normPageValue(k, have?.[k])))
+      .map(([k, v]) => ({ field: k, before: have?.[k] ?? null, after: v }));
+    if (!changes.length) return ops.push({ skip: `page ${e.lang}: ${node ?? 'jcr:content'} no change`, path: target });
+    ops.push({
+      op: node ? 'component-text' : 'page-props', lang: e.lang, page: e.path, node, method: 'POST', path: target, target,
+      headers: FORM, form: slingForm(changes), bodyKeys: changes.map((c) => c.field), changes,
+    });
+  };
+  if (!cur?.exists) return [{ skip: `page ${e.lang}: page missing (no page create, D15)`, path: e.path }];
+  if (Object.keys(e.props).length) one(`${e.path}/jcr:content`, null, e.props, cur.props);
+  for (const c of e.components) {
+    if (!cur.components?.[c.node]?.exists) { ops.push({ skip: `page ${e.lang}: component ${c.node} missing (no add, D15)`, path: e.path }); continue; }
+    one(componentPath(e.path, c.node), c.node, c.props, cur.components[c.node].props);
+  }
+  return ops;
 }
 
 export function gates({ applyFlag, lintFails }) {
@@ -101,9 +174,9 @@ export function planTable(plan) {
 /** Snapshot of every target (before.json). No people/user fields stored. */
 export function snapshot(lintResult) {
   const out = {};
-  for (const [p, s] of lintResult.live) out[p] = s.exists
-    ? { exists: true, id: s.id, model: s.model, etag: s.etag, status: s.status, previewStatus: s.previewStatus, fields: s.fields }
-    : { exists: false };
+  for (const [p, s] of lintResult.live) out[p] = !s.exists ? { exists: false }
+    : s.kind === 'page' ? { exists: true, kind: 'page', props: s.props, components: Object.fromEntries(Object.entries(s.components).map(([n, c]) => [n, c.exists ? c.props : null])) }
+      : { exists: true, id: s.id, model: s.model, etag: s.etag, status: s.status, previewStatus: s.previewStatus, fields: s.fields };
   return out;
 }
 
@@ -117,7 +190,13 @@ export async function execute(plan, { outDir, maxWrites = 40 }) {
   const results = [];
   for (const p of writes) {
     if (p.op === 'rename') assertRenamable(p.target, `/content/dam${p.headers['X-Destination'].replace(/^\/api\/assets/, '')}`);
-    else for (const t of p.target.split(', ')) assertWritablePath(t);
+    else if (p.paths) for (const t of p.paths) assertWritablePath(t, p.kind === 'page' ? 'page' : 'cf');
+    else if (p.page) {
+      // D15: Sling POST would create missing nodes → target must exist right now; params allowlisted.
+      if (p.target !== (p.node ? componentPath(p.page, p.node) : `${p.page}/jcr:content`)) throw new Error(`page target mismatch: ${p.target}`);
+      assertSlingParams(p.target, new URLSearchParams(p.form));
+      if (!(await getNode(p.target)).exists) throw new Error(`page node vanished: ${p.target}`);
+    } else assertWritablePath(p.target, 'cf');
     const headers = { ...p.headers, 'CSRF-Token': csrf };
     if (p.op === 'patch') {
       const fresh = await getFragment(p.target); // re-read for current id + ETag
@@ -130,7 +209,8 @@ export async function execute(plan, { outDir, maxWrites = 40 }) {
         return { op: 'replace', path: `/fields/${i}/values`, value: c.after };
       });
     }
-    const r = await aemWrite(p.method, p.path, { headers, body: p.body ? JSON.stringify(p.body) : undefined });
+    const body = p.form ? new URLSearchParams(p.form).toString() : p.body ? JSON.stringify(p.body) : undefined;
+    const r = await aemWrite(p.method, p.path, { headers, body });
     const line = { at: new Date().toISOString(), op: p.op, method: p.method, path: p.path, target: p.target, status: r.status, changes: p.changes ?? null };
     appendFileSync(log, `${JSON.stringify(line)}\n`);
     results.push(line);

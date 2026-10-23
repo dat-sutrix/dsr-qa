@@ -1,0 +1,43 @@
+# TD-587-PHASE2 – DSR-587 TD-587-08 + TD-587-10 phase 2 (D14 unpublish) – JOB-20261023-05 (dry-run, GET only)
+# Source: tc-out/DSR-587.spec.json TD-587-08 "qa587-unavail: commune unpublished, CF related republished" (TC 8.0) and
+#         TD-587-10 "…/movies/standard/qa587-removed (publish then Unpublish)" (TC 10.0: 404 on .aem.page AND .aem.live).
+# Phase 1 = TD-587-NEG applied by JOB-20261023-03 (all four CFs Activate preview 02:28:59Z / publish 02:29:01Z).
+# Field values below are the live values (no change) – stated so lint/verify check the right nodes.
+# Order (apply): unpublish publish-tier DSR qa587-removed → unpublish publish-tier commune qa587-unavail →
+#   unpublish preview-tier DSR qa587-removed → republish DSR qa587-unavail (publish).
+id: TD-587-PHASE2
+us: DSR-587
+max_writes: 6
+items:
+  # TD-587-08 step 2a: unpublish the commune (content) CF on the publish tier only (job: "on publish"; preview kept)
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-08 en only (TestData ja/cn column = —)"
+    path: /content/dam/common/{lang}/movies/qa587-unavail
+    fields: { movieId: qa587-unavail }
+    replicate: [unpublish-publish]
+  # TD-587-08 step 2b: republish the DSR CF so the overlay page is regenerated without its content CF
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-08 en only (TestData ja/cn column = —)"
+    path: /content/dam/dsr/{lang}/movies/standard/qa587-unavail
+    fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/qa587-unavail)" }
+    replicate: [publish]
+  # TD-587-10 step 2: unpublish the DSR CF on both tiers, ≥ 10 min after its publish (JOB-20261023-03: 02:29:01Z)
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "TD-587-10 en only (TestData ja/cn column = —)"
+    path: /content/dam/dsr/{lang}/movies/standard/qa587-removed
+    fields: { isActive: true }
+    replicate: [unpublish-publish, unpublish-preview]
+    not_before: "2026-10-23T02:39:01Z"
+verify:
+  urls:
+    - "/en/library/video/qa587-unavail"     # 200; TC 8.0 checks the single 'unavailable' row + noindex (agent test, not L3)
+    - { url: "/en/library/video/qa587-removed", page: 404, live: 404 }

@@ -1,0 +1,28 @@
+# TD-529-META – DSR-529 qa529-01/02 category + robots (fails 012/014/016 of JOB-20261022-02) – JOB-20261023-05 (dry-run, GET only)
+# Source: docs/DSR-529/baseline-BL-v1.md TestData TD-529-01 (robots OFF ja+en, "categories") / TD-529-02 (robots ON, ja only),
+#         tc-out/DSR-529.spec.json TC 012/014 (meta category only when authored, A13), JOB-20261022-02 summary.
+# Live 23/10: qa529-01 ja robots absent (= OFF ✓), en robots "noindex, nofollow" (✗); category absent on both;
+#   qa529-02 ja robots absent (✗ TD = ON); en qa529-02 does not exist (TD-529-02 is ja only → no item).
+# Page model (component-models.json article-detail-metadata): robots select "" = Indexed (default) | "noindex, nofollow";
+#   category = single select news | product | update | event | others.
+# [Giả định] category = "product" (both pages carry tag site:product/bio-based). TestData says "categories = 2 tags", which are
+#   authored in `tags` already (2 tags ja+en); the page field `category` is a single select, so TC 012 "2 tag IDs" cannot be met
+#   by data → TC 012/014 expected value needs Claude review (suspect test), see results/JOB-20261023-05/summary.md.
+id: TD-529-META
+us: DSR-529
+max_writes: 6
+items:
+  - kind: page
+    lang: [ja, en]
+    path: /content/sites/digital-showroom/master/{lang}/library/article/stories/qa529-01
+    props: { category: product, robots: "" }   # robots "" = OFF (ja: no write, already absent)
+    replicate: [publish]
+  - kind: page
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: "TD-529-02 ja only (TestData en/cn column = —)"
+    path: /content/sites/digital-showroom/master/{lang}/library/article/stories/qa529-02
+    props: { robots: "noindex, nofollow" }
+    replicate: [publish]
+verify:
+  urls: ["/master/{lang}/library/article/stories/qa529-01", "/master/ja/library/article/stories/qa529-02"]   # pages are served under /master/ on EDS DEV

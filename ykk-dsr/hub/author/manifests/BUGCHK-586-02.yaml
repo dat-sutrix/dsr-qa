@@ -1,0 +1,29 @@
+# BUGCHK-586-02 – DSR-586 TD-586-02: DSR CF 990586002 = Preview only (must NOT be on .live) – JOB-20261023-05 (dry-run, GET only)
+# Source: tc-out/DSR-586.spec.json TD-586-02 ("Preview-only CF related … (+ commune 990586002 live)", values "same as 01" / 990586002 / QA586 product B / QA586-B)
+#         + Night Pack 22/10 BUGCHK 1 (DSR CF → Preview, no Publish). Paths allowed by D13 (exact numeric allowlist).
+# Live 23/10 02:4xZ: content CF published (publish 21/10 14:56Z, no preview); DSR CF publish action "Activate" with no timestamp,
+#   no preview; .aem.page + .aem.live /ja/products/990586002 = 404.
+# Content CF: field values unchanged (stated for lint/verify only); previewed so the preview tier sees it before the DSR CF (D10).
+#   It stays published on .live (TD-586-02: "commune live"). No unpublish of the DSR CF: .live is already 404.
+id: BUGCHK-586-02
+us: DSR-586
+max_writes: 4
+items:
+  - kind: content-cf
+    model: DM_product
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: "TD-586-02 ja only (TestData en/cn column = —)"
+    path: /content/dam/common/{lang}/products/990586002
+    fields: { productId: "990586002", productCode: QA586-B, productName: QA586 product B }
+    replicate: [preview]
+  - kind: dsr-cf
+    model: DM_product_related
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: "TD-586-02 ja only (TestData en/cn column = —)"
+    path: /content/dam/dsr/{lang}/products/990586002
+    fields: { isActive: true, product: "ref(/content/dam/common/{lang}/products/990586002)" }
+    replicate: [preview]          # TD-586-02 = preview only
+verify:
+  urls: [{ url: "/ja/products/990586002", page: 200, live: 404 }]

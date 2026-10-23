@@ -1,0 +1,202 @@
+{
+  "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01": {
+    "exists": true,
+    "kind": "page",
+    "props": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:referenceable",
+        "mix:versionable",
+        "cq:ReplicationStatus2"
+      ],
+      "jcr:title": "QA566 ニュース詳細テスト",
+      "cq:isDelivered": false,
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "716f56eb-c1fd-4b67-89b0-0ceb178a4cad",
+      "cq:template": "/conf/digital-showroom/settings/wcm/templates/news-detail",
+      "cq:lastReplicationAction_publish": "Activate",
+      "jcr:predecessors": [
+        "ea2dd36c-d411-48e7-bec9-f308fe4cf579"
+      ],
+      "jcr:created": "Thu Oct 22 2026 13:33:00 GMT+0000",
+      "cq:lastReplicated": "Thu Oct 22 2026 13:43:26 GMT+0000",
+      "cq:lastModified": "Thu Oct 22 2026 13:43:22 GMT+0000",
+      "tags": [
+        "site:product/bio-based",
+        "site:product/zipper-chain-type"
+      ],
+      "category": "news",
+      "modelFields": [
+        "navtitle@text",
+        "robots@select",
+        "template@select",
+        "keywords@text",
+        "publicationdate@date-time",
+        "category@select",
+        "tags@aem-tag",
+        "caseitem@text",
+        "caseuse@text",
+        "caseissue@text",
+        "caseproduct@text",
+        "og:title@text",
+        "og:description@text",
+        "og:image@reference",
+        "showheader@boolean",
+        "showbreadcrumb@boolean",
+        "showfooter@boolean"
+      ],
+      "jcr:description": "QA566 description ja",
+      "jcr:baseVersion": "ea2dd36c-d411-48e7-bec9-f308fe4cf579",
+      "jcr:isCheckedOut": true,
+      "showbreadcrumb": true,
+      "jcr:lastModified": "Thu Oct 22 2026 13:43:22 GMT+0000",
+      "jcr:uuid": "b0165e98-0616-4a85-b60b-f250d162e8b7",
+      "sling:resourceType": "core/franklin/components/page/v1/page",
+      "showfooter": true,
+      "showheader": true,
+      "cq:lastReplicated_publish": "Thu Oct 22 2026 13:43:26 GMT+0000"
+    },
+    "components": {
+      "root/section/title": {
+        "jcr:primaryType": "nt:unstructured",
+        "name": "Title",
+        "level": "h2",
+        "model": "title",
+        "title": "<p>タイトルが入ります。タイトルが入ります。</p>",
+        "sling:resourceType": "core/franklin/components/block/v1/block"
+      }
+    }
+  },
+  "/content/sites/digital-showroom/master/en/test-space/qa566-news-01": {
+    "exists": true,
+    "kind": "page",
+    "props": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:referenceable",
+        "mix:versionable",
+        "cq:ReplicationStatus2"
+      ],
+      "jcr:title": "QA566 News detail test",
+      "cq:isDelivered": false,
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "24d332f9-3f36-4e21-a4ab-16c501fd301d",
+      "cq:template": "/conf/digital-showroom/settings/wcm/templates/news-detail",
+      "cq:lastReplicationAction_publish": "Activate",
+      "jcr:predecessors": [
+        "4305d586-7952-4851-9b2a-d10b85a148c2"
+      ],
+      "jcr:created": "Thu Oct 22 2026 14:00:31 GMT+0000",
+      "cq:lastReplicated": "Thu Oct 22 2026 14:28:54 GMT+0000",
+      "cq:lastModified": "Thu Oct 22 2026 14:28:44 GMT+0000",
+      "tags": [
+        "site:product/bio-based",
+        "site:product/zipper-chain-type"
+      ],
+      "category": "news",
+      "modelFields": [
+        "navtitle@text",
+        "robots@select",
+        "template@select",
+        "keywords@text",
+        "publicationdate@date-time",
+        "category@select",
+        "tags@aem-tag",
+        "caseitem@text",
+        "caseuse@text",
+        "caseissue@text",
+        "caseproduct@text",
+        "og:title@text",
+        "og:description@text",
+        "og:image@reference",
+        "showheader@boolean",
+        "showbreadcrumb@boolean",
+        "showfooter@boolean"
+      ],
+      "jcr:description": "QA566 description en",
+      "jcr:baseVersion": "4305d586-7952-4851-9b2a-d10b85a148c2",
+      "jcr:isCheckedOut": true,
+      "showbreadcrumb": true,
+      "jcr:lastModified": "Thu Oct 22 2026 14:28:44 GMT+0000",
+      "jcr:uuid": "e05db4f6-8f99-43a7-8dbf-a1dc273d2e55",
+      "sling:resourceType": "core/franklin/components/page/v1/page",
+      "showfooter": true,
+      "showheader": true,
+      "cq:lastReplicated_publish": "Thu Oct 22 2026 14:28:54 GMT+0000"
+    },
+    "components": {
+      "root/section/title": {
+        "jcr:primaryType": "nt:unstructured",
+        "name": "Title",
+        "level": "h2",
+        "model": "title",
+        "title": "<p>タイトルが入ります。タイトルが入ります。</p>",
+        "sling:resourceType": "core/franklin/components/block/v1/block"
+      }
+    }
+  },
+  "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02": {
+    "exists": true,
+    "kind": "page",
+    "props": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:referenceable",
+        "mix:versionable",
+        "cq:ReplicationStatus2"
+      ],
+      "jcr:title": "長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ",
+      "cq:isDelivered": false,
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "07384847-ca7f-4ff4-adf3-c729e7e94d06",
+      "cq:template": "/conf/digital-showroom/settings/wcm/templates/news-detail",
+      "cq:lastReplicationAction_publish": "Activate",
+      "jcr:predecessors": [
+        "e504acd4-0428-4039-aef2-c089c536137b"
+      ],
+      "jcr:created": "Thu Oct 22 2026 13:44:50 GMT+0000",
+      "cq:lastReplicated": "Thu Oct 22 2026 13:51:44 GMT+0000",
+      "cq:lastModified": "Thu Oct 22 2026 13:51:10 GMT+0000",
+      "category": "news",
+      "modelFields": [
+        "navtitle@text",
+        "robots@select",
+        "template@select",
+        "keywords@text",
+        "publicationdate@date-time",
+        "category@select",
+        "tags@aem-tag",
+        "caseitem@text",
+        "caseuse@text",
+        "caseissue@text",
+        "caseproduct@text",
+        "og:title@text",
+        "og:description@text",
+        "og:image@reference",
+        "showheader@boolean",
+        "showbreadcrumb@boolean",
+        "showfooter@boolean"
+      ],
+      "jcr:description": "QA566 description 02",
+      "jcr:baseVersion": "e504acd4-0428-4039-aef2-c089c536137b",
+      "jcr:isCheckedOut": true,
+      "showbreadcrumb": true,
+      "jcr:lastModified": "Thu Oct 22 2026 13:50:27 GMT+0000",
+      "jcr:uuid": "2de30f15-9b7b-45b0-a4cc-07ac2b99f833",
+      "sling:resourceType": "core/franklin/components/page/v1/page",
+      "showfooter": true,
+      "showheader": true,
+      "cq:lastReplicated_publish": "Thu Oct 22 2026 13:51:44 GMT+0000"
+    },
+    "components": {
+      "root/section/title": {
+        "jcr:primaryType": "nt:unstructured",
+        "name": "Title",
+        "level": "h2",
+        "model": "title",
+        "title": "<p>タイトルが入ります。タイトルが入ります。</p>",
+        "sling:resourceType": "core/franklin/components/block/v1/block"
+      }
+    }
+  }
+}

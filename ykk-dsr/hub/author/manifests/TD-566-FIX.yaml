@@ -1,0 +1,32 @@
+# TD-566-FIX – DSR-566 qa566-news-01/02 data fixes (JOB-20261016-08 findings) – JOB-20261023-05 (dry-run, GET only)
+# Source: docs/DSR-566/baseline-BL-v1.md TestData TD-566-01/02, PLAN-sprint12 Night Pack 22/10 (inline values), JOB-20261016-08 summary.
+# Live 23/10: Title component on all 3 pages = template placeholder "<p>タイトルが入ります。タイトルが入ります。</p>" (en too);
+#   page props jcr:title / category news / tags (2) / description = TD ✓; publicationdate not set (date only in Article Meta).
+#   en qa566-news-02 does not exist (TD-566-02 ja only → no item; D15 never creates pages).
+# Title HTML keeps the live wrapper format "<p>…</p>" of the placeholder ([Giả định]).
+# NOT fixed here (see summary): Title level h2 vs single h1 (template / component config, not text), empty Image + Button nodes on
+#   qa566-news-02 (component removal = outside D15), My List / share (classes no-mylist no-share; not in TD-566-01),
+#   date raw ISO (DSR-672, product), Back to list (template).
+id: TD-566-FIX
+us: DSR-566
+max_writes: 8
+items:
+  - kind: page
+    lang: [ja, en]
+    path: /content/sites/digital-showroom/master/{lang}/test-space/qa566-news-01
+    props: { publicationdate: "2026-10-01" }
+    components:
+      - node: root/section/title
+        props: { title: { ja: "<p>QA566 ニュース詳細テスト</p>", en: "<p>QA566 News detail test</p>" } }
+    replicate: [publish]
+  - kind: page
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: "TD-566-02 ja only (TestData en/cn column = —)"
+    path: /content/sites/digital-showroom/master/{lang}/test-space/qa566-news-02
+    components:
+      - node: root/section/title
+        props: { title: "<p>長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ</p>" }   # 100 chars = live jcr:title
+    replicate: [publish]
+verify:
+  urls: ["/master/{lang}/test-space/qa566-news-01", "/master/ja/test-space/qa566-news-02"]   # pages are served under /master/ on EDS DEV

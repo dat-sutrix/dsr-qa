@@ -1,0 +1,156 @@
+# TD-190-DSR – DSR-557 NEW/UPDATE label catalogs (TC 018/019/020) in the BL-OVL-1 layout – JOB-20261023-05 (dry-run, GET only)
+# Why: the 8 QA190 NEW/UPD/BOTH catalogs exist only as old content CFs in /content/dam/ykk/common/product-cf/test/ (seeded 15/10,
+#   language-neutral, dates relative to 15/10). The catalog list reads DSR CFs /content/dam/dsr/{lang}/catalogs/ (Martin 22/10,
+#   fixtures/dsr-557.ts) → no DSR CF = "Blocked – no DEV data" for 018–020 since 20/10 (IDLE-35/39, JOB-23-04).
+# Decision: create content CF /content/dam/common/{lang}/catalogs/{id} + DSR CF /content/dam/dsr/{lang}/catalogs/{id} (ja+en), like the
+#   4 core qa190 catalogs (TD-190-CAT-CORE). Old CFs outside the guard are not touched and not referenced.
+# Source: JOB-20261016-02 data table (titles, types, date offsets: today / −10 / −11 days; BOTH = pub −1 + upd today; NOUPD = pub −1,
+#   no updateDate; UPD publishDate 2026-09-15) + DSR-611 defaults (Q3 open → label window 0–10 days inclusive, "today" = Asia/Tokyo,
+#   fixtures/dsr-557.ts labelDays = 10). Other fields = live values of the old CFs (description, thumbnail, pdfAsset, requiresForm false, sortOrder 0).
+# DATES ARE FOR AN APPLY + RUN ON 2026-10-23 (JST). Applied/run on another day → regenerate the dates (today, −10, −11, −1).
+# [Giả định] catalogCategories = site:product/material/aluminium (old CFs hold "properties:", not a usable tag; value taken from qa190-cat-pdf).
+id: TD-190-DSR
+us: DSR-557
+max_writes: 40
+items:
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-new-0
+    fields:
+      catalogId: qa190-cat-new-0
+      catalogTitle: "QA190 NEW 0"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-10-23"
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-new-10
+    fields:
+      catalogId: qa190-cat-new-10
+      catalogTitle: "QA190 NEW 10"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-10-13"
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-new-11
+    fields:
+      catalogId: qa190-cat-new-11
+      catalogTitle: "QA190 NEW 11"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-10-12"
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-upd-0
+    fields:
+      catalogId: qa190-cat-upd-0
+      catalogTitle: "QA190 UPD 0"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-09-15"
+      updateDate: "2026-10-23"
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-upd-10
+    fields:
+      catalogId: qa190-cat-upd-10
+      catalogTitle: "QA190 UPD 10"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-09-15"
+      updateDate: "2026-10-13"
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-upd-11
+    fields:
+      catalogId: qa190-cat-upd-11
+      catalogTitle: "QA190 UPD 11"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-09-15"
+      updateDate: "2026-10-12"
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-both
+    fields:
+      catalogId: qa190-cat-both
+      catalogTitle: "QA190 BOTH"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-10-22"
+      updateDate: "2026-10-23"
+    replicate: [preview, publish]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [ja, en]
+    path: /content/dam/common/{lang}/catalogs/qa190-cat-noupd
+    fields:
+      catalogId: qa190-cat-noupd
+      catalogTitle: "qa190-cat-noupd"
+      description: "catelog description"
+      catalogCategories: ["site:product/material/aluminium"]
+      thumbnail: "ref(/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png)"
+      catalogType: pdf
+      pdfAsset: "ref(/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf)"
+      requiresForm: false
+      sortOrder: 0
+      publishDate: "2026-10-22"
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: DM_catalog_related
+    lang: [ja, en]
+    path: /content/dam/dsr/{lang}/catalogs/{id}
+    each: [qa190-cat-new-0, qa190-cat-new-10, qa190-cat-new-11, qa190-cat-upd-0, qa190-cat-upd-10, qa190-cat-upd-11, qa190-cat-both, qa190-cat-noupd]
+    fields: { catalogLabel: "{id}", isActive: true, catalog: "ref(/content/dam/common/{lang}/catalogs/{id})" }
+    replicate: [preview, publish]
+verify:
+  urls: ["/{lang}/library/catalog/{id}"]

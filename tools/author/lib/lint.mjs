@@ -1,8 +1,8 @@
 // L0 lint (before any write): AUTHOR-AGENT.md §5. Reads models + live state (GET only).
-import { getModels, getFragment, idField, flagField } from './aem.mjs';
+import { getModels, getFragment, getPage, idField, flagField } from './aem.mjs';
 import { aemGet } from './http.mjs';
 import { expandItems, LANGS } from './manifest.mjs';
-import { isWritablePath, isRenameSourcePath, NODE_NAME, nodeName, parentPath } from './guard.mjs';
+import { isWritablePath, isRenameSourcePath, isAllowedNodeName, nodeName, parentPath, PAGE_PROPS, PAGE_DATE_PROPS, COMPONENT_PROPS, COMPONENT_NODE, REPLICATE_VALUES } from './guard.mjs';
 
 const REF_TYPES = new Set(['content-fragment', 'content-reference']);
 
@@ -44,9 +44,22 @@ export async function lint(doc) {
     }
 
     if (e.kind === 'rename') add(e, 'path-guard:rename-source', isRenameSourcePath(e.from), 'allowed qa* or legacy qa-* path (D8)', e.from);
-    add(e, 'path-guard', isWritablePath(e.path), 'allowed qa* path', e.path);
+    add(e, 'path-guard', isWritablePath(e.path, e.kind === 'page' ? 'page' : 'cf'), e.kind === 'page' ? 'QA page stories/qa* or test-space/qa* (D15)' : 'allowed qa* CF path or D13 numeric product', e.path);
     const name = nodeName(e.path);
-    add(e, 'node-name', NODE_NAME.test(name), '^qa[0-9a-z][0-9a-z-]*$ (no leading "qa-")', name);
+    add(e, 'node-name', isAllowedNodeName(e.path), '^qa[0-9a-z][0-9a-z-]*$ (no leading "qa-") or D13 exact path', name);
+
+    // Replication values (D14: unpublish-<tier> = Deactivate); one direction per tier
+    const badRep = e.replicate.filter((r) => !REPLICATE_VALUES.has(r));
+    const both = ['preview', 'publish'].filter((t) => e.replicate.includes(t) && e.replicate.includes(`unpublish-${t}`));
+    if (e.replicate.length || badRep.length) add(e, 'replicate-values', badRep.length === 0 && both.length === 0, [...REPLICATE_VALUES].join(' | ') + ' (one per tier)', e.replicate.join(', '));
+    if (e.kind === 'rename' && e.replicate.length) add(e, 'replicate-on-rename', false, 'no replicate on rename items', e.replicate.join(', '));
+    // Earliest apply time (e.g. TD-587-10: unpublish ≥ 10 min after publish)
+    if (e.notBefore) {
+      const t = Date.parse(e.notBefore);
+      add(e, 'not-before', !Number.isNaN(t) && Date.now() >= t, `now ≥ ${e.notBefore}`, Number.isNaN(t) ? 'invalid ISO time' : new Date().toISOString());
+    }
+
+    if (e.kind === 'page') { await lintPage(e, add, live); continue; }
 
     if (e.kind === 'rename') {
       const from = await getFragment(e.from);
@@ -77,6 +90,7 @@ export async function lint(doc) {
       add(e, 'target-exists', true, e.path, action);
     }
     if (base?.exists) add(e, 'live-model', base.model === e.model, e.model, base.model);
+    if (e.replicate.some((r) => r.startsWith('unpublish-'))) add(e, 'unpublish-target-exists', !!cur.exists, `existing CF ${e.path}`, cur.exists ? 'exists' : 'missing');
 
     // Field names + types
     const byName = Object.fromEntries(model.fields.map((f) => [f.name, f]));
@@ -121,4 +135,33 @@ export async function lint(doc) {
     }
   }
   return { checks, entries, live };
+}
+
+const isDate = (v) => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v);
+const isStrings = (v) => typeof v === 'string' || (Array.isArray(v) && v.every((x) => typeof x === 'string'));
+
+/** D15 page item: page must exist; only allowlisted page props; components must be existing block nodes, text props only. */
+async function lintPage(e, add, live) {
+  const nodes = e.components.map((c) => c.node);
+  const cur = await getPage(e.path, nodes.filter((n) => COMPONENT_NODE.test(n)));
+  live.set(e.path, cur);
+  add(e, 'page-exists', cur.exists, `${e.path}/jcr:content (no page create, D15)`, cur.exists ? 'exists' : 'missing');
+  if (!Object.keys(e.props).length && !e.components.length && !e.replicate.length) add(e, 'page-has-ops', false, 'props, components or replicate', 'nothing to do');
+  for (const [k, v] of Object.entries(e.props)) {
+    add(e, `page-prop:${k}`, PAGE_PROPS.has(k), `allowlisted page property (D15)`, k);
+    const okType = PAGE_DATE_PROPS.has(k) ? isDate(v) : isStrings(v);
+    add(e, `page-prop-type:${k}`, okType, PAGE_DATE_PROPS.has(k) ? 'YYYY-MM-DD' : 'string or string[]', v);
+  }
+  for (const c of e.components) {
+    const okNode = COMPONENT_NODE.test(c.node);
+    add(e, `component-node:${c.node}`, okNode, 'root/<…> under jcr:content', c.node);
+    if (!okNode || !cur.exists) continue;
+    const n = cur.components[c.node];
+    const isBlock = !!n?.exists && /^core\/franklin\/components\/block\//.test(n.props['sling:resourceType'] ?? '');
+    add(e, `component-exists:${c.node}`, isBlock, 'existing block component (no add/remove/move, D15)', n?.exists ? n.props['sling:resourceType'] : `HTTP ${n?.status}`);
+    for (const [k, v] of Object.entries(c.props)) {
+      add(e, `component-prop:${c.node}.${k}`, COMPONENT_PROPS.has(k) && typeof v === 'string', `${[...COMPONENT_PROPS].join('|')} (string)`, `${k}=${JSON.stringify(v)}`);
+      if (isBlock && COMPONENT_PROPS.has(k)) add(e, `component-prop-live:${c.node}.${k}`, k in n.props, 'property exists on the live node', k in n.props ? n.props[k] : '(absent – would be added)', true);
+    }
+  }
 }

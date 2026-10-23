@@ -18,6 +18,9 @@
 | D10 | Item content-cf có `replicate:` riêng (mặc định `[preview, publish]`); thứ tự publish mỗi tier: content CF trước, rồi DSR CF. Không dựa vào publish reference | Trang DSR sinh ra phải thấy content CF đã ở tier đó |
 | D12 | (22/10) Sửa field **content CF** → phải republish **DSR CF** tham chiếu nó ở cùng tier (trang overlay chỉ sinh lại khi DSR CF publish) – lint `dsr-republish-after-content-change` (TODO) | JOB-10: requiresForm đổi trên content CF nhưng trang `-form` vẫn cũ |
 | D11 | `agentId: preview` và MOVE qua Assets HTTP API **chưa xác minh** tới P1b (lần ghi thử đầu) – vẫn sau cổng apply | Chưa từng gửi request ghi |
+| D13 | (Claude 23/10) **Allowlist path chính xác (KHÔNG phải pattern)** cho node sản phẩm số do QA tạo: `/content/dam/{common,dsr}/{ja,en}/products/9905860{01..11}` (tạo cho DSR-586). Không node số nào khác. Không rename | Data DSR-586 (productId số) không theo tên `qa*` |
+| D14 | (Claude 23/10) **Unpublish** = `replicate: [unpublish-preview\|unpublish-publish]` (Deactivate) chỉ cho path trong guard; không bao giờ xóa | TD-587-08/10 phase 2 cần gỡ khỏi tier |
+| D15 | (Claude 23/10) **Trang test QA**: guard thêm `^/content/sites/digital-showroom/master/(ja\|en)/test-space/qa[0-9a-z][0-9a-z-]*$` (+ stories/qa* có sẵn). Được: patch page property trên `jcr:content` (jcr:title, navTitle, category, robots, cq:tags, publicationdate…), patch text của component ĐÃ CÓ dưới trang (không thêm/xóa/di chuyển component), replicate trang (preview/publish). Bắt buộc snapshot trước, writes.log, lint | Chuyển 529 meta / 566 data fix từ QA-PT sang agent |
 
 ## 2. Phạm vi quyền (cần Dat duyệt)
 **Được làm** – chỉ Author DEV `author-p192812-e2014374`:

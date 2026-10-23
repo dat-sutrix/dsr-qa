@@ -1,0 +1,47 @@
+{
+  "job": "JOB-20261023-05",
+  "agent": "claude-code",
+  "us": "DSR-586, DSR-587, DSR-529, DSR-566, DSR-557",
+  "env": "dev",
+  "started": "2026-10-23T02:40:11Z",
+  "finished": "2026-10-23T02:58:00Z",
+  "status": "done",
+  "mode": "tool extension D13–D15 + 5 manifests, lint + apply --dry-run (GET only; AUTHOR_WRITE_ENABLED unset, no --apply; 0 write requests sent)",
+  "checks": {
+    "unit_tests": "node --test tools/author/test/*.test.mjs (npm run test:author): 13 pass, 0 fail",
+    "tsc": "npx tsc --noEmit: exit 0, no errors",
+    "regression_lint": "TD-587-NEG PASS 259/FAIL 0 · TD-557-YOUKU.resolved PASS 76/FAIL 0 · TD-587-01.resolved FAIL 6 = renames already applied on DEV (same 6 FAIL with the pre-change code)"
+  },
+  "model_drift": "none – DM_catalog/_related, DM_movie/_related, DM_product/_related unchanged (DSR-669 DM_*_dsr not live)",
+  "manifests": [
+    { "manifest": "author/manifests/BUGCHK-586-02.yaml", "lint": "PASS 28 · FAIL 0 · WARN 2", "planned_writes": 2, "detail": "0 field change; preview content CF 990586002 then DSR CF 990586002 (no publish)", "out": "BUGCHK-586-02/" },
+    { "manifest": "author/manifests/TD-587-PHASE2.yaml", "lint": "PASS 37 · FAIL 0 · WARN 3", "planned_writes": 4, "detail": "Deactivate publish DSR qa587-removed → Deactivate publish commune qa587-unavail → Deactivate preview DSR qa587-removed → publish DSR qa587-unavail; not_before 02:39:01Z passed", "out": "TD-587-PHASE2/" },
+    { "manifest": "author/manifests/TD-529-META.yaml", "lint": "PASS 23 · FAIL 0 · WARN 1", "planned_writes": 4, "detail": "qa529-01 ja category; en category + robots \"\"; qa529-02 ja robots noindex, nofollow; 1 page publish request (3 pages)", "out": "TD-529-META/" },
+    { "manifest": "author/manifests/TD-566-FIX.yaml", "lint": "PASS 29 · FAIL 0 · WARN 1", "planned_writes": 6, "detail": "Title component text ×3 (01 ja/en, 02 ja), publicationdate 2026-10-01 ×2 (01 ja/en), 1 page publish request", "out": "TD-566-FIX/" },
+    { "manifest": "author/manifests/TD-190-DSR.yaml", "lint": "PASS 688 · FAIL 0 · WARN 32 (= 32 'would create')", "planned_writes": 36, "detail": "16 content CF + 16 DSR CF creates (8 ids × ja/en), 4 publish requests (preview/publish × content/DSR)", "out": "TD-190-DSR/" }
+  ],
+  "excluded_qa_pt": [
+    "TD-529-02 en / TD-566-02 en: pages do not exist; TestData = ja only; D15 never creates pages (no action needed)",
+    "TD-566 qa566-news-02: remove empty Image + Button components (TD 'no image, no CTA'): component removal is outside D15 → QA-PT in UE",
+    "TD-566 Title level h2 vs TC 4.0 'single h1': component config/template, not text → Ngọc/template (not data)",
+    "TD-566 My List / share (article_meta classes no-mylist no-share): not in TD-566-01; multiselect classes is not a text prop → Claude decides TC 012",
+    "TD-566 date raw ISO (DSR-672) and Back to list (template): product, not data",
+    "TD-587-08 commune on preview tier: kept (job says unpublish on publish); add unpublish-preview if TC 8.0 is also run on .aem.page",
+    "TD-587-04 / TD-587-05 / TD-587-12: unchanged from JOB-20261023-02 (outside guard / sub-folder / DSR-669 model)"
+  ],
+  "tests": [],
+  "code_changes": [
+    "tools/author/lib/guard.mjs", "tools/author/lib/lint.mjs", "tools/author/lib/apply.mjs", "tools/author/lib/verify.mjs",
+    "tools/author/lib/manifest.mjs", "tools/author/lib/aem.mjs", "tools/author/test/author.test.mjs", "tools/author/README.md",
+    "package.json", "ykk-dsr/hub/AUTHOR-AGENT.md",
+    "ykk-dsr/hub/author/manifests/BUGCHK-586-02.yaml", "ykk-dsr/hub/author/manifests/TD-587-PHASE2.yaml",
+    "ykk-dsr/hub/author/manifests/TD-529-META.yaml", "ykk-dsr/hub/author/manifests/TD-566-FIX.yaml", "ykk-dsr/hub/author/manifests/TD-190-DSR.yaml"
+  ],
+  "open_points": [
+    "Unverified endpoints until the first apply (JOB-20261023-06): /bin/replicate Deactivate + Activate with agentId preview|publish, Sling POST page props / component text",
+    "TD-529 category: page field is a single select (news|product|update|event|others); TC 012 expects '2 tag IDs' → [Giả định] category=product; TC 012/014 expected needs Claude review (suspect test)",
+    "TD-190-DSR dates are for apply + run on 2026-10-23 JST (today/−10/−11/−1); later apply → regenerate dates",
+    "DSR CF 990586002: cq:lastReplicationAction_publish = Activate without cq:lastReplicated_publish timestamp; .aem.live 404 → no unpublish planned"
+  ],
+  "questions": []
+}
