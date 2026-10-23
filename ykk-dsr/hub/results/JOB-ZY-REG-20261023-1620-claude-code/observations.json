@@ -1,0 +1,279 @@
+{
+ "started": "2026-10-23T09:54:26.126Z",
+ "dsr667": [
+  {
+   "host": "live",
+   "width": 393,
+   "height": 852,
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+   "httpStatus": 200,
+   "dotCount": 11,
+   "dot9": {
+    "x": 268.5,
+    "y": 418.390625,
+    "width": 10,
+    "height": 10,
+    "top": 418.390625,
+    "right": 278.5,
+    "bottom": 428.390625,
+    "left": 268.5
+   },
+   "next": {
+    "x": 337,
+    "y": 403.390625,
+    "width": 40,
+    "height": 40,
+    "top": 403.390625,
+    "right": 377,
+    "bottom": 443.390625,
+    "left": 337
+   },
+   "container": {
+    "x": 92.5,
+    "y": 418.390625,
+    "width": 208,
+    "height": 30,
+    "top": 418.390625,
+    "right": 300.5,
+    "bottom": 448.390625,
+    "left": 92.5
+   },
+   "clearance": 58.5,
+   "clippedRight": 0,
+   "overflowX": "visible",
+   "dotRows": 2
+  },
+  {
+   "host": "live",
+   "width": 390,
+   "height": 844,
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+   "httpStatus": 200,
+   "dotCount": 11,
+   "dot9": {
+    "x": 267,
+    "y": 414.390625,
+    "width": 10,
+    "height": 10,
+    "top": 414.390625,
+    "right": 277,
+    "bottom": 424.390625,
+    "left": 267
+   },
+   "next": {
+    "x": 334,
+    "y": 399.390625,
+    "width": 40,
+    "height": 40,
+    "top": 399.390625,
+    "right": 374,
+    "bottom": 439.390625,
+    "left": 334
+   },
+   "container": {
+    "x": 91,
+    "y": 414.390625,
+    "width": 208,
+    "height": 30,
+    "top": 414.390625,
+    "right": 299,
+    "bottom": 444.390625,
+    "left": 91
+   },
+   "clearance": 57,
+   "clippedRight": 0,
+   "overflowX": "visible",
+   "dotRows": 2
+  },
+  {
+   "host": "live",
+   "width": 375,
+   "height": 667,
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/dsr-590-eco-top-page",
+   "httpStatus": 200,
+   "dotCount": 11,
+   "dot9": {
+    "x": 259.5,
+    "y": 326.390625,
+    "width": 10,
+    "height": 10,
+    "top": 326.390625,
+    "right": 269.5,
+    "bottom": 336.390625,
+    "left": 259.5
+   },
+   "next": {
+    "x": 319,
+    "y": 311.390625,
+    "width": 40,
+    "height": 40,
+    "top": 311.390625,
+    "right": 359,
+    "bottom": 351.390625,
+    "left": 319
+   },
+   "container": {
+    "x": 83.5,
+    "y": 326.390625,
+    "width": 208,
+    "height": 30,
+    "top": 326.390625,
+    "right": 291.5,
+    "bottom": 356.390625,
+    "left": 83.5
+   },
+   "clearance": 49.5,
+   "clippedRight": 0,
+   "overflowX": "visible",
+   "dotRows": 2
+  },
+  {
+   "host": "page",
+   "width": 393,
+   "height": 852,
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/dsr-590-eco-top-page",
+   "httpStatus": 200,
+   "dotCount": 11,
+   "dot9": {
+    "x": 268.5,
+    "y": 418.390625,
+    "width": 10,
+    "height": 10,
+    "top": 418.390625,
+    "right": 278.5,
+    "bottom": 428.390625,
+    "left": 268.5
+   },
+   "next": {
+    "x": 337,
+    "y": 403.390625,
+    "width": 40,
+    "height": 40,
+    "top": 403.390625,
+    "right": 377,
+    "bottom": 443.390625,
+    "left": 337
+   },
+   "container": {
+    "x": 92.5,
+    "y": 418.390625,
+    "width": 208,
+    "height": 30,
+    "top": 418.390625,
+    "right": 300.5,
+    "bottom": 448.390625,
+    "left": 92.5
+   },
+   "clearance": 58.5,
+   "clippedRight": 0,
+   "overflowX": "visible",
+   "dotRows": 2
+  },
+  {
+   "host": "page",
+   "width": 390,
+   "height": 844,
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/dsr-590-eco-top-page",
+   "httpStatus": 200,
+   "dotCount": 11,
+   "dot9": {
+    "x": 267,
+    "y": 414.390625,
+    "width": 10,
+    "height": 10,
+    "top": 414.390625,
+    "right": 277,
+    "bottom": 424.390625,
+    "left": 267
+   },
+   "next": {
+    "x": 334,
+    "y": 399.390625,
+    "width": 40,
+    "height": 40,
+    "top": 399.390625,
+    "right": 374,
+    "bottom": 439.390625,
+    "left": 334
+   },
+   "container": {
+    "x": 91,
+    "y": 414.390625,
+    "width": 208,
+    "height": 30,
+    "top": 414.390625,
+    "right": 299,
+    "bottom": 444.390625,
+    "left": 91
+   },
+   "clearance": 57,
+   "clippedRight": 0,
+   "overflowX": "visible",
+   "dotRows": 2
+  },
+  {
+   "host": "page",
+   "width": 375,
+   "height": 667,
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/dsr-590-eco-top-page",
+   "httpStatus": 200,
+   "dotCount": 11,
+   "dot9": {
+    "x": 259.5,
+    "y": 326.390625,
+    "width": 10,
+    "height": 10,
+    "top": 326.390625,
+    "right": 269.5,
+    "bottom": 336.390625,
+    "left": 259.5
+   },
+   "next": {
+    "x": 319,
+    "y": 311.390625,
+    "width": 40,
+    "height": 40,
+    "top": 311.390625,
+    "right": 359,
+    "bottom": 351.390625,
+    "left": 319
+   },
+   "container": {
+    "x": 83.5,
+    "y": 326.390625,
+    "width": 208,
+    "height": 30,
+    "top": 326.390625,
+    "right": 291.5,
+    "bottom": 356.390625,
+    "left": 83.5
+   },
+   "clearance": 49.5,
+   "clippedRight": 0,
+   "overflowX": "visible",
+   "dotRows": 2
+  }
+ ],
+ "label671": [
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+   "httpStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586001",
+   "h1": "QA586 product A",
+   "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+   "fullwidthBar": [],
+   "idOccurrences": []
+  },
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+   "httpStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990586001",
+   "h1": "QA586 product A",
+   "title": "QA586 product A | YKK DIGITAL SHOWROOM",
+   "fullwidthBar": [],
+   "idOccurrences": []
+  }
+ ],
+ "finished": "2026-10-23T09:54:58.456Z",
+ "note": "DSR-667 screenshots not committed (lane rule: evidence = failed tests only); geometry is the record."
+}

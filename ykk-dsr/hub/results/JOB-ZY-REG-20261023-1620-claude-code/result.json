@@ -1,0 +1,2138 @@
+{
+ "job": "JOB-ZY-REG-20261023-1620-claude-code",
+ "agent": "claude-code",
+ "us": "Regression S12 R2 (+R1) after DSR-669/670/671, catalog-detail refactor, DSR-667",
+ "env": "dev",
+ "started": "2026-10-23T09:52:57Z",
+ "finished": "2026-10-23T10:07:59Z",
+ "status": "done",
+ "runs": {
+  "overlay": {
+   "tests": 257,
+   "pass": 208,
+   "fail": 8,
+   "skip": 41,
+   "flaky": 0,
+   "exit": 1
+  },
+  "non_overlay_auto": {
+   "tests": 118,
+   "pass": 66,
+   "fail": 24,
+   "skip": 28,
+   "flaky": 0,
+   "exit": 1
+  },
+  "smoke": {
+   "tests": 1,
+   "pass": 1,
+   "fail": 0,
+   "skip": 0,
+   "flaky": 0,
+   "exit": 0
+  }
+ },
+ "new_fail": [],
+ "ledger_status_changes": 0,
+ "tests": [
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: category tag IDs  expect(received).toHaveLength(expected)  Expected length: 2 Received length: 1 Received array:  [\"product\"]",
+   "evidence": "evidence/DSR-ARTICLE-012_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (JOB-23-06, IDLE-39): meta category has 1 tag ID [\"product\"], expected 2",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: category tag IDs  expect(received).toHaveLength(expected)  Expected length: 2 Received length: 1 Received array:  [\"product\"]",
+   "evidence": "evidence/DSR-ARTICLE-012_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (JOB-23-06, IDLE-39): meta category has 1 tag ID [\"product\"], expected 2",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-015",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-020",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: viewAllStories href  expect(received).not.toMatch(expected)  Expected pattern: not /^(#?)$/ Received string:      \"#\"",
+   "evidence": "evidence/DSR-ARTICLE-024_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 50,
+   "note": "known (IDLE-35/39): VIEW ALL STORIES href \"#\"",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: viewAllStories href  expect(received).not.toMatch(expected)  Expected pattern: not /^(#?)$/ Received string:      \"#\"",
+   "evidence": "evidence/DSR-ARTICLE-024_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 50,
+   "note": "known (IDLE-35/39): VIEW ALL STORIES href \"#\"",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-025",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "skip_reason": "blocked-data: no stories query-index returns 200 (/en/stories/query-index.json, /master/en/stories/query-index.json, /master/en/library/article/stories/query-index.json)"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "skip_reason": "blocked-data: no stories query-index returns 200 (/ja/stories/query-index.json, /master/ja/stories/query-index.json, /master/ja/library/article/stories/query-index.json)"
+  },
+  {
+   "tc": "DSR-ARTICLE-028",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-028",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-010",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-010",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-011",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-015",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-022",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "DSR-575 Q5 (SP display)"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-027",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-028",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-029",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "Run on STG (Lighthouse)"
+  },
+  {
+   "tc": "DSR-BREAD-030",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "DSR-536 / movie-detail placement"
+  },
+  {
+   "tc": "DSR-BREAD-031",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-033",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "Layout tickets"
+  },
+  {
+   "tc": "DSR-BREAD-034",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "DSR-536 / movie-detail placement"
+  },
+  {
+   "tc": "DSR-BREAD-035",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-007",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "error": "Error: gated PDF URL delivered to the browser before submit  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 3  - Array [] + Array [ +   \"dsr-catalog-list response: ",
+   "evidence": "evidence/DSR-CATDL-007_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known: draft BUG-CAT-PDF-EXPOSE (DASHBOARD 🐞); DSR-655 Y4 client question",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATDL-010",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "error": "Error: fixed texts containing Japanese  expect(received).toEqual(expected) // deep equality  - Expected  -  1 + Received  + 44  - Array [] + Array [ +   \"必須 + 氏名（姓）\", +   \"必須 + 氏名（名）\", +   \"必須 + メールアド",
+   "evidence": "evidence/DSR-CATDL-016_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known: draft BUG-CAT-FORM-EN (DASHBOARD 🐞)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATDL-017",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "skip_reason": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=true); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: expect(locator).toHaveText(expected) failed  Locator:  locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Received: \"catalog pdf form\" Timeout:",
+   "evidence": "evidence/DSR-CATOV-001_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: -form CF titles are dev samples (\"catalog pdf form\" / \"catalog ebook form\"), still after 669 migration",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: expect(locator).toHaveText(expected) failed  Locator:  locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Received: \"catalog pdf form\" Timeout:",
+   "evidence": "evidence/DSR-CATOV-001_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: -form CF titles are dev samples (\"catalog pdf form\" / \"catalog ebook form\"), still after 669 migration",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 20,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 14,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "skip_reason": "TD-654-03 exists in en only (A7)"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-009",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-010",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-011",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: card 'QA190 PDF catalog'  expect(locator).toBeVisible() failed  Locator: locator('main a[href]').filter({ hasText: 'QA190 PDF catalog' }).first() Expected: visible Timeout: 5000ms Error: elemen",
+   "evidence": "evidence/DSR-CATOV-012_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: no list card 'QA190 PDF catalog' (TD-190 title not seeded); qa190-cat-pdf CF is in dsr-catalog-list",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: card 'QA190 PDF catalog'  expect(locator).toBeVisible() failed  Locator: locator('main a[href]').filter({ hasText: 'QA190 PDF catalog' }).first() Expected: visible Timeout: 5000ms Error: elemen",
+   "evidence": "evidence/DSR-CATOV-012_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: no list card 'QA190 PDF catalog' (TD-190 title not seeded); qa190-cat-pdf CF is in dsr-catalog-list",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "skip_reason": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "skip_reason": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-001",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-002",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-002",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-004",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-004",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-005",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-005",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "error": "Error: tag label  expect(locator).not.toBeEmpty() failed  Locator: locator('main').locator('.hero, [class*=\"hero\"]').first().locator('[class*=\"tag\"]').first() Expected: not empty Timeout: 5000ms Error",
+   "evidence": "evidence/DSR-ECO-005_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ECO-006",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "error": "Error: free area text  expect(locator).not.toBeEmpty() failed  Locator: locator('main').locator('[class*=\"free\"], .default-content-wrapper').first() Expected: not empty Timeout: 5000ms Error: element(",
+   "evidence": "evidence/DSR-ECO-006_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ECO-007",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-007",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-009",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-010",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-010",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-012",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "cn: no /master/cn on DEV (Issue #18)"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-001",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-002",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-003",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-004",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-005",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-006",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 + chain-type tag namespace; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-008",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + template revision (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-009",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-010",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-011",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-04; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-012",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 en/cn copies; cn folder may not exist (Issue #18); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-014",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-560/182 search JSON (Nakamoto); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-015",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-586 overlay; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 is ja only; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-006",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "TD-586-06 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-007",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "TD-586-07 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-011",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "TD-586-11 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-020",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "Blocked: no design for ver0.4 new fields (Figma B04 – Q29); current state recorded: rendered none"
+  },
+  {
+   "tc": "DSR-PDO-021",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Error: 320: cards overflowing their column  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 6  - Array [] + Array [ +   \"\", +   \"\", +   \"\", +   \"\", + ]",
+   "evidence": "evidence/DSR-PLSP-002_en.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 SP 2-column dismissed Not a bug 23/10 (KNOWN-FACTS) → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Error: 320: cards overflowing their column  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 8  - Array [] + Array [ +   \"\", +   \"\", +   \"\", +   \"\", +   \"\", +   \"\", +",
+   "evidence": "evidence/DSR-PLSP-002_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 SP 2-column dismissed Not a bug 23/10 (KNOWN-FACTS) → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-003_en.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated (timeout 30 s)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-003_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated (timeout 30 s)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-005_en.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated (timeout 30 s)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-005_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated (timeout 30 s)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-001",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: 375: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 2 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-001_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-002",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: 320: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 2 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-002_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "skip_reason": "blocked-data: TD-583-01 page missing (/master/en/test-space/product-list and /master/en/product-list HTTP 404)"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: open: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 2 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-003_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-004",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: 1440: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 4 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-004_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; column-offset check returns 1 at 1440 (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-005",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "skip_reason": "blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)"
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: text/background colour changes on hover  expect(received).not.toEqual(expected) // deep equality  Expected: not [] ",
+   "evidence": "evidence/DSR-TOP-004_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: text/background colour changes on hover  expect(received).not.toEqual(expected) // deep equality  Expected: not [] ",
+   "evidence": "evidence/DSR-TOP-004_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"})  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false",
+   "evidence": "evidence/DSR-TOP-005_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"})  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false",
+   "evidence": "evidence/DSR-TOP-005_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: page requests /en/news/query-index.json  expect(received).toContain(expected) // indexOf  Expected value: \"/en/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "evidence": "evidence/DSR-TOP-006_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: page requests /ja/news/query-index.json  expect(received).toContain(expected) // indexOf  Expected value: \"/ja/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "evidence": "evidence/DSR-TOP-006_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: SP item 1 title lines ≤ 1  expect(received).toBeLessThanOrEqual(expected)  Expected: <= 1 Received:    2",
+   "evidence": "evidence/DSR-TOP-007_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: SP item 1 title lines ≤ 1  expect(received).toBeLessThanOrEqual(expected)  Expected: <= 1 Received:    2",
+   "evidence": "evidence/DSR-TOP-007_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-TOP-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-TOP-009",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-TOP-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 27,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 5,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-004",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-04 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-005",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-05 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-006",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-06 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-010",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-10 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-015",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-016",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-14 update dates not recorded (fixtures/dsr-587.ts expectedOrderByUpdateDesc)"
+  },
+  {
+   "tc": "DSR-VOV-017",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "DSR173_MOVIE_PATH / DSR173_RELATED_PATH not set to the TD-587-01 / 14 pages (now /master/en/test-space/dsr-173-video-detail / null); run DSR-173 Group A with them"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "SMOKE-001 DSR-173 test page is reachable",
+   "lang": "-",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/smoke.spec.ts"
+  }
+ ],
+ "observations": "observations.json + summary.md §Observations (no verdict)",
+ "code_changes": [],
+ "reports": [
+  "results/REGRESSION/DEV/automation-run-20261023-reg1620.md"
+ ],
+ "compare": "ykk-dsr/hub/results/JOB-ZY-REG-20261023-1620-claude-code/compare.md",
+ "ledger": "ykk-dsr/hub/results/REGRESSION/ledger.json",
+ "tsc_exit": 0,
+ "questions": []
+}
