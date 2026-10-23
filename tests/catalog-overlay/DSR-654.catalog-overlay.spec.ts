@@ -348,11 +348,18 @@ test.describe('DSR-654 catalog detail overlay', () => {
   }
 
   // en-only TDs (A7).
-  test('DSR-CATOV-009 [en] DSR CF published to Preview only → served on .aem.page, not on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
+  // JOB-20261023-09: overlay has no preview (Martin 23/10, DSR-674 Dismissed) → .aem.page serves the not-found stub.
+  test('DSR-CATOV-009 [en] preview-only DSR CF → not-found stub on .aem.page (overlay has no preview), 404 on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request, browser }) => {
     const data = td654.preview;
     const path = catalogPath('en', data.id);
-    const { html } = await rawCatalog(request, 'en', data.id, data.tdId, hosts().page);
-    expect.soft(html, `'${data.title}' on .aem.page`).toContain(data.title);
+    const { response, html } = await rawCatalog(request, 'en', data.id, data.tdId, hosts().page);
+    expect.soft(response.status(), '.aem.page').toBe(200);
+    const raw = await parseRaw(browser, html);
+    observations.push({ robots: raw.robots, rows: raw.rows });
+    expect.soft(row(raw.rows, 'source'), 'row source').toBe('overlay');
+    expect.soft(row(raw.rows, 'unavailable'), 'row unavailable').toBe('not-found');
+    expect.soft(raw.robots ?? '', 'robots').toContain('noindex');
+    expect.soft(html, `no '${data.title}' on .aem.page`).not.toContain(data.title);
     expect.soft((await status(request, url(path, hosts().live))).status(), '.aem.live').toBe(404);
   });
 

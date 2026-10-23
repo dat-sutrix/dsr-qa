@@ -102,12 +102,18 @@ test.describe('DSR-587 movie detail overlay', () => {
     });
   }
 
-  test('DSR-VOV-002 [en] preview-only CF related → 200 on .aem.page, 404 on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
+  // JOB-20261023-09: overlay has no preview (Martin 23/10, DSR-674 Dismissed) → .aem.page serves the not-found stub.
+  test('DSR-VOV-002 [en] preview-only DSR CF → not-found stub on .aem.page (overlay has no preview), 404 on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request, browser }) => {
     const path = videoPath('en', td['02'].id);
     const preview = await status(request, url(path, hosts().page));
     test.skip(preview.status() === 404, `${notSeeded('02')} (${url(path, hosts().page)} HTTP 404)`);
     expect.soft(preview.status(), '.aem.page').toBe(200);
-    expect.soft(await preview.text(), '.aem.page movie title').toContain(td['02'].title);
+    const raw = await parseRaw(browser, await preview.text());
+    observations.push({ robots: raw.robots, rows: raw.rows });
+    expect.soft(raw.rows.find(r => r.key === 'source')?.value, 'row source').toBe('overlay');
+    expect.soft(raw.rows.find(r => r.key === 'unavailable')?.value, 'row unavailable').toBe('not-found');
+    expect.soft(raw.robots ?? '', 'robots').toContain('noindex');
+    expect.soft(raw.bodyText, 'no movie title').not.toContain(td['02'].title);
     expect.soft((await status(request, url(path, hosts().live))).status(), '.aem.live').toBe(404);
   });
 

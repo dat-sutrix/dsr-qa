@@ -78,13 +78,19 @@ test.describe('DSR-586 product detail overlay', () => {
     });
   }
 
-  test('DSR-PDO-002 [ja] preview-only CF related → 200 on .aem.page, 404 on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
+  // JOB-20261023-09: overlay has no preview (Martin 23/10, DSR-674 Dismissed) → .aem.page serves the not-found stub.
+  test('DSR-PDO-002 [ja] preview-only DSR CF → not-found stub on .aem.page (overlay has no preview), 404 on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request, browser }) => {
     valueSpecific();
     const path = productPath('ja', td['02'].id);
     const preview = await status(request, url(path, hosts().page));
     test.skip(preview.status() === 404, `${notSeeded('02')} (${url(path, hosts().page)} HTTP 404)`);
     expect.soft(preview.status(), '.aem.page').toBe(200);
-    expect.soft(await preview.text(), '.aem.page product name').toContain(td['02'].name);
+    const raw = await ProductDetailPage.parseRaw(browser, await preview.text());
+    observations.push({ robots: raw.robots, rows: raw.rows });
+    expect.soft(raw.rows.find(r => r.key === 'source')?.value, 'row source').toBe('overlay');
+    expect.soft(raw.rows.find(r => r.key === 'unavailable')?.value, 'row unavailable').toBe('not-found');
+    expect.soft(raw.robots ?? '', 'robots').toContain('noindex');
+    expect.soft(raw.bodyText, 'no product name').not.toContain(td['02'].name);
     expect.soft((await status(request, url(path, hosts().live))).status(), '.aem.live').toBe(404);
   });
 
