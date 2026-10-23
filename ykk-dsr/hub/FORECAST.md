@@ -10,7 +10,7 @@
 | DSR-665 | (blocker 587) | ✅ Done 22/10 | 🟢 | – | |
 | DSR-659 | (blocker 529) | ✅ Done 22/10 (by design) | 🟢 | – | |
 | DSR-590 Eco | 23/10 · 🟢 | layout reviewed; 2 bug FE DSR-666/667 (Ngọc) | ⚠ phụ thuộc fix 666/667 | Ngọc | Done khi 666/667 fixed |
-| DSR-566/653 News | 23–26/10 · 🟢 | template sửa xong 22/10 16:00; TD-566 tối nay | = | QA-PT | |
+| DSR-566/653 News | 23–26/10 · 🟢 | template sửa xong 22/10 16:00; **giao QA 22/10 18:25 JST** (566 → [Dev] In Testing, deploy dev/2026.10.22_3; trước hạn 23/10 17:00) ; TD-566 tối nay | = | QA-PT | |
 | DSR-586 Product overlay | 23–26/10 · 🟢 | data tối nay (BUGCHK-586) | = | QA-PT | |
 | DSR-587 Video overlay | 26/10 · 🟡 | 665 Done, og:image Pass (JOB-13) | 🟢 tốt lên | – | |
 | DSR-557 Video & Catalog | 26/10 · 🟡 | catalog list live (ja 6/en 5), Youku ID có (DSR-611) | 🟢 | QA-PT (Youku data) | |

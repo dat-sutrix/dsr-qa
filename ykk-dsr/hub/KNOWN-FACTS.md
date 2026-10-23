@@ -4,6 +4,8 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-22 | DSR-357 (566) | Kohei | Deploy Dev `dev/2026.10.22_3` commit 12dece2 lúc 09:25Z, trùng lúc 566 → [Dev] In Testing giao Dat 18:25 JST | https://sutrix.atlassian.net/browse/DSR-357?focusedCommentId=64910 |
+| 2026-10-22 | DSR-578 | Martin | List (一覧) Design Fixes: Ngọc đã thêm field tag vào list configuration; Martin nhờ 石谷 kiểm tra (chưa xác nhận fixed) | https://sutrix.atlassian.net/browse/DSR-578?focusedCommentId=64909 |
 | 2026-10-22 | DSR-611 | Quentin | **Q4 Youku test ID:** `XNTgyNzE1ODE5Ng==` (CN movie 345 闪亮金属拉链简介); dự phòng `XNTgyNTc0MDg4NA==` (movie 346) – nguồn DSR-582 動画_CN → mở TC 3.0/7.0/11.0 phần Youku (557). Q1/Q2 đang hỏi Numata; Q3 (setting NEW/UPDATE) chuyển Kohei – chưa trả lời | DSR-611 c.64863 (14:50 JST) |
 | 2026-10-22 | DSR-664 | Martin | Martin nhận lại bug (từ Ngọc 17:37 JST), → **[Dev] In Testing 17:52 JST**; deploy dev/2026.10.22_2 (b6b1416, 08:52Z); liên kết DSR-662 c.64873 → retest JOB-20261022-16 | DSR-664 c.64902 + changelog |
 | 2026-10-22 | DSR-662 | 石谷 | ブースTOP: chữ "null" dưới related videos (cùng lỗi DSR-664); 662 → [Dev] In Testing 17:52 JST | DSR-662 c.64873 |
