@@ -6,6 +6,7 @@ import { test, expect, type Page, type TestInfo } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 import { MovieDetailPage } from '../../pages/MovieDetailPage';
+import { dsrItems, inactiveItems, contentOf } from '../../fixtures/cf-models';
 import { mainBase, mainPageA, mainPageB, overlayPath, dsrVideoPageQuery, maxRelatedMovies, blockedNo6th, blockedStalePreview, blockedNoDistinctUpdateDate, nightReportSince, blockedStaleNightReport } from '../../fixtures/dsr-501';
 
 // Job output asks for a full-page screenshot of A and B on every run.
@@ -16,9 +17,9 @@ interface RelatedMovie { movieId: string; movieTitle: string; isUnavailable: boo
 async function queryRelatedMovies(page: Page, movieId: string) {
   const response = await page.request.get(dsrVideoPageQuery(movieId));
   const body = await response.json();
-  const items = body?.data?.related?.items ?? [];
-  const relatedMovies: RelatedMovie[] = items[0]?.movie?.relatedMovies ?? [];
-  return { status: response.status(), relatedItems: items.length, inactiveItems: body?.data?.inactive?.items?.length ?? null, relatedMovies };
+  const items = dsrItems(body?.data);
+  const relatedMovies = (contentOf(items[0], 'movie')?.relatedMovies ?? []) as RelatedMovie[];
+  return { status: response.status(), relatedItems: items.length, inactiveItems: inactiveItems(body?.data)?.length ?? null, relatedMovies };
 }
 
 async function openOverlay(page: Page, movieId: string, testInfo: TestInfo) {
@@ -57,7 +58,7 @@ function skipIfBeforeNightReport(lastModified: string | null) {
     `${blockedStaleNightReport} (last-modified ${lastModified}; since ${nightReportSince})`);
 }
 
-test('DSR-501-P3 [en] related movies are max 5, newest updated first', { tag: ['@DSR-647'] }, async ({ page }, testInfo) => {
+test('DSR-501-P3 [en] related movies are max 5, newest updated first', { tag: ['@overlay', '@DSR-647'] }, async ({ page }, testInfo) => {
   const query = await queryRelatedMovies(page, mainPageA.movieId);
   const o = await openOverlay(page, mainPageA.movieId, testInfo);
   await expect(o.movie.relatedContentSection).toBeVisible();
@@ -84,7 +85,7 @@ test('DSR-501-P3 [en] related movies are max 5, newest updated first', { tag: ['
   expect(shown).not.toContain(titlesOf(query.relatedMovies, [mainPageA.absentId])[0]);
 });
 
-test('DSR-501-P2 [en] unavailable related movie is not displayed', { tag: ['@DSR-647'] }, async ({ page }, testInfo) => {
+test('DSR-501-P2 [en] unavailable related movie is not displayed', { tag: ['@overlay', '@DSR-647'] }, async ({ page }, testInfo) => {
   const query = await queryRelatedMovies(page, mainPageB.movieId);
   const o = await openOverlay(page, mainPageB.movieId, testInfo);
   await expect(o.movie.relatedContentSection).toBeVisible();

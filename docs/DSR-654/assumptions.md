@@ -20,3 +20,13 @@ Spec: `tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts`, fixtures `fixture
 - [Giả định] The expected PDF is the `pdfAsset` row (DAM path) of the static overlay HTML. The redirect host (publish domain) is not asserted, only the path.
 - CATOV-001 for the `-form` ids still expects the TD-190 title. Rule 4 of the job names only CATOV-002, so a dev-sample title fails there as `data`.
 - CATOV-012 (card → overlay page for `td.pdf`) and CATOV-018 (e-book + requiresForm, DSR-655 Y3) were not in the job scope and are unchanged.
+
+## Pending, Expected NOT changed (JOB-20261023-07, 2026-10-23)
+
+| TC | Current Expected (kept) | Observed (JOB-20261022-14) | Status |
+|---|---|---|---|
+| DSR-CATOV-002 (qa190-cat-pdf, qa190-cat-ebook; requiresForm OFF) | `meta robots` has no `noindex` | `robots=noindex` on non-form pages | **Pending**: BUG-CAT-NOINDEX (40%) is a by-design candidate because non-form pages redirect to the file (`catalog-detail.js:165-169`). No written source says noindex is intended, so Expected stays. |
+| DSR-CATOV-021 (same ids) | live page listed once in query-index and sitemap | no sitemap entry for non-form pages | **Pending**: same reason. |
+
+- The spec adds a `pending` annotation to CATOV-002/021 for non-form ids. All assertions stay the same. A failure there is reported as a proposed **Pending**, not a Fail, until Dat answers OK/NG (STANDUP 23/10, DASHBOARD 🐞 BUG-CAT-NOINDEX). Expected changes only after a written source (Martin/Quentin comment or BL update).
+- The `-form` ids keep the plain verdict: noindex there is still a Fail.

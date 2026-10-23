@@ -10,6 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:dev": "ENV=dev playwright test",
+    "test:dev:overlay": "ENV=dev playwright test --grep @overlay",
     "test:stg": "ENV=stg playwright test",
     "test:pro": "ENV=pro playwright test",
     "test:author": "node --test tools/author/test/*.test.mjs"

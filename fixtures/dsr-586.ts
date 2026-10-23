@@ -16,7 +16,8 @@ export const hosts = () => {
   const b = base();
   return { page: b.replace('.aem.live', '.aem.page'), live: b.replace('.aem.page', '.aem.live') };
 };
-// BL-OVL-1 product URL: /{lang}/products/{id} (no /master prefix; regex (?<=/products/)([0-9]+)$).
+// BL-OVL-1 product URL: /{lang}/products/{id} (no /master prefix). id = DSR CF node name: lowercase letters, digits, "-"
+// (BL-OVL-1 Update 2026-10-21; the older digits-only regex (?<=/products/)([0-9]+)$ no longer applies – PDO-005).
 export const productPath = (lang: Language, id: string) => `/${lang}/products/${id}`;
 export const productsRoot = (lang: Language) => `/${lang}/products/`;
 
@@ -24,7 +25,7 @@ export const productsRoot = (lang: Language) => `/${lang}/products/`;
 export const td = {
   '01': { id: '990586001', name: 'QA586 product A', code: 'QA586-A', description: 'QA586 description for SEO check' },
   '02': { id: '990586002', name: 'QA586 product B', code: 'QA586-B' },
-  '05': { id: 'qa586-alpha', name: 'QA586 alpha' },
+  '05': { id: 'qa586-alpha', name: 'QA586 alpha' }, // PDO-005: valid node name → renders like 01
   '06': { id: '990586006', subfolder: 'qa586' },
   '07': { id: '990586007' },
   '08': { id: '990586008' },

@@ -72,7 +72,7 @@ test.describe('JOB-13 part 1 – overlay og:image after republish (PR #206)', ()
   for (const item of items) {
     const o = overlayPath(item.path);
     for (const tier of ['page', 'live'] as const) {
-      test(`${tcByType[o.type]} [${o.lang}] og:image sweep ${tier} ${o.url}`, { tag: ['@auto', '@job13'] }, async ({ request, browser }) => {
+      test(`${tcByType[o.type]} [${o.lang}] og:image sweep ${tier} ${o.url}`, { tag: ['@overlay', '@auto', '@job13'] }, async ({ request, browser }) => {
         const target = `${hosts()[tier]}${o.url}?${cb()}`;
         const response = await request.get(target, { maxRedirects: 0, failOnStatusCode: false });
         observations.push({ cf: item.path, replicate: item.replicate, url: target, status: response.status(), location: response.headers().location ?? null });
@@ -111,7 +111,7 @@ const inactive = [
 test.describe('JOB-13 part 3 – isActive OFF → browser redirect to list', () => {
   for (const d of inactive) {
     for (const tier of ['page', 'live'] as const) {
-      test(`${d.tc} [${d.lang}] ${d.url.split('/').pop()} ${tier}: raw 200 + unavailable | ${d.reason}, browser ends on ${d.list} (HTTP 200)`, { tag: ['@auto', '@job13'] }, async ({ request, browser, page }) => {
+      test(`${d.tc} [${d.lang}] ${d.url.split('/').pop()} ${tier}: raw 200 + unavailable | ${d.reason}, browser ends on ${d.list} (HTTP 200)`, { tag: ['@overlay', '@auto', '@job13'] }, async ({ request, browser, page }) => {
         const target = `${hosts()[tier]}${d.url}?${cb()}`;
         const response = await request.get(target, { maxRedirects: 0, failOnStatusCode: false });
         observations.push({ url: target, status: response.status() });

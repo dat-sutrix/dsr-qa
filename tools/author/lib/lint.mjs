@@ -1,5 +1,6 @@
 // L0 lint (before any write): AUTHOR-AGENT.md §5. Reads models + live state (GET only).
 import { getModels, getFragment, getPage, idField, flagField } from './aem.mjs';
+import { discoverModels, resolveEntryModels, modelCurrency, AUTO } from './model-map.mjs';
 import { aemGet } from './http.mjs';
 import { expandItems, LANGS } from './manifest.mjs';
 import { isWritablePath, isRenameSourcePath, isAllowedNodeName, nodeName, parentPath, PAGE_PROPS, PAGE_DATE_PROPS, COMPONENT_PROPS, COMPONENT_NODE, REPLICATE_VALUES } from './guard.mjs';
@@ -24,7 +25,9 @@ async function pathExists(p) {
 /** Returns { checks, entries, live } — live = Map(path → fragment state) for reuse by apply. */
 export async function lint(doc) {
   const models = await getModels();
-  const entries = expandItems(doc);
+  const map = discoverModels(models);
+  // DSR-669: `model: auto` → live model of the folder; named models are checked against the live model path below.
+  const entries = resolveEntryModels(expandItems(doc), models, map);
   const checks = [];
   const live = new Map();
   const add = (e, check, ok, expected, actual, warn = false) =>
@@ -71,8 +74,11 @@ export async function lint(doc) {
       continue;
     }
 
-    const model = models[e.model];
-    add(e, 'model-exists', !!model, e.model, model ? model.path : 'not found');
+    // Old model name in the manifest (e.g. DM_movie_related after DSR-669) → FAIL with the live model to use.
+    const currency = modelCurrency(e.modelAuto ? AUTO : e.model, e.path, models, map);
+    add(e, 'model-current', currency.ok, currency.expected, currency.message ?? currency.actual);
+    const model = e.model ? models[e.model] : null;
+    add(e, 'model-exists', !!model, e.model ?? '(auto: unresolved)', model ? model.path : 'not found');
     if (!model) continue;
 
     const cur = await getFragment(e.path);

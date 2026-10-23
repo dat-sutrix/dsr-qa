@@ -4,12 +4,12 @@ import {
   ver04Done, blockedVer04, blockedAuthor, removedFields, oldSpellings, ver04DetailFields, coreFields, openingTypeValues, mediaSlots,
   mediaTypes, imageExtension, newFields, sliderSameAsParentValues, commonProductsRoot, digitsOnly, leftoverText,
 } from '../../fixtures/dsr-585';
+import { type Json, dsrItems, inactiveItems, contentListItems, contentOf } from '../../fixtures/cf-models';
 
 // DSR-585 product CF (DM_product) re-baselined to DM_product_ver0.4 (spec.json A1, BL-OVL-1).
 // Read-only: CF layer via publish persisted queries only, never Author. Spec ids from ykk-dsr/hub/tc-out/DSR-585.spec.json:
 // 1.0 → DSR-PCF-001 … Automation TCs 13.0/14.0/15.0/19.0; Author TCs 7.0/16.0/17.0/18.0 also get a publish-side proxy
 // (values only – widget, options list, defaults and save/reopen stay manual).
-type Json = Record<string, unknown>;
 const observations: Record<string, unknown>[] = [];
 test.beforeEach(() => { observations.length = 0; });
 test.afterEach(async ({}, info) => {
@@ -27,11 +27,11 @@ async function graphql(request: APIRequestContext, url: string) {
   return body.data ?? {};
 }
 
-const items = (data: Json, list: string) => ((data[list] as { items?: Json[] } | undefined)?.items ?? []);
 // dsr-* queries wrap the DM_product CF in item.product; product-detail / dm-product-list return it directly.
+// List names via fixtures/cf-models (DSR-669: dmProductRelatedList → dmProductDsrList, aliases may stay).
 const productsOf = (data: Json) => [
-  ...items(data, 'related'), ...items(data, 'inactive'),
-].map(i => i.product as Json).filter(Boolean).concat(items(data, 'dmProductList'));
+  ...dsrItems(data), ...(inactiveItems(data) ?? []),
+].map(i => contentOf(i, 'product')).filter((p): p is Json => !!p).concat(contentListItems(data));
 
 function allKeys(value: unknown, out = new Set<string>()) {
   if (Array.isArray(value)) value.forEach(v => allKeys(v, out));
@@ -50,8 +50,8 @@ function shapeOf(value: unknown): Shape | 'null' | 'other' {
 
 async function productPageProduct(request: APIRequestContext, lang: Language, id: string) {
   const data = await graphql(request, queries.productPage(lang, id));
-  const product = items(data, 'related')[0]?.product as Json | undefined;
-  expect(product, `related.items[0].product for ${lang}/${id}`).toBeTruthy();
+  const product = contentOf(dsrItems(data)[0], 'product') ?? undefined;
+  expect(product, `DSR list items[0].product for ${lang}/${id}`).toBeTruthy();
   return product!;
 }
 
@@ -71,13 +71,13 @@ const authorOnly: [string, string, string][] = [
 
 test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
   for (const [tc, title, data] of authorOnly) {
-    test(`DSR-PCF-${tc} [ja] ${title}`, { tag: ['@manual', '@blocked'] }, () => test.fixme(true, `Blocked: ${blockedAuthor}; ${data}; ${blockedVer04}`));
+    test(`DSR-PCF-${tc} [ja] ${title}`, { tag: ['@overlay', '@manual', '@blocked'] }, () => test.fixme(true, `Blocked: ${blockedAuthor}; ${data}; ${blockedVer04}`));
   }
 
   for (const lang of languages) {
-    test(`DSR-PCF-007 [${lang}] openingType stored as multi-value Enumeration with the 4 defined values (publish proxy)`, { tag: ['@auto', '@proxy'] }, async ({ request }) => {
+    test(`DSR-PCF-007 [${lang}] openingType stored as multi-value Enumeration with the 4 defined values (publish proxy)`, { tag: ['@overlay', '@auto', '@proxy'] }, async ({ request }) => {
       const data = await graphql(request, queries.dmProductList());
-      const own = items(data, 'dmProductList').filter(p => String(p._path).startsWith(commonProductsRoot(lang)));
+      const own = contentListItems(data).filter(p => String(p._path).startsWith(commonProductsRoot(lang)));
       const values = own.map(p => ({ path: p._path, openingType: p.openingType ?? null }));
       observations.push({ language: lang, values });
       const filled = values.filter(v => v.openingType !== null);
@@ -95,7 +95,7 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
   }
 
   for (const lang of languages) {
-    test(`DSR-PCF-013 [${lang}] published TD-585-01 returns ver0.4 fields via dsr-product-page, no removed or old names`, { tag: ['@auto'] }, async ({ request }) => {
+    test(`DSR-PCF-013 [${lang}] published TD-585-01 returns ver0.4 fields via dsr-product-page, no removed or old names`, { tag: ['@overlay', '@auto'] }, async ({ request }) => {
       test.fixme(!seeded('01'), `Blocked: TD-585-01 not seeded (DSR585_SEEDED); ${blockedVer04}`);
       const product = await productPageProduct(request, lang, td['01'].id);
       const keys = Object.keys(product);
@@ -109,7 +109,7 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
     });
   }
 
-  test('DSR-PCF-014 [ja] product search JSON entry has search keys and no removed fields', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-PCF-014 [ja] product search JSON entry has search keys and no removed fields', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     test.fixme(!seeded('01'), `Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-560/182 search JSON (Nakamoto); ${blockedVer04}`);
     let entry: Json | undefined;
     for (const path of searchIndexPaths('ja')) {
@@ -127,7 +127,7 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
     expect.soft(removedFields.filter(f => keys.includes(f)), 'removed field names').toEqual([]);
   });
 
-  test('DSR-PCF-015 [ja] product detail of TD-585-01 renders without errors (regression)', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-PCF-015 [ja] product detail of TD-585-01 renders without errors (regression)', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     test.fixme(!seeded('01'), `Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-586 overlay; ${blockedVer04}`);
     const errors: string[] = [];
     page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
@@ -146,7 +146,7 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
   });
 
   for (const lang of languages) {
-    test(`DSR-PCF-016 [${lang}] media01 image only, media02–15 each Type/Asset/Url (publish proxy)`, { tag: ['@auto', '@proxy'] }, async ({ request }) => {
+    test(`DSR-PCF-016 [${lang}] media01 image only, media02–15 each Type/Asset/Url (publish proxy)`, { tag: ['@overlay', '@auto', '@proxy'] }, async ({ request }) => {
       const product = await productPageProduct(request, lang, existingProductId);
       const keys = Object.keys(product);
       const media01 = product.media01Asset as Json | null;
@@ -162,7 +162,7 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
   }
 
   for (const lang of languages) {
-    test(`DSR-PCF-017 [${lang}] 7 fields added in ver0.4 exist with the defined type (publish proxy)`, { tag: ['@auto', '@proxy'] }, async ({ request }) => {
+    test(`DSR-PCF-017 [${lang}] 7 fields added in ver0.4 exist with the defined type (publish proxy)`, { tag: ['@overlay', '@auto', '@proxy'] }, async ({ request }) => {
       const product = await productPageProduct(request, lang, existingProductId);
       const found = Object.entries(newFields).map(([field, shape]) => ({ field, expected: shape, present: field in product, actual: shapeOf(product[field]) }));
       observations.push({ language: lang, path: product._path, found });
@@ -176,10 +176,10 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
   }
 
   for (const lang of languages) {
-    test(`DSR-PCF-018 [${lang}] product CF name = numeric productId in content CF folder`, { tag: ['@auto', '@proxy'] }, async ({ request }) => {
+    test(`DSR-PCF-018 [${lang}] product CF name = numeric productId in content CF folder`, { tag: ['@overlay', '@auto', '@proxy'] }, async ({ request }) => {
       // Folder listing of existing data is recorded only (non-digit / mismatching names = data to clean, not Fail of the model).
       const data = await graphql(request, queries.dmProductList());
-      const own = items(data, 'dmProductList').filter(p => String(p._path).startsWith(commonProductsRoot(lang)));
+      const own = contentListItems(data).filter(p => String(p._path).startsWith(commonProductsRoot(lang)));
       const names = own.slice(0, 10).map(p => ({ name: String(p._path).split('/').pop(), productId: p.productId ?? null }));
       const toClean = names.filter(n => !digitsOnly.test(n.name!) || n.name !== n.productId);
       observations.push({ language: lang, folder: commonProductsRoot(lang), names, toClean });
@@ -191,7 +191,7 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
     });
   }
 
-  test('DSR-PCF-019 [ja] all product persisted queries return ver0.4 names only', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-PCF-019 [ja] all product persisted queries return ver0.4 names only', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     const targets = [
       queries.productPage('ja', existingProductId), queries.productDetail(legacyProductId), queries.productList('ja'), queries.dmProductList(),
     ];
@@ -215,7 +215,7 @@ test.describe('DSR-585 product CF (DM_product ver0.4)', () => {
     expect.soft(old, 'old spellings (Q46, cause dm_product-ver0.4)').toEqual([]);
   });
 
-  test('DSR-PCF-019 [en] en product persisted queries return ver0.4 names only', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-PCF-019 [en] en product persisted queries return ver0.4 names only', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     const hits: { query: string; items: number; names: string[] }[] = [];
     for (const target of [queries.productPage('en', existingProductId), queries.productList('en')]) {
       const data = await graphql(request, target);

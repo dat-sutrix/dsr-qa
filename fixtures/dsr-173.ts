@@ -96,7 +96,7 @@ const pendingMovie = (): MovieFixture => ({
 });
 
 export const movieData = {
-  // Author CFs: DM_movie_1 / DM_movie_related_1.
+  // Author CFs: DM_movie_1 / DM_movie_related_1 (model DM_movie_related → DM_movie_dsr with DSR-669; names here are labels only).
   VALID_YOUTUBE: {
     ...pendingMovie(),
     movieId: onOverlay ? td['01'].id : 'movieid-01',

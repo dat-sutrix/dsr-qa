@@ -146,7 +146,7 @@ for (const lang of languages) {
       }
     });
 
-    test(`DSR-ARTICLE-011 [${lang}] listing card images of qa529 articles absolute, GET 200`, { tag: ['@auto'] }, async ({ page, request }) => {
+    test(`DSR-ARTICLE-011 [${lang}] listing card images of qa529 articles absolute, GET 200`, { tag: ['@overlay', '@auto'] }, async ({ page, request }) => {
       const target = pagePath('articleList', lang);
       const response = await page.goto(target);
       await page.waitForLoadState('networkidle').catch(() => undefined);

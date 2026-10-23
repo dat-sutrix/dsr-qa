@@ -76,7 +76,7 @@ const videoDetailBlock = (page: Page) => page.locator('main .video-detail');
 
 test.describe('DSR-587 movie detail overlay', () => {
   for (const lang of ['ja', 'en'] as const) {
-    test(`DSR-VOV-001 [${lang}] live CF related → movie detail page 200, title shown, movie plays`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-VOV-001 [${lang}] live CF related → movie detail page 200, title shown, movie plays`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { movie, response, target } = await openVideo(page, lang, '01');
       expect(response?.status()).toBe(200);
       expect(page.url(), 'no redirect').toBe(target);
@@ -102,7 +102,7 @@ test.describe('DSR-587 movie detail overlay', () => {
     });
   }
 
-  test('DSR-VOV-002 [en] preview-only CF related → 200 on .aem.page, 404 on .aem.live', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-VOV-002 [en] preview-only CF related → 200 on .aem.page, 404 on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     const path = videoPath('en', td['02'].id);
     const preview = await status(request, url(path, hosts().page));
     test.skip(preview.status() === 404, `${notSeeded('02')} (${url(path, hosts().page)} HTTP 404)`);
@@ -112,7 +112,7 @@ test.describe('DSR-587 movie detail overlay', () => {
   });
 
   for (const lang of ['ja', 'en'] as const) {
-    test(`DSR-VOV-003 [${lang}] raw HTML has title / description / og:image and movie title; 0 GraphQL requests`, { tag: ['@auto'] }, async ({ request, browser, page }) => {
+    test(`DSR-VOV-003 [${lang}] raw HTML has title / description / og:image and movie title; 0 GraphQL requests`, { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
       const { response, html } = await rawVideo(request, lang, '01');
       expect(response.status()).toBe(200);
       const raw = await parseRaw(browser, html);
@@ -137,24 +137,24 @@ test.describe('DSR-587 movie detail overlay', () => {
     });
   }
 
-  test('DSR-VOV-004 [en] CF related name with uppercase / underscore → 404', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-VOV-004 [en] CF related name with uppercase / underscore → 404', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     test.skip(!seeded('04'), `${notSeeded('04')} (negative TC: confirm via DSR587_SEEDED)`);
     for (const id of td['04'].ids) expect.soft((await status(request, url(videoPath('en', id)))).status(), id).toBe(404);
   });
 
-  test('DSR-VOV-005 [en] CF related in subfolder / outside /content/dam/dsr → 404', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-VOV-005 [en] CF related in subfolder / outside /content/dam/dsr → 404', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     test.skip(!seeded('05'), `${notSeeded('05')} (negative TC: confirm via DSR587_SEEDED)`);
     for (const id of [td['05'].id, td['05'].legacyId]) expect.soft((await status(request, url(videoPath('en', id)))).status(), id).toBe(404);
   });
 
-  test('DSR-VOV-006 [en] CF commune alone → 404 on .aem.page and .aem.live', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-VOV-006 [en] CF commune alone → 404 on .aem.page and .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     test.skip(!seeded('06'), `${notSeeded('06')} (negative TC: confirm via DSR587_SEEDED)`);
     const path = videoPath('en', td['06'].id);
     for (const host of [hosts().page, hosts().live]) expect.soft((await status(request, url(path, host))).status(), host).toBe(404);
   });
 
   for (const lang of ['ja', 'en'] as const) {
-    test(`DSR-VOV-007 [${lang}] isActive = false → noindex, browser sent to movie list`, { tag: ['@auto'] }, async ({ request, browser, page }) => {
+    test(`DSR-VOV-007 [${lang}] isActive = false → noindex, browser sent to movie list`, { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
       const { html, target } = await rawVideo(request, lang, '07');
       const raw = await parseRaw(browser, html);
       observations.push({ robots: raw.robots, rows: raw.rows });
@@ -168,7 +168,7 @@ test.describe('DSR-587 movie detail overlay', () => {
     });
   }
 
-  test('DSR-VOV-008 [en] CF commune unpublished → single unavailable row, noindex, browser sent to movie list', { tag: ['@auto'] }, async ({ request, browser, page }) => {
+  test('DSR-VOV-008 [en] CF commune unpublished → single unavailable row, noindex, browser sent to movie list', { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
     const { html, target } = await rawVideo(request, 'en', '08');
     const raw = await parseRaw(browser, html);
     observations.push({ robots: raw.robots, rows: raw.rows });
@@ -184,7 +184,7 @@ test.describe('DSR-587 movie detail overlay', () => {
 
   test('DSR-VOV-009 [en] CF commune edit shows only after CF related republish', () => { test.fixme(true, manual009); });
 
-  test('DSR-VOV-010 [en] unpublished CF related → 404 on both hosts, absent from query-index', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-VOV-010 [en] unpublished CF related → 404 on both hosts, absent from query-index', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     test.skip(!seeded('10'), `${notSeeded('10')} (negative TC: confirm via DSR587_SEEDED)`);
     const path = videoPath('en', td['10'].id);
     for (const host of [hosts().page, hosts().live]) expect.soft((await status(request, url(path, host))).status(), host).toBe(404);
@@ -196,7 +196,7 @@ test.describe('DSR-587 movie detail overlay', () => {
   });
 
   for (const lang of ['ja', 'en'] as const) {
-    test(`DSR-VOV-011 [${lang}] video/search stays a list page (list block with ≥ 1 card, no video-detail)`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-VOV-011 [${lang}] video/search stays a list page (list block with ≥ 1 card, no video-detail)`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const target = url(listPath(lang));
       const response = await page.goto(target);
       observations.push({ url: target, finalUrl: page.url(), status: response?.status() });
@@ -208,7 +208,7 @@ test.describe('DSR-587 movie detail overlay', () => {
       await expect(page.getByText('unavailable', { exact: true }), 'unavailable row').toHaveCount(0);
     });
 
-    test(`DSR-VOV-011 [${lang}] video/tech-talk stays a list page`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-VOV-011 [${lang}] video/tech-talk stays a list page`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const target = url(techTalkListPath(lang));
       const response = await page.goto(target);
       observations.push({ url: target, finalUrl: page.url(), status: response?.status() });
@@ -222,7 +222,7 @@ test.describe('DSR-587 movie detail overlay', () => {
 
   test('DSR-VOV-011 [cn] list pages', () => { test.fixme(true, cnPending); });
 
-  test('DSR-VOV-013 [en] movie list shows standard movies only', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-VOV-013 [en] movie list shows standard movies only', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const target = url(listPath('en'));
     let navigations = 0;
     page.on('framenavigated', f => { if (f === page.mainFrame()) navigations++; });
@@ -238,7 +238,7 @@ test.describe('DSR-587 movie detail overlay', () => {
     expect.soft(paths.filter(p => nonStandardHref.test(p)), 'hrefs to /video/search or /video/tech-talk').toEqual([]);
   });
 
-  test('DSR-VOV-014 [en] related movies max 5 when 6 are linked', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-VOV-014 [en] related movies max 5 when 6 are linked', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const { movie } = await openVideo(page, 'en', '14');
     await expect(movie.relatedContentSection).toBeVisible();
     const hrefs = await relatedMovieHrefs(movie);
@@ -246,7 +246,7 @@ test.describe('DSR-587 movie detail overlay', () => {
     expect(hrefs).toHaveLength(maxRelatedMovies);
   });
 
-  test('DSR-VOV-015 [en] related movie with isUnavailable = true is hidden', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-VOV-015 [en] related movie with isUnavailable = true is hidden', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const { movie } = await openVideo(page, 'en', '15');
     await expect(movie.relatedContentSection).toBeVisible();
     const hrefs = await relatedMovieHrefs(movie);
@@ -256,7 +256,7 @@ test.describe('DSR-587 movie detail overlay', () => {
     expect.soft(await page.content(), 'rendered DOM').not.toContain(td['15'].hiddenId);
   });
 
-  test('DSR-VOV-016 [en] related contents ordered by update date, newest first', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-VOV-016 [en] related contents ordered by update date, newest first', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const { movie } = await openVideo(page, 'en', '14');
     const expected = td['14'].expectedOrderByUpdateDesc;
     test.skip(expected === null, 'TD-587-14 update dates not recorded (fixtures/dsr-587.ts expectedOrderByUpdateDesc)');
@@ -266,7 +266,7 @@ test.describe('DSR-587 movie detail overlay', () => {
     expect(hrefs.map(h => new URL(h, page.url()).pathname)).toEqual(expected);
   });
 
-  test('DSR-VOV-017 [en] DSR-173 Group A page switched to the overlay page', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-VOV-017 [en] DSR-173 Group A page switched to the overlay page', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     // Gate only: the Group A assertions stay in DSR-173.movie-detail.spec.ts (no change). Run them with
     // DSR173_MOVIE_PATH=/en/library/video/qa587-main DSR173_RELATED_PATH=/en/library/video/qa587-rel-a npm run test:dev -- --grep "DSR-MOVIE-0(12|14|20|25|26|27|28|29|33|34) "
     for (const tdId of ['01', '14'] as const) {
@@ -281,7 +281,7 @@ test.describe('DSR-587 movie detail overlay', () => {
   });
 
   for (const lang of ['ja', 'en'] as const) {
-    test(`DSR-VOV-018 [${lang}] language variant: 200, html lang, title`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-VOV-018 [${lang}] language variant: 200, html lang, title`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { movie, response } = await openVideo(page, lang, '01');
       expect(response?.status()).toBe(200);
       const actualLang = await page.locator('html').getAttribute('lang');

@@ -1,18 +1,33 @@
 // models: live CF model schema + 2–3 sample CFs per DSR model → markdown.
+// DSR-669: no fixed model names – models are found by live model path (model-map.mjs) and the folders their CFs live in.
 import { getModels, listFragments, getFragment, idField, flagField } from './aem.mjs';
-
-const SAMPLES = {
-  DM_movie: ['/content/dam/common/ja/movies', '/content/dam/common/en/movies'],
-  DM_movie_related: ['/content/dam/dsr/ja/movies/standard', '/content/dam/dsr/ja/movies/tech', '/content/dam/dsr/en/movies/standard'],
-  DM_product: ['/content/dam/common/ja/products'],
-  DM_product_related: ['/content/dam/dsr/ja/products'],
-  DM_catalog: ['/content/dam/common/ja/catalogs'],
-  DM_catalog_related: ['/content/dam/dsr/ja/catalogs'],
-};
-const CONTENT_OF = { DM_movie_related: 'DM_movie', DM_product_related: 'DM_product', DM_catalog_related: 'DM_catalog' };
+import { discoverModels, sampleFolders, TYPES } from './model-map.mjs';
 
 export async function modelsReport() {
   const models = await getModels();
+  const map = discoverModels(models);
+  const slots = ['content', 'dsr'].flatMap((role) => TYPES.filter((t) => role === 'dsr' || t !== 'techmovie').map((type) => ({ role, type })));
+  const SAMPLES = {};
+  const CONTENT_OF = {};
+  const missing = [];
+  for (const { role, type } of slots) {
+    // Before DSR-669 movies/tech has no own model: its CFs use the movie DSR model.
+    const hit = map[role][type] ?? (type === 'techmovie' ? map.dsr.movie : null);
+    if (!hit) { missing.push(`${role}:${type}`); continue; }
+    SAMPLES[hit.name] = [...(SAMPLES[hit.name] ?? []), ...sampleFolders(role, type)];
+    if (role === 'dsr') CONTENT_OF[hit.name] = map.content[type === 'techmovie' ? 'movie' : type]?.name ?? '?';
+  }
+  // Model actually used by the CFs of each folder (cq:model migration check after DSR-669).
+  const inUse = [];
+  for (const { role, type } of slots) {
+    for (const folder of sampleFolders(role, type)) {
+      const items = await listFragments(folder, 50).catch((err) => { inUse.push(`| ${folder} | error: ${err.message} |`); return null; });
+      if (!items) continue;
+      const counts = {};
+      for (const it of items.filter((i) => i.path.startsWith(`${folder}/`) && !i.path.slice(folder.length + 1).includes('/'))) counts[it.model?.name ?? '?'] = (counts[it.model?.name ?? '?'] ?? 0) + 1;
+      inUse.push(`| ${folder} | ${Object.entries(counts).map(([n, c]) => `${n} × ${c}`).join(', ') || '(no CF)'} |`);
+    }
+  }
   const out = [];
   const summary = [];
   for (const [name, folders] of Object.entries(SAMPLES)) {
@@ -53,6 +68,14 @@ export async function modelsReport() {
     ...summary,
     '',
     `Other models on DEV (not sampled): ${others.join(', ')}.`,
+    missing.length ? `No live model found for: ${missing.join(', ')}.` : 'Every slot (content/DSR × movie/product/catalog) has a live model.',
+    '',
+    'Model found by live model path (`/conf/…/cfm/models/dm_<type>[_related|_dsr]`); `_dsr` (DSR-669) wins over `_related`.',
+    '',
+    '| Folder | Model of the CFs in it (first 50, direct children) |',
+    '|---|---|',
+    ...inUse,
+    '',
     'Rules: ID field and 表示フラグ are detected from the schema (required text field ending in `Id`; boolean labelled 表示フラグ). Date fields read back as `YYYY-MM-DD`; references as absolute paths.',
     '',
   ];

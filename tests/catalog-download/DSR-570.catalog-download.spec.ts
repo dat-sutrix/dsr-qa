@@ -60,7 +60,7 @@ async function card(list: CatalogDisplayPage, data: ListItem[], lang: Language, 
 
 for (const lang of languages) {
   test.describe(lang, () => {
-    test(`DSR-CATDL-001 [${lang}] catalog detail header renders`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-CATDL-001 [${lang}] catalog detail header renders`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { form, response } = await openForm(page, lang);
       const h1 = await page.locator('h1').allInnerTexts();
       await form.image.scrollIntoViewIfNeeded();
@@ -73,7 +73,7 @@ for (const lang of languages) {
       expect.soft(texts.date.trim(), 'date YYYY.MM.DD').toMatch(dateFormat);
     });
 
-    test(`DSR-CATDL-002 [${lang}] download form fields, labels, consent and button present`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-CATDL-002 [${lang}] download form fields, labels, consent and button present`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { form } = await openForm(page, lang);
       await expect(form.form).toHaveCount(1);
       const fields = await form.fields();
@@ -88,7 +88,7 @@ for (const lang of languages) {
       await expect(form.submit).toBeInViewport();
     });
 
-    test(`DSR-CATDL-005 [${lang}] requiresForm=false card downloads PDF directly`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-CATDL-005 [${lang}] requiresForm=false card downloads PDF directly`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { list, data } = await openList(page, lang);
       const { card: item, item: cf } = await card(list, data, lang, 'pdf', 'TD-570-02');
       expect.soft(cf?.requiresForm, 'CF requiresForm').toBe(false);
@@ -103,7 +103,7 @@ for (const lang of languages) {
       expect(contentType).toContain('application/pdf');
     });
 
-    test(`DSR-CATDL-006 [${lang}] requiresForm=true card leads to the download form`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-CATDL-006 [${lang}] requiresForm=true card leads to the download form`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { list, data } = await openList(page, lang);
       const { card: item, item: cf } = await card(list, data, lang, 'pdfForm', 'TD-570-03', true);
       const href = new URL((await list.title(item).getAttribute('href'))!, page.url()).href;
@@ -118,7 +118,7 @@ for (const lang of languages) {
     });
 
     // DSR-655 Y3: e-book + requiresForm is gated like a PDF; the card links to the overlay detail page with the form (JOB-20261022-14 rule 2).
-    test(`DSR-CATDL-018 [${lang}] e-book form card links to the detail page with the form`, { tag: ['@auto'] }, async ({ page }) => {
+    test(`DSR-CATDL-018 [${lang}] e-book form card links to the detail page with the form`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { list, data } = await openList(page, lang);
       const { card: item, item: cf } = await card(list, data, lang, 'ebookForm', 'TD-570-04', true);
       const expected = new URL(detailPath(lang, td.ebookForm.catalogId), page.url()).href;
@@ -138,7 +138,7 @@ for (const lang of languages) {
 }
 
 test.describe('ja', () => {
-  test('DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click)', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-CATDL-003 [ja] consent unchecked blocks sending (DOM only, no click)', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const { form } = await openForm(page, 'ja');
     await expect(form.consent).toHaveCount(1);
     const initiallyChecked = await form.consent.isChecked();
@@ -156,7 +156,7 @@ test.describe('ja', () => {
     expect(state.consentRequired || state.buttonDisabled || state.buttonAriaDisabled === 'true', 'consent required OR button disabled').toBe(true);
   });
 
-  test('DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-CATDL-007 [ja] form-gated PDF URL not exposed before submit', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const bodies: Promise<{ url: string; body: string }>[] = [];
     const capture = (r: Response) => {
       if (/text|json|javascript|xml/.test(r.headers()['content-type'] ?? '')) bodies.push(r.text().then(body => ({ url: r.url(), body }), () => ({ url: r.url(), body: '' })));
@@ -195,7 +195,7 @@ test.describe('ja', () => {
     expect(gatedHits, 'gated PDF URL delivered to the browser before submit').toEqual([]);
   });
 
-  test('DSR-CATDL-010 [ja] catalog ID handed to the form', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-CATDL-010 [ja] catalog ID handed to the form', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const { form } = await openForm(page, 'ja');
     observations.push({ demoFormUrl: page.url(), query: Object.fromEntries(new URL(page.url()).searchParams), hiddenInputs: await form.hiddenInputs() });
     const { list, data } = await openList(page, 'ja');
@@ -208,7 +208,7 @@ test.describe('ja', () => {
     expect(decodeURIComponent(page.url()).includes(id) || hidden.some(h => h.value.includes(id)), `${id} in URL or hidden input`).toBe(true);
   });
 
-  test('DSR-CATDL-017 [ja] unknown or missing catalog ID never shows another catalog form', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-CATDL-017 [ja] unknown or missing catalog ID never shows another catalog form', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     // Demo page behaviour recorded for A5 regardless of the id mechanism.
     const demo = new CatalogDownloadPage(page);
     for (const query of ['', `?id=${unknownId}`]) {
@@ -237,7 +237,7 @@ test.describe('ja', () => {
 });
 
 test.describe('en', () => {
-  test('DSR-CATDL-016 [en] fixed texts translated (no Japanese)', { tag: ['@auto'] }, async ({ page }) => {
+  test('DSR-CATDL-016 [en] fixed texts translated (no Japanese)', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
     const { form } = await openForm(page, 'en');
     const texts = await form.fixedTexts();
     observations.push({ url: page.url(), texts });
@@ -247,7 +247,7 @@ test.describe('en', () => {
 });
 
 test.describe('cn', () => {
-  test('DSR-CATDL-016 [cn] fixed texts translated (Chinese)', { tag: ['@auto'] }, async () => {
+  test('DSR-CATDL-016 [cn] fixed texts translated (Chinese)', { tag: ['@overlay', '@auto'] }, async () => {
     test.fixme(true, 'cn: no /master/cn (Issue #18)');
   });
 });

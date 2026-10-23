@@ -1,0 +1,213 @@
+# DRAFT (JOB-20261023-07) for docs/DSR-669/regression-runbook.md step 4 – copy of REPUBLISH-OVL-20261022 with model: auto.
+# Claude: before use, refresh the CF list + replicate tiers from the live state (GET), then move to ykk-dsr/hub/author/manifests/REPUBLISH-669.yaml.
+# REPUBLISH-OVL-20261022 – republish DSR CFs so EDS regenerates the overlay pages after the og:image fix
+# (Martin 22/10, dsr-eds PR #206; JOB-20261022-11). Replication only: NO field changes, content CFs not touched.
+# Source: GET 22/10 07:08Z, QueryBuilder + CF OpenAPI list of /content/dam/dsr (53 CFs, both sources agree), then
+#   cq:lastReplicationAction_{preview,publish} from <path>/jcr:content.json.
+# Rule: replicate = exactly the tiers whose action is Activate now. Preview-only stays preview-only (qa654-preview).
+#   Never-replicated: none in the guard. Deactivated: none in the guard.
+# Exception (needs Claude): en qa587-off + qa587-rel-b have cq:lastReplicationAction_preview=Activate but NO
+#   cq:lastReplicated_preview, and the CF API reports previewReplicationStatus=NEVER_PUBLISHED. They are kept publish-only
+#   here so .aem.page exposure is not widened. Add preview only if Claude confirms.
+# Guard folders with no qa* CF: dsr/{ja,en}/movies/tech, dsr/{ja,en}/products.
+# Out of guard (25 DSR CFs, not in this manifest; e.g. dsr/ja/products/990586001/2 → QA-PT tonight): see results/JOB-20261022-11/summary.md.
+id: REPUBLISH-669
+us: DSR-587/654/586
+max_writes: 2
+items:
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa190-cat-ebook
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa190-cat-ebook-form
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa190-cat-pdf
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa190-cat-pdf-form
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa654-content-unpub
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa654-inactive
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa654-preview
+    replicate: [preview]  # preview-only: must NOT be on .live
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/catalogs/qa654-update
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa501-main-a
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa501-main-b
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa557-dam
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-main
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-off
+    replicate: [publish]  # preview: action=Activate without timestamp, API NEVER_PUBLISHED → publish only (open point)
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-r1
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-r2
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-r3
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-r4
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-r5
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-r6
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-rel-a
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: republish of the existing en CF only (no data change)
+    path: /content/dam/dsr/en/movies/standard/qa587-rel-b
+    replicate: [publish]  # preview: action=Activate without timestamp, API NEVER_PUBLISHED → publish only (open point)
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: republish of the existing ja CF only (no data change)
+    path: /content/dam/dsr/ja/catalogs/qa190-cat-ebook
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: republish of the existing ja CF only (no data change)
+    path: /content/dam/dsr/ja/catalogs/qa190-cat-ebook-form
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: republish of the existing ja CF only (no data change)
+    path: /content/dam/dsr/ja/catalogs/qa190-cat-pdf
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: republish of the existing ja CF only (no data change)
+    path: /content/dam/dsr/ja/catalogs/qa190-cat-pdf-form
+    replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: republish of the existing ja CF only (no data change)
+    path: /content/dam/dsr/ja/catalogs/qa654-inactive
+    replicate: [preview, publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: republish of the existing ja CF only (no data change)
+    path: /content/dam/dsr/ja/movies/standard/qa557-dam
+    replicate: [publish]
+  - kind: dsr-cf
+    model: auto  # DSR-669: live model of the folder (DM_*_dsr after deploy)
+    lang: [ja]
+    lang_pair: false
+    lang_pair_reason: republish of the existing ja CF only (no data change)
+    path: /content/dam/dsr/ja/movies/standard/qa587-main
+    replicate: [preview, publish]

@@ -1,0 +1,1475 @@
+{
+ "job": "JOB-20261023-07",
+ "agent": "claude-code",
+ "us": "DSR-586/654/529 (A) + DSR-669/670/671 readiness (B)",
+ "env": "dev",
+ "started": "2026-10-23T02:50:00Z",
+ "finished": "2026-10-23T03:10:49Z",
+ "status": "done",
+ "tests": [
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: article list /master/ja/test-space/article-list shows no qa529 card (listing renders 9 placeholder fixture images, not the stories index)"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked: article list /master/en/test-space/article-list HTTP 404"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-007",
+   "lang": "ja",
+   "result": "fail",
+   "error": "gated PDF URL reaches the browser before submit (known 70%, JOB-23-04) | Error: gated PDF URL delivered to the browser before submit",
+   "evidence": "evidence/DSR-CATDL-007_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70
+  },
+  {
+   "tc": "DSR-CATDL-010",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATDL-017",
+   "lang": "ja",
+   "result": "skip",
+   "error": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=true); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "en",
+   "result": "fail",
+   "error": "en form renders Japanese texts (known 70%) | Error: fixed texts containing Japanese",
+   "evidence": "evidence/DSR-CATDL-016_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "cn",
+   "result": "skip",
+   "error": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: meta robots",
+   "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-pdf.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: sitemap <loc>",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "-form page title = content CF dev sample, not TD-190 title (known JOB-22-14) | Error: expect(locator).toHaveText(expected) failed",
+   "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-pdf-form.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: meta robots",
+   "evidence": "evidence/DSR-CATOV-002_ja_qa190-cat-ebook.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: sitemap <loc>",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "-form page title = content CF dev sample, not TD-190 title (known JOB-22-14) | Error: expect(locator).toHaveText(expected) failed",
+   "evidence": "evidence/DSR-CATOV-001_ja_qa190-cat-ebook-form.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-654-03 exists in en only (A7)"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "ja",
+   "result": "fail",
+   "error": "card \"QA190 PDF catalog\" absent: content CF titles are dev samples (known JOB-22-14) | Error: card 'QA190 PDF catalog'",
+   "evidence": "evidence/DSR-CATOV-012_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: meta robots",
+   "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-pdf.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: sitemap <loc>",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "fail",
+   "error": "-form page title = content CF dev sample, not TD-190 title (known JOB-22-14) | Error: expect(locator).toHaveText(expected) failed",
+   "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-pdf-form.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: meta robots",
+   "evidence": "evidence/DSR-CATOV-002_en_qa190-cat-ebook.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "fail",
+   "error": "Pending: BUG-CAT-NOINDEX by-design candidate (non-form noindex / no sitemap row); Expected unchanged | Error: sitemap <loc>",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "proposed": "Pending"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "fail",
+   "error": "-form page title = content CF dev sample, not TD-190 title (known JOB-22-14) | Error: expect(locator).toHaveText(expected) failed",
+   "evidence": "evidence/DSR-CATOV-001_en_qa190-cat-ebook-form.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "en",
+   "result": "fail",
+   "error": "card \"QA190 PDF catalog\" absent: content CF titles are dev samples (known JOB-22-14) | Error: card 'QA190 PDF catalog'",
+   "evidence": "evidence/DSR-CATOV-012_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "en",
+   "result": "skip",
+   "error": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-009",
+   "lang": "en",
+   "result": "fail",
+   "error": "preview-only DSR CF on .aem.page renders unavailable/not-found (known BUG-CAT-PREVIEW, JOB-23-03) | Error: 'QA654 preview' on .aem.page",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 50
+  },
+  {
+   "tc": "DSR-CATOV-010",
+   "lang": "en",
+   "result": "fail",
+   "error": "subfolder path qa654-folder/qa654-sub returns 200 (unavailable) instead of 404 (known JOB-22-19) | Error: qa654-folder/qa654-sub",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 50
+  },
+  {
+   "tc": "DSR-CATOV-011",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-014",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (ja)"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (ja)"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (ja)"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "-",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked – no DEV data for QA190 NEW 0, QA190 NEW 10, QA190 NEW 11 (en)"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked – no DEV data for QA190 UPD 0, QA190 UPD 10, QA190 UPD 11 (en)"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked – no DEV data for QA190 BOTH, qa190-cat-noupd (en)"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "preview-only DSR CF on .aem.page renders unavailable/not-found (known BUG-CAT-PREVIEW, JOB-23-03) | Error: .aem.page movie title",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 50
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-004",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-587-04 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-005",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-587-05 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-006",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-587-06 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-008",
+   "lang": "en",
+   "result": "fail",
+   "error": "TD-587-08 (commune unpublished) not seeded – phase 2 not done; no seeded guard in this test | Error: meta robots",
+   "evidence": "evidence/DSR-VOV-008_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0
+  },
+  {
+   "tc": "DSR-VOV-010",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-587-10 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "tech-talk list page not published on DEV (HTTP 404); 11.0 runs on video/search only (job JOB-ZZ-IDLE-06) (https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk)"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "en",
+   "result": "skip",
+   "error": "tech-talk list page not published on DEV (HTTP 404); 11.0 runs on video/search only (job JOB-ZZ-IDLE-06) (https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/tech-talk)"
+  },
+  {
+   "tc": "DSR-VOV-013",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-014",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-015",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-016",
+   "lang": "en",
+   "result": "skip",
+   "error": "TD-587-14 update dates not recorded (fixtures/dsr-587.ts expectedOrderByUpdateDesc)"
+  },
+  {
+   "tc": "DSR-VOV-017",
+   "lang": "en",
+   "result": "skip",
+   "error": "DSR173_MOVIE_PATH / DSR173_RELATED_PATH not set to the TD-587-01 / 14 pages (now /master/en/test-space/dsr-173-video-detail / null); run DSR-173 Group A with them"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-501-P3",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-501-P2",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "ja",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "ja",
+   "result": "skip",
+   "error": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "skip",
+   "error": "preview-only CF: not on .aem.live (HTTP 404 = expected)"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-008",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-VOV-008",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-001",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-002",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-003",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-004",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-005",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 + chain-type tag namespace; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-008",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + template revision (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-009",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-010",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-04; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-012",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 en/cn copies; cn folder may not exist (Issue #18); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-014",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-560/182 search JSON (Nakamoto); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-015",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-586 overlay; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked: TD-585-01 is ja only; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-02 not seeded (https://main--dsr-eds-dev--sutrix-projects.aem.page/ja/products/990586002 HTTP 404)"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-005",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-006",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-06 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-007",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-07 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-008",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-009",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-011",
+   "lang": "ja",
+   "result": "skip",
+   "error": "TD-586-11 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-020",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Blocked: no design for ver0.4 new fields (Figma B04 – Q29); current state recorded: rendered none"
+  },
+  {
+   "tc": "DSR-PDO-021",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "result": "pass"
+  }
+ ],
+ "lighthouse": [],
+ "code_changes": [
+  "fixtures/cf-models.ts",
+  "pages/CatalogDisplayPage.ts",
+  "tests/product-cf/DSR-585.product-cf.spec.ts",
+  "tests/movie-detail/DSR-587.overlay-retest-DSR-647.spec.ts",
+  "tests/product-detail/DSR-586.product-detail.spec.ts",
+  "fixtures/dsr-586.ts",
+  "fixtures/dsr-173.ts",
+  "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+  "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+  "tests/movie-detail/DSR-587.related-links-retest-DSR-538.spec.ts",
+  "tests/overlay-seo/DSR-587.overlay-seo.spec.ts",
+  "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+  "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+  "tests/article-detail/DSR-529.article-detail.spec.ts",
+  "package.json",
+  "scripts/compare-runs.mjs",
+  "tools/author/lib/model-map.mjs",
+  "tools/author/lib/models.mjs",
+  "tools/author/lib/lint.mjs",
+  "tools/author/lib/verify.mjs",
+  "tools/author/test/author.test.mjs",
+  "docs/DSR-586/assumptions.md",
+  "docs/DSR-654/assumptions.md",
+  "docs/DSR-529/assumptions.md",
+  "docs/DSR-669/regression-runbook.md",
+  "results/DSR-669/DEV/automation-run-20261023.md"
+ ],
+ "questions": []
+}

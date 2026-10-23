@@ -52,7 +52,7 @@ function cardsOf(catalog: CatalogDisplayPage, data: CatalogItem[], cf: CatalogIt
 
 for (const lang of languages) {
   test.describe(lang, () => {
-    test('DSR-CATV-012 catalog item shows thumbnail and title', { tag: ['@auto'] }, async ({ page }) => {
+    test('DSR-CATV-012 catalog item shows thumbnail and title', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { catalog, data } = await openCatalog(page, lang);
       // Core: ≥ 1 card (ja and en CFs with identical values can share a title). Old-folder NEW/UPDATE CFs: exactly 1.
       for (const key of Object.keys(core) as CoreKey[]) {
@@ -76,7 +76,7 @@ for (const lang of languages) {
       }
     });
 
-    test('DSR-CATV-013 PDF item without form opens in a new tab', { tag: ['@auto'] }, async ({ page, context }) => {
+    test('DSR-CATV-013 PDF item without form opens in a new tab', { tag: ['@overlay', '@auto'] }, async ({ page, context }) => {
       const { catalog, data } = await openCatalog(page, lang);
       const pdf = pick(data, lang, 'pdf', i => i.catalogType === 'pdf' && i.requiresForm !== true && !!i.pdfAsset, 'pdf requiresForm=false item');
       const { cards, twins } = cardsOf(catalog, data, pdf);
@@ -104,7 +104,7 @@ for (const lang of languages) {
     });
 
     for (const [number, title, requiresForm, cf] of [[16, 'e-book item opens ebookUrl without form', false, 'ebook']] as const) {
-      test(`DSR-CATV-0${number} ${title}`, { tag: ['@auto'] }, async ({ page, context }) => {
+      test(`DSR-CATV-0${number} ${title}`, { tag: ['@overlay', '@auto'] }, async ({ page, context }) => {
         const { catalog, data } = await openCatalog(page, lang);
         const ebook = pick(data, lang, cf, i => i.catalogType === 'ebook' && !!i.ebookUrl && (i.requiresForm === true) === requiresForm, `ebook requiresForm=${requiresForm} item`);
         const { cards, twins } = cardsOf(catalog, data, ebook);
@@ -129,7 +129,7 @@ for (const lang of languages) {
     }
 
     // DSR-655 Y3: an e-book with requiresForm is gated like a PDF; the card links to the overlay detail page with the form (JOB-20261022-14 rule 2).
-    test('DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form', { tag: ['@auto'] }, async ({ page }) => {
+    test('DSR-CATV-017 e-book item flagged requiresForm links to the detail page with the form', { tag: ['@overlay', '@auto'] }, async ({ page }) => {
       const { catalog, data } = await openCatalog(page, lang);
       const ebook = pick(data, lang, 'ebookForm', i => i.catalogType === 'ebook' && i.requiresForm === true, 'ebook requiresForm=true item');
       const { cards, twins } = cardsOf(catalog, data, ebook);
@@ -148,7 +148,7 @@ for (const lang of languages) {
     });
 
     for (const [number, title, kind, titles] of [[18, 'NEW label within 10 days of publishDate', 'NEW', qa190.new], [19, 'UPDATE label within 10 days of updateDate', 'UPDATE', qa190.upd], [20, 'only NEW when publishDate and updateDate both apply', 'BOTH', qa190.both]] as const) {
-      test(`DSR-CATV-0${number} ${title}`, { tag: ['@auto'] }, async ({ page }) => {
+      test(`DSR-CATV-0${number} ${title}`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
         const { catalog, data } = await openCatalog(page, lang);
         const on = today();
         // Blocked: dates come from the dsr-catalog-list GraphQL response; DOM shows one formatted date only.
@@ -180,7 +180,7 @@ for (const lang of languages) {
     const tier = new URL(host).hostname.endsWith('.aem.live') ? 'live' : 'page';
     test.describe(`${lang} video ${tier}`, () => {
       for (const id of [youtubeVideos[0].id, damVideos[0].id]) {
-        test(`DSR-CATV-001 [${lang}] no autoplay before click (${id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+        test(`DSR-CATV-001 [${lang}] no autoplay before click (${id}, .aem.${tier})`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
           const video = await openVideo(page, host, lang, id);
           await page.waitForLoadState('networkidle');
           const srcs = await video.iframeSrcs(); const paused = await video.videosPaused();
@@ -193,7 +193,7 @@ for (const lang of languages) {
       }
 
       for (const v of youtubeVideos) {
-        test(`DSR-CATV-002 [${lang}] YouTube embed src after click (${v.id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+        test(`DSR-CATV-002 [${lang}] YouTube embed src after click (${v.id}, .aem.${tier})`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
           const video = await openVideo(page, host, lang, v.id);
           await video.facade.click();
           await expect(video.embed).toBeAttached();
@@ -204,7 +204,7 @@ for (const lang of languages) {
         });
       }
 
-      test(`DSR-CATV-006 [${lang}] no YouTube/Youku request before interaction (${youtubeVideos[0].id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+      test(`DSR-CATV-006 [${lang}] no YouTube/Youku request before interaction (${youtubeVideos[0].id}, .aem.${tier})`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
         // DSR-109 facade: thumbnail allowed (QA decision 2026-10-15)
         const requests: string[] = [];
         page.on('request', r => { if (embedDomains.test(r.url())) requests.push(r.url()); });
@@ -236,7 +236,7 @@ for (const lang of languages) {
     const tier = new URL(host).hostname.endsWith('.aem.live') ? 'live' : 'page';
     test.describe(`${lang} youku ${tier}`, () => {
       for (const v of youkuVideos) {
-        test(`DSR-CATV-003 [${lang}] Youku embed src after click (${v.id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+        test(`DSR-CATV-003 [${lang}] Youku embed src after click (${v.id}, .aem.${tier})`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
           const video = await openVideo(page, host, lang, v.id);
           await page.waitForLoadState('networkidle');
           const before = await video.iframeSrcs();
@@ -251,7 +251,7 @@ for (const lang of languages) {
           expect(src).not.toMatch(/[?&]autoplay=1(&|$)/);
         });
 
-        test(`DSR-CATV-007 [${lang}] CSP allows the Youku embed, no violation (${v.id}, .aem.${tier})`, { tag: ['@auto'] }, async ({ page }) => {
+        test(`DSR-CATV-007 [${lang}] CSP allows the Youku embed, no violation (${v.id}, .aem.${tier})`, { tag: ['@overlay', '@auto'] }, async ({ page }) => {
           await watchCsp(page);
           const errors: string[] = [];
           page.on('console', m => { if (m.type() === 'error' && /Content Security Policy|Refused to/i.test(m.text())) errors.push(m.text()); });

@@ -14,7 +14,7 @@ const targets: ReadonlyArray<{ lang: Language; tdId: '01' | '14' }> = [
 for (const tier of ['page', 'live'] as const) {
   for (const { lang, tdId } of targets) {
     const id = td[tdId].id;
-    test(`DSR-538-retest [${lang}] ${id} (.aem.${tier}) related card hrefs on the EDS host, HTTP 200`, { tag: ['@DSR-538'] }, async ({ page, request }, testInfo) => {
+    test(`DSR-538-retest [${lang}] ${id} (.aem.${tier}) related card hrefs on the EDS host, HTTP 200`, { tag: ['@overlay', '@DSR-538'] }, async ({ page, request }, testInfo) => {
       const host = hosts()[tier];
       const target = `${host}${videoPath(lang, id)}`;
       const raw = await request.get(target, { failOnStatusCode: false });

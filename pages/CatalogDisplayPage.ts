@@ -1,5 +1,6 @@
 import type { Locator, Page, Response } from '@playwright/test';
 import { catalogQuery, type CatalogItem } from '../fixtures/dsr-557';
+import { dsrItems, contentOf } from '../fixtures/cf-models';
 
 export class CatalogDisplayPage {
   readonly block: Locator;
@@ -16,9 +17,12 @@ export class CatalogDisplayPage {
     const query = this.page.waitForResponse(r => catalogQuery.test(r.url()), { timeout: 15_000 }).catch(() => null);
     const response = await this.page.goto(path);
     const json = await (await query)?.json().catch(() => null);
-    // dsr-catalog-list: data.related.items[] = DSR CF { _path, isActive, isBoothLimited, catalog: content CF }.
-    const items: { _path?: string; isActive?: boolean | null; isBoothLimited?: boolean | null; catalog?: CatalogItem | null }[] = json?.data?.related?.items ?? [];
-    const data = items.filter(i => i.catalog).map(i => ({ ...i.catalog!, dsrPath: i._path, isActive: i.isActive, isBoothLimited: i.isBoothLimited }));
+    // dsr-catalog-list: related (or dmCatalogRelatedList / dmCatalogDsrList, DSR-669) items[] = DSR CF { _path, isActive, isBoothLimited, catalog: content CF }.
+    const items = dsrItems(json?.data) as { _path?: string; isActive?: boolean | null; isBoothLimited?: boolean | null }[];
+    const data = items.flatMap(i => {
+      const catalog = contentOf(i, 'catalog') as CatalogItem | null;
+      return catalog ? [{ ...catalog, dsrPath: i._path, isActive: i.isActive, isBoothLimited: i.isBoothLimited }] : [];
+    });
     return { response, data };
   }
 

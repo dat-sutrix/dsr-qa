@@ -3,6 +3,7 @@ import { getFragment, getReplication, getModels, getPage } from './aem.mjs';
 import { normPageValue, samePageValue } from './apply.mjs';
 import { edsGet, EDS_HOSTS } from './http.mjs';
 import { expandItems, verifyUrls } from './manifest.mjs';
+import { resolveEntryModels } from './model-map.mjs';
 
 function norm(type, vals) {
   return [].concat(vals ?? []).map((x) => {
@@ -20,7 +21,7 @@ export async function verify(doc, opts = {}) {
   const add = (e, layer, check, ok, expected, actual, warn = false) =>
     checks.push({ layer, check, item: e.item, lang: e.lang, path: e.path, result: ok ? 'PASS' : warn ? 'WARN' : 'FAIL', expected, actual });
 
-  for (const e of expandItems(doc)) {
+  for (const e of resolveEntryModels(expandItems(doc), models)) {
     const ctx = { item: `#${e.idx + 1} ${e.kind}`, lang: e.lang, path: e.path };
     if (e.kind === 'rename') {
       const from = await getFragment(e.from);

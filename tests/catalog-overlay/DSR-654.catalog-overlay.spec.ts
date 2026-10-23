@@ -116,12 +116,14 @@ async function expectSentToList(
   await expect.soft(new CatalogDetailPage(page).title, 'catalog title not shown').toHaveCount(0);
 }
 
+const noindexPending = 'BUG-CAT-NOINDEX by-design candidate: non-form catalog robots=noindex / not in sitemap → proposed verdict Pending (not Fail) until Dat OK/NG; Expected unchanged';
+
 test.describe('DSR-654 catalog detail overlay', () => {
   for (const lang of ['ja', 'en'] as const) {
     for (const key of tdKeys) {
       const data = td[key];
 
-      test(`DSR-CATOV-001 [${lang}] ${data.id}: publishing DSR CF creates the catalog detail page${data.requiresForm ? ' with the catalog name shown' : '; non-form → redirect to the file'}`, { tag: ['@auto'] }, async ({ page, request, browser }) => {
+      test(`DSR-CATOV-001 [${lang}] ${data.id}: publishing DSR CF creates the catalog detail page${data.requiresForm ? ' with the catalog name shown' : '; non-form → redirect to the file'}`, { tag: ['@overlay', '@auto'] }, async ({ page, request, browser }) => {
         const catalog = new CatalogDetailPage(page);
         const target = url(catalogPath(lang, data.id));
         if (!data.requiresForm) {
@@ -142,11 +144,14 @@ test.describe('DSR-654 catalog detail overlay', () => {
         await expect.soft(catalog.form, 'form slot').toHaveCount(1);
       });
 
-      test(`DSR-CATOV-002 [${lang}] ${data.id}: static HTML carries title, description, og:image and the content CF rows with the same id`, { tag: ['@auto'] }, async ({ request, browser }) => {
+      test(`DSR-CATOV-002 [${lang}] ${data.id}: static HTML carries title, description, og:image and the content CF rows with the same id`, { tag: ['@overlay', '@auto'] }, async ({ request, browser }) => {
         const { response, html } = await rawCatalog(request, lang, data.id);
         expect(response.status()).toBe(200);
         const raw = await parseRaw(browser, html);
         observations.push(raw);
+        // JOB-20261023-07: non-form noindex / no sitemap row = by-design candidate (BUG-CAT-NOINDEX 40%, non-form redirects to the file).
+        // Expected unchanged; a failure on a non-form id is reported as Pending until Dat decides (docs/DSR-654/assumptions.md).
+        if (!data.requiresForm) test.info().annotations.push({ type: 'pending', description: noindexPending });
         // JOB-20261022-14 rule 4: expected title = live content CF title (dev sample on DEV); TD-190 title stays the target (docs/DSR-654).
         const liveTitle = row(raw.rows, 'catalogTitle') ?? '';
         if (liveTitle !== data.title) test.info().annotations.push({ type: 'data', description: `content CF title "${liveTitle}" is a dev sample; TD-190 target "${data.title}" not seeded` });
@@ -166,7 +171,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect.soft(raw.rows.map(r => r.key), 'no unavailable row').not.toContain('unavailable');
       });
 
-      test(`DSR-CATOV-003 [${lang}] ${data.id}: live-published catalog is served on .aem.page and .aem.live`, { tag: ['@auto'] }, async ({ request }) => {
+      test(`DSR-CATOV-003 [${lang}] ${data.id}: live-published catalog is served on .aem.page and .aem.live`, { tag: ['@overlay', '@auto'] }, async ({ request }) => {
         const path = catalogPath(lang, data.id);
         const page = (await status(request, url(path, hosts().page))).status();
         const live = (await status(request, url(path, hosts().live))).status();
@@ -175,7 +180,10 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect.soft(live, '.aem.live').toBe(200);
       });
 
-      test(`DSR-CATOV-021 [${lang}] ${data.id}: live page listed once in query-index and sitemap`, { tag: ['@auto'] }, async ({ request }) => {
+      test(`DSR-CATOV-021 [${lang}] ${data.id}: live page listed once in query-index and sitemap`, { tag: ['@overlay', '@auto'] }, async ({ request }) => {
+        // JOB-20261023-07: non-form noindex / no sitemap row = by-design candidate (BUG-CAT-NOINDEX 40%, non-form redirects to the file).
+        // Expected unchanged; a failure on a non-form id is reported as Pending until Dat decides (docs/DSR-654/assumptions.md).
+        if (!data.requiresForm) test.info().annotations.push({ type: 'pending', description: noindexPending });
         const live = hosts().live;
         const path = catalogPath(lang, data.id);
         await rawCatalog(request, lang, data.id, coreTdId, live);
@@ -202,7 +210,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       });
     }
 
-    test(`DSR-CATOV-004 [${lang}] naming rule: uppercase / underscore catalog URL → 404`, { tag: ['@auto'] }, async ({ request }) => {
+    test(`DSR-CATOV-004 [${lang}] naming rule: uppercase / underscore catalog URL → 404`, { tag: ['@overlay', '@auto'] }, async ({ request }) => {
       // Precondition: the lowercase page exists on this host, so a 404 on the variant comes from the regex.
       const { id } = td.pdf;
       await rawCatalog(request, lang, id);
@@ -211,12 +219,12 @@ test.describe('DSR-654 catalog detail overlay', () => {
       }
     });
 
-    test(`DSR-CATOV-005 [${lang}] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list`, { tag: ['@auto'] }, async ({ request, browser, page }) => {
+    test(`DSR-CATOV-005 [${lang}] 表示フラグ (isActive) OFF → noindex, visitor sent to the catalog list`, { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
       // BL-OVL-1 expectation kept (redirect to list); A4.
       await expectSentToList(request, browser, page, lang, td654.inactive, false);
     });
 
-    test(`DSR-CATOV-006 [${lang}] unpublished DSR CF → 404 on both hosts, removed from query-index`, { tag: ['@auto'] }, async ({ request }) => {
+    test(`DSR-CATOV-006 [${lang}] unpublished DSR CF → 404 on both hosts, removed from query-index`, { tag: ['@overlay', '@auto'] }, async ({ request }) => {
       const data = td654.removed;
       test.skip(!(data.langs as readonly string[]).includes(lang), `${data.tdId} exists in ${data.langs.join(', ')} only (A7)`);
       test.info().annotations.push({ type: 'note', description: seedUnverifiable(data.tdId) });
@@ -228,7 +236,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       expect.soft(paths.filter(p => p?.endsWith(`/catalog/${data.id}`)), 'query-index paths').toEqual([]);
     });
 
-    test(`DSR-CATOV-007 [${lang}] catalog/search is not taken by the overlay`, { tag: ['@auto'] }, async ({ request, page }) => {
+    test(`DSR-CATOV-007 [${lang}] catalog/search is not taken by the overlay`, { tag: ['@overlay', '@auto'] }, async ({ request, page }) => {
       const target = url(searchPath(lang));
       const raw = await (await status(request, target)).text();
       const response = await page.goto(target);
@@ -239,7 +247,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       expect.soft(raw, "no 'unavailable' row").not.toMatch(/<div>\s*unavailable\s*<\/div>/);
     });
 
-    test(`DSR-CATOV-008 [${lang}] catalog detail page makes 0 GraphQL requests; html lang matches the site`, { tag: ['@auto'] }, async ({ request, page }) => {
+    test(`DSR-CATOV-008 [${lang}] catalog detail page makes 0 GraphQL requests; html lang matches the site`, { tag: ['@overlay', '@auto'] }, async ({ request, page }) => {
       // Form-gated id: an open catalog leaves the page for its file (catalog-link.js), so no page to inspect.
       const { id } = td.pdfForm;
       await rawCatalog(request, lang, id);
@@ -252,7 +260,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       expect.soft(actualLang, 'html lang').toBe(htmlLang[lang]);
     });
 
-    test(`DSR-CATOV-012 [${lang}] catalog list card links to the overlay page`, { tag: ['@auto'] }, async ({ request, page }) => {
+    test(`DSR-CATOV-012 [${lang}] catalog list card links to the overlay page`, { tag: ['@overlay', '@auto'] }, async ({ request, page }) => {
       const data = td.pdf;
       await rawCatalog(request, lang, data.id);
       const list = url(listPath(lang));
@@ -272,7 +280,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       await expect.soft(new CatalogDetailPage(page).title, 'same catalog name').toHaveText(data.title);
     });
 
-    test(`DSR-CATOV-015 [${lang}] PDF, requiresForm OFF → detail redirects to the PDF directly`, { tag: ['@auto'] }, async ({ request, page, browser }) => {
+    test(`DSR-CATOV-015 [${lang}] PDF, requiresForm OFF → detail redirects to the PDF directly`, { tag: ['@overlay', '@auto'] }, async ({ request, page, browser }) => {
       // JOB-20261022-14 rule 1 (IDLE-32): final URL = PDF, not a rendered detail page.
       const data = td.pdf;
       const { target, html } = await rawCatalog(request, lang, data.id);
@@ -284,7 +292,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       await expect.soft(new CatalogDetailPage(page).form, 'no form').toHaveCount(0);
     });
 
-    test(`DSR-CATOV-016 [${lang}] PDF, requiresForm ON → form first, PDF URL not exposed`, { tag: ['@auto'] }, async ({ request, page }) => {
+    test(`DSR-CATOV-016 [${lang}] PDF, requiresForm ON → form first, PDF URL not exposed`, { tag: ['@overlay', '@auto'] }, async ({ request, page }) => {
       const data = td.pdfForm;
       const { target, html } = await rawCatalog(request, lang, data.id);
       const catalog = new CatalogDetailPage(page);
@@ -303,7 +311,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       expect.soft(exposed.pdfAssetRow, 'pdfAsset row in raw HTML').toBe(false);
     });
 
-    test(`DSR-CATOV-017 [${lang}] e-book, requiresForm OFF → detail redirects to ebookUrl without a form`, { tag: ['@auto'] }, async ({ request, page, browser }) => {
+    test(`DSR-CATOV-017 [${lang}] e-book, requiresForm OFF → detail redirects to ebookUrl without a form`, { tag: ['@overlay', '@auto'] }, async ({ request, page, browser }) => {
       // JOB-20261022-14 rule 1 (IDLE-32): final URL = ebookUrl (location.replace, same tab), not a rendered detail page.
       const data = td.ebook;
       const { target, html } = await rawCatalog(request, lang, data.id);
@@ -311,7 +319,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       expect.soft(normalize(first), 'redirect target = TD-654-01 ebookUrl').toBe(normalize(ebookUrl));
     });
 
-    test(`DSR-CATOV-018 [${lang}] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)`, { tag: ['@auto'] }, async ({ request, page }) => {
+    test(`DSR-CATOV-018 [${lang}] e-book, requiresForm ON → behaviour per DSR-655 Y3 (default: no form, opens ebookUrl)`, { tag: ['@overlay', '@auto'] }, async ({ request, page }) => {
       const data = td.ebookForm;
       const { target } = await rawCatalog(request, lang, data.id);
       const catalog = new CatalogDetailPage(page);
@@ -329,7 +337,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
       await expect.soft(catalog.action, 'target').toHaveAttribute('target', '_blank');
     });
 
-    test(`DSR-CATOV-019 [${lang}] non-form PDF catalog: detail redirects to the file instead of rendering image, name, description, date and type`, { tag: ['@auto'] }, async ({ request, browser, page }) => {
+    test(`DSR-CATOV-019 [${lang}] non-form PDF catalog: detail redirects to the file instead of rendering image, name, description, date and type`, { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
       // JOB-20261022-14 rule 1 (IDLE-32): the rendered detail (image/name/description/date/type) exists only for form-gated catalogs.
       const data = td.pdf;
       const { target, html } = await rawCatalog(request, lang, data.id);
@@ -340,7 +348,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
   }
 
   // en-only TDs (A7).
-  test('DSR-CATOV-009 [en] DSR CF published to Preview only → served on .aem.page, not on .aem.live', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-CATOV-009 [en] DSR CF published to Preview only → served on .aem.page, not on .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     const data = td654.preview;
     const path = catalogPath('en', data.id);
     const { html } = await rawCatalog(request, 'en', data.id, data.tdId, hosts().page);
@@ -348,7 +356,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
     expect.soft((await status(request, url(path, hosts().live))).status(), '.aem.live').toBe(404);
   });
 
-  test('DSR-CATOV-010 [en] DSR CF in a subfolder → no page (directory-strict)', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-CATOV-010 [en] DSR CF in a subfolder → no page (directory-strict)', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     const data = td654.sub;
     test.info().annotations.push({ type: 'note', description: seedUnverifiable(data.tdId) });
     for (const host of [hosts().page, hosts().live]) {
@@ -357,7 +365,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
     expect.soft((await status(request, url(`/en/library/catalog/${data.folder}/${data.id}`))).status(), `${data.folder}/${data.id}`).toBe(404);
   });
 
-  test('DSR-CATOV-011 [en] content CF only (no DSR CF) → no page', { tag: ['@auto'] }, async ({ request }) => {
+  test('DSR-CATOV-011 [en] content CF only (no DSR CF) → no page', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     const data = td654.contentOnly;
     test.info().annotations.push({ type: 'note', description: seedUnverifiable(data.tdId) });
     for (const host of [hosts().page, hosts().live]) {
@@ -367,7 +375,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
 
   test('DSR-CATOV-013 [en] content CF change shows only after DSR CF republish', () => { test.fixme(true, manualPending); });
 
-  test('DSR-CATOV-014 [en] content CF unpublished → page unavailable + noindex, visitor sent to the catalog list', { tag: ['@auto'] }, async ({ request, browser, page }) => {
+  test('DSR-CATOV-014 [en] content CF unpublished → page unavailable + noindex, visitor sent to the catalog list', { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
     // BL-OVL-1 expectation kept (redirect to list), same as 005.
     await expectSentToList(request, browser, page, 'en', td654.contentUnpub, true);
   });
