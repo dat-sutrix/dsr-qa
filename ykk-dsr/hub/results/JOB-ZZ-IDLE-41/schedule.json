@@ -1,7 +1,7 @@
 {
   "cutoffUTC": "2026-10-23T11:00:00.000Z",
   "pid": 396073,
-  "state": "running",
+  "state": "complete",
   "rounds": [
     {
       "dueUTC": "2026-10-23T04:17:56.596Z",
@@ -23,7 +23,9 @@
     },
     {
       "dueUTC": "2026-10-23T10:17:56.596Z",
-      "state": "pending"
+      "state": "captured",
+      "exitCode": 0,
+      "finished": "2026-10-23T10:18:18.604Z"
     }
   ]
 }
