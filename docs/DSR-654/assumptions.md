@@ -21,12 +21,14 @@ Spec: `tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts`, fixtures `fixture
 - CATOV-001 for the `-form` ids still expects the TD-190 title. Rule 4 of the job names only CATOV-002, so a dev-sample title fails there as `data`.
 - CATOV-012 (card → overlay page for `td.pdf`) and CATOV-018 (e-book + requiresForm, DSR-655 Y3) were not in the job scope and are unchanged.
 
-## Pending, Expected NOT changed (JOB-20261023-07, 2026-10-23)
+## Expected changed (JOB-20261023-10, 2026-10-23) – supersedes the JOB-20261023-07 "Pending" section
 
-| TC | Current Expected (kept) | Observed (JOB-20261022-14) | Status |
-|---|---|---|---|
-| DSR-CATOV-002 (qa190-cat-pdf, qa190-cat-ebook; requiresForm OFF) | `meta robots` has no `noindex` | `robots=noindex` on non-form pages | **Pending**: BUG-CAT-NOINDEX (40%) is a by-design candidate because non-form pages redirect to the file (`catalog-detail.js:165-169`). No written source says noindex is intended, so Expected stays. |
-| DSR-CATOV-021 (same ids) | live page listed once in query-index and sitemap | no sitemap entry for non-form pages | **Pending**: same reason. |
+| TC | New Expected | Source |
+|---|---|---|
+| DSR-CATOV-002 (requiresForm = false) | `meta robots` contains `noindex` (non-form page redirects to the file) | Dat 23/10: BUG-CAT-NOINDEX = by design |
+| DSR-CATOV-021 (requiresForm = false) | NOT listed in query-index and NOT in sitemap | Dat 23/10: BUG-CAT-NOINDEX = by design |
+| DSR-CATOV-002/021 (requiresForm = true) | unchanged: no `noindex`, listed once in query-index and sitemap | – |
+| DSR-CATOV-010 | flat `/en/library/catalog/qa654-sub` → 404 on .aem.page and .aem.live; sub-folder `/en/library/catalog/qa654-folder/qa654-sub` → HTTP 200 not-found stub (`source: overlay`, `unavailable: not-found`, robots noindex, no `catalogTitle`), browser final URL = `/en/library/catalog` | Martin 23/10: CF creation is directory-strict, overlay answers only 200 or 404; a 200 with a wrong directory is blank → redirect to list |
 
-- The spec adds a `pending` annotation to CATOV-002/021 for non-form ids. All assertions stay the same. A failure there is reported as a proposed **Pending**, not a Fail, until Dat answers OK/NG (STANDUP 23/10, DASHBOARD 🐞 BUG-CAT-NOINDEX). Expected changes only after a written source (Martin/Quentin comment or BL update).
-- The `-form` ids keep the plain verdict: noindex there is still a Fail.
+- requiresForm is read from the `requiresForm` row of the static overlay HTML (content CF), not hard-coded per id. [Giả định] json2html omits the row when the flag is false (observed 23/10: non-form ids have no row, `-form` ids have `true`), so a missing row = false. CATOV-002 still cross-checks it against `fixtures/dsr-654.ts`.
+- Observed 23/10 (JOB-10): non-form pages are excluded from sitemap.xml but still listed in query-index.json with column `robots: noindex` → CATOV-021 non-form fails on query-index only; reported as suspect `test` for Claude to decide.

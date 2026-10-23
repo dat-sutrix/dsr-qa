@@ -116,7 +116,10 @@ async function expectSentToList(
   await expect.soft(new CatalogDetailPage(page).title, 'catalog title not shown').toHaveCount(0);
 }
 
-const noindexPending = 'BUG-CAT-NOINDEX by-design candidate: non-form catalog robots=noindex / not in sitemap → proposed verdict Pending (not Fail) until Dat OK/NG; Expected unchanged';
+// JOB-20261023-10 (Dat 23/10, BUG-CAT-NOINDEX = by design): requiresForm=false → robots noindex, not in query-index/sitemap.
+// requiresForm comes from the content CF row of the static HTML; json2html omits the row when the flag is false
+// (observed 23/10: row present only as 'true'), so a missing row on a served catalog = false.
+const requiresFormOf = (rows: { key: string; value: string }[]) => row(rows, 'requiresForm') ?? 'false';
 
 test.describe('DSR-654 catalog detail overlay', () => {
   for (const lang of ['ja', 'en'] as const) {
@@ -149,9 +152,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect(response.status()).toBe(200);
         const raw = await parseRaw(browser, html);
         observations.push(raw);
-        // JOB-20261023-07: non-form noindex / no sitemap row = by-design candidate (BUG-CAT-NOINDEX 40%, non-form redirects to the file).
-        // Expected unchanged; a failure on a non-form id is reported as Pending until Dat decides (docs/DSR-654/assumptions.md).
-        if (!data.requiresForm) test.info().annotations.push({ type: 'pending', description: noindexPending });
+        const nonForm = requiresFormOf(raw.rows) === 'false';
         // JOB-20261022-14 rule 4: expected title = live content CF title (dev sample on DEV); TD-190 title stays the target (docs/DSR-654).
         const liveTitle = row(raw.rows, 'catalogTitle') ?? '';
         if (liveTitle !== data.title) test.info().annotations.push({ type: 'data', description: `content CF title "${liveTitle}" is a dev sample; TD-190 target "${data.title}" not seeded` });
@@ -159,7 +160,9 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect.soft(raw.title, '<title>').toBe(`${liveTitle}${siteTitleSuffix}`);
         expect.soft(raw.description ?? '', 'meta description').not.toBe('');
         expect.soft(raw.ogImage ?? '', 'og:image absolute URL').toMatch(/^https?:\/\//);
-        expect.soft(raw.robots ?? '', 'meta robots').not.toContain('noindex');
+        // JOB-20261023-10: non-form (redirect to the file) → noindex by design; form catalogs stay indexable.
+        if (nonForm) expect.soft(raw.robots ?? '', 'meta robots (non-form)').toContain('noindex');
+        else expect.soft(raw.robots ?? '', 'meta robots').not.toContain('noindex');
         // Directory-strict: DSR CF directly under /content/dam/dsr/{lang}/catalogs/, name = URL id.
         expect.soft(raw.cfPath, 'meta cf-path').toBe(dsrCfPath(lang, data.id));
         expect.soft(row(raw.rows, 'source'), 'row source').toBe('overlay');
@@ -167,7 +170,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
         // 1 content CF ⇒ 1 DSR CF same id: catalogId (= node name) comes from the content CF.
         expect.soft(row(raw.rows, 'catalogId'), 'row catalogId (content CF)').toBe(data.id);
         expect.soft(row(raw.rows, 'catalogType'), 'row catalogType').toBe(data.catalogType);
-        expect.soft(row(raw.rows, 'requiresForm'), 'row requiresForm').toBe(String(data.requiresForm));
+        expect.soft(requiresFormOf(raw.rows), 'requiresForm (content CF row; absent = false)').toBe(String(data.requiresForm));
         expect.soft(raw.rows.map(r => r.key), 'no unavailable row').not.toContain('unavailable');
       });
 
@@ -180,17 +183,17 @@ test.describe('DSR-654 catalog detail overlay', () => {
         expect.soft(live, '.aem.live').toBe(200);
       });
 
-      test(`DSR-CATOV-021 [${lang}] ${data.id}: live page listed once in query-index and sitemap`, { tag: ['@overlay', '@auto'] }, async ({ request }) => {
-        // JOB-20261023-07: non-form noindex / no sitemap row = by-design candidate (BUG-CAT-NOINDEX 40%, non-form redirects to the file).
-        // Expected unchanged; a failure on a non-form id is reported as Pending until Dat decides (docs/DSR-654/assumptions.md).
-        if (!data.requiresForm) test.info().annotations.push({ type: 'pending', description: noindexPending });
+      test(`DSR-CATOV-021 [${lang}] ${data.id}: ${data.requiresForm ? 'live page listed once' : 'non-form page not listed'} in query-index and sitemap`, { tag: ['@overlay', '@auto'] }, async ({ request, browser }) => {
         const live = hosts().live;
         const path = catalogPath(lang, data.id);
-        await rawCatalog(request, lang, data.id, coreTdId, live);
+        const { html } = await rawCatalog(request, lang, data.id, coreTdId, live);
+        // JOB-20261023-10 (BUG-CAT-NOINDEX = by design): requiresForm=false → 0 rows, form catalogs → exactly 1.
+        const expectedRows = requiresFormOf((await parseRaw(browser, html)).rows) === 'false' ? 0 : 1;
+        observations.push({ expectedRows });
         const index = await status(request, url(indexPath, live));
         const paths: string[] = index.ok() ? ((await index.json())?.data ?? []).map((r: { path?: string }) => r.path) : [];
         expect.soft(index.status(), 'query-index HTTP').toBe(200);
-        expect.soft(paths.filter(p => p === path), 'query-index rows').toHaveLength(1);
+        expect.soft(paths.filter(p => p === path), 'query-index rows').toHaveLength(expectedRows);
         // sitemap.xml may be a sitemap index → read its children.
         const locs: string[] = [];
         const sitemap = await status(request, url(sitemapPath, live));
@@ -206,7 +209,7 @@ test.describe('DSR-654 catalog detail overlay', () => {
           locs.push(...locsOf(xml));
         }
         observations.push({ indexRows: paths.filter(p => p === path).length, sitemapLocs: locs.filter(l => l.endsWith(path)) });
-        expect.soft(locs.filter(l => new URL(l).pathname === path), 'sitemap <loc>').toHaveLength(1);
+        expect.soft(locs.filter(l => new URL(l).pathname === path), 'sitemap <loc>').toHaveLength(expectedRows);
       });
     }
 
@@ -363,13 +366,28 @@ test.describe('DSR-654 catalog detail overlay', () => {
     expect.soft((await status(request, url(path, hosts().live))).status(), '.aem.live').toBe(404);
   });
 
-  test('DSR-CATOV-010 [en] DSR CF in a subfolder → no page (directory-strict)', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
+  // JOB-20261023-10 (Martin 23/10, by design): CF creation is directory-strict; the overlay answers only 200 or 404,
+  // so a sub-folder URL gets the blank not-found stub (200) and the client redirects to the catalog list.
+  test('DSR-CATOV-010 [en] DSR CF in a sub-folder → no page: flat URL 404, sub-folder URL blank stub → redirect to list (by design)', { tag: ['@overlay', '@auto'] }, async ({ request, browser, page }) => {
     const data = td654.sub;
     test.info().annotations.push({ type: 'note', description: seedUnverifiable(data.tdId) });
     for (const host of [hosts().page, hosts().live]) {
       expect.soft((await status(request, url(catalogPath('en', data.id), host))).status(), `${host} ${data.id}`).toBe(404);
     }
-    expect.soft((await status(request, url(`/en/library/catalog/${data.folder}/${data.id}`))).status(), `${data.folder}/${data.id}`).toBe(404);
+    const target = url(`/en/library/catalog/${data.folder}/${data.id}`);
+    const response = await status(request, target);
+    expect.soft(response.status(), `${data.folder}/${data.id}`).toBe(200);
+    const raw = await parseRaw(browser, await response.text());
+    observations.push({ robots: raw.robots, rows: raw.rows });
+    expect.soft(row(raw.rows, 'source'), 'row source').toBe('overlay');
+    expect.soft(row(raw.rows, 'unavailable'), 'row unavailable').toBe('not-found');
+    expect.soft(raw.robots ?? '', 'robots').toContain('noindex');
+    expect.soft(raw.rows.map(r => r.key), 'no catalogTitle row').not.toContain('catalogTitle');
+    await page.goto(target);
+    await page.waitForTimeout(redirectWaitMs);
+    observations.push({ finalUrl: page.url() });
+    expect.soft(new URL(page.url()).pathname.replace(/\/$/, ''), 'final URL = catalog list').toBe(listPath('en'));
+    await expect.soft(new CatalogDetailPage(page).title, 'catalog title not shown').toHaveCount(0);
   });
 
   test('DSR-CATOV-011 [en] content CF only (no DSR CF) → no page', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
