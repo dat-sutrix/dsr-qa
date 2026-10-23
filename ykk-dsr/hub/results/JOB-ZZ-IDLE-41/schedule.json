@@ -5,7 +5,9 @@
   "rounds": [
     {
       "dueUTC": "2026-10-23T04:17:56.596Z",
-      "state": "pending"
+      "state": "captured",
+      "exitCode": 0,
+      "finished": "2026-10-23T04:18:19.979Z"
     },
     {
       "dueUTC": "2026-10-23T06:17:56.596Z",
