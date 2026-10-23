@@ -1,0 +1,252 @@
+{
+ "at": "2026-10-23T17:39:44.506Z",
+ "hostTZ": "Europe/Berlin",
+ "runs": [
+  {
+   "tz": "host",
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+   "httpStatus": 200,
+   "browserToday": "Fri Oct 23 2026 19:39:47 GMT+0200 (Central European Summer Time)",
+   "queryUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/ja/catalogs/;cb=1792777184963",
+   "queryStatus": 200,
+   "queryFile": "q_dsr-catalog-list_ja.json",
+   "qa190": [
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+     "title": "QA190 BOTH",
+     "publishDate": "2026-10-22",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+     "title": "QA190 NEW 0",
+     "publishDate": "2026-10-23",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+     "title": "QA190 NEW 10",
+     "publishDate": "2026-10-13",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+     "title": "QA190 NEW 11",
+     "publishDate": "2026-10-12",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+     "title": "QA190 UPD 0",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+     "title": "QA190 UPD 10",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-13"
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+     "title": "QA190 UPD 11",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-12"
+    }
+   ],
+   "cards": [
+    "NEW QA190 NEW 0 2026.10.23 PDF",
+    "NEW QA190 BOTH 2026.10.22 PDF",
+    "NEW QA190 NEW 10 2026.10.13 PDF",
+    "QA190 NEW 11 2026.10.12 PDF",
+    "UPDATE QA190 UPD 0 2026.09.15 PDF",
+    "UPDATE QA190 UPD 10 2026.09.15 PDF",
+    "QA190 UPD 11 2026.09.15 PDF"
+   ]
+  },
+  {
+   "tz": "host",
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+   "httpStatus": 200,
+   "browserToday": "Fri Oct 23 2026 19:39:50 GMT+0200 (Central European Summer Time)",
+   "queryUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/en/catalogs/;cb=1792777188057",
+   "queryStatus": 200,
+   "queryFile": "q_dsr-catalog-list_en.json",
+   "qa190": [
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-both",
+     "title": "QA190 BOTH",
+     "publishDate": "2026-10-22",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+     "title": "QA190 NEW 0",
+     "publishDate": "2026-10-23",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+     "title": "QA190 NEW 10",
+     "publishDate": "2026-10-13",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+     "title": "QA190 NEW 11",
+     "publishDate": "2026-10-12",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+     "title": "QA190 UPD 0",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+     "title": "QA190 UPD 10",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-13"
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+     "title": "QA190 UPD 11",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-12"
+    }
+   ],
+   "cards": [
+    "NEW QA190 NEW 0 2026.10.23 PDF",
+    "NEW QA190 BOTH 2026.10.22 PDF",
+    "NEW QA190 NEW 10 2026.10.13 PDF",
+    "QA190 NEW 11 2026.10.12 PDF",
+    "UPDATE QA190 UPD 0 2026.09.15 PDF",
+    "UPDATE QA190 UPD 10 2026.09.15 PDF",
+    "QA190 UPD 11 2026.09.15 PDF"
+   ]
+  },
+  {
+   "tz": "Asia/Tokyo",
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/list-catalog",
+   "httpStatus": 200,
+   "browserToday": "Sat Oct 24 2026 02:39:53 GMT+0900 (Japan Standard Time)",
+   "queryUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/ja/catalogs/;cb=1792777191027",
+   "queryStatus": 200,
+   "qa190": [
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+     "title": "QA190 BOTH",
+     "publishDate": "2026-10-22",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+     "title": "QA190 NEW 0",
+     "publishDate": "2026-10-23",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+     "title": "QA190 NEW 10",
+     "publishDate": "2026-10-13",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+     "title": "QA190 NEW 11",
+     "publishDate": "2026-10-12",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+     "title": "QA190 UPD 0",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+     "title": "QA190 UPD 10",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-13"
+    },
+    {
+     "_path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+     "title": "QA190 UPD 11",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-12"
+    }
+   ],
+   "cards": [
+    "NEW QA190 NEW 0 2026.10.23 PDF",
+    "NEW QA190 BOTH 2026.10.22 PDF",
+    "QA190 NEW 10 2026.10.13 PDF",
+    "QA190 NEW 11 2026.10.12 PDF",
+    "UPDATE QA190 UPD 0 2026.09.15 PDF",
+    "QA190 UPD 10 2026.09.15 PDF",
+    "QA190 UPD 11 2026.09.15 PDF"
+   ]
+  },
+  {
+   "tz": "Asia/Tokyo",
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/list-catalog",
+   "httpStatus": 200,
+   "browserToday": "Sat Oct 24 2026 02:39:56 GMT+0900 (Japan Standard Time)",
+   "queryUrl": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-list;folder=/content/dam/dsr/en/catalogs/;cb=1792777194109",
+   "queryStatus": 200,
+   "qa190": [
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-both",
+     "title": "QA190 BOTH",
+     "publishDate": "2026-10-22",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+     "title": "QA190 NEW 0",
+     "publishDate": "2026-10-23",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+     "title": "QA190 NEW 10",
+     "publishDate": "2026-10-13",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+     "title": "QA190 NEW 11",
+     "publishDate": "2026-10-12",
+     "updateDate": null
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+     "title": "QA190 UPD 0",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-23"
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+     "title": "QA190 UPD 10",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-13"
+    },
+    {
+     "_path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+     "title": "QA190 UPD 11",
+     "publishDate": "2026-09-15",
+     "updateDate": "2026-10-12"
+    }
+   ],
+   "cards": [
+    "NEW QA190 NEW 0 2026.10.23 PDF",
+    "NEW QA190 BOTH 2026.10.22 PDF",
+    "QA190 NEW 10 2026.10.13 PDF",
+    "QA190 NEW 11 2026.10.12 PDF",
+    "UPDATE QA190 UPD 0 2026.09.15 PDF",
+    "QA190 UPD 10 2026.09.15 PDF",
+    "QA190 UPD 11 2026.09.15 PDF"
+   ]
+  }
+ ]
+}

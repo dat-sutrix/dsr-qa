@@ -1,0 +1,751 @@
+{
+ "started": "2026-10-23T17:24:47.140Z",
+ "base": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+ "headers": [
+  {
+   "host": "live",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+  },
+  {
+   "host": "live",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+  },
+  {
+   "host": "live",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+  },
+  {
+   "host": "live",
+   "file": "blocks/footer/footer.js",
+   "httpStatus": 200,
+   "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+   "etag": "\"aa6a40168ca726bc1abf9001f5965a69\""
+  },
+  {
+   "host": "live",
+   "file": "blocks/eco-carousel/eco-carousel.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 04:43:32 GMT",
+   "etag": "\"b6a6184df2ad0494a62dcb61ad23aec9\""
+  },
+  {
+   "host": "live",
+   "file": "blocks/eco-carousel/eco-carousel.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 23 Oct 2026 07:21:26 GMT",
+   "etag": "\"d1d7c97a33d41070aadf667c396ed474\""
+  },
+  {
+   "host": "page",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+  },
+  {
+   "host": "page",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+  },
+  {
+   "host": "page",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+  },
+  {
+   "host": "page",
+   "file": "blocks/footer/footer.js",
+   "httpStatus": 200,
+   "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+   "etag": "\"aa6a40168ca726bc1abf9001f5965a69\""
+  },
+  {
+   "host": "page",
+   "file": "blocks/eco-carousel/eco-carousel.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 04:43:32 GMT",
+   "etag": "\"b6a6184df2ad0494a62dcb61ad23aec9\""
+  },
+  {
+   "host": "page",
+   "file": "blocks/eco-carousel/eco-carousel.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 23 Oct 2026 07:21:26 GMT",
+   "etag": "\"d1d7c97a33d41070aadf667c396ed474\""
+  }
+ ],
+ "videoList": [
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+   "queries": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/ja/movies/standard/;cb=1792776291231",
+     "status": 200,
+     "file": "q_video-search_ja_0.json",
+     "items": [
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/ja/movies/standard/filtered",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/ja/movies/standard/long",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/ja/movies/standard/qa557-dam",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/ja/movies/standard/qa557-youku",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/ja/movies/standard/sort-main",
+       "_id": null,
+       "_variation": null
+      }
+     ]
+    }
+   ],
+   "httpStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+   "cards": [
+    {
+     "title": "HOME",
+     "href": "/ja",
+     "cardClass": "breadcrumb-item",
+     "data": {
+      "testid": "breadcrumb-link"
+     }
+    },
+    {
+     "title": "QA587 main movie",
+     "href": "/ja/library/video/qa587-main",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "QA557 DAM movie",
+     "href": "/ja/library/video/qa557-dam",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル 長い文字数のテストタイトル",
+     "href": "/ja/library/video/long",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "QA557 Youku video",
+     "href": "/ja/library/video/qa557-youku",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "動画タイトル",
+     "href": "/ja/library/video/sort-main",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "DM_movie_テスト名",
+     "href": "/ja/library/video/filtered",
+     "cardClass": "cards-card-title",
+     "data": {}
+    }
+   ],
+   "title": "動画 検索・一覧"
+  },
+  {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+   "queries": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792776295112",
+     "status": 200,
+     "file": "q_video-search_en_0.json",
+     "items": [
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/QA587_Upper",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/badid",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/fil-unav",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/filtered",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/long",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/movieid-01",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/noid",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/norelated",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa501-main-a",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa501-main-b",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa557-dam",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa557-youku",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-inactive",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-main",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-off",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-r1",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-r2",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-r3",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-r4",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-r5",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-r6",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-rel-a",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-rel-b",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/qa587/qa587-sub",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/rel6",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/sort-a",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/sort-b",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/sort-c",
+       "_id": null,
+       "_variation": null
+      },
+      {
+       "title": null,
+       "_path": "/content/dam/dsr/en/movies/standard/sort-main",
+       "_id": null,
+       "_variation": null
+      }
+     ]
+    }
+   ],
+   "httpStatus": 200,
+   "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+   "cards": [
+    {
+     "title": "HOME",
+     "href": "/en",
+     "cardClass": "breadcrumb-item",
+     "data": {
+      "testid": "breadcrumb-link"
+     }
+    },
+    {
+     "title": "library",
+     "href": "/en/library",
+     "cardClass": "breadcrumb-item",
+     "data": {
+      "testid": "breadcrumb-link"
+     }
+    },
+    {
+     "title": "QA587 main movie",
+     "href": "/en/library/video/QA587_Upper",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "QA587 main movie",
+     "href": "/en/library/video/qa587-main",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "QA587 rel B",
+     "href": "/en/library/video/qa587-rel-b",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "video title main a",
+     "href": "/en/library/video/qa501-main-a",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "video title main b",
+     "href": "/en/library/video/qa501-main-b",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "QA557 DAM movie",
+     "href": "/en/library/video/qa557-dam",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "movie tile bad",
+     "href": "/en/library/video/badid",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "test title with long character test title with long character test title with long character test title with long character test title with long character",
+     "href": "/en/library/video/long",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "movie tile noid",
+     "href": "/en/library/video/noid",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "movierel6",
+     "href": "/en/library/video/rel6",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "QA587 related 6",
+     "href": "/en/library/video/qa587-r6",
+     "cardClass": "cards-card-title",
+     "data": {}
+    },
+    {
+     "title": "QA587 rel A",
+     "href": "/en/library/video/qa587-rel-a",
+     "cardClass": "cards-card-title",
+     "data": {}
+    }
+   ],
+   "title": "search"
+  }
+ ],
+ "newsDetail": {
+  "oldPaths": [
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/test-news-detail-template",
+    "httpStatus": 404
+   },
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/test-news-detail-template",
+    "httpStatus": 404
+   },
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/test-space/test-news-detail-template",
+    "httpStatus": 404
+   },
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/en/test-space/test-news-detail-template",
+    "httpStatus": 404
+   }
+  ],
+  "queryIndex": [
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/query-index.json",
+    "httpStatus": 200,
+    "total": 238,
+    "newsHits": [
+     {
+      "path": "/en/news",
+      "title": "News",
+      "template": "news-list"
+     },
+     {
+      "path": "/ja/news/2026/website-renewal",
+      "title": "2026 - Update - デジタルショールームサイトリニューアルのお知らせ",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2026/tokyo-exhibition",
+      "title": "2026 - Event - 東京ビッグサイト展示会出展のご案内",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2026/tokyo-exhibition/binh-test3",
+      "title": "2026 - Child - Event 京ビッグサイト展示会出展のご案内",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2026/sustainability-report",
+      "title": "2026 - News サステナビリティレポート2025を公開しました",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2025/year-end-notice",
+      "title": "2025 - News 年末年始休業のお知らせ",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2025/eco-fastener",
+      "title": "2025 - Product 環境配慮型ファスナー「エコファスナー」発売開始",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2025/osaka-seminar",
+      "title": "2025 - Event 大阪セミナー開催のお知らせ",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2025/maintenance-notice",
+      "title": "2025 - Update - システムメンテナンスのお知らせ",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2025/color-collection",
+      "title": "2025 Product 年秋冬カラーコレクション発表",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2025/privacy-policy-update",
+      "title": "2025 Others プライバシーポリシー改定のお知らせ",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2024/global-expansion",
+      "title": "2024 - News グローバル事業拡大のお知らせ",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2024/waterproof-zipper",
+      "title": "2024 - Product - 防水ファスナー新シリーズのご紹介",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2024/nagoya-exhibition",
+      "title": "2024 - Event - 名古屋展示会のご報告",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2024/catalog-update",
+      "title": "2024 - Update - オンラインカタログ更新のお知らせ",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/2024/recruitment",
+      "title": "No date Others 年度新卒採用情報",
+      "template": "news-article"
+     },
+     {
+      "path": "/ja/news",
+      "title": "ニュース",
+      "template": "news-list"
+     },
+     {
+      "path": "/en/news/2026/new-product-lineup",
+      "title": "Test Spring 2026 - Product Lineup Announcement",
+      "template": ""
+     },
+     {
+      "path": "/en/news/2025/eco-fastener",
+      "title": "No date Others Eco-Friendly Fastener Launch",
+      "template": ""
+     },
+     {
+      "path": "/en/news-test/news-1",
+      "title": "news 1 - News - 25/06/2026 - live",
+      "template": ""
+     },
+     {
+      "path": "/en/news-test",
+      "title": "news-test",
+      "template": ""
+     },
+     {
+      "path": "/en/news/2026/news-2",
+      "title": "news 2 - News - 25/06/2026 - live",
+      "template": ""
+     },
+     {
+      "path": "/en/news-test/2026/news-3",
+      "title": "news 3 - News - 25/06/2026 - live",
+      "template": ""
+     },
+     {
+      "path": "/en/news/news-4",
+      "title": "news 4 - News - 25/06/2026 - live",
+      "template": ""
+     },
+     {
+      "path": "/en/news/2027/news-5",
+      "title": "news 5 - News - 25/06/2026 - live",
+      "template": ""
+     },
+     {
+      "path": "/en/news/2026/news-6",
+      "title": "news 6 - Products - 25/06/2026 - live",
+      "template": ""
+     },
+     {
+      "path": "/en/news/year/news-7",
+      "title": "news 7 - Update - 1/06/2027 - live - no description",
+      "template": ""
+     },
+     {
+      "path": "/en/news/year/news-8",
+      "title": "news 8 - Others - 1/06/2027 - live - no date",
+      "template": ""
+     },
+     {
+      "path": "/en/news/year/news-8/news-9",
+      "title": "news 9 - No category - No description - No date",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/year/news-8",
+      "title": "news 8 - Others - 1/06/2027 - live - no date",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/year/news-7",
+      "title": "news 7 - Update - 1/06/2027 - live - no description",
+      "template": ""
+     },
+     {
+      "path": "/ja/news/year/news-8/news-9",
+      "title": "news 9 - No category - No description - No date",
+      "template": ""
+     },
+     {
+      "path": "/master/ja/test-space/list-news",
+      "title": "list-news",
+      "template": ""
+     },
+     {
+      "path": "/master/en/test-space/dsr-357-news-detail",
+      "title": "DSR-357 News-Detail",
+      "template": ""
+     },
+     {
+      "path": "/master/ja/test-space/qa566-news-01",
+      "title": "QA566 ニュース詳細テスト",
+      "template": ""
+     },
+     {
+      "path": "/master/ja/test-space/qa566-news-02",
+      "title": "長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ",
+      "template": ""
+     },
+     {
+      "path": "/master/en/test-space/qa566-news-01",
+      "title": "QA566 News detail test",
+      "template": ""
+     }
+    ]
+   },
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/query-index.json",
+    "httpStatus": 404
+   },
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/query-index.json",
+    "httpStatus": 404
+   },
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/query-index.json",
+    "httpStatus": 404
+   },
+   {
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/query-index.json",
+    "httpStatus": 404
+   }
+  ],
+  "candidates": [
+   {
+    "path": "/master/en/test-space/qa566-news-01",
+    "live": 200,
+    "page": 200,
+    "note": "in query-index; QA566 test page (fixture option DSR566_SLUG=qa566-news-01)"
+   },
+   {
+    "path": "/master/ja/test-space/qa566-news-01",
+    "live": 200,
+    "page": 200,
+    "note": "not in query-index; 200"
+   },
+   {
+    "path": "/master/en/test-space/dsr-357-news-detail",
+    "live": 200,
+    "page": 200,
+    "note": "in query-index; old page using removed news-detail block (fixtures/dsr-566.ts comment)"
+   },
+   {
+    "path": "/ja/news/2024/recruitment",
+    "live": 200,
+    "page": 200,
+    "note": "meta template=news-article (only query-index row with a news template)"
+   }
+  ],
+  "newPathGuess": [
+   {
+    "path": "/ja/test-space/test-news-detail-template",
+    "live": 404,
+    "page": 404
+   },
+   {
+    "path": "/en/test-space/test-news-detail-template",
+    "live": 404,
+    "page": 404
+   }
+  ],
+  "pathsTs": "fixtures/paths.ts has no news-detail entry (DSR_PATHS=v2 moves 7 list pages only); fixtures/dsr-566.ts newsSlug default 'test-news-detail-template'",
+  "checkedAt": "2026-10-23T17:25Z"
+ },
+ "finished": "2026-10-23T17:24:58.874Z"
+}
