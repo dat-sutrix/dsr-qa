@@ -1,0 +1,26 @@
+{
+  "job": "JOB-20261023-23",
+  "agent": "chrome",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-23T17:10:00Z",
+  "finished": "2026-10-23T17:40:00Z",
+  "status": "done",
+  "chrome_device_id": "5900c4b8-e01c-432d-a020-649827e56439 (DSR-Chrome-Personal)",
+  "author_user": "Agent QA",
+  "tests": [
+    {"tc": "ARTICLE-032-thumbnail-picker", "lang": "ja", "result": "pass", "suspect": null,
+     "actual": "UE > Page > 記事情報 > Thumbnail '+ Add' → Content Advisor modal: spinner ~10 s then loads (All Assets: common, dsr, dsr-search-poc, projects, ykk). Blank page NOT reproduced (no new tab). Asset found via search 'gradient-transparent-1920x1080' in ykk/digital-showroom (only 1 PNG 1920x1080 11 KB) → Select → saved.",
+     "note": "QA-PT blank picker likely = waited < 10 s while spinner showed, or other browser/session state."},
+    {"tc": "ARTICLE-005", "lang": "ja", "result": "fail", "suspect": "product",
+     "actual": "Profile block (qa529-01, section 3) selectable via Content tree (Page > Main > Section 3 > Profile) and by clicking on canvas. Panel fields: Image — 画像 (Max 1 items, empty), Name — 名前 'QA529 プロフィール', Company / role — 会社名 '会社名・部署名が入ります', Text — コメント/人物紹介 'プロフィールが入ります。プロフィールが入ります。', Type — 種別 '著者紹介 (302_Author_Profile)'. LIVE (.aem.live, cb): label PROFILE; name at top 525; company and text BOTH at top 569 / left 520 → texts overlap (unreadable). Same overlap in UE canvas. DOM class mapping: name in div.profile-company, company in div.profile-text, text in div.profile-text (2 × profile-text, no name class).",
+     "evidence": "results/JOB-20261023-23/ARTICLE-005_profile_live_ja.png",
+     "note": "Overlap measured by bounding boxes (same top/left) + screenshot. Image empty in test data → layout with image not checked."}
+  ],
+  "actions": [
+    {"step": 1, "url": "UE qa529-02 Page > 記事情報 > Thumbnail", "field": "thumbnail", "before": "(empty – property absent in jcr:content)", "after": "/content/dam/ykk/digital-showroom/test/png/gradient-transparent-1920x1080.png", "saved": true},
+    {"step": 2, "url": "qa529-02 jcr:content.json", "field": "other fields after restore", "before": null, "after": "Title 'QA529 最小記事'; publicationdate 2026-09-01; category: (none – property absent; tags = [do-not-translate], QA-PT 'Category: do-not-translate' = tag); description 'QA529 最小説明'; lastModified 2026-10-23T17:13:34Z", "saved": false}
+  ],
+  "writes": 1,
+  "questions": []
+}
