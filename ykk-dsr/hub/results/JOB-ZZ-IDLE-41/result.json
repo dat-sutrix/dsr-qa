@@ -4,7 +4,7 @@
   "us": "DSR-590",
   "env": "dev",
   "started": "2026-10-23T02:17:56.596Z",
-  "finished": "2026-10-23T06:18:19.792Z",
+  "finished": "2026-10-23T08:18:20.923Z",
   "status": "done",
   "scope": "Latest capture round only; repetition completion tracked in schedule.json",
   "tests": [
@@ -13,35 +13,35 @@
       "lang": "ja",
       "result": "pass",
       "error": "Capture completed; no product verdict",
-      "evidence": "evidence/DSR-590/retest/20261023T061757/1440x900-top.png"
+      "evidence": "evidence/DSR-590/retest/20261023T081757/1440x900-top.png"
     },
     {
       "tc": "DSR-590-observation-428",
       "lang": "ja",
       "result": "pass",
       "error": "Capture completed; no product verdict",
-      "evidence": "evidence/DSR-590/retest/20261023T061757/428x926-top.png"
+      "evidence": "evidence/DSR-590/retest/20261023T081757/428x926-top.png"
     },
     {
       "tc": "DSR-590-observation-393",
       "lang": "ja",
       "result": "pass",
       "error": "Capture completed; no product verdict",
-      "evidence": "evidence/DSR-590/retest/20261023T061757/393x852-top.png"
+      "evidence": "evidence/DSR-590/retest/20261023T081757/393x852-top.png"
     },
     {
       "tc": "DSR-590-observation-390",
       "lang": "ja",
       "result": "pass",
       "error": "Capture completed; no product verdict",
-      "evidence": "evidence/DSR-590/retest/20261023T061757/390x844-top.png"
+      "evidence": "evidence/DSR-590/retest/20261023T081757/390x844-top.png"
     },
     {
       "tc": "DSR-590-observation-375",
       "lang": "ja",
       "result": "pass",
       "error": "Capture completed; no product verdict",
-      "evidence": "evidence/DSR-590/retest/20261023T061757/375x667-top.png"
+      "evidence": "evidence/DSR-590/retest/20261023T081757/375x667-top.png"
     }
   ],
   "lighthouse": [],
