@@ -1,0 +1,601 @@
+{
+ "job": "JOB-ZZ-IDLE-39",
+ "agent": "claude-code",
+ "us": "regression (all DEV specs)",
+ "env": "dev",
+ "started": "2026-10-23T01:20:59Z",
+ "finished": "2026-10-23T01:42:01Z",
+ "status": "done",
+ "totals": {
+  "total": 545,
+  "passed": 294,
+  "failed": 57,
+  "skipped": 194,
+  "flaky": 0,
+  "exit_code": 1
+ },
+ "tsc": {
+  "exit_code": 0,
+  "result": "no errors"
+ },
+ "compared_with": "JOB-ZZ-IDLE-35",
+ "new_fails": [
+  "DSR-CATOV-010 en",
+  "DSR-NEWS-014 ja"
+ ],
+ "changes": [
+  {
+   "tests": "DSR-CATOV-010 en",
+   "before": "pass",
+   "now": "fail",
+   "cause": "none",
+   "suspect": "product",
+   "confidence": 50,
+   "note": "subfolder URL qa654-folder/qa654-sub now 200 unavailable|not-found stub + noindex (Last-Modified 22/10 14:37:47Z); expected 404"
+  },
+  {
+   "tests": "DSR-NEWS-014 ja",
+   "before": "absent",
+   "now": "fail",
+   "cause": "none",
+   "suspect": "test",
+   "confidence": 0,
+   "note": "capture helper img.decode() hangs on hidden lazy header images; timeout at visual-capture.spec.ts:23"
+  },
+  {
+   "tests": "DSR-NEWS-015 ja",
+   "before": "absent",
+   "now": "skip",
+   "cause": "none",
+   "note": "serial, not run after NEWS-014 fail"
+  },
+  {
+   "tests": "DSR-NEWS en (12 TCs, 8 were fail, 3 pass)",
+   "before": "fail/pass",
+   "now": "skip",
+   "cause": "none",
+   "note": "en target changed in JOB-ZZ-IDLE-37 to /master/en/test-space/test-news-detail-template = 404; not evaluated, not fixed"
+  },
+  {
+   "tests": "DSR-PDO-001/003/013/014 ja+en, PDO-004/005/008/009/012/017/019/021 ja",
+   "before": "skip",
+   "now": "pass",
+   "cause": "none",
+   "note": "TD-586-01 no longer unavailable|no-product"
+  },
+  {
+   "tests": "DSR-ASSET-016 en",
+   "before": "skip",
+   "now": "pass",
+   "cause": "none"
+  }
+ ],
+ "tests": [
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: category meta count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: category count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: qa529-01 robots expect(received).not.toMatch(expected) Expected pattern: not /noindex/i Received string: \"noindex, nofollow\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: viewAllStories href expect(received).not.toMatch(expected) Expected pattern: not /^(#?)$/ Received string: \"#\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: category meta count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: category count expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: qa529-02 robots expect(received).toMatch(expected) Expected pattern: /noindex/i Received string: \"\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: viewAllStories href expect(received).not.toMatch(expected) Expected pattern: not /^(#?)$/ Received string: \"#\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ARTICLE-023",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: visible related items block expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 6 - Array [] + Array [ + Object { + \"height\": 281.984375, + \"visible\": true, + }, + ]",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-BREAD-032",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveScreenshot(expected) failed Locator: locator('main > [data-auto-block=\"breadcrumb\"]').filter({ has: getByTestId('breadcrumb') }) 865 pixels (ratio 0.02 of all image pixels",
+   "cause": "none",
+   "browser": "firefox",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-BREAD-032",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: browserType.launch: ╔══════════════════════════════════════════════════════╗ ║ Host system is missing dependencies to run browsers. ║ ║ Missing libraries: ║ ║ libgtk-4.so.1 ║ ║ libgraphene-1.0.",
+   "cause": "none",
+   "browser": "webkit",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: fixed texts containing Japanese expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 44 - Array [] + Array [ + \"必須 + 氏名（姓）\", + \"必須 + 氏名（名）\", + \"必須 + メールアドレス\", + \"必須 +",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATDL-007",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: gated PDF URL delivered to the browser before submit expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [ + \"dsr-catalog-list response: item qa",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 e-book form\" Received: \"catalog ebook form\" Timeout: 5000m",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Received: \"catalog pdf form\" Timeout: 5",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 e-book form\" Received: \"catalog ebook form\" Timeout: 5000m",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: expect(locator).toHaveText(expected) failed Locator: locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Received: \"catalog pdf form\" Timeout: 5",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: meta robots expect(received).not.toContain(expected) // indexOf Expected substring: not \"noindex\" Received string: \"noindex\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: meta robots expect(received).not.toContain(expected) // indexOf Expected substring: not \"noindex\" Received string: \"noindex\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: meta robots expect(received).not.toContain(expected) // indexOf Expected substring: not \"noindex\" Received string: \"noindex\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: meta robots expect(received).not.toContain(expected) // indexOf Expected substring: not \"noindex\" Received string: \"noindex\"",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-009",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: 'QA654 preview' on .aem.page expect(received).toContain(expected) // indexOf Expected substring: \"QA654 preview\" Received string: \"<!DOCTYPE html> <html> <head> <title>YKK DIGITAL SHOWROOM</tit",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-010",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: qa654-folder/qa654-sub expect(received).toBe(expected) // Object.is equality Expected: 404 Received: 200",
+   "cause": "none",
+   "evidence": "evidence/DSR-CATOV-010_en.png",
+   "suspect": "product",
+   "confidence": 50,
+   "new": true
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: card 'QA190 PDF catalog' expect(locator).toBeVisible() failed Locator: locator('main a[href]').filter({ hasText: 'QA190 PDF catalog' }).first() Expected: visible Timeout: 5000ms Error: element(",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: card 'QA190 PDF catalog' expect(locator).toBeVisible() failed Locator: locator('main a[href]').filter({ hasText: 'QA190 PDF catalog' }).first() Expected: visible Timeout: 5000ms Error: element(",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: sitemap <loc> expect(received).toHaveLength(expected) Expected length: 1 Received length: 0 Received array: []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ECO-005",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: tag label expect(locator).not.toBeEmpty() failed Locator: locator('main').locator('.hero, [class*=\"hero\"]').first().locator('[class*=\"tag\"]').first() Expected: not empty Timeout: 5000ms Error: ",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ECO-006",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: free area text expect(locator).not.toBeEmpty() failed Locator: locator('main').locator('[class*=\"free\"], .default-content-wrapper').first() Expected: not empty Timeout: 5000ms Error: element(s)",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ICON-006",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: console errors expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [ + \"Failed to load resource: the server responded with a status of 404 ()\", ",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-ICON-006",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: console errors expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 3 - Array [] + Array [ + \"Failed to load resource: the server responded with a status of 404 ()\", ",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-MOVIE-014",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-player-facade') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTestI",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-MOVIE-026",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: Related card 1 thumbnail expect(locator).toBeVisible() failed Locator: getByTestId('related-content-card').first().getByTestId('related-content-card-image') Expected: visible Timeout: 1000ms Er",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-MOVIE-033",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-player') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTestId('movi",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-501-P2",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-related-content') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTes",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-501-P3",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: expect(locator).toBeVisible() failed Locator: getByTestId('movie-detail-related-content') Expected: visible Timeout: 5000ms Error: element(s) not found Call log: - Expect \"toBeVisible\" getByTes",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-NEWS-014",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "evidence": "evidence/DSR-NEWS-014_ja.png",
+   "suspect": "test",
+   "confidence": 0,
+   "new": true
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 6 - Array [] + Array [ + \"\", + \"\", + \"\", + \"\", + ]",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "en",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "en",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 320: cards overflowing their column expect(received).toEqual(expected) // deep equality - Expected - 1 + Received + 8 - Array [] + Array [ + \"\", + \"\", + \"\", + \"\", + \"\", + \"\", + ]",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Test timeout of 30000ms exceeded.",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PRODLIST-004",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 1440: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 4 Received: 1",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PRODLIST-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 375: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 1",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PRODLIST-002",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: 320: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 1",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: open: distinct column offsets expect(received).toBe(expected) // Object.is equality Expected: 2 Received: 1",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: text/background colour changes on hover expect(received).not.toEqual(expected) // deep equality Expected: not []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"}) expect(received).toBe(expected) // Object.is equality Expected: true Received: false",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: page requests /en/news/query-index.json expect(received).toContain(expected) // indexOf Expected value: \"/en/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "en",
+   "result": "fail",
+   "error": "Error: SP item 1 title lines ≤ 1 expect(received).toBeLessThanOrEqual(expected) Expected: <= 1 Received: 2",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: text/background colour changes on hover expect(received).not.toEqual(expected) // deep equality Expected: not []",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"}) expect(received).toBe(expected) // Object.is equality Expected: true Received: false",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: page requests /ja/news/query-index.json expect(received).toContain(expected) // indexOf Expected value: \"/ja/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "ja",
+   "result": "fail",
+   "error": "Error: SP item 1 title lines ≤ 1 expect(received).toBeLessThanOrEqual(expected) Expected: <= 1 Received: 2",
+   "cause": "none",
+   "new": false,
+   "note": "still failing, same as IDLE-35; suspect/confidence per IDLE-35 summary"
+  }
+ ],
+ "code_changes": [],
+ "reports": [
+  "results/regression/DEV/automation-run-20261023-idle39.md"
+ ],
+ "notes": [
+  "58 tracked files rewritten by capture specs were restored (git checkout); 16 new untracked side-effect files moved to /tmp/idle39/side-effects, not committed"
+ ]
+}
