@@ -58,7 +58,7 @@ Sáng T7 07:45: đọc Night Report → TD-587-04+05 Pass → JOB-20261023-19 qu
 **Lane chrome (23/10 16:56):** ✅ JOB-20261023-20 (529 manual) – 4.0 Pass đề xuất · 21.0 Fail đề xuất (picker không giới hạn stories, không max 3 – cần đối chiếu spec) · 32.0 một phần (Title bắt buộc OK; 掲載日/サムネイル/カテゴリ không có dấu bắt buộc). 3 ghi, mọi giá trị đã trả lại. JOB-20261023-18 (587) chrome không chạy kịp → chuyển vào Night Pack 23/10 (mục 1–2).
 
 ## 5. TC (Jira sub-task `qa-tc`)
-tc-backlog: trống (row 0 hold) · TC backlog trống 2026-10-23 18:08 · Night TC job 23/10 18:08: Jira OK, auto-added 0 (653/611/590/587/586/570/566/557/529 đã phủ) · done 0/0 · upload queue pending 0 / fail 0 · job agent đã xếp 0 · tc-questions: không câu mới sau Q47.
+tc-backlog: trống (row 0 hold) · TC backlog trống 2026-10-23 19:07 · Night TC job 23/10 19:07: Jira OK, auto-added 0 (653/611/590/587/586/570/566/557/529 đã phủ) · done 0/0 · upload queue pending 0 / fail 0 · job agent đã xếp 0 · tc-questions: không câu mới sau Q47.
 
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
