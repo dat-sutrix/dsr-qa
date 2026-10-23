@@ -31,7 +31,9 @@
 - **R3 Full S12:** mọi spec P1 + P2 (functional, `@auto`, trừ `@manual`/`@blocked`/analysis/capture). P3 1 lần/ngày (lượt 00:20).
 - **Visual (lane codex):** chụp viewport (không fullPage) 1440/390 các trang P1/P2 → so với lần trước trong `results/REGRESSION/visual-ledger.json`; khác > ngưỡng = điểm L&F.
 
-## 4. Lịch & chọn việc (scheduled task "DSR regression guard", mỗi 4h: 00:20 / 04:20 / 08:20 / 12:20 / 16:20 / 20:20 VN, mọi ngày)
+## 4. Lịch & chọn việc
+**Trước tiên:** nếu có file `regression/FREEZE.md` → không tạo job regression nào, chỉ ghi LOG "freeze" (DEV đang deploy).
+ (scheduled task "DSR regression guard", mỗi 4h: 00:20 / 04:20 / 08:20 / 12:20 / 16:20 / 20:20 VN, mọi ngày)
 1. `git pull`. Lane nào **không có job trong queue và không có job running** → tạo job regression cho lane đó (tối đa 1 job/lane/lượt).
 2. claude-code: `CHANGES.md` có dòng `regressed = no` → **R2** (+R1); không có → **R3** (xoay vòng: lượt chẵn P1, lượt lẻ P1+P2).
 3. codex: Visual P1 (+ P2 nếu R2 có `global`/`block`/`template`) + Lighthouse 3 trang P1.

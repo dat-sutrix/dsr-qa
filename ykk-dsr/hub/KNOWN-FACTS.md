@@ -4,6 +4,7 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-23 | DSR-669/671 | Martin | ~13:52 VN "in deploiement"; 13:56: **catalog, product, video có thể hỏng ~1 giờ tới**, Martin sẽ nhắn trong thread khi fixed (Dat: "got it") → `regression/FREEZE.md` | Chat 23/10 13:56 |
 | 2026-10-23 | DSR-669/671 | Martin | Chat 13:35 VN: hỏi 石谷 + Nakamoto OK chưa (1 👍); **"going to merge the modification in 30 min"** (~14:05 VN). QA đã OK (no blocker). Kết quả DEV từ ~14:05 tới khi Martin báo migrate + republish xong = không ổn định (cause `cf-model-669`), không tạo bug | Chat 23/10 13:35 |
 | 2026-10-23 | DSR-570 / DSR-655 | Quentin | Thread 13:20: "user is supposed to access the download button after the form is sent – not supposed to see the PDF URL" → yêu cầu UX: nút download chỉ có sau submit. CHƯA trả lời mức kỹ thuật (URL có được nằm trong JSON/page source không = DSR-655 Y4) → hỏi lại 1 câu. HubSpot: Quentin đang tìm; Martin: "everything is in the ticket" (DSR-655 L1–L7) | Chat thread 23/10 13:20 |
 | 2026-10-23 | Sprint scope | QA (sweep S12) | Đọc đủ 51 ticket mở S12 → [SPRINT-SCOPE.md](SPRINT-SCOPE.md) (bảng scope, QA gaps, facts). 石谷英樹 = phía khách (DSR-637), đang tự test 578/649/661/610 | SPRINT-SCOPE 23/10 |
