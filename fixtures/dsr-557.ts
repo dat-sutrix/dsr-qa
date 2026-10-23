@@ -76,7 +76,8 @@ export const contentCfPath = (lang: string, id: string) => `/content/dam/common/
 export const detailPath = (lang: string, id: string) => `/${lang}/library/catalog/${id}`;
 export const coreItem = <T extends CatalogItem>(data: T[], lang: string, key: CoreKey): T | undefined =>
   data.find(i => i._path === contentCfPath(lang, core[key]));
-// Pre-merge QA CF folder (JOB-20261020-04); NEW/UPDATE CFs were not re-seeded and stay here. dsr-catalog-list reads only DSR CFs, so they are no longer listed.
+// Pre-merge QA CF folder (JOB-20261020-04); dsr-catalog-list reads only DSR CFs, so its CFs are no longer listed.
+// NEW/UPDATE/BOTH CFs re-seeded as /content/dam/common/{lang}/catalogs/qa190-cat-{new,upd}-*, -both, -noupd (TD-190-DSR, JOB-20261023-06).
 export const oldFolder = '/content/dam/ykk/common/product-cf/test/';
 export const qa190 = {
   new: ['QA190 NEW 0', 'QA190 NEW 10', 'QA190 NEW 11'],

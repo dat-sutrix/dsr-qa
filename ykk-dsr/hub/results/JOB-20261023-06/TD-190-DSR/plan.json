@@ -1,0 +1,2762 @@
+[
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-0",
+      "name": "qa190-cat-new-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-0"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 NEW 0"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-new-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-0",
+      "name": "qa190-cat-new-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-0"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 NEW 0"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-10",
+      "name": "qa190-cat-new-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-10"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 NEW 10"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-13"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-new-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-10",
+      "name": "qa190-cat-new-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-10"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 NEW 10"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-13"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-11",
+      "name": "qa190-cat-new-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-11"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 NEW 11"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-12"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-new-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-11",
+      "name": "qa190-cat-new-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-11"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 NEW 11"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-12"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-0",
+      "name": "qa190-cat-upd-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-0"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 UPD 0"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-09-15"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-0",
+      "name": "qa190-cat-upd-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-0"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 UPD 0"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-09-15"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-10",
+      "name": "qa190-cat-upd-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-10"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 UPD 10"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-09-15"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-13"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-10",
+      "name": "qa190-cat-upd-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-10"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 UPD 10"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-09-15"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-13"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-11",
+      "name": "qa190-cat-upd-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-11"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 UPD 11"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-09-15"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-12"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-11",
+      "name": "qa190-cat-upd-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-11"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 UPD 11"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-09-15"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-12"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-both",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-both",
+      "name": "qa190-cat-both",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-both"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 BOTH"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-22"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-both",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-both",
+      "name": "qa190-cat-both",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-both"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "QA190 BOTH"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-22"
+          ]
+        },
+        {
+          "name": "updateDate",
+          "type": "date",
+          "values": [
+            "2026-10-23"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate",
+      "fields.updateDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-noupd",
+      "name": "qa190-cat-noupd",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-noupd"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "qa190-cat-noupd"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-22"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/common/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-noupd",
+      "name": "qa190-cat-noupd",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2c",
+      "parentPath": "/common/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogId",
+          "type": "text",
+          "values": [
+            "qa190-cat-noupd"
+          ]
+        },
+        {
+          "name": "catalogTitle",
+          "type": "text",
+          "values": [
+            "qa190-cat-noupd"
+          ]
+        },
+        {
+          "name": "description",
+          "type": "long-text",
+          "values": [
+            "catelog description"
+          ]
+        },
+        {
+          "name": "catalogCategories",
+          "type": "tag",
+          "values": [
+            "site:product/material/aluminium"
+          ]
+        },
+        {
+          "name": "thumbnail",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/png/16bit-depth-1200x800.png"
+          ]
+        },
+        {
+          "name": "catalogType",
+          "type": "enumeration",
+          "values": [
+            "pdf"
+          ]
+        },
+        {
+          "name": "pdfAsset",
+          "type": "content-reference",
+          "values": [
+            "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+          ]
+        },
+        {
+          "name": "requiresForm",
+          "type": "boolean",
+          "values": [
+            false
+          ]
+        },
+        {
+          "name": "sortOrder",
+          "type": "float-number",
+          "values": [
+            0
+          ]
+        },
+        {
+          "name": "publishDate",
+          "type": "date",
+          "values": [
+            "2026-10-22"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogId",
+      "fields.catalogTitle",
+      "fields.description",
+      "fields.catalogCategories",
+      "fields.thumbnail",
+      "fields.catalogType",
+      "fields.pdfAsset",
+      "fields.requiresForm",
+      "fields.sortOrder",
+      "fields.publishDate"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-0",
+      "name": "qa190-cat-new-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-0"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-new-0"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-0",
+      "name": "qa190-cat-new-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-0"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-new-0"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-10",
+      "name": "qa190-cat-new-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-10"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-new-10"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-10",
+      "name": "qa190-cat-new-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-10"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-new-10"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-11",
+      "name": "qa190-cat-new-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-11"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-new-11"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-new-11",
+      "name": "qa190-cat-new-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-new-11"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-new-11"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-0",
+      "name": "qa190-cat-upd-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-0"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-upd-0"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-0",
+      "name": "qa190-cat-upd-0",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-0"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-upd-0"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-10",
+      "name": "qa190-cat-upd-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-10"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-upd-10"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-10",
+      "name": "qa190-cat-upd-10",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-10"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-upd-10"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-11",
+      "name": "qa190-cat-upd-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-11"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-upd-11"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-upd-11",
+      "name": "qa190-cat-upd-11",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-upd-11"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-upd-11"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-both",
+      "name": "qa190-cat-both",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-both"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-both"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-both",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-both",
+      "name": "qa190-cat-both",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-both"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-both"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "ja",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-noupd",
+      "name": "qa190-cat-noupd",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/ja/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-noupd"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/ja/catalogs/qa190-cat-noupd"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "create",
+    "lang": "en",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "title": "qa190-cat-noupd",
+      "name": "qa190-cat-noupd",
+      "modelId": "L2NvbmYveWtrL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL2RtX2NhdGFsb2dfcmVsYXRlZA",
+      "parentPath": "/dsr/en/catalogs",
+      "fields": [
+        {
+          "name": "catalogLabel",
+          "type": "text",
+          "values": [
+            "qa190-cat-noupd"
+          ]
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "values": [
+            true
+          ]
+        },
+        {
+          "name": "catalog",
+          "type": "content-fragment",
+          "values": [
+            "/content/dam/common/en/catalogs/qa190-cat-noupd"
+          ]
+        }
+      ]
+    },
+    "bodyKeys": [
+      "title",
+      "name",
+      "modelId",
+      "parentPath",
+      "fields.catalogLabel",
+      "fields.isActive",
+      "fields.catalog"
+    ]
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/common/en/catalogs/qa190-cat-new-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/common/en/catalogs/qa190-cat-new-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/common/en/catalogs/qa190-cat-new-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-both",
+      "/content/dam/common/en/catalogs/qa190-cat-both",
+      "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/common/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-new-0, /content/dam/common/en/catalogs/qa190-cat-new-0, /content/dam/common/ja/catalogs/qa190-cat-new-10, /content/dam/common/en/catalogs/qa190-cat-new-10, /content/dam/common/ja/catalogs/qa190-cat-new-11, /content/dam/common/en/catalogs/qa190-cat-new-11, /content/dam/common/ja/catalogs/qa190-cat-upd-0, /content/dam/common/en/catalogs/qa190-cat-upd-0, /content/dam/common/ja/catalogs/qa190-cat-upd-10, /content/dam/common/en/catalogs/qa190-cat-upd-10, /content/dam/common/ja/catalogs/qa190-cat-upd-11, /content/dam/common/en/catalogs/qa190-cat-upd-11, /content/dam/common/ja/catalogs/qa190-cat-both, /content/dam/common/en/catalogs/qa190-cat-both, /content/dam/common/ja/catalogs/qa190-cat-noupd, /content/dam/common/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/common/en/catalogs/qa190-cat-new-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/common/en/catalogs/qa190-cat-new-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/common/en/catalogs/qa190-cat-new-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-both",
+        "/content/dam/common/en/catalogs/qa190-cat-both",
+        "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/common/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+      "/content/dam/dsr/en/catalogs/qa190-cat-both",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0, /content/dam/dsr/en/catalogs/qa190-cat-new-0, /content/dam/dsr/ja/catalogs/qa190-cat-new-10, /content/dam/dsr/en/catalogs/qa190-cat-new-10, /content/dam/dsr/ja/catalogs/qa190-cat-new-11, /content/dam/dsr/en/catalogs/qa190-cat-new-11, /content/dam/dsr/ja/catalogs/qa190-cat-upd-0, /content/dam/dsr/en/catalogs/qa190-cat-upd-0, /content/dam/dsr/ja/catalogs/qa190-cat-upd-10, /content/dam/dsr/en/catalogs/qa190-cat-upd-10, /content/dam/dsr/ja/catalogs/qa190-cat-upd-11, /content/dam/dsr/en/catalogs/qa190-cat-upd-11, /content/dam/dsr/ja/catalogs/qa190-cat-both, /content/dam/dsr/en/catalogs/qa190-cat-both, /content/dam/dsr/ja/catalogs/qa190-cat-noupd, /content/dam/dsr/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+        "/content/dam/dsr/en/catalogs/qa190-cat-both",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/common/en/catalogs/qa190-cat-new-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/common/en/catalogs/qa190-cat-new-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/common/en/catalogs/qa190-cat-new-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-both",
+      "/content/dam/common/en/catalogs/qa190-cat-both",
+      "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/common/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-new-0, /content/dam/common/en/catalogs/qa190-cat-new-0, /content/dam/common/ja/catalogs/qa190-cat-new-10, /content/dam/common/en/catalogs/qa190-cat-new-10, /content/dam/common/ja/catalogs/qa190-cat-new-11, /content/dam/common/en/catalogs/qa190-cat-new-11, /content/dam/common/ja/catalogs/qa190-cat-upd-0, /content/dam/common/en/catalogs/qa190-cat-upd-0, /content/dam/common/ja/catalogs/qa190-cat-upd-10, /content/dam/common/en/catalogs/qa190-cat-upd-10, /content/dam/common/ja/catalogs/qa190-cat-upd-11, /content/dam/common/en/catalogs/qa190-cat-upd-11, /content/dam/common/ja/catalogs/qa190-cat-both, /content/dam/common/en/catalogs/qa190-cat-both, /content/dam/common/ja/catalogs/qa190-cat-noupd, /content/dam/common/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/common/en/catalogs/qa190-cat-new-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/common/en/catalogs/qa190-cat-new-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/common/en/catalogs/qa190-cat-new-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-both",
+        "/content/dam/common/en/catalogs/qa190-cat-both",
+        "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/common/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+      "/content/dam/dsr/en/catalogs/qa190-cat-both",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0, /content/dam/dsr/en/catalogs/qa190-cat-new-0, /content/dam/dsr/ja/catalogs/qa190-cat-new-10, /content/dam/dsr/en/catalogs/qa190-cat-new-10, /content/dam/dsr/ja/catalogs/qa190-cat-new-11, /content/dam/dsr/en/catalogs/qa190-cat-new-11, /content/dam/dsr/ja/catalogs/qa190-cat-upd-0, /content/dam/dsr/en/catalogs/qa190-cat-upd-0, /content/dam/dsr/ja/catalogs/qa190-cat-upd-10, /content/dam/dsr/en/catalogs/qa190-cat-upd-10, /content/dam/dsr/ja/catalogs/qa190-cat-upd-11, /content/dam/dsr/en/catalogs/qa190-cat-upd-11, /content/dam/dsr/ja/catalogs/qa190-cat-both, /content/dam/dsr/en/catalogs/qa190-cat-both, /content/dam/dsr/ja/catalogs/qa190-cat-noupd, /content/dam/dsr/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+        "/content/dam/dsr/en/catalogs/qa190-cat-both",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

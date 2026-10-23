@@ -1,0 +1,38 @@
+[
+  {
+    "at": "2026-10-23T03:35:55.749Z",
+    "op": "unpublish:publish dsr-cf",
+    "method": "POST",
+    "path": "/bin/replicate",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T03:35:56.402Z",
+    "op": "unpublish:publish content-cf",
+    "method": "POST",
+    "path": "/bin/replicate",
+    "target": "/content/dam/common/en/movies/qa587-unavail",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T03:35:57.147Z",
+    "op": "unpublish:preview dsr-cf",
+    "method": "POST",
+    "path": "/bin/replicate",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T03:35:57.792Z",
+    "op": "replicate:publish dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "status": 200,
+    "changes": null
+  }
+]

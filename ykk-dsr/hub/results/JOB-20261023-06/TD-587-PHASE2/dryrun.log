@@ -1,0 +1,19 @@
+# apply ykk-dsr/hub/author/manifests/TD-587-PHASE2.yaml – DRY-RUN (no request sent)
+
+Gates:
+- ⛔ AUTHOR_WRITE_ENABLED=1
+- ⛔ --apply flag
+- ✅ write window Mon–Fri 08:00–18:00 Asia/Saigon (now 2026-10-23T10:33:25.287+07:00)
+- ✅ lint: 0 FAIL
+
+Lint FAIL: 0
+
+| # | Op | Request | Target | Keys |
+|---|---|---|---|---|
+| 1 | skip | – | /content/dam/common/en/movies/qa587-unavail | content-cf en: no field change |
+| 2 | skip | – | /content/dam/dsr/en/movies/standard/qa587-unavail | dsr-cf en: no field change |
+| 3 | skip | – | /content/dam/dsr/en/movies/standard/qa587-removed | dsr-cf en: no field change |
+| 4 | unpublish:publish dsr-cf | POST `/bin/replicate` | /content/dam/dsr/en/movies/standard/qa587-removed | headers: Content-Type, CSRF-Token; body: cmd, agentId, path |
+| 5 | unpublish:publish content-cf | POST `/bin/replicate` | /content/dam/common/en/movies/qa587-unavail | headers: Content-Type, CSRF-Token; body: cmd, agentId, path |
+| 6 | unpublish:preview dsr-cf | POST `/bin/replicate` | /content/dam/dsr/en/movies/standard/qa587-removed | headers: Content-Type, CSRF-Token; body: cmd, agentId, path |
+| 7 | replicate:publish dsr-cf | POST `/adobe/sites/cf/fragments/publish` | /content/dam/dsr/en/movies/standard/qa587-unavail | headers: Content-Type, CSRF-Token; body: paths, agentId, filterReferencesByStatus, workflowTitle |

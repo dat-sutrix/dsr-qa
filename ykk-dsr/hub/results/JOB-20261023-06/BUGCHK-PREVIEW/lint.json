@@ -1,0 +1,402 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: re-preview of existing en CF only (TD-587-02 en only), no data change)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/en/movies/qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-preview",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "qa587-preview",
+    "actual": "qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: re-preview of existing en CF only (TD-654-04 en only), no data change)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/en/catalogs/qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-preview",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:catalogId",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "qa654-preview",
+    "actual": "qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: re-preview of existing en CF only (TD-587-02 en only), no data change)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "en (opt-out: re-preview of existing en CF only (TD-654-04 en only), no data change)"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/catalogs/qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa654-preview"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "WARN",
+    "expected": "isActive set in manifest",
+    "actual": "not set"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  }
+]

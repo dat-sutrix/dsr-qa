@@ -1,0 +1,174 @@
+[
+  {
+    "op": "page-props",
+    "lang": "ja",
+    "page": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "node": null,
+    "method": "POST",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01/jcr:content",
+    "target": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01/jcr:content",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "CSRF-Token": "<hidden>"
+    },
+    "form": [
+      [
+        "_charset_",
+        "utf-8"
+      ],
+      [
+        "category",
+        "product"
+      ],
+      [
+        "category@TypeHint",
+        "String"
+      ]
+    ],
+    "bodyKeys": [
+      "category"
+    ],
+    "changes": [
+      {
+        "field": "category",
+        "before": null,
+        "after": "product"
+      }
+    ]
+  },
+  {
+    "op": "page-props",
+    "lang": "en",
+    "page": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "node": null,
+    "method": "POST",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01/jcr:content",
+    "target": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01/jcr:content",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "CSRF-Token": "<hidden>"
+    },
+    "form": [
+      [
+        "_charset_",
+        "utf-8"
+      ],
+      [
+        "category",
+        "product"
+      ],
+      [
+        "category@TypeHint",
+        "String"
+      ],
+      [
+        "robots",
+        ""
+      ],
+      [
+        "robots@TypeHint",
+        "String"
+      ]
+    ],
+    "bodyKeys": [
+      "category",
+      "robots"
+    ],
+    "changes": [
+      {
+        "field": "category",
+        "before": null,
+        "after": "product"
+      },
+      {
+        "field": "robots",
+        "before": "noindex, nofollow",
+        "after": ""
+      }
+    ]
+  },
+  {
+    "op": "page-props",
+    "lang": "ja",
+    "page": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "node": null,
+    "method": "POST",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02/jcr:content",
+    "target": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02/jcr:content",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "CSRF-Token": "<hidden>"
+    },
+    "form": [
+      [
+        "_charset_",
+        "utf-8"
+      ],
+      [
+        "robots",
+        "noindex, nofollow"
+      ],
+      [
+        "robots@TypeHint",
+        "String"
+      ]
+    ],
+    "bodyKeys": [
+      "robots"
+    ],
+    "changes": [
+      {
+        "field": "robots",
+        "before": null,
+        "after": "noindex, nofollow"
+      }
+    ]
+  },
+  {
+    "op": "replicate:publish page",
+    "kind": "page",
+    "paths": [
+      "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+      "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+      "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02"
+    ],
+    "method": "POST",
+    "path": "/bin/replicate",
+    "target": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01, /content/sites/digital-showroom/master/en/library/article/stories/qa529-01, /content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "CSRF-Token": "<hidden>"
+    },
+    "form": [
+      [
+        "_charset_",
+        "utf-8"
+      ],
+      [
+        "cmd",
+        "Activate"
+      ],
+      [
+        "agentId",
+        "publish"
+      ],
+      [
+        "path",
+        "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01"
+      ],
+      [
+        "path",
+        "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01"
+      ],
+      [
+        "path",
+        "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02"
+      ]
+    ],
+    "bodyKeys": [
+      "cmd",
+      "agentId",
+      "path"
+    ]
+  }
+]

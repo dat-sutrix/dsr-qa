@@ -1,0 +1,138 @@
+{
+  "/content/dam/common/ja/products/990586002": {
+    "exists": true,
+    "id": "cde55ece-8d7f-4068-adc1-643203fb1e54",
+    "model": "DM_product",
+    "etag": "\"beea7f5865379cd98e580b73a9b3ebda\"",
+    "status": "PUBLISHED",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "productId": [
+        "990586002"
+      ],
+      "productCode": [
+        "QA586-B"
+      ],
+      "productName": [
+        "QA586 product B"
+      ],
+      "productCategories": [
+        "site:product/product-category/hook-loop"
+      ],
+      "applications": [
+        "site:product/application/baby-kids"
+      ],
+      "performances": [],
+      "zipperChainTypeCategories": [],
+      "searchKeywords": [],
+      "isDtmSupported": [],
+      "is3dSimulatorSupported": [],
+      "elementSize": [],
+      "openingType": [],
+      "openingTypeNote": [],
+      "photoForList": [],
+      "media01Asset": [
+        "/content/dam/ykk/digital-showroom/test/jpg/cmyk_2000x1500_537kb.jpg"
+      ],
+      "media02Type": [],
+      "media02Asset": [],
+      "media02Url": [],
+      "media03Type": [],
+      "media03Asset": [],
+      "media03Url": [],
+      "media04Type": [],
+      "media04Asset": [],
+      "media04Url": [],
+      "media05Type": [],
+      "media05Asset": [],
+      "media05Url": [],
+      "media06Type": [],
+      "media06Asset": [],
+      "media06Url": [],
+      "media07Type": [],
+      "media07Asset": [],
+      "media07Url": [],
+      "media08Type": [],
+      "media08Asset": [],
+      "media08Url": [],
+      "media09Type": [],
+      "media09Asset": [],
+      "media09Url": [],
+      "media10Type": [],
+      "media10Asset": [],
+      "media10Url": [],
+      "media11Type": [],
+      "media11Asset": [],
+      "media11Url": [],
+      "media12Type": [],
+      "media12Asset": [],
+      "media12Url": [],
+      "media13Type": [],
+      "media13Asset": [],
+      "media13Url": [],
+      "media14Type": [],
+      "media14Asset": [],
+      "media14Url": [],
+      "media15Type": [],
+      "media15Asset": [],
+      "media15Url": [],
+      "description": [
+        "QA586 description for SEO check"
+      ],
+      "descriptionImage": [],
+      "itemVariations": [],
+      "itemVariationsImage": [],
+      "colorVariations": [],
+      "colorVariationsImage": [],
+      "colorVariationsPdf": [],
+      "howToUse": [],
+      "howToUseImage": [],
+      "notice": [],
+      "noticeImage": [],
+      "printableTape": [],
+      "printableTapeNote": [],
+      "recycledTape": [],
+      "recycledTapeNote": [],
+      "recycledMaterial": [],
+      "recycledMaterialNote": [],
+      "parentProduct": [],
+      "applicableSliderSameAsParent": [],
+      "relatedProducts": [],
+      "relatedCatalogs": [],
+      "relatedVideos": [],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-10-01"
+      ],
+      "updateDate": [],
+      "isDiscontinued": []
+    }
+  },
+  "/content/dam/dsr/ja/products/990586002": {
+    "exists": true,
+    "id": "0cb5e828-68e2-44d9-b288-432aa216d29e",
+    "model": "DM_product_related",
+    "etag": "\"98d71828f4d985ee58059f94a59e0ca9\"",
+    "status": "DRAFT",
+    "previewStatus": "NEVER_PUBLISHED",
+    "fields": {
+      "productLabel": [
+        "990586002"
+      ],
+      "product": [
+        "/content/dam/common/ja/products/990586002"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedContents": [],
+      "relatedLandingPages": [],
+      "relatedMoodboards": [],
+      "isActive": [
+        true
+      ]
+    }
+  }
+}

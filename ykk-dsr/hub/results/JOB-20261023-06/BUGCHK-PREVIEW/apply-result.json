@@ -1,0 +1,20 @@
+[
+  {
+    "at": "2026-10-23T03:37:30.420Z",
+    "op": "replicate:preview content-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-preview, /content/dam/common/en/catalogs/qa654-preview",
+    "status": 200,
+    "changes": null
+  },
+  {
+    "at": "2026-10-23T03:37:30.791Z",
+    "op": "replicate:preview dsr-cf",
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-preview, /content/dam/dsr/en/catalogs/qa654-preview",
+    "status": 200,
+    "changes": null
+  }
+]

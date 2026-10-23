@@ -1,0 +1,142 @@
+[
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-preview",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-preview",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:37:27Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:37:37 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa654-preview",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:37:27Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:37:37 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "DM_movie_related",
+    "actual": "DM_movie_related"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#3 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:37:27Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:37:38 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "exists",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "model",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "DM_catalog_related",
+    "actual": "DM_catalog_related"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:preview",
+    "item": "#4 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/catalogs/qa654-preview",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:37:27Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:37:38 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/video/qa587-preview",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/video/qa587-preview",
+    "actual": "200; title=\"YKK DIGITAL SHOWROOM\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.page",
+    "item": "url page",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.page/en/library/catalog/qa654-preview",
+    "result": "PASS",
+    "expected": "200 + <title> on /en/library/catalog/qa654-preview",
+    "actual": "200; title=\"YKK DIGITAL SHOWROOM\""
+  }
+]

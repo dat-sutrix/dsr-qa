@@ -1,0 +1,19 @@
+# apply ykk-dsr/hub/results/JOB-20261023-06/BUGCHK-PREVIEW/BUGCHK-PREVIEW.yaml – EXECUTE
+
+Gates:
+- ✅ AUTHOR_WRITE_ENABLED=1
+- ✅ --apply flag
+- ✅ write window Mon–Fri 08:00–18:00 Asia/Saigon (now 2026-10-23T10:37:29.745+07:00)
+- ✅ lint: 0 FAIL
+
+Lint FAIL: 0
+
+| # | Op | Request | Target | Keys |
+|---|---|---|---|---|
+| 1 | skip | – | /content/dam/common/en/movies/qa587-preview | content-cf en: no field change |
+| 2 | skip | – | /content/dam/common/en/catalogs/qa654-preview | content-cf en: no field change |
+| 3 | skip | – | /content/dam/dsr/en/movies/standard/qa587-preview | dsr-cf en: no field change |
+| 4 | skip | – | /content/dam/dsr/en/catalogs/qa654-preview | dsr-cf en: no field change |
+| 5 | replicate:preview content-cf | POST `/adobe/sites/cf/fragments/publish` | /content/dam/common/en/movies/qa587-preview, /content/dam/common/en/catalogs/qa654-preview | headers: Content-Type, CSRF-Token; body: paths, agentId, filterReferencesByStatus, workflowTitle |
+| 6 | replicate:preview dsr-cf | POST `/adobe/sites/cf/fragments/publish` | /content/dam/dsr/en/movies/standard/qa587-preview, /content/dam/dsr/en/catalogs/qa654-preview | headers: Content-Type, CSRF-Token; body: paths, agentId, filterReferencesByStatus, workflowTitle |
+executed 2 writes; see ykk-dsr/hub/results/JOB-20261023-06/BUGCHK-PREVIEW/writes.log

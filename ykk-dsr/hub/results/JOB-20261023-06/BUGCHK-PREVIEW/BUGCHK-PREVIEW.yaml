@@ -1,0 +1,39 @@
+# BUGCHK-PREVIEW – JOB-20261023-06 extra: re-send Preview (no field change) for the two preview-only DSR CFs that render
+#   `unavailable: not-found` on .aem.page (DSR-VOV-002 qa587-preview, CATOV-009 qa654-preview). Content CF preview first (D10 order).
+# Kept in the job result folder (agent writes under hub/ only to its result folder). No publish: both must stay off .live.
+id: BUGCHK-PREVIEW
+us: DSR-587/654
+max_writes: 4
+items:
+  - kind: content-cf
+    model: DM_movie
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "re-preview of existing en CF only (TD-587-02 en only), no data change"
+    path: /content/dam/common/{lang}/movies/qa587-preview
+    replicate: [preview]
+  - kind: content-cf
+    model: DM_catalog
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "re-preview of existing en CF only (TD-654-04 en only), no data change"
+    path: /content/dam/common/{lang}/catalogs/qa654-preview
+    replicate: [preview]
+  - kind: dsr-cf
+    model: DM_movie_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "re-preview of existing en CF only (TD-587-02 en only), no data change"
+    path: /content/dam/dsr/{lang}/movies/standard/qa587-preview
+    replicate: [preview]
+  - kind: dsr-cf
+    model: DM_catalog_related
+    lang: [en]
+    lang_pair: false
+    lang_pair_reason: "re-preview of existing en CF only (TD-654-04 en only), no data change"
+    path: /content/dam/dsr/{lang}/catalogs/qa654-preview
+    replicate: [preview]
+verify:
+  urls:
+    - { url: "/en/library/video/qa587-preview", page: 200, live: 404 }
+    - { url: "/en/library/catalog/qa654-preview", page: 200, live: 404 }

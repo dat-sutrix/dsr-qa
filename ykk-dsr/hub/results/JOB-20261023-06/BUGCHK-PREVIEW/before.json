@@ -1,0 +1,126 @@
+{
+  "/content/dam/common/en/movies/qa587-preview": {
+    "exists": true,
+    "id": "e9d589cb-ada3-42d7-9ef2-42d765bbec75",
+    "model": "DM_movie",
+    "etag": "\"d0fc19b0876fa45841780aa9f3b9931f\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieId": [
+        "qa587-preview"
+      ],
+      "movieTitle": [
+        "QA587 preview"
+      ],
+      "description": [
+        "QA587 line1 \nQA587 line2"
+      ],
+      "searchKeywords": [],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "movieSource": [
+        "youtube"
+      ],
+      "movieSourceId": [
+        "irFRtAVphCY"
+      ],
+      "movieAsset": [],
+      "relatedMovies": [],
+      "relatedProducts": [],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-10-23"
+      ],
+      "updateDate": [],
+      "isUnavailable": []
+    }
+  },
+  "/content/dam/common/en/catalogs/qa654-preview": {
+    "exists": true,
+    "id": "be099810-7823-4535-a31d-abf4c99d04a7",
+    "model": "DM_catalog",
+    "etag": "\"f8da45ed9451e225810637c99a6d614a\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "catalogId": [
+        "qa654-preview"
+      ],
+      "catalogTitle": [
+        "QA654 preview"
+      ],
+      "description": [
+        "QA654 description"
+      ],
+      "catalogCategories": [
+        "site:product/material/aluminium"
+      ],
+      "searchKeywords": [],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "catalogType": [
+        "pdf"
+      ],
+      "pdfAsset": [
+        "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf"
+      ],
+      "ebookUrl": [],
+      "requiresForm": [
+        false
+      ],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-10-01"
+      ],
+      "updateDate": [],
+      "isUnavailable": []
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-preview": {
+    "exists": true,
+    "id": "9df36663-98e1-45eb-8d32-0c90d3ffdf44",
+    "model": "DM_movie_related",
+    "etag": "\"0e625b80e97ca685f5cc53dc57a805f4\"",
+    "status": "DRAFT",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-preview"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/catalogs/qa654-preview": {
+    "exists": true,
+    "id": "4e41aac2-6ebe-4767-bb0a-769a8e2e304b",
+    "model": "DM_catalog_related",
+    "etag": "\"446d679a3c4539977c888c42a221116d\"",
+    "status": "DRAFT",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "catalogLabel": [],
+      "catalog": [
+        "/content/dam/common/en/catalogs/qa654-preview"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "isActive": [
+        true
+      ]
+    }
+  }
+}

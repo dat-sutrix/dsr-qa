@@ -1,0 +1,142 @@
+[
+  {
+    "layer": "L1",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "prop:publicationdate",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L1",
+    "check": "component:root/section/title.title",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "<p>QA566 ニュース詳細テスト</p>",
+    "actual": "<p>QA566 ニュース詳細テスト</p>"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:33:54Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:33:59 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "prop:publicationdate",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "2026-10-01",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L1",
+    "check": "component:root/section/title.title",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "<p>QA566 News detail test</p>",
+    "actual": "<p>QA566 News detail test</p>"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:33:54Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:33:59 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "page-exists",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "component:root/section/title.title",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "<p>長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ</p>",
+    "actual": "<p>長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ</p>"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:33:54Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:33:59 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "200 + <title> on /master/ja/test-space/qa566-news-01",
+    "actual": "200; title=\"QA566 ニュース詳細テスト\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "200 + <title> on /master/en/test-space/qa566-news-01",
+    "actual": "200; title=\"QA566 News detail test\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "200 + <title> on /master/ja/test-space/qa566-news-02",
+    "actual": "200; title=\"長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ\""
+  }
+]

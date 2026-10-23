@@ -1,0 +1,142 @@
+[
+  {
+    "layer": "L1",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "prop:category",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "product",
+    "actual": "product"
+  },
+  {
+    "layer": "L1",
+    "check": "prop:robots",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "",
+    "actual": "(absent)"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:33:47Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:33:54 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "prop:category",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "product",
+    "actual": "product"
+  },
+  {
+    "layer": "L1",
+    "check": "prop:robots",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "",
+    "actual": "(absent)"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:33:47Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:33:54 GMT+0000"
+  },
+  {
+    "layer": "L1",
+    "check": "page-exists",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "actual": "exists"
+  },
+  {
+    "layer": "L1",
+    "check": "prop:robots",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "noindex, nofollow",
+    "actual": "noindex, nofollow"
+  },
+  {
+    "layer": "L2",
+    "check": "replicated:publish",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "Activate ≥ 2026-10-23T03:33:47Z (timestamp present)",
+    "actual": "Activate @ Fri Oct 23 2026 03:33:54 GMT+0000"
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "ja",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "200 + <title> on /master/ja/library/article/stories/qa529-01",
+    "actual": "200; title=\"QA529 ストーリー詳細テスト\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "en",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/en/library/article/stories/qa529-01",
+    "result": "PASS",
+    "expected": "200 + <title> on /master/en/library/article/stories/qa529-01",
+    "actual": "200; title=\"QA529 Story detail test\""
+  },
+  {
+    "layer": "L3",
+    "check": "delivery:.aem.live",
+    "item": "url live",
+    "lang": "-",
+    "path": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+    "result": "PASS",
+    "expected": "200 + <title> on /master/ja/library/article/stories/qa529-02",
+    "actual": "200; title=\"QA529 最小記事\""
+  }
+]

@@ -153,8 +153,8 @@ for (const lang of languages) {
         const on = today();
         // Blocked: dates come from the dsr-catalog-list GraphQL response; DOM shows one formatted date only.
         test.skip(data.every(i => !i.publishDate && !i.updateDate), `Blocked – publishDate/updateDate not exposed (checked DOM .cards-card-meta and dsr-catalog-list response) (${lang})`);
-        // Only this TC's qa190 rows (JOB-20261016-06); not re-seeded after the overlay merge, so old folder only (JOB-20261020-04).
-        const own = data.filter(i => (titles as readonly string[]).includes(i.catalogTitle) && i._path?.startsWith(oldFolder));
+        // Only this TC's qa190 rows, re-seeded by Agent Author in the BL-OVL-1 layout (TD-190-DSR, JOB-20261023-06): content CF /content/dam/common/{lang}/catalogs/qa190-cat-*.
+        const own = data.filter(i => (titles as readonly string[]).includes(i.catalogTitle) && i._path?.startsWith(contentCfPath(lang, 'qa190-cat-')));
         test.skip(!own.length, `Blocked – no DEV data for ${titles.join(', ')} (${lang})`);
         const rows = [];
         for (const item of own) {

@@ -1,0 +1,376 @@
+{
+  "job": "JOB-20261023-06",
+  "agent": "claude-code",
+  "us": "DSR-586/529/566/557/587 (speed-up apply + rerun)",
+  "env": "dev",
+  "started": "2026-10-23T03:32:05Z",
+  "finished": "2026-10-23T03:55:45Z",
+  "status": "done",
+  "author_apply": [
+    {
+      "manifest": "BUGCHK-586-02",
+      "writes": 2,
+      "http": "all 2xx",
+      "verify": "L1–L3 PASS 12 / FAIL 0"
+    },
+    {
+      "manifest": "TD-529-META",
+      "writes": 4,
+      "http": "all 2xx",
+      "verify": "PASS 14 / FAIL 0"
+    },
+    {
+      "manifest": "TD-566-FIX",
+      "writes": 6,
+      "http": "all 2xx",
+      "verify": "PASS 14 / FAIL 0"
+    },
+    {
+      "manifest": "TD-190-DSR",
+      "writes": 36,
+      "http": "all 2xx",
+      "verify": "PASS 376 / FAIL 0 (first verify 03:36Z: 7 L3 .aem.live 404 – live pages not yet generated; re-verify ~03:39Z all PASS)"
+    },
+    {
+      "manifest": "TD-587-PHASE2",
+      "writes": 4,
+      "http": "all 2xx",
+      "verify": "PASS 18 / FAIL 0"
+    },
+    {
+      "manifest": "BUGCHK-PREVIEW (extra, re-preview)",
+      "writes": 2,
+      "http": "all 2xx",
+      "verify": "PASS 14 / FAIL 0"
+    }
+  ],
+  "bug_preview": {
+    "result": "BUG-PREVIEW reproduced after re-preview",
+    "checked": "2026-10-23T03:38:31Z (61 s after re-preview 03:37:30Z)",
+    "rows": {
+      "/en/library/video/qa587-preview": ".aem.page 200, title \"YKK DIGITAL SHOWROOM\", rows source=overlay + unavailable=not-found, robots noindex; .aem.live 404",
+      "/en/library/catalog/qa654-preview": ".aem.page 200, title \"YKK DIGITAL SHOWROOM\", rows source=overlay + unavailable=not-found, robots noindex; .aem.live 404",
+      "/ja/products/990586002 (PDO-002, 3rd case)": ".aem.page 200, same not-found body; .aem.live 404"
+    }
+  },
+  "tests": [
+    {
+      "tc": "DSR-PDO-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": ".aem.page 200 but body = `unavailable: not-found`, no product name (BUG-PREVIEW)",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85,
+      "report": "results/DSR-586/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-PDO-012",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-586/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "meta category = `product` (1 value) – TC expects 2 tag IDs",
+      "evidence": "evidence/DSR-ARTICLE-012_ja.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "report": "results/DSR-529/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-529/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-529/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-ARTICLE-012",
+      "lang": "en",
+      "result": "fail",
+      "error": "meta category = `product` (1 value) – TC expects 2 tag IDs",
+      "evidence": "evidence/DSR-ARTICLE-012_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 10,
+      "report": "results/DSR-529/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-ARTICLE-014",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-529/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-ARTICLE-016",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-529/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-ARTICLE-023",
+      "lang": "ja",
+      "result": "fail",
+      "error": "related items block + heading visible on qa529-02 (0 results expected → トルツメ)",
+      "evidence": "evidence/DSR-ARTICLE-023_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50,
+      "report": "results/DSR-529/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "en",
+      "result": "fail",
+      "error": "Back to list missing (required template area)",
+      "evidence": "evidence/DSR-NEWS-002_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "no \"Back to list\" link in main",
+      "evidence": "evidence/DSR-NEWS-006_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "en",
+      "result": "fail",
+      "error": "qa566-news-01 absent from both query-index files",
+      "evidence": "evidence/DSR-NEWS-007_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-008",
+      "lang": "en",
+      "result": "skip",
+      "error": "TC 8.0 is ja only",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "en",
+      "result": "fail",
+      "error": "My List button and share icons not found in .article-meta",
+      "evidence": "evidence/DSR-NEWS-012_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Back to list missing (required template area)",
+      "evidence": "evidence/DSR-NEWS-002_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "no \"Back to list\" link in main",
+      "evidence": "evidence/DSR-NEWS-006_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "qa566-news-01 absent from both query-index files",
+      "evidence": "evidence/DSR-NEWS-007_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-008",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked – page under test is not under /ja/news/ (needs TD-566-03)",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "My List button and share icons not found in .article-meta",
+      "evidence": "evidence/DSR-NEWS-012_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 60,
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-566/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-557/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-557/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "pass",
+      "report": "results/DSR-557/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-557/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-557/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-557/DEV/automation-run-20261023-job06-rerun2.md"
+    },
+    {
+      "tc": "DSR-VOV-008",
+      "lang": "en",
+      "result": "fail",
+      "error": "rows = source, cfPath, unavailable (TC: single unavailable row); noindex + redirect pass",
+      "evidence": "evidence/DSR-VOV-008_en.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 30,
+      "report": "results/DSR-587/DEV/automation-run-20261023-job06.md"
+    },
+    {
+      "tc": "DSR-VOV-010",
+      "lang": "en",
+      "result": "pass",
+      "report": "results/DSR-587/DEV/automation-run-20261023-job06.md"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "fixtures/dsr-557.ts"
+  ],
+  "questions": []
+}

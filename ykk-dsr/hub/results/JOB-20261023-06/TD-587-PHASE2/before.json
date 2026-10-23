@@ -1,0 +1,84 @@
+{
+  "/content/dam/common/en/movies/qa587-unavail": {
+    "exists": true,
+    "id": "2da3af67-ccbb-4f29-87d1-2d548593b354",
+    "model": "DM_movie",
+    "etag": "\"d57aff98a1559c5e8f41933335b63f45\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieId": [
+        "qa587-unavail"
+      ],
+      "movieTitle": [
+        "QA587 unavail"
+      ],
+      "description": [
+        "QA587 line1 \nQA587 line2"
+      ],
+      "searchKeywords": [],
+      "thumbnail": [
+        "/content/dam/ykk/digital-showroom/test/png/image 7.png"
+      ],
+      "movieSource": [
+        "youtube"
+      ],
+      "movieSourceId": [
+        "irFRtAVphCY"
+      ],
+      "movieAsset": [],
+      "relatedMovies": [],
+      "relatedProducts": [],
+      "sortOrder": [
+        0
+      ],
+      "publishDate": [
+        "2026-10-23"
+      ],
+      "updateDate": [],
+      "isUnavailable": []
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-unavail": {
+    "exists": true,
+    "id": "ad7f2a4f-c0a1-4b98-a5ed-0714f074bfd4",
+    "model": "DM_movie_related",
+    "etag": "\"341f8ee85854e447c92b60e30dcf8274\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-unavail"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  },
+  "/content/dam/dsr/en/movies/standard/qa587-removed": {
+    "exists": true,
+    "id": "ba85c6fa-be51-4936-9d1b-11c59cbf6b34",
+    "model": "DM_movie_related",
+    "etag": "\"343a67bc398a6eccdd23130920f693ef\"",
+    "status": "PUBLISHED",
+    "previewStatus": "PUBLISHED",
+    "fields": {
+      "movieLabel": [],
+      "movie": [
+        "/content/dam/common/en/movies/qa587-removed"
+      ],
+      "dsrFeatures": [],
+      "isBoothLimited": [],
+      "relatedArticles": [],
+      "relatedLandingPages": [],
+      "isActive": [
+        true
+      ]
+    }
+  }
+}
