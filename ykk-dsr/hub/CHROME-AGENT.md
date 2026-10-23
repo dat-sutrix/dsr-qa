@@ -9,7 +9,7 @@
 | C1 | Lane `chrome` = Claude web điều khiển Chrome của Dat qua extension; job vẫn là file trong `jobs/queue` (`agent: chrome`). runner.sh **không** nhặt lane này | Executor là session Claude web, không phải VPS |
 | C2 | Chia việc theo nguyên tắc: **có đường tất định thì dùng đường tất định**. CF data (create/patch/rename/publish) vẫn ưu tiên lane `author` (API, đang B2). Chrome làm việc cần UI | LLM thao tác UI có rủi ro diễn giải (AUTHOR-AGENT D1) |
 | C3 | Mọi lần chrome **ghi** dữ liệu → bắt buộc kiểm độc lập bằng máy khác: CF → `tools/author verify` (API); page/UE → job `claude-code` đọc HTML/meta trên `.aem.page/.aem.live` | Người làm ≠ người kiểm |
-| C4 | Chrome dùng **profile riêng "DSR-QA"** + cửa sổ riêng; agent chỉ làm trong tab nó tự tạo, không đọc/đụng tab khác của Dat | Chrome thật có login Jira/mail… của Dat |
+| C4 | Chrome dùng **máy chính "DSR-Chrome-Personal"** (laptop cá nhân Dat, 24/7 – Dat 23/10 22:13; máy công ty profile DSR-QA = dự phòng) + cửa sổ riêng; agent chỉ làm trong tab nó tự tạo, không đọc/đụng tab khác của Dat | Chrome thật có login Jira/mail… của Dat |
 | C5 | Bằng chứng = dữ kiện dạng chữ (URL, text nguyên văn, giá trị field, thông báo lỗi) ghi vào result; cần ảnh trang public → job `codex` chụp; L&F vẫn là L&F card Dat review | Chrome tool không lưu ảnh thẳng vào repo |
 | C6 | Cookie U1 hết hạn → chrome làm thay phần CF (UI) theo cùng manifest, rồi verify khi có cookie mới | Không để việc đứng chờ Dat |
 
