@@ -19,7 +19,7 @@ items:
       publishDate: "2026-10-01"
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en, ja]
     path: /content/dam/dsr/{lang}/movies/standard/qa557-youku
     fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/qa557-youku)" }

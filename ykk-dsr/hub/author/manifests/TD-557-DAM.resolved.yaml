@@ -12,7 +12,7 @@ items:
     fields: { movieId: qa557-dam, movieSource: dam }   # movieAsset: any mp4 (not checked)
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en, ja]
     path: /content/dam/dsr/{lang}/movies/standard/qa557-dam
     fields: { isActive: true, movie: "ref(/content/dam/common/{lang}/movies/qa557-dam)" }

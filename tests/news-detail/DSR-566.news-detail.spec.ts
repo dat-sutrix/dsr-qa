@@ -1,6 +1,6 @@
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import { NewsDetailPage } from '../../pages/NewsDetailPage';
-import { languages, type Language, viewports, newsPath, queryIndexPaths, rootQueryIndex, indexFields, backToListSuffix, relatedPattern, seoMeta, isoDate, dateFormat, newsListPath } from '../../fixtures/dsr-566';
+import { languages, type Language, viewports, newsPath, queryIndexPaths, rootQueryIndex, indexFields, backToListSuffix, relatedPattern, seoMeta, isoDate, dateFormat, newsListPath, expectsCta } from '../../fixtures/dsr-566';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -53,14 +53,14 @@ for (const lang of languages) {
     test(`DSR-NEWS-003 [${lang}] shown date equals meta publish date`, { tag: ['@auto'] }, async ({ page }) => {
       const news = await openNews(page, lang);
       const shown = (await news.date.first().innerText()).trim();
-      // Page property publish date (meta publicationdate); published-time only as fallback.
+      // Page property publish date (meta publicationdate). Without it, only the Article Meta date is checked
+      // (format YYYY.MM.DD); published-time is recorded but never compared (JOB-20261023-22).
       const publicationDate = await page.locator('meta[name="publicationdate"]').getAttribute('content', { timeout: 1_000 }).catch(() => null);
       const publishedTime = await page.locator('meta[name="published-time"]').getAttribute('content', { timeout: 1_000 }).catch(() => null);
-      const meta = publicationDate ?? publishedTime;
-      observations.push({ shown, publicationDate, publishedTime, shownIso: isoDate(shown), metaIso: isoDate(meta) });
+      observations.push({ shown, publicationDate, publishedTime, shownIso: isoDate(shown), metaIso: isoDate(publicationDate), comparedWith: publicationDate ? 'publicationdate' : 'Article Meta date only' });
       expect.soft(shown, 'date format YYYY.MM.DD (DSR-660 rule)').toMatch(dateFormat);
       expect(isoDate(shown), 'shown date parsable').not.toBeNull();
-      expect(isoDate(shown)).toBe(isoDate(meta));
+      if (publicationDate) expect(isoDate(shown)).toBe(isoDate(publicationDate));
     });
 
     // Category = news type, read from the Text block directly under Title (template news-detail).
@@ -142,6 +142,14 @@ for (const lang of languages) {
 
     test(`DSR-NEWS-010 [${lang}] CTA (Button8) href equals authored URL`, { tag: ['@auto'] }, async ({ page }) => {
       const news = await openNews(page, lang);
+      if (!expectsCta) {
+        // TD-566-02 has no CTA: TC 10.0 expects no button (and no empty button frame) in main.
+        const buttons = await news.main.locator('.button-container, a.button, .button').count();
+        observations.push({ expectsCta, cta: await news.cta.count(), buttons });
+        await expect(news.cta, 'Button8 CTA').toHaveCount(0);
+        expect(buttons, 'buttons in main').toBe(0);
+        return;
+      }
       await expect(news.cta, 'Button8 CTA').toHaveCount(1);
       const href = await news.cta.getAttribute('href');
       const authored = await news.authoredCtaHref(newsPath(lang));

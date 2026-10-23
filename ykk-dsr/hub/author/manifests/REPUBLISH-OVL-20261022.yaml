@@ -14,196 +14,196 @@ us: DSR-587/654/586
 max_writes: 2
 items:
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-ebook
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-ebook-form
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-pdf
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa190-cat-pdf-form
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa654-content-unpub
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa654-inactive
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa654-preview
     replicate: [preview]  # preview-only: must NOT be on .live
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/catalogs/qa654-update
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa501-main-a
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa501-main-b
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa557-dam
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-main
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-off
     replicate: [publish]  # preview: action=Activate without timestamp, API NEVER_PUBLISHED → publish only (open point)
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-r1
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-r2
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-r3
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-r4
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-r5
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-r6
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-rel-a
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: republish of the existing en CF only (no data change)
     path: /content/dam/dsr/en/movies/standard/qa587-rel-b
     replicate: [publish]  # preview: action=Activate without timestamp, API NEVER_PUBLISHED → publish only (open point)
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-ebook
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-ebook-form
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-pdf
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa190-cat-pdf-form
     replicate: [preview, publish]  # preview added by Claude (JOB-20261022-12): .aem.page overlay must regenerate too
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/catalogs/qa654-inactive
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)
     path: /content/dam/dsr/ja/movies/standard/qa557-dam
     replicate: [publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: republish of the existing ja CF only (no data change)

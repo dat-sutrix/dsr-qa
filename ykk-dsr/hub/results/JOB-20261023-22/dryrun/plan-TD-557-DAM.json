@@ -1,0 +1,200 @@
+[
+  {
+    "op": "patch",
+    "lang": "en",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/06e3a26d-22ed-477e-a5d1-dfa3f1347906",
+    "target": "/content/dam/common/en/movies/qa557-dam",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/5/values",
+        "value": [
+          "DAM"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.movieSource"
+    ],
+    "changes": [
+      {
+        "field": "movieSource",
+        "before": [
+          "dam"
+        ],
+        "after": [
+          "DAM"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "ja",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/c235c0a5-206f-45fd-9f4a-219c2616bae8",
+    "target": "/content/dam/common/ja/movies/qa557-dam",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/5/values",
+        "value": [
+          "DAM"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.movieSource"
+    ],
+    "changes": [
+      {
+        "field": "movieSource",
+        "before": [
+          "dam"
+        ],
+        "after": [
+          "DAM"
+        ]
+      }
+    ]
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-dam"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-dam"
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa557-dam",
+      "/content/dam/common/ja/movies/qa557-dam"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-dam, /content/dam/common/ja/movies/qa557-dam",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa557-dam",
+        "/content/dam/common/ja/movies/qa557-dam"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa557-dam",
+      "/content/dam/dsr/ja/movies/standard/qa557-dam"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-dam, /content/dam/dsr/ja/movies/standard/qa557-dam",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa557-dam",
+        "/content/dam/dsr/ja/movies/standard/qa557-dam"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa557-dam",
+      "/content/dam/common/ja/movies/qa557-dam"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-dam, /content/dam/common/ja/movies/qa557-dam",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa557-dam",
+        "/content/dam/common/ja/movies/qa557-dam"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa557-dam",
+      "/content/dam/dsr/ja/movies/standard/qa557-dam"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-dam, /content/dam/dsr/ja/movies/standard/qa557-dam",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa557-dam",
+        "/content/dam/dsr/ja/movies/standard/qa557-dam"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

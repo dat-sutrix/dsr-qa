@@ -1,0 +1,350 @@
+[
+  {
+    "op": "patch",
+    "lang": "en",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/05a09bdb-4052-41ef-a8fe-e7f0cb8c5ee8",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-pdf"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "ja",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/8132d465-0e6e-4f37-8a19-78e291a43aa9",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-pdf"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-pdf"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "en",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/f215508e-43ec-48e7-9ddd-799d38410f5e",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-pdf-form"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-pdf-form"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "ja",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/8ab8c3ef-4821-493d-ae23-23c20ac27586",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-pdf-form"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-pdf-form"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "en",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/946a84ec-0253-4adb-a88b-88d454db291a",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-ebook"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-ebook"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "ja",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/cf6f0a34-b6f7-42f5-abc3-f174593e5ccd",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-ebook"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-ebook"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "en",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/4dcf76c0-61f2-4478-8bdf-b41850bc752b",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-ebook-form"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-ebook-form"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "patch",
+    "lang": "ja",
+    "method": "PATCH",
+    "path": "/adobe/sites/cf/fragments/225478a2-7c2f-4718-a05e-f408a32724a3",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "headers": {
+      "Content-Type": "application/json-patch+json",
+      "If-Match": "<ETag from GET>",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": [
+      {
+        "op": "replace",
+        "path": "/fields/<catalogId>/values",
+        "value": [
+          "qa190-cat-ebook-form"
+        ]
+      }
+    ],
+    "bodyKeys": [
+      "fields.catalogId"
+    ],
+    "changes": [
+      {
+        "field": "catalogId",
+        "before": [],
+        "after": [
+          "qa190-cat-ebook-form"
+        ]
+      }
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+      "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+      "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+      "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-pdf, /content/dam/dsr/ja/catalogs/qa190-cat-pdf, /content/dam/dsr/en/catalogs/qa190-cat-pdf-form, /content/dam/dsr/ja/catalogs/qa190-cat-pdf-form, /content/dam/dsr/en/catalogs/qa190-cat-ebook, /content/dam/dsr/ja/catalogs/qa190-cat-ebook, /content/dam/dsr/en/catalogs/qa190-cat-ebook-form, /content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+        "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+        "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+        "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+      "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+      "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+      "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/catalogs/qa190-cat-pdf, /content/dam/dsr/ja/catalogs/qa190-cat-pdf, /content/dam/dsr/en/catalogs/qa190-cat-pdf-form, /content/dam/dsr/ja/catalogs/qa190-cat-pdf-form, /content/dam/dsr/en/catalogs/qa190-cat-ebook, /content/dam/dsr/ja/catalogs/qa190-cat-ebook, /content/dam/dsr/en/catalogs/qa190-cat-ebook-form, /content/dam/dsr/ja/catalogs/qa190-cat-ebook-form",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/catalogs/qa190-cat-pdf",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-pdf",
+        "/content/dam/dsr/en/catalogs/qa190-cat-pdf-form",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-pdf-form",
+        "/content/dam/dsr/en/catalogs/qa190-cat-ebook",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-ebook",
+        "/content/dam/dsr/en/catalogs/qa190-cat-ebook-form",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-ebook-form"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

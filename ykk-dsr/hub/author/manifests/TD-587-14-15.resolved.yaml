@@ -14,7 +14,7 @@ items:
       movieId: "{id}"
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     path: /content/dam/dsr/{lang}/movies/standard/{id}
     each: [qa587-r1, qa587-r2, qa587-r3, qa587-r4, qa587-r5, qa587-r6]
@@ -31,7 +31,7 @@ items:
       relatedMovies: [ref(/content/dam/common/en/movies/qa587-r1), ref(/content/dam/common/en/movies/qa587-r2), ref(/content/dam/common/en/movies/qa587-r3), ref(/content/dam/common/en/movies/qa587-r4), ref(/content/dam/common/en/movies/qa587-r5), ref(/content/dam/common/en/movies/qa587-r6)]
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     path: /content/dam/dsr/en/movies/standard/qa587-rel-a
     fields: { isActive: true, movie: ref(/content/dam/common/en/movies/qa587-rel-a) }
@@ -43,7 +43,7 @@ items:
     fields: { movieId: qa587-off, isUnavailable: true }
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     path: /content/dam/dsr/en/movies/standard/qa587-off
     fields: { isActive: true, movie: ref(/content/dam/common/en/movies/qa587-off) }
@@ -57,7 +57,7 @@ items:
       relatedMovies: [ref(/content/dam/common/en/movies/qa587-r1), ref(/content/dam/common/en/movies/qa587-off)]
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     path: /content/dam/dsr/en/movies/standard/qa587-rel-b
     fields: { isActive: true, movie: ref(/content/dam/common/en/movies/qa587-rel-b) }

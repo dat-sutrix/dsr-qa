@@ -1,0 +1,34 @@
+[
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qaagent-probe"
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qaagent-probe"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qaagent-probe",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qaagent-probe"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

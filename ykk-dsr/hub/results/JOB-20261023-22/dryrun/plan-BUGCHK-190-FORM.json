@@ -1,0 +1,86 @@
+[
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+      "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+      "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+      "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form, /content/dam/common/en/catalogs/qa190-cat-pdf-form, /content/dam/common/ja/catalogs/qa190-cat-ebook-form, /content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+        "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+        "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+        "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+      "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+      "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+      "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form, /content/dam/common/en/catalogs/qa190-cat-pdf-form, /content/dam/common/ja/catalogs/qa190-cat-ebook-form, /content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+        "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+        "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+        "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

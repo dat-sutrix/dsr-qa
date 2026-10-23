@@ -1,0 +1,584 @@
+{
+  "job": "JOB-20261023-22",
+  "agent": "claude-code",
+  "us": "DSR-669 follow-up + DSR-566",
+  "env": "dev",
+  "started": "2026-10-23T10:12:28Z",
+  "finished": "2026-10-23T10:30:00Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "required element backToList missing (count 0); order of present blocks OK",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Back to list link count 0",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "/master/ja/query-index.json and /master/ja/news/query-index.json 404; row only in /query-index.json",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 30,
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-008",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked – page under test is not under /ja/news/ (needs TD-566-03)",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "My List 0, share icons 0; Article Meta class no-mylist no-share",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15,
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-01"
+    },
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "required element backToList missing (count 0); order of present blocks OK",
+      "evidence": "evidence/DSR-NEWS-002_ja_news-02.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "ja",
+      "result": "pass",
+      "error": "no publicationdate meta: Article Meta date 2026.10.02 format check only (no published-time fallback)",
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Back to list link count 0",
+      "evidence": "evidence/DSR-NEWS-006_ja_news-02.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70,
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "/master/ja/query-index.json and /master/ja/news/query-index.json 404; row only in /query-index.json",
+      "evidence": "evidence/DSR-NEWS-007_ja_news-02.png",
+      "suspect": "test",
+      "cause": "none",
+      "confidence": 30,
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-008",
+      "lang": "ja",
+      "result": "skip",
+      "error": "Blocked – page under test is not under /ja/news/ (needs TD-566-03)",
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "ja",
+      "result": "pass",
+      "error": "no-CTA branch: Button8 0, buttons in main 0",
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "My List 0, share icons 0; Article Meta class no-mylist no-share",
+      "evidence": "evidence/DSR-NEWS-012_ja_news-02.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 15,
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-02"
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "ja",
+      "result": "pass",
+      "page": "qa566-news-02"
+    }
+  ],
+  "lint": {
+    "command": "node tools/author/author.mjs lint <manifest> --json <file>",
+    "manifests": 22,
+    "model_fail_before": 210,
+    "model_fail_after": 0,
+    "parse_errors_before": [
+      "TD-557-DAM.yaml line 14 col 62"
+    ],
+    "parse_errors_after": [],
+    "table": [
+      {
+        "manifest": "BUGCHK-190-FORM",
+        "before": {
+          "pass": 46,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0
+        },
+        "after": {
+          "pass": 46,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "BUGCHK-586-02",
+        "before": {
+          "pass": 19,
+          "fail": 2,
+          "warn": 2,
+          "model_fail": 2
+        },
+        "after": {
+          "pass": 30,
+          "fail": 0,
+          "warn": 2,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "P1B-PROBE",
+        "before": {
+          "pass": 23,
+          "fail": 0,
+          "warn": 1,
+          "model_fail": 0
+        },
+        "after": {
+          "pass": 23,
+          "fail": 0,
+          "warn": 1,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "REPUBLISH-OVL-20261022",
+        "before": {
+          "pass": 84,
+          "fail": 56,
+          "warn": 28,
+          "model_fail": 56
+        },
+        "after": {
+          "pass": 224,
+          "fail": 0,
+          "warn": 56,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-190-CAT-CORE.resolved",
+        "before": {
+          "pass": 28,
+          "fail": 16,
+          "warn": 0,
+          "model_fail": 16
+        },
+        "after": {
+          "pass": 114,
+          "fail": 2,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {
+            "ref-exists:catalog": 2
+          }
+        }
+      },
+      {
+        "manifest": "TD-190-CAT-CORE",
+        "before": {
+          "pass": 28,
+          "fail": 16,
+          "warn": 0,
+          "model_fail": 16
+        },
+        "after": {
+          "pass": 92,
+          "fail": 8,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {
+            "field-name:catalogId": 8
+          }
+        }
+      },
+      {
+        "manifest": "TD-190-DSR",
+        "before": {
+          "pass": 592,
+          "fail": 32,
+          "warn": 0,
+          "model_fail": 32
+        },
+        "after": {
+          "pass": 800,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-529-META",
+        "before": {
+          "pass": 23,
+          "fail": 0,
+          "warn": 1,
+          "model_fail": 0
+        },
+        "after": {
+          "pass": 23,
+          "fail": 0,
+          "warn": 1,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-557-DAM.resolved",
+        "before": {
+          "pass": 36,
+          "fail": 4,
+          "warn": 0,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 58,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-557-DAM",
+        "before": "YAML parse error (line 14 col 62)",
+        "after": {
+          "pass": 58,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-557-YOUKU.resolved",
+        "before": {
+          "pass": 58,
+          "fail": 4,
+          "warn": 0,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 80,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-557-YOUKU",
+        "before": {
+          "pass": 58,
+          "fail": 4,
+          "warn": 0,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 80,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-566-FIX",
+        "before": {
+          "pass": 29,
+          "fail": 0,
+          "warn": 1,
+          "model_fail": 0
+        },
+        "after": {
+          "pass": 29,
+          "fail": 0,
+          "warn": 1,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-586-01-02.resolved",
+        "before": {
+          "pass": 44,
+          "fail": 4,
+          "warn": 4,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 66,
+          "fail": 0,
+          "warn": 4,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-586-01-02",
+        "before": {
+          "pass": 44,
+          "fail": 8,
+          "warn": 0,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 66,
+          "fail": 4,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {
+            "lang-pair": 4
+          }
+        }
+      },
+      {
+        "manifest": "TD-587-01.resolved",
+        "before": {
+          "pass": 44,
+          "fail": 10,
+          "warn": 0,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 66,
+          "fail": 6,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {
+            "rename-source": 3,
+            "rename-target-free": 3
+          }
+        }
+      },
+      {
+        "manifest": "TD-587-01",
+        "before": {
+          "pass": 32,
+          "fail": 4,
+          "warn": 0,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 54,
+          "fail": 0,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-587-14-15.resolved",
+        "before": {
+          "pass": 149,
+          "fail": 36,
+          "warn": 0,
+          "model_fail": 18
+        },
+        "after": {
+          "pass": 248,
+          "fail": 18,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {
+            "lang-pair": 18
+          }
+        }
+      },
+      {
+        "manifest": "TD-587-14-15",
+        "before": {
+          "pass": 149,
+          "fail": 36,
+          "warn": 0,
+          "model_fail": 18
+        },
+        "after": {
+          "pass": 248,
+          "fail": 18,
+          "warn": 0,
+          "model_fail": 0,
+          "other_fail": {
+            "lang-pair": 18
+          }
+        }
+      },
+      {
+        "manifest": "TD-587-NEG",
+        "before": {
+          "pass": 217,
+          "fail": 10,
+          "warn": 9,
+          "model_fail": 10
+        },
+        "after": {
+          "pass": 272,
+          "fail": 0,
+          "warn": 9,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-587-PHASE2",
+        "before": {
+          "pass": 20,
+          "fail": 4,
+          "warn": 3,
+          "model_fail": 4
+        },
+        "after": {
+          "pass": 40,
+          "fail": 0,
+          "warn": 3,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      },
+      {
+        "manifest": "TD-654-02-08",
+        "before": {
+          "pass": 196,
+          "fail": 10,
+          "warn": 7,
+          "model_fail": 10
+        },
+        "after": {
+          "pass": 251,
+          "fail": 0,
+          "warn": 7,
+          "model_fail": 0,
+          "other_fail": {}
+        }
+      }
+    ]
+  },
+  "author": {
+    "dry_run": "apply --dry-run on all 22 manifests, AUTHOR_WRITE_ENABLED unset, exit 0 each, no request sent; plans in dryrun/",
+    "apply": "not run",
+    "test_author": "17/17 pass"
+  },
+  "tsc": {
+    "exit": 0,
+    "result": "no errors"
+  },
+  "run_report": "results/DSR-566/DEV/automation-run-20261023-job22.md",
+  "code_changes": [
+    "ykk-dsr/hub/author/manifests/*.yaml (17 files: model DM_*_related → auto; TD-190-CAT-CORE.yaml + TD-586-01-02.yaml placeholder (?) → auto; TD-557-DAM.yaml line 14 ref value quoted)",
+    "tests/news-detail/DSR-566.news-detail.spec.ts",
+    "fixtures/dsr-566.ts",
+    "docs/DSR-566/baseline-BL-v1.md (A10)"
+  ],
+  "questions": []
+}

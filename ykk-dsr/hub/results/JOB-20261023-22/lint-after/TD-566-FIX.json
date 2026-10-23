@@ -1,0 +1,302 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "ja+en"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "QA page stories/qa* or test-space/qa* (D15)",
+    "actual": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa566-news-01"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01/jcr:content (no page create, D15)",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop:publicationdate",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "allowlisted page property (D15)",
+    "actual": "publicationdate"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop-type:publicationdate",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "YYYY-MM-DD",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L0",
+    "check": "component-node:root/section/title",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "root/<…> under jcr:content",
+    "actual": "root/section/title"
+  },
+  {
+    "layer": "L0",
+    "check": "component-exists:root/section/title",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "existing block component (no add/remove/move, D15)",
+    "actual": "core/franklin/components/block/v1/block"
+  },
+  {
+    "layer": "L0",
+    "check": "component-prop:root/section/title.title",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "text|title (string)",
+    "actual": "title=\"<p>QA566 ニュース詳細テスト</p>\""
+  },
+  {
+    "layer": "L0",
+    "check": "component-prop-live:root/section/title.title",
+    "item": "#1 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "property exists on the live node",
+    "actual": "<p>QA566 ニュース詳細テスト</p>"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "QA page stories/qa* or test-space/qa* (D15)",
+    "actual": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa566-news-01"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "page-exists",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01/jcr:content (no page create, D15)",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop:publicationdate",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "allowlisted page property (D15)",
+    "actual": "publicationdate"
+  },
+  {
+    "layer": "L0",
+    "check": "page-prop-type:publicationdate",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "YYYY-MM-DD",
+    "actual": "2026-10-01"
+  },
+  {
+    "layer": "L0",
+    "check": "component-node:root/section/title",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "root/<…> under jcr:content",
+    "actual": "root/section/title"
+  },
+  {
+    "layer": "L0",
+    "check": "component-exists:root/section/title",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "existing block component (no add/remove/move, D15)",
+    "actual": "core/franklin/components/block/v1/block"
+  },
+  {
+    "layer": "L0",
+    "check": "component-prop:root/section/title.title",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "text|title (string)",
+    "actual": "title=\"<p>QA566 News detail test</p>\""
+  },
+  {
+    "layer": "L0",
+    "check": "component-prop-live:root/section/title.title",
+    "item": "#1 page",
+    "lang": "en",
+    "path": "/content/sites/digital-showroom/master/en/test-space/qa566-news-01",
+    "result": "PASS",
+    "expected": "property exists on the live node",
+    "actual": "<p>QA566 News detail test</p>"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: TD-566-02 ja only (TestData en/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "QA page stories/qa* or test-space/qa* (D15)",
+    "actual": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa566-news-02"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "publish"
+  },
+  {
+    "layer": "L0",
+    "check": "page-exists",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02/jcr:content (no page create, D15)",
+    "actual": "exists"
+  },
+  {
+    "layer": "L0",
+    "check": "component-node:root/section/title",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "root/<…> under jcr:content",
+    "actual": "root/section/title"
+  },
+  {
+    "layer": "L0",
+    "check": "component-exists:root/section/title",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "existing block component (no add/remove/move, D15)",
+    "actual": "core/franklin/components/block/v1/block"
+  },
+  {
+    "layer": "L0",
+    "check": "component-prop:root/section/title.title",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "text|title (string)",
+    "actual": "title=\"<p>長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ</p>\""
+  },
+  {
+    "layer": "L0",
+    "check": "component-prop-live:root/section/title.title",
+    "item": "#2 page",
+    "lang": "ja",
+    "path": "/content/sites/digital-showroom/master/ja/test-space/qa566-news-02",
+    "result": "PASS",
+    "expected": "property exists on the live node",
+    "actual": "<p>長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイトル長いタイ</p>"
+  }
+]

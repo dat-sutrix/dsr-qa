@@ -1,0 +1,362 @@
+[
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-new-0"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-new-0"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-new-10"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-new-10"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-new-11"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-new-11"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-upd-0"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-upd-0"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-upd-10"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-upd-10"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-upd-11"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-upd-11"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-both"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-both"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-noupd"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-noupd"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-new-0"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-10"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-new-10"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-new-11"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-new-11"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-0"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-10"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-upd-11"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-both"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-both"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/catalogs/qa190-cat-noupd"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/common/en/catalogs/qa190-cat-new-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/common/en/catalogs/qa190-cat-new-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/common/en/catalogs/qa190-cat-new-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-both",
+      "/content/dam/common/en/catalogs/qa190-cat-both",
+      "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/common/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-new-0, /content/dam/common/en/catalogs/qa190-cat-new-0, /content/dam/common/ja/catalogs/qa190-cat-new-10, /content/dam/common/en/catalogs/qa190-cat-new-10, /content/dam/common/ja/catalogs/qa190-cat-new-11, /content/dam/common/en/catalogs/qa190-cat-new-11, /content/dam/common/ja/catalogs/qa190-cat-upd-0, /content/dam/common/en/catalogs/qa190-cat-upd-0, /content/dam/common/ja/catalogs/qa190-cat-upd-10, /content/dam/common/en/catalogs/qa190-cat-upd-10, /content/dam/common/ja/catalogs/qa190-cat-upd-11, /content/dam/common/en/catalogs/qa190-cat-upd-11, /content/dam/common/ja/catalogs/qa190-cat-both, /content/dam/common/en/catalogs/qa190-cat-both, /content/dam/common/ja/catalogs/qa190-cat-noupd, /content/dam/common/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/common/en/catalogs/qa190-cat-new-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/common/en/catalogs/qa190-cat-new-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/common/en/catalogs/qa190-cat-new-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-both",
+        "/content/dam/common/en/catalogs/qa190-cat-both",
+        "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/common/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+      "/content/dam/dsr/en/catalogs/qa190-cat-both",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0, /content/dam/dsr/en/catalogs/qa190-cat-new-0, /content/dam/dsr/ja/catalogs/qa190-cat-new-10, /content/dam/dsr/en/catalogs/qa190-cat-new-10, /content/dam/dsr/ja/catalogs/qa190-cat-new-11, /content/dam/dsr/en/catalogs/qa190-cat-new-11, /content/dam/dsr/ja/catalogs/qa190-cat-upd-0, /content/dam/dsr/en/catalogs/qa190-cat-upd-0, /content/dam/dsr/ja/catalogs/qa190-cat-upd-10, /content/dam/dsr/en/catalogs/qa190-cat-upd-10, /content/dam/dsr/ja/catalogs/qa190-cat-upd-11, /content/dam/dsr/en/catalogs/qa190-cat-upd-11, /content/dam/dsr/ja/catalogs/qa190-cat-both, /content/dam/dsr/en/catalogs/qa190-cat-both, /content/dam/dsr/ja/catalogs/qa190-cat-noupd, /content/dam/dsr/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+        "/content/dam/dsr/en/catalogs/qa190-cat-both",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/common/en/catalogs/qa190-cat-new-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/common/en/catalogs/qa190-cat-new-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/common/en/catalogs/qa190-cat-new-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/common/ja/catalogs/qa190-cat-both",
+      "/content/dam/common/en/catalogs/qa190-cat-both",
+      "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/common/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/ja/catalogs/qa190-cat-new-0, /content/dam/common/en/catalogs/qa190-cat-new-0, /content/dam/common/ja/catalogs/qa190-cat-new-10, /content/dam/common/en/catalogs/qa190-cat-new-10, /content/dam/common/ja/catalogs/qa190-cat-new-11, /content/dam/common/en/catalogs/qa190-cat-new-11, /content/dam/common/ja/catalogs/qa190-cat-upd-0, /content/dam/common/en/catalogs/qa190-cat-upd-0, /content/dam/common/ja/catalogs/qa190-cat-upd-10, /content/dam/common/en/catalogs/qa190-cat-upd-10, /content/dam/common/ja/catalogs/qa190-cat-upd-11, /content/dam/common/en/catalogs/qa190-cat-upd-11, /content/dam/common/ja/catalogs/qa190-cat-both, /content/dam/common/en/catalogs/qa190-cat-both, /content/dam/common/ja/catalogs/qa190-cat-noupd, /content/dam/common/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/common/en/catalogs/qa190-cat-new-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/common/en/catalogs/qa190-cat-new-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/common/en/catalogs/qa190-cat-new-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/common/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/common/ja/catalogs/qa190-cat-both",
+        "/content/dam/common/en/catalogs/qa190-cat-both",
+        "/content/dam/common/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/common/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+      "/content/dam/dsr/en/catalogs/qa190-cat-both",
+      "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+      "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/ja/catalogs/qa190-cat-new-0, /content/dam/dsr/en/catalogs/qa190-cat-new-0, /content/dam/dsr/ja/catalogs/qa190-cat-new-10, /content/dam/dsr/en/catalogs/qa190-cat-new-10, /content/dam/dsr/ja/catalogs/qa190-cat-new-11, /content/dam/dsr/en/catalogs/qa190-cat-new-11, /content/dam/dsr/ja/catalogs/qa190-cat-upd-0, /content/dam/dsr/en/catalogs/qa190-cat-upd-0, /content/dam/dsr/ja/catalogs/qa190-cat-upd-10, /content/dam/dsr/en/catalogs/qa190-cat-upd-10, /content/dam/dsr/ja/catalogs/qa190-cat-upd-11, /content/dam/dsr/en/catalogs/qa190-cat-upd-11, /content/dam/dsr/ja/catalogs/qa190-cat-both, /content/dam/dsr/en/catalogs/qa190-cat-both, /content/dam/dsr/ja/catalogs/qa190-cat-noupd, /content/dam/dsr/en/catalogs/qa190-cat-noupd",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-new-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-0",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-10",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/en/catalogs/qa190-cat-upd-11",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-both",
+        "/content/dam/dsr/en/catalogs/qa190-cat-both",
+        "/content/dam/dsr/ja/catalogs/qa190-cat-noupd",
+        "/content/dam/dsr/en/catalogs/qa190-cat-noupd"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

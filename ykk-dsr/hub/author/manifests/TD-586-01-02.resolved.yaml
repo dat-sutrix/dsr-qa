@@ -16,7 +16,7 @@ items:
     fields: { productId: "990586001", productCode: QA586-A, productName: QA586 product A, publishDate: 2026-10-01, description: QA586 description for SEO check }
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_product_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: TD-586-01/02 is ja-only (product overlay ver0.4 check)
@@ -32,7 +32,7 @@ items:
     fields: { productId: "990586002", productCode: QA586-B, productName: QA586 product B, publishDate: 2026-10-01 }
     replicate: [preview]
   - kind: dsr-cf
-    model: DM_product_related
+    model: auto
     lang: [ja]
     lang_pair: false
     lang_pair_reason: TD-586-01/02 is ja-only (product overlay ver0.4 check)

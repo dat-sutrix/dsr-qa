@@ -1,0 +1,208 @@
+[
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-preview"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-sub"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-commune-only"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-unavail"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-removed"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-tt"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-inactive"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/movies/qa587-inactive"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-preview"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-inactive"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-inactive"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed"
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa587-preview",
+      "/content/dam/common/en/movies/qa587-sub",
+      "/content/dam/common/en/movies/qa587-commune-only",
+      "/content/dam/common/en/movies/qa587-unavail",
+      "/content/dam/common/en/movies/qa587-removed",
+      "/content/dam/common/en/movies/qa587-tt",
+      "/content/dam/common/en/movies/qa587-inactive",
+      "/content/dam/common/ja/movies/qa587-inactive"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-preview, /content/dam/common/en/movies/qa587-sub, /content/dam/common/en/movies/qa587-commune-only, /content/dam/common/en/movies/qa587-unavail, /content/dam/common/en/movies/qa587-removed, /content/dam/common/en/movies/qa587-tt, /content/dam/common/en/movies/qa587-inactive, /content/dam/common/ja/movies/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-preview",
+        "/content/dam/common/en/movies/qa587-sub",
+        "/content/dam/common/en/movies/qa587-commune-only",
+        "/content/dam/common/en/movies/qa587-unavail",
+        "/content/dam/common/en/movies/qa587-removed",
+        "/content/dam/common/en/movies/qa587-tt",
+        "/content/dam/common/en/movies/qa587-inactive",
+        "/content/dam/common/ja/movies/qa587-inactive"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa587-preview",
+      "/content/dam/dsr/en/movies/standard/qa587-inactive",
+      "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+      "/content/dam/dsr/en/movies/standard/qa587-unavail",
+      "/content/dam/dsr/en/movies/standard/qa587-removed"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-preview, /content/dam/dsr/en/movies/standard/qa587-inactive, /content/dam/dsr/ja/movies/standard/qa587-inactive, /content/dam/dsr/en/movies/standard/qa587-unavail, /content/dam/dsr/en/movies/standard/qa587-removed",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-preview",
+        "/content/dam/dsr/en/movies/standard/qa587-inactive",
+        "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+        "/content/dam/dsr/en/movies/standard/qa587-unavail",
+        "/content/dam/dsr/en/movies/standard/qa587-removed"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa587-preview",
+      "/content/dam/common/en/movies/qa587-sub",
+      "/content/dam/common/en/movies/qa587-commune-only",
+      "/content/dam/common/en/movies/qa587-unavail",
+      "/content/dam/common/en/movies/qa587-removed",
+      "/content/dam/common/en/movies/qa587-tt",
+      "/content/dam/common/en/movies/qa587-inactive",
+      "/content/dam/common/ja/movies/qa587-inactive"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-preview, /content/dam/common/en/movies/qa587-sub, /content/dam/common/en/movies/qa587-commune-only, /content/dam/common/en/movies/qa587-unavail, /content/dam/common/en/movies/qa587-removed, /content/dam/common/en/movies/qa587-tt, /content/dam/common/en/movies/qa587-inactive, /content/dam/common/ja/movies/qa587-inactive",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-preview",
+        "/content/dam/common/en/movies/qa587-sub",
+        "/content/dam/common/en/movies/qa587-commune-only",
+        "/content/dam/common/en/movies/qa587-unavail",
+        "/content/dam/common/en/movies/qa587-removed",
+        "/content/dam/common/en/movies/qa587-tt",
+        "/content/dam/common/en/movies/qa587-inactive",
+        "/content/dam/common/ja/movies/qa587-inactive"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa587-inactive",
+      "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+      "/content/dam/dsr/en/movies/standard/qa587-unavail",
+      "/content/dam/dsr/en/movies/standard/qa587-removed"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-inactive, /content/dam/dsr/ja/movies/standard/qa587-inactive, /content/dam/dsr/en/movies/standard/qa587-unavail, /content/dam/dsr/en/movies/standard/qa587-removed",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-inactive",
+        "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+        "/content/dam/dsr/en/movies/standard/qa587-unavail",
+        "/content/dam/dsr/en/movies/standard/qa587-removed"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

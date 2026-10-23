@@ -1,0 +1,462 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "ja+en"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "field of DM_catalog",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:catalogId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "qa190-cat-pdf-form",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/en/catalogs/qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "field of DM_catalog",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:requiresForm",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:catalogId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "qa190-cat-pdf-form",
+    "actual": "qa190-cat-pdf-form"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-pdf-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "ja+en"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:requiresForm",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "field of DM_catalog",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:requiresForm",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:catalogId",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "qa190-cat-ebook-form",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#2 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/en/catalogs/qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "DM_catalog",
+    "actual": "DM_catalog"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:requiresForm",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "field of DM_catalog",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:requiresForm",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:catalogId",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "qa190-cat-ebook-form",
+    "actual": "qa190-cat-ebook-form"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#2 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  }
+]

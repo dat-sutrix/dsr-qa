@@ -1,0 +1,153 @@
+[
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-unavail"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-unavail"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-removed"
+  },
+  {
+    "op": "unpublish:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa587-removed"
+    ],
+    "method": "POST",
+    "path": "/bin/replicate",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "CSRF-Token": "<hidden>"
+    },
+    "form": [
+      [
+        "_charset_",
+        "utf-8"
+      ],
+      [
+        "cmd",
+        "Deactivate"
+      ],
+      [
+        "agentId",
+        "publish"
+      ],
+      [
+        "path",
+        "/content/dam/dsr/en/movies/standard/qa587-removed"
+      ]
+    ],
+    "bodyKeys": [
+      "cmd",
+      "agentId",
+      "path"
+    ]
+  },
+  {
+    "op": "unpublish:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa587-unavail"
+    ],
+    "method": "POST",
+    "path": "/bin/replicate",
+    "target": "/content/dam/common/en/movies/qa587-unavail",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "CSRF-Token": "<hidden>"
+    },
+    "form": [
+      [
+        "_charset_",
+        "utf-8"
+      ],
+      [
+        "cmd",
+        "Deactivate"
+      ],
+      [
+        "agentId",
+        "publish"
+      ],
+      [
+        "path",
+        "/content/dam/common/en/movies/qa587-unavail"
+      ]
+    ],
+    "bodyKeys": [
+      "cmd",
+      "agentId",
+      "path"
+    ]
+  },
+  {
+    "op": "unpublish:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa587-removed"
+    ],
+    "method": "POST",
+    "path": "/bin/replicate",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-removed",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded",
+      "CSRF-Token": "<hidden>"
+    },
+    "form": [
+      [
+        "_charset_",
+        "utf-8"
+      ],
+      [
+        "cmd",
+        "Deactivate"
+      ],
+      [
+        "agentId",
+        "preview"
+      ],
+      [
+        "path",
+        "/content/dam/dsr/en/movies/standard/qa587-removed"
+      ]
+    ],
+    "bodyKeys": [
+      "cmd",
+      "agentId",
+      "path"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa587-unavail"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-unavail",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-unavail"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

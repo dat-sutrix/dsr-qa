@@ -24,7 +24,7 @@ items:
       movieId: qa587-main          # = node name (BL-OVL-1)
     replicate: [preview, publish]  # D10: published before the DSR CFs
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en, ja]
     path: /content/dam/dsr/{lang}/movies/standard/qa587-main
     fields:

@@ -1,0 +1,542 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "en+ja"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/en/movies/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-main",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "qa587-main",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "live-id:movieId",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "qa587-main (manifest will patch)",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 content-cf",
+    "lang": "en",
+    "path": "/content/dam/common/en/movies/qa587-main",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/ja/movies/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa587-main",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie",
+    "actual": "DM_movie"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "field of DM_movie",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "qa587-main",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "live-id:movieId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "qa587-main (manifest will patch)",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/movies/qa587-main",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "ja+en",
+    "actual": "en+ja"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/en/movies/standard/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_dsr",
+    "actual": "auto → DM_movie_dsr"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_dsr",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_dsr"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_dsr",
+    "actual": "DM_movie_dsr"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "field of DM_movie_dsr",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "field of DM_movie_dsr",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/en/movies/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#2 dsr-cf",
+    "lang": "en",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/en/movies/qa587-main",
+    "actual": "in manifest"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/movies/standard/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview, publish"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_dsr",
+    "actual": "auto → DM_movie_dsr"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_dsr",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_movie_dsr"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "DM_movie_dsr",
+    "actual": "DM_movie_dsr"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "field of DM_movie_dsr",
+    "actual": "boolean"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "boolean",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "field of DM_movie_dsr",
+    "actual": "content-fragment"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "content-fragment",
+    "actual": "/content/dam/common/ja/movies/qa587-main"
+  },
+  {
+    "layer": "L0",
+    "check": "flag-set:isActive",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "isActive set in manifest",
+    "actual": true
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "ref-exists:movie",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/movies/qa587-main",
+    "actual": "in manifest"
+  }
+]

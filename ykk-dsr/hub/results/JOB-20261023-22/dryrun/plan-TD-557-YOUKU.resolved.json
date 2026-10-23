@@ -1,0 +1,138 @@
+[
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa557-youku"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/movies/qa557-youku"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa557-youku"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/movies/standard/qa557-youku"
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa557-youku",
+      "/content/dam/common/ja/movies/qa557-youku"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-youku, /content/dam/common/ja/movies/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa557-youku",
+        "/content/dam/common/ja/movies/qa557-youku"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa557-youku",
+      "/content/dam/dsr/ja/movies/standard/qa557-youku"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku, /content/dam/dsr/ja/movies/standard/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa557-youku",
+        "/content/dam/dsr/ja/movies/standard/qa557-youku"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa557-youku",
+      "/content/dam/common/ja/movies/qa557-youku"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa557-youku, /content/dam/common/ja/movies/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa557-youku",
+        "/content/dam/common/ja/movies/qa557-youku"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa557-youku",
+      "/content/dam/dsr/ja/movies/standard/qa557-youku"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa557-youku, /content/dam/dsr/ja/movies/standard/qa557-youku",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa557-youku",
+        "/content/dam/dsr/ja/movies/standard/qa557-youku"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

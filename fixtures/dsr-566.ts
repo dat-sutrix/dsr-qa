@@ -5,6 +5,9 @@ export const viewports = { PC: { width: 1440, height: 900 } };
 // the old dsr-357-news-detail page uses the removed news-detail block. QA pages: DSR566_SLUG=qa566-news-01 npm run test:dev -- tests/news-detail
 export const newsSlug = process.env.DSR566_SLUG || 'test-news-detail-template';
 export const newsPath = (lang: Language) => `/master/${lang}/test-space/${newsSlug}`;
+// DSR-NEWS-010: pages authored without CTA (TD-566-02) must show no button (TC 10.0, JOB-20261023-22).
+export const noCtaSlugs: readonly string[] = ['qa566-news-02'];
+export const expectsCta = !noCtaSlugs.includes(newsSlug);
 // DSR-NEWS-007: the two index locations named in JOB-20261015-09 (tc-questions Q2 open).
 export const queryIndexPaths = (lang: Language) => [`/master/${lang}/query-index.json`, `/master/${lang}/news/query-index.json`];
 // Recorded only (not asserted): the site-wide index observed on DEV 2026-10-15.

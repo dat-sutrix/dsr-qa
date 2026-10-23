@@ -89,7 +89,7 @@ items:
   # --- DSR CFs ---
   # TD-587-02 preview only → .aem.page 200 / .aem.live 404 (2.0)
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: "TD-587-02 en only"
@@ -99,7 +99,7 @@ items:
   # TD-587-07 isActive OFF, published (7.0, en + ja). [Giả định] create OFF + publish = "OFF, republish" end state;
   # if 7.0 shows no page at all, phase 2 = ON publish → OFF republish (separate manifest).
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en, ja]
     path: /content/dam/dsr/{lang}/movies/standard/qa587-inactive
     fields: { isActive: false, movie: "ref(/content/dam/common/{lang}/movies/qa587-inactive)" }
@@ -107,7 +107,7 @@ items:
   # TD-587-08 phase 1 (agent): DSR CF live; phase 2 (QA-PT): unpublish commune, republish this DSR CF (8.0)
   # TD-587-10 phase 1 (agent): DSR CF live; phase 2 (QA-PT): unpublish after ≥ 10 min (10.0)
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: "TD-587-08/10 en only"

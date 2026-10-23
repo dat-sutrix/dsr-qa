@@ -146,7 +146,7 @@ items:
       publishDate: "2026-10-22"
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [ja, en]
     path: /content/dam/dsr/{lang}/catalogs/{id}
     each: [qa190-cat-new-0, qa190-cat-new-10, qa190-cat-new-11, qa190-cat-upd-0, qa190-cat-upd-10, qa190-cat-upd-11, qa190-cat-both, qa190-cat-noupd]

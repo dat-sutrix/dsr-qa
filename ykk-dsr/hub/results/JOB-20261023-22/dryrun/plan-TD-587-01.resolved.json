@@ -1,0 +1,150 @@
+[
+  {
+    "skip": "rename ja: target already exists",
+    "path": "/content/dam/common/ja/movies/qa587-main"
+  },
+  {
+    "skip": "rename en: target already exists",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main"
+  },
+  {
+    "skip": "rename ja: target already exists",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main"
+  },
+  {
+    "skip": "content-cf en: no field change",
+    "path": "/content/dam/common/en/movies/qa587-main"
+  },
+  {
+    "skip": "content-cf ja: no field change",
+    "path": "/content/dam/common/ja/movies/qa587-main"
+  },
+  {
+    "skip": "dsr-cf en: no field change",
+    "path": "/content/dam/dsr/en/movies/standard/qa587-main"
+  },
+  {
+    "skip": "dsr-cf ja: no field change",
+    "path": "/content/dam/dsr/ja/movies/standard/qa587-main"
+  },
+  {
+    "op": "replicate:preview content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa587-main",
+      "/content/dam/common/ja/movies/qa587-main"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-main, /content/dam/common/ja/movies/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-main",
+        "/content/dam/common/ja/movies/qa587-main"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:preview dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa587-main",
+      "/content/dam/dsr/ja/movies/standard/qa587-main"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-main, /content/dam/dsr/ja/movies/standard/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-main",
+        "/content/dam/dsr/ja/movies/standard/qa587-main"
+      ],
+      "agentId": "preview",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author preview dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish content-cf",
+    "kind": "content-cf",
+    "paths": [
+      "/content/dam/common/en/movies/qa587-main",
+      "/content/dam/common/ja/movies/qa587-main"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/common/en/movies/qa587-main, /content/dam/common/ja/movies/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/common/en/movies/qa587-main",
+        "/content/dam/common/ja/movies/qa587-main"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish content-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  },
+  {
+    "op": "replicate:publish dsr-cf",
+    "kind": "dsr-cf",
+    "paths": [
+      "/content/dam/dsr/en/movies/standard/qa587-main",
+      "/content/dam/dsr/ja/movies/standard/qa587-main"
+    ],
+    "method": "POST",
+    "path": "/adobe/sites/cf/fragments/publish",
+    "target": "/content/dam/dsr/en/movies/standard/qa587-main, /content/dam/dsr/ja/movies/standard/qa587-main",
+    "headers": {
+      "Content-Type": "application/json",
+      "CSRF-Token": "<hidden>"
+    },
+    "body": {
+      "paths": [
+        "/content/dam/dsr/en/movies/standard/qa587-main",
+        "/content/dam/dsr/ja/movies/standard/qa587-main"
+      ],
+      "agentId": "publish",
+      "filterReferencesByStatus": [],
+      "workflowTitle": "qa-author publish dsr-cf"
+    },
+    "bodyKeys": [
+      "paths",
+      "agentId",
+      "filterReferencesByStatus",
+      "workflowTitle"
+    ]
+  }
+]

@@ -4,7 +4,7 @@ id: TD-190-CAT-CORE
 us: DSR-557, DSR-570, DSR-654
 items:
   - kind: dsr-cf
-    model: (?)   # catalog related model – from models.md
+    model: auto   # catalog related model – DSR-669: model-map picks DM_catalog_dsr
     lang: [en, ja]
     path: /content/dam/dsr/{lang}/catalogs/{id}
     each: [qa190-cat-pdf, qa190-cat-pdf-form, qa190-cat-ebook, qa190-cat-ebook-form]

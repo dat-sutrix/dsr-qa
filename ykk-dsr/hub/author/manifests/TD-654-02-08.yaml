@@ -27,7 +27,7 @@ items:
       publishDate: "2026-10-01"
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [ja, en]
     path: /content/dam/dsr/{lang}/catalogs/qa654-inactive
     fields: { isActive: false, catalog: "ref(/content/dam/common/{lang}/catalogs/qa654-inactive)" }
@@ -52,7 +52,7 @@ items:
       publishDate: "2026-10-01"
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: TD-654-04 is en only (A7)
@@ -98,7 +98,7 @@ items:
       publishDate: "2026-10-01"
     replicate: [preview, publish]
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: TD-654-07 is en only (A7)
@@ -125,7 +125,7 @@ items:
       publishDate: "2026-10-01"
     replicate: []                 # content CF must NOT be published
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: TD-654-08 is en only (A7)

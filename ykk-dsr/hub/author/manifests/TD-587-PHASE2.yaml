@@ -20,7 +20,7 @@ items:
     replicate: [unpublish-publish]
   # TD-587-08 step 2b: republish the DSR CF so the overlay page is regenerated without its content CF
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: "TD-587-08 en only (TestData ja/cn column = —)"
@@ -29,7 +29,7 @@ items:
     replicate: [publish]
   # TD-587-10 step 2: unpublish the DSR CF on both tiers, ≥ 10 min after its publish (JOB-20261023-03: 02:29:01Z)
   - kind: dsr-cf
-    model: DM_movie_related
+    model: auto
     lang: [en]
     lang_pair: false
     lang_pair_reason: "TD-587-10 en only (TestData ja/cn column = —)"

@@ -1,0 +1,232 @@
+[
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: TD-586-02 ja only (TestData en/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/common/ja/products/990586002"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "990586002"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "DM_product",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_product"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "DM_product",
+    "actual": "/conf/ykk/settings/dam/cfm/models/dm_product"
+  },
+  {
+    "layer": "L0",
+    "check": "target-exists",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "/content/dam/common/ja/products/990586002",
+    "actual": "patch"
+  },
+  {
+    "layer": "L0",
+    "check": "live-model",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "DM_product",
+    "actual": "DM_product"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:productId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "field of DM_product",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:productId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "990586002"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:productCode",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "field of DM_product",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:productCode",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA586-B"
+  },
+  {
+    "layer": "L0",
+    "check": "field-name:productName",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "field of DM_product",
+    "actual": "text"
+  },
+  {
+    "layer": "L0",
+    "check": "field-type:productName",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "text",
+    "actual": "QA586 product B"
+  },
+  {
+    "layer": "L0",
+    "check": "id=node-name:productId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "990586002",
+    "actual": "990586002"
+  },
+  {
+    "layer": "L0",
+    "check": "live-id:productId",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "990586002 (manifest will patch)",
+    "actual": "990586002"
+  },
+  {
+    "layer": "L0",
+    "check": "required-fields (patch)",
+    "item": "#1 content-cf",
+    "lang": "ja",
+    "path": "/content/dam/common/ja/products/990586002",
+    "result": "PASS",
+    "expected": "all required present",
+    "actual": "ok"
+  },
+  {
+    "layer": "L0",
+    "check": "lang-pair",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "WARN",
+    "expected": "ja+en or lang_pair: false + lang_pair_reason",
+    "actual": "ja (opt-out: TD-586-02 ja only (TestData en/cn column = —))"
+  },
+  {
+    "layer": "L0",
+    "check": "path-guard",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "PASS",
+    "expected": "allowed qa* CF path or D13 numeric product",
+    "actual": "/content/dam/dsr/ja/products/990586002"
+  },
+  {
+    "layer": "L0",
+    "check": "node-name",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "PASS",
+    "expected": "^qa[0-9a-z][0-9a-z-]*$ (no leading \"qa-\") or D13 exact path",
+    "actual": "990586002"
+  },
+  {
+    "layer": "L0",
+    "check": "replicate-values",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "PASS",
+    "expected": "preview | publish | unpublish-preview | unpublish-publish (one per tier)",
+    "actual": "preview"
+  },
+  {
+    "layer": "L0",
+    "check": "model-current",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "FAIL",
+    "expected": "DM_product_dsr",
+    "actual": "manifest names old model DM_product_related (not found on DEV); live model for /content/dam/dsr/ja/products/990586002 is DM_product_dsr (/conf/ykk/settings/dam/cfm/models/dm_product_dsr) → set model: DM_product_dsr or model: auto"
+  },
+  {
+    "layer": "L0",
+    "check": "model-exists",
+    "item": "#2 dsr-cf",
+    "lang": "ja",
+    "path": "/content/dam/dsr/ja/products/990586002",
+    "result": "FAIL",
+    "expected": "DM_product_related",
+    "actual": "not found"
+  }
+]

@@ -8,7 +8,7 @@ id: TD-190-CAT-CORE
 us: DSR-557, DSR-570, DSR-654
 items:
   - kind: dsr-cf
-    model: DM_catalog_related
+    model: auto
     lang: [en, ja]
     path: /content/dam/dsr/{lang}/catalogs/{id}
     each: [qa190-cat-pdf, qa190-cat-pdf-form, qa190-cat-ebook, qa190-cat-ebook-form]
