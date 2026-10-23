@@ -1,0 +1,22 @@
+{
+  "job": "JOB-20261023-16",
+  "agent": "chrome",
+  "us": "DSR-566",
+  "env": "dev",
+  "started": "2026-10-23T08:38:00Z",
+  "finished": "2026-10-23T08:47:00Z",
+  "status": "done",
+  "chrome_device_id": "8eea8eec-8264-46c1-b572-d96d1a558d88",
+  "author_user": "Agent QA (qa.agent@sutrixsolutions.com)",
+  "actions": [
+    {"step": 1, "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02", "field": "public page blocks", "before": "breadcrumb, article-meta, title, text, spacer-50, text, spacer-40, button(button8, href=\"\", empty); no content image; date 2026.10.02; type お知らせ; body QA566 本文02; title 100 chars", "after": null, "saved": false},
+    {"step": 3, "url": "UE /content/sites/digital-showroom/master/ja/test-space/qa566-news-02", "field": "Content tree", "before": "Article Meta, Title, Text, Spacer, Text, Image, Spacer, Button", "after": null, "saved": false},
+    {"step": 4, "url": "UE same page", "field": "Image block", "before": "Image empty (only +Add), Alt Text empty, Link empty, Options None", "after": "deleted (dialog 'Delete Image' → OK)", "saved": true},
+    {"step": 5, "url": "UE same page", "field": "Button block", "before": "Text empty, Link empty, Style = Button8 (詳しく見る)", "after": "deleted (dialog 'Delete Button' → OK)", "saved": true},
+    {"step": 6, "url": "UE same page", "field": "Publish", "before": "Destination Live (default), 1 item", "after": "published; success toast closed before it could be read", "saved": true},
+    {"step": 7, "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/qa566-news-02?cb=73915", "field": "public page blocks", "before": null, "after": "breadcrumb, article-meta, title, text, spacer-50, text, spacer-40; button blocks 0; no content image; title/date/type/body unchanged; last-modified Fri, 23 Oct 2026 08:45:32 GMT", "saved": false}
+  ],
+  "tests": [],
+  "writes": 3,
+  "questions": []
+}

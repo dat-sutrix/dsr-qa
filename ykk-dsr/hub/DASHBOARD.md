@@ -51,6 +51,8 @@ Night 22/10: **23 dòng mới** – Pass 17 (BUGCHK-586-01, SHADOW-190-FORM, SHA
 | codex | **JOB-20261016-11** (566 visual) → **JOB-20261023-01** (recheck ja catalog list) → IDLE-40 (LH + baseline trang seed 22/10) | – |
 Kết quả mới từ 22/10 17:10 (3 job + 1 probe): **JOB-22-20** capture catalog list: en 5 thẻ ✅ (YYYY.MM.DD, ảnh 200, SP không tràn) · **ja 0 thẻ** (không có response dsr-catalog-list 45s) · **IDLE-37** spec 566 sang template mới, tsc ✅, dry run 24 skip (test-news-detail-template 404) · **IDLE-38** baseline: article/video OK, catalog ja 0 / en 6 (kỳ vọng 5) · **Author probe** 15:49 ✅ (cookie 0h, 16/16 HTTP 200). Không job treo (running trống). upload-queue fail 0. **0 fail cause ≠ none.**
 
+**Lane chrome (23/10 15:47):** ✅ JOB-20261023-16 (566 xóa Image/Button rỗng qa566-news-02 + Publish live) done, 3 ghi, 0 blocked → verify JOB-20261023-17 vào queue · JOB-20261023-18 (587) vẫn hold FREEZE · CHROME_DEVICE_ID = 8eea8eec (DSR-QA).
+
 ## 5. TC (Jira sub-task `qa-tc`)
 tc-backlog: trống (row 0 hold) · Night TC job 22/10: 18:09/19:06 Jira OK, auto-added 0 · 20:07/21:11 Atlassian CONNECT_TIMEOUT (retry 23/10 18:05) · upload pending 0 / fail 0 · tc-questions: không câu mới sau Q47.
 
