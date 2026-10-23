@@ -12,3 +12,6 @@ Applies to every scheduled run (07:45 morning, 17:10 evening) and every session.
 5. Per-US decision tables in `bugs/<US>-decision-<date>.md` override the scale above for those bugs.
 6. **Consistency rule (Dat 21/10):** for display conventions (date format, labels, number formats …) the standard is what other sources already state (client layout sheets, other implemented blocks, other baselined TCs), consistent per language. A single Figma frame that differs is treated as a designer inconsistency → follow the established standard without asking; a fail against that standard is a bug (≥ 80% when ≥ 2 sources agree). Only when sources genuinely conflict and no standard exists → < 80%, Dat list.
    - Date display standard: **YYYY.MM.DD for ja/en/cn** (client sheet カタログ詳細 DSR-14-15 "2022.01.20"; DEV catalog cards, news detail, article cards). Applied: DSR-660.
+
+## Trả bug về dev (Back to Fix) – 23/10
+Chỉ trả khi bằng chứng **mới hơn deploy/comment fix cuối cùng của dev** (so `Last-Modified` CSS/JS hoặc giờ comment). Bằng chứng cũ hơn → chạy retest lại trước (lesson DSR-667: trả dev dựa trên đo 12:12, bản fix lên sau đó).
