@@ -1,0 +1,31 @@
+{
+  "job": "JOB-20261023-20",
+  "agent": "chrome",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-23T09:18:00Z",
+  "finished": "2026-10-23T09:55:00Z",
+  "status": "done",
+  "chrome_device_id": "8eea8eec-8264-46c1-b572-d96d1a558d88",
+  "page": "/content/sites/digital-showroom/master/ja/library/article/stories/qa529-01",
+  "tests": [
+    {"tc": "4.0", "lang": "ja", "result": "pass", "suspect": null,
+     "actual": "UE Content tree = Section[Text, Image, Text] / Section[Text] / Section[Profile]; no component for title, info bar, 関連ストーリー, 関連アイテム, footer action. Click on title selects parent Section (panel: Section Name + Style only). Title change via Sites page properties 'QA529 ストーリー詳細テスト QA4' → UE title block shows 'QA529 ストーリー詳細テスト QA4'. Reverted.",
+     "note": "Locked areas checked via Content tree + title click; related/footer areas not clicked one by one."},
+    {"tc": "21.0", "lang": "ja", "result": "fail", "suspect": "product",
+     "actual": "UE Page properties > 記事情報 > 関連ストーリー: page picker root = /content/sites/digital-showroom; master/ja/test-space pages listed with enabled checkboxes (selectable). Field has 3 items (qa529-r1..r3) and '+ Add' still enabled (no 'Max N items' label, unlike Thumbnail 'Max 1 items'). Help text: 表示は先頭3件まで. Picker cancelled, 4th item not added (UE auto-saves).",
+     "note": "Proposed fail ≥ 80% only if TC 21.0 expects picker restricted to stories AND max 3 enforced; help text suggests by design 'display first 3'. Claude to check TC/US text before bug."},
+    {"tc": "32.0", "lang": "ja", "result": "fail", "suspect": "product",
+     "actual": "Title (marked *): cleared in UE → red 'Please fill out this field', JCR jcr:title unchanged (lastModified unchanged) = enforced. Description also marked *. 掲載日/Publish Date, サムネイル/Thumbnail, カテゴリ/Category: NO required marker (*) in UE Page properties; Thumbnail help says 記事詳細では必須です but not marked required. Clearing those 3 NOT executed (UE auto-saves; restore of asset/date by UI risky; write cap).",
+     "note": "Title part pass; publishDate/thumbnail/categories required = not enforced in schema (observed, not write-tested). Partial."}
+  ],
+  "actions": [
+    {"step": 3, "url": "sites properties.html qa529-01", "field": "jcr:title", "before": "QA529 ストーリー詳細テスト", "after": "QA529 ストーリー詳細テスト QA4", "saved": true},
+    {"step": 4, "url": "sites properties.html qa529-01", "field": "jcr:title", "before": "QA529 ストーリー詳細テスト QA4", "after": "QA529 ストーリー詳細テスト", "saved": true},
+    {"step": 10, "url": "UE Page properties", "field": "jcr:title (cleared)", "before": "QA529 ストーリー詳細テスト", "after": "rejected: 'Please fill out this field'; JCR unchanged", "saved": false},
+    {"step": 10, "url": "UE Page properties", "field": "jcr:title (retyped same value)", "before": "QA529 ストーリー詳細テスト", "after": "QA529 ストーリー詳細テスト", "saved": true},
+    {"step": 11, "url": "jcr:content.json", "field": "final check", "before": "title/related-stories r1-r3/publicationdate 2026-10-01/thumbnail gradient-transparent-1920x1080.png/category product/description/navtitle/tags", "after": "identical", "saved": false}
+  ],
+  "writes": 3,
+  "questions": []
+}
