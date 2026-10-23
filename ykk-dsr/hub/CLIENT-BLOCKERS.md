@@ -3,7 +3,7 @@
 
 | # | Đợi gì (ticket · câu) | Ai bên khách | TC / bug bị chặn | Từ ngày | Nhắc lần cuối | Ghi chú |
 |---|---|---|---|---|---|---|
-| CB-1 | **HubSpot form** – DSR-655 L1 (form GUID ja/en/cn), L2 (hidden catalog_id), L4 (inline message), L5 (mapping + nhãn en/cn), L7 (form test DEV/STG) | LOWP (qua YKK) | 570 CATDL-011/012/013 (POST HubSpot), CATDL-016 en (chữ Nhật trên form en), CATDL-004 (kiểu lỗi), 671 hubspotFormId | 2026-10-23 (Martin: "not ready, didn't get it from client") | 2026-10-23 | DSR-655 To Do, assignee Quentin |
+| CB-1 | **HubSpot form** – DSR-655 L1 (form GUID ja/en/cn), L2 (hidden catalog_id), L4 (inline message), L5 (mapping + nhãn en/cn), L7 (form test DEV/STG) | LOWP (qua YKK) | 570 CATDL-011/012/013 (POST HubSpot), CATDL-016 en (chữ Nhật trên form en), CATDL-004 (kiểu lỗi), 671 hubspotFormId | 2026-10-23 (Martin: "not ready, didn't get it from client") | 2026-10-23 (Dat hỏi Quentin ETA 13:10 – chưa trả lời) | DSR-655 To Do, assignee Quentin. Martin đã thêm field **hubspot ID** vào CF `DM_catalog_dsr` (DSR-671) để cấu hình sau. **Dat chốt trong thread (13:15, Martin 👍): blocked by client – mọi TC liên quan test khi nhận được HubSpot ID** |
 | CB-2 | **Bảo vệ URL PDF** – DSR-655 Y4 (chấp nhận gate phía browser hay cần cách chặt hơn) | YKK | 570 CATDL-007 (BUG-CAT-PDF-EXPOSE 70% → chờ Y4, không tạo bug) | 2026-10-23 | 2026-10-23 | Thay cho "chờ Quentin TC 007" |
 | CB-3 | **Nghiệp vụ form** – DSR-655 Y1 (field + bắt buộc), Y2 (PDF trực tiếp / thank-you page), Y3 (eBook có cần form), Y5 (consent + privacy ja/en/cn), Y6 (truy cập từ Trung Quốc) | YKK | 570 form TC, 654 ebook-form | 2026-10-23 | 2026-10-23 | |
 | CB-4 | DSR-611 Q1/Q2 (動画・カタログ) | Numata | 557 – đang giữ mặc định | 2026-10-22 | 2026-10-22 | Q3 = Kohei (nội bộ) |
