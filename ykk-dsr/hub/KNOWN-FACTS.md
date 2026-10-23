@@ -4,6 +4,7 @@ Ghi bởi Jira sweep (08:05 / 12:05 / 16:05 T2–T6) và mọi session. Mới nh
 
 | Ngày | Ticket | Ai | Sự thật | Nguồn |
 |---|---|---|---|---|
+| 2026-10-23 | DSR-654 BUG-CAT-NOINDEX | Dat | Catalog non-form (requiresForm=false): robots noindex + không có trong query-index/sitemap = **by design** (chỉ redirect tới file). Mục 🐞 đóng; CATOV-002/021 thêm ngoại lệ → JOB-23-10 | Dat 23/10 11:52 |
 | 2026-10-23 | DSR-654 CATOV-010 | Martin | DSR CF trong sub-folder: tạo CF directory-strict; overlay chỉ trả 200 hoặc 404; URL có sub-folder (`/en/library/catalog/qa654-folder/qa654-sub`) = 200 trang trống (stub, noindex) → **redirect về list = by design**; URL phẳng `qa654-sub` 404. TC 654 10.0 đổi kỳ vọng → JOB-23-10 | Chat Martin 23/10 ~11:48 VN |
 | 2026-10-23 | DSR-674 / Overlay preview | Martin | **Preview KHÔNG hoạt động với overlay** – phải Publish (live) DSR CF + content CF mới thấy trang; Preview-only → .page 200 stub `unavailable: not-found` = by design → DSR-674 **Dismissed**; TC VOV-002 / CATOV-009 / PDO-002 đổi kỳ vọng. Không seed/test "Preview only" cho overlay nữa (pack QA-PT + manifest) | Chat Martin 23/10 ~11:45 VN · DSR-674 c.64984 |
 | 2026-10-23 | DSR-672 | Ngọc / QA | Ngọc 12:43 JST: "date now input via Text block instead of article metadata". QA: qa566-news-01 ja/en hiện 2026.10.01 (JOB-23-06 03:40Z, sau khi TD-566-FIX đặt publicationdate) → **Done**. Kiểm phần dư: qa566-news-02 (không có publicationdate) → JOB-23-08 | DSR-672 c.64972 / c.64978 |

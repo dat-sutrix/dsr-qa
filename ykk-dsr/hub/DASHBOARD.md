@@ -60,7 +60,7 @@ tc-backlog: trống (row 0 hold) · Night TC job 22/10: 18:09/19:06 Jira OK, aut
 | 🆕 CATDL-004 (570) | Form tải tài liệu: lỗi bắt buộc hiện dạng popup từng ô thay vì message cạnh ô | 50% | 1 screenshot; có thể là tooltip HTML5 mặc định; Figma C10 chưa final | Giữ; xem screenshot + hỏi Ngọc kiểu lỗi mong muốn khi HubSpot form xong (cùng tin 🔔 P2) |
 | BUG-CAT-FORM-EN (570/654) | en catalog form hiển thị tiếng Nhật (CATDL-016 en) | 70% | Chưa rõ HubSpot form en đã có GUID (DSR-655 L1) | Giữ; câu 4b trong tin Martin |
 | BUG-CAT-PDF-EXPOSE (570) | `dsr-catalog-list` trả `pdfAsset._publishUrl` cho catalog requiresForm=true (CATDL-007) | 70% | Chờ Quentin TC 007 (gating có là yêu cầu bảo mật) | Giữ; "phải ẩn" → bug 90% |
-| BUG-CAT-NOINDEX (654) | non-form catalog `robots=noindex`, không trong sitemap (CATOV-002/021) | 40% | non-form redirect file by design → có thể chủ ý | Đề xuất coi by design, sửa kỳ vọng (Dat OK/NG) |
+| ~~BUG-CAT-NOINDEX (654)~~ ✅ by design (Dat 23/10) | non-form catalog `robots=noindex`, không trong sitemap (CATOV-002/021) | 40% | non-form redirect file by design → có thể chủ ý | Đề xuất coi by design, sửa kỳ vọng (Dat OK/NG) |
 | BUG-OVL-INACTIVE (587/586/654) | 表示フラグ OFF: kiểm end-to-end | 50% | TD-587-07 chưa seed (Not run 22/10) | Giữ; chờ Agent Author |
 Đã xử lý 23/10: 0 bug ≥ 80% · CATDL-009/011/012/013 = Blocked có owner (Ngọc), không phải fail.
 
