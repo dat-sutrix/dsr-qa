@@ -1,0 +1,206 @@
+{
+  "job": "JOB-20261016-08",
+  "agent": "claude-code",
+  "us": "DSR-566",
+  "env": "dev",
+  "started": "2026-10-23T00:54:08Z",
+  "finished": "2026-10-23T00:59:36Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Back to list missing (count 0); all other blocks present in order article-meta>title>text>spacer>text>image>spacer>button",
+      "evidence": "evidence/DSR-NEWS-002_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "ja",
+      "result": "fail",
+      "error": "shown \"2026-10-01T00:00:00.000Z\" (raw ISO, not YYYY.MM.DD); value = authored 2026-10-01; test compared to published-time 2026-10-22 (no publicationdate meta)",
+      "evidence": "evidence/DSR-NEWS-003_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "ja",
+      "result": "pass",
+      "error": "recorded: h1 count 0, title is h2; title text is template placeholder, not authored title",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "ja",
+      "result": "fail",
+      "error": "Back to list link not found (count 0)",
+      "evidence": "evidence/DSR-NEWS-006_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "ja",
+      "result": "fail",
+      "error": "job indexes /master/{lang}/query-index.json and /news/query-index.json 404; row only in /query-index.json with template=\"\" publicationdate=\"\"",
+      "evidence": "evidence/DSR-NEWS-007_ja.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "ja",
+      "result": "fail",
+      "error": "article-meta class \"no-mylist no-share\": My List 0, share icons 0 – features not enabled on the page, so not \"absent although enabled\"",
+      "evidence": "evidence/DSR-NEWS-012_ja.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-001",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-002",
+      "lang": "en",
+      "result": "fail",
+      "error": "Back to list missing (count 0); all other blocks present in order article-meta>title>text>spacer>text>image>spacer>button",
+      "evidence": "evidence/DSR-NEWS-002_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-NEWS-003",
+      "lang": "en",
+      "result": "fail",
+      "error": "shown \"2026-10-01T00:00:00.000Z\" (raw ISO, not YYYY.MM.DD); value = authored 2026-10-01; test compared to published-time 2026-10-22 (no publicationdate meta)",
+      "evidence": "evidence/DSR-NEWS-003_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 85
+    },
+    {
+      "tc": "DSR-NEWS-004",
+      "lang": "en",
+      "result": "pass",
+      "error": "recorded: h1 count 0, title is h2; title text is template placeholder, not authored title",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-006",
+      "lang": "en",
+      "result": "fail",
+      "error": "Back to list link not found (count 0)",
+      "evidence": "evidence/DSR-NEWS-006_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "en",
+      "result": "fail",
+      "error": "job indexes /master/{lang}/query-index.json and /news/query-index.json 404; row only in /query-index.json with template=\"\" publicationdate=\"\"",
+      "evidence": "evidence/DSR-NEWS-007_en.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 70
+    },
+    {
+      "tc": "DSR-NEWS-009",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-010",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-012",
+      "lang": "en",
+      "result": "fail",
+      "error": "article-meta class \"no-mylist no-share\": My List 0, share icons 0 – features not enabled on the page, so not \"absent although enabled\"",
+      "evidence": "evidence/DSR-NEWS-012_en.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 30
+    },
+    {
+      "tc": "DSR-NEWS-013",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-NEWS-018",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": ""
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "extra_checks": {
+    "date_format_YYYY_MM_DD": "fail – ja and en show 2026-10-01T00:00:00.000Z (qa566-news-02: 2026-10-02T00:00:00.000Z)",
+    "news_type_position": "news type text block directly under Title (title top 315px h38, news type top 353px h28, width 744, viewport 1440). Not compared with Figma: lane has no Figma access",
+    "image_height": "qa566-news-01 ja/en: image block 744x132; img rendered 220x132 = natural size (not scaled to container). Not compared with Figma",
+    "h1_check_tc004": "recorded only: 0 h1 on page; title tag h2 (ja, en)",
+    "title_text": "ja/en/qa566-news-02 title shows template placeholder タイトルが入ります。タイトルが入ります。 – not the authored title (TD-566-01 QA566 ニュース詳細テスト / QA566 News detail test); <title>/og:title carry the authored value",
+    "tc005": "DSR-NEWS-005 not in job tcs and has no test in the spec – not run. qa566-news-02 observed: 200, no image block, no horizontal scroll, title = placeholder (not 100-char long title)"
+  },
+  "questions": []
+}

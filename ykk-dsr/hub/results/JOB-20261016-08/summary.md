@@ -1,0 +1,13 @@
+# JOB-20261016-08 · DSR-566 news detail on qa566 pages (DEV, ja+en)
+
+Merge/incident-related fails: none. All 5 failing TCs have cause = none.
+
+- **Ran:** IDLE-37 spec, `DSR566_SLUG=qa566-news-01`, 11 listed TCs × ja/en = 22 tests. Slugs were confirmed in `/query-index.json` (qa566-news-01 ja/en, qa566-news-02 ja). All 3 pages return 200. **12 passed, 10 failed, 0 skipped.** tsc exit 0.
+- **002/006 Back to list (ja, en): product, 70%.** There is no Back to list link. All other blocks render in template order: article-meta > title > text > spacer > text > image > spacer > button. The job rule says product, but A8 records that the new template does not place this link. Claude to decide.
+- **003 date (ja, en): product, 85%.** The page shows the raw value `2026-10-01T00:00:00.000Z`, not YYYY.MM.DD (DSR-660 rule). The date itself matches the authored TD-566-01 date 2026-10-01. The second assertion compares against `published-time` (2026-10-22, the publish timestamp) because there is no `publicationdate` meta. That mismatch is a test fallback issue, not a product issue.
+- **007 index (ja, en): product, 70%.** The job's two indexes `/master/{lang}/query-index.json` and `/master/{lang}/news/query-index.json` both return 404. The row is only in `/query-index.json` (site root), where `template=""` and `publicationdate=""`. `category=news` and both tags are filled.
+- **012 My List/share (ja, en): data, 30%.** `article-meta` has the classes `no-mylist no-share`, so the features are not enabled on the page. This means the product rule ("absent although enabled") does not apply. TD-566-01 does not ask to turn them on. A re-test needs both features turned on in Author.
+- **004 (record only):** the page has no `h1`; the title is an `h2`. **Data issue:** the Title block on all 3 qa566 pages shows the template placeholder `タイトルが入ります。タイトルが入ります。` (en too), not the authored title. `<title>` and `og:title` do carry the authored title. TC 004 passes because it only checks that the text is not empty.
+- **Extra checks:** date format fails (see 003). The news type sits directly under the title (title top 315px, news type top 353px). The image renders at 220×132 px (its natural size) inside a 744 px wide block. These were **not compared with Figma**, because this lane has no Figma access.
+- **005:** not in the job's TC list and has no test in the spec, so it was not run. qa566-news-02 has no image and no horizontal scroll, but its title is the placeholder, not the 100-character title.
+- Run report: `results/DSR-566/DEV/automation-run-20261023.md`. Evidence: `evidence/` (10 PNG, 804 KB).
