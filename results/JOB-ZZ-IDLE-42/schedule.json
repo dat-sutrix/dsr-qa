@@ -3,7 +3,7 @@
   "cutoffUTC": "2026-10-23T11:00:00.000Z",
   "intervalMinutes": 90,
   "pid": 400354,
-  "state": "running",
+  "state": "complete",
   "rounds": [
     {
       "dueUTC": "2026-10-23T02:42:06.160Z",
@@ -32,7 +32,8 @@
     },
     {
       "dueUTC": "2026-10-23T10:12:06.160Z",
-      "state": "pending"
+      "state": "captured",
+      "finished": "2026-10-23T10:12:37.015Z"
     }
   ]
 }
