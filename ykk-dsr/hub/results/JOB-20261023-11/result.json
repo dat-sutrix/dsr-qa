@@ -1,0 +1,14 @@
+{
+ "job": "JOB-20261023-11",
+ "agent": "claude-code",
+ "us": "DSR-669 (+671, 670) – CF model refactor regression on DEV",
+ "env": "dev",
+ "started": "2026-10-23T09:17:26Z",
+ "finished": "2026-10-23T09:20:00Z",
+ "status": "needs-input",
+ "tests": [],
+ "code_changes": [],
+ "questions": [
+  "cookie: Author probe (runbook step 1, `bash ykk-dsr/hub/tools/author/probe.sh`, 2026-10-23T09:17Z) returned 401 on check 1 /libs/granite/security/currentuser.json (also 401 on checks 3-13; only 2 csrf token = 200). Cookie file age 17h -> login-token expired. Dat: re-paste AEM_LOGIN_TOKEN into ~/.dsr-secrets/aem-dev.env (AUTHOR-AGENT §2b), then re-queue. Per job + runbook I stopped after step 1: steps 2, 3, 5, 6, P1 non-overlay specs, 670/671 checks, catalog-detail.js Last-Modified and 654/570/557 rerun were NOT run. Note: steps 5/6 and the publish-side checks do not need the cookie – Claude may split them into a separate job if they should not wait."
+ ]
+}
