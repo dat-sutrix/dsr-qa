@@ -146,7 +146,7 @@
    "summary": "EN: Verify a DSR CF stored in a subfolder of /content/dam/dsr/{lang}/catalogs/ creates no page. JP: catalogs 配下のサブフォルダにあるDSR CFはページを生成しないことを確認する。",
    "pre": "EN: TD-654-05 qa654-sub in /content/dam/dsr/en/catalogs/qa654-folder/ (published). JP: TD-654-05。",
    "steps": "EN: 1. GET .aem.page and .aem.live /en/library/catalog/qa654-sub. 2. GET /en/library/catalog/qa654-folder/qa654-sub. JP: 取得。",
-   "expected": "EN: All return HTTP 404. JP: 全て404。",
+   "expected": "EN: Flat URL /en/library/catalog/qa654-sub → HTTP 404 (both tiers). URL with the sub-folder /en/library/catalog/qa654-folder/qa654-sub → HTTP 200 blank overlay stub (rows source: overlay + unavailable: not-found, noindex, no catalog content) and the browser redirects to /en/library/catalog. By design: CF creation is directory-strict; overlay answers only 200 or 404; a 200 for a wrong directory is blank → redirect to list (Martin 23/10). JP: フラットURLは404。サブフォルダ付きURLは200の空ページ（noindex）→ 一覧へリダイレクト（仕様）。",
    "design": "BL-OVL-1 (docs/DSR-587/overlay-data-flow-BL.md) Path and naming rules (subfolder → no page); Update 2026-10-19 (directory-strict)",
    "layer": "CF",
    "exec": "Automation",
