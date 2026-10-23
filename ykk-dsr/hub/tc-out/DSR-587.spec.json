@@ -116,7 +116,7 @@
    "summary": "EN: Verify unpublishing the CF commune then republishing the CF related shows the unavailable state (noindex, redirect as 7.0). JP: CF commune 非公開＋再公開で unavailable になることを確認する。",
    "pre": "EN: TD-587-08. JP: TD-587-08。",
    "steps": "EN: 1. HTTP GET raw: robots + 'unavailable' row. 2. Browser: final URL. JP: 確認。",
-   "expected": "EN: noindex; single 'unavailable' row, no movie title in body; browser ends on movie list. JP: noindex、unavailable、一覧へ。",
+   "expected": "EN: noindex; the only data row is 'unavailable' (technical rows source / cfPath present on every overlay page are ignored), no movie title in body; browser ends on movie list. JP: noindex、データ行は unavailable のみ（source/cfPath は対象外）、一覧へ。",
    "design": "BL-OVL-1 Editor action 'Unpublish CF commune'",
    "layer": "Page",
    "exec": "Automation",

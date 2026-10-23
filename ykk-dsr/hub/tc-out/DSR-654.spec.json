@@ -311,7 +311,7 @@
    "summary": "EN: Verify a live-published catalog page is added to query-index and sitemap. JP: Publish（live）したカタログページが query-index と sitemap に追加されることを確認する。",
    "pre": "EN: TD-654-01 (live). JP: TD-654-01。",
    "steps": "EN: 1. GET .aem.live /query-index.json (all pages). 2. GET /sitemap.xml (and sitemap index children). 3. Search for /{lang}/library/catalog/qa190-cat-pdf. JP: index・sitemap を検索。",
-   "expected": "EN: Exactly 1 query-index row and 1 sitemap <loc> for each live core id per language. JP: 各1件。 Exception (Dat 23/10, by design): non-form catalogs (requiresForm=false) are NOT in query-index/sitemap (noindex, redirect to file); only form catalogs are counted.",
+   "expected": "EN: Exactly 1 query-index row and 1 sitemap <loc> for each live core id per language. JP: 各1件。 Exception (Dat 23/10, by design): non-form catalogs (requiresForm=false) are NOT in the sitemap (noindex, redirect to file); they may stay in query-index with robots=noindex (EDS keeps noindex pages in the index) – query-index is not checked for non-form.",
    "design": "BL-OVL-1 (docs/DSR-587/overlay-data-flow-BL.md) Editor action 'Publish CF related (live) → added to query-index and sitemap'",
    "layer": "Page",
    "exec": "Automation",
