@@ -97,6 +97,7 @@ Thiết kế + quyết định: `AUTHOR-AGENT.md`. **Chưa hoàn chỉnh – m�
 - Chia việc: CF data giữ lane `author` (API, B2); chrome làm H2 page properties, H3 block UE, H4 manual TC Author UI, retest; dự phòng CF khi cookie hết hạn. Mọi lần chrome ghi → verify độc lập (`tools/author verify` hoặc job claude-code đọc HTML).
 - Chạy: thủ công – Dat mở session **`DSR – Chrome`**, gõ "chạy chrome queue". Tự động (scheduled giờ hành chính) chỉ sau 3 ngày thủ công ổn + xác nhận scheduled session thấy Chrome tools + Dat duyệt (tác vụ nặng).
 - `CHROME_DEVICE_ID` = `8eea8eec-8264-46c1-b572-d96d1a558d88` (profile DSR-QA, Dat Connect 23/10 15:36; user Author "Agent QA" OK 15:38). `c1c3ad3f-…` = profile thường của Dat → không dùng.
+- `CHROME_DEVICE_ID_PERSONAL` = `5900c4b8-e01c-432d-a020-649827e56439` – "DSR-Chrome-Personal", laptop cá nhân của Dat, mở 24/7 (Dat Connect 23/10 22:10; user Author "Agent QA" OK 22:11). Dùng khi máy công ty (DSR-QA) không truy cập được. Giờ chạy vẫn theo CHROME-AGENT §3 (08:30–18:00 T2–T6, tránh trùng QA-PT) trừ khi Dat đổi. Chọn máy: ưu tiên DSR-QA; không thấy / lỗi kết nối → DSR-Chrome-Personal. ⚠ deviceId đổi khi extension kết nối lại → kiểm bằng `list_connected_browsers` + user Author, không tin tuyệt đối vào ID.
 - Checklist setup: ☐ Dat tạo profile Chrome "DSR-QA" + cài extension + đăng nhập Author trong profile đó (CHROME-AGENT §7) · ☐ job chrome đầu tiên (Điều phối tạo từ việc QA-PT tối nay/mai) · ☐ 17:10 chuyển phần ban ngày của Night Pack thành job chrome.
 
 ## Regression guard (Dat 23/10 11:56)
