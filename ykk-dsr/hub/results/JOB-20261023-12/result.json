@@ -1,0 +1,596 @@
+{
+  "job": "JOB-20261023-12",
+  "agent": "codex",
+  "us": "DSR-590",
+  "env": "dev",
+  "started": "2026-10-23T05:12:52.767Z",
+  "finished": "2026-10-23T05:13:45.901Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 1440,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/live-ja-1440x900-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 1440,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-1440x900-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-1440x900-top.png",
+      "clearance": 513,
+      "overflow": 0
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 428,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/live-ja-428x926-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 428,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-428x926-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 428,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-428x926-top.png",
+      "clearance": 74,
+      "overflow": 0
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 393,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/live-ja-393x852-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 393,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-393x852-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 393,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-393x852-top.png",
+      "clearance": 39,
+      "overflow": 1
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 390,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/live-ja-390x844-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 390,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-390x844-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 390,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-390x844-top.png",
+      "clearance": 36,
+      "overflow": 4
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 375,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/live-ja-375x667-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 375,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-375x667-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "live",
+      "viewport": 375,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/live-ja-375x667-top.png",
+      "clearance": 21,
+      "overflow": 19
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "live",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "live",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "live",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "live",
+      "viewport": 428,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "live",
+      "viewport": 428,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "live",
+      "viewport": 428,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "live",
+      "viewport": 393,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "live",
+      "viewport": 393,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "live",
+      "viewport": 393,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "live",
+      "viewport": 390,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "live",
+      "viewport": 390,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "live",
+      "viewport": 390,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "live",
+      "viewport": 375,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "live",
+      "viewport": 375,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "live",
+      "viewport": 375,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 1440,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/page-ja-1440x900-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 1440,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-1440x900-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-1440x900-top.png",
+      "clearance": 513,
+      "overflow": 0
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 428,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/page-ja-428x926-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 428,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-428x926-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 428,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-428x926-top.png",
+      "clearance": 74,
+      "overflow": 0
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 393,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/page-ja-393x852-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 393,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-393x852-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 393,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-393x852-top.png",
+      "clearance": 39,
+      "overflow": 1
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 390,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/page-ja-390x844-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 390,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-390x844-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 390,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-390x844-top.png",
+      "clearance": 36,
+      "overflow": 4
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 375,
+      "result": "pass",
+      "error": "",
+      "gap": 0,
+      "evidence": "evidence/DSR-590/retest-666/page-ja-375x667-top.png"
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 375,
+      "result": "blocked",
+      "error": "Header, breadcrumb, hero and carousel render; no console errors. Product list link present, but no inline list block; intended list scope unverified.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-375x667-top.png",
+      "suspect": "test"
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "ja",
+      "host": "page",
+      "viewport": 375,
+      "result": "skip",
+      "error": "Observation only; In Progress; no verdict.",
+      "evidence": "evidence/DSR-590/retest-666/page-ja-375x667-top.png",
+      "clearance": 21,
+      "overflow": 19
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "page",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "page",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "page",
+      "viewport": 1440,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "page",
+      "viewport": 428,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "page",
+      "viewport": 428,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "page",
+      "viewport": 428,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "page",
+      "viewport": 393,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "page",
+      "viewport": 393,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "page",
+      "viewport": 393,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "page",
+      "viewport": 390,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "page",
+      "viewport": 390,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "page",
+      "viewport": 390,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-666-RT",
+      "lang": "en",
+      "host": "page",
+      "viewport": 375,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-590-REG",
+      "lang": "en",
+      "host": "page",
+      "viewport": 375,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    },
+    {
+      "tc": "DSR-667-OBS",
+      "lang": "en",
+      "host": "page",
+      "viewport": 375,
+      "result": "skip",
+      "error": "English URL returned HTTP 404; job requires English only if HTTP 200.",
+      "evidence": ""
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "ykk-dsr/hub/results/JOB-20261023-12/capture.cjs"
+  ],
+  "questions": []
+}

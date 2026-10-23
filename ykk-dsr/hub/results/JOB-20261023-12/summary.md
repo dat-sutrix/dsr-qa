@@ -1,0 +1,13 @@
+# JOB-20261023-12 — DEV retest (proposed outcomes)
+- DSR-666-RT: proposed PASS, all 5 viewports × live/page: section → hero gap 0 CSS px (first IDLE-41 round: 40 px).
+- Japanese pages: HTTP 200, no console/page errors; header, breadcrumb, title and carousel rendered.
+- DSR-590-REG: Pending on product-list requirement: TOP has a visible 製品一覧 link, but no inline list block. Other requested components match prior capture; no new regression established.
+- English URLs: HTTP 404 on both hosts; skipped per job conditional scope.
+- DSR-667: observation only; dot 9 overflow at 393/390/375 = 1/4/19 px; next-button clearance = 39/36/21 px on both hosts. No verdict.
+- CSS Last-Modified (both hosts): eco-carousel Fri, 23 Oct 2026 03:25:30 GMT; breadcrumb Mon, 19 Oct 2026 03:10:50 GMT.
+- Differences versus JOB-20261022-04: 40 px band removed; arrow now clears dot 9, but clipping persists at small widths. Repeated demo names remain. Detail page not in this job scope.
+- Raw URLs, HTTP status, geometry, console records and CSS headers: measurements.json; product-list link details: regression-details.json.
+- Before/after viewport comparisons: look-and-feel.md. Screenshots retained as explicitly requested by this job.
+- npx tsc --noEmit: exit 0, no errors. Direct read-only Chromium capture; no npm test suite run.
+- Build SHA and Figma 3351-51595 not independently verified; numeric acceptance uses the explicit job threshold and IDLE-41 history.
+- Dat confirms final verdict and closes DSR-666; no Jira changes made.

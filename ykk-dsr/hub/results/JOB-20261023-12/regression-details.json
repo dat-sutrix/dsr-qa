@@ -1,0 +1,54 @@
+[
+  {
+    "host": "live",
+    "observed": {
+      "cards": 11,
+      "productListLinks": [
+        {
+          "text": "製品一覧",
+          "href": "/master/ja/test-space/dsr-590-eco-product-index",
+          "rect": {
+            "x": 1138,
+            "y": 230,
+            "width": 102,
+            "height": 41.796875,
+            "top": 230,
+            "right": 1240,
+            "bottom": 271.796875,
+            "left": 1138
+          }
+        }
+      ],
+      "mainBlocks": [
+        "breadcrumb block",
+        "eco-carousel block"
+      ]
+    }
+  },
+  {
+    "host": "page",
+    "observed": {
+      "cards": 11,
+      "productListLinks": [
+        {
+          "text": "製品一覧",
+          "href": "/master/ja/test-space/dsr-590-eco-product-index",
+          "rect": {
+            "x": 1138,
+            "y": 230,
+            "width": 102,
+            "height": 41.796875,
+            "top": 230,
+            "right": 1240,
+            "bottom": 271.796875,
+            "left": 1138
+          }
+        }
+      ],
+      "mainBlocks": [
+        "breadcrumb block",
+        "eco-carousel block"
+      ]
+    }
+  }
+]
