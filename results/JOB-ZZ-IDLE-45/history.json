@@ -358,5 +358,95 @@
     ],
     "finished": "2026-10-24T06:55:25.480Z",
     "fixed": true
+  },
+  {
+    "started": "2026-10-24T08:55:03.100Z",
+    "due": "2026-10-24T08:54:15.614Z",
+    "records": [
+      {
+        "width": 1440,
+        "http": 200,
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+        "blocks": [
+          {
+            "classes": "profile author-profile block",
+            "company": {
+              "x": 480,
+              "y": 1479.15625,
+              "width": 720,
+              "height": 23.796875,
+              "top": 1479.15625,
+              "right": 1200,
+              "bottom": 1502.953125,
+              "left": 480
+            },
+            "text": {
+              "x": 480,
+              "y": 1522.953125,
+              "width": 720,
+              "height": 23.796875,
+              "top": 1522.953125,
+              "right": 1200,
+              "bottom": 1546.75,
+              "left": 480
+            },
+            "companyText": "QA529 プロフィール",
+            "bodyText": "会社名・部署名が入ります",
+            "overlap": false,
+            "sameTopLeft": false
+          }
+        ],
+        "fixed": true
+      },
+      {
+        "width": 390,
+        "http": 200,
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+        "blocks": [
+          {
+            "classes": "profile author-profile block",
+            "company": {
+              "x": 24,
+              "y": 1129.546875,
+              "width": 342,
+              "height": 23.796875,
+              "top": 1129.546875,
+              "right": 366,
+              "bottom": 1153.34375,
+              "left": 24
+            },
+            "text": {
+              "x": 24,
+              "y": 1173.34375,
+              "width": 342,
+              "height": 23.796875,
+              "top": 1173.34375,
+              "right": 366,
+              "bottom": 1197.140625,
+              "left": 24
+            },
+            "companyText": "QA529 プロフィール",
+            "bodyText": "会社名・部署名が入ります",
+            "overlap": false,
+            "sameTopLeft": false
+          }
+        ],
+        "fixed": true
+      }
+    ],
+    "assets": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+        "status": 200,
+        "lastModified": "Fri, 18 Sep 2026 01:32:54 GMT"
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js",
+        "status": 200,
+        "lastModified": "Tue, 08 Sep 2026 11:14:30 GMT"
+      }
+    ],
+    "finished": "2026-10-24T08:55:13.724Z",
+    "fixed": true
   }
 ]
