@@ -1,0 +1,358 @@
+{
+ "us": "DSR-670",
+ "folder_id": "670",
+ "us_name": "[CF] DM_techmovie_dsr model for tech talk videos",
+ "jira_url": "https://sutrix.atlassian.net/browse/DSR-670",
+ "module": "Tech talk CF related model DM_techmovie_dsr + dsr-techmovie-page + /{lang}/library/video/tech-talk/{movieId} (DSR-670) – CF layer 1.0–7.0 · Page layer 8.0–14.0",
+ "tcs": [
+  {
+   "id": "1.0",
+   "feature": "Model DM_techmovie_dsr matches spec (TECHMV-001)",
+   "summary": "EN: Verify model DM_techmovie_dsr exists with exactly the 7 spec fields, types, required flags and defaults. JP: DM_techmovie_dsrモデルが仕様の7項目（型・必須・初期値）で存在することを確認する。",
+   "pre": "EN: Author cookie valid. JP: Authorクッキー有効。",
+   "steps": "EN: 1. Read-only: node tools/author/author.mjs models. 2. Read model /conf/ykk/settings/dam/cfm/models/dm_techmovie_dsr (title, fields). JP: モデル定義を取得。",
+   "expected": "EN: Title DM_techmovie_dsr. Fields in order: movieLabel (single line text, optional), movie (fragment reference single, REQUIRED), dsrFeatures (tag, multiple), isBoothLimited (boolean, default false), relatedArticles (content reference multiple), relatedLandingPages (content reference multiple), isActive / 表示フラグ (boolean, default false, REQUIRED). No other field. JP: 7項目、movie・isActive必須、初期値false。",
+   "design": "DSR-670 Model spec · Scope #1",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-670-00",
+   "blocked": "—"
+  },
+  {
+   "id": "2.0",
+   "feature": "movie reference limited to content movies (TECHMV-002)",
+   "summary": "EN: Verify the movie field only references DM_movie CFs under /content/dam/common/{lang}/movies/. JP: movie項目がcommon/{lang}/movies配下のDM_movieのみ参照できることを確認する。",
+   "pre": "EN: Same as 1.0. JP: 1.0と同じ。",
+   "steps": "EN: 1. Read the movie field config of dm_techmovie_dsr (allowed models, rootPath). JP: movie項目の設定を確認。",
+   "expected": "EN: Allowed model = DM_movie only; rootPath starts with /content/dam/common (language check itself = DSR-671 TC). JP: 許可モデルDM_movieのみ、rootPathはcommon。",
+   "design": "DSR-670 Model spec (movie root path)",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-670-00",
+   "blocked": "—"
+  },
+  {
+   "id": "3.0",
+   "feature": "movies/tech accepts only DM_techmovie_dsr (TECHMV-003)",
+   "summary": "EN: Verify Create Content Fragment in /content/dam/dsr/{lang}/movies/tech/ offers only DM_techmovie_dsr. JP: movies/techでCF作成時、DM_techmovie_dsrのみ選択できることを確認する。",
+   "pre": "EN: Author DEV, lane chrome or QA-PT. Do not finish (except TD-670-01 creation). JP: —。",
+   "steps": "EN: 1. Open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/dsr/ja/movies/tech → Create → Content Fragment. 2. Screenshot the model list. 3. Cancel. 4. Repeat for en. JP: モデル一覧を記録しキャンセル。",
+   "expected": "EN: Only DM_techmovie_dsr is offered. Not offered: DM_movie_dsr, DM_movie, any *_related. JP: DM_techmovie_dsrのみ。",
+   "design": "DSR-670 Scope #2 · AC1",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja, en",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-670-05",
+   "blocked": "—"
+  },
+  {
+   "id": "4.0",
+   "feature": "movies/standard rejects DM_techmovie_dsr (TECHMV-004)",
+   "summary": "EN: Verify Create Content Fragment in /content/dam/dsr/{lang}/movies/standard/ offers DM_movie_dsr and not DM_techmovie_dsr (negative). JP: movies/standardでDM_techmovie_dsrが選択できないことを確認する（ネガティブ）。",
+   "pre": "EN: Same as 3.0. JP: 3.0と同じ。",
+   "steps": "EN: 1. Open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/dsr/ja/movies/standard → Create → Content Fragment. 2. Screenshot the list. 3. Cancel. JP: 同上。",
+   "expected": "EN: Only DM_movie_dsr is offered; DM_techmovie_dsr is absent. JP: DM_movie_dsrのみ。",
+   "design": "DSR-670 Scope #2 · AC1",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja, en",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-670-05",
+   "blocked": "—"
+  },
+  {
+   "id": "5.0",
+   "feature": "movieLabel autofill {movieId}｜{movieTitle} (TECHMV-005)",
+   "summary": "EN: Verify picking the movie in a DM_techmovie_dsr CF fills movieLabel with {movieId}｜{movieTitle} (full-width bar). JP: 対象動画を選ぶとmovieLabelに「{movieId}｜{movieTitle}」（全角｜）が自動入力されることを確認する。",
+   "pre": "EN: TD-670-01 content CF qa670-tech exists. JP: TD-670-01。",
+   "steps": "EN: 1. In the TD-670-01 DSR CF (dsr/ja/movies/tech/qa670-tech) pick movie = /content/dam/common/ja/movies/qa670-tech. 2. Read movieLabel before saving. JP: movieを選び、movieLabelを確認。",
+   "expected": "EN: movieLabel = 'qa670-tech｜QA670 tech talk' exactly (U+FF5C full-width bar, no spaces). JP: 「qa670-tech｜QA670 tech talk」と完全一致。",
+   "design": "DSR-670 Model spec movieLabel · Scope #3 · AC2",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-670-01",
+   "blocked": "—"
+  },
+  {
+   "id": "6.0",
+   "feature": "Booth-required rule (TECHMV-006)",
+   "summary": "EN: Verify a DM_techmovie_dsr CF with isBoothLimited = true and empty dsrFeatures cannot be saved (negative). JP: isBoothLimited=trueでdsrFeatures未入力のDM_techmovie_dsr CFが保存できないことを確認する（ネガティブ）。",
+   "pre": "EN: TD-670-01 saved. JP: TD-670-01保存済み。",
+   "steps": "EN: 1. Open dsr/ja/movies/tech/qa670-tech. 2. dsrFeatures empty, set ブース限定掲載 ON. 3. Save. 4. Turn OFF, close without saving. JP: ブース限定ONで保存を試み、OFFに戻す。",
+   "expected": "EN: Save is refused with a message that DSR掲載ブース is required; stored isBoothLimited stays false. JP: 保存不可、値はfalseのまま。",
+   "design": "DSR-670 Model spec isBoothLimited · Scope #3 BOOTH_REQUIRED · AC2",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-670-01",
+   "blocked": "—"
+  },
+  {
+   "id": "7.0",
+   "feature": "Query dsr-techmovie-page returns the tech talk (TECHMV-007)",
+   "summary": "EN: Verify the persisted query dsr-techmovie-page returns the published tech-talk CF under alias related, with no GraphQL error. JP: 永続クエリdsr-techmovie-pageが公開済み技術紹介動画をrelatedで返すことを確認する。",
+   "pre": "EN: TD-670-01 published. JP: TD-670-01公開済み。",
+   "steps": "EN: 1. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-techmovie-page;path=/content/dam/dsr/ja/movies/tech/qa670-tech. 2. GET with path …/tech/does-not-exist (negative). JP: 存在するパスと存在しないパスで取得。",
+   "expected": "EN: 1: HTTP 200, no errors, related.items has 1 item with movie → qa670-tech content, isActive true; inactive.items []. 2: HTTP 200, related.items [] (no error). JP: 1件返る／存在しない場合は空。",
+   "design": "DSR-670 Scope #4 (aliases related/inactive)",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "HTTP",
+   "td": "TD-670-01",
+   "blocked": "TD-670-01 by lane author/chrome (Claude); DEV has no tech-talk CF (24/10)"
+  },
+  {
+   "id": "8.0",
+   "feature": "Tech talk page generated on publish (TECHMV-008)",
+   "summary": "EN: Verify publishing a DM_techmovie_dsr CF generates /{lang}/library/video/tech-talk/{movieId} with the same layout and content as a standard video page. JP: DM_techmovie_dsr CFを公開すると/{lang}/library/video/tech-talk/{movieId}が標準動画と同じ構成で生成されることを確認する。",
+   "pre": "EN: TD-670-01 published ≥ 5 min ago. JP: 公開後5分以上。",
+   "steps": "EN: 1. Open https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk/qa670-tech (also .aem.page). 2. Compare blocks with /ja/library/video/qa587-main. JP: ページを開き標準動画と比較。",
+   "expected": "EN: HTTP 200; video-detail block shows title 'QA670 tech talk', description, YouTube player with the TD movieSourceId, same block order as the standard page; source=overlay with cfPath /content/dam/dsr/ja/movies/tech/qa670-tech; robots index (no noindex). JP: 200、タイトル・説明・プレーヤー表示、標準と同じ構成、noindexなし。",
+   "design": "DSR-670 AC3 · BL-OVL-1 · DSR-606 Q8 (KNOWN-FACTS)",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-670-01",
+   "blocked": "TD-670-01 by lane author/chrome (Claude); DEV has no tech-talk CF (24/10)"
+  },
+  {
+   "id": "9.0",
+   "feature": "Tech talk URL naming rule (TECHMV-009)",
+   "summary": "EN: Verify the tech-talk URL uses the exact node name: uppercase / underscore variants and the standard video URL return 404 (negative). JP: 技術紹介動画URLはノード名と完全一致であること（大文字・アンダースコア・標準URLは404）を確認する。",
+   "pre": "EN: TD-670-01 published. JP: —。",
+   "steps": "EN: GET https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk/QA670-TECH, /ja/library/video/tech-talk/qa670_tech, /ja/library/video/qa670-tech. JP: 3URLを取得。",
+   "expected": "EN: All 3 return HTTP 404 (site 404 page); none shows the qa670-tech video. JP: 全て404。",
+   "design": "BL-OVL-1 path and naming rules (directory-strict) · DSR-670 AC3",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "HTTP",
+   "td": "TD-670-01",
+   "blocked": "TD-670-01 by lane author/chrome (Claude); DEV has no tech-talk CF (24/10)"
+  },
+  {
+   "id": "10.0",
+   "feature": "isActive false → noindex (TECHMV-010)",
+   "summary": "EN: Verify a tech-talk CF with 表示フラグ (isActive) OFF gets noindex, same as a standard video. JP: 表示フラグOFFの技術紹介動画がnoindexになることを確認する。",
+   "pre": "EN: TD-670-02 qa670-inactive published with isActive OFF. JP: TD-670-02。",
+   "steps": "EN: 1. GET https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk/qa670-inactive (curl, no JS). 2. Read <meta name=robots>. 3. Open in a browser. 4. Compare with standard inactive video behaviour. JP: robotsメタを確認、標準動画と比較。",
+   "expected": "EN: robots contains noindex; behaviour equals standard videos (KNOWN-FACTS 22/10: 200 + unavailable/inactive, browser redirects to list). JP: noindex、標準動画と同じ挙動。",
+   "design": "DSR-670 AC4 · BL-OVL-1 isActive",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "HTTP + PC Chromium",
+   "td": "TD-670-02",
+   "blocked": "TD-670-02 by lane author/chrome (Claude); DEV has no tech-talk CF (24/10)"
+  },
+  {
+   "id": "11.0",
+   "feature": "Booth-limited → noindex (TECHMV-011)",
+   "summary": "EN: Verify a booth-limited tech-talk CF (isBoothLimited ON + 1 dsrFeatures tag) gets noindex. JP: ブース限定の技術紹介動画がnoindexになることを確認する。",
+   "pre": "EN: TD-670-03 qa670-booth published. JP: TD-670-03。",
+   "steps": "EN: 1. GET https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk/qa670-booth. 2. Read robots meta. JP: robotsメタを確認。",
+   "expected": "EN: HTTP 200 and robots contains noindex (same as standard booth-limited video). JP: 200・noindex。",
+   "design": "DSR-670 AC4",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "HTTP",
+   "td": "TD-670-03",
+   "blocked": "TD-670-03 by lane author/chrome (Claude); DEV has no tech-talk CF (24/10)"
+  },
+  {
+   "id": "12.0",
+   "feature": "Unavailable CF commune → noindex (TECHMV-012)",
+   "summary": "EN: Verify a tech talk whose CF commune has 配信終了フラグ (isUnavailable) ON gets noindex. JP: CFコミューンの配信終了フラグONの技術紹介動画がnoindexになることを確認する。",
+   "pre": "EN: TD-670-04 qa670-unavail published. JP: TD-670-04。",
+   "steps": "EN: 1. GET https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk/qa670-unavail. 2. Read robots meta. JP: robotsメタを確認。",
+   "expected": "EN: robots contains noindex; page behaviour equals a standard video with isUnavailable ON. JP: noindex、標準動画と同じ。",
+   "design": "DSR-670 AC4",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "HTTP",
+   "td": "TD-670-04",
+   "blocked": "TD-670-04 by lane author/chrome (Claude); DEV has no tech-talk CF (24/10)"
+  },
+  {
+   "id": "13.0",
+   "feature": "Standard video pages keep working (TECHMV-013)",
+   "summary": "EN: Verify standard video detail pages are unchanged after the DM_techmovie_dsr release (regression). JP: DM_techmovie_dsrリリース後も標準動画詳細ページが変わらないことを確認する（回帰）。",
+   "pre": "EN: TD-587-01 qa587-main (ja/en). JP: TD-587-01。",
+   "steps": "EN: 1. Run tests/movie-detail DSR-587 specs on DEV. 2. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-page;path=/content/dam/dsr/ja/movies/standard/qa587-main. JP: DSR-587スペック実行とクエリ確認。",
+   "expected": "EN: Same results as the last pre-670 run (0 NEW FAIL); query 200 with related item. JP: 以前と同じ結果。",
+   "design": "DSR-670 AC5",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-587-01",
+   "blocked": "—"
+  },
+  {
+   "id": "14.0",
+   "feature": "Tech talk not in the standard video list (TECHMV-014)",
+   "summary": "EN: Verify the video list (movies/standard only) does not show a tech-talk CF (boundary – tech talk list is out of scope). JP: 動画一覧に技術紹介動画が表示されないことを確認する（技術紹介一覧は対象外）。",
+   "pre": "EN: TD-670-01 published. JP: —。",
+   "steps": "EN: 1. Open https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search. 2. Search the card list for 'QA670'. 3. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list (ja). JP: 一覧とクエリでQA670を検索。",
+   "expected": "EN: No card and no list item for qa670-tech; list count unchanged vs before TD-670-01. JP: 表示なし、件数不変。",
+   "design": "DSR-670 Out of scope (blocks/listing/types.js lists movies/standard only)",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "PC Chromium",
+   "td": "TD-670-01",
+   "blocked": "TD-670-01 by lane author/chrome (Claude); DEV has no tech-talk CF (24/10)"
+  }
+ ],
+ "assumptions": [
+  [
+   "A1",
+   "Baseline BL-670-1 = DSR-670 description (Model spec table, Scope, Acceptance criteria, Out of scope; Jira 23/10). Deploy dev/2026.10.23_2 b33514f (KNOWN-FACTS).",
+   "Jira DSR-670",
+   "Re-baseline if spec changes"
+  ],
+  [
+   "A2",
+   "Observation JOB-20261023-21 (models-after.md): on DEV the model shows isActive NOT required, while the spec table marks it required (○). TC 1.0 keeps the spec as expected; a mismatch on run = Fail candidate (bug confidence decided on result).",
+   "models-after.md vs Jira spec",
+   "1.0"
+  ],
+  [
+   "A3",
+   "[Giả định] 'Same content as before' (AC3) cannot be compared: DEV had no tech-talk CF before 670 (Martin report). Oracle = standard video page layout (same template cf-templates/video.html).",
+   "Martin report 23/10, DSR-670 Background",
+   "8.0"
+  ],
+  [
+   "A4",
+   "[Giả định] Tech talk inactive / booth / unavailable behaviour = same as standard video (AC4 'same as standard videos'); standard inactive = 200 + unavailable row, browser redirect to list, noindex (KNOWN-FACTS 22/10 Martin).",
+   "DSR-670 AC4, KNOWN-FACTS",
+   "10.0–12.0"
+  ],
+  [
+   "A5",
+   "Naming / directory-strict rules of BL-OVL-1 apply to tech talks (URL = DSR CF node name, lowercase/digits/'-').",
+   "BL-OVL-1 Update 2026-10-21",
+   "9.0"
+  ],
+  [
+   "A6",
+   "Test data qa670-* are created by lane author/chrome (QA-owned, ja only); content CF and DSR CF share the node name. cn: no /cn on DEV (Issue #18).",
+   "CONTEXT §3, AUTHOR-AGENT §2",
+   "all"
+  ],
+  [
+   "A7",
+   "Tech talk list is out of scope (DSR-670); 14.0 only checks the standard list is not polluted.",
+   "DSR-670 Out of scope",
+   "14.0"
+  ]
+ ],
+ "testdata": [
+  [
+   "TD-670-00",
+   "1.0, 2.0",
+   "Model read only",
+   "/conf/ykk/settings/dam/cfm/models/dm_techmovie_dsr",
+   "—",
+   "—",
+   "—",
+   "—",
+   "No"
+  ],
+  [
+   "TD-670-01",
+   "5–9, 14",
+   "Tech talk main (content CF + DSR CF)",
+   "/content/dam/common/ja/movies/qa670-tech (DM_movie) + /content/dam/dsr/ja/movies/tech/qa670-tech (DM_techmovie_dsr)",
+   "content: movieId / movieTitle / description / thumbnail / movieSource / movieSourceId / publishDate · DSR: movie / isActive",
+   "movieId qa670-tech · movieTitle QA670 tech talk · description QA670 tech talk test · thumbnail = same image as common/ja/movies/qa587-main · movieSource youtube · movieSourceId = same as qa587-main · publishDate 2026-10-24 · DSR: movie → common/ja/movies/qa670-tech · 表示フラグ ON",
+   "(en optional: same values, path /en/)",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-670-02",
+   "10",
+   "Tech talk inactive",
+   "common/ja/movies/qa670-inactive + dsr/ja/movies/tech/qa670-inactive",
+   "same as TD-670-01",
+   "movieId qa670-inactive · movieTitle QA670 inactive · rest as TD-670-01 · DSR: 表示フラグ OFF",
+   "—",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-670-03",
+   "11",
+   "Tech talk booth-limited",
+   "common/ja/movies/qa670-booth + dsr/ja/movies/tech/qa670-booth",
+   "+ dsrFeatures / isBoothLimited",
+   "movieId qa670-booth · movieTitle QA670 booth · DSR: 表示フラグ ON · ブース限定掲載 ON · DSR掲載ブース = any 1 booth tag",
+   "—",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-670-04",
+   "12",
+   "Tech talk, commune unavailable",
+   "common/ja/movies/qa670-unavail + dsr/ja/movies/tech/qa670-unavail",
+   "+ isUnavailable (content)",
+   "movieId qa670-unavail · movieTitle QA670 unavailable · content: 配信終了フラグ ON · DSR: 表示フラグ ON",
+   "—",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-670-05",
+   "3, 4",
+   "Create dialog only (cancel)",
+   "/content/dam/dsr/{ja,en}/movies/tech, /movies/standard",
+   "—",
+   "—",
+   "—",
+   "—",
+   "No"
+  ]
+ ],
+ "howto": [
+  [
+   "1",
+   "Content CF: open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/common/ja/movies → Create → Content Fragment → DM_movie → Name = id in Data sheet (lowercase exactly, e.g. qa670-tech) → fill EVERY required field: movieId (= Name, exactly), movieTitle, description, thumbnail, movieSource = youtube, publishDate 2026-10-24; plus movieSourceId (copy from common/ja/movies/qa587-main) → Create → Save → Publish.",
+   "movieId ≠ Name is the most frequent error (QA-PT-ERRORS) – check before Publish."
+  ],
+  [
+   "2",
+   "DSR CF: open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/dsr/ja/movies/tech → Create → Content Fragment → DM_techmovie_dsr (expected only choice; screenshot = TC 3.0) → Name = same id → 対象動画 (movie) = pick /content/dam/common/ja/movies/<id> → check movieLabel autofill (TC 5.0) → 表示フラグ as in Data sheet → Save → Publish.",
+   "Folder movies/tech missing → Note 'no tech folder', stop TD-670. DM_techmovie_dsr not offered → TC 3.0 Fail, stop."
+  ],
+  [
+   "3",
+   "TD-670-03: set ブース限定掲載 ON and pick 1 booth tag in DSR掲載ブース before Save. TD-670-04: set 配信終了フラグ ON in the CONTENT CF (step 1) before Publish.",
+   "Booth tag list empty → Note, skip TD-670-03."
+  ],
+  [
+   "4",
+   "After publishing, wait ≥ 5 min, then open https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/tech-talk/<id> once and write HTTP status + UTC time in the result.",
+   "404 after 10 min → Note 'page not generated' (= TC 8.0 Fail candidate)."
+  ],
+  [
+   "5",
+   "TC 6.0 revert: after the Save attempt, set ブース限定掲載 OFF and close WITHOUT saving; if saved by mistake → OFF, Save, Publish, write it in the result.",
+   "Never edit non-qa CFs."
+  ]
+ ]
+}

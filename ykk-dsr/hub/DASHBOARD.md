@@ -58,7 +58,7 @@ Sáng T7 07:45: đọc Night Report → TD-587-04+05 Pass → JOB-20261023-19 qu
 **Lane chrome (24/10 00:40):** ✅ JOB-20261023-23 (529) – qa529-02 thumbnail đã khôi phục · picker trắng không tái hiện · **ARTICLE-005 Fail đề xuất: Profile chữ Company và Text chồng nhau (live + UE)** → ứng viên bug ≥ 80% · verify JOB-20261023-24 vào queue.
 
 ## 5. TC (Jira sub-task `qa-tc`)
-tc-backlog: trống · done 0/0 · Night TC job 18:08–21:07 23/10: auto-added 0 · tc-questions: không câu mới · (cũ:) TC backlog trống 2026-10-23 21:07 · Night TC job 23/10 21:07: Jira OK, auto-added 0 (653/611/590/587/586/570/566/557/529 đã phủ) · done 0/0 · upload queue pending 0 / fail 0 · job agent đã xếp 0 · tc-questions: không câu mới sau Q47.
+tc-backlog: Night TC job 24/10 09:45: done 2/3 (669, 670) · upload queue pending 4 / fail 0 · auto-added 3 (669/670/671 → DSR-679/680/681) · job agent đã xếp 2 (JOB-20261024-04, -05) · còn DSR-671 (3 SP) · tc-questions: không câu mới · A2 670: isActive DEV không bắt buộc ≠ spec (theo dõi TC 1.0)
 
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
