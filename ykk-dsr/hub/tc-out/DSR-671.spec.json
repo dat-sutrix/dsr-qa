@@ -1,0 +1,420 @@
+{
+ "us": "DSR-671",
+ "folder_id": "671",
+ "us_name": "[CF] Align CF related models and consumers with DM*dsr spec",
+ "jira_url": "https://sutrix.atlassian.net/browse/DSR-671",
+ "module": "CF related models aligned with DM*dsr spec (DSR-671) – CF layer 1.0, 4.0, 5.0, 7.0–13.0 · Page layer 2.0, 3.0, 6.0, 14.0–17.0",
+ "tcs": [
+  {
+   "id": "1.0",
+   "feature": "DM_catalog_dsr new fields (CFALN-001)",
+   "summary": "EN: Verify DM_catalog_dsr has hubspotFormId and promoText with the spec type/label. JP: DM_catalog_dsrにhubspotFormId・promoTextが仕様どおり存在することを確認する。",
+   "pre": "EN: Author cookie valid. JP: Authorクッキー有効。",
+   "steps": "EN: 1. node tools/author/author.mjs models. 2. Read /conf/ykk/settings/dam/cfm/models/dm_catalog_dsr fields hubspotFormId, promoText. JP: 1. モデル取得。2. 2項目の型・ラベル・必須を確認。",
+   "expected": "EN: hubspotFormId = single line text, label HubSpotフォームID, not required · promoText = multi line text (rich text), label 訴求文言, not required. JP: 上記の型・ラベル・任意。",
+   "design": "DSR-671 #1, #2 · AC1",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-671-00",
+   "blocked": "—"
+  },
+  {
+   "id": "2.0",
+   "feature": "dsr-catalog-page returns new fields (CFALN-002)",
+   "summary": "EN: Verify persisted query dsr-catalog-page selects hubspotFormId and promoText. JP: dsr-catalog-pageが2項目を返すことを確認する。",
+   "pre": "EN: qa190-cat-pdf live (ja, en). JP: qa190-cat-pdf公開済み。",
+   "steps": "EN: 1. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-page;path=/content/dam/dsr/{lang}/catalogs/qa190-cat-pdf for ja, en. 2. Read item keys. JP: 1. ja/enで取得。2. キー確認。",
+   "expected": "EN: HTTP 200, no errors[]; item has key hubspotFormId (null allowed) and promoText {plaintext, html} (null allowed). JP: 200・エラーなし・2キーあり（null可）。",
+   "design": "DSR-671 #3 · AC1",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "Publish GraphQL (GET)",
+   "td": "TD-671-04",
+   "blocked": "—"
+  },
+  {
+   "id": "3.0",
+   "feature": "promoText value round-trip (CFALN-003)",
+   "summary": "EN: Verify an authored promoText value is returned by dsr-catalog-page as html and plaintext. JP: 入力した訴求文言がhtml・plaintextで返ることを確認する。",
+   "pre": "EN: TD-671-03 qa671-cat created and published. JP: TD-671-03作成・公開済み。",
+   "steps": "EN: 1. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-page;path=/content/dam/dsr/en/catalogs/qa671-cat. 2. Read promoText. JP: 1. 取得。2. promoText確認。",
+   "expected": "EN: promoText.html contains '<strong>bold</strong>' (or <b>) and the text 'QA671 promo'; promoText.plaintext contains 'QA671 promo bold' without tags. hubspotFormId = null. JP: htmlに太字タグ、plaintextはタグなし。",
+   "design": "DSR-671 #2, #3",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "en",
+   "device": "Publish GraphQL (GET)",
+   "td": "TD-671-03",
+   "blocked": "TD-671-03 (lane chrome/author)"
+  },
+  {
+   "id": "4.0",
+   "feature": "hubspotFormId value round-trip (CFALN-004)",
+   "summary": "EN: Verify an authored HubSpot form ID is returned unchanged by dsr-catalog-page. JP: HubSpotフォームIDがそのまま返ることを確認する。",
+   "pre": "EN: Real HubSpot form ID from client (CB-1) set on a QA catalog DSR CF. JP: 顧客からHubSpot ID受領後。",
+   "steps": "EN: 1. Set hubspotFormId on dsr/en/catalogs/qa671-cat, publish. 2. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-page;path=…/qa671-cat. JP: 1. 設定・公開。2. 取得。",
+   "expected": "EN: hubspotFormId equals the authored string exactly (no trim/case change). Page embedding of the form is tested in DSR-570/654 TCs. JP: 入力値と完全一致。",
+   "design": "DSR-671 #1, #3 · DSR-655",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "en",
+   "device": "Publish GraphQL (GET)",
+   "td": "TD-671-03",
+   "blocked": "DSR-655 HubSpot form ID (client, CB-1)"
+  },
+  {
+   "id": "5.0",
+   "feature": "productLabel autofill format (CFALN-005)",
+   "summary": "EN: Verify picking a product in a DM_product_dsr CF fills productLabel with {productId}｜{productName}. JP: 対象製品選択でproductLabelが{productId}｜{productName}になることを確認する。",
+   "pre": "EN: Content CF common/en/products/990671001 exists (TD-671-01 step 1). JP: コンテンツCF作成済み。",
+   "steps": "EN: 1. Create DSR CF dsr/en/products/990671001 (DM_product_dsr). 2. In 対象製品 pick /content/dam/common/en/products/990671001. 3. Read 対象製品（参考表示） (productLabel) before Save; screenshot. JP: 1. DSR CF作成。2. 製品選択。3. 参考表示を確認・撮影。",
+   "expected": "EN: productLabel = '990671001｜QA671 product' exactly (separator = full-width U+FF5C '｜'; productCode QA671-A NOT used). JP: '990671001｜QA671 product'（全角縦線、productCode不使用）。",
+   "design": "DSR-671 #4 · AC2",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "en",
+   "device": "Author UI (Chrome)",
+   "td": "TD-671-01",
+   "blocked": "TD-671-01 (lane chrome)"
+  },
+  {
+   "id": "6.0",
+   "feature": "productLabel stored value (CFALN-006)",
+   "summary": "EN: Verify the saved productLabel of a newly created product DSR CF is {productId}｜{productName}. JP: 保存後のproductLabelが仕様形式であることを確認する。",
+   "pre": "EN: TD-671-01 published. JP: TD-671-01公開済み。",
+   "steps": "EN: 1. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-product-page;path=/content/dam/dsr/en/products/990671001. 2. Read productLabel. JP: 1. 取得。2. productLabel確認。",
+   "expected": "EN: productLabel = '990671001｜QA671 product'. Existing CFs saved before the 671 deploy may keep the old value (A4) – not checked here. JP: 新規CFは仕様形式。",
+   "design": "DSR-671 #4 · AC2",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "en",
+   "device": "Publish GraphQL (GET)",
+   "td": "TD-671-01",
+   "blocked": "TD-671-01 (lane chrome)"
+  },
+  {
+   "id": "7.0",
+   "feature": "relatedMoodboards removed (CFALN-007)",
+   "summary": "EN: Verify relatedMoodboards no longer exists in DM_product_dsr nor in any product query response. JP: relatedMoodboardsがモデル・クエリから削除されていることを確認する。",
+   "pre": "EN: Author cookie valid. JP: Authorクッキー有効。",
+   "steps": "EN: 1. Read model dm_product_dsr field list. 2. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-product-list (ja, en) then dsr-product-page for every item. JP: 1. モデル確認。2. 全製品のクエリ確認。",
+   "expected": "EN: Field absent from model; key 'relatedMoodboards' absent in every response; no GraphQL errors. JP: モデル・全レスポンスに無し、エラー無し。",
+   "design": "DSR-671 #5 · AC3",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "Author API (read-only) + Publish GraphQL (GET)",
+   "td": "TD-671-00, TD-671-04",
+   "blocked": "—"
+  },
+  {
+   "id": "8.0",
+   "feature": "Article picker rootPath config (CFALN-008)",
+   "summary": "EN: Verify relatedArticles and relatedContents in DM_product_dsr are limited to the article hierarchy. JP: relatedArticles・relatedContentsのrootPathが記事階層に限定されていることを確認する。",
+   "pre": "EN: Author cookie valid. JP: Authorクッキー有効。",
+   "steps": "EN: 1. Read model dm_product_dsr field config (rootPath) of relatedArticles, relatedContents. JP: 1. 2項目のrootPathを確認。",
+   "expected": "EN: rootPath of both ≠ '/content/sites/digital-showroom' and points to the article hierarchy ([Giả định] ends with '/library/article', A5). If the API does not expose rootPath → Pending (Manual 9.0 covers). JP: サイト全体ではなく記事階層。",
+   "design": "DSR-671 #6, #7 · AC4",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-671-00",
+   "blocked": "—"
+  },
+  {
+   "id": "9.0",
+   "feature": "Article picker shows only articles (CFALN-009)",
+   "summary": "EN: Verify the relatedContents / relatedArticles pickers only browse article pages. JP: 関連コンテンツ・関連記事のピッカーで記事ページのみ表示されることを確認する。",
+   "pre": "EN: TD-671-01 DSR CF exists. JP: TD-671-01あり。",
+   "steps": "EN: 1. Open dsr/en/products/990671001 in the CF editor. 2. 関連コンテンツ → browse; try to go up to the site root and to /products. 3. Repeat for 関連記事コンテンツ. 4. Close WITHOUT saving. JP: 1. 開く。2. 上位階層・製品ページへ移動を試す。3. 関連記事も同様。4. 保存せず閉じる。",
+   "expected": "EN: Picker starts in the article hierarchy; site root, top page and product/library video pages are not selectable or not reachable. JP: 記事以外は選択不可。",
+   "design": "DSR-671 #6, #7 · AC4",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "en",
+   "device": "Author UI (Chrome)",
+   "td": "TD-671-05",
+   "blocked": "TD-671-01 (lane chrome)"
+  },
+  {
+   "id": "10.0",
+   "feature": "Cross-language CF commune rejected (CFALN-010)",
+   "summary": "EN: Verify a DSR CF cannot be saved with a CF commune of another language (negative). JP: 他言語のコンテンツCF参照では保存できないことを確認する。",
+   "pre": "EN: TD-671-01 DSR CF exists; common/ja/products/990586001 exists. JP: 前提データあり。",
+   "steps": "EN: 1. Open dsr/en/products/990671001. 2. Change 対象製品 to /content/dam/common/ja/products/990586001. 3. Save; screenshot the message. 4. Restore /content/dam/common/en/products/990671001 and close; confirm the reference is still en. JP: 1. 開く。2. ja製品に変更。3. 保存・撮影。4. 元に戻す。",
+   "expected": "EN: Save is blocked with a validation message (language mismatch); after reopening, the stored reference is still common/en/products/990671001. JP: 保存不可・メッセージ表示、参照は変化なし。",
+   "design": "DSR-671 #8 · AC5",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja, en",
+   "device": "Author UI (Chrome)",
+   "td": "TD-671-05",
+   "blocked": "TD-671-01 (lane chrome)"
+  },
+  {
+   "id": "11.0",
+   "feature": "Existing DSR CFs reference same-language commune (CFALN-011)",
+   "summary": "EN: Verify every live DSR CF references a CF commune of the same language and type folder. JP: 全DSR CFが同一言語・同種別のコンテンツCFを参照していることを確認する。",
+   "pre": "EN: Migration 669 done. JP: 669移行済み。",
+   "steps": "EN: 1. GET dsr-*-list queries (product, catalog, video; ja, en). 2. For each item compare its _path language/type with the referenced commune _path. JP: 1. 一覧取得。2. 言語・種別を比較。",
+   "expected": "EN: For each DSR CF /content/dam/dsr/{lang}/{type}/…, reference starts with /content/dam/common/{lang}/{products|catalogs|movies}/ with the same {lang}. 0 mismatches (list mismatches raw). JP: 不一致0件。",
+   "design": "DSR-671 #8 · BL-OVL-1",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "Publish GraphQL (GET)",
+   "td": "TD-671-04",
+   "blocked": "—"
+  },
+  {
+   "id": "12.0",
+   "feature": "dsrFeatures tag config (CFALN-012)",
+   "summary": "EN: Verify dsrFeatures on DM_catalog_dsr, DM_movie_dsr, DM_product_dsr, DM_techmovie_dsr uses the DSR booth tag root and forbids new tags. JP: 4モデルのdsrFeaturesのタグルート・forceSelection・autocreateTagを確認する。",
+   "pre": "EN: Author cookie valid. JP: Authorクッキー有効。",
+   "steps": "EN: 1. Read the 4 models' dsrFeatures config. JP: 1. 4モデルの設定確認。",
+   "expected": "EN: For all 4: tag root ≠ '/content/cq:tags' (DSR booth namespace, A6); forceSelection = true; autocreateTag = false or absent. Not exposed by API → Pending (Manual 13.0 covers). JP: 4モデルとも仕様どおり。",
+   "design": "DSR-671 #9 · AC6",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-671-00",
+   "blocked": "—"
+  },
+  {
+   "id": "13.0",
+   "feature": "dsrFeatures cannot create free tags (CFALN-013)",
+   "summary": "EN: Verify an editor can only pick existing DSR booth tags and cannot create a new tag from dsrFeatures (negative). JP: DSR掲載ブースで新規タグを作成できないことを確認する。",
+   "pre": "EN: TD-671-01 DSR CF exists. JP: TD-671-01あり。",
+   "steps": "EN: 1. Open dsr/en/products/990671001. 2. DSR掲載ブース: open the picker; screenshot the root. 3. Type 'qa671-newtag' and press Enter. 4. Close WITHOUT saving. JP: 1. 開く。2. ピッカーのルート撮影。3. 新規文字入力・Enter。4. 保存せず閉じる。",
+   "expected": "EN: Picker root shows only DSR booth tags; typed text is not added as a tag (no new tag created; check /content/cq:tags has no qa671-newtag). JP: ブースタグのみ、新規タグ不可。",
+   "design": "DSR-671 #9 · AC6",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "en",
+   "device": "Author UI (Chrome)",
+   "td": "TD-671-05",
+   "blocked": "TD-671-01 (lane chrome)"
+  },
+  {
+   "id": "14.0",
+   "feature": "Product detail hides inactive related catalog (CFALN-014)",
+   "summary": "EN: Verify a related catalog whose DM_catalog_dsr isActive=false is not shown on product detail, while an active one is. JP: isActive=falseのカタログは製品詳細に表示されないことを確認する。",
+   "pre": "EN: TD-671-01 published (relatedCatalogs = qa190-cat-pdf + qa654-inactive). JP: TD-671-01公開済み。",
+   "steps": "EN: 1. Open https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990671001. 2. Collect related catalog cards (titles, links). JP: 1. 開く。2. 関連カタログを取得。",
+   "expected": "EN: HTTP 200; related catalogs contain the qa190-cat-pdf card (link /en/library/catalog/qa190-cat-pdf) and NOT 'QA654 inactive' / qa654-inactive. JP: qa190-cat-pdfのみ表示。",
+   "design": "DSR-671 #10 · AC7",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "en",
+   "device": "PC Chromium",
+   "td": "TD-671-01",
+   "blocked": "TD-671-01 (lane chrome)"
+  },
+  {
+   "id": "15.0",
+   "feature": "Product detail hides inactive related video (CFALN-015)",
+   "summary": "EN: Verify a video in relatedVideos whose DM_movie_dsr isActive=false is not shown in 関連コンテンツ, while an active one is. JP: isActive=falseの動画は関連コンテンツに表示されないことを確認する。",
+   "pre": "EN: TD-671-01 published (relatedVideos = qa587-main + qa587-inactive). JP: TD-671-01公開済み。",
+   "steps": "EN: 1. Open https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990671001. 2. Collect 関連コンテンツ items. JP: 1. 開く。2. 関連コンテンツ取得。",
+   "expected": "EN: Item for qa587-main (link /en/library/video/qa587-main) present; nothing for 'QA587 inactive' / qa587-inactive. JP: qa587-mainのみ。",
+   "design": "DSR-671 #11 · AC7",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "en",
+   "device": "PC Chromium",
+   "td": "TD-671-01",
+   "blocked": "TD-671-01 (lane chrome)"
+  },
+  {
+   "id": "16.0",
+   "feature": "All related items inactive (CFALN-016)",
+   "summary": "EN: Verify product detail renders like a product without relations when every related catalog/video is inactive (boundary). JP: 関連が全て非アクティブの場合、関連なし製品と同じ表示になることを確認する。",
+   "pre": "EN: TD-671-02 published; oracle = /en/products/990586001 (no relations). JP: TD-671-02公開済み。",
+   "steps": "EN: 1. Open https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990671002 and /en/products/990586001. 2. Compare related catalog / 関連コンテンツ sections. JP: 1. 2ページを開く。2. 関連セクション比較。",
+   "expected": "EN: HTTP 200; 0 related catalog cards and 0 関連コンテンツ video items; section headings present/absent exactly as on 990586001 (no empty card, no JS error in console). JP: 関連0件、990586001と同じ表示、コンソールエラー無し。",
+   "design": "DSR-671 #10, #11 · AC7",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "en",
+   "device": "PC Chromium",
+   "td": "TD-671-02",
+   "blocked": "TD-671-02 (lane chrome)"
+  },
+  {
+   "id": "17.0",
+   "feature": "Regression after 671 deploy (CFALN-017)",
+   "summary": "EN: Verify the 671 change causes no regression on product, catalog and video detail suites. JP: 671デプロイ後、製品・カタログ・動画詳細に回帰がないことを確認する。",
+   "pre": "EN: Last regression ledger (results/REGRESSION/ledger.json). JP: 前回結果あり。",
+   "steps": "EN: 1. Run tests for DSR-586, DSR-654, DSR-587 on DEV. 2. Compare with the ledger. JP: 1. 3スイート実行。2. 前回と比較。",
+   "expected": "EN: 0 NEW FAIL (passed before, fails now). JP: 新規失敗0件。",
+   "design": "DSR-671 Scope dsr-eds · regression/README",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-671-04",
+   "blocked": "—"
+  }
+ ],
+ "assumptions": [
+  [
+   "A1",
+   "Baseline BL-671-1 = DSR-671 description (Scope #1–#11 + Acceptance criteria, Jira 23/10; Kohei LGTM c.64948). Deploy with 669 on dev/2026.10.23 a47274d.",
+   "Jira DSR-671, KNOWN-FACTS",
+   "Re-baseline if AC or open questions change"
+  ],
+  [
+   "A2",
+   "Observations JOB-20261023-21 / JOB-20261024-01: hubspotFormId/promoText in model + dsr-catalog-page (not in dsr-catalog-list – not required by 671); relatedMoodboards removed; no QA product links an inactive catalog/video → new data TD-671-01/02.",
+   "results/JOB-20261023-21/observations-670-671.md",
+   "2.0, 7.0, 14.0–16.0"
+  ],
+  [
+   "A3",
+   "Separator in productLabel = full-width vertical bar '｜' (U+FF5C) exactly as written in DSR-671 #4.",
+   "DSR-671 #4",
+   "5.0, 6.0"
+  ],
+  [
+   "A4",
+   "[Giả định] productLabel is filled by the CF editor (cfm-editor-extend.js) when a product is picked; CFs saved before the deploy keep their old value (JOB-24-01: id or null). Only new/re-saved CFs are checked. Martin checks existing data Mon 26/10 (KNOWN-FACTS 23/10 17:05).",
+   "DSR-671 #4, KNOWN-FACTS",
+   "5.0, 6.0"
+  ],
+  [
+   "A5",
+   "[Giả định] Article hierarchy for relatedArticles/relatedContents = a path ending with '/library/article' (article URL /{lang}/library/article/…, DSR-529). Open question in DSR-671 → tc-questions Q48.",
+   "DSR-671 Open questions",
+   "8.0, 9.0"
+  ],
+  [
+   "A6",
+   "[Giả định] DSR booth Tag Root = a dedicated namespace (not /content/cq:tags root); exact name open in DSR-671 → Q49. TC checks ≠ root + forceSelection.",
+   "DSR-671 Open questions",
+   "12.0, 13.0"
+  ],
+  [
+   "A7",
+   "[Giả định] Language check = validation in CF editor that blocks Save (DSR-671 #8 proposal). If dev picks another approach, 10.0 is re-written, not failed.",
+   "DSR-671 #8, Open questions",
+   "10.0"
+  ],
+  [
+   "A8",
+   "Test data in en: qa654-inactive and qa587-inactive are live in en (TD-654-02, TD-587-07); ja qa587-inactive not confirmed. Products use numeric CF name = productId (ver0.4).",
+   "author/manifests, CONTEXT §5",
+   "14.0–16.0"
+  ],
+  [
+   "A9",
+   "Page rendering of promoText / HubSpot form has no design yet → not in this file (DSR-654/570 TCs). 関連コンテンツ sort order (newest first) is already right (DSR-671 #11) → covered by DSR-586 regression (17.0).",
+   "SPRINT-SCOPE DSR-654, DSR-671 #11",
+   "—"
+  ]
+ ],
+ "testdata": [
+  [
+   "TD-671-00",
+   "1.0, 7.0, 8.0, 12.0",
+   "Model read only",
+   "/conf/ykk/settings/dam/cfm/models/dm_{catalog,movie,product,techmovie}_dsr",
+   "—",
+   "—",
+   "—",
+   "—",
+   "No"
+  ],
+  [
+   "TD-671-01",
+   "5.0, 6.0, 9.0, 10.0, 13.0, 14.0, 15.0",
+   "Product with active + inactive related (content CF + DSR CF)",
+   "/content/dam/common/en/products/990671001 (DM_product) + /content/dam/dsr/en/products/990671001 (DM_product_dsr)",
+   "content: productId / productCode / productName / publishDate / relatedCatalogs / relatedVideos · DSR: product / isActive",
+   "—",
+   "productId 990671001 · productCode QA671-A · productName QA671 product · publishDate 2026-10-24 · 関連カタログ = common/en/catalogs/qa190-cat-pdf, common/en/catalogs/qa654-inactive · 関連動画 = common/en/movies/qa587-main, common/en/movies/qa587-inactive · DSR: 対象製品 → common/en/products/990671001 · 表示フラグ ON",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-671-02",
+   "16.0",
+   "Product with ONLY inactive related",
+   "common/en/products/990671002 + dsr/en/products/990671002",
+   "same as TD-671-01",
+   "—",
+   "productId 990671002 · productCode QA671-B · productName QA671 product B · publishDate 2026-10-24 · 関連カタログ = common/en/catalogs/qa654-inactive · 関連動画 = common/en/movies/qa587-inactive · DSR: 表示フラグ ON",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-671-03",
+   "3.0, 4.0",
+   "Catalog with promoText",
+   "common/en/catalogs/qa671-cat (DM_catalog) + dsr/en/catalogs/qa671-cat (DM_catalog_dsr)",
+   "content: as qa654-inactive · DSR: catalog / isActive / promoText / hubspotFormId",
+   "—",
+   "content: catalogId qa671-cat · catalogTitle QA671 catalog · description QA671 description · category site:product/material/aluminium · thumbnail /content/dam/ykk/digital-showroom/test/png/image 7.png · catalogType pdf · pdfAsset /content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf · requiresForm OFF · publishDate 2026-10-01 · DSR: 表示フラグ ON · 訴求文言 = 'QA671 promo ' + 'bold' in Bold · HubSpotフォームID = EMPTY",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-671-04",
+   "2.0, 7.0, 11.0, 17.0",
+   "Existing data (reuse, do not edit)",
+   "dsr/{ja,en}/catalogs/qa190-cat-pdf · all items of dsr-product-list / dsr-catalog-list / dsr-video-list · /en/products/990586001 (oracle, no relations)",
+   "—",
+   "ja: yes",
+   "en: yes",
+   "—",
+   "Yes (already)"
+  ],
+  [
+   "TD-671-05",
+   "9.0, 10.0, 13.0",
+   "Editor dialog only – close WITHOUT saving",
+   "dsr/en/products/990671001 (from TD-671-01)",
+   "—",
+   "—",
+   "—",
+   "—",
+   "No"
+  ]
+ ],
+ "howto": [
+  [
+   "1",
+   "Content CF (product): open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/common/en/products → Create → Content Fragment → DM_product → Name = 990671001 (digits only) → fill productId 990671001 (= Name exactly), productCode QA671-A, productName QA671 product, publishDate 2026-10-24 → 関連カタログ: add common/en/catalogs/qa190-cat-pdf then common/en/catalogs/qa654-inactive → 関連動画: add common/en/movies/qa587-main then common/en/movies/qa587-inactive → Save → Publish.",
+   "productId ≠ Name is the most frequent error (QA-PT-ERRORS) – check before Publish. qa654-inactive / qa587-inactive not found in picker → Note 'missing <id>', stop TD-671-01."
+  ],
+  [
+   "2",
+   "DSR CF (product): open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/dsr/en/products → Create → Content Fragment → DM_product_dsr → Name = 990671001 → 対象製品 = pick /content/dam/common/en/products/990671001 → BEFORE Save screenshot 対象製品（参考表示） (= TC 5.0) → 表示フラグ ON → Save → Publish.",
+   "Label not '990671001｜QA671 product' → still Save + Publish (TC 5.0 Fail candidate, do not edit the label by hand)."
+  ],
+  [
+   "3",
+   "TD-671-02: repeat steps 1–2 with Name/productId 990671002, productCode QA671-B, productName QA671 product B, 関連カタログ ONLY qa654-inactive, 関連動画 ONLY qa587-inactive.",
+   "—"
+  ],
+  [
+   "4",
+   "TD-671-03 catalog: content CF in /content/dam/common/en/catalogs (DM_catalog, Name qa671-cat, values in Data sheet, Publish) → DSR CF in /content/dam/dsr/en/catalogs (DM_catalog_dsr, Name qa671-cat, 対象カタログ = common/en/catalogs/qa671-cat, 表示フラグ ON, 訴求文言: type 'QA671 promo bold' and make only 'bold' Bold, HubSpotフォームID EMPTY) → Save → Publish.",
+   "HubSpotフォームID must stay empty (a fake ID can break the catalog page)."
+  ],
+  [
+   "5",
+   "After publishing, wait ≥ 5 min, open https://main--dsr-eds-dev--sutrix-projects.aem.live/en/products/990671001, /en/products/990671002 and /en/library/catalog/qa671-cat once; write HTTP status + UTC time.",
+   "404 after 10 min → Note 'page not generated'."
+  ],
+  [
+   "6",
+   "TC 9.0 / 10.0 / 13.0 use the TD-671-01 DSR CF: never Save except where the step says; 10.0 restore the en reference; if anything was saved by mistake → restore, Save, Publish, write it in the result.",
+   "Never edit non-qa CFs; never create tags."
+  ]
+ ]
+}
