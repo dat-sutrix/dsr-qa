@@ -1,5 +1,7 @@
 # YKK DSR – Bug register
 
+> 24/10 07:50 [schedule] morning: 🐞 **DSR-678** mới (529 Profile: Company/Text chồng nhau, 85%, Martin) · DSR-677 (529 required props, Night review 23/10) đưa vào bảng · Jira: DSR-664/666/667/672/673 = Done · 669/670/671 → [Dev] In Testing (giao Dat) · Author cookie hết hạn → JOB-20261024-03 hold.
+
 > 23/10 17:10 [schedule] evening: REG-1620 claude-code 0 NEW FAIL, 32 fail đã biết (cause none) · Jira: không bug mới chuyển fixed/In Testing sau 16:05 sweep · 0 bug mới ≥ 80% · nháp < 80% giữ nguyên (DASHBOARD 🐞).
 
 > 23/10 07:50 [schedule] morning: Jira – **DSR-647/657/658/659/660/665 = Done** · DSR-664 vẫn [Dev] In Testing (Dat đóng, 🔔 P1) · 0 bug mới ≥ 80% · nháp < 80%: BUG-CAT-PREVIEW ↑70% (thêm 990586002 .page 404), BUG-CAT-LIST-JA 50%, CATDL-004 50% → DASHBOARD 🐞.
@@ -23,6 +25,8 @@
 ## Bug đang mở
 | Jira | US | Tiêu đề | Sev | Trạng thái Jira | Assignee | Retest ở | Kết quả retest gần nhất | Việc kế tiếp (ai · hạn) |
 |---|---|---|---|---|---|---|---|---|
+| [DSR-678](https://sutrix.atlassian.net/browse/DSR-678) | DSR-529 | Profile block: Company/role + Text chồng nhau (ARTICLE-005) | Medium | To Do (tạo 24/10 07:50) | Portal Martin | DEV | ❌ chrome JOB-20261023-23 (live + UE) + Night 23/10 | Martin fix → IDLE-45 watch → retest · 26/10 |
+| [DSR-677](https://sutrix.atlassian.net/browse/DSR-677) | DSR-529 | Required page props không bắt buộc trong UE (Publish Date / Category / Thumbnail) – ARTICLE-032 | Medium | To Do | Portal Martin | DEV | ❌ Night 23/10 | Martin fix → QA-PT retest Night T2 · 26/10 |
 | [DSR-457](https://sutrix.atlassian.net/browse/DSR-457) | DSR-360 | **Dismissed (Jira 21/10, Kohei)** – mục còn lại kiểm trong DSR-586 · Product Detail – Integrate issue (13 item) · ⚠ 20/10 CR DSR-585 bỏ `topBottomStopVariation` → item #12 (dòng dưới tên sản phẩm) không còn kỳ vọng hiển thị = thay đổi spec, không phải fail | Major | [Dev] In Testing (Jira 20/10) | Kohei Okumura (Jira 20/10) | DEV | 19/10 QA-PT: ✅ 10 · 16/10 QA-PT: ✅ 1 · 13/10 (QA-PT, có evidence): ✅ 2, 4, 5, 9, 11, 12, R2, R3, R4 · ❌ 3 (toolbar 5/6 icon), 7 (Youku: span play có trong DOM nhưng không hiện), 13 (link MOVIE = youtube.com/watch?v=movieid-01, STORY sai đích) · ❓ 6 (asset đã Published, ảnh vẫn vỡ → dev check), R1 (chưa biết field ngày) · ⚖️ 8 form gate (PM Quentin) · ⏳ 10 | R1 (Ngọc) · 61015 (Kohei – mặc định có hiệu lực 20/10) · #13 sau DSR-587 (overlay merge 20/10) |
 | [DSR-647](https://sutrix.atlassian.net/browse/DSR-647) | DSR-501 | video-detail: relatedMovies không bao giờ hiển thị | High | **Done** (Jira 22/10 13:29 JST) | Dat (QA) | DEV main | ✅ JOB-20261019-03 (21/10): P3 rel-a 5 thẻ r6→r2, P2 rel-b 1 thẻ – comment 64798 | Dat chuyển Done (QA confirm DEV) · 22/10 |
 | [DSR-657](https://sutrix.atlassian.net/browse/DSR-657) | DSR-529 | Article image block duplicated in UE / empty image block on Publish (TC 002) | Medium | **Done** (Jira 22/10 13:29 JST) | Dat (QA) | DEV | ✅ JOB-20261021-05: 1 block ảnh, 200, 0 block trống – comment 64794 | Dat chuyển Done · 22/10 |
@@ -30,7 +34,7 @@
 | [DSR-659](https://sutrix.atlassian.net/browse/DSR-659) | DSR-529 | Thumbnail + related-article images relative /content/dam → 404 .live (TC 011, 013) | Medium | **Done** (Jira 22/10 15:46 JST, by design thumbnail) | Dat (QA) | DEV | ⚠ JOB-20261021-05: ảnh related ✅ tuyệt đối 200 · **thumbnail meta vẫn tương đối → 404** – comment 64797 | Dat trả lại Martin (Reopen/In Progress) · 22/10 |
 | [DSR-660](https://sutrix.atlassian.net/browse/DSR-660) | DSR-529 | Info bar date YYYY/MM/DD ≠ YYYY.MM.DD (TC 007) | Low | **Done** (Jira 22/10 13:29 JST) | Dat (QA) | DEV | ✅ JOB-20261021-05 + IDLE-28: 2026.10.01 – comment 64796 | Dat chuyển Done · 22/10 |
 | [DSR-665](https://sutrix.atlassian.net/browse/DSR-665) | DSR-587 | /{lang}/library/video/search reload vô hạn (VOV-013) | High | **Done 22/10** | Portal Martin | DEV | ✅ JOB-20261022-08 + IDLE-35 VOV-013 Pass | — (đã đóng) |
-| [DSR-664](https://sutrix.atlassian.net/browse/DSR-664) | DSR-190 | Video block shows "null" when caption empty (+ DSR-662 ブースTOP) | — | [Dev] In Testing (giao lại Dat 18:14 JST) | Dat (QA) | DEV | ✅ JOB-20261022-16: VCAP-001..004 Pass (.page + .live; booth TOP/46 chỉ .page) | **Dat đóng** (comment sẵn DASHBOARD 🔔 P1, 211→221→231→31) · 22–23/10 |
+| [DSR-664](https://sutrix.atlassian.net/browse/DSR-664) | DSR-190 | Video block shows "null" when caption empty (+ DSR-662 ブースTOP) | — | **Done 23/10** | Dat (QA) | DEV | ✅ JOB-20261022-16: VCAP-001..004 Pass (.page + .live; booth TOP/46 chỉ .page) | **Dat đóng** (comment sẵn DASHBOARD 🔔 P1, 211→221→231→31) · 22–23/10 |
 
 ### Bug chờ tạo ticket (QA đã phân loại = bug thật, chưa có Jira)
 | Tạm ID | US | Tiêu đề | Sev đề xuất | Nguồn | Ghi chú |
