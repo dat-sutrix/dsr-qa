@@ -1,0 +1,794 @@
+{
+ "job": "JOB-ZY-REG-20261024-1220-claude-code",
+ "base": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+ "started": "2026-10-24T05:28:37.154Z",
+ "loads": [
+  {
+   "id": "en-01",
+   "lang": "en",
+   "utc": "2026-10-24T05:28:37.290Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 2786,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819717591",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 407,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:28:37.582Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:28:37.607Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-02",
+   "lang": "en",
+   "utc": "2026-10-24T05:29:07.243Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 3219,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819747646",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 614,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:29:07.656Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:29:07.696Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-03",
+   "lang": "en",
+   "utc": "2026-10-24T05:29:37.274Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 3128,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819777492",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 778,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:29:37.491Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:29:37.508Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-04",
+   "lang": "en",
+   "utc": "2026-10-24T05:30:07.345Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 6297,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819809761",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 455,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:30:09.605Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:30:09.948Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "ja-01",
+   "lang": "ja",
+   "utc": "2026-10-24T05:30:37.279Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, MISS, HIT",
+   "title": "動画 検索・一覧",
+   "card_count": 6,
+   "unable_to_load": false,
+   "duration_ms": 5747,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/ja/movies/standard/;cb=1792819839283",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 539,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/ja/movies/standard/filtered\",\"isActive\":true,\"isBoothLimited\":false,\"movie\":{\"_path\":\"/content/dam/common/ja/movies/dm-movie-2\",\"movieId\":\"FILTERED\",\"movieTitle\":\"DM_movie_テスト名\",\"searchKeywords\":\"テスト\",\"description\":{\"plaintext\":\"DM_movie_テスト説明文\"},\"isUnavailable\":null,\"sortOrder\":1.0,\"publishDate\":\"2026-09-03\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\",\""
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:30:39.215Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:30:39.216Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:30:39.472Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-05",
+   "lang": "en",
+   "utc": "2026-10-24T05:31:07.352Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, MISS",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 6186,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819869721",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 628,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:31:09.599Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:31:09.947Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-06",
+   "lang": "en",
+   "utc": "2026-10-24T05:31:37.325Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 5890,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819899495",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 560,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:31:39.318Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:31:39.700Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-07",
+   "lang": "en",
+   "utc": "2026-10-24T05:32:07.563Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 4166,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819928388",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 714,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:32:08.265Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:32:08.570Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-08",
+   "lang": "en",
+   "utc": "2026-10-24T05:32:37.436Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 2855,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792819957653",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 374,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:32:37.658Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:32:37.691Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "ja-02",
+   "lang": "ja",
+   "utc": "2026-10-24T05:33:07.427Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "動画 検索・一覧",
+   "card_count": 6,
+   "unable_to_load": false,
+   "duration_ms": 5145,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/ja/movies/standard/;cb=1792819987691",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1479,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/ja/movies/standard/filtered\",\"isActive\":true,\"isBoothLimited\":false,\"movie\":{\"_path\":\"/content/dam/common/ja/movies/dm-movie-2\",\"movieId\":\"FILTERED\",\"movieTitle\":\"DM_movie_テスト名\",\"searchKeywords\":\"テスト\",\"description\":{\"plaintext\":\"DM_movie_テスト説明文\"},\"isUnavailable\":null,\"sortOrder\":1.0,\"publishDate\":\"2026-09-03\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\",\""
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:33:07.706Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:33:07.706Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:33:07.717Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-09",
+   "lang": "en",
+   "utc": "2026-10-24T05:33:37.457Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 5194,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820017859",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1586,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:33:37.853Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:33:37.872Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-10",
+   "lang": "en",
+   "utc": "2026-10-24T05:34:07.525Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 5238,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820047979",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1533,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:34:07.993Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:34:07.999Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-11",
+   "lang": "en",
+   "utc": "2026-10-24T05:34:37.549Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 5010,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820077915",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1791,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:34:37.910Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:34:37.941Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-12",
+   "lang": "en",
+   "utc": "2026-10-24T05:35:07.574Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 6881,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820110138",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 674,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:35:10.067Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:35:10.357Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "ja-03",
+   "lang": "ja",
+   "utc": "2026-10-24T05:35:37.537Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, MISS, HIT",
+   "title": "動画 検索・一覧",
+   "card_count": 6,
+   "unable_to_load": false,
+   "duration_ms": 6037,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/ja/movies/standard/;cb=1792820139686",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 662,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/ja/movies/standard/filtered\",\"isActive\":true,\"isBoothLimited\":false,\"movie\":{\"_path\":\"/content/dam/common/ja/movies/dm-movie-2\",\"movieId\":\"FILTERED\",\"movieTitle\":\"DM_movie_テスト名\",\"searchKeywords\":\"テスト\",\"description\":{\"plaintext\":\"DM_movie_テスト説明文\"},\"isUnavailable\":null,\"sortOrder\":1.0,\"publishDate\":\"2026-09-03\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\",\""
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:35:39.658Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:35:39.659Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:35:39.884Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-13",
+   "lang": "en",
+   "utc": "2026-10-24T05:36:07.575Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 7550,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820169657",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1541,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:36:09.641Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:36:09.920Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-14",
+   "lang": "en",
+   "utc": "2026-10-24T05:36:37.618Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 7481,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820199948",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1383,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:36:39.899Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:36:40.153Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-15",
+   "lang": "en",
+   "utc": "2026-10-24T05:37:07.588Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 5924,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820229702",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 619,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:37:09.718Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:37:09.926Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-16",
+   "lang": "en",
+   "utc": "2026-10-24T05:37:37.630Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 5950,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820259649",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 747,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:37:39.634Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:37:39.846Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "ja-04",
+   "lang": "ja",
+   "utc": "2026-10-24T05:38:07.639Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "動画 検索・一覧",
+   "card_count": 6,
+   "unable_to_load": false,
+   "duration_ms": 4465,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/ja/movies/standard/;cb=1792820287932",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1316,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/ja/movies/standard/filtered\",\"isActive\":true,\"isBoothLimited\":false,\"movie\":{\"_path\":\"/content/dam/common/ja/movies/dm-movie-2\",\"movieId\":\"FILTERED\",\"movieTitle\":\"DM_movie_テスト名\",\"searchKeywords\":\"テスト\",\"description\":{\"plaintext\":\"DM_movie_テスト説明文\"},\"isUnavailable\":null,\"sortOrder\":1.0,\"publishDate\":\"2026-09-03\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\",\""
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:38:07.907Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:38:07.908Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:38:07.961Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-17",
+   "lang": "en",
+   "utc": "2026-10-24T05:38:37.661Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 4526,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820317999",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1398,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:38:38.005Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:38:38.014Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-18",
+   "lang": "en",
+   "utc": "2026-10-24T05:39:07.730Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 4638,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820347993",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1526,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:39:08.005Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:39:08.014Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-19",
+   "lang": "en",
+   "utc": "2026-10-24T05:39:37.673Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 4043,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820378041",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1266,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:39:38.042Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:39:38.053Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "en-20",
+   "lang": "en",
+   "utc": "2026-10-24T05:40:07.764Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "search",
+   "card_count": 12,
+   "unable_to_load": false,
+   "duration_ms": 5421,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/en/movies/standard/;cb=1792820408231",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 2293,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/en/movies/standard/QA587_Upper\",\"isActive\":true,\"isBoothLimited\":null,\"movie\":{\"_path\":\"/content/dam/common/en/movies/qa587-main\",\"movieId\":\"qa587-main\",\"movieTitle\":\"QA587 main movie\",\"searchKeywords\":null,\"description\":{\"plaintext\":\"QA587 line1 \\nQA587 line2\"},\"isUnavailable\":null,\"sortOrder\":0.0,\"publishDate\":\"2026-10-20\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3"
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:40:08.262Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:40:08.265Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  },
+  {
+   "id": "ja-05",
+   "lang": "ja",
+   "utc": "2026-10-24T05:40:37.706Z",
+   "document_status": 200,
+   "document_x_cache": "MISS, HIT, HIT",
+   "title": "動画 検索・一覧",
+   "card_count": 6,
+   "unable_to_load": false,
+   "duration_ms": 4131,
+   "requests": [
+    {
+     "url": "https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-video-list;folder=/content/dam/dsr/ja/movies/standard/;cb=1792820437904",
+     "method": "GET",
+     "resourceType": "fetch",
+     "status": 200,
+     "x_cache": "MISS",
+     "age": "0",
+     "cdn_cache_control": null,
+     "cache_control": "max-age=60, public, s-maxage=300, stale-while-revalidate=0, stale-if-error=0",
+     "content_type": "application/json",
+     "duration_ms": 1363,
+     "body500": "{\"data\":{\"related\":{\"items\":[{\"_path\":\"/content/dam/dsr/ja/movies/standard/filtered\",\"isActive\":true,\"isBoothLimited\":false,\"movie\":{\"_path\":\"/content/dam/common/ja/movies/dm-movie-2\",\"movieId\":\"FILTERED\",\"movieTitle\":\"DM_movie_テスト名\",\"searchKeywords\":\"テスト\",\"description\":{\"plaintext\":\"DM_movie_テスト説明文\"},\"isUnavailable\":null,\"sortOrder\":1.0,\"publishDate\":\"2026-09-03\",\"updateDate\":null,\"thumbnail\":{\"_dynamicUrl\":\"/adobe/dynamicmedia/deliver/dm-aid--9eaaebaa-d69e-48e3-927c-d8f72f73ca3f/image_7.jpg\",\""
+    }
+   ],
+   "failed": false,
+   "console_errors": [
+    "[2026-10-24T05:40:37.910Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:40:37.910Z] error: Failed to load resource: the server responded with a status of 404 ()",
+    "[2026-10-24T05:40:37.924Z] error: Failed to load resource: the server responded with a status of 404 ()"
+   ]
+  }
+ ],
+ "finished": "2026-10-24T05:41:07.673Z",
+ "summary": {
+  "en_loads": 20,
+  "en_failed": 0,
+  "ja_loads": 5,
+  "ja_failed": 0
+ }
+}
