@@ -1,0 +1,153 @@
+{
+ "job": "JOB-20261024-06",
+ "agent": "claude-code",
+ "us": "DSR-671",
+ "env": "dev",
+ "started": "2026-10-24T04:17:46Z",
+ "finished": "2026-10-24T04:23:35Z",
+ "status": "done",
+ "tests": [
+  {
+   "tc": "DSR-671 1.0",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked-by Author cookie (HTTP 401) – Author model TC skipped (cookie)",
+   "raw": "GET /adobe/sites/cf/models → HTTP 401 (04:17Z)",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 2.0",
+   "lang": "ja",
+   "result": "pass",
+   "raw": "200, errors none; hubspotFormId=null, promoText={plaintext:null, html:null}",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 2.0",
+   "lang": "en",
+   "result": "pass",
+   "raw": "200, errors none; hubspotFormId=null, promoText={plaintext:null, html:null}",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 3.0",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked-by TD-671-03 (no data on DEV) – dsr-catalog-page;path=/content/dam/dsr/en/catalogs/qa671-cat returns no item",
+   "raw": "{\"inactive\":{\"items\":[]},\"related\":{\"items\":[]}}; /en/library/catalog/qa671-cat 404",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 6.0",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked-by TD-671-01 (no data on DEV) – dsr-product-page;path=/content/dam/dsr/en/products/990671001 returns no item",
+   "raw": "related.items=[]; /en/products/990671001 404",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 7.0",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked-by Author cookie (HTTP 401) – Author model TC skipped (cookie) (model part)",
+   "raw": "HTTP 401",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 7.0",
+   "lang": "ja",
+   "result": "pass",
+   "raw": "8 products (dsr-product-list ja) → dsr-product-page 200, errors null, key relatedMoodboards absent",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 7.0",
+   "lang": "en",
+   "result": "pass",
+   "raw": "4 products (dsr-product-list en) → dsr-product-page 200, errors null, key relatedMoodboards absent",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 8.0",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked-by Author cookie (HTTP 401) – Author model TC skipped (cookie)",
+   "raw": "HTTP 401; rootPath exposure by CF OpenAPI not checked",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 11.0",
+   "lang": "ja",
+   "result": "pass",
+   "raw": "product 8 / catalog 15 / video 7 items: 0 mismatches; null ref (raw only): dsr/ja/products/990586009",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 11.0",
+   "lang": "en",
+   "result": "fail",
+   "error": "2 mismatches: dsr/en/movies/standard/qa501-main-a|b → /content/dam/ykk/common/product-cf/test/qa501-main-a|b",
+   "evidence": null,
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 20,
+   "raw": "product 4 / catalog 16 / video 30 items; mismatches qa501-main-a, qa501-main-b (legacy pre-overlay folder); null ref (raw only): dsr/en/catalogs/qa654-content-unpub, dsr/en/movies/standard/qa587-unavail"
+  },
+  {
+   "tc": "DSR-671 12.0",
+   "lang": "-",
+   "result": "skip",
+   "error": "Blocked-by Author cookie (HTTP 401) – Author model TC skipped (cookie)",
+   "raw": "HTTP 401",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 14.0",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked-by TD-671-01 (no data on DEV) – dsr-product-page;path=/content/dam/dsr/en/products/990671001 returns no item",
+   "raw": "/en/products/990671001 404",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 15.0",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked-by TD-671-01 (no data on DEV) – dsr-product-page;path=/content/dam/dsr/en/products/990671001 returns no item",
+   "raw": "/en/products/990671001 404",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 16.0",
+   "lang": "en",
+   "result": "skip",
+   "error": "Blocked-by TD-671-02 (no data on DEV) – dsr-product-page;path=/content/dam/dsr/en/products/990671002 returns no item",
+   "raw": "/en/products/990671002 404; oracle /en/products/990586001 200",
+   "evidence": null
+  },
+  {
+   "tc": "DSR-671 17.0",
+   "lang": "ja,en",
+   "result": "pass",
+   "raw": "5 specs (586, 654, 587 + 2 retest): 118 tests, 85 pass / 6 fail / 27 skip; 88 ledger keys, NEW FAIL 0; fails CATOV-001 [ja/en], CATOV-012 [ja/en] already fail in ledger (known data)",
+   "evidence": null
+  }
+ ],
+ "lighthouse": [],
+ "new_fail": [],
+ "code_changes": [
+  "tests/cf-model/DSR-671.cf-align.spec.ts",
+  "fixtures/dsr-671.ts"
+ ],
+ "reports": [
+  "results/DSR-671/DEV/automation-run-20261024.md",
+  "results/DSR-671/DEV/automation-run-20261024-tc170.md"
+ ],
+ "tsc_exit": 0,
+ "ledger": "read only (not updated)",
+ "questions": [],
+ "notes": [
+  "Author cookie 401 → Dat to paste a new login-token before the TD-671 rerun (1.0, 7.0 model, 8.0, 12.0)",
+  "TD-671-01/02/03 absent on DEV → rerun run-only after lane chrome/author seeds them (Mon 26/10)"
+ ]
+}
