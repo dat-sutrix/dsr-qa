@@ -24,7 +24,9 @@ export const td = {
     movieSourceId: 'irFRtAVphCY' as string | null },
   '02': { id: 'qa587-preview', title: 'QA587 preview' },
   '04': { ids: ['QA587_Upper', 'qa587_upper'] },
-  '05': { id: 'qa587-sub', subfolder: 'qa587', legacyId: 'qa501-main-a' },
+  // JOB-20261024-02: legacyId 'qa501-main-a' removed – that movie moved to movies/standard and is now 200 (JOB-20261023-19).
+  // The flat id of the subfolder CF (qa587-sub → 404, JOB-20261023-19 raw data) keeps the TC purpose.
+  '05': { id: 'qa587-sub', subfolder: 'qa587' },
   '06': { id: 'qa587-commune-only' },
   '07': { id: 'qa587-inactive' },
   '08': { id: 'qa587-unavail' },

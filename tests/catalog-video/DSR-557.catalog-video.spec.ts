@@ -4,7 +4,8 @@ import { CatalogDetailPage } from '../../pages/CatalogDetailPage';
 import { VideoPlayerPage } from '../../pages/VideoPlayerPage';
 import { viewports, languages, type Language, catalogPath, videoPath, videoHosts, youtubeVideos, damVideos, embedDomains, playerRequests, facadeThumbnails, embedSrc, youkuVideos, youkuEmbedSrc, youkuFrameHost, cnSwitchPending, expectedLabel, today, qa190, core, type CoreKey, coreItem, contentCfPath, oldFolder, type CatalogItem, listBlocked, detailPath } from '../../fixtures/dsr-557';
 
-test.use({ viewport: viewports.PC });
+// JOB-20261024-02: browser TZ pinned to JST so the page's "today" matches fixtures today() (Asia/Tokyo).
+test.use({ viewport: viewports.PC, timezoneId: 'Asia/Tokyo' });
 const observations: Record<string, unknown>[] = [];
 test.beforeEach(() => { observations.length = 0; });
 test.afterEach(async ({}, info) => {

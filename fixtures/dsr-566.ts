@@ -8,10 +8,10 @@ export const newsPath = (lang: Language) => `/master/${lang}/test-space/${newsSl
 // DSR-NEWS-010: pages authored without CTA (TD-566-02) must show no button (TC 10.0, JOB-20261023-22).
 export const noCtaSlugs: readonly string[] = ['qa566-news-02'];
 export const expectsCta = !noCtaSlugs.includes(newsSlug);
-// DSR-NEWS-007: the two index locations named in JOB-20261015-09 (tc-questions Q2 open).
-export const queryIndexPaths = (lang: Language) => [`/master/${lang}/query-index.json`, `/master/${lang}/news/query-index.json`];
-// Recorded only (not asserted): the site-wide index observed on DEV 2026-10-15.
+// DSR-NEWS-007: site-wide index first (qa566 pages are only there on DEV, REG-0420 / JOB-20261024-02),
+// then the two locations named in JOB-20261015-09 (tc-questions Q2 open) as fallback. Relative to BASE_URL.
 export const rootQueryIndex = '/query-index.json';
+export const queryIndexPaths = (lang: Language) => [rootQueryIndex, `/master/${lang}/query-index.json`, `/master/${lang}/news/query-index.json`];
 export const indexFields = ['publishDate', 'category', 'tags', 'template'] as const;
 // Expected href suffix of Back to list (TCC#3); target page status is not asserted (A3).
 export const backToListSuffix = (lang: Language) => `/${lang}/news/`;

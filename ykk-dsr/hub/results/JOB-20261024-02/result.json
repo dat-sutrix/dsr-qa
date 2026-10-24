@@ -1,0 +1,103 @@
+{
+  "job": "JOB-20261024-02",
+  "agent": "claude-code",
+  "us": "DSR-587 / DSR-557 / DSR-566",
+  "env": "dev",
+  "started": "2026-10-24T00:57:24Z",
+  "finished": "2026-10-24T00:57:40Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "DSR-VOV-005",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-018",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-019",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-CATV-020",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    },
+    {
+      "tc": "DSR-NEWS-007",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "",
+      "cause": "none"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/dsr-587.ts",
+    "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "fixtures/dsr-566.ts",
+    "tests/news-detail/DSR-566.news-detail.spec.ts"
+  ],
+  "run_report": "results/DSR-587/DEV/automation-run-20261024-job02.md",
+  "tsc": "exit 0, no errors",
+  "questions": []
+}

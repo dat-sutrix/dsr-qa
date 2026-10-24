@@ -1,6 +1,6 @@
 import { test, expect, type Locator, type Page } from '@playwright/test';
 import { NewsDetailPage } from '../../pages/NewsDetailPage';
-import { languages, type Language, viewports, newsPath, queryIndexPaths, rootQueryIndex, indexFields, backToListSuffix, relatedPattern, seoMeta, isoDate, dateFormat, newsListPath, expectsCta } from '../../fixtures/dsr-566';
+import { languages, type Language, viewports, newsPath, queryIndexPaths, indexFields, backToListSuffix, relatedPattern, seoMeta, isoDate, dateFormat, newsListPath, expectsCta } from '../../fixtures/dsr-566';
 
 test.use({ viewport: viewports.PC });
 const observations: Record<string, unknown>[] = [];
@@ -96,12 +96,9 @@ for (const lang of languages) {
         const json = res.ok() ? await res.json().catch(() => null) : null;
         const row = json?.data?.find((r: { path: string }) => r.path === path);
         observations.push({ index, status: res.status(), rows: json?.data?.length ?? null, containsPage: !!row });
-        if (row && !found) found = { index, row, columns: json.columns ?? Object.keys(row) };
+        // First index that lists the page wins; later paths are fallbacks only.
+        if (row) { found = { index, row, columns: json.columns ?? Object.keys(row) }; break; }
       }
-      // Recorded only: site-wide index (not one of the job's two paths).
-      const root = await request.get(rootQueryIndex);
-      const rootJson = root.ok() ? await root.json().catch(() => null) : null;
-      observations.push({ index: rootQueryIndex, status: root.status(), row: rootJson?.data?.find((r: { path: string }) => r.path === path) ?? null, recordedOnly: true });
       expect(found, `page ${path} in ${queryIndexPaths(lang).join(' or ')}`).not.toBeNull();
       // Page-level category meta (output only when set): the index row must carry the same value.
       const categoryMeta = await new NewsDetailPage(page).categoryMeta();

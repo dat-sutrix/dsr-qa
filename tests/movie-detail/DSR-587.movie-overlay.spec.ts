@@ -152,7 +152,8 @@ test.describe('DSR-587 movie detail overlay', () => {
 
   test('DSR-VOV-005 [en] CF related in subfolder / outside /content/dam/dsr → 404', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
     test.skip(!seeded('05'), `${notSeeded('05')} (negative TC: confirm via DSR587_SEEDED)`);
-    for (const id of [td['05'].id, td['05'].legacyId]) expect.soft((await status(request, url(videoPath('en', id)))).status(), id).toBe(404);
+    const id = td['05'].id;
+    expect.soft((await status(request, url(videoPath('en', id)))).status(), id).toBe(404);
   });
 
   test('DSR-VOV-006 [en] CF commune alone → 404 on .aem.page and .aem.live', { tag: ['@overlay', '@auto'] }, async ({ request }) => {
