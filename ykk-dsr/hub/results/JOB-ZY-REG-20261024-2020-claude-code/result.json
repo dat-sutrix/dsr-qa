@@ -1,0 +1,2871 @@
+{
+ "job": "JOB-ZY-REG-20261024-2020-claude-code",
+ "agent": "claude-code",
+ "us": "Regression S12 R3 full P1 + P2 + REG-VOV-EN capture-on-fail",
+ "env": "dev",
+ "started": "2026-10-24T13:24:11Z",
+ "finished": "2026-10-24T13:45:16Z",
+ "status": "done",
+ "runs": {
+  "overlay": {
+   "tests": 257,
+   "pass": 208,
+   "fail": 8,
+   "skip": 41,
+   "flaky": 0,
+   "exit": 1
+  },
+  "p1_p2_non_overlay_auto": {
+   "tests": 157,
+   "pass": 82,
+   "fail": 32,
+   "skip": 43,
+   "flaky": 0,
+   "exit": 1
+  },
+  "smoke_664_173_untagged": {
+   "tests": 47,
+   "pass": 13,
+   "fail": 5,
+   "skip": 29,
+   "flaky": 0,
+   "exit": 1
+  }
+ },
+ "new_fail": [],
+ "ledger_status_changes": [],
+ "tests": [
+  {
+   "tc": "DSR-501-P2",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "error": "Error: expect(locator).toBeVisible() failed  Locator: getByTestId('movie-detail-related-content') Expected: visible Timeout: 5000ms Error: element(s) not found  Call log:   - Expect \"toBeVisible\" getB",
+   "evidence": "evidence/DSR-501-P2_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 10,
+   "note": "pre-existing (IDLE-30/35/39, REG-1200): qa501-* not re-seeded after overlay merge",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-501-P2 (retest-DSR-647)",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.overlay-retest-DSR-647.spec.ts"
+  },
+  {
+   "tc": "DSR-501-P3",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "error": "Error: expect(locator).toBeVisible() failed  Locator: getByTestId('movie-detail-related-content') Expected: visible Timeout: 5000ms Error: element(s) not found  Call log:   - Expect \"toBeVisible\" getB",
+   "evidence": "evidence/DSR-501-P3_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 10,
+   "note": "pre-existing (IDLE-30/35/39, REG-1200): qa501-* not re-seeded after overlay merge",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-501-P3 (retest-DSR-647)",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.overlay-retest-DSR-647.spec.ts"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/movie-detail/DSR-587.related-links-retest-DSR-538.spec.ts"
+  },
+  {
+   "tc": "DSR-538-retest",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 2,
+   "spec": "tests/movie-detail/DSR-587.related-links-retest-DSR-538.spec.ts",
+   "skip_reason": "No related card on qa587-main (TD-587-01 has no related content) – nothing to check"
+  },
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-010",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-011",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: category tag IDs  expect(received).toHaveLength(expected)  Expected length: 2 Received length: 1 Received array:  [\"product\"]",
+   "evidence": "evidence/DSR-ARTICLE-012_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (JOB-23-06, IDLE-39): meta category has 1 tag ID [\"product\"], expected 2",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-012",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: category tag IDs  expect(received).toHaveLength(expected)  Expected length: 2 Received length: 1 Received array:  [\"product\"]",
+   "evidence": "evidence/DSR-ARTICLE-012_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (JOB-23-06, IDLE-39): meta category has 1 tag ID [\"product\"], expected 2",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-014",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-015",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-020",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: viewAllStories href  expect(received).not.toMatch(expected)  Expected pattern: not /^(#?)$/ Received string:      \"#\"",
+   "evidence": "evidence/DSR-ARTICLE-024_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 50,
+   "note": "known (IDLE-35/39): VIEW ALL STORIES href \"#\"",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-024",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "error": "Error: viewAllStories href  expect(received).not.toMatch(expected)  Expected pattern: not /^(#?)$/ Received string:      \"#\"",
+   "evidence": "evidence/DSR-ARTICLE-024_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 50,
+   "note": "known (IDLE-35/39): VIEW ALL STORIES href \"#\"",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ARTICLE-025",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "skip_reason": "blocked-data: no stories query-index returns 200 (/en/stories/query-index.json, /master/en/stories/query-index.json, /master/en/library/article/stories/query-index.json)"
+  },
+  {
+   "tc": "DSR-ARTICLE-026",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts",
+   "skip_reason": "blocked-data: no stories query-index returns 200 (/ja/stories/query-index.json, /master/ja/stories/query-index.json, /master/ja/library/article/stories/query-index.json)"
+  },
+  {
+   "tc": "DSR-ARTICLE-028",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-028",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-ARTICLE-029",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/article-detail/DSR-529.article-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-010",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-010",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-011",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-015",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-022",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "DSR-575 Q5 (SP display)"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-025",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-027",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-028",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-029",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "Run on STG (Lighthouse)"
+  },
+  {
+   "tc": "DSR-BREAD-030",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "DSR-536 / movie-detail placement"
+  },
+  {
+   "tc": "DSR-BREAD-031",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-BREAD-033",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "Layout tickets"
+  },
+  {
+   "tc": "DSR-BREAD-034",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts",
+   "skip_reason": "DSR-536 / movie-detail placement"
+  },
+  {
+   "tc": "DSR-BREAD-035",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/breadcrumb/DSR-552.breadcrumb.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-007",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "error": "Error: gated PDF URL delivered to the browser before submit  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 3  - Array [] + Array [ +   \"dsr-catalog-list response: ",
+   "evidence": "evidence/DSR-CATDL-007_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known: draft BUG-CAT-PDF-EXPOSE (DASHBOARD 🐞); DSR-655 Y4 client question",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATDL-010",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "skip_reason": "cn: no /master/cn (Issue #18)"
+  },
+  {
+   "tc": "DSR-CATDL-016",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "error": "Error: fixed texts containing Japanese  expect(received).toEqual(expected) // deep equality  - Expected  -  1 + Received  + 44  - Array [] + Array [ +   \"必須 + 氏名（姓）\", +   \"必須 + 氏名（名）\", +   \"必須 + メールアド",
+   "evidence": "evidence/DSR-CATDL-016_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known: draft BUG-CAT-FORM-EN (DASHBOARD 🐞)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATDL-017",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts",
+   "skip_reason": "no catalog-ID mechanism on DEV yet: \"catalog pdf form\" card href carries no catalog id (requiresForm=true); overlay detail is /{lang}/library/catalog/{id} (path, not query)"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATDL-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-download/DSR-570.catalog-download.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: expect(locator).toHaveText(expected) failed  Locator:  locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Received: \"catalog pdf form\" Timeout:",
+   "evidence": "evidence/DSR-CATOV-001_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: -form CF titles are dev samples (\"catalog pdf form\" / \"catalog ebook form\")",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-001",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: expect(locator).toHaveText(expected) failed  Locator:  locator('main .catalog-detail').locator('.catalog-detail-title') Expected: \"QA190 PDF form required\" Received: \"catalog pdf form\" Timeout:",
+   "evidence": "evidence/DSR-CATOV-001_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: -form CF titles are dev samples (\"catalog pdf form\" / \"catalog ebook form\")",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 20,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 14,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-006",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "skip_reason": "TD-654-03 exists in en only (A7)"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-009",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-010",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-011",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: card 'QA190 PDF catalog'  expect(locator).toBeVisible() failed  Locator: locator('main a[href]').filter({ hasText: 'QA190 PDF catalog' }).first() Expected: visible Timeout: 5000ms Error: elemen",
+   "evidence": "evidence/DSR-CATOV-012_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: no list card 'QA190 PDF catalog' (TD-190 title not seeded)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-012",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "error": "Error: card 'QA190 PDF catalog'  expect(locator).toBeVisible() failed  Locator: locator('main a[href]').filter({ hasText: 'QA190 PDF catalog' }).first() Expected: visible Timeout: 5000ms Error: elemen",
+   "evidence": "evidence/DSR-CATOV-012_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 0,
+   "note": "known: no list card 'QA190 PDF catalog' (TD-190 title not seeded)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-CATOV-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-015",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "skip_reason": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+  },
+  {
+   "tc": "DSR-CATOV-018",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+   "skip_reason": "Pending (A5): form shown for e-book + requiresForm ON; DSR-655 Y3 open, default = no form"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATOV-021",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 4,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-006",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-012",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-CATV-020",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/catalog-video/DSR-557.catalog-video.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-001",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-002",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-002",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-004",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-004",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-005",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-005",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "error": "Error: tag label  expect(locator).not.toBeEmpty() failed  Locator: locator('main').locator('.hero, [class*=\"hero\"]').first().locator('[class*=\"tag\"]').first() Expected: not empty Timeout: 5000ms Error",
+   "evidence": "evidence/DSR-ECO-005_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ECO-006",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "error": "Error: free area text  expect(locator).not.toBeEmpty() failed  Locator: locator('main').locator('[class*=\"free\"], .default-content-wrapper').first() Expected: not empty Timeout: 5000ms Error: element(",
+   "evidence": "evidence/DSR-ECO-006_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 30,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ECO-007",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-007",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-009",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-010",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "DSR-590 page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-010",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "demo data (Ngọc 21/10)"
+  },
+  {
+   "tc": "DSR-ECO-012",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "cn",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "cn: no /master/cn on DEV (Issue #18)"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts",
+   "skip_reason": "en demo page not on DEV"
+  },
+  {
+   "tc": "DSR-ECO-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/eco-products/DSR-590.eco-products.spec.ts"
+  },
+  {
+   "tc": "DSR-ICON-001",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-001",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-002",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-002",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-003",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-003",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-004",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run"
+  },
+  {
+   "tc": "DSR-ICON-004",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: DSR-589 icon replacement not delivered (To Do – Martin); set DSR589_REPLACED=1 to run"
+  },
+  {
+   "tc": "DSR-ICON-005",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "Blocked: TD-589-04 official icon list"
+  },
+  {
+   "tc": "DSR-ICON-006",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "error": "Error: console errors  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 3  - Array [] + Array [ +   \"Failed to load resource: the server responded with a status of 40",
+   "evidence": "evidence/DSR-ICON-006_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "pre-existing (IDLE-35/39, REG-1200): console \"Failed to load resource\"",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ICON-006",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "error": "Error: console errors  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 3  - Array [] + Array [ +   \"Failed to load resource: the server responded with a status of 40",
+   "evidence": "evidence/DSR-ICON-006_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "pre-existing (IDLE-35/39, REG-1200): console \"Failed to load resource\"",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-ICON-007",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "blocked-data: TD-589-02 product with 0 function values not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-ICON-008",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "blocked-data: TD-589-03 product with the most function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-ICON-009",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "blocked-data: TD-589-01 product with ≥ 3 function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-ICON-009",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/icons/DSR-589.icons.spec.ts",
+   "skip_reason": "blocked-data: TD-589-01 product with ≥ 3 function icons not identified (product detail /{lang}/products/{id} HTTP 404 on DEV)"
+  },
+  {
+   "tc": "DSR-MOVIE-001",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-002",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-003",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-004",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "M: Universal Editor requires IMS login; manual only"
+  },
+  {
+   "tc": "DSR-MOVIE-005",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-006",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-007",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-008",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-009",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-010",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: URL structure not implemented, DSR-536"
+  },
+  {
+   "tc": "DSR-MOVIE-011",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-012",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-MOVIE-013",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "C: overflow automation deferred; CJK font manual"
+  },
+  {
+   "tc": "DSR-MOVIE-014",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "error": "Error: expect(locator).toBeVisible() failed  Locator: getByTestId('movie-detail-player-facade') Expected: visible Timeout: 5000ms Error: element(s) not found  Call log:   - Expect \"toBeVisible\" getByT",
+   "evidence": "evidence/DSR-MOVIE-014_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 20,
+   "note": "pre-existing (IDLE-39, REG-1200): legacy DSR-173 test page",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-MOVIE-015",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "C: iframe source automation deferred; playback manual"
+  },
+  {
+   "tc": "DSR-MOVIE-016",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: movie-detail-player-video not implemented, DAM test data pending"
+  },
+  {
+   "tc": "DSR-MOVIE-017",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: movie-detail-player-video not implemented, DAM test data pending"
+  },
+  {
+   "tc": "DSR-MOVIE-018",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: test data pending (docs/DSR-173/test-data.md); Issue #12"
+  },
+  {
+   "tc": "DSR-MOVIE-019",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "C: layout automation deferred; in-iframe error manual"
+  },
+  {
+   "tc": "DSR-MOVIE-020",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "Issue #1: related products specification pending"
+  },
+  {
+   "tc": "DSR-MOVIE-021",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "Test data pending: RELATED_SORT.path.en, RELATED_SORT.expectedOrder"
+  },
+  {
+   "tc": "DSR-MOVIE-022",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: test data pending (docs/DSR-173/test-data.md)"
+  },
+  {
+   "tc": "DSR-MOVIE-023",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "Test data pending: RELATED_FILTERED.path.en, RELATED_FILTERED.expectedOrder, RELATED_FILTERED.excludedTitles"
+  },
+  {
+   "tc": "DSR-MOVIE-024",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: test data pending (docs/DSR-173/test-data.md)"
+  },
+  {
+   "tc": "DSR-MOVIE-025",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "Test data pending: RELATED_6.path.en"
+  },
+  {
+   "tc": "DSR-MOVIE-026",
+   "lang": "-",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "error": "Error: Related card 1 thumbnail  expect(locator).toBeVisible() failed  Locator: getByTestId('related-content-card').first().getByTestId('related-content-card-image') Expected: visible Timeout: 1000ms ",
+   "evidence": "evidence/DSR-MOVIE-026_-.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 60,
+   "note": "known bug DSR-538 (@known-bug-DSR-538)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-MOVIE-027",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-MOVIE-028",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "Description line-break separator is unconfirmed"
+  },
+  {
+   "tc": "DSR-MOVIE-029",
+   "lang": "-",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-MOVIE-030",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "M: SNS debuggers need login and public URL; manual only"
+  },
+  {
+   "tc": "DSR-MOVIE-031",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: page auto-generation not implemented"
+  },
+  {
+   "tc": "DSR-MOVIE-032",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: ja/zh pages not available"
+  },
+  {
+   "tc": "DSR-MOVIE-033",
+   "lang": "-",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "error": "Error: expect(locator).toBeVisible() failed  Locator: getByTestId('movie-detail-player') Expected: visible Timeout: 5000ms Error: element(s) not found  Call log:   - Expect \"toBeVisible\" getByTestId('",
+   "evidence": "evidence/DSR-MOVIE-033_-.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 20,
+   "note": "pre-existing (IDLE-39, REG-1200): legacy DSR-173 test page",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-MOVIE-034",
+   "lang": "-",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-MOVIE-035",
+   "lang": "-",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts",
+   "skip_reason": "B: SP design pending"
+  },
+  {
+   "tc": "DSR-MOVIE-036",
+   "lang": "-",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-173.movie-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-002",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "error": "Error: required elements missing  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 3  - Array [] + Array [ +   \"backToList\", + ]",
+   "evidence": "evidence/DSR-NEWS-002_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known (REG-0420 baseline): required element backToList missing = DASHBOARD 🐞 NEWS-BACK (70%)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-NEWS-002",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "error": "Error: required elements missing  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 3  - Array [] + Array [ +   \"backToList\", + ]",
+   "evidence": "evidence/DSR-NEWS-002_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known (REG-0420 baseline): required element backToList missing = DASHBOARD 🐞 NEWS-BACK (70%)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-NEWS-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-004",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-006",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "error": "Error: Back to list link  expect(locator).toHaveCount(expected) failed  Locator:  locator('main').getByRole('link', { name: /back to list|一覧へ戻る/i }) Expected: 1 Received: 0 Timeout:  5000ms  Call log:",
+   "evidence": "evidence/DSR-NEWS-006_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known (REG-0420 baseline): no Back to list / 一覧へ戻る link = DASHBOARD 🐞 NEWS-BACK (70%)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-NEWS-006",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "error": "Error: Back to list link  expect(locator).toHaveCount(expected) failed  Locator:  locator('main').getByRole('link', { name: /back to list|一覧へ戻る/i }) Expected: 1 Received: 0 Timeout:  5000ms  Call log:",
+   "evidence": "evidence/DSR-NEWS-006_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 70,
+   "note": "known (REG-0420 baseline): no Back to list / 一覧へ戻る link = DASHBOARD 🐞 NEWS-BACK (70%)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-NEWS-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-008",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "skip_reason": "TC 8.0 is ja only"
+  },
+  {
+   "tc": "DSR-NEWS-008",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "skip_reason": "Blocked – page under test is not under /ja/news/ (needs TD-566-03)"
+  },
+  {
+   "tc": "DSR-NEWS-009",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-010",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-010",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-012",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "error": "Error: My List button  expect(locator).toBeVisible() failed  Locator: locator('main').locator('.article-meta.block').getByRole('button', { name: /my ?list|マイリスト/i }) Expected: visible Timeout: 5000ms ",
+   "evidence": "evidence/DSR-NEWS-012_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 15,
+   "note": "known (REG-0420 baseline): My List/share hidden = DASHBOARD NEWS-012 (no-mylist no-share option, 15% data)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-NEWS-012",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts",
+   "error": "Error: My List button  expect(locator).toBeVisible() failed  Locator: locator('main').locator('.article-meta.block').getByRole('button', { name: /my ?list|マイリスト/i }) Expected: visible Timeout: 5000ms ",
+   "evidence": "evidence/DSR-NEWS-012_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 15,
+   "note": "known (REG-0420 baseline): My List/share hidden = DASHBOARD NEWS-012 (no-mylist no-share option, 15% data)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-NEWS-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-NEWS-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/news-detail/DSR-566.news-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-001",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-002",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-003",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-004",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-005",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-02; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-006",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 + chain-type tag namespace; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-008",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + template revision (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-009",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-010",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-03 + import procedure (Q28); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-011",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-04; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-012",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: Author UI (A5, agents read-only, no Author access); TD-585-01 en/cn copies; cn folder may not exist (Issue #18); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-013",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-014",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-560/182 search JSON (Nakamoto); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-015",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DSR-586 overlay; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-016",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 is ja only; DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-018",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts",
+   "skip_reason": "Blocked: TD-585-01 not seeded (DSR585_SEEDED); DM_product ver0.4 finished on DEV (Martin done ping) + TD-585 seed (QA-PT)"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PCF-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-cf/DSR-585.product-cf.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-002",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-005",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-006",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "TD-586-06 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-007",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "TD-586-07 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-011",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "TD-586-11 not seeded (negative TC: confirm via DSR586_SEEDED)"
+  },
+  {
+   "tc": "DSR-PDO-012",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-013",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-014",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-017",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-019",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PDO-020",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts",
+   "skip_reason": "Blocked: no design for ver0.4 new fields (Figma B04 – Q29); current state recorded: rendered none"
+  },
+  {
+   "tc": "DSR-PDO-021",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-detail/DSR-586.product-detail.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Error: 320: cards overflowing their column  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 6  - Array [] + Array [ +   \"\", +   \"\", +   \"\", +   \"\", + ]",
+   "evidence": "evidence/DSR-PLSP-002_en.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 SP 2-column dismissed Not a bug 23/10 (KNOWN-FACTS) → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-002",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Error: 320: cards overflowing their column  expect(received).toEqual(expected) // deep equality  - Expected  - 1 + Received  + 8  - Array [] + Array [ +   \"\", +   \"\", +   \"\", +   \"\", +   \"\", +   \"\", +",
+   "evidence": "evidence/DSR-PLSP-002_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 SP 2-column dismissed Not a bug 23/10 (KNOWN-FACTS) → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-003_en.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-003",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-003_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-004",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts"
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-005_en.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PLSP-005",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list-sp.spec.ts",
+   "error": "Test timeout of 30000ms exceeded.",
+   "evidence": "evidence/DSR-PLSP-005_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-001",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: 375: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 2 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-001_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-002",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: 320: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 2 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-002_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "skip_reason": "blocked-data: TD-583-01 page missing (/master/en/test-space/product-list and /master/en/product-list HTTP 404)"
+  },
+  {
+   "tc": "DSR-PRODLIST-003",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: open: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 2 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-003_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; DSR-583 dismissed Not a bug 23/10 → Expected outdated",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-004",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "error": "Error: 1440: distinct column offsets  expect(received).toBe(expected) // Object.is equality  Expected: 4 Received: 1",
+   "evidence": "evidence/DSR-PRODLIST-004_ja.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 10,
+   "note": "known; column-offset check returns 1 at 1440 (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-PRODLIST-005",
+   "lang": "ja",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/product-list/DSR-583.product-list.spec.ts",
+   "skip_reason": "blocked-data: TD-583-02 no filter on page (no 1-/3-result filter combination available)"
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: text/background colour changes on hover  expect(received).not.toEqual(expected) // deep equality  Expected: not [] ",
+   "evidence": "evidence/DSR-TOP-004_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-004",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: text/background colour changes on hover  expect(received).not.toEqual(expected) // deep equality  Expected: not [] ",
+   "evidence": "evidence/DSR-TOP-004_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"})  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false",
+   "evidence": null,
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39) (PNG left out for the 5 MB evidence cap)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-005",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: card 1 border-radius > 0 (card/media/img: {\"card\":\"0px\",\"media\":\"0px\",\"img\":\"0px\"})  expect(received).toBe(expected) // Object.is equality  Expected: true Received: false",
+   "evidence": "evidence/DSR-TOP-005_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: page requests /en/news/query-index.json  expect(received).toContain(expected) // indexOf  Expected value: \"/en/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "evidence": "evidence/DSR-TOP-006_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-006",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: page requests /ja/news/query-index.json  expect(received).toContain(expected) // indexOf  Expected value: \"/ja/news/query-index.json\" Received array: [\"/query-index.json\"]",
+   "evidence": "evidence/DSR-TOP-006_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "en",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: SP item 1 title lines ≤ 1  expect(received).toBeLessThanOrEqual(expected)  Expected: <= 1 Received:    2",
+   "evidence": "evidence/DSR-TOP-007_en.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-007",
+   "lang": "ja",
+   "result": "fail",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts",
+   "error": "Error: SP item 1 title lines ≤ 1  expect(received).toBeLessThanOrEqual(expected)  Expected: <= 1 Received:    2",
+   "evidence": "evidence/DSR-TOP-007_ja.png",
+   "suspect": "product",
+   "cause": "none",
+   "confidence": 40,
+   "note": "known (IDLE-35/39)",
+   "new_fail": false
+  },
+  {
+   "tc": "DSR-TOP-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-TOP-008",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-TOP-009",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-TOP-009",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/top/DSR-609.top.spec.ts"
+  },
+  {
+   "tc": "DSR-VCAP-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+  },
+  {
+   "tc": "DSR-VCAP-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+  },
+  {
+   "tc": "DSR-VCAP-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+  },
+  {
+   "tc": "DSR-VCAP-004",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/video-block/DSR-664.video-caption-null.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-001",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-002",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 27,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-003",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 5,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-004",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-04 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-005",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-05 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-006",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-06 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-007",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-008",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 3,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-010",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-10 not seeded (negative TC: confirm via DSR587_SEEDED)"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-011",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 2,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-013",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-014",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-015",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-016",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "TD-587-14 update dates not recorded (fixtures/dsr-587.ts expectedOrderByUpdateDesc)"
+  },
+  {
+   "tc": "DSR-VOV-017",
+   "lang": "en",
+   "result": "skip",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+   "skip_reason": "DSR173_MOVIE_PATH / DSR173_RELATED_PATH not set to the TD-587-01 / 14 pages (now /master/en/test-space/dsr-173-video-detail / null); run DSR-173 Group A with them"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "en",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "DSR-VOV-018",
+   "lang": "ja",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/movie-detail/DSR-587.movie-overlay.spec.ts"
+  },
+  {
+   "tc": "SMOKE-001 DSR-173 test page is reachable",
+   "lang": "-",
+   "result": "pass",
+   "subcases": 1,
+   "spec": "tests/smoke.spec.ts"
+  }
+ ],
+ "observations": "observations.json + summary.md §Observations (no verdict)",
+ "code_changes": [],
+ "reports": [
+  "results/REGRESSION/DEV/automation-run-20261024-reg2020.md"
+ ],
+ "graphql_capture": {
+  "count": 0,
+  "note": "test-results/graphql-capture/ not created after the runs (13:45Z); no folder copied"
+ },
+ "ledger": "ykk-dsr/hub/results/REGRESSION/ledger.json",
+ "tsc_exit": 0,
+ "questions": []
+}
