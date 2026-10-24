@@ -1,0 +1,30 @@
+[
+  {
+    "at": "2026-10-24T10:16:29.231Z",
+    "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/article/stories/qa529-02",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "profileAssets": [
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js",
+        "status": 200,
+        "lastModified": "Tue, 08 Sep 2026 11:14:30 GMT",
+        "source": "direct GET",
+        "at": "2026-10-24T10:16:53.012Z"
+      },
+      {
+        "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+        "status": 200,
+        "lastModified": "Fri, 18 Sep 2026 01:32:54 GMT",
+        "source": "direct GET",
+        "at": "2026-10-24T10:16:53.592Z"
+      }
+    ],
+    "status": 404,
+    "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/article/stories/qa529-02",
+    "screenshot": "captures/capture-2026-10-24T10-16-29-231Z.png",
+    "result": "blocked"
+  }
+]

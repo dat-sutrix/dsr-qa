@@ -1,0 +1,40 @@
+{
+  "job": "JOB-ZZ-IDLE-46",
+  "agent": "codex",
+  "us": "Visual baseline + Lighthouse DEV (weekend idle)",
+  "env": "dev",
+  "started": "2026-10-24T10:16:29.231Z",
+  "finished": "2026-10-24T10:17:17.006505+00:00",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "VISUAL-LIGHTHOUSE",
+      "lang": "ja/en",
+      "result": "skip",
+      "error": "Latest Codex regression finished less than 2 hours ago",
+      "evidence": "",
+      "suspect": "env"
+    },
+    {
+      "tc": "DSR-678-observation",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "Requested article returned HTTP 404; no fix conclusion",
+      "evidence": "captures/capture-2026-10-24T10-16-29-231Z.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "ykk-dsr/hub/results/JOB-ZZ-IDLE-46/watch.cjs",
+    "ykk-dsr/hub/results/JOB-ZZ-IDLE-46/watch.sh"
+  ],
+  "questions": [],
+  "watch": {
+    "status": "scheduled; future rounds pending",
+    "deadline": "2026-10-26T02:00:00Z",
+    "intervalHours": 2
+  }
+}
