@@ -1,0 +1,154 @@
+{
+  "job": "JOB-20261024-01",
+  "agent": "claude-code",
+  "us": "DSR-669 / DSR-670 / DSR-671",
+  "env": "dev",
+  "started": "2026-10-24T00:51:03Z",
+  "finished": "2026-10-24T00:55:36Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "670-1-techtalk-page",
+      "lang": "ja",
+      "result": "blocked",
+      "error": "no tech-talk CF on DEV (movies/tech items []); tech-talk URLs 404 live+page",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none"
+    },
+    {
+      "tc": "670-2-dsr-techmovie-page",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "669-1-old-related-queries-unused",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "669-2-new-dsr-queries-200",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-productLabel",
+      "lang": "ja",
+      "result": "skip",
+      "error": "observation: label = \"990586001\", not {productId}｜{productName}; Martin checks 26/10",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-catalog-hubspotFormId-promoText",
+      "lang": "ja",
+      "result": "skip",
+      "error": "observation: both keys present, values null",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-relatedMoodboards-absent",
+      "lang": "ja",
+      "result": "skip",
+      "error": "observation: key absent in all responses",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-isActive-hides-related",
+      "lang": "ja",
+      "result": "skip",
+      "error": "observation: not observable, no product links a catalog/video CF",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none"
+    },
+    {
+      "tc": "670-1-techtalk-page",
+      "lang": "en",
+      "result": "blocked",
+      "error": "no tech-talk CF on DEV (movies/tech items []); tech-talk URLs 404 live+page",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none"
+    },
+    {
+      "tc": "670-2-dsr-techmovie-page",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "669-1-old-related-queries-unused",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "669-2-new-dsr-queries-200",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-productLabel",
+      "lang": "en",
+      "result": "skip",
+      "error": "observation: label = null, not {productId}｜{productName}; Martin checks 26/10",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-catalog-hubspotFormId-promoText",
+      "lang": "en",
+      "result": "skip",
+      "error": "observation: both keys present, values null",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-relatedMoodboards-absent",
+      "lang": "en",
+      "result": "skip",
+      "error": "observation: key absent in all responses",
+      "evidence": "",
+      "cause": "none"
+    },
+    {
+      "tc": "671-isActive-hides-related",
+      "lang": "en",
+      "result": "skip",
+      "error": "observation: not observable, no product links a catalog/video CF",
+      "evidence": "",
+      "suspect": "data",
+      "cause": "none"
+    },
+    {
+      "tc": "LastModified-block-js",
+      "lang": "-",
+      "result": "skip",
+      "error": "observation: catalog-detail.js 22 Oct 01:48:45 GMT; product-detail.js + video-detail.js 23 Oct 07:15:23 GMT",
+      "evidence": "",
+      "cause": "none"
+    }
+  ],
+  "lighthouse": [],
+  "code_changes": [],
+  "questions": []
+}
