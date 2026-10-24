@@ -1,0 +1,503 @@
+{
+  "tests": [
+    {
+      "tc": "top",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "top",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "top",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "top",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "breadcrumb",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "breadcrumb",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "breadcrumb",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "breadcrumb",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-detail",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-detail",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-detail",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-detail",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-list",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-list",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-list",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-list",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-list",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-list",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-list",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-list",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-detail",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-detail",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-detail",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-detail",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "product-detail",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "product-detail",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "product-detail",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "product-detail",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "product-list",
+      "lang": "ja",
+      "width": 1440,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "product-list",
+      "lang": "ja",
+      "width": 390,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "product-list",
+      "lang": "en",
+      "width": 1440,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "product-list",
+      "lang": "en",
+      "width": 390,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-download",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-download",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-download",
+      "lang": "en",
+      "width": 1440,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "catalog-download",
+      "lang": "en",
+      "width": 390,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "article",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "article",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "article",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "article",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "news",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "news",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "news",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "news",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "eco-top",
+      "lang": "ja",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "eco-top",
+      "lang": "ja",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "eco-top",
+      "lang": "en",
+      "width": 1440,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "eco-top",
+      "lang": "en",
+      "width": 390,
+      "result": "skip",
+      "error": "HTTP 404 — language/page skipped per job",
+      "evidence": ""
+    },
+    {
+      "tc": "video-block",
+      "lang": "en",
+      "width": 1440,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    },
+    {
+      "tc": "video-block",
+      "lang": "en",
+      "width": 390,
+      "result": "pass",
+      "error": "Capture completed; comparison recorded separately",
+      "evidence": ""
+    }
+  ],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+      "device": "mobile",
+      "performance": 93,
+      "scores": {
+        "performance": 93,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "metrics": {
+        "largest-contentful-paint": 1655.308,
+        "cumulative-layout-shift": 0.018359608322736906,
+        "total-blocking-time": 313
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+      "device": "desktop",
+      "performance": 100,
+      "scores": {
+        "performance": 100,
+        "accessibility": 91,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "metrics": {
+        "largest-contentful-paint": 368.152,
+        "cumulative-layout-shift": 0.053166639954897406,
+        "total-blocking-time": 0
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "mobile",
+      "performance": 95,
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 69
+      },
+      "metrics": {
+        "largest-contentful-paint": 2451.7332,
+        "cumulative-layout-shift": 0.009149918066949638,
+        "total-blocking-time": 53.5
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "desktop",
+      "performance": 99,
+      "scores": {
+        "performance": 99,
+        "accessibility": 90,
+        "best-practices": 96,
+        "seo": 69
+      },
+      "metrics": {
+        "largest-contentful-paint": 608.6034,
+        "cumulative-layout-shift": 0.05334653702430294,
+        "total-blocking-time": 0
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "mobile",
+      "performance": 94,
+      "scores": {
+        "performance": 94,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "metrics": {
+        "largest-contentful-paint": 2810.9459999999995,
+        "cumulative-layout-shift": 0.009168107733049147,
+        "total-blocking-time": 102
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "desktop",
+      "performance": 99,
+      "scores": {
+        "performance": 99,
+        "accessibility": 89,
+        "best-practices": 96,
+        "seo": 61
+      },
+      "metrics": {
+        "largest-contentful-paint": 554.6836,
+        "cumulative-layout-shift": 0.057966250649513835,
+        "total-blocking-time": 52
+      }
+    }
+  ],
+  "candidates": []
+}

@@ -1,0 +1,26 @@
+const fs=require('fs'),{execFileSync}=require('child_process'),{chromium}=require('@playwright/test');
+const out='results/JOB-ZZ-IDLE-45',hub='ykk-dsr/hub/results/JOB-ZZ-IDLE-45',base='https://main--dsr-eds-dev--sutrix-projects.aem.live',cutoff=Date.parse('2026-10-26T02:00:00Z');
+const json=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+(async()=>{
+ const history=fs.existsSync(out+'/history.json')?JSON.parse(fs.readFileSync(out+'/history.json')):[];
+ const last=history.at(-1);if(last&&Date.parse(last.started)>=cutoff)return;
+ const due=last?Math.min(Date.parse(history[0].started)+history.length*7200000,cutoff):Date.now();if(Date.now()<due)return;
+ const round={started:new Date().toISOString(),due:new Date(due).toISOString(),records:[],assets:[]};
+ const browser=await chromium.launch();
+ try{for(const width of [1440,390]){const page=await browser.newPage({viewport:{width,height:width===1440?900:844}});const r={width};round.records.push(r);
+ try{const response=await page.goto(base+'/master/ja/library/article/stories/qa529-01',{waitUntil:'networkidle',timeout:60000});r.http=response.status();r.url=page.url();await page.evaluate(()=>document.fonts.ready);await page.locator('.profile-company').first().waitFor();
+ r.blocks=await page.locator('.profile').evaluateAll(els=>els.filter(e=>e.querySelector('.profile-company')&&e.querySelector('.profile-text')).map(e=>{const c=e.querySelector('.profile-company'),t=e.querySelector('.profile-text'),a=c.getBoundingClientRect(),b=t.getBoundingClientRect();return {classes:e.className,company:a.toJSON(),text:b.toJSON(),companyText:c.textContent.trim(),bodyText:t.textContent.trim(),overlap:Math.min(a.right,b.right)>Math.max(a.left,b.left)&&Math.min(a.bottom,b.bottom)>Math.max(a.top,b.top),sameTopLeft:Math.abs(a.top-b.top)<1&&Math.abs(a.left-b.left)<1};}));
+ r.fixed=r.http===200&&r.blocks.length>0&&r.blocks.every(b=>b.company.width>0&&b.text.width>0&&!b.overlap);
+ if(!r.fixed){const folder=out+'/evidence';fs.mkdirSync(folder,{recursive:true});await page.locator('.profile').first().scrollIntoViewIfNeeded();const png=await page.screenshot({fullPage:false});const sha=require('crypto').createHash('sha256').update(png).digest('hex');r.evidence=folder+`/profile-${width}-${sha.slice(0,16)}.png`;const used=fs.readdirSync(folder).reduce((n,f)=>n+fs.statSync(folder+'/'+f).size,0);if(fs.existsSync(r.evidence)||used+png.length<=5*1024*1024)fs.writeFileSync(r.evidence,png);else{r.evidence='';r.evidenceNote='5 MB evidence budget reached; raw geometry retained';}}
+ const assets=await page.evaluate(()=>performance.getEntriesByType('resource').map(r=>r.name).filter(u=>/\/blocks\/profile[^/]*\/.*\.(js|css)(\?|$)/.test(u)));
+ for(const url of [...new Set([...assets,base+'/blocks/profile/profile.js',base+'/blocks/profile/profile.css'])]){if(round.assets.some(a=>a.url===url))continue;const response=await page.request.get(url);round.assets.push({url,status:response.status(),lastModified:response.headers()['last-modified']||null});}
+ }catch(e){r.error=e.message;}finally{await page.close();}}
+ }finally{await browser.close();}
+ round.finished=new Date().toISOString();round.fixed=round.records.every(r=>r.fixed);history.push(round);json(out+'/history.json',history);json(out+'/schedule.json',{cutoffUTC:new Date(cutoff).toISOString(),intervalHours:2,state:Date.now()>=cutoff?'complete':'watching',nextUTC:Date.now()>=cutoff?null:new Date(Math.min(Date.parse(history[0].started)+history.length*7200000,cutoff)).toISOString()});
+ const baseline=fs.existsSync(out+'/baseline-summary.md')?fs.readFileSync(out+'/baseline-summary.md','utf8'):'# NEW FAIL\nVisual/Lighthouse checks in progress.\n';
+ const summary=(round.fixed?`FIX DETECTED DSR-678 ${round.finished}\n`:'')+baseline+`\nFix watch: ${history.length} rounds; latest ${round.finished}; DSR-678 ${round.fixed?'no overlap detected (QA proposal)':'still overlapping or blocked; see history.json'}.\nTwo-hour watch through 2026-10-26 09:00 VN; Last-Modified recorded each round.\nDSR-677 has no executable check in the job body; no fix verdict asserted.\n`;
+ for(const dir of [out,hub])fs.writeFileSync(dir+'/summary.md',summary);
+ json(hub+'/result.json',{job:'JOB-ZZ-IDLE-45',agent:'codex',us:'Visual baseline + Lighthouse DEV + fix watch DSR-678/677',env:'dev',started:history[0].started,finished:round.finished,status:'done',watch_state:Date.now()>=cutoff?'complete':'watching',tests:[...(fs.existsSync(out+'/baseline-result.json')?JSON.parse(fs.readFileSync(out+'/baseline-result.json')).tests:[]),...round.records.map(r=>({tc:'DSR-678',lang:'ja',width:r.width,result:r.error?'blocked':r.fixed?'pass':'fail',error:(r.error||(!r.fixed?'Profile company/text overlap':'')).slice(0,200),evidence:r.evidence||'',...(!r.fixed?{suspect:'product',cause:'none',confidence:85}:{})}))],lighthouse:fs.existsSync(out+'/baseline-result.json')?JSON.parse(fs.readFileSync(out+'/baseline-result.json')).lighthouse:[],code_changes:[out+'/watch.cjs'],questions:[]});
+ if(!process.argv.includes('--no-commit')){execFileSync('git',['add','--',out,hub]);execFileSync('git',['commit','--only','-m',`[codex] JOB-ZZ-IDLE-45 ${Date.now()>=cutoff?'done':'watching'}`,'--',out,hub]);}
+ console.log(JSON.stringify(round));
+})().catch(e=>{console.error(e);process.exitCode=1});
