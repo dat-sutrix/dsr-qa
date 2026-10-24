@@ -4,7 +4,7 @@
   "us": "Visual baseline + Lighthouse DEV + fix watch DSR-678/677",
   "env": "dev",
   "started": "2026-10-24T00:54:15.614Z",
-  "finished": "2026-10-24T04:55:25.075Z",
+  "finished": "2026-10-24T06:55:25.480Z",
   "status": "done",
   "watch_state": "watching",
   "tests": [
