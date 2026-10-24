@@ -32,6 +32,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
 |---|---|---|---|---|
 | 🆕 P1 | **Dán lại cookie Author** (login-token hết hạn từ 23/10 09:17Z → 3 job dừng needs-input: 23-11, 23-19, 23-24). Xong → move `jobs/hold/JOB-20261024-03.md` sang `jobs/queue/` (hoặc nhắn Claude) | VPS (Dat tự làm) | T7 24/10 hoặc T2 26/10 08:00 | Dán `AEM_LOGIN_TOKEN` vào `~/.dsr-secrets/aem-dev.env` (AUTHOR-AGENT §2b) → `bash ykk-dsr/hub/tools/author/probe.sh` check 1 = 200 |
+| ℹ️ | TC job tự thêm DSR-669/670/671 vào backlog (sub-task TC DSR-679/680/681, 24/10 09:15) – không cần Dat làm gì | – | – | – |
 | 🆕 P2 | DSR-669/670/671 đã giao Dat (In Testing) – **chưa đóng**, chờ JOB-20261024-01 + -03 | Jira | T2 26/10 | Claude soạn comment đóng khi job Pass |
 | P2 | Hỏi Ngọc 2 điểm block 570: CATDL-009 + CATDL-011 (nếu chưa gửi 23/10) | Ngọc | T2 26/10 | "Hi Ngọc, DSR-570 on DEV (22/10 night run): (1) the download-form demo is still not bound to the catalog CF (TC 9.0 blocked); (2) submitting the form sends no POST to *.hubspot.com / *.hsforms.com (TC 11–13 blocked). When will the CF binding and HubSpot integration be on DEV?" |
 | P2 | Duyệt (session Điều phối) 🐞 < 80% (bảng dưới) | claude-web | T2 26/10 | – |
