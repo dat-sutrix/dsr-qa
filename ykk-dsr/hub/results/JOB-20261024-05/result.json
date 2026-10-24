@@ -1,0 +1,27 @@
+{
+  "job": "JOB-20261024-05",
+  "agent": "claude-code",
+  "us": "DSR-670",
+  "env": "dev",
+  "started": "2026-10-24T02:35:54Z",
+  "finished": "2026-10-24T02:41:00Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-670 1.0", "lang": "-", "result": "skip", "error": "skipped (cookie): tools/author models → HTTP 401 at 02:35:54Z", "evidence": "", "suspect": "env", "cause": "none" },
+    { "tc": "DSR-670 2.0", "lang": "-", "result": "skip", "error": "skipped (cookie): tools/author models → HTTP 401", "evidence": "", "suspect": "env", "cause": "none" },
+    { "tc": "DSR-670 7.0", "lang": "ja", "result": "skip", "error": "positive part Blocked-by TD-670-01: dsr-techmovie-page qa670-tech → 200, related [], inactive []", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-670 7.0", "lang": "ja", "result": "pass", "error": "negative part only: …/tech/does-not-exist → 200, related [], inactive [], no errors", "evidence": "", "cause": "none" },
+    { "tc": "DSR-670 8.0", "lang": "ja", "result": "skip", "error": "Blocked-by TD-670-01 (no tech-talk data on DEV); /ja/library/video/tech-talk/qa670-tech 404", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-670 8.0", "lang": "en", "result": "skip", "error": "Blocked-by TD-670-01 (no tech-talk data on DEV, en copy optional)", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-670 9.0", "lang": "ja", "result": "skip", "error": "Blocked-by TD-670-01 (404 meaningless without qa670-tech)", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-670 10.0", "lang": "ja", "result": "skip", "error": "Blocked-by TD-670-02 (no tech-talk data on DEV)", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-670 11.0", "lang": "ja", "result": "skip", "error": "Blocked-by TD-670-03 (no tech-talk data on DEV)", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-670 12.0", "lang": "ja", "result": "skip", "error": "Blocked-by TD-670-04 (no tech-talk data on DEV)", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-670 13.0", "lang": "ja", "result": "pass", "error": "dsr-video-page qa587-main 200 related ok; DSR-587 specs ja: 0 NEW FAIL vs ledger", "evidence": "", "cause": "none" },
+    { "tc": "DSR-670 13.0", "lang": "en", "result": "pass", "error": "flaky: VOV-011/013 en failed 02:39Z ('Unable to load video information.' on /en/library/video/search), passed on rerun 02:40Z", "evidence": "evidence/DSR-670-13.0_en_DSR-VOV-013.png", "suspect": "env", "cause": "none", "confidence": 20 },
+    { "tc": "DSR-670 14.0", "lang": "ja", "result": "skip", "error": "Blocked-by TD-670-01; pre-TD snapshot saved: list 6 cards, dsr-video-list ja 7 items, 0 qa670/tech", "evidence": "", "suspect": "data", "cause": "none" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/movie-detail/DSR-670.tech-talk.spec.ts", "fixtures/dsr-670.ts"],
+  "questions": []
+}

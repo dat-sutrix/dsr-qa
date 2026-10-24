@@ -1,0 +1,22 @@
+{
+ "capturedAt": "2026-10-24T02:38:00.679Z",
+ "cards": [
+  "/content/dam/common/ja/movies/qa587-main",
+  "/content/dam/common/ja/movies/qa557-dam",
+  "/content/dam/common/ja/movies/test-mv-long",
+  "/content/dam/common/ja/movies/qa557-youku",
+  "/content/dam/common/ja/movies/copy-of-test-mv-sort",
+  "/content/dam/common/ja/movies/dm-movie-2"
+ ],
+ "queryPaths": [
+  "/content/dam/dsr/ja/movies/standard/filtered",
+  "/content/dam/dsr/ja/movies/standard/long",
+  "/content/dam/dsr/ja/movies/standard/qa557-dam",
+  "/content/dam/dsr/ja/movies/standard/qa557-youku",
+  "/content/dam/dsr/ja/movies/standard/qa587-inactive",
+  "/content/dam/dsr/ja/movies/standard/qa587-main",
+  "/content/dam/dsr/ja/movies/standard/sort-main"
+ ],
+ "source": "JOB-20261024-05 DSR-670 14.0 (DEV, no tech-talk CF; dsr-techmovie-page qa670-* empty)",
+ "listStatus": 200
+}
