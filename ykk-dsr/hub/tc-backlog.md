@@ -94,3 +94,4 @@
 | 2026-10-24 18:06 | — | backlog trống (row 0 hold) · Jira check OK: auto-added 0 (cùng tập 15:06: 671/670/669→679/680/681, 611 question, 653→618, 570→623, 590/587/586/566/557/529 đã phủ) · upload pending 0 / fail 0 | ~2' |
 | 2026-10-24 19:07 | — | backlog trống (row 0 hold) · Jira check OK: auto-added 0 (cùng tập 18:06; 669/670/671 [Dev] In Testing, job 24-04/05/06 đã xếp) · upload pending 0 / fail 0 | ~2' |
 | 2026-10-24 20:06 | — | backlog trống (row 0 hold) · Jira check OK: auto-added 0 (cùng tập 19:07: 669/670/671 [Dev] In Testing → 679/680/681 Done, 611 question, 653→618, 570→623, 590/587/586/566/557/529 đã phủ) · upload pending 0 / fail 0 | ~2' |
+| 2026-10-24 21:07 | — | backlog trống (row 0 hold) · Jira check OK: auto-added 0 (cùng tập 20:06: 669/670/671 [Dev] In Testing → 679/680/681 Done, 611 question, 653→618, 570→623, 590/587/586/566/557/529 đã phủ) · upload pending 0 / fail 0 · báo cáo cuối ngày | ~2' |
