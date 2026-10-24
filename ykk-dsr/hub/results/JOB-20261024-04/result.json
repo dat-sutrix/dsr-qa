@@ -1,0 +1,32 @@
+{
+  "job": "JOB-20261024-04",
+  "agent": "claude-code",
+  "us": "DSR-669",
+  "env": "dev",
+  "started": "2026-10-24T02:16:10Z",
+  "finished": "2026-10-24T02:34:55Z",
+  "status": "needs-input",
+  "tests": [
+    { "tc": "DSR-669 1.0", "lang": "-", "result": "skip", "error": "skipped (cookie): tools/author models → HTTP 401 at 02:16:10Z", "evidence": "", "suspect": "env", "cause": "none" },
+    { "tc": "DSR-669 2.0", "lang": "-", "result": "skip", "error": "skipped (cookie): Author HTTP 401", "evidence": "", "suspect": "env", "cause": "none" },
+    { "tc": "DSR-669 3.0", "lang": "ja,en", "result": "skip", "error": "skipped (cookie): Author HTTP 401; recursive CF listing command not in tools/author yet", "evidence": "", "suspect": "env", "cause": "none" },
+    { "tc": "DSR-669 4.0", "lang": "ja,en", "result": "skip", "error": "skipped (cookie): Author HTTP 401", "evidence": "", "suspect": "env", "cause": "none" },
+    { "tc": "DSR-669 9.0", "lang": "ja", "result": "pass", "error": "", "evidence": "", "cause": "none" },
+    { "tc": "DSR-669 9.0", "lang": "en", "result": "pass", "error": "", "evidence": "", "cause": "none" },
+    { "tc": "DSR-669 10.0", "lang": "-", "result": "skip", "error": "skipped (cookie): Author list.json not requested, cookie 401", "evidence": "", "suspect": "env", "cause": "none" },
+    { "tc": "DSR-669 11.0", "lang": "ja", "result": "pass", "error": "", "evidence": "", "cause": "none" },
+    { "tc": "DSR-669 12.0", "lang": "ja", "result": "pass", "error": "0 NEW FAIL vs overlay-before-669.json; 8 fails all failed before too", "evidence": "", "cause": "none" },
+    { "tc": "DSR-669 12.0", "lang": "en", "result": "pass", "error": "0 NEW FAIL vs overlay-before-669.json; 8 fails all failed before too", "evidence": "", "cause": "none" },
+    { "tc": "DSR-669 13.0", "lang": "ja", "result": "fail", "error": "product list card /ja/products/990586006 (sub-folder CF qa586/990586006) → 404; pre-669 ids unavailable → id/count compare Pending", "evidence": "evidence/DSR-669-13.0_ja_product-list.png", "suspect": "data", "cause": "none", "confidence": 40 },
+    { "tc": "DSR-669 13.0", "lang": "en", "result": "fail", "error": "video list card /en/library/video/QA587_Upper (uppercase node, TD-587-04) → 404; pre-669 ids unavailable → id/count compare Pending", "evidence": "evidence/DSR-669-13.0_en_video-list.png", "suspect": "data", "cause": "none", "confidence": 40 },
+    { "tc": "DSR-669 14.0", "lang": "ja", "result": "pass", "error": "", "evidence": "", "cause": "none" },
+    { "tc": "DSR-669 15.0", "lang": "ja,en", "result": "skip", "error": "Blocked-by TD-669-02 (republish by lane author/chrome, no republish time in job input)", "evidence": "", "suspect": "data", "cause": "none" },
+    { "tc": "DSR-669 16.0", "lang": "ja", "result": "skip", "error": "Blocked-by TD-669-03 (qa669-new not published): /ja/library/catalog/qa669-new HTTP 404", "evidence": "", "suspect": "data", "cause": "none" }
+  ],
+  "lighthouse": [],
+  "code_changes": ["tests/cf-model/DSR-669.cf-model-rename.spec.ts", "fixtures/dsr-669.ts"],
+  "questions": [
+    "cookie: tools/author returns HTTP 401 (node tools/author/author.mjs models, 2026-10-24T02:16:10Z). Please refresh ~/.dsr-secrets/aem-dev.env (AUTHOR-AGENT §2b) and requeue 1.0–4.0 + 10.0. 3.0/4.0 (recursive cq:model count) and 10.0 (Author /graphql/list.json/ykk) also need a new read-only tools/author command; not written in this job because it could not be validated without a valid cookie.",
+    "13.0 oracle: no pre-669 card ids exist (ledger.json holds pass/fail only, overlay-before-669.json holds no list ids). Accept lists-after-669.json as the baseline for later runs, or provide a pre-669 list?"
+  ]
+}

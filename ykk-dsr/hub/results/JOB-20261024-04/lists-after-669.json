@@ -1,0 +1,138 @@
+{
+ "captured": "2026-10-24T02:23Z",
+ "source": "tests/cf-model/DSR-669.cf-model-rename.spec.ts 13.0 observed",
+ "note": "post-669 list snapshot; no pre-669 card ids exist (oracle A2 missing) – candidate baseline for later runs",
+ "lists": {
+  "video [ja]": {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search",
+   "count": 6,
+   "ids": [
+    "/content/dam/common/ja/movies/qa587-main",
+    "/content/dam/common/ja/movies/qa557-dam",
+    "/content/dam/common/ja/movies/test-mv-long",
+    "/content/dam/common/ja/movies/qa557-youku",
+    "/content/dam/common/ja/movies/copy-of-test-mv-sort",
+    "/content/dam/common/ja/movies/dm-movie-2"
+   ],
+   "linkStatuses": {
+    "/ja/library/video/qa587-main": 200,
+    "/ja/library/video/qa557-dam": 200,
+    "/ja/library/video/long": 200,
+    "/ja/library/video/qa557-youku": 200,
+    "/ja/library/video/sort-main": 200,
+    "/ja/library/video/filtered": 200
+   }
+  },
+  "catalog [ja]": {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+   "count": 14,
+   "ids": [
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+    "/",
+    "/content/dam/common/ja/catalogs/qa190-cat-ebook-form",
+    "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+    "/content/dam/common/ja/catalogs/qa190-cat-pdf-form",
+    "/"
+   ],
+   "linkStatuses": {
+    "/ja/library/catalog/qa190-cat-ebook-form": 200,
+    "/ja/library/catalog/qa190-cat-pdf-form": 200
+   }
+  },
+  "product [ja]": {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/test-space/product-list",
+   "count": 6,
+   "ids": [
+    "990586001",
+    "qa586-alpha",
+    "990586006",
+    "productId-01x",
+    "135",
+    "46"
+   ],
+   "linkStatuses": {
+    "/ja/products/990586001": 200,
+    "/ja/products/qa586-alpha": 200,
+    "/ja/products/990586006": 404,
+    "/ja/products/productid-01x": 200,
+    "/ja/products/135": 200,
+    "/ja/products/46": 200
+   }
+  },
+  "video [en]": {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/search",
+   "count": 12,
+   "ids": [
+    "/content/dam/common/en/movies/qa587-main",
+    "/content/dam/common/en/movies/qa587-main",
+    "/content/dam/common/en/movies/qa587-rel-b",
+    "/content/dam/ykk/common/product-cf/test/qa501-main-a",
+    "/content/dam/ykk/common/product-cf/test/qa501-main-b",
+    "/content/dam/common/en/movies/qa557-dam",
+    "/content/dam/common/en/movies/test-mv-badid",
+    "/content/dam/common/en/movies/test-mv-long",
+    "/content/dam/common/en/movies/test-mv-noid",
+    "/content/dam/common/en/movies/test-mv-rel-6",
+    "/content/dam/common/en/movies/qa587-r6",
+    "/content/dam/common/en/movies/qa587-rel-a"
+   ],
+   "linkStatuses": {
+    "/en/library/video/QA587_Upper": 404,
+    "/en/library/video/qa587-main": 200,
+    "/en/library/video/qa587-rel-b": 200,
+    "/en/library/video/qa501-main-a": 200,
+    "/en/library/video/qa501-main-b": 200,
+    "/en/library/video/qa557-dam": 200,
+    "/en/library/video/badid": 200,
+    "/en/library/video/long": 200,
+    "/en/library/video/noid": 200,
+    "/en/library/video/rel6": 200,
+    "/en/library/video/qa587-r6": 200,
+    "/en/library/video/qa587-rel-a": 200
+   }
+  },
+  "catalog [en]": {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/catalog",
+   "count": 14,
+   "ids": [
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/content/dam/ykk/digital-showroom/test/qa190-catalog-sample.pdf",
+    "/",
+    "/content/dam/common/en/catalogs/qa190-cat-ebook-form",
+    "/content/dam/ykk/digital-showroom/test/pdf/sample-pdf-a4-size-65kb.pdf",
+    "/content/dam/common/en/catalogs/qa190-cat-pdf-form"
+   ],
+   "linkStatuses": {
+    "/en/library/catalog/qa190-cat-ebook-form": 200,
+    "/en/library/catalog/qa190-cat-pdf-form": 200
+   }
+  },
+  "product [en]": {
+   "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/en/product-list",
+   "count": 4,
+   "ids": [
+    "990586001",
+    "productId-01x",
+    "135",
+    "46"
+   ],
+   "linkStatuses": {}
+  }
+ }
+}
