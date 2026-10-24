@@ -4,7 +4,7 @@
   "us": "Visual baseline + Lighthouse DEV + fix watch DSR-678/677",
   "env": "dev",
   "started": "2026-10-24T00:54:15.614Z",
-  "finished": "2026-10-24T01:01:54.615Z",
+  "finished": "2026-10-24T02:55:22.783Z",
   "status": "done",
   "watch_state": "watching",
   "tests": [
@@ -237,7 +237,7 @@
       "lang": "ja",
       "width": 1440,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -245,7 +245,7 @@
       "lang": "ja",
       "width": 390,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -253,7 +253,7 @@
       "lang": "en",
       "width": 1440,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -261,7 +261,7 @@
       "lang": "en",
       "width": 390,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -285,7 +285,7 @@
       "lang": "en",
       "width": 1440,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -293,7 +293,7 @@
       "lang": "en",
       "width": 390,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -381,7 +381,7 @@
       "lang": "en",
       "width": 1440,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -389,7 +389,7 @@
       "lang": "en",
       "width": 390,
       "result": "skip",
-      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "error": "HTTP 404 — language/page skipped per job",
       "evidence": ""
     },
     {
@@ -524,10 +524,7 @@
     }
   ],
   "code_changes": [
-    "results/JOB-ZZ-IDLE-45/run.cjs",
-    "results/JOB-ZZ-IDLE-45/report.cjs",
-    "results/JOB-ZZ-IDLE-45/watch.cjs",
-    "results/JOB-ZZ-IDLE-45/watch.sh"
+    "results/JOB-ZZ-IDLE-45/watch.cjs"
   ],
   "questions": []
 }

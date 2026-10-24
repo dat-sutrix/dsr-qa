@@ -1,4 +1,4 @@
-FIX DETECTED DSR-678 2026-10-24T00:54:20.000Z
+FIX DETECTED DSR-678 2026-10-24T02:55:22.783Z
 # NEW FAIL
 | Page | Lang | Viewport/device | Candidate | Cause | Confidence |
 |---|---|---|---|---|---|
@@ -10,6 +10,6 @@ Visual threshold >1%, RGB tolerance 32; moving regions masked. Lighthouse candid
 Full measurements and audit medians: ykk-dsr/hub/results/JOB-ZZ-IDLE-45/measurements.json. TypeScript exit 0, no errors.
 Run report: results/JOB-ZZ-IDLE-45/run-report.md. Passing screenshots and raw Lighthouse JSON remain under /tmp (not committed).
 
-Fix watch: 1 round; latest 2026-10-24T00:54:20.000Z; company/text gap 20px at 1440 and 390px (QA proposal).
-Two-hour watch active through 2026-10-26 09:00 VN; Last-Modified values in history.json.
+Fix watch: 2 rounds; latest 2026-10-24T02:55:22.783Z; DSR-678 no overlap detected (QA proposal).
+Two-hour watch through 2026-10-26 09:00 VN; Last-Modified recorded each round.
 DSR-677 has no executable check in the job body; no fix verdict asserted.
