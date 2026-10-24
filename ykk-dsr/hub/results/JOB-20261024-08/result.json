@@ -1,0 +1,28 @@
+{
+  "job": "JOB-20261024-08",
+  "agent": "claude-code",
+  "us": "DSR-557 / DSR-587",
+  "env": "dev",
+  "started": "2026-10-24T10:22:34Z",
+  "finished": "2026-10-24T10:26:58Z",
+  "status": "done",
+  "tests": [
+    { "tc": "DSR-VOV-011", "lang": "ja", "result": "pass", "error": "3/3 pass: /ja/library/video/search HTTP 200, 6 cards, 0 video-detail; 0 graphql captures", "evidence": "", "suspect": "", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-VOV-011", "lang": "en", "result": "pass", "error": "3/3 pass: /en/library/video/search HTTP 200, 12 cards, 0 video-detail; 0 graphql captures (REG-VOV-EN not reproduced)", "evidence": "", "suspect": "", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-VOV-011", "lang": "ja", "result": "skip", "error": "video/tech-talk: tech-talk list page not published on DEV (HTTP 404) ×3", "evidence": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-VOV-011", "lang": "en", "result": "skip", "error": "video/tech-talk: tech-talk list page not published on DEV (HTTP 404) ×3", "evidence": "", "suspect": "data", "cause": "none", "confidence": 0 },
+    { "tc": "DSR-VOV-013", "lang": "en", "result": "pass", "error": "3/3 pass: HTTP 200, 12 card paths incl. /en/library/video/qa587-main, none to search/tech-talk; 0 captures", "evidence": "", "suspect": "", "cause": "none", "confidence": 0 },
+    { "tc": "SELFTEST-capture-graphql", "lang": "en", "result": "pass", "error": "forced 500 via page.route → capture file written (status 500, body, headers, timing, consoleErrors); healthy case → no file", "evidence": "", "suspect": "", "cause": "none", "confidence": 0 }
+  ],
+  "lighthouse": [],
+  "code_changes": [
+    "fixtures/capture-graphql.ts",
+    "tests/movie-detail/DSR-587.movie-overlay.spec.ts",
+    "tests/catalog-video/DSR-557.catalog-video.spec.ts",
+    "tests/catalog-overlay/DSR-654.catalog-overlay.spec.ts",
+    "tests/selftest/capture-graphql.selftest.spec.ts",
+    "results/DSR-587/DEV/automation-run-20261024-job08.md",
+    "results/DSR-587/DEV/automation-run-20261024-job08-selftest.md"
+  ],
+  "questions": []
+}

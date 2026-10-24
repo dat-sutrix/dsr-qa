@@ -1,4 +1,6 @@
-import { test, expect, type Page } from '@playwright/test';
+import { type Page } from '@playwright/test';
+// JOB-20261024-08: capture-on-fail for dsr-catalog-list; no effect on pass/fail.
+import { test, expect } from '../../fixtures/capture-graphql';
 import { CatalogDisplayPage } from '../../pages/CatalogDisplayPage';
 import { CatalogDetailPage } from '../../pages/CatalogDetailPage';
 import { VideoPlayerPage } from '../../pages/VideoPlayerPage';

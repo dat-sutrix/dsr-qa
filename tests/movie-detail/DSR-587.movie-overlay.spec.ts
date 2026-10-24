@@ -1,4 +1,6 @@
-import { test, expect, type APIRequestContext, type Browser, type Page } from '@playwright/test';
+import { type APIRequestContext, type Browser, type Page } from '@playwright/test';
+// JOB-20261024-08: capture-on-fail for dsr-video-list (REG-VOV-EN); no effect on pass/fail.
+import { test, expect } from '../../fixtures/capture-graphql';
 import { MovieDetailPage } from '../../pages/MovieDetailPage';
 import {
   type Language, base, hosts, videoPath, listPath, techTalkListPath, td, notSeeded, seeded, siteTitleSuffix, maxRelatedMovies,

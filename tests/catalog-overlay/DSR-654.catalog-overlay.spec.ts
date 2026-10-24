@@ -1,4 +1,6 @@
-import { test, expect, type APIRequestContext, type Browser } from '@playwright/test';
+import { type APIRequestContext, type Browser } from '@playwright/test';
+// JOB-20261024-08: capture-on-fail for dsr-catalog-list; no effect on pass/fail.
+import { test, expect } from '../../fixtures/capture-graphql';
 import { CatalogDetailPage } from '../../pages/CatalogDetailPage';
 import {
   type Language, base, hosts, catalogPath, searchPath, dsrCfPath, td, tdKeys, td654, coreTdId, ebookUrl, notSeeded,
