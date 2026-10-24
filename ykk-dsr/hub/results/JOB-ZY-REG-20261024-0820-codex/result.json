@@ -1,0 +1,646 @@
+{
+  "job": "JOB-ZY-REG-20261024-0820-codex",
+  "agent": "codex",
+  "us": "Regression S12",
+  "env": "dev",
+  "started": "2026-10-24T01:23:36.759Z",
+  "finished": "2026-10-24T01:32:55.650Z",
+  "status": "done",
+  "tests": [
+    {
+      "tc": "VISUAL-top-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/top_ja_1440.jpg",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 9945,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-top-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/top_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6841,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-top-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/top_en_1440.jpg",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 9129,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-top-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/top_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 7136,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-breadcrumb-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/breadcrumb_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4955,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-breadcrumb-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/breadcrumb_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4596,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-breadcrumb-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/breadcrumb_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4722,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-breadcrumb-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/breadcrumb_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4744,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-video-detail-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/video-detail_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6204,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-video-detail-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/video-detail_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5572,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-video-detail-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/video-detail_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6022,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-video-detail-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/video-detail_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5457,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-video-list-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/video-list_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 7411,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-video-list-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/video-list_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 8295,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-video-list-1440",
+      "lang": "en",
+      "result": "fail",
+      "error": "NEW FAIL candidate: title, pixel diff %",
+      "evidence": "evidence/video-list_en_1440.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50,
+      "durationMs": 5696,
+      "changes": [
+        {
+          "page": "video-list",
+          "lang": "en",
+          "vw": 1440,
+          "metric": "title",
+          "before": "search",
+          "now": "YKK DIGITAL SHOWROOM",
+          "suspect": "unannounced",
+          "confidence": 50,
+          "cause": "none"
+        },
+        {
+          "page": "video-list",
+          "lang": "en",
+          "vw": 1440,
+          "metric": "pixel diff %",
+          "before": 0,
+          "now": 12.2254,
+          "suspect": "unannounced",
+          "confidence": 50,
+          "cause": "none"
+        }
+      ]
+    },
+    {
+      "tc": "VISUAL-video-list-390",
+      "lang": "en",
+      "result": "fail",
+      "error": "NEW FAIL candidate: title, pixel diff %",
+      "evidence": "evidence/video-list_en_390.png",
+      "suspect": "product",
+      "cause": "none",
+      "confidence": 50,
+      "durationMs": 5489,
+      "changes": [
+        {
+          "page": "video-list",
+          "lang": "en",
+          "vw": 390,
+          "metric": "title",
+          "before": "search",
+          "now": "YKK DIGITAL SHOWROOM",
+          "suspect": "unannounced",
+          "confidence": 50,
+          "cause": "none"
+        },
+        {
+          "page": "video-list",
+          "lang": "en",
+          "vw": 390,
+          "metric": "pixel diff %",
+          "before": 0,
+          "now": 8.9081,
+          "suspect": "unannounced",
+          "confidence": 50,
+          "cause": "none"
+        }
+      ]
+    },
+    {
+      "tc": "VISUAL-catalog-list-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-list_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 7844,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-list-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-list_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 7673,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-list-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-list_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 7196,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-list-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-list_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 7076,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-detail-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-detail_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5645,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-detail-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-detail_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5444,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-detail-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-detail_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5653,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-detail-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-detail_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5150,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-detail-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-detail_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5934,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-detail-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-detail_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5324,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-detail-1440",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-detail_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5666,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-detail-390",
+      "lang": "en",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-detail_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5198,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-list-1440",
+      "lang": "ja",
+      "result": "skip",
+      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-list_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4410,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-list-390",
+      "lang": "ja",
+      "result": "skip",
+      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-list_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4427,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-list-1440",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-list_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4457,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-product-list-390",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261024-0820/product-list_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4248,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-download-1440",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-download_ja_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 5985,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-download-390",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-download_ja_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 6585,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-download-1440",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-download_en_1440.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4660,
+      "changes": []
+    },
+    {
+      "tc": "VISUAL-catalog-download-390",
+      "lang": "en",
+      "result": "skip",
+      "error": "HTTP 404 \u2014 language/page skipped per job",
+      "evidence": "evidence/REGRESSION/20261024-0820/catalog-download_en_390.png",
+      "suspect": "data",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 4452,
+      "changes": []
+    },
+    {
+      "tc": "LIGHTHOUSE-top-mobile",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 50706,
+      "changes": []
+    },
+    {
+      "tc": "LIGHTHOUSE-top-desktop",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 54520,
+      "changes": []
+    },
+    {
+      "tc": "LIGHTHOUSE-video-detail-mobile",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 58599,
+      "changes": []
+    },
+    {
+      "tc": "LIGHTHOUSE-video-detail-desktop",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 61669,
+      "changes": []
+    },
+    {
+      "tc": "LIGHTHOUSE-catalog-list-mobile",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 61757,
+      "changes": []
+    },
+    {
+      "tc": "LIGHTHOUSE-catalog-list-desktop",
+      "lang": "ja",
+      "result": "pass",
+      "error": "",
+      "evidence": "",
+      "suspect": "env",
+      "cause": "none",
+      "confidence": 0,
+      "durationMs": 54484,
+      "changes": []
+    }
+  ],
+  "lighthouse": [
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+      "device": "mobile",
+      "performance": 98,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 1654.521,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 133.5
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/top-page",
+      "device": "desktop",
+      "performance": 97,
+      "accessibility": 91,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 509.96900000000005,
+        "cumulative-layout-shift": 0.053166687707781005,
+        "total-blocking-time": 0
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "mobile",
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 96,
+      "seo": 69,
+      "metrics": {
+        "largest-contentful-paint": 2429.3225,
+        "cumulative-layout-shift": 0.009149918066949638,
+        "total-blocking-time": 114.5
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/qa587-main",
+      "device": "desktop",
+      "performance": 96,
+      "accessibility": 90,
+      "best-practices": 96,
+      "seo": 69,
+      "metrics": {
+        "largest-contentful-paint": 744.6736000000001,
+        "cumulative-layout-shift": 0.05317134958304272,
+        "total-blocking-time": 0
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "mobile",
+      "performance": 89,
+      "accessibility": 96,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 2851.1260000000007,
+        "cumulative-layout-shift": 0.009168107733049147,
+        "total-blocking-time": 132.5
+      }
+    },
+    {
+      "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog",
+      "device": "desktop",
+      "performance": 99,
+      "accessibility": 89,
+      "best-practices": 96,
+      "seo": 61,
+      "metrics": {
+        "largest-contentful-paint": 548.6985000000001,
+        "cumulative-layout-shift": 0.057966250649513835,
+        "total-blocking-time": 0
+      }
+    }
+  ],
+  "code_changes": [
+    "results/REGRESSION/run-20261024-0820.cjs",
+    "results/REGRESSION/finish-20261024-0820.py"
+  ],
+  "questions": []
+}
