@@ -61,7 +61,7 @@ Ngày 24/10 (review 17:10): JOB-24-01/02/04/05/06 done · IDLE-44 (488 test, 0 N
 **Lane chrome (24/10 00:40):** ✅ JOB-20261023-23 (529) – qa529-02 thumbnail đã khôi phục · picker trắng không tái hiện · **ARTICLE-005 Fail đề xuất: Profile chữ Company và Text chồng nhau (live + UE)** → ứng viên bug ≥ 80% · verify JOB-20261023-24 vào queue.
 
 ## 5. TC (Jira sub-task `qa-tc`)
-tc-backlog: Night TC job 24/10 18:06: done 0/0 (backlog trống, 669/670/671 xong lượt trước) · upload queue pending 0 / fail 0 · auto-added 0 · job agent đã xếp 0 · TC backlog trống 2026-10-24 15:06 (row 0 hold) · tc-questions: Q48–Q50 (671, giữ mặc định) · data TD-671-01..03 (en, lane chrome/author T2 26/10)
+tc-backlog: Night TC job 24/10 19:07: done 0/0 (backlog trống, 669/670/671 xong lượt trước) · upload queue pending 0 / fail 0 · auto-added 0 · job agent đã xếp 0 · TC backlog trống 2026-10-24 15:06 (row 0 hold) · tc-questions: Q48–Q50 (671, giữ mặc định) · data TD-671-01..03 (en, lane chrome/author T2 26/10)
 
 ## 🐞 Bug < 80% – Dat chốt
 | Nháp | Tiêu đề | % | Thiếu gì để ≥ 80% | Đề xuất |
