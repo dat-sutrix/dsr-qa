@@ -1,0 +1,312 @@
+{
+ "job": "JOB-ZZ-IDLE-47",
+ "agent": "claude-code",
+ "us": "Regression (reuse REG-1620 ledger) + DSR-608 scaffold",
+ "env": "dev",
+ "started": "2026-10-24T10:27:33Z",
+ "finished": "2026-10-24T10:47:59Z",
+ "status": "done",
+ "regression": {
+  "executed": false,
+  "reason": "JOB-ZY-REG-20261024-1620-claude-code finished 2026-10-24T09:38:36Z (< 2 h before start 10:27:33Z); ledger reused unchanged",
+  "reused_job": "JOB-ZY-REG-20261024-1620-claude-code",
+  "reused_counts": {
+   "tests": 213,
+   "pass": 141,
+   "fail": 24,
+   "skip": 48
+  },
+  "new_fail": [],
+  "scope_note": "REG-1620 = R3 P1 only; P2/P3 last ran in JOB-ZZ-IDLE-44 (01:00–01:23Z)"
+ },
+ "graphql_capture": "none: test-results/graphql-capture/ does not exist (no capture-on-fail hook output)",
+ "scaffold": {
+  "us": "DSR-608",
+  "source": "ykk-dsr/hub/tc-out/DSR-608.spec.json + DSR-172 xlsx sheet ブース",
+  "spec": "tests/booth/DSR-608.booth.spec.ts",
+  "runs": {
+   "live": {
+    "base": ".aem.live",
+    "tests": 34,
+    "pass": 0,
+    "fail": 0,
+    "skip": 34,
+    "exit": 0,
+    "started": "2026-10-24T10:42:04Z",
+    "finished": "2026-10-24T10:42:29Z",
+    "report": "results/DSR-608/DEV/automation-run-20261024.md"
+   },
+   "preview": {
+    "base": ".aem.page (DSR608_BASE)",
+    "tests": 34,
+    "pass": 13,
+    "fail": 9,
+    "skip": 12,
+    "exit": 1,
+    "started": "2026-10-24T10:42:57Z",
+    "finished": "2026-10-24T10:46:39Z",
+    "report": "results/DSR-608/DEV/automation-run-20261024-preview.md"
+   }
+  },
+  "choice": "newest [tc-night] commit among 560/568/608 (a6b897b); pages exist on DEV preview"
+ },
+ "tests": [
+  {
+   "tc": "DSR-BOOTH-001",
+   "lang": "ja",
+   "result": "fail",
+   "error": "ja TOP Products → /en/product-list, no booth-tag query (back link also /en/)",
+   "raw": "Error: Products target language prefix  expect(received).toMatch(expected)  Expected pattern: /^\\/ja\\// Received string:  \"/en/product-list\"",
+   "evidence": "evidence/DSR-BOOTH-001_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 40
+  },
+  {
+   "tc": "DSR-BOOTH-001",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-001",
+   "lang": "cn",
+   "result": "blocked",
+   "error": "Blocked: cn path not on DEV (Issue #18, A11)"
+  },
+  {
+   "tc": "DSR-BOOTH-002",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "Blocked-data: no sibling booth pill links on /ja/digital-showroom/both (4 pills, none linked; TD-608-01 needs ≥ 2 sibling booths)"
+  },
+  {
+   "tc": "DSR-BOOTH-002",
+   "lang": "en",
+   "result": "blocked",
+   "error": "Blocked-data: no sibling booth pill links on /en/digital-showroom/both (4 pills, none linked; TD-608-01 needs ≥ 2 sibling booths)"
+  },
+  {
+   "tc": "DSR-BOOTH-003",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-003",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-003",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "Blocked-data: TD-608-02 /ja/test-space/qa608-booth-1img not created (QA copy page, howto #4)"
+  },
+  {
+   "tc": "DSR-BOOTH-004",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-004",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-005",
+   "lang": "ja",
+   "result": "fail",
+   "error": "ITEM for pills href=/content/sites (GET 404, label TEST)",
+   "raw": "Error: pill /content/sites is a site path with language prefix  expect(received).toMatch(expected)  Expected pattern: /^\\/ja\\// Received string:  \"/content/sites\"",
+   "evidence": "evidence/DSR-BOOTH-005_ja.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 50
+  },
+  {
+   "tc": "DSR-BOOTH-005",
+   "lang": "en",
+   "result": "fail",
+   "error": "ITEM for pills href=/content/sites (GET 404, label TEST)",
+   "raw": "Error: pill /content/sites is a site path with language prefix  expect(received).toMatch(expected)  Expected pattern: /^\\/en\\// Received string:  \"/content/sites\"",
+   "evidence": "evidence/DSR-BOOTH-005_en.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 50
+  },
+  {
+   "tc": "DSR-BOOTH-006",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-006",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-006",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "Blocked-data: TD-608-03 /ja/test-space/qa608-item-1prod not created (QA copy page, howto #5)"
+  },
+  {
+   "tc": "DSR-BOOTH-007",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "Blocked-data: /ja/digital-showroom/both/item has 1 product (TD-608-04 needs ≥ 2)"
+  },
+  {
+   "tc": "DSR-BOOTH-007",
+   "lang": "en",
+   "result": "blocked",
+   "error": "Blocked-data: /en/digital-showroom/both/item has 1 product (TD-608-04 needs ≥ 2)"
+  },
+  {
+   "tc": "DSR-BOOTH-008",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-008",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-009",
+   "lang": "ja",
+   "result": "blocked",
+   "error": "Blocked-data: no CTA modal trigger on Booth TOP (modal content pending YKK, Q18 / CB-10)"
+  },
+  {
+   "tc": "DSR-BOOTH-009",
+   "lang": "en",
+   "result": "blocked",
+   "error": "Blocked-data: no CTA modal trigger on Booth TOP (modal content pending YKK, Q18 / CB-10)"
+  },
+  {
+   "tc": "DSR-BOOTH-010",
+   "lang": "ja",
+   "result": "skip",
+   "error": "Manual: Author UI edit + publish on QA copy pages (608-10.0, TD-608-02/03; agents read-only)"
+  },
+  {
+   "tc": "DSR-BOOTH-011",
+   "lang": "ja",
+   "result": "fail",
+   "device": "PC",
+   "error": "cross-language links: ja TOP → /en/…, en ITEM pills → /content/sites (same root cause as 001/005)",
+   "raw": "Error: language-specific link  expect(received).toMatch(expected)  Expected pattern: /^\\/ja(\\/|$)/ Received string:  \"/en/digital-showroom\"",
+   "evidence": "evidence/DSR-BOOTH-011_ja_PC.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 45
+  },
+  {
+   "tc": "DSR-BOOTH-011",
+   "lang": "ja",
+   "result": "fail",
+   "device": "SP",
+   "error": "cross-language links: ja TOP → /en/…, en ITEM pills → /content/sites (same root cause as 001/005)",
+   "raw": "Error: language-specific link  expect(received).toMatch(expected)  Expected pattern: /^\\/ja(\\/|$)/ Received string:  \"/en/digital-showroom\"",
+   "evidence": "evidence/DSR-BOOTH-011_ja_SP.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 45
+  },
+  {
+   "tc": "DSR-BOOTH-011",
+   "lang": "en",
+   "result": "fail",
+   "device": "PC",
+   "error": "cross-language links: ja TOP → /en/…, en ITEM pills → /content/sites (same root cause as 001/005)",
+   "raw": "Error: language-specific link  expect(received).toMatch(expected)  Expected pattern: /^\\/en(\\/|$)/ Received string:  \"/content/sites\"",
+   "evidence": "evidence/DSR-BOOTH-011_en_PC.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 45
+  },
+  {
+   "tc": "DSR-BOOTH-011",
+   "lang": "en",
+   "result": "fail",
+   "device": "SP",
+   "error": "cross-language links: ja TOP → /en/…, en ITEM pills → /content/sites (same root cause as 001/005)",
+   "raw": "Error: language-specific link  expect(received).toMatch(expected)  Expected pattern: /^\\/en(\\/|$)/ Received string:  \"/content/sites\"",
+   "evidence": "evidence/DSR-BOOTH-011_en_SP.png",
+   "suspect": "data",
+   "cause": "none",
+   "confidence": 45
+  },
+  {
+   "tc": "DSR-BOOTH-011",
+   "lang": "cn",
+   "result": "blocked",
+   "device": "PC",
+   "error": "Blocked: cn path not on DEV (Issue #18, A11)"
+  },
+  {
+   "tc": "DSR-BOOTH-012",
+   "lang": "ja",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-012",
+   "lang": "en",
+   "result": "pass"
+  },
+  {
+   "tc": "DSR-BOOTH-013",
+   "lang": "ja,en",
+   "result": "skip",
+   "device": "PC",
+   "error": "Visual: lane codex (Playwright screenshots vs Figma C02 3324-64205/64850, 4545-87679/87815/88315)"
+  },
+  {
+   "tc": "DSR-BOOTH-014",
+   "lang": "ja",
+   "result": "pass",
+   "device": "PC"
+  },
+  {
+   "tc": "DSR-BOOTH-014",
+   "lang": "ja",
+   "result": "fail",
+   "device": "SP",
+   "error": ".bt-bg display:none at 390 px (CSS); image 200 + decoded; TC 14.0 may over-specify SP – check Figma SP 3324-64850",
+   "raw": "Error: background rendered width  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0",
+   "evidence": "evidence/DSR-BOOTH-014_ja_SP.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 25
+  },
+  {
+   "tc": "DSR-BOOTH-014",
+   "lang": "en",
+   "result": "pass",
+   "device": "PC"
+  },
+  {
+   "tc": "DSR-BOOTH-014",
+   "lang": "en",
+   "result": "fail",
+   "device": "SP",
+   "error": ".bt-bg display:none at 390 px (CSS); image 200 + decoded; TC 14.0 may over-specify SP – check Figma SP 3324-64850",
+   "raw": "Error: background rendered width  expect(received).toBeGreaterThan(expected)  Expected: > 0 Received:   0",
+   "evidence": "evidence/DSR-BOOTH-014_en_SP.png",
+   "suspect": "test",
+   "cause": "none",
+   "confidence": 25
+  }
+ ],
+ "code_changes": [
+  "fixtures/dsr-608.ts",
+  "pages/BoothPage.ts",
+  "tests/booth/DSR-608.booth.spec.ts"
+ ],
+ "reports": [
+  "results/DSR-608/DEV/automation-run-20261024.md",
+  "results/DSR-608/DEV/automation-run-20261024-preview.md"
+ ],
+ "tsc_exit": 0,
+ "questions": []
+}
