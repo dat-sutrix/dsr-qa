@@ -84,6 +84,7 @@
 | 2026-10-24 09:30 | DSR-669 | done (new 16 TC, folder Drive mới chung 669/670/671, TC+TD → upload-queue) · DSR-679 Done · JOB-20261024-04 queue · Jira check: auto-added 3 (669/670/671 → sub-task DSR-679/680/681) · upload pending 0 / fail 0 trước lượt | ~20' |
 | 2026-10-24 09:45 | DSR-670 | done (new 14 TC, folder chung 669, TC+TD → upload-queue) · DSR-680 Done · JOB-20261024-05 queue · DSR-671 còn todo (lượt sau) | ~12' |
 | 2026-10-24 11:20 | DSR-671 | done (new 17 TC, folder chung 669, TC+TD → upload-queue) · DSR-681 Done · JOB-20261024-06 queue · Q48–Q50 · Jira check: auto-added 0 · upload pending 0 / fail 0 trước lượt · backlog hết todo | ~14' |
+| 2026-10-24 13:07 | — | backlog trống (row 0 hold) · Jira check OK: auto-added 0 (669/670/671 → 679/680/681 Done, 653→618, 611 question, 590/587/586/570/566/557/529 đã phủ) · upload pending 0 / fail 0 | ~2' |
 
 - 2026-10-19 11:40 DSR-585: 項目fix版 xuất hiện (Quentin comment 61280, đang review, sheet 1Rxiw3S-3AkmAP2Jbzkx3FI1-3S3jYbOo). Khi review xong (Jira comment) → re-baseline 15 TC từ v0.1 sang bản fix, ưu tiên sau ticket mới giao Dat.
 
