@@ -19,10 +19,10 @@
       "title": "TOP-PAGE"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/top_ja_1440.jpg",
+      "png": "evidence/REGRESSION/20261024-1220/top_ja_1440.jpg",
       "sha": "57bd3277892f44361eabac79a7c98d87c529100fd0f655d974d0c89685de307d",
-      "at": "2026-10-24T01:23:47.504Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:24:54.076Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 177143,
       "committed": true,
@@ -69,10 +69,10 @@
       "title": "TOP-PAGE"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/top_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/top_ja_390.png",
       "sha": "84d42b876e798c72e5bff8c69879d6ec20c3828d09fd51866ee25fbefa850035",
-      "at": "2026-10-24T01:23:54.369Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:24:57.996Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 120262,
       "committed": true,
@@ -100,10 +100,10 @@
       "title": "TOP-PAGE"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/top_en_1440.jpg",
+      "png": "evidence/REGRESSION/20261024-1220/top_en_1440.jpg",
       "sha": "ebc8e324c46121ca3f1dcf58efa267f5f72a6146d5936e511496edcc24119b6f",
-      "at": "2026-10-24T01:24:03.513Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:04.481Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 176582,
       "committed": true,
@@ -150,10 +150,10 @@
       "title": "TOP-PAGE"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/top_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/top_en_390.png",
       "sha": "168b73b292b0069f3e34f6a74fd37d2e92c4dccebaf5917adbd9d58887484ab1",
-      "at": "2026-10-24T01:24:10.661Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:09.227Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 119968,
       "committed": true,
@@ -181,10 +181,10 @@
       "title": "QA Grandchild"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/breadcrumb_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/breadcrumb_ja_1440.png",
       "sha": "7769d01aa8936a7679200eb9001828d07766253426c4a82c4d3d0486bf11ea37",
-      "at": "2026-10-24T01:24:15.629Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:12.460Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 34015,
       "committed": true,
@@ -212,10 +212,10 @@
       "title": "QA Grandchild"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/breadcrumb_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/breadcrumb_ja_390.png",
       "sha": "5f42277f50393f7b90bfc8a803c1fc589450e0c906b094637b3fe8578519a2e1",
-      "at": "2026-10-24T01:24:20.278Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:14.901Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 11063,
       "committed": true,
@@ -243,10 +243,10 @@
       "title": "QA Grandchild"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/breadcrumb_en_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/breadcrumb_en_1440.png",
       "sha": "1599fa3a3cb71dc417eee23b883a299e994e657e0375ebfbf2f48682d84ccfa9",
-      "at": "2026-10-24T01:24:25.010Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:17.486Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 28563,
       "committed": true,
@@ -274,10 +274,10 @@
       "title": "QA Grandchild"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/breadcrumb_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/breadcrumb_en_390.png",
       "sha": "9e9d9dc6be2944c1bcb25617597ef2e26659579e86c9fa739703c3d9a9795952",
-      "at": "2026-10-24T01:24:29.770Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:19.973Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 11157,
       "committed": true,
@@ -305,10 +305,10 @@
       "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-detail_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/video-detail_ja_1440.png",
       "sha": "a083a7c77ca31f1b5d3d718f5df234b0693517594c578aedf2db9d87baf5612c",
-      "at": "2026-10-24T01:24:35.984Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:23.079Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 243123,
       "committed": true,
@@ -336,10 +336,10 @@
       "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-detail_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/video-detail_ja_390.png",
       "sha": "173aa58ed8378062f226e5d6b9398806c12490b4a96b693c76604f6876566798",
-      "at": "2026-10-24T01:24:41.567Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:25.503Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 68783,
       "committed": true,
@@ -367,10 +367,10 @@
       "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-detail_en_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/video-detail_en_1440.png",
       "sha": "a2dc71728c585eef33779f6f9dcff897cdf01abb8a06f916c2cf1eb5e56f875c",
-      "at": "2026-10-24T01:24:47.600Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:28.205Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 238896,
       "committed": true,
@@ -398,10 +398,10 @@
       "title": "QA587 main movie | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-detail_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/video-detail_en_390.png",
       "sha": "221c3f33f2c5a5e7d28716aa0f7fb59c5ddbe3dd32d37cce0f770fe68eb25e7f",
-      "at": "2026-10-24T01:24:53.068Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:30.645Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 69491,
       "committed": true,
@@ -429,10 +429,10 @@
       "title": "動画 検索・一覧"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-list_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/video-list_ja_1440.png",
       "sha": "7e933786b3ed411a991c206f4017c489ca34f0a588b5e684f5e3c28a7bd90a39",
-      "at": "2026-10-24T01:25:00.491Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:34.522Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 156260,
       "committed": true,
@@ -460,10 +460,10 @@
       "title": "動画 検索・一覧"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-list_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/video-list_ja_390.png",
       "sha": "25baddc71110de60b7f1f46baf268d42ad298040e2207323cd0bffbb6d64be3b",
-      "at": "2026-10-24T01:25:08.817Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:37.585Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 120041,
       "committed": true,
@@ -491,14 +491,14 @@
       "title": "search"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-list_en_1440.png",
-      "sha": "ff1a744be818b1e9172d6e1b9fd1e9b69441957ed0db49915303f1a9f72a034b",
-      "at": "2026-10-24T01:25:14.541Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "png": "evidence/REGRESSION/20261024-1220/video-list_en_1440.png",
+      "sha": "e1a809bae996d3a38f9b7952d7ffb1cf8ad98b8185c83083284deedeaa8c68e0",
+      "at": "2026-10-24T05:25:41.298Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
-      "size": 31244,
+      "size": 189362,
       "committed": true,
-      "title": "YKK DIGITAL SHOWROOM",
+      "title": "search",
       "masks": []
     }
   },
@@ -522,14 +522,14 @@
       "title": "search"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/video-list_en_390.png",
-      "sha": "447b7e263313e182b86cf3961f5b32d714cf47803601fbeb3e8e618e5dec2153",
-      "at": "2026-10-24T01:25:20.047Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "png": "evidence/REGRESSION/20261024-1220/video-list_en_390.png",
+      "sha": "574a00d626430230a06b5f586eb62118028b832d45f1653c9cf0eb6571a4b368",
+      "at": "2026-10-24T05:25:44.865Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
-      "size": 13103,
+      "size": 119678,
       "committed": true,
-      "title": "YKK DIGITAL SHOWROOM",
+      "title": "search",
       "masks": []
     }
   },
@@ -553,10 +553,10 @@
       "title": "catalog"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-list_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-list_ja_1440.png",
       "sha": "5b1695c495deec85df71b86ffece9e4bd22a59c9b15c90af50e54399ab101f11",
-      "at": "2026-10-24T01:25:27.907Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:49.786Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 71244,
       "committed": true,
@@ -584,10 +584,10 @@
       "title": "catalog"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-list_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-list_ja_390.png",
       "sha": "4953ba8182dd2c4366bcde8c7b8bcb665446055cec054816000866aec9c54f43",
-      "at": "2026-10-24T01:25:35.603Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:54.339Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 38253,
       "committed": true,
@@ -615,10 +615,10 @@
       "title": "catalog"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-list_en_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-list_en_1440.png",
       "sha": "76e5a41cf600eb79e2eee96d5136d64951fe43258093ea4be7655628ddf2e9e7",
-      "at": "2026-10-24T01:25:42.818Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:25:58.416Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 64606,
       "committed": true,
@@ -646,10 +646,10 @@
       "title": "catalog"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-list_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-list_en_390.png",
       "sha": "ea207a2090ab6ebdc6c9eec114c2f7b0d6773270ce2e85e3e1a6d564796cfe53",
-      "at": "2026-10-24T01:25:50.000Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:03.771Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 36448,
       "committed": true,
@@ -677,10 +677,10 @@
       "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-detail_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-detail_ja_1440.png",
       "sha": "05dff709ace9ea7747f0f34f0ea54413b4800f875bd35c2987c588c400b78c18",
-      "at": "2026-10-24T01:25:55.661Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:07.490Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 35993,
       "committed": true,
@@ -708,10 +708,10 @@
       "title": "qa190-cat-pdf | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-detail_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-detail_ja_390.png",
       "sha": "33b5cb647bcbaf488fa99d4eb03ffdbcd62b427521990fb9a1fa707edcac9805",
-      "at": "2026-10-24T01:26:01.130Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:10.344Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 12101,
       "committed": true,
@@ -739,10 +739,10 @@
       "title": "catalog pdf | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-detail_en_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-detail_en_1440.png",
       "sha": "158fec5bbd05d2341bc1e3e42ece036ecc80c2bfb8b5ca1d3498faa8b5748fc7",
-      "at": "2026-10-24T01:26:06.819Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:13.098Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 30378,
       "committed": true,
@@ -770,10 +770,10 @@
       "title": "catalog pdf | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-detail_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-detail_en_390.png",
       "sha": "a563fda7c8adb988615eaba17f7458b859be9f47319157cd0a041bfdd62a8f9d",
-      "at": "2026-10-24T01:26:12.035Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:15.924Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 11617,
       "committed": true,
@@ -801,10 +801,10 @@
       "title": "QA586 product A | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-detail_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/product-detail_ja_1440.png",
       "sha": "c50716760b05adea9630b10ba15a64e0aaff57800ef8100ca788f51210a6be6d",
-      "at": "2026-10-24T01:26:17.985Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:19.562Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 183652,
       "committed": true,
@@ -832,10 +832,10 @@
       "title": "QA586 product A | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-detail_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/product-detail_ja_390.png",
       "sha": "1c9349d4eba818a12f265f8935fd20debeaeea3468a289db2fbc6a2176d306e9",
-      "at": "2026-10-24T01:26:23.334Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:22.870Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 75282,
       "committed": true,
@@ -863,10 +863,10 @@
       "title": "QA586 product A | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-detail_en_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/product-detail_en_1440.png",
       "sha": "017a7c9896025fe289c04eabe628c15f6a93c59a7fb8f641a8c9e7a4291f9e01",
-      "at": "2026-10-24T01:26:29.014Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:26.595Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 175944,
       "committed": true,
@@ -894,10 +894,10 @@
       "title": "QA586 product A | YKK DIGITAL SHOWROOM"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-detail_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/product-detail_en_390.png",
       "sha": "72fb6f45c420ff3bf544e08878e2f96ec574e43807e981afc24d7a6d9f483fbb",
-      "at": "2026-10-24T01:26:34.307Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:29.958Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 72555,
       "committed": true,
@@ -925,10 +925,10 @@
       "title": "Page not found"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-list_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/product-list_ja_1440.png",
       "sha": "91f3aba26347a8d905b13bafbb3992bb4ffcc967898d2161fa3e3eb570749992",
-      "at": "2026-10-24T01:26:38.732Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:32.562Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 404,
       "size": 40619,
       "committed": true,
@@ -956,12 +956,12 @@
       "title": "Page not found"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-list_ja_390.png",
-      "sha": "2ddc86fd238aba915c4ff291817b16c2ff6bb2feeb135e1bbaf1c0f65c2c8b31",
-      "at": "2026-10-24T01:26:43.185Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "png": "evidence/REGRESSION/20261024-1220/product-list_ja_390.png",
+      "sha": "d418870164cc736c36d93449dd094e5b39cf463620721b5fb23c3fd74ef8ab17",
+      "at": "2026-10-24T05:26:34.948Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 404,
-      "size": 17691,
+      "size": 17709,
       "committed": true,
       "title": "Page not found",
       "masks": []
@@ -987,10 +987,10 @@
       "title": "Page not found"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-list_en_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/product-list_en_1440.png",
       "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
-      "at": "2026-10-24T01:26:47.655Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:37.231Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 404,
       "size": 35161,
       "committed": true,
@@ -1018,10 +1018,10 @@
       "title": "Page not found"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/product-list_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/product-list_en_390.png",
       "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
-      "at": "2026-10-24T01:26:51.919Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:39.473Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 404,
       "size": 17621,
       "committed": true,
@@ -1049,10 +1049,10 @@
       "title": "DSR-570: Catalog Detail"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-download_ja_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-download_ja_1440.png",
       "sha": "9805bf4e3fc515e528641bef7edd341ef3a6026802f281ea7a2f555c49f5a314",
-      "at": "2026-10-24T01:26:57.920Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:42.376Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 73751,
       "committed": true,
@@ -1080,10 +1080,10 @@
       "title": "DSR-570: Catalog Detail"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-download_ja_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-download_ja_390.png",
       "sha": "ff4af66c95060106df07aa50111252e3ef27a501e55afab8fd346dfd06e545ef",
-      "at": "2026-10-24T01:27:04.521Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:44.928Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 200,
       "size": 41660,
       "committed": true,
@@ -1111,10 +1111,10 @@
       "title": "Page not found"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-download_en_1440.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-download_en_1440.png",
       "sha": "55b797e21e4c719131acba0ab4f6ac93aeb2157dad056d2688465c03a82d83db",
-      "at": "2026-10-24T01:27:09.191Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:47.118Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 404,
       "size": 35161,
       "committed": true,
@@ -1142,10 +1142,10 @@
       "title": "Page not found"
     },
     "last": {
-      "png": "evidence/REGRESSION/20261024-0820/catalog-download_en_390.png",
+      "png": "evidence/REGRESSION/20261024-1220/catalog-download_en_390.png",
       "sha": "11f7a70451caa9705de8510290b6a1fa4e3da7583ee0f0fdf5003e9d57e149ac",
-      "at": "2026-10-24T01:27:13.660Z",
-      "job": "JOB-ZY-REG-20261024-0820-codex",
+      "at": "2026-10-24T05:26:49.300Z",
+      "job": "JOB-ZY-REG-20261024-1220-codex",
       "http": 404,
       "size": 17621,
       "committed": true,
