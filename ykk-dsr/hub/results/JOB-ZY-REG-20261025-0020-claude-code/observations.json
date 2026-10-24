@@ -1,0 +1,248 @@
+{
+ "started": "2026-10-24T17:23:17.063Z",
+ "base": "https://main--dsr-eds-dev--sutrix-projects.aem.live",
+ "baseline": "JOB-ZY-REG-20261024-2020-claude-code observations.json",
+ "headers": [
+  {
+   "host": "live",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\"",
+   "baseline": {
+    "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+    "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\"",
+   "baseline": {
+    "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+    "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\"",
+   "baseline": {
+    "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+    "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/footer/footer.js",
+   "httpStatus": 200,
+   "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+   "etag": "\"aa6a40168ca726bc1abf9001f5965a69\"",
+   "baseline": {
+    "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+    "etag": "\"aa6a40168ca726bc1abf9001f5965a69\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/related-content/related-content.js",
+   "httpStatus": 200,
+   "lastModified": "Thu, 22 Oct 2026 09:07:32 GMT",
+   "etag": "\"adcf45ff0276e15e4d8d3846204c41e5\"",
+   "baseline": {
+    "lastModified": "Thu, 22 Oct 2026 09:07:32 GMT",
+    "etag": "\"adcf45ff0276e15e4d8d3846204c41e5\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/related-content/related-content.css",
+   "httpStatus": 200,
+   "lastModified": "Tue, 06 Oct 2026 04:34:36 GMT",
+   "etag": "\"e5854f6c898b7b7532d4ddb48859d3e5\"",
+   "baseline": {
+    "lastModified": "Tue, 06 Oct 2026 04:34:36 GMT",
+    "etag": "\"e5854f6c898b7b7532d4ddb48859d3e5\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/list/list.js",
+   "httpStatus": 404,
+   "lastModified": null,
+   "etag": null,
+   "baseline": {
+    "lastModified": null,
+    "etag": null
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/list/list.css",
+   "httpStatus": 404,
+   "lastModified": null,
+   "etag": null,
+   "baseline": {
+    "lastModified": null,
+    "etag": null
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/listing/listing.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 21 Oct 2026 09:11:13 GMT",
+   "etag": "\"7e2368fd7b2bb77ba456fcc648b01b5d\"",
+   "baseline": {
+    "lastModified": "Wed, 21 Oct 2026 09:11:13 GMT",
+    "etag": "\"7e2368fd7b2bb77ba456fcc648b01b5d\""
+   },
+   "changed": false
+  },
+  {
+   "host": "live",
+   "file": "blocks/listing/listing.css",
+   "httpStatus": 200,
+   "lastModified": "Wed, 21 Oct 2026 06:45:58 GMT",
+   "etag": "\"cde1c55a721886a113fad15933543bef\"",
+   "baseline": {
+    "lastModified": "Wed, 21 Oct 2026 06:45:58 GMT",
+    "etag": "\"cde1c55a721886a113fad15933543bef\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "scripts/scripts.js",
+   "httpStatus": 200,
+   "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+   "etag": "\"53efa556c5d004a1b64c417baa9f75de\"",
+   "baseline": {
+    "lastModified": "Mon, 19 Oct 2026 03:10:29 GMT",
+    "etag": "\"53efa556c5d004a1b64c417baa9f75de\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "styles/styles.css",
+   "httpStatus": 200,
+   "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+   "etag": "\"b22adbb62e46af5e20e37df5bf819dda\"",
+   "baseline": {
+    "lastModified": "Fri, 09 Oct 2026 01:34:56 GMT",
+    "etag": "\"b22adbb62e46af5e20e37df5bf819dda\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/header/header.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+   "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\"",
+   "baseline": {
+    "lastModified": "Wed, 30 Sep 2026 05:35:24 GMT",
+    "etag": "\"4a5ef25faf32a1d0c497729e23c9c575\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/footer/footer.js",
+   "httpStatus": 200,
+   "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+   "etag": "\"aa6a40168ca726bc1abf9001f5965a69\"",
+   "baseline": {
+    "lastModified": "Tue, 15 Sep 2026 06:07:33 GMT",
+    "etag": "\"aa6a40168ca726bc1abf9001f5965a69\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/related-content/related-content.js",
+   "httpStatus": 200,
+   "lastModified": "Thu, 22 Oct 2026 09:07:32 GMT",
+   "etag": "\"adcf45ff0276e15e4d8d3846204c41e5\"",
+   "baseline": {
+    "lastModified": "Thu, 22 Oct 2026 09:07:32 GMT",
+    "etag": "\"adcf45ff0276e15e4d8d3846204c41e5\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/related-content/related-content.css",
+   "httpStatus": 200,
+   "lastModified": "Tue, 06 Oct 2026 04:34:36 GMT",
+   "etag": "\"e5854f6c898b7b7532d4ddb48859d3e5\"",
+   "baseline": {
+    "lastModified": "Tue, 06 Oct 2026 04:34:36 GMT",
+    "etag": "\"e5854f6c898b7b7532d4ddb48859d3e5\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/list/list.js",
+   "httpStatus": 404,
+   "lastModified": null,
+   "etag": null,
+   "baseline": {
+    "lastModified": null,
+    "etag": null
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/list/list.css",
+   "httpStatus": 404,
+   "lastModified": null,
+   "etag": null,
+   "baseline": {
+    "lastModified": null,
+    "etag": null
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/listing/listing.js",
+   "httpStatus": 200,
+   "lastModified": "Wed, 21 Oct 2026 09:11:13 GMT",
+   "etag": "\"7e2368fd7b2bb77ba456fcc648b01b5d\"",
+   "baseline": {
+    "lastModified": "Wed, 21 Oct 2026 09:11:13 GMT",
+    "etag": "\"7e2368fd7b2bb77ba456fcc648b01b5d\""
+   },
+   "changed": false
+  },
+  {
+   "host": "page",
+   "file": "blocks/listing/listing.css",
+   "httpStatus": 200,
+   "lastModified": "Wed, 21 Oct 2026 06:45:58 GMT",
+   "etag": "\"cde1c55a721886a113fad15933543bef\"",
+   "baseline": {
+    "lastModified": "Wed, 21 Oct 2026 06:45:58 GMT",
+    "etag": "\"cde1c55a721886a113fad15933543bef\""
+   },
+   "changed": false
+  }
+ ],
+ "finished": "2026-10-24T17:23:18.175Z"
+}
