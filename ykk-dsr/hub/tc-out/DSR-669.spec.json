@@ -1,0 +1,383 @@
+{
+ "us": "DSR-669",
+ "folder_id": "669",
+ "us_name": "[CF] Rename CF related models (DM_related to DM_dsr)",
+ "jira_url": "https://sutrix.atlassian.net/browse/DSR-669",
+ "module": "CF related model rename DM_*_related → DM_*_dsr + 8 persisted queries (DSR-669) – CF layer 1.0–8.0, 10.0 · Page layer 9.0, 11.0–16.0",
+ "tcs": [
+  {
+   "id": "1.0",
+   "feature": "Models renamed to DM_*_dsr (CFREN-001)",
+   "summary": "EN: Verify the 3 CF related models exist as DM_movie_dsr / DM_product_dsr / DM_catalog_dsr (node name and jcr:title). JP: CF関連モデル3つがDM_*_dsr（ノード名・jcr:title）で存在することを確認する。",
+   "pre": "EN: Author cookie valid (tools/author probe.sh check 1 = 200). JP: Authorクッキー有効。",
+   "steps": "EN: 1. Read-only: node tools/author/author.mjs models (CF OpenAPI /adobe/sites/cf/models). 2. For each of movie/product/catalog read model path /conf/ykk/settings/dam/cfm/models/dm_<type>_dsr and its title. JP: 1. モデル一覧を取得。2. 各モデルのパス・タイトルを確認。",
+   "expected": "EN: Exactly 3 models: path …/models/dm_movie_dsr, dm_product_dsr, dm_catalog_dsr; title = DM_movie_dsr, DM_product_dsr, DM_catalog_dsr. JP: 3モデルが上記パス・タイトルで存在。",
+   "design": "DSR-669 Scope fullstack #1 · AC1",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "2.0",
+   "feature": "Old DM_*_related models gone (CFREN-002)",
+   "summary": "EN: Verify no model DM_movie_related / DM_product_related / DM_catalog_related remains (negative). JP: 旧モデルDM_*_relatedが残っていないことを確認する（ネガティブ）。",
+   "pre": "EN: Same as 1.0. JP: 1.0と同じ。",
+   "steps": "EN: 1. Model list (1.0 step 1). 2. GET model path …/models/dm_<type>_related for movie/product/catalog. JP: モデル一覧と旧パスを確認。",
+   "expected": "EN: No model titled or named *_related in the list; the 3 old model paths return 404 (or are absent). JP: *_relatedモデルなし、旧パス404。",
+   "design": "DSR-669 AC1, AC7",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "3.0",
+   "feature": "Every DSR CF migrated to the new model (CFREN-003)",
+   "summary": "EN: Verify every CF under /content/dam/dsr/{lang}/ (incl. sub-folders) points to a DM_*_dsr model (cq:model), none to an old path. JP: /content/dam/dsr/{lang}/配下（サブフォルダ含む）の全CFがDM_*_dsrモデルを参照することを確認する。",
+   "pre": "EN: Same as 1.0. JP: 1.0と同じ。",
+   "steps": "EN: 1. List recursively /content/dam/dsr/{ja,en}/movies/standard, products, catalogs (all pages, not only first 50). 2. For each CF read its model path. 3. Count by model. JP: 再帰的に全CFのモデルを集計。",
+   "expected": "EN: 100% of CFs: movies/standard → DM_movie_dsr, products → DM_product_dsr, catalogs → DM_catalog_dsr; 0 CF on dm_*_related. Boundary: sub-folder CFs (dsr/ja/products/qa586/990586006, dsr/*/movies/standard/qa587/qa587-sub) are included and migrated. Total ≥ 84 (Martin report 23/10). JP: 全CF新モデル、旧モデル0件、サブフォルダ含む。",
+   "design": "DSR-669 Scope #2 · AC1 · Martin migration report 23/10 16:15",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "Author API (read-only)",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "4.0",
+   "feature": "CF commune models unchanged (CFREN-004)",
+   "summary": "EN: Verify DM_movie / DM_product / DM_catalog keep their names and every CF under /content/dam/common/{lang}/ still uses them. JP: CFコミューンのモデル名が変わらず、common配下のCFが同モデルを使うことを確認する。",
+   "pre": "EN: Same as 1.0. JP: 1.0と同じ。",
+   "steps": "EN: 1. Model list. 2. Count models of CFs under /content/dam/common/{ja,en}/{movies,products,catalogs}. JP: モデル一覧とcommon配下CFのモデルを集計。",
+   "expected": "EN: Models DM_movie, DM_product, DM_catalog exist with unchanged paths (dm_movie, dm_product, dm_catalog); every common CF uses the matching model; no common CF uses a *_dsr model. JP: 名称不変、common CFは対応モデルのみ。",
+   "design": "DSR-669 Background (commune keep names)",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "Author API (read-only)",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "5.0",
+   "feature": "Only DM_*_dsr can be created under /content/dam/dsr (CFREN-005)",
+   "summary": "EN: Verify the Create Content Fragment dialog under each /content/dam/dsr/{lang}/ folder offers only the matching DM_*_dsr model. JP: dsr配下のフォルダでCF作成時、対応するDM_*_dsrモデルのみ選択できることを確認する。",
+   "pre": "EN: Author DEV, user Agent QA (lane chrome) or QA-PT. Do NOT finish the creation. JP: 作成は完了しない。",
+   "steps": "EN: 1. Open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/dsr/ja/products → Create → Content Fragment. 2. Note every model offered, then Cancel. 3. Repeat for /dsr/ja/catalogs, /dsr/ja/movies/standard and the en folders. JP: 各フォルダで作成ダイアログのモデル一覧を記録し、キャンセル。",
+   "expected": "EN: products → only DM_product_dsr; catalogs → only DM_catalog_dsr; movies/standard → only DM_movie_dsr. Not offered (negative): any DM_*_related, DM_movie/DM_product/DM_catalog, DM_techmovie_dsr. Screenshot of each dialog. JP: 各フォルダで対応モデルのみ。旧モデル・コミューンモデルは表示されない。",
+   "design": "DSR-669 Scope #3 · AC2 (+ DSR-670 policy movies/standard)",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja, en",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-669-05",
+   "blocked": "—"
+  },
+  {
+   "id": "6.0",
+   "feature": "Existing CF related opens and saves (CFREN-006)",
+   "summary": "EN: Verify a migrated QA CF related of each type opens in the CF editor without error and saves. JP: 移行済みのQA用CF関連（各タイプ）がCFエディタで開け、保存できることを確認する。",
+   "pre": "EN: TD-669-04 (QA CFs only). JP: QA用CFのみ。",
+   "steps": "EN: 1. Open in CF editor: dsr/ja/movies/standard/qa587-main, dsr/ja/products/990586001, dsr/ja/catalogs/qa190-cat-pdf. 2. Check the form loads with current values. 3. Click Save without changing any value. JP: 3CFを開き、値を変えずに保存。",
+   "expected": "EN: Each editor opens with all fields filled as before (movie / product / catalog reference not empty, isActive unchanged); Save succeeds with no error toast; Author read-back shows unchanged values. JP: エラーなく開き、保存成功、値は不変。",
+   "design": "DSR-669 AC3",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-669-04",
+   "blocked": "—"
+  },
+  {
+   "id": "7.0",
+   "feature": "Label autofill still works after rename (CFREN-007)",
+   "summary": "EN: Verify picking the referenced CF commune still fills the display label (movieLabel / productLabel) in a DM_*_dsr CF. JP: DM_*_dsr CFで参照先を選ぶと表示ラベル（movieLabel/productLabel）が自動入力されることを確認する。",
+   "pre": "EN: TD-669-04. JP: TD-669-04。",
+   "steps": "EN: 1. Open dsr/ja/movies/standard/qa587-main in CF editor. 2. Re-pick the movie reference (same CF /content/dam/common/ja/movies/qa587-main). 3. Read movieLabel. 4. Do the same for product 990586001. 5. Save. JP: 参照を選び直し、ラベルを確認、保存。",
+   "expected": "EN: movieLabel is filled automatically, not empty, with the referenced movie's id and title separated by full-width ｜. productLabel is filled automatically (exact format = DSR-671 TC; this TC only checks autofill still fires). JP: ラベルが自動入力される（空でない）。",
+   "design": "DSR-669 AC3 · Scope #4 MODEL_CONFIG",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-669-04",
+   "blocked": "—"
+  },
+  {
+   "id": "8.0",
+   "feature": "Booth-required rule still enforced (CFREN-008)",
+   "summary": "EN: Verify a DM_*_dsr CF with isBoothLimited = true and empty dsrFeatures cannot be saved (negative). JP: isBoothLimited=trueでdsrFeatures未入力のDM_*_dsr CFが保存できないことを確認する（ネガティブ）。",
+   "pre": "EN: TD-669-04. Revert rule in TestData How-to step 4. JP: 元に戻す手順あり。",
+   "steps": "EN: 1. Open dsr/ja/movies/standard/qa587-main. 2. Check dsrFeatures is empty. 3. Turn ブース限定掲載 (isBoothLimited) ON. 4. Click Save. 5. Turn it OFF again; close without saving. JP: ブース限定ONで保存を試み、OFFに戻す。",
+   "expected": "EN: Save is refused with a message that DSR掲載ブース (dsrFeatures) is required; the stored CF keeps isBoothLimited = false (Author read-back). JP: 保存不可・必須メッセージ、保存値はfalseのまま。",
+   "design": "DSR-669 AC3 (booth required rule)",
+   "layer": "CF",
+   "exec": "Manual",
+   "lang": "ja",
+   "device": "PC Chrome (Author UI)",
+   "td": "TD-669-04",
+   "blocked": "—"
+  },
+  {
+   "id": "9.0",
+   "feature": "8 persisted queries return data (CFREN-009)",
+   "summary": "EN: Verify the 8 persisted queries return HTTP 200 with data and no GraphQL error on DEV publish. JP: 8つの永続クエリがDEV PublishでHTTP 200・データあり・GraphQLエラーなしを返すことを確認する。",
+   "pre": "EN: TD-669-01 published. JP: TD-669-01公開済み。",
+   "steps": "EN: GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/<query>;<params> for: dsr-video-page;path=/content/dam/dsr/ja/movies/standard/qa587-main · dsr-video-list (ja) · video-detail (qa587-main) · dsr-product-page;path=/content/dam/dsr/ja/products/990586001 · dsr-product-list (ja) · product-detail (990586001) · dsr-catalog-page;path=/content/dam/dsr/ja/catalogs/qa190-cat-pdf · dsr-catalog-list (ja). Repeat en. JP: 8クエリをja/enで取得。",
+   "expected": "EN: 8/8 HTTP 200, JSON has data and no `errors` key; *-page queries return aliases `related` and `inactive`; *-list return alias `related` with ≥ 1 item; the QA item is present. JP: 全て200、errorsなし、エイリアスrelated/inactiveあり。",
+   "design": "DSR-669 persisted query table · AC4",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "HTTP",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "10.0",
+   "feature": "No query still uses dm*RelatedList (CFREN-010)",
+   "summary": "EN: Verify no persisted query in the ykk configuration still refers to dmMovieRelatedList / dmProductRelatedList / dmCatalogRelatedList (negative). JP: ykk設定の永続クエリにdm*RelatedListが残っていないことを確認する（ネガティブ）。",
+   "pre": "EN: Same as 1.0. JP: 1.0と同じ。",
+   "steps": "EN: 1. Read-only GET https://author-p192812-e2014374.adobeaemcloud.com/graphql/list.json/ykk (persisted query list with query text). 2. Search every query text for 'RelatedList' and 'dm_movie_related|dm_product_related|dm_catalog_related'. JP: クエリ一覧を取得し文字列検索。",
+   "expected": "EN: 0 matches. The 8 queries of 9.0 are in the list and read dm*DsrList. If list.json is not reachable → Pending with the HTTP status (not Fail). JP: 0件。",
+   "design": "DSR-669 AC7 · persisted queries",
+   "layer": "CF",
+   "exec": "Automation",
+   "lang": "—",
+   "device": "Author API (read-only)",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "11.0",
+   "feature": "Delivered JS has no old names (CFREN-011)",
+   "summary": "EN: Verify the delivered EDS code (product-detail, video-detail, related-product, catalog-detail) contains no dm_*_related / dm*RelatedList string. JP: 配信中のEDSコードにdm_*_related / dm*RelatedListが含まれないことを確認する。",
+   "pre": "EN: —. JP: —。",
+   "steps": "EN: 1. GET https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/product-detail/product-detail.js, /blocks/video-detail/video-detail.js, /blocks/catalog-detail/catalog-detail.js, /blocks/related-product/related-product.js. 2. Search for 'Related' list names and '_related'. 3. Open /ja/products/990586001 and /ja/library/video/qa587-main with network log. JP: JSを取得して検索、ページのネットワークを記録。",
+   "expected": "EN: 0 occurrences of dmMovieRelatedList / dmProductRelatedList / dmCatalogRelatedList / dm_*_related in the files; no browser request to a *-related* persisted query. JP: 0件、旧クエリへの通信なし。",
+   "design": "DSR-669 Scope dsr-eds · AC7",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "PC Chromium",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "12.0",
+   "feature": "Overlay pages unchanged after migration (CFREN-012)",
+   "summary": "EN: Verify the video, product and catalog detail overlay pages show the same data as before the rename. JP: 改名後も動画・製品・カタログ詳細オーバーレイページが改名前と同じデータを表示することを確認する。",
+   "pre": "EN: Pre-669 snapshot results/JOB-20261023-07/overlay-before-669.json. JP: 改名前スナップショット。",
+   "steps": "EN: 1. Run the overlay specs used in JOB-20261023-07 (movie-detail DSR-587, product-detail DSR-586, catalog-overlay DSR-654) on DEV. 2. Compare test-by-test with overlay-before-669.json. JP: 同じスペックを実行し、結果を比較。",
+   "expected": "EN: Every test that passed before passes now (0 NEW FAIL); page content (title, rows, related items) for qa587-main, 990586001, qa190-cat-pdf equals the snapshot. Differences caused by data edited after 23/10 are listed, not failed. JP: 以前Passのテストは全てPass、内容一致。",
+   "design": "DSR-669 AC6 · BL-OVL-1",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "13.0",
+   "feature": "Lists unchanged after migration (CFREN-013)",
+   "summary": "EN: Verify the video, product and catalog lists show the same items as before the rename. JP: 改名後も動画・製品・カタログ一覧が改名前と同じ項目を表示することを確認する。",
+   "pre": "EN: Pre-669 regression ledger results/REGRESSION/ledger.json. JP: 改名前の回帰台帳。",
+   "steps": "EN: 1. Open https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/video/search, /ja/library/catalog, the product list (fixtures/paths.ts) for ja and en. 2. Count cards and collect ids. 3. Compare with the last pre-669 regression run. JP: 一覧のカード数とIDを比較。",
+   "expected": "EN: Same card count and same ids as the pre-669 run per list and language; no 'Unable to load' message; every card links to a 200 detail page. JP: カード数・ID一致、エラーなし、リンク200。",
+   "design": "DSR-669 AC6",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "PC Chromium",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "14.0",
+   "feature": "Inactive item still handled (CFREN-014)",
+   "summary": "EN: Verify a DSR CF with isActive = false is still returned under alias `inactive` and its page keeps the inactive behaviour (boundary). JP: isActive=falseのDSR CFがエイリアスinactiveで返り、ページの非表示挙動が変わらないことを確認する（境界）。",
+   "pre": "EN: TD-669-01 inactive product 990586008 (ja). JP: TD-669-01。",
+   "steps": "EN: 1. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-product-page;path=/content/dam/dsr/ja/products/990586008. 2. Open https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/products/990586008 in a browser. JP: クエリとページを確認。",
+   "expected": "EN: Query: item under `inactive` (isActive false), HTTP 200, no error. Page: same behaviour as before 669 (KNOWN-FACTS 22/10: 200 + unavailable row, browser redirects to list; robots noindex). JP: inactiveに返る、ページ挙動は改名前と同じ。",
+   "design": "DSR-669 aliases related/inactive · BL-OVL-1 isActive",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "PC Chromium",
+   "td": "TD-669-01",
+   "blocked": "—"
+  },
+  {
+   "id": "15.0",
+   "feature": "Republish regenerates the page (CFREN-015)",
+   "summary": "EN: Verify republishing an existing CF related of each type (video, product, catalog) regenerates its overlay page with the same content. JP: 既存のCF関連（動画・製品・カタログ）を再公開するとオーバーレイページが同じ内容で再生成されることを確認する。",
+   "pre": "EN: TD-669-02 republish done (time recorded). Tech talk → DSR-670 TC 7.0. JP: TD-669-02再公開済み。",
+   "steps": "EN: 1. Before: save HTML of https://main--dsr-eds-dev--sutrix-projects.aem.live/en/library/video/qa587-main, /ja/products/990586001, /ja/library/catalog/qa190-cat-pdf. 2. Lane author republishes the 3 DSR CFs (TD-669-02). 3. After ≥ 5 min: fetch again, read Last-Modified. JP: 再公開前後のHTMLを比較。",
+   "expected": "EN: Each page: Last-Modified later than the republish time; HTTP 200; main content (title, rows, related) identical to before. JP: Last-Modifiedが再公開後、内容一致。",
+   "design": "DSR-669 AC5 · Deployment note (allowlist)",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja, en",
+   "device": "HTTP",
+   "td": "TD-669-02",
+   "blocked": "TD-669-02 republish by lane author/chrome (Claude)"
+  },
+  {
+   "id": "16.0",
+   "feature": "New DSR CF after rename generates its page (CFREN-016)",
+   "summary": "EN: Verify a new DSR CF created on DM_catalog_dsr after the rename and published gets its overlay page. JP: 改名後に新規作成・公開したDM_catalog_dsr CFのオーバーレイページが生成されることを確認する。",
+   "pre": "EN: TD-669-03 qa669-new published (content CF + DSR CF). JP: TD-669-03公開済み。",
+   "steps": "EN: 1. GET https://main--dsr-eds-dev--sutrix-projects.aem.live/ja/library/catalog/qa669-new. 2. GET https://publish-p192812-e2014374.adobeaemcloud.com/graphql/execute.json/ykk/dsr-catalog-page;path=/content/dam/dsr/ja/catalogs/qa669-new. JP: ページとクエリを取得。",
+   "expected": "EN: Page HTTP 200 with catalog title 'QA669 new catalog'; query returns the item under `related` with model DM_catalog_dsr. JP: 200・タイトル表示、クエリでrelatedに返る。",
+   "design": "DSR-669 Deployment note (dsr-eds allowlist dm_*_dsr)",
+   "layer": "Page",
+   "exec": "Automation",
+   "lang": "ja",
+   "device": "HTTP",
+   "td": "TD-669-03",
+   "blocked": "TD-669-03 data by lane author/chrome (Claude)"
+  }
+ ],
+ "assumptions": [
+  [
+   "A1",
+   "Baseline BL-669-1 = DSR-669 description (Scope + Acceptance criteria, Jira 23/10) + Martin migration report 23/10 16:15 VN (KNOWN-FACTS: 84 DSR CF migrated, 78 live republished, 6 not-live skipped, 55 overlay pages regenerated).",
+   "Jira DSR-669, KNOWN-FACTS.md",
+   "Re-baseline if AC changes"
+  ],
+  [
+   "A2",
+   "[Giả định] 'Same data as before' oracle = pre-deploy overlay run results/JOB-20261023-07/overlay-before-669.json + last pre-669 regression ledger entry. Differences caused by CFs edited after 23/10 are reported, not failed.",
+   "QA decision",
+   "12.0, 13.0"
+  ],
+  [
+   "A3",
+   "Tech talk part of AC5 ('republish each type … tech talk') is covered by the DSR-670 TC file (DEV has no tech-talk CF on 24/10).",
+   "DSR-670",
+   "15.0"
+  ],
+  [
+   "A4",
+   "The 6 not-live CFs skipped by the migration republish are not expected to have a .live page; 3.0 still expects their model migrated.",
+   "Martin report 23/10",
+   "3.0"
+  ],
+  [
+   "A5",
+   "[Giả định] AC 'No dm_*_related reference left in either repo': QA has no access to dsr-fullstack / dsr-eds repos → verified indirectly on delivered assets (11.0) and persisted query list (10.0). Repo grep = dev responsibility.",
+   "QA decision",
+   "10.0, 11.0"
+  ],
+  [
+   "A6",
+   "Automation is read-only (Author GET via tools/author with cookie; publish GET). Writes (republish, new CF, booth-rule try) only by lane author/chrome on QA-owned CFs; never touch non-QA CFs.",
+   "CONTEXT §3, AUTHOR-AGENT §2",
+   "5.0–8.0, 15.0, 16.0"
+  ],
+  [
+   "A7",
+   "ja/catalogs/catalogid-01 still 404 on live (Martin report) is non-QA data → excluded from 12.0/13.0.",
+   "Martin report 23/10",
+   "12.0, 13.0"
+  ],
+  [
+   "A8",
+   "cn: no /cn site on DEV (Issue #18) → Language ja, en only.",
+   "Issue #18",
+   "all"
+  ]
+ ],
+ "testdata": [
+  [
+   "TD-669-01",
+   "1–4, 9–14",
+   "Existing QA CFs (reuse, do not create)",
+   "/content/dam/dsr/{lang}/movies/standard/qa587-main · /content/dam/dsr/ja/products/990586001 · 990586008 (isActive OFF) · qa586/990586006 (sub-folder) · /content/dam/dsr/{lang}/catalogs/qa190-cat-pdf",
+   "model / isActive",
+   "ja: all above, published",
+   "en: qa587-main, qa190-cat-pdf, 990586001",
+   "cn: —",
+   "Yes (already)"
+  ],
+  [
+   "TD-669-02",
+   "15",
+   "Republish only (no edit)",
+   "dsr/en/movies/standard/qa587-main · dsr/ja/products/990586001 · dsr/ja/catalogs/qa190-cat-pdf",
+   "—",
+   "Publish each, write the publish time (UTC)",
+   "en: qa587-main",
+   "—",
+   "Yes"
+  ],
+  [
+   "TD-669-03",
+   "16",
+   "New catalog pair",
+   "/content/dam/common/ja/catalogs/qa669-new (DM_catalog) + /content/dam/dsr/ja/catalogs/qa669-new (DM_catalog_dsr)",
+   "content: catalogId / catalogTitle / description / catalogCategories / thumbnail / catalogType / publishDate / pdfAsset / requiresForm · DSR: catalog / isActive",
+   "catalogId qa669-new · catalogTitle QA669 new catalog · description QA669 test · any 1 tag · any test png · pdf · 2026-10-24 · any test pdf · requiresForm OFF · DSR: catalog → common/ja/catalogs/qa669-new · 表示フラグ ON",
+   "—",
+   "—",
+   "Yes (both)"
+  ],
+  [
+   "TD-669-04",
+   "6–8",
+   "Existing QA CFs opened in CF editor",
+   "dsr/ja/movies/standard/qa587-main · dsr/ja/products/990586001 · dsr/ja/catalogs/qa190-cat-pdf",
+   "—",
+   "no value change (8.0: isBoothLimited back to OFF)",
+   "—",
+   "—",
+   "Only if saved"
+  ],
+  [
+   "TD-669-05",
+   "5",
+   "Create dialog only (cancel)",
+   "/content/dam/dsr/{ja,en}/{products, catalogs, movies/standard}",
+   "—",
+   "—",
+   "—",
+   "—",
+   "No"
+  ]
+ ],
+ "howto": [
+  [
+   "1",
+   "TD-669-01: nothing to create. Lane claude-code checks each path exists with tools/author (read-only).",
+   "Path missing → Note 'TD-669-01 <path> missing', related TC = Pending (data)."
+  ],
+  [
+   "2",
+   "TD-669-02: open https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/dsr/en/movies/standard → select qa587-main → Quick Publish → Publish. Same for dsr/ja/products/990586001 and dsr/ja/catalogs/qa190-cat-pdf. Write the UTC time of each publish in the job result.",
+   "Publish greyed out / error → screenshot, Note, skip that CF."
+  ],
+  [
+   "3",
+   "TD-669-03: (a) https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/common/ja/catalogs → Create → Content Fragment → DM_catalog → Name qa669-new (lowercase exactly) → fill every required field with the Data sheet values → Create → Save → Publish. (b) https://author-p192812-e2014374.adobeaemcloud.com/assets.html/content/dam/dsr/ja/catalogs → Create → Content Fragment → DM_catalog_dsr (only choice expected) → Name qa669-new → catalog = pick /content/dam/common/ja/catalogs/qa669-new → 表示フラグ ON → Save → Publish.",
+   "Name must equal catalogId. DM_catalog_dsr not offered → that is a 5.0 Fail: screenshot, stop TD-669-03."
+  ],
+  [
+   "4",
+   "TD-669-04 (8.0): after the Save attempt with ブース限定掲載 ON, turn it OFF again and close the editor WITHOUT saving. If the CF was saved by mistake: set OFF, Save, Publish, write it in the result.",
+   "Never change any other field."
+  ],
+  [
+   "5",
+   "TD-669-05 (5.0): only open the Create → Content Fragment dialog, screenshot the model list, Cancel. Never click Create.",
+   "—"
+  ]
+ ]
+}
