@@ -1,5 +1,7 @@
 # YKK DSR – Bug register
 
+> 24/10 17:10 [schedule] evening: 0 bug mới (không fail ≥ 80%, không cause ≠ none) · Jira: DSR-677/678 To Do, không comment · DSR-678 "FIX DETECTED" từ codex không tin được → retest JOB-20261024-07 · nháp mới < 80%: LIST-BOUNDARY (50%).
+
 > 24/10 07:50 [schedule] morning: 🐞 **DSR-678** mới (529 Profile: Company/Text chồng nhau, 85%, Martin) · DSR-677 (529 required props, Night review 23/10) đưa vào bảng · Jira: DSR-664/666/667/672/673 = Done · 669/670/671 → [Dev] In Testing (giao Dat) · Author cookie hết hạn → JOB-20261024-03 hold.
 
 > 23/10 17:10 [schedule] evening: REG-1620 claude-code 0 NEW FAIL, 32 fail đã biết (cause none) · Jira: không bug mới chuyển fixed/In Testing sau 16:05 sweep · 0 bug mới ≥ 80% · nháp < 80% giữ nguyên (DASHBOARD 🐞).

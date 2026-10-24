@@ -3,7 +3,7 @@
 
 > 🗣 **Daily standup hôm nay: [STANDUP.md](STANDUP.md)** (tự cập nhật 08:19 T2–T6)
 
-> Cập nhật: 2026-10-24 07:50 (UTC+7, [schedule] morning, T7) · 23/10 17:25 evening · 12:10 [jira-sweep] · 07:50 [schedule] morning · 22/10 17:20 evening · 16:15 [jira-sweep] · 12:10 [jira-sweep] · 07:50 morning · trước đó 21/10 17:10 evening · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 (đã qua) → đích Done DEV 23/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
+> Cập nhật: 2026-10-24 17:15 (UTC+7, [schedule] evening, T7) · 07:50 morning · 23/10 17:25 evening · 12:10 [jira-sweep] · 07:50 [schedule] morning · 22/10 17:20 evening · 16:15 [jira-sweep] · 12:10 [jira-sweep] · 07:50 morning · trước đó 21/10 17:10 evening · Sprint 12: 15/10 → 27/10 · **Hạn chót việc đã biết: T5 22/10 (đã qua) → đích Done DEV 23/10** · Buffer ticket mới: 23, 26, 27/10 · Chi tiết: [PLAN](PLAN-sprint12.md) · [BUGS](BUGS.md) · [us/](us/)
 > Lượt tự động 07:45 / 17:10 cập nhật file này. Giữ gọn: chỉ trạng thái hiện tại, lịch sử nằm trong git log và us/*.md.
 
 ## 1. Ticket đang giao Dat: 10 mở (Jira 21/10 16:40) – 566 + 653 tính là 1 việc · ✅ Done 20/10: DSR-552, DSR-648, DSR-651
@@ -23,7 +23,7 @@
 | 🆕 [DSR-664](https://sutrix.atlassian.net/browse/DSR-664) bug video block hiện "null" (Nakamoto tạo) | **[Dev] In Testing 17:52 JST (Martin nhận từ Ngọc 17:37)** · deploy dev/2026.10.22_2 08:52Z · liên kết DSR-662 c.64873 (null dưới related videos ブースTOP) · Quentin: DSR-558 blocked by 664 | ✅ **JOB-20261022-16 retest PASS 4/4** (VCAP-001..004, video.js đã fix) · Jira 18:14 JST giao lại Dat → **Dat đóng** (🔔 P1) | Dat | 22/10 |
 | [DSR-611](https://sutrix.atlassian.net/browse/DSR-611) QA questions 動画・カタログ | Q4 Youku ID trả lời 22/10; Q1/Q2 Numata, Q3 Kohei | giữ mặc định; Youku seed JOB-23-02/03 | Numata · Kohei | đóng khi Q1–Q3 trả lời |
 | [DSR-666](https://sutrix.atlassian.net/browse/DSR-666) bug eco TOP khoảng trắng breadcrumb→hero (590) | ✅ **Done 23/10** (JOB-20261023-12 Pass 5 viewport) · DSR-667 cũng Done | — | — | ✅ 23/10 |
-| [DSR-669](https://sutrix.atlassian.net/browse/DSR-669)/[670](https://sutrix.atlassian.net/browse/DSR-670)/[671](https://sutrix.atlassian.net/browse/DSR-671) CF model refactor | 🆕 **[Dev] In Testing, giao Dat (24/10 00:27 JST)** · migration report Martin 23/10 16:15 · regression sau migrate (REG-1620/2020/0020/0420) **0 NEW FAIL** | **JOB-20261024-01** (publish-side 670 tech-talk, query 669, quan sát 671) queue · Author read-back **JOB-20261024-03 hold (cookie)** | Dat (cookie) | đóng khi 24-01 + 24-03 Pass (Claude báo) · 671 productLabel: Martin T2 26/10 · DSR-675 theo dõi |
+| [DSR-669](https://sutrix.atlassian.net/browse/DSR-669)/[670](https://sutrix.atlassian.net/browse/DSR-670)/[671](https://sutrix.atlassian.net/browse/DSR-671) CF model refactor | **[Dev] In Testing, giao Dat** · 24/10: JOB-24-01 ✅ (query mới 200, query cũ không dùng) · spec 669 (JOB-24-04) 29 pass/2 fail/7 skip – 13.0 fail = card list trỏ CF biên QA (sub-folder/hoa) → 404 (🐞 LIST-BOUNDARY) · 670 (JOB-24-05) 3 pass/10 skip – chưa có CF tech-talk (TD-670-01..04) · 671 (JOB-24-06) 0 NEW FAIL, 11.0 en = data qa501 cũ · Author TC skip (cookie) · regression cả ngày **0 NEW FAIL** | JOB-24-01/04/05/06 done · Author read-back **JOB-20261024-03 hold (cookie)** | Dat (cookie) | đóng khi 24-01 + 24-03 Pass (Claude báo) · 671 productLabel: Martin T2 26/10 · DSR-675 theo dõi |
 Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohei) → mục OK cũ + #13 kiểm lại trong DSR-586** · DSR-503 Dismissed · DSR-585 → [STG] In Testing (Quentin; Sprint 12 chỉ DEV) · ⚠ **DSR-638 (Mayuka, In Progress): chuyển trang test-space ja sang URL chính thức** (list-catalog → /ja/library/catalog, video-list → /ja/library/video/search, product-list → /ja/product/…/product-index, article-list → /ja/library/article) – đường dẫn cũ sẽ 404 → automation 557/570/583/590 vỡ; IDLE-22 theo dõi · DSR-433 (⛔ SendGrid).
 
 > ⚠ **T3 20/10:** overlay đã merge, Martin dọn folder → một số CF test bị xóa → tạo lại bằng TD-587 (PLAN "Night Pack 20/10"). **Product:** hỏng 12:12–13:50 JST do CR DSR-585 đổi model (−30/+9 field), Martin đã sửa – QA đang xác minh (JOB-20261020-07); field mới chưa hiển thị (chưa có design); catalog overlay đang được merge (Dat OK).
@@ -31,6 +31,7 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 ## 2. 🔔 Dat cần làm (T7 24/10 – chỉ việc thật sự cần)
 | Ưu tiên | Việc | Với ai | Hạn | Nội dung gửi sẵn |
 |---|---|---|---|---|
+| 🆕 P2 | Data TD-670-01..04 (CF tech-talk `qa670-*`) + TD-671-01..03 + TD-669-02/03 – cần cookie (lane author) hoặc chrome T2 26/10 → rồi rerun run-only JOB-24-04/05/06. Dat chỉ cần dán cookie (P1 dưới); Claude Điều phối xếp job | Claude (Điều phối) | T2 26/10 | – |
 | 🆕 P1 | **Dán lại cookie Author** (login-token hết hạn từ 23/10 09:17Z → 3 job dừng needs-input: 23-11, 23-19, 23-24). Xong → move `jobs/hold/JOB-20261024-03.md` sang `jobs/queue/` (hoặc nhắn Claude) | VPS (Dat tự làm) | T7 24/10 hoặc T2 26/10 08:00 | Dán `AEM_LOGIN_TOKEN` vào `~/.dsr-secrets/aem-dev.env` (AUTHOR-AGENT §2b) → `bash ykk-dsr/hub/tools/author/probe.sh` check 1 = 200 |
 | ℹ️ | TC job tự thêm DSR-669/670/671 vào backlog (sub-task TC DSR-679/680/681, 24/10 09:15) – không cần Dat làm gì | – | – | – |
 | 🆕 P2 | DSR-669/670/671 đã giao Dat (In Testing) – **chưa đóng**, chờ JOB-20261024-01 + -03 | Jira | T2 26/10 | Claude soạn comment đóng khi job Pass |
@@ -39,7 +40,8 @@ Theo dõi (không giao Dat): DSR-590 (Ngọc) · **DSR-457 Dismissed 21/10 (Kohe
 | P2 | Gửi Martin tin 📣 (câu 1 + 3) nếu chưa gửi | Martin | T2 26/10 | xem cuối mục 📣 |
 Đã xong 23/10: đóng DSR-664 ✅ · DSR-666 Done ✅ · Agent Author TD-587 ✅. **Done DEV đề xuất hôm nay: không có** (529/566/570/586/587/654 còn bug Medium mở hoặc job cookie).
 
-## 3. 🌙 QA part-time – Night 23/10 (T6): pack đã tạo · T7/CN QA-PT nghỉ
+## 3. 🌙 QA part-time – T7 24/10 + CN 25/10: **nghỉ, không tạo Night Pack** (CONTEXT §2: QA-PT tối T2–T6). Pack kế tiếp: T2 26/10 17:10.
+### (lưu) Night 23/10 (T6): pack đã tạo
 **Pack:** [Night Work Pack 2026-10-23](https://docs.google.com/document/d/1oeDv45dho3IKj8JLhf1WPdT54iT8AU_vOstol04PGsI/edit) · ảnh → [Evidence_20261023](https://drive.google.com/drive/folders/1jvGRvqVBDesUM9GxBoqhXwh49TTVQOfy) · ~3h45, 13 dòng report.
 Thứ tự (theo PLAN "Night Pack 23/10 – CHỐT 17:00"): (1) TD-587-04 · (2) TD-587-05 · (3) CATDL-008 · (4) ARTICLE-032 (qa529-02, UE tự lưu → trả before) · (5) AUDIT-CHROME-16/20 · (6) manual tồn: DSR-BREAD-016/013/012/026/024 → ARTICLE-001/005 (trang mới `qa529-tc01`).
 Sáng T7 07:45: đọc Night Report → TD-587-04+05 Pass → JOB-20261023-19 queue · ARTICLE-032/005 có dòng → JOB-20261023-23 queue. Night 22/10: 17 Pass / 2 Fail / 4 Blocked (chi tiết git log).
@@ -47,8 +49,9 @@ Sáng T7 07:45: đọc Night Report → TD-587-04+05 Pass → JOB-20261023-19 qu
 ## 4. 🤖 Agents
 | Lane | Hàng đợi (24/10 07:50) | Hold |
 |---|---|---|
-| claude-code | **JOB-20261024-01** (669/670/671 publish-side) → **JOB-20261024-02** (sửa test VOV-005 fixture, 557 TZ Asia/Tokyo, NEWS-007 query-index) → JOB-ZZ-IDLE-44 (regression + scaffold) · regression guard 4h tự xếp | **JOB-20261024-03** (Author read-back 669/587/529 – chờ cookie) |
-| codex | JOB-ZZ-IDLE-45 (visual + Lighthouse + watch DSR-678) | – |
+| claude-code | 🆕 (24/10 17:10) **JOB-20261024-07** (retest DSR-678 Profile, đo lại – watch codex không tin được) → **JOB-20261024-08** (hook capture-on-fail `dsr-*-list` cho 🐞 REG-VOV-EN) → JOB-ZZ-IDLE-47 (regression + scaffold 560/568/608) · regression guard 4h tự xếp | **JOB-20261024-03** (Author read-back 669/587/529 – chờ cookie) |
+| codex | 🆕 JOB-ZZ-IDLE-46 (visual + Lighthouse + chụp qa529-02 Profile mỗi 2h) | – |
+Ngày 24/10 (review 17:10): JOB-24-01/02/04/05/06 done · IDLE-44 (488 test, 0 NEW FAIL, scaffold DSR-503) · REG-1220/1620 claude-code + codex **0 NEW FAIL** · REG-VOV-EN probe 0/30 fail · IDLE-45 "FIX DETECTED DSR-678" **không tin được** (đo trang `/master/…/qa529-01`, 'no overlap' từ vòng 1; Jira 678 vẫn To Do, chưa comment) → JOB-24-07. Không fail mới ≥ 80%, không cause ≠ none.
 Đêm 23/10: REG-0020 + REG-0420 claude-code **0 NEW FAIL** (461 test: 297/51/113; fail đều đã biết, cause none; 566 baseline đầu tiên 14/8/2) · codex 0 NEW FAIL (36 pass, 18 Lighthouse) · JOB-23-19: VOV-004 ✅, VOV-005 ❌ = fixture cũ (test) · JOB-23-24: live meta qa529-02 khớp, Author chưa verify (cookie) · không agent treo (running trống) · upload-queue: 0 fail.
 
 **Lane chrome (23/10 15:47):** ✅ JOB-20261023-16 (566 xóa Image/Button rỗng qa566-news-02 + Publish live) done, 3 ghi, 0 blocked → verify JOB-20261023-17 vào queue · JOB-20261023-18 (587) vẫn hold FREEZE · CHROME_DEVICE_ID = 8eea8eec (DSR-QA).
@@ -70,11 +73,12 @@ tc-backlog: Night TC job 24/10 15:06: done 0/0 (backlog trống, 669/670/671 xon
 | REG-CATV-TZ (557) | CATV-018/019 ja+en: NEW/UPDATE badge vs test today() JST, browser TZ Berlin; TZ Tokyo → 6/6 pass (REG-0020 + REG-0420) | 10% (test) | – | Claude chốt test issue → **JOB-20261024-02** sửa `timezoneId` |
 | NEWS-012 (566) | My List / share không hiện – class `no-mylist no-share` có sẵn trong trang (option component) | 15% (data) | Có thể là mặc định của template | Agent Author bỏ tick 2 option trên qa566-news-01 (manifest TD-566-FIX2, cần cookie) |
 | 🆕 671-LABEL (586/671) | `productLabel` không có dạng `{productId}｜{productName}` (stored id hoặc null, 12 product) | 50% | Có thể chỉ áp dụng khi CF được lưu lại / label phía Author | ✅ Đã hỏi 23/10 – Martin kiểm cuối tuần / sáng T2 26/10 (Dat OK) |
+| 🆕 LIST-BOUNDARY (669/586/587) | List sản phẩm/video hiện card cho DSR CF biên QA (sub-folder `qa586/990586006` ja, `QA587_Upper` en) → link phẳng 404; BL-OVL-1 chỉ nói "không có trang", không nói list phải ẩn | 50% | Baseline không quy định list; data là CF biên do QA tạo | Hỏi Martin "list có lọc CF ngoài folder phẳng / tên sai không?"; không → data noise, TC 669 13.0 loại 2 id này |
 | 🆕 ARTICLE-021 (529) | Picker 関連ストーリー chọn được trang ngoài stories (test-space) và không chặn mục thứ 4; help text "chỉ hiển thị 3 mục đầu" | 50% | Có thể by design (giới hạn ở hiển thị) | Dat/Martin chốt: by design → sửa TC |
 | BUG-CAT-FORM-EN (570/654) → **CB-1 client (DSR-655)** | en catalog form hiển thị tiếng Nhật (CATDL-016 en) | 70% | Chưa rõ HubSpot form en đã có GUID (DSR-655 L1) | Giữ; câu 4b trong tin Martin |
 | BUG-CAT-PDF-EXPOSE (570) → **CB-2 client (DSR-655 Y4)** | `dsr-catalog-list` trả `pdfAsset._publishUrl` cho catalog requiresForm=true (CATDL-007) | 70% | Chờ Quentin TC 007 (gating có là yêu cầu bảo mật) | Giữ; "phải ẩn" → bug 90% |
 | BUG-OVL-INACTIVE (587/586/654) | 表示フラグ OFF: kiểm end-to-end | 50% | TD-587-07 chưa seed (Not run 22/10) | Giữ; chờ Agent Author |
-Đã xử lý 24/10 07:50: 1 bug ≥ 80% → **DSR-678** (ARTICLE-005) · ARTICLE-032 → DSR-677 (Night review 23/10) · VOV-005 + NEWS-007 = test (JOB-20261024-02).
+Đã xử lý 24/10 17:10: 0 bug mới (không fail ≥ 80%) · 671 11.0 en (qa501 cũ) = data 20% · 670 tech-talk = Blocked-by TD-670. Đã xử lý 24/10 07:50: 1 bug ≥ 80% → **DSR-678** (ARTICLE-005) · ARTICLE-032 → DSR-677 (Night review 23/10) · VOV-005 + NEWS-007 = test (JOB-20261024-02).
 
 ## ✅ Overlay 404 – xong nguyên nhân (21/10 15:40)
 Dev fix auto-generate trang khi Publish DSR CF (từ 08:25 UTC 21/10) + data QA sai (tên node, movieId, r5→r6, 表示フラグ, thiếu rel-b). Quy tắc mới trong BL-OVL-1 "Update 2026-10-21". Sửa trong pack 21/10.
