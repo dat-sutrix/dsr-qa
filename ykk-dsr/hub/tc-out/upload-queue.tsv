@@ -30,7 +30,7 @@ done 2026-10-21T11:10:14Z 34885	ykk-dsr/hub/tc-out/[Sutrix] DSR -356- [レイア
 done 2026-10-21T11:10:35Z 8511	ykk-dsr/hub/tc-out/[Sutrix] DSR -356- [レイアウト] 記事詳細（article-detail）_TestData.xlsx	1Jpf4BmGJ97mPCauzQnds2m-fsn6CDAgB	DSR-529 rebaseline 21/10
 done 2026-10-21T11:35:51Z 30416	ykk-dsr/hub/tc-out/[Sutrix] DSR -654- [レイアウト] CATALOG Overlay化（json2html）.xlsx	1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU	DSR-654
 done 2026-10-21T11:35:56Z 8525	ykk-dsr/hub/tc-out/[Sutrix] DSR -654- [レイアウト] CATALOG Overlay化（json2html）_TestData.xlsx	1BMVpdKS8No2gzTUNtOXYGf359bt7bQGU	DSR-654
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -669- [CF] Rename CF related models (DM_related to DM_dsr).xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-669
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -669- [CF] Rename CF related models (DM_related to DM_dsr)_TestData.xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-669
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -670- [CF] DM_techmovie_dsr model for tech talk videos.xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-670
-pending	ykk-dsr/hub/tc-out/[Sutrix] DSR -670- [CF] DM_techmovie_dsr model for tech talk videos_TestData.xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-670
+done 2026-10-24T02:15:30Z 29863	ykk-dsr/hub/tc-out/[Sutrix] DSR -669- [CF] Rename CF related models (DM_related to DM_dsr).xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-669
+done 2026-10-24T02:15:34Z 7956	ykk-dsr/hub/tc-out/[Sutrix] DSR -669- [CF] Rename CF related models (DM_related to DM_dsr)_TestData.xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-669
+done 2026-10-24T02:15:38Z 27734	ykk-dsr/hub/tc-out/[Sutrix] DSR -670- [CF] DM_techmovie_dsr model for tech talk videos.xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-670
+done 2026-10-24T02:15:42Z 8119	ykk-dsr/hub/tc-out/[Sutrix] DSR -670- [CF] DM_techmovie_dsr model for tech talk videos_TestData.xlsx	12qVx8R1j6eInCA3_ydx0ngCvide5jeh-	DSR-670
