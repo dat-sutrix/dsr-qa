@@ -1,0 +1,2536 @@
+[
+ {
+  "page": "qa529-r1",
+  "host": "live",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 603.6,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-r1",
+  "host": "live",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r1",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 595.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-r1",
+  "host": "page",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r1",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r1",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 603.6,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-r1",
+  "host": "page",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r1",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r1",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 595.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-r2",
+  "host": "live",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r2",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r2",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 603.6,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-r2",
+  "host": "live",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r2",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r2",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 595.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-r2",
+  "host": "page",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r2",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r2",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 603.6,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-r2",
+  "host": "page",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r2",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r2",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 595.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-r3",
+  "host": "live",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r3",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r3",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 603.6,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-r3",
+  "host": "live",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r3",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-r3",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 595.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-r3",
+  "host": "page",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r3",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r3",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 603.6,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 686.4,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 730.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-r3",
+  "host": "page",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r3",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-r3",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 595.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 668.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 712.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 756.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-01",
+  "host": "live",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 1479.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 1396.4,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1479.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-01",
+  "host": "live",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 1129.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1173.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1217.1,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 1056.8,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1129.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1173.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1217.1,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-01",
+  "host": "page",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 1479.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 1396.4,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1479.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1523,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "プロフィールが入ります。プロフィールが入ります。",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-01",
+  "host": "page",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 1129.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1173.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1217.1,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 1056.8,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1129.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1173.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1217.1,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "プロフィールが入ります。プロフィールが入ります。",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-02",
+  "host": "live",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+  "assets": [],
+  "profile": null,
+  "overlaps": []
+ },
+ {
+  "page": "qa529-02",
+  "host": "live",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-02",
+  "assets": [],
+  "profile": null,
+  "overlaps": []
+ },
+ {
+  "page": "qa529-02",
+  "host": "page",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-02",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-02",
+  "assets": [],
+  "profile": null,
+  "overlaps": []
+ },
+ {
+  "page": "qa529-02",
+  "host": "page",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-02",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-02",
+  "assets": [],
+  "profile": null,
+  "overlaps": []
+ },
+ {
+  "page": "qa529-tc01",
+  "host": "live",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-tc01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-tc01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 1363.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 1280.4,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1363.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "QA529 プロフィール",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-tc01",
+  "host": "live",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-tc01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.live/master/ja/library/article/stories/qa529-tc01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.live/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 982.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1026.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1070.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 909.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 982.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1026.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1070.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ },
+ {
+  "page": "qa529-tc01",
+  "host": "page",
+  "viewport": 1440,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-tc01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-tc01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 480,
+      "y": 1363.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 240,
+      "y": 1280.4,
+      "w": 960,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1363.2,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 480,
+      "y": 1407,
+      "w": 720,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "会社名・部署名が入ります",
+    "b": "QA529 プロフィール",
+    "area": 17136,
+    "sameTopLeft": true
+   }
+  ]
+ },
+ {
+  "page": "qa529-tc01",
+  "host": "page",
+  "viewport": 390,
+  "url": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-tc01",
+  "http": 200,
+  "finalUrl": "https://main--dsr-eds-dev--sutrix-projects.aem.page/master/ja/library/article/stories/qa529-tc01",
+  "assets": [
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.css",
+   "https://main--dsr-eds-dev--sutrix-projects.aem.page/blocks/profile/profile.js"
+  ],
+  "profile": {
+   "blockClass": "profile author-profile block",
+   "status": "loaded",
+   "company": [
+    {
+     "cls": "profile-company",
+     "box": {
+      "x": 24,
+      "y": 982.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります"
+    }
+   ],
+   "text": [
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1026.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります"
+    },
+    {
+     "cls": "profile-text",
+     "box": {
+      "x": 24,
+      "y": 1070.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール"
+    }
+   ],
+   "leaves": [
+    {
+     "tag": "P",
+     "cls": "profile-label",
+     "parent": "profile author-profile block",
+     "box": {
+      "x": 24,
+      "y": 909.9,
+      "w": 342,
+      "h": 32.8
+     },
+     "text": "PROFILE",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto / 1 / auto / -1"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 982.7,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "氏名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1026.5,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "会社名・部署名が入ります",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    },
+    {
+     "tag": "P",
+     "cls": "",
+     "parent": "",
+     "box": {
+      "x": 24,
+      "y": 1070.3,
+      "w": 342,
+      "h": 23.8
+     },
+     "text": "QA529 プロフィール",
+     "css": {
+      "position": "static",
+      "display": "block",
+      "gridArea": "auto"
+     }
+    }
+   ]
+  },
+  "overlaps": []
+ }
+]

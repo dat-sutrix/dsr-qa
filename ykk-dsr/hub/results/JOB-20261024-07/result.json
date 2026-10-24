@@ -1,0 +1,36 @@
+{
+  "job": "JOB-20261024-07",
+  "agent": "claude-code",
+  "us": "DSR-529",
+  "env": "dev",
+  "started": "2026-10-24T10:16:22Z",
+  "finished": "2026-10-24T10:22:00Z",
+  "status": "done",
+  "retest_of": "DSR-678",
+  "proposed_verdict": "Fail (still broken)",
+  "tests": [
+    { "tc": "DSR-ARTICLE-005", "lang": "ja", "result": "fail",
+      "error": "1440px: Company text and bio both in div.profile-text at same box (x480,w720,h23.8) on 5/5 pages, live+page; 390px no overlap",
+      "evidence": "evidence/DSR-ARTICLE-005_ja_qa529-01_live_1440.png",
+      "suspect": "product", "cause": "none", "confidence": 95 }
+  ],
+  "pages_checked": {
+    "with_profile_block": ["/master/ja/library/article/stories/qa529-01", "/master/ja/library/article/stories/qa529-tc01", "/master/ja/library/article/stories/qa529-r1", "/master/ja/library/article/stories/qa529-r2", "/master/ja/library/article/stories/qa529-r3"],
+    "without_profile_block": ["/master/ja/library/article/stories/qa529-02"],
+    "block_class": "profile author-profile (data-block-name=profile)"
+  },
+  "measurements": [
+    { "page": "qa529-01", "viewport": 1440, "hosts": ["live", "page"], "profile_company": {"x":480,"y":1479.2,"w":720,"h":23.8,"text":"QA529 プロフィール"}, "profile_text": [{"x":480,"y":1523,"w":720,"h":23.8,"text":"会社名・部署名が入ります"},{"x":480,"y":1523,"w":720,"h":23.8,"text":"プロフィールが入ります。プロフィールが入ります。"}], "overlap": true, "overlap_area_px2": 17136 },
+    { "page": "qa529-01", "viewport": 390, "hosts": ["live", "page"], "profile_company": {"x":24,"y":1129.5,"w":342,"h":23.8}, "profile_text": [{"x":24,"y":1173.3,"w":342,"h":23.8},{"x":24,"y":1217.1,"w":342,"h":23.8}], "overlap": false },
+    { "page": "qa529-tc01", "viewport": 1440, "hosts": ["live", "page"], "profile_text_same_box": {"x":480,"y":1407,"w":720,"h":23.8}, "overlap": true, "overlap_area_px2": 17136 },
+    { "page": "qa529-r1|r2|r3", "viewport": 1440, "hosts": ["live", "page"], "profile_text_same_box": {"x":480,"y":730.2,"w":720,"h":23.8}, "overlap": true, "overlap_area_px2": 17136 },
+    { "page": "qa529-tc01|r1|r2|r3", "viewport": 390, "hosts": ["live", "page"], "overlap": false }
+  ],
+  "raw": "raw-boxes.json",
+  "assets": [
+    { "url": "/blocks/profile/profile.js", "folder_loaded": "blocks/profile", "last_modified": "Tue, 08 Sep 2026 11:14:30 GMT", "etag": "fda6497be7188d4cd4b6cf5f94bf05ba", "same_on_live_and_page": true, "newer_than_2026-10-23T17:10Z": false },
+    { "url": "/blocks/profile/profile.css", "folder_loaded": "blocks/profile", "last_modified": "Fri, 18 Sep 2026 01:32:54 GMT", "etag": "a2720cfcdf94a42f59cdf53384074ab0", "same_on_live_and_page": true, "newer_than_2026-10-23T17:10Z": false }
+  ],
+  "code_changes": [],
+  "questions": []
+}
